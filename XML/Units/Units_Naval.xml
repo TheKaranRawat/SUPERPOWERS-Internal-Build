@@ -1372,7 +1372,7 @@
 			<Class>UNITCLASS_GUIDED_MISSILE</Class>
 			<Type>UNIT_FRANCE_EUROCOPTER_TIGER</Type>
 			<PrereqTech>TECH_ADVANCED_BALLISTICS</PrereqTech>
-			<RangedCombat>380</RangedCombat>
+			<RangedCombat>370</RangedCombat>
 			<Cost>-1</Cost>
 			<Moves>2</Moves>
 			<Immobile>true</Immobile>
