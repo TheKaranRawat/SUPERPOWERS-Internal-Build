@@ -39,8 +39,14 @@ local MaxDamage = GameDefines.MAX_HIT_POINTS;
 local promotionsTexture = "Promotions512.dds";
 
 local unitPortraitSize = Controls.UnitPortrait:GetSize().x;
+
+-- default actionIconSize is 64; changed to 45
 local actionIconSize = 64;
+
+--function condition changed; always resorts to small screen dimensions
 if OptionsManager.GetSmallUIAssets() and not UI.IsTouchScreenEnabled() then
+	actionIconSize = 45;
+else
 	actionIconSize = 45;
 end
 
@@ -239,12 +245,21 @@ function UpdateUnitActions( unit )
 	local buttonPadding = 8;
 	local buttonOffsetX = 16;
 	local buttonOffsetY = 40;
+	
+	--default workerPanelSizeOffsetY=104; changed to 86
 	local workerPanelSizeOffsetY = 104;
+	
 	if OptionsManager.GetSmallUIAssets() and not UI.IsTouchScreenEnabled() then
 		numberOfButtonsPerRow = 6;
 		buttonSize = 40;
 		buttonPadding = 6;
 		workerPanelSizeOffsetY = 86;
+	else
+		numberOfButtonsPerRow = 6;
+		buttonSize = 40;
+		buttonPadding = 6;
+		workerPanelSizeOffsetY = 86;
+	
 	end
 
     local recommendedBuild = nil;
@@ -499,7 +514,7 @@ end
 		if OptionsManager.GetSmallUIAssets() and not UI.IsTouchScreenEnabled() then
 			buildCityButtonSize = 36;
 		else
-			buildCityButtonSize = 60;
+			buildCityButtonSize = 36;	--changed buildCityButtonSize = 60; to 36
 		end
     end
     Controls.PrimaryStretchy:SetSizeVal( stretchySize.x, stackSize.y + buildCityButtonSize + 348 );
@@ -537,6 +552,8 @@ end
 		if recommendedBuild then
 			rbOffset = 60;
 			if OptionsManager.GetSmallUIAssets() and not UI.IsTouchScreenEnabled() then
+				rbOffset = 60;
+			else
 				rbOffset = 60;
 			end
 			Controls.RecommendedActionDivider:SetHide( false );
