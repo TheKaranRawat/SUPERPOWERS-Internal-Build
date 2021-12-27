@@ -3478,6 +3478,7 @@
 			<IconAtlas>SPPROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_NAVAL_CAPITAL_SHIP</PediaEntry>
+			<CityAttack>-25</CityAttack>
 			<HealOutsideFriendly>true</HealOutsideFriendly>
 			<OnlyDefensive>true</OnlyDefensive>
 			<CannotBeChosen>true</CannotBeChosen>
@@ -3517,6 +3518,7 @@
 			<PortraitIndex>38</PortraitIndex>
 			<PromotionPrereqOr1>PROMOTION_SPLASH_DAMAGE</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_NAVAL_CAPITAL_SHIP</PromotionPrereqOr2>
+			<CityAttack>-35</CityAttack>
 			<IconAtlas>SPPROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_RANGED</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_CLUSTER_ROCKET_1</PediaEntry>
@@ -3528,6 +3530,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PortraitIndex>39</PortraitIndex>
 			<PromotionPrereqOr1>PROMOTION_CLUSTER_ROCKET_1</PromotionPrereqOr1>
+			<CityAttack>-15</CityAttack>
 			<IconAtlas>SPPROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_RANGED</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_CLUSTER_ROCKET_2</PediaEntry>
