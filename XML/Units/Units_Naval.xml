@@ -2554,6 +2554,15 @@
 			<PromotionType>PROMOTION_EVASION_II</PromotionType>
 		</Row>-->
 
+		<Row>
+			<UnitType>UNIT_FRANCE_EUROCOPTER_TIGER</UnitType>
+			<PromotionType>PROMOTION_BLITZ</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FRANCE_EUROCOPTER_TIGER</UnitType>
+			<PromotionType>PROMOTION_NAVAL_BONUS_STRONG</PromotionType>
+		</Row>
+
 
 
 		<Row>
