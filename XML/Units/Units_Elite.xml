@@ -1026,7 +1026,7 @@
 		<Row>
 			<Class>UNITCLASS_MECH</Class>
 			<Type>UNIT_MECH</Type>
-			<PrereqTech>TECH_TRANSHUMANISM</PrereqTech>
+			<PrereqTech>TECH_NEURAL_INTERFACE</PrereqTech>
 			<Combat>800</Combat>
 			<RangedCombat>600</RangedCombat>
 			<Range>2</Range>

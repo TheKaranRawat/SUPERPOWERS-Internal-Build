@@ -462,7 +462,7 @@
 			<Description>TXT_KEY_PROJECT_ADV_MECH</Description>
 			<Help>TXT_KEY_PROJECT_ADV_MECH_HELP</Help>
 			<Civilopedia>TXT_KEY_PROJECT_ADV_MECH_PEDIA</Civilopedia>
-			<TechPrereq>TECH_TRANSHUMANISM</TechPrereq>
+			<TechPrereq>TECH_NEURAL_INTERFACE</TechPrereq>
 			<MaxGlobalInstances>1</MaxGlobalInstances>
 			<MaxTeamInstances>1</MaxTeamInstances>
 			<Cost>1600</Cost>

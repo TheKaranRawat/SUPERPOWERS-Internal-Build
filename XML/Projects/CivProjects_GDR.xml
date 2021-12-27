@@ -166,7 +166,7 @@
 			<Type>BUILDING_GDR_HEADQUARTERS</Type>
 			<BuildingClass>BUILDINGCLASS_GDR_HEADQUARTERS</BuildingClass>
 			<Cost>-1</Cost>
-			<PrereqTech>TECH_NUCLEAR_FUSION</PrereqTech>
+			<PrereqTech>TECH_NEURAL_INTERFACE</PrereqTech>
 			<UnlockedByLeague>true</UnlockedByLeague>
 			<NukeImmune>true</NukeImmune>
 			<ConquestProb>100</ConquestProb>
@@ -175,10 +175,10 @@
 			<Quote>TXT_KEY_BUILDING_GDR_HEADQUARTERS_QUOTE</Quote>
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_GDR_HEADQUARTERS_TEXT</Civilopedia>
 			<Help>TXT_KEY_BUILDING_GDR_HEADQUARTERS_HELP</Help>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<Defense>1000</Defense>
 			<ExtraCityHitPoints>100</ExtraCityHitPoints>
-			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
+			<PortraitIndex>27</PortraitIndex>
 			<MinAreaSize>-1</MinAreaSize>
 			<WonderSplashImage>GDRSplashy.dds</WonderSplashImage>
 			<WonderSplashAudio>AS2D_WONDER_GDR_HEADQUARTERS</WonderSplashAudio>
