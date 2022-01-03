@@ -3,16 +3,16 @@
 <GameData>
 	<GameSpeeds>
 		<Update>
-			<Set DealDuration="30" GrowthPercent="200" TrainPercent="150" ConstructPercent="150" CreatePercent="200" ResearchPercent="250"
-				 GoldPercent="200" BuildPercent="175" ImprovementPercent="125" GreatPeoplePercent="200" CulturePercent="250" FaithPercent="125" BarbPercent="150"
+			<Set DealDuration="30" GrowthPercent="150" TrainPercent="125" ConstructPercent="125" CreatePercent="200" ResearchPercent="350"
+				 GoldPercent="200" BuildPercent="150" ImprovementPercent="125" GreatPeoplePercent="200" CulturePercent="250" FaithPercent="125" BarbPercent="150"
 			 FeatureProductionPercent="100" UnitHurryPercent="200" UnitTradePercent="200" GoldenAgePercent="200" MinorCivElectionFreqMod="120"
-				 OpinionDurationPercent="50" SpyRatePercent="125" RelationshipDuration="50" LeaguePercent="150" ReligiousPressureAdjacentCity="80"/>
+				 OpinionDurationPercent="50" SpyRatePercent="125" RelationshipDuration="50" LeaguePercent="120" ReligiousPressureAdjacentCity="80"/>
 			<Where Type="GAMESPEED_MARATHON"/>
 		</Update>
 		<Update>
-			<Set DealDuration="30" GrowthPercent="150" TrainPercent="115" ConstructPercent="115" CreatePercent="150" ResearchPercent="150"
-				 GoldPercent="150" BuildPercent="125" ImprovementPercent="100" GreatPeoplePercent="150" CulturePercent="150" FaithPercent="100" BarbPercent="100"
-			 FeatureProductionPercent="90" UnitHurryPercent="150" UnitTradePercent="150" GoldenAgePercent="150" MinorCivElectionFreqMod="100"
+			<Set DealDuration="30" GrowthPercent="120" TrainPercent="115" ConstructPercent="115" CreatePercent="120" ResearchPercent="250"
+				 GoldPercent="115" BuildPercent="115" ImprovementPercent="100" GreatPeoplePercent="115" CulturePercent="110" FaithPercent="100" BarbPercent="100"
+			 FeatureProductionPercent="90" UnitHurryPercent="150" UnitTradePercent="125" GoldenAgePercent="120" MinorCivElectionFreqMod="80"
 				 OpinionDurationPercent="50" SpyRatePercent="100" RelationshipDuration="50" LeaguePercent="100" ReligiousPressureAdjacentCity="100"/>
 			<Where Type="GAMESPEED_EPIC"/>
 		</Update>
