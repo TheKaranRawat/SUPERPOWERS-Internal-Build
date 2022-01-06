@@ -47,8 +47,10 @@
 			<UnitArtInfo>ART_DEF_UNIT_SMAN_DREADNOUGHT</UnitArtInfo>			
 			<IconAtlas>SMAN_EXOTIC_UNIT_ATLAS</IconAtlas>
 			<PortraitIndex>46</PortraitIndex>
-			<UnitFlagAtlas>SMAN_EXOTIC_UNIT_FLAG_ATLAS</UnitFlagAtlas>
-			<UnitFlagIconOffset>38</UnitFlagIconOffset>
+						
+			<UnitFlagAtlas>SPUnitFlags_FLAG</UnitFlagAtlas>
+			<UnitFlagIconOffset>9</UnitFlagIconOffset>
+
 			<MoveRate>BOAT</MoveRate>
 			<ExtraMaintenanceCost>150</ExtraMaintenanceCost>
 		</Row>
