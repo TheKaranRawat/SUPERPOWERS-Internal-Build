@@ -3089,8 +3089,8 @@
 			<SpecialistCount>2</SpecialistCount>
 			<TradeRouteSeaDistanceModifier>50</TradeRouteSeaDistanceModifier>
 			<TradeRouteSeaGoldBonus>1000</TradeRouteSeaGoldBonus>
-			<TradeRouteRecipientBonus>30</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>30</TradeRouteTargetBonus>
+			<TradeRouteRecipientBonus>25</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>25</TradeRouteTargetBonus>
 			<Water>true</Water>
 			<MinAreaSize>20</MinAreaSize>
 			<ConquestProb>85</ConquestProb>

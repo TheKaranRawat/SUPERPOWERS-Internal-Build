@@ -305,12 +305,12 @@
 		</Update>
 
 		<Update>
-			<Set UnitMaintenanceGoldPercent="50" />
+			<Set UnitMaintenanceGoldPercent="40" />
 			<Where Type="RESOLUTION_STANDING_ARMY_TAX"/>
 		</Update>
 
 		<Update>
-			<Set MemberDiscoveredTechMod="30" />
+			<Set MemberDiscoveredTechMod="35" />
 			<Where Type="RESOLUTION_MEMBER_DISCOVERED_TECH_DISCOUNT"/>
 		</Update>
 
@@ -671,6 +671,25 @@
 			<Text>Begins the project to discover the Cure for Cancer. Once underway, Civilizations can contribute [ICON_PRODUCTION] Production towards its completion by selecting it in the city production list. When complete, Civilizations receive bonuses based on how much they contributed.[NEWLINE][NEWLINE][ICON_TROPHY_GOLD]: {TXT_KEY_LEAGUE_PROJECT_REWARD_CFC_3_HELP}[NEWLINE][ICON_TROPHY_SILVER]: {TXT_KEY_LEAGUE_PROJECT_REWARD_CFC_2_HELP}[NEWLINE][ICON_TROPHY_BRONZE]: {TXT_KEY_LEAGUE_PROJECT_REWARD_CFC_1_HELP}[NEWLINE][NEWLINE]Available once any Civilization discovers Genetic Engineering.</Text>
 		</Row>
 		
+		<Replace Tag="TXT_KEY_RESOLUTION_STANDING_ARMY_TAX_HELP">
+			<Text>Unit maintenance costs are raised by 40% [ICON_GOLD] Gold.</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_RESOLUTION_CULTURAL_HERITAGE_SITES_HELP">
+			<Text>Each World Wonder provides +4 [ICON_CULTURE] Culture to its city.</Text>
+		</Row>
+
+		<Replace Tag="TXT_KEY_RESOLUTION_NATURAL_HERITAGE_SITES_HELP">
+			<Text>Each Natural Wonder provides +8 [ICON_CULTURE] Culture when worked.</Text>
+		</Row>
+
+		<Replace Tag="TXT_KEY_RESOLUTION_MEMBER_DISCOVERED_TECH_DISCOUNT_HELP">
+			<Text>Civilizations research a technology 35% more quickly if it has been discovered by at least one other Civilization.</Text>
+		</Row>
+
+		<Replace Tag="TXT_KEY_RESOLUTION_WORLD_RELIGION_HELP">
+			<Text>Designate a religion as the official World Religion.  Civilizations who have a majority of the cities in their empire following the religion get an additional 2 Delegates.  The religion spreads 50% faster, and its Holy City receives +100% [ICON_TOURISM] Tourism.  There can only be one World Religion at a time.</Text>
+		</Row>
 		
 		
 	</Language_en_US>

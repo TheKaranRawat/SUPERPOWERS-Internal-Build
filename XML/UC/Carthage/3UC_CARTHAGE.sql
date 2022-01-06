@@ -30,7 +30,7 @@ FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_SEAPORT';
 ------------------------------
 INSERT INTO Building_DomainProductionModifiers 	
 			(BuildingType, DomainType, Modifier)
-VALUES ('BUILDING_3UC_COTHON', 'DOMAIN_SEA', 15);
+VALUES ('BUILDING_3UC_COTHON', 'DOMAIN_SEA', 25);
 
 ------------------------------	
 -- Building_ResourceQuantityRequirements
@@ -54,6 +54,6 @@ FROM Building_YieldModifiers WHERE BuildingType = 'BUILDING_SEAPORT';
 --------------------------------		
 INSERT INTO Civilization_BuildingClassOverrides 
 		(CivilizationType, 					BuildingClassType, 			BuildingType)
-VALUES	('CIVILIZATION_CARTHAGE',	'BUILDINGCLASS_HARBOR',	'BUILDING_3UC_COTHON');
+VALUES	('CIVILIZATION_CARTHAGE',	'BUILDINGCLASS_SEAPORT',	'BUILDING_3UC_COTHON');
 
 

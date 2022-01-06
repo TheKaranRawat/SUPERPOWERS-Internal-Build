@@ -284,7 +284,7 @@
 		<Row>
 			<BuildingType>BUILDING_CARTHAGINIAN_COTHON</BuildingType>
 			<DomainType>DOMAIN_SEA</DomainType>
-			<Modifier>15</Modifier>
+			<Modifier>25</Modifier>
 		</Row>
 
 		<Row>

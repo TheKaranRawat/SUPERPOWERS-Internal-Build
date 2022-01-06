@@ -891,10 +891,10 @@
 		<Row Tag="TXT_KEY_BUILDING_CARTHAGINIAN_COTHON_HELP">
 			<Text>
 				+1 [ICON_GOLD] Gold for every 4 [ICON_CITIZEN] Citizens in the city.
-				[NEWLINE][NEWLINE]+15% [ICON_PRODUCTION] Production when building Naval Units.
+				[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Production when building Naval Units.
 				[NEWLINE][NEWLINE]Forms a [ICON_CONNECTED] City Connection with the [ICON_CAPITAL] Capital over water.
-				[NEWLINE][NEWLINE]Sea International Trade Route from this city produces +40 [ICON_GOLD] Base Gold.				
-				[NEWLINE][NEWLINE]Sea International Trade Route +50% range.
+				[NEWLINE][NEWLINE]Sea International Trade Route from this city produces +25 [ICON_GOLD] Base Gold.				
+				[NEWLINE][NEWLINE]Sea International Trade Routes: +50% range.
 				[NEWLINE][NEWLINE]City must have a Lighthouse.
 			</Text>
 		</Row>
