@@ -94,7 +94,9 @@
 			<StealTechFasterModifier>100</StealTechFasterModifier>
 			<ThemingBonusMultiplier>800</ThemingBonusMultiplier>
 			<InternalTradeRouteYieldModifier>100</InternalTradeRouteYieldModifier>
+			<!--
 			<StrategicResourceMod>130</StrategicResourceMod>
+			-->
 		</Row>
 		<Row>
 			<Type>POLICY_AI_PLAYER_CITIES_20</Type>
@@ -112,7 +114,9 @@
 			<ThemingBonusMultiplier>400</ThemingBonusMultiplier>
 			<UnitGoldMaintenanceMod>-33</UnitGoldMaintenanceMod>
 			<InternalTradeRouteYieldModifier>100</InternalTradeRouteYieldModifier>
-			<StrategicResourceMod>120</StrategicResourceMod>
+			<!--
+			<StrategicResourceMod>100</StrategicResourceMod>
+			-->
 		</Row>
 		<Row>
 			<Type>POLICY_AI_PLAYER_CITIES_10</Type>
@@ -152,7 +156,7 @@
 			<Type>POLICY_AI_ATWAR_BONUS</Type>
 			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 			<CityGrowthMod>100</CityGrowthMod>
-			<StrategicResourceMod>200</StrategicResourceMod>
+			<StrategicResourceMod>130</StrategicResourceMod>
 			<MilitaryProductionModifier>300</MilitaryProductionModifier>
 			<BuildingProductionModifier>300</BuildingProductionModifier>
 		</Row>
@@ -187,29 +191,31 @@
 	</Policies>
 
 	<Policies>
-		<Update>
-			<Set StrategicResourceMod="300"/>
-			<Where Type="POLICY_AI_ATOMIC"/>
-		</Update>
+		
 
 		<Update>
-			<Set StrategicResourceMod="300"/>
-			<Where Type="POLICY_AI_INFORMATION"/>
-		</Update>
-
-		<Update>
-			<Set StrategicResourceMod="300"/>
+			<Set StrategicResourceMod="110"/>
 			<Where Type="POLICY_AI_INDUSTRY"/>
 		</Update>
 
 		<Update>
-			<Set StrategicResourceMod="300"/>
+			<Set StrategicResourceMod="120"/>
 			<Where Type="POLICY_AI_MODERN"/>
 		</Update>
 
 		<Update>
-			<Set StrategicResourceMod="300"/>
+			<Set StrategicResourceMod="130"/>
 			<Where Type="POLICY_AI_WORLDWAR"/>
+		</Update>
+
+		<Update>
+			<Set StrategicResourceMod="140"/>
+			<Where Type="POLICY_AI_ATOMIC"/>
+		</Update>
+
+		<Update>
+			<Set StrategicResourceMod="150"/>
+			<Where Type="POLICY_AI_INFORMATION"/>
 		</Update>
 
 
