@@ -1029,7 +1029,7 @@
 		</Row>
 		<Row>
 			<Type>BUILD_FW_INDUSTRIAL_COMPLEX</Type>
-			<PrereqTech>TECH_LASERS</PrereqTech>
+			<PrereqTech>TECH_URBANLIZATION</PrereqTech>
 			<Time>1000</Time>
 			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
 			<Description>TXT_KEY_BUILD_FW_INDUSTRIAL_COMPLEX</Description>
