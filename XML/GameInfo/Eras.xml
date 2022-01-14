@@ -40,7 +40,7 @@
 			<TradeRouteProductionBonusTimes100>100</TradeRouteProductionBonusTimes100>
 			<EventChancePerTurn>1</EventChancePerTurn>
 			<SpiesGrantedForPlayer>0</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
+			<SpiesGrantedForEveryone>1</SpiesGrantedForEveryone>
 			<FaithCostMultiplier>100</FaithCostMultiplier>
 			<DiploEmphasisReligion>15</DiploEmphasisReligion>
 			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
