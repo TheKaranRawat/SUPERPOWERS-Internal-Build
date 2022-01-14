@@ -257,18 +257,18 @@
 		</Update>
 
 		<Update>
-			<Set Value="4000"/>
+			<Set Value="8000"/>
 			<Where Name="MINOR_GOLD_GIFT_LARGE" />
 		</Update>
 
 		<Update>
-			<Set Value="2000"/>
+			<Set Value="4000"/>
 			<Where Name="MINOR_GOLD_GIFT_MEDIUM" />
 		</Update>
 
 		<Update>
-			<Set Value="1000"/>
-			<Where Name="MINOR_GOLD_GIFT_LARGE" />
+			<Set Value="2000"/>
+			<Where Name="MINOR_GOLD_GIFT_SMALL" />
 		</Update>
 
 		<Update>
@@ -410,7 +410,7 @@
 			<Where Name="MINOR_CIV_CONTACT_GOLD_OTHER" />
 		</Update>
 		<Update>
-			<Set Value="200"/>
+			<Set Value="400"/>
 			<Where Name="MINOR_CIV_GROWTH_PERCENT" />
 		</Update>
 		<Update>
