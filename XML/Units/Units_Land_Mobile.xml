@@ -138,6 +138,7 @@
 			<Class>UNITCLASS_EXPLORERX</Class>
 			<Type>UNIT_EXPLORERX</Type>
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
+			<ObsoleteTech>TECH_FLIGHT</ObsoleteTech>
 			<BaseSightRange>4</BaseSightRange>
 			<Combat>15</Combat>
 			<Cost>40</Cost>
