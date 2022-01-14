@@ -140,7 +140,7 @@
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
 			<BaseSightRange>4</BaseSightRange>
 			<Combat>15</Combat>
-			<Cost>-1</Cost>
+			<Cost>40</Cost>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Moves>4</Moves>
 			<CombatClass>UNITCOMBAT_RECON</CombatClass>
@@ -1933,6 +1933,12 @@
 			<UnitType>UNIT_SCOUT</UnitType>
 			<PromotionType>PROMOTION_RECON_UNIT</PromotionType>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_SCOUT</UnitType>
+			<PromotionType>PROMOTION_RIVAL_TERRITORY</PromotionType>
+		</Row>
+
 		<Row>
 			<UnitType>UNIT_SHOSHONE_PATHFINDER</UnitType>
 			<PromotionType>PROMOTION_RECON_UNIT</PromotionType>
@@ -1941,6 +1947,12 @@
 			<UnitType>UNIT_SHOSHONE_PATHFINDER</UnitType>
 			<PromotionType>PROMOTION_GOODY_HUT_PICKER</PromotionType>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_SHOSHONE_PATHFINDER</UnitType>
+			<PromotionType>PROMOTION_RIVAL_TERRITORY</PromotionType>
+		</Row>
+
 		<Row>
 			<UnitType>UNIT_INCAN_CHASQUI</UnitType>
 			<PromotionType>PROMOTION_RECON_UNIT</PromotionType>
@@ -1949,10 +1961,13 @@
 			<UnitType>UNIT_INCAN_CHASQUI</UnitType>
 			<PromotionType>PROMOTION_CAN_CROSS_MOUNTAINS</PromotionType>
 		</Row>
+
 		<Row>
 			<UnitType>UNIT_INCAN_CHASQUI</UnitType>
 			<PromotionType>PROMOTION_RIVAL_TERRITORY</PromotionType>
 		</Row>
+
+		
 		
 
 		<Row>
