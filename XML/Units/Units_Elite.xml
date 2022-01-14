@@ -238,7 +238,7 @@
 			<Type>UNIT_ZHENGHE_FLEET</Type>
 			<PrereqTech>TECH_ADMINISTRATION</PrereqTech>
 			<BaseSightRange>3</BaseSightRange>
-			<Combat>190</Combat>
+			<Combat>170</Combat>
 			<RangedCombat>150</RangedCombat>
 			<Cost>700</Cost>
 			<Moves>7</Moves>
