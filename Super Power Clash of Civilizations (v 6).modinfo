@@ -986,6 +986,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="7E6971A48B2C6A90CD315CCCE54260AD" import="1">UI/Override/CityView.lua</File>
     <File md5="79C3C0A381E356EE950C7AABDD379DF0" import="1">UI/Override/CityView.xml</File>
     <File md5="390263F7BAC75E11F0540CE317A14272" import="1">UI/Override/CityView_small.xml</File>
+	<File md5="9B63428693EA7EC15AE481B726D8CD5C" import="1">UI/Override/DiploTrade.xml</File>
+	<File md5="8C5836FF4A0A8E4BABECC55AE1643ADB" import="1">UI/Override/SimpleDiploTrade.xml</File>
+	<File md5="838AB04B5079036035634B243BF775B7" import="1">UI/Override/TradeLogic.lua</File>
+	
     <File md5="0588C66A0520F9CFD2C4FE1738FDA5C0" import="1">UI/Override/Civilopedia/Art/48x48FrameButtons.dds</File>
     <File md5="93429FB8AA472B59FB35BB6172390CB1" import="1">UI/Override/Civilopedia/Art/48x48FrameButtonsBackground.dds</File>
     <File md5="70703CA352A989D49B1343B21B64D550" import="1">UI/Override/Civilopedia/Override/CivilopediaScreen.lua</File>
