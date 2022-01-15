@@ -193,6 +193,7 @@
 			<Cost>28</Cost>
 			<Description>TXT_KEY_TECH_THE_WHEEL_TITLE</Description>
 			<Civilopedia>TXT_KEY_TECH_THE_WHEEL_DESC</Civilopedia>
+			<OpenBordersTradingAllowed>true</OpenBordersTradingAllowed>
 			<Help>TXT_KEY_SP_TECH_GENERAL_HELP</Help>
 			<Era>ERA_ANCIENT</Era>
 			<Trade>true</Trade>
@@ -446,7 +447,7 @@
 			<Civilopedia>TXT_KEY_TECH_CIVIL_SERVICE_DESC</Civilopedia>
 			<Help>TXT_KEY_SP_TECH_WORKERSPEED_HELP</Help>
 			<Era>ERA_MEDIEVAL</Era>
-			<OpenBordersTradingAllowed>true</OpenBordersTradingAllowed>
+			
 			<WorkerSpeedModifier>25</WorkerSpeedModifier>
 			<Trade>true</Trade>
 			<GridX>5</GridX>
