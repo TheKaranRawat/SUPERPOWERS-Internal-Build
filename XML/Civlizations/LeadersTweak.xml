@@ -239,6 +239,8 @@
 			<Where LeaderType="LEADER_RAMESSES" FlavorType="FLAVOR_WONDER"/>
 		</Update>
 
+		
+
 
 		<!-- 
 		<Update>
@@ -255,6 +257,16 @@
 		<Update>
 			<Set Flavor="2"/>
 			<Where FlavorType="FLAVOR_USE_NUKE"/>
+		</Update>
+
+		<Update>
+			<Set Flavor="12"/>
+			<Where LeaderType="LEADER_GANDHI" FlavorType="FLAVOR_NUKE"/>
+		</Update>
+
+		<Update>
+			<Set Flavor="12"/>
+			<Where LeaderType="LEADER_GANDHI" FlavorType="FLAVOR_USE_NUKE"/>
 		</Update>
 		
 		
