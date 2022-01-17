@@ -1339,7 +1339,7 @@ function MinorNoCombatUnits(iPlayer, iCity, iUnit, bGold, bFaith)
 			unit:Kill()	
 			print ("Minor Civ removed too many workers!")
 		end
-		if unit:IsCombatUnit() and player:GetNumMilitaryUnits()> 6 then			
+		if unit:IsCombatUnit() and player:GetNumMilitaryUnits()> 3 then			
 			unit:Kill()	
 			print ("Minor Civ removed too many military units!")
 		end	
