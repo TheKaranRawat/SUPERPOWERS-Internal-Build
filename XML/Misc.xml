@@ -97,10 +97,33 @@
 			<Set NumCitiesTechCostMod="2"/>
 			<Where Type="WORLDSIZE_HUGE"/>
 		</Update>
+
+		<Update>
+			<Set MaxActiveReligions="2"/>
+			<Where Type="WORLDSIZE_DUEL"/>
+		</Update>
+		<Update>
+			<Set MaxActiveReligions="4"/>
+			<Where Type="WORLDSIZE_TINY"/>
+		</Update>
+		<Update>
+			<Set MaxActiveReligions="5"/>
+			<Where Type="WORLDSIZE_SMALL"/>
+		</Update>
+		<Update>
+			<Set MaxActiveReligions="7"/>
+			<Where Type="WORLDSIZE_STANDARD"/>
+		</Update>
+		<Update>
+			<Set MaxActiveReligions="8"/>
+			<Where Type="WORLDSIZE_LARGE"/>
+		</Update>
+
 		<Update>
 			<Set MaxActiveReligions="8"/>
 			<Where Type="WORLDSIZE_HUGE"/>
 		</Update>
+
 		<Update>
 			<Set EstimatedNumCities="110"/>
 			<Where Type="WORLDSIZE_HUGE"/>
@@ -109,6 +132,10 @@
 			<Set ResearchPercent="150"/>
 			<Where Type="WORLDSIZE_HUGE"/>
 		</Update>
+
+		
+
+
 	</Worlds>
 
 
