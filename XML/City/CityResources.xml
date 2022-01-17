@@ -1109,7 +1109,7 @@
 		<Row>
 			<BuildingType>BUILDING_TRADITION_MANPOWER</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>2</Quantity>
+			<Quantity>4</Quantity>
 		</Row>
 	</Building_ResourceQuantity>
 

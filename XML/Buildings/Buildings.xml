@@ -3389,8 +3389,8 @@
 			<Description>TXT_KEY_BUILDING_TCS_TOWN_COUNCIL</Description>
 			<Help>TXT_KEY_BUILDING_TCS_TOWN_COUNCIL_HELP</Help>
 			<MinAreaSize>-1</MinAreaSize>
-			<PlotCultureCostModifier>-10</PlotCultureCostModifier>
-			<PlotBuyCostModifier>-10</PlotBuyCostModifier>
+			<PlotCultureCostModifier>-20</PlotCultureCostModifier>
+			<PlotBuyCostModifier>-20</PlotBuyCostModifier>
 			<Happiness>1</Happiness>
 			<NukeImmune>true</NukeImmune>
 			<NeverCapture>true</NeverCapture>

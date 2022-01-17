@@ -3045,7 +3045,7 @@
 			<Text>+1 [ICON_FOOD] Food. +10% [ICON_FOOD] Food. +1 [ICON_CULTURE] Culture for every 4 Citizens.[NEWLINE][NEWLINE]Requires Tradition.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TCS_TOWN_COUNCIL_HELP">
-			<Text>+1 [ICON_CULTURE] Culture and [ICON_PRODUCTION] Production. -10% Gold and Culture cost of acquiring new tiles.[NEWLINE][NEWLINE]Requires Liberty.</Text>
+			<Text>+4 [ICON_CULTURE] Culture and [ICON_PRODUCTION] Production. -20% Gold and Culture cost of acquiring new tiles.[NEWLINE][NEWLINE]Requires Liberty.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TCS_STRONGHOLD_HELP">
 			<Text>+15 XP for Land Units. +1 [ICON_PRODUCTION] Production from Iron.[NEWLINE][NEWLINE]Requires Honor.</Text>

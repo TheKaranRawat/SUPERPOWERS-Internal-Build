@@ -31,31 +31,35 @@
 		<Replace Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Landed Elite[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food for every Farm and Fishing Net.</Text>
+				[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food for every Farm and Fishing Net.				
+				[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Food growth in every city.
+				[NEWLINE][ICON_BULLET]+25% bonus [ICON_FOOD] Food growth in the Capital.
+				</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_LEGALISM_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Legalism[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Hapiness for every 5 [ICON_CITIZEN] Citizens in all cities.
+				[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Hapiness for every 3 [ICON_CITIZEN] Citizens in all cities.
+				[NEWLINE][ICON_BULLET]-50% [ICON_HAPPINESS_4] Unhappiness in the Capital.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_OLIGARCHY_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Oligarchy[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Gain additional [ICON_PRODUCTION] Production in cities reached certain Population Size:
-				[NEWLINE][ICON_BULLET]Small City: +4 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]Medium City: +8 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]Large City: +12 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]XL City: +16 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]XXL City: +20 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]Global City: +24 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]Small City: +8 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]Medium City: +16 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]Large City: +32 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]XL City: +64 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]XXL City: +100 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]Global City: +140 [ICON_PRODUCTION] Production.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_MONARCHY_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Monarchy[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]-50% extra [ICON_HAPPINESS_4] Unhappiness due to city's Population Size.
-				[NEWLINE][ICON_BULLET]+15% [ICON_RES_MANPOWER] Manpower provided by cities Population Size.
+				[NEWLINE][ICON_BULLET]+30% [ICON_RES_MANPOWER] Manpower provided by cities Population Size.
 			</Text>
 		</Replace>
 
@@ -72,12 +76,12 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Prefeture[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Gain additional [ICON_CULTURE] Culture in cities reached certain Population Size:
-				[NEWLINE][ICON_BULLET]Small City: +4 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]Medium City: +8 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]Large City: +12 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]XL City: +16 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]XXL City: +20 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]Global City: +24 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]Small City: +8 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]Medium City: +16 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]Large City: +32 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]XL City: +64 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]XXL City: +100 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]Global City: +140 [ICON_CULTURE] Culture.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PREFECTURE_TEXT">
@@ -94,7 +98,7 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Imperial Examination[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science for every 5 [ICON_CITIZEN] Citizens in the city. 
-				[NEWLINE][ICON_BULLET]Add a Scientist Slot for every city.
+				[NEWLINE][ICON_BULLET]Add 2 [RESEARCH] Scientist Slots in every city.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_FAMILY_REGISTER_TEXT">
@@ -125,13 +129,14 @@
 				[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for "wide" empires.
 
 				[NEWLINE][NEWLINE]Opening Effect:
-				[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] Culture and +1 [ICON_RESEARCH] Science for every city.
+				[NEWLINE][ICON_BULLET]+4 [ICON_CULTURE] Culture and +4 [ICON_RESEARCH] Science for every city.
 				[NEWLINE][ICON_BULLET]+25% Tile Improvement construction rate.
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: The Pyramids.
 				[NEWLINE][ICON_BULLET]Building Unlocked: Town Council.
 				[NEWLINE][NEWLINE]Finishing Bonus:
-				[NEWLINE][ICON_BULLET]One free Great Person
-				[NEWLINE][ICON_BULLET]starts a Golden Age.
+				[NEWLINE][ICON_BULLET]One free settler.
+				[NEWLINE][ICON_BULLET]Two free Great Persons.
+				[NEWLINE][ICON_BULLET]Starts a Golden Age.
 				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Tradition.[ENDCOLOR]
 			</Text>
 		</Replace>
@@ -141,21 +146,23 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+25% [ICON_PRODUCTION] Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR].
+				[NEWLINE][ICON_BULLET]+25% [ICON_PRODUCTION] Bonus Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] in the Capital..
 				[NEWLINE][ICON_BULLET]One free Settler appears near the [ICON_CAPITAL] Capital.(Venice receives a Merchant of Venice instead of a Settler.)</Text>
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_POLICY_REPUBLIC_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Republic[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+2 [ICON_FOOD] Food for every city.
-				[NEWLINE][ICON_BULLET]+4 [ICON_GOLD] Gold for every city.
+				[NEWLINE][ICON_BULLET]+15 [ICON_FOOD] Food for every city.
+				[NEWLINE][ICON_BULLET]+10 [ICON_GOLD] Gold for every city.
+				[NEWLINE][ICON_BULLET]+6 [ICON_HAPPINESS_1] Happiness for every operational [ICON_INTERNATIONAL_TRADE] trade route.
 			</Text>
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_POLICY_CITIZENSHIP_HELP">
 			<Text>
 				[COLOR_POSITIVE_TEXT]Citizenship[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]One Worker appears near the [ICON_CAPITAL] Capital.
+				[NEWLINE][ICON_BULLET]Five Workers appears near the [ICON_CAPITAL] Capital.
 				[NEWLINE][ICON_BULLET]When you found a [COLOR_POSITIVE_TEXT]New City[ENDCOLOR], one Worker will appear outside the city.</Text>
 		</Replace>
 		
@@ -163,8 +170,8 @@
 		<Replace Tag="TXT_KEY_POLICY_MERITOCRACY_HELP">
 			<Text>
 				[COLOR_POSITIVE_TEXT]Meritocracy[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production for every City.
-				[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production in cities when constructing Buildings.
+				[NEWLINE][ICON_BULLET]+10 [ICON_PRODUCTION] Production for every City.
+				[NEWLINE][ICON_BULLET]+15% [ICON_PRODUCTION] Production in cities when constructing Buildings.
 			</Text>
 		</Replace>
 
@@ -174,8 +181,8 @@
 		<Row Tag="TXT_KEY_POLICY_BILL_OF_RIGHTS_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Bill of Rights[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science for each Library, Academy, University, Observatory, Public School and Laboratory.
-				[NEWLINE][ICON_BULLET]+1 [ICON_CULTURE] Culture for each Monument, Amphitheater, Art Gallery, Opera House, Museum and Brocast Tower.</Text>
+				[NEWLINE][ICON_BULLET]+4 [ICON_RESEARCH] Science for each Library, Academy, University, Observatory, Public School and Laboratory.
+				[NEWLINE][ICON_BULLET]+4 [ICON_CULTURE] Culture for each Monument, Amphitheater, Art Gallery, Opera House, Museum and Brocast Tower.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_BILL_OF_RIGHTS_TEXT">
 			<Text>
@@ -189,7 +196,7 @@
 		<Row Tag="TXT_KEY_POLICY_PROVINCE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Province[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness for each City you own connected to the [ICON_CAPITAL] Capital.
+				[NEWLINE][ICON_BULLET]+6 [ICON_HAPPINESS_1] Happiness for each City you own connected to the [ICON_CAPITAL] Capital.
 				[NEWLINE][ICON_BULLET]-50% extra [ICON_HAPPINESS_4] Unhappiness in Lv1-5 Cities.
 			</Text>
 		</Row>
@@ -205,8 +212,8 @@
 		<Row Tag="TXT_KEY_POLICY_DECENTRALIZATION_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Decentralization[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]Each City with at least 1 Garrisoned Unit increases Local [ICON_HAPPINESS_1] Happiness by 1.
-				[NEWLINE][ICON_BULLET]Each Garrisoned Unit will increase the local city's [ICON_CULTURE] Culture by 2. Can be up to +4 [ICON_CULTURE] Culture if you have 2 Garrisoned Unit in a city.</Text>
+				[NEWLINE][ICON_BULLET]Each City with at least 1 Garrisoned Unit increases Local [ICON_HAPPINESS_1] Happiness by 4.
+				[NEWLINE][ICON_BULLET]Each Garrisoned Unit will increase the local city's [ICON_CULTURE] Culture by 6. Can be up to +12 [ICON_CULTURE] Culture if you have 2 Garrisoned Unit in a city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_DECENTRALIZATION_TEXT">
 			<Text>

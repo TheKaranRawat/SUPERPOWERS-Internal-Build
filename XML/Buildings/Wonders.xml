@@ -1998,7 +1998,7 @@
 			<ArtDefineTag>THE PYRAMIDS</ArtDefineTag>
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
 			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
 			<WorkerSpeedModifier>25</WorkerSpeedModifier>
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>

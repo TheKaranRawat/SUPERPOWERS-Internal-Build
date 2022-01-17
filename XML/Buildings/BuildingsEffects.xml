@@ -1950,7 +1950,7 @@
 		<Row>
 			<BuildingType>BUILDING_PYRAMID</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_COLOSSUS</BuildingType>
@@ -2761,12 +2761,12 @@
 		<Row>
 			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_TCS_PAROCHIAL_SCHOOL</BuildingType>
@@ -3622,6 +3622,12 @@
 	
 	<!--*********************Building Yields Modifiers********************-->
 	<Building_YieldModifiers>
+
+		<Row>
+			<BuildingType>BUILDING_PYRAMID</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>15</Yield>
+		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_WILLIS</BuildingType>

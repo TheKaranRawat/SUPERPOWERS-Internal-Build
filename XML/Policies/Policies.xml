@@ -3,6 +3,7 @@
 <GameData>	
 	
 	<!--WTF I have a problem that if I delete or even replace anything below <policies/> it will cause the policy icons disappearing?!!-->
+	<!-- I will try to fix it lincoln - karan -->
 	
 	
 	<!-- **********************Policies Change*************************** -->
@@ -18,7 +19,7 @@
 			<Where Type="POLICY_ARISTOCRACY"/>
 		</Update>
 		<Update>
-			<Set NumCitiesFreeCultureBuilding="0" HappinessPerXPopulation="5" OneShot="false" GridX="3" GridY="1"/>
+			<Set NumCitiesFreeCultureBuilding="0" HappinessPerXPopulation="3" CapitalUnhappinessMod="-50" OneShot="false" GridX="3" GridY="1"/>
 			<Where Type="POLICY_LEGALISM"/>
 		</Update>
 		<Update>
@@ -26,7 +27,7 @@
 			<Where Type="POLICY_OLIGARCHY"/>
 		</Update>
 		<Update>
-			<Set CapitalGrowthMod="0" CityGrowthMod="0" GridX="5" GridY="1"/>
+			<Set CapitalGrowthMod="25" CityGrowthMod="10" GridX="5" GridY="1"/>
 			<Where Type="POLICY_LANDED_ELITE"/>
 		</Update>
 		<Update>
@@ -95,7 +96,7 @@
 			<Where Type="POLICY_COLLECTIVE_RULE"/>
 		</Update>
 		<Update>
-			<Set BuildingProductionModifier="0" GridX="3" GridY="2" PortraitIndex="29"/>
+			<Set HappinessPerTradeRoute="6" BuildingProductionModifier="0" GridX="3" GridY="2" PortraitIndex="29"/>
 			<Where Type="POLICY_REPUBLIC"/>
 		</Update>
 		<Update>
@@ -103,7 +104,7 @@
 			<Where Type="POLICY_REPRESENTATION"/>
 		</Update>
 		<Update>
-			<Set UnhappinessMod="-10" HappinessPerTradeRoute="4" BuildingProductionModifier="15" GridX="5" GridY="1"  PortraitIndex="27"/>
+			<Set BuildingProductionModifier="15" GridX="5" GridY="1"  PortraitIndex="27"/>
 			<Where Type="POLICY_MERITOCRACY"/>
 		</Update>
 		<Update>
@@ -149,7 +150,7 @@
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>2</GridY>
-			<HappinessPerTradeRoute>100</HappinessPerTradeRoute>
+			<HappinessPerTradeRoute>600</HappinessPerTradeRoute>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -163,8 +164,8 @@
 			<CultureCost>10</CultureCost>
 			<GridX>2</GridX>
 			<GridY>3</GridY>
-			<HappinessPerGarrisonedUnit>2</HappinessPerGarrisonedUnit>
-			<CulturePerGarrisonedUnit>2</CulturePerGarrisonedUnit>
+			<HappinessPerGarrisonedUnit>4</HappinessPerGarrisonedUnit>
+			<CulturePerGarrisonedUnit>6</CulturePerGarrisonedUnit>
 			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
