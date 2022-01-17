@@ -21,6 +21,12 @@
 			<!--<MaxPlayerInstances>45</MaxPlayerInstances>-->
 		</Row>
 
+		<Row>
+			<Type>UNITCLASS_WORKBOAT</Type>
+			<Description>TXT_KEY_UNIT_WORK_BOAT</Description>
+			<DefaultUnit>UNIT_WORKBOAT</DefaultUnit>
+		</Row>
+
 
 		<Row>
 			<Type>UNITCLASS_PROPHET</Type>

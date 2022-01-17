@@ -56,6 +56,35 @@
 			<PortraitIndex>1</PortraitIndex>
 			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
 		</Row>
+
+		<Row>
+			<Class>UNITCLASS_WORKBOAT</Class>
+			<Type>UNIT_WORKBOAT</Type>
+			<PrereqTech>TECH_SAILING</PrereqTech>
+			<Cost>50</Cost>
+			<Moves>4</Moves>
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
+			<Domain>DOMAIN_SEA</Domain>
+			<DefaultUnitAI>UNITAI_WORKER_SEA</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_WORK_BOAT</Description>
+			<Civilopedia>TXT_KEY_CIV5_ANTIQUITY_WORKBOAT_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_WORK_BOAT_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_HELP_WORKBOAT</Help>
+			
+			
+			
+			<AdvancedStartCost>10</AdvancedStartCost>
+			<WorkRate>250</WorkRate>
+			<CombatLimit>0</CombatLimit>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
+			<UnitArtInfo>ART_DEF_UNIT_WORKBOAT</UnitArtInfo>
+			<UnitFlagIconOffset>2</UnitFlagIconOffset>
+			<PortraitIndex>2</PortraitIndex>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<MoveRate>WOODEN_BOAT</MoveRate>
+		</Row>
+
 		<Row>
 			<Class>UNITCLASS_WORKER</Class>
 			<Type>UNIT_BRAZILIAN_LABOR</Type>

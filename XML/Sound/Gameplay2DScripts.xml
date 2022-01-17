@@ -9,7 +9,11 @@
 	<UnitGameplay2DScripts>
 
 		<Delete UnitType="UNIT_BARBARIAN_HORSEMAN"/>
+
+		<!--
 		<Delete UnitType="UNIT_WORKBOAT"/>
+		-->
+		
 		<Delete UnitType="UNIT_PRIVATEER"/>
 		<Delete UnitType="UNIT_GALLEY"/>
 		<Delete UnitType="UNIT_MOBILE_SAM"/>

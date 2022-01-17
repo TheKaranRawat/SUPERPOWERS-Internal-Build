@@ -2058,6 +2058,13 @@
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 		</Row>
 
+		<Row>
+			<PromotionType>PROMOTION_WORKER_EMBARKABLE_TECH</PromotionType>
+			<UnitType>UNIT_WORKBOAT</UnitType>
+		</Row>
+
+
+
 		
 
 		<Row>

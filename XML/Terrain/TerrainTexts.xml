@@ -269,7 +269,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILD_FISHERY_MOD">
-			<Text>Create a [LINK=IMPROVEMENT_FISHERY_MOD]Fish Resurce[\LINK]</Text>
+			<Text>Create a [LINK=IMPROVEMENT_FISHERY_MOD]Fishing Net[\LINK]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILD_FISHERY_MOD_HELP">
 			<Text>
