@@ -2359,7 +2359,9 @@
 			<PrereqTech>TECH_ART_THEORY</PrereqTech>
 			<MaxStartEra>ERA_RENAISSANCE</MaxStartEra>
 			<NearbyTerrainRequired>TERRAIN_TUNDRA</NearbyTerrainRequired>
+			<!--
 			<NearbyMountainRequired>true</NearbyMountainRequired>
+			-->
 			<NukeImmune>true</NukeImmune>
 			<GreatWorkSlotType>GREAT_WORK_SLOT_ART_ARTIFACT</GreatWorkSlotType>
 			<GreatWorkCount>2</GreatWorkCount>
