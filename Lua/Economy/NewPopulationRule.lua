@@ -160,7 +160,7 @@ function UnitDeathCounter(
 					g_UnitDeathSum = g_UnitDeathSum + 0.33
 				else
 					print("Player has the Policy to reduce the population loss rate!")
-					g_UnitDeathSum = g_UnitDeathSum + 0.67
+					g_UnitDeathSum = g_UnitDeathSum + 0.50
 				end		
 					
 			else 

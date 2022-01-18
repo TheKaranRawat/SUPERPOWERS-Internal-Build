@@ -11,16 +11,18 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Tradition[ENDCOLOR] is best for "tall" empires.
 				[NEWLINE][NEWLINE]Opening Effect:
-				[NEWLINE][ICON_BULLET]+3 [ICON_CULTURE] and +3 [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital.
-				[NEWLINE][ICON_BULLET]-25% [ICON_CULTURE] Culture Exponent cost for acquiring new plots in all cities.
+				[NEWLINE][ICON_BULLET]+8 [ICON_CULTURE] and +8 [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital.
+				[NEWLINE][ICON_BULLET]-50% [ICON_CULTURE] Culture Exponent cost for acquiring new plots in all cities.
+				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Amount of [ICON_HAPPINESS_4] Unhappiness from number of cities increased by 50%.[ENDCOLOR]
+				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE]policies increased by 15% for every city.[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: Hanging Gardens.
 				[NEWLINE][ICON_BULLET]Building Unlocked: Public Baths.
 				[NEWLINE][NEWLINE]Finishing Bonus:
 				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold output in all cities.
 				[NEWLINE][ICON_BULLET]Allows the purchase of Great Engineers with [ICON_PEACE] Faith starting in the Industrial Era. [NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch CANNOT be active at the same time as Liberty.[ENDCOLOR]</Text>
+				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Liberty.[ENDCOLOR]
 		</Replace>
-		
-		
+			
 		<Replace Tag="TXT_KEY_POLICY_ARISTOCRACY_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Aristocracy[ENDCOLOR]
@@ -39,7 +41,7 @@
 		<Replace Tag="TXT_KEY_POLICY_LEGALISM_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Legalism[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Hapiness for every 3 [ICON_CITIZEN] Citizens in all cities.
+				[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness for every 3 [ICON_CITIZEN] Citizens in all cities.
 				[NEWLINE][ICON_BULLET]-50% [ICON_HAPPINESS_4] Unhappiness in the Capital.
 			</Text>
 		</Replace>
@@ -97,7 +99,7 @@
 		<Row Tag="TXT_KEY_POLICY_FAMILY_REGISTER_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Imperial Examination[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science for every 5 [ICON_CITIZEN] Citizens in the city. 
+				[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science for every [ICON_CITIZEN] Citizens in a city. 
 				[NEWLINE][ICON_BULLET]Add 2 [RESEARCH] Scientist Slots in every city.
 			</Text>
 		</Row>
@@ -113,7 +115,9 @@
 		<Row Tag="TXT_KEY_POLICY_CENTRALISATION_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Centralisation[ENDCOLOR][NEWLINE][ICON_BULLET]New Units receive +15 XP.
-				[NEWLINE][ICON_BULLET]The [ICON_CITIZEN] Population Loss caused by Unit Casualties reduced by 33%.</Text>
+				[NEWLINE][ICON_BULLET]The [ICON_CITIZEN] Population Loss caused by Unit Casualties reduced by 50%.
+				[NEWLINE][ICON_BULLET]+1 yield from [ICON_CITIZEN] Specialists.
+				</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_CENTRALISATION_TEXT">
 			<Text>
@@ -131,11 +135,12 @@
 				[NEWLINE][NEWLINE]Opening Effect:
 				[NEWLINE][ICON_BULLET]+4 [ICON_CULTURE] Culture and +4 [ICON_RESEARCH] Science for every city.
 				[NEWLINE][ICON_BULLET]+25% Tile Improvement construction rate.
+				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]City [ICON_FOOD] growth rate reduced by 15%.[ENDCOLOR]	
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: The Pyramids.
 				[NEWLINE][ICON_BULLET]Building Unlocked: Town Council.
 				[NEWLINE][NEWLINE]Finishing Bonus:
 				[NEWLINE][ICON_BULLET]One free settler.
-				[NEWLINE][ICON_BULLET]Two free Great Persons.
+				[NEWLINE][ICON_BULLET]One free Great Person.
 				[NEWLINE][ICON_BULLET]Starts a Golden Age.
 				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Tradition.[ENDCOLOR]
 			</Text>
@@ -155,7 +160,7 @@
 				[COLOR_POSITIVE_TEXT]Republic[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+15 [ICON_FOOD] Food for every city.
 				[NEWLINE][ICON_BULLET]+10 [ICON_GOLD] Gold for every city.
-				[NEWLINE][ICON_BULLET]+6 [ICON_HAPPINESS_1] Happiness for every operational [ICON_INTERNATIONAL_TRADE] trade route.
+				[NEWLINE][ICON_BULLET]-50% [ICON_HAPPINESS_4] unhappiness from Specialists.
 			</Text>
 		</Replace>
 		
@@ -171,7 +176,7 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Meritocracy[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+10 [ICON_PRODUCTION] Production for every City.
-				[NEWLINE][ICON_BULLET]+15% [ICON_PRODUCTION] Production in cities when constructing Buildings.
+				[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production in cities when constructing Buildings.
 			</Text>
 		</Replace>
 
@@ -196,8 +201,8 @@
 		<Row Tag="TXT_KEY_POLICY_PROVINCE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Province[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+6 [ICON_HAPPINESS_1] Happiness for each City you own connected to the [ICON_CAPITAL] Capital.
-				[NEWLINE][ICON_BULLET]-50% extra [ICON_HAPPINESS_4] Unhappiness in Lv1-5 Cities.
+				[NEWLINE][ICON_BULLET]+4 [ICON_HAPPINESS_1] Happiness for each City you own connected to the [ICON_CAPITAL] Capital.
+				[NEWLINE][ICON_BULLET]-50% extra [ICON_HAPPINESS_4] Unhappiness due to city size in Lv1-5 Cities.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PROVINCE_TEXT">
@@ -212,8 +217,8 @@
 		<Row Tag="TXT_KEY_POLICY_DECENTRALIZATION_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Decentralization[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]Each City with at least 1 Garrisoned Unit increases Local [ICON_HAPPINESS_1] Happiness by 4.
-				[NEWLINE][ICON_BULLET]Each Garrisoned Unit will increase the local city's [ICON_CULTURE] Culture by 6. Can be up to +12 [ICON_CULTURE] Culture if you have 2 Garrisoned Unit in a city.</Text>
+				[NEWLINE][ICON_BULLET]Each City with at least 1 Garrisoned Unit increases Local [ICON_HAPPINESS_1] Happiness by 2.
+				[NEWLINE][ICON_BULLET]Each Garrisoned Unit will increase the local city's [ICON_CULTURE] Culture by 4. Can be up to +8 [ICON_CULTURE] Culture if you have 2 Garrisoned Unit in a city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_DECENTRALIZATION_TEXT">
 			<Text>
@@ -722,7 +727,7 @@
 		<Replace Tag="TXT_KEY_POLICY_SECULARISM_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Secularism[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science from every Specialist.
+				[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] Science from every Specialist.
 				[NEWLINE][ICON_BULLET]-50% [ICON_GOLD] Base Maintenance Cost for every Academy, University, Observatory, Laboratory and Polar Station.
 			</Text>
 		</Replace>

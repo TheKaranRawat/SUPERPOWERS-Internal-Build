@@ -42,12 +42,12 @@
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>3</Yield>
+			<Yield>8</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>3</Yield>
+			<Yield>8</Yield>
 		</Row>
 	</Policy_CapitalYieldChanges>
 
@@ -87,8 +87,36 @@
 		<Row>
 			<PolicyType>POLICY_SECULARISM</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_CENTRALISATION</PolicyType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
+
+		<Row>
+			<PolicyType>POLICY_CENTRALISATION</PolicyType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_CENTRALISATION</PolicyType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_CENTRALISATION</PolicyType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+		
+
+
 	</Policy_SpecialistExtraYields>
 
 
@@ -2544,7 +2572,7 @@
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>20</Yield>
+			<Yield>100</Yield>
 		</Row>
 
 		<Row>

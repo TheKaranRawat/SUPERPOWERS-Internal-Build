@@ -5346,7 +5346,7 @@
 			<BuildingType>BUILDING_POTALA</BuildingType>
 			<TerrainType>TERRAIN_TUNDRA</TerrainType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_BIOFACTORY</BuildingType>
