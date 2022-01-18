@@ -3106,7 +3106,42 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="C0995CEA38E514D8E571BE6640CDA9C5" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/XuankongSi_Splash.dds</File>
     
 	<File md5="D2C4C8500CF5B8B183E5F5D4DA605AA9" import="0">XML/Buildings/WonderTexts.xml</File>
-   
+	
+	<File md5="6D4DFCD91B6C6E3D4EF779231EA95391" import="0">DLL/Global - City State Airbases (v 4)/LUA/CityStateAirbases.lua</File>
+    <File md5="1FB64FC150537B7ACB4001583B1AB088" import="0">DLL/Global - City State Airbases (v 4)/XML/GlobalCityStateAirbases.xml</File>	
+	<File md5="0F25A350FEDA3D78C82BF09515825175" import="1">DLL/UI - City Happiness (v 17)/ART/EUI_DC45_CityHappiness.dds</File>
+    <File md5="69A9C2BBB20C4DFE8279132D07E086FF" import="0">DLL/UI - City Happiness (v 17)/UI/CityHappiness.lua</File>
+    <File md5="FC87DE6EEBCBB6B964FC020AAA3EC1CC" import="0">DLL/UI - City Happiness (v 17)/UI/CityHappiness.xml</File>
+    <File md5="6D7C291204446A9ECDF10C0E59E3631A" import="0">DLL/UI - City Happiness (v 17)/XML/UICityHappiness.xml</File>
+	<File md5="C266D539285757255F2CB06B1648ABDF" import="1">DLL/UI - City Production (v 15)/ART/EUI_DC45_CityProduction.dds</File>
+    <File md5="FCEE6A1C3AC9496D38A2B6148CEAA9B2" import="0">DLL/UI - City Production (v 15)/UI/CityProduction.lua</File>
+    <File md5="73A63A036D6211B6D15C2847CCFEEF10" import="0">DLL/UI - City Production (v 15)/UI/CityProduction.xml</File>
+    <File md5="6E5BF46D968A4FF933C5292EEAF13654" import="0">DLL/UI - City Production (v 15)/XML/UICityProduction.xml</File>
+    <File md5="7654240FA6F28047B90830A3E82AB0EA" import="0">DLL/UI - City Production (v 15)/XML/UICityProductionDLL.xml</File>
+	<File md5="65FDC66BF1FD4227E1883D73383231D9" import="1">DLL/UI - Notify Exit Resistance (v 1)/ART/resistance.dds</File>
+    <File md5="BC4A29EC212DAB9101D8B71253F39351" import="0">DLL/UI - Notify Exit Resistance (v 1)/LUA/UINotifyExitResistance.lua</File>
+    <File md5="F1612B3C7F17528855A8E6662510E431" import="1">DLL/UI - Notify Exit Resistance (v 1)/UI/ResistanceNotification.lua</File>
+    <File md5="EE7D69F53607BA79C0E44D0F57E2D193" import="1">DLL/UI - Notify Exit Resistance (v 1)/UI/ResistanceNotification.xml</File>
+    <File md5="6708779E369CFA92CE432F3A6C51B920" import="0">DLL/UI - Notify Exit Resistance (v 1)/XML/UINotifyExitResistance.xml</File>
+	<File md5="56F88AC5073E41A526E9DB08248FEE5C" import="1">DLL/UI - Religion Spread (v 13)/UI/InGame/Popups/ReligionOverview.lua</File>
+    <File md5="8C5D054780E82C7C30CB018F66B387F9" import="1">DLL/UI - Religion Spread (v 13)/UI/InGame/Popups/ReligionOverview.xml</File>
+    <File md5="C9B6890E26FC4F928E65204DC92A7A6F" import="0">DLL/UI - Religion Spread (v 13)/XML/UIReligionSpread.xml</File>
+	<File md5="1FECC0076AB0C215E8AC747C566DF7BD" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploCityStatesStatus.lua</File>
+    <File md5="101CA7C97B5663CEAA7CDCA0119A0511" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploCityStatesStatus.xml</File>
+    <File md5="06A1DA6193F1306A716F30D1CBD42E15" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploOverview.lua</File>
+    <File md5="AB52B4D7F7AE2A22043F8475018EE7E0" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploOverview.xml</File>
+    <File md5="DA83CE69B01F095369A911667A0340B1" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploTradesStatus.lua</File>
+    <File md5="DBDF070E896E611FE4D65EBD1140C696" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploTradesStatus.xml</File>
+    <File md5="66184AFA07B4CAB8196E10BD1FA190CE" import="0">DLL/UI - Trade Opportunities (v 28)/XML/UITradeOpportunities.xml</File>
+	<File md5="F1499C256113C941ACE1032188BFAF7D" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseInternationalTradeRoutePopup.lua</File>
+    <File md5="BBBE65A425660A75799D201298A795DC" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseInternationalTradeRoutePopup.xml</File>
+    <File md5="507FA8A8ED26BEDDAC035744C9F2FBCD" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseTradeUnitNewHome.lua</File>
+    <File md5="BD9B995CADF4C24C8DB41AD7FE7CB22F" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseTradeUnitNewHome.xml</File>
+    <File md5="23E7389D9DEE8336D9E3ADA8159C3F6F" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/TradeRouteOverview.lua</File>
+    <File md5="3209DABE4E516FC35EE41474FA565667" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/TradeRouteOverview.xml</File>
+    <File md5="D2ACBA38B9E881A58D09A5BE606A0729" import="0">DLL/UI - Trade Routes Enhancements (v 7)/XML/UITradeRoutesEnhancements.xml</File>
+    <File md5="8342B28DA73D581AA82FF27978F7237A" import="0">DLL/Global - Raze City States (v 1)/LUA/GlobalRazeCityStates.lua</File>
+    <File md5="5ECB393E855B3A6B88A31E75843CC519" import="0">DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</File>
     
   </Files>
   <Actions>
@@ -3549,8 +3584,15 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/Units/Mercs/UnitOverrides.sql</UpdateDatabase>
 	  <UpdateDatabase>XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_Atlas.xml</UpdateDatabase>   
       
-      
-      
+      <UpdateDatabase>DLL/UI - Trade Opportunities (v 28)/XML/UITradeOpportunities.xml</UpdateDatabase>
+	  <UpdateDatabase>DLL/UI - Trade Routes Enhancements (v 7)/XML/UITradeRoutesEnhancements.xml</UpdateDatabase>
+      <UpdateDatabase>DLL/UI - Religion Spread (v 13)/XML/UIReligionSpread.xml</UpdateDatabase>
+	  <UpdateDatabase>DLL/UI - Notify Exit Resistance (v 1)/XML/UINotifyExitResistance.xml</UpdateDatabase>
+	  <UpdateDatabase>DLL/UI - City Production (v 15)/XML/UICityProductionDLL.xml</UpdateDatabase>
+      <UpdateDatabase>DLL/UI - City Production (v 15)/XML/UICityProduction.xml</UpdateDatabase>
+	  <UpdateDatabase>DLL/UI - City Happiness (v 17)/XML/UICityHappiness.xml</UpdateDatabase>
+	  <UpdateDatabase>DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</UpdateDatabase>
+	  <UpdateDatabase>DLL/Global - City State Airbases (v 4)/XML/GlobalCityStateAirbases.xml</UpdateDatabase>
 	  
     </OnModActivated>
   </Actions>
@@ -3627,5 +3669,46 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>
       </Description>
     </EntryPoint>
+	
+	<EntryPoint type="InGameUIAddin" file="DLL/Global - Raze City States (v 1)/LUA/GlobalRazeCityStates.lua">
+      <Name>GlobalRazeCityStates</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+	
+	<EntryPoint type="InGameUIAddin" file="DLL/UI - Notify Exit Resistance (v 1)/LUA/UINotifyExitResistance.lua">
+      <Name>UINotifyExitResistance</Name>
+      <Description>UINotifyExitResistance</Description>
+    </EntryPoint>
+	
+    <EntryPoint type="CustomNotificationAddin" file="DLL/UI - Notify Exit Resistance (v 1)/UI/ResistanceNotification.lua">
+      <Name>Resistance Notification</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+	
+	<EntryPoint type="InGameUIAddin" file="DLL/UI - City Production (v 15)/UI/CityProduction.xml">
+      <Name>City Production</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+	
+	<EntryPoint type="InGameUIAddin" file="DLL/UI - City Happiness (v 17)/UI/CityHappiness.xml">
+      <Name>City Happiness</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+	
+	<EntryPoint type="InGameUIAddin" file="DLL/Global - City State Airbases (v 4)/LUA/CityStateAirbases.lua">
+      <Name>CityStateAirbases</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+	
+	
+	
+	
+	
+	
   </EntryPoints>
 </Mod>
