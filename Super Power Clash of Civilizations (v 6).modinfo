@@ -3142,6 +3142,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="D2ACBA38B9E881A58D09A5BE606A0729" import="0">DLL/UI - Trade Routes Enhancements (v 7)/XML/UITradeRoutesEnhancements.xml</File>
     <File md5="8342B28DA73D581AA82FF27978F7237A" import="0">DLL/Global - Raze City States (v 1)/LUA/GlobalRazeCityStates.lua</File>
     <File md5="5ECB393E855B3A6B88A31E75843CC519" import="0">DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</File>
+	
+	<File md5="E9DFEE5D23C31CB0D7B0732DFDAD9D21" import="0">DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</File>
     
   </Files>
   <Actions>
@@ -3593,6 +3595,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	  <UpdateDatabase>DLL/UI - City Happiness (v 17)/XML/UICityHappiness.xml</UpdateDatabase>
 	  <UpdateDatabase>DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</UpdateDatabase>
 	  <UpdateDatabase>DLL/Global - City State Airbases (v 4)/XML/GlobalCityStateAirbases.xml</UpdateDatabase>
+	  
+	  <UpdateDatabase>DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</UpdateDatabase>
 	  
     </OnModActivated>
   </Actions>
