@@ -37,6 +37,17 @@
 
 
 	<Language_en_US>
+
+		
+		<Replace Tag="TXT_KEY_TP_TECH_CITY_COST">
+			<Text>Each City or [ICON_PUPPET] Puppeted City you own will increase Technology costs by {1_Num}%. [NEWLINE][NEWLINE][ICON_RES_ELECTRICITY]Electrcity deficit can cause upto 50% reduction in Science due to disruptions to research facilities.</Text>
+		</Row>
+
+		
+		<Replace Tag="TXT_KEY_TP_GOLD_EXPLANATION">
+			<Text>With [ICON_GOLD] Gold you may purchase land, units and buildings in your cities, or provide gifts to city-states to make them like you more. [NEWLINE][NEWLINE][ICON_RES_MANPOWER]Surplus manpower reduces the gold cost of buying units and buildings in cities, due to the availability of cheap labor. </Text>
+		</Row>
+
 	
 		<Replace Tag="TXT_KEY_CITYVIEW_CHANGE_PROD">
 			<Text>[ICON_PRODUCTION]CHANGE PRODUCTION</Text>
@@ -52,7 +63,7 @@
 
 
 		<Replace Tag="TXT_KEY_FREE_POLICIES">
-			<Text>Num of Free Policies: </Text>
+			<Text>Number of Free Policies: </Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_BO1">
