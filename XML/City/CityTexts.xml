@@ -1187,7 +1187,7 @@
 			<Tag>TXT_KEY_BUILDING_CHINESE_GARDEN_HELP</Tag>
 			<Text>
 				+25% [ICON_GREAT_PEOPLE] Great People generation rate in the city.
-				[NEWLINE]-2% [ICON_HAPPINESS_4] Unhappiness nationwide for every Chinese Garden.
+				[NEWLINE]-5% [ICON_HAPPINESS_4] Unhappiness nationwide for every Chinese Garden.
 				[NEWLINE][NEWLINE]Must be built in large Cities.</Text>
 		</Row>
 

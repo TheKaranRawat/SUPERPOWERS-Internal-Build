@@ -1019,7 +1019,7 @@
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>22</PortraitIndex>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
-			<UnhappinessModifier>-2</UnhappinessModifier>
+			<UnhappinessModifier>-5</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_HALL_OF_WORTHIES</Type>
