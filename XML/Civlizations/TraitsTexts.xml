@@ -13,7 +13,7 @@
 			<Text>Pax Sinica</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_ART_OF_WAR">
-			<Text>[ICON_BULLET]During a Golden Age, China receive additional +20% [ICON_RESEARCH] Science, [ICON_FOOD] Food, [ICON_PEACE] Faith output in all cities and +20% [ICON_GREAT_PEOPLE] Great Person generation nationwide. [NEWLINE][ICON_BULLET]Chinese mercantilist tradition grants +25% trade routes. Land maintenance is reduced by 10%.</Text>
+			<Text>[ICON_BULLET]During a Golden Age, China receive additional +20% [ICON_RESEARCH] Science, [ICON_FOOD] Food, [ICON_PEACE] Faith output in all cities and +20% [ICON_GREAT_PEOPLE] Great Person generation nationwide. [NEWLINE][ICON_BULLET]Chinese mercantilist tradition grants +40% [ICON_INTERNATIONAL_TRADE]trade routes. Land maintenance is reduced by 10%.</Text>
 		</Replace>
 
 		<Row Tag="TXT_KEY_SP_UA_CHINA_GOLDENAGE_ANNOUNCE">

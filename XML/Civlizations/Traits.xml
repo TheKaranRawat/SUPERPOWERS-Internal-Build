@@ -13,7 +13,7 @@
 			<Type>TRAIT_ART_OF_WAR</Type>
 			<Description>TXT_KEY_TRAIT_ART_OF_WAR</Description>
 			<ShortDescription>TXT_KEY_TRAIT_ART_OF_WAR_SHORT</ShortDescription>
-			<NumTradeRoutesModifier>25</NumTradeRoutesModifier> 
+			<NumTradeRoutesModifier>40</NumTradeRoutesModifier> 
 			<LandUnitMaintenanceModifier>-10</LandUnitMaintenanceModifier> 
 			<!--<GreatGeneralRateModifier>50</GreatGeneralRateModifier>-->
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>

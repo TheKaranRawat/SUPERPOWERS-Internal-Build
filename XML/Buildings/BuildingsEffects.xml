@@ -1735,12 +1735,12 @@
 		<Row>
 			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>

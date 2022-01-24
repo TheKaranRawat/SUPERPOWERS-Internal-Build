@@ -2071,7 +2071,7 @@
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>59</PortraitIndex>
 			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-			<SpecialistCount>1</SpecialistCount>
+			<SpecialistCount>2</SpecialistCount>
 			<EnhancedYieldTech>TECH_INTERNET</EnhancedYieldTech>
 			<TechEnhancedTourism>2</TechEnhancedTourism>
 			<AllowsProductionTradeRoutes>true</AllowsProductionTradeRoutes>
