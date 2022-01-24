@@ -2792,7 +2792,7 @@
 			<Strategy>TXT_KEY_BUILDING_SP_CITY_BASIC_BUILDINGS_STRATEGY</Strategy>
 			<ArtDefineTag>ART_DEF_BUILDING_UNIVERSITY</ArtDefineTag>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>2</SpecialistCount>
+			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>85</ConquestProb>
 			<HurryCostModifier>25</HurryCostModifier>
@@ -2978,7 +2978,7 @@
 		</Row>
 		<Row>
 			<Type>BUILDING_BAZAAR</Type>
-			<BuildingClass>BUILDINGCLASS_CARAVANSARY</BuildingClass>
+			<BuildingClass>BUILDINGCLASS_MARKET</BuildingClass>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<Cost>20</Cost>
 			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
@@ -2990,6 +2990,8 @@
 			<!--<ExtraLuxuries>true</ExtraLuxuries>-->
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<SpecialistCount>3</SpecialistCount>
 			<HurryCostModifier>25</HurryCostModifier>
 			<ArtInfoEraVariation>true</ArtInfoEraVariation>
 			<TradeRouteLandGoldBonus>600</TradeRouteLandGoldBonus>

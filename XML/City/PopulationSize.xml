@@ -2412,7 +2412,7 @@
 		<Row>
 			<BuildingType>BUILDING_BAZAAR</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Quantity>5</Quantity>
+			<Quantity>8</Quantity>
 		</Row>
 
 		<Row>

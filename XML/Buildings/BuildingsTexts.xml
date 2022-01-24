@@ -707,7 +707,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_ARABIA_ISIAMIC_UNIVERSITY</Tag>
-			<Text>[ICON_RESEARCH][ICON_PEACE] Islamic University</Text>
+			<Text>[ICON_RESEARCH][ICON_PEACE] Madrassah</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_ARABIA_ISIAMIC_UNIVERSITY_PEDIA</Tag>

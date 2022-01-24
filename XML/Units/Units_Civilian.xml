@@ -575,7 +575,7 @@
 			<Cost>-1</Cost>
 			<Moves>4</Moves>
 			<BaseGold>1000</BaseGold>
-			<NumGoldPerEra>400</NumGoldPerEra>
+			<NumGoldPerEra>2000</NumGoldPerEra>
 			<Capture>UNITCLASS_PROPHET</Capture>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
 			<Special>SPECIALUNIT_PEOPLE</Special>
@@ -589,7 +589,7 @@
 			<CombatLimit>0</CombatLimit>
 			<FoundReligion>true</FoundReligion>
 			<SpreadReligion>true</SpreadReligion>
-			<ReligionSpreads>4</ReligionSpreads>
+			<ReligionSpreads>6</ReligionSpreads>
 			<ReligiousStrength>3000</ReligiousStrength>
 			<UnitArtInfo>ART_DEF_UNIT_GREAT_PROPHET</UnitArtInfo>
 			<UnitFlagIconOffset>94</UnitFlagIconOffset>
