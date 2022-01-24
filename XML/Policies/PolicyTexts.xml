@@ -135,8 +135,7 @@
 				[NEWLINE][NEWLINE]Opening Effect:
 				[NEWLINE][ICON_BULLET]+4 [ICON_CULTURE] Culture and +4 [ICON_RESEARCH] Science for every city.
 				[NEWLINE][ICON_BULLET]+25% Tile Improvement construction rate.
-				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]City [ICON_FOOD] growth rate reduced by 15%.[ENDCOLOR]
-				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT][ICON_SCIENCE]Science costs increase by 6% for each city.[ENDCOLOR]		
+				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]City [ICON_FOOD] growth rate reduced by 15%.[ENDCOLOR]	
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: The Pyramids.
 				[NEWLINE][ICON_BULLET]Building Unlocked: Town Council.
 				[NEWLINE][NEWLINE]Finishing Bonus:

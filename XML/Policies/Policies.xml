@@ -17,7 +17,7 @@
 		</Update>
 
 		<Update>
-			<Set CityCountUnhappinessMod="50" NumCitiesPolicyCostMod="10"/>
+			<Set CityCountUnhappinessMod="50" NumCitiesPolicyCostDiscount="-10"/>
 			<Where Type="POLICY_TRADITION"/>
 		</Update>
 		
@@ -96,7 +96,7 @@
 		</Update>
 
 		<Update>
-			<Set CityGrowthMod="-15" NumCitiesTechCostMod="6" />
+			<Set CityGrowthMod="-15" />
 			<Where Type="POLICY_LIBERTY"/>
 		</Update>
 
