@@ -156,7 +156,9 @@
 			<Type>POLICY_AI_ATWAR_BONUS</Type>
 			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 			<CityGrowthMod>100</CityGrowthMod>
+			
 			<StrategicResourceMod>130</StrategicResourceMod>
+			
 			<MilitaryProductionModifier>300</MilitaryProductionModifier>
 			<BuildingProductionModifier>300</BuildingProductionModifier>
 		</Row>
@@ -192,7 +194,7 @@
 
 	<Policies>
 		
-
+		<!--
 		<Update>
 			<Set StrategicResourceMod="110"/>
 			<Where Type="POLICY_AI_INDUSTRY"/>
@@ -217,7 +219,7 @@
 			<Set StrategicResourceMod="150"/>
 			<Where Type="POLICY_AI_INFORMATION"/>
 		</Update>
-
+		-->
 
 		
 
