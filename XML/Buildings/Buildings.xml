@@ -3360,7 +3360,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HYDRO_PLANT</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>0</HurryCostModifier>
+			<HurryCostModifier>-1</HurryCostModifier>
 			<IconAtlas>ANCIENT2_ICON_ATLAS</IconAtlas>
 			<PortraitIndex>4</PortraitIndex>
 		</Row>
