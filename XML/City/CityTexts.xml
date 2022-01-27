@@ -653,7 +653,7 @@
 		<Row Tag="TXT_KEY_BUILDING_DUTCH_DTP_HELP">
 			<Text>
 				[COLOR_POSITIVE_TEXT]No Pollution[ENDCOLOR]
-				[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold for every water tiles worked by the city.
+				[NEWLINE][NEWLINE]+3 [ICON_PRODUCTION] Production and +3 [ICON_GOLD] Gold for every water tiles worked by the city.
 				[NEWLINE][NEWLINE]Must be constructed in a costal city.
 			</Text>
 		</Row>

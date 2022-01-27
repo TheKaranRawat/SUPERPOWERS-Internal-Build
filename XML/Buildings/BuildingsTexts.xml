@@ -522,7 +522,7 @@
 		<Row>
 			<Tag>TXT_KEY_BUILDING_DUTCH_GRACHTENGORDEL_HELP</Tag>
 			<Text>
-				+1 [ICON_PRODUCTION] Production and +1 [ICON_GOLD] Gold in every tile next to a River.
+				+3 [ICON_PRODUCTION] Production and +3 [ICON_GOLD] Gold in every tile next to a River.
 				[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]No Pollution[ENDCOLOR]
 			</Text>
 		</Row>

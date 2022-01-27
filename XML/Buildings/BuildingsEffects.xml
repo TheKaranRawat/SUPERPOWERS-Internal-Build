@@ -4019,12 +4019,12 @@
 		<Row>
 			<BuildingType>BUILDING_DUTCH_GRACHTENGORDEL</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_DUTCH_GRACHTENGORDEL</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>3</Yield>
 		</Row>
 		
 		
@@ -4106,12 +4106,12 @@
 		<Row>
 			<BuildingType>BUILDING_DUTCH_DTP</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_DUTCH_DTP</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_HARBOR</BuildingType>
