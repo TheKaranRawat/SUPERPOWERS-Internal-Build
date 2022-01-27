@@ -2067,7 +2067,7 @@
 		<Row>
 			<BuildingType>BUILDING_BURIAL_TOMB</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_BURIAL_TOMB</BuildingType>
@@ -3973,7 +3973,7 @@
 		<Row>
 			<BuildingType>BUILDING_EGYPT_SIRIUS</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
+			<Yield>10</Yield>
 		</Row>
 
 		<Row>

@@ -414,7 +414,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<Happiness>4</Happiness>
 			<ConquestProb>66</ConquestProb>
-			<FoodKept>50</FoodKept>
+			<FoodKept>40</FoodKept>
 			<!--<ReligiousPressureModifier>50</ReligiousPressureModifier>-->
 			<HurryCostModifier>50</HurryCostModifier>
 			<IconAtlas>EXPANSION2_BUILDING_ATLAS</IconAtlas>

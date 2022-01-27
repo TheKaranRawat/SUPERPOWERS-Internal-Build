@@ -724,7 +724,7 @@
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_BASILICA_CISTERN_HELP</Tag>
-			<Text>50% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born. [NEWLINE][NEWLINE]Can only be built in Small Cities.[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 5 [ICON_CITIZEN] Citizen. </Text>
+			<Text>40% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born. [NEWLINE][NEWLINE]Can only be built in Small Cities.[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 5 [ICON_CITIZEN] Citizen. </Text>
 		</Row>
 
 

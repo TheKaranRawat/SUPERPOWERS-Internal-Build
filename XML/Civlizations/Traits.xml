@@ -1724,8 +1724,16 @@
 		<Row>
 			<BuildingType>BUILDING_TB_TRAIT_WONDER_BUILDER</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>3</Yield>
+			<Yield>4</Yield>
 		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_TB_TRAIT_WONDER_BUILDER</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>4</Yield>
+		</Row>
+
+
 	</Building_RiverPlotYieldChanges>
 
 
@@ -1733,7 +1741,7 @@
 		<Row>
 			<BuildingType>BUILDING_TB_TRAIT_WONDER_BUILDER</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>8</Quantity>
+			<Quantity>12</Quantity>
 		</Row>
 
 		<Row>
@@ -1744,16 +1752,16 @@
 		
 	</Building_ResourceQuantity>
 	
-	
+	<!--
 	<Building_FeatureYieldChanges>
 		<Row>
 			<BuildingType>BUILDING_TB_TRAIT_WONDER_BUILDER</BuildingType>
 			<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
+			<Yield>4</Yield>
 		</Row>
 	</Building_FeatureYieldChanges>
-	
+	-->
 	
 	<!--<Building_YieldModifiers>
 		<Row>

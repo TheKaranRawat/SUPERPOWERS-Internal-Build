@@ -2834,7 +2834,7 @@
 			<Help>TXT_KEY_BUILDING_EGYPT_SIRIUS_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_OBSERVATORY</ArtDefineTag>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>1</SpecialistCount>
+			<SpecialistCount>4</SpecialistCount>
 			<!--<NearbyMountainRequired>true</NearbyMountainRequired>-->
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
@@ -3658,7 +3658,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
 			<!--<CapturePlunderModifier>100</CapturePlunderModifier>-->
-			<Happiness>2</Happiness>
+			<Happiness>6</Happiness>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>55</PortraitIndex>
