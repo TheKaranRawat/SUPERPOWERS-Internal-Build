@@ -3029,7 +3029,7 @@
 			<Text>[ICON_PRODUCTION] Chancery</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TCS_MEMORIAL">
-			<Text>[ICON_CULTURE] Memorial</Text>
+			<Text>[ICON_GREAT_WRITER] Memorial</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TCS_DEPOT">
 			<Text>[ICON_PRODUCTION] Depot</Text>
