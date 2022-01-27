@@ -24,7 +24,7 @@
 		</Row>
 
 		<Replace Tag="TXT_KEY_TRAIT_RIVER_EXPANSION">
-			<Text>[ICON_BULLET]Each Scientist +3 [ICON_RESEARCH] Science, Engineer +2 [ICON_PRODUCTION] Production, Merchant +3 [ICON_GOLD] Gold, Writer, Artist and Musician +2 [ICON_CULTURE] Culture. [NEWLINE][ICON_BULLET]American expansionist tradition grants +35% faster border growth for cities; Naval [ICON_GOLD]maintenance is reduced by 10%</Text>
+			<Text>[ICON_BULLET]Each Scientist +3 [ICON_RESEARCH] Science, Engineer +2 [ICON_PRODUCTION] Production, Merchant +3 [ICON_GOLD] Gold, Writer, Artist and Musician +2 [ICON_CULTURE] Culture. [NEWLINE][ICON_BULLET]American expansionist tradition grants +35% faster border growth for cities; Naval [ICON_GOLD]maintenance is reduced by 10% [NEWLINE][ICON_BULLET]Gain +25 [ICON_CULTURE]culture for every city.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_STRATEGIC_RICHES_SHORT">
@@ -39,7 +39,7 @@
     	</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_OCEAN_MOVEMENT">
-			<Text>[ICON_BULLET]1 Level up for all Lv2-Lv5 cities (England only has Lv1-Lv4 cities). All Units +15% [ICON_STRENGTH] Combat Strength bonus while fighting outside their own territory. [NEWLINE][ICON_BULLET]English Imperialism grants +16 [ICON_RESEARCH] Science and +16 [ICON_CULTURE] Culture for every international trade route.</Text>
+			<Text>[ICON_BULLET]1 Level up for all Lv2-Lv5 cities (England only has Lv1-Lv4 cities). [NEWLINE][ICON_BULLET]All Units +15% [ICON_STRENGTH] Combat Strength bonus while fighting outside their own territory. [NEWLINE][ICON_BULLET]English Imperialism grants +16 [ICON_RESEARCH] Science and +16 [ICON_CULTURE] Culture for every international trade route.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_ENHANCED_CULTURE_SHORT">
@@ -146,7 +146,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_SUPER_CITY_STATE">
-			<Text>[ICON_BULLET]Cannot gain settlers nor annex cities. May purchase in puppet cities and puppet cities offers full [ICON_RESEARCH] Science, [ICON_CULTURE] Culture output and [ICON_FOOD] Food Growth. [NEWLINE][ICON_BULLET]Double the normal number of Trade Routes and [ICON_TOURISM] Theming Bonus in [ICON_CAPITAL] Captal. A Merchant of Venice appears after researching Optics. [NEWLINE][ICON_BULLET]Venetian mercantilism grants +35 gold for every international trade route operated from the city.</Text>
+			<Text>[ICON_BULLET]Cannot gain settlers nor annex cities. May purchase in puppet cities and puppet cities offers full [ICON_RESEARCH] Science, [ICON_CULTURE] Culture output and [ICON_FOOD] Food Growth. [NEWLINE][ICON_BULLET]Double the normal number of Trade Routes and [ICON_TOURISM] Theming Bonus in [ICON_CAPITAL] Captal. A Merchant of Venice appears after researching Optics. [NEWLINE][ICON_BULLET]Venetian mercantilism grants +10 gold for every international trade route operated from the city.</Text>
 		</Replace>
 
 

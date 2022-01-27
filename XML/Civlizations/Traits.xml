@@ -1432,7 +1432,7 @@
 		<Row>
 			<TraitType>TRAIT_SUPER_CITY_STATE</TraitType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>35</Yield>
+			<Yield>10</Yield>
 		</Row>
 
 		

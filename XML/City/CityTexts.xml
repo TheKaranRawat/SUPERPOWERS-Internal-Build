@@ -1689,7 +1689,7 @@
 		<Replace Tag="TXT_KEY_BUILDING_MUGHAL_FORT_HELP">
 			<Text>
 				Mughal Mosque is a Public Education building which can boost both the city's [ICON_RESEARCH] Science and [ICON_CULTURE] Culture output by enhancing the quality of its [ICON_CITIZEN] Population.
-				[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Citizens in this City.
+				[NEWLINE][NEWLINE]+1 [ICON_RESEARCH] Science for every [ICON_CITIZEN] Citizen in this City.
 				[NEWLINE][NEWLINE]No extra [ICON_GOLD] Gold Maintenance.
 				[NEWLINE][NEWLINE]Must be built in Large Cities.
 			</Text>

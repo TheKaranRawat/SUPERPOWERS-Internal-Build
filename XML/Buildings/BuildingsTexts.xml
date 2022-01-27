@@ -668,7 +668,7 @@
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_INDIA_TEMPLE_HELP</Tag>
-			<Text>+1 [ICON_PEACE] Faith and +1 [ICON_PRODUCTION] Production for every 4 [ICON_CITIZEN] Citizens in the city. </Text>
+			<Text>+1 [ICON_PEACE] Faith and +1 [ICON_PRODUCTION] Production for every [ICON_CITIZEN] Citizen in the city. </Text>
 		</Row>
 
 

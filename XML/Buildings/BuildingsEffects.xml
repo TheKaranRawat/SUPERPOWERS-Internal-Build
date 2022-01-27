@@ -5681,18 +5681,18 @@
 		<Row>
 			<BuildingType>BUILDING_INDIA_TEMPLE</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>25</Yield>
+			<Yield>100</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_INDIA_TEMPLE</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>25</Yield>
+			<Yield>100</Yield>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_MUGHAL_FORT</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>50</Yield>
+			<Yield>100</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_MUGHAL_FORT</BuildingType>
