@@ -1,0 +1,2 @@
+45DDS icons save as 44
+only multiples of 4 can be loaded as DDS

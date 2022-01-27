@@ -5,3 +5,6 @@ Tooltip improvements
 	City founding tooltips
 	
 Buff Tradition production
+
+FUTURE UPDATE PLANS:
+RELIGION REWORK
