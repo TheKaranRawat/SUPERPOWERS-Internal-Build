@@ -134,7 +134,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_LUXURY_RETENTION">
-			<Text>[ICON_BULLET]Only lose 2 [ICON_HAPPINESS_1] Happiness from a Luxury Resource if your last copy of it is traded away. All cities receive a free Market. [NEWLINE][ICON_BULLET]Naval [ICON_GOLD]unit maintenance is reduced by 15%.</Text>
+			<Text>[ICON_BULLET]Lose no [ICON_HAPPINESS_1] Happiness from a Luxury Resource if your last copy of it is traded away. All cities receive a free Market. [NEWLINE][ICON_BULLET]Naval [ICON_GOLD]unit maintenance is reduced by 25%. [NEWLINE][ICON_BULLET]30% [ICON_STRENGTH]Combat Strength vs larger Civs.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_PHOENICIAN_HERITAGE">

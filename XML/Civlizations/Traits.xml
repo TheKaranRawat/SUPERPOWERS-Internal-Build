@@ -293,8 +293,9 @@
 			<Type>TRAIT_LUXURY_RETENTION</Type>
 			<Description>TXT_KEY_TRAIT_LUXURY_RETENTION</Description>
 			<ShortDescription>TXT_KEY_TRAIT_LUXURY_RETENTION_SHORT</ShortDescription>
-			<LuxuryHappinessRetention>50</LuxuryHappinessRetention>
-			<NavalUnitMaintenanceModifier>-15</NavalUnitMaintenanceModifier> 
+			<LuxuryHappinessRetention>100</LuxuryHappinessRetention>
+			<NavalUnitMaintenanceModifier>-25</NavalUnitMaintenanceModifier> 
+			<CombatBonusVsLargerCiv>30</CombatBonusVsLargerCiv>
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 			<FreeBuilding>BUILDING_MARKET</FreeBuilding>
 		</Row>
