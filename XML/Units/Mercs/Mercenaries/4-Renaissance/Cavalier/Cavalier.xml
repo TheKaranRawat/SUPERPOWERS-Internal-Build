@@ -48,7 +48,7 @@
 			<UnitFlagAtlas>SMAN_EXOTIC_UNIT_FLAG_ATLAS</UnitFlagAtlas>
 			<UnitFlagIconOffset>28</UnitFlagIconOffset>
 			<MoveRate>QUADRUPED</MoveRate>
-			<ExtraMaintenanceCost>45</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>80</ExtraMaintenanceCost>
 		</Row>
 	</Units>
 

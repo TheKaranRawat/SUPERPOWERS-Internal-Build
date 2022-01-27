@@ -52,7 +52,7 @@
 			<UnitFlagIconOffset>9</UnitFlagIconOffset>
 
 			<MoveRate>BOAT</MoveRate>
-			<ExtraMaintenanceCost>150</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>450</ExtraMaintenanceCost>
 		</Row>
 	</Units>
 

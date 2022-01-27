@@ -47,7 +47,7 @@
 			<UnitFlagAtlas>SMAN_EXOTIC_UNIT_FLAG_ATLAS</UnitFlagAtlas>
 			<UnitFlagIconOffset>31</UnitFlagIconOffset>
 			<MoveRate>WOODEN_BOAT</MoveRate>
-			<ExtraMaintenanceCost>28</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>150</ExtraMaintenanceCost>
 		</Row>
 	</Units>
 

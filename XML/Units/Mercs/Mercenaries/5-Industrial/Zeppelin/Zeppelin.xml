@@ -52,7 +52,7 @@
 			<PortraitIndex>41</PortraitIndex>
 			<UnitFlagAtlas>SMAN_EXOTIC_UNIT_FLAG_ATLAS</UnitFlagAtlas>
 			<UnitFlagIconOffset>33</UnitFlagIconOffset>
-			<ExtraMaintenanceCost>32</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>80</ExtraMaintenanceCost>
 		</Row>
 	</Units>
 

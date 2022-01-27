@@ -52,7 +52,7 @@
 		  <DomainCargo>DOMAIN_AIR</DomainCargo>
 		  <AirUnitCap>1</AirUnitCap>
 		  <DefaultUnitAI>UNITAI_DEFENSE_AIR</DefaultUnitAI>
-		  <ExtraMaintenanceCost>170</ExtraMaintenanceCost>
+		  <ExtraMaintenanceCost>350</ExtraMaintenanceCost>
 	  </Row>
   </Units>
 

@@ -51,7 +51,7 @@
       <RangedCombatLimit>75</RangedCombatLimit>
       <AirUnitCap>1</AirUnitCap>
       <DefaultUnitAI>UNITAI_ATTACK_AIR</DefaultUnitAI>
-	  <ExtraMaintenanceCost>100</ExtraMaintenanceCost>
+	  <ExtraMaintenanceCost>200</ExtraMaintenanceCost>
     </Row>
   </Units>
 
