@@ -1005,7 +1005,7 @@
 		<!-- NUKES AND INTRIGUE -->
 
 		<Update>
-			<Set Value="200"/>
+			<Set Value="1000"/>
 			<Where Name="OPINION_WEIGHT_NUKED_MAX" />
 		</Update>
 
