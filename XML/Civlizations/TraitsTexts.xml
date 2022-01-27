@@ -123,7 +123,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CONVERTS_SEA_BARBARIANS">
-			<Text>[ICON_BULLET]+2 [ICON_PRODUCTION] Production for every Quarry, Fishing Net. +4 [ICON_PRODUCTION] Production for every Strategic Resources. +25% speed for worker's Tile Improvement construction rate. [NEWLINE][ICON_BULLET]Ottoman expansionism grants faster city border growth rate.</Text>
+			<Text>[ICON_BULLET]+4 [ICON_PRODUCTION] Production for every Quarry, Fishing Net. +8 [ICON_PRODUCTION] Production for every Strategic Resources. [NEWLINE][ICON_BULLET]+25% speed for worker's Tile Improvement construction rate. [NEWLINE][ICON_BULLET]Ottoman expansionism grants faster city border growth rate.</Text>
 		</Replace>
 		
 		
@@ -209,7 +209,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_EXTRA_BELIEF">
-			<Text>[ICON_BULLET]Choose one more Belief than normal when you found a Religion. A Great Prophet appears after researching Writing. [NEWLINE][ICON_BULLET]Byzantine religious traditions grants +50% religion spread from trade routes; +20% [ICON_PRODUCTION]production towards Wonders. </Text>
+			<Text>[ICON_BULLET]Choose one more Belief than normal when you found a Religion. A Great Prophet appears after researching Writing. [NEWLINE][ICON_BULLET]Byzantine religious traditions grants +50% religion spread from trade routes; +25% [ICON_PRODUCTION]production towards Wonders. </Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_SEVEN_CITIES">
@@ -233,7 +233,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CITY_STATE_BONUSES">
-			<Text>[ICON_BULLET][ICON_FOOD] Food, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith from friendly City-States increased by 200%. +2 [ICON_GOLD] Gold for all Specialists. [NEWLINE][ICON_BULLET]Siamese diplomatic tradition grants the ability to annex long term City State allies for gold.</Text>
+			<Text>[ICON_BULLET][ICON_FOOD] Food, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith from friendly City-States increased by 200%. [NEWLINE][ICON_BULLET]+2 [ICON_GOLD] Gold for all Specialists. [NEWLINE][ICON_BULLET]Siamese diplomatic tradition grants the ability to annex long term City State allies for gold.</Text>
 		</Replace>
 		
 		

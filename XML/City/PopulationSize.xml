@@ -412,9 +412,9 @@
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_BASILICA_CISTERN_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_SP_PUBLIC_HEALTH_BUILDINGS_STRATEGY</Strategy>
 			<MinAreaSize>-1</MinAreaSize>
-			<Happiness>2</Happiness>
+			<Happiness>4</Happiness>
 			<ConquestProb>66</ConquestProb>
-			<FoodKept>33</FoodKept>
+			<FoodKept>50</FoodKept>
 			<!--<ReligiousPressureModifier>50</ReligiousPressureModifier>-->
 			<HurryCostModifier>50</HurryCostModifier>
 			<IconAtlas>EXPANSION2_BUILDING_ATLAS</IconAtlas>
@@ -689,7 +689,7 @@
 			<SpecialistCount>1</SpecialistCount>
 			<!--<Water>true</Water>-->
 			<MinAreaSize>10</MinAreaSize>
-			<GoldenAgeModifier>25</GoldenAgeModifier>
+			<GoldenAgeModifier>33</GoldenAgeModifier>
 			<LandmarksTourismPercent>50</LandmarksTourismPercent>
 			<PortraitIndex>63</PortraitIndex>
 			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
@@ -2434,7 +2434,7 @@
 		<Row>
 			<BuildingType>BUILDING_BYZANTIUM_RESORT</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Quantity>2</Quantity>
+			<Quantity>4</Quantity>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BEVERAGE_FACTORY</BuildingType>

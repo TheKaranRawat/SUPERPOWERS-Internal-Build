@@ -724,7 +724,7 @@
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_BASILICA_CISTERN_HELP</Tag>
-			<Text>33% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born. [NEWLINE][NEWLINE]Can only be built in Small Cities.[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 5 [ICON_CITIZEN] Citizen. </Text>
+			<Text>50% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born. [NEWLINE][NEWLINE]Can only be built in Small Cities.[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 5 [ICON_CITIZEN] Citizen. </Text>
 		</Row>
 
 
@@ -927,7 +927,7 @@
 		<Row>
 			<Tag>TXT_KEY_BUILDING_BYZANTIUM_RESORT_HELP</Tag>
 			<Text>
-				+25% Length of [ICON_GOLDEN_AGE] Golden Ages for every Resort.
+				+33% Length of [ICON_GOLDEN_AGE] Golden Ages for every Resort.
 				[NEWLINE][NEWLINE]50% from [ICON_CULTURE] Culture of Wonders and improvements in the city added to its [ICON_TOURISM] Tourism output.
 				[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Culture and +2 [ICON_GOLD] Gold for each source of [ICON_RES_TRUFFLES] Truffles, [ICON_RES_TOBACCO] Tobacco, [ICON_RES_PERFUME] Perfume, [ICON_RES_WINE] Wine, [ICON_RES_INCENSE] Incense，[ICON_RES_SPICES] Spices [ICON_RES_MARBLE] Marble and [ICON_RES_HORSE] Horses worked by this city.
 				[NEWLINE][NEWLINE]Must be built in Large Cities.

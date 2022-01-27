@@ -2343,7 +2343,7 @@
 		<Row>
 			<BuildingType>BUILDING_BASILICA_CISTERN</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>4</Yield>
+			<Yield>8</Yield>
 		</Row>
 
 		<Row>

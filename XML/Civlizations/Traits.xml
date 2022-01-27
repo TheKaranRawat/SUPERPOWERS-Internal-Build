@@ -248,7 +248,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_EXTRA_BELIEF_SHORT</ShortDescription>
 			<BonusReligiousBelief>true</BonusReligiousBelief>
 			<TradeReligionModifier>50</TradeReligionModifier> 
-			<WonderProductionModifier>20</WonderProductionModifier> 
+			<WonderProductionModifier>25</WonderProductionModifier> 
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 			<FreeUnit>UNITCLASS_PROPHET</FreeUnit>
 			<FreeUnitPrereqTech>TECH_WRITING</FreeUnitPrereqTech>
@@ -701,13 +701,13 @@
 			<TraitType>TRAIT_CONVERTS_SEA_BARBARIANS</TraitType>
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_CONVERTS_SEA_BARBARIANS</TraitType>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		
 	</Trait_ImprovementYieldChanges>
@@ -756,7 +756,7 @@
 		<Row>
 			<TraitType>TRAIT_CONVERTS_SEA_BARBARIANS</TraitType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>4</Yield>
+			<Yield>8</Yield>
 		</Row>
 	</Trait_YieldChangesStrategicResources>
 	

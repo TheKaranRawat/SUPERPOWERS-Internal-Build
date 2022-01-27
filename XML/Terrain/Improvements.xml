@@ -373,10 +373,7 @@
 			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
 			<TerrainType>TERRAIN_PLAINS</TerrainType>
 		</Row>		
-		<Row>
-			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-		</Row>
+		
 
 
 		<Row>
@@ -769,7 +766,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>8</Yield>
+			<Yield>4</Yield>
 		</Row>
 
 		<!-- HERC -->
@@ -1722,13 +1719,22 @@
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<TechType>TECH_RAILROAD</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<TechType>TECH_DYNAMITE</TechType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
 			<TechType>TECH_ENGINEERING</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
+			<Yield>2</Yield>
 		</Row>
 		
 		<Row>
