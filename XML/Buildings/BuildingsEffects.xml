@@ -3885,7 +3885,7 @@
 		<Row>
 			<BuildingType>BUILDING_HANGING_GARDEN</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>10</Yield>
+			<Yield>25</Yield>
 		</Row>
 
 		<Row>
