@@ -113,10 +113,11 @@
 			<StealTechFasterModifier>50</StealTechFasterModifier>
 			<ThemingBonusMultiplier>400</ThemingBonusMultiplier>
 			<UnitGoldMaintenanceMod>-33</UnitGoldMaintenanceMod>
-			<InternalTradeRouteYieldModifier>100</InternalTradeRouteYieldModifier>
-			<!--
-			<StrategicResourceMod>100</StrategicResourceMod>
+			<InternalTradeRouteYieldModifier>100</InternalTradeRouteYieldModifier>	
+			<!--		
+			<StrategicResourceMod>150</StrategicResourceMod>
 			-->
+			
 		</Row>
 		<Row>
 			<Type>POLICY_AI_PLAYER_CITIES_10</Type>
@@ -133,6 +134,7 @@
 			<UnitGoldMaintenanceMod>-25</UnitGoldMaintenanceMod>
 			<InternalTradeRouteYieldModifier>50</InternalTradeRouteYieldModifier>
 			<BuildingProductionModifier>50</BuildingProductionModifier>
+			<StrategicResourceMod>150</StrategicResourceMod>
 		</Row>
 
 		<Row>
@@ -143,11 +145,12 @@
 			<!--<HappinessToCulture>10</HappinessToCulture>-->
 			<!--<HappinessToScience>15</HappinessToScience>-->
 			<UnhappinessMod>-80</UnhappinessMod>
-			<CityGrowthMod>120</CityGrowthMod>
+			<CityGrowthMod>150</CityGrowthMod>
 			<BuildingGoldMaintenanceMod>-30</BuildingGoldMaintenanceMod>
 			<UnitGoldMaintenanceMod>-35</UnitGoldMaintenanceMod>
 			<ThemingBonusMultiplier>100</ThemingBonusMultiplier>
 			<InternalTradeRouteYieldModifier>50</InternalTradeRouteYieldModifier>
+			<StrategicResourceMod>150</StrategicResourceMod>
 		</Row>
 
 
@@ -157,7 +160,7 @@
 			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 			<CityGrowthMod>100</CityGrowthMod>
 			
-			<StrategicResourceMod>130</StrategicResourceMod>
+			<StrategicResourceMod>150</StrategicResourceMod>
 			
 			<MilitaryProductionModifier>300</MilitaryProductionModifier>
 			<BuildingProductionModifier>300</BuildingProductionModifier>
