@@ -313,7 +313,21 @@
 			<IconAtlas>SP_IMPROVEMENTS_ATLAS</IconAtlas>
 		</Row>
 		
-		
+		<Delete Type="IMPROVEMENT_POLDER"/>
+
+		<Row>
+			<Type>IMPROVEMENT_POLDER</Type>
+			<Description>TXT_KEY_IMPROVEMENT_POLDER</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT</Civilopedia>
+			<Help>TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP</Help>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_POLDER</ArtDefineTag>
+			<RequiresFeature>false</RequiresFeature>
+			<SpecificCivRequired>true</SpecificCivRequired>
+			<CivilizationType>CIVILIZATION_NETHERLANDS</CivilizationType>
+			<PillageGold>18</PillageGold>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>EXPANSION_TERRAIN_ATLAS</IconAtlas>
+		</Row>
 		
 		
 		
@@ -627,6 +641,21 @@
 
 
 	<Improvement_ValidFeatures>
+
+		<Delete ImprovementType="IMPROVEMENT_POLDER"/>
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+		</Row>
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_COMM_ARRAY</ImprovementType>
