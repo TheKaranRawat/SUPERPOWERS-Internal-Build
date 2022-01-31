@@ -874,7 +874,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>4</Yield>
+			<Yield>2</Yield>
 		</Row>
 		
 		<Row>
@@ -1739,14 +1739,14 @@
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<TechType>TECH_RAILROAD</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<TechType>TECH_DYNAMITE</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 
 
