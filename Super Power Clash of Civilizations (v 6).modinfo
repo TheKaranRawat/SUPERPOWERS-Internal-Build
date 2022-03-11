@@ -3158,6 +3158,28 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="5ECB393E855B3A6B88A31E75843CC519" import="0">DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</File>
 	
 	<File md5="E9DFEE5D23C31CB0D7B0732DFDAD9D21" import="0">DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</File>
+	
+	<File md5="BF45527DDEE760C8DC3927A6AA41862D" import="0">Modules/Meaningful City State Colors (v 1)/Colors.xml</File>
+    <File md5="B9AD45CE8090D0AD73C5127111B785B5" import="0">Modules/Meaningful City State Colors (v 1)/MinorCivs.xml</File>
+    <File md5="2B19CB472DEDD167946B3D5649B49F0E" import="0">Modules/Meaningful City State Colors (v 1)/PlayerColors.xml</File>
+	
+	<File md5="CCBD90298A60849D82E4CF24AC66D00C" import="1">Modules/Greatest Cities (v 11)/Art/TopCities_Icon128.dds</File>
+    <File md5="E74A71134C66F1F51ABE22F1B89AB86F" import="1">Modules/Greatest Cities (v 11)/Art/TopCities_Icon256.dds</File>
+    <File md5="68D8148EBA3936B26E9FCB68D1DB400B" import="1">Modules/Greatest Cities (v 11)/Art/TopCities_Icon45.dds</File>
+    <File md5="72EAD4CE5EAD30E55B5B8ADD77225C71" import="1">Modules/Greatest Cities (v 11)/Art/TopCities_Icon64.dds</File>
+    <File md5="DC435EB42B0A88514CE82AF6064E132A" import="1">Modules/Greatest Cities (v 11)/Art/TopCities_Icon80.dds</File>
+    <File md5="E36399964BDB936432BAA3D5370A4DEF" import="1">Modules/Greatest Cities (v 11)/Art/TopCities_ScreenIcon.dds</File>
+    <File md5="6C6BABEEF6E2827B9C0DAB0CBD12DB76" import="1">Modules/Greatest Cities (v 11)/Art/TopCities-FontIcons.dds</File>
+    <File md5="514AF6AD4C1317B0A8216C037F5AD565" import="1">Modules/Greatest Cities (v 11)/Art/TopCities-FontIcons.ggxml</File>
+    <File md5="846813CF0E88BCF4456180B147D07613" import="1">Modules/Greatest Cities (v 11)/Art/TopCities_Back.dds</File>
+    <File md5="C509A0099D4929738E3EF0065E7F6B58" import="0">Modules/Greatest Cities (v 11)/Database/TopCities.sql</File>
+    <File md5="98E731298B6D19D51ED68ED0479EC216" import="0">Modules/Greatest Cities (v 11)/Localization/TopCities_DE_DE.xml</File>
+    <File md5="4777F4CCA31573D3488FAB85506A6C9B" import="0">Modules/Greatest Cities (v 11)/Localization/TopCities_en_US.xml</File>
+    <File md5="0C6DFBC2D9A5EF69CD829EDFB2487DCB" import="1">Modules/Greatest Cities (v 11)/Lua/TopCities_Functions.lua</File>
+    <File md5="C0BA929DF2C5FBE61297636481F691BE" import="1">Modules/Greatest Cities (v 11)/Lua/TopCities_Main.lua</File>
+    <File md5="7E4112EE1FFBB9906B2AEB79E0ECAAB4" import="0">Modules/Greatest Cities (v 11)/Lua/UI/TopCities.lua</File>
+    <File md5="E0DBE4287AA671DE8AFDFC98B5420B01" import="0">Modules/Greatest Cities (v 11)/Lua/UI/TopCities.xml</File>
+    <File md5="FA224CF6320CE41309C0864F202F4007" import="1">Modules/Greatest Cities (v 11)/Lua/Utility/Serializer.lua</File>
     
   </Files>
   <Actions>
@@ -3612,6 +3634,14 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	  
 	  <UpdateDatabase>DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</UpdateDatabase>
 	  
+	  <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/Colors.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/PlayerColors.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/MinorCivs.xml</UpdateDatabase>
+	  
+	  <UpdateDatabase>Modules/Greatest Cities (v 11)/Database/TopCities.sql</UpdateDatabase>
+      <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_DE_DE.xml</UpdateDatabase>
+	  
     </OnModActivated>
   </Actions>
   <EntryPoints>
@@ -3721,6 +3751,16 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Name>CityStateAirbases</Name>
       <Description>
       </Description>
+    </EntryPoint>
+	
+	<EntryPoint type="InGameUIAddin" file="Modules/Greatest Cities (v 11)/Lua/TopCities_Main.lua">
+      <Name>Top Cities Main</Name>
+      <Description>Top Cities Main</Description>
+    </EntryPoint>
+	
+    <EntryPoint type="InGameUIAddin" file="Modules/Greatest Cities (v 11)/Lua/UI/TopCities.xml">
+      <Name>Top Cities UI</Name>
+      <Description>Top Cities UI</Description>
     </EntryPoint>
 	
 	
