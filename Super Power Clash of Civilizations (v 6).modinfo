@@ -3277,6 +3277,108 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="01B0F0DD5210744F683EEA63BE31ACE3" import="0">Modules/Extra Victory Conditions (v 1)/XML/Victories.xml</File>
     <File md5="3AC565FB769409FD01759730CF695268" import="0">Modules/Extra Victory Conditions (v 1)/XML/VictorySpeech.xml</File>
 	
+	<File md5="D5BF918FB7F6F2B3A93D72DBB7A184F0" import="1">Modules/City States Leaders II (v 7)/Art/BNW/antananarivo_leadericon.dds</File>
+    <File md5="BF5E7D4C090F68654ED268161D1346D2" import="1">Modules/City States Leaders II (v 7)/Art/BNW/antananarivo_leadericon2.dds</File>
+    <File md5="569396623AE536152885307AB84B9378" import="1">Modules/City States Leaders II (v 7)/Art/BNW/bogota_leadericon.dds</File>
+    <File md5="8E98E0810361FC263D836F5C626E80B8" import="1">Modules/City States Leaders II (v 7)/Art/BNW/bratislava_leadericon.dds</File>
+    <File md5="116251E7F5D4C07C9492B8DEC6D664FA" import="1">Modules/City States Leaders II (v 7)/Art/BNW/buenos_aires_leadericon.dds</File>
+    <File md5="5344896431F7A4D629D61343E5678C0A" import="1">Modules/City States Leaders II (v 7)/Art/BNW/buenos_aires_leadericon2.dds</File>
+    <File md5="C5E990D1A28F20DCB26DEA7E8CAA6169" import="1">Modules/City States Leaders II (v 7)/Art/BNW/byblos_leadericon.dds</File>
+    <File md5="E175E8FCDBE118D9B22B2668EFBC8839" import="1">Modules/City States Leaders II (v 7)/Art/BNW/ife_leadericon.dds</File>
+    <File md5="488D0B1FD03557A4CB1FCE42FF45F6FD" import="1">Modules/City States Leaders II (v 7)/Art/BNW/kabul_leadericon.dds</File>
+    <File md5="50FC3E2513C5DD71323AAC1875B31E6B" import="1">Modules/City States Leaders II (v 7)/Art/BNW/kabul_leadericon2.dds</File>
+    <File md5="453DE79C7FBA328D9C06E334DD266C74" import="1">Modules/City States Leaders II (v 7)/Art/BNW/kiev_leadericon.dds</File>
+    <File md5="8122A37DCD660BE8C18E40D257359227" import="1">Modules/City States Leaders II (v 7)/Art/BNW/kyzyl_leadericon.dds</File>
+    <File md5="EBFF68D8C9F47F8849C05FBFF5C6D52C" import="1">Modules/City States Leaders II (v 7)/Art/BNW/malacca_leadericon.dds</File>
+    <File md5="5F286D4D987EBC914235D3546EF4D312" import="1">Modules/City States Leaders II (v 7)/Art/BNW/mbanza_kongo_leadericon.dds</File>
+    <File md5="F5C9FA382BE98299F9E6881C1FC157F7" import="1">Modules/City States Leaders II (v 7)/Art/BNW/melbourne_leadericon.dds</File>
+    <File md5="689B2BD7062E98781094AE5BEFB739FD" import="1">Modules/City States Leaders II (v 7)/Art/BNW/mogadishu_leadericon.dds</File>
+    <File md5="20C6A0611F189D64A2ECB013D03F6F02" import="1">Modules/City States Leaders II (v 7)/Art/BNW/ormus_leadericon.dds</File>
+    <File md5="A7EF3F933662055186C1760AC94266C1" import="1">Modules/City States Leaders II (v 7)/Art/BNW/panama_city_leadericon.dds</File>
+    <File md5="57F434D46468A4C2B6C75B376CD26F12" import="1">Modules/City States Leaders II (v 7)/Art/BNW/riga_leadericon.dds</File>
+    <File md5="F4C49C07539AF3CD0202BC1BA515F399" import="1">Modules/City States Leaders II (v 7)/Art/BNW/samarkand_leadericon.dds</File>
+    <File md5="311864A56C1027BC87819AFB2743F632" import="1">Modules/City States Leaders II (v 7)/Art/BNW/samarkand_leadericon2.dds</File>
+    <File md5="C43AA4D71BFE1FD2FF0BD3AF2F5A3BA2" import="1">Modules/City States Leaders II (v 7)/Art/BNW/sofia_leadericon.dds</File>
+    <File md5="A95F8595475E91A4F2006D761588A530" import="1">Modules/City States Leaders II (v 7)/Art/BNW/sofia_leadericon2.dds</File>
+    <File md5="0ACCD35DB885E4450008E582F2331ACF" import="1">Modules/City States Leaders II (v 7)/Art/BNW/ur_leadericon.dds</File>
+    <File md5="5E59F2EE7E421BCBE70B2E0DAD2778E5" import="1">Modules/City States Leaders II (v 7)/Art/BNW/vancouver_leadericon.dds</File>
+    <File md5="42F0FC6C986E51F7241C7A5876BF8A57" import="1">Modules/City States Leaders II (v 7)/Art/BNW/vilnius_leadericon.dds</File>
+    <File md5="1C8C79A5B131B43F6067803862D1D549" import="1">Modules/City States Leaders II (v 7)/Art/BNW/wellington_leadericon.dds</File>
+    <File md5="7DD9FDB0C1C6F393B3EBB1AC55DB34D5" import="1">Modules/City States Leaders II (v 7)/Art/BNW/wellington_leadericon2.dds</File>
+    <File md5="9E2A19556D3CBFA5E7BDC43192F0EE62" import="1">Modules/City States Leaders II (v 7)/Art/CityStateBackgroundDefault.dds</File>
+    <File md5="8B87F7605AAB1BE43634026C17D6FBA8" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTop100.dds</File>
+    <File md5="1AE6B5AD3182C58B7F72960EF642B0C9" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTop200.dds</File>
+    <File md5="9B4290FFF27C279453423ED0DFFB1452" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTop300.dds</File>
+    <File md5="1F3A67E34DAB3C9BE314A597CA613406" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTop400.dds</File>
+    <File md5="52841CCBF68C0B9BFD964F32D7BD730B" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTop500.dds</File>
+    <File md5="5A64CCE012B63EC8074751E62C9B9B33" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTopCSLBNWBG.dds</File>
+    <File md5="20CE1BC8558FC08823D48BCE6A119E05" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTopCSLBNWCultured.dds</File>
+    <File md5="59992CDD7B888DF18BE087C6FBED0B8A" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTopCSLBNWMaritime.dds</File>
+    <File md5="054D48649DE4FF44800E7C5B03CE5DFC" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTopCSLBNWMercantile.dds</File>
+    <File md5="3B71A4F6F58A2ECDCEBB72F67E1D7F34" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTopCSLBNWMilitaristic.dds</File>
+    <File md5="C4FB507B4915400314FA8C73047F740B" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTopCSLBNWReligious.dds</File>
+    <File md5="C17E7D676C8FBADB5135A067B94857A7" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTopCSLBG.dds</File>
+    <File md5="264B04FA4E2AD19A2874250D05D5F0DF" import="1">Modules/City States Leaders II (v 7)/Art/CityStatePopupTopCSLG+KBG.dds</File>
+    <File md5="43470EBB451D1A128FFC521D8BFBCC3F" import="1">Modules/City States Leaders II (v 7)/Art/G+K/antwerp_leadericon.dds</File>
+    <File md5="6C16B500C99395834CC6EFF057AB73C6" import="1">Modules/City States Leaders II (v 7)/Art/G+K/cahokia_leadericon.dds</File>
+    <File md5="7CD07970953CA7BE9FB2EBB52B340933" import="1">Modules/City States Leaders II (v 7)/Art/G+K/cahokia_leadericon2.dds</File>
+    <File md5="ABA18161E84069DDA5A28EE890BBD72D" import="1">Modules/City States Leaders II (v 7)/Art/G+K/colombo_leadericon.dds</File>
+    <File md5="B55DFFB1F2B18CECAD8E3C326DB30F03" import="1">Modules/City States Leaders II (v 7)/Art/G+K/hong_kong_leadericon.dds</File>
+    <File md5="B1643CAD760EA0160868E06A267D6A41" import="1">Modules/City States Leaders II (v 7)/Art/G+K/jakarta_leadericon.dds</File>
+    <File md5="8A8E48B9E7439F1E5527332214303B6C" import="1">Modules/City States Leaders II (v 7)/Art/G+K/jerusalem_leadericon.dds</File>
+    <File md5="04ADE36FC44E9B27430F13DAC0D591E1" import="1">Modules/City States Leaders II (v 7)/Art/G+K/la_venta_leadericon.dds</File>
+    <File md5="80AC46BB095CB5429EE8C4B96C8067FC" import="1">Modules/City States Leaders II (v 7)/Art/G+K/la_venta_leadericon2.dds</File>
+    <File md5="F110928CAE808E79EEB93B698876382D" import="1">Modules/City States Leaders II (v 7)/Art/G+K/lisbon_leadericon.dds</File>
+    <File md5="44B989046BF302C44B0D0C71BE6EACF3" import="1">Modules/City States Leaders II (v 7)/Art/G+K/lisbon_leadericon2.dds</File>
+    <File md5="859BDE85299CA91CE7C41B6B4134573E" import="1">Modules/City States Leaders II (v 7)/Art/G+K/manila_leadericon.dds</File>
+    <File md5="6771E215846C0D92D6E8320CC24ECFEE" import="1">Modules/City States Leaders II (v 7)/Art/G+K/marrakech_leadericon.dds</File>
+    <File md5="33209ABFF6EAD144593CAEAE15309C2E" import="1">Modules/City States Leaders II (v 7)/Art/G+K/milan_leadericon.dds</File>
+    <File md5="00C4F4A05ED02219F7672514C011857C" import="1">Modules/City States Leaders II (v 7)/Art/G+K/mombasa_leadericon.dds</File>
+    <File md5="040147D148AF6DC9B9B77F7016000B7B" import="1">Modules/City States Leaders II (v 7)/Art/G+K/prague_leadericon.dds</File>
+    <File md5="951BDB890A2FECC866AB9C20EBCE84B1" import="1">Modules/City States Leaders II (v 7)/Art/G+K/valletta_leadericon.dds</File>
+    <File md5="88F2D0A4D4892032C1298C526CA7EE4D" import="1">Modules/City States Leaders II (v 7)/Art/G+K/vatican_city_leadericon.dds</File>
+    <File md5="3958635F79EB8A397F5DD02D5600BDC5" import="1">Modules/City States Leaders II (v 7)/Art/G+K/wittenberg_leadericon.dds</File>
+    <File md5="19CA39ECBE1C2D22C22D010A75E8590B" import="1">Modules/City States Leaders II (v 7)/Art/G+K/yerevan_leadericon.dds</File>
+    <File md5="20E74E14D2D04226811AF575846DD707" import="1">Modules/City States Leaders II (v 7)/Art/G+K/zanzibar_leadericon.dds</File>
+    <File md5="86C2F72191178F5C85AC052B9648E62D" import="1">Modules/City States Leaders II (v 7)/Art/G+K/zurich_leadericon.dds</File>
+    <File md5="4564249E85B5A17D48233D71DC88ECB8" import="1">Modules/City States Leaders II (v 7)/Art/G+K/zurich_leadericon2.dds</File>
+    <File md5="F65B9A66D5ED0FC3B55846E077F10D85" import="1">Modules/City States Leaders II (v 7)/Art/G+K/zurich_leadericon3.dds</File>
+    <File md5="D866821E8A417FFB7F8B16BD8BF04FEF" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/almaty_leadericon.dds</File>
+    <File md5="407F6177B2AE55A4BC02E102469EC65B" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/belgrade_leadericon.dds</File>
+    <File md5="04EE21DC4D7C2B560D28F11F0C6ED03F" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/brussels_leadericon.dds</File>
+    <File md5="C7052E8E0B394C376044F19DDDAD2E99" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/bucharest_leadericon.dds</File>
+    <File md5="234D50001B0F6D5685404E2C3CBD4C90" import="1">Art/vanilla/budapest_leadericon.dds</File>
+    <File md5="A27D8699133B31025A6E4E7760B5F91A" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/cape_town_leadericon.dds</File>
+    <File md5="D8E0CE45F6829B3CE27613B1F57EE402" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/dublin_leadericon.dds</File>
+    <File md5="ED88A8F87611B01DAE8C0763A6FD14E4" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/edinburgh_leadericon.dds</File>
+    <File md5="CB60B40217A8BF2E64BB35B12420CAB5" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/florence_leadericon.dds</File>
+    <File md5="3E215CF4993B27FD9BAAC02D82257DA4" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/geneva_leadericon.dds</File>
+    <File md5="E1445E0894F7F014BEAE0AEC7C155727" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/genoa_leadericon.dds</File>
+    <File md5="A02CB185D8D12CBDCC682FBA5594C774" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/hanoi_leadericon.dds</File>
+    <File md5="8CD8B3B70864E90CCDBF96A2E05E1408" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/hanoi_leadericon2.dds</File>
+    <File md5="336CE626A9704D5EF542BD81BFF77348" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/helsinki_leadericon.dds</File>
+    <File md5="640B7ADF21C706E9FBDDFAD533BA022E" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/kathmandu_leadericon.dds</File>
+    <File md5="3931C8DA3766ACA7D9BCA284BDEA1574" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/kuala_lumpur_leadericon.dds</File>
+    <File md5="19EBC52E18BAFAA84900B7F33D567B06" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/lhasa_leadericon.dds</File>
+    <File md5="01CB7ACA94FFBCAF38149CA5DE73F64E" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/monaco_leadericon.dds</File>
+    <File md5="847D5D8ACCA3471A79FBEC10B25A395B" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/quebec_city_leadericon.dds</File>
+    <File md5="A63F9C157E59094863B8B988203750F4" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/ragusa_leadericon.dds</File>
+    <File md5="785A0BE8B14CF95A6ED60BDB20F5C91C" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/rio_de_janeiro_leadericon.dds</File>
+    <File md5="758E40866E978DE57E80CB5F1019FF81" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/sidon_leadericon.dds</File>
+    <File md5="7436563D87F03EC20D9232B5E7B5CED8" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/singapore_leadericon.dds</File>
+    <File md5="FD4121FDFAD88203F219153A9A922C6A" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/stockholm_leadericon.dds</File>
+    <File md5="8B646B97188E06A24503D388B403F23B" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/sydney_leadericon.dds</File>
+    <File md5="8F3F7B945A326A1B252A22AC7E4BC42B" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/sydney_leadericon2.dds</File>
+    <File md5="58C5B6F02C1659A3A20AB0668693E4E3" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/tyre_leadericon.dds</File>
+    <File md5="7E747358ED3368622BB6C33B1B2D1D9E" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/venice_leadericon.dds</File>
+    <File md5="C95AF7310D95C98232D1C3F8096B9C4E" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/vienna_leadericon.dds</File>
+    <File md5="632D8E9797513861AB21C3BAB3550D66" import="1">Modules/City States Leaders II (v 7)/Art/vanilla/warsaw_leadericon.dds</File>
+    <File md5="D57F14B618D3F687D714510D82170018" import="1">Modules/City States Leaders II (v 7)/Assets/CityStateDiploPopup.lua</File>
+    <File md5="8455A9355F53B9CE37C9D29E257D7512" import="1">Modules/City States Leaders II (v 7)/Assets/CityStateDiploPopup.xml</File>
+    <File md5="D41D8CD98F00B204E9800998ECF8427E" import="1">Modules/City States Leaders II (v 7)/Assets/CityStateGreetingPopup.lua</File>
+    <File md5="23E31670BD68C29CEC708B9DD4D9F008" import="0">Modules/City States Leaders II (v 7)/MinorCivLeaders.sql</File>
+    <File md5="13C2F9F8477BF5814BA0F0694F810229" import="0">Modules/City States Leaders II (v 7)/MinorCivLeaders_en_US.xml</File>
+	
   </Files>
   <Actions>
     <OnModActivated>	  
@@ -3769,6 +3871,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/Text.xml</UpdateDatabase>
       <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/Victories.xml</UpdateDatabase>
       <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/VictorySpeech.xml</UpdateDatabase>
+	  
+	  <UpdateDatabase>Modules/City States Leaders II (v 7)/MinorCivLeaders.sql</UpdateDatabase>
+      <UpdateDatabase>Modules/City States Leaders II (v 7)/MinorCivLeaders_en_US.xml</UpdateDatabase>
 	  
     </OnModActivated>
   </Actions>
