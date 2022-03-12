@@ -56,7 +56,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <Mod id="adbc3334-367b-4435-a584-fd783b712865" minversion="0" maxversion="999" title="Custom Advanced Setup Screen" />
     <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="VMC" />
   </References>
-  <Blocks />
+  <Blocks/>
   <Files>
     <File md5="A413CB811715C8EE85A9933C74B01BD5" import="1">Art/Flags/SPUnitFlags.dds</File>
     <File md5="E09CC6EDD8A756A0534550B637485077" import="1">Art/Flags/Strategic/SPUnitFlags__BombaTsar_.dds</File>
@@ -3180,7 +3180,103 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="7E4112EE1FFBB9906B2AEB79E0ECAAB4" import="0">Modules/Greatest Cities (v 11)/Lua/UI/TopCities.lua</File>
     <File md5="E0DBE4287AA671DE8AFDFC98B5420B01" import="0">Modules/Greatest Cities (v 11)/Lua/UI/TopCities.xml</File>
     <File md5="FA224CF6320CE41309C0864F202F4007" import="1">Modules/Greatest Cities (v 11)/Lua/Utility/Serializer.lua</File>
+	
+	<File md5="C4933C99E92EE003C92D3DF8593EB2D3" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster128.dds</File>
+    <File md5="D34D65755D92226BB78480204E34C795" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster16.dds</File>
+    <File md5="89B712FBF090D67F2FA1975EEF18D556" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster214.dds</File>
+    <File md5="0092D0D303957109B40180DA5F0394A5" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster24.dds</File>
+    <File md5="E0A84913FA69C02E0AB64B9A83EAEC30" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster256.dds</File>
+    <File md5="E9CB3FE5B421E8945168E9B5139FF989" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster32.dds</File>
+    <File md5="AF3006C9EC99389C783682DC8EFD2C89" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster48.dds</File>
+    <File md5="58B0042E09FC97D56519BA6704B282D0" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster64.dds</File>
+    <File md5="1133D4B4B1D776CC97EF7336A19499FD" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster80.dds</File>
+    <File md5="6DB1BB720863B26480B019F81C0DAAC3" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMasterFontIcons.dds</File>
+    <File md5="091AFF29C8CABE7A284F743451203DDF" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMasterFontIcons.ggxml</File>
+    <File md5="E8FBF92BB82D6515C5B25E317D35F869" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTemp128.dds</File>
+    <File md5="C42B3C65E1559B759BFA55F28A592391" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTemp16.dds</File>
+    <File md5="603EE216B61671D0544013146FAEE9AA" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTemp214.dds</File>
+    <File md5="D99A47ED99F7CE25E97FD4FB9D62B921" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTemp24.dds</File>
+    <File md5="8C71EC27D03BA25ED81AF84D1B25E6EB" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTemp256.dds</File>
+    <File md5="BE5DAF8C45484AF1A6280EC593E751E1" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTemp32.dds</File>
+    <File md5="273D282CF8A4C1660CA2F7872FCCA760" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTemp48.dds</File>
+    <File md5="4BECBCD9E7F5D102F5F78676468CFFF4" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTemp64.dds</File>
+    <File md5="1F345D84CCE8FC4EC638EC1ED014216C" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTemp80.dds</File>
+    <File md5="230EA59A4F8755B2BD70E78309880D41" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTempFontIcons.dds</File>
+    <File md5="3AC9C5FABA2C0F03A12ED66995162CDA" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/Temp/HRCTempFontIcons.ggxml</File>
+    <File md5="ED89F0538961A7AFC3AEDED519996E5F" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HRAtheism.dds</File>
+    <File md5="0DDEE03CAF74716D3257944E805DC672" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HRDivineInsp.dds</File>
+    <File md5="DB6E2A1EB4DF2D16A264FD5481496775" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HRDoomCult.dds</File>
+    <File md5="E200CCAB74C446337A1E88614EEB2092" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HRDoomCult2.dds</File>
+    <File md5="825428B2329B2DF1D746CB29AB8026EC" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsoteric.dds</File>
+    <File md5="C7FB2B767387A83E54180158ACC75923" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericChristian.dds</File>
+    <File md5="45B3BF01289DD32FFB699CBDFF41F6BF" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericConfuci.dds</File>
+    <File md5="16319BE6AD03AE7EBBD7D7A02D620AE4" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericGreek.dds</File>
+    <File md5="D6572259E53AC9383730D48196C02D91" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericIfa.dds</File>
+    <File md5="BA31BEA8186AF57D6DBCAD60ED994328" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericIndian.dds</File>
+    <File md5="F34FDE0D9C4C8EC8A4237EAB917B2C5C" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericIslam.dds</File>
+    <File md5="BC569F6B74F43F71383F44566B122855" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericJudaism.dds</File>
+    <File md5="E61AB0B7201D944257EB22685A3A17B9" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericMuti.dds</File>
+    <File md5="DA1A36F19AEFD400430EA11AFC8E56A6" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericNewAge.dds</File>
+    <File md5="37D6679CF0BA98CA6B71D850B700A8CB" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericNorse.dds</File>
+    <File md5="13B3331634CDD9B2DD37053C77CFD13D" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericOrthodox.dds</File>
+    <File md5="5097A871F5F3A01CD7B6035E3817DBEC" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericProtest.dds</File>
+    <File md5="15A5D0305BC24A37859E6B7D472CFE7E" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericTao.dds</File>
+    <File md5="53D0E48A033EEBC9C2A415EE81345E7E" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HREsotericYoga.dds</File>
+    <File md5="8260922F2DB90CCE8401C5C3DE409E90" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HRRapture.dds</File>
+    <File md5="49B178F49AF07D43454C0D999BE5CECE" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HRRosyCross.dds</File>
+    <File md5="C4EFA5002BC854F495824D61389ACEAE" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Art/HRSpiritualism.dds</File>
+    <File md5="0EA8E929343B58B452F85C823F8B732F" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Decisions BNW.xml</File>
+    <File md5="4ED1DF20D8B796E9E83C8C3BF025EC30" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Decisions Support.sql</File>
+    <File md5="B0F5B5141BBFF75C05AC5949F25B40EF" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Decisions Text.xml</File>
+    <File md5="0793994FC20490EACE8C6B80B2AAB729" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Decisions.lua</File>
+    <File md5="2E5F0B466B4AA65E9129AB696F626365" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Events.lua</File>
+    <File md5="B414E0357F8E0E3692E3AF56EC7D1995" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Great Prophet Names Text.xml</File>
+    <File md5="61545C0475B164EB0D42E6B3EDABCDE2" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Great Prophet Names.sql</File>
+    <File md5="A7E26E13988164BABBB8E24497468862" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text DE_DE.xml</File>
+    <File md5="9029071FC117298EAE8218D0753922F7" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text ES_ES.xml</File>
+    <File md5="AB8E32BF5A10DA7B87DE4FDCB776E7EC" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text FR_FR.xml</File>
+    <File md5="616E6833E89529E2748AE5998AC9197F" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text IT_IT.xml</File>
+    <File md5="CCE1FAC302C6F481A5EB2E0E9EF05D13" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text JA_JP.xml</File>
+    <File md5="ABDB0A6F5E2992F75263D550EC90E292" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text KO_KR.xml</File>
+    <File md5="A61DF0EDC96F35E560EA86B4E84C46E2" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text PL_PL.xml</File>
+    <File md5="3E01A515134DC73EC695B40D9DCF8DDB" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text RU_RU.xml</File>
+    <File md5="BBC1F0E7C786552713DDA0BF2AA5585E" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/Lua/Historical Religions Preference Handle.lua</File>
+    <File md5="6A24A02EC9495E69D5E5B612B3761895" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Lua/Historical Religions Preference.lua</File>
+    <File md5="691B75CD3D589F67D316D289AE74CC5A" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterArt.sql</File>
+    <File md5="BF7C80CEE58B1E062403E69DE2F9800D" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterPreference.sql</File>
+    <File md5="31810D8423BE0858422D242AEF5E7DEF" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterReligion.sql</File>
+    <File md5="8FA9E0E04D4C2AEB7BC345888F43CFBE" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HRIDRemapper.sql</File>
+    <File md5="1DDF3051BF8CD090780549D5946B8625" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Historical Religions Mod Edits.xml</File>
+    <File md5="E60F7D415735DE86F4699D3091F65A34" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/HistoricalReligionsMasterText.xml</File>
+    <File md5="1E93340D9B8E3A6E50782E0A9A4806E4" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText DE_DE.xml</File>
+    <File md5="ACEEF9AA9323420B09E916E3A212D899" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText ES_ES.xml</File>
+    <File md5="4FEB4BC4FEB49BB453197437D37184AF" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText FR_FR.xml</File>
+    <File md5="5C184C27D45AC1127D4C6ADD3C586D1B" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText IT_IT.xml</File>
+    <File md5="2BA438FD83FAAE2431E6DC26BC9F2A5E" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText JA_JP.xml</File>
+    <File md5="D46CFF4012A30F70EDFD23AB50597856" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText KO_KR.xml</File>
+    <File md5="4C19B1F59DBF936C6D27A5D29F3E8EE0" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText PL_PL.xml</File>
+    <File md5="719543C806BE89682F50124233D45AAF" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText RU_RU.xml</File>
     
+	<File md5="4CD3D785097EAA4C9CABDF5D0C70F116" import="1">Modules/Extra Victory Conditions (v 1)/Art/CoronationOfCharlemagne.dds</File>
+    <File md5="4270E07B078D97590B6294FF373198D7" import="1">Modules/Extra Victory Conditions (v 1)/Art/EVCIconBG45.dds</File>
+    <File md5="8B917EB30774F037319019A32765F508" import="1">Modules/Extra Victory Conditions (v 1)/Art/EVCIconBG45_GoldFramed-BNW.dds</File>
+    <File md5="2E6226BBF4F286BBE0A6067220775725" import="1">Modules/Extra Victory Conditions (v 1)/Art/EVC_FontIcons.dds</File>
+    <File md5="F0B57462DA40B30F6BA1798019894131" import="1">Modules/Extra Victory Conditions (v 1)/Art/EVC_Victories.dds</File>
+    <File md5="C0497E21B5B7CA5AC09B8D968FBABD74" import="1">Modules/Extra Victory Conditions (v 1)/Art/EVCFontIcons.ggxml</File>
+    <File md5="FD8BE3BB5E519BCF311D557E965616EB" import="1">Modules/Extra Victory Conditions (v 1)/Art/SolonAndCroesus2.dds</File>
+    <File md5="8C04CCC4426ACB4C27D3419D0813758D" import="1">Modules/Extra Victory Conditions (v 1)/Lua/EconomicVictory.lua</File>
+    <File md5="AB264154A95A194B781A4E814334C9F9" import="1">Modules/Extra Victory Conditions (v 1)/Lua/ReligiousVictory.lua</File>
+    <File md5="A5775482BB13A4ED49459C3AB8CA3DCF" import="1">Modules/Extra Victory Conditions (v 1)/Sounds/Speech_Economic_Victory.mp3</File>
+    <File md5="BEEFD4DD388A0B0F3FBB6F0685A7FD8B" import="1">Modules/Extra Victory Conditions (v 1)/Sounds/Speech_Religious_Victory.mp3</File>
+    <File md5="F70AF536C0BF4E0A1F1410CB47CCB835" import="1">Modules/Extra Victory Conditions (v 1)/UI/AdvancedSetup.lua</File>
+    <File md5="6EA47310509D57047B6D1CE649BDFAA0" import="1">Modules/Extra Victory Conditions (v 1)/UI/EndGameMenu.lua</File>
+    <File md5="60E8993845D4DD0931246C9E95CA047E" import="1">Modules/Extra Victory Conditions (v 1)/UI/VictoryProgress.lua</File>
+    <File md5="F859FACB6C9D2C4BABE0E3D3221FB004" import="1">Modules/Extra Victory Conditions (v 1)/UI/VictoryProgress.xml</File>
+    <File md5="C05CD2BA3EE65D2D7EFC9A936B344DF5" import="0">Modules/Extra Victory Conditions (v 1)/XML/IconFontMapping.xml</File>
+    <File md5="216DC32DAD079AC3586D5054AEFF0F56" import="0">Modules/Extra Victory Conditions (v 1)/XML/Text.xml</File>
+    <File md5="01B0F0DD5210744F683EEA63BE31ACE3" import="0">Modules/Extra Victory Conditions (v 1)/XML/Victories.xml</File>
+    <File md5="3AC565FB769409FD01759730CF695268" import="0">Modules/Extra Victory Conditions (v 1)/XML/VictorySpeech.xml</File>
+	
   </Files>
   <Actions>
     <OnModActivated>	  
@@ -3642,6 +3738,38 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_en_US.xml</UpdateDatabase>
       <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_DE_DE.xml</UpdateDatabase>
 	  
+	  <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterArt.sql</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterReligion.sql</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterPreference.sql</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/HistoricalReligionsMasterText.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText DE_DE.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText ES_ES.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText FR_FR.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText IT_IT.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText JA_JP.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText KO_KR.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText PL_PL.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText RU_RU.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Great Prophet Names.sql</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Great Prophet Names Text.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text DE_DE.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text ES_ES.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text FR_FR.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text IT_IT.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text JA_JP.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text KO_KR.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text PL_PL.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Great Prophet Names/Non-English XML Tags/Great Prophet Text RU_RU.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Decisions Support.sql</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Decisions Text.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Historical Religions Mod Edits.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Decisions BNW.xml</UpdateDatabase>
+	  
+	  <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/IconFontMapping.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/Text.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/Victories.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/VictorySpeech.xml</UpdateDatabase>
+	  
     </OnModActivated>
   </Actions>
   <EntryPoints>
@@ -3763,7 +3891,20 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>Top Cities UI</Description>
     </EntryPoint>
 	
+	<EntryPoint type="InGameUIAddin" file="Modules/Historical Religions Complete (BNW or GK) (v 45)/Lua/Historical Religions Preference Handle.lua">
+      <Name>Preference</Name>
+      <Description>Preference</Description>
+    </EntryPoint>
 	
+	<EntryPoint type="InGameUIAddin" file="Modules/Extra Victory Conditions (v 1)/Lua/ReligiousVictory.lua">
+      <Name>ReligiousVictory</Name>
+      <Description>Adds Religious Victory code</Description>
+    </EntryPoint>
+	
+    <EntryPoint type="InGameUIAddin" file="Modules/Extra Victory Conditions (v 1)/Lua/EconomicVictory.lua">
+      <Name>EconomicVictory</Name>
+      <Description>Adds Economic Victory code</Description>
+    </EntryPoint>
 	
 	
 	
