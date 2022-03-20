@@ -134,7 +134,7 @@
 			<UnitGoldMaintenanceMod>-25</UnitGoldMaintenanceMod>
 			<InternalTradeRouteYieldModifier>50</InternalTradeRouteYieldModifier>
 			<BuildingProductionModifier>50</BuildingProductionModifier>
-			<StrategicResourceMod>150</StrategicResourceMod>
+			<StrategicResourceMod>180</StrategicResourceMod>
 		</Row>
 
 		<Row>
@@ -150,7 +150,7 @@
 			<UnitGoldMaintenanceMod>-35</UnitGoldMaintenanceMod>
 			<ThemingBonusMultiplier>100</ThemingBonusMultiplier>
 			<InternalTradeRouteYieldModifier>50</InternalTradeRouteYieldModifier>
-			<StrategicResourceMod>150</StrategicResourceMod>
+			<StrategicResourceMod>200</StrategicResourceMod>
 		</Row>
 
 
@@ -197,31 +197,34 @@
 
 	<Policies>
 		
-		<!--
+		
 		<Update>
-			<Set StrategicResourceMod="110"/>
+			<Set StrategicResourceMod="150"/>
 			<Where Type="POLICY_AI_INDUSTRY"/>
 		</Update>
 
 		<Update>
-			<Set StrategicResourceMod="120"/>
+			<Set StrategicResourceMod="170"/>
 			<Where Type="POLICY_AI_MODERN"/>
 		</Update>
 
 		<Update>
-			<Set StrategicResourceMod="130"/>
+			<Set StrategicResourceMod="190"/>
 			<Where Type="POLICY_AI_WORLDWAR"/>
 		</Update>
 
 		<Update>
-			<Set StrategicResourceMod="140"/>
+			<Set StrategicResourceMod="200"/>
 			<Where Type="POLICY_AI_ATOMIC"/>
 		</Update>
+
+		<!--
 
 		<Update>
 			<Set StrategicResourceMod="150"/>
 			<Where Type="POLICY_AI_INFORMATION"/>
 		</Update>
+
 		-->
 
 		
