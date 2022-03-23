@@ -3224,6 +3224,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="DA83CE69B01F095369A911667A0340B1" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploTradesStatus.lua</File>
     <File md5="DBDF070E896E611FE4D65EBD1140C696" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploTradesStatus.xml</File>
     <File md5="66184AFA07B4CAB8196E10BD1FA190CE" import="0">DLL/UI - Trade Opportunities (v 28)/XML/UITradeOpportunities.xml</File>
+	
+	<!--
 	<File md5="F1499C256113C941ACE1032188BFAF7D" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseInternationalTradeRoutePopup.lua</File>
     <File md5="BBBE65A425660A75799D201298A795DC" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseInternationalTradeRoutePopup.xml</File>
     <File md5="507FA8A8ED26BEDDAC035744C9F2FBCD" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseTradeUnitNewHome.lua</File>
@@ -3231,6 +3233,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="23E7389D9DEE8336D9E3ADA8159C3F6F" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/TradeRouteOverview.lua</File>
     <File md5="3209DABE4E516FC35EE41474FA565667" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/TradeRouteOverview.xml</File>
     <File md5="D2ACBA38B9E881A58D09A5BE606A0729" import="0">DLL/UI - Trade Routes Enhancements (v 7)/XML/UITradeRoutesEnhancements.xml</File>
+	-->
+	
     <File md5="8342B28DA73D581AA82FF27978F7237A" import="0">DLL/Global - Raze City States (v 1)/LUA/GlobalRazeCityStates.lua</File>
     <File md5="5ECB393E855B3A6B88A31E75843CC519" import="0">DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</File>
 	
@@ -3977,7 +3981,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	  <UpdateDatabase>XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_Atlas.xml</UpdateDatabase>   
       
       <UpdateDatabase>DLL/UI - Trade Opportunities (v 28)/XML/UITradeOpportunities.xml</UpdateDatabase>
+	  
+	  <!--
 	  <UpdateDatabase>DLL/UI - Trade Routes Enhancements (v 7)/XML/UITradeRoutesEnhancements.xml</UpdateDatabase>
+	  -->
+	  
       <UpdateDatabase>DLL/UI - Religion Spread (v 13)/XML/UIReligionSpread.xml</UpdateDatabase>
 	  <UpdateDatabase>DLL/UI - Notify Exit Resistance (v 1)/XML/UINotifyExitResistance.xml</UpdateDatabase>
 	  <UpdateDatabase>DLL/UI - City Production (v 15)/XML/UICityProductionDLL.xml</UpdateDatabase>

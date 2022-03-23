@@ -297,6 +297,22 @@
 			<Flavor>2</Flavor>
 		</Row>
 	</Leader_Flavors>
-	
+
+
+	<!-- CIV TRAITS OVERHAUL -->
+
+	<Leader_Traits>
+
+		<Row>
+			<LeaderType>LEADER_AUGUSTUS</LeaderType>
+			<TraitType>TRAIT_CAPITAL_BUILDINGS_CHEAPER</TraitType>
+		</Row>
+
+		<Row>
+			<LeaderType>LEADER_AUGUSTUS</LeaderType>
+			<TraitType>TRAIT_CAPITAL_BUILDINGS_CHEAPER</TraitType>
+		</Row>
+
+	</Leader_Traits>
 	
 </GameData>
