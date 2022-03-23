@@ -6,7 +6,6 @@
 		<Row>
 			<Type>BUILDING_BOLLHUSET</Type>
 			<BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
-			<FreeStartEra>ERA_FUTURE</FreeStartEra>
 			<Cost>200</Cost>
 			<GoldMaintenance>0</GoldMaintenance>
 			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>

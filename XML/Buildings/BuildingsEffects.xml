@@ -42,11 +42,13 @@
 			<NumUnits>1</NumUnits>
 		</Row>
 
+		<!--
 		<Row>
 			<BuildingType>BUILDING_WHITESANDS</BuildingType>
 			<UnitType>UNIT_GUIDED_MISSILE</UnitType>
 			<NumUnits>3</NumUnits>
 		</Row>
+		-->
 
 		<Row>
 			<BuildingType>BUILDING_ARECIBO</BuildingType>
@@ -204,21 +206,29 @@
 	</Building_FreeUnits>
 
 	<Unit_ProductionModifierBuildings>
+
+		<!--
 		<Row>
 			<UnitType>UNIT_FW_CHIMERA</UnitType>
 			<BuildingType>BUILDING_FW_ECTOGENESIS_POD</BuildingType>
 			<ProductionModifier>50</ProductionModifier>
 		</Row>
+		
+
 		<Row>
 			<UnitType>UNIT_MUTANT</UnitType>
 			<BuildingType>BUILDING_FW_ECTOGENESIS_POD</BuildingType>
 			<ProductionModifier>50</ProductionModifier>
 		</Row>
+		
+
 		<Row>
 			<UnitType>UNIT_HYDRA</UnitType>
 			<BuildingType>BUILDING_FW_ECTOGENESIS_POD</BuildingType>
 			<ProductionModifier>25</ProductionModifier>
 		</Row>
+		
+
 		<Row>
 			<UnitType>UNIT_FW_BIOINFANTRY</UnitType>
 			<BuildingType>BUILDING_FW_BIOMOD_TANK</BuildingType>
@@ -230,6 +240,9 @@
 			<ProductionModifier>50</ProductionModifier>
 		</Row>
 
+		-->
+
+
 		<Row>
 			<UnitType>UNIT_FW_ROBOT_INFANTRY</UnitType>
 			<BuildingType>BUILDING_FW_AUTOPLANT</BuildingType>
@@ -237,28 +250,31 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_ROBOT_INFANTRY</UnitType>
-			<BuildingType>BUILDING_FW_DRONE_HIVE</BuildingType>
-			<ProductionModifier>25</ProductionModifier>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_AUTOMATON</UnitType>
-			<BuildingType>BUILDING_FW_AUTOPLANT</BuildingType>
-			<ProductionModifier>25</ProductionModifier>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_AUTOMATON</UnitType>
 			<BuildingType>BUILDING_FW_DRONE_HIVE</BuildingType>
 			<ProductionModifier>25</ProductionModifier>
 		</Row>
 
+		<!--
+		<Row>
+			<UnitType>UNIT_FW_AUTOMATON</UnitType>
+			<BuildingType>BUILDING_FW_AUTOPLANT</BuildingType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_AUTOMATON</UnitType>
+			<BuildingType>BUILDING_FW_DRONE_HIVE</BuildingType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		-->
+
 		<Row>
 			<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
-			<BuildingType>BUILDING_FW_AEROSPACE_COMPLEX</BuildingType>
+			<BuildingType>BUILDING_AEROSPACE_COMPLEX</BuildingType>
 			<ProductionModifier>25</ProductionModifier>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
-			<BuildingType>BUILDING_FW_AEROSPACE_COMPLEX</BuildingType>
+			<BuildingType>BUILDING_AEROSPACE_COMPLEX</BuildingType>
 			<ProductionModifier>25</ProductionModifier>
 		</Row>
 	</Unit_ProductionModifierBuildings>
@@ -1052,6 +1068,7 @@
 			<ResourceType>RESOURCE_HORSE</ResourceType>
 			<Quantity>10</Quantity>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_DUCAL_STABLE</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
@@ -2622,11 +2639,15 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
+
+		<!--
 		<Row>
 			<BuildingType>BUILDING_FW_ARCOLOGY_HUB_DUMMY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		-->
+
 		<Row>
 			<BuildingType>BUILDING_FW_VERTICAL_FARM</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -2981,12 +3002,7 @@
 			<YieldChange>2</YieldChange>
 		</Row>
 
-		<Row>
-			<BuildingType>BUILDING_TOPKAPI</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_TCS_TOWER</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
+		
 		<Row>
 			<BuildingType>BUILDING_TOPKAPI</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
@@ -6994,7 +7010,7 @@
 
 		<Row>
 			<BuildingType>BUILDING_ABER</BuildingType>
-			<FlavorType>FLAVOR_FOOD</FlavorType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
 		<Row>
@@ -10450,23 +10466,24 @@
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>
+
 		<Row>
-			<BuildingType>BUILDING_FW_BRAINUPLOADING</BuildingType>
+			<BuildingType>BUILDING_FW_BRAIN_UPLOADING</BuildingType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
 		<Row>
-			<BuildingType>BUILDING_FW_BRAINUPLOADING</BuildingType>
+			<BuildingType>BUILDING_FW_BRAIN_UPLOADING</BuildingType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
 		<Row>
-			<BuildingType>BUILDING_FW_BRAINUPLOADING</BuildingType>
+			<BuildingType>BUILDING_FW_BRAIN_UPLOADING</BuildingType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
 		<Row>
-			<BuildingType>BUILDING_FW_BRAINUPLOADING</BuildingType>
+			<BuildingType>BUILDING_FW_BRAIN_UPLOADING</BuildingType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
@@ -10595,11 +10612,14 @@
 			<FlavorType>FLAVOR_GOLD</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>
+		
 		<Row>
-			<BuildingType>BUILDING_FW_RESEACH_MODULE_1</BuildingType>
+			<BuildingType>BUILDING_FW_RESEARCH_MODULE_1</BuildingType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>
+		
+
 		<Row>
 			<BuildingType>BUILDING_FW_ENGINEERING_MODULE_1</BuildingType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -11133,7 +11153,7 @@
 
 	<Policy_BuildingClassYieldChanges>
 		<Row>
-			<PolicyType>POLICY_FREEDOM</PolicyType>
+			<PolicyType>POLICY_CIVIL_SOCIETY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_ROCKEFELLER</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<YieldChange>20</YieldChange>

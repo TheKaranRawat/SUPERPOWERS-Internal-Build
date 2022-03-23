@@ -6,13 +6,13 @@
 	<Language_en_US>
 		<!-- Super Power Modded Game -->
 		<Row Tag="TXT_KEY_SP_GS_TITLE">
-			<Text>SuperPowers Singleplayer</Text>
+			<Text>SUPERPOWERS Singleplayer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_SP_GS_DESC">
 			<Text>[COLOR_YELLOW]Important Notes:[ENDCOLOR][NEWLINE]1. Check the Civilopedia before playing and learn more about the mods mechanics. (Press [COLOR_POSITIVE_TEXT]F1[ENDCOLOR] Now!). [NEWLINE]2. For better performance use DX9 mode, and reduce CS and AI.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_SP_VERSION">
-			<Text>[COLOR_YELLOW]Version 1.2(Beta)[ENDCOLOR]</Text>
+			<Text>[COLOR_YELLOW]Version 1.5(Beta)[ENDCOLOR]</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_SP_MOD_SETUP">

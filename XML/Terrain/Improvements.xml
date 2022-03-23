@@ -107,6 +107,7 @@
 			<PortraitIndex>18</PortraitIndex>
 			<IconAtlas>FW_IMPROVEMENTS_ATLAS</IconAtlas>
 		</Row>
+
 		<Row>
 			<Type>IMPROVEMENT_FW_GENOCENTRE</Type>
 			<Description>TXT_KEY_IMPROVEMENT_FW_GENOCENTRE</Description>
@@ -118,6 +119,8 @@
 			<PortraitIndex>22</PortraitIndex>
 			<IconAtlas>FW_IMPROVEMENTS_ATLAS</IconAtlas>
 		</Row>
+
+		<!--
 		<Row>
 			<Type>IMPROVEMENT_FW_FUNGAL_GROWTH</Type>
 			<Description>TXT_KEY_IMPROVEMENT_FW_FUNGAL_GROWTH</Description>
@@ -130,7 +133,7 @@
 			<IconAtlas>FW_IMPROVEMENTS_ATLAS</IconAtlas>
 			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
 		</Row>
-		
+		-->
 		
 		
 		
@@ -657,6 +660,7 @@
 			<FeatureType>FEATURE_MARSH</FeatureType>
 		</Row>
 
+		<!--
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_COMM_ARRAY</ImprovementType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
@@ -669,6 +673,8 @@
 			<ImprovementType>IMPROVEMENT_FW_COMM_ARRAY</ImprovementType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
 		</Row>
+		-->
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_HYDROPONICS_DOME</ImprovementType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
@@ -878,6 +884,7 @@
 
 		<!-- 00000000000000000000000000000000000000000000000 -->
 
+		<!--
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_FUNGAL_GROWTH</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -893,7 +900,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
-
+		-->
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
@@ -2373,6 +2380,8 @@
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>4</Yield>
 		</Row>
+
+		<!--
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_COMM_ARRAY</ImprovementType>
 			<TechType>TECH_MEMETICS</TechType>
@@ -2385,6 +2394,8 @@
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>2</Yield>
 		</Row>
+		-->
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_PRESERVE</ImprovementType>
 			<TechType>TECH_ECOSOPHY</TechType>

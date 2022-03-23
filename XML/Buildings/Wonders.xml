@@ -4283,7 +4283,7 @@
 			<Civilopedia>TXT_KEY_WONDER_HATTUSA_PEDIA</Civilopedia>
 			<Quote>TXT_KEY_WONDER_HATTUSA_QUOTE</Quote>
 			<Cost>185</Cost>
-			<PrereqTech>TECH_ARCHERY</PrereqTech>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<MaxStartEra>ERA_CLASSICAL</MaxStartEra>
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>

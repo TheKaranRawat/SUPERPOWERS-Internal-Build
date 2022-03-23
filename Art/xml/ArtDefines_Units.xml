@@ -530,6 +530,7 @@
 		</Row>
 	</ArtDefine_StrategicView>
 
+	<!--
 	<ArtDefine_UnitInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_FW_NEXUS</Type>
@@ -591,6 +592,7 @@
 			<Asset>SV_FW_Nexus.dds</Asset>
 		</Row>
 	</ArtDefine_StrategicView>
+	-->
 
 	<ArtDefine_UnitInfos>
 		<Row>

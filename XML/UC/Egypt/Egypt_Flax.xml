@@ -58,31 +58,7 @@
 		</Row>-->
 	</Improvement_Yields>
 	
-	<BuildFeatures>
-		<Row>
-			<BuildType>IMPROVEMENT_EGYPTIAN_FLAX</BuildType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
-			<Time>699</Time>
-			<Production>20</Production>
-			<Remove>true</Remove>
-		</Row>
-		<Row>
-			<BuildType>IMPROVEMENT_EGYPTIAN_FLAX</BuildType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
-			<Time>399</Time>
-			<Production>20</Production>
-			<Remove>true</Remove>
-		</Row>
-		<Row>
-			<BuildType>IMPROVEMENT_EGYPTIAN_FLAX</BuildType>
-			<FeatureType>FEATURE_MARSH</FeatureType>
-			<PrereqTech>TECH_MASONRY</PrereqTech>
-			<Time>599</Time>
-			<Remove>true</Remove>
-		</Row>
-	</BuildFeatures>
+	
 	
 	<Improvement_TechFreshWaterYieldChanges>
 		<Row>
@@ -146,6 +122,32 @@
 			<IconIndex>0</IconIndex>
 		</Row>
 	</Builds>
+
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_EGYPTIAN_FLAX</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>699</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_EGYPTIAN_FLAX</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>399</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_EGYPTIAN_FLAX</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>599</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
 
 	<Unit_Builds>
 		<Row>

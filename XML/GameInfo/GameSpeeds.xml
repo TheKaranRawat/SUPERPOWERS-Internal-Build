@@ -36,6 +36,9 @@
 		</Update>
 	</GameSpeeds>
 
+
+	<!--
+
 	<GameSpeed_Turns>
 
 		<Delete GameSpeedType="GAMESPEED_STANDARD"/>
@@ -199,6 +202,8 @@
 			<TurnsPerIncrement>70</TurnsPerIncrement>
 		</Row>
 	</GameSpeed_Turns>
+
+	-->
 
 
 

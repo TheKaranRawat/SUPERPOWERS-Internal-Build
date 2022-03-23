@@ -1160,7 +1160,7 @@
 			<Text>[ICON_STRENGTH] Walls</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_WALLS_OF_BABYLON_DESC">
-			<Text>[ICON_STRENGTH][ICON_RESEARCH] Walls of babylon</Text>
+			<Text>[ICON_STRENGTH][ICON_RESEARCH] Walls of Babylon</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CASTLE">
 			<Text>[ICON_STRENGTH] Castle</Text>
