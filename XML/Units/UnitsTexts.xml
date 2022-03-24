@@ -1637,7 +1637,15 @@
 			<Text>Georgios Averof (Greek: Θ/Κ Γεώργιος Αβέρωφ) is a modified Pisa-class armored cruiser built in Italy for the Royal Hellenic Navy in the first decade of the 20th century. The ship served as the Greek flagship during most of the first half of the century. Although popularly known as a battleship (θωρηκτό) in Greek, she is in fact an armored cruiser (θωρακισμένο καταδρομικό), the only ship of this type still in existence.</Text>
 		</Row>
 
-		
+		<Row Tag="TXT_KEY_UNIT_DIESEL_SUB">
+			<Text>Diesel-Electric Attack Submarine</Text>
+			<Plurality>2</Plurality>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_CACADOR">
+			<Text>Caçador</Text>
+			<Plurality>2</Plurality>
+		</Row>
 		
 
 		<Row Tag="TXT_KEY_UNIT_GERMAN_UBOAT">

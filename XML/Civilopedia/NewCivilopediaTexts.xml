@@ -168,19 +168,19 @@
 			<Text>Destroyed after Attacking</Text>
 		</Replace>
 
-		<Replace Tag="TXT_MOVE_AFTER_PC">
+		<Replace Tag="TXT_KEY_MOVE_AFTER_PC">
 			<Text>Can Move After Purchased</Text>
 		</Replace>
 
-		<Replace Tag="TXT_REQUIRES_E">
+		<Replace Tag="TXT_KEY_REQUIRES_E">
 			<Text>Requires Enhanced Religion to Purchase</Text>
 		</Replace>
 
-		<Replace Tag="TXT_PROHIBITS_SPREAD">
+		<Replace Tag="TXT_KEY_PROHIBITS_SPREAD">
 			<Text>Prohibits Other Religions Spread to the City Garrisoned</Text>
 		</Replace>
 
-		<Replace Tag="TXT_REL_STR">
+		<Replace Tag="TXT_KEY_REL_STR">
 			<Text>Religious Strength</Text>
 		</Replace>
 

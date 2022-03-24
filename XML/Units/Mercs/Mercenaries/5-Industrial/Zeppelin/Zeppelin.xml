@@ -59,7 +59,7 @@
 	<Unit_BuildingClassRequireds>
 		<Row>
 			<UnitType>UNIT_EXOTIC_UNIT_ZEPPELIN</UnitType>
-			<BuildingClassType>BUILDING_SMAN_EU_NAVAL_YARD</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_SMAN_EU_NAVAL_YARD</BuildingClassType>
 		</Row>
 	</Unit_BuildingClassRequireds>
 

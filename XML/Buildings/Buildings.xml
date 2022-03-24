@@ -3888,6 +3888,27 @@
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>35</PortraitIndex>
 		</Row>
+
+		<Row>
+			<Type>BUILDING_BOLLHUSET</Type>
+			<BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
+			<Cost>200</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
+			<Description>TXT_KEY_BUILDING_BOLLHUSET</Description>
+			<Help>TXT_KEY_BUILDING_BOLLHUSET_STRATEGY</Help>
+			<Civilopedia>TXT_KEY_BUILDING_BOLLHUSET_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_BOLLHUSET_STRATEGY</Strategy>
+			<ArtDefineTag>THEATRE</ArtDefineTag>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<SpecialistCount>3</SpecialistCount>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<Happiness>6</Happiness>
+			<HurryCostModifier>10</HurryCostModifier>
+			<IconAtlas>5UC_ICON_ATLAS</IconAtlas>
+			<PortraitIndex>21</PortraitIndex>
+		</Row>
 		
 	
 	</Buildings>

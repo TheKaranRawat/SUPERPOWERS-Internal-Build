@@ -2103,7 +2103,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="3534B73F512EC8A03B16749D1CB0551E" import="1">Art/UC/5UCIconAtlas45.dds</File>
     <File md5="51745CB62C6F628B847879CA43FB73F5" import="1">Art/UC/5UCIconAtlas64.dds</File>
     <File md5="60B7AEAD6CF9292BECDFDF8B6B10D388" import="1">Art/UC/5UCIconAtlas80.dds</File>
-	<File md5="89DF8AB675D1FA642D5192519DA60349" import="0">XML/UC/Sweden/SwedenBollhuset.xml</File>
+	<File md5="89DF8AB675D1FA642D5192519DA60349" import="1">XML/UC/Sweden/SwedenBollhuset.xml</File>
 	<File md5="89BBF83837A9F7E2259EE961FF63D94A" import="1">XML/UC/Sweden/3skola128.dds</File>
     <File md5="172D95D94488C93CA2ACDAC5FA43CD16" import="1">XML/UC/Sweden/3skola256.dds</File>
     <File md5="93FFA52E4E8AC75B2BC508FF86B72970" import="1">XML/UC/Sweden/3skola45.dds</File>
