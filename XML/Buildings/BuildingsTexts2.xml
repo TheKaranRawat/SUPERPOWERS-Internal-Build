@@ -92,7 +92,8 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_BOLLHUSET_STRATEGY">
-			<Text>The Bollhuset is the Swedish embodiment of fine arts and theater. In addition to the normal [ICON_HAPPINESS_1] Happiness increase, the Bollhuset has no maintenance cost and instead generates [ICON_GOLD] Gold.</Text>
+			<Text>The Bollhuset is the Swedish embodiment of fine arts and theater. In addition to the normal [ICON_HAPPINESS_1] Happiness increase, the Bollhuset has no maintenance cost and instead generates [ICON_GOLD] Gold.
+		    </Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_BOLLHUSET_TEXT">
@@ -102,6 +103,135 @@
 				Bollhuset was the scene of a long series of most important events in the history of the theater in the city and in the history of Swedish theater. Between 1667 and 1792 it was used as a theater until it was demolished in 1793; between 1737 and 1754, the first national theater was located here; in 1773–1782 the Royal Swedish Opera (and thereby also the Royal Swedish Ballet) was located here; in 1783–1792 the French theater of Stockholm was housed here; in 1787 the second national theater was re-founded in the building; and from 1788 to 1792 it was the home of the Royal Dramatic Theatre.
 			</Text>
 		</Row>
+
+		<!-- MISSING LOCALIZATION -->
+
+		<Row Tag="TXT_KEY_BUILDING_FW_ANGELNET_HELP">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_NEPHILIMGENETEMPLATE_HELP">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_SHIMIZUMCP_HELP">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_DATA_HAVEN_HELP">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_ANGELNET_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_NEPHILIMGENETEMPLATE_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_SHIMIZUMCP_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_DATA_HAVEN_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_TOGETHER_TT_STARS_PROJECT_1_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_ARDL_ENLIGHTENMENT_TH_PROJECT_2_STRATEGY">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_ANGELNET_PEDIA">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_NEPHILIMGENETEMPLATE_PEDIA">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_SHIMIZUMCP_PEDIA">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_DATA_HAVEN_PEDIA">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_ANGELNET_DESC">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_NEPHILIMGENETEMPLATE_DESC">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_SHIMIZUMCP_DESC">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_FW_DATA_HAVEN_DESC">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_HR_ESOTERIC_DUMMY_HELP">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_HR_SPIRITUALIST_DUMMY_HELP">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_GLOBAL_WARGAMES_DUMMY_TEXT">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_HR_ESOTERIC_DUMMY_TEXT">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_HR_SPIRITUALIST_DUMMY">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_HR_SPIRITUALIST_DUMMY_TEXT">
+			<Text>
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_HR_ESOTERIC_DUMMY">
+			<Text>
+			</Text>
+		</Row>
+
+		
 		
 	</Language_en_US>
 </GameData>

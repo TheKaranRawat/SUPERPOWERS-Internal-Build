@@ -2097,7 +2097,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="8E903CCC27EEE26675036F0F7820CB4D" import="1">Art/IconAtlases/Units/ShipAtlas45.dds</File>
     <File md5="C6B0BBA70B5D79A16EC5C75BFCA83D02" import="1">Art/IconAtlases/Units/ShipAtlas64.dds</File>
     <File md5="70BBBE044B9A5C8C9E6112EB3EF053CB" import="1">Art/IconAtlases/Units/ShipAtlas80.dds</File>
-	<File md5="D15241932F0F77E947C3C47A02DB1C26" import="0">Art/UC/5UCIconAtlas.xml</File>
+	<File md5="D15241932F0F77E947C3C47A02DB1C26" import="1">Art/UC/5UCIconAtlas.xml</File>
     <File md5="438A2EAD5DF639CD0A932F20BD83ABDA" import="1">Art/UC/5UCIconAtlas128.dds</File>
     <File md5="194A69447E43EC99267439DDF7B35FE5" import="1">Art/UC/5UCIconAtlas256.dds</File>
     <File md5="3534B73F512EC8A03B16749D1CB0551E" import="1">Art/UC/5UCIconAtlas45.dds</File>
