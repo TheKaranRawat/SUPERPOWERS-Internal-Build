@@ -168,29 +168,37 @@
 		
 		<Row>
 			<Type>POLICY_GENE_VAULT</Type>
+			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 		</Row>
 		<Row>
 			<Type>POLICY_GENE_VAULT_DUMMY</Type>
+			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 		</Row>
 		<Row>
 			<Type>POLICY_BIONIC_TOWER</Type>
+			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 			<HalfSpecialistFood>true</HalfSpecialistFood>
 			<HalfSpecialistUnhappiness>true</HalfSpecialistUnhappiness>
 		</Row>
 		<Row>
 			<Type>POLICY_BIONIC_TOWER_DUMMY</Type>
+			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 		</Row>
 		<Row>
 			<Type>POLICY_HELIOS</Type>
+			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 		</Row>
 		<Row>
 			<Type>POLICY_HELIOS_DUMMY</Type>
+			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 		</Row>
 		<Row>
 			<Type>POLICY_BOREHOLE</Type>
+			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 		</Row>
 		<Row>
 			<Type>POLICY_BOREHOLE_DUMMY</Type>
+			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 		</Row>
 		
 	</Policies>
