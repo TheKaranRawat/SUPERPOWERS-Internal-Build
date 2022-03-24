@@ -629,10 +629,8 @@
 		<Row>
 			<Class>UNITCLASS_INQUISITOR</Class>
 			<Type>UNIT_HUN_SHAMAN</Type>
-			<Cost>100</Cost>
-			<!--
+			<Cost>85</Cost>
 			<FaithCost>55</FaithCost>
-			-->
 			<Moves>4</Moves>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
 			<Domain>DOMAIN_LAND</Domain>
@@ -682,10 +680,8 @@
 		<Row>
 			<Class>UNITCLASS_MISSIONARY</Class>
 			<Type>UNIT_SIAMESE_MONK</Type>
-			<Cost>100</Cost>
-			<!--
+			<Cost>-1</Cost>
 			<FaithCost>120</FaithCost>
-			-->
 			<Moves>5</Moves>
 			<Capture>UNITCLASS_MISSIONARY</Capture>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>

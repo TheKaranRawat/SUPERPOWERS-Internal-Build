@@ -2425,6 +2425,11 @@
 	<Building_ClassesNeededInCity>
 
 		<Row>
+			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
+		</Row>
+
+		<Row>
 			<BuildingType>BUILDING_FW_GEOTHERMAL_PLANT</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
 		</Row>
@@ -3888,7 +3893,7 @@
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>35</PortraitIndex>
 		</Row>
-
+	
 		<Row>
 			<Type>BUILDING_BOLLHUSET</Type>
 			<BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>

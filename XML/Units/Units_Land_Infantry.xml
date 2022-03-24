@@ -4447,6 +4447,14 @@
 				<Cost>2</Cost>
 			</Row>
 
+			<Row>
+				<UnitType>UNIT_FW_UAV</UnitType>
+				<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+				<Cost>1</Cost>
+			</Row>
+
+			
+
 		
 
 			<!--Anti-Mounted-Anti-Tank-->

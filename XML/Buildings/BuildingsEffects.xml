@@ -1434,6 +1434,12 @@
 	<Building_YieldChanges>
 
 		<Row>
+			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+		<Row>
 			<BuildingType>BUILDING_GOLDENGATE</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
@@ -6808,6 +6814,26 @@
 
 	<Building_Flavors>
 
+		<Row>
+			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
 		
 
 		<Row>

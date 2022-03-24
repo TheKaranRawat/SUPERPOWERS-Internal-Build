@@ -23,7 +23,7 @@
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>-->
 			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
 			<ObsoleteTech>TECH_CIVIL_SERVICE</ObsoleteTech>
-			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_EXOTIC_UNIT_AKKADIAN_HORSE_ARCHER</Description>

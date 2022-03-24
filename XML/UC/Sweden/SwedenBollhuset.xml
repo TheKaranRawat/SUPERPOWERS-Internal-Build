@@ -7,49 +7,19 @@
 	</Buildings>
 
 	<Building_YieldChanges>
-		<Row>
-			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
+		
 	</Building_YieldChanges>
 
 	<Building_Flavors>
-		<Row>
-			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
-			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
-			<Flavor>30</Flavor>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>50</Flavor>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
-			<FlavorType>FLAVOR_EXPANSION</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>6</Flavor>
-		</Row>
+		
 	</Building_Flavors>
 
 	<Civilization_BuildingClassOverrides>
-		<Row>
-			<CivilizationType>CIVILIZATION_SWEDEN</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
-			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
-		</Row>
+		
 	</Civilization_BuildingClassOverrides>
 
 	<Building_ClassesNeededInCity>
-		<Row>
-			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
-		</Row>
+		
 	</Building_ClassesNeededInCity>
 
 	<!-- Adds new text -->

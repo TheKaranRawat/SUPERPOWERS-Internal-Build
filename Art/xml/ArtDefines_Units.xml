@@ -11,6 +11,8 @@
 			</UnitMemberArt>
 		</UnitArtInfo>
 	</UnitArtInfos>-->
+
+	<!-- CONTROL EMBARKED GRAPHIC / CURRENTLY SET TO MODERN-->
 	<ArtDefine_UnitInfoMemberInfos>
 		<Update>
 			<Set UnitMemberInfoType="ART_DEF_UNIT_MEMBER_TRANSPORT"/>

@@ -20,6 +20,12 @@
 		<!-- More Wonders v2 -->
 
 		<Row>
+			<CivilizationType>CIVILIZATION_SWEDEN</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
+		</Row>
+
+		<Row>
 			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_ABUSIMBEL</BuildingClassType>
 			<BuildingType/>

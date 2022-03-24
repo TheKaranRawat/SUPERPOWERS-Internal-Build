@@ -236,7 +236,7 @@
 				[NEWLINE][ICON_BULLET]Lv3 City: +20% [ICON_CULTURE] Culture cost.
 				[NEWLINE][ICON_BULLET]Lv4 City: +33% [ICON_CULTURE] Culture cost.
 				[NEWLINE][ICON_BULLET]Lv5 City: +33% [ICON_CULTURE] Culture cost.
-				[NEWLINE][NEWLINE]Build Anti-corruption and Public Security Buildings or adopt certain Policies to reduce the increasing [ICON_CULTURE] Culture cost by those cities.
+				[NEWLINE][NEWLINE]Build Anti-corruption and Public Security Buildings or adopt certain Policies to reduce the increased [ICON_CULTURE] Culture cost from more cities.
 			</Text>
 		</Replace>
 

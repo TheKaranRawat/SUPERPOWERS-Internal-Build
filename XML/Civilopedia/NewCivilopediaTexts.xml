@@ -11,8 +11,13 @@
 		<Row Tag="TXT_KEY_SP_GS_DESC">
 			<Text>[COLOR_YELLOW]Important Notes:[ENDCOLOR][NEWLINE]1. Check the Civilopedia before playing and learn more about the mods mechanics. (Press [COLOR_POSITIVE_TEXT]F1[ENDCOLOR] Now!). [NEWLINE]2. For better performance use DX9 mode, and reduce CS and AI.</Text>
 		</Row>
+		<!--
 		<Row Tag="TXT_KEY_SP_VERSION">
 			<Text>[COLOR_YELLOW]Version 1.5(Beta)[ENDCOLOR]</Text>
+		</Row>
+		-->
+		<Row Tag="TXT_KEY_SP_VERSION">
+			<Text>v1.5b</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_SP_MOD_SETUP">
@@ -115,7 +120,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_GP111">
-			<Text>Free GreatPeople: </Text>
+			<Text>Free Great People: </Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_MTPC_444">
@@ -169,7 +174,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_MOVE_AFTER_PC">
-			<Text>Can Move After Purchased</Text>
+			<Text>Can Move After Purchase</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_REQUIRES_E">
@@ -177,7 +182,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_PROHIBITS_SPREAD">
-			<Text>Prohibits Other Religions Spread to the City Garrisoned</Text>
+			<Text>Prohibits Other Religions Spread to the Garrisoned City</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_REL_STR">

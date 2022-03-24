@@ -231,6 +231,58 @@
 			</Text>
 		</Row>
 
+		<!--[NEWLINE][NEWLINE][ICON_WORKER]Civilian units are cheap, and have very low maintenance.-->
+
+		<Row Tag="TXT_KEY_UNIT_PRODUCTION_HELP">
+			<Text>Units serve as the agents of your will across history.				  
+				  [NEWLINE][NEWLINE][ICON_WAR]The professional army serves as the backbone of your military.
+				  [NEWLINE][ICON_BULLET][COLOR_GREEN]It is expensive to maintain massive standing armies, but they are cheaper than Mercenaries.[ENDCOLOR]
+				  [NEWLINE][ICON_BULLET][COLOR_RED]Require [ICON_RES_MANPOWER]manpower, and [ICON_RES_IRON]strategic resources.[ENDCOLOR]
+				  [NEWLINE][NEWLINE][ICON_IDEOLOGY_AUTOCRACY]Mercenaries serve to augment your military capabilities, for a price.
+				  [NEWLINE][ICON_BULLET][COLOR_RED]They are relatively cheap to hire, and very expensive to maintain for extended periods.[ENDCOLOR]
+				  [NEWLINE][ICON_BULLET][COLOR_GREEN]Do not require [ICON_RES_MANPOWER]manpower or [ICON_RES_IRON]strategic resources.[ENDCOLOR]				  
+				  [NEWLINE][NEWLINE][ICON_WAR]Military and [ICON_WORKER]civilian casualties, will eventually lead to [ICON_HAPPINESS_4]loss of population in your cities. Human lives are no longer mere statistics.
+				  [NEWLINE][NEWLINE]Due to foreign recruitment, [ICON_IDEOLOGY_AUTOCRACY]Mercenary units do not cause [ICON_HAPPINESS_1]loss of population.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_PRODUCTION_HELP">
+			<Text>Buildings and Infrastructure serve as the backbone of your Civilization. 
+				  [NEWLINE][NEWLINE][ICON_FOOD][COLOR_FONT_GREEN]Agricultural Buildings[ENDCOLOR] increase the food and growth rate of your cities.
+				  [NEWLINE][ICON_BULLET]Food surplus leads to population growth. A large population is the backbone of an Empire.
+				  [NEWLINE][NEWLINE][ICON_PRODUCTION][COLOR_YIELD_FOOD]Production Buildings[ENDCOLOR] increase the production of your cities.
+				  [NEWLINE][ICON_BULLET]Production Buildings provide Engineer slots, which provide manpower and generate [ICON_GREAT_ENGINEER]Great Engineers.
+				  [NEWLINE][NEWLINE][ICON_RESEARCH][COLOR_XP_BLUE]Science Buildings[ENDCOLOR] help research new technologies, and advance your Civilization.
+				  [NEWLINE][ICON_BULLET]Science Buildings provide Scientist slots, which generate [ICON_GREAT_SCIENTIST]Great Scientists. A technological advantage is extremely advantageous.
+				  [NEWLINE][NEWLINE][ICON_INVEST][COLOR_SELECTED_TEXT]Market Buildings[ENDCOLOR] provide avenues for the generation of wealth.
+				  [NEWLINE][ICON_BULLET]Markets provide employment for merchants, which generate [ICON_GREAT_MERCHANT]Great Merchants. Wealth is true power.
+				  [NEWLINE][NEWLINE][ICON_INTERNATIONAL_TRADE][COLOR_PROJECT_TEXT]Trade Buildings[ENDCOLOR] help facilitate local and international trade.
+				  [NEWLINE][ICON_BULLET]Trade buildings increase the range and value of trade routes. The majority of wealth is created by global trade.
+				  [NEWLINE][NEWLINE][ICON_CULTURE][COLOR_CULTURE_STORED]Cultural Buildings[ENDCOLOR] provide culture, tourism and boost golden age frequency.
+				  [NEWLINE][ICON_BULLET]They generate [ICON_GREAT_ARTIST]Great Artists, [ICON_GREAT_WRITER]Great Writers and [ICON_GREAT_MUSICIAN]Great Musicians. Cultural significance leads to Societal development.
+				  [NEWLINE][NEWLINE][COLOR_RED]Buildings require significant [ICON_INVEST]maintenance, and one should consider the effectiveness of certain buildings before proceeding with their construction.[ENDCOLOR]
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_WONDER_PRODUCTION_HELP">
+			<Text>Leave a mark on human history with awe inspiring monuments, and pursue Special Weapon Projects and Space Programs.
+				  [NEWLINE][NEWLINE][ICON_CITY_STATE]Wonders take many years, and massive investment to complete. They provide a varying set of benefits depending on the particular Wonder.
+				  [NEWLINE][ICON_BULLET]Wonders require massive amounts of [ICON_RES_MANPOWER]manpower to construct and maintain. It is advisable to only focus on Wonders once your Civilization is large enough to support them.
+				  [NEWLINE][NEWLINE][COLOR_GREEN]Due to their impressive structural strength, Wonders cannot be destroyed by [ICON_RES_URANIUM]Nuclear Attack or [ICON_RESISTANCE]Conquest.[ENDCOLOR]
+				  [NEWLINE][NEWLINE][COLOR_RED]Other [ICON_DIPLOMAT]World Leaders will react negatively if your Civilization constructs Wonders they covet. Building every Wonder possible may be viewed aggressively.[ENDCOLOR]
+				  [NEWLINE][NEWLINE][ICON_OMEGA]Special Weapon Projects, are secret endeavours to produce cutting edge technologies that provide an advantage on the Battlefield.
+				  [NEWLINE][ICON_BULLET]These Weapon Systems are highly coveted, and only the first Civilization to manufacture them shall know the secrets of its production.
+				  [NEWLINE][NEWLINE][ICON_VICTORY_SPACE]Space Programs are highly prestigious undertakings, that are the first step to forging an interstellar Civilization. Do not go gentle into that good night.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_OTHER_PRODUCTION_HELP">
+			<Text>Accomplish National Plans and Global Initiatives.				  
+				  [NEWLINE][NEWLINE][ICON_VICTORY_DIPLOMACY]Participate in international collaborations and global projects, as various World Powers compete to display their supremacy. These may range from events like the Olympics, to International World Fairs and Planetary Defense Initiatives.
+			</Text>
+		</Row>
+
+
 		
 		
 	</Language_en_US>
