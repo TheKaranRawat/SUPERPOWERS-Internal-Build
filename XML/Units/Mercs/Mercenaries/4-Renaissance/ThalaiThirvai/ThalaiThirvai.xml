@@ -81,10 +81,7 @@
 			<UnitType>UNIT_EXOTIC_UNIT_THALAI_THIRVAI</UnitType>
 			<PromotionType>PROMOTION_GREAT_ADMIRAL</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_EXOTIC_UNIT_THALAI_THIRVAI</UnitType>
-			<PromotionType>PROMOTION_SUPPLY</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_EXOTIC_UNIT_THALAI_THIRVAI</UnitType>
 			<PromotionType>PROMOTION_LOGISTICS</PromotionType>

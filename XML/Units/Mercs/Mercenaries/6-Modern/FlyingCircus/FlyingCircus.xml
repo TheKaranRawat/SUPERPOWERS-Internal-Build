@@ -107,7 +107,7 @@
 	<Unit_FreePromotions>
 		<Row>
 			<UnitType>UNIT_EXOTIC_UNIT_FLYING_CIRCUS</UnitType>
-			<PromotionType>PROMOTION_INTERCEPTION_III</PromotionType>
+			<PromotionType>PROMOTION_INTERCEPTION_2</PromotionType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_EXOTIC_UNIT_FLYING_CIRCUS</UnitType>

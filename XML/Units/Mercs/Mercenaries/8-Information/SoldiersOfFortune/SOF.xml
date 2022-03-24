@@ -93,12 +93,9 @@
 	<Unit_FreePromotions>
 		<Row>
 			<UnitType>UNIT_EXOTIC_UNIT_SOF</UnitType>
-			<PromotionType>PROMOTION_PARADROP</PromotionType>
+			<PromotionType>PROMOTION_PARADROP_II</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_EXOTIC_UNIT_SOF</UnitType>
-			<PromotionType>PROMOTION_FREE_PILLAGE_MOVES</PromotionType>
-		</Row>
+		
 	</Unit_FreePromotions>
 
 	<UnitGameplay2DScripts>

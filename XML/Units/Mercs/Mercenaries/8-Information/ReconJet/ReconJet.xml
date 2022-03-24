@@ -136,10 +136,7 @@
       <UnitType>UNIT_SMAN_EU_RECON_JET</UnitType>
       <PromotionType>PROMOTION_EXTRA_SIGHT_III</PromotionType>
     </Row>
-    <Row>
-      <UnitType>UNIT_SMAN_EU_RECON_JET</UnitType>
-      <PromotionType>PROMOTION_EXTRA_SIGHT_IV</PromotionType>
-    </Row>
+    
   </Unit_FreePromotions>
   
 	

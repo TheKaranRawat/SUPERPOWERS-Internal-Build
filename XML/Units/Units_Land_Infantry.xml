@@ -2975,10 +2975,7 @@
 
 		<Unit_FreePromotions>
 
-			<Row>
-			<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
-			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
 			<PromotionType>PROMOTION_CAN_MOVE_AFTER_ATTACKING</PromotionType>
@@ -2995,10 +2992,7 @@
 			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
 			<PromotionType>PROMOTION_CITY_SIEGE</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
-			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
 			<PromotionType>PROMOTION_SIGHT_PENALTY</PromotionType>
@@ -3031,10 +3025,7 @@
 			<UnitType>UNIT_FW_CRAWLER</UnitType>
 			<PromotionType>PROMOTION_CITY_SIEGE</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_CRAWLER</UnitType>
-			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_CRAWLER</UnitType>
 			<PromotionType>PROMOTION_SIGHT_PENALTY</PromotionType>
@@ -3043,10 +3034,7 @@
 			<UnitType>UNIT_FW_CRAWLER</UnitType>
 			<PromotionType>PROMOTION_CARGO_II</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_CRAWLER</UnitType>
-			<PromotionType>PROMOTION_FREE_PILLAGE_MOVES</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_VERTOL</UnitType>
 			<PromotionType>PROMOTION_FLAT_MOVEMENT_COST</PromotionType>
@@ -3059,14 +3047,8 @@
 			<UnitType>UNIT_FW_VERTOL</UnitType>
 			<PromotionType>PROMOTION_ANTI_TANK</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_VERTOL</UnitType>
-			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_VERTOL</UnitType>
-			<PromotionType>PROMOTION_NO_CAPTURE</PromotionType>
-		</Row>
+		
+		
 		<Row>
 			<UnitType>UNIT_FW_HOVERTANK</UnitType>
 			<PromotionType>PROMOTION_FLAT_MOVEMENT_COST</PromotionType>
@@ -3079,24 +3061,10 @@
 			<UnitType>UNIT_FW_HOVERTANK</UnitType>
 			<PromotionType>PROMOTION_ANTI_TANK</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_HOVERTANK</UnitType>
-			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_HOVERTANK</UnitType>
-			<PromotionType>PROMOTION_CITY_PENALTY</PromotionType>
-		</Row>
-		<!--
-		<Row>
-			<UnitType>UNIT_FW_HOVERTANK</UnitType>
-			<PromotionType>PROMOTION_NO_CAPTURE</PromotionType>
-		</Row>
-		-->
-		<Row>
-			<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
-			<PromotionType>PROMOTION_INTERCEPTION_IV</PromotionType>
-		</Row>
+		
+		
+		
+		
 		<Row>
 			<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
 			<PromotionType>PROMOTION_AIR_SWEEP</PromotionType>
@@ -3119,14 +3087,8 @@
 		</Row>
 
 		<!--
-		<Row>
-			<UnitType>UNIT_FW_MISSILE_DESTROYER</UnitType>
-			<PromotionType>PROMOTION_SEE_INVISIBLE_SUBMARINE</PromotionType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_MISSILE_DESTROYER</UnitType>
-			<PromotionType>PROMOTION_INTERCEPTION_IV</PromotionType>
-		</Row>
+		
+		
 		<Row>
 			<UnitType>UNIT_FW_MISSILE_DESTROYER</UnitType>
 			<PromotionType>PROMOTION_ANTI_SUBMARINE_II</PromotionType>
@@ -3139,14 +3101,8 @@
 			<UnitType>UNIT_FW_MISSILE_DESTROYER</UnitType>
 			<PromotionType>PROMOTION_CARGO_I</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_NEODESTROYER</UnitType>
-			<PromotionType>PROMOTION_SEE_INVISIBLE_SUBMARINE</PromotionType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_NEODESTROYER</UnitType>
-			<PromotionType>PROMOTION_INTERCEPTION_IV</PromotionType>
-		</Row>
+		
+		
 		<Row>
 			<UnitType>UNIT_FW_NEODESTROYER</UnitType>
 			<PromotionType>PROMOTION_ANTI_SUBMARINE_II</PromotionType>
@@ -3161,10 +3117,7 @@
 		</Row>
 		
 
-		<Row>
-			<UnitType>UNIT_FW_ARSENAL_SHIP</UnitType>
-			<PromotionType>PROMOTION_SEE_INVISIBLE_SUBMARINE</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_ARSENAL_SHIP</UnitType>
 			<PromotionType>PROMOTION_ANTI_SUBMARINE_II</PromotionType>
@@ -3177,10 +3130,7 @@
 			<UnitType>UNIT_FW_ARSENAL_SHIP</UnitType>
 			<PromotionType>PROMOTION_CARGO_I</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_ARSENAL_SHIP</UnitType>
-			<PromotionType>PROMOTION_INTERCEPTION_IV</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_ARSENAL_SHIP</UnitType>
 			<PromotionType>PROMOTION_ONLY_DEFENSIVE</PromotionType>
@@ -3209,10 +3159,7 @@
 			<UnitType>UNIT_FW_CYBERSUB</UnitType>
 			<PromotionType>PROMOTION_INVISIBLE_SUBMARINE</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_CYBERSUB</UnitType>
-			<PromotionType>PROMOTION_SEE_INVISIBLE_SUBMARINE</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_CYBERSUB</UnitType>
 			<PromotionType>PROMOTION_CARGO_II</PromotionType>
@@ -3345,10 +3292,7 @@
 			<UnitType>UNIT_FW_HYDRA</UnitType>
 			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_HYDRA</UnitType>
-			<PromotionType>PROMOTION_FREE_PILLAGE_MOVES</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_HYDRA</UnitType>
 			<PromotionType>PROMOTION_VOLLEY</PromotionType>
@@ -3369,10 +3313,7 @@
 			<UnitType>UNIT_FW_AIRBORNE_FORCES</UnitType>
 			<PromotionType>PROMOTION_PARADROP_2</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_AIRBORNE_FORCES</UnitType>
-			<PromotionType>PROMOTION_FREE_PILLAGE_MOVES</PromotionType>
-		</Row>
+		
 		
 
 		<Row>
@@ -3410,10 +3351,7 @@
 			<PromotionType>PROMOTION_HOVERING_UNIT</PromotionType>
 		</Row>
 		
-		<Row>
-			<UnitType>UNIT_FW_NANOHIVE</UnitType>
-			<PromotionType>PROMOTION_NO_CAPTURE</PromotionType>
-		</Row>
+		
 		
 		<Row>
 			<UnitType>UNIT_FW_NANOHIVE</UnitType>
@@ -3435,10 +3373,7 @@
 			<UnitType>UNIT_FW_NEXUS</UnitType>
 			<PromotionType>PROMOTION_HOVERING_UNIT</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_NEXUS</UnitType>
-			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_NEXUS</UnitType>
 			<PromotionType>PROMOTION_COVER_1</PromotionType>

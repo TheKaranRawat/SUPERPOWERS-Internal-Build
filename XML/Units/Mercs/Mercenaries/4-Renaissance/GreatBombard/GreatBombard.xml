@@ -94,10 +94,7 @@
 			<UnitType>UNIT_EXOTIC_UNIT_GREAT_BOMBARD</UnitType>
 			<PromotionType>PROMOTION_CITY_SIEGE</PromotionType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_EXOTIC_UNIT_GREAT_BOMBARD</UnitType>
-			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_EXOTIC_UNIT_GREAT_BOMBARD</UnitType>
 			<PromotionType>PROMOTION_MUST_SET_UP</PromotionType>
