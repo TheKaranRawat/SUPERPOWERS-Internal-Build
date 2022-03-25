@@ -343,7 +343,7 @@
 		</Update>
 
 		<Update>
-			<Set Value="15000"/>
+			<Set Value="12000"/>
 			<Where Name="MINOR_CIV_BUYOUT_COST" />
 		</Update>
 
