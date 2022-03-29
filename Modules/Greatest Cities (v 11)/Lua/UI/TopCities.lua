@@ -282,15 +282,8 @@ function OnDiploCornerPopup()
 end
 --------------------------------------------------------------------
 function OnAdditionalInformationDropdownGatherEntries(entries)
-    table.insert(entries, {
-		text = Locale.ConvertTextKey("TXT_KEY_DIPLO_CORNER_HOOK_TOP_CITY_ADDINS"), 
-		call = OnDiploCornerPopup
-	})
+    insert(entries, {text = Locale.ConvertTextKey("TXT_KEY_DIPLO_CORNER_HOOK_TOP_CITY_ADDINS"), call = OnDiploCornerPopup})
 end
-
-
-
-
 --------------------------------------------------------------------
 LuaEvents.AdditionalInformationDropdownGatherEntries.Add(OnAdditionalInformationDropdownGatherEntries)
 LuaEvents.RequestRefreshAdditionalInformationDropdownEntries()

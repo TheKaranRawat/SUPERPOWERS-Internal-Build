@@ -156,6 +156,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	<File md5="56F88AC5073E41A526E9DB08248FEE5C" import="1">DLL/UI - Religion Spread (v 13)/UI/InGame/Popups/ReligionOverview.lua</File>
     <File md5="8C5D054780E82C7C30CB018F66B387F9" import="1">DLL/UI - Religion Spread (v 13)/UI/InGame/Popups/ReligionOverview.xml</File>
     <File md5="C9B6890E26FC4F928E65204DC92A7A6F" import="0">DLL/UI - Religion Spread (v 13)/XML/UIReligionSpread.xml</File>
+	
+	<!--
 	<File md5="1FECC0076AB0C215E8AC747C566DF7BD" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploCityStatesStatus.lua</File>
     <File md5="101CA7C97B5663CEAA7CDCA0119A0511" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploCityStatesStatus.xml</File>
     <File md5="06A1DA6193F1306A716F30D1CBD42E15" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploOverview.lua</File>
@@ -163,8 +165,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="DA83CE69B01F095369A911667A0340B1" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploTradesStatus.lua</File>
     <File md5="DBDF070E896E611FE4D65EBD1140C696" import="1">DLL/UI - Trade Opportunities (v 28)/UI/InGame/Popups/DiploTradesStatus.xml</File>
     <File md5="66184AFA07B4CAB8196E10BD1FA190CE" import="0">DLL/UI - Trade Opportunities (v 28)/XML/UITradeOpportunities.xml</File>
+	-->
 	
-	<!--
 	<File md5="F1499C256113C941ACE1032188BFAF7D" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseInternationalTradeRoutePopup.lua</File>
     <File md5="BBBE65A425660A75799D201298A795DC" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseInternationalTradeRoutePopup.xml</File>
     <File md5="507FA8A8ED26BEDDAC035744C9F2FBCD" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/ChooseTradeUnitNewHome.lua</File>
@@ -172,7 +174,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="23E7389D9DEE8336D9E3ADA8159C3F6F" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/TradeRouteOverview.lua</File>
     <File md5="3209DABE4E516FC35EE41474FA565667" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/TradeRouteOverview.xml</File>
     <File md5="D2ACBA38B9E881A58D09A5BE606A0729" import="0">DLL/UI - Trade Routes Enhancements (v 7)/XML/UITradeRoutesEnhancements.xml</File>
-	-->
+	
 	
     <File md5="8342B28DA73D581AA82FF27978F7237A" import="0">DLL/Global - Raze City States (v 1)/LUA/GlobalRazeCityStates.lua</File>
     <File md5="5ECB393E855B3A6B88A31E75843CC519" import="0">DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</File>
@@ -398,6 +400,29 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="D41D8CD98F00B204E9800998ECF8427E" import="1">Modules/City States Leaders II (v 7)/Assets/CityStateGreetingPopup.lua</File>
     <File md5="23E31670BD68C29CEC708B9DD4D9F008" import="0">Modules/City States Leaders II (v 7)/MinorCivLeaders.sql</File>
     <File md5="13C2F9F8477BF5814BA0F0694F810229" import="0">Modules/City States Leaders II (v 7)/MinorCivLeaders_en_US.xml</File>
+	
+	<File md5="36A6C64A31BD29A25A2C56BF9325FBCD" import="1">Modules/Global Relations (v 7)/Lua/DiploCityStatesStatus.lua</File>
+    <File md5="A7E7CBB9C4220CA2BF85B78D21ABA8B9" import="1">Modules/Global Relations (v 7)/Lua/DiploTradesStatus.lua</File>
+    <File md5="E5877A642C94C1834A15C083E81D2212" import="1">Modules/Global Relations (v 7)/Lua/InfoAddictCivRelations.lua</File>
+    <File md5="C549B31A360BE00AC333D571DBD06B81" import="1">Modules/Global Relations (v 7)/Lua/InfoAddictHooks.lua</File>
+    <File md5="23F7D3BBC308A344311D4B792E172B4C" import="1">Modules/Global Relations (v 7)/Lua/InfoAddictInit.lua</File>
+    <File md5="68C8815B251A200546CAAE5FF0169C6C" import="1">Modules/Global Relations (v 7)/Lua/InfoAddictLib.lua</File>
+    <File md5="1E1DD53C41D77ED1A618130C19F8F58E" import="1">Modules/Global Relations (v 7)/Lua/InfoAddictScreen.lua</File>
+    <File md5="101CA7C97B5663CEAA7CDCA0119A0511" import="1">Modules/Global Relations (v 7)/XML/DiploCityStatesStatus.xml</File>
+    <File md5="ABE12F03D2C0CDFC60939B40B4F3F904" import="1">Modules/Global Relations (v 7)/XML/DiploTradesStatus.xml</File>
+    <File md5="C47AAE7B5BE2EF345777430EED78059B" import="1">Modules/Global Relations (v 7)/XML/InfoAddictCivRelations.xml</File>
+    <File md5="D8DB592AF64F00C025330E60704D0402" import="1">Modules/Global Relations (v 7)/XML/InfoAddictHooks.xml</File>
+    <File md5="D423D8636D1EB1062023C8F004ECCBB4" import="1">Modules/Global Relations (v 7)/XML/InfoAddictScreen.xml</File>
+	<File md5="C36C50BA5E429387624E513FF1FEADBB" import="1">Modules/Global Relations (v 7)/XML/InfoAddictText_EN.xml</File>
+	
+	<!--
+    <File md5="CD0E73BBD6042C6F3EC3A8433AE3B8A3" import="1">Modules/Global Relations (v 7)/XML/InfoAddictText_DE.xml</File>    
+    <File md5="3679A065BD0E48210371E22D8FF63FEA" import="1">Modules/Global Relations (v 7)/XML/InfoAddictText_ES.xml</File>
+    <File md5="2A60918CA71C810A573DDA9BD31AB7A1" import="1">Modules/Global Relations (v 7)/XML/InfoAddictText_FR.xml</File>
+    <File md5="FAFB1702E128C6B522517C46A7B73DE0" import="1">Modules/Global Relations (v 7)/XML/InfoAddictText_RU.xml</File>
+	-->
+	
+    <File md5="7F9FBC9A5BD9C658E396DE72AA2AEB23" import="1">Modules/Global Relations (v 7)/XML/UITradeOpportunities.xml</File>
 	
     <File md5="A413CB811715C8EE85A9933C74B01BD5" import="1">Art/Flags/SPUnitFlags.dds</File>
     <File md5="E09CC6EDD8A756A0534550B637485077" import="1">Art/Flags/Strategic/SPUnitFlags__BombaTsar_.dds</File>
@@ -2092,31 +2117,32 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="AA1ECA215E68ABD48D7FBE8190B14C7A" import="1">ART/Wonders/BiosphereIconAtlas45.dds</File>
     <File md5="822517767DC6BDA402CA68B2DBCF5494" import="1">ART/Wonders/BiosphereIconAtlas64.dds</File>
     <File md5="8D94EE81B2EB41A54F4F8152EEBC0112" import="1">ART/Wonders/BiosphereSplash.dds</File>
-	<File md5="0A885BFF06DCEDDFA6C9D5A5543A36F5" import="1">Art/IconAtlases/Units/ShipAtlas128.dds</File>
+  	<File md5="0A885BFF06DCEDDFA6C9D5A5543A36F5" import="1">Art/IconAtlases/Units/ShipAtlas128.dds</File>
     <File md5="F85E72FF2D4469C3E00B94C045A4D61E" import="1">Art/IconAtlases/Units/ShipAtlas256.dds</File>
     <File md5="3CE0657C3662320B8104F8B29FBF8702" import="1">Art/IconAtlases/Units/ShipAtlas32.dds</File>
     <File md5="8E903CCC27EEE26675036F0F7820CB4D" import="1">Art/IconAtlases/Units/ShipAtlas45.dds</File>
     <File md5="C6B0BBA70B5D79A16EC5C75BFCA83D02" import="1">Art/IconAtlases/Units/ShipAtlas64.dds</File>
     <File md5="70BBBE044B9A5C8C9E6112EB3EF053CB" import="1">Art/IconAtlases/Units/ShipAtlas80.dds</File>
 	
-	<File md5="57787B73DD81ADEAB760BE256A746D66" import="1">Art/Icons/tooltip_45.dds</File>
-	<File md5="B27960CBCC9CA2721B0B96008B2832E1" import="1">Art/Icons/tooltip_32.dds</File>
-	<File md5="3314C365154BFBEF10E379D1244EE3AA" import="1">Art/Icons/tooltipblue_45.dds</File>
-	<File md5="60A288F5E1E8B745251B3B3F697E9764" import="1">Art/Icons/tooltipblue_32.dds</File>
+    <File md5="F46D2904AF0DCB8D6FD6CB9F61E556E2" import="1">Art/Icons/HelpButton_32.dds</File>
+    <File md5="57787B73DD81ADEAB760BE256A746D66" import="1">Art/Icons/tooltip_45.dds</File>
+    <File md5="B27960CBCC9CA2721B0B96008B2832E1" import="1">Art/Icons/tooltip_32.dds</File>
+    <File md5="3314C365154BFBEF10E379D1244EE3AA" import="1">Art/Icons/tooltipblue_45.dds</File>
+    <File md5="60A288F5E1E8B745251B3B3F697E9764" import="1">Art/Icons/tooltipblue_32.dds</File>
 	
-	<File md5="D15241932F0F77E947C3C47A02DB1C26" import="1">Art/UC/5UCIconAtlas.xml</File>
+  	<File md5="D15241932F0F77E947C3C47A02DB1C26" import="1">Art/UC/5UCIconAtlas.xml</File>
     <File md5="438A2EAD5DF639CD0A932F20BD83ABDA" import="1">Art/UC/5UCIconAtlas128.dds</File>
     <File md5="194A69447E43EC99267439DDF7B35FE5" import="1">Art/UC/5UCIconAtlas256.dds</File>
     <File md5="3534B73F512EC8A03B16749D1CB0551E" import="1">Art/UC/5UCIconAtlas45.dds</File>
     <File md5="51745CB62C6F628B847879CA43FB73F5" import="1">Art/UC/5UCIconAtlas64.dds</File>
     <File md5="60B7AEAD6CF9292BECDFDF8B6B10D388" import="1">Art/UC/5UCIconAtlas80.dds</File>
-	<File md5="89DF8AB675D1FA642D5192519DA60349" import="1">XML/UC/Sweden/SwedenBollhuset.xml</File>
-	<File md5="89BBF83837A9F7E2259EE961FF63D94A" import="1">XML/UC/Sweden/3skola128.dds</File>
+  	<File md5="89DF8AB675D1FA642D5192519DA60349" import="1">XML/UC/Sweden/SwedenBollhuset.xml</File>
+  	<File md5="89BBF83837A9F7E2259EE961FF63D94A" import="1">XML/UC/Sweden/3skola128.dds</File>
     <File md5="172D95D94488C93CA2ACDAC5FA43CD16" import="1">XML/UC/Sweden/3skola256.dds</File>
     <File md5="93FFA52E4E8AC75B2BC508FF86B72970" import="1">XML/UC/Sweden/3skola45.dds</File>
     <File md5="A4C4934D75E9044FF404F8C9082AFF40" import="1">XML/UC/Sweden/3skola64.dds</File>    
     <File md5="82629D3AE05D3C7E11C7B1F510AC6AD8" import="0">XML/UC/Sweden/Skola.xml</File>
-	<File md5="F28927F2EF67910C3CC38FE8C495C046" import="1">Art/Policy/policybranchtradition_new.dds</File>
+  	<File md5="F28927F2EF67910C3CC38FE8C495C046" import="1">Art/Policy/policybranchtradition_new.dds</File>
     <File md5="8D5EFEE82D974F01EDF5625F21AAC52C" import="1">Art/Policy/policybranch_exploration_new.dds</File>    
     <File md5="21B2DDBCB1483A4184934AD601A1A5AE" import="1">Art/Policy/policybranch_grandeur.dds</File>    
     <File md5="EFDCDE9E65667814118818618970E718" import="1">Art/Policy/policybranch_honor_new.dds</File>    
@@ -2125,16 +2151,16 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="0212AE7D5242754E906B18F853A0008C" import="1">Art/Policy/raf_policyicons.dds</File>
     <File md5="FF747EE3BA661D8B471003083AB0104C" import="1">Art/Policy/raf_policyicons_ACHIEVED.dds</File>
     <File md5="ACF7602F94C7F34456E70B6008861B3D" import="1">Art/Policy/policybranch_industry.dds</File>
-	<File md5="E26DBF00D1CEEAAFACB1E13CB2F2D20E" import="1">Art/Policy/IdeologyOverview_Background_Iska.dds</File>
-	<File md5="D8AA530B924143534CEE90475495F455" import="0">XML/UC/Zulu/4UC_ZULU.sql</File>
+	  <File md5="E26DBF00D1CEEAAFACB1E13CB2F2D20E" import="1">Art/Policy/IdeologyOverview_Background_Iska.dds</File>
+	  <File md5="D8AA530B924143534CEE90475495F455" import="0">XML/UC/Zulu/4UC_ZULU.sql</File>
     <File md5="D1CCB9296C24820C4FB57332E3B50E73" import="0">XML/UC/Zulu/gumboot.xml</File>
     <File md5="DA0EB52296A1DF7B02AC33EF7FC4EE5D" import="1">XML/UC/Zulu/GUMBOOT128.dds</File>
     <File md5="6C75DC8D3B123051C16FA1C2EC32C028" import="1">XML/UC/Zulu/GUMBOOT256.dds</File>
     <File md5="DC99D6744A0AFD76067CCB146A96A5A4" import="1">XML/UC/Zulu/GUMBOOT45.dds</File>
     <File md5="D0E37D2CE923401D1B7003B779A92505" import="1">XML/UC/Zulu/GUMBOOT64.dds</File>
-	<File md5="764F2FF7FCC0EEAA0327E8E247EEDE2A" import="0">XML/UC/Zulu/Kraal.lua</File>
+  	<File md5="764F2FF7FCC0EEAA0327E8E247EEDE2A" import="0">XML/UC/Zulu/Kraal.lua</File>
     <File md5="27B88FF9D6B020542172D496AD6EE3DF" import="0">XML/UC/Zulu/Kraal.xml</File>
-	<File md5="42CEC28B3C6E866DD3A39FFD090A5CA8" import="0">XML/UC/America/AmericaRanch_Update.lua</File>
+  	<File md5="42CEC28B3C6E866DD3A39FFD090A5CA8" import="0">XML/UC/America/AmericaRanch_Update.lua</File>
     <File md5="48579B3EF66CCC9D38C1B9D16E1A8CAE" import="0">XML/UC/America/AmericaRanch_Update.xml</File>
     <File md5="082B4928903473580799ED1C9C31EA06" import="0">XML/UC/America/AmericaSteelMill_Update.xml</File>
     <File md5="968B234FD24A28B40BA6724F57421D8C" import="0">XML/UC/America/Saloon.xml</File>
@@ -3554,13 +3580,15 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>DLL-Core/DLL - Various Mod Components (v 88)/DB/_TEXT/AllText_ru_RU.xml</UpdateDatabase>
       <UpdateDatabase>DLL-Core/DLL - Various Mod Components (v 88)/DB/_TEXT/AllText_zh_CN.xml</UpdateDatabase>
       <UpdateDatabase>DLL-Core/DLL - Various Mod Components (v 88)/DB/_TEXT/AllText_zh_Hant_HK.xml</UpdateDatabase>
-	  -->
 	  
 	  <UpdateDatabase>DLL/UI - Trade Opportunities (v 28)/XML/UITradeOpportunities.xml</UpdateDatabase>
-	  
-	  <!--
-	  <UpdateDatabase>DLL/UI - Trade Routes Enhancements (v 7)/XML/UITradeRoutesEnhancements.xml</UpdateDatabase>
 	  -->
+	  
+	  
+	  
+	  
+	  <UpdateDatabase>DLL/UI - Trade Routes Enhancements (v 7)/XML/UITradeRoutesEnhancements.xml</UpdateDatabase>
+	  
 	  
       <UpdateDatabase>DLL/UI - Religion Spread (v 13)/XML/UIReligionSpread.xml</UpdateDatabase>
 	  <UpdateDatabase>DLL/UI - Notify Exit Resistance (v 1)/XML/UINotifyExitResistance.xml</UpdateDatabase>
@@ -3576,9 +3604,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/PlayerColors.xml</UpdateDatabase>
       <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/MinorCivs.xml</UpdateDatabase>
 	  
-	  <UpdateDatabase>Modules/Greatest Cities (v 11)/Database/TopCities.sql</UpdateDatabase>
-      <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_en_US.xml</UpdateDatabase>
-      <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_DE_DE.xml</UpdateDatabase>
+	  
 	  
 	  <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterArt.sql</UpdateDatabase>
       <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterReligion.sql</UpdateDatabase>
@@ -3614,6 +3640,16 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	  
 	  <UpdateDatabase>Modules/City States Leaders II (v 7)/MinorCivLeaders.sql</UpdateDatabase>
       <UpdateDatabase>Modules/City States Leaders II (v 7)/MinorCivLeaders_en_US.xml</UpdateDatabase>
+	  
+	  <UpdateDatabase>Modules/Global Relations (v 7)/XML/InfoAddictText_EN.xml</UpdateDatabase>
+	  
+	  <!--
+      <UpdateDatabase>Modules/Global Relations (v 7)/XML/InfoAddictText_DE.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Global Relations (v 7)/XML/InfoAddictText_ES.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Global Relations (v 7)/XML/InfoAddictText_FR.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Global Relations (v 7)/XML/InfoAddictText_RU.xml</UpdateDatabase>
+	  -->
+      <UpdateDatabase>Modules/Global Relations (v 7)/XML/UITradeOpportunities.xml</UpdateDatabase>
 	  
       <UpdateDatabase>SQL/Deletor.sql</UpdateDatabase>
       <UpdateDatabase>Art/xml/IconAtlases.xml</UpdateDatabase>
@@ -4053,6 +4089,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/Units/Mercs/UnitOverrides.sql</UpdateDatabase>
 	  <UpdateDatabase>XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_Atlas.xml</UpdateDatabase>          
 	  
+	  <UpdateDatabase>Modules/Greatest Cities (v 11)/Database/TopCities.sql</UpdateDatabase>
+      <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_en_US.xml</UpdateDatabase>
+      <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_DE_DE.xml</UpdateDatabase>
 	  
     </OnModActivated>	
   </Actions>
@@ -4199,6 +4238,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>Adds Economic Victory code</Description>
     </EntryPoint>
 	
+	<EntryPoint type="InGameUIAddin" file="Modules/Global Relations (v 7)/Lua/InfoAddictInit.lua">
+      <Name>init</Name>
+      <Description>Global Relations Code</Description>
+    </EntryPoint>
 	
 	
 	

@@ -72,7 +72,7 @@
 
 		<!-- Decoration -->
 		<!-- Top -->
-		<Image Anchor="C,T" AnchorSide="I,O" Size="256,64" Offset="0,-14" Texture="assets\UI\Art\Icons\Top512IconTrim.dds">
+		<Image Anchor="C,T" AnchorSide="I.O" Size="256,64" Offset="0,-14" Texture="assets\UI\Art\Icons\Top512IconTrim.dds">
 			<Image ID="Icon" Size="64,64" Offset="-1,-1" Anchor="C,C" Texture="TopCities_ScreenIcon.dds"/>
 		</Image>
 
@@ -247,7 +247,7 @@
 
 		<!-- Bottom Panel -->
 		<Image Anchor="C,B" Offset="0,110" Texture="HorizontalTrim.dds" Size="971,5" />
-		<Box Anchor="C,B" AnchorSide="I,I" Offset="0,54"   Size="927,56" Color="255,255,255,0" >
+		<Box Anchor="C,B" AnchorSide="I.I" Offset="0,54"   Size="927,56" Color="255,255,255,0" >
 			<!-- Close Button  -->
 			<GridButton Anchor="L,B"  Style="SmallButton" Size="150,32"  Offset="14,0" StateOffsetIncrement="0,0" ID="CloseButton"  >
 				<Label Anchor="C,C"  Offset="0,0"  String="TXT_KEY_CLOSE" Font="TwCenMT18" ColorSet="Beige_Black_Alpha" FontStyle="Shadow"  />
