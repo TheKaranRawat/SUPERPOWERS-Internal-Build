@@ -2986,7 +2986,7 @@ Events.GameplaySetActivePlayer.Add(OnEventActivePlayerChanged);
 
 
 
-
+--[[
 --------------------------------------------------------SP City Copy Focus (used to be copy capital but I think copying current city is better!)----------------------------------------------------------------
 function OnCopyCapitalFocus()
     print ("Copy Capital Focus pressed!")
@@ -3114,10 +3114,11 @@ function OnCityAutomation(bIsChecked)
 		end
 	end	
 end
-Controls.BTNCityAuto:RegisterCheckHandler(OnCityAutomation)
+Controls.BTNCityAuto:RegisterCheckHandler(OnCityAutomation)
 
 
 
+]]--
 
 ----------------------------------------------------------SP One-Clik to fill all same types of specialists---------------------------------------------------------------
 

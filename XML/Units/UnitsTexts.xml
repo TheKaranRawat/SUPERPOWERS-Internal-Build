@@ -2870,7 +2870,7 @@
 		</Row>
 
 		<Replace Tag="TXT_KEY_UNIT_BAZOOKA">
-			<Text>[COLOR_YELLOW]Davy Crockett (Nuclear Rocket Launcher)[ENDCOLOR]</Text>
+			<Text>[COLOR_YELLOW]Davy Crockett (Nuclear Launcher)[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_BAZOOKA">
 			<Text>A tactical nuclear device launching a rocket with nuclear warhead, which can destroy any single unit in one-hit. The shooter himself will also be killed in the explosion. [NEWLINE][NEWLINE]Requires Tactical Nuclear Recoilless Gun Project. Only one can exist in the world. </Text>

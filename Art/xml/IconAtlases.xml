@@ -35,6 +35,14 @@
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 
+		<Row>
+			<Atlas>BLACK_TOOLTIP</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>HelpButton_32.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+
 
 
 		<Row>

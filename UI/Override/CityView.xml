@@ -259,16 +259,19 @@
 	<Image Anchor="L,T" Size="128,128" Offset="206,19" Texture="leaderportraits1024frame.dds" ID="CityLevelFrame" Hidden="1">
 		<!-- City Level -->
 		<Image Anchor="C,C" Size="128,128" ID="CityLevelImage"/>
+    
 		<!-- Civ Icon  -->
 		<Image Anchor="R,T" Offset="-22,9" Texture="IconFrame64.dds" Size="64.64" ID="CivIconFrame">
 			<Image ID="CivIconBG" Size="64.64" Anchor="C,C" Offset="-1,-1" Texture="CivIconBGSizes.dds"/>
 			<Image ID="CivIconShadow" Size="48.48" Anchor="C,C" Offset="1,1" Texture="CivSymbolAtlas48.dds" Color="Black.128"/>
 			<Image ID="CivIcon" Size="48,48" Offset="0,0" Anchor="C,C" Texture="CivSymbolsColor512.dds"/>
+      
 		</Image>
 		<!-- City Hall -->
 		<Image Anchor="L,B" Offset="0,-22" Texture="IconFrame64.dds" Size="64.64" ID="CityHallFrame">
 			<Button NoStateChange="1" Anchor="C,C" Size="64,64" ID="CityHallButton" ToolTip="Placeholder Tooltip">
 				<Image Anchor="C,C" Texture="WonderAtlas512.dds" Size="64,64" ID="CityHallImage"/>
+        
 			</Button>
 		</Image>
 	</Image>

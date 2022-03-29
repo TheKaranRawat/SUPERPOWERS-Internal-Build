@@ -1804,7 +1804,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_TOKYO_METRO">
-			<Text>Tokyo Metropolitan Government Building</Text>
+			<Text>Tokyo Metropolitan Govt Building</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_WONDER_TOKYO_METRO_HELP">
