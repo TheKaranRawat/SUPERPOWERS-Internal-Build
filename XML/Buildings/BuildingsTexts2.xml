@@ -280,10 +280,67 @@
 			<Text>Accomplish National Plans and Global Initiatives.				  
 				  [NEWLINE][NEWLINE][ICON_VICTORY_DIPLOMACY]Participate in international collaborations and global projects, as various World Powers compete to display their supremacy. These may range from events like the Olympics, to International World Fairs and Planetary Defense Initiatives.
 			</Text>
+		</Row>		
+
+		<Row Tag="TXT_KEY_WONDER_DETAIL_HELP">
+			<Text>Leave a mark on human history with awe inspiring monuments.
+				  [NEWLINE][NEWLINE][ICON_CITY_STATE]Wonders take many years, and massive investment to complete. They provide a varying set of benefits depending on the particular Wonder.
+				  [NEWLINE][ICON_BULLET]Wonders require massive amounts of [ICON_RES_MANPOWER]manpower to construct and maintain. It is advisable to only focus on Wonders once your Civilization is large enough to support them.
+				  [NEWLINE][NEWLINE][COLOR_GREEN]Due to their impressive structural strength, Wonders cannot be destroyed by [ICON_RES_URANIUM]Nuclear Attack or [ICON_RESISTANCE]Conquest.[ENDCOLOR]
+				  [NEWLINE][NEWLINE][COLOR_RED]Other [ICON_DIPLOMAT]World Leaders will react negatively if your Civilization constructs Wonders they covet. Building every Wonder possible may be viewed aggressively.[ENDCOLOR]				  
+			</Text>
 		</Row>
 
+		<Row Tag="TXT_KEY_CITY_FOCUS_HELP">
+			<Text>[ICON_CHECKBOX]City Focuses instruct the cities governors to prioritize labor towards certain objectives. The possible priorities are listed below.
+			[NEWLINE][NEWLINE][ICON_FOOD][COLOR_FONT_GREEN]Food Focus[ENDCOLOR], prioritizes the growth of food. Useful for faster population growth.
+			[NEWLINE][ICON_PRODUCTION][COLOR_YIELD_FOOD]Production Focus[ENDCOLOR], prioritizes manufacturing and industry. Useful during wars, and for completing critical projects like Wonders.
+			[NEWLINE][ICON_GOLD][COLOR_SELECTED_TEXT]Gold Focus[ENDCOLOR], prioritizes commerce and trade. Useful for increasing the budget, and balancing deficits.
+			[NEWLINE][ICON_RESEARCH][COLOR_XP_BLUE]Research Focus[ENDCOLOR], prioritizes research and development. Useful for accelerating the progress of your Civilization.
+			[NEWLINE][ICON_CULTURE][COLOR_CULTURE_STORED]Culture Focus[ENDCOLOR], prioritizes the social sciences and arts. Useful for achieving Social Progress and promoting Tourism.
+			[NEWLINE][ICON_GREAT_PEOPLE][COLOR_WATER_TEXT]Great People Focus[ENDCOLOR], prioritizes the promotion of exemplary individuals. Useful for promoting the creation of Geniuses.
+			[NEWLINE][ICON_PEACE][COLOR_POPUP_TEXT]Faith Focus[ENDCOLOR], prioritizes the spiritual arts and faith. Useful for the promotion of Great Prophets and staying on Gods good side.
+			</Text>
+		</Row>
 
-		
+		<Row Tag="TXT_KEY_SPECIALIST_HELP">
+			<Text>[ICON_CITIZEN]Specialists are skilled labour, and provide essential, specialized services to augment an economy.			
+			[NEWLINE][NEWLINE][ICON_PRODUCTION][COLOR_YIELD_FOOD]Engineers[ENDCOLOR], provide production.
+			[NEWLINE][ICON_GOLD][COLOR_SELECTED_TEXT]Merchants[ENDCOLOR], create profits and currency.
+			[NEWLINE][ICON_RESEARCH][COLOR_XP_BLUE]Scientists[ENDCOLOR], undertake research, and make breakthroughs.
+			[NEWLINE][ICON_CULTURE][COLOR_CULTURE_STORED]Artists and Writers[ENDCOLOR], promote the arts and progress culture.
+			[NEWLINE][NEWLINE][COLOR_FONT_GREEN]The output of Specialists can be improved by completing Guild, Foundation and Assosciation projects, which are unlocked as you progress tech.[ENDCOLOR]
+			[NEWLINE][COLOR_FONT_RED]Specialists require to be paid a significant salary, and the costs of employing Specialists should be kept in mind.[ENDCOLOR]
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CITY_LEVEL_HELP">
+			<Text>[ICON_CITY_STATE]Cities are the beating hearts of a Civilization. Cities may be sized into different categories depending on their population.
+			[NEWLINE][COLOR_GREEN]Larger Cities grant more [ICON_RES_MANPOWER]Manpower, and increases [ICON_STRENGTH]City Defence.
+			[NEWLINE][COLOR_RED]Larger Cities cause more [ICON_HAPPINESS_4]Unhappiness, and require more [ICON_RES_ELECTRICITY]Electricity, and [ICON_RES_CONSUMER]Consumer Goods.[ENDCOLOR]			
+			[NEWLINE][NEWLINE]The different City Sizes, and their details are listed below.				  	
+			[NEWLINE][ICON_CITYBANNER_CITY_TOWN]Village,      [ICON_CITIZEN]0   [ICON_HAPPINESS_4]0  [ICON_RES_CONSUMER]3  [ICON_RES_MANPOWER]3  [ICON_RES_ELECTRICITY]3   
+			[NEWLINE][ICON_CITYBANNER_CITY_SMALL]Town,         [ICON_CITIZEN]6   [ICON_HAPPINESS_4]0  [ICON_RES_CONSUMER]6  [ICON_RES_MANPOWER]6  [ICON_RES_ELECTRICITY]6
+			[NEWLINE][ICON_CITYBANNER_CITY_MEDIUM]City            [ICON_CITIZEN]15  [ICON_HAPPINESS_4]4  [ICON_RES_CONSUMER]12  [ICON_RES_MANPOWER]12 [ICON_RES_ELECTRICITY]12	
+			[NEWLINE][ICON_CITYBANNER_CITY_LARGE]District        [ICON_CITIZEN]26  [ICON_HAPPINESS_4]6  [ICON_RES_CONSUMER]24  [ICON_RES_MANPOWER]24  [ICON_RES_ELECTRICITY]24
+			[NEWLINE][ICON_CITYBANNER_CITY_XL]Metropolis  [ICON_CITIZEN]40  [ICON_HAPPINESS_4]8  [ICON_RES_CONSUMER]42  [ICON_RES_MANPOWER]42  [ICON_RES_ELECTRICITY]42
+			[NEWLINE][ICON_CITYBANNER_CITY_XXL]Megapolis  [ICON_CITIZEN]60  [ICON_HAPPINESS_4]14  [ICON_RES_CONSUMER]78  [ICON_RES_MANPOWER]78  [ICON_RES_ELECTRICITY]78
+			[NEWLINE][ICON_CITYBANNER_CITY_GLOBAL]Gigapolis   [ICON_CITIZEN]80  [ICON_HAPPINESS_4]20  [ICON_RES_CONSUMER]132 [ICON_RES_MANPOWER]150  [ICON_RES_ELECTRICITY]132
+			</Text>
+		</Row>
+
+		<!--
+		[ICON_GOLD]Maintenance,
+
+		town			village		0
+		small city		town		6
+		medium city		city		15
+		large city		metropolis	26
+		XL city			district	40
+		XXL city		megacity	60
+		global city		gigacity	80
+
+		-->
 		
 	</Language_en_US>
 </GameData>

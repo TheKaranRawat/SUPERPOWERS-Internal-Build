@@ -874,9 +874,12 @@
 			<Text>[ICON_BULLET]First nuclear weapon in the game. [NEWLINE][NEWLINE][ICON_BULLET]Can damage enemy City, Improvements and Units within the range of 2 tiles. [NEWLINE][ICON_BULLET]Cannot destroy enemy city. [NEWLINE][ICON_BULLET]Consumes 3 Air Unit Capacity in a city.[NEWLINE][ICON_BULLET]Cannot be deployed on [COLOR_NEGATIVE_TEXT]Aircraft Carriers[ENDCOLOR].</Text>
 		</Replace>
 
-
 		<Replace Tag="TXT_KEY_UNIT_HELP_NUCLEAR_MISSILE">
 			<Text>[ICON_BULLET]Advanced nuclear weapon.[NEWLINE][NEWLINE][ICON_BULLET]Can damage enemy City and destroy Improvements and Units within the range of 2 tiles. [NEWLINE][ICON_BULLET]Can destroy enemy city which Population is less than 5. [NEWLINE][ICON_BULLET]Consumes 3 Air Unit Capacity in a city.[NEWLINE][ICON_BULLET]Can be loaded on [COLOR_POSITIVE_TEXT]SSBNs[ENDCOLOR].</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_GUIDED_MISSILE">
+			<Text>Cruise Missile</Text>
 		</Replace>
 
 
