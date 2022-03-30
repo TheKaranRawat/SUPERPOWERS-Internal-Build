@@ -2160,19 +2160,19 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="D0E37D2CE923401D1B7003B779A92505" import="1">XML/UC/Zulu/GUMBOOT64.dds</File>
   	<File md5="764F2FF7FCC0EEAA0327E8E247EEDE2A" import="0">XML/UC/Zulu/Kraal.lua</File>
     <File md5="27B88FF9D6B020542172D496AD6EE3DF" import="0">XML/UC/Zulu/Kraal.xml</File>
-  	<File md5="42CEC28B3C6E866DD3A39FFD090A5CA8" import="0">XML/UC/America/AmericaRanch_Update.lua</File>
+  	
     <File md5="48579B3EF66CCC9D38C1B9D16E1A8CAE" import="0">XML/UC/America/AmericaRanch_Update.xml</File>
-    <File md5="082B4928903473580799ED1C9C31EA06" import="0">XML/UC/America/AmericaSteelMill_Update.xml</File>
+    
     <File md5="968B234FD24A28B40BA6724F57421D8C" import="0">XML/UC/America/Saloon.xml</File>
     <File md5="78DEC2BED81074F4D5C5E105A2F5B293" import="0">XML/UC/Arabia/ArabiaFunduq.xml</File>    
     <File md5="82C474BC3018B3A32ACF82BB194D31FC" import="0">XML/UC/Assyria/AssyriaLamassu.xml</File>
-    <File md5="5BA0BE995638B366F0CAD0B768222F64" import="0">XML/UC/Assyria/WallsofSargon_Update.sql</File>
+    
     <File md5="81D81E3F3BBA9B3448DD8981D5F4EF13" import="0">XML/UC/Austria/AustriaConcertHall.xml</File>
     <File md5="AB8B593551F69A5C2D0708699A8C2458" import="0">XML/UC/Aztecs/AztecTzompantli.xml</File>
-    <File md5="27C875918AD5E074766EA51B08933C51" import="0">XML/UC/Babylon/BabylonZiggurat_Update.xml</File>
+    
     <File md5="ACB1C40FE6ED59084C42831BBE49A3B0" import="0">XML/UC/Babylon/DioriteStele.xml</File>
     <File md5="17A870F7EFE4BFE1A51ECAAE6DBEFDCD" import="0">XML/UC/Brazil/BrazilHouseGarden.xml</File>
-    <File md5="294A792AD0F7685A903B1A6E6ECF33F6" import="0">XML/UC/Brazil/BrazilSambadrome_Update.xml</File>
+    
     <File md5="1617D5941A2B26CA3C60F9374B8C4D59" import="0">XML/UC/Byzantium/ByzantinePeristyle.xml</File>
     <File md5="AA618513D2FA1364B6A9A367383EB5E4" import="0">XML/UC/Carthage/CarthageBreakwater.xml</File>
     <File md5="30A2316CF801593B19C47115117E2976" import="0">XML/UC/Celts/CeltStannary.lua</File>
@@ -2206,9 +2206,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="1472967E39E6AC73BB28F3E120B5B5EB" import="0">XML/UC/Egypt/resource_flax.gr2</File>
     <File md5="C9F189C38668A86E1DDFACF46A7CF430" import="0">XML/UC/Egypt/SV_Flax.dds</File>
     <File md5="B76AFA7980C1087E559C6600CD2140AB" import="0">XML/UC/England/EnglishSteamMill.xml</File>
-    <File md5="B910121BB51D377214D97A944AD6D500" import="0">XML/UC/England/EnglishTextileMill_Update.xml</File>
-    <File md5="DFD81E1580D51524B9A8F17E5A9BD567" import="0">XML/UC/England/EnglishTextileMill_Update.sql</File>
-    <File md5="EEBBD6EF9EFA48312B85E414131922B2" import="0">XML/UC/England/EnglishTextileMill_Update.lua</File>
+    
     <File md5="E54DCB9D01B5E859ADFCF34BA4DA0611" import="0">XML/UC/Ethiopia/EthiopiaMasgid.xml</File>
     <File md5="FAF6FE3B98A4BEBFFD4350A0573266AA" import="0">XML/UC/France/FranceDolmen_Mountain.xml</File>
     <File md5="A4FE72DC532D1BD9F3B16CF51065BFBC" import="0">XML/UC/France/FrenchDolmen.sql</File>
@@ -2226,15 +2224,14 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="1BD0EA1560EB2FD93D50C43495ED3A87" import="0">XML/UC/Huns/eki_hb_sref.dds</File>
     <File md5="1EF3D9C094A60FF3F7D77B8BEA8A826E" import="0">XML/UC/Huns/hb_eki.gr2</File>
     <File md5="0FD42A5EF61EF48DA0FE0D0834576243" import="0">XML/UC/Huns/HunCentaur_Upgrade.xml</File>
-    <File md5="D5EC407831A81A00B0E36F76470234F9" import="0">XML/UC/Huns/HunsYurt_Update.xml</File>
+    
     <File md5="BD5D189B01BFCDAEA7EBCF1923ABCB9E" import="0">XML/UC/Huns/IconsEki.xml</File>
     <File md5="B9ECA16882630DC9E97ADD63DDE730E5" import="0">XML/UC/Huns/NomadicPasture.xml</File>
     <File md5="B6458764DD97CCD5FFFC44A67FD39506" import="0">XML/UC/Huns/NomadicPastureDefine.sql</File>
     <File md5="1B9FE710B39BF5CD4D86CBCC75BAFC08" import="1">XML/UC/Huns/SV_Eki.dds</File>
     <File md5="46DC76651C458B5729393391D52B398A" import="0">XML/UC/Inca/IncaIntiwasi.xml</File>
     <File md5="A6728D8AB9C9EA3ABB46B9CCA50EC9A8" import="0">XML/UC/Inca/IncaIntiwasi_Mountain.xml</File>
-    <File md5="1C2746F0CB4552F17AA54238057DAB9E" import="0">XML/UC/Inca/Qurikancha_Mountain.xml</File>
-    <File md5="CADEBA47BD27E633D1A57C80F844BB33" import="0">XML/UC/Inca/Qurikancha_Update.xml</File>
+    
     <File md5="BF03B61C0DE1617B87B8DBC14C375E39" import="0">XML/UC/India/IndiaSewer.xml</File>
     <File md5="C1781E22411033F3180643FCC2473CBA" import="0">XML/UC/India/IndiaSewer.sql</File>
     <File md5="B6A5F6A31B858D3AF28A6FD2ABF8E0FC" import="0">XML/UC/Indonesia/IndonesiaPesantren.xml</File>
@@ -2272,18 +2269,18 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="22C7DA8F2DB09FBE38688CB3D2D14C39" import="0">XML/UC/Polynesia/FaleTele.xml</File>
     <File md5="EB6544330DDC7C9FA03AD120A07D1F37" import="0">XML/UC/Portugal/PortugalWinery.lua</File>
     <File md5="9D92A17D54B930F49F53AC310E4E53A7" import="0">XML/UC/Portugal/PortugalWinery.xml</File>
-    <File md5="23BBF2C8E73219111FA757E8BE4C8620" import="0">XML/UC/Rome/RomanForum_Update.xml</File>
+    
     <File md5="DE0F34DC5A00B5B0A57A15CB510CE0F9" import="0">XML/UC/Rome/RomeAedes.xml</File>
     <File md5="570980BE9353073DC9F0C5051848393B" import="0">XML/UC/Russia/RussiaBanya.xml</File>
     <File md5="8464886A19F93CEECEAD27DA45FFDF49" import="0">XML/UC/Russia/RussiaBanya.sql</File>
-    <File md5="8E0127C1D784F0A5F5F3789DE2D0CCDC" import="0">XML/UC/Shoshone/ShoshoneTipi_Update.xml</File>
+    
     <File md5="4C56A5AE7831071D1524385679A67103" import="0">XML/UC/Shoshone/ShoshoneTotem.xml</File>
     <File md5="C6D8AB7176D68F0E9E3471A14AA1C829" import="0">XML/UC/Siam/SiamChedi.xml</File>
     <File md5="8FCCA22871BD282B10EDD8A5593D36A8" import="0">XML/UC/Songhai/SonghaiQadiCourt.xml</File>
     <File md5="ED4EF8A6B58AAE8AE1124853425C9C91" import="0">XML/UC/Spain/SpainAlcazar.xml</File>
-    <File md5="E51E14555757E8FD167B0F6D32E350EB" import="0">XML/UC/Spain/SpanishMission_Update.xml</File>
+    
 	<File md5="456D60E38F8C1488A84242124BC34D7C" import="0">XML/UC/Venice/VenetianCadOro.xml</File>
-    <File md5="0689B588D970421C274137FD18C209D7" import="0">XML/UC/Venice/VenetianCanals_Update.xml</File>
+    
 	<File md5="C86D538A4787DC849E663BD632A6C011" import="0">XML/UC/Arabia/3UC_ARABIA.sql</File>
     <File md5="4EC100D57FDB1E667015C2810468D374" import="0">XML/UC/Assyria/3UC_ASSYRIA.sql</File>
     <File md5="88ECBF6EE6E9D20763301E2205D319C5" import="0">XML/UC/Austria/3UC_AUSTRIA.sql</File>
@@ -2573,7 +2570,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="9D3EA09EE5F6BA57C68D0C52FFC47523" import="1">XML/UC/Russia/Streltsy_blue_cap.gr2</File>
     <File md5="B7A044DA451A610B2814768D64E3C377" import="1">XML/UC/Russia/Streltsy_blue_cap_diff.dds</File>
     <File md5="416295D24E7C6B9F0415BC44F9679628" import="1">XML/UC/Russia/Streltsy_sref.dds</File>
-    <File md5="472D05C979E4A2BAFD346F34F1DBF68E" import="0">XML/UC/Shoshone/ShoshoneTipi.xml</File>
+    
     <File md5="C65120D728B91E1C927BABE3DA1F2434" import="0">XML/UC/Siam/3UC_SIAM.sql</File>
     <File md5="765A7BA07D5AE4FE1F41E59B48C0BFC9" import="0">XML/UC/Siam/sala.xml</File>
     <File md5="B4D81A55A9CB1BB4A30AB65A1BB86113" import="1">XML/UC/Siam/sala128.dds</File>
@@ -3064,7 +3061,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	<File md5="D3125EFE37B922EC1C457ADB8A8D8925" import="1">Art/Projects/GLOBAL_WARGAMES_939x614.dds</File>
     <File md5="EBE078DB47A0095DB3B056AA2F1A28C2" import="1">Art/Projects/XcomHeadquartersSplash.dds</File>
     <File md5="EA8510FD99107A1775C1E1710B297D78" import="1">Art/Projects/XcomInitiativeProject_939x614.dds</File>
+	<!--
     <File md5="5501393BB5E517608F56D926E27768E7" import="0">Lua/Misc/PhilosophersLegacyScript.lua</File>
+	-->
     <File md5="EF06ACD9AD10F68F7CD4ED3AA3B4F5E6" import="0">XML/Projects/CivProjects_Enlightenment.xml</File>
     <File md5="FE8629F026799214E116D98A38D585CF" import="0">XML/Projects/CIVProjects_Global_Wargames.xml</File>
     <File md5="C2B9946C2B93728553CD63CFE400198F" import="0">XML/Projects/CivProjects_GDR.xml</File>
@@ -3730,16 +3729,16 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	  <UpdateDatabase>XML/UC/Zulu/4UC_ZULU.sql</UpdateDatabase>
 	  <UpdateDatabase>XML/UC/America/Saloon.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/America/AmericaRanch_Update.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/America/AmericaSteelMill_Update.xml</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/Arabia/ArabiaFunduq.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Assyria/AssyriaLamassu.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Assyria/WallsofSargon_Update.sql</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/Austria/AustriaConcertHall.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Aztecs/AztecTzompantli.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Babylon/DioriteStele.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Babylon/BabylonZiggurat_Update.xml</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/Brazil/BrazilHouseGarden.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Brazil/BrazilSambadrome_Update.xml</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/Byzantium/ByzantinePeristyle.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Carthage/CarthageBreakwater.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Celts/CeltStannary.xml</UpdateDatabase>
@@ -3748,9 +3747,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/UC/Denmark/Langhus_Update.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Denmark/DenmarkLongboat_Update.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Egypt/Egypt_Flax.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/England/EnglishSteamMill.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.sql</UpdateDatabase>
-      <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.xml</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/Ethiopia/EthiopiaMasgid.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/France/FrenchDolmen.sql</UpdateDatabase>
       <UpdateDatabase>XML/UC/France/FrenchDolmen.xml</UpdateDatabase>
@@ -3760,12 +3757,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/UC/Huns/IconsEki.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Huns/NomadicPasture.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Huns/NomadicPastureDefine.sql</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Huns/HunsYurt_Update.xml</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/Huns/HunCentaur_Upgrade.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Inca/IncaIntiwasi.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Inca/IncaIntiwasi_Mountain.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Inca/Qurikancha_Update.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Inca/Qurikancha_Mountain.xml</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/India/IndiaSewer.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/India/IndiaSewer.sql</UpdateDatabase>
       <UpdateDatabase>XML/UC/Indonesia/IndonesiaPesantren.xml</UpdateDatabase>
@@ -3788,18 +3784,18 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/UC/Polynesia/FaleTele.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Portugal/PortugalWinery.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Rome/RomeAedes.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Rome/RomanForum_Update.xml</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/Russia/RussiaBanya.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Russia/RussiaBanya.sql</UpdateDatabase>
       <UpdateDatabase>XML/UC/Shoshone/ShoshoneTotem.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Shoshone/ShoshoneTipi_Update.xml</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/Siam/SiamChedi.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Songhai/SonghaiQadiCourt.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Spain/SpainAlcazar.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Spain/SpanishMission_Update.xml</UpdateDatabase>
+      
       <UpdateDatabase>XML/UC/Sweden/SwedenBollhuset.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Venice/VenetianCadOro.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/Venice/VenetianCanals_Update.xml</UpdateDatabase>
+      
 	  <UpdateDatabase>XML/UC/Brazil/Sambadrome.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Babylon/BabylonIconTextureAtlases.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Babylon/Ziggurat.xml</UpdateDatabase>

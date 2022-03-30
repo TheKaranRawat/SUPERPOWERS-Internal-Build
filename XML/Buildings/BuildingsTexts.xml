@@ -2793,7 +2793,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_CONSUMER_BONUS</Tag>
-			<Text>Provides additional [ICON_RES_CONSUMER] Consumer Goods.</Text>
+			<Text>Merchants provide [ICON_RES_CONSUMER] Consumer Goods.</Text>
 		</Row>
 		
 	</Language_en_US>
@@ -2958,7 +2958,7 @@
 			<Text>[ICON_WAR] Palisade Wall</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_POTTER">
-			<Text>[ICON_CULTURE] Potter</Text>
+			<Text>[ICON_PRODUCTION] Potter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_SMELTER">
 			<Text>[ICON_PRODUCTION] Smelter</Text>

@@ -315,7 +315,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_CITY_LEVEL_HELP">
-			<Text>[ICON_CITY_STATE]Cities are the beating hearts of a Civilization. Cities may be sized into different categories depending on their population.
+			<Text>[ICON_CITY_STATE]Cities are the beating hearts of a Civilization. Cities are sized into different categories depending on their population.
 			[NEWLINE][COLOR_GREEN]Larger Cities grant more [ICON_RES_MANPOWER]Manpower, and increases [ICON_STRENGTH]City Defence.
 			[NEWLINE][COLOR_RED]Larger Cities cause more [ICON_HAPPINESS_4]Unhappiness, and require more [ICON_RES_ELECTRICITY]Electricity, and [ICON_RES_CONSUMER]Consumer Goods.[ENDCOLOR]			
 			[NEWLINE][NEWLINE]The different City Sizes, and their details are listed below.				  	
