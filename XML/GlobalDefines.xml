@@ -280,22 +280,22 @@
 		<!-- UPRISING/ REBELLION-->
 
 		<Update>
-			<Set Value="2"/>
+			<Set Value="3"/>
 			<Where Name="UPRISING_COUNTER_POSSIBLE" />
 		</Update>
 
 		<Update>
-			<Set Value="2"/>
+			<Set Value="1"/>
 			<Where Name="UPRISING_COUNTER_MIN" />
 		</Update>
 
 		<Update>
-			<Set Value="200"/>
+			<Set Value="450"/>
 			<Where Name="UPRISING_NUM_BASE" />
 		</Update>
 
 		<Update>
-			<Set Value="200"/>
+			<Set Value="250"/>
 			<Where Name="UPRISING_NUM_CITY_COUNT" />
 		</Update>
 
@@ -519,7 +519,7 @@
 			<Where Name="MAX_CITY_HIT_POINTS" />
 		</Update>
 		<Update>
-			<Set Value="20"/>
+			<Set Value="10"/>
 			<Where Name="CITY_HIT_POINTS_HEALED_PER_TURN" />
 		</Update>
 		<Update>
@@ -539,7 +539,7 @@
 			<Where Name="INSTA_HEAL_RATE" />
 		</Update>
 		<Update>
-			<Set Value="15"/>
+			<Set Value="35"/>
 			<Where Name="CITY_HEAL_RATE" />
 		</Update>
 		<Update>

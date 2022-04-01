@@ -445,7 +445,7 @@
 		<Replace Tag="TXT_KEY_BUILDING_FACTORY_HELP">
 			<Text>
 				Allows for movement of [ICON_PRODUCTION] Production via trade routes from this city.
-				[NEWLINE][NEWLINE]Building Factroies will NOT let you choose the [COLOR_NEGATIVE_TEXT]Ideology[ENDCOLOR].
+				[NEWLINE][NEWLINE]Building Factories will not let you choose an [COLOR_NEGATIVE_TEXT]Ideology[ENDCOLOR].
 				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Pollution[ENDCOLOR] will cause -5% [ICON_FOOD] Food Growth.
 			</Text>
 		</Replace>
