@@ -319,8 +319,8 @@
 			[NEWLINE][COLOR_GREEN]Larger Cities grant more [ICON_RES_MANPOWER]Manpower, and increases [ICON_STRENGTH]City Defence.
 			[NEWLINE][COLOR_RED]Larger Cities cause more [ICON_HAPPINESS_4]Unhappiness, and require more [ICON_RES_ELECTRICITY]Electricity, and [ICON_RES_CONSUMER]Consumer Goods.[ENDCOLOR]			
 			[NEWLINE][NEWLINE]The different City Sizes, and their details are listed below.				  	
-			[NEWLINE][ICON_CITYBANNER_CITY_TOWN]Village,      [ICON_CITIZEN]0   [ICON_HAPPINESS_4]0  [ICON_RES_CONSUMER]3  [ICON_RES_MANPOWER]3  [ICON_RES_ELECTRICITY]3   
-			[NEWLINE][ICON_CITYBANNER_CITY_SMALL]Town,         [ICON_CITIZEN]6   [ICON_HAPPINESS_4]0  [ICON_RES_CONSUMER]6  [ICON_RES_MANPOWER]6  [ICON_RES_ELECTRICITY]6
+			[NEWLINE][ICON_CITYBANNER_CITY_TOWN]Village       [ICON_CITIZEN]0   [ICON_HAPPINESS_4]0  [ICON_RES_CONSUMER]3    [ICON_RES_MANPOWER]3   [ICON_RES_ELECTRICITY]3   
+			[NEWLINE][ICON_CITYBANNER_CITY_SMALL]Town          [ICON_CITIZEN]6   [ICON_HAPPINESS_4]0  [ICON_RES_CONSUMER]6    [ICON_RES_MANPOWER]6   [ICON_RES_ELECTRICITY]6
 			[NEWLINE][ICON_CITYBANNER_CITY_MEDIUM]City            [ICON_CITIZEN]15  [ICON_HAPPINESS_4]4  [ICON_RES_CONSUMER]12  [ICON_RES_MANPOWER]12 [ICON_RES_ELECTRICITY]12	
 			[NEWLINE][ICON_CITYBANNER_CITY_LARGE]District        [ICON_CITIZEN]26  [ICON_HAPPINESS_4]6  [ICON_RES_CONSUMER]24  [ICON_RES_MANPOWER]24  [ICON_RES_ELECTRICITY]24
 			[NEWLINE][ICON_CITYBANNER_CITY_XL]Metropolis  [ICON_CITIZEN]40  [ICON_HAPPINESS_4]8  [ICON_RES_CONSUMER]42  [ICON_RES_MANPOWER]42  [ICON_RES_ELECTRICITY]42
@@ -330,15 +330,15 @@
 		</Row>
 
 		<!--
-		[ICON_GOLD]Maintenance,
-
-		town			village		0
-		small city		town		6
-		medium city		city		15
-		large city		metropolis	26
-		XL city			district	40
-		XXL city		megacity	60
-		global city		gigacity	80
+		[ICON_GOLD]Maintenance,	
+						new_name	pop		MP		ele		CG		unhapp	trade	tour	defence		pollution	tarrif			
+		town			village		0		6		3		2		0		0		0		0/0hp		0			0
+		small city		town		6		6		6		4		2		8		0		10/30hp		0			8
+		medium city		city		15		15		12		12		4		16		0		25/50hp		0			16
+		large city		metropolis	26		26		25		25		8		32		10		40/75hp		-5			32
+		XL city			district	40		40		50		50		16		64		15		60/100hp	-10			48	
+		XXL city		megacity	60		60		75		75		32		128		25		80/120hp	-15			64
+		global city		gigacity	80		80		120		100		48		256		50		100/150hp	-20			80
 
 		-->
 		
