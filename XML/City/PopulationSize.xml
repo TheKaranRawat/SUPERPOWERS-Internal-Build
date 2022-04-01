@@ -1618,16 +1618,27 @@
 
 	</Buildings>
 
+	<Building_ClassesNeededInCityOR>
+		<Row>
+			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCityOR>
+
 
 	<Building_ClassesNeededInCity>
 
 		<!-- REQUIRES CITY SIZE BUILDINGS -->
-		
+		<!--
 		<Row>
 			<BuildingType>BUILDING_LIBRARY</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
 		</Row>
-
+		-->
 		<Row>
 			<BuildingType>BUILDING_AQUEDUCT</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>

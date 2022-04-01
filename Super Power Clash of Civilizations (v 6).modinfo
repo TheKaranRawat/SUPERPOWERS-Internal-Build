@@ -2151,8 +2151,12 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="0212AE7D5242754E906B18F853A0008C" import="1">Art/Policy/raf_policyicons.dds</File>
     <File md5="FF747EE3BA661D8B471003083AB0104C" import="1">Art/Policy/raf_policyicons_ACHIEVED.dds</File>
     <File md5="ACF7602F94C7F34456E70B6008861B3D" import="1">Art/Policy/policybranch_industry.dds</File>
-	  <File md5="E26DBF00D1CEEAAFACB1E13CB2F2D20E" import="1">Art/Policy/IdeologyOverview_Background_Iska.dds</File>
-	  <File md5="D8AA530B924143534CEE90475495F455" import="0">XML/UC/Zulu/4UC_ZULU.sql</File>
+	<File md5="E26DBF00D1CEEAAFACB1E13CB2F2D20E" import="1">Art/Policy/IdeologyOverview_Background_Iska.dds</File>
+	
+	<!-- JFD BUILDING CODE -->
+	<File md5="0277DDAA4619E0EA3E56F0091BE6D31A" import="0">Lua/Misc/JFD_BuildingClassesNeededInCityOR.lua</File>
+	
+	<File md5="D8AA530B924143534CEE90475495F455" import="0">XML/UC/Zulu/4UC_ZULU.sql</File>
     <File md5="D1CCB9296C24820C4FB57332E3B50E73" import="0">XML/UC/Zulu/gumboot.xml</File>
     <File md5="DA0EB52296A1DF7B02AC33EF7FC4EE5D" import="1">XML/UC/Zulu/GUMBOOT128.dds</File>
     <File md5="6C75DC8D3B123051C16FA1C2EC32C028" import="1">XML/UC/Zulu/GUMBOOT256.dds</File>
@@ -3493,6 +3497,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     
 	<File md5="D2C4C8500CF5B8B183E5F5D4DA605AA9" import="0">XML/Buildings/WonderTexts.xml</File>
 	
+	<!-- JFD BUILDING -->
+	<File md5="3C18B4C1A72209CBD894F173FCB1D26F" import="0">SQL/JFD_BuildingClassesNeededInCityOR.sql</File>
 	
 	
 	
@@ -3507,6 +3513,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	-->
 	
     <OnModActivated>
+		
+	  <UpdateDatabase>SQL/JFD_BuildingClassesNeededInCityOR.sql</UpdateDatabase>	
 		
 	  <!--
 	  <UpdateDatabase>DLL-Core/DLL - Various Mod Components (v 88)/DB/CustomModTables.xml</UpdateDatabase>
@@ -4100,6 +4108,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>STFU Leave Leader Handler</Description>
     </EntryPoint>
 	-->
+	
+	<EntryPoint type="InGameUIAddin" file="Lua/Misc/JFD_BuildingClassesNeededInCityOR.lua">
+      <Name>JFD_BuildingClassesNeededInCityOR</Name>
+      <Description>Look at the title</Description>
+    </EntryPoint>
 	
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
       <Name>Terra</Name>

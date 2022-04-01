@@ -33,4 +33,38 @@ CODE
 		BUILDING_CITY_SIZE_LARGE	BUILDINGCLASS_CITY_SIZE_LARGE
 		BUILDING_CITY_SIZE_XL		BUILDINGCLASS_CITY_SIZE_XL
 		BUILDING_CITY_SIZE_XXL		BUILDINGCLASS_CITY_SIZE_XXL
-		BUILDING_CITY_SIZE_GLOBAL	BUILDINGCLASS_CITY_SIZE_GLOBAL
+		BUILDING_CITY_SIZE_GLOBAL	BUILDINGCLASS_CITY_SIZE_GLOBAL	fix present buildings on future start
+		
+
+		<Row>
+			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingClassType>
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingClassType>
+		</Row>
+		
+		<Row>
+			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
+		</Row>
+		
+		
+		
