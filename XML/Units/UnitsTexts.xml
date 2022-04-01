@@ -5250,7 +5250,7 @@
 		-->
 
 		<Row Tag="TXT_KEY_UNIT_FW_UAV">
-			<Text>Drone UAV</Text>
+			<Text>UCAV</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_UAV_TEXT">
 			<Text>Unmanned aerial vehicles were used as early as 1964, during the Vietnam War, but did not enter widespread use until the necessary technologies matured towards the end of the 20th century. While initially used in a primarily reconnaissance role in environments too hazardous to risk human pilots in, armed UAVs became increasingly prevalent as a means of delivering precision strikes at long range without needing an expensive manned aircraft.</Text>

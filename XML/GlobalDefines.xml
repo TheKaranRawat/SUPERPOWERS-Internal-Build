@@ -290,19 +290,19 @@
 		</Update>
 
 		<Update>
-			<Set Value="450"/>
+			<Set Value="350"/>
 			<Where Name="UPRISING_NUM_BASE" />
 		</Update>
 
 		<Update>
-			<Set Value="250"/>
+			<Set Value="200"/>
 			<Where Name="UPRISING_NUM_CITY_COUNT" />
 		</Update>
 
 		<!-- REVOLT/ CITY FLIP-->
 
 		<Update>
-			<Set Value="6"/>
+			<Set Value="10"/>
 			<Where Name="REVOLT_COUNTER_MIN" />
 		</Update>
 
