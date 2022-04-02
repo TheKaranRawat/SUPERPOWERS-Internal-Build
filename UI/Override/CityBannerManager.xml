@@ -130,7 +130,7 @@
 				
 				
 				
-        <Label ID="DiplomatIcon" Anchor="C,C" Offset="0,0" String="[ICON_DIPLOMAT]" Hidden="0" />
+        		<Label ID="DiplomatIcon" Anchor="C,C" Offset="0,0" String="[ICON_DIPLOMAT]" Hidden="0" />
 			</Stack>
 		</WorldAnchor>
 	</Instance>
@@ -198,7 +198,22 @@
 				<Label ID="PuppetIcon" Anchor="C,C" Offset="0,0" String="[ICON_PUPPET]" Font="TwCenMT18" FontStyle="Shadow" Hidden="1"/>
 				<Label ID="OccupiedIcon" Anchor="C,C" Offset="0,0" String="[ICON_OCCUPIED]" Font="TwCenMT18" FontStyle="Shadow" Hidden="1"/>
 
-
+				<!--SP City Levels & Size Icon-->
+				<Label ID="CityIcon_Lv1" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_LV1]" Hidden="1" />
+				<Label ID="CityIcon_Lv2" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_LV2]" Hidden="1" />
+				<Label ID="CityIcon_Lv3" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_LV3]" Hidden="1" />
+				<Label ID="CityIcon_Lv4" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_LV4]" Hidden="1" />
+				<Label ID="CityIcon_Lv5" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_LV5]" Hidden="1" />
+				<Label ID="CityIcon_NOAC" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_NOAC]" Hidden="1" />
+				
+				<Label ID="CityIcon_TOWN" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_TOWN]" Hidden="1" />
+				<Label ID="CityIcon_SMALL" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_SMALL]" Hidden="1" />
+				<Label ID="CityIcon_MEDIUM" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_MEDIUM]" Hidden="1" />
+				<Label ID="CityIcon_LARGE" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_LARGE]" Hidden="1" />
+				<Label ID="CityIcon_XL" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_XL]" Hidden="1" />
+				<Label ID="CityIcon_XXL" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_XXL]" Hidden="1" />
+				<Label ID="CityIcon_GLOBAL" Anchor="C,C" Offset="0,0" String="[ICON_CITYBANNER_CITY_GLOBAL]" Hidden="1" />
+				<!--SP City Levels & Size Icon End-->
 
 
 				<!--SP City Levels & Size Icon  No need for this! This is not the tooltip!-->

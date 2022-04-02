@@ -401,8 +401,10 @@ function RefreshCityBanner(cityBanner, iActiveTeam, iActivePlayer)
 			-- banner manager to display custom icons
 			-------------------------------------------- SP City Levels & Sizes & Resource Demend Icon-----------------------------------------
 		local cityOwner = Players[city:GetOwner()]
+
+		-- and cityOwner:IsHuman()
 		
-		if city:GetPopulation() > 0 and cityOwner:IsHuman() then
+		if city:GetPopulation() > 0  then
 			if city:IsHasBuilding(GameInfoTypes["BUILDING_CITY_SIZE_GLOBAL"])then
 				controls.CityIcon_TOWN:SetHide(true);
 				controls.CityIcon_SMALL:SetHide(true);
