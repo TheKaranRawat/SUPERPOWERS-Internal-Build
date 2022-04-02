@@ -2099,7 +2099,7 @@
 			<Type>BUILDING_TB_STRATEGIC_RICHES</Type>
 			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
 			<Cost>-1</Cost>
-			<Description>TXT_KEY_TRAIT_STRATEGIC_RICHES</Description>
+			<Description>TXT_KEY_TRAIT_STRATEGIC_RICHES_PERK</Description>
 			<Civilopedia>TXT_KEY_TRAIT_STRATEGIC_RICHES</Civilopedia>
 			<MinAreaSize>-1</MinAreaSize>
 			<HurryCostModifier>-1</HurryCostModifier>

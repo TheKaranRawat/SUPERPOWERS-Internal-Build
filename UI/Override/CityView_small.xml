@@ -305,6 +305,7 @@
 		<Image Anchor="L,B" Offset="0,-22" Texture="IconFrame64.dds" Size="64.64" ID="CityHallFrame">
 			<Button NoStateChange="1" Anchor="C,C" Size="64,64" ID="CityHallButton" ToolTip="Placeholder Tooltip">
 				<Image Anchor="C,C" Texture="WonderAtlas512.dds" Size="64,64" ID="CityHallImage"/>
+        <Image Anchor="C,C" Offset="23,28" Texture="Art/Icons/HelpButton_32.dds" Size="32.32" ToolTip="TXT_KEY_CITY_POLICE_LEVEL_HELP"/>
         <!--
         <Image Anchor="C,C" Offset="10,10" Texture="Art/Icons/HelpButton_32.dds" Size="32.32" ToolTip="TXT_KEY_UNIT_PRODUCTION_HELP"/>
         -->
