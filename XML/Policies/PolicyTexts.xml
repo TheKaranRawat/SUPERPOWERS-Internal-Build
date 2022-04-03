@@ -977,7 +977,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_DICTATORSHIP_PROLETARIAT_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Dictatorship of the Proletariat[ENDCOLOR][NEWLINE]+1 Level up for all Lv2 - Lv5 cities. (NOT stack with any Trait Effect) All previous [COLOR_POSITIVE_TEXT]Anti-corruption and Public Security Buildings[ENDCOLOR] will also change automatically. </Text>
+			<Text>[COLOR_POSITIVE_TEXT]Dictatorship of the Proletariat[ENDCOLOR][NEWLINE]+1 Level up for all Lv2 - Lv5 cities. (NOT stack with any Trait Effect) All previous [COLOR_POSITIVE_TEXT]Administrative Buildings[ENDCOLOR] will also change automatically. </Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_IRON_CURTAIN_HELP" >
@@ -1031,7 +1031,7 @@
 
 
 		<Replace Tag="TXT_KEY_POLICY_POLICE_STATE_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Police State[ENDCOLOR][NEWLINE]+10 [ICON_HAPPINESS_1] Local Happiness from every Courthouse, Constabulary, Sheriff Office, Police Station and Procuratorate. -50% extra [ICON_GOLD] Maintenance Cost added by cities' [ICON_CITIZEN] Population for these buildings.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Police State[ENDCOLOR][NEWLINE]+10 [ICON_HAPPINESS_1] Local Happiness from every Courthouse, Constabulary, Sheriff Office, Police Station and Consulate. -50% extra [ICON_GOLD] Maintenance Cost added by cities' [ICON_CITIZEN] Population for these buildings.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_CULT_PERSONALITY_HELP" >

@@ -351,10 +351,10 @@
 			[NEWLINE][ICON_CITYBANNER_CITY_LV5]Peripheral City  [ICON_HAPPINESS_4]32   [ICON_INVEST]128   [ICON_RES_MANPOWER]-48   [ICON_RES_CONSUMER]32
 			[NEWLINE]
 			[NEWLINE][ICON_CITYBANNER_CITY_NOAC]Cities beyond [ICON_CITYBANNER_CITY_LV1]Core Cities, require [ICON_INQUISITOR][COLOR_YIELD_FOOD]Governance Buildings[ENDCOLOR], otherwise they will cause Global Unhappiness. These buildings include [COLOR_YIELD_FOOD]Constables, Sheriffs Office and Police Stations[ENDCOLOR].
-			[NEWLINE][ICON_BULLET]Cities without [ICON_INQUISITOR][COLOR_YIELD_FOOD]Governance buildings[ENDCOLOR] have major [ICON_HAPPINESS_4]Corruption and [ICON_PIRATE]Public Security problems, which cause +3% extra Nationwide [ICON_HAPPINESS_4]Unhappiness!
-			[NEWLINE][ICON_BULLET]Build a [COLOR_YIELD_FOOD]Governance Building[ENDCOLOR] to eliminate the Nationwide [ICON_HAPPINESS_4]Unhappiness!
+			[NEWLINE][ICON_BULLET]Cities without [ICON_INQUISITOR][COLOR_YIELD_FOOD]Admin buildings[ENDCOLOR] have major [ICON_HAPPINESS_4]Corruption and [ICON_PIRATE]Public Security problems, which cause +3% extra Nationwide [ICON_HAPPINESS_4]Unhappiness!
+			[NEWLINE][ICON_BULLET]Build a [COLOR_YIELD_FOOD]Admin Building[ENDCOLOR] to eliminate the Nationwide [ICON_HAPPINESS_4]Unhappiness!
 			[NEWLINE]
-			[NEWLINE][ICON_PUPPET]Puppet Cities are free from Corruption and Public Security problems, after a Courthouse has been built.
+			[NEWLINE][ICON_PUPPET]Puppet Cities are free from Admin problems, after a Courthouse has been built.
 			[NEWLINE][ICON_BULLET]Provide no [ICON_RES_MANPOWER]Manpower
 			[NEWLINE][ICON_BULLET]Suffer from weak governance which causes -33% [ICON_CULTURE]Culture output, [ICON_RESEARCH]Science output and -50% [ICON_FOOD]Food Growth	in the City		
 			</Text>			
