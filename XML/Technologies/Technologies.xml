@@ -696,6 +696,200 @@
 			<AudioIntro>AS2D_TECH_ARCHITECTURE</AudioIntro>
 			<AudioIntroHeader>AS2D_HEADING_TECH_ARCHITECTURE</AudioIntroHeader>
 		</Row>
+
+		<!-- ENLIGHTENMENT ERA -->
+
+		<Row>
+			<Type>TECH_EE_EXPLORATION</Type>
+			<Cost>895</Cost>
+			<Description>TXT_KEY_TECH_EE_EXPLORATION</Description>
+			<Civilopedia>TXT_KEY_TECH_EXPLORATION_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_EXPLORATION_HELP</Help>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>true</Trade>
+			<GridX>8</GridX>
+			<GridY>1</GridY>
+			<Quote>TXT_KEY_TECH_EE_EXPLORATION_QUOTE</Quote>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>ENLIGHTENMENT_TECH_ATLAS</IconAtlas>
+			<AudioIntro>AS2D_TECH_MED_EXPLORATION</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_MED_EXPLORATION</AudioIntroHeader>
+		</Row>
+		
+		<Row>
+			<Type>TECH_EE_SOVEREIGNTY</Type>
+			<Cost>895</Cost>
+			<Description>TXT_KEY_TECH_EE_SOVEREIGNTY</Description>
+			<Civilopedia>TXT_KEY_TECH_EE_SOVEREIGNTY_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_SOVEREIGNTY_HELP</Help>
+			<Era>ERA_RENAISSANCE</Era>
+			<Trade>true</Trade>
+			<GridX>8</GridX>
+			<GridY>5</GridY>
+			<Quote>TXT_KEY_TECH_EE_SOVEREIGNTY_QUOTE</Quote>
+			<AllowsWorldCongress>true</AllowsWorldCongress>
+			<PortraitIndex>2</PortraitIndex>
+			<IconAtlas>ENLIGHTENMENT_TECH_ATLAS</IconAtlas>
+			<AudioIntro>AS2D_TECH_EE_SOVEREIGNTY</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_EE_SOVEREIGNTY</AudioIntroHeader>
+		</Row>
+
+		<Row>
+			<Type>TECH_EE_IMPERIALISM</Type>
+			<Cost>1150</Cost>
+			<Description>TXT_KEY_TECH_EE_IMPERIALISM</Description>
+			<Civilopedia>TXT_KEY_TECH_EE_IMPERIALISM_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_IMPERIALISM_HELP</Help>
+			<Era>ERA_ENLIGHTENMENT</Era>
+			<Trade>true</Trade>
+			<GridX>9</GridX>
+			<GridY>2</GridY>
+			<Quote>TXT_KEY_TECH_EE_IMPERIALISM_QUOTE</Quote>
+			<PortraitIndex>0</PortraitIndex>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
+			<IconAtlas>TECH_ATLAS_DLC_07</IconAtlas>
+			<AudioIntro>AS2D_TECH_EE_IMPERIALISM</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_EE_IMPERIALISM</AudioIntroHeader>
+		</Row>
+
+		<Row>
+			<Type>TECH_EE_HUMANISM</Type>
+			<Cost>1150</Cost>
+			<Description>TXT_KEY_TECH_EE_HUMANISM</Description>
+			<Civilopedia>TXT_KEY_TECH_HUMANISM_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_HUMANISM_HELP</Help>
+			<Era>ERA_ENLIGHTENMENT</Era>
+			<Trade>true</Trade>
+			<GridX>9</GridX>
+			<GridY>3</GridY>
+			<Quote>TXT_KEY_TECH_EE_HUMANISM_QUOTE</Quote>
+			<IconAtlas>ENLIGHTENMENT_TECH_ATLAS</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+			<AudioIntro>AS2D_TECH_EE_HUMANISM</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_EE_HUMANISM</AudioIntroHeader>
+		</Row>
+
+		<Row>
+			<Type>TECH_EE_FLINTLOCK</Type>
+			<Cost>1150</Cost>
+			<Description>TXT_KEY_TECH_EE_FLINTLOCK</Description>
+			<Civilopedia>TXT_KEY_TECH_EE_FLINTLOCK_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_FLINTLOCK_HELP</Help>
+			<Era>ERA_ENLIGHTENMENT</Era>
+			<Trade>true</Trade>
+			<GridX>9</GridX>
+			<GridY>8</GridY>
+			<Quote>TXT_KEY_TECH_EE_FLINTLOCK_QUOTE</Quote>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>CIVIL_WAR_RESOURCE_ATLAS_EXP2</IconAtlas>
+			<AudioIntro>AS2D_TECH_EE_FLINTLOCK</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_EE_FLINTLOCK</AudioIntroHeader>
+		</Row>
+
+		<Row>
+			<Type>TECH_EE_WARSHIPS</Type>
+			<Cost>1450</Cost>
+			<Description>TXT_KEY_TECH_EE_WARSHIPS</Description>
+			<Civilopedia>TXT_KEY_TECH_EE_WARSHIPS_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_WARSHIPS_HELP</Help>
+			<Era>ERA_ENLIGHTENMENT</Era>
+			<Trade>true</Trade>
+			<GridX>10</GridX>
+			<GridY>0</GridY>
+			<Quote>TXT_KEY_TECH_EE_WARSHIPS_QUOTE</Quote>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_DLC_07</IconAtlas>
+			<AudioIntro>AS2D_TECH_WARSHIPS</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_WARSHIPS</AudioIntroHeader>
+		</Row>
+
+		<Row>
+			<Type>TECH_EE_NATURAL_HISTORY</Type>
+			<Cost>1450</Cost>
+			<Description>TXT_KEY_TECH_EE_NATURAL_HISTORY</Description>
+			<Civilopedia>TXT_KEY_TECH_EE_NATURAL_HISTORY_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_NATURAL_HISTORY_HELP</Help>
+			<Era>ERA_ENLIGHTENMENT</Era>
+			<Trade>true</Trade>
+			<GridX>10</GridX>
+			<GridY>2</GridY>
+			<Quote>TXT_KEY_TECH_EE_NATURAL_HISTORY_QUOTE</Quote>
+			<PortraitIndex>43</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<AudioIntro>AS2D_TECH_EE_NATURAL_HISTORY</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_EE_NATURAL_HISTORY</AudioIntroHeader>
+		</Row>
+
+		<Row>
+			<Type>TECH_EE_MANUFACTURING</Type>
+			<Cost>1450</Cost>
+			<Description>TXT_KEY_TECH_EE_MANUFACTURING</Description>
+			<Civilopedia>TXT_KEY_TECH_EE_MANUFACTURING_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_MANUFACTURING_HELP</Help>
+			<Era>ERA_ENLIGHTENMENT</Era>
+			<Trade>true</Trade>
+			<GridX>10</GridX>
+			<GridY>5</GridY>
+			<Quote>TXT_KEY_TECH_EE_MANUFACTURING_QUOTE</Quote>
+			<PortraitIndex>7</PortraitIndex>
+			<IconAtlas>ENLIGHTENMENT_TECH_ATLAS</IconAtlas>
+			<AudioIntro>AS2D_TECH_EE_MANUFACTURING</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_EE_MANUFACTURING</AudioIntroHeader>
+		</Row>
+
+		<Row>
+			<Type>TECH_EE_FORTIFICATION</Type>
+			<Cost>1500</Cost>
+			<Description>TXT_KEY_TECH_EE_FORTIFICATION</Description>
+			<Civilopedia>TXT_KEY_TECH_EE_FORTIFICATION_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_FORTIFICATION_HELP</Help>
+			<Era>ERA_ENLIGHTENMENT</Era>
+			<Trade>true</Trade>
+			<GridX>10</GridX>
+			<GridY>7</GridY>
+			<Quote>TXT_KEY_TECH_EE_FORTIFICATION_QUOTE</Quote>
+			<IconAtlas>ENLIGHTENMENT_TECH_ATLAS</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+			<AudioIntro>AS2D_TECH_EE_FORTIFICATION</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_EE_FORTIFICATION</AudioIntroHeader>
+		</Row>
+
+		<Row>
+			<Type>TECH_EE_ARMOUR_PLATING</Type>
+			<Cost>1800</Cost>
+			<Description>TXT_KEY_TECH_EE_ARMOUR_PLATING</Description>
+			<Civilopedia>TXT_KEY_TECH_EE_ARMOUR_PLATING_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_ARMOUR_PLATING_HELP</Help>
+			<Era>ERA_INDUSTRIAL</Era>
+			<Trade>true</Trade>
+			<GridX>11</GridX>
+			<GridY>0</GridY>
+			<Quote>TXT_KEY_TECH_EE_ARMOUR_PLATING_QUOTE</Quote>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>ENLIGHTENMENT_TECH_ATLAS</IconAtlas>
+			<AudioIntro>AS2D_TECH_EE_ARMOUR_PLATING</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_EE_ARMOUR_PLATING</AudioIntroHeader>
+		</Row>
+
+		<Row>
+			<Type>TECH_EE_ROMANTICISM</Type>
+			<Cost>1800</Cost>
+			<Description>TXT_KEY_TECH_EE_ROMANTICISM</Description>
+			<Civilopedia>TXT_KEY_TECH_EE_ROMANTICISM_DESC</Civilopedia>
+			<Help>TXT_KEY_TECH_EE_ROMANTICISM_HELP</Help>
+			<Era>ERA_INDUSTRIAL</Era>
+			<Trade>true</Trade>
+			<GridX>11</GridX>
+			<GridY>3</GridY>
+			<Quote>TXT_KEY_TECH_EE_ROMANTICISM_QUOTE</Quote>
+			<IconAtlas>ENLIGHTENMENT_TECH_ATLAS</IconAtlas>
+			<PortraitIndex>5</PortraitIndex>
+			<AudioIntro>AS2D_TECH_EE_ROMANTICISM</AudioIntro>
+			<AudioIntroHeader>AS2D_TECH_EE_ROMANTICISM</AudioIntroHeader>
+		</Row>
+
+		<!-- INDUSTRIAL ERA -->
+
 		<Row>
 			<Type>TECH_SCIENTIFIC_THEORY</Type>
 			<Cost>880</Cost>

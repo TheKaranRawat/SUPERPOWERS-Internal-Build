@@ -715,6 +715,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="AB78BEEF1B4B8C65680C3C9C22614A56" import="1">Art/Sounds/Quotes/Wonders/TorreDelOroAudio.mp3</File>
     <File md5="0DA4AF9822143D7DC3153D4439ADEA6A" import="1">Art/Sounds/Quotes/Wonders/VersaillesAudio.mp3</File>
     <File md5="32D8E689D585853234BCAF477053E0BB" import="1">Art/Sounds/Quotes/Wonders/WatPhraKaewAudio.mp3</File>
+	<File md5="870E29896407019486B9F865FA50B2B5" import="0">XML/Sound/Enlightenment_Sounds.xml</File>
+	<File md5="02653534E5754C4E285F650F749EA5FE" import="0">Art/xml/Enlightenment_IconTextureAtlases.xml</File>
 	
 	<!-- -- -->
 	
@@ -3785,6 +3787,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>Modules/Global Relations (v 7)/XML/InfoAddictText_RU.xml</UpdateDatabase>
 	  -->
       <UpdateDatabase>Modules/Global Relations (v 7)/XML/UITradeOpportunities.xml</UpdateDatabase>
+	  
+	  <UpdateDatabase>XML/Sound/Enlightenment_Sounds.xml</UpdateDatabase>
+	  <UpdateDatabase>Art/Unit Models/Enlightenment_ArtDefines.xml</UpdateDatabase>
+	  <UpdateDatabase>XML/GameInfo/Enlightenment_IconTextureAtlases.xml</UpdateDatabase>
 	  
       <UpdateDatabase>SQL/Deletor.sql</UpdateDatabase>
       <UpdateDatabase>Art/xml/IconAtlases.xml</UpdateDatabase>
