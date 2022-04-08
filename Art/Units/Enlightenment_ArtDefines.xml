@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 4/25/2014 10:31:58 PM -->
+<GameData>
+	<ArtDefine_UnitInfoMemberInfos>
+		<Update>
+			<Where UnitInfoType="ART_DEF_UNIT_U_SPANISH_GALLEON"/>
+			<Set NumMembers="1"/>
+		</Update>
+	</ArtDefine_UnitInfoMemberInfos>
+	<ArtDefine_UnitMemberInfos>
+		<Update>
+			<Where Type="ART_DEF_UNIT_MEMBER_U_SPANISH_GALLEON" />
+			<Set Scale="0.16"/>”
+		</Update>
+	</ArtDefine_UnitMemberInfos>
+</GameData>

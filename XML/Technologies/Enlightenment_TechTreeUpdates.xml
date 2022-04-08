@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Pouakai -->
+<GameData>
+	<Technologies>
+		<!--This is only for the non-affected technologies, not ones being moved to the Enlightenment.-->
+		<!--Ones which are now part of the Enlightenment era can be found in the main Technology file.-->
+		<!--Column 7-->
+		<Update>
+			<Set Cost="700" />
+			<Where Type="TECH_STEEL" />
+		</Update>
+		<Update>
+			<Set Cost="700" />
+			<Where Type="TECH_ASTRONOMY" />
+		</Update>
+		<Update>
+			<Set Cost="700" />
+			<Where Type="TECH_ACOUSTICS" />
+		</Update>
+		<Update>
+			<Set Cost="700" />
+			<Where Type="TECH_BANKING" />
+		</Update>
+		<Update>
+			<Set Cost="700" />
+			<Where Type="TECH_PRINTING_PRESS" />
+		</Update>
+		<Update>
+			<Set Cost="700" />
+			<Where Type="TECH_GUNPOWDER" />
+		</Update>
+		<!--Column 8-->
+		<Update>
+			<Set Cost="895" />
+			<Where Type="TECH_ARCHITECTURE" />
+		</Update>
+		<Update>
+			<Set Cost="895" />
+			<Where Type="TECH_METALLURGY" />
+		</Update>
+		<Update>
+			<Set Cost="895" />
+			<Where Type="TECH_CHEMISTRY" />
+		</Update>
+		<!--Column 9-->
+		<Update>
+			<Set GridX="11" Cost="1800" />
+			<Where Type="TECH_RIFLING" />
+		</Update>
+		<Update>
+			<Set GridX="11" Cost="1800" />
+			<Where Type="TECH_MILITARY_SCIENCE" />
+		</Update>
+		<!--Column 10-->
+		<Update>
+			<Set GridX="12" Cost="2100" />
+			<Where Type="TECH_BIOLOGY" />
+		</Update>
+		<Update>
+			<Set GridX="12" Cost="2100" />
+			<Where Type="TECH_ELECTRICITY" />
+		</Update>
+		<Update>
+			<Set GridX="12" Cost="2100" />
+			<Where Type="TECH_STEAM_POWER" />
+		</Update>
+		<Update>
+			<Set GridX="12" Cost="2100" />
+			<Where Type="TECH_DYNAMITE" />
+		</Update>
+		<!--Column 11-->
+		<Update>
+			<Set GridX="13" Cost="2600" />
+			<Where Type="TECH_REFRIGERATION" />
+		</Update>
+		<Update>
+			<Set GridX="13" Cost="2600" />
+			<Where Type="TECH_RADIO" />
+		</Update>
+		<Update>
+			<Set GridX="13" Cost="2600" />
+			<Where Type="TECH_REPLACEABLE_PARTS" />
+		</Update>
+		<Update>
+			<Set GridX="13" Cost="2600" />
+			<Where Type="TECH_FLIGHT" />
+		</Update>
+		<Update>
+			<Set GridX="13" Cost="2600" />
+			<Where Type="TECH_RAILROAD" />
+		</Update>
+		<!--Column 12-->
+		<Update>
+			<Set GridX="14" Cost="3600" />
+			<Where Type="TECH_PLASTIC" />
+		</Update>
+		<Update>
+			<Set GridX="14" Cost="3600" />
+			<Where Type="TECH_ELECTRONICS" />
+		</Update>
+		<Update>
+			<Set GridX="14" Cost="3600" />
+			<Where Type="TECH_BALLISTICS" />
+		</Update>
+		<Update>
+			<Set GridX="14" Cost="3600" />
+			<Where Type="TECH_COMBUSTION" />
+		</Update>
+		<!--Column 13-->
+		<Update>
+			<Set GridX="15" />
+			<Where Type="TECH_PENICILIN" />
+		</Update>
+		<Update>
+			<Set GridX="15" />
+			<Where Type="TECH_ATOMIC_THEORY" />
+		</Update>
+		<Update>
+			<Set GridX="15" />
+			<Where Type="TECH_RADAR" />
+		</Update>
+		<Update>
+			<Set GridX="15" />
+			<Where Type="TECH_COMBINED_ARMS" />
+		</Update>
+		<!--Column 14-->
+		<Update>
+			<Set GridX="16" />
+			<Where Type="TECH_ECOLOGY" />
+		</Update>
+		<Update>
+			<Set GridX="16" />
+			<Where Type="TECH_NUCLEAR_FISSION" />
+		</Update>
+		<Update>
+			<Set GridX="16" />
+			<Where Type="TECH_ROCKETRY" />
+		</Update>
+		<Update>
+			<Set GridX="16" />
+			<Where Type="TECH_COMPUTERS" />
+		</Update>
+		<!--Column 15-->
+		<Update>
+			<Set GridX="17" />
+			<Where Type="TECH_TELECOM" />
+		</Update>
+		<Update>
+			<Set GridX="17" />
+			<Where Type="TECH_MOBILE_TACTICS" />
+		</Update>
+		<Update>
+			<Set GridX="17" />
+			<Where Type="TECH_ADVANCED_BALLISTICS" />
+		</Update>
+		<Update>
+			<Set GridX="17" />
+			<Where Type="TECH_SATELLITES" />
+		</Update>
+		<Update>
+			<Set GridX="17" />
+			<Where Type="TECH_ROBOTICS" />
+		</Update>
+		<Update>
+			<Set GridX="17" />
+			<Where Type="TECH_LASERS" />
+		</Update>
+		<!--Column 16-->
+		<Update>
+			<Set GridX="18" />
+			<Where Type="TECH_INTERNET" />
+		</Update>
+		<Update>
+			<Set GridX="18" />
+			<Where Type="TECH_GLOBALIZATION" />
+		</Update>
+		<Update>
+			<Set GridX="18" />
+			<Where Type="TECH_PARTICLE_PHYSICS" />
+		</Update>
+		<Update>
+			<Set GridX="18" />
+			<Where Type="TECH_NUCLEAR_FUSION" />
+		</Update>
+		<Update>
+			<Set GridX="18" />
+			<Where Type="TECH_NANOTECHNOLOGY" />
+		</Update>
+		<Update>
+			<Set GridX="18" />
+			<Where Type="TECH_STEALTH" />
+		</Update>
+		<!--Column 17-->
+		<Update>
+			<Set GridX="19" />
+			<Where Type="TECH_FUTURE_TECH" />
+		</Update>
+	</Technologies>
+	<Technology_PrereqTechs>
+		<Delete TechType="TECH_ARCHAEOLOGY" PrereqTech="TECH_NAVIGATION"/>
+		<Delete TechType="TECH_ARCHAEOLOGY" PrereqTech="TECH_ARCHITECTURE"/>
+		<Delete TechType="TECH_SCIENTIFIC_THEORY" PrereqTech="TECH_ARCHITECTURE"/>
+		<Delete TechType="TECH_SCIENTIFIC_THEORY" PrereqTech="TECH_ECONOMICS"/>
+		<Delete TechType="TECH_INDUSTRIALIZATION" PrereqTech="TECH_ECONOMICS"/>
+		<Delete TechType="TECH_RIFLING" PrereqTech="TECH_ECONOMICS"/>
+		<Delete TechType="TECH_MILITARY_SCIENCE" PrereqTech="TECH_METALLURGY"/>
+		<Delete TechType="TECH_MILITARY_SCIENCE" PrereqTech="TECH_CHEMISTRY"/>
+		<Delete TechType="TECH_BIOLOGY" PrereqTech="TECH_SCIENTIFIC_THEORY"/>
+		<Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_SCIENTIFIC_THEORY"/>
+		<Delete TechType="TECH_ARCHITECTURE" PrereqTech="TECH_BANKING"/>
+		<Delete TechType="TECH_RIFLING" PrereqTech="TECH_METALLURGY"/>
+		<Delete TechType="TECH_ECONOMICS" PrereqTech="TECH_PRINTING_PRESS"/>
+		<Delete TechType="TECH_NAVIGATION" PrereqTech="TECH_ASTRONOMY"/>
+		<Delete TechType="TECH_ECONOMICS" PrereqTech="TECH_BANKING"/>
+		<Delete TechType="TECH_ELECTRICITY" PrereqTech="TECH_SCIENTIFIC_THEORY"/>
+		<Delete TechType="TECH_FERTILIZER" PrereqTech="TECH_CHEMISTRY"/>
+		<Delete TechType="TECH_DYNAMITE" PrereqTech="TECH_FERTILIZER"/>
+	</Technology_PrereqTechs>
+</GameData>

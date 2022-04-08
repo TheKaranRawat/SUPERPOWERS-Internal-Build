@@ -2523,7 +2523,7 @@
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_NEW_PALACE_HELP</Tag>
-			<Text>Moves the Palace Building to this city and this city will become your nationa's new [ICON_CAPITAL] Captial. The old [ICON_CAPITAL] Captial will become a normal city and the old Palace will be demolished.[NEWLINE][NEWLINE]The cost goes up the more cities there are in the empire.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]WARNING[ENDCOLOR] : All Anti-corruption and Public Security Buildings in your cities will be [COLOR_NEGATIVE_TEXT]REMOVED[ENDCOLOR] after moving the [ICON_CAPITAL] Captial and you must rebuild them accordingly.</Text>
+			<Text>Moves the Palace Building to this city and this city will become your nationa's new [ICON_CAPITAL] Captial. The old [ICON_CAPITAL] Captial will become a normal city and the old Palace will be demolished.[NEWLINE][NEWLINE]The cost goes up the more cities there are in the empire.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]WARNING[ENDCOLOR] : All Administrative Buildings in your cities will be [COLOR_NEGATIVE_TEXT]REMOVED[ENDCOLOR] after moving the [ICON_CAPITAL] Captial and you must rebuild them accordingly.</Text>
 		</Row>
 	</Language_en_US>
 

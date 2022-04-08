@@ -590,6 +590,134 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="5CF4D126B9129AF344DE56944063D12D" import="1">Art/IconAtlases/Units/SPUnits02Atlas45.dds</File>
     <File md5="5F33EBBAD47D378B8236E56A8A06F9F9" import="1">Art/IconAtlases/Units/SPUnits02Atlas64.dds</File>
     <File md5="C7A6C287CC2FA133BB092370408929F6" import="1">Art/IconAtlases/Units/SPUnits02Atlas80.dds</File>
+	
+	<!-- ENLIGHTENMENT ERA -->
+	<File md5="BF5E4F5D282F739FA1EEA711D813FB1F" import="1">Art/IconAtlases/Buildings/Enlightenment_Buildings_128.dds</File>
+    <File md5="743ADD07CCA2326513FEDF6998F554EF" import="1">Art/IconAtlases/Buildings/Enlightenment_Buildings_256.dds</File>
+    <File md5="69949283BAFBD5F7896C9588E850705A" import="1">Art/IconAtlases/Buildings/Enlightenment_Buildings_45.dds</File>
+    <File md5="38F16787B9ECF726F9B50A77499E1695" import="1">Art/IconAtlases/Buildings/Enlightenment_Buildings_64.dds</File>
+    <File md5="3BB50D8C82B56BD977AD3B3BADF441C6" import="1">Art/IconAtlases/Buildings/Enlightenment_Buildings_80.dds</File>
+    <File md5="8D32A99F9D6540F083A1B8B63B791373" import="1">Art/IconAtlases/Technologies/EE_Flintlock_128.dds</File>
+    <File md5="EECA5D2376BF9D6820366B9522352D32" import="1">Art/IconAtlases/Technologies/EE_Flintlock_214.dds</File>
+    <File md5="E02F8337C9B904CA5F8042C3A6F6EFDF" import="1">Art/IconAtlases/Technologies/Enlightenment_Techs_128.dds</File>
+    <File md5="C21B4424322500605E5F54402C1EB33D" import="1">Art/IconAtlases/Technologies/Enlightenment_Techs_214.dds</File>
+    <File md5="32C40EC5CAA71F8067A4B220A5D3ABEF" import="1">Art/IconAtlases/Technologies/Enlightenment_Techs_256.dds</File>
+    <File md5="51690156A4A241BF658B57A96DB417E0" import="1">Art/IconAtlases/Technologies/Enlightenment_Techs_45.dds</File>
+    <File md5="158084A05E6604D6F8FBAA94BBE6D8F5" import="1">Art/IconAtlases/Technologies/Enlightenment_Techs_64.dds</File>
+    <File md5="6609DB90829F7411EF42834DAA3C31C5" import="1">Art/IconAtlases/Technologies/Enlightenment_Techs_80.dds</File>
+    <File md5="FC73717BCE4036BD27A16EB1EBCA067D" import="1">Art/IconAtlases/Units/Enlightenment_Units_128.dds</File>
+    <File md5="2881564B179DE2F7E5618DF5B770D38C" import="1">Art/IconAtlases/Units/Enlightenment_Units_256.dds</File>
+    <File md5="BA8B12F6AEDF04DCF2A829DA8B2F5176" import="1">Art/IconAtlases/Units/Enlightenment_Units_45.dds</File>
+    <File md5="EAA3F0E0AAC8A626B2F1769969DCD3DE" import="1">Art/IconAtlases/Units/Enlightenment_Units_64.dds</File>
+    <File md5="A9CA566F3516B1F86C6C15118B64A568" import="1">Art/IconAtlases/Units/Enlightenment_Units_80.dds</File>
+    <File md5="63DBEA3C9A68ECE52947B3AFF733FF1C" import="1">Art/IconAtlases/Units/Unit Flags/Enlightenment_UnitFlags_32.dds</File>
+    <File md5="25AA5E4360A27D848F5DFA9BA0354F68" import="1">Art/IconAtlases/Units/Unit Flags/sv_Carrack.dds</File>
+    <File md5="3F735F37A78CCE3495B3B1B3A52980B2" import="1">Art/IconAtlases/Units/Unit Flags/sv_Cruiser.dds</File>
+    <File md5="F273B35C0DF6C3DDA0907973F966C4C0" import="1">Art/IconAtlases/Units/Unit Flags/sv_Cuirassier.dds</File>
+    <File md5="7EA37A2020BA282F76D3515862A9D4D8" import="1">Art/IconAtlases/Units/Unit Flags/sv_Explorer.dds</File>
+    <File md5="C509B6310155B4C133A288C453BB2345" import="1">Art/IconAtlases/Units/Unit Flags/sv_FieldGun.dds</File>
+    <File md5="321FE6BE3AC922A3F4512846AB45711B" import="1">Art/IconAtlases/Units/Unit Flags/sv_Galleon.dds</File>
+    <File md5="9626BDF4DFC2B0A9F97CC55325BA397C" import="1">Art/IconAtlases/Units/Unit Flags/sv_LineInfantry.dds</File>
+    <File md5="491F831F873CC3A793FB8F7F61BE8D9C" import="1">Art/IconAtlases/Units/Unit Flags/sv_ShipoftheLine.dds</File>
+    <File md5="14F42BFDF97CFCD443560FEDE2650C6F" import="1">Art/IconAtlases/Units/Unit Flags/sv_Skirmisher.dds</File>
+    <File md5="8805C748FF57C52322FC9E566BAFDE88" import="1">Art/IconAtlases/Units/Unit Flags/sv_Uhlan.dds</File>
+    <File md5="B20DE2D0E51368D396CA3F26A21617C5" import="1">Art/IconAtlases/Wonders/Enlightenment_Wonders_128.dds</File>
+    <File md5="8A74C56D776D108A5959339CC9E2D22F" import="1">Art/IconAtlases/Wonders/Enlightenment_Wonders_256.dds</File>
+    <File md5="5FE9E5B802E4CB161A4791F5686ECBDE" import="1">Art/IconAtlases/Wonders/Enlightenment_Wonders_32.dds</File>
+    <File md5="336C5F437C9443A7C59BCA82DD41701C" import="1">Art/IconAtlases/Wonders/Enlightenment_Wonders_45.dds</File>
+    <File md5="CA16ED38264316F1DDFE53DEA78215FA" import="1">Art/IconAtlases/Wonders/Enlightenment_Wonders_64.dds</File>
+    <File md5="A8BA84299A2EF793F17D179763E41137" import="1">Art/IconAtlases/Wonders/Enlightenment_Wonders_80.dds</File>
+	
+	<File md5="811FD6256D6D4E2E361C155F0910EE8D" import="1">Art/Scenes/EE_Crystal_Palace_Splash.dds</File>
+    <File md5="870A1E50F9B3E68BDFFCBA4295F5A98A" import="1">Art/Scenes/EE_Kronborg_splash.dds</File>
+    <File md5="A8EA71293EC8D1CC0082D406A36286FA" import="1">Art/Scenes/EE_Torre_Splash.dds</File>
+    <File md5="4A12F73E98C455C93844055E5207DA8E" import="1">Art/Scenes/ERA_Enlightenment.dds</File>
+    <File md5="CEB20652DBD39BE798D7CBE354E2ABC7" import="1">Art/Scenes/EE_FasilGhebbi_Splash.dds</File>
+    <File md5="B87BF24F1742AF042384377AE3112F10" import="1">Art/Scenes/EE_Versailles_Splash.dds</File>
+    <File md5="F2C71619278BE0854D5C9AA0D4500F1F" import="1">Art/Scenes/EE_Smithsonian_splash.dds</File>
+    <File md5="3C787A26D55325CD91C5EC239B46DAE7" import="1">Art/Scenes/EE_Topkapi_splash.dds</File>
+    <File md5="127B9C1E76076CE2E3744B53128B1030" import="1">Art/Scenes/EE_Wat_Phra_Kaew_splash.dds</File>
+    <File md5="E91401F6D6BBB3F0B61D15D9BF24B0F8" import="1">Art/Units/Armoured Cruiser/cruiser.fxsxml</File>
+    <File md5="B4A8CD84C118F5DE906677643FAA9589" import="1">Art/Units/Armoured Cruiser/cruiser.gr2</File>
+    <File md5="7D7DE5645854D0B24F25187C895FD74E" import="1">Art/Units/Armoured Cruiser/cruiser_DIFF.dds</File>
+    <File md5="DAA63ECCA22801C2D10ABE8C4803714B" import="1">Art/Units/Armoured Cruiser/cruiser_SREF.dds</File>
+    <File md5="0D763CB1E8E2206B90FDBBA290B61CDC" import="1">Art/Units/Armoured Cruiser/fx_triggers_cruiser.ftsxml</File>
+    <File md5="B9985906AF255F559D3E090537D2BC8D" import="1">Art/Units/Carrack/carrack.fxsxml</File>
+    <File md5="0C88428D303A518CF9686C4849F61401" import="1">Art/Units/Carrack/carrack.gr2</File>
+    <File md5="96B095DE275E74C651C065D39B32F558" import="1">Art/Units/Carrack/Carrack_diff.dds</File>
+    <File md5="997802481AF18082ADECA48D2FBFAF93" import="1">Art/Units/Carrack/Carrack_sref.dds</File>
+    <File md5="8A99EC624932EA978AC415A5EDA6B95B" import="1">Art/Units/Cuirassier/freca1.blend</File>
+    <File md5="EC3036DCDFE38A9726C4C8CEFBFFD4BA" import="1">Art/Units/Cuirassier/freca1.dds</File>
+    <File md5="E5BC65E0AD0B363C4A09BE2284C8A236" import="1">Art/Units/Cuirassier/freca1.fxsxml</File>
+    <File md5="829FF0C918432A521E60706680FC77D5" import="1">Art/Units/Cuirassier/freca1.gr2</File>
+    <File md5="431E6E3A865C5168E7B138F1703536B6" import="1">Art/Units/Cuirassier/freca1_sref.dds</File>
+    <File md5="DB9D68A73ADE7CAF1F6AC4A8A377BE2C" import="0">Art/Units/Enlightenment_ArtDefines.xml</File>
+    <File md5="480B2BC2DF69254A5F26102F62B460DD" import="1">Art/Units/Explorer/conquistador_musketman.dds</File>
+    <File md5="163CDF867415B69FD0EAB1A1216A7171" import="1">Art/Units/Explorer/conquistador_musketman_2.dds</File>
+    <File md5="279FC1F7C6615687E0368FF0A59A37CF" import="1">Art/Units/Explorer/conquistador_musketman_3.dds</File>
+    <File md5="75303B1580E2345C41C513245A61AA9B" import="1">Art/Units/Explorer/conquistador_musketman_gloss.dds</File>
+    <File md5="615B602250AD9F31C83E54401FAB425E" import="1">Art/Units/Explorer/conquistador_musket_1.fxsxml</File>
+    <File md5="8607CAE5DE8BC741AE849DB5F1E4C9BE" import="1">Art/Units/Explorer/conquistador_musket_1.gr2</File>
+    <File md5="DE3E68D7ECC88C45BA3DDE93769B13BE" import="1">Art/Units/Explorer/conquistador_musket_2.fxsxml</File>
+    <File md5="A9F73A8EB3E133ECC88E2E98D54E53FA" import="1">Art/Units/Explorer/conquistador_musket_2.gr2</File>
+    <File md5="2291E5B3992C4DD72FFD9AA5137040CC" import="1">Art/Units/Explorer/conquistador_musket_3.fxsxml</File>
+    <File md5="8B2BB0700175C72889F6322CF65221F5" import="1">Art/Units/Explorer/conquistador_musket_3.gr2</File>
+    <File md5="86601C5390F5E00A678F427508E43364" import="1">Art/Units/Explorer/conquistador_musket_4.fxsxml</File>
+    <File md5="7AA7FA7158633FCB58A19B1E13B90C1D" import="1">Art/Units/Explorer/conquistador_musket_4.gr2</File>
+    <File md5="4E619175C0B48768A94533CAC7D6396B" import="1">Art/Units/Explorer/vet_conquistador_musketman.dds</File>
+    <File md5="03F466FBFA068FD4D33950CF16CF0C46" import="1">Art/Units/Explorer/vet_conquistador_musketman_gloss.dds</File>
+    <File md5="241C29C8B726656AB37954C30F1BA6B5" import="1">Art/Units/Field Gun/cannon_24pound_diff.dds</File>
+    <File md5="8D4A41DB021D942DCA1390B723FE608C" import="1">Art/Units/Field Gun/cannon_24pound_sref.dds</File>
+    <File md5="8E6881CE22AED47000717E8CE9E89952" import="1">Art/Units/Field Gun/GunCrew_diff.dds</File>
+    <File md5="6F18038FC5B71FADC231C9DA84C04D78" import="1">Art/Units/Field Gun/GunCrew_sref.dds</File>
+    <File md5="E512CFB0D832CF1EAFA157A1828623B9" import="1">Art/Units/Field Gun/NapoleonCannon.fxsxml</File>
+    <File md5="6DD3501F60795A8CE82B0E29B3EEF5B8" import="1">Art/Units/Field Gun/NapoleonCannon.gr2</File>
+    <File md5="97FA4E37787448ECFCD7BCA605A6BB64" import="1">Art/Units/Line Infantry/civ5_genmm1.fxsxml</File>
+    <File md5="80A6D50D4E1744365664F2AB5934FFB4" import="1">Art/Units/Line Infantry/civ5_genmm1.gr2</File>
+    <File md5="F4C7D610351C73897BBA1E349ED4736A" import="1">Art/Units/Line Infantry/genmm1.dds</File>
+    <File md5="A14D497A7F4311135C55C3ABAF5C919E" import="1">Art/Units/Line Infantry/genmm1_sref.dds</File>
+    <File md5="F2F9FB35212A5944D17EEABCCC997FE2" import="1">Art/Units/Ship of the Line/shipoftheline.fxsxml</File>
+    <File md5="70CBBFB6EE6A7321C7C1EF75A9404F91" import="1">Art/Units/Ship of the Line/shipoftheline.gr2</File>
+    <File md5="05DA3D0442248AADAAA2CD3B3DF714A0" import="1">Art/Units/Ship of the Line/shipoftheline_diff.dds</File>
+    <File md5="C873D61FFC562B40382953E76FD9CE25" import="1">Art/Units/Ship of the Line/shipoftheline_dmg_diff.dds</File>
+    <File md5="6E79240DD7A9BE6AB018F48ED65456FB" import="1">Art/Units/Ship of the Line/shipoftheline_sref.dds</File>
+    <File md5="05DA3D0442248AADAAA2CD3B3DF714A0" import="1">Art/Units/Ship of the Line/u_english_shipoftheline_diff.dds</File>
+    <File md5="C873D61FFC562B40382953E76FD9CE25" import="1">Art/Units/Ship of the Line/u_english_shipoftheline_dmg_diff.dds</File>
+    <File md5="6E79240DD7A9BE6AB018F48ED65456FB" import="1">Art/Units/Ship of the Line/u_english_shipoftheline_sref.dds</File>
+    <File md5="622FD133E9BC01AE23B8C049A126E8B3" import="1">Art/Units/Skirmisher/civ5_engmm1.fxsxml</File>
+    <File md5="DBB87A7D7EB7288E063383CE7359399B" import="1">Art/Units/Skirmisher/civ5_engmm1.gr2</File>
+    <File md5="D6FD89034E3F5FA0C6B4827EDC4F77B5" import="1">Art/Units/Skirmisher/engmm1.dds</File>
+    <File md5="2B919A6DD458B564CA1B9CF223BA2EBD" import="1">Art/Units/Skirmisher/engmm1_sref.dds</File>
+    <File md5="D0C4BEB025D5A5ABB61E064DF03F9C0E" import="1">Art/Units/Uhlan/gerlr1.blend</File>
+    <File md5="7AB2730CB0FE653F11961FEC01B3BFDE" import="1">Art/Units/Uhlan/gerlr1.dds</File>
+    <File md5="E293930068E4151E47DFEEC55606C2FA" import="1">Art/Units/Uhlan/gerlr1.fbx</File>
+    <File md5="2501B7E45C14B210CCD1549FF819D2BF" import="1">Art/Units/Uhlan/gerlr1.fxsxml</File>
+    <File md5="76F2BD42FCBC78E4ED51005C4EF88029" import="1">Art/Units/Uhlan/gerlr1.gr2</File>
+    <File md5="D1CCFC3064BBA4A6439F5F71403F79BF" import="1">Art/Units/Uhlan/gerlr1_sref.dds</File>
+	
+	<File md5="EAF5699CC23B26FA7BB6F120830538FD" import="1">Art/Sounds/Quotes/Era/EnlightenmentEra01.mp3</File>
+    <File md5="520716AFC847FD910C0A2BF620696BE9" import="1">Art/Sounds/Quotes/Era/EnlightenmentEra02.mp3</File>
+    <File md5="C81E2258DD1B82D1254907BC9125C959" import="1">Art/Sounds/Quotes/Era/EnlightenmentEra03.mp3</File>
+    <File md5="7ADE235CB420219D59125D2C38900311" import="1">Art/Sounds/Quotes/Techs/ArmourPlating.mp3</File>
+    <File md5="CFB1A04AB5931D3DED0814210F6125E2" import="1">Art/Sounds/Quotes/Techs/Flintlock.mp3</File>
+    <File md5="2A2A5C081CA626FB42F8D4B625FCDDB2" import="1">Art/Sounds/Quotes/Techs/Fortification.mp3</File>
+    <File md5="2AE2B47BDD21F14AB71E9DB3C30A0419" import="1">Art/Sounds/Quotes/Techs/Humanism.mp3</File>
+    <File md5="B746814335433D240BF74B71F49E0100" import="1">Art/Sounds/Quotes/Techs/Imperialism.mp3</File>
+    <File md5="01F172CE052EF394D4891EBF7CE14E45" import="1">Art/Sounds/Quotes/Techs/Manufacturing.mp3</File>
+    <File md5="C7B89B241FADFFFD96477253BA5DDD25" import="1">Art/Sounds/Quotes/Techs/NaturalHistory.mp3</File>
+    <File md5="2E8BA8B35A4B032E22E147CF1105881C" import="1">Art/Sounds/Quotes/Techs/Romanticism.mp3</File>
+    <File md5="5F38AA2EE7D9C35F7B9ED91EC0DEDD0D" import="1">Art/Sounds/Quotes/Techs/Sovereignty.mp3</File>
+    <File md5="BE3B1B4CFC5E7437B764D581BA217ECE" import="1">Art/Sounds/Quotes/Wonders/CrystalPalaceAudio.mp3</File>
+    <File md5="42B99C3D5C5A75561328E9ED7E8F1E0D" import="1">Art/Sounds/Quotes/Wonders/FasilGhebbiAudio.mp3</File>
+    <File md5="9CFFF3A585C8F8DCA92BA16211731B2B" import="1">Art/Sounds/Quotes/Wonders/KronborgAudio.mp3</File>
+    <File md5="3EE98FC89313AD32E3D92614F1D4FCEB" import="1">Art/Sounds/Quotes/Wonders/SmithsonianAudio.mp3</File>
+    <File md5="A5D9231AC301C805EC3D95304E5696F7" import="1">Art/Sounds/Quotes/Wonders/TopkapiAudio.mp3</File>
+    <File md5="AB78BEEF1B4B8C65680C3C9C22614A56" import="1">Art/Sounds/Quotes/Wonders/TorreDelOroAudio.mp3</File>
+    <File md5="0DA4AF9822143D7DC3153D4439ADEA6A" import="1">Art/Sounds/Quotes/Wonders/VersaillesAudio.mp3</File>
+    <File md5="32D8E689D585853234BCAF477053E0BB" import="1">Art/Sounds/Quotes/Wonders/WatPhraKaewAudio.mp3</File>
+	
+	<!-- -- -->
+	
     <File md5="D82BD43B7145904B058A96D3C1EB2377" import="1">Art/Images/Aswan_splash.dds</File>
     <File md5="D9F06CC2E6A1CE49CCA5D6E459C7B75C" import="1">Art/Images/Bauhaus_splash.dds</File>
     <File md5="45015263B41AD4A898344900CD1E68E5" import="1">Art/Images/BurjTower_splash.dds</File>

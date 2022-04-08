@@ -28,6 +28,8 @@ function OnPopup( popupInfo )
 		lastBackgroundImage = "ERA_Classical.dds";
 	elseif (strEra == "ERA_RENAISSANCE") then
 		lastBackgroundImage = "ERA_Renissance.dds";
+	elseif (strEra == "ERA_ENLIGHTENMENT") then
+		lastBackgroundImage = "ERA_Enlightenment.dds";
 	elseif (strEra == "ERA_INDUSTRIAL") then
 		lastBackgroundImage = "ERA_Industrial.dds";
 	elseif (strEra == "ERA_MODERN") then
