@@ -196,58 +196,8 @@
 			<AudioUnitVictoryScript>AS2D_VICTORY_MIDDLE</AudioUnitVictoryScript>
 			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</Row>
-
 		<Row>
 			<ID>4</ID>
-			<Type>ERA_ENLIGHTENMENT</Type>
-			<Description>TXT_KEY_ERA_4</Description>
-			<ShortDescription>TXT_KEY_ERA_4_SHORT</ShortDescription>
-			<Abbreviation>TXT_KEY_ERA_4_ABBREV</Abbreviation>
-			<Strategy>TXT_KEY_ERA_ENLIGHTENMENT_STRATEGY</Strategy>
-			<ArtPrefix>RENAISSANCE </ArtPrefix>
-			<NoGoodies>true</NoGoodies>
-			<NoBarbUnits>false</NoBarbUnits>
-			<NoReligion>false</NoReligion>
-			<ResearchAgreementCost>250</ResearchAgreementCost>
-			<EmbarkedUnitDefense>8</EmbarkedUnitDefense>
-			<StartingUnitMultiplier>2</StartingUnitMultiplier>
-			<StartingDefenseUnits>2</StartingDefenseUnits>
-			<StartingWorkerUnits>1</StartingWorkerUnits>
-			<StartingExploreUnits>1</StartingExploreUnits>
-			<StartingGold>50</StartingGold>
-			<StartingCulture>300</StartingCulture>
-			<FreePopulation>1</FreePopulation>
-			<LaterEraBuildingConstructMod>0</LaterEraBuildingConstructMod>
-			<StartPercent>37</StartPercent>
-			<BuildingMaintenancePercent>75</BuildingMaintenancePercent>
-			<GrowthPercent>90</GrowthPercent>
-			<TrainPercent>50</TrainPercent>
-			<ConstructPercent>55</ConstructPercent>
-			<CreatePercent>55</CreatePercent>
-			<ResearchPercent>33</ResearchPercent>
-			<BuildPercent>90</BuildPercent>
-			<ImprovementPercent>90</ImprovementPercent>
-			<GreatPeoplePercent>90</GreatPeoplePercent>
-			<CulturePercent>90</CulturePercent>
-			<TradeRouteFoodBonusTimes100>150</TradeRouteFoodBonusTimes100>
-			<TradeRouteProductionBonusTimes100>150</TradeRouteProductionBonusTimes100>
-			<EventChancePerTurn>4</EventChancePerTurn>
-			<SpiesGrantedForPlayer>1</SpiesGrantedForPlayer>
-			<SpiesGrantedForEveryone>0</SpiesGrantedForEveryone>
-			<FaithCostMultiplier>150</FaithCostMultiplier>
-			<DiploEmphasisReligion>4</DiploEmphasisReligion>
-			<DiploEmphasisLatePolicies>0</DiploEmphasisLatePolicies>
-			<LeaguePercent>300</LeaguePercent>
-			<WarmongerPercent>90</WarmongerPercent>
-			<SoundtrackSpace>160</SoundtrackSpace>
-			<FirstSoundtrackFirst>false</FirstSoundtrackFirst>
-			<CityBombardEffectTag>CITY_BOMBARD_MID</CityBombardEffectTag>
-			<AudioUnitVictoryScript>AS2D_VICTORY_MIDDLE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
-		</Row>
-
-		<Row>
-			<ID>5</ID>
 			<Type>ERA_INDUSTRIAL</Type>
 			<Description>TXT_KEY_ERA_4</Description>
 			<ShortDescription>TXT_KEY_ERA_4_SHORT</ShortDescription>
@@ -295,7 +245,7 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</Row>
 		<Row>
-			<ID>6</ID>
+			<ID>5</ID>
 			<Type>ERA_MODERN</Type>
 			<Description>TXT_KEY_ERA_5</Description>
 			<ShortDescription>TXT_KEY_ERA_5_SHORT</ShortDescription>
@@ -345,7 +295,7 @@
 		
 		
 		<Row>
-			<ID>7</ID>
+			<ID>6</ID>
 			<Type>ERA_WORLDWAR</Type>
 			<Description>TXT_KEY_ERA_6</Description>
 			<ShortDescription>TXT_KEY_ERA_6_SHORT</ShortDescription>
@@ -395,7 +345,7 @@
 		
 		
 		<Row>
-			<ID>8</ID>
+			<ID>7</ID>
 			<Type>ERA_POSTMODERN</Type>
 			<Description>TXT_KEY_ERA_7</Description>
 			<ShortDescription>TXT_KEY_ERA_7_SHORT</ShortDescription>
@@ -445,7 +395,7 @@
 
 
 		<Row>
-			<ID>9</ID>
+			<ID>8</ID>
 			<Type>ERA_INFORMATION</Type>
 			<Description>TXT_KEY_ERA_8</Description>
 			<ShortDescription>TXT_KEY_ERA_8_SHORT</ShortDescription>
@@ -498,7 +448,7 @@
 		
 
 		<Row>
-			<ID>10</ID>
+			<ID>9</ID>
 			<Type>ERA_FUTURE</Type>
 			<Description>TXT_KEY_ERA_9</Description>
 			<ShortDescription>TXT_KEY_ERA_9_SHORT</ShortDescription>
@@ -551,31 +501,6 @@
 	
 
 	<Era_CitySoundscapes>
-
-		<!-- EE -->
-
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<CitySizeType>CITYSIZE_SMALL</CitySizeType>
-			<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<CitySizeType>CITYSIZE_MEDIUM</CitySizeType>
-			<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<CitySizeType>CITYSIZE_LARGE</CitySizeType>
-			<SoundscapeScript>ASSS_CITY_MIDDLE_LARGE_SELECT_AMB</SoundscapeScript>
-		</Row>
-
-		
-
-
-
-
-
 		<Row>
 			<EraType>ERA_WORLDWAR</EraType>
 			<CitySizeType>CITYSIZE_SMALL</CitySizeType>
@@ -611,87 +536,6 @@
 
 	
 	<Era_Soundtracks>
-
-		<!-- EE -->
-
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_ALLEGRO</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_ALLEGRO_ASSAI</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_ALLEMANDE</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_BOUREE</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_BRANDENBURG_2_3</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_BRANDENBURG_3_1</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_BRANDENBURG_4_1</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_BRANDENBURG_6_1</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_BRANDENBURG_6_3</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_GIGUE</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_LARGO</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_MENUET</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BACH_SARABANDE</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BEETHOVEN_ALLEGRETTO</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BEETHOVEN_ANDANTE</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_BEETHOVEN_ROMANCE_1</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_MOZART_ADAGIO</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_MOZART_ANDANTE</Soundtrack>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<Soundtrack>AS2D_MOZART_ROMANCE</Soundtrack>
-		</Row>
-
-
 
 		<Row>
 			<EraType>ERA_WORLDWAR</EraType>
@@ -812,27 +656,6 @@
 
 
 	<Era_NewEraVOs>
-
-		<!-- EE -->
-
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<VOScript>AS2D_ERA_SPEECH_ENLIGHTENMENT_ERA01</VOScript>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<VOScript>AS2D_ERA_SPEECH_ENLIGHTENMENT_ERA02</VOScript>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<VOScript>AS2D_ERA_SPEECH_ENLIGHTENMENT_ERA03</VOScript>
-		</Row>
-		<Row>
-			<EraType>ERA_ENLIGHTENMENT</EraType>
-			<VOScript>AS2D_ERA_SPEECH_ENLIGHTENMENT_ERA04</VOScript>
-		</Row>
-
-		
 		<Row>
 			<EraType>ERA_WORLDWAR</EraType>
 			<VOScript>AS2D_ERA_SPEECH_ATOMIC_ERA01</VOScript>
