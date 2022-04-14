@@ -2170,12 +2170,18 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="968B234FD24A28B40BA6724F57421D8C" import="0">XML/UC/America/Saloon.xml</File>
     <File md5="78DEC2BED81074F4D5C5E105A2F5B293" import="0">XML/UC/Arabia/ArabiaFunduq.xml</File>    
     <File md5="82C474BC3018B3A32ACF82BB194D31FC" import="0">XML/UC/Assyria/AssyriaLamassu.xml</File>
+	<File md5="5BA0BE995638B366F0CAD0B768222F64" import="0">XML/UC/Assyria/WallsofSargon_Update.sql</File>
     
     <File md5="81D81E3F3BBA9B3448DD8981D5F4EF13" import="0">XML/UC/Austria/AustriaConcertHall.xml</File>
     <File md5="AB8B593551F69A5C2D0708699A8C2458" import="0">XML/UC/Aztecs/AztecTzompantli.xml</File>
     
     <File md5="ACB1C40FE6ED59084C42831BBE49A3B0" import="0">XML/UC/Babylon/DioriteStele.xml</File>
     <File md5="17A870F7EFE4BFE1A51ECAAE6DBEFDCD" import="0">XML/UC/Brazil/BrazilHouseGarden.xml</File>
+	<File md5="294A792AD0F7685A903B1A6E6ECF33F6" import="0">XML/UC/Brazil/BrazilSambadrome_Update.xml</File>
+	
+	<File md5="B910121BB51D377214D97A944AD6D500" import="0">XML/UC/England/EnglishTextileMill_Update.xml</File>
+    <File md5="DFD81E1580D51524B9A8F17E5A9BD567" import="0">XML/UC/England/EnglishTextileMill_Update.sql</File>
+    <File md5="EEBBD6EF9EFA48312B85E414131922B2" import="0">XML/UC/England/EnglishTextileMill_Update.lua</File>
     
     <File md5="1617D5941A2B26CA3C60F9374B8C4D59" import="0">XML/UC/Byzantium/ByzantinePeristyle.xml</File>
     <File md5="AA618513D2FA1364B6A9A367383EB5E4" import="0">XML/UC/Carthage/CarthageBreakwater.xml</File>
@@ -3740,12 +3746,14 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       
       <UpdateDatabase>XML/UC/Arabia/ArabiaFunduq.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Assyria/AssyriaLamassu.xml</UpdateDatabase>
+	  <UpdateDatabase>XML/UC/Assyria/WallsofSargon_Update.sql</UpdateDatabase>
       
       <UpdateDatabase>XML/UC/Austria/AustriaConcertHall.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Aztecs/AztecTzompantli.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Babylon/DioriteStele.xml</UpdateDatabase>
       
       <UpdateDatabase>XML/UC/Brazil/BrazilHouseGarden.xml</UpdateDatabase>
+	  <UpdateDatabase>XML/UC/Brazil/BrazilSambadrome_Update.xml</UpdateDatabase>
       
       <UpdateDatabase>XML/UC/Byzantium/ByzantinePeristyle.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Carthage/CarthageBreakwater.xml</UpdateDatabase>
@@ -3755,6 +3763,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/UC/Denmark/Langhus_Update.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Denmark/DenmarkLongboat_Update.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/Egypt/Egypt_Flax.xml</UpdateDatabase>
+	  
+	  <UpdateDatabase>XML/UC/England/EnglishSteamMill.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.sql</UpdateDatabase>
+      <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.xml</UpdateDatabase>
       
       <UpdateDatabase>XML/UC/Ethiopia/EthiopiaMasgid.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/France/FrenchDolmen.sql</UpdateDatabase>
