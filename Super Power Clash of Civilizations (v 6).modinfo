@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mod id="d08be507-23c0-4c15-af11-31b8ee567387" version="6">
   <Properties>
-    <Name>Super Power: Clash of Civilizations</Name>
+    <Name>SUPERPOWERS</Name>
     <Stability>Beta</Stability>
     <Teaser>[COLOR_YELLOW]A Total Conversion Mod  for a better late game experience and realistic modern warfare[/COLOR]</Teaser>
     <Description>A Total Conversion Mod of Sid Meier's Civilization V for a better late game experience and realistic modern warfare.  
@@ -4198,6 +4198,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>
       </Description>
     </EntryPoint>
+	
 	
 	<EntryPoint type="InGameUIAddin" file="DLL/Global - Raze City States (v 1)/LUA/GlobalRazeCityStates.lua">
       <Name>GlobalRazeCityStates</Name>
