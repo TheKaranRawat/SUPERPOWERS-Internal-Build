@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mod id="d08be507-23c0-4c15-af11-31b8ee567387" version="6">
   <Properties>
-    <Name>SUPERPOWERS:Clash of Civilizations</Name>
+    <Name>SUPERPOWERS</Name>
     <Stability>Beta</Stability>
     <Teaser>Forge your path through history, and rise to take the mantle of SUPERPOWER.</Teaser>
     <Description>SUPERPOWERS: Clash of Civilizations.
@@ -3765,8 +3765,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/UC/Egypt/Egypt_Flax.xml</UpdateDatabase>
 	  
 	  <UpdateDatabase>XML/UC/England/EnglishSteamMill.xml</UpdateDatabase>
+	  <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.sql</UpdateDatabase>
 	  <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.xml</UpdateDatabase>
-      <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.sql</UpdateDatabase>
+      
       
       
       <UpdateDatabase>XML/UC/Ethiopia/EthiopiaMasgid.xml</UpdateDatabase>
