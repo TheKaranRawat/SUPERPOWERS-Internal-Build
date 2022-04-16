@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mod id="d08be507-23c0-4c15-af11-31b8ee567387" version="6">
   <Properties>
-    <Name>SUPERPOWERS</Name>
+    <Name>SUPERPOWERS:Clash of Civilizations</Name>
     <Stability>Beta</Stability>
-    <Teaser>[COLOR_YELLOW]A Total Conversion Mod  for a better late game experience and realistic modern warfare[/COLOR]</Teaser>
-    <Description>A Total Conversion Mod of Sid Meier's Civilization V for a better late game experience and realistic modern warfare.  
+    <Teaser>Forge your path through history, and rise to take the mantle of SUPERPOWER.</Teaser>
+    <Description>SUPERPOWERS: Clash of Civilizations.
 [NEWLINE][NEWLINE]Require CIV5 BNW 1.0.3.279[NEWLINE][NEWLINE]
 [COLOR_YELLOW]Important[/COLOR]: This MOD requires DLL - Various Mod Components by whoward69 for some Lua events support and 5 range city working distance. [NEWLINE]You can download it on whoward69's site:http://www.picknmixmods.com/mods/d1b6328c-ff44-4b0d-aad7-c657f83610cd/mod.html
 [NEWLINE][NEWLINE]Special Thanks:
@@ -3765,8 +3765,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/UC/Egypt/Egypt_Flax.xml</UpdateDatabase>
 	  
 	  <UpdateDatabase>XML/UC/England/EnglishSteamMill.xml</UpdateDatabase>
+	  <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.sql</UpdateDatabase>
-      <UpdateDatabase>XML/UC/England/EnglishTextileMill_Update.xml</UpdateDatabase>
+      
       
       <UpdateDatabase>XML/UC/Ethiopia/EthiopiaMasgid.xml</UpdateDatabase>
       <UpdateDatabase>XML/UC/France/FrenchDolmen.sql</UpdateDatabase>
