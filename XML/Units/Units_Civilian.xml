@@ -637,7 +637,7 @@
 		<Row>
 			<Class>UNITCLASS_INQUISITOR</Class>
 			<Type>UNIT_HUN_SHAMAN</Type>
-			<Cost>15</Cost>
+			<Cost>-1</Cost>
 			<FaithCost>55</FaithCost>
 			<!--
 			

@@ -27,8 +27,8 @@
 			<XPValueAttack>3</XPValueAttack>
 			<XPValueDefense>3</XPValueDefense>
 			<UnitArtInfo>ART_DEF_UNIT_GOLDENHORDE</UnitArtInfo>
-			<UnitFlagAtlas>GOLDEHORDE_FLAG</UnitFlagAtlas>
-			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<UnitFlagAtlas>SMAN_EXOTIC_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>19</UnitFlagIconOffset>
 			<IconAtlas>5UC_ICON_ATLAS</IconAtlas>
 			<PortraitIndex>37</PortraitIndex>
 			<MoveRate>QUADRUPED</MoveRate>
