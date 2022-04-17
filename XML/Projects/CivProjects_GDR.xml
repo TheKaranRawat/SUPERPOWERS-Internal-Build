@@ -89,7 +89,7 @@
 
 		<Update>
 			<Where Tag="TXT_KEY_UNIT_MECH"/>
-			<Set Text="MechWarrior"/>
+			<Set Text="Jaeger"/>
 		</Update>
 
 		<Row Tag="TXT_KEY_BUILDING_GDR_HEADQUARTERS">
