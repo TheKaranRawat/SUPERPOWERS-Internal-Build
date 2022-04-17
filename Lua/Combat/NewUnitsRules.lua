@@ -551,29 +551,27 @@ function LegionMovement (playerID, unitID, bRemainingMoves)
 
 	local player = Players[ playerID ]
 	local unit = player:GetUnitByID(unitID)
+
 	if player ==nil then
 		return
 	end
 	
-
-	
 	if unit ==nil then
 		return
-	end
-	
+	end	
 
 	if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_LEGION_GROUP"].ID) then
-	--		local plotX = unit:GetX()
-	--		local plotY = unit:GetY()
+		--		local plotX = unit:GetX()
+		--		local plotY = unit:GetY()
 		local DesPlot = unit:LastMissionPlot()
 		UnitGroupMovement(player,DesPlot,unitID)
-		unit:SetHasPromotion(GameInfo.UnitPromotions["PROMOTION_LEGION_GROUP"].ID, false)				
+		
+		--[[REMOVES PROMOTION ]]--
+		--unit:SetHasPromotion(GameInfo.UnitPromotions["PROMOTION_LEGION_GROUP"].ID, false)				
 		print ("Find a Legion moved!")
 	end
-	
 
-
-end------function end
+end	------function end
 Events.UnitSelectionChanged.Add(LegionMovement);
 
 
