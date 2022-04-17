@@ -547,6 +547,8 @@ GameEvents.PlayerDoTurn.Add(AICarrierResupply)
 
 function LegionMovement (playerID, unitID, bRemainingMoves)
 
+	print ("Grouped Function loaded!")
+
 	local player = Players[ playerID ]
 	local unit = player:GetUnitByID(unitID)
 	if player ==nil then
@@ -561,8 +563,8 @@ function LegionMovement (playerID, unitID, bRemainingMoves)
 	
 
 	if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_LEGION_GROUP"].ID) then
---		local plotX = unit:GetX()
---		local plotY = unit:GetY()
+	--		local plotX = unit:GetX()
+	--		local plotY = unit:GetY()
 		local DesPlot = unit:LastMissionPlot()
 		UnitGroupMovement(player,DesPlot,unitID)
 		unit:SetHasPromotion(GameInfo.UnitPromotions["PROMOTION_LEGION_GROUP"].ID, false)				
@@ -572,7 +574,7 @@ function LegionMovement (playerID, unitID, bRemainingMoves)
 
 
 end------function end
-Events.UnitMoveQueueChanged.Add( LegionMovement )
+Events.UnitSelectionChanged.Add(LegionMovement);
 
 
 
