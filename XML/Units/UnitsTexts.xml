@@ -1362,7 +1362,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_SAM_INFANTRY">
-		<Text>Self-Propelled SAM</Text>
+		<Text>Mobile SAM</Text>
 		<Plurality>2</Plurality>
 	</Row>	
 	<Row Tag="TXT_KEY_UNIT_SAM_INFANTRY_HEADING">
@@ -2727,7 +2727,7 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_ELITE_SNIPER">
-			<Text>[COLOR_YELLOW]Elite Sniper[ENDCOLOR]</Text>
+			<Text>[COLOR_YELLOW]Sniper Elite[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_ELITE_SNIPER">
@@ -4746,7 +4746,7 @@
 
 
 		<Row Tag="TXT_KEY_PROMOTION_SNIPER_ELITE">
-			<Text>Vasily Zaitsev</Text>
+			<Text>Sniper Elite</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SNIPER_ELITE_HELP">
 			<Text>
