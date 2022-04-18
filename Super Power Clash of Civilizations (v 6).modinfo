@@ -425,6 +425,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="7F9FBC9A5BD9C658E396DE72AA2AEB23" import="1">Modules/Global Relations (v 7)/XML/UITradeOpportunities.xml</File>
 	
     <File md5="A413CB811715C8EE85A9933C74B01BD5" import="1">Art/Flags/SPUnitFlags.dds</File>
+	<File md5="949AC914609AED7910E8E90B29E20EC3" import="1">Art/Flags/Strategic/uhlanicon.dds</File>
     <File md5="E09CC6EDD8A756A0534550B637485077" import="1">Art/Flags/Strategic/SPUnitFlags__BombaTsar_.dds</File>
     <File md5="8BE2A50DE3B197BA17F6EEC2CF94A67F" import="1">Art/Flags/Strategic/SPUnitFlags__141.dds</File>
     <File md5="3748B5C2D475A2C7D41C2632D592A05D" import="1">Art/Flags/Strategic/SPUnitFlags__A10.dds</File>
@@ -2274,7 +2275,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="10ADC0F87643EAD4CE615FC831715293" import="0">XML/UC/Poland/gerlr1_sref.dds</File>
     <File md5="723269E0C8528D81CD69BFC9AA3A8D2B" import="0">XML/UC/Poland/Uhlan.sql</File>
     <File md5="6D780D41C32D7FFF534EC8BA6AF9E16E" import="0">XML/UC/Poland/Uhlan.xml</File>
-    <File md5="949AC914609AED7910E8E90B29E20EC3" import="0">XML/UC/Poland/uhlanicon.dds</File>
+    
     <File md5="FBAFEE372115A4304247A1BCE1E81466" import="0">XML/UC/Polynesia/FaleTele.sql</File>
     <File md5="22C7DA8F2DB09FBE38688CB3D2D14C39" import="0">XML/UC/Polynesia/FaleTele.xml</File>
     <File md5="EB6544330DDC7C9FA03AD120A07D1F37" import="0">XML/UC/Portugal/PortugalWinery.lua</File>
