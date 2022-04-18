@@ -2251,7 +2251,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="31D2FC4C0010C0A9FB8942CE40BE386C" import="0">XML/UC/Japan/JapanHokura_Mountain.xml</File>
     <File md5="952F44234C1B1C34526609D753ED6531" import="0">XML/UC/Korea/KoreaHallOfWorthies.xml</File>
     <File md5="80690507D36304696F2C15F796C61F37" import="0">XML/UC/Maya/MayaSacbe.xml</File>
-    <File md5="45C12A9D400BA5FDF8ACA2DB3D3E5399" import="0">XML/UC/Mongolia/IconGolde32.dds</File>
+    <File md5="45C12A9D400BA5FDF8ACA2DB3D3E5399" import="1">XML/UC/Mongolia/IconGolde32.dds</File>
     <File md5="1D2940126D6320D638075531AFFAD1F1" import="0">XML/UC/Mongolia/IconGoldeSV.dds</File>
     <File md5="585325DE7F091CA73A9F540304581D6E" import="0">XML/UC/Mongolia/Knight_Mongol.dds</File>
     <File md5="15ACE682FCEF4CBBEA90BC128C8E7402" import="0">XML/UC/Mongolia/Knight_Mongol.fxsxml</File>
