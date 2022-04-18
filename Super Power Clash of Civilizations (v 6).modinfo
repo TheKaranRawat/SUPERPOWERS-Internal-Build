@@ -181,6 +181,12 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	
 	<File md5="E9DFEE5D23C31CB0D7B0732DFDAD9D21" import="0">DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</File>
 	
+	<!-- NUKE NOTIFICATION -->
+	<File md5="FBEC00A0A66559D823A0EB412FE33DA9" import="1">Lua/Notifications/Nuclear Attack/ART/NuclearAttack55.dds</File>
+    <File md5="4F418A044D9AC3BE7CB12F3AD1E33800" import="1">Lua/Notifications/Nuclear Attack/CustomNotification/NuclearAttackNotification.lua</File>
+    <File md5="CD13927D253125D0BEC3B69FDD413860" import="1">Lua/Notifications/Nuclear Attack/CustomNotification/NuclearAttackNotification.xml</File>
+    <File md5="BF57ADF990B31C2657D5DE4129A9F48A" import="0">Lua/Notifications/Nuclear Attack/LUA/GAIA_NotifyNuclearAttack.lua</File>
+	
 	<File md5="BF45527DDEE760C8DC3927A6AA41862D" import="0">Modules/Meaningful City State Colors (v 1)/Colors.xml</File>
     <File md5="B9AD45CE8090D0AD73C5127111B785B5" import="0">Modules/Meaningful City State Colors (v 1)/MinorCivs.xml</File>
     <File md5="2B19CB472DEDD167946B3D5649B49F0E" import="0">Modules/Meaningful City State Colors (v 1)/PlayerColors.xml</File>
@@ -4268,7 +4274,15 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>Global Relations Code</Description>
     </EntryPoint>
 	
+	<EntryPoint type="InGameUIAddin" file="Lua/Notifications/Nuclear Attack/LUA/GAIA_NotifyNuclearAttack.lua">
+      <Name>NotifyNuclearAttack</Name>
+      <Description>NotifyNuclearAttack</Description>
+    </EntryPoint>
 	
+    <EntryPoint type="CustomNotificationAddin" file="Lua/Notifications/Nuclear Attack/CustomNotification/NuclearAttackNotification.lua">
+      <Name>NuclearAttackNotification</Name>
+      <Description>NuclearAttackNotification</Description>
+    </EntryPoint>
 	
   </EntryPoints>
 </Mod>
