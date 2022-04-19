@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12/23/17 5:15:19 AM -->
+<GameData>
+
+	<IconTextureAtlases>
+
+		<!--    Actions Atlas    -->
+		<Row>
+			<Atlas>SMAN_COVERT_OPS_ACTION_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>CovertOpsActionAtlas080.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		
+		<Row>
+			<Atlas>SMAN_COVERT_OPS_ACTION_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>CovertOpsActionAtlas064.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>SMAN_COVERT_OPS_ACTION_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>CovertOpsActionAtlas045.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		
+	</IconTextureAtlases>
+
+</GameData>
