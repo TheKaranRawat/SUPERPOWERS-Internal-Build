@@ -1320,6 +1320,27 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="4DB8C1D2B17255833878519BA8CF4568" import="1">Art/_Edited_Animations/ModernMarine_Fortify_Idle.gr2</File>
     <File md5="A6DDF301AB9DFC99838E77EC71416A0C" import="1">Art/_Edited_Animations/ModernMarine_Idle.gr2</File>
     <File md5="DCB52786F02DF0FE8C8C64A68733041A" import="1">Art/_Edited_Animations/ModernMarine_Run.gr2</File>
+	
+	<!-- MISC UNITS -->
+	<File md5="009B0A127781BBD53239B6B1D09AB3DA" import="1">XML/Units/Uniques/Art/CovertOpsAtlas032.dds</File>
+    <File md5="04D07066A63CCA5066EB84329A08F3B1" import="1">XML/Units/Uniques/Art/CovertOpsAtlas045.dds</File>
+    <File md5="9E9140D830BC350AB60A5253B7F5CEE7" import="1">XML/Units/Uniques/Art/CovertOpsAtlas064.dds</File>
+    <File md5="DB7CE513E365072F6ED4D0634AAACE4D" import="1">XML/Units/Uniques/Art/CovertOpsAtlas080.dds</File>
+    <File md5="002EE47C0AF3034E82034589F8DF4486" import="1">XML/Units/Uniques/Art/CovertOpsAtlas128.dds</File>
+    <File md5="0B070E23E3F3FA39194DE6CD3092ADAB" import="1">XML/Units/Uniques/Art/CovertOpsAtlas256.dds</File>
+    <File md5="501D2B3AFC7B3BF271ABD285211FB0AE" import="1">XML/Units/Uniques/Art/CovertOpsActionAtlas045.dds</File>
+    <File md5="C38926F4827481DACBA7DDD61958EE8A" import="1">XML/Units/Uniques/Art/CovertOpsActionAtlas064.dds</File>
+    <File md5="7F731E9CAA2463C8EA58390B5E1434B3" import="0">XML/Units/Uniques/Art/CovertOps_AtlasDefinitions.xml</File>
+    <File md5="D455F0756BB51FC242D22FD34FEDBF58" import="1">XML/Units/Uniques/Art/CovertOpsPromotionAtlas032.dds</File>
+    <File md5="F1AABC543AD64E318838EA3B2C0D8489" import="1">XML/Units/Uniques/Art/CovertOpsPromotionAtlas045.dds</File>
+    <File md5="F12E350CAEE7E721B57AB68C67DA944E" import="1">XML/Units/Uniques/Art/CovertOpsPromotionAtlas064.dds</File>
+    <File md5="76CC5347C4205D45C1A0600CFC7A8957" import="1">XML/Units/Uniques/Art/CovertOpsPromotionAtlas256.dds</File>
+    <File md5="E0658813EFBB43EC428F54C6B196E808" import="1">XML/Units/Uniques/Art/CovertOpsAction80.dds</File>
+    <File md5="6DB231FD19B4B2D5C893C9530E4CD6B9" import="1">XML/Units/Uniques/Art/CovertOpsActionGold80.dds</File>
+    <File md5="AC41C06BA721315512F26433220FEDF7" import="1">XML/Units/Uniques/Art/no_gloss_16x16.dds</File>
+    <File md5="F861DA96D9342C190CFF5454056439B0" import="1">XML/Units/Uniques/Art/sv_covert_operative.dds</File>
+	
+	
     <File md5="F95FABEFBB406F39C31C439BAA512D46" import="0">Lua/AI/NewHandicap.lua</File>
     <File md5="9524ED42A6CDF8B019B030C840AB7EDD" import="0">Lua/Combat/NewUnitsRules.lua</File>
     <File md5="71F68BB2E5EEEA0ABA0CECA5D9288A1F" import="0">Lua/Combat/NewAttackEffects.lua</File>
@@ -3670,6 +3691,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>Modules/Global Relations (v 7)/XML/InfoAddictText_RU.xml</UpdateDatabase>
 	  -->
       <UpdateDatabase>Modules/Global Relations (v 7)/XML/UITradeOpportunities.xml</UpdateDatabase>
+	  <UpdateDatabase>XML/Units/Uniques/Art/CovertOps_AtlasDefinitions.xml</UpdateDatabase>
 	  
       <UpdateDatabase>SQL/Deletor.sql</UpdateDatabase>
       <UpdateDatabase>Art/xml/IconAtlases.xml</UpdateDatabase>
