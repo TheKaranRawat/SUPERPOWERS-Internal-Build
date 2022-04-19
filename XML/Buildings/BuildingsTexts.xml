@@ -3038,7 +3038,7 @@
 			<Text>[ICON_FOOD] Botanical Gardens</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_TCS_PATENT_OFFICE">
-			<Text>[ICON_SCIENCE] Patent Office</Text>
+			<Text>[ICON_RESEARCH] Patent Office</Text>
 		</Row>
 		<!-- Help Tags -->
 		<Row Tag="TXT_KEY_BUILDING_TCS_PUBLIC_BATHS_HELP">
