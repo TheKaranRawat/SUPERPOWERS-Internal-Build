@@ -238,7 +238,7 @@
   <!-- Health Bar  -->
 
 
-  <Image Anchor="L,B"  Offset="458,1"  Texture="assets/UI/Art/UnitPanel/HealthBarBlack.dds" Size="17,127" ToolTip="TXT_KEY_UPANEL_HEALTH"  Hidden="1" ID="HealthBar">
+  <Image Anchor="L,B"  Offset="447,1"  Texture="assets/UI/Art/UnitPanel/HealthBarBlack.dds" Size="17,127" ToolTip="TXT_KEY_UPANEL_HEALTH"  Hidden="1" ID="HealthBar">
     <Image Anchor="C,B"  Offset="-1,2"  Texture="assets/UI/Art/UnitPanel/HealthBarGreen.dds" Size="9,122" Hidden="1" ID="GreenBar"/>
     <Image Anchor="C,B"  Offset="-1,2"  Texture="assets/UI/Art/UnitPanel/HealthBarYellow.dds" Size="9,122" Hidden="1" ID="YellowBar"/>
     <Image Anchor="C,B"  Offset="-1,2" Color="255.255.255.100" Texture="assets/UI/Art/UnitPanel/HealthBarRed.dds" Size="14,30" Hidden="1" ID="RedBar">
