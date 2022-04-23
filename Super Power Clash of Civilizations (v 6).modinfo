@@ -2181,6 +2181,18 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="ACF7602F94C7F34456E70B6008861B3D" import="1">Art/Policy/policybranch_industry.dds</File>
 	<File md5="E26DBF00D1CEEAAFACB1E13CB2F2D20E" import="1">Art/Policy/IdeologyOverview_Background_Iska.dds</File>
 	
+	<File md5="DF66D20F971177183D1D34F8C183177B" import="1">Art/Policy/1_tradition.dds</File>
+	<File md5="471F94A7E6B1567249BDEE75C0576B8C" import="1">Art/Policy/2_liberty.dds</File>
+	<File md5="7548E572FD38D61AC14E6E913170A31E" import="1">Art/Policy/3_honor.dds</File>
+	<File md5="9A8502F48466E192E2311DB849E10FAD" import="1">Art/Policy/4_piety.dds</File>
+	<File md5="019E0704B81411208C0BB32D3194FCEC" import="1">Art/Policy/5_patronage.dds</File>
+	<File md5="74B30B9312282904FF65E12F03BDF567" import="1">Art/Policy/6_ideology.dds</File>
+	<File md5="4B15990B055E8F05E8F7E28DBEA60177" import="1">Art/Policy/7_rationalism.dds</File>
+	<File md5="89138ED40219B19183171D5180161871" import="1">Art/Policy/8_exploration.dds</File>
+	<File md5="204BBC8396FB65C9BE2EA9B7F3A1B6FA" import="1">Art/Policy/9_commerce.dds</File>
+	<File md5="02CC02E005AA205EAD0FAF1A9606C4BB" import="1">Art/Policy/10_aesthetics.dds</File>
+	
+	
 	<!-- JFD BUILDING CODE -->
 	<File md5="0277DDAA4619E0EA3E56F0091BE6D31A" import="0">Lua/Misc/JFD_BuildingClassesNeededInCityOR.lua</File>
 	
