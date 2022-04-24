@@ -876,7 +876,7 @@
 		</Replace>
 				
 		<Replace Tag="TXT_KEY_POLICY_OPEN_SOCIETY_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Avant Garde[ENDCOLOR][NEWLINE]The rate at which [ICON_GREAT_PEOPLE] Great People are born is increased by 40%. +500 [ICON_TOURISM] Tourism to all Civilizations when any Great Person is born.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Avant Garde[ENDCOLOR][NEWLINE]The rate at which [ICON_GREAT_PEOPLE] Great People are born is increased by 35%. +500 [ICON_TOURISM] Tourism to all Civilizations when any Great Person is born.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_CREATIVE_EXPRESSION_HELP" >
@@ -888,7 +888,7 @@
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_POLICY_CAPITALISM_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Capitalism[ENDCOLOR][NEWLINE]+3% [ICON_RESEARCH] Science nationwide for every International Trade Routes in use.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Capitalism[ENDCOLOR][NEWLINE]+2% [ICON_RESEARCH] Science nationwide for every International Trade Routes in use.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_ECONOMIC_UNION_HELP" >
@@ -914,7 +914,7 @@
 			<Text>Peaceful Evolution</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_ARSENAL_DEMOCRACY_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Peaceful Evolution [ENDCOLOR][NEWLINE] +50% [ICON_TOURISM] Tourism to the civilizations fighting against the common foe. +15% Production for Military Units. +10 Influence per gifted unit.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Peaceful Evolution [ENDCOLOR][NEWLINE] +50% [ICON_TOURISM] Tourism to the civilizations fighting against the common foe. +15% Production for Military Units. +20 Influence per gifted unit.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_ARSENAL_DEMOCRACY_TEXT" >
 			<Text>he "Peaceful Evolution" theory in international political thought refers to the alleged attempt to effect a political transformation. </Text>
@@ -928,7 +928,7 @@
 			<Text>Freedom of Speech</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_TREATY_ORGANIZATION_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Freedom of Speech[ENDCOLOR][NEWLINE]Each Biology Laboratory, Genetic Laboratory and Central Business District's boosting effects for the city's [ICON_RESEARCH] Science output are increased to +50%. +50% [ICON_TEAM_4] International Immigration Rate from other civlizations to Your Nation.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Freedom of Speech[ENDCOLOR][NEWLINE]Each Biology Laboratory, Genetic Laboratory and Central Business District's additionally boost a city's [ICON_RESEARCH] Science output by an extra +15%.  [NEWLINE]]+50% [ICON_TEAM_4] International Immigration Rate from other civlizations to Your Nation.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_TREATY_ORGANIZATION_TEXT">
 			<Text>Freedom of speech is the political right to communicate one's opinions and ideas using one's body and property to anyone who is willing to receive them. The term freedom of expression is sometimes used synonymously, but includes any act of seeking, receiving and imparting information or ideas, regardless of the medium used.</Text>
@@ -938,7 +938,7 @@
 			<Text>Free Trade</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_SPACE_PROCUREMENTS_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Free Trade[ENDCOLOR][NEWLINE]Each Logistics Company, International Trading Company and Central Business District's boosting effects for the city's [ICON_GOLD] Gold output are increased to +50%. +50% [ICON_RES_CONSUMER] Consumer Goods produced by Merchants.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Free Trade[ENDCOLOR][NEWLINE]Each Logistics Company, International Trading Company and Central Business District's additionally boost a city's [ICON_GOLD] Gold output by an extra +15%. [NEWLINE]+50% [ICON_RES_CONSUMER] Consumer Goods produced by Merchants.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_SPACE_PROCUREMENTS_TEXT">
 			<Text>Free trade is a policy in international markets in which governments do not restrict imports or exports. Free trade is exemplified by the European Union / European Economic Area and the North American Free Trade Agreement, which have established open markets.</Text>
@@ -961,7 +961,7 @@
 			<Text>Collectivization</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_SOCIALIST_REALISM_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Collectivization[ENDCOLOR][NEWLINE]+6 [ICON_HAPPINESS_1] Local Happiness from each Mechanized Farm and Grain Depot.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Collectivization[ENDCOLOR][NEWLINE]+9 [ICON_HAPPINESS_1] Local Happiness from each Mechanized Farm and Grain Depot.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_SOCIALIST_REALISM_TEXT" >
 			<Text>Collectivization in the Soviet Union was enforced under Stalin between 1928 and 1940. The goal of this policy was to consolidate individual land and labour into collective farms: mainly kolkhozy and sovkhozy. The Soviet leadership was confident that the replacement of individual peasant farms by collective ones would immediately increase the food supply for urban population, the supply of raw materials for processing industry, and agricultural exports. Collectivization was thus regarded as the solution to the crisis of agricultural distribution (mainly in grain deliveries) that had developed since 1927. This problem became more acute as the Soviet Union pressed ahead with its ambitious industrialization program.</Text>
@@ -981,7 +981,7 @@
 
 
 		<Replace Tag="TXT_KEY_POLICY_CULTURAL_REVOLUTION_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Cultural Revolution[ENDCOLOR][NEWLINE]+25% Tourism [ICON_TOURISM] to other Order civilizations.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Cultural Revolution[ENDCOLOR][NEWLINE]+25% Tourism [ICON_TOURISM] to other Order civilizations. [NEWLINE]+33% [ICON_CULTURE] from World Wonders.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_WORKERS_FACULTIES_HELP" >
@@ -1018,7 +1018,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_FIVE_YEAR_PLAN_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Five-Year Plan[ENDCOLOR][NEWLINE]+2 [ICON_PRODUCTION] Production for every Mine, Quarry, Lumber Mill, Oil Well, Offshore Platform and Workboats.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Five-Year Plan[ENDCOLOR][NEWLINE]+3 [ICON_PRODUCTION] Production for every Mine, Quarry, Lumber Mill, Oil Well, Offshore Platform and Workboats.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_DICTATORSHIP_PROLETARIAT_HELP" >
@@ -1026,7 +1026,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_IRON_CURTAIN_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Iron Curtain[ENDCOLOR][NEWLINE]-50% [ICON_TEAM_2] International Immigration Rate from Your Nation to other civlizations. +33% [ICON_GOLD] Gold and [ICON_PRODUCTION] Production output in [COLOR_POSITIVE_TEXT]Puppet[ENDCOLOR] cities.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Iron Curtain[ENDCOLOR][NEWLINE]-50% [ICON_TEAM_2] International Immigration Rate from Your Nation to other civlizations. [NEWLINE]+50% [ICON_GOLD] Gold and [ICON_PRODUCTION] Production output in [COLOR_POSITIVE_TEXT]Puppet[ENDCOLOR] cities.</Text>
 		</Replace>
 
 		
@@ -1034,7 +1034,7 @@
 		
 		
 		<Replace Tag="TXT_KEY_POLICY_FUTURISM_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Futurism[ENDCOLOR][NEWLINE]When you capture a city, receive 50 [ICON_CULTURE] Culture as a plunder for each point of Culture produced in the captured city. </Text>
+			<Text>[COLOR_POSITIVE_TEXT]Futurism[ENDCOLOR][NEWLINE]When you capture a city, receive 60 [ICON_CULTURE] Culture as a plunder for each point of Culture produced in the captured city. </Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_ELITE_FORCES_HELP" >
@@ -1050,7 +1050,8 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_NATIONALISM_HELP">
-			<Text>[COLOR_POSITIVE_TEXT]Nationalism[ENDCOLOR][NEWLINE]-50% [ICON_GOLD] Gold for Unit Maintenance.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Nationalism[ENDCOLOR][NEWLINE]-40% [ICON_GOLD] Gold for Unit Maintenance. [NEWLINE]Quantity of Strategic Resources produced by the empire increased by 50%.
+			</Text>
 		</Replace>
 		
 		
@@ -1087,7 +1088,7 @@
 			<Text>Authoritarianism</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_NEW_ORDER_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Authoritarianism[ENDCOLOR][NEWLINE]Negates the [ICON_TOURISM] Tourism bonus from other players' technologies (from Printing Press to Internet). +15% Culture.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Authoritarianism[ENDCOLOR][NEWLINE]Negates the [ICON_TOURISM] Tourism bonus from other players' technologies (from Printing Press to Internet). [NEWLINE]Increase [ICON_CULTURE] Culture output by 15%.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_NEW_ORDER_TEXT" >
 			<Text>Authoritarianism is a form of government characterized by absolute or blind obedience to authority, as against individual freedom and related to the expectation of unquestioning obedience.</Text>
@@ -1097,7 +1098,7 @@
 			<Text>Chauvinism</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_GUNBOAT_DIPLOMACY_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Chauvinism[ENDCOLOR][NEWLINE]When you build a Strategic Weapon, create [ICON_TOURISM] Tourism to all known civs. Naval Battaleships, Carriers, Strategic Bomber,: 100% of its [ICON_STRENGTH] Combat Strength; Nuclear Weapons:250,500,1000.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Chauvinism[ENDCOLOR][NEWLINE]When you build a Strategic Weapon, create [ICON_TOURISM] Tourism to all known civs. Building Battleships, Carriers, Nuclear Weapons and Strategic Bombers will generate Tourism equal to 100% of their [ICON_STRENGTH] Combat Strength. [NEWLINE]Threaten allied City States into donating 25% of their [ICON_RESEARCH] output.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_GUNBOAT_DIPLOMACY_TEXT" >
 			<Text>Chauvinism, in its original meaning, is an exaggerated patriotism and a belligerent belief in national superiority and glory.According to legend, French soldier Nicolas Chauvin was badly wounded in the Napoleonic wars. He received a pension for his injuries but it was not enough to live on. After Napoleon abdicated, Chauvin was a fanatical Bonapartist despite the unpopularity of this view in Bourbon Restoration France. His single-minded blind devotion to his cause, despite neglect by his faction and harassment by its enemies, started the use of the term.

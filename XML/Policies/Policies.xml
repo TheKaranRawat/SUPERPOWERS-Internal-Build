@@ -557,7 +557,7 @@
 		</Update>
 		
 		<Update>
-			<Set GreatPeopleRateModifier="40"/>
+			<Set GreatPeopleRateModifier="35"/>
 			<Where Type="POLICY_OPEN_SOCIETY"/>
 		</Update>
 		<!--<Update>
@@ -587,7 +587,7 @@
 			<Where Type="POLICY_CREATIVE_EXPRESSION"/>
 		</Update>
 		<Update>
-			<Set CommonFoeTourismModifier="50" MilitaryProductionModifier="15" MilitaryUnitGiftExtraInfluence="10"/>
+			<Set CommonFoeTourismModifier="50" MilitaryProductionModifier="15" MilitaryUnitGiftExtraInfluence="20"/>
 			<Where Type="POLICY_ARSENAL_DEMOCRACY"/>
 		</Update>
 		<Update>
@@ -622,7 +622,7 @@
 			<Where Type="POLICY_RESETTLEMENT"/>
 		</Update>
 		<Update>
-			<Set SharedIdeologyTourismModifier="25" Level="1"/>
+			<Set SharedIdeologyTourismModifier="25" CultureWonderMultiplier="33" Level="1" />
 			<Where Type="POLICY_CULTURAL_REVOLUTION"/>
 		</Update>	
 		<Update>
@@ -647,7 +647,7 @@
 			<Where Type="POLICY_UNITED_FRONT"/>
 		</Update>-->
 		<Update>
-			<Set UnitGoldMaintenanceMod="-50" Level="1"/>
+			<Set UnitGoldMaintenanceMod="-40" StrategicResourceMod="100" Level="1"/>
 			<Where Type="POLICY_NATIONALISM"/>
 		</Update>
 		<Update>
@@ -655,7 +655,7 @@
 			<Where Type="POLICY_THIRD_ALTERNATIVE"/>
 		</Update>
 		<Update>
-			<Set CulturalPlunderMultiplier="50"/>
+			<Set CulturalPlunderMultiplier="60"/>
 			<Where Type="POLICY_FUTURISM"/>
 		</Update>
 		
@@ -671,7 +671,7 @@
 			<Where Type="POLICY_CULT_PERSONALITY"/>
 		</Update>
 		<Update>
-			<Set AfraidMinorPerTurnInfluence="0" MinorBullyScoreModifier="0"/>
+			<Set AfraidMinorPerTurnInfluence="0" MinorBullyScoreModifier="0"  MinorScienceAllies="true"/>
 			<Where Type="POLICY_GUNBOAT_DIPLOMACY"/>
 		</Update>
 		<Update>

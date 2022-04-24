@@ -692,13 +692,13 @@
 			<PolicyType>POLICY_IRON_CURTAIN</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PUPPET_GOVERNEMENT</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldMod>33</YieldMod>
+			<YieldMod>50</YieldMod>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_IRON_CURTAIN</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PUPPET_GOVERNEMENT</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldMod>33</YieldMod>
+			<YieldMod>50</YieldMod>
 		</Row>
 	</Policy_BuildingClassYieldModifiers>
 
@@ -1016,12 +1016,12 @@
 		<Row>
 			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MECHANIZED_FARM</BuildingClassType>
-			<Happiness>6</Happiness>
+			<Happiness>9</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GRAIN_DEPOT</BuildingClassType>
-			<Happiness>6</Happiness>
+			<Happiness>9</Happiness>
 		</Row>
 		
 		<Row>
@@ -1362,31 +1362,31 @@
 			<PolicyType>POLICY_FIVE_YEAR_PLAN</PolicyType>
 			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_FIVE_YEAR_PLAN</PolicyType>
 			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_FIVE_YEAR_PLAN</PolicyType>
 			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_FIVE_YEAR_PLAN</PolicyType>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_FIVE_YEAR_PLAN</PolicyType>
 			<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 
 	</Policy_ImprovementYieldChanges>
