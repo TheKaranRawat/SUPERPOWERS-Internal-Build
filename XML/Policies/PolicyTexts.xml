@@ -614,11 +614,11 @@
 
 
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_COMMERCE">
-			<Text>Commerce</Text>
+			<Text>Industry</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_COMMERCE_CAP">
-			<Text>COMMERCE</Text>
+			<Text>INDUSTRY</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_COMMERCE_HELP" >
