@@ -10,54 +10,75 @@
 		<!--  ****************   T R A D I T I O N ****************   -->
 
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_TRADITION">
-			<Text>Tradition</Text>
+			<Text>Republic</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_TRADITION_CAP">
-			<Text>TRADITION</Text>
+			<Text>REPUBLIC</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_TRADITION_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Tradition[ENDCOLOR] is best for "tall" empires.
-				[NEWLINE][NEWLINE]Opening Effect:
-				[NEWLINE][ICON_BULLET]+8 [ICON_CULTURE] and +8 [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital.
-				[NEWLINE][ICON_BULLET]-50% [ICON_CULTURE] Culture Exponent cost for acquiring new plots in all cities.
-				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Amount of [ICON_HAPPINESS_4] Unhappiness from number of cities increased by 50%.[ENDCOLOR]
-				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE]policies increased by 10% for every city.[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]Wonder Unlocked: Hanging Gardens.
-				[NEWLINE][ICON_BULLET]Building Unlocked: Public Baths.
+				[COLOR_POSITIVE_TEXT]Republics[ENDCOLOR] value freedom and innovation.
+				[NEWLINE][NEWLINE]Opening Effects:
+				[NEWLINE][ICON_BULLET]+25% [ICON_CULTURE] Culture and +25% [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital
+				[NEWLINE][ICON_BULLET]-33% [ICON_CULTURE] Culture cost for acquiring new plots in all cities
+				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Amount of [ICON_HAPPINESS_4] Unhappiness from number of cities increased by 50%[ENDCOLOR]
+				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE] Policies increased by 10% for every city[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]Wonder Unlocked: Hanging Gardens
+				[NEWLINE][ICON_BULLET]Building Unlocked: Public Baths
 				[NEWLINE][NEWLINE]Finishing Bonus:
-				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold output in all cities.
-				[NEWLINE][ICON_BULLET]Allows the purchase of Great Engineers with [ICON_PEACE] Faith starting in the Industrial Era. [NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch CANNOT be active at the same time as Liberty.[ENDCOLOR]</Text>
-				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Liberty.[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold output in all cities
+				[NEWLINE][ICON_BULLET]Free Great Person
+				[NEWLINE][ICON_BULLET]Allows the purchase of Great Engineers with [ICON_PEACE] Faith starting in the Industrial Era
+				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch CANNOT be active at the same time as Empire[ENDCOLOR]</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_POLICY_ARISTOCRACY" >
+			<Text>Citizenship</Text>
 		</Replace>
 			
 		<Replace Tag="TXT_KEY_POLICY_ARISTOCRACY_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Aristocracy[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]New Cities start with an extra 1 [ICON_CITIZEN] Citizen. (But one Settler Unit still equals one Population)
-				[NEWLINE][ICON_BULLET]100% [ICON_FOOD] is carried over after a new [ICON_CITIZEN] Citizen is born for every Town (Cities with a [ICON_CITIZEN] Population less than 6). It won't be effective instantly but after the next new [ICON_CITIZEN] Citizen is born.
+				[COLOR_POSITIVE_TEXT]Citizenship[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]New Cities start with an extra 1 [ICON_CITIZEN] Citizen
+				[NEWLINE][ICON_BULLET]100% [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born for every Town (Cities with a [ICON_CITIZEN] Population less than 6). It will be effective after the next [ICON_CITIZEN] Citizen is born.
 			</Text>
 		</Replace>
+
+		<Replace Tag="TXT_KEY_POLICY_LANDED_ELITE" >
+			<Text>Collective Agriculture</Text>
+		</Replace>
+
 		<Replace Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Landed Elite[ENDCOLOR]
+				[COLOR_POSITIVE_TEXT]Collective Agriculture[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food for every Farm and Fishing Net.				
-				[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Food growth in every city.
+				[NEWLINE][ICON_BULLET]+15% [ICON_FOOD] Food growth in every city.
 				[NEWLINE][ICON_BULLET]+25% bonus [ICON_FOOD] Food growth in the Capital.
 				</Text>
 		</Replace>
+
+		<Replace Tag="TXT_KEY_POLICY_LEGALISM" >
+			<Text>Social Contract</Text>
+		</Replace>
+
 		<Replace Tag="TXT_KEY_POLICY_LEGALISM_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Legalism[ENDCOLOR]
+				[COLOR_POSITIVE_TEXT]Social Contract[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+1 [ICON_HAPPINESS_1] Happiness for every 3 [ICON_CITIZEN] Citizens in all cities.
 				[NEWLINE][ICON_BULLET]-50% [ICON_HAPPINESS_4] Unhappiness in the Capital.
 			</Text>
 		</Replace>
+
+		<Replace Tag="TXT_KEY_POLICY_OLIGARCHY" >
+			<Text>Guilds</Text>
+		</Replace>
+
+
 		<Replace Tag="TXT_KEY_POLICY_OLIGARCHY_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Oligarchy[ENDCOLOR]
+				[COLOR_POSITIVE_TEXT]Guilds[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Gain additional [ICON_PRODUCTION] Production in cities reached certain Population Size:
 				[NEWLINE][ICON_BULLET]Small City: +8 [ICON_PRODUCTION] Production.
 				[NEWLINE][ICON_BULLET]Medium City: +16 [ICON_PRODUCTION] Production.
@@ -67,9 +88,14 @@
 				[NEWLINE][ICON_BULLET]Global City: +140 [ICON_PRODUCTION] Production.
 			</Text>
 		</Replace>
+
+		<Replace Tag="TXT_KEY_POLICY_MONARCHY" >
+			<Text>Representation</Text>
+		</Replace>	
+
 		<Replace Tag="TXT_KEY_POLICY_MONARCHY_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Monarchy[ENDCOLOR]
+				[COLOR_POSITIVE_TEXT]Representation[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]-50% extra [ICON_HAPPINESS_4] Unhappiness due to city's Population Size.
 				[NEWLINE][ICON_BULLET]+30% [ICON_RES_MANPOWER] Manpower provided by cities Population Size.
 			</Text>
@@ -77,11 +103,11 @@
 		
 		
 		<Row Tag="TXT_KEY_POLICY_PREFECTURE">
-			<Text>Prefeture</Text>
+			<Text>Third Estate</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PREFECTURE_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Prefeture[ENDCOLOR]
+				[COLOR_POSITIVE_TEXT]Third Estate[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Gain additional [ICON_CULTURE] Culture in cities reached certain Population Size:
 				[NEWLINE][ICON_BULLET]Small City: +8 [ICON_CULTURE] Culture.
 				[NEWLINE][ICON_BULLET]Medium City: +16 [ICON_CULTURE] Culture.
@@ -99,11 +125,11 @@
 
 		
 		<Row Tag="TXT_KEY_POLICY_FAMILY_REGISTER">
-			<Text>Imperial Examination</Text>
+			<Text>Schools of Thought</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_FAMILY_REGISTER_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Imperial Examination[ENDCOLOR]
+				[COLOR_POSITIVE_TEXT]Schools of Thought[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science for every [ICON_CITIZEN] Citizens in a city. 
 				[NEWLINE][ICON_BULLET]Add 2 [RESEARCH] Scientist Slots in every city.
 			</Text>
@@ -115,18 +141,19 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_CENTRALISATION">
-			<Text>Centralisation</Text>
+			<Text>Decentralisation</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_CENTRALISATION_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Centralisation[ENDCOLOR][NEWLINE][ICON_BULLET]New Units receive +15 XP.
-				[NEWLINE][ICON_BULLET]The [ICON_CITIZEN] Population Loss caused by Unit Casualties reduced by 50%.
-				[NEWLINE][ICON_BULLET]+1 yield from [ICON_CITIZEN] Specialists.
+				[COLOR_POSITIVE_TEXT]Decentralisation[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]New Units receive +15 XP
+				[NEWLINE][ICON_BULLET]The [ICON_CITIZEN] Population Loss caused by Unit Casualties reduced by 50%
+				[NEWLINE][ICON_BULLET]+1 yield from [ICON_CITIZEN] Specialists
 				</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_CENTRALISATION_TEXT">
 			<Text>
-				Centralisation, or centralization (see spelling differences), is theprocess by which the activities of an organisation, particularly those regarding planning and decision-making, become concentrated within a particular location and/or group or keeping all of the important decisionmaking powers within head office or the centre of the organisation.
+				Centralisation, or centralization (see spelling differences), is the process by which the activities of an organisation, particularly those regarding planning and decision-making, become concentrated within a particular location and/or group or keeping all of the important decisionmaking powers within head office or the centre of the organisation.
 			</Text>
 		</Row>
 
@@ -134,72 +161,86 @@
 		<!--  ****************   L I B E R T Y ****************   -->
 
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_LIBERTY">
-			<Text>Liberty</Text>
+			<Text>Empire</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_LIBERTY_CAP">
-			<Text>LIBERTY</Text>
+			<Text>EMPIRE</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_BRANCH_LIBERTY_HELP">
 			<Text>
-				[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for "wide" empires.
+				[COLOR_POSITIVE_TEXT]Empires[ENDCOLOR] value conquest and expansion.
 
 				[NEWLINE][NEWLINE]Opening Effect:
-				[NEWLINE][ICON_BULLET]+4 [ICON_CULTURE] Culture and +4 [ICON_RESEARCH] Science for every city.
-				[NEWLINE][ICON_BULLET]+25% Tile Improvement construction rate.
-				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]City [ICON_FOOD] growth rate reduced by 15%.[ENDCOLOR]	
-				[NEWLINE][ICON_BULLET]Wonder Unlocked: The Pyramids.
-				[NEWLINE][ICON_BULLET]Building Unlocked: Town Council.
+				[NEWLINE][ICON_BULLET]+12 [ICON_GOLD] Gold per city
+				[NEWLINE][ICON_BULLET]+33% Tile Improvement rate
+				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]City [ICON_FOOD] growth rate reduced by 15%[ENDCOLOR]	
+				[NEWLINE][ICON_BULLET]Wonder Unlocked: The Pyramids
+				[NEWLINE][ICON_BULLET]Building Unlocked: Town Council
 				[NEWLINE][NEWLINE]Finishing Bonus:
-				[NEWLINE][ICON_BULLET]One free settler.
-				[NEWLINE][ICON_BULLET]One free Great Person.
-				[NEWLINE][ICON_BULLET]Starts a Golden Age.
-				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Tradition.[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]One free Settler
+				[NEWLINE][ICON_BULLET]Starts a Golden Age
+				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Republic[ENDCOLOR]
 			</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_POLICY_COLLECTIVE_RULE" >
+			<Text>Settler Colonialism</Text>
 		</Replace>		
 		
 		<Replace Tag="TXT_KEY_POLICY_COLLECTIVE_RULE_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Collective Rule[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+25% [ICON_PRODUCTION] Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR].
-				[NEWLINE][ICON_BULLET]+25% [ICON_PRODUCTION] Bonus Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] in the Capital..
-				[NEWLINE][ICON_BULLET]One free Settler appears near the [ICON_CAPITAL] Capital.(Venice receives a Merchant of Venice instead of a Settler.)</Text>
+				[COLOR_POSITIVE_TEXT]Settler Colonialism[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]+15% [ICON_PRODUCTION] Bonus Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] in the Capital</Text>
+		</Replace>
+
+		<!-- [NEWLINE][ICON_BULLET]One free Settler appears near the [ICON_CAPITAL] Capital.(Venice receives a Merchant of Venice instead of a Settler)  -->
+
+		<Replace Tag="TXT_KEY_POLICY_REPUBLIC" >
+			<Text>Pax Imperia</Text>
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_POLICY_REPUBLIC_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Republic[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+15 [ICON_FOOD] Food for every city.
-				[NEWLINE][ICON_BULLET]+10 [ICON_GOLD] Gold for every city.
-				[NEWLINE][ICON_BULLET]-50% [ICON_HAPPINESS_4] unhappiness from Specialists.
+				[COLOR_POSITIVE_TEXT]Pax Imperia[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]+4 [ICON_HAPPINESS_1] happiness for every [ICON_INTERNATIONAL_TRADE] Trade Route
+				[NEWLINE][ICON_BULLET]+1 extra [ICON_HAPPINESS_1] happiness from every Luxury Resource
 			</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_POLICY_CITIZENSHIP">
+			<Text>Indentured Labor</Text>
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_POLICY_CITIZENSHIP_HELP">
 			<Text>
-				[COLOR_POSITIVE_TEXT]Citizenship[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]Five Workers appears near the [ICON_CAPITAL] Capital.
-				[NEWLINE][ICON_BULLET]When you found a [COLOR_POSITIVE_TEXT]New City[ENDCOLOR], one Worker will appear outside the city.</Text>
+				[COLOR_POSITIVE_TEXT]Indentured Labor[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]Three Workers appears near the [ICON_CAPITAL] Capital
+				[NEWLINE][ICON_BULLET]When you found a [COLOR_POSITIVE_TEXT]New City[ENDCOLOR], one Worker will appear outside the city</Text>
 		</Replace>
 		
-		
+		<Replace Tag="TXT_KEY_POLICY_MERITOCRACY">
+			<Text>Landed Elite</Text>
+		</Replace>
+
 		<Replace Tag="TXT_KEY_POLICY_MERITOCRACY_HELP">
 			<Text>
-				[COLOR_POSITIVE_TEXT]Meritocracy[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+10 [ICON_PRODUCTION] Production for every City.
-				[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production in cities when constructing Buildings.
+				[COLOR_POSITIVE_TEXT]Landed Elite[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]+10 [ICON_PRODUCTION] Production for every City
+				[NEWLINE][ICON_BULLET]+10% [ICON_PRODUCTION] Production in cities when constructing Buildings
 			</Text>
 		</Replace>
 
 		<Row Tag="TXT_KEY_POLICY_BILL_OF_RIGHTS">
-			<Text>Bill of Rights</Text>
+			<Text>Imperial Examination</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_BILL_OF_RIGHTS_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Bill of Rights[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+4 [ICON_RESEARCH] Science for each Library, Academy, University, Observatory, Public School and Laboratory.
-				[NEWLINE][ICON_BULLET]+4 [ICON_CULTURE] Culture for each Monument, Amphitheater, Art Gallery, Opera House, Museum and Brocast Tower.</Text>
+				[COLOR_POSITIVE_TEXT]Imperial Examination[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]+4 [ICON_RESEARCH] Science for each Library, Academy, University, Observatory, Public School and Laboratory
+				[NEWLINE][ICON_BULLET]+4 [ICON_CULTURE] Culture for each Monument, Amphitheater, Art Gallery, Opera House, Museum and Brocast Tower</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_BILL_OF_RIGHTS_TEXT">
 			<Text>
@@ -208,13 +249,13 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_PROVINCE">
-			<Text>Province</Text>
+			<Text>Praetorian Guard</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PROVINCE_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Province[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+4 [ICON_HAPPINESS_1] Happiness for each City you own connected to the [ICON_CAPITAL] Capital.
-				[NEWLINE][ICON_BULLET]-50% extra [ICON_HAPPINESS_4] Unhappiness due to city size in Lv1-5 Cities.
+				[COLOR_POSITIVE_TEXT]Praetorian Guard[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]-50% [ICON_HAPPINESS_4] Unhappiness from Occupied Populations
+				[NEWLINE][ICON_BULLET]-33% [ICON_HAPPINESS_4] Unhappiness due to city size
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PROVINCE_TEXT">
@@ -224,13 +265,13 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_DECENTRALIZATION">
-			<Text>Decentralization</Text>
+			<Text>Centralization</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_DECENTRALIZATION_HELP" >
 			<Text>
-				[COLOR_POSITIVE_TEXT]Decentralization[ENDCOLOR]
+				[COLOR_POSITIVE_TEXT]Centralization[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Each City with at least 1 Garrisoned Unit increases Local [ICON_HAPPINESS_1] Happiness by 2.
-				[NEWLINE][ICON_BULLET]Each Garrisoned Unit will increase the local city's [ICON_CULTURE] Culture by 4. Can be up to +8 [ICON_CULTURE] Culture if you have 2 Garrisoned Unit in a city.</Text>
+				[NEWLINE][ICON_BULLET]Each Garrisoned Unit will increase the local city's [ICON_CULTURE] Culture by 2. Can be up to +4 [ICON_CULTURE] Culture if you have 2 Garrisoned Unit in a city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_DECENTRALIZATION_TEXT">
 			<Text>
@@ -238,14 +279,18 @@
 			</Text>
 		</Row>
 
+		<Replace Tag="TXT_KEY_POLICY_REPRESENTATION">
+			<Text>Oligarchy</Text>
+		</Replace>
+
 		<Replace Tag="TXT_KEY_POLICY_REPRESENTATION_HELP">
 			<Text>
-				[COLOR_POSITIVE_TEXT]Representation[ENDCOLOR]
+				[COLOR_POSITIVE_TEXT]Oligarchy[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Lower the extra [ICON_CULTURE] Culture cost for adopting new Policies from Lv1 - Lv5 cities (Effects multiply with anti-corruption buildings):
 				[NEWLINE][ICON_BULLET]Lv 1 City: NO extra [ICON_CULTURE] Culture cost.
 				[NEWLINE][ICON_BULLET]Lv 2 City: Extra [ICON_CULTURE] Culture cost lowered from 10% to 5%.
-				[NEWLINE][ICON_BULLET]Lv 3 City: Extra [ICON_CULTURE] Culture cost lowered from 20% to 15%.
-				[NEWLINE][ICON_BULLET]Lv 4-5 City: Extra [ICON_CULTURE] Culture cost lowered from 33% to 28%.
+				[NEWLINE][ICON_BULLET]Lv 3 City: Extra [ICON_CULTURE] Culture cost lowered from 20% to 10%.
+				[NEWLINE][ICON_BULLET]Lv 4-5 City: Extra [ICON_CULTURE] Culture cost lowered from 33% to 15%.
 			</Text>
 		</Replace>
 		
