@@ -23,23 +23,23 @@ function OnPopup( popupInfo )
 	
 	-- Change Image for Era
 	if (strEra == "ERA_MEDIEVAL") then
-		lastBackgroundImage = "ERA_Medievel.dds";
+		lastBackgroundImage = "Art/Images/Era/2_medieval.dds";
 	elseif (strEra == "ERA_CLASSICAL") then
-		lastBackgroundImage = "ERA_Classical.dds";
+		lastBackgroundImage = "Art/Images/Era/1_classical.dds";
 	elseif (strEra == "ERA_RENAISSANCE") then
-		lastBackgroundImage = "ERA_Renissance.dds";
+		lastBackgroundImage = "Art/Images/Era/3_renaissance.dds";
 	elseif (strEra == "ERA_INDUSTRIAL") then
-		lastBackgroundImage = "ERA_Industrial.dds";
+		lastBackgroundImage = "Art/Images/Era/4_industrial.dds";
 	elseif (strEra == "ERA_MODERN") then
-		lastBackgroundImage = "ERA_Atomic.dds";
+		lastBackgroundImage = "Art/Images/Era/5_modern.dds";
 	elseif (strEra == "ERA_WORLDWAR") then
-		lastBackgroundImage = "era_worldwar.dds";
+		lastBackgroundImage = "Art/Images/Era/6_worldwar.dds";
 	elseif (strEra == "ERA_POSTMODERN") then
-		lastBackgroundImage = "era_postmodern.dds";
+		lastBackgroundImage = "Art/Images/Era/7_atomic.dds";
 	elseif (strEra == "ERA_INFORMATION") then
-		lastBackgroundImage = "ERA_Modern.dds";
+		lastBackgroundImage = "Art/Images/Era/8_information.dds";
 	elseif (strEra == "ERA_FUTURE") then
-		lastBackgroundImage = "ERA_Future.dds";
+		lastBackgroundImage = "Art/Images/Era/9_future.dds";
 	end
 	Controls.EraImage:SetTexture(lastBackgroundImage);
 	

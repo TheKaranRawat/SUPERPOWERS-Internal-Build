@@ -430,6 +430,16 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	
     <File md5="7F9FBC9A5BD9C658E396DE72AA2AEB23" import="1">Modules/Global Relations (v 7)/XML/UITradeOpportunities.xml</File>
 	
+	<File md5="072F29109843C707289AF694B9D0030E" import="1">Art/Images/Era/1_classical.dds</File>
+	<File md5="834895DAD5B459DA9FCDEA1CB58B77EA" import="1">Art/Images/Era/2_medieval.dds</File>
+	<File md5="348F2F7C8E75CE47A4D1821C199B0789" import="1">Art/Images/Era/3_renaissance.dds</File>
+	<File md5="3F5AA3481015EA64DE6F91BB2310857A" import="1">Art/Images/Era/4_industrial.dds</File>
+	<File md5="329D606D5A481882B7FEB32CF1EE815F" import="1">Art/Images/Era/5_modern.dds</File>
+	<File md5="A8E80F84890D9DB95D387CE7947EF831" import="1">Art/Images/Era/6_worldwar.dds</File>
+	<File md5="6E297292F9AAB986EDDF60179DA55FD0" import="1">Art/Images/Era/7_atomic.dds</File>
+	<File md5="8F8C562CD4FFE353216A15450D95F5C8" import="1">Art/Images/Era/8_information.dds</File>
+	<File md5="E862EEC92B08477D276A5334DEA4D531" import="1">Art/Images/Era/9_future.dds</File>
+	
     <File md5="A413CB811715C8EE85A9933C74B01BD5" import="1">Art/Flags/SPUnitFlags.dds</File>
 	<File md5="949AC914609AED7910E8E90B29E20EC3" import="1">Art/Flags/Strategic/uhlanicon.dds</File>
     <File md5="E09CC6EDD8A756A0534550B637485077" import="1">Art/Flags/Strategic/SPUnitFlags__BombaTsar_.dds</File>
