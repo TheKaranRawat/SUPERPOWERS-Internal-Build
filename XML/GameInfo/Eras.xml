@@ -76,8 +76,8 @@
 			<StartPercent>10</StartPercent>
 			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
 			<GrowthPercent>100</GrowthPercent>
-			<TrainPercent>80</TrainPercent>
-			<ConstructPercent>85</ConstructPercent>
+			<TrainPercent>100</TrainPercent>
+			<ConstructPercent>100</ConstructPercent>
 			<CreatePercent>85</CreatePercent>
 			<ResearchPercent>67</ResearchPercent>
 			<BuildPercent>100</BuildPercent>
@@ -124,8 +124,8 @@
 			<StartPercent>25</StartPercent>
 			<BuildingMaintenancePercent>100</BuildingMaintenancePercent>
 			<GrowthPercent>100</GrowthPercent>
-			<TrainPercent>67</TrainPercent>
-			<ConstructPercent>75</ConstructPercent>
+			<TrainPercent>90</TrainPercent>
+			<ConstructPercent>90</ConstructPercent>
 			<CreatePercent>75</CreatePercent>
 			<ResearchPercent>50</ResearchPercent>
 			<BuildPercent>100</BuildPercent>
@@ -172,8 +172,8 @@
 			<StartPercent>37</StartPercent>
 			<BuildingMaintenancePercent>75</BuildingMaintenancePercent>
 			<GrowthPercent>90</GrowthPercent>
-			<TrainPercent>50</TrainPercent>
-			<ConstructPercent>55</ConstructPercent>
+			<TrainPercent>80</TrainPercent>
+			<ConstructPercent>80</ConstructPercent>
 			<CreatePercent>55</CreatePercent>
 			<ResearchPercent>33</ResearchPercent>
 			<BuildPercent>90</BuildPercent>
@@ -220,8 +220,8 @@
 			<StartPercent>50</StartPercent>
 			<BuildingMaintenancePercent>60</BuildingMaintenancePercent>
 			<GrowthPercent>75</GrowthPercent>
-			<TrainPercent>33</TrainPercent>
-			<ConstructPercent>37</ConstructPercent>
+			<TrainPercent>75</TrainPercent>
+			<ConstructPercent>75</ConstructPercent>
 			<CreatePercent>37</CreatePercent>
 			<ResearchPercent>20</ResearchPercent>
 			<BuildPercent>80</BuildPercent>
@@ -268,8 +268,8 @@
 			<StartPercent>65</StartPercent>
 			<BuildingMaintenancePercent>50</BuildingMaintenancePercent>
 			<GrowthPercent>60</GrowthPercent>
-			<TrainPercent>25</TrainPercent>
-			<ConstructPercent>30</ConstructPercent>
+			<TrainPercent>70</TrainPercent>
+			<ConstructPercent>70</ConstructPercent>
 			<CreatePercent>30</CreatePercent>
 			<ResearchPercent>12</ResearchPercent>
 			<BuildPercent>70</BuildPercent>
@@ -318,8 +318,8 @@
 			<StartPercent>65</StartPercent>
 			<BuildingMaintenancePercent>50</BuildingMaintenancePercent>
 			<GrowthPercent>60</GrowthPercent>
-			<TrainPercent>25</TrainPercent>
-			<ConstructPercent>30</ConstructPercent>
+			<TrainPercent>65</TrainPercent>
+			<ConstructPercent>65</ConstructPercent>
 			<CreatePercent>30</CreatePercent>
 			<ResearchPercent>12</ResearchPercent>
 			<BuildPercent>70</BuildPercent>
@@ -368,8 +368,8 @@
 			<StartPercent>65</StartPercent>
 			<BuildingMaintenancePercent>50</BuildingMaintenancePercent>
 			<GrowthPercent>60</GrowthPercent>
-			<TrainPercent>25</TrainPercent>
-			<ConstructPercent>30</ConstructPercent>
+			<TrainPercent>60</TrainPercent>
+			<ConstructPercent>60</ConstructPercent>
 			<CreatePercent>30</CreatePercent>
 			<ResearchPercent>12</ResearchPercent>
 			<BuildPercent>70</BuildPercent>
@@ -418,8 +418,8 @@
 			<StartPercent>65</StartPercent>
 			<BuildingMaintenancePercent>50</BuildingMaintenancePercent>
 			<GrowthPercent>60</GrowthPercent>
-			<TrainPercent>25</TrainPercent>
-			<ConstructPercent>30</ConstructPercent>
+			<TrainPercent>55</TrainPercent>
+			<ConstructPercent>55</ConstructPercent>
 			<CreatePercent>30</CreatePercent>
 			<ResearchPercent>12</ResearchPercent>
 			<BuildPercent>70</BuildPercent>
@@ -471,8 +471,8 @@
 			<StartPercent>80</StartPercent>
 			<BuildingMaintenancePercent>40</BuildingMaintenancePercent>
 			<GrowthPercent>50</GrowthPercent>
-			<TrainPercent>18</TrainPercent>
-			<ConstructPercent>21</ConstructPercent>
+			<TrainPercent>50</TrainPercent>
+			<ConstructPercent>50</ConstructPercent>
 			<CreatePercent>21</CreatePercent>
 			<ResearchPercent>5</ResearchPercent>
 			<BuildPercent>60</BuildPercent>
