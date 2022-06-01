@@ -4,7 +4,7 @@
 		<Row>
 			<Type>BUILDING_KANTONE</Type>
 			<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass>
-			<Cost>75</Cost>
+			<Cost>45</Cost>
 			<HurryCostModifier>25</HurryCostModifier>
 			<GoldMaintenance>0</GoldMaintenance>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
@@ -17,6 +17,8 @@
 			<ConquestProb>0</ConquestProb>
 			<IconAtlas>5UC_ICON_ATLAS</IconAtlas>
 			<PortraitIndex>27</PortraitIndex>
+			<Defense>500</Defense>
+			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 		</Row>
 	</Buildings>
 	<Building_Flavors>
@@ -43,23 +45,6 @@
 			<Yield>1</Yield>
 		</Row>
 	</Building_YieldChanges>
-	<Building_DomainFreeExperiences>
-		<Row>
-			<BuildingType>BUILDING_KANTONE</BuildingType>
-			<DomainType>DOMAIN_LAND</DomainType>
-			<Experience>15</Experience>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_KANTONE</BuildingType>
-			<DomainType>DOMAIN_SEA</DomainType>
-			<Experience>15</Experience>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_KANTONE</BuildingType>
-			<DomainType>DOMAIN_AIR</DomainType>
-			<Experience>15</Experience>
-		</Row>
-	</Building_DomainFreeExperiences>
 
 	<Civilization_BuildingClassOverrides>
 		<Row>
