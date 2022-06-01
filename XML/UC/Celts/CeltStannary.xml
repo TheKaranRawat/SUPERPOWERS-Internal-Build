@@ -7,7 +7,7 @@
 			<Type>BUILDING_STANNARY</Type>
 			<BuildingClass>BUILDINGCLASS_WORKSHOP</BuildingClass>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
-			<Cost>120</Cost>
+			<Cost>45</Cost>
 			<GoldMaintenance>0</GoldMaintenance>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<Help>TXT_KEY_BUILDING_STANNARY_HELP</Help>
