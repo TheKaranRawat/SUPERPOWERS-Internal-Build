@@ -79,7 +79,6 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		</Row>
 	</Building_ResourceYieldChanges>
 
 	<Building_Flavors>

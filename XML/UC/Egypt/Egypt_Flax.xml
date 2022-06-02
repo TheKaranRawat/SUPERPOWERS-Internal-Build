@@ -49,7 +49,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_EGYPTIAN_FLAX</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>4</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<!--<Row>
 			<ImprovementType>IMPROVEMENT_EGYPTIAN_FLAX</ImprovementType>
