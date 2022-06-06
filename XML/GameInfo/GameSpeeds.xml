@@ -5,7 +5,7 @@
 		<Update>
 			<Set DealDuration="30" GrowthPercent="150" TrainPercent="130" ConstructPercent="150" CreatePercent="200" ResearchPercent="200"
 				 GoldPercent="200" BuildPercent="150" ImprovementPercent="125" GreatPeoplePercent="200" CulturePercent="250" FaithPercent="125" BarbPercent="150"
-			 FeatureProductionPercent="100" UnitHurryPercent="200" UnitTradePercent="200" GoldenAgePercent="200" MinorCivElectionFreqMod="120"
+			 FeatureProductionPercent="100" UnitHurryPercent="250" UnitTradePercent="200" GoldenAgePercent="200" MinorCivElectionFreqMod="120"
 				 OpinionDurationPercent="50" SpyRatePercent="125" RelationshipDuration="50" LeaguePercent="120" ReligiousPressureAdjacentCity="80"
 			GoldGiftMod="25" PeaceDealDuration="25" />
 			<Where Type="GAMESPEED_MARATHON"/>
