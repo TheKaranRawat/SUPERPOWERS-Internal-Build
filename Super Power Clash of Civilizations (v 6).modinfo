@@ -1363,7 +1363,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="D3B7E5D69392B3B32B6B3E300D41CAA5" import="0">Lua/Economy/NuclearWinter.lua</File>
     <File md5="E20C678ADD921E956B8643A3FEB6EDEA" import="1">Lua/Maps/AssignStartingPlots.lua</File>
     <File md5="8E70FB755F6381C63FBFB329948D0272" import="1">Lua/Maps/Terra.lua</File>
-	<File md5="A870BCB506A4AFC3BD95F362F34179C3" import="1">Lua/Maps/SUPERPOWERS_Earth.lua</File>
+  	<File md5="A870BCB506A4AFC3BD95F362F34179C3" import="1">Lua/Maps/SUPERPOWERS_Earth.lua</File>
     <File md5="2E910709570A91EBD690A8E906E621B7" import="0">Lua/Misc/TerrainTransform.lua</File>
     <File md5="32222B9626CB1A167D056849033AC2F5" import="1">Lua/Misc/UnitSpecialButtons.lua</File>
     <File md5="4206FD96ECE9544B21BF044B5A8359BC" import="0">Lua/Utility/Policy_FreeBuildingClass.lua</File>
@@ -4326,6 +4326,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <EntryPoint type="CustomNotificationAddin" file="Lua/Notifications/Nuclear Attack/CustomNotification/NuclearAttackNotification.lua">
       <Name>NuclearAttackNotification</Name>
       <Description>NuclearAttackNotification</Description>
+    </EntryPoint>
+
+    <EntryPoint type="MapScript" file="SUPERPOWERS_Earth.lua">
+      <Name>SUPERPOWERS Earth TSL</Name>
+      <Description>SUPERPOWERS Earth TSL</Description>
     </EntryPoint>
 	
   </EntryPoints>
