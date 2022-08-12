@@ -6,6 +6,255 @@
 
 	<Language_en_US>
 		
+		<!-- NEW TREES -->		
+
+		<Row Tag="TXT_KEY_POLICY_BRANCH_ORDER1">
+			<Text>Prosperity</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BRANCH_ORDER1_CAP">
+			<Text>PROSPERITY</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BRANCH_FREEDOM1">
+			<Text>Harmony</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BRANCH_FREEDOM1_CAP">
+			<Text>HARMONY</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BRANCH_AUTOCRACY1">
+			<Text>Domination</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BRANCH_AUTOCRACY1_CAP">
+			<Text>DOMINATION</Text>	
+		</Row>
+
+		<!-- PROSPERITY POLICY TEXTS -->
+
+		<Row Tag="TXT_KEY_POLICY_ENTERPRISE">
+			<Text>Commercial Enterprise</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ENTERPRISE_TEXT">
+			<Text>Commercial Enterprise</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ENTERPRISE_HELP">
+			<Text>Commercial Enterprise</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PROFIT">
+			<Text>The Pursuit of Profit</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PROFIT_TEXT">
+			<Text>The Pursuit of Profit</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PROFIT_HELP">
+			<Text>The Pursuit of Profit</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_WELFARE">
+			<Text>Collective Welfare</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_WELFARE_TEXT">
+			<Text>Collective Welfare</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_WELFARE_HELP">
+			<Text>Collective Welfare</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_IDEAS">
+			<Text>Marketplace of Ideas</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_IDEAS_TEXT">
+			<Text>Marketplace of Ideas</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_IDEAS_HELP">
+			<Text>Marketplace of Ideas</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_TRICKLE">
+			<Text>Trickle Down Economics</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_TRICKLE_TEXT">
+			<Text>Trickle Down Economics</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_TRICKLE_HELP">
+			<Text>Trickle Down Economics</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PATERNAL">
+			<Text>The Paternal State</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PATERNAL_TEXT">
+			<Text>The Paternal State</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PATERNAL_HELP">
+			<Text>The Paternal State</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_CARDS">
+			<Text>House of Cards</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_CARDS_TEXT">
+			<Text>House of Cards</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_CARDS_HELP">
+			<Text>House of Cards</Text>	
+		</Row>
+
+		<!-- DOMINATION POLICIES -->
+
+		<Row Tag="TXT_KEY_POLICY_AMBITION">
+			<Text>Global Ambition</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_AMBITION_TEXT">
+			<Text>Global Ambition</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_AMBITION_HELP">
+			<Text>Global Ambition</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_DIPLO">
+			<Text>Big Stick Diplomacy</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_DIPLO_TEXT">
+			<Text>Big Stick Diplomacy</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_DIPLO_HELP">
+			<Text>Big Stick Diplomacy</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ADMIRALTY">
+			<Text>The Admiralty</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ADMIRALTY_TEXT">
+			<Text>The Admiralty</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ADMIRALTY_HELP">
+			<Text>The Admiralty</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ARMADA">
+			<Text>The Grand Armada</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ARMADA_TEXT">
+			<Text>The Grand Armada</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ARMADA_HELP">
+			<Text>The Grand Armada</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_IMPERIAL">
+			<Text>Imperial Prerogative</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_IMPERIAL_TEXT">
+			<Text>Imperial Prerogative</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_IMPERIAL_HELP">
+			<Text>Imperial Prerogative</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BYZANTINE">
+			<Text>Byzantine Bureaucracy</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BYZANTINE_TEXT">
+			<Text>Byzantine Bureaucracy</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BYZANTINE_HELP">
+			<Text>Byzantine Bureaucracy</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_FEDERATION">
+			<Text>The Federation</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_FEDERATION_TEXT">
+			<Text>The Federation</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_FEDERATION_HELP">
+			<Text>The Federation</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_GAME">
+			<Text>The Great Game</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_GAME_TEXT">
+			<Text>The Great Game</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_GAME_HELP">
+			<Text>The Great Game</Text>	
+		</Row>
+
+		<!-- HARMONY -->
+
+		<Row Tag="TXT_KEY_POLICY_ONE_VISION">
+			<Text>One Vision</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ONE_VISION_TEXT">
+			<Text>One Vision</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ONE_VISION_HELP">
+			<Text>One Vision</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BIOPHILIA">
+			<Text>Biophilia</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BIOPHILIA_TEXT">
+			<Text>Biophilia</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BIOPHILIA_HELP">
+			<Text>Biophilia</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ENIGMATIC">
+			<Text>Enigmatic Engineering</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ENIGMATIC_TEXT">
+			<Text>Enigmatic Engineering</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_ENIGMATIC_HELP">
+			<Text>Enigmatic Engineering</Text>	
+		</Row>
+
+		
 
 		<!--  ****************   T R A D I T I O N ****************   -->
 
