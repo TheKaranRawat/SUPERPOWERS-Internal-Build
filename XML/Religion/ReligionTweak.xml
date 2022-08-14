@@ -315,24 +315,6 @@
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>2</Yield>
 		</Row>
-				<Row>
-			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
-			<ResourceType>RESOURCE_JADE</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
-			<ResourceType>RESOURCE_AMBER</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
-			<ResourceType>RESOURCE_CORAL</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
-		</Row>		<Row>
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_JADE</ResourceType>
 			<YieldType>YIELD_CULTURE</YieldType>
@@ -354,7 +336,7 @@
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_LAPIS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		
 		<Row>
@@ -415,25 +397,25 @@
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_SPICES</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_BANANA</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_CITRUS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_COTTON</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_OPEN_SKY</BeliefType>

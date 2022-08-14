@@ -20,6 +20,7 @@
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_EARTH_MOTHER">
 			<Text>+2 [ICON_PEACE] Faith for each Spices, Citrus, Banana and Cotton resource.</Text>
+
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_FAITH_HEALERS">
 			<Text>+5 healing next to a friendly city, and +1[ICON_PEACE] Faith on defensive buildings per tier.</Text>
@@ -28,7 +29,7 @@
 			<Text>+1 [ICON_FOOD] Food on Camps, and +1 [ICON_PEACE] Faith on Furs, Deer and Truffles.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_GURUSHIP">
-			<Text>+8 [ICON_PEACE] Faith if city has a Specialist.</Text>
+			<Text>+3 [ICON_PEACE] Faith if city has a Specialist.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_GODDESS_LOVE">
 			<Text>+3[ICON_HAPPINESS_1] Happiness in cities with 3 or more population.</Text>
@@ -46,7 +47,7 @@
 			<Text>+7[ICON_PEACE] Faith on natural wonders.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_PILGRIMAGE">
-			<Text>+10 [ICON_PEACE] Faith for each foreign city following this religion.</Text>
+			<Text>+3 [ICON_PEACE] Faith for each foreign city following this religion.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_HOLY_WARRIORS">
 			<Text>Allows you to purchase Knights Templar with [ICON_PEACE] Faith, a unit who can gain [ICON_PEACE] Faith by killing enemy units. </Text>
@@ -105,7 +106,7 @@
 			<Text>+4 [ICON_TOURISM] Tourism from every Garden.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_SWORD_PLOWSHARES">
-			<Text>+25% [ICON_FOOD] Food Growth rate for city if not at war.</Text>
+			<Text>+25% [ICON_FOOD] Food Growth rate for city if not at war.</Text> <!-- make it 15% -->
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_SACRED_WATERS">
 			<Text>+2[ICON_HAPPINESS_1] Happiness for cities on rivers.</Text>
@@ -130,6 +131,7 @@
 			<Text>Swamp Belief</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_MARSH_BELIEF">
+
 			<Text>+4 [ICON_PEACE] Faith from Marsh tiles. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_SNOW_BELIEF_SHORT">
@@ -154,7 +156,7 @@
 			<Text>Worship of Charites</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_CHARITES">
-			<Text>+6 [ICON_CULTURE] Culture for every Amphitheatre, Art Gallery and Opera House.</Text>
+			<Text>+4 [ICON_CULTURE] Culture for every Amphitheatre, Art Gallery and Opera House.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_EIRENE_SHORT">
 			<Text>Universal Love</Text>
@@ -172,7 +174,7 @@
 			<Text>The Sacred Palace</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_TOURISM_RELIGION">
-			<Text>+32 [ICON_TOURISM] Tourism from the Grand Temple.</Text>
+			<Text>+24 [ICON_TOURISM] Tourism from the Grand Temple.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_SACRED_WOODS_SHORT">
 			<Text>Sacred Woods</Text>

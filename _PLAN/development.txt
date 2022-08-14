@@ -19,3 +19,7 @@ That's all, after that you can click on the "Fetch Origin" button which download
 
 Just drop these in your mod folder, contains the DLL (Required), Ingame Editor (Helps with debugging) and the MP Mod Workaround (Modpack Generator)
 After that just load up the DLL and SUPERPOWERS from the ingame mod menu. You can make edits to the files directly like the XML for example, and then load the game back up and the changes will be there
+
+compression for dds
+uncompressed
+alpha layers yes
