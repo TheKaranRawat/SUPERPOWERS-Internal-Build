@@ -254,6 +254,54 @@
 			<Text>Enigmatic Engineering</Text>	
 		</Row>
 
+		<Row Tag="TXT_KEY_POLICY_MASTERY">
+			<Text>Mastery of Nature</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_MASTERY_TEXT">
+			<Text>Mastery of Nature</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_MASTERY_HELP">
+			<Text>Mastery of Nature</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PERFECTION">
+			<Text>Engineered Perfection</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PERFECTION_TEXT">
+			<Text>Engineered Perfection</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_PERFECTION_HELP">
+			<Text>Engineered Perfection</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_SERENE">
+			<Text>The Serene Realm</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_SERENE_TEXT">
+			<Text>The Serene Realm</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_SERENE_HELP">
+			<Text>The Serene Realm</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_STAND">
+			<Text>United We Stand</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_STAND_TEXT">
+			<Text>United We Stand</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_STAND_HELP">
+			<Text>United We Stand</Text>	
+		</Row>
+
 		
 
 		<!--  ****************   T R A D I T I O N ****************   -->
