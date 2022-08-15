@@ -1060,7 +1060,9 @@
 			<Type>POLICY_ISKA_FREEDOM</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_FREEDOM</Description>
 			<PortraitIndex>1</PortraitIndex>
-			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
+			
+			<CityGrowthMod>25</CityGrowthMod>
+
 			<Civilopedia>TXT_KEY_POLICY_FREEDOM_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_FREEDOM_HELP</Help>
 			<IconAtlas>JFD_INDUSTRY_POLICY_ATLAS</IconAtlas>
@@ -1186,7 +1188,7 @@
 			<GridY>3</GridY>
 
 			<CulturePerGarrisonedUnit>10</CulturePerGarrisonedUnit>
-			<MilitaryProductionModifier>15</MilitaryProductionModifier>
+			<MilitaryProductionModifier>10</MilitaryProductionModifier>
 			
 			<PortraitIndex>4</PortraitIndex>
 			<IconAtlas>JFD_CONSERVATION_POLICY_ATLAS</IconAtlas>
@@ -1197,7 +1199,7 @@
 		<Row>
 			<Type>POLICY_ISKA_FREEDOM_FINISHER</Type>
 			<Description>TXT_KEY_POLICY_FREEDOM_FINISHER</Description>
-			<GoldenAgeDurationMod>50</GoldenAgeDurationMod>
+			<GoldenAgeDurationMod>20</GoldenAgeDurationMod>
 		</Row>
 
 		<!-- ########################################## -->
@@ -1211,6 +1213,8 @@
 			<PortraitIndex>30</PortraitIndex>
 			<Civilopedia>TXT_KEY_POLICY_ORDER_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_ORDER_HELP</Help>
+
+			<HappinessToCulture>50</HappinessToCulture>
 			
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -1227,6 +1231,7 @@
 			
 			<GridX>1</GridX>
 			<GridY>1</GridY>
+
 			<PortraitIndex>4</PortraitIndex>
 			<IconAtlas>JFD_INDUSTRY_POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>JFD_INDUSTRY_POLICY_A_ATLAS</IconAtlasAchieved>
@@ -1258,6 +1263,7 @@
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>1</GridY>
+
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>JFD_INDUSTRY_POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>JFD_INDUSTRY_POLICY_A_ATLAS</IconAtlasAchieved>
@@ -1273,6 +1279,8 @@
 			<CultureCost>10</CultureCost>
 			<GridX>1</GridX>
 			<GridY>2</GridY>
+
+
 			<PortraitIndex>34</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -1286,7 +1294,9 @@
 			<Help>TXT_KEY_POLICY_TRICKLE_HELP</Help>
 			<PolicyBranchType>POLICY_ISKA_BRANCH_ORDER</PolicyBranchType>
 			<CultureCost>10</CultureCost>
+
 			<BuildingGoldMaintenanceMod>-20</BuildingGoldMaintenanceMod>
+
 			<GridX>5</GridX>
 			<GridY>2</GridY>
 			<PortraitIndex>3</PortraitIndex>
@@ -1304,6 +1314,7 @@
 			<CultureCost>10</CultureCost>
 			
 			<CityGrowthMod>15</CityGrowthMod>
+
 			<GridX>1</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>1</PortraitIndex>
@@ -1321,6 +1332,7 @@
 			<CultureCost>10</CultureCost>
 			
 			<UnitGoldMaintenanceMod>25</UnitGoldMaintenanceMod>
+
 			<GridX>5</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>1</PortraitIndex>
@@ -1332,7 +1344,8 @@
 		<Row>
 			<Type>POLICY_ISKA_ORDER_FINISHER</Type>
 			<Description>TXT_KEY_POLICY_ORDER_FINISHER</Description>
-			<CulturePerCity>1</CulturePerCity>
+			<NumFreeGreatPeople>1</NumFreeGreatPeople>
+			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
 		</Row>
 
 		<!-- ########################################## -->
@@ -1344,6 +1357,8 @@
 			<Type>POLICY_ISKA_AUTOCRACY</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_AUTOCRACY</Description>
 			<PortraitIndex>0</PortraitIndex>
+
+			<UnitPurchaseCostModifier>-33</UnitPurchaseCostModifier>
 			
 			<Civilopedia>TXT_KEY_POLICY_AUTOCRACY_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_AUTOCRACY_HELP</Help>
@@ -1380,6 +1395,8 @@
 			<GridX>3</GridX>
 			<GridY>1</GridY>
 			
+			<StealTechFasterModifier>100</StealTechFasterModifier>
+
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -1416,8 +1433,8 @@
 			<GridX>1</GridX>
 			<GridY>2</GridY>
 
-			<MilitaryProductionModifier>20</MilitaryProductionModifier>
-			<UnitGoldMaintenanceMod>-20</UnitGoldMaintenanceMod>
+			<GarrisonFreeMaintenance>true</GarrisonFreeMaintenance>
+			<UnitGoldMaintenanceMod>-10</UnitGoldMaintenanceMod>
 
 			<PortraitIndex>7</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS_EXP2</IconAtlas>
@@ -1438,7 +1455,7 @@
 			<MilitaryUnitGiftExtraInfluence>10</MilitaryUnitGiftExtraInfluence>
 			<ProtectedMinorPerTurnInfluence>500</ProtectedMinorPerTurnInfluence>
 			
-			<FreeExperience>15</FreeExperience>
+			
 			<PortraitIndex>3</PortraitIndex>
 			<IconAtlas>JFD_INTRIGUE_POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>JFD_INTRIGUE_POLICY_A_ATLAS</IconAtlasAchieved>
@@ -1458,7 +1475,6 @@
 			<BuildingProductionModifier>10</BuildingProductionModifier>
 			<CulturePerCity>10</CulturePerCity>
 			
-			<FreeExperience>15</FreeExperience>
 			<PortraitIndex>1</PortraitIndex>
 			<IconAtlas>JFD_INTRIGUE_POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>JFD_INTRIGUE_POLICY_A_ATLAS</IconAtlasAchieved>
@@ -1478,7 +1494,6 @@
 			<MinorScienceAllies>true</MinorScienceAllies>
 			<MinorResourceBonus>true</MinorResourceBonus>
 			
-			<FreeExperience>15</FreeExperience>
 			<PortraitIndex>4</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -1495,7 +1510,10 @@
 			<GridX>5</GridX>
 			<GridY>3</GridY>
 			
-			<FreeExperience>15</FreeExperience>
+			<UnhappinessMod>25</UnhappinessMod>
+			<HappyPerMilitaryUnit>1</HappyPerMilitaryUnit>	
+			<MilitaryProductionModifier>10</MilitaryProductionModifier>				
+			
 			<PortraitIndex>5</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -1505,9 +1523,9 @@
 		<Row>
 			<Type>POLICY_ISKA_AUTOCRACY_FINISHER</Type>
 			<Description>TXT_KEY_POLICY_AUTOCRACY_FINISHER</Description>
-			<AttackBonusTurns>30</AttackBonusTurns>
-			<OneShot>true</OneShot>
-			<IncludesOneShotFreeUnits>true</IncludesOneShotFreeUnits>
+			
+			<UnitGoldMaintenanceMod>-15</UnitGoldMaintenanceMod>
+			
 		</Row>
 
 	</Policies>
