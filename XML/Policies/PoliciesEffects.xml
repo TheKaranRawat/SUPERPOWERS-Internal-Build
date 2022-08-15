@@ -321,7 +321,7 @@
 
 		<Row>
 			<PolicyType>POLICY_ISKA_PLANNED_ECONOMY</PolicyType>
-			<BuildingClassType>BUILDING_STOCK_EXCHANGE</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_STOCK_EXCHANGE</BuildingClassType>
 			<CultureChange>4</CultureChange>
 		</Row>
 	
