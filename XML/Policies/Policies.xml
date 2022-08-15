@@ -1333,7 +1333,7 @@
 			<PolicyBranchType>POLICY_ISKA_BRANCH_ORDER</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			
-			<UnitGoldMaintenanceMod>25</UnitGoldMaintenanceMod>
+			<UnitGoldMaintenanceMod>33</UnitGoldMaintenanceMod>
 
 			<GridX>5</GridX>
 			<GridY>3</GridY>

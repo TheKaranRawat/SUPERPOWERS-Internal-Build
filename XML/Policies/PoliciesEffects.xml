@@ -2935,7 +2935,7 @@
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 			<TradeRouteRecipientBonus>15</TradeRouteRecipientBonus>
 			<TradeRouteTargetBonus>15</TradeRouteTargetBonus>
 			<PortraitIndex>2</PortraitIndex>
