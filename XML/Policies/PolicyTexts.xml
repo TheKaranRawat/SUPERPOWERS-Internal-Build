@@ -8,6 +8,8 @@
 		
 		<!-- NEW TREES -->		
 
+		<!-- PROSPERITY -->
+
 		<Row Tag="TXT_KEY_POLICY_BRANCH_ORDER1">
 			<Text>Prosperity</Text>
 		</Row>
@@ -15,6 +17,22 @@
 		<Row Tag="TXT_KEY_POLICY_BRANCH_ORDER1_CAP">
 			<Text>PROSPERITY</Text>
 		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BRANCH_ORDER1_HELP">
+			<Text>
+				[COLOR_POSITIVE_TEXT]Prosperity[ENDCOLOR] guides our nation to a materialist and mercantilist path.
+				[NEWLINE]"For the human condition is but a struggle for capital and it's acquisition."
+				[NEWLINE][NEWLINE]Opening Effects:
+				[NEWLINE][ICON_BULLET]50% of [ICON_CULTURE] Culture is converted to [ICON_HAPPINESS_1] Happiness.
+				[NEWLINE][ICON_BULLET]Roads and Railways cost [ICON_INVEST] no maintenance.
+								
+				[NEWLINE][NEWLINE]Finishing Bonus:
+				[NEWLINE][ICON_BULLET]+25% [ICON_GREAT_PEOPLE] Great Person Generation
+				[NEWLINE][ICON_BULLET]Free [ICON_GREAT_PEOPLE] Great Person				
+			</Text>
+		</Row>
+
+		<!-- HARMONY -->
 
 		<Row Tag="TXT_KEY_POLICY_BRANCH_FREEDOM1">
 			<Text>Harmony</Text>
@@ -24,12 +42,40 @@
 			<Text>HARMONY</Text>
 		</Row>
 
+		<Row Tag="TXT_KEY_POLICY_BRANCH_FREEDOM1_HELP">
+			<Text>
+				[COLOR_POSITIVE_TEXT]Harmony[ENDCOLOR] guides our nation to an environmentalist and sustainable future.
+				[NEWLINE]"The forces of nature are not to be reckoned, but cooperated with."
+				[NEWLINE][NEWLINE]Opening Effects:
+				[NEWLINE][ICON_BULLET]+25% [ICON_CITIZEN] Pop Growth.
+				[NEWLINE][ICON_BULLET]New [ICON_CITY_STATE] Cities start with +5 [ICON_CITIZEN] Population.
+								
+				[NEWLINE][NEWLINE]Finishing Bonus:
+				[NEWLINE][ICON_BULLET]Starts a [ICON_GOLDEN_AGE] Golden Age for 20 turns.
+			</Text>
+		</Row>
+
+		<!-- DOMINATION -->
+
 		<Row Tag="TXT_KEY_POLICY_BRANCH_AUTOCRACY1">
 			<Text>Domination</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_BRANCH_AUTOCRACY1_CAP">
 			<Text>DOMINATION</Text>	
+		</Row>
+
+		<Row Tag="TXT_KEY_POLICY_BRANCH_AUTOCRACY1_HELP">
+			<Text>
+				[COLOR_POSITIVE_TEXT]Domination[ENDCOLOR] shapes our nation into an Imperialistic and Hegemonic power.
+				[NEWLINE]"True peace can only be achieved by total Hegemonic Domination of all parts of the sum."
+				[NEWLINE][NEWLINE]Opening Effects:
+				[NEWLINE][ICON_BULLET]-33% [ICON_INVEST] cost of purchasing units.
+				[NEWLINE][ICON_BULLET]+50% chance of capturing [ICON_SPY] enemy spies.
+								
+				[NEWLINE][NEWLINE]Finishing Bonus:
+				[NEWLINE][ICON_BULLET]-15% [ICON_STRENGTH][ICON_GOLD] unit maintenance.
+			</Text>
 		</Row>
 
 		<!-- PROSPERITY POLICY TEXTS -->

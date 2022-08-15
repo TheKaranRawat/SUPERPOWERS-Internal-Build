@@ -414,10 +414,10 @@
 						<Image Anchor="R,T" Offset="0,0" Texture="VerticalTrim.dds" Size="5,290"/>
 						<!-- ORDER BOX  -->
 						<Box Size="190,290 " Anchor="C,T" Color="0,0,0,0">
-							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,290" Color="255,255,255,255" Texture="Art/Policy/11_prosperity.dds" ToolTip="TXT_KEY_POLICY_BRANCH_ORDER_HELP"/>
+							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,290" Color="255,255,255,255" Texture="Art/Policy/11_prosperity.dds" ToolTip="TXT_KEY_POLICY_BRANCH_ORDER1_HELP"/>
 
 							<!-- Policy Branch Image -->
-							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,90" Texture="Art/Policy/11_prosperity.dds" ID="BranchBack10" ToolTip="TXT_KEY_POLICY_BRANCH_ORDER_HELP"/>
+							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,90" Texture="Art/Policy/11_prosperity.dds" ID="BranchBack10" ToolTip="TXT_KEY_POLICY_BRANCH_ORDER1_HELP"/>
 							<Image ID="ImageMask10" Anchor="C,T" Offset="0,0" Size="190,290" Color="255,255,255,200" Texture="Assets/UI/Art/Icons/SocialPoliciesBranchBlackMask.dds"/>
 							<Box ID="DisabledMask10" Size="190,290" Offset="0,0" Anchor="C,T" Color="0,0,0,200"/>
 							<Image Anchor="C,T" Offset="0,0" Size="190,290" Texture="Assets/UI/Art/Icons/SocialPoliciesTrim.dds">
@@ -435,7 +435,7 @@
 								</HideOnMouseOver>
 							</Box>
 							<!-- adopt button -->
-							<GridButton Size="170,36" Anchor="C,T" Offset="0,46" Font="TwCenMT18" Color="255,255,255,200" String="" FontStyle="Shadow" Color0="Beige.255" Color1="Black.128" Style="BaseButton" ToolTip="TXT_KEY_POLICY_BRANCH_ORDER_HELP" Hidden="0" ID="BranchButton10">
+							<GridButton Size="170,36" Anchor="C,T" Offset="0,46" Font="TwCenMT18" Color="255,255,255,200" String="" FontStyle="Shadow" Color0="Beige.255" Color1="Black.128" Style="BaseButton" ToolTip="TXT_KEY_POLICY_BRANCH_ORDER1_HELP" Hidden="0" ID="BranchButton10">
 								<Image Anchor="R,C" Offset="0,0" Size="48,48" Texture="48Lock.dds" ID="Lock10"/>
 							</GridButton>
 							<Box ID="DisabledBox10" Size="190,290" Offset="0,0" Anchor="C,T" Color="0,0,0,0">
@@ -453,10 +453,10 @@
 						<Image Anchor="R,T" Offset="0,0" Texture="VerticalTrim.dds" Size="5,290"/>
 						<!-- AUTOCRACY BOX  -->
 						<Box Size="190,290 " Anchor="C,T" Color="0,0,0,0">
-							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,290" Color="255,255,255,255" Texture="Art/Policy/10_domination.dds" ToolTip="TXT_KEY_POLICY_BRANCH_AUTOCRACY_HELP"/>
+							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,290" Color="255,255,255,255" Texture="Art/Policy/10_domination.dds" ToolTip="TXT_KEY_POLICY_BRANCH_AUTOCRACY1_HELP"/>
 
 							<!-- Policy Branch Image -->
-							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,90" Texture="Art/Policy/10_domination.dds" ID="BranchBack11" ToolTip="TXT_KEY_POLICY_BRANCH_AUTOCRACY_HELP"/>
+							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,90" Texture="Art/Policy/10_domination.dds" ID="BranchBack11" ToolTip="TXT_KEY_POLICY_BRANCH_AUTOCRACY1_HELP"/>
 							<Image ID="ImageMask11" Anchor="C,T" Offset="0,0" Size="190,290" Color="255,255,255,200" Texture="Assets/UI/Art/Icons/SocialPoliciesBranchBlackMask.dds"/>
 							<Box ID="DisabledMask11" Size="190,290" Offset="0,0" Anchor="C,T" Color="0,0,0,200"/>
 							<Image Anchor="C,T" Offset="0,0" Size="190,290" Texture="Assets/UI/Art/Icons/SocialPoliciesTrim.dds">
@@ -474,7 +474,7 @@
 								</HideOnMouseOver>
 							</Box>
 							<!-- adopt button -->
-							<GridButton Size="170,36" Anchor="C,T" Offset="0,46" Font="TwCenMT18" Color="255,255,255,200" String="" FontStyle="Shadow" Color0="Beige.255" Color1="Black.128" Style="BaseButton" ToolTip="TXT_KEY_POLICY_BRANCH_AUTOCRACY_HELP" Hidden="0" ID="BranchButton11">
+							<GridButton Size="170,36" Anchor="C,T" Offset="0,46" Font="TwCenMT18" Color="255,255,255,200" String="" FontStyle="Shadow" Color0="Beige.255" Color1="Black.128" Style="BaseButton" ToolTip="TXT_KEY_POLICY_BRANCH_AUTOCRACY1_HELP" Hidden="0" ID="BranchButton11">
 								<Image Anchor="R,C" Offset="0,-1000" Size="48,48" Texture="48Lock.dds" ID="Lock11"/>
 							</GridButton>
 							<Box ID="DisabledBox11" Size="190,290" Offset="0,0" Anchor="C,T" Color="0,0,0,0">
@@ -492,10 +492,10 @@
 						<Image Anchor="R,T" Offset="0,0" Texture="VerticalTrim.dds" Size="5,290"/>
 						<!-- FREEDOM BOX  -->
 						<Box Size="190,290 " Anchor="C,T" Color="0,0,0,0">
-							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,290" Color="255,255,255,255" Texture="Art/Policy/12_harmony2.dds" ToolTip="TXT_KEY_POLICY_BRANCH_FREEDOM_HELP"/>
+							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,290" Color="255,255,255,255" Texture="Art/Policy/12_harmony2.dds" ToolTip="TXT_KEY_POLICY_BRANCH_FREEDOM1_HELP"/>
 
 							<!-- Policy Branch Image -->
-							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,90" Texture="Art/Policy/12_harmony2.dds" ID="BranchBack9" ToolTip="TXT_KEY_POLICY_BRANCH_FREEDOM_HELP"/>
+							<Image Anchor="C,T" Offset="0,0" TextureOffset="0,0" Size="190,90" Texture="Art/Policy/12_harmony2.dds" ID="BranchBack9" ToolTip="TXT_KEY_POLICY_BRANCH_FREEDOM1_HELP"/>
 							<Image ID="ImageMask9" Anchor="C,T" Offset="0,0" Size="190,290" Color="255,255,255,200" Texture="Assets/UI/Art/Icons/SocialPoliciesBranchBlackMask.dds"/>
 							<Box ID="DisabledMask9" Size="190,290" Offset="0,0" Anchor="C,T" Color="0,0,0,200"/>
 							<Image Anchor="C,T" Offset="0,0" Size="190,290" Texture="Assets/UI/Art/Icons/SocialPoliciesTrim.dds">
@@ -513,7 +513,7 @@
 								</HideOnMouseOver>
 							</Box>
 							<!-- adopt button -->
-							<GridButton Size="170,36" Anchor="C,T" Offset="0,46" Font="TwCenMT18" Color="255,255,255,200" String="" FontStyle="Shadow" Color0="Beige.255" Color1="Black.128" Style="BaseButton" ToolTip="TXT_KEY_POLICY_BRANCH_FREEDOM_HELP" Hidden="0" ID="BranchButton9">
+							<GridButton Size="170,36" Anchor="C,T" Offset="0,46" Font="TwCenMT18" Color="255,255,255,200" String="" FontStyle="Shadow" Color0="Beige.255" Color1="Black.128" Style="BaseButton" ToolTip="TXT_KEY_POLICY_BRANCH_FREEDOM1_HELP" Hidden="0" ID="BranchButton9">
 								<Image Anchor="R,C" Offset="0,0" Size="48,48" Texture="48Lock.dds" ID="Lock9"/>
 							</GridButton>
 							<Box ID="DisabledBox9" Size="190,290" Offset="0,0" Anchor="C,T" Color="0,0,0,0">

@@ -1060,8 +1060,9 @@
 			<Type>POLICY_ISKA_FREEDOM</Type>
 			<Description>TXT_KEY_POLICY_BRANCH_FREEDOM</Description>
 			<PortraitIndex>1</PortraitIndex>
-			
+
 			<CityGrowthMod>25</CityGrowthMod>
+			<NewCityExtraPopulation>5</NewCityExtraPopulation>
 
 			<Civilopedia>TXT_KEY_POLICY_FREEDOM_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_FREEDOM_HELP</Help>
@@ -1215,7 +1216,8 @@
 			<Help>TXT_KEY_POLICY_ORDER_HELP</Help>
 
 			<HappinessToCulture>50</HappinessToCulture>
-			
+			<RouteGoldMaintenanceMod>-100</RouteGoldMaintenanceMod>
+
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
@@ -1359,6 +1361,7 @@
 			<PortraitIndex>0</PortraitIndex>
 
 			<UnitPurchaseCostModifier>-33</UnitPurchaseCostModifier>
+			<CatchSpiesModifier>50</CatchSpiesModifier>
 			
 			<Civilopedia>TXT_KEY_POLICY_AUTOCRACY_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_AUTOCRACY_HELP</Help>
