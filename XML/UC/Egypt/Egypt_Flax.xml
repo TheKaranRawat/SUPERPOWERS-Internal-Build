@@ -191,8 +191,7 @@
 			<TechType>TECH_CIVIL_SERVICE</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_EGYPTIAN_FLAX</ImprovementType>
@@ -205,8 +204,7 @@
 			<TechType>TECH_GENETIC_ENGEERING</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			
 		</Row>
 	</Improvement_TechYieldChanges>
 
