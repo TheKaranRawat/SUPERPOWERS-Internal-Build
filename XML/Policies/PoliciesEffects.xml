@@ -1431,6 +1431,40 @@
 			<Yield>3</Yield>
 		</Row>
 
+		<!-- NEW POLICIES -->
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+		
+		
+
+		
+
 	</Policy_ImprovementYieldChanges>
 
 	<Policy_ImprovementCultureChanges>
@@ -1439,6 +1473,20 @@
 			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
 			<CultureChange>4</CultureChange>
 		</Row>-->
+
+		<Row>
+			<PolicyType>POLICY_ISKA_CONSTITUTION</PolicyType>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<CultureChange>2</CultureChange>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_CONSTITUTION</PolicyType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<CultureChange>2</CultureChange>
+		</Row>
+
+
 		<Row>
 			<PolicyType>POLICY_NEW_DEAL</PolicyType>
 			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
@@ -2231,6 +2279,14 @@
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>10</Yield>
 		</Row>
+
+		<Row>
+			<PolicyType>POLICY_SERENE_REALM</PolicyType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>10</Yield>
+		</Row>
+
+
 	</Policy_YieldModifiers>
 
 	
@@ -2379,10 +2435,7 @@
 			<BuildingClassType>BUILDINGCLASS_ENG_PERFECTION</BuildingClassType>
 		</Row>
 
-		<Row>
-			<PolicyType>POLICY_SERENE_REALM</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_SERENE_REALM</BuildingClassType>
-		</Row>
+		
 
 		<Row>
 			<PolicyType>POLICY_UNITED_STAND</PolicyType>
@@ -2400,6 +2453,11 @@
 		<Row>
 			<PolicyType>POLICY_MERCHANT_CONFEDERACY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PATRONAGE_TRADEROUTE</BuildingClassType>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_SERENE_REALM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_SERENE_REALM</BuildingClassType>
 		</Row>
 
 		
@@ -3176,6 +3234,8 @@
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>			
 			
+			
+
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Description>
@@ -3189,7 +3249,9 @@
 			<Cost>-1</Cost>
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>			
+			<HurryCostModifier>-1</HurryCostModifier>	
+
+			<PolicyCostModifier>-15</PolicyCostModifier>		
 			
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>

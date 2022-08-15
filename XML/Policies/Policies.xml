@@ -305,7 +305,7 @@
 			<Where Type="POLICY_CULTURAL_DIPLOMACY"/>
 		</Update>
 		<Update>
-			<Set CityStateTradeChange="400" ProtectedMinorPerTurnInfluence="400" GridX="5" GridY="1" PortraitIndex="17"/>
+			<Set CityStateTradeChange="0" ProtectedMinorPerTurnInfluence="400" GridX="5" GridY="1" PortraitIndex="17"/>
 			<Where Type="POLICY_MERCHANT_CONFEDERACY"/>
 		</Update>
 
@@ -1036,9 +1036,15 @@
 			<Set EraPrereq="ERA_CLASSICAL"/>
 			<Where Type="POLICY_BRANCH_PIETY"/>
 		</Update>
+
 		<Update>
 			<Set EraPrereq="ERA_MEDIEVAL"/>
 			<Where Type="POLICY_BRANCH_AESTHETICS"/>
+		</Update>
+
+		<Update>
+			<Set EraPrereq="ERA_MEDIEVAL"/>
+			<Where Type="POLICY_PATRONAGE"/>
 		</Update>
 
 
@@ -1103,6 +1109,9 @@
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>1</GridY>
+
+			<BuildingGoldMaintenanceMod>-15</BuildingGoldMaintenanceMod>
+			<CityGrowthMod>15</CityGrowthMod>
 			
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>JFD_CONSERVATION_POLICY_ATLAS</IconAtlas>
@@ -1119,6 +1128,9 @@
 			<CultureCost>10</CultureCost>
 			<GridX>1</GridX>
 			<GridY>2</GridY>
+
+			<WorkerSpeedModifier>100</WorkerSpeedModifier>
+			<EmbarkedExtraMoves>2</EmbarkedExtraMoves>
 			
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>JFD_CONSERVATION_POLICY_ATLAS</IconAtlas>
@@ -1135,6 +1147,9 @@
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>2</GridY>
+
+			<CulturePerWonder>33</CulturePerWonder>
+			<NumFreeTechs>3</NumFreeTechs>
 			
 			<PortraitIndex>1</PortraitIndex>
 			<IconAtlas>JFD_CONSERVATION_POLICY_ATLAS</IconAtlas>
@@ -1151,6 +1166,8 @@
 			<CultureCost>10</CultureCost>
 			<GridX>1</GridX>
 			<GridY>3</GridY>
+
+
 			
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>JFD_INDUSTRY_POLICY_ATLAS</IconAtlas>
@@ -1167,6 +1184,9 @@
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>3</GridY>
+
+			<CulturePerGarrisonedUnit>10</CulturePerGarrisonedUnit>
+			<MilitaryProductionModifier>15</MilitaryProductionModifier>
 			
 			<PortraitIndex>4</PortraitIndex>
 			<IconAtlas>JFD_CONSERVATION_POLICY_ATLAS</IconAtlas>
@@ -1342,7 +1362,7 @@
 			<GridX>1</GridX>
 			<GridY>1</GridY>
 
-			<CityStateTradeChange>500</CityStateTradeChange>
+			<RiggingElectionModifier>100</RiggingElectionModifier>
 			
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>JFD_INTRIGUE_POLICY_ATLAS</IconAtlas>
@@ -1396,7 +1416,7 @@
 			<GridX>1</GridX>
 			<GridY>2</GridY>
 
-			<MilitaryProductionModifier>25</MilitaryProductionModifier>
+			<MilitaryProductionModifier>20</MilitaryProductionModifier>
 			<UnitGoldMaintenanceMod>-20</UnitGoldMaintenanceMod>
 
 			<PortraitIndex>7</PortraitIndex>
@@ -1414,6 +1434,9 @@
 			<CultureCost>10</CultureCost>
 			<GridX>3</GridX>
 			<GridY>2</GridY>
+
+			<MilitaryUnitGiftExtraInfluence>10</MilitaryUnitGiftExtraInfluence>
+			<ProtectedMinorPerTurnInfluence>500</ProtectedMinorPerTurnInfluence>
 			
 			<FreeExperience>15</FreeExperience>
 			<PortraitIndex>3</PortraitIndex>
@@ -1431,6 +1454,9 @@
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>2</GridY>
+
+			<BuildingProductionModifier>10</BuildingProductionModifier>
+			<CulturePerCity>10</CulturePerCity>
 			
 			<FreeExperience>15</FreeExperience>
 			<PortraitIndex>1</PortraitIndex>
@@ -1448,6 +1474,9 @@
 			<CultureCost>10</CultureCost>
 			<GridX>1</GridX>
 			<GridY>3</GridY>
+			
+			<MinorScienceAllies>true</MinorScienceAllies>
+			<MinorResourceBonus>true</MinorResourceBonus>
 			
 			<FreeExperience>15</FreeExperience>
 			<PortraitIndex>4</PortraitIndex>
@@ -1661,46 +1690,7 @@
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-		<Row>
-			<PolicyType>POLICY_ISKA_TRADITION_FINISHER</PolicyType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ISKA_TRADITION_FINISHER</PolicyType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ISKA_LIBERTY_FINISHER</PolicyType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ISKA_HONOR_FINISHER</PolicyType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ISKA_PIETY_FINISHER</PolicyType>
-			<FlavorType>FLAVOR_CULTURE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ISKA_PATRONAGE_FINISHER</PolicyType>
-			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ISKA_COMMERCE_FINISHER</PolicyType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ISKA_RATIONALISM_FINISHER</PolicyType>
-			<FlavorType>FLAVOR_GOLD</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
+	
 		<Row>
 			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
