@@ -334,7 +334,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_ONE_VISION_HELP">
-			<Text>One Vision</Text>	
+			<Text>
+			[COLOR_POSITIVE_TEXT]One Vision[ENDCOLOR]
+			[NEWLINE]+2 [ICON_CULTURE] Culture from Mines.
+			[NEWLINE]+2 [ICON_CULTURE] Culture from Lumber Mills.
+			</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_BIOPHILIA">
@@ -346,7 +350,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_BIOPHILIA_HELP">
-			<Text>Biophilia</Text>	
+			<Text>
+			[COLOR_POSITIVE_TEXT]Biophilia[ENDCOLOR]
+			[NEWLINE]+2 [ICON_FOOD] Food from Farms.
+			[NEWLINE]+2 [ICON_FOOD] Food from Fishing Nets.
+			</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_ENIGMATIC">
@@ -358,7 +366,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_ENIGMATIC_HELP">
-			<Text>Enigmatic Engineering</Text>	
+			<Text>
+			[COLOR_POSITIVE_TEXT]Enigmatic Engineering[ENDCOLOR]
+			[NEWLINE]+15% [ICON_FOOD] Population growth rate.
+			[NEWLINE]-15% [ICON_GOLD] Building Maintenance.
+			</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_MASTERY">
@@ -370,7 +382,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_MASTERY_HELP">
-			<Text>Mastery of Nature</Text>	
+			<Text>
+			[COLOR_POSITIVE_TEXT]Mastery of Nature[ENDCOLOR]
+			[NEWLINE]+100% [ICON_WORKER] work rate for Workers.
+			[NEWLINE]+2 [ICON_ARROW_RIGHT] Movement for Embarked Units.
+			</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_PERFECTION">
@@ -382,7 +398,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_PERFECTION_HELP">
-			<Text>Engineered Perfection</Text>	
+			<Text>
+			[COLOR_POSITIVE_TEXT]Engineered Perfection[ENDCOLOR]
+			[NEWLINE]+3 [ICON_RESEARCH] Free Techs.
+			[NEWLINE]+33% [ICON_CULTURE] from World Wonders.
+			</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_SERENE">
@@ -394,7 +414,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_SERENE_HELP">
-			<Text>The Serene Realm</Text>	
+			<Text>
+			[COLOR_POSITIVE_TEXT]The Serene Realm[ENDCOLOR]
+			[NEWLINE]+10% [ICON_RESEARCH] Science output.
+			[NEWLINE]-15% [ICON_CULTURE] Policy cost.
+			</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_STAND">
@@ -406,7 +430,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POLICY_STAND_HELP">
-			<Text>United We Stand</Text>	
+			<Text>
+			[COLOR_POSITIVE_TEXT]United We Stand[ENDCOLOR]
+			[NEWLINE]+10 [ICON_CULTURE] Culture for every [ICON_WAR] Garrisoned Unit.
+			[NEWLINE]+10% [ICON_PRODUCTION] Production for [ICON_WAR] Military Units.
+			</Text>
 		</Row>
 
 		
