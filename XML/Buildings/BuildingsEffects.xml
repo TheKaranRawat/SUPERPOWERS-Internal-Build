@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>TXT_KEY_TRAIT_RIVER_EXPANSION
-
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 12/15/2014 7:01:42 PM -->
 <GameData>
 	<!--*********************Units********************-->
@@ -2088,11 +2087,10 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>4</Yield>
 		</Row>
-	<!--	Egypt burial tomb (2c)	-->	
 		<Row>
 			<BuildingType>BUILDING_BURIAL_TOMB</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_BURIAL_TOMB</BuildingType>
@@ -2104,11 +2102,10 @@
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>2</Yield>
 		</Row>
-	<!--	India sungod temple no faith	-->	
 		<Row>
 			<BuildingType>BUILDING_INDIA_TEMPLE</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>0</Yield>
+			<Yield>2</Yield>
 		</Row>
 		
 		<Row>
@@ -3732,11 +3729,11 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>5</Yield>
 		</Row>
-<!--	India mughal fort (5% (?) faith)	-->
+
 		<Row>
 			<BuildingType>BUILDING_MUGHAL_FORT</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>5</Yield>
+			<Yield>15</Yield>
 		</Row>
 
 

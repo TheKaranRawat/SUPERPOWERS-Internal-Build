@@ -18,22 +18,21 @@
 			<!--<GreatGeneralRateModifier>50</GreatGeneralRateModifier>-->
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
-	<!--	USA UA (5c)	-->	
+		
 		<Row>
 			<Type>TRAIT_RIVER_EXPANSION</Type>
 			<Description>TXT_KEY_TRAIT_RIVER_EXPANSION</Description>
 			<ShortDescription>TXT_KEY_TRAIT_RIVER_EXPANSION_SHORT</ShortDescription>
-			<CityCultureBonus>5</CityCultureBonus>
-			<NavalUnitMaintenanceModifier>-15</NavalUnitMaintenanceModifier> 
+			<CityCultureBonus>25</CityCultureBonus>
+			<NavalUnitMaintenanceModifier>-10</NavalUnitMaintenanceModifier> 
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
-	<!--	RUS UA (-15)	-->
 		<Row>
 			<Type>TRAIT_STRATEGIC_RICHES</Type>
 			<Description>TXT_KEY_TRAIT_STRATEGIC_RICHES</Description>
 			<ShortDescription>TXT_KEY_TRAIT_STRATEGIC_RICHES_SHORT</ShortDescription>
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
-			<LandUnitMaintenanceModifier>-15</LandUnitMaintenanceModifier>
+			<LandUnitMaintenanceModifier>-10</LandUnitMaintenanceModifier>
 			<FreeBuilding>BUILDING_TB_STRATEGIC_RICHES</FreeBuilding>
 		</Row>
 		<Row>
@@ -61,13 +60,12 @@
 			<!--<PrereqTech>TECH_EDUCATION</PrereqTech>-->
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
-	<!--	Rome UA (-15)	-->	
 		<Row>
 			<Type>TRAIT_CAPITAL_BUILDINGS_CHEAPER</Type>
 			<Description>TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER</Description>
 			<ShortDescription>TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER_SHORT</ShortDescription>
 			<FreeBuilding>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</FreeBuilding>
-			<CityUnhappinessModifier>-15</CityUnhappinessModifier>
+			<CityUnhappinessModifier>-33</CityUnhappinessModifier>
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -125,12 +123,12 @@
 			<FreeBuilding>BUILDING_IKANDA</FreeBuilding>
 		</Row>
 		
-	<!--	Ottoman (-25)	-->	
+		
 		<Row>
 			<Type>TRAIT_CONVERTS_SEA_BARBARIANS</Type>
 			<Description>TXT_KEY_TRAIT_CONVERTS_SEA_BARBARIANS</Description>
 			<ShortDescription>TXT_KEY_TRAIT_CONVERTS_SEA_BARBARIANS_SHORT</ShortDescription>
-			<PlotCultureCostModifier>-25</PlotCultureCostModifier> 
+			<PlotCultureCostModifier>-35</PlotCultureCostModifier> 
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 			<!--<NavalUnitMaintenanceModifier>-66</NavalUnitMaintenanceModifier>-->
 			<WorkerSpeedModifier>25</WorkerSpeedModifier>
@@ -197,15 +195,15 @@
 	
 	
 	<!--***********Religious and Cultual***********-->
-<!--	India UA (-15,-10)	-->	
+	
 	<Traits>
 		<Row>
 			<Type>TRAIT_POPULATION_GROWTH</Type>
 			<Description>TXT_KEY_TRAIT_POPULATION_GROWTH</Description>
 			<ShortDescription>TXT_KEY_TRAIT_POPULATION_GROWTH_SHORT</ShortDescription>
 			<!--<CityUnhappinessModifier>100</CityUnhappinessModifier>-->
-			<PopulationUnhappinessModifier>-15</PopulationUnhappinessModifier>
-			<PolicyCostModifier>-10</PolicyCostModifier> 
+			<PopulationUnhappinessModifier>-25</PopulationUnhappinessModifier>
+			<PolicyCostModifier>-15</PolicyCostModifier> 
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -1206,18 +1204,18 @@
 			<Yield>4</Yield>
 		</Row>
 
-	<!--	Ottoman UA (2p,2p)	-->
+
 		<Row>
 			<TraitType>TRAIT_CONVERTS_SEA_BARBARIANS</TraitType>
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_CONVERTS_SEA_BARBARIANS</TraitType>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		
 	</Trait_ImprovementYieldChanges>
@@ -1263,11 +1261,10 @@
 			<Yield>1</Yield>
 		</Row>-->
 
-	<!--	Ottoman UA (2p)	-->
 		<Row>
 			<TraitType>TRAIT_CONVERTS_SEA_BARBARIANS</TraitType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>8</Yield>
 		</Row>
 	</Trait_YieldChangesStrategicResources>
 	
@@ -1735,7 +1732,6 @@
 		</Row>-->
 		</Trait_FreePromotionUnitCombats>
 
-<!--	USA UA (2s,2g,2c)	-->
 	<Trait_SpecialistYieldChanges>
 		<Row>
 			<TraitType>TRAIT_RIVER_EXPANSION</TraitType>
@@ -1747,13 +1743,13 @@
 			<TraitType>TRAIT_RIVER_EXPANSION</TraitType>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_RIVER_EXPANSION</TraitType>
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_RIVER_EXPANSION</TraitType>
@@ -1889,38 +1885,38 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>2</Yield>
 		</Row>
-<!--	Korea UA (1c)	-->
+
 		<Row>
 			<TraitType>TRAIT_SCHOLARS_JADE_HALL</TraitType>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 
 	</Trait_SpecialistYieldChanges>
-<!--	Marocco UA (3g,3c,1f,3s)	-->
+
 	<Trait_YieldChangesPerTradePartner>
 		<Row>
 			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>3</Yield>
+			<Yield>15</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>3</Yield>
-		</Row> 
+			<Yield>15</Yield>
+		</Row>
 		<Row>
 			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>15</Yield>
 		</Row>
 
 		<Row>
 			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>3</Yield>
+			<Yield>15</Yield>
 		</Row>
 
 		<Row>
@@ -1949,12 +1945,12 @@
 
 		
 	</Trait_YieldChangesPerTradePartner>
-<!--	Marocco UA (5g)	-->
+
 	<Trait_YieldChangesIncomingTradeRoute>
 		<Row>
 			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>5</Yield>
+			<Yield>30</Yield>
 		</Row>
 	</Trait_YieldChangesIncomingTradeRoute>
 
@@ -2099,7 +2095,7 @@
 			<GreatWorkCount>-1</GreatWorkCount>
 		</Row>
 
-<!--	RUS UA (6h)	-->
+
 		<Row>
 			<Type>BUILDING_TB_STRATEGIC_RICHES</Type>
 			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
@@ -2112,7 +2108,7 @@
 			<PortraitIndex>17</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS</IconAtlas>
 			<GreatWorkCount>-1</GreatWorkCount>
-			<Happiness>6</Happiness>
+			<Happiness>8</Happiness>
 		</Row>
 		
 
@@ -2205,11 +2201,10 @@
 
 
 	<Building_YieldChanges>
-<!--	Rome UA (5p)	-->
 		<Row>
 			<BuildingType>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>5</Yield>
+			<Yield>12</Yield>
 		</Row>
 
 		<Row>
@@ -2248,18 +2243,18 @@
 
 	</Building_RiverPlotYieldChanges>
 
-<!--	RUS UA (3m, 6c)	-->
+
 	<Building_ResourceQuantity>
 		<Row>
 			<BuildingType>BUILDING_TB_TRAIT_WONDER_BUILDER</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>3</Quantity>
+			<Quantity>6</Quantity>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_TB_STRATEGIC_RICHES</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Quantity>6</Quantity>
+			<Quantity>12</Quantity>
 		</Row>
 		
 	</Building_ResourceQuantity>

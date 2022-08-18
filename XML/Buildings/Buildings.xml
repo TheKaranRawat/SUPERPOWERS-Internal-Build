@@ -3648,7 +3648,7 @@
 			<TechEnhancedTourism>1</TechEnhancedTourism>
 		
 	</Row>
-<!--	Egypt burial tomb (2h)	-->
+
 		<Row>
 			<Type>BUILDING_BURIAL_TOMB</Type>
 			<BuildingClass>BUILDINGCLASS_MONUMENT</BuildingClass>
@@ -3663,7 +3663,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
 			<!--<CapturePlunderModifier>100</CapturePlunderModifier>-->
-			<Happiness>2</Happiness>
+			<Happiness>6</Happiness>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>55</PortraitIndex>
