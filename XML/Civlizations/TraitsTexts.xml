@@ -24,14 +24,14 @@
 		</Row>
 
 		<Replace Tag="TXT_KEY_TRAIT_RIVER_EXPANSION">
-			<Text>[ICON_BULLET]Each Scientist +3 [ICON_RESEARCH] Science, Engineer +2 [ICON_PRODUCTION] Production, Merchant +3 [ICON_GOLD] Gold, Writer, Artist and Musician +2 [ICON_CULTURE] Culture. [NEWLINE][ICON_BULLET]American expansionist tradition grants +35% faster border growth for cities; Naval [ICON_GOLD]maintenance is reduced by 10% [NEWLINE][ICON_BULLET]Gain +25 [ICON_CULTURE]culture for every city.</Text>
+			<Text>[ICON_BULLET]Each Scientist +3 [ICON_RESEARCH] Science, Engineer +2 [ICON_PRODUCTION] Production, Merchant +3 [ICON_GOLD] Gold, Writer, Artist and Musician +2 [ICON_CULTURE] Culture. [NEWLINE][ICON_BULLET]American expansionist tradition grants +35% faster border growth for cities; Naval [ICON_GOLD]maintenance is reduced by 15% [NEWLINE][ICON_BULLET]Gain +5 [ICON_CULTURE]culture for every city.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_STRATEGIC_RICHES_SHORT">
 			<Text>Great Russian Soul</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_STRATEGIC_RICHES">
-			<Text>[ICON_BULLET]The first 8 [ICON_CITIZEN] Citizens in your cities don't generate [ICON_HAPPINESS_4] Unhappiness. +6 [ICON_GOLD] Gold and +12 [ICON_RES_CONSUMER] Consumer Goods for all cities. [NEWLINE][ICON_BULLET]Russian military might grants -10% unit maintenance cost. All Units gain +15% [ICON_STRENGTH] Combat Strength bonus while fighting within their own territory.</Text>
+			<Text>[ICON_BULLET]The first 6 [ICON_CITIZEN] Citizens in your cities don't generate [ICON_HAPPINESS_4] Unhappiness. +3 [ICON_GOLD] Gold and +6 [ICON_RES_CONSUMER] Consumer Goods for all cities. [NEWLINE][ICON_BULLET]Russian military might grants -15% unit maintenance cost. All Units gain +15% [ICON_STRENGTH] Combat Strength bonus while fighting within their own territory.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_GREAT_ANDEAN_ROAD">
@@ -62,7 +62,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER">
-			<Text>[ICON_BULLET]+12 [ICON_PRODUCTION] Production for all cities and it never expires. +15% [ICON_PRODUCTION] Production towards any buildings in all cities. [NEWLINE][ICON_BULLET]Roman expansionist ethos grants -33% [ICON_HAPPINESS_4] Unhapiness from the number of controlled cities.</Text>
+			<Text>[ICON_BULLET]+5 [ICON_PRODUCTION] Production for all cities and it never expires. +15% [ICON_PRODUCTION] Production towards any buildings in all cities. [NEWLINE][ICON_BULLET]Roman expansionist ethos grants -15% [ICON_HAPPINESS_4] Unhapiness from the number of controlled cities.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_WONDER_BUILDER_SHORT">
@@ -124,14 +124,14 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CONVERTS_SEA_BARBARIANS">
-			<Text>[ICON_BULLET]+4 [ICON_PRODUCTION] Production for every Quarry, Fishing Net. +8 [ICON_PRODUCTION] Production for every Strategic Resources. [NEWLINE][ICON_BULLET]+25% speed for worker's Tile Improvement construction rate. [NEWLINE][ICON_BULLET]Ottoman expansionism grants faster city border growth rate.</Text>
+			<Text>[ICON_BULLET]+2 [ICON_PRODUCTION] Production for every Quarry, +1 [ICON_PRODUCTION] Production for every Fishing Net, +2 [ICON_PRODUCTION] Production for every Strategic Resources. [NEWLINE][ICON_BULLET]+25% speed for worker's Tile Improvement construction rate. [NEWLINE][ICON_BULLET]Ottoman expansionism grants faster city border growth rate.</Text>
 		</Replace>
 		
 		
 		
 
 		<Replace Tag="TXT_KEY_TRAIT_GATEWAY_AFRICA">
-			<Text>[ICON_BULLET]+15 Gold [ICON_GOLD], [ICON_CULTURE] Culture, [ICON_PEACE] Faith and [ICON_RESEARCH] Science for each Trade Route with a different civ or City-State. +25 [ICON_GOLD] Gold for each Trade Route sent to Morocco. [NEWLINE][ICON_BULLET]All Land Units receive a [ICON_STRENGTH] Combat bonus (+20%) when fighting in Desert Tiles. </Text>
+			<Text>[ICON_BULLET]+3 Gold [ICON_GOLD], [ICON_CULTURE] Culture and [ICON_RESEARCH] Science and 1 [ICON_PEACE] Faith for each Trade Route with a different civ or City-State. +5 [ICON_GOLD] Gold for each Trade Route sent to Morocco. [NEWLINE][ICON_BULLET]All Land Units receive a [ICON_STRENGTH] Combat bonus (+20%) when fighting in Desert Tiles. </Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_LUXURY_RETENTION">
@@ -194,7 +194,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_POPULATION_GROWTH">
-			<Text>[ICON_BULLET]-30% [ICON_HAPPINESS_4] Unhappiness from number of [ICON_CITIZEN] Citizens. [NEWLINE][ICON_BULLET]India's rich diversity lowers policies cost by 15%. </Text>
+			<Text>[ICON_BULLET]-15% [ICON_HAPPINESS_4] Unhappiness from number of [ICON_CITIZEN] Citizens. [NEWLINE][ICON_BULLET]India's rich diversity lowers policies cost by 10%. </Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CARNIVAL_SHORT">
@@ -258,7 +258,7 @@
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_TRAIT_SCHOLARS_JADE_HALL">
-			<Text>+2 [ICON_RESEARCH] Science for all Specialists. +2 [ICON_RESEARCH] Science for all Great Person tile improvements. [NEWLINE][ICON_BULLET]Koreas rich tradition of scientific and cultural progress grants +2 [ICON_CULTURE]Culture per Scientist. </Text>
+			<Text>+2 [ICON_RESEARCH] Science for all Specialists. +2 [ICON_RESEARCH] Science for all Great Person tile improvements. [NEWLINE][ICON_BULLET]Koreas rich tradition of scientific and cultural progress grants +1 [ICON_CULTURE]Culture per Scientist. </Text>
 		</Replace>
 
 
