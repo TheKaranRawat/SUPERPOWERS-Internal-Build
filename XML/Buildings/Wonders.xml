@@ -885,6 +885,7 @@
 			<Strategy>TXT_KEY_BUILDING_PALACE_STRATEGY</Strategy>
 			<ArtDefineTag>PALACE</ArtDefineTag>
 			<Capital>true</Capital>
+			<UnmoddedHappiness>10</UnmoddedHappiness>
 			<NukeImmune>true</NukeImmune>
 			<MinAreaSize>-1</MinAreaSize>
 			<Defense>500</Defense>
