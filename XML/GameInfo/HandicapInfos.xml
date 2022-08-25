@@ -14,9 +14,9 @@
 				<PopulationUnhappinessMod>20</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>25</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>100</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnits>10</ProductionFreeUnits>
+				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -69,9 +69,9 @@
 				<PopulationUnhappinessMod>40</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>25</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>100</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnits>10</ProductionFreeUnits>
+				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -122,9 +122,9 @@
 				<PopulationUnhappinessMod>60</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>25</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>100</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnits>10</ProductionFreeUnits>
+				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -181,9 +181,9 @@
 				<PopulationUnhappinessMod>80</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>25</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>100</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnits>10</ProductionFreeUnits>
+				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -239,9 +239,9 @@
 				<PopulationUnhappinessMod>100</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>25</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>100</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnits>10</ProductionFreeUnits>
+				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -300,8 +300,8 @@
 				<PopulationUnhappinessMod>100</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>10</GoldFreeUnits>
-				<ProductionFreeUnits>25</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>100</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnits>10</ProductionFreeUnits>
+				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
@@ -360,10 +360,10 @@
 				<PopulationUnhappinessMod>120</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>15</GoldFreeUnits>
-				<ProductionFreeUnits>25</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>100</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
-				<RouteCostPercent>120</RouteCostPercent>
+				<ProductionFreeUnits>10</ProductionFreeUnits>
+				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>120</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
 				<ResearchPercent>130</ResearchPercent>
@@ -420,10 +420,10 @@
 				<PopulationUnhappinessMod>200</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
-				<ProductionFreeUnits>25</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>100</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>2</ProductionFreeUnitsPerCity>
-				<RouteCostPercent>150</RouteCostPercent>
+				<ProductionFreeUnits>10</ProductionFreeUnits>
+				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>150</UnitCostPercent>
 				<BuildingCostPercent>150</BuildingCostPercent>
 				<ResearchPercent>175</ResearchPercent>

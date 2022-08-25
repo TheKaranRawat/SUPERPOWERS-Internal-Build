@@ -479,6 +479,12 @@
 			<Where Name="PLOT_INFLUENCE_WATER_COST" />
 		</Update>
 		
+		<!-- SUPPLY DEBUFF -->
+		<Update>
+			<Set Value="100"/>
+			<Where Name="MAX_UNIT_SUPPLY_PRODMOD" />
+		</Update>
+		
 		
 		<Update>
 			<Set Value="8"/>
