@@ -481,7 +481,7 @@
 		
 		<!-- SUPPLY DEBUFF -->
 		<Update>
-			<Set Value="100"/>
+			<Set Value="80"/>
 			<Where Name="MAX_UNIT_SUPPLY_PRODMOD" />
 		</Update>
 		
