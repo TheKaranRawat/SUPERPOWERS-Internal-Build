@@ -16,7 +16,7 @@
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>10</ProductionFreeUnits>
 				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -71,7 +71,7 @@
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>10</ProductionFreeUnits>
 				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -124,7 +124,7 @@
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>10</ProductionFreeUnits>
 				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -183,7 +183,7 @@
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>10</ProductionFreeUnits>
 				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -241,7 +241,7 @@
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>10</ProductionFreeUnits>
 				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -302,7 +302,7 @@
 				<GoldFreeUnits>10</GoldFreeUnits>
 				<ProductionFreeUnits>10</ProductionFreeUnits>
 				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -362,7 +362,7 @@
 				<GoldFreeUnits>15</GoldFreeUnits>
 				<ProductionFreeUnits>10</ProductionFreeUnits>
 				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>120</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
@@ -422,7 +422,7 @@
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>10</ProductionFreeUnits>
 				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
-				<ProductionFreeUnitsPerCity>4</ProductionFreeUnitsPerCity>
+				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>150</UnitCostPercent>
 				<BuildingCostPercent>150</BuildingCostPercent>
