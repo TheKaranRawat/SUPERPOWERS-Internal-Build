@@ -1683,7 +1683,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_WONDER_POTALA_HELP">
-			<Text>+1 [ICON_FOOD]Food and +1 [ICON_PRODUCTION] Production for all thundra tiles worked by this city. [NEWLINE][NEWLINE]Contains 2 slots for Great Works of Art. City must be built on the Tundra within 2 tiles of a Mountain inside your territory.</Text>
+			<Text>+2 [ICON_FOOD]Food and +1 [ICON_PRODUCTION] Production for all thundra tiles worked by this city. [NEWLINE][NEWLINE]Contains 2 slots for Great Works of Art. City must be built on the Tundra within 2 tiles of a Mountain inside your territory.</Text>
 		</Row>
 		<!-- Quote tags -->
 		<Row Tag="TXT_KEY_WONDER_POTALA_QUOTE">
