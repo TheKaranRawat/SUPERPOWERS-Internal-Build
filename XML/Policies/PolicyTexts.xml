@@ -401,7 +401,7 @@
 			<Text>
 			[COLOR_POSITIVE_TEXT]Engineered Perfection[ENDCOLOR]
 			[NEWLINE]+3 [ICON_RESEARCH] Free Techs.
-			[NEWLINE]+33% [ICON_CULTURE] from World Wonders.
+			[NEWLINE]+8 [ICON_CULTURE] from World Wonders.
 			</Text>
 		</Row>
 
@@ -979,7 +979,7 @@
 
 				[NEWLINE][NEWLINE]Opening Effect:
 				[NEWLINE][ICON_BULLET]50% of excess [ICON_HAPPINESS_1] Happiness each turn added to the amount of [ICON_CULTURE] Culture that may be spent on Social Policies.
-				[NEWLINE][ICON_BULLET]+25% [ICON_CULTURE] Culture output in cities which have built a World Wonder.
+				[NEWLINE][ICON_BULLET]+33% [ICON_CULTURE] Culture output from cities.
 				[NEWLINE][ICON_BULLET]World Wonder Unlocked: The Louvre.
 				[NEWLINE][ICON_BULLET]National Wonder Unlocked: National Library.
 				[NEWLINE][ICON_BULLET]Building Unlocked: Memorial.
@@ -993,7 +993,7 @@
 		<Replace Tag="TXT_KEY_POLICY_FINE_ARTS_HELP">
 			<Text>
 				[COLOR_POSITIVE_TEXT]Fine Arts[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+2 [ICON_CULTURE] Culture from each Great Work.
+				[NEWLINE][ICON_BULLET]+8 [ICON_CULTURE] Culture from each Great Work.
 				[NEWLINE][ICON_BULLET]Doubles the Theming Bonus of all Wonders and Museums.
 			</Text>
 		</Replace>

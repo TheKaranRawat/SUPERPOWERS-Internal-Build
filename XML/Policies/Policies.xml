@@ -334,7 +334,7 @@
 
 	
 		<Update>
-			<Set HappinessToCulture="0" ThemingBonusMultiplier="100" />
+			<Set HappinessToCulture="50" ThemingBonusMultiplier="100" />
 			<Where Type="POLICY_FINE_ARTS"/>
 		</Update>
 		<Update>
@@ -1169,7 +1169,7 @@
 			<GridX>5</GridX>
 			<GridY>2</GridY>
 
-			<CulturePerWonder>33</CulturePerWonder>
+			<CulturePerWonder>8</CulturePerWonder>
 			<NumFreeTechs>3</NumFreeTechs>
 			
 			<PortraitIndex>1</PortraitIndex>
