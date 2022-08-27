@@ -1463,7 +1463,7 @@
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_WONDER_ALHAMBRA_HELP" />
-			<Set Text="All Infantry Units, Counter Units, Militia Units, Special Forces Units, Naval Melee Units, Fighter Units and Attack Aircrafts Units receive the March promotion." />
+			<Set Text="All Infantry Units, Counter Units, Militia Units, Special Forces Units and Naval Melee Units receive the March promotion." />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_WONDER_HUBBLE_HELP" />
