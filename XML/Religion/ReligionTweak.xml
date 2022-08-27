@@ -17,11 +17,11 @@
 		</Update>-->
 
 		<Update>
-			<Set CityRangeStrikeModifier="50" />
+			<Set CityRangeStrikeModifier="100" />
 			<Where Type="BELIEF_GODDESS_STRATEGY" />
 		</Update>
 		<Update>
-			<Set PlotCultureCostModifier="-25" />
+			<Set PlotCultureCostModifier="-50" />
 			<Where Type="BELIEF_RELIGIOUS_SETTLEMENTS" />
 		</Update>
 		<Update>
@@ -37,13 +37,17 @@
 			<Where Type="BELIEF_CHURCH_PROPERTY" />
 		</Update>
 		<Update>
-			<Set MaxDistance="50"/>
+			<Set MaxDistance="16"/>
 			<Where Type="BELIEF_GOD_WAR" />
 		</Update>
 
 		<Update>
-			<Set CityGrowthModifier="20" />
+			<Set CityGrowthModifier="0" />
 			<Where Type="BELIEF_FERTILITY_RITES" />
+		</Update>
+		<Update>
+			<Set ObsoleteEra="NULL" />
+			<Where Type="BELIEF_MONUMENT_GODS" />
 		</Update>
 
 		<Update>
@@ -59,6 +63,7 @@
 
 
 		<!-- ADDITIONS -->
+<<<<<<< HEAD
 				<Delete Type="BELIEF_FAITH_HEALERS" />
 				<Delete Type="BELIEF_OPEN_SKY" />
 				<Delete Type="BELIEF_GODDESS_LOVE" />
@@ -106,6 +111,9 @@
 			<MinPopulation>3</MinPopulation>
 			<HappinessPerCity>3</HappinessPerCity>
 		</Row>
+=======
+		
+>>>>>>> parent of cc106e8 (Pantheon Rework)
 		<Row>
 			<Type>BELIEF_MARSH_BELIEF</Type>
 			<Description>TXT_KEY_BELIEF_MARSH_BELIEF</Description>
@@ -116,12 +124,6 @@
 			<Type>BELIEF_SNOW_BELIEF</Type>
 			<Description>TXT_KEY_BELIEF_SNOW_BELIEF</Description>
 			<ShortDescription>TXT_KEY_BELIEF_SNOW_BELIEF_SHORT</ShortDescription>
-			<Pantheon>true</Pantheon>
-		</Row>
-		<Row>
-			<Type>BELIEF_SACRED_WOODS</Type>
-			<Description>TXT_KEY_BELIEF_SACRED_WOODS</Description>
-			<ShortDescription>TXT_KEY_BELIEF_SACRED_WOODS_SHORT</ShortDescription>
 			<Pantheon>true</Pantheon>
 		</Row>
 
@@ -177,13 +179,7 @@
 
 
 	<!--**************************************************Belief Change*************************************-->
-	<Belief_CityYieldChanges>
-		<Row>
-			<BeliefType>BELIEF_SACRED_WATERS</BeliefType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
-		</Row>
-	</Belief_CityYieldChanges>
+
 	<Beliefs>
 		<Update>
 			<Set MinPopulation="0"/>
@@ -191,13 +187,7 @@
 		</Update>
 		
 	</Beliefs>
-	<Belief_CityYieldChanges>
-		<Row>
-			<BeliefType>BELIEF_GODDESS_LOVE</BeliefType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>3</Yield>
-		</Row>
-	</Belief_CityYieldChanges>
+
 
 	<Belief_ResourceHappiness>
 		<Row>
@@ -210,16 +200,7 @@
 			<ResourceType>RESOURCE_GEMS</ResourceType>
 			<HappinessChange>2</HappinessChange>
 		</Row>
-		<Row>
-			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
-			<ResourceType>RESOURCE_SILVER</ResourceType>
-			<HappinessChange>2</HappinessChange>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
-			<ResourceType>RESOURCE_GOLD</ResourceType>
-			<HappinessChange>2</HappinessChange>
-		</Row>
+
 		<Row>
 			<BeliefType>BELIEF_GOD_FESTIVALS</BeliefType>
 			<ResourceType>RESOURCE_WINE</ResourceType>
@@ -241,36 +222,52 @@
 		<Delete BeliefType="BELIEF_FORMAL_LITURGY" />
 
 
+<<<<<<< HEAD
 		<Row>
+=======
+		<!--<Row>
+>>>>>>> parent of cc106e8 (Pantheon Rework)
 			<BeliefType>BELIEF_TEARS_OF_GODS</BeliefType>
 			<ResourceType>RESOURCE_PEARLS</ResourceType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_TEARS_OF_GODS</BeliefType>
 			<ResourceType>RESOURCE_GEMS</ResourceType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
+			<Yield>1</Yield>
+		</Row>-->
 
 		<Row>
-			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
+			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
+			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
 			<ResourceType>RESOURCE_COPPER</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
+			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
 			<ResourceType>RESOURCE_SALT</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
+			<ResourceType>RESOURCE_GOLD</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
+			<ResourceType>RESOURCE_SILVER</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
 		</Row>
 		
 		<Row>
@@ -285,34 +282,24 @@
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>2</Yield>
 		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_FESTIVALS</BeliefType>
-			<ResourceType>RESOURCE_WINE</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_FESTIVALS</BeliefType>
-			<ResourceType>RESOURCE_INCENSE</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
+		
 		<Row>
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_JADE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_AMBER</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_CORAL</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
+<<<<<<< HEAD
 			<Yield>2</Yield>
 		</Row>
 		<Row>
@@ -332,90 +319,81 @@
 			<ResourceType>RESOURCE_CORAL</ResourceType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
+=======
+			<Yield>6</Yield>
+>>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_LAPIS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
+<<<<<<< HEAD
 			<Yield>2</Yield>
+=======
+			<Yield>6</Yield>
+>>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		
 		<Row>
 			<BeliefType>BELIEF_SUN_GOD</BeliefType>
 			<ResourceType>RESOURCE_OLIVE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_SUN_GOD</BeliefType>
 			<ResourceType>RESOURCE_TOBACCO</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_SUN_GOD</BeliefType>
 			<ResourceType>RESOURCE_PERFUME</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_SUN_GOD</BeliefType>
 			<ResourceType>RESOURCE_SUGAR</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
-		<Row>
-			<BeliefType>BELIEF_SUN_GOD</BeliefType>
-			<ResourceType>RESOURCE_WHEAT</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_ORAL_TRADITION</BeliefType>
-			<ResourceType>RESOURCE_TOBACCO</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_ORAL_TRADITION</BeliefType>
-			<ResourceType>RESOURCE_PERFUME</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_ORAL_TRADITION</BeliefType>
-			<ResourceType>RESOURCE_SILK</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>	
-		<Row>
-			<BeliefType>BELIEF_ORAL_TRADITION</BeliefType>
-			<ResourceType>RESOURCE_COTTON</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>	
+		
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_SPICES</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
+<<<<<<< HEAD
 			<Yield>2</Yield>
+=======
+			<Yield>6</Yield>
+>>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_BANANA</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
+<<<<<<< HEAD
 			<Yield>2</Yield>
+=======
+			<Yield>6</Yield>
+>>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_CITRUS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
+<<<<<<< HEAD
 			<Yield>2</Yield>
+=======
+			<Yield>6</Yield>
+>>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_COTTON</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
+<<<<<<< HEAD
 			<Yield>2</Yield>
 		</Row>
 		<Row>
@@ -453,38 +431,17 @@
 			<ResourceType>RESOURCE_DEER</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
+=======
+			<Yield>6</Yield>
+>>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
+
 		<!--<Row>
 			<BeliefType>BELIEF_GOD_SEA</BeliefType>
 			<ResourceType>RESOURCE_FISH</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
 		</Row>-->
-
-		<Row>
-			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
-			<ResourceType>RESOURCE_GOLD</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
-			<ResourceType>RESOURCE_GOLD</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
-			<ResourceType>RESOURCE_SILVER</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
-			<ResourceType>RESOURCE_SILVER</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
 	</Belief_ResourceYieldChanges>
 	
 	
@@ -496,32 +453,21 @@
 		<Row>
 			<BeliefType>BELIEF_GOD_SEA</BeliefType>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
-			<YieldType>YIELD_FAITH</YieldType>
+			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_SEA</BeliefType>
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
-			<YieldType>YIELD_FAITH</YieldType>
+			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		
 		<Row>
 			<BeliefType>BELIEF_GODDESS_HUNT</BeliefType>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_SACRED_WOODS</BeliefType>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_OPEN_SKY</BeliefType>
-			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>8</Yield>
 		</Row>
 	</Belief_ImprovementYieldChanges>
 	
@@ -531,31 +477,17 @@
 		<Row>
 			<BeliefType>BELIEF_GURUSHIP</BeliefType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>4</Yield>
+			<Yield>8</Yield>
 		</Row>
 	</Belief_YieldChangeAnySpecialist>
 	
 	
 	<Belief_FeatureYieldChanges>
-			<Delete BeliefType="BELIEF_SACRED_PATH" />
-
 		<Row>
 			<BeliefType>BELIEF_MARSH_BELIEF</BeliefType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>4</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_SACRED_PATH</BeliefType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_SACRED_WOODS</BeliefType>
-			<FeatureType>FEATURE_FAITH</FeatureType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>12</Yield>
 		</Row>
 		<!--<Row>
 			<BeliefType>BELIEF_MARSH_BELIEF</BeliefType>
@@ -564,17 +496,10 @@
 			<Yield>1</Yield>
 		</Row>-->
 	</Belief_FeatureYieldChanges>
-		<Row>
-			<Type>BELIEF_GOD_WAR</Type>
-			<Description>TXT_KEY_BELIEF_GOD_WAR</Description>
-			<ShortDescription>TXT_KEY_BELIEF_GOD_WAR_SHORT</ShortDescription>
-			<Pantheon>true</Pantheon>
-			<MaxDistance>3</MaxDistance>
-			<FaithFromKills>200</FaithFromKills>
-		</Row>
+
 	<Belief_YieldChangePerForeignCity>
 		<Update>
-			<Set Yield="3"/>
+			<Set Yield="10"/>
 			<Where BeliefType="BELIEF_PILGRIMAGE" YieldType="YIELD_FAITH"/>
 		</Update>
 	</Belief_YieldChangePerForeignCity>
@@ -601,19 +526,19 @@
 			<BeliefType>BELIEF_SNOW_BELIEF</BeliefType>
 			<TerrainType>TERRAIN_SNOW</TerrainType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_SNOW_BELIEF</BeliefType>
 			<TerrainType>TERRAIN_SNOW</TerrainType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_DANCE_AURORA</BeliefType>
 			<TerrainType>TERRAIN_TUNDRA</TerrainType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>6</Yield>
 		</Row>
 	
 
@@ -625,8 +550,8 @@
 		<Delete BeliefType="BELIEF_MESSENGER_GODS" />
 		<Row>
 			<BeliefType>BELIEF_MESSENGER_GODS</BeliefType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>3</Yield>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>8</Yield>
 		</Row>
 	</Belief_YieldChangeTradeRoute>
 	
@@ -652,13 +577,13 @@
 			<BeliefType>BELIEF_ANCESTOR_WORSHIP</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>4</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_ANCESTOR_WORSHIP</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>4</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_STONE_CIRCLES</BeliefType>
@@ -673,9 +598,9 @@
 			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
-			<BeliefType>BELIEF_FERTILITY_RITES</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
+			<BeliefType>BELIEF_MONUMENT_GODS</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
 			<YieldChange>2</YieldChange>
 		</Row>
 		<!--<Row>
@@ -706,37 +631,19 @@
 			<BeliefType>BELIEF_CHARITES</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
+			<YieldChange>6</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_CHARITES</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>6</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_CHARITES</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>4</YieldChange>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_FAITH_HEALERS</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_PALISADE_WALL</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_FAITH_HEALERS</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_FAITH_HEALERS</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>6</YieldChange>
 		</Row>
 		<!--<Row>
 			<BeliefType>BELIEF_HOLY_WARRIORS</BeliefType>
@@ -749,63 +656,15 @@
 			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<YieldChange>1</YieldChange>
-		</Row>-->	
-		<Row>
-			<BeliefType>BELIEF_GOD_KING</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_KING</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_KING</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_KING</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_KING</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>	
-		<Row>
-			<BeliefType>BELIEF_GOD_KING</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
-		</Row>
+		</Row>-->		
 	</Belief_BuildingClassYieldChanges>
-		<Belief_YieldChangeNaturalWonder>
-				<Delete BeliefType="BELIEF_ONE_WITH_NATURE" />
-		<Row>
-			<BeliefType>BELIEF_ONE_WITH_NATURE</BeliefType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>7</Yield>
-		</Row>
-	</Belief_YieldChangeNaturalWonder>
+	
 	<Belief_BuildingClassHappiness>
 		<Delete BeliefType="BELIEF_PEACE_GARDENS" />
 		<Row>
 			<BeliefType>BELIEF_MAZU</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_KING</BeliefType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>6</Happiness>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_RIVER_CRAFTSMAN</BeliefType>
@@ -818,12 +677,6 @@
 			<BeliefType>BELIEF_SCIENCE_RELIGION</BeliefType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Max>15</Max>
-		</Row>
-		
-		<Row>
-			<BeliefType>BELIEF_RELIGIOUS_SETTLEMENTS</BeliefType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Max>10</Max>
 		</Row>
 	</Belief_MaxYieldModifierPerFollower>
 	
@@ -853,13 +706,7 @@
 			<Tourism>32</Tourism>
 		</Row>
 	</Belief_BuildingClassTourism>
-	<Belief_YieldChangeWorldWonder>
-		<Row>
-			<BeliefType>BELIEF_MONUMENT_GODS</BeliefType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
-		</Row>
-	</Belief_YieldChangeWorldWonder>
+
 
 	
 	
