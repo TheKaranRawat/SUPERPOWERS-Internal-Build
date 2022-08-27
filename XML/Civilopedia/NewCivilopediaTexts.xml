@@ -34,10 +34,7 @@
 			</Text>
 		</Row>
 	</Language_en_US>
-
-
-
-
+	
 	<!--************************************EUI elements********************************-->
 
 
@@ -224,7 +221,7 @@
 			<Summary>TXT_KEY_CONCEPT_SETTLER_JOIN_CITIES_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SETTLER_JOIN_CITIES_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_CITIES</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_BUILDING_OBSOLETE_IN_LATEGAME</Type>
@@ -233,7 +230,7 @@
 			<Summary>TXT_KEY_CONCEPT_BUILDING_OBSOLETE_IN_LATEGAME_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_BUILDING_OBSOLETE_IN_LATEGAME_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_CITIES</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_BUILDING_EXTRA_POPCOST</Type>
@@ -242,7 +239,7 @@
 			<Summary>TXT_KEY_CONCEPT_BUILDING_EXTRA_POPCOST_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_BUILDING_EXTRA_POPCOST_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_CITIES</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_CITY_GOVERNMENT</Type>
@@ -251,7 +248,7 @@
 			<Summary>TXT_KEY_CONCEPT_CITY_GOVERNMENT_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_CITY_GOVERNMENT_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_CITIES</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>	
 		<Row>
 			<Type>CONCEPT_CITIES_CORRUPTION</Type>
@@ -260,7 +257,7 @@
 			<Summary>TXT_KEY_CONCEPT_CITIES_CORRUPTION_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_CITIES_CORRUPTION_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_CITIES</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_ANTI_CORRUPTION</Type>
@@ -269,7 +266,7 @@
 			<Summary>TXT_KEY_CONCEPT_ANTI_CORRUPTION_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_ANTI_CORRUPTION_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_CITIES</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		
 		<Row>
@@ -279,7 +276,7 @@
 			<Summary>TXT_KEY_CONCEPT_WAR_DAMAGE_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_WAR_DAMAGE_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_CITIES</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_WAR_DAMAGE_REDUCE</Type>
@@ -288,7 +285,7 @@
 			<Summary>TXT_KEY_CONCEPT_WAR_DAMAGE_REDUCE_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_WAR_DAMAGE_REDUCE_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_CITIES</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 
@@ -300,7 +297,7 @@
 			<Summary>TXT_KEY_CONCEPT_NEW_SCIENCE_RULE_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_NEW_SCIENCE_RULE_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>		
-			<CivilopediaHeaderType>HEADER_TECHNOLOGY</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -310,7 +307,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_NEW_SPECIALISTS_RULE_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_NEW_SPECIALISTS_RULE_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_PEOPLE</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<!--************************************Culture********************************-->
@@ -321,7 +318,7 @@
 			<Summary>TXT_KEY_CONCEPT_NEW_CULTURE_RULE_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_NEW_CULTURE_RULE_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_CULTURE</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 	
 		<Row>
@@ -331,7 +328,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_NEW_CHOOSEYOURWAY_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_NEW_CHOOSEYOURWAY_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>ECONOMIC</Advisor>
-			<CivilopediaHeaderType>HEADER_POLICIES</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 				
 
@@ -344,7 +341,7 @@
 			<Summary>TXT_KEY_CONCEPT_NEW_ATTACK_RULES_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_NEW_ATTACK_RULES_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_COMBAT</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_STACKING_COMBAT</Type>
@@ -353,7 +350,7 @@
 			<Summary>TXT_KEY_CONCEPT_STACKING_COMBAT_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_STACKING_COMBAT_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_COMBAT</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_RANGED_COUNTER</Type>
@@ -362,7 +359,7 @@
 			<Summary>TXT_KEY_CONCEPT_RANGED_COUNTER_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_RANGED_COUNTER_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_COMBAT</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_HEALING</Type>
@@ -371,7 +368,7 @@
 			<Summary>TXT_KEY_CONCEPT_HEALING_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_HEALING_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_COMBAT</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_COMBAT_AOE_EFFECT</Type>
@@ -380,7 +377,7 @@
 			<Summary>TXT_KEY_CONCEPT_COMBAT_AOE_EFFECT_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_COMBAT_AOE_EFFECT_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_COMBAT</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_COMBAT_COLLDMG_EFFECT</Type>
@@ -389,7 +386,7 @@
 			<Summary>TXT_KEY_CONCEPT_COMBAT_COLLDMG_EFFECT_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_COMBAT_COLLDMG_EFFECT_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_COMBAT</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_COMBAT_CHARGEDMG_EFFECT</Type>
@@ -398,7 +395,7 @@
 			<Summary>TXT_KEY_CONCEPT_COMBAT_CHARGEDMG_EFFECT_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_COMBAT_CHARGEDMG_EFFECT_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_COMBAT</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		<Row>
 			<Type>CONCEPT_COMBAT_SUNDER_EFFECT</Type>
@@ -407,7 +404,7 @@
 			<Summary>TXT_KEY_CONCEPT_COMBAT_SUNDER_EFFECT_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_COMBAT_SUNDER_EFFECT_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_COMBAT</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 
@@ -420,7 +417,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_SUMMARY_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_SUMMARY_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 		
 		<Row>
@@ -430,7 +427,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_INFANTRY_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_INFANTRY_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -440,7 +437,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_MOBILE_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_MOBILE_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -450,7 +447,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_MOUNTED_RANGED_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_MOUNTED_RANGED_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -460,7 +457,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_HELICOPTER_CLASS_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_HELICOPTER_CLASS_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -470,7 +467,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_COUNTER_UNITS_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_COUNTER_UNITS_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -480,7 +477,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_LAND_ARCHERY_UNITS_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_LAND_ARCHERY_UNITS_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -490,7 +487,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_LAND_SIEGE_WEAPONS_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_LAND_SIEGE_WEAPONS_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -500,7 +497,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_LAND_HEAVY_ARTILLERY_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_LAND_HEAVY_ARTILLERY_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 
@@ -511,7 +508,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_LAND_RECON_UNITS_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_LAND_RECON_UNITS_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -521,7 +518,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_NAVAL_MELEE_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_NAVAL_MELEE_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -531,7 +528,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_NAVAL_RANGED_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_NAVAL_RANGED_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -541,7 +538,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_NAVAL_SUBMARINE_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_NAVAL_SUBMARINE_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -551,7 +548,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_NAVAL_CARRIERS_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_NAVAL_CARRIERS_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -561,7 +558,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_ATTACK_AIRCRAFT_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_ATTACK_AIRCRAFT_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -571,7 +568,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_STRATEGIC_BOMBER_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_STRATEGIC_BOMBER_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -581,7 +578,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_AIR_FIGHTERS_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_AIR_FIGHTERS_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 
@@ -592,7 +589,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_UNIT_ELITEUNITS_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_UNIT_ELITEUNITS_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_UNITS</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 	</Concepts>
@@ -606,7 +603,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_NUCLEAR_WINTER_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_NUCLEAR_WINTER_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_VICTORY</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -616,7 +613,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_NUCLEAR_WINTER_DETAILS_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_NUCLEAR_WINTER_DETAILS_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_VICTORY</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 		<Row>
@@ -626,7 +623,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_NUCLEAR_WINTER_RESULT_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_NUCLEAR_WINTER_RESULT_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>MILITARY</Advisor>
-			<CivilopediaHeaderType>HEADER_VICTORY</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 
 	</Concepts>
@@ -640,7 +637,7 @@
 			<Summary>TXT_KEY_CONCEPT_SP_NEW_CITY_STATE_RULE_SUMMARY</Summary>
 			<AdvisorQuestion>TXT_KEY_CONCEPT_SP_NEW_CITY_STATE_RULE_ADVISOR_QUESTION</AdvisorQuestion>
 			<Advisor>FOREIGN</Advisor>
-			<CivilopediaHeaderType>HEADER_CITYSTATE</CivilopediaHeaderType>
+			<CivilopediaHeaderType>HEADER_SUPERPOWERS</CivilopediaHeaderType>
 		</Row>
 	</Concepts>
 
@@ -1285,7 +1282,142 @@
 		
 	</Language_en_US>
 	
-
+	
+	<!--********************************************** Updated Civilopedia Headings ********************************************** -->
+	
+	<Language_en_US>
+		
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_1"> 
+			<Text>
+				[COLOR_YELLOW]SUPERPOWER MODPACK[ENDCOLOR]
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_2"> 
+			<Text>
+				Cities
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_11"> 
+			<Text>
+				Happiness
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_12"> 
+			<Text>
+				Fog of War
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_13"> 
+			<Text>
+				Social Policies
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_14"> 
+			<Text>
+				Gold and the Economy
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_15"> 
+			<Text>
+				Advisors
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_16"> 
+			<Text>
+				Great People and Specialists
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_17"> 
+			<Text>
+				City-States
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_18"> 
+			<Text>
+				Unit Movement
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_19"> 
+			<Text>
+				Air Combat Rules
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_20"> 
+			<Text>
+				Ruins and Barbarians
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_3"> 
+			<Text>
+				Combat Rules
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_21"> 
+			<Text>
+				Units
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_22"> 
+			<Text>
+				Victory
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_23"> 
+			<Text>
+				Espionage
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_24"> 
+			<Text>
+				Religion
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_25"> 
+			<Text>
+				Trade
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_26"> 
+			<Text>
+				World Congress
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_4"> 
+			<Text>
+				Terrain and Features
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_5"> 
+			<Text>
+				Resources
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_6"> 
+			<Text>
+				Constructing Improvements
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_7"> 
+			<Text>
+				Food and City Growth
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_8"> 
+			<Text>
+				Technology
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_9"> 
+			<Text>
+				Culture
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_CONCEPT_SECTION_10"> 
+			<Text>
+				Diplomacy
+			</Text>
+			
+	</Language_en_US>
 	
 
 
