@@ -63,57 +63,7 @@
 
 
 		<!-- ADDITIONS -->
-<<<<<<< HEAD
-				<Delete Type="BELIEF_FAITH_HEALERS" />
-				<Delete Type="BELIEF_OPEN_SKY" />
-				<Delete Type="BELIEF_GODDESS_LOVE" />
-				<Delete Type="BELIEF_GOD_KING" />
-				<Delete Type="BELIEF_MONUMENT_GODS" />
-				<Delete Type="BELIEF_SACRED_WATERS" />
-		<Row>
-			<Type>BELIEF_SACRED_WATERS</Type>
-			<Description>TXT_KEY_BELIEF_SACRED_WATERS</Description>
-			<ShortDescription>TXT_KEY_BELIEF_SACRED_WATERS_SHORT</ShortDescription>
-			<Pantheon>true</Pantheon>
-			<RiverHappiness>2</RiverHappiness>
-		</Row>
-		<Row>
-			<Type>BELIEF_MONUMENT_GODS</Type>
-			<Description>TXT_KEY_BELIEF_MONUMENT_GODS</Description>
-			<ShortDescription>TXT_KEY_BELIEF_MONUMENT_GODS_SHORT</ShortDescription>
-			<Pantheon>true</Pantheon>
-			<WonderProductionModifier>15</WonderProductionModifier>
-		</Row>
-		<Row>
-			<Type>BELIEF_FAITH_HEALERS</Type>
-			<Description>TXT_KEY_BELIEF_FAITH_HEALERS</Description>
-			<ShortDescription>TXT_KEY_BELIEF_FAITH_HEALERS_SHORT</ShortDescription>
-			<Pantheon>true</Pantheon>
-			<FriendlyHealChange>5</FriendlyHealChange>
-		</Row>
-		<Row>
-			<Type>BELIEF_GOD_KING</Type>
-			<Description>TXT_KEY_BELIEF_GOD_KING</Description>
-			<ShortDescription>TXT_KEY_BELIEF_GOD_KING_SHORT</ShortDescription>
-			<Pantheon>true</Pantheon>
-		</Row>
-		<Row>
-			<Type>BELIEF_OPEN_SKY</Type>
-			<Description>TXT_KEY_BELIEF_OPEN_SKY</Description>
-			<ShortDescription>TXT_KEY_BELIEF_OPEN_SKY_SHORT</ShortDescription>
-			<Pantheon>true</Pantheon>
-		</Row>
-		<Row>
-			<Type>BELIEF_GODDESS_LOVE</Type>
-			<Description>TXT_KEY_BELIEF_GODDESS_LOVE</Description>
-			<ShortDescription>TXT_KEY_BELIEF_GODDESS_LOVE_SHORT</ShortDescription>
-			<Pantheon>true</Pantheon>
-			<MinPopulation>3</MinPopulation>
-			<HappinessPerCity>3</HappinessPerCity>
-		</Row>
-=======
 		
->>>>>>> parent of cc106e8 (Pantheon Rework)
 		<Row>
 			<Type>BELIEF_MARSH_BELIEF</Type>
 			<Description>TXT_KEY_BELIEF_MARSH_BELIEF</Description>
@@ -222,11 +172,7 @@
 		<Delete BeliefType="BELIEF_FORMAL_LITURGY" />
 
 
-<<<<<<< HEAD
-		<Row>
-=======
 		<!--<Row>
->>>>>>> parent of cc106e8 (Pantheon Rework)
 			<BeliefType>BELIEF_TEARS_OF_GODS</BeliefType>
 			<ResourceType>RESOURCE_PEARLS</ResourceType>
 			<YieldType>YIELD_CULTURE</YieldType>
@@ -299,39 +245,13 @@
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_CORAL</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-<<<<<<< HEAD
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
-			<ResourceType>RESOURCE_JADE</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
-			<ResourceType>RESOURCE_AMBER</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
-			<ResourceType>RESOURCE_CORAL</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-=======
 			<Yield>6</Yield>
->>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_LAPIS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-<<<<<<< HEAD
-			<Yield>2</Yield>
-=======
 			<Yield>6</Yield>
->>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		
 		<Row>
@@ -363,77 +283,25 @@
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_SPICES</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-<<<<<<< HEAD
-			<Yield>2</Yield>
-=======
 			<Yield>6</Yield>
->>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_BANANA</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-<<<<<<< HEAD
-			<Yield>2</Yield>
-=======
 			<Yield>6</Yield>
->>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_CITRUS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-<<<<<<< HEAD
-			<Yield>2</Yield>
-=======
 			<Yield>6</Yield>
->>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_COTTON</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-<<<<<<< HEAD
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_OPEN_SKY</BeliefType>
-			<ResourceType>RESOURCE_SHEEP</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_OPEN_SKY</BeliefType>
-			<ResourceType>RESOURCE_HORSES</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_OPEN_SKY</BeliefType>
-			<ResourceType>RESOURCE_CATTLE</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>
-				<Row>
-			<BeliefType>BELIEF_GODDESS_HUNT</BeliefType>
-			<ResourceType>RESOURCE_FURS</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_FURS</BeliefType>
-			<ResourceType>RESOURCE_TRUFFLES</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BeliefType>BELIEF_GODDESS_HUNT</BeliefType>
-			<ResourceType>RESOURCE_DEER</ResourceType>
-			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-=======
 			<Yield>6</Yield>
->>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 
 		<!--<Row>

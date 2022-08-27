@@ -19,27 +19,19 @@
 			<Text>+6 [ICON_PEACE] Faith for each Olive, Sugar, Perfume and Tobacco resource.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_EARTH_MOTHER">
-<<<<<<< HEAD
-			<Text>+2 [ICON_PEACE] Faith for each Spices, Citrus, Banana and Cotton resource.</Text>
-
-		</Replace>
-		<Replace Tag="TXT_KEY_BELIEF_FAITH_HEALERS">
-			<Text>+5 healing next to a friendly city, and +1[ICON_PEACE] Faith on defensive buildings per tier.</Text>
-=======
 			<Text>+6 [ICON_PEACE] Faith for each Spices, Citrus, Banana and Cotton resource.</Text>
->>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_GODDESS_HUNT">
 			<Text>+1 [ICON_FOOD] Food and +8 [ICON_PEACE] Faith from Camps.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_GURUSHIP">
-			<Text>+3 [ICON_PEACE] Faith if city has a Specialist.</Text>
+			<Text>+8 [ICON_PEACE] Faith if city has a Specialist.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_RELIGIOUS_SETTLEMENTS">
 			<Text>+50% faster border growth.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_PILGRIMAGE">
-			<Text>+3 [ICON_PEACE] Faith for each foreign city following this religion.</Text>
+			<Text>+10 [ICON_PEACE] Faith for each foreign city following this religion.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_HOLY_WARRIORS">
 			<Text>Allows you to purchase Knights Templar with [ICON_PEACE] Faith, a unit who can gain [ICON_PEACE] Faith by killing enemy units. </Text>
@@ -95,7 +87,7 @@
 			<Text>+4 [ICON_TOURISM] Tourism from every Garden.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_SWORD_PLOWSHARES">
-			<Text>+25% [ICON_FOOD] Food Growth rate for city if not at war.</Text> <!-- make it 15% -->
+			<Text>+25% [ICON_FOOD] Food Growth rate for city if not at war.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_GOD_SEA">
 			<Text>+1 [ICON_CULTURE] Culture for every Fishing Net. </Text>
@@ -114,12 +106,7 @@
 			<Text>Swamp Belief</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_MARSH_BELIEF">
-<<<<<<< HEAD
-
-			<Text>+4 [ICON_PEACE] Faith from Marsh tiles. </Text>
-=======
 			<Text>+12 [ICON_PEACE] Faith from Marsh tiles. </Text>
->>>>>>> parent of cc106e8 (Pantheon Rework)
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_SNOW_BELIEF_SHORT">
 			<Text>Snow Spirit</Text>
@@ -143,7 +130,7 @@
 			<Text>Worship of Charites</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_CHARITES">
-			<Text>+4 [ICON_CULTURE] Culture for every Amphitheatre, Art Gallery and Opera House.</Text>
+			<Text>+6 [ICON_CULTURE] Culture for every Amphitheatre, Art Gallery and Opera House.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_EIRENE_SHORT">
 			<Text>Universal Love</Text>
@@ -161,7 +148,7 @@
 			<Text>The Sacred Palace</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_TOURISM_RELIGION">
-			<Text>+24 [ICON_TOURISM] Tourism from the Grand Temple.</Text>
+			<Text>+32 [ICON_TOURISM] Tourism from the Grand Temple.</Text>
 		</Row>
 		<!--<Row Tag="TXT_KEY_BELIEF_SFAITH_WITHOUT_BORDER_SHORT">
 			<Text>Faith Without Borders</Text>
