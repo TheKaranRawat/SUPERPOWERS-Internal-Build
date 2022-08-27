@@ -511,12 +511,12 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Guilds[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Gain additional [ICON_PRODUCTION] Production in cities reached certain Population Size:
-				[NEWLINE][ICON_BULLET]Small City: +8 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]Medium City: +16 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]Large City: +32 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]XL City: +64 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]XXL City: +100 [ICON_PRODUCTION] Production.
-				[NEWLINE][ICON_BULLET]Global City: +140 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]Town: +8 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]City: +16 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]Municipality: +32 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]Metropolis: +64 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]Megapolis: +100 [ICON_PRODUCTION] Production.
+				[NEWLINE][ICON_BULLET]Gigacity: +140 [ICON_PRODUCTION] Production.
 			</Text>
 		</Replace>
 
@@ -540,12 +540,12 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Third Estate[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Gain additional [ICON_CULTURE] Culture in cities reached certain Population Size:
-				[NEWLINE][ICON_BULLET]Small City: +8 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]Medium City: +16 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]Large City: +32 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]XL City: +64 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]XXL City: +100 [ICON_CULTURE] Culture.
-				[NEWLINE][ICON_BULLET]Global City: +140 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]Town: +8 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]City: +16 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]Municipality: +32 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]Metropolis: +64 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]Megapolis: +100 [ICON_CULTURE] Culture.
+				[NEWLINE][ICON_BULLET]Gigapolis: +140 [ICON_CULTURE] Culture.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PREFECTURE_TEXT">
