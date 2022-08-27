@@ -46,7 +46,7 @@
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>100</AIBuildingCostPercent>
-				<AIUnitCostPercent>85</AIUnitCostPercent>
+				<AIUnitCostPercent>100</AIUnitCostPercent>
 				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
@@ -101,7 +101,7 @@
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>100</AIBuildingCostPercent>
-				<AIUnitCostPercent>80</AIUnitCostPercent>
+				<AIUnitCostPercent>100</AIUnitCostPercent>
 				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
@@ -158,7 +158,7 @@
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>66</AIBuildingCostPercent>
-				<AIUnitCostPercent>66</AIUnitCostPercent>
+				<AIUnitCostPercent>100</AIUnitCostPercent>
 				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
@@ -217,7 +217,7 @@
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>50</AIBuildingCostPercent>
-				<AIUnitCostPercent>50</AIUnitCostPercent>
+				<AIUnitCostPercent>100</AIUnitCostPercent>
 				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
@@ -277,7 +277,7 @@
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>40</AIBuildingCostPercent>
-				<AIUnitCostPercent>40</AIUnitCostPercent>
+				<AIUnitCostPercent>100</AIUnitCostPercent>
 				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
@@ -333,11 +333,11 @@
 				<AITrainPercent>60</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>80</AIConstructPercent>
-				<AIWorldConstructPercent>150</AIWorldConstructPercent>
+				<AIWorldConstructPercent>250</AIWorldConstructPercent>
 				<AICreatePercent>140</AICreatePercent>
 				<AIWorldCreatePercent>140</AIWorldCreatePercent>
 				<AIBuildingCostPercent>40</AIBuildingCostPercent>
-				<AIUnitCostPercent>60</AIUnitCostPercent>
+				<AIUnitCostPercent>45</AIUnitCostPercent>
 				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
@@ -393,11 +393,11 @@
 				<AITrainPercent>50</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>66</AIConstructPercent>
-				<AIWorldConstructPercent>150</AIWorldConstructPercent>
+				<AIWorldConstructPercent>300</AIWorldConstructPercent>
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>33</AIBuildingCostPercent>
-				<AIUnitCostPercent>33</AIUnitCostPercent>
+				<AIUnitCostPercent>40</AIUnitCostPercent>
 				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
@@ -453,7 +453,7 @@
 				<AITrainPercent>33</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>50</AIConstructPercent>
-				<AIWorldConstructPercent>140</AIWorldConstructPercent>
+				<AIWorldConstructPercent>350</AIWorldConstructPercent>
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>33</AIBuildingCostPercent>
