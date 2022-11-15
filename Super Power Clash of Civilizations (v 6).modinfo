@@ -2454,12 +2454,14 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="BB191200B745EAA7D17262A865159249" import="0">XML/UC/Byzantium/Hippodrome.xml</File>
     <File md5="45C885916D13DAEB43CD177A3F64CC55" import="0">XML/UC/Carthage/3UC_CARTHAGE.sql</File>
     <File md5="FD80798BA9C7A3A99591F9F07F051D61" import="0">XML/UC/Carthage/Cothon.xml</File>
-    <File md5="10201AB4EF2A42CA9E809EBF0E6F34E6" import="1">XML/UC/Carthage/Cothon_Atlas_128.dds</File>
-    
-    <!-- <File md5="86CF1F1247ACC19C90801D5E35935537" import="1">XML/UC/Carthage/Cothon_Atlas_256.dds</File> -->
 
+    <!--
+    <File md5="10201AB4EF2A42CA9E809EBF0E6F34E6" import="1">XML/UC/Carthage/Cothon_Atlas_128.dds</File>
+    <File md5="86CF1F1247ACC19C90801D5E35935537" import="1">XML/UC/Carthage/Cothon_Atlas_256.dds</File>
     <File md5="23F4129E0E14374ED1DA099B19D16AE7" import="1">XML/UC/Carthage/Cothon_Atlas_45.dds</File>
     <File md5="5CFDBD16977ADB4DDBCEDA4AF9C56268" import="1">XML/UC/Carthage/Cothon_Atlas_64.dds</File>
+    -->
+    
     <File md5="D0CAC4D03A56CB1B4018D5FA8351E943" import="0">XML/UC/Celts/3UC_CELT.sql</File>
     <File md5="B889F53BEE71745DBF7D98A6DB6DEDEA" import="1">XML/UC/Celts/roundhouse128.dds</File>
     <File md5="F724C3DC5DE55EAAFB290E701CAB1D50" import="1">XML/UC/Celts/roundhouse256.dds</File>
