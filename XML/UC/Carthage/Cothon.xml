@@ -32,14 +32,17 @@
 		</Row>
 	</Language_en_US>
 
+	<!--
 	<IconTextureAtlases>
+
+		
 		<Row>
 			<Atlas>COTHON_TECH_ATLAS</Atlas>
 			<IconSize>256</IconSize>
 			<Filename>Cothon_Atlas_256.dds</Filename>
 			<IconsPerRow>8</IconsPerRow>
 			<IconsPerColumn>8</IconsPerColumn>
-		</Row>
+		</Row>		
 
 		<Row>
 			<Atlas>COTHON_TECH_ATLAS</Atlas>
@@ -62,5 +65,10 @@
 			<IconsPerRow>8</IconsPerRow>
 			<IconsPerColumn>6</IconsPerColumn>
 		</Row>
+
+	
 	</IconTextureAtlases>
+
+	-->
+
 </GameData>
