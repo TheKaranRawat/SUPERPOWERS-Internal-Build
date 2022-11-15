@@ -2455,7 +2455,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="45C885916D13DAEB43CD177A3F64CC55" import="0">XML/UC/Carthage/3UC_CARTHAGE.sql</File>
     <File md5="FD80798BA9C7A3A99591F9F07F051D61" import="0">XML/UC/Carthage/Cothon.xml</File>
     <File md5="10201AB4EF2A42CA9E809EBF0E6F34E6" import="1">XML/UC/Carthage/Cothon_Atlas_128.dds</File>
-    <File md5="86CF1F1247ACC19C90801D5E35935537" import="1">XML/UC/Carthage/Cothon_Atlas_256.dds</File>
+    
+    <!-- <File md5="86CF1F1247ACC19C90801D5E35935537" import="1">XML/UC/Carthage/Cothon_Atlas_256.dds</File> -->
+
     <File md5="23F4129E0E14374ED1DA099B19D16AE7" import="1">XML/UC/Carthage/Cothon_Atlas_45.dds</File>
     <File md5="5CFDBD16977ADB4DDBCEDA4AF9C56268" import="1">XML/UC/Carthage/Cothon_Atlas_64.dds</File>
     <File md5="D0CAC4D03A56CB1B4018D5FA8351E943" import="0">XML/UC/Celts/3UC_CELT.sql</File>
@@ -3046,12 +3048,18 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="C2AD90F157A7850255AB6118F9771BC1" import="1">XML/UC/Polynesia/hawaii_ikaika.gr2</File>
     <File md5="4B287F1BF3990715DD536722531E8595" import="1">XML/UC/Polynesia/hawaii_ikaika_diff.dds</File>
     <File md5="F0C52B17A20219287233D3049BBF928F" import="1">XML/UC/Polynesia/hawaii_ikaika_sref.dds</File>
+
+    
     <File md5="4D5EF692E4404CDDBB5DFB271D31FDC7" import="1">XML/UC/Polynesia/3UC_PolynesiaAlpha_32.dds</File>
+    
+    <!--
     <File md5="EFAAFE851525A884E3F11BF0FF84E854" import="1">XML/UC/Polynesia/3UC_Polynesia_128.dds</File>
     <File md5="A3BA89135036EEF59BD4DD8AFBA47B11" import="1">XML/UC/Polynesia/3UC_Polynesia_256.dds</File>
     <File md5="1E990EE084BC06A22220FE5AFAFB3656" import="1">XML/UC/Polynesia/3UC_Polynesia_45.dds</File>
     <File md5="716DFB28D4261F78EFA9CCDEC2933DD7" import="1">XML/UC/Polynesia/3UC_Polynesia_64.dds</File>
     <File md5="2F679DC71A70EBF0E83E8BDFCF6F938B" import="1">XML/UC/Polynesia/3UC_Polynesia_80.dds</File>
+    -->
+    
     <File md5="064B1125C635888A9BB1FD7A08F54318" import="0">XML/UC/Polynesia/Polynesia_Units.xml</File>
     <File md5="84999876DBB6B847F5B4DBF7D0A03E26" import="1">XML/UC/Polynesia/3UC_sv_Koa.dds</File>
     <File md5="76282A3A829CBB0BFBF427365E57FC20" import="1">XML/UC/Portugal/4CACADOR128.dds</File>
