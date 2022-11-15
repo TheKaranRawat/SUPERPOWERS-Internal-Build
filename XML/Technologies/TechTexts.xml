@@ -1577,11 +1577,11 @@
 			<Text>Floating Islands</Text>
 		</Row>
 
-		<!--
+		
 		<Row Tag="TXT_KEY_BUILDING_FW_KINGDOMTOWERCT">
 			<Text>Kingdom Tower</Text>
 		</Row>
-		-->
+		
 		
 		<Row Tag="TXT_KEY_BUILDING_FW_BIONICTOWER">
 			<Text>Bionic Tower</Text>
@@ -1593,11 +1593,11 @@
 			<Text>Ultima Tower</Text>
 		</Row>
 
-		<!--
+		
 		<Row Tag="TXT_KEY_BUILDING_FW_MIAPOLISCT">
 			<Text>Miapolis</Text>
 		</Row>
-		-->
+		
 
 		<Row Tag="TXT_KEY_BUILDING_FW_BUENOSAIRESFORUM">
 			<Text>Buenos Aires Forum</Text>
