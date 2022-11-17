@@ -3549,16 +3549,16 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="4432D258031784DFF5F3C7CBB07EBEE9" import="0">XML/Units/Mercs/UnitOverrides.sql</File>
     <File md5="B477F423E008C0AB04A08D8358DE38C4" import="0">XML/Units/Mercs/UnitPromotions.xml</File>
 	
-	 <File md5="4B16C10D0B9DF67160F4107AB3B1CBBB" import="1">XML/Buildings/Wonders/XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_045.dds</File>
+	  <File md5="4B16C10D0B9DF67160F4107AB3B1CBBB" import="1">XML/Buildings/Wonders/XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_045.dds</File>
     <File md5="4B16C10D0B9DF67160F4107AB3B1CBBB" import="1">XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_045.dds</File>
-	<File md5="199F21BCAE928C0BF51019E507DB06D3" import="1">XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_064.dds</File>
+	  <File md5="199F21BCAE928C0BF51019E507DB06D3" import="1">XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_064.dds</File>
     <File md5="F5C0267E7C3C6B1A2A2EE3F6F0E4A55D" import="1">XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_080.dds</File>
     <File md5="F3B034E30FBD8015B6D1DC06A5B0F728" import="1">XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_128.dds</File>
     <File md5="A32B506CD87F1F1D30E8A84434341A89" import="1">XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_256.dds</File>
     <File md5="2245431E97B8A038B01B989E728BCCB1" import="0">XML/Buildings/Wonders/01_Graphics/Atlases/MegapackWonders_Atlas.xml</File>
     <File md5="17EF82C59B0165C86695C7451D6A7FF8" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/AbuSimbel_Splash.dds</File>
-    <File md5="7D4EFB1211B1FC0AF11672801EC702F7" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/AleppoMosque_Splash.dds</File>
-    <File md5="40B00A4C499DF82FBCDD6E5A05410363" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Bamiyan_Splash.dds</File>
+    
+    
     <File md5="C20C734CAF13AB94012FA51082DF8B12" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/BrooklynBridge_Splash.dds</File>
     <File md5="58E80B5468C5107A2089FA141DEA3BBC" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/BudaCastle_Splash.dds</File>
     <File md5="DB873E50228218F44E262568A00A245B" import="0">XML/Buildings/Wonders/01_Graphics/Splashes/BurjAlArab_Splash.dds</File>
@@ -3569,37 +3569,36 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="CD5709B41165012F75CAE9AA32B4E755" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/GSV_Splash.dds</File>
     <File md5="1A3296336D45AC69FE5A69F863386C82" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/GobekliTepe_Splash.dds</File>
     <File md5="1EF22C207F2CE35277FF27F79FE676B3" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Gripsholm_Splash.dds</File>
-    <File md5="AFC8F33F131D1208AF9D29E406242F60" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/DomeOfSoltaniyeh_Splash.dds</File>
+    
     <File md5="F7C29942022650D9C9A1E358014A765F" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/LHC_Splash.dds</File>
     <File md5="F9CEB8AD949DC43A14A479B9301E18BB" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Hattusa_Splash.dds</File>
     <File md5="C09D0819F634A8C0DEC2B5BF972D8465" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/HooversDam_Splash.dds</File>
     <File md5="63CCC3A504D474527724C9AFA7E3535A" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Leonardo_Splash.dds</File>
     <File md5="10BDAAC71619BEE5F6A28CEB1449AFA2" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/LibraryOfCongress_Splash.dds</File>
-    <File md5="CD550A4B1BABCB9D31BE13832145F2AC" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/MadainSaleh_Splash.dds</File>
+    
     <File md5="5D22C3D36B7AE07B261E4DBC0BDE6956" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Maracana_Splash.dds</File>
-    <File md5="26130FD051CB3EEE0900F39AEC8E179B" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/MedinaAzahara_Splash.dds</File>
+    
     <File md5="787049A8FBD3230CC79BB27422026C4F" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/MezquitaCordoba_Splash.dds</File>
     <File md5="F7E7E172B570D0A74C320E715DFD40E1" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Motherland_Splash.dds</File>
-    <File md5="DCC53ADC82514F1FAA28F1E942E7FB08" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/PalaisDePapes_Splash.dds</File>
-    <File md5="8F061F11F28B032B871DE1A12E873D3C" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/SaintBasil_Splash.dds</File>
+    
+    
     <File md5="CA20FEADE0148797B78802738DFE8C91" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Voortrekker_GreatWork.dds</File>
     <File md5="EF18E6017D84DA380F592D380772C48D" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Horyuji_Splash.dds</File>
     <File md5="11F2835840DC86AC1D3ABE3E877EEAF6" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Madol_Splash.dds</File>
     <File md5="4AD3CB701F1F2116277D989263B6C1E1" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Millau_Splash.dds</File>
     <File md5="42EA4EB75475871F10545F2DE89E323D" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/MLK_Splash.dds</File>
     <File md5="E3A073AB7A2CBAB9D548638A71E005D6" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/PalmJumeirah_Splash.dds</File>
-    <File md5="A9695D459A7C357ADD2E4FD353F09F64" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Panamerican_Splash.dds</File>
-    <File md5="47AF76BF46CD1C004F38C09CED7D878E" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/PenaPalace_Splash.dds</File>
+
     <File md5="FE26AF3BE590040EBC419745FB7937A2" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Petronas_Splash.dds</File>
     <File md5="73D91DB26B6A6E82AC0CDEE72F186896" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Rockefeller_Splash.dds</File>
-    <File md5="216842ECD8D8CF2C7773D76D8D176CE3" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Rushmore_Splash.dds</File>
+
     <File md5="8A098B8E34F2EEC71617DEC547D97F41" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Sagrada_Splash.dds</File>
-    <File md5="919386579AACA20B89EE285FB5DBF308" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Shwedagon_Splash.dds</File>
+    
     <File md5="DEE1117C57CD43640CC23382FE9D6B7A" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Sphinx_Splash.dds</File>
-    <File md5="4E28328BB1A1023111F2FE2EA4888AB4" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/StoneTown_Splash.dds</File>
+    
     <File md5="C8D1C306ACC711F79FDD3B30354D40B7" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/TabrizBazaar_Splash.dds</File>
     <File md5="7C3A8B477639FFC62D7398D4959F6371" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/ChoghaZanbil_Splash.dds</File>
-    <File md5="62E77C5CCDB9A5E5FA109C6BD4045BD8" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Taktsang_Splash.dds</File>
+
     <File md5="6CB7BE8D4FFAB71A04B7A351D05D55CE" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/TempleOfHeaven_Splash.dds</File>
     <File md5="3C787A26D55325CD91C5EC239B46DAE7" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Topkapi_Splash.dds</File>
     <File md5="8012D595C432362EC67948B2D4D986CF" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Trafalgar_Splash.dds</File>
@@ -3607,7 +3606,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="2EF88C6707EAFE6AB3BAC1D48ECA8C2C" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/VoyagerOne_Splash.dds</File>
     <File md5="127B9C1E76076CE2E3744B53128B1030" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/WatPhraKaew_Splash.dds</File>
     <File md5="5E21C0276C8A14AB8FD8FBA284E470B9" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/Westminster_Splash.dds</File>
-    <File md5="70357809795EDF9DF2E1B2C4EFA7F61B" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/WhiteHouse_Splash.dds</File>
+
     <File md5="32EA80F1FB5A59301FB5A37EB2AC6473" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/WTC_Splash.dds</File>
     <File md5="C0995CEA38E514D8E571BE6640CDA9C5" import="1">XML/Buildings/Wonders/01_Graphics/Splashes/XuankongSi_Splash.dds</File>
     
