@@ -8,7 +8,7 @@
 			<BuildingClass>BUILDINGCLASS_CARAVANSARY</BuildingClass>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<Cost>20</Cost>
-			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
 			<Description>TXT_KEY_BUILDING_FUNDUQ</Description>
 			<Civilopedia>TXT_KEY_BUILDING_FUNDUQ_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_FUNDUQ_STRATEGY</Strategy>
@@ -60,7 +60,13 @@
 			<BuildingType>BUILDING_FUNDUQ</BuildingType>
 		</Row>
 	</Civilization_BuildingClassOverrides>
-
+	<Building_ResourceQuantity>
+		<Row>
+			<BuildingType>BUILDING_CARAVANSARY</BuildingType>
+			<ResourceType>RESOURCE_CONSUMER</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
+	</Building_ResourceQuantity>
 
 	<!-- Adds new text -->
 	<Language_en_US>
