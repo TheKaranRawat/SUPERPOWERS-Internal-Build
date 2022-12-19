@@ -3033,7 +3033,7 @@
 			<Text>WS-64 Weishi</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_CHINESE_WEISHI">
-			<Text>Elite Long Range Multiple Rocket Launcher. It has great mobility and huge combat bonus against naval units.[NEWLINE][NEWLINE]Requires Anti-ship MLRS Project and only one can exist in the world. </Text>
+			<Text>Elite Long Range Multiple Rocket Launcher. It has great mobility and huge combat bonus against naval units.[NEWLINE][NEWLINE]Requires Anti-ship MLRS Project and only three can exist in the world. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINESE_WEISHI_STRATEGY">
 			<Text>Weishi Rockets is the ultimate MRLS. The combat strength, attacking range, mobility and attacks per turn of Weishi Rockets are all twice of the ordinary MRLS. Its long attacking range and huge combat bonus make it the best land-based anti-navy unit for coastline defense. </Text>
