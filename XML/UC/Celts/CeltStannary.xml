@@ -87,7 +87,7 @@
 	<Civilization_BuildingClassOverrides>
 		<Row>
 			<CivilizationType>CIVILIZATION_CELTS</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
 			<BuildingType>BUILDING_STANNARY</BuildingType>
 		</Row>
 	</Civilization_BuildingClassOverrides>
