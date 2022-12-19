@@ -77,10 +77,10 @@
 			<Text>[ICON_FOOD] Winery</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_WINERY_HELP">
-			<Text>Produces a source of the [ICON_RES_WINE] Wine luxury resource near the city of origin. Each source of [ICON_RES_WINE] Wine worked by this City produces +2 [ICON_GOLD] Gold. Only Portugal may build it.</Text>
+			<Text>Each source of [ICON_RES_WINE] Wine worked by this City produces +2 [ICON_GOLD] Gold. Only Portugal may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_WINERY_STRATEGY">
-			<Text>The Winery is the Portuguese replacement for the Zoo. In addition to the normal [ICON_HAPPINESS_1] Happiness increase, the Winery costs less to maintain. When constructed, the Winery will create a source of [ICON_RES_WINE] Wine near the City, if possible, and all sources of [ICON_RES_WINE] Wine worked by this City will produce +2 [ICON_GOLD] Gold.</Text>
+			<Text>The Winery is the Portuguese replacement for the Zoo. In addition to the normal [ICON_HAPPINESS_1] Happiness increase, the Winery costs less to maintain. When constructed, all sources of [ICON_RES_WINE] Wine worked by this City will produce +2 [ICON_GOLD] Gold.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_WINERY_TEXT">
 			<Text>The history of Portuguese wine is closely interwined with their relationship with the British. First shipped to England in the 12th century, Portuguese wines would eventually get preferential treatment in the British wine market over French wines, with the fortified wine known as Port receiving increased popularity in Britain. By 1717, Portuguese wines accounted for more than 66% of all wine imported into England, and Port became associated with the "Englishman's drink" with social clubs touting membership of "three-bottle men" or those who were able to drink at least three bottles of Port in one sitting.
