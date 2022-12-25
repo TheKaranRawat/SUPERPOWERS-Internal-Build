@@ -2210,7 +2210,7 @@
 		<Row>
 			<BuildingType>BUILDING_TB_STRATEGIC_RICHES</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 
 		<Row>
