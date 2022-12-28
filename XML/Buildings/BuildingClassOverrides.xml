@@ -856,7 +856,7 @@
 
 		<Row>
 			<CivilizationType>CIVILIZATION_ARABIA</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
 			<BuildingType>BUILDING_BAZAAR</BuildingType>
 		</Row>
 		<Row>
