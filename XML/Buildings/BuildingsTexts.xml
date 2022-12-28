@@ -813,7 +813,7 @@
 			<Text>Land International Trade Route from this city produces +6 [ICON_GOLD] Base Gold.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_BAZAAR_HELP">
-			<Text>+2 [ICON_GOLD] Gold for every [ICON_RES_OIL] Oil and Oasis worked by this city.
+			<Text>+2 [ICON_GOLD] Gold for every [ICON_RES_OIL] Oil and Oasis worked by this city; but DOES NOT give +1 [ICON_GOLD] Gold for every 4 [ICON_CITIZEN] Citizens in the city.
 				[NEWLINE][NEWLINE]Land International Trade Route from this city produces +6 [ICON_GOLD] Base Gold.
 			</Text>
 		</Replace>

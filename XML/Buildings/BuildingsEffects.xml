@@ -1268,8 +1268,6 @@
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
 			<Quantity>3</Quantity>
 		</Row>
-
-		
 		
 		<!--<Row>
 			<BuildingType>BUILDING_HARBOR</BuildingType>

@@ -62,7 +62,7 @@
 	</Civilization_BuildingClassOverrides>
 	<Building_ResourceQuantity>
 		<Row>
-			<BuildingType>BUILDING_FUNDUQ</BuildingType>
+			<BuildingType>BUILDING_CARAVANSARY</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
 			<Quantity>3</Quantity>
 		</Row>
