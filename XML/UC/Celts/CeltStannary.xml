@@ -5,7 +5,7 @@
 	<Buildings>
 		<Row>
 			<Type>BUILDING_STANNARY</Type>
-			<BuildingClass>BUILDINGCLASS_WORKSHOP</BuildingClass>
+			<BuildingClass>BUILDINGCLASS_FORGE</BuildingClass>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<Cost>45</Cost>
 			<GoldMaintenance>0</GoldMaintenance>
