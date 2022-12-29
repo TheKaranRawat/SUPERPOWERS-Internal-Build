@@ -21,7 +21,7 @@
 			<IconAtlas>5UC_ICON_ATLAS</IconAtlas>
 			<PortraitIndex>32</PortraitIndex>
 			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-			<SpecialistCount>2</SpecialistCount>
+			<SpecialistCount>1</SpecialistCount>
 			<AllowsProductionTradeRoutes>true</AllowsProductionTradeRoutes>
 		</Row>
 	</Buildings>
@@ -90,7 +90,7 @@
 	<Civilization_BuildingClassOverrides>
 		<Row>
 			<CivilizationType>CIVILIZATION_CELTS</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
 			<BuildingType>BUILDING_STANNARY</BuildingType>
 		</Row>
 	</Civilization_BuildingClassOverrides>
