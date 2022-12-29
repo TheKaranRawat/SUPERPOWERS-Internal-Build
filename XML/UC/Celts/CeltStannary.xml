@@ -5,7 +5,7 @@
 	<Buildings>
 		<Row>
 			<Type>BUILDING_STANNARY</Type>
-			<BuildingClass>BUILDINGCLASS_FORGE</BuildingClass>
+			<BuildingClass>BUILDINGCLASS_WORKSHOP</BuildingClass>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<Cost>45</Cost>
 			<GoldMaintenance>0</GoldMaintenance>
@@ -20,6 +20,9 @@
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>5UC_ICON_ATLAS</IconAtlas>
 			<PortraitIndex>32</PortraitIndex>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<SpecialistCount>2</SpecialistCount>
+			<AllowsProductionTradeRoutes>true</AllowsProductionTradeRoutes>
 		</Row>
 	</Buildings>
 
