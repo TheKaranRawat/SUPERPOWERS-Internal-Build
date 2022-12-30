@@ -850,8 +850,39 @@
 			<Where Name="PILLAGE_HEAL_AMOUNT" />
 		</Update>
 
+<!--River generation (from picknmixmods)-->
 		
-		
+		<Update>
+            <Where Name="LAKE_PLOT_RAND"/>
+            <Set>
+                <!-- Was 160 - doubles the chance of a lake in a plot -->
+                <Value>80</Value>
+            </Set>
+        </Update>
+
+		<Update>
+            <Where Name="PLOTS_PER_RIVER_EDGE"/>
+            <Set>
+                <!-- Was 12 - should increase the overall number of rivers -->
+                <Value>6</Value>
+            </Set>
+        </Update>
+
+		<Update>
+            <Where Name="RIVER_SOURCE_MIN_RIVER_RANGE"/>
+            <Set>
+                <!-- Was 4 - should increase the proximity of river starts and hence the chance of tributaries -->
+                <Value>2</Value>
+            </Set>
+        </Update>
+
+		 <Update>
+            <Where Name="RIVER_SOURCE_MIN_SEAWATER_RANGE"/>
+            <Set>
+                <!-- Was 2 - should decrease the number of short rivers -->
+                <Value>4</Value>
+            </Set>
+        </Update>
 
 	</Defines>
 
