@@ -32,7 +32,7 @@ VALUES		('CIVILIZATION_POLYNESIA', 	'BUILDINGCLASS_HARBOR',		'BUILDING_CL_FALE_T
 ------------------------------		
 INSERT INTO Building_SeaResourceYieldChanges 	
 		(BuildingType, 		YieldType, Yield)
-VALUES	('BUILDING_CL_FALE_TELE',	'YIELD_CULTURE',	1);
+VALUES	('BUILDING_CL_FALE_TELE',	'YIELD_CULTURE',	2);
 
 ------------------------------	
 -- Building_FeatureYieldChanges
