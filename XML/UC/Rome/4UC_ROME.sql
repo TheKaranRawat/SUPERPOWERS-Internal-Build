@@ -35,9 +35,9 @@ FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_GARDEN';
 
 INSERT INTO Building_YieldChanges 		
 			(BuildingType, 				YieldType, Yield)
-VALUES ('BUILDING_3ROMEGARDEN', 'YIELD_CULTURE', 1),
-		('BUILDING_3ROMEGARDEN', 'YIELD_FOOD', 1),
-		('BUILDING_3ROMEGARDEN', 'YIELD_SCIENCE', 1);
+VALUES ('BUILDING_3ROMEGARDEN', 'YIELD_CULTURE', 2),
+		('BUILDING_3ROMEGARDEN', 'YIELD_FOOD', 2),
+		('BUILDING_3ROMEGARDEN', 'YIELD_SCIENCE', 2);
 ------------------------------	
 -- Building_DomainProductionModifiers
 ------------------------------
