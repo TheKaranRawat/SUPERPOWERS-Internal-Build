@@ -29,7 +29,7 @@
 			<BuildingType>BUILDING_PORTUGAL_WINERY</BuildingType>
 			<ResourceType>RESOURCE_WINE</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 	</Building_ResourceYieldChanges>
 
@@ -77,7 +77,7 @@
 			<Text>[ICON_FOOD] Winery</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_WINERY_HELP">
-			<Text>Each source of [ICON_RES_WINE] Wine worked by this City produces +2 [ICON_GOLD] Gold. Only Portugal may build it.</Text>
+			<Text>Each source of [ICON_RES_WINE] Wine worked by this City produces +4 [ICON_GOLD] Gold. Only Portugal may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_WINERY_STRATEGY">
 			<Text>The Winery is the Portuguese replacement for the Zoo. In addition to the normal [ICON_HAPPINESS_1] Happiness increase, the Winery costs less to maintain. When constructed, all sources of [ICON_RES_WINE] Wine worked by this City will produce +2 [ICON_GOLD] Gold.</Text>
