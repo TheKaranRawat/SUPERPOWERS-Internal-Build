@@ -36,7 +36,7 @@
 			<BuildingType>BUILDING_PIT_HOUSE</BuildingType>
 			<ResourceType>RESOURCE_BANANA</ResourceType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PIT_HOUSE</BuildingType>
