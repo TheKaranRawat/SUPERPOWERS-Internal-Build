@@ -29,6 +29,26 @@
 			</Set>
 		</Update>
 		
+		<Update>
+			<Where ResourceType="RESOURCE_STONE" YieldType="YIELD_PRODUCTION"/>
+			<Set>
+				<Yield>2</Yield>
+			</Set>
+		</Update>		
+
+		<Update>
+			<Where ResourceType="RESOURCE_HORSE" YieldType="YIELD_PRODUCTION"/>
+			<Set>
+				<Yield>2</Yield>
+			</Set>
+		</Update>
+
+		<Update>
+			<Where ResourceType="RESOURCE_SHEEP" YieldType="YIELD_FOOD"/>
+			<Set>
+				<Yield>2</Yield>
+			</Set>
+		</Update>		
 
 		<Row>
 			<ResourceType>RESOURCE_TRUFFLES</ResourceType>
