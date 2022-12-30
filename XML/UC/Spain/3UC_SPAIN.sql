@@ -23,7 +23,7 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_THEATRE';
 ------------------------------		
 INSERT INTO Building_ResourceYieldChanges	
 		(BuildingType, 		ResourceType, 		YieldType, Yield)
-VALUES ('BUILDING_3UC_BULLRING', 'RESOURCE_COW','YIELD_CULTURE', 2);
+VALUES ('BUILDING_3UC_BULLRING', 'RESOURCE_COW','YIELD_CULTURE', 3);
 
 ------------------------------	
 -- Building_ResourceQuantityRequirements
