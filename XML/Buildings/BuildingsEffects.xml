@@ -2252,7 +2252,7 @@
 		<Row>
 			<BuildingType>BUILDING_ROYAL_LIBRARY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ROYAL_LIBRARY</BuildingType>
