@@ -23,7 +23,7 @@ FROM Building_ClassesNeededInCity WHERE BuildingType = 'BUILDING_UNIVERSITY';
 ------------------------------		
 INSERT INTO Building_YieldChanges 	
 		(BuildingType, 				YieldType, Yield)
-VALUES ('BUILDING_3UC_SEOWON', 'YIELD_FAITH', 2);
+VALUES ('BUILDING_3UC_SEOWON', 'YIELD_FAITH', 4);
 
 ------------------------------	
 -- Building_ResourceQuantityRequirements
