@@ -4009,7 +4009,7 @@
 		<Row>
 			<BuildingType>BUILDING_EGYPT_SIRIUS</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 		<Row>
