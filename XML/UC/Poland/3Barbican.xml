@@ -9,7 +9,7 @@
 			<Text>Medieval defense building that temporarily yields [ICON_FOOD] Food in a city. Only Poland may build them.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_3UC_BARBICAN_STRATEGY">
-			<Text>The Barbican is a Polish unique building that improves a city's health and [ICON_STRENGTH] Combat strength. Unlike the Castle it replaces, it also yields 2 [ICON_FOOD] Food. After researching Flight, it no longer yields [ICON_FOOD] Food, but instead 2 [ICON_CULTURE] Culture and 2 [ICON_TOURISM] Tourism.</Text>
+			<Text>The Barbican is a Polish unique building that improves a city's health and [ICON_STRENGTH] Combat strength. Unlike the Castle it replaces, it also yields 4 [ICON_FOOD] Food. After researching Flight, it no longer yields [ICON_FOOD] Food, but instead 4 [ICON_CULTURE] Culture and 2 [ICON_TOURISM] Tourism.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_3UC_BARBICAN_TEXT">
 			<Text>
