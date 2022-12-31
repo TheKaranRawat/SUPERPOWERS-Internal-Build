@@ -148,18 +148,18 @@
 		<Row>
 			<BeliefType>BELIEF_TEARS_OF_GODS</BeliefType>
 			<ResourceType>RESOURCE_GEMS</ResourceType>
-			<HappinessChange>2</HappinessChange>
+			<HappinessChange>4</HappinessChange>
 		</Row>
 
 		<Row>
 			<BeliefType>BELIEF_GOD_FESTIVALS</BeliefType>
 			<ResourceType>RESOURCE_WINE</ResourceType>
-			<HappinessChange>2</HappinessChange>
+			<HappinessChange>3</HappinessChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_FESTIVALS</BeliefType>
 			<ResourceType>RESOURCE_INCENSE</ResourceType>
-			<HappinessChange>2</HappinessChange>
+			<HappinessChange>3</HappinessChange>
 		</Row>
 	</Belief_ResourceHappiness>
 
@@ -189,44 +189,44 @@
 			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
 			<ResourceType>RESOURCE_COPPER</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
 			<ResourceType>RESOURCE_SALT</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
 			<ResourceType>RESOURCE_GOLD</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_FORMAL_LITURGY</BeliefType>
 			<ResourceType>RESOURCE_SILVER</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		
 		<Row>
 			<BeliefType>BELIEF_GOD_FESTIVALS</BeliefType>
 			<ResourceType>RESOURCE_WINE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_FESTIVALS</BeliefType>
 			<ResourceType>RESOURCE_INCENSE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		
 		<Row>
@@ -335,7 +335,7 @@
 			<BeliefType>BELIEF_GODDESS_HUNT</BeliefType>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>8</Yield>
+			<Yield>6</Yield>
 		</Row>
 	</Belief_ImprovementYieldChanges>
 	
@@ -345,7 +345,7 @@
 		<Row>
 			<BeliefType>BELIEF_GURUSHIP</BeliefType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>8</Yield>
+			<Yield>10</Yield>
 		</Row>
 	</Belief_YieldChangeAnySpecialist>
 	
@@ -355,14 +355,14 @@
 			<BeliefType>BELIEF_MARSH_BELIEF</BeliefType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>12</Yield>
+			<Yield>8</Yield>
 		</Row>
-		<!--<Row>
+		<Row>
 			<BeliefType>BELIEF_MARSH_BELIEF</BeliefType>
 			<FeatureType>FEATURE_LAKE</FeatureType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
-		</Row>-->
+			<Yield>8</Yield>
+		</Row>
 	</Belief_FeatureYieldChanges>
 
 	<Belief_YieldChangePerForeignCity>
@@ -390,6 +390,13 @@
 
 	<Belief_TerrainYieldChanges>
 		<Delete BeliefType="BELIEF_DANCE_AURORA" />
+	
+		<Row>
+			<BeliefType>BELIEF_DESERT_FOLKLORE</BeliefType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>	
 		<Row>
 			<BeliefType>BELIEF_SNOW_BELIEF</BeliefType>
 			<TerrainType>TERRAIN_SNOW</TerrainType>
@@ -406,9 +413,14 @@
 			<BeliefType>BELIEF_DANCE_AURORA</BeliefType>
 			<TerrainType>TERRAIN_TUNDRA</TerrainType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>2</Yield>
 		</Row>
-	
+		<Row>
+			<BeliefType>BELIEF_DANCE_AURORA</BeliefType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>	
 
 	</Belief_TerrainYieldChanges>
 
@@ -419,7 +431,7 @@
 		<Row>
 			<BeliefType>BELIEF_MESSENGER_GODS</BeliefType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>8</Yield>
+			<Yield>10</Yield>
 		</Row>
 	</Belief_YieldChangeTradeRoute>
 	
@@ -432,20 +444,20 @@
 			<BeliefType>BELIEF_FEED_WORLD</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>4</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_FEED_WORLD</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>4</YieldChange>
 		</Row>
 		
 		<Row>
 			<BeliefType>BELIEF_ANCESTOR_WORSHIP</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>5</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_ANCESTOR_WORSHIP</BeliefType>
@@ -457,19 +469,19 @@
 			<BeliefType>BELIEF_STONE_CIRCLES</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_STONE_WORKS</BuildingClassType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>4</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_FERTILITY_RITES</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>4</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_MONUMENT_GODS</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>4</YieldChange>
 		</Row>
 		<!--<Row>
 			<BeliefType>BELIEF_GODDESS_STRATEGY</BeliefType>
@@ -537,7 +549,7 @@
 		<Row>
 			<BeliefType>BELIEF_RIVER_CRAFTSMAN</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_WATERMILL</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>4</Happiness>
 		</Row>
 	</Belief_BuildingClassHappiness>
 	<Belief_MaxYieldModifierPerFollower>
@@ -561,17 +573,17 @@
 		<Row>
 			<BeliefType>BELIEF_PEACE_GARDENS</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_GARDEN</BuildingClassType>
-			<Tourism>4</Tourism>
+			<Tourism>8</Tourism>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_RELIGIOUS_ART</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_NATIONAL_SHRINE</BuildingClassType>
-			<Tourism>4</Tourism>
+			<Tourism>8</Tourism>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_TOURISM_RELIGION</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_GRAND_TEMPLE</BuildingClassType>
-			<Tourism>32</Tourism>
+			<Tourism>40</Tourism>
 		</Row>
 	</Belief_BuildingClassTourism>
 
