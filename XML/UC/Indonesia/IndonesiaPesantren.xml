@@ -31,7 +31,7 @@
 		<Row>
 			<BuildingType>BUILDING_PESANTREN</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>50</Yield>
+			<Yield>100</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PESANTREN</BuildingType>

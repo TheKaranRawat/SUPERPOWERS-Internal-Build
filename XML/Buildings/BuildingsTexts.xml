@@ -347,7 +347,7 @@
 			<Text>
 				+10% [ICON_FOOD] Food output for the city.
 				[NEWLINE][NEWLINE]+1 [ICON_FOOD] Food from [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR], Coast and Ocean Tiles.
-				+1 [ICON_FOOD] Food from each source of [ICON_RES_WHEAT] Wheat, [ICON_RES_BANANA] Banana, [ICON_RES_DEER] Deer and [ICON_RES_BISON] Bison, [ICON_RES_FISH] Fish and [ICON_RES_CRAB] Crab worked by this City.
+				+3 [ICON_FOOD] Food from each source of [ICON_RES_BANANA] Banana, +1 [ICON_FOOD] Food from each source of [ICON_RES_WHEAT] Wheat, [ICON_RES_DEER] Deer and [ICON_RES_BISON] Bison, [ICON_RES_FISH] Fish and [ICON_RES_CRAB] Crab worked by this City.
 				[NEWLINE][NEWLINE]Allows [ICON_FOOD] Food to be moved from this city along trade routes inside your civilization.
 			</Text>
 		</Row>
@@ -737,7 +737,7 @@
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_EGYPT_SIRIUS_HELP</Tag>
-			<Text>+10% [ICON_RESEARCH] Science output in all cities.</Text>
+			<Text>+5% [ICON_RESEARCH] Science output in all cities.</Text>
 		</Row>
 
 		<Row>

@@ -62,7 +62,7 @@
 	<Row>
 		<BuildingType>BUILDING_ALCAZAR</BuildingType>
 		<YieldType>YIELD_FAITH</YieldType>
-		<Yield>2</Yield>
+		<Yield>4</Yield>
 	</Row>
 	</Building_YieldChanges>
 

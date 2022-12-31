@@ -46,7 +46,7 @@
 		<Row>
 			<BuildingType>BUILDING_NETHERLANDS_DIKE</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>4</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_NETHERLANDS_DIKE</BuildingType>

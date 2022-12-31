@@ -33,7 +33,7 @@ FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_THEATRE';
 
 INSERT INTO Building_YieldChanges 	
 		(BuildingType, 				YieldType, Yield)
-VALUES ('BUILDING_3UC_SALON', 'YIELD_CULTURE', 2),
+VALUES ('BUILDING_3UC_SALON', 'YIELD_CULTURE', 4),
 	('BUILDING_3UC_SALON', 'YIELD_SCIENCE', 2);
 
 ------------------------------	

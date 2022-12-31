@@ -40,7 +40,7 @@
 		<Row>
 			<BuildingType>BUILDING_AEDES</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 	</Building_YieldChanges>
 

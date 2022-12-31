@@ -20,6 +20,9 @@
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>5UC_ICON_ATLAS</IconAtlas>
 			<PortraitIndex>32</PortraitIndex>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<AllowsProductionTradeRoutes>true</AllowsProductionTradeRoutes>
 		</Row>
 	</Buildings>
 

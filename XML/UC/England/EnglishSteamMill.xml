@@ -59,25 +59,25 @@
 			<BuildingType>BUILDING_ENGLISH_STEAM_MILL</BuildingType>
 			<ResourceType>RESOURCE_WHALE</ResourceType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENGLISH_STEAM_MILL</BuildingType>
 			<ResourceType>RESOURCE_COAL</ResourceType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENGLISH_STEAM_MILL</BuildingType>
 			<ResourceType>RESOURCE_OIL</ResourceType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENGLISH_STEAM_MILL</BuildingType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 	</Building_ResourceYieldChanges>
 
@@ -85,7 +85,7 @@
 		<Row>
 			<BuildingType>BUILDING_ENGLISH_STEAM_MILL</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>15</Yield>
+			<Yield>20</Yield>
 		</Row>
 	</Building_YieldChanges>
 
