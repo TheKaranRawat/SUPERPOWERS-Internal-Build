@@ -769,7 +769,7 @@ function SetCityResEffects(player,ManpowerRes,ConsumerRes,ElectricityRes)
 	end
 	
 	
-		----------------------Consumer Effects
+		----------------------Consumer Effects/Penalties
 	if ConsumerRes >= 25 then	
 		local ConsumerRate = math.floor(ConsumerRes/CityTotal)
 		if ConsumerRate >= 50 then		
@@ -816,7 +816,7 @@ function SetCityResEffects(player,ManpowerRes,ConsumerRes,ElectricityRes)
 	
 	
 	
-		----------------------Electricity Effects
+		----------------------Electricity Effects/Penalties
 	if player:GetCurrentEra() >= GameInfo.Eras["ERA_MODERN"].ID then
 		
 		if ElectricityRes >= 25 then
