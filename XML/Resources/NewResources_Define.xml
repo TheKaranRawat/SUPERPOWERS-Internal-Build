@@ -148,7 +148,7 @@
 		<Delete Type="RESOURCE_LAPIS_LAZULI"/>
 		<Row>
 			<Type>RESOURCE_COFFEE</Type>
-			<Happiness>2</Happiness>
+			<Happiness>5</Happiness>
 			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<Description>TXT_KEY_RESOURCE_COFFEE</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_COFFEE_TEXT</Civilopedia>
@@ -170,7 +170,7 @@
 		</Row>
 		<Row>
 			<Type>RESOURCE_TEA</Type>
-			<Happiness>2</Happiness>
+			<Happiness>5</Happiness>
 			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<Description>TXT_KEY_RESOURCE_TEA</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_TEA_TEXT</Civilopedia>
@@ -192,7 +192,7 @@
 		</Row>
 		<Row>
 			<Type>RESOURCE_TOBACCO</Type>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<Description>TXT_KEY_RESOURCE_TOBACCO</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_TOBACCO_TEXT</Civilopedia>
@@ -215,7 +215,7 @@
 		<Row>
 			<Type>RESOURCE_AMBER</Type>
 			<TechCityTrade>TECH_BRONZE_WORKING</TechCityTrade>
-			<Happiness>5</Happiness>
+			<Happiness>4</Happiness>
 			<Description>TXT_KEY_RESOURCE_AMBER</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_AMBER_TEXT</Civilopedia>
 			<ResourceClassType>RESOURCECLASS_LUXURY</ResourceClassType>
@@ -237,7 +237,7 @@
 		<Row>
 			<Type>RESOURCE_JADE</Type>
 			<TechCityTrade>TECH_BRONZE_WORKING</TechCityTrade>
-			<Happiness>6</Happiness>
+			<Happiness>5</Happiness>
 			<Description>TXT_KEY_RESOURCE_JADE</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_JADE_TEXT</Civilopedia>
 			<ResourceClassType>RESOURCECLASS_LUXURY</ResourceClassType>
@@ -259,7 +259,7 @@
 		<Row>
 			<Type>RESOURCE_OLIVE</Type>
 			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
-			<Happiness>2</Happiness>
+			<Happiness>5</Happiness>
 			<Description>TXT_KEY_RESOURCE_OLIVE</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_OLIVE_TEXT</Civilopedia>
 			<ResourceClassType>RESOURCECLASS_LUXURY</ResourceClassType>
@@ -345,7 +345,7 @@
 		<!-- City-State -->
 		<Row>
 			<Type>RESOURCE_GLASS</Type>
-			<Happiness>4</Happiness>
+			<Happiness>5</Happiness>
 			<Description>TXT_KEY_RESOURCE_GLASS</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_GLASS_TEXT</Civilopedia>
 			<Help>TXT_KEY_RESOURCE_GLASS_HELP</Help>
@@ -399,7 +399,7 @@
 		<Row>
 			<ResourceType>RESOURCE_COCOA</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<ResourceType>RESOURCE_COFFEE</ResourceType>
@@ -409,43 +409,48 @@
 		<Row>
 			<ResourceType>RESOURCE_COFFEE</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<ResourceType>RESOURCE_TEA</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ResourceType>RESOURCE_TEA</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<ResourceType>RESOURCE_TEA</ResourceType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ResourceType>RESOURCE_TOBACCO</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ResourceType>RESOURCE_TOBACCO</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>4</Yield>
+		</Row>
+		<Row>
+			<ResourceType>RESOURCE_TOBACCO</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ResourceType>RESOURCE_AMBER</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<ResourceType>RESOURCE_AMBER</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<ResourceType>RESOURCE_JADE</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>3</Yield>
+			<Yield>5</Yield>
 		</Row>
+		<Row>
+			<ResourceType>RESOURCE_JADE</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>		
 		<Row>
 			<ResourceType>RESOURCE_OLIVE</ResourceType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -454,35 +459,39 @@
 		<Row>
 			<ResourceType>RESOURCE_OLIVE</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<ResourceType>RESOURCE_PERFUME</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
+		<Row>
+			<ResourceType>RESOURCE_PERFUME</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
 		<Row>
 			<ResourceType>RESOURCE_CORAL</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>3</Yield>
+			<Yield>4</Yield>
 		</Row>
+		<Row>
+			<ResourceType>RESOURCE_CORAL</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
 		<Row>
 			<ResourceType>RESOURCE_LAPIS</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<ResourceType>RESOURCE_LAPIS</ResourceType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		
-		
-		<Row>
-			<ResourceType>RESOURCE_GLASS</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
+
 	</Resource_YieldChanges>
 
 	<Resource_Flavors>
@@ -722,31 +731,109 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<ResourceType>RESOURCE_COFFEE</ResourceType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<ResourceType>RESOURCE_COFFEE</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<ResourceType>RESOURCE_COFFEE</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>4</Yield>
+		</Row>			
 		<Row>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<ResourceType>RESOURCE_TEA</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<ResourceType>RESOURCE_TEA</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<ResourceType>RESOURCE_TEA</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>				
 		<Row>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<ResourceType>RESOURCE_TOBACCO</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<ResourceType>RESOURCE_TOBACCO</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
 		<Row>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<ResourceType>RESOURCE_OLIVE</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<ResourceType>RESOURCE_OLIVE</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
 		<Row>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<ResourceType>RESOURCE_PERFUME</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>4</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+			<ResourceType>RESOURCE_PERFUME</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<ResourceType>RESOURCE_JADE</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>5</Yield>
+		</Row>	
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<ResourceType>RESOURCE_JADE</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>			
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<ResourceType>RESOURCE_AMBER</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<ResourceType>RESOURCE_AMBER</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>				
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<ResourceType>RESOURCE_LAPIS</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>5</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<ResourceType>RESOURCE_LAPIS</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<!--<Row>
