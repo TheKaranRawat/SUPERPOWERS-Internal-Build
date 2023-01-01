@@ -76,7 +76,14 @@
 			<Set>
 				<Yield>2</Yield>
 			</Set>
-		</Update>			
+		</Update>	
+
+		<Update>
+			<Where ResourceType="RESOURCE_COW" YieldType="YIELD_FOOD"/>
+			<Set>
+				<Yield>2</Yield>
+			</Set>
+		</Update>
 
 		<Row>
 			<ResourceType>RESOURCE_TRUFFLES</ResourceType>
