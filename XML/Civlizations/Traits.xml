@@ -280,7 +280,7 @@
 			<GoldenAgeGreatArtistRateModifier>100</GoldenAgeGreatArtistRateModifier>
 			<GoldenAgeGreatMusicianRateModifier>100</GoldenAgeGreatMusicianRateModifier>
 			<GoldenAgeGreatWriterRateModifier>100</GoldenAgeGreatWriterRateModifier>
-			<PopulationUnhappinessModifier>-10</PopulationUnhappinessModifier> 
+			<PopulationUnhappinessModifier>-25</PopulationUnhappinessModifier> 
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 

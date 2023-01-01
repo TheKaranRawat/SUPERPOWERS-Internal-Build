@@ -202,7 +202,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CARNIVAL">
-			<Text>[ICON_BULLET]Tourism [ICON_TOURISM] output is +100% during their Golden Ages. Earn Great Artists, Musicians, and Writers 100% faster during their Golden Ages. [NEWLINE][ICON_BULLET]-10% [ICON_HAPPINESS_4] Unhappiness from number of [ICON_CITIZEN] Citizens.</Text>
+			<Text>[ICON_BULLET]Tourism [ICON_TOURISM] output is +100% during their Golden Ages. Earn Great Artists, Musicians, and Writers 100% faster during their Golden Ages. [NEWLINE][ICON_BULLET]-25% [ICON_HAPPINESS_4] Unhappiness from number of [ICON_CITIZEN] Citizens.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_EXTRA_BELIEF_SHORT">
