@@ -15,7 +15,7 @@
 			<Set Follower="true" Pantheon="false"/>
 			<Where Type="BELIEF_GODDESS_LOVE" Pantheon="true"/>
 		</Update>-->
-
+		
 		<Update>
 			<Set CityRangeStrikeModifier="100" />
 			<Where Type="BELIEF_GODDESS_STRATEGY" />
@@ -363,6 +363,13 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>2</Yield>
 		</Row>
+		<Row>
+			<BeliefType>BELIEF_SACRED_PATH</BeliefType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
 		<!--<Row>
 			<BeliefType>BELIEF_MARSH_BELIEF</BeliefType>
 			<FeatureType>FEATURE_LAKE</FeatureType>
@@ -397,6 +404,12 @@
 	<Belief_TerrainYieldChanges>
 		<Delete BeliefType="BELIEF_DANCE_AURORA" />
 	
+		<Row>
+			<BeliefType>BELIEF_GOD_SEA</BeliefType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>	
 		<Row>
 			<BeliefType>BELIEF_DESERT_FOLKLORE</BeliefType>
 			<TerrainType>TERRAIN_DESERT</TerrainType>
