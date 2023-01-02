@@ -2536,7 +2536,7 @@
 			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
 			<TechType>TECH_ADV_ENGINEERING</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>4</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
@@ -2554,7 +2554,19 @@
 			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
 			<TechType>TECH_ECONOMICS</TechType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>4</Yield>
+			<Yield>2</Yield>
+		</Row>			
+		<Row>
+			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
+			<TechType>TECH_MACHINERY</TechType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>			
+		<Row>
+			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
+			<TechType>TECH_CURRENCY</TechType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
 		</Row>			
 	</Improvement_TechYieldChanges>
 
