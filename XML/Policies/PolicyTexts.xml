@@ -454,7 +454,7 @@
 				[COLOR_POSITIVE_TEXT]Republics[ENDCOLOR] value freedom and innovation.
 				[NEWLINE][NEWLINE]Opening Effects:
 				[NEWLINE][ICON_BULLET]+25% [ICON_CULTURE] Culture and +25% [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital
-				[NEWLINE][ICON_BULLET]-33% [ICON_CULTURE] Culture cost for acquiring new plots in all cities
+				[NEWLINE][ICON_BULLET]-25% [ICON_CULTURE] Culture cost for acquiring new plots in all cities
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Amount of [ICON_HAPPINESS_4] Unhappiness from number of cities increased by 50%[ENDCOLOR]
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE] Policies increased by 10% for every city[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: Hanging Gardens
@@ -484,9 +484,9 @@
 		<Replace Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Collective Agriculture[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food for every Farm and Fishing Net.				
-				[NEWLINE][ICON_BULLET]+15% [ICON_FOOD] Food growth in every city.
-				[NEWLINE][ICON_BULLET]+25% bonus [ICON_FOOD] Food growth in the Capital.
+				<!--[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food for every Farm and Fishing Net.-->				
+				[NEWLINE][ICON_BULLET]+20% [ICON_FOOD] Food growth in every city.
+				[NEWLINE][ICON_BULLET]+30% bonus [ICON_FOOD] Food growth in the Capital.
 				</Text>
 		</Replace>
 

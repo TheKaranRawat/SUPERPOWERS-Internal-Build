@@ -1295,12 +1295,12 @@
 		</Row>
 
 
-		<Row>
+<!--		<Row>
 			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
-		</Row>
+		</Row>-->
 		<!--<Row>
 			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
 			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
@@ -1313,13 +1313,13 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>-->
-		<Row>
+<!--		<Row>
 			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
-
+-->
 
 		<Row>
 			<PolicyType>POLICY_COMMERCE</PolicyType>

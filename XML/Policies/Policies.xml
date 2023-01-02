@@ -34,7 +34,7 @@
 			<Where Type="POLICY_OLIGARCHY"/>
 		</Update>
 		<Update>
-			<Set CapitalGrowthMod="25" CityGrowthMod="15" GridX="5" GridY="1"/>
+			<Set CapitalGrowthMod="30" CityGrowthMod="20" GridX="5" GridY="1"/>
 			<Where Type="POLICY_LANDED_ELITE"/>
 		</Update>
 		<Update>
