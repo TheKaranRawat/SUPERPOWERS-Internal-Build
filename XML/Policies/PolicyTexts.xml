@@ -701,7 +701,7 @@
 		<Row Tag="TXT_KEY_POLICY_DECENTRALIZATION_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Centralization[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]Each City with at least 1 Garrisoned Unit increases Local [ICON_HAPPINESS_1] Happiness by 2.
+				[NEWLINE][ICON_BULLET]Each City with at least 1 Garrisoned Unit increases Local [ICON_HAPPINESS_1] Happiness by 1.
 				[NEWLINE][ICON_BULLET]Each Garrisoned Unit will increase the local city's [ICON_CULTURE] Culture by 2. Can be up to +4 [ICON_CULTURE] Culture if you have 2 Garrisoned Unit in a city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_DECENTRALIZATION_TEXT">

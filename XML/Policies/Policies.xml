@@ -179,7 +179,7 @@
 			<CultureCost>10</CultureCost>
 			<GridX>2</GridX>
 			<GridY>3</GridY>
-			<HappinessPerGarrisonedUnit>2</HappinessPerGarrisonedUnit>
+			<HappinessPerGarrisonedUnit>1</HappinessPerGarrisonedUnit>
 			<CulturePerGarrisonedUnit>2</CulturePerGarrisonedUnit>
 			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
