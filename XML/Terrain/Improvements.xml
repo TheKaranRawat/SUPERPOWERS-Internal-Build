@@ -2094,7 +2094,6 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>2</Yield>
 		</Row>
-
 	</Improvement_TechYieldChanges>
 
 	<Improvement_TechFreshWaterYieldChanges>
@@ -2280,7 +2279,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>		
 		<Row>
 			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
@@ -2371,12 +2370,12 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>		
 		<!--<Row>
 			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
@@ -2526,12 +2525,7 @@
 			<Yield>2</Yield>
 		</Row>
 		
-		<Row>
-			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
-			<TechType>TECH_ADV_ENGINEERING</TechType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>		
+		
 		<Row>
 			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
 			<TechType>TECH_ADV_ENGINEERING</TechType>
@@ -2561,13 +2555,7 @@
 			<TechType>TECH_MACHINERY</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>2</Yield>
-		</Row>			
-		<Row>
-			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
-			<TechType>TECH_CURRENCY</TechType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>			
+		</Row>				
 	</Improvement_TechYieldChanges>
 
 	
