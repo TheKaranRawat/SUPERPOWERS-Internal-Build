@@ -12,12 +12,12 @@
 	<Policies>
 		
 		<Update>
-			<Set PlotCultureExponentModifier="-33" GreatGeneralRateModifier="25" GreatAdmiralRateModifier="25"/>
+			<Set PlotCultureExponentModifier="-25" GreatGeneralRateModifier="10" GreatAdmiralRateModifier="10"/>
 			<Where Type="POLICY_TRADITION"/>
 		</Update>
 
 		<Update>
-			<Set CityCountUnhappinessMod="150" NumCitiesPolicyCostDiscount="-10"/>
+			<Set CityCountUnhappinessMod="100" NumCitiesPolicyCostDiscount="-10"/>
 			<Where Type="POLICY_TRADITION"/>
 		</Update>
 		
