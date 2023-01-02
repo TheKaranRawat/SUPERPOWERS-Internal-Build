@@ -2540,7 +2540,7 @@
 		</Row>		
 		<Row>
 			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
-			<TechType>TECH_FERTILIZER</TechType>
+			<TechType>TECH_GENETIC_ENGEERING</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>	
