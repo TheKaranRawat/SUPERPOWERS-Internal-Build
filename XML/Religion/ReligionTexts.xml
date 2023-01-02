@@ -99,7 +99,7 @@
 			<Text>+2 [ICON_PEACE] Faith for every Gem and Pearl. Pearls provide +2 [ICON_HAPPINESS_1] Happiness and Gem provide +4 [ICON_HAPPINESS_1] Happiness. </Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_SACRED_PATH">
-			<Text>+1 [ICON_CULTURE] Culture and +2 [ICON_PEACE] Faith from Jungle. </Text>
+			<Text>+1 [ICON_CULTURE] Culture and +1 [ICON_PEACE] Faith from Jungle. </Text>
 		</Replace>
 
 
