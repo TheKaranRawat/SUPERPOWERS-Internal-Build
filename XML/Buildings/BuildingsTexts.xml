@@ -1049,7 +1049,7 @@
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_RUSSIAN_BALLET_HALL_HELP</Tag>
-			<Text>+3% [ICON_CULTURE] Culture output in all cities. 
+			<Text>+3% [ICON_CULTURE] Culture output in all citiesand +2 [ICON_HAPPINESS_1] Happiness in the city at a slightly higher gold maintainance. 
 			[NEWLINE][NEWLINE]City must have an Amphitheater.</Text>
 		</Row>
 
