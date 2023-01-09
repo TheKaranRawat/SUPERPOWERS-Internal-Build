@@ -1031,6 +1031,7 @@
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>24</PortraitIndex>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
+			<UnhappinessModifier>-1</UnhappinessModifier>			
 		</Row>
 		<Row>
 			<Type>BUILDING_CHINESE_GARDEN</Type>
@@ -1050,7 +1051,7 @@
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>22</PortraitIndex>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
-			<UnhappinessModifier>-5</UnhappinessModifier>
+			<UnhappinessModifier>-2</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_HALL_OF_WORTHIES</Type>
@@ -1071,6 +1072,7 @@
 			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
 			<SpecialistCount>1</SpecialistCount>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
+			<UnhappinessModifier>-1</UnhappinessModifier>			
 			<LandmarksTourismPercent>50</LandmarksTourismPercent>
 			<GreatWorksTourismModifier>50</GreatWorksTourismModifier>
 		</Row>
@@ -1368,6 +1370,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
 			<HurryCostModifier>75</HurryCostModifier>
+			<UnhappinessModifier>-1</UnhappinessModifier>			
 			<DisplayPosition>2</DisplayPosition>
 			<ArtInfoRandomVariation>true</ArtInfoRandomVariation>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
@@ -1387,6 +1390,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
 			<HurryCostModifier>75</HurryCostModifier>
+			<UnhappinessModifier>-1</UnhappinessModifier>			
 			<DisplayPosition>2</DisplayPosition>
 			<ArtInfoRandomVariation>true</ArtInfoRandomVariation>
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
@@ -1544,6 +1548,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
 			<HurryCostModifier>-1</HurryCostModifier>
+			<UnhappinessModifier>-1</UnhappinessModifier>			
 			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
 			<PortraitIndex>15</PortraitIndex>
 		</Row>

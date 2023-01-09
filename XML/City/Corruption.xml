@@ -254,6 +254,28 @@
 			<PolicyCostModifier>-10</PolicyCostModifier>
 			<UnhappinessModifier>-1</UnhappinessModifier>
 		</Row>
+
+		<Row>
+			<Type>BUILDING_RUSSIAN_GUBERNIA_2</Type>
+			<BuildingClass>BUILDINGCLASS_CONSTABLE</BuildingClass>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>			
+			<Cost>320</Cost>
+			<GoldMaintenance>6</GoldMaintenance>
+			<PrereqTech>TECH_ADMINISTRATION</PrereqTech>
+			<Help>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2_HELP</Help>
+			<Description>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2</Description>
+			<Civilopedia>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_COURTHOUSE_STRATEGY</Strategy>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>15</HurryCostModifier>
+			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>12</PortraitIndex>
+			<Happiness>-2</Happiness>			
+			<PolicyCostModifier>-10</PolicyCostModifier>
+			<UnhappinessModifier>-1</UnhappinessModifier>
+			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>
+		</Row>		
 		
 		<Row>
 			<Type>BUILDING_SHERIFF_OFFICE</Type>
@@ -273,6 +295,29 @@
 			<PolicyCostModifier>-5</PolicyCostModifier>
 			<UnhappinessModifier>-1</UnhappinessModifier>
 		</Row>
+
+		<Row>
+			<Type>BUILDING_RUSSIAN_GUBERNIA_3</Type>
+			<BuildingClass>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClass>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>			
+			<Cost>320</Cost>
+			<GoldMaintenance>6</GoldMaintenance>
+			<PrereqTech>TECH_ADMINISTRATION</PrereqTech>
+			<Help>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_3_HELP</Help>
+			<Description>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_3</Description>
+			<Civilopedia>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_3_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SP_ANTI_CORRUPTION_BUILDINGS_STRATEGY</Strategy>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>15</HurryCostModifier>
+			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
+			<PortraitIndex>49</PortraitIndex>
+			<Happiness>-2</Happiness>			
+			<PolicyCostModifier>-15</PolicyCostModifier>
+			<UnhappinessModifier>-1</UnhappinessModifier>
+			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>			
+		</Row>
+
 		<Row>
 			<Type>BUILDING_POLICE_STATION</Type>
 			<BuildingClass>BUILDINGCLASS_POLICE_STATION</BuildingClass>
@@ -294,6 +339,28 @@
 		</Row>
 
 		<Row>
+			<Type>BUILDING_RUSSIAN_GUBERNIA_4</Type>
+			<BuildingClass>BUILDINGCLASS_POLICE_STATION</BuildingClass>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>			
+			<Cost>320</Cost>
+			<GoldMaintenance>6</GoldMaintenance>
+			<PrereqTech>TECH_ADMINISTRATION</PrereqTech>
+			<Help>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4_HELP</Help>
+			<Description>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4</Description>
+			<Civilopedia>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SP_ANTI_CORRUPTION_BUILDINGS_STRATEGY</Strategy>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>15</HurryCostModifier>
+			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>11</PortraitIndex>
+			<Happiness>-2</Happiness>			
+			<PolicyCostModifier>-18</PolicyCostModifier>
+			<UnhappinessModifier>-2</UnhappinessModifier>
+			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>			
+		</Row>		
+
+		<Row>
 			<Type>BUILDING_PROCURATORATE</Type>
 			<BuildingClass>BUILDINGCLASS_PROCURATORATE</BuildingClass>
 			<Cost>480</Cost>
@@ -311,6 +378,29 @@
 			<PolicyCostModifier>-8</PolicyCostModifier>
 			<UnhappinessModifier>-3</UnhappinessModifier>
 		</Row>
+
+		<Row>
+			<Type>BUILDING_RUSSIAN_GUBERNIA_5</Type>
+			<BuildingClass>BUILDINGCLASS_PROCURATORATE</BuildingClass>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>			
+			<Cost>320</Cost>
+			<GoldMaintenance>6</GoldMaintenance>
+			<PrereqTech>TECH_ADMINISTRATION</PrereqTech>
+			<Help>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_5_HELP</Help>
+			<Description>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_5</Description>
+			<Civilopedia>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_5_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SP_ANTI_CORRUPTION_BUILDINGS_STRATEGY</Strategy>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>15</HurryCostModifier>
+			<IconAtlas>EXPANSION_BW_ATLAS_2</IconAtlas>
+			<PortraitIndex>12</PortraitIndex>
+			<Happiness>-2</Happiness>			
+			<PolicyCostModifier>-18</PolicyCostModifier>
+			<UnhappinessModifier>-3</UnhappinessModifier>
+			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>			
+		</Row>
+
 	</Buildings>
 
 
@@ -413,17 +503,33 @@
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
 			</Row>
 			<Row>
+				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
+				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
+			</Row>			
+			<Row>
 				<BuildingType>BUILDING_SHERIFF_OFFICE</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
 			</Row>
+			<Row>
+				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
+				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
+			</Row>			
 			<Row>
 				<BuildingType>BUILDING_POLICE_STATION</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
 			</Row>
 			<Row>
+				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
+				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
+			</Row>			
+			<Row>
 				<BuildingType>BUILDING_PROCURATORATE</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
 			</Row>
+			<Row>
+				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
+				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
+			</Row>			
 		</Building_ClassesNeededInCity>
 
 
@@ -439,20 +545,40 @@
 			<Yield>-16</Yield>
 		</Row>
 		<Row>
+			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-50</Yield>
+		</Row>		
+		<Row>
 			<BuildingType>BUILDING_SHERIFF_OFFICE</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-33</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-50</Yield>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_POLICE_STATION</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-66</Yield>
 		</Row>
 		<Row>
+			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-50</Yield>
+		</Row>		
+		<Row>
 			<BuildingType>BUILDING_PROCURATORATE</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-100</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-50</Yield>
+		</Row>		
 	</Building_YieldChangesPerPop>
 
 
@@ -495,6 +621,28 @@
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
 			<Cost>18</Cost>
 		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
+			<ResourceType>RESOURCE_CONSUMER</ResourceType>
+			<Cost>4</Cost>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
+			<ResourceType>RESOURCE_CONSUMER</ResourceType>
+			<Cost>4</Cost>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
+			<ResourceType>RESOURCE_CONSUMER</ResourceType>
+			<Cost>4</Cost>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
+			<ResourceType>RESOURCE_CONSUMER</ResourceType>
+			<Cost>4</Cost>
+		</Row>						
+
 	</Building_ResourceQuantityRequirements>
 
 
