@@ -202,7 +202,7 @@
 			<UnitType>UNIT_SCIENTIST</UnitType>
 			<NumUnits>1</NumUnits>
 		</Row>
-		
+
 	</Building_FreeUnits>
 
 	<Unit_ProductionModifierBuildings>
@@ -2990,6 +2990,12 @@
 			<Yield>8</Yield>
 		</Row>
 		
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>20</Yield>
+		</Row>
+
 	</Building_YieldChanges>
 
 
@@ -3458,6 +3464,11 @@
 			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_SAGRADA</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_LAVRA</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>		
 
 		<Row>
 			<BuildingType>BUILDING_BUDACASTLE</BuildingType>
@@ -3536,7 +3547,11 @@
 			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>
-
+		<Row>
+			<BuildingType>BUILDING_ANGKOR_WAT</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_LAVRA</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
@@ -3897,7 +3912,7 @@
 			<BuildingType>BUILDING_PALMJUMEIRAH</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>10</Yield>
-		</Row>
+		</Row>	
 
 		<!-- POLICY BUILDINGS -->
 
@@ -5274,6 +5289,7 @@
 			<Yield>15</Yield>
 		</Row>
 
+
 	</Building_FeatureYieldChanges>
 	
 
@@ -5428,6 +5444,32 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>	
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>			
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>			
+
 	</Building_TerrainYieldChanges>
 
 
@@ -5854,6 +5896,18 @@
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>100</Yield>
 		</Row>-->
+
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>100</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-50</Yield>
+		</Row>		
+
 	</Building_YieldChangesPerPop>
 
 
@@ -5866,6 +5920,16 @@
 			<BuildingType>BUILDING_PETRA</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>6</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-10</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>5</Yield>
 		</Row>
 	</Building_TechEnhancedYieldChanges>
 
@@ -11226,6 +11290,11 @@
 			<Flavor>20</Flavor>
 		</Row>
 		
+		<Row>
+			<BuildingType>BUILDING_LAVRA</BuildingType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>		
 
 	</Building_Flavors>
 

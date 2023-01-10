@@ -1432,6 +1432,11 @@
 			<DefaultBuilding>BUILDING_FISH_FARM</DefaultBuilding>
 			<Description>TXT_KEY_BUILDING_FISH_FARM</Description>
 		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_LAVRA</Type>
+			<Description>TXT_KEY_BUILDING_LAVRA</Description>
+			<MaxPlayerInstances>5</MaxPlayerInstances>
+		</Row>		
 	</BuildingClasses>
 
 	<!--*********************SP New Wonders******************************************-->
@@ -1908,6 +1913,7 @@
 			<DefaultBuilding>BUILDING_SMAN_EU_CONTRACTING_AGENCY</DefaultBuilding>
 			<Description>TXT_KEY_BUILDING_SMAN_EU_CONTRACTING_AGENCY</Description>
 		</Row>
+
 
 
 	</BuildingClasses>
