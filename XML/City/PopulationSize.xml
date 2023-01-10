@@ -166,7 +166,7 @@
 			<Defense>2000</Defense>
 			<ExtraCityHitPoints>150</ExtraCityHitPoints>
 			<FoodKept>-10</FoodKept>
-			<Happiness>-28</Happiness>
+			<Happiness>-32</Happiness>
 			<TradeRouteSeaGoldBonus>6400</TradeRouteSeaGoldBonus>
 			<TradeRouteLandGoldBonus>6400</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>600</TradeRouteRecipientBonus>
@@ -189,7 +189,7 @@
 			<Defense>4000</Defense>
 			<ExtraCityHitPoints>200</ExtraCityHitPoints>
 			<FoodKept>-13</FoodKept>
-			<Happiness>-30</Happiness>
+			<Happiness>-38</Happiness>
 			<TradeRouteSeaGoldBonus>10000</TradeRouteSeaGoldBonus>
 			<TradeRouteLandGoldBonus>10000</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>2000</TradeRouteRecipientBonus>
@@ -1219,7 +1219,7 @@
 			<BuildingClass>BUILDINGCLASS_THEME_PARK</BuildingClass>
 			<Cost>300</Cost>
 			<GoldMaintenance>4</GoldMaintenance>
-			<Happiness>5</Happiness>
+			<Happiness>3</Happiness>
 			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
 			<Help>TXT_KEY_BUILDING_THEME_PARK_HELP</Help>
 			<Description>TXT_KEY_BUILDING_THEME_PARK</Description>
@@ -1360,7 +1360,7 @@
 			<BuildingClass>BUILDINGCLASS_STADIUM</BuildingClass>
 			<Cost>500</Cost>
 			<GoldMaintenance>5</GoldMaintenance>
-			<Happiness>6</Happiness>
+			<Happiness>3</Happiness>
 			<PrereqTech>TECH_MASS_MEDIA</PrereqTech>
 			<Help>TXT_KEY_BUILDING_STADIUM_HELP</Help>
 			<Description>TXT_KEY_BUILDING_STADIUM_DESC</Description>
@@ -1539,7 +1539,7 @@
 			<BuildingClass>BUILDINGCLASS_VIDEO_GAME_COMPANY</BuildingClass>
 			<Cost>1000</Cost>
 			<GoldMaintenance>16</GoldMaintenance>
-			<UnmoddedHappiness>10</UnmoddedHappiness>
+			<UnmoddedHappiness>6</UnmoddedHappiness>
 			<PrereqTech>TECH_INTERNET</PrereqTech>
 			<Help>TXT_KEY_BUILDING_VIDEO_GAME_COMPANY_HELP</Help>
 			<Description>TXT_KEY_BUILDING_VIDEO_GAME_COMPANY</Description>
