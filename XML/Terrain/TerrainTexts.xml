@@ -17,6 +17,15 @@
 		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RESORT_HELP">
 			<Text>Should be built next to Mountain and Coast.</Text>
 		</Row>
+		<Row Tag="TXT_KEY_BUILD_RESORT">
+			<Text>Build a Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RESORT_HELP">
+			<Text>Build aResort which increases the Gold and Culture yield of the tile. [NEWLINE][ICON_BULLET]Provides bonus yield adjacent mountain.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RESORT_REC">
+			<Text>It will increases the Gold and Culture yield of the tile.</Text>
+		</Row>		
 
 		<Row Tag="TXT_KEY_IMPROVEMENT_FW_ARCOLOGY">
 			<Text>Arcology</Text>

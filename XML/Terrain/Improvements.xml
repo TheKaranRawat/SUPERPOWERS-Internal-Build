@@ -828,22 +828,6 @@
 
 	<Improvement_Yields>
 		
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>		
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>		
-		
 		<Delete ImprovementType="IMPROVEMENT_FISHING_BOATS"/>
 
 		<!-- COMM ARRAY 
@@ -1071,13 +1055,13 @@
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<TechType>TECH_FLIGHT</TechType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<TechType>TECH_FLIGHT</TechType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 		</Improvement_TechYieldChanges>
 
@@ -1823,25 +1807,25 @@
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<RouteType>ROUTE_ROAD</RouteType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<RouteType>ROUTE_ROAD</RouteType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>		
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<RouteType>ROUTE_RAILROAD</RouteType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>4</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<RouteType>ROUTE_RAILROAD</RouteType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>4</Yield>
+			<Yield>6</Yield>
 		</Row>		
 
 		<Row>
@@ -2290,7 +2274,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
@@ -2361,6 +2345,23 @@
 	<Improvement_RiverSideYields>
 
 		<Row>
+			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>4</Yield>
+		</Row>		
+
+		<Row>
 			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>4</Yield>
@@ -2415,7 +2416,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
