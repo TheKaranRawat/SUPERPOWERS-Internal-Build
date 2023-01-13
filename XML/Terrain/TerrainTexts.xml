@@ -8,6 +8,16 @@
 	
 	<Language_en_US>
 
+		<Row Tag="TXT_KEY_IMPROVEMENT_RESORT">
+			<Text>Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RESORT">
+			<Text>Resorts are places to relax and to generate money.</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RESORT_HELP">
+			<Text>Should be built next to Mountain and Coast.</Text>
+		</Row>
+
 		<Row Tag="TXT_KEY_IMPROVEMENT_FW_ARCOLOGY">
 			<Text>Arcology</Text>
 		</Row>
