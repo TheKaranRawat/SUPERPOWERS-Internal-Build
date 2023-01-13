@@ -3915,7 +3915,64 @@
 			<PortraitIndex>21</PortraitIndex>
 		</Row>
 		
+		<Row>
+			<Type>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</Type>
+			<BuildingClass>BUILDINGCLASS_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingClass>
+			<Cost>250</Cost>
+			<HurryCostModifier>25</HurryCostModifier>
+			<GoldMaintenance>4</GoldMaintenance>
+			<PrereqTech>TECH_RAILROAD</PrereqTech>
+			<Help>TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+            <SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+            <SpecialistCount>2</SpecialistCount>
+			<ConquestProb>100</ConquestProb>        
+		</Row>
 
+		<Row>
+			<Type>BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</Type>
+			<BuildingClass>BUILDINGCLASS_MODERN_LOCOMOTIVE_ASSEMBLY</BuildingClass>
+			<Cost>500</Cost>
+			<HurryCostModifier>25</HurryCostModifier>
+			<GoldMaintenance>4</GoldMaintenance>
+			<PrereqTech>TECH_ELECTRONICS</PrereqTech>
+			<Help>TXT_KEY_BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+            <SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+            <SpecialistCount>3</SpecialistCount>
+			<ConquestProb>100</ConquestProb>        
+		</Row>
+
+		<Row>
+			<Type>BUILDING_TAX_COLLECTOR</Type>
+			<BuildingClass>BUILDINGCLASS_TAXES</BuildingClass>
+			<Cost>10</Cost>
+			<HurryCostModifier>25</HurryCostModifier>
+			<GoldMaintenance>1</GoldMaintenance>
+			<Happiness>-1</Happiness>
+			<PrereqTech>TECH_CURRENCY</PrereqTech>
+			<Help>TXT_KEY_BUILDING_TAX_COLLECTOR_HELP</Help>
+			<Description>TXT_KEY_BUILDING_TAX_COLLECTOR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TAX_COLLECTOR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TAX_COLLECTOR_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_MARKET</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>16</PortraitIndex>
+			<ConquestProb>66</ConquestProb>        
+		</Row>		
 	
 	</Buildings>
 
@@ -4142,7 +4199,7 @@
 			<Cost>500</Cost>
 			<GoldMaintenance>20</GoldMaintenance>
 			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<EnhancedYieldTech>Archeology</EnhancedYieldTech>
+			<EnhancedYieldTech>ARCHAEOLOGY</EnhancedYieldTech>
 			<Help>TXT_KEY_BUILDING_LAVRA_HELP</Help>
 			<Description>TXT_KEY_BUILDING_LAVRA</Description>
 			<Civilopedia>TXT_KEY_BUILDING_LAVRA_PEDIA</Civilopedia>

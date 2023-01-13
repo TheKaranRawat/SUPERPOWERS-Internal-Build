@@ -3506,22 +3506,58 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_LAVRA">
-			<Text>[ICON_PEACEEACE] Lavra</Text>
+			<Text>[ICON_PEACE] Lavra</Text>
 		</Row>
-
 		<Row Tag="TXT_KEY_BUILDING_LAVRA_HELP">
 			<Text>
 				Provides various Religion related bonusses to the city. Only 5 may exist in the Empire.
 			</Text>
 		</Row>
-
 		<Row Tag="TXT_KEY_BUILDING_LAVRA_STRATEGY">
-			<Text>Makes Faith and Religion in the City better.</Text>
+			<Text>Makes Faith and Religion in the City better. WARNING: HIGH MAINTAINANCE.</Text>
 		</Row>
-
 		<Row Tag="TXT_KEY_BUILDING_LAVRA_PEDIA">
 			<Text>Lavra is an honorary title of Orthodox monasteries.</Text>
 		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY">
+			<Text>[ICON_PRODUCTION] Steam Locomotive Assembly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY_PEDIA">
+			<Text>The Steam Locomotive Assemblies were producing Steam Locomotives, they had to be built somehow afterall.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY_HELP">
+			<Text>+5%[ICON_PRODUCTION] Production. In addition it increases [ICON_PRODUCTION] Production gobally and in the city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY_STRATEGY">
+			<Text>The Steam Locomotive Assembly increases the [ICON_PRODUCTION] Production output of the City and the Empire. Due to the benefits it provides it is always advised to build it when possible.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY">
+			<Text>[ICON_PRODUCTION] Modern Locomotive Assembly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY_PEDIA">
+			<Text>The Modern Locomotive Assemblies are producing Modern Locomotives.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY_HELP">
+			<Text>+5%[ICON_PRODUCTION] Production. In addition it increases [ICON_PRODUCTION] Production globally and in the city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY_STRATEGY">
+			<Text>The Modern Locomotive Assembly increases the [ICON_PRODUCTION] Production output of the City and the Empire. Due to the benefits it provides it is always advised to build it when possible.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_TAX_COLLECTOR">
+			<Text>[ICON_GOLD] Tax Collector</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TAX_COLLECTOR_PEDIA">
+			<Text>The Tax Collectors collected money from the citizens of the city for the treasury.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TAX_COLLECTOR_HELP">
+			<Text>+1[ICON_GOLD] Gold per 4[ICON_CITIZEN] Population at the cost of 1 unhappiness.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TAX_COLLECTOR_STRATEGY">
+			<Text>The Tax Collector should be used when you have sufficient population to make it worth it.</Text>
+		</Row>		
 
 	</Language_en_US>
 
