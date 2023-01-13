@@ -1436,7 +1436,22 @@
 			<Type>BUILDINGCLASS_LAVRA</Type>
 			<Description>TXT_KEY_BUILDING_LAVRA</Description>
 			<MaxPlayerInstances>5</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_STEAM_LOCOMOTIVE_ASSEMBLY</Type>
+			<DefaultBuilding>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</DefaultBuilding>			
+			<Description>TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</Description>
 		</Row>		
+		<Row>
+			<Type>BUILDINGCLASS_MODERN_LOCOMOTIVE_ASSEMBLY</Type>
+			<DefaultBuilding>BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</DefaultBuilding>			
+			<Description>TXT_KEY_BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</Description>
+		</Row>		
+		<Row>
+			<Type>BUILDINGCLASS_TAXES</Type>
+			<DefaultBuilding>BUILDING_TAX_COLLECTOR</DefaultBuilding>			
+			<Description>TXT_KEY_BUILDING_TAX_COLLECTOR</Description>
+		</Row>				
 	</BuildingClasses>
 
 	<!--*********************SP New Wonders******************************************-->

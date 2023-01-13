@@ -583,13 +583,45 @@
 			<BuildingType>BUILDING_SMELTER</BuildingType>
 			<ResourceType>RESOURCE_COPPER</ResourceType>
 		</Row>
-		
+		<Row>
+			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+		</Row>
 	</Building_LocalResourceOrs>
 
 	
 		
 	<Building_ResourceQuantityRequirements>
-
+		<Row>
+			<BuildingType>BUILDING_TAX_COLLECTOR</BuildingType>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>1</Cost>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Cost>2</Cost>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+			<Cost>1</Cost>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
+			<Cost>2</Cost>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Cost>3</Cost>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
+			<Cost>3</Cost>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_FW_ULTIMATOWER</BuildingType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
@@ -1437,7 +1469,11 @@
 	
 	
 	<Building_YieldChanges>
-
+		<Row>
+			<BuildingType>STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>5</Yield>
+		</Row>
 		<Row>
 			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -3937,7 +3973,12 @@
 
 
 
-	<Building_GlobalYieldModifiers>
+	<Building_GlobalYieldModifiers>	
+		<Row>
+			<BuildingType>STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>5</Yield>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_HANGING_GARDEN</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -5749,6 +5790,23 @@
 
 
 	<Building_YieldChangesPerPop>
+		<Row>
+			<BuildingType>BUILDING_TAX_COLLECTOR</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>25</Yield>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>20</Yield>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>20</Yield>
+		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_SPHINX</BuildingType>
@@ -6945,6 +7003,42 @@
 
 
 	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_TAX_COLLECTOR</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_MODERN_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_BOLLHUSET</BuildingType>
