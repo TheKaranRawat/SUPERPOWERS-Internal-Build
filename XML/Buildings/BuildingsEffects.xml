@@ -1082,6 +1082,17 @@
 			<Cost>4</Cost>
 		</Row>
 
+  		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
+			<Cost>4</Cost>
+		</Row>  
+  		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<Cost>1</Cost>
+		</Row>		
+
 	</Building_ResourceQuantityRequirements>
 
 	
@@ -1460,6 +1471,12 @@
 			<Quantity>4</Quantity>
 		</Row>
 
+	    <Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+	    	<ResourceType>RESOURCE_CONSUMER</ResourceType>
+	    	<Quantity>4</Quantity>
+    	</Row>		
+
 	</Building_ResourceQuantity>
 	
 	
@@ -1469,6 +1486,9 @@
 	
 	
 	<Building_YieldChanges>
+		
+
+
 		<Row>
 			<BuildingType>STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
@@ -3037,6 +3057,12 @@
 			<Yield>20</Yield>
 		</Row>
 
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>20</Yield>
+		</Row>		
+
 	</Building_YieldChanges>
 
 
@@ -4295,6 +4321,31 @@
 
 
 	<Building_ResourceYieldChanges>
+
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<ResourceType>RESOURCE_COPPER</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_GOBEKLITEPE</BuildingType>
@@ -5979,6 +6030,18 @@
 	<!--*********************TechEnhanced Changes********************-->
 
 	<Building_TechEnhancedYieldChanges>
+		
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>15</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>30</Yield>
+		</Row>		
+		
 		<Row>
 			<BuildingType>BUILDING_PETRA</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
@@ -7003,6 +7066,23 @@
 
 
 	<Building_Flavors>
+		
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>		
+		
 		<Row>
 			<BuildingType>BUILDING_TAX_COLLECTOR</BuildingType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>

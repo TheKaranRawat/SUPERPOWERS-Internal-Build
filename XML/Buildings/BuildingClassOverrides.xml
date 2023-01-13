@@ -1006,7 +1006,13 @@
 			<CivilizationType>CIVILIZATION_RUSSIA</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_LAVRA</BuildingClassType>
 			<BuildingType>BUILDING_LAVRA</BuildingType>
-		</Row>		
+		</Row>	
+
+		<Row>
+			<CivilizationType>CIVILIZATION_GERMANY</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
+		</Row>			
 
 	</Civilization_BuildingClassOverrides>
 
