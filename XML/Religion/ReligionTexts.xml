@@ -108,6 +108,18 @@
 
 		<!--**************************************************New Belief Texts*************************************-->
 
+		<Row Tag="TXT_KEY_BELIEF_GODDESS_OF_BEAUTY_SHORT">
+			<Text>Goddess of Beauty</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_BELIEF_GODDESS_OF_BEAUTY">
+			<Text>+6 [ICON_PEACE] Faith from Dye, Silk and Perfume. </Text>
+		</Replace>
+		<Row Tag="TXT_KEY_BELIEF_HOLY_BEVERAGE_SHORT">
+			<Text>Holy Beverage</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_BELIEF_HOLY_BEVERAGE">
+			<Text>+6 [ICON_PEACE] Faith from Tea, Cocoa and Coffee. </Text>
+		</Replace>	
 		<Row Tag="TXT_KEY_BELIEF_MARSH_BELIEF_SHORT">
 			<Text>Swamp Belief</Text>
 		</Row>

@@ -63,7 +63,19 @@
 
 
 		<!-- ADDITIONS -->
-		
+		<Row>
+			<Type>BELIEF_GODDESS_OF_BEAUTY</Type>
+			<Description>TXT_KEY_BELIEF_GODDESS_OF_BEAUTY</Description>
+			<ShortDescription>TXT_KEY_BELIEF_GODDESS_OF_BEAUTY_SHORT</ShortDescription>
+			<Pantheon>true</Pantheon>
+		</Row>		
+		<Row>
+			<Type>BELIEF_HOLY_BEVERAGE</Type>
+			<Description>TXT_KEY_BELIEF_HOLY_BEVERAGE</Description>
+			<ShortDescription>TXT_KEY_BELIEF_HOLY_BEVERAGE_SHORT</ShortDescription>
+			<Pantheon>true</Pantheon>
+		</Row>
+
 		<Row>
 			<Type>BELIEF_MARSH_BELIEF</Type>
 			<Description>TXT_KEY_BELIEF_MARSH_BELIEF</Description>
@@ -140,6 +152,7 @@
 
 
 	<Belief_ResourceHappiness>
+		
 		<Row>
 			<BeliefType>BELIEF_TEARS_OF_GODS</BeliefType>
 			<ResourceType>RESOURCE_PEARLS</ResourceType>
@@ -303,6 +316,44 @@
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>6</Yield>
 		</Row>
+
+		<Row>
+			<BeliefType>BELIEF_HOLY_BEVERAGE</BeliefType>
+			<ResourceType>RESOURCE_COCOA</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>6</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_HOLY_BEVERAGE</BeliefType>
+			<ResourceType>RESOURCE_TEA</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>6</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_HOLY_BEVERAGE</BeliefType>
+			<ResourceType>RESOURCE_COFFEE</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>6</Yield>
+		</Row>				
+
+		<Row>
+			<BeliefType>BELIEF_GODDESS_OF_BEAUTY</BeliefType>
+			<ResourceType>RESOURCE_DYE</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>6</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_GODDESS_OF_BEAUTY</BeliefType>
+			<ResourceType>RESOURCE_SILK</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>6</Yield>
+		</Row>		
+		<Row>
+			<BeliefType>BELIEF_GODDESS_OF_BEAUTY</BeliefType>
+			<ResourceType>RESOURCE_PERFUME</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>6</Yield>
+		</Row>								
 
 		<!--<Row>
 			<BeliefType>BELIEF_GOD_SEA</BeliefType>
