@@ -93,7 +93,7 @@
 			<Text>+25% [ICON_FOOD] Food Growth rate for city if not at war.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_GOD_SEA">
-			<Text>+1 [ICON_PEACE] Faith for every Fishing Net. </Text>
+			<Text>+1 [ICON_CULTURE] Faith for every Fishing Net, +1 [ICON_PEACE] Faith from Coast tile. </Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_TEARS_OF_GODS">
 			<Text>+2 [ICON_PEACE] Faith for every Gem and Pearl. Pearls provide +2 [ICON_HAPPINESS_1] Happiness and Gem provide +4 [ICON_HAPPINESS_1] Happiness. </Text>
