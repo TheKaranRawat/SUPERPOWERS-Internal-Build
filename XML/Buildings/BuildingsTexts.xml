@@ -3572,6 +3572,19 @@
 			<Text>The Autohersteller is the German unique replacement for the Factory.Increased [ICON_PRODUCTION] Production for the City. Additional Yields at Replaceable Parts.</Text>
 		</Row>
 
+		<Row Tag="TXT_KEY_BUILDING_BEERMAKER">
+			<Text>[ICON_FOOD] Beermaker</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BEERMAKER_PEDIA">
+			<Text>Beermaking has been tradition in Germany for over a thousand years, with evidence suggesting that German beer was made even in 800 BC.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BEERMAKER_HELP">
+			<Text>+2[ICON_FOOD] Food, 1% more [ICON_FOOD] Food globally per Beermaker.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BEERMAKER_STRATEGY">
+			<Text>The Beermaker is the German unique building increasing the [ICON_FOOD] Food output in the Empire.</Text>
+		</Row>		
+
 	</Language_en_US>
 
 	

@@ -3996,11 +3996,38 @@
  			<FoodKept>-15</FoodKept>
 			<ConquestProb>66</ConquestProb>        
             <EnhancedYieldTech>TECH_REPLACEABLE_PARTS</EnhancedYieldTech>
-		</Row>		
+		</Row>
+
+		<Row>
+			<Type>BUILDING_BEERMAKER</Type>
+			<BuildingClass>BUILDINGCLASS_BEERMAKER</BuildingClass>
+			<Cost>100</Cost>
+			<HurryCostModifier>25</HurryCostModifier>
+			<GoldMaintenance>2</GoldMaintenance>
+			<Happiness>1</Happiness>
+			<PrereqTech>TECH_GUILDS</PrereqTech>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
+			<Help>TXT_KEY_BUILDING_BEERMAKER_HELP</Help>
+			<Description>TXT_KEY_BUILDING_BEERMAKER</Description>
+			<Civilopedia>TXT_KEY_BUILDING_BEERMAKER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_BEERMAKER_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_PAPER_MAKER</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>59</PortraitIndex>
+ 			<FoodKept>10</FoodKept>
+			<ConquestProb>66</ConquestProb>        
+		</Row>				
 	
 	</Buildings>
 
 	<Building_ClassesNeededInCity>
+		
+		<Row>
+			<BuildingType>BUILDING_BEERMAKER</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+		</Row>		
+
 		<Row>
 			<BuildingType>BUILDING_CATHEDRAL</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>

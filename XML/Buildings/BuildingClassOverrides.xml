@@ -1014,6 +1014,12 @@
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 		</Row>			
 
+		<Row>
+			<CivilizationType>CIVILIZATION_GERMANY</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_BEERMAKER</BuildingClassType>
+			<BuildingType>BUILDING_BEERMAKER</BuildingType>
+		</Row>
+
 	</Civilization_BuildingClassOverrides>
 
 
