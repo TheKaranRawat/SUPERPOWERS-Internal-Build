@@ -42,7 +42,7 @@
 		</Row>
 	</Building_YieldChanges>
 
-	</Building_ResourceQuantity>
+	<Building_ResourceQuantity>
 		<Row>
 			<BuildingType>BUILDING_SACBE</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
