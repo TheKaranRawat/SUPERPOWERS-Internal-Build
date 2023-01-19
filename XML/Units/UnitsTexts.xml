@@ -1432,7 +1432,7 @@
 			<Text>[ICON_WORKER] Brazilian Labor</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BRAZILIAN_LABOR_HELP">
-			<Text>Brazilian Labor is unique civilian unit of Nrazil, replacing the Worker. It can move ignore terrain cost and build improvements 25% faster than ordinary Workers.</Text>
+			<Text>Brazilian Labor is unique civilian unit of Brazil, replacing the Worker. It can move ignore terrain cost and build improvements 25% faster than ordinary Workers.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BRAZILIAN_LABOR_TEXT">
 			<Text>Brazil has the world's seventh largest economy by nominal GDP, and the seventh largest by purchasing power parity.</Text>
