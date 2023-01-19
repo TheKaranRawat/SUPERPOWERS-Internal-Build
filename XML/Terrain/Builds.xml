@@ -5,6 +5,20 @@
 	<Builds>
 
 		<Row>
+			<Type>BUILD_STEEL_PLANT</Type>
+			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
+			<Time>1000</Time>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<Description>TXT_KEY_BUILD_STEEL_PLANT</Description>
+			<Help>TXT_KEY_BUILD_STEEL_PLANT_HELP</Help>			
+			<Recommendation>TXT_KEY_BUILD_STEEL_PLANT_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_Z</HotKey>
+			<IconIndex>5</IconIndex>
+			<IconAtlas>FW_IMPROVEMENTS_ATLAS</IconAtlas>
+		</Row>
+
+		<Row>
 			<Type>BUILD_RESORT</Type>
 			<PrereqTech>TECH_ECONOMICS</PrereqTech>
 			<Time>800</Time>
@@ -224,6 +238,29 @@
 		-->
 
 		<Row>
+			<BuildType>BUILD_STEEL_PLANT</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_STEEL_PLANT</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>700</Time>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_STEEL_PLANT</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>		
+
+		<Row>
 			<BuildType>BUILD_RESORT</BuildType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
@@ -439,6 +476,11 @@
 		
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_STEEL_PLANT</BuildType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_FW_INDUSTRIAL_COMPLEX</BuildType>
 		</Row>
 		<Row>
@@ -538,7 +580,14 @@
 		</Row>
 		
 		
-
+		<Row>
+			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
+			<BuildType>BUILD_STEEL_PLANT</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
+			<BuildType>BUILD_RESORT</BuildType>
+		</Row>		
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_FISHING_BOATS</BuildType>

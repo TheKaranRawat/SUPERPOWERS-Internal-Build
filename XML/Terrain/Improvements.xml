@@ -7,6 +7,18 @@
 		<Delete Type="IMPROVEMENT_FEITORIA"/>
 
 		<Row>
+			<Type>IMPROVEMENT_STEEL_PLANT</Type>
+			<Description>TXT_KEY_IMPROVEMENT_STEEL_PLANT</Description>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_STEEL_PLANT_TEXT</Civilopedia>
+			<Help>TXT_KEY_IMPROVEMENT_FW_STEEL_PLANT_HELP</Help>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ArtDefineTag>
+			<RequiresFlatlands>true</RequiresFlatlands>
+			<PillageGold>500</PillageGold>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>FW_IMPROVEMENTS_ATLAS</IconAtlas>
+		</Row>
+
+		<Row>
 			<Type>IMPROVEMENT_RESORT</Type>
 			<Description>TXT_KEY_IMPROVEMENT_RESORT</Description>
 			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_RESORT</Civilopedia>
@@ -351,6 +363,23 @@
 	<Improvement_ValidTerrains>
 
 		<Row>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>	
+		<Row>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+
+		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<TerrainType>TERRAIN_DESERT</TerrainType>
 		</Row>
@@ -425,7 +454,6 @@
 			<ImprovementType>IMPROVEMENT_FW_HYDROPONICS_DOME</ImprovementType>
 			<TerrainType>TERRAIN_TUNDRA</TerrainType>
 		</Row>
-
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
@@ -679,6 +707,19 @@
 	<Improvement_ValidFeatures>
 
 		<Row>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+		</Row>
+
+		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
 		</Row>
@@ -837,6 +878,12 @@
 			<Yield>12</Yield>
 		</Row>
 		-->
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>		
 		
 		<!-- GENERATOR -->
 		<Row>
@@ -1050,7 +1097,7 @@
 		</Row>
 	</Improvement_ResourceType_Yields>
 
-		<Improvement_TechYieldChanges>
+	<Improvement_TechYieldChanges>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<TechType>TECH_FLIGHT</TechType>
@@ -1063,7 +1110,7 @@
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>3</Yield>
 		</Row>
-		</Improvement_TechYieldChanges>
+	</Improvement_TechYieldChanges>
 
 	<!--<Improvement_TechYieldChanges>
 		<Row>
@@ -1142,7 +1189,7 @@
 		</Row>
 		<Row>
 			<Type>BUILD_FW_INDUSTRIAL_COMPLEX</Type>
-			<PrereqTech>TECH_URBANLIZATION</PrereqTech>
+			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
 			<Time>1000</Time>
 			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
 			<Description>TXT_KEY_BUILD_FW_INDUSTRIAL_COMPLEX</Description>
@@ -1464,6 +1511,21 @@
 			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
 		</Row>
 
+		<Row>
+			<Type>BUILD_STEEL_PLANT</Type>
+			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
+			<Time>1000</Time>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
+			<Description>TXT_KEY_BUILD_STEEL_PLANT</Description>
+			<Help>TXT_KEY_BUILD_STEEL_PLANT_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_STEEL_PLANT_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_Z</HotKey>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>5</IconIndex>
+			<IconAtlas>FW_IMPROVEMENTS_ATLAS</IconAtlas>
+		</Row>
+
 	</Builds>
 	
 	
@@ -1473,6 +1535,11 @@
 	
 	
 	<Unit_Builds>
+
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_STEEL_PLANT</BuildType>
+		</Row>
 
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
@@ -1537,6 +1604,15 @@
 			<BuildType>BUILD_CREATE_JUNGLE</BuildType>
 		</Row>
 
+
+		<Row>
+			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
+			<BuildType>BUILD_STEEL_PLANT</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
+			<BuildType>BUILD_RESORT</BuildType>
+		</Row>		
 
 
 		<Row>
@@ -1613,6 +1689,22 @@
 			<Where Type="IMPROVEMENT_FORT"/>
 		</Update>
 		
+	<Update>	
+		<Set>
+			<BuildableOnResources>false</BuildableOnResources>
+			<!--<DefenseModifier>0</DefenseModifier>-->
+			<InAdjacentFriendly>false</InAdjacentFriendly>
+			<CultureBombRadius>0</CultureBombRadius>
+			<CreatedByGreatPerson>false</CreatedByGreatPerson>
+			<NearbyEnemyDamage>0</NearbyEnemyDamage>
+			<NoTwoAdjacent>false</NoTwoAdjacent>
+			<DestroyedWhenPillaged>false</DestroyedWhenPillaged>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>FW_IMPROVEMENTS_ATLAS</IconAtlas>
+		</Set>
+		<Where Type="IMPROVEMENT_STEEL_PLANT"/>
+	</Update>
+
 	<Update>	
 		<Set>
 			<BuildableOnResources>false</BuildableOnResources>
@@ -1862,6 +1954,11 @@
 			<ImprovementType>IMPROVEMENT_CHATEAU</ImprovementType>
 			<ResourceType>RESOURCE_WINE</ResourceType>
 		</Row>-->
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_STEELPLANT</ImprovementType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+		</Row>		
 		
 	</Improvement_ResourceTypes>
 
@@ -2525,12 +2622,6 @@
 		</Row>		
 
 		<Row>
-			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>4</Yield>
-		</Row>
-
-		<Row>
 			<ImprovementType>IMPROVEMENT_FW_HYDROPONICS_DOME</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>4</Yield>
@@ -2682,6 +2773,13 @@
 			<Set CivilizationType="CIVILIZATION_PORTUGAL" NoTwoAdjacent="false" DefenseModifier="0"/>
 			<Where Type="IMPROVEMENT_CHATEAU"/>
 		</Update>
+	</Improvements>
+
+	<Improvements>		
+		<Update>
+			<Set GoldMaintenance="10"/>
+			<Where Type="IMPROVEMENT_STEEL_PLANT"/>			
+		</Update>		
 	</Improvements>
 
 	<!-- RAILROAD COST UPDATE -->
