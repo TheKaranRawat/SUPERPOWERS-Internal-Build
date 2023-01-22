@@ -215,7 +215,12 @@
 			<ResourceType>RESOURCE_CRAB</ResourceType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>2</Yield>
-		</Row>				
+		</Row>	
+		<Row>
+			<ResourceType>RESOURCE_CRAB</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>					
 		<Row>
 			<ResourceType>RESOURCE_FUR</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -265,7 +270,12 @@
 			<ResourceType>RESOURCE_PEARLS</ResourceType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
-		</Row>				
+		</Row>
+		<Row>
+			<ResourceType>RESOURCE_PEARLS</ResourceType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>						
 <!--		<Row>
 			<ResourceType>RESOURCE_SALT</ResourceType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -576,7 +586,7 @@
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<ResourceType>RESOURCE_SALT</ResourceType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>				
 		<Row>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>

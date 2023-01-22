@@ -470,7 +470,12 @@
 			<ResourceType>RESOURCE_PERFUME</ResourceType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
-		</Row>		
+		</Row>
+		<Row>
+			<ResourceType>RESOURCE_CORAL</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>				
 		<Row>
 			<ResourceType>RESOURCE_CORAL</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
