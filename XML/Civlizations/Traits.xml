@@ -2254,7 +2254,7 @@
 		<Row>
 			<BuildingType>BUILDING_TB_STRATEGIC_RICHES</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Quantity>12</Quantity>
+			<Quantity>4</Quantity>
 		</Row>
 		
 	</Building_ResourceQuantity>

@@ -31,7 +31,7 @@
 			<Text>Great Russian Soul</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_TRAIT_STRATEGIC_RICHES">
-			<Text>[ICON_BULLET]The first 4 [ICON_CITIZEN] Citizens in your cities don't generate [ICON_HAPPINESS_4] Unhappiness. +6 [ICON_GOLD] Gold and +12 [ICON_RES_CONSUMER] Consumer Goods for all cities. [NEWLINE][ICON_BULLET]Russian military might grants -10% unit maintenance cost. All Units gain +15% [ICON_STRENGTH] Combat Strength bonus while fighting within their own territory.</Text>
+			<Text>[ICON_BULLET]The first 4 [ICON_CITIZEN] Citizens in your cities don't generate [ICON_HAPPINESS_4] Unhappiness. +6 [ICON_GOLD] Gold and +4 [ICON_RES_CONSUMER] Consumer Goods for all cities. [NEWLINE][ICON_BULLET]Russian military might grants -10% unit maintenance cost. All Units gain +15% [ICON_STRENGTH] Combat Strength bonus while fighting within their own territory.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_GREAT_ANDEAN_ROAD">
