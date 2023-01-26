@@ -1454,8 +1454,7 @@
 		</Row>	
 
 		<Row>
-			<Type>BUILDINGCLASS_BEERMAKER</Type>
-			<DefaultBuilding>BUILDING_BEERMAKER</DefaultBuilding>			
+			<Type>BUILDINGCLASS_BEERMAKER</Type>		
 			<Description>TXT_KEY_BUILDING_BEERMAKER</Description>
 		</Row>
 
