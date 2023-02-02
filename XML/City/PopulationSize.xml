@@ -75,7 +75,7 @@
 			<PortraitIndex>57</PortraitIndex>
 			<Defense>1000</Defense>
 			<ExtraCityHitPoints>40</ExtraCityHitPoints>
-			<Happiness>-5</Happiness>
+			<Happiness>-4</Happiness>
 			<CityWorkingChange>1</CityWorkingChange>
 			<TradeRouteSeaGoldBonus>200</TradeRouteSeaGoldBonus>
 			<TradeRouteLandGoldBonus>200</TradeRouteLandGoldBonus>
@@ -97,7 +97,7 @@
 			<PortraitIndex>58</PortraitIndex>
 			<Defense>1500</Defense>
 			<ExtraCityHitPoints>50</ExtraCityHitPoints>
-			<Happiness>-15</Happiness>
+			<Happiness>-12</Happiness>
 			<TradeRouteSeaGoldBonus>500</TradeRouteSeaGoldBonus>
 			<TradeRouteLandGoldBonus>500</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>50</TradeRouteRecipientBonus>
@@ -119,7 +119,7 @@
 			<Defense>1500</Defense>
 			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<FoodKept>-5</FoodKept>
-			<Happiness>-20</Happiness>
+			<Happiness>-24</Happiness>
 			<TradeRouteSeaGoldBonus>1500</TradeRouteSeaGoldBonus>
 			<TradeRouteLandGoldBonus>1500</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>150</TradeRouteRecipientBonus>
@@ -214,7 +214,7 @@
 		<Row>
 			<BuildingType>BUILDING_PALACE</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Quantity>20</Quantity>
+			<Quantity>25</Quantity>
 		</Row>
 		
 		<!-- CITY MANPOWER -->
@@ -320,19 +320,19 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_SMALL</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>2</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_MEDIUM</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>12</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_LARGE</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>13</Cost>
+			<Cost>15</Cost>
 		</Row>
 
 		<Row>
