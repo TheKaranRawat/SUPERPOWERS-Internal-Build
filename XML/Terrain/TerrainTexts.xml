@@ -8,6 +8,23 @@
 	
 	<Language_en_US>
 
+		<Row Tag="TXT_KEY_IMPROVEMENT_PADDY_UI">
+			<Text>Rice Terrace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_PADDY_UI">
+			<Text>Construct a Rice Terrace</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PADDY_UI_TEXT">
+			<Text>
+				In agriculture, a terrace is a piece of sloped plane that has been cut into a series of successively receding flat surfaces or platforms, which resemble steps, for the purposes of more effective farming. This type of landscaping, therefore, is called terracing. Graduated terrace steps are commonly used to farm on hilly or mountainous terrain. Terraced fields both decrease erosion and surface runoff, and may be used to support growing crops that require irrigation, such as rice.[NEWLINE][NEWLINE]Paddy fields are the typical feature of rice farming in east, south and southeast Asia. Paddies can be built into steep hillsides as terraces and adjacent to depressed or steeply sloped features such as rivers or marshes. They can require a great deal of labor and materials to create, and need large quantities of water for irrigation. Oxen and water buffalo, adapted for life in wetlands, are important working animals used extensively in paddy field farming. Among the most famous rice paddy terrace farms are those in Longsheng County, where terraced fields are built along the slope winding from the riverside up to the mountain top, between 600 m to 800 m above sea level. A coiling terrace line that starts from the mountain foot up to the mountain top divides the mountain into layers of water in spring, layers of green rice shoots in summer, layers of rice in fall, and layers of frost in winter. The terraced fields were mostly built about 650 years ago.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PADDY_UI_HELP">
+			<Text>
+				A Rice Terrace can be built on any Hill tile. Yields 1 [ICON_FOOD] Food, and additional [ICON_FOOD] Food after researching corresponding techs. If the hill tile has access to fresh water, it yields 3 [ICON_FOOD] Food and another [ICON_FOOD] Food after researching corresponding techs.
+			</Text>
+		</Row>
+
 		<Row Tag="TXT_KEY_IMPROVEMENT_STEEL_PLANT">
 			<Text>Steel Plant</Text>
 		</Row>
