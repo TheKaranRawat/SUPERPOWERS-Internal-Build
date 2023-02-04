@@ -23,8 +23,8 @@
 			<Type>TRAIT_RIVER_EXPANSION</Type>
 			<Description>TXT_KEY_TRAIT_RIVER_EXPANSION</Description>
 			<ShortDescription>TXT_KEY_TRAIT_RIVER_EXPANSION_SHORT</ShortDescription>
-			<CityCultureBonus>25</CityCultureBonus>
-			<NavalUnitMaintenanceModifier>-10</NavalUnitMaintenanceModifier> 
+			<CityCultureBonus>12</CityCultureBonus>
+			<NavalUnitMaintenanceModifier>-20</NavalUnitMaintenanceModifier> 
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
