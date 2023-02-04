@@ -319,7 +319,7 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_FARM</ArtDefineTag>
 			<SpecificCivRequired>true</SpecificCivRequired>
 			<CivilizationType>CIVILIZATION_IROQUOIS</CivilizationType>
-			<PillageGold>20</PillageGold>
+			<PillageGold>25</PillageGold>
 			<PortraitIndex>14</PortraitIndex>
 			<IconAtlas>SP_IMPROVEMENTS_ATLAS</IconAtlas>
 		</Row>
@@ -1025,7 +1025,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
@@ -2340,7 +2340,7 @@
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
 			<TechType>TECH_TERRAFORMING</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>3</Yield>
+			<Yield>1</Yield>
 		</Row>
 		
 		<Row>
@@ -2380,14 +2380,12 @@
 			<ImprovementType>IMPROVEMENT_EGYPTIAN_FLAX</ImprovementType>
 			<TechType>TECH_CIVIL_SERVICE</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-			
+			<Yield>1</Yield>		
 		</Row>
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_EGYPTIAN_FLAX</ImprovementType>
-			<TechType>TECH_CIVIL_SERVICE</TechType>
-			
+			<TechType>TECH_CIVIL_SERVICE</TechType>			
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
@@ -2409,8 +2407,7 @@
 		
 		<Row>
 			<ImprovementType>IMPROVEMENT_EGYPTIAN_FLAX</ImprovementType>
-			<TechType>TECH_GENETIC_ENGEERING</TechType>
-			
+			<TechType>TECH_GENETIC_ENGEERING</TechType>		
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
