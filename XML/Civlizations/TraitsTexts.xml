@@ -24,7 +24,7 @@
 		</Row>
 
 		<Replace Tag="TXT_KEY_TRAIT_RIVER_EXPANSION">
-			<Text>[ICON_BULLET]Each Scientist +3 [ICON_RESEARCH] Science, Engineer +2 [ICON_PRODUCTION] Production, Merchant +3 [ICON_GOLD] Gold, Writer, Artist and Musician +2 [ICON_CULTURE] Culture. [NEWLINE][ICON_BULLET]American expansionist tradition grants +35% faster border growth for cities; Naval [ICON_GOLD]maintenance is reduced by 10% [NEWLINE][ICON_BULLET]Gain +25 [ICON_CULTURE]culture for every city.</Text>
+			<Text>[ICON_BULLET]Each Scientist +3 [ICON_RESEARCH] Science, Engineer +2 [ICON_PRODUCTION] Production, Merchant +3 [ICON_GOLD] Gold, Writer, Artist and Musician +2 [ICON_CULTURE] Culture. [NEWLINE][ICON_BULLET]American expansionist tradition grants +35% faster border growth for cities; Naval [ICON_GOLD]maintenance is reduced by 20% [NEWLINE][ICON_BULLET]Gain +12 [ICON_CULTURE]culture for every city.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_STRATEGIC_RICHES_SHORT">
