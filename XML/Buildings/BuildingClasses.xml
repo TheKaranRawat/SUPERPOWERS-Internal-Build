@@ -1432,11 +1432,13 @@
 			<DefaultBuilding>BUILDING_FISH_FARM</DefaultBuilding>
 			<Description>TXT_KEY_BUILDING_FISH_FARM</Description>
 		</Row>
+<!--		
 		<Row>
 			<Type>BUILDINGCLASS_LAVRA</Type>
 			<Description>TXT_KEY_BUILDING_LAVRA</Description>
 			<MaxPlayerInstances>5</MaxPlayerInstances>
 		</Row>
+-->		
 		<Row>
 			<Type>BUILDINGCLASS_STEAM_LOCOMOTIVE_ASSEMBLY</Type>
 			<DefaultBuilding>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</DefaultBuilding>			

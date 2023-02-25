@@ -98,7 +98,7 @@
 			<NukeImmune>true</NukeImmune>
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 			<PortraitIndex>56</PortraitIndex>
-			<Happiness>-2</Happiness>
+			<!--<Happiness>-5</Happiness>-->
 			<PolicyCostModifier>5</PolicyCostModifier>
 		</Row>
 		<Row>
@@ -116,7 +116,7 @@
 			<NukeImmune>true</NukeImmune>
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 			<PortraitIndex>57</PortraitIndex>
-			<Happiness>-4</Happiness>
+			<Happiness>-10</Happiness>
 			<PolicyCostModifier>10</PolicyCostModifier>
 			<UnhappinessModifier>3</UnhappinessModifier>
 		</Row>
@@ -135,7 +135,7 @@
 			<NukeImmune>true</NukeImmune>
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 			<PortraitIndex>58</PortraitIndex>
-			<Happiness>-6</Happiness>
+			<Happiness>-15</Happiness>
 			<PolicyCostModifier>20</PolicyCostModifier>
 			<UnhappinessModifier>4</UnhappinessModifier>
 		</Row>
@@ -154,7 +154,7 @@
 			<NukeImmune>true</NukeImmune>
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 			<PortraitIndex>59</PortraitIndex>
-			<Happiness>-8</Happiness>
+			<Happiness>-20</Happiness>
 			<PolicyCostModifier>33</PolicyCostModifier>
 			<UnhappinessModifier>5</UnhappinessModifier>
 		</Row>
@@ -173,7 +173,7 @@
 			<NukeImmune>true</NukeImmune>
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 			<PortraitIndex>60</PortraitIndex>
-			<Happiness>-10</Happiness>
+			<Happiness>-25</Happiness>
 			<PolicyCostModifier>33</PolicyCostModifier>
 			<UnhappinessModifier>6</UnhappinessModifier>
 		</Row>
@@ -234,7 +234,8 @@
 			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>12</PortraitIndex>
-			<UnhappinessModifier>-1</UnhappinessModifier>
+			<UnhappinessModifier>-4</UnhappinessModifier>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<Type>BUILDING_ROMAN_SENATE</Type>
@@ -252,7 +253,8 @@
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>38</PortraitIndex>
 			<PolicyCostModifier>-10</PolicyCostModifier>
-			<UnhappinessModifier>-1</UnhappinessModifier>
+			<UnhappinessModifier>-4</UnhappinessModifier>
+			<Happiness>5</Happiness>			
 		</Row>
 
 		<Row>
@@ -270,11 +272,10 @@
 			<NeverCapture>true</NeverCapture>
 			<HurryCostModifier>15</HurryCostModifier>
 			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>12</PortraitIndex>
-			<Happiness>-2</Happiness>			
+			<PortraitIndex>12</PortraitIndex>			
 			<PolicyCostModifier>-10</PolicyCostModifier>
-			<UnhappinessModifier>-1</UnhappinessModifier>
-			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>
+			<UnhappinessModifier>-4</UnhappinessModifier>
+			<CityCountUnhappinessMod>-5</CityCountUnhappinessMod>
 		</Row>		
 
 		<Row>
@@ -293,7 +294,7 @@
 			<HurryCostModifier>50</HurryCostModifier>
 			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>12</PortraitIndex>
-			<Happiness>-5</Happiness>
+			<UnhappinessModifier>-4</UnhappinessModifier>				
 			<NeverCapture>true</NeverCapture>
 			<PolicyCostModifier>-10</PolicyCostModifier>
 		</Row>		
@@ -314,7 +315,8 @@
 			<PortraitIndex>49</PortraitIndex>
 			<NeverCapture>true</NeverCapture>
 			<PolicyCostModifier>-5</PolicyCostModifier>
-			<UnhappinessModifier>-1</UnhappinessModifier>
+			<UnhappinessModifier>-5</UnhappinessModifier>
+			<Happiness>5</Happiness>			
 		</Row>
 
 		<Row>
@@ -332,11 +334,10 @@
 			<NeverCapture>true</NeverCapture>
 			<HurryCostModifier>15</HurryCostModifier>
 			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
-			<PortraitIndex>49</PortraitIndex>
-			<Happiness>-2</Happiness>			
+			<PortraitIndex>49</PortraitIndex>			
 			<PolicyCostModifier>-15</PolicyCostModifier>
-			<UnhappinessModifier>-1</UnhappinessModifier>
-			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>			
+			<UnhappinessModifier>-5</UnhappinessModifier>
+			<CityCountUnhappinessMod>-5</CityCountUnhappinessMod>			
 		</Row>
 
 		<Row>
@@ -355,7 +356,7 @@
 			<HurryCostModifier>50</HurryCostModifier>
 			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
 			<PortraitIndex>49</PortraitIndex>
-			<Happiness>-5</Happiness>
+			<UnhappinessModifier>-5</UnhappinessModifier>				
 			<NeverCapture>true</NeverCapture>
 			<PolicyCostModifier>-10</PolicyCostModifier>
 		</Row>		
@@ -377,7 +378,8 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>11</PortraitIndex>
 			<PolicyCostModifier>-8</PolicyCostModifier>
-			<UnhappinessModifier>-2</UnhappinessModifier>
+			<UnhappinessModifier>-6</UnhappinessModifier>
+			<Happiness>5</Happiness>			
 		</Row>
 
 		<Row>
@@ -395,11 +397,10 @@
 			<NeverCapture>true</NeverCapture>
 			<HurryCostModifier>15</HurryCostModifier>
 			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>11</PortraitIndex>
-			<Happiness>-2</Happiness>			
+			<PortraitIndex>11</PortraitIndex>			
 			<PolicyCostModifier>-18</PolicyCostModifier>
-			<UnhappinessModifier>-2</UnhappinessModifier>
-			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>			
+			<UnhappinessModifier>-6</UnhappinessModifier>
+			<CityCountUnhappinessMod>-4</CityCountUnhappinessMod>			
 		</Row>		
 
 		<Row>
@@ -419,7 +420,7 @@
 			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>11</PortraitIndex>
-			<Happiness>-5</Happiness>			
+			<UnhappinessModifier>-6</UnhappinessModifier>			
 			<PolicyCostModifier>-25</PolicyCostModifier>
 		</Row>
 
@@ -439,7 +440,8 @@
 			<PortraitIndex>12</PortraitIndex>
 			<NeverCapture>true</NeverCapture>
 			<PolicyCostModifier>-8</PolicyCostModifier>
-			<UnhappinessModifier>-3</UnhappinessModifier>
+			<UnhappinessModifier>-7</UnhappinessModifier>
+			<Happiness>5</Happiness>			
 		</Row>
 
 		<Row>
@@ -457,11 +459,10 @@
 			<NeverCapture>true</NeverCapture>
 			<HurryCostModifier>15</HurryCostModifier>
 			<IconAtlas>EXPANSION_BW_ATLAS_2</IconAtlas>
-			<PortraitIndex>12</PortraitIndex>
-			<Happiness>-2</Happiness>			
+			<PortraitIndex>12</PortraitIndex>		
 			<PolicyCostModifier>-18</PolicyCostModifier>
-			<UnhappinessModifier>-3</UnhappinessModifier>
-			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>			
+			<UnhappinessModifier>-7</UnhappinessModifier>
+			<CityCountUnhappinessMod>-4</CityCountUnhappinessMod>			
 		</Row>
 
 	</Buildings>
@@ -525,22 +526,22 @@
 			<Row>
 				<BuildingType>BUILDING_CITY_HALL_LV1</BuildingType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Quantity>4</Quantity>
+				<Quantity>10</Quantity>
 			</Row>
 			<Row>
 				<BuildingType>BUILDING_CITY_HALL_LV2</BuildingType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Quantity>3</Quantity>
+				<Quantity>8</Quantity>
 			</Row>
 			<Row>
 				<BuildingType>BUILDING_CITY_HALL_LV3</BuildingType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Quantity>2</Quantity>
+				<Quantity>4</Quantity>
 			</Row>
 			<Row>
 				<BuildingType>BUILDING_CITY_HALL_LV4</BuildingType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Quantity>1</Quantity>
+				<Quantity>2</Quantity>
 			</Row>
 
 
@@ -700,12 +701,12 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-35</Yield>
+			<Yield>-75</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-35</Yield>
+			<Yield>-75</Yield>
 		</Row>	
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
@@ -720,12 +721,12 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-35</Yield>
+			<Yield>-75</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-35</Yield>
+			<Yield>-75</Yield>
 		</Row>				
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
@@ -740,12 +741,12 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-35</Yield>
+			<Yield>-75</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-35</Yield>
+			<Yield>-75</Yield>
 		</Row>							
 
 	</Building_YieldModifiers>	
@@ -756,7 +757,7 @@
 		<Row>
 			<BuildingType>BUILDING_PUPPET_GOVERNEMENT</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_PUPPET_GOVERNEMENT_FULL</BuildingType>
@@ -766,12 +767,12 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV1</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV2</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV3</BuildingType>
@@ -786,7 +787,7 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV5</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>18</Cost>
+			<Cost>20</Cost>
 		</Row>
 
 		<Row>
@@ -813,67 +814,41 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>4</Cost>
 		</Row>						
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>4</Cost>
 		</Row>
 	</Building_ResourceQuantityRequirements>
 
 	<Building_BuildingClassHappiness>
 
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>1</Happiness>
 		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>
+	
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>1</Happiness>
 		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>1</Happiness>
 		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>				
+			
 
 	</Building_BuildingClassHappiness>
 
@@ -893,12 +868,6 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<YieldChange>10</YieldChange>
@@ -906,12 +875,6 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<YieldChange>5</YieldChange>
 		</Row>
@@ -926,48 +889,30 @@
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>					
+		</Row>				
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-10</YieldChange>
+			<YieldChange>-40</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
+			<YieldChange>-20</YieldChange>
 		</Row>				
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>10</YieldChange>
+			<YieldChange>20</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+			<YieldChange>10</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
@@ -983,12 +928,6 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<YieldChange>10</YieldChange>
@@ -998,48 +937,30 @@
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>					
+		</Row>				
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-10</YieldChange>
+			<YieldChange>-40</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
+			<YieldChange>-20</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>10</YieldChange>
+			<YieldChange>20</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+			<YieldChange>10</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
@@ -1055,12 +976,6 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<YieldChange>10</YieldChange>
@@ -1070,30 +985,18 @@
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>					
+		</Row>				
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-10</YieldChange>
+			<YieldChange>-40</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
+			<YieldChange>-20</YieldChange>
 		</Row>		
 
 	</Building_BuildingClassYieldChanges>

@@ -7,6 +7,26 @@
 
 	<!--****************Unique Buildings for major Civs****************-->
 	<Civilization_BuildingClassOverrides>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<!--<Delete CivilizationType="CIVILIZATION_SIAM"/>
 		<Delete CivilizationType="CIVILIZATION_INDIA"/>
 		<Delete CivilizationType="CIVILIZATION_IROQUOIS"/>
@@ -512,6 +532,22 @@
 		</Row>
 
 		<Row>
+			<CivilizationType>CIVILIZATION_ENGLAND</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
+			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_ENGLAND</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClassType>
+			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_ENGLAND</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_POLICE_STATION</BuildingClassType>
+			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
+		</Row>
+
+		<Row>
 			<CivilizationType>CIVILIZATION_FRANCE</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
 			<BuildingType>BUILDING_FRENCH_SALON</BuildingType>
@@ -528,7 +564,7 @@
 			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
 			<BuildingType>BUILDING_ROMAN_SENATE</BuildingType>
 		</Row>
-
+<!--
 		<Row>
 			<CivilizationType>CIVILIZATION_RUSSIA</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
@@ -549,7 +585,7 @@
 			<BuildingClassType>BUILDINGCLASS_PROCURATORATE</BuildingClassType>
 			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
 		</Row>								
-
+-->
 		<Row>
 			<CivilizationType>CIVILIZATION_MONGOL</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
@@ -1001,7 +1037,7 @@
 			<BuildingClassType>BUILDINGCLASS_MAHADEVA</BuildingClassType>
 			<BuildingType/>
 		</Row>
-		
+<!--		
 		<Row>
 			<CivilizationType>CIVILIZATION_RUSSIA</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_LAVRA</BuildingClassType>
@@ -1019,7 +1055,7 @@
 			<BuildingClassType>BUILDINGCLASS_BEERMAKER</BuildingClassType>
 			<BuildingType>BUILDING_BEERMAKER</BuildingType>
 		</Row>
-
+-->
 	</Civilization_BuildingClassOverrides>
 
 

@@ -328,11 +328,11 @@
 				<!-- <AIStartingUnitMultiplier>1</AIStartingUnitMultiplier> -->
 				<AIDeclareWarProb>250</AIDeclareWarProb>
 				<AIWorkRateModifier>250</AIWorkRateModifier>
-				<AIUnhappinessPercent>60</AIUnhappinessPercent>
+				<AIUnhappinessPercent>33</AIUnhappinessPercent>
 				<AIGrowthPercent>60</AIGrowthPercent>
 				<AITrainPercent>60</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>80</AIConstructPercent>
+				<AIConstructPercent>75</AIConstructPercent>
 				<AIWorldConstructPercent>250</AIWorldConstructPercent>
 				<AICreatePercent>140</AICreatePercent>
 				<AIWorldCreatePercent>140</AIWorldCreatePercent>
@@ -388,11 +388,11 @@
 				<AIStartingUnitMultiplier>1</AIStartingUnitMultiplier>
 				<AIDeclareWarProb>500</AIDeclareWarProb>
 				<AIWorkRateModifier>350</AIWorkRateModifier>
-				<AIUnhappinessPercent>50</AIUnhappinessPercent>
+				<AIUnhappinessPercent>25</AIUnhappinessPercent>
 				<AIGrowthPercent>50</AIGrowthPercent>
 				<AITrainPercent>50</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>66</AIConstructPercent>
+				<AIConstructPercent>50</AIConstructPercent>
 				<AIWorldConstructPercent>300</AIWorldConstructPercent>
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
@@ -448,11 +448,11 @@
 				<AIStartingUnitMultiplier>2</AIStartingUnitMultiplier>
 				<AIDeclareWarProb>1500</AIDeclareWarProb>
 				<AIWorkRateModifier>400</AIWorkRateModifier>
-				<AIUnhappinessPercent>33</AIUnhappinessPercent>
+				<AIUnhappinessPercent>10</AIUnhappinessPercent>
 				<AIGrowthPercent>33</AIGrowthPercent>
 				<AITrainPercent>33</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>50</AIConstructPercent>
+				<AIConstructPercent>33</AIConstructPercent>
 				<AIWorldConstructPercent>350</AIWorldConstructPercent>
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>

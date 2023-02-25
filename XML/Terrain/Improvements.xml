@@ -15,7 +15,7 @@
 			<HillsMakesValid>true</HillsMakesValid>
 			<SpecificCivRequired>true</SpecificCivRequired>
 			<CivilizationType>CIVILIZATION_CHINA</CivilizationType>
-			<PillageGold>18</PillageGold>
+			<PillageGold>20</PillageGold>
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>DLC02_TERRAIN_ATLAS</IconAtlas>
 		</Row>
@@ -35,8 +35,8 @@
 		<Row>
 			<Type>IMPROVEMENT_RESORT</Type>
 			<Description>TXT_KEY_IMPROVEMENT_RESORT</Description>
-			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_RESORT</Civilopedia>
-			<Help>TXT_KEY_CIV5_IMPROVEMENTS_RESORT_HELP</Help>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_RESORT_TEXT</Civilopedia>
+			<Help>TXT_KEY_IMPROVEMENT_RESORT_HELP</Help>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_CHATEAU</ArtDefineTag>
 			<SpecificCivRequired>false</SpecificCivRequired>
 			<PillageGold>200</PillageGold>
@@ -362,7 +362,7 @@
 			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_POLDER_TEXT</Civilopedia>
 			<Help>TXT_KEY_CIV5_IMPROVEMENTS_POLDER_HELP</Help>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_POLDER</ArtDefineTag>
-			<RequiresFeature>false</RequiresFeature>
+			<RequiresFlatlands>true</RequiresFlatlands>
 			<SpecificCivRequired>true</SpecificCivRequired>
 			<CivilizationType>CIVILIZATION_NETHERLANDS</CivilizationType>
 			<PillageGold>18</PillageGold>
@@ -443,10 +443,6 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
 		</Row>
 
 		<!-- HYDROPONICS DOME -->
@@ -754,18 +750,6 @@
 
 		<Delete ImprovementType="IMPROVEMENT_POLDER"/>
 
-		<Row>
-			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
-			<FeatureType>FEATURE_MARSH</FeatureType>
-		</Row>
 
 		<!--
 		<Row>
@@ -899,6 +883,8 @@
 		</Row>
 		-->
 
+
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -987,7 +973,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_GENOCENTRE</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>8</Yield>
+			<Yield>10</Yield>
 		</Row>		
 		
 		<!-- ARCOLOGY -->		
@@ -1061,8 +1047,7 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>-->
-	</Improvement_Yields>
-	
+	</Improvement_Yields>	
 	
 	<Improvement_ResourceType_Yields>
 
@@ -1552,11 +1537,11 @@
 			<Time>600</Time>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<Description>TXT_KEY_BUILD_RESORT</Description>
-			<Help>TXT_KEY_CIV5_IMPROVEMENTS_RESORT_HELP</Help>
+			<Help>TXT_KEY_IMPROVEMENT_RESORT_HELP</Help>
 			<Recommendation>TXT_KEY_BUILD_RESORT_REC</Recommendation>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<HotKey>KB_Q</HotKey>
-			<OrderPriority>95</OrderPriority>
+			<OrderPriority>50</OrderPriority>
 			<IconIndex>41</IconIndex>
 			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
 		</Row>
@@ -1571,7 +1556,7 @@
 			<Recommendation>TXT_KEY_BUILD_STEEL_PLANT_REC</Recommendation>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<HotKey>KB_Z</HotKey>
-			<OrderPriority>98</OrderPriority>
+			<OrderPriority>50</OrderPriority>
 			<IconIndex>5</IconIndex>
 			<IconAtlas>FW_IMPROVEMENTS_ATLAS</IconAtlas>
 		</Row>
@@ -1585,7 +1570,7 @@
 			<Recommendation>TXT_KEY_BUILD_FOOD_REC</Recommendation>
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<HotKey>KB_E</HotKey>
-			<OrderPriority>99</OrderPriority>
+			<OrderPriority>97</OrderPriority>
 			<IconIndex>0</IconIndex>
 			<IconAtlas>UNIT_ACTION_DLC02_ATLAS</IconAtlas>
 		</Row>
@@ -1768,7 +1753,7 @@
 			<CreatedByGreatPerson>false</CreatedByGreatPerson>
 			<NearbyEnemyDamage>0</NearbyEnemyDamage>
 			<NoTwoAdjacent>false</NoTwoAdjacent>
-			<DestroyedWhenPillaged>false</DestroyedWhenPillaged>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>DLC02_TERRAIN_ATLAS</IconAtlas>
 		</Set>
@@ -2042,7 +2027,7 @@
 		</Row>-->
 
 		<Row>
-			<ImprovementType>IMPROVEMENT_STEELPLANT</ImprovementType>
+			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
 		</Row>		
 		
@@ -2108,6 +2093,11 @@
 			<Where ImprovementType="IMPROVEMENT_CHATEAU" YieldType="YIELD_GOLD"/>
 		</Update>
 
+		<Update>
+			<Set Yield="2"/>
+			<Where ImprovementType="IMPROVEMENT_POLDER" YieldType="YIELD_FOOD"/>
+		</Update>		
+
 		<!--<Update>
 			<Set Yield="2"/>
 			<Where ImprovementType="IMPROVEMENT_TRADING_POST"/>
@@ -2136,7 +2126,7 @@
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<RouteType>ROUTE_ROAD</RouteType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
@@ -2148,13 +2138,13 @@
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<RouteType>ROUTE_RAILROAD</RouteType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<RouteType>ROUTE_RAILROAD</RouteType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>6</Yield>
+			<Yield>3</Yield>
 		</Row>		
 
 		<Row>
@@ -2192,11 +2182,11 @@
 		
 		
 		<Update>
-			<Set Yield="4"/>
+			<Set Yield="5"/>
 			<Where ImprovementType="IMPROVEMENT_CUSTOMS_HOUSE"/>
 		</Update>
 		<Update>
-			<Set Yield="5"/>
+			<Set Yield="2"/>
 			<Where ImprovementType="IMPROVEMENT_ACADEMY"/>
 		</Update>
 		
@@ -2224,14 +2214,14 @@
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<TechType>TECH_RAILROAD</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<TechType>TECH_DYNAMITE</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 
@@ -2349,12 +2339,12 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		<!--<Row>
+		<Row>
 			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
 			<TechType>TECH_CIVIL_SERVICE</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
-		</Row>-->
+		</Row>
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
@@ -2416,7 +2406,7 @@
 			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
 			<TechType>TECH_FERTILIZER</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>4</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
@@ -2436,8 +2426,21 @@
 			<ImprovementType>IMPROVEMENT_SHOSHONE_TIPI</ImprovementType>
 			<TechType>TECH_FERTILIZER</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_SHOSHONE_TIPI</ImprovementType>
+			<TechType>TECH_ECONOMICS</TechType>
+			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_SHOSHONE_TIPI</ImprovementType>
+			<TechType>TECH_MASS_MEDIA</TechType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>3</Yield>
+		</Row>		
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<TechType>TECH_FERTILIZER</TechType>
@@ -2475,7 +2478,7 @@
 			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
 			<TechType>TECH_GENETIC_ENGEERING</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
@@ -2532,7 +2535,7 @@
 			<ImprovementType>IMPROVEMENT_MOAI</ImprovementType>
 			<TechType>TECH_MASS_MEDIA</TechType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_MOAI</ImprovementType>
@@ -2639,12 +2642,12 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 
 		<Row>
@@ -2691,7 +2694,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_POLDER</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 
@@ -2728,7 +2731,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>3</Yield>
 		</Row>
 
 		<Row>
@@ -2792,12 +2795,12 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 
 		<Row>
@@ -2842,40 +2845,40 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_INDUSTRIAL_COMPLEX</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>24</Yield>
+			<Yield>30</Yield>
 		</Row>
 
 		<!-- ARCOLOGY -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_ARCOLOGY</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>18</Yield>
+			<Yield>20</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_ARCOLOGY</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>16</Yield>
+			<Yield>20</Yield>
 		</Row>
 
 		<!-- SUPPORT NODE -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_CORE</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>18</Yield>
+			<Yield>20</Yield>
 		</Row>
 
 		<!-- HYDROPONICS -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_HYDROPONICS_DOME</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>24</Yield>
+			<Yield>20</Yield>
 		</Row>
 
 		<!-- GENOCENTRE -->
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_GENOCENTRE</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>44</Yield>
+			<Yield>40</Yield>
 		</Row>	
 
 
@@ -2890,6 +2893,13 @@
 			<Where Type="IMPROVEMENT_CHATEAU"/>
 		</Update>
 	</Improvements>
+
+	<Improvements>
+		<Update>
+			<Set CivilizationType="CIVILIZATION_POLYNESIA" NoTwoAdjacent="false" DefenseModifier="0"/>
+			<Where Type="IMPROVEMENT_MOAI"/>
+		</Update>
+	</Improvements>	
 
 	<Improvements>		
 		<Update>
@@ -2910,6 +2920,13 @@
 
 	<Improvement_Yields>
 	
+		<Row>
+			<ImprovementType>IMPROVEMENT_MOAI</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>4</Yield>
+		</Row>
+
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
@@ -3065,7 +3082,7 @@
 			<ImprovementType>IMPROVEMENT_BYZANTIUM_ANGELOKASTRO</ImprovementType>
 			<TechType>TECH_MASS_MEDIA</TechType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 		
 		
@@ -3101,8 +3118,173 @@
 		</Row>				
 	</Improvement_TechYieldChanges>
 
+
+	<Builds>
+
+		<Update>
+			<Set PrereqTech="TECH_GUNPOWDER" Time="1000" IconIndex="30" IconAtlas="UNIT_ACTION_ATLAS"/>
+			<Where Type="BUILD_CITADEL" />
+		</Update>
+		
+		<Update>
+			<Set PrereqTech="TECH_OPTICS" IconIndex="2" IconAtlas="UNIT_ACTION_ATLAS_EXP2"/>
+			<Where Type="BUILD_FORT"/>
+		</Update>
+
+		<Update>
+			<Set PrereqTech="TECH_FISHERY"  Time="500" />
+			<Where Type="BUILD_MOAI"/>
+		</Update>
+
+		<Update>
+			<Set PrereqTech="TECH_BIOLOGY" CanBeEmbarked="true" Kill="false" Time="900" Help="TXT_KEY_BUILD_SP_NOT_CONSUMED_HELP"/>
+			<Where Type="BUILD_OFFSHORE_PLATFORM" />
+		</Update>
+
+		<Update>
+			<Set CanBeEmbarked="true" Kill="false" Time="500" Help="TXT_KEY_BUILD_SP_NOT_CONSUMED_HELP"/>
+			<Where Type="BUILD_FISHING_BOATS" />
+		</Update>
+
+		<Update>
+			<Set PrereqTech="TECH_CURRENCY" Time="500" OrderPriority="85"/>
+			<Where Type="BUILD_TRADING_POST"/>
+		</Update>
+		
+		<Update>
+			<Set PrereqTech="TECH_ART_THEORY"/>
+			<Where Type="BUILD_CHATEAU"/>
+		</Update>
 	
+		<Update>
+			<Set PrereqTech="TECH_HUNTING" OrderPriority="140"/>
+			<Where Type="BUILD_CAMP"/>
+		</Update>
 
+		<Update>
+			<Set PrereqTech="TECH_BRONZE_WORKING"/>
+			<Where Type="BUILD_MINE"/>
+		</Update>
 
+		<Update>
+			<Set PrereqTech="NULL"/>
+			<Where Type="BUILD_REMOVE_FOREST"/>
+		</Update>
+
+		<Update>
+			<Set PrereqTech="NULL"/>
+			<Where Type="BUILD_REMOVE_JUNGLE"/>
+		</Update>
+
+		<Update>
+			<Set PrereqTech="TECH_BRONZE_WORKING"/>
+			<Where Type="BUILD_REMOVE_MARSH"/>
+		</Update>
+
+		<Update>
+			<Set Time="500" OrderPriority="150" PrereqTech="TECH_BRONZE_WORKING"/>
+			<Where Type="BUILD_QUARRY"/>
+		</Update>
+
+		<Update>
+			<Set PrereqTech="TECH_FISHERY" IconIndex="24" IconAtlas="SPUINT_ACTION_ATLAS"/>
+			<Where Type="BUILD_FISHING_BOATS"/>
+		</Update>
+
+		<Update>
+			<Set Kill="false" Time="500" PrereqTech="TECH_FISHERY" IconIndex="23" IconAtlas="SPUINT_ACTION_ATLAS"/>
+			<Where Type="BUILD_FISHING_BOATS_NO_KILL"/>
+		</Update>
+
+		<Update>
+			<Set Time="50"/>
+			<Where Type="BUILD_ROAD"/>
+		</Update>
+
+		<Update>
+			<Set Time="100" OrderPriority="200"/>
+			<Where Type="BUILD_RAILROAD" />
+		</Update>
+
+		<Update>
+			<Set Time="500" OrderPriority="140"/>
+			<Where Type="BUILD_FARM"/>
+		</Update>
+		<Update>
+			<Set Time="500" OrderPriority="80"/>
+			<Where Type="BUILD_LUMBERMILL"/>
+		</Update>
+
+		<Update>
+			<Set Time="500" PrereqTech="TECH_HUNTING" OrderPriority="140"/>
+			<Where Type="BUILD_PASTURE"/>
+		</Update>
+
+		<Update>
+			<Set Time="500" OrderPriority="140"/>
+			<Where Type="BUILD_PLANTATION"/>
+		</Update>
+
+		<Update>
+			<Set OrderPriority="0" />
+			<Where Type="BUILD_REMOVE_JUNGLE"/>
+		</Update>
+
+		<Update>
+			<Set OrderPriority="15"/>
+			<Where Type="BUILD_REMOVE_FOREST"/>
+		</Update>
+
+		<Update>
+			<Set OrderPriority="5"/>
+			<Where Type="BUILD_REMOVE_MARSH"/>
+		</Update>
+
+		<Update>
+			<Set OrderPriority="500"/>
+			<Where Type="BUILD_SCRUB_FALLOUT"/>
+		</Update>
+
+		<Update>
+			<Set Time="300" OrderPriority="999"/>
+			<Where Type="BUILD_REPAIR"/>
+		</Update>
+
+		<Update>
+			<Set Time="50"/>
+			<Where Type="BUILD_REMOVE_ROUTE"/>
+		</Update>
+
+		<Update>
+			<Set OrderPriority="96"/>
+			<Where Type="BUILD_CITADEL"/>
+		</Update>
+
+		<Update>
+			<Set OrderPriority="999"/>
+			<Where Type="BUILD_ARCHAEOLOGY_DIG"/>
+		</Update>
+
+		<Update>
+			<Set Time="500" OrderPriority="500" PrereqTech="TECH_CONSTRUCTION"/>
+			<Where Type="BUILD_BRAZILWOOD_CAMP" />
+		</Update>
+
+		<!--<Update>
+			<Set PrereqTech="TECH_OPTICS"/>
+			<Where Type="BUILD_FEITORIA"/>
+		</Update>-->
+
+		<Update>
+			<Set PrereqTech="TECH_MASONRY" OrderPriority="500" />
+			<Where Type="BUILD_POLDER"/>
+		</Update>
+
+		<Update>
+			<Set PrereqTech="TECH_POTTERY" OrderPriority="500" />
+			<Where Type="BUILD_KASBAH"/>
+		</Update>
+
+	</Builds>
 
 	</GameData>

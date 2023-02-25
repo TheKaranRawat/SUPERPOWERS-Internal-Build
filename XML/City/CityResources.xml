@@ -970,28 +970,28 @@
 		<Row>
 			<BuildingType>BUILDING_COAL_PLANT</BuildingType>
 			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
-			<Quantity>16</Quantity>
+			<Quantity>24</Quantity>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_COAL_PLANT_EXTEND</BuildingType>
 			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
-			<Quantity>12</Quantity>
+			<Quantity>16</Quantity>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_WIND_PLANT</BuildingType>
 			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
-			<Quantity>12</Quantity>
+			<Quantity>16</Quantity>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_DANISH_WIND_TURBINE</BuildingType>
 			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
-			<Quantity>24</Quantity>
+			<Quantity>32</Quantity>
 		</Row>
 		
 		<Row>
 			<BuildingType>BUILDING_HYDRO_PLANT</BuildingType>
 			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
-			<Quantity>32</Quantity>
+			<Quantity>24</Quantity>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_OIL_PLANT</BuildingType>

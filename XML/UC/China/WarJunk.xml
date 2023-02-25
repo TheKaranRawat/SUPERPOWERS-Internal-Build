@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 8/6/2013 1:15:40 AM -->
 <GameData>
+<!--
 	<UnitPromotions>
 		<Row>
 			<Type>PROMOTION_EFFICIENT_DESIGN</Type>
@@ -84,4 +85,5 @@
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 	</IconTextureAtlases>
+-->	
 </GameData>

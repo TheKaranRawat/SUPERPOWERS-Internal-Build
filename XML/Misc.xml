@@ -125,7 +125,7 @@
 		</Update>
 
 		<Update>
-			<Set EstimatedNumCities="110"/>
+			<Set EstimatedNumCities="150"/>
 			<Where Type="WORLDSIZE_HUGE"/>
 		</Update>
 		<Update>

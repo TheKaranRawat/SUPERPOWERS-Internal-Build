@@ -60,8 +60,8 @@
 		<Row>
 			<Class>UNITCLASS_WORKBOAT</Class>
 			<Type>UNIT_WORKBOAT</Type>
-			<PrereqTech>TECH_SAILING</PrereqTech>
-			<Cost>50</Cost>
+			<PrereqTech>TECH_FISHERY</PrereqTech>
+			<Cost>15</Cost>
 			<Moves>4</Moves>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
 			<Domain>DOMAIN_SEA</Domain>
@@ -1637,22 +1637,22 @@
 		<Row>
 			<UnitType>UNIT_SS_STASIS_CHAMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>24</Cost>
+			<Cost>30</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SS_ENGINE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>24</Cost>
+			<Cost>30</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SS_COCKPIT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>24</Cost>
+			<Cost>30</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SS_BOOSTER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>30</Cost>
 		</Row>
 
 
@@ -1680,7 +1680,7 @@
 		<Row>
 			<UnitType>UNIT_SATELLITE_ORBITAL_STRIKE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>10</Cost>
 		</Row>
 		
 	</Unit_ResourceQuantityRequirements>

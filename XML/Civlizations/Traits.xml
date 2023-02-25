@@ -1922,7 +1922,7 @@
 		<Row>
 			<TraitType>TRAIT_INGENIOUS</TraitType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>30</Yield>
+			<Yield>20</Yield>
 		</Row>
 
 		<Row>
@@ -2065,6 +2065,21 @@
 	</BuildingClasses>
 
 	<Buildings>
+
+		<Row>
+			<Type>BUILDING_TB_SPC</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<Description>TXT_KEY_TRAIT_INGENIOUS</Description>
+			<Civilopedia>TXT_KEY_TRAIT_INGENIOUS</Civilopedia>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>7</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS</IconAtlas>
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>
+
 		<Row>
 			<Type>BUILDING_TB_ENHANCED_CULTURE</Type>
 			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
@@ -2204,7 +2219,7 @@
 		<Row>
 			<BuildingType>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>12</Yield>
+			<Yield>10</Yield>
 		</Row>
 
 		<Row>
@@ -2296,6 +2311,17 @@
 		</Row>
 	</Building_GlobalYieldModifiers>
 	
+
+	<Building_YieldChangesPerPop>
+
+		<Row>
+			<BuildingType>BUILDING_TB_SPC</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>25</Yield>
+		</Row>	
+
+	</Building_YieldChangesPerPop>
+
 	
 	<!--*******************************Special Traits achieved by Policies*********************-->
 	<!--<Policies>

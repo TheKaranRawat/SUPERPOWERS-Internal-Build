@@ -7,6 +7,83 @@
 	<Buildings>
 
 		<Row>
+			<Type>BUILDING_WAAG</Type>
+			<BuildingClass>BUILDINGCLASS_BANK</BuildingClass>
+			<FreeStartEra>ERA_MODERN</FreeStartEra>
+			<Cost>100</Cost>
+			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<Description>TXT_KEY_BUILDING_WAAG</Description>
+			<Help>TXT_KEY_BUILDING_WAAG_HELP</Help>			
+			<Strategy>TXT_KEY_BUILDING_WAAG_STRATEGY</Strategy>	
+			<Civilopedia>TXT_KEY_BUILDING_WAAG_PEDIA</Civilopedia>				
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<SpecialistCount>3</SpecialistCount>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>50</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>18</PortraitIndex>
+		</Row>
+
+
+		<Row>
+			<Type>BUILDING_CHINESE_EXAMINATION</Type>
+			<BuildingClass>BUILDINGCLASS_UNIVERSITY</BuildingClass>
+			<Cost>150</Cost>
+			<GoldMaintenance>4</GoldMaintenance>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<FaithCost>100</FaithCost>
+			<UnlockedByBelief>true</UnlockedByBelief>
+			<Description>TXT_KEY_BUILDING_CHINESE_EXAMINATION</Description>
+			<Help>TXT_KEY_BUILDING_CHINESE_EXAMINATION_HELP</Help>			
+			<Strategy>TXT_KEY_BUILDING_CHINESE_EXAMINATION_STRATEGY</Strategy>				
+			<Civilopedia>TXT_KEY_BUILDING_CHINESE_EXAMINATION_PEDIA</Civilopedia>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistCount>2</SpecialistCount>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>50</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>13</PortraitIndex>
+		</Row>
+
+
+		<Row>
+			<Type>BUILDING_NILOMETER</Type>
+			<BuildingClass>BUILDINGCLASS_WATERMILL</BuildingClass>
+			<Cost>40</Cost>
+			<GoldMaintenance>2</GoldMaintenance>
+			<PrereqTech>TECH_THE_WHEEL</PrereqTech>
+			<Description>TXT_KEY_BUILDING_NILOMETER</Description>
+			<Help>TXT_KEY_BUILDING_NILOMETER_HELP</Help>			
+			<Strategy>TXT_KEY_BUILDING_NILOMETER_STRATEGY</Strategy>			
+			<Civilopedia>TXT_KEY_BUILDING_NILOMETER_PEDIA</Civilopedia>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>29</PortraitIndex>
+			<EnhancedYieldTech>TECH_MASS_MEDIA</EnhancedYieldTech>
+			<TechEnhancedTourism>1</TechEnhancedTourism>
+		</Row>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<Row>
 			<Type>BUILDING_FW_GEOTHERMAL_PLANT</Type>
 			<BuildingClass>BUILDINGCLASS_FW_GEOTHERMAL_PLANT</BuildingClass>
 			<Cost>3000</Cost>
@@ -3034,7 +3111,7 @@
 			<BuildingClass>BUILDINGCLASS_HARBOR</BuildingClass>
 			<Cost>45</Cost>
 			<!--<GoldMaintenance>2</GoldMaintenance>-->
-			<PrereqTech>TECH_COMPASS</PrereqTech>
+			<PrereqTech>TECH_OPTICS</PrereqTech>
 			<Help>TXT_KEY_BUILDING_HARBOR_HELP</Help>
 			<Description>TXT_KEY_BUILDING_HARBOR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_HARBOR_PEDIA</Civilopedia>
@@ -3399,7 +3476,6 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<PlotCultureCostModifier>-20</PlotCultureCostModifier>
 			<PlotBuyCostModifier>-20</PlotBuyCostModifier>
-			<Happiness>1</Happiness>
 			<NukeImmune>true</NukeImmune>
 			<NeverCapture>true</NeverCapture>
 			<HurryCostModifier>25</HurryCostModifier>
@@ -3663,7 +3739,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
 			<!--<CapturePlunderModifier>100</CapturePlunderModifier>-->
-			<Happiness>6</Happiness>
+			<Happiness>3</Happiness>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>55</PortraitIndex>
@@ -3910,7 +3986,7 @@
 			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<Happiness>6</Happiness>
+			<Happiness>4</Happiness>
 			<HurryCostModifier>10</HurryCostModifier>
 			<IconAtlas>5UC_ICON_ATLAS</IconAtlas>
 			<PortraitIndex>21</PortraitIndex>
@@ -3962,7 +4038,7 @@
 			<Cost>10</Cost>
 			<HurryCostModifier>25</HurryCostModifier>
 			<GoldMaintenance>1</GoldMaintenance>
-			<Happiness>-1</Happiness>
+			<Happiness>-2</Happiness>
 			<PrereqTech>TECH_CURRENCY</PrereqTech>
 			<Help>TXT_KEY_BUILDING_TAX_COLLECTOR_HELP</Help>
 			<Description>TXT_KEY_BUILDING_TAX_COLLECTOR</Description>
@@ -3974,7 +4050,7 @@
 			<PortraitIndex>16</PortraitIndex>
 			<ConquestProb>66</ConquestProb>        
 		</Row>		
-
+<!--
 		<Row>
 			<Type>BUILDING_AUTOHERSTELLER</Type>
 			<BuildingClass>BUILDINGCLASS_FACTORY</BuildingClass>
@@ -4018,16 +4094,16 @@
  			<FoodKept>10</FoodKept>
 			<ConquestProb>66</ConquestProb>        
 		</Row>				
-	
+-->
 	</Buildings>
 
 	<Building_ClassesNeededInCity>
-		
+<!--		
 		<Row>
 			<BuildingType>BUILDING_BEERMAKER</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
 		</Row>		
-
+-->
 		<Row>
 			<BuildingType>BUILDING_CATHEDRAL</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
@@ -4064,12 +4140,12 @@
 			<BuildingType>BUILDING_BROADCAST_TOWER</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
 		</Row>	
-	
+<!--	
 		<Row>
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
 		</Row>
-
+-->
 	</Building_ClassesNeededInCity>
 
 	<!-- ***************************Religious Buildings***************************-->
@@ -4192,7 +4268,7 @@
 			<ConquestProb>100</ConquestProb>
 			<ArtDefineTag>TEMPLE</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
-			<Happiness>2</Happiness>
+			<Happiness>3</Happiness>
 			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>2</PortraitIndex>
 		</Row>
@@ -4207,7 +4283,7 @@
 			<Strategy>TXT_KEY_BUILDING_SP_CITY_BASIC_BUILDINGS_STRATEGY</Strategy>
 			<ArtDefineTag>TEMPLE</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
-			<Happiness>1</Happiness>
+			<Happiness>3</Happiness>
 			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
 			<ConquestProb>100</ConquestProb>
 			<PortraitIndex>5</PortraitIndex>
@@ -4223,7 +4299,7 @@
 			<Strategy>TXT_KEY_BUILDING_SP_CITY_BASIC_BUILDINGS_STRATEGY</Strategy>
 			<ArtDefineTag>TEMPLE</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
-			<Happiness>2</Happiness>
+			<Happiness>3</Happiness>
 			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
 			<ConquestProb>100</ConquestProb>
 			<PortraitIndex>6</PortraitIndex>
@@ -4243,10 +4319,10 @@
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>38</PortraitIndex>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
-			<Happiness>1</Happiness>
+			<Happiness>3</Happiness>
 			<ConquestProb>100</ConquestProb>
 		</Row>
-
+<!--
 		<Row>
 			<Type>BUILDING_LAVRA</Type>
 			<BuildingClass>BUILDINGCLASS_LAVRA</BuildingClass>
@@ -4264,7 +4340,7 @@
 			<CapturePlunderModifier>500</CapturePlunderModifier>
 			<ConquestProb>50</ConquestProb>						
 		</Row>		
-
+-->
 	</Buildings>
 
 	<Building_ClassesNeededInCity>
@@ -4285,10 +4361,7 @@
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
 		</Row>
 
-<!--		<Row>
-			<BuildingType>BUILDING_LAVRA</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-		</Row>		-->
+
 		
 	</Building_ClassesNeededInCity>
 	
@@ -4639,7 +4712,7 @@
 			<BuildingClass>BUILDINGCLASS_CIRCUS</BuildingClass>
 			<Cost>45</Cost>
 			<GoldMaintenance>1</GoldMaintenance>
-			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
 			<Description>TXT_KEY_BUILDING_CIRCUS</Description>
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_CIRCUS_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SP_CITY_BASIC_BUILDINGS_STRATEGY</Strategy>
@@ -4647,7 +4720,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_CIRCUS</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<Happiness>2</Happiness>
+			<Happiness>3</Happiness>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>44</PortraitIndex>
@@ -4656,7 +4729,7 @@
 			<Type>BUILDING_MAYA_BALLCOURT</Type>
 			<BuildingClass>BUILDINGCLASS_CIRCUS</BuildingClass>
 			<Cost>45</Cost>
-			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
 			<Description>TXT_KEY_BUILDING_MAYA_BALLCOURT</Description>
 			<Civilopedia>TXT_KEY_CIV5_BUILDING_MAYA_BALLCOURT_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SP_CITY_BASIC_BUILDINGS_STRATEGY</Strategy>
@@ -4664,12 +4737,13 @@
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
-			<Happiness>2</Happiness>
+			<Happiness>3</Happiness>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>62</PortraitIndex>
 		</Row>
 		
+
 	
 	</Buildings>
 

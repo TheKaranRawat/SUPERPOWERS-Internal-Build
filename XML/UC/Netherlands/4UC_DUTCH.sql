@@ -1,3 +1,4 @@
+/*
 INSERT INTO ArtDefine_UnitInfos (Type,DamageStates,Formation)
 	SELECT	('ART_DEF_UNIT_DUTCH_3INDIAMAN'), DamageStates, Formation
 	FROM ArtDefine_UnitInfos WHERE (Type = 'ART_DEF_UNIT_U_SPANISH_GALLEON');
@@ -83,3 +84,4 @@ VALUES	('UNIT_DUTCH_3INDIAMAN',  'PROMOTION_WARSHIP_DISGUISE');
 INSERT INTO Civilization_UnitClassOverrides 
 		(CivilizationType, 					UnitClassType, 			UnitType)
 VALUES	('CIVILIZATION_NETHERLANDS',	'UNITCLASS_FRIGATE',	'UNIT_DUTCH_3INDIAMAN');
+*/

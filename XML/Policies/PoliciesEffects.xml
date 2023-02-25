@@ -16,7 +16,7 @@
 		<Row>
 			<PolicyType>POLICY_MARITIME_INFRASTRUCTURE</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
+			<Yield>10</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_NAVAL_TRADITION</PolicyType>
@@ -40,16 +40,20 @@
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>25</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>25</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 	</Policy_CapitalYieldModifiers>
+
+	
+
+
 
 	<Policy_CapitalYieldChanges>
 
@@ -103,6 +107,27 @@
 
 
 	<Policy_SpecialistExtraYields>
+		
+
+		<Row>
+			<PolicyType>POLICY_WORKERS_FACULTIES</PolicyType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-4</Yield>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_WORKERS_FACULTIES</PolicyType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_WORKERS_FACULTIES</PolicyType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>4</Yield>
+		</Row>				
+
+		
 		<Row>
 			<PolicyType>POLICY_CIVIL_SOCIETY</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -117,25 +142,13 @@
 		<Row>
 			<PolicyType>POLICY_CENTRALISATION</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_CENTRALISATION</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_CENTRALISATION</PolicyType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_CENTRALISATION</PolicyType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		
 		<Row>
@@ -184,63 +197,63 @@
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
-			<CultureChange>8</CultureChange>
+			<CultureChange>10</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingClassType>
-			<CultureChange>8</CultureChange>
+			<CultureChange>15</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
-			<CultureChange>16</CultureChange>
+			<CultureChange>30</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
-			<CultureChange>32</CultureChange>
+			<CultureChange>45</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingClassType>
-			<CultureChange>36</CultureChange>
+			<CultureChange>100</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
-			<CultureChange>40</CultureChange>
+			<CultureChange>100</CultureChange>
 		</Row>
 		
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>3</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>3</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>3</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>3</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>3</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_BROADCAST_TOWER</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>3</CultureChange>
 		</Row>
 		<!--<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
@@ -350,6 +363,94 @@
 			<YieldChange>2</YieldChange>
 		</Row>-->
 
+
+		<Row>
+			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>-2</YieldChange>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>				
+
+
+		<Row>
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>			
+		<Row>
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>10</YieldChange>
+		</Row>
+
+
+
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>		
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TCS_PAROCHIAL_SCHOOL</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>		
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_PUBLIC_SCHOOL</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>		
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>		
+
 		<Row>
 			<PolicyType>POLICY_PIETY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MAHADEVA</BuildingClassType>
@@ -361,37 +462,37 @@
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PUBLIC_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 
 
@@ -464,37 +565,37 @@
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>8</YieldChange>
+			<YieldChange>10</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>8</YieldChange>
+			<YieldChange>15</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>16</YieldChange>
+			<YieldChange>30</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>32	</YieldChange>
+			<YieldChange>45</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>36</YieldChange>
+			<YieldChange>100</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>40</YieldChange>
+			<YieldChange>100</YieldChange>
 		</Row>
 
 
@@ -552,7 +653,7 @@
 		<Row>
 			<PolicyType>POLICY_LIBERTY</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>12</Yield>
+			<Yield>10</Yield>
 		</Row>
 		
 
@@ -561,6 +662,14 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>10</Yield>
 		</Row>
+
+
+		<Row>
+			<PolicyType>POLICY_DECENTRALIZATION</PolicyType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>		
+		
 	</Policy_CityYieldChanges>
 
 	<Policy_BuildingClassYieldModifiers>
@@ -787,57 +896,360 @@
 	<Policy_BuildingClassHappiness>
 
 
-		<!--<Row>
+
+
+
+
+
+
+
+
+
+
+
+
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_PIETY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_PIETY_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_AESTHETICS</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_AESTHETICS_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_PATRONAGE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_PATRONAGE_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_EXPLORATION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_EXPLORATION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_RATIONALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_RATIONALISM_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_HONOR</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_FREEDOM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_FREEDOM_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_COMMERCE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>		
+
+		<Row>
+			<PolicyType>POLICY_COMMERCE_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_AUTOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_AUTOCRACY_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+
+
+
+
+
+		<Row>
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TCS_TOWN_COUNCIL</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+
+
+		<Row>
+			<PolicyType>POLICY_RESETTLEMENT</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_RESETTLEMENT</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_RESETTLEMENT</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_RESETTLEMENT</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_RESETTLEMENT</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+
+
+		<Row>
+			<PolicyType>POLICY_BRANCH_FREEDOM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BRANCH_FREEDOM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BRANCH_FREEDOM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BRANCH_FREEDOM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BRANCH_FREEDOM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>	
+
+
+		<Row>
+			<PolicyType>POLICY_BRANCH_ORDER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BRANCH_ORDER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BRANCH_ORDER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BRANCH_ORDER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BRANCH_ORDER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>		
+
+
+		<Row>
+			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TCS_TOWN_COUNCIL</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+
+
+		<Row>
+			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+
+
+		<Row>
 			<PolicyType>POLICY_MONARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
-			<Happiness>1</Happiness>
-		</Row>-->
+			<Happiness>5</Happiness>
+		</Row>
 		<Row>
 			<PolicyType>POLICY_MONARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MONARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MONARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
-			<Happiness>4</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MONARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingClassType>
-			<Happiness>6</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MONARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
-			<Happiness>6</Happiness>
+			<Happiness>5</Happiness>
+		</Row>
+
+
+		<Row>
+			<PolicyType>POLICY_SERENE_REALM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SERENE_REALM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SERENE_REALM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SERENE_REALM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SERENE_REALM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SERENE_REALM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
+			<Happiness>5</Happiness>
 		</Row>
 
 
 		<Row>
 			<PolicyType>POLICY_PROVINCE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PROVINCE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PROVINCE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PROVINCE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
-			<Happiness>4</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PROVINCE</PolicyType>
@@ -853,12 +1265,12 @@
 		<Row>
 			<PolicyType>POLICY_FREE_RELIGION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_FREE_RELIGION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 
 		<!--<Row>
@@ -881,54 +1293,54 @@
 		<Row>
 			<PolicyType>POLICY_CULTURAL_CENTERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_CULTURAL_CENTERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_CULTURAL_CENTERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_CULTURAL_CENTERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_CULTURAL_CENTERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_BROADCAST_TOWER</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 
 
 		<Row>
 			<PolicyType>POLICY_MARKET_ECONOMY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_FOOD_MARKET</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MARKET_ECONOMY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_JEWELER</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MARKET_ECONOMY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_COUNTRY_CLUB</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MARKET_ECONOMY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_BEVERAGE_FACTORY</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MARKET_ECONOMY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_WILDLIFE_PRESERVE</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 
 
@@ -936,53 +1348,53 @@
 		<Row>
 			<PolicyType>POLICY_NAVIGATION_SCHOOL</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_NAVIGATION_SCHOOL</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SEAPORT</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_NAVIGATION_SCHOOL</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_NAVIGATION_SCHOOL</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SHIPYARD</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_SOVEREIGNTY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SOVEREIGNTY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SOVEREIGNTY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PUBLIC_SCHOOL</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SOVEREIGNTY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SOVEREIGNTY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SOVEREIGNTY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_POLAR_STATION</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 
 	
@@ -995,109 +1407,109 @@
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_HOSPITAL</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MEDICAL_LAB</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TAP_WATER_SUPPLY</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_WATER_TREATMENT_FACTORY</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MINT</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_BUS_STATION</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GARDEN</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_DIGITAL_NETWORK</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_HOTEL</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_URBANIZATION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_AIRPORT</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MECHANIZED_FARM</BuildingClassType>
-			<Happiness>9</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GRAIN_DEPOT</BuildingClassType>
-			<Happiness>9</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		
 		<Row>
 			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_COAL_PLANT</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_WIND_PLANT</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_HYDRO_PLANT</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OIL_PLANT</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GAS_PLANT</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_NUCLEAR_PLANT</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SOLAR_PLANT</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TIDAL_PLANT</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_YOUNG_PIONEERS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_FUSION_PLANT</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		
 
@@ -1207,19 +1619,19 @@
 		<Row>
 			<PolicyType>POLICY_ISKA_PLANNED_ECONOMY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-			<Happiness>4</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_ISKA_PLANNED_ECONOMY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<Happiness>4</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_ISKA_PLANNED_ECONOMY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_STOCK_EXCHANGE</BuildingClassType>
-			<Happiness>4</Happiness>
+			<Happiness>2</Happiness>
 		</Row>
 
 		
@@ -1341,32 +1753,32 @@
 			<PolicyType>POLICY_MARITIME_INFRASTRUCTURE</PolicyType>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MARITIME_INFRASTRUCTURE</PolicyType>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MARITIME_INFRASTRUCTURE</PolicyType>
 			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_MARITIME_INFRASTRUCTURE</PolicyType>
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MARITIME_INFRASTRUCTURE</PolicyType>
 			<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		
 		
@@ -1438,21 +1850,21 @@
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 
 		<Row>
@@ -1637,7 +2049,7 @@
 		<Row>
 			<PolicyType>POLICY_CITIZENSHIP</PolicyType>
 			<UnitClassType>UNITCLASS_WORKER</UnitClassType>
-			<Count>3</Count>
+			<Count>2</Count>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_ARTISTIC_GENIUS</PolicyType>
@@ -2329,34 +2741,48 @@
 		<Row>
 			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 		<Row>
-			<PolicyType>POLICY_SERENE_REALM</PolicyType>
+			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>10</Yield>
 		</Row>
-
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>10</Yield>
+		</Row>		
 
 	</Policy_YieldModifiers>
 
-	
+	<Faith
 
 
 
@@ -2375,7 +2801,7 @@
 		<Row>
 			<PolicyType>POLICY_FAMILY_REGISTER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-		</Row>
+		</Row>		
 		<Row>
 			<PolicyType>POLICY_THEOCRACY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_THEOCRACY_WRITER</BuildingClassType>
@@ -2546,7 +2972,7 @@
 		<Row>
 			<PolicyType>POLICY_FAMILY_REGISTER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-		</Row>
+		</Row>	
 		<Row>
 			<PolicyType>POLICY_COMMERCE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_COMMERCE_TRADEROUTE</BuildingClassType>
@@ -2617,7 +3043,7 @@
 			<Type>BUILDINGCLASS_FAMILY_PRODUCTION</Type>
 			<DefaultBuilding>BUILDING_FAMILY_PRODUCTION</DefaultBuilding>
 			<Description>TXT_KEY_BUILDING_FAMILY_PRODUCTION</Description>
-		</Row>
+		</Row>	
 		<Row>
 			<Type>BUILDINGCLASS_TRADITION_FINISHER_BONUS</Type>
 			<DefaultBuilding>BUILDING_TRADITION_FINISHER_BONUS</DefaultBuilding>
@@ -2810,7 +3236,6 @@
 		</Row>
 
 
-
 		<Row>
 			<Type>BUILDINGCLASS_EXPLORATION_REMOVE_DEBUFF</Type>
 			<DefaultBuilding>BUILDING_EXPLORATION_REMOVE_DEBUFF</DefaultBuilding>
@@ -2818,8 +3243,31 @@
 		</Row>
 
 
+		<Row>
+			<Type>BUILDINGCLASS_RATIONALISM_SCIENCE_PER_POP</Type>
+			<DefaultBuilding>BUILDING_RATIONALISM_SCIENCE_PER_POP</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_RATIONALISM_SCIENCE_PER_POP</Description>
+		</Row>
+
 	</BuildingClasses>
 	<Buildings>
+
+
+		<Row>
+			<Type>BUILDING_RATIONALISM_SCIENCE_PER_POP</Type>
+			<BuildingClass>BUILDINGCLASS_RATIONALISM_SCIENCE_PER_POP</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_POLICY_RATIONALISM_FINISHER</Description>
+			<Help>TXT_KEY_POLICY_RATIONALISM</Help>
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>	
+
+
 		<Row>
 			<Type>BUILDING_EXPLORATION_REMOVE_DEBUFF</Type>
 			<BuildingClass>BUILDINGCLASS_EXPLORATION_REMOVE_DEBUFF</BuildingClass>
@@ -2987,12 +3435,11 @@
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>2</SpecialistCount>
+			<SpecialistCount>1</SpecialistCount>
 			<PortraitIndex>47</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_FAMILY_PRODUCTION</Description>
 			<Help>TXT_KEY_BUILDING_FAMILY_PRODUCTION_HELP</Help>
-			
 		</Row>
 		<Row>
 			<Type>BUILDING_TRADITION_FINISHER_BONUS</Type>
@@ -3098,7 +3545,7 @@
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
 
-			<ExtraSpies>2</ExtraSpies>
+			<ExtraSpies>1</ExtraSpies>
 			<Espionage>true</Espionage>
 
 			<!--
@@ -3181,7 +3628,8 @@
 			<Cost>-1</Cost>
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>			
+			<HurryCostModifier>-1</HurryCostModifier>		
+			
 			
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
@@ -3226,7 +3674,8 @@
 			<Cost>-1</Cost>
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>			
+			<HurryCostModifier>-1</HurryCostModifier>		
+				
 			
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
@@ -3249,7 +3698,7 @@
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Description>
 			<Help>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Help>
-			<GreatWorkCount>-1</GreatWorkCount>
+			<GreatWorkCount>-1</GreatWorkCount>		
 		</Row>
 
 		<Row>
@@ -3373,7 +3822,7 @@
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Description>
 			<Help>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Help>
-			<GreatWorkCount>-1</GreatWorkCount>
+			<GreatWorkCount>-1</GreatWorkCount>		
 		</Row>
 
 		<!-- FIN -->
@@ -3457,11 +3906,26 @@
 
 	<Building_YieldChangesPerPop>
 
+
+		<Row>
+			<BuildingType>BUILDING_RATIONALISM_SCIENCE_PER_POP</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>10</Yield>
+		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>100</Yield>
+			<Yield>10</Yield>
 		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>10</Yield>
+		</Row>		
+
+	
 
 		<Row>
 			<BuildingType>BUILDING_POLICE_STATE_LV2</BuildingType>
@@ -3506,6 +3970,7 @@
 
 
 	<Building_ResourceQuantity>
+
 		<Row>
 			<BuildingType>BUILDING_UNITED_FRONT_FOOD</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
@@ -3524,6 +3989,7 @@
 		</Row>
 	</Building_ResourceQuantity>
 	
+
 
 	<Policy_FaithPurchaseUnitClasses>
 		<Delete UnitClassType="UNITCLASS_GREAT_DIPLOMAT"/>

@@ -1,3 +1,4 @@
+/*
 INSERT INTO ArtDefine_UnitInfos (Type,DamageStates,Formation)
 	SELECT	('ART_DEF_UNIT_WARJUNK'), DamageStates, Formation
 	FROM ArtDefine_UnitInfos WHERE (Type = 'ART_DEF_UNIT_CARAVEL');
@@ -85,3 +86,4 @@ VALUES	('UNIT_3UC_WARJUNK',  'PROMOTION_EFFICIENT_DESIGN');
 INSERT INTO Civilization_UnitClassOverrides 
 		(CivilizationType, 					UnitClassType, 			UnitType)
 VALUES	('CIVILIZATION_CHINA',	'UNITCLASS_CARAVEL',	'UNIT_3UC_WARJUNK');
+*/

@@ -75,12 +75,12 @@
 			<PortraitIndex>57</PortraitIndex>
 			<Defense>1000</Defense>
 			<ExtraCityHitPoints>40</ExtraCityHitPoints>
-			<Happiness>-4</Happiness>
+			<Happiness>-5</Happiness>		
 			<CityWorkingChange>1</CityWorkingChange>
-			<TradeRouteSeaGoldBonus>200</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>200</TradeRouteLandGoldBonus>
-			<TradeRouteRecipientBonus>20</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>20</TradeRouteTargetBonus>
+			<TradeRouteSeaGoldBonus>1</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>100</TradeRouteLandGoldBonus>
+			<TradeRouteRecipientBonus>10</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>10</TradeRouteTargetBonus>
 			<GreatWorkCount>-4</GreatWorkCount>
 		</Row>
 		<Row>
@@ -97,12 +97,12 @@
 			<PortraitIndex>58</PortraitIndex>
 			<Defense>1500</Defense>
 			<ExtraCityHitPoints>50</ExtraCityHitPoints>
-			<Happiness>-12</Happiness>
-			<TradeRouteSeaGoldBonus>500</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>500</TradeRouteLandGoldBonus>
-			<TradeRouteRecipientBonus>50</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>50</TradeRouteTargetBonus>			
-			<GreatWorkCount>-5</GreatWorkCount>
+			<Happiness>-10</Happiness>			
+			<TradeRouteSeaGoldBonus>250</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>250</TradeRouteLandGoldBonus>
+			<TradeRouteRecipientBonus>25</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>25</TradeRouteTargetBonus>			
+			<GreatWorkCount>-5</GreatWorkCount>						
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_SIZE_LARGE</Type>
@@ -119,13 +119,13 @@
 			<Defense>1500</Defense>
 			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<FoodKept>-5</FoodKept>
-			<Happiness>-24</Happiness>
-			<TradeRouteSeaGoldBonus>1500</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>1500</TradeRouteLandGoldBonus>
-			<TradeRouteRecipientBonus>150</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>150</TradeRouteTargetBonus>
-			<PolicyCostModifier>5</PolicyCostModifier>			
-			<GreatWorkCount>-6</GreatWorkCount>
+			<Happiness>-15</Happiness>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>				
+			<TradeRouteSeaGoldBonus>750</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>750</TradeRouteLandGoldBonus>
+			<TradeRouteRecipientBonus>75</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>75</TradeRouteTargetBonus>			
+			<GreatWorkCount>-6</GreatWorkCount>					
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_SIZE_XL</Type>
@@ -142,14 +142,14 @@
 			<Defense>2000</Defense>
 			<ExtraCityHitPoints>120</ExtraCityHitPoints>
 			<FoodKept>-5</FoodKept>
-			<Happiness>-30</Happiness>
+			<Happiness>-20</Happiness>
 			<CityWorkingChange>1</CityWorkingChange>
-			<TradeRouteSeaGoldBonus>3000</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>3000</TradeRouteLandGoldBonus>
-			<TradeRouteRecipientBonus>300</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>300</TradeRouteTargetBonus>
-			<PolicyCostModifier>10</PolicyCostModifier>			
-			<GreatWorkCount>-7</GreatWorkCount>
+			<TradeRouteSeaGoldBonus>1500</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>1500</TradeRouteLandGoldBonus>
+			<TradeRouteRecipientBonus>150</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>150</TradeRouteTargetBonus>
+			<PolicyCostModifier>5</PolicyCostModifier>			
+			<GreatWorkCount>-7</GreatWorkCount>		
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_SIZE_XXL</Type>
@@ -166,13 +166,13 @@
 			<Defense>2000</Defense>
 			<ExtraCityHitPoints>150</ExtraCityHitPoints>
 			<FoodKept>-10</FoodKept>
-			<Happiness>-40</Happiness>
-			<TradeRouteSeaGoldBonus>6000</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>6000</TradeRouteLandGoldBonus>
-			<TradeRouteRecipientBonus>600</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>600</TradeRouteTargetBonus>
-			<PolicyCostModifier>20</PolicyCostModifier>
-			<GreatWorkCount>-8</GreatWorkCount>
+			<Happiness>-25</Happiness>
+			<TradeRouteSeaGoldBonus>3000</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>3000</TradeRouteLandGoldBonus>
+			<TradeRouteRecipientBonus>300</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>300</TradeRouteTargetBonus>
+			<PolicyCostModifier>10</PolicyCostModifier>
+			<GreatWorkCount>-8</GreatWorkCount>			
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_SIZE_GLOBAL</Type>
@@ -189,13 +189,13 @@
 			<Defense>4000</Defense>
 			<ExtraCityHitPoints>200</ExtraCityHitPoints>
 			<FoodKept>-13</FoodKept>
-			<Happiness>-40</Happiness>
-			<TradeRouteSeaGoldBonus>12000</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>12000</TradeRouteLandGoldBonus>
-			<TradeRouteRecipientBonus>1200</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>1200</TradeRouteTargetBonus>
-			<PolicyCostModifier>25</PolicyCostModifier>
-			<GreatWorkCount>-9</GreatWorkCount>
+			<Happiness>-30</Happiness>
+			<TradeRouteSeaGoldBonus>6000</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>6000</TradeRouteLandGoldBonus>
+			<TradeRouteRecipientBonus>600</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>600</TradeRouteTargetBonus>
+			<PolicyCostModifier>15</PolicyCostModifier>
+			<GreatWorkCount>-9</GreatWorkCount>	
 		</Row>
 
 	</Buildings>
@@ -208,7 +208,7 @@
 		<Row>
 			<BuildingType>BUILDING_PALACE</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>20</Quantity>
+			<Quantity>25</Quantity>
 		</Row>
 
 		<Row>
@@ -221,43 +221,43 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_TOWN</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>4</Quantity>
+			<Quantity>6</Quantity>
 		</Row>
 		
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_SMALL</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>2</Quantity>
+			<Quantity>4</Quantity>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_MEDIUM</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>9</Quantity>
+			<Quantity>10</Quantity>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_LARGE</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>11</Quantity>
+			<Quantity>10</Quantity>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_XL</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>14</Quantity>
+			<Quantity>20</Quantity>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_XXL</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>20</Quantity>
+			<Quantity>30</Quantity>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_GLOBAL</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>20</Quantity>
+			<Quantity>40</Quantity>
 		</Row>
 
 	</Building_ResourceQuantity>
@@ -478,8 +478,8 @@
 			<BuildingClass>BUILDINGCLASS_RACECOURSE</BuildingClass>
 			<Cost>85</Cost>
 			<GoldMaintenance>1</GoldMaintenance>
-			<Happiness>2</Happiness>
-			<PrereqTech>TECH_GUILDS</PrereqTech>
+			<Happiness>3</Happiness>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
 			<Description>TXT_KEY_BUILDING_RACECOURSE</Description>
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_RACECOURSE_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_SP_CITYSIZE_BUILDINGS_STRATEGY</Strategy>
@@ -495,8 +495,8 @@
 			<BuildingClass>BUILDINGCLASS_RACECOURSE</BuildingClass>
 			<Cost>85</Cost>
 			<GoldMaintenance>1</GoldMaintenance>
-			<UnmoddedHappiness>6</UnmoddedHappiness>
-			<PrereqTech>TECH_GUILDS</PrereqTech>
+			<UnmoddedHappiness>7</UnmoddedHappiness>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
 			<Description>TXT_KEY_BUILDING_GREEK_OLYMPICS</Description>
 			<Civilopedia>TXT_KEY_CIV5_BUILDING_GREEK_OLYMPICS_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_SP_CITYSIZE_BUILDINGS_STRATEGY</Strategy>
@@ -950,7 +950,7 @@
 			<BuildingClass>BUILDINGCLASS_AMUSEMENT_PARK</BuildingClass>
 			<Cost>240</Cost>
 			<GoldMaintenance>3</GoldMaintenance>
-			<Happiness>4</Happiness>
+			<Happiness>3</Happiness>
 			<PrereqTech>TECH_TELEGRAPH</PrereqTech>
 			<Help>TXT_KEY_BUILDING_AMUSEMENT_PARK_HELP</Help>
 			<Description>TXT_KEY_BUILDING_AMUSEMENT_PARK</Description>
@@ -967,7 +967,7 @@
 			<BuildingClass>BUILDINGCLASS_AMUSEMENT_PARK</BuildingClass>
 			<Cost>240</Cost>
 			<!--<GoldMaintenance>3</GoldMaintenance>-->
-			<UnmoddedHappiness>4</UnmoddedHappiness>
+			<UnmoddedHappiness>5</UnmoddedHappiness>
 			<PrereqTech>TECH_TELEGRAPH</PrereqTech>
 			<Help>TXT_KEY_BUILDING_SPAIN_BULLRING_HELP</Help>
 			<Description>TXT_KEY_BUILDING_SPAIN_BULLRING</Description>
@@ -1018,7 +1018,7 @@
 			<BuildingClass>BUILDINGCLASS_GARDEN</BuildingClass>
 			<Cost>75</Cost>
 			<GoldMaintenance>3</GoldMaintenance>
-			<Happiness>2</Happiness>
+			<Happiness>3</Happiness>
 			<PrereqTech>TECH_ART_THEORY</PrereqTech>
 			<Description>TXT_KEY_BUILDING_GARDEN</Description>
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_GARDEN_TEXT</Civilopedia>
@@ -1038,7 +1038,7 @@
 			<BuildingClass>BUILDINGCLASS_GARDEN</BuildingClass>
 			<Cost>75</Cost>
 			<GoldMaintenance>3</GoldMaintenance>
-			<Happiness>4</Happiness>
+			<Happiness>3</Happiness>
 			<PrereqTech>TECH_ART_THEORY</PrereqTech>
 			<Description>TXT_KEY_BUILDING_CHINESE_GARDEN</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CHINESE_GARDEN_TEXT</Civilopedia>
@@ -1051,14 +1051,14 @@
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>22</PortraitIndex>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
-			<UnhappinessModifier>-2</UnhappinessModifier>
+			<UnhappinessModifier>-4</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_HALL_OF_WORTHIES</Type>
 			<BuildingClass>BUILDINGCLASS_GARDEN</BuildingClass>
 			<Cost>75</Cost>
 			<GoldMaintenance>3</GoldMaintenance>
-			<Happiness>2</Happiness>
+			<Happiness>3</Happiness>
 			<PrereqTech>TECH_ART_THEORY</PrereqTech>
 			<Description>TXT_KEY_BUILDING_HALL_OF_WORTHIES</Description>
 			<Civilopedia>TXT_KEY_BUILDING_HALL_OF_WORTHIES_TEXT</Civilopedia>
@@ -1380,7 +1380,7 @@
 			<Type>BUILDING_BRAZIL_SCOCCER_FIELD</Type>
 			<BuildingClass>BUILDINGCLASS_STADIUM</BuildingClass>
 			<Cost>500</Cost>
-			<Happiness>6</Happiness>
+			<Happiness>3</Happiness>
 			<PrereqTech>TECH_MASS_MEDIA</PrereqTech>
 			<Help>TXT_KEY_BUILDING_BRAZIL_SCOCCER_FIELD_HELP</Help>
 			<Description>TXT_KEY_BUILDING_BRAZIL_SCOCCER_FIELD</Description>
@@ -1539,7 +1539,7 @@
 			<BuildingClass>BUILDINGCLASS_VIDEO_GAME_COMPANY</BuildingClass>
 			<Cost>1000</Cost>
 			<GoldMaintenance>16</GoldMaintenance>
-			<UnmoddedHappiness>6</UnmoddedHappiness>
+			<UnmoddedHappiness>5</UnmoddedHappiness>
 			<PrereqTech>TECH_INTERNET</PrereqTech>
 			<Help>TXT_KEY_BUILDING_VIDEO_GAME_COMPANY_HELP</Help>
 			<Description>TXT_KEY_BUILDING_VIDEO_GAME_COMPANY</Description>
@@ -1803,7 +1803,7 @@
 
 		<Row>
 			<BuildingType>BUILDING_AMUSEMENT_PARK</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
 		</Row>
 
 		<Row>
@@ -2102,7 +2102,7 @@
 		<Row>
 			<BuildingType>BUILDING_STAGECOACH</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Cost>4</Cost>
+			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BUS_STATION</BuildingType>
@@ -2117,7 +2117,7 @@
 		<Row>
 			<BuildingType>BUILDING_AMUSEMENT_PARK</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Cost>4</Cost>
+			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_DIGITAL_NETWORK</BuildingType>
@@ -2158,7 +2158,7 @@
 		<Row>
 			<BuildingType>BUILDING_THEME_PARK</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Cost>4</Cost>
+			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CINEMA</BuildingType>
@@ -2312,7 +2312,7 @@
 		<Row>
 			<BuildingType>BUILDING_BIO_LAB</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>33</Yield>
+			<Yield>10</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_LOGISTICS_COMPANY</BuildingType>
@@ -2322,7 +2322,7 @@
 		<Row>
 			<BuildingType>BUILDING_GENE_LAB</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>33</Yield>
+			<Yield>10</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_INTERNATIONAL_TRADE_COMPANY</BuildingType>
@@ -2356,21 +2356,55 @@
 
 
 	<Building_YieldChangesPerPop>
+		
+
+		<Row>
+			<BuildingType>BUILDING_CITY_SIZE_XL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CITY_SIZE_XXL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>3</Yield>
+		</Row>	
+		<Row>
+			<BuildingType>BUILDING_CITY_SIZE_GLOBAL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CITY_SIZE_XL</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CITY_SIZE_XXL</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>3</Yield>
+		</Row>	
+		<Row>
+			<BuildingType>BUILDING_CITY_SIZE_GLOBAL</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>4</Yield>
+		</Row>			
+
+		
 		<Row>
 			<BuildingType>BUILDING_HOSPITAL</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-25</Yield>
+			<Yield>-100</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_MEDICAL_LAB</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-25</Yield>
+			<Yield>-100</Yield>
 		</Row>
 		
 		<Row>
 			<BuildingType>BUILDING_AQUEDUCT</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-20</Yield>
+			<Yield>-25</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BASILICA_CISTERN</BuildingType>
@@ -2380,12 +2414,12 @@
 		<Row>
 			<BuildingType>BUILDING_TAP_WATER_SUPPLY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-20</Yield>
+			<Yield>-100</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_WATER_TREATMENT_FACTORY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-20</Yield>
+			<Yield>-100</Yield>
 		</Row>
 		
 		<Row>

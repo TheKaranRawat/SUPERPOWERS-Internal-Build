@@ -38,11 +38,11 @@ function FeatureGenerator.Create(args)
 	local fracYExp = args.fracYExp or -1;
 	
 	-- Set feature traits.
-	local iJunglePercent = args.iJunglePercent or 65;
-	local iForestPercent = args.iForestPercent or 31;
+	local iJunglePercent = args.iJunglePercent or 50;
+	local iForestPercent = args.iForestPercent or 45;
 	local iClumpHeight = args.iClumpHeight or 90;
-	local fMarshPercent = args.fMarshPercent or 8;
-	local iOasisPercent = args.iOasisPercent or 6;
+	local fMarshPercent = args.fMarshPercent or 12;
+	local iOasisPercent = args.iOasisPercent or 9;
 	-- Adjust foliage amounts according to user's Rainfall selection. (Which must be passed in by the map script.)
 	if rainfall == 1 then -- Rainfall is sparse, climate is Arid.
 		iJunglePercent = iJunglePercent - iJungleChange;

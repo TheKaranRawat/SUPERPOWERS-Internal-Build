@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by ModBuddy on 10/27/2010 4:15:53 AM -->
 <GameData>
-	
+<!--	
 	<Language_en_US>
 		<Row Tag="TXT_KEY_UNIT_DUTCH_3INDIAMAN">
 			<Text>East Indiaman</Text>
@@ -184,5 +184,5 @@
 			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
 		</Row>
 	</UnitPromotions_UnitCombats>
-
+-->
 </GameData>

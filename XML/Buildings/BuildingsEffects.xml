@@ -430,21 +430,7 @@
 			<Experience>15</Experience>
 		</Row>
 
-		<!--<Row>
-			<BuildingType>BUILDING_AUSTRIA_MUSIC_SCHOOL</BuildingType>
-			<DomainType>DOMAIN_LAND</DomainType>
-			<Experience>15</Experience>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_AUSTRIA_MUSIC_SCHOOL</BuildingType>
-			<DomainType>DOMAIN_SEA</DomainType>
-			<Experience>15</Experience>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_AUSTRIA_MUSIC_SCHOOL</BuildingType>
-			<DomainType>DOMAIN_AIR</DomainType>
-			<Experience>15</Experience>
-		</Row>-->
+
 	</Building_DomainFreeExperiencePerGreatWork>
 	
 	
@@ -477,7 +463,7 @@
 			<BuildingType>BUILDING_STABLE</BuildingType>
 			<ResourceType>RESOURCE_COW</ResourceType>
 		</Row>
-		
+
 	
 		<Row>
 			<BuildingType>BUILDING_STONE_WORKS</BuildingType>
@@ -595,13 +581,18 @@
 		<Row>
 			<BuildingType>BUILDING_TAX_COLLECTOR</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>1</Cost>
+			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
 			<Cost>2</Cost>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>2</Cost>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
 			<ResourceType>RESOURCE_COAL</ResourceType>
@@ -1035,7 +1026,7 @@
 		<Row>
 			<BuildingType>BUILDING_CIRCUS</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Cost>1</Cost>
+			<Cost>3</Cost>
 		</Row>
 
 		<Row>
@@ -1081,7 +1072,7 @@
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 			<Cost>4</Cost>
 		</Row>
-
+<!--
   		<Row>
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
@@ -1092,7 +1083,7 @@
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
 			<Cost>1</Cost>
 		</Row>		
-
+-->
 	</Building_ResourceQuantityRequirements>
 
 	
@@ -1100,33 +1091,52 @@
 
 	<Building_ResourceQuantity>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<Row>
 			<BuildingType>BUILDING_FW_ORBITAL_REFINERY</BuildingType>
 			<ResourceType>RESOURCE_NANOMAT</ResourceType>
 			<Quantity>12</Quantity>
 		</Row>
 		
+
+
 		<Row>
 			<BuildingType>BUILDING_STABLE</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Quantity>10</Quantity>
-		</Row>
+			<Quantity>12</Quantity>
+		</Row>		
 
 		<Row>
 			<BuildingType>BUILDING_DUCAL_STABLE</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Quantity>15</Quantity>
+			<Quantity>16</Quantity>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_MECHANIZED_FARM</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Quantity>5</Quantity>
+			<Quantity>12</Quantity>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_SHOSHONE_HUNTING</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Quantity>5</Quantity>
+			<Quantity>12</Quantity>
 		</Row>
 		
 		<Row>
@@ -1309,12 +1319,12 @@
 		<Row>
 			<BuildingType>BUILDING_VENICE_FONDACO</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Quantity>3</Quantity>
+			<Quantity>4</Quantity>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CARAVANSARY</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Quantity>3</Quantity>
+			<Quantity>4</Quantity>
 		</Row>
 		
 		<!--<Row>
@@ -1470,7 +1480,7 @@
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 			<Quantity>4</Quantity>
 		</Row>
-
+<!--
 	    <Row>
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 	    	<ResourceType>RESOURCE_CONSUMER</ResourceType>
@@ -1482,7 +1492,7 @@
 	    	<ResourceType>RESOURCE_CONSUMER</ResourceType>
 	    	<Quantity>1</Quantity>
     	</Row>				
-
+-->
 	</Building_ResourceQuantity>
 	
 	
@@ -1493,6 +1503,17 @@
 	
 	<Building_YieldChanges>
 		
+
+	
+
+
+
+
+
+
+
+
+
 
 
 		<Row>
@@ -1761,7 +1782,7 @@
 		<Row>
 			<BuildingType>BUILDING_GREAT_LIBRARY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>6</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_CARAVANSARY</BuildingType>
@@ -1773,6 +1794,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>2</Yield>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_MOROCCO_MARKET</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -1788,6 +1810,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>2</Yield>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_BANK_OF_ENGLAND</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -1805,6 +1828,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>4</Yield>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_FINANCE_COMPANY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -1822,6 +1846,13 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>4</Yield>
 		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_WORKSHOP</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>4</Yield>
+		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
@@ -1874,20 +1905,22 @@
 
 		
 
-		<!--<Row>
+		<Row>
 			<BuildingType>BUILDING_PUBLIC_SCHOOL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>3</Yield>
-		</Row>-->
+			<Yield>2</Yield>
+		</Row>
+
+
 		<Row>
 			<BuildingType>BUILDING_LABORATORY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>4</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_SWEDISH_LABORATORY_SERVICES</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>8</Yield>
+			<Yield>4</Yield>
 		</Row>
 
 		<Row>
@@ -2031,7 +2064,7 @@
 		<Row>
 			<BuildingType>BUILDING_GREAT_LIBRARY</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PYRAMID</BuildingType>
@@ -2157,7 +2190,7 @@
 		<Row>
 			<BuildingType>BUILDING_BURIAL_TOMB</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>6</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_BURIAL_TOMB</BuildingType>
@@ -2169,6 +2202,7 @@
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>2</Yield>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_INDIA_TEMPLE</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
@@ -2207,6 +2241,7 @@
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_SHRINE</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
@@ -2297,12 +2332,13 @@
 		<Row>
 			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>3</Yield>
+			<Yield>2</Yield>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_ARABIA_ISIAMIC_UNIVERSITY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>4</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
@@ -2464,7 +2500,7 @@
 		<Row>
 			<BuildingType>BUILDING_ACADEMY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>3</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
@@ -2856,13 +2892,18 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>4</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>4</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_TCS_PAROCHIAL_SCHOOL</BuildingType>
@@ -3056,7 +3097,7 @@
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>8</Yield>
 		</Row>
-		
+<!--		
 		<Row>
 			<BuildingType>BUILDING_LAVRA</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
@@ -3074,11 +3115,81 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>2</Yield>
 		</Row>		
+-->
 
 	</Building_YieldChanges>
 
 
 	<Building_BuildingClassYieldChanges>
+
+
+
+
+
+		<Row>
+			<BuildingType>BUILDING_CHINESE_EXAMINATION</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CHINESE_EXAMINATION</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>								
 
 		<Row>
 			<BuildingType>BUILDING_HATTUSA</BuildingType>
@@ -3345,7 +3456,6 @@
 			<YieldChange>2</YieldChange>
 		</Row>
 
-
 		<Row>
 			<BuildingType>BUILDING_NATIONAL_BANK</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
@@ -3513,6 +3623,7 @@
 			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
 			<Happiness>1</Happiness>		</Row>-->
 
+
 		<Row>
 			<BuildingType>BUILDING_SAGRADA</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
@@ -3540,19 +3651,25 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_SAGRADA</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_JAPANESE_SHRINE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_SAGRADA</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>
+<!--		
 		<Row>
 			<BuildingType>BUILDING_SAGRADA</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_LAVRA</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>1</Happiness>
 		</Row>		
-
+-->
 		<Row>
 			<BuildingType>BUILDING_BUDACASTLE</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>4</Happiness>
 		</Row>
 	
 		<Row>
@@ -3601,6 +3718,7 @@
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_ANGKOR_WAT</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
@@ -3626,31 +3744,32 @@
 			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>
+<!--		
 		<Row>
 			<BuildingType>BUILDING_ANGKOR_WAT</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_LAVRA</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>1</Happiness>
 		</Row>
-
+-->
 		<Row>
 			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
-			<Happiness>4</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
@@ -3663,30 +3782,36 @@
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>-->
+
+		<Row>
+			<BuildingType>BUILDING_PEARL_TOWER</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
 		<Row>
 			<BuildingType>BUILDING_PEARL_TOWER</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PEARL_TOWER</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PEARL_TOWER</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
-			<Happiness>1</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PEARL_TOWER</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PEARL_TOWER</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
-			<Happiness>3</Happiness>
+			<Happiness>5</Happiness>
 		</Row>
 		
 
@@ -3702,7 +3827,7 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_COLOSSEUM</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_GARDEN</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>
 		<Row>
@@ -3720,6 +3845,11 @@
 			<BuildingClassType>BUILDINGCLASS_STADIUM</BuildingClassType>
 			<Happiness>1</Happiness>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_COLOSSEUM</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_VIDEO_GAME_COMPANY</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>		
 
 		<Row>
 			<BuildingType>BUILDING_HOOVER_DAM</BuildingType>
@@ -3741,6 +3871,36 @@
 	<!--*********************Building Yields Modifiers********************-->
 	<Building_YieldModifiers>
 
+
+		<Row>
+			<BuildingType>BUILDING_NILOMETER</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NILOMETER</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>5</Yield>
+		</Row>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+		<Row>
+			<BuildingType>BUILDING_JAPANESE_SHRINE</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>5</Yield>
+		</Row>
+-->
 		<Row>
 			<BuildingType>BUILDING_PYRAMID</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
@@ -3836,8 +3996,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>25</Yield>
 		</Row>
-		
-		
+
 		<Row>
 			<BuildingType>BUILDING_PUPPET_GOVERNEMENT_FULL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
@@ -3853,7 +4012,7 @@
 		<Row>
 			<BuildingType>BUILDING_NATIONAL_LABORATORY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>33</Yield>
+			<Yield>25</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_NATIONAL_TREASURY_II</BuildingType>
@@ -3863,7 +4022,7 @@
 		<Row>
 			<BuildingType>BUILDING_IRONWORKS</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>25</Yield>
+			<Yield>20</Yield>
 		</Row>
 		
 
@@ -3912,7 +4071,7 @@
 		<Row>
 			<BuildingType>BUILDING_FW_FUSION_PLANT</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>20</Yield>
+			<Yield>15</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_LAUNCH_FACILITY</BuildingType>
@@ -4013,6 +4172,8 @@
 
 	<Building_GlobalYieldModifiers>	
 		
+
+
 		<Row>
 			<BuildingType>BUILDING_BEERMAKER</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -4061,7 +4222,7 @@
 		<Row>
 			<BuildingType>BUILDING_GREAT_LIBRARY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>15</Yield>
+			<Yield>10</Yield>
 		</Row>
 
 		<Row>
@@ -4306,10 +4467,11 @@
 	</Building_LakePlotYieldChanges>
 	
 	<Building_SeaResourceYieldChanges>
+
 		<Row>
 			<BuildingType>BUILDING_JAPANESE_TENSHU</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_SEAPORT</BuildingType>
@@ -4340,7 +4502,7 @@
 
 
 	<Building_ResourceYieldChanges>
-
+<!--
 		<Row>
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
@@ -4365,7 +4527,7 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>2</Yield>
 		</Row>
-
+-->
 		<Row>
 			<BuildingType>BUILDING_GOBEKLITEPE</BuildingType>
 			<ResourceType>RESOURCE_MARBLE</ResourceType>
@@ -4569,7 +4731,6 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
-
 
 		<Row>
 			<BuildingType>BUILDING_MECHANIZED_FARM</BuildingType>
@@ -5242,6 +5403,7 @@
 
 	<Building_FeatureYieldChanges>
 
+
 		<Row>
 			<BuildingType>BUILDING_FW_FLOATINGISLANDS</BuildingType>
 			<FeatureType>FEATURE_ATOLL</FeatureType>
@@ -5265,7 +5427,7 @@
 			<FeatureType>FEATURE_ATOLL</FeatureType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
-		</Row>
+		</Row>		
 
 		<Row>
 			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
@@ -5410,7 +5572,20 @@
 	
 
 	<Building_TerrainYieldChanges>
-
+<!--
+		<Row>
+			<BuildingType>BUILDING_HOGSKOLA</BuildingType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_HOGSKOLA</BuildingType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
+		</Row>		
+-->
 		<Row>
 			<BuildingType>BUILDING_FW_HELIOS</BuildingType>
 			<TerrainType>TERRAIN_DESERT</TerrainType>
@@ -5519,6 +5694,18 @@
 			<Yield>2</Yield>
 		</Row>
 		<Row>
+			<BuildingType>BUILDING_POTALA</BuildingType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_POTALA</BuildingType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
 			<BuildingType>BUILDING_FW_BIOFACTORY</BuildingType>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
@@ -5560,7 +5747,7 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
-
+<!--
 		<Row>
 			<BuildingType>BUILDING_LAVRA</BuildingType>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
@@ -5585,7 +5772,7 @@
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
 		</Row>			
-
+-->
 	</Building_TerrainYieldChanges>
 
 
@@ -5859,7 +6046,23 @@
 	</Building_SpecialistYieldChanges>
 
 
+
 	<Building_YieldChangesPerPop>
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
 
 		<Row>
 			<BuildingType>BUILDING_TAX_COLLECTOR</BuildingType>
@@ -5900,7 +6103,7 @@
 		<Row>
 			<BuildingType>BUILDING_LIBRARY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>50</Yield>
+			<Yield>20</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
@@ -5910,13 +6113,30 @@
 		<Row>
 			<BuildingType>BUILDING_ROYAL_LIBRARY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>50</Yield>
+			<Yield>20</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PUBLIC_SCHOOL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>50</Yield>
+			<Yield>20</Yield>
 		</Row>
+
+
+		<Row>
+			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>10</Yield>
+		</Row>	
+
+
+		<Row>
+			<BuildingType>BUILDING_ARABIA_ISIAMIC_UNIVERSITY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>10</Yield>
+		</Row>	
+
+
+				
 
 
 		<Row>
@@ -5933,7 +6153,7 @@
 		<Row>
 			<BuildingType>BUILDING_MUGHAL_FORT</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>100</Yield>
+			<Yield>20</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_MUGHAL_FORT</BuildingType>
@@ -5959,7 +6179,6 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>33</Yield>
 		</Row>
-	
 
 		<Row>
 			<BuildingType>BUILDING_MARKET</BuildingType>
@@ -5981,6 +6200,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>25</Yield>
 		</Row>
+
 		<!--<Row>
 			<BuildingType>BUILDING_BANK_OF_ENGLAND</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -5997,6 +6217,13 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>25</Yield>
 		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_CHINESE_GARDEN</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_FINANCE_COMPANY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -6040,7 +6267,7 @@
 	<!--*********************TechEnhanced Changes********************-->
 
 	<Building_TechEnhancedYieldChanges>
-		
+<!--		
 		<Row>
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -6051,7 +6278,7 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>30</Yield>
 		</Row>		
-		
+-->		
 		<Row>
 			<BuildingType>BUILDING_PETRA</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
@@ -6259,8 +6486,13 @@
 		<Row>
 			<BuildingType>BUILDING_LIBRARY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-25</Yield>
+			<Yield>-50</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_ROYAL_LIBRARY</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-25</Yield>
+		</Row>		
 		<!--<Row>
 			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -6269,7 +6501,7 @@
 		<Row>
 			<BuildingType>BUILDING_PUBLIC_SCHOOL</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-25</Yield>
+			<Yield>-50</Yield>
 		</Row>
 		
 
@@ -6284,6 +6516,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-33</Yield>
 		</Row>
+<!--		
 		<Row>
 			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -6303,7 +6536,8 @@
 			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-50</Yield>
-		</Row>								
+		</Row>		
+-->								
 		<Row>
 			<BuildingType>BUILDING_MONGOL_SECRETARIATS</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -6352,7 +6586,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>25</Yield>
 		</Row>
-
+<!--
 		<Row>
 			<BuildingType>BUILDING_LAVRA</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
@@ -6361,10 +6595,12 @@
 		<Row>
 			<BuildingType>BUILDING_LAVRA</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-100</Yield>
+			<Yield>-200</Yield>
 		</Row>	
-		
+-->		
 	</Building_YieldChangesPerPop>
+
+
 
 
 	<!--**************************Promotions from Wonders*****************************************-->
@@ -7078,6 +7314,53 @@
 
 	<Building_Flavors>
 
+
+
+
+		<Row>
+			<BuildingType>BUILDING_CHINESE_EXAMINATION</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CHINESE_EXAMINATION</BuildingType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>35</Flavor>
+		</Row>		
+
+
+		<Row>
+			<BuildingType>BUILDING_NILOMETER</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NILOMETER</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NILOMETER</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<Row>
 			<BuildingType>BUILDING_BEERMAKER</BuildingType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -7089,7 +7372,7 @@
 			<FlavorType>FLAVOR_FOOD</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>		
-
+<!--
 		<Row>
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -7105,7 +7388,7 @@
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>		
-		
+-->		
 		<Row>
 			<BuildingType>BUILDING_TAX_COLLECTOR</BuildingType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -8065,7 +8348,24 @@
 			<BuildingType>BUILDING_STABLE</BuildingType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>25</Flavor>
+		</Row>
+<!--		
+		<Row>
+			<BuildingType>BUILDING_QARA_UY</BuildingType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_QARA_UY</BuildingType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>6</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_QARA_UY</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>25</Flavor>
 		</Row>	
+-->
 		<Row>
 			<BuildingType>BUILDING_ARSENAL</BuildingType>
 			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
@@ -8308,6 +8608,7 @@
 			<FlavorType>FLAVOR_I_SEA_TRADE_ROUTE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_LONGHOUSE</BuildingType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -8395,7 +8696,7 @@
 			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
 			<Flavor>150</Flavor>
 		</Row>
-		
+
 		<Row>
 			<BuildingType>BUILDING_MARKET</BuildingType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -8484,6 +8785,7 @@
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
 			<Flavor>2</Flavor>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_SATRAPS_COURT</BuildingType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -8519,6 +8821,28 @@
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
 			<Flavor>5</Flavor>
 		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_STOCK_EXCHANGE</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STOCK_EXCHANGE</BuildingType>
+			<FlavorType>FLAVOR_I_TRADE_ORIGIN</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STOCK_EXCHANGE</BuildingType>
+			<FlavorType>FLAVOR_I_TRADE_DESTINATION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STOCK_EXCHANGE</BuildingType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_LIBRARY</BuildingType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -8554,6 +8878,7 @@
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
 			<Flavor>35</Flavor>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_ARABIA_ISIAMIC_UNIVERSITY</BuildingType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -9363,6 +9688,7 @@
 			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
 			<Flavor>2</Flavor>
 		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_SHRINE</BuildingType>
 			<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -11491,13 +11817,13 @@
 			<FlavorType>FLAVOR_WONDER</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
-		
+<!--		
 		<Row>
 			<BuildingType>BUILDING_LAVRA</BuildingType>
 			<FlavorType>FLAVOR_RELIGION</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>		
-
+-->
 	</Building_Flavors>
 
 

@@ -38,12 +38,12 @@
 
 
 		<Update>
-			<Set Value="4"/>
+			<Set Value="8"/>
 			<Where Name="RIVER_EXTRA_MOVEMENT" />
 		</Update>
 
 		<Update>
-			<Set Value="-33"/>
+			<Set Value="-50"/>
 			<Where Name="RIVER_ATTACK_MODIFIER" />
 		</Update>
 
@@ -65,7 +65,7 @@
 		
 		
 		<Update>
-			<Set Value="3"/>
+			<Set Value="1"/>
 			<Where Name="CULTURE_BOMB_COOLDOWN" />
 		</Update>
 		
@@ -94,12 +94,12 @@
 			<Where Name="CITY_GROWTH_EXPONENT" />
 		</Update>
 		<Update>
-			<Set Value="1"/>
+			<Set Value="1.5"/>
 			<Where Name="UNHAPPINESS_PER_POPULATION" />
 		</Update>
 
 		<Update>
-			<Set Value="3"/>
+			<Set Value="5"/>
 			<Where Name="HAPPINESS_PER_CITY_WITH_STATE_RELIGION" />
 		</Update>
 
@@ -128,13 +128,13 @@
 			<Where Name="NONCOMBAT_UNIT_RANGED_DAMAGE" />
 		</Update>
 		<Update>
-			<Set Value="2"/>
+			<Set Value="5"/>
 			<Where Name="HAPPINESS_PER_EXTRA_LUXURY" />
 		</Update>
 		
 		<!-- Science Stuff -->
 		<Update>
-			<Set Value="0"/>
+			<Set Value="0.2"/>
 			<Where Name="SCIENCE_PER_POPULATION" />
 		</Update>
 		<!--<Update>
@@ -694,27 +694,27 @@
 		<!-- Civ 5 Score -->
 
 		<Update>
-			<Set Value="8"/>
+			<Set Value="4"/>
 			<Where Name="SCORE_CITY_MULTIPLIER" />
 		</Update>
 		<Update>
-			<Set Value="8"/>
+			<Set Value="1"/>
 			<Where Name="SCORE_POPULATION_MULTIPLIER" />
 		</Update>
 		<Update>
-			<Set Value="8"/>
+			<Set Value="4"/>
 			<Where Name="SCORE_WONDER_MULTIPLIER" />
 		</Update>
 		<Update>
-			<Set Value="20"/>
+			<Set Value="5"/>
 			<Where Name="SCORE_BELIEF_MULTIPLIER" />
 		</Update>
 		<Update>
-			<Set Value="8"/>
+			<Set Value="2"/>
 			<Where Name="SCORE_POLICY_MULTIPLIER" />
 		</Update>		
 		<Update>
-			<Set Value="2"/>
+			<Set Value="3"/>
 			<Where Name="SCORE_RELIGION_CITIES_MULTIPLIER" />
 		</Update>
 		<Update>

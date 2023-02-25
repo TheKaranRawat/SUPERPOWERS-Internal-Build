@@ -16,16 +16,16 @@
 			<Text>+10 [ICON_RESEARCH] Science in cities with a City Connection.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_GOD_CRAFTSMEN">
-			<Text>+6 [ICON_PEACE] Faith for each Amber, Jade, Coral and Lapis Lazuli resource.</Text>
+			<Text>+5 [ICON_PEACE] Faith for each Amber, Jade, Coral and Lapis Lazuli resource.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_SUN_GOD">
-			<Text>+6 [ICON_PEACE] Faith for each Olive, Sugar, Perfume and Tobacco resource.</Text>
+			<Text>+5 [ICON_PEACE] Faith for each Olive, Sugar, Perfume and Tobacco resource.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_EARTH_MOTHER">
-			<Text>+6 [ICON_PEACE] Faith for each Spices, Citrus, Banana and Cotton resource.</Text>
+			<Text>+5 [ICON_PEACE] Faith for each Spices, Citrus, Banana and Cotton resource.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_GODDESS_HUNT">
-			<Text>+1 [ICON_FOOD] Food and +6 [ICON_PEACE] Faith from Camps.</Text>
+			<Text>+1 [ICON_FOOD] Food and +5 [ICON_PEACE] Faith from Camps.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_GURUSHIP">
 			<Text>+10 [ICON_PEACE] Faith if city has a Specialist.</Text>
@@ -112,25 +112,25 @@
 			<Text>Goddess of Beauty</Text>
 		</Row>
 		<Replace Tag="TXT_KEY_BELIEF_GODDESS_OF_BEAUTY">
-			<Text>+6 [ICON_PEACE] Faith from Dye, Silk and Perfume. </Text>
+			<Text>+5 [ICON_PEACE] Faith from Dye, Silk and Perfume. </Text>
 		</Replace>
 		<Row Tag="TXT_KEY_BELIEF_HOLY_BEVERAGE_SHORT">
 			<Text>Holy Beverage</Text>
 		</Row>
 		<Replace Tag="TXT_KEY_BELIEF_HOLY_BEVERAGE">
-			<Text>+6 [ICON_PEACE] Faith from Tea, Cocoa and Coffee. </Text>
+			<Text>+5 [ICON_PEACE] Faith from Tea, Cocoa and Coffee. </Text>
 		</Replace>	
 		<Row Tag="TXT_KEY_BELIEF_MARSH_BELIEF_SHORT">
 			<Text>Swamp Belief</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_MARSH_BELIEF">
-			<Text>+2 [ICON_FOOD] Food and +6 [ICON_PEACE] Faith from Marsh tiles. </Text>
+			<Text>+2 [ICON_FOOD] Food and +5 [ICON_PEACE] Faith from Marsh tiles. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_SNOW_BELIEF_SHORT">
 			<Text>Snow Spirit</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_SNOW_BELIEF">
-			<Text>+6 [ICON_PEACE] Faith and +3 [ICON_FOOD] Food from tiles covered with Snow.</Text>
+			<Text>+5 [ICON_PEACE] Faith and +3 [ICON_FOOD] Food from tiles covered with Snow.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_RIVER_CRAFTSMAN_SHORT">
 			<Text>Sudoku</Text>
@@ -142,13 +142,13 @@
 			<Text>Worship of Mazu</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_MAZU">
-			<Text>+6 [ICON_HAPPINESS_1] Happiness for every Harbor.</Text>
+			<Text>+5 [ICON_HAPPINESS_1] Happiness for every Harbor.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_CHARITES_SHORT">
 			<Text>Worship of Charites</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_CHARITES">
-			<Text>+6 [ICON_CULTURE] Culture for every Amphitheatre, Art Gallery and Opera House.</Text>
+			<Text>+5 [ICON_CULTURE] Culture for every Amphitheatre, Art Gallery and Opera House.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_EIRENE_SHORT">
 			<Text>Universal Love</Text>
@@ -203,6 +203,32 @@
 		<Row Tag="TXT_KEY_PROMOTION_ARTIST_PROMOTION">
 			<Text>Church Artist Unit</Text>
 		</Row>
+
+
+		<Row Tag="TXT_KEY_BELIEF_SACRED_FLAX_SHORT">
+			<Text>Sacred Flax</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_SACRED_FLAX">
+			<Text>+2 [ICON_PRODUCTION] and +4 [ICON_PEACE] Faith from Flax Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Monument.</Text>
+		</Row>
+
+
+		<Row Tag="TXT_KEY_BELIEF_HOLY_TULIPS_SHORT">
+			<Text>Holy Tulips</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_HOLY_TULIPS">
+			<Text>+2 [ICON_PRODUCTION] and +5 [ICON_PEACE] Faith from Tulips Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Market.</Text>
+		</Row>	
+
+
+		<Row Tag="TXT_KEY_BELIEF_LOVE_RICE_SHORT">
+			<Text>Love Rice</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_LOVE_RICE">
+			<Text>+1 [ICON_PRODUCTION] and +5 [ICON_PEACE] Faith from Rice Farm Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Temple.</Text>
+		</Row>			
+
+
 	</Language_en_US>
   
 </GameData>

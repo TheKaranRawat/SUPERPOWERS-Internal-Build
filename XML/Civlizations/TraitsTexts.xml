@@ -62,7 +62,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER">
-			<Text>[ICON_BULLET]+12 [ICON_PRODUCTION] Production for all cities and it never expires. +15% [ICON_PRODUCTION] Production towards any buildings in all cities. [NEWLINE][ICON_BULLET]Roman expansionist ethos grants -33% [ICON_HAPPINESS_4] Unhapiness from the number of controlled cities.</Text>
+			<Text>[ICON_BULLET]+10 [ICON_PRODUCTION] Production for all cities and it never expires. +15% [ICON_PRODUCTION] Production towards any buildings in all cities. [NEWLINE][ICON_BULLET]Roman expansionist ethos grants -33% [ICON_HAPPINESS_4] Unhapiness from the number of controlled cities.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_WONDER_BUILDER_SHORT">
@@ -181,7 +181,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_INGENIOUS">
-			<Text>[ICON_BULLET]Receive free Great Scientist when you discover Writing. Earn Great Scientists 50% faster. [NEWLINE][ICON_BULLET]Babylons great scientific innovation grants +30 science for every international trade route.</Text>
+			<Text>[ICON_BULLET]Receive free Great Scientist when you discover Writing. Earn Great Scientists 50% faster. [NEWLINE][ICON_BULLET]Babylons great scientific innovation grants +20 science for every international trade route.</Text>
 		</Replace>
 
 

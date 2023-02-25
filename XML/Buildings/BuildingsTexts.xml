@@ -5,6 +5,23 @@
 	<!--******************************Building Titles Icons for Sorting********************************-->
 	<Language_en_US>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<Replace Tag="TXT_KEY_BUILDING_GRANARY">
 			<Text>[ICON_FOOD] Granary</Text>
 		</Replace>
@@ -1381,7 +1398,7 @@
 
 		<Update>
 			<Where Tag="TXT_KEY_WONDER_GREAT_LIBRARY_HELP" />
-			<Set Text="+15% [ICON_RESEARCH] Science output in all cities. Provides a free Library in the city which it is built."/>
+			<Set Text="+10% [ICON_RESEARCH] Science output in all cities. Provides a free Library in the city which it is built."/>
 		</Update>
 
 		<Update>
@@ -1683,7 +1700,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_WONDER_POTALA_HELP">
-			<Text>+2 [ICON_FOOD]Food and +1 [ICON_PRODUCTION] Production for all thundra tiles worked by this city. [NEWLINE][NEWLINE]Contains 2 slots for Great Works of Art. City must be built on the Tundra within 2 tiles of a Mountain inside your territory.</Text>
+			<Text>+2 [ICON_FOOD]Food and +1 [ICON_PRODUCTION] Production for all Tundra and Snow tiles worked by this city. [NEWLINE][NEWLINE]Contains 2 slots for Great Works of Art. City must be built on the Tundra within 2 tiles of a Mountain inside your territory.</Text>
 		</Row>
 		<!-- Quote tags -->
 		<Row Tag="TXT_KEY_WONDER_POTALA_QUOTE">
@@ -1829,7 +1846,7 @@
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_WONDER_PEARL_TOWER_HELP">
-			<Text>-50% extra [ICON_HAPPINESS_4] Unhappiness due to city's Population Size. [NEWLINE][NEWLINE]50% from [ICON_CULTURE] Culture of Wonders and improvements Nationwide added to cities' [ICON_TOURISM] Tourism output in all cities.</Text>
+			<Text>-5 extra [ICON_HAPPINESS_4] Unhappiness due to city's Population Size. [NEWLINE][NEWLINE]50% from [ICON_CULTURE] Culture of Wonders and improvements Nationwide added to cities' [ICON_TOURISM] Tourism output in all cities.</Text>
 		</Row>
 		<!-- Quote tags -->
 		<Row Tag="TXT_KEY_WONDER_PEARL_TOWER_QUOTE">
@@ -3504,7 +3521,7 @@
 		<Row Tag="TXT_KEY_WONDER_GOLDENGATE_PEDIA">
 			<Text>The Golden Gate Bridge is a suspension bridge spanning the Golden Gate strait, the mile-wide, three-mile-long channel between San Francisco Bay and the Pacific Ocean, an area known as the Golden Gate. Completed in 1937, the structure links the U.S. city of San Francisco, on the northern tip of the San Francisco Peninsula, to Marin County, bridging both U.S. Route 101 and California State Route 1 across the strait. The bridge is one of the most internationally recognized symbols of San Francisco, California, and the United States. The Frommers travel guide considers the Golden Gate Bridge "possibly the most beautiful, certainly the most photographed, bridge in the world". Conceived, designed, and promoted by engineering student Joseph Strauss, it once had the longest suspension bridge main span in the world, at 4,200 feet, a title held by it until 1964.</Text>
 		</Row>
-
+<!--
 		<Row Tag="TXT_KEY_BUILDING_LAVRA">
 			<Text>[ICON_PEACE] Lavra</Text>
 		</Row>
@@ -3519,7 +3536,7 @@
 		<Row Tag="TXT_KEY_BUILDING_LAVRA_PEDIA">
 			<Text>Lavra is an honorary title of Orthodox monasteries.</Text>
 		</Row>
-
+-->
 		<Row Tag="TXT_KEY_BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY">
 			<Text>[ICON_PRODUCTION] Steam Locomotive Assembly</Text>
 		</Row>
@@ -3558,7 +3575,7 @@
 		<Row Tag="TXT_KEY_BUILDING_TAX_COLLECTOR_STRATEGY">
 			<Text>The Tax Collector should be used when you have sufficient population to make it worth it.</Text>
 		</Row>		
-
+<!--
 		<Row Tag="TXT_KEY_BUILDING_AUTOHERSTELLER">
 			<Text>[ICON_PRODUCTION] Autohersteller</Text>
 		</Row>
@@ -3584,6 +3601,11 @@
 		<Row Tag="TXT_KEY_BUILDING_BEERMAKER_STRATEGY">
 			<Text>The Beermaker is the German unique building increasing the [ICON_FOOD] Food output in the Empire.</Text>
 		</Row>		
+-->
+			
+
+
+
 
 	</Language_en_US>
 

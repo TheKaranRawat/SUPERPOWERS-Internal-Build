@@ -67,11 +67,13 @@
 			<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
 			<UnitType>UNIT_ENGLISH_SHIPOFTHELINE</UnitType>
 		</Row>
+<!--	
 		<Row>
 			<CivilizationType>CIVILIZATION_ENGLAND</CivilizationType>
 			<UnitClassType>UNITCLASS_CRUISER_TANK</UnitClassType>
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 		</Row>
+-->		
 		<Row>
 			<CivilizationType>CIVILIZATION_ENGLAND</CivilizationType>
 			<UnitClassType>UNITCLASS_CARRIER_FIGHTER_JET</UnitClassType>

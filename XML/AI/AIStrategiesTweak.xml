@@ -266,7 +266,7 @@
 
 	<TacticalMoves>
 		<Update>
-			<Set Priority="80"/>
+			<Set Priority="100"/>
 			<Where Type="TACTICAL_MOVE_NONCOMBATANTS_TO_SAFETY" />
 		</Update>
 		<Update>
@@ -998,7 +998,7 @@
 		</Update>		
 
 		<Update>
-			<Set Value="1600"/>
+			<Set Value="1000"/>
 			<Where Name="OPINION_WEIGHT_CAPTURED_CAPITAL" />
 		</Update>
 
@@ -1194,7 +1194,7 @@
 			<Where Name="APPROACH_WAR_HAS_MADE_PEACE_BEFORE_PERCENT" />
 		</Update>
 		<Update>
-			<Set Value="450"/>
+			<Set Value="400"/>
 			<Where Name="APPROACH_WAR_RECKLESS_EXPANDER" />
 		</Update>
 		<Update>

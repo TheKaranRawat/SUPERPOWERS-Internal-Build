@@ -436,7 +436,52 @@
 		<Row>
 			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2_HELP</Tag>
 			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV2]Provincial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. [NEWLINE][NEWLINE]Elimate the extra [ICON_CULTURE] Culture cost of adopting new Policies created by Lv2 Cities (stacked with the "Representation" Policy effect) . [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Population and consume 4 [ICON_RES_CONSUMER] Consumer Goods. </Text>
-		</Row>		
+		</Row>	
+
+		<Row>
+			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_1</Tag>
+			<Text>[ICON_CITYBANNER_CITY_LV2] Colonial Office</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_1_PEDIA</Tag>
+			<Text>
+				Colonial Offices managed the British Colonies.
+			</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_1_HELP</Tag>
+			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV2]Provincial Cities. [NEWLINE][NEWLINE]Does NOT eliminate extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. [NEWLINE][NEWLINE]Elimate the extra [ICON_CULTURE] Culture cost of adopting new Policies created by Lv2 Cities (stacked with the "Representation" Policy effect) . [NEWLINE][NEWLINE]Gain extra [ICON_GOLD] Gold at a cost to other yields and consume 8 [ICON_RES_CONSUMER] Consumer Goods. </Text>
+		</Row>
+
+		<Row>
+			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_2</Tag>
+			<Text>[ICON_CITYBANNER_CITY_LV3] Colonial Office</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_2_PEDIA</Tag>
+			<Text>
+				Colonial Offices managed the British Colonies.
+			</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_2_HELP</Tag>
+			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV3]Territorial Cities. [NEWLINE][NEWLINE]Does NOT eliminate extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. [NEWLINE][NEWLINE]Elimate the extra [ICON_CULTURE] Culture cost of adopting new Policies created by Lv2 Cities (stacked with the "Representation" Policy effect) . [NEWLINE][NEWLINE]Gain extra [ICON_GOLD] Gold at a cost to other yields and consume 8 [ICON_RES_CONSUMER] Consumer Goods. </Text>
+		</Row>			
+
+		<Row>
+			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_3</Tag>
+			<Text>[ICON_CITYBANNER_CITY_LV4] Colonial Office</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_3_PEDIA</Tag>
+			<Text>
+				Colonial Offices managed the British Colonies.
+			</Text>
+		</Row>
+		<Row>
+			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_3_HELP</Tag>
+			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV4]Colonial Cities. [NEWLINE][NEWLINE]Does NOT eliminate extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. [NEWLINE][NEWLINE]Elimate the extra [ICON_CULTURE] Culture cost of adopting new Policies created by Lv2 Cities (stacked with the "Representation" Policy effect) . [NEWLINE][NEWLINE]Gain extra [ICON_GOLD] Gold at a cost to other yields and consume 8 [ICON_RES_CONSUMER] Consumer Goods. </Text>
+		</Row>				
 
 
 		<Row Tag="TXT_KEY_BUILDING_SHERIFF_OFFICE">
@@ -612,7 +657,7 @@
 			<Text>[ICON_RES_ELECTRICITY]Wind Farm</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DANISH_WIND_TURBINE_HELP">
-			<Text>+24 [ICON_RES_ELECTRICITY] Electricity. [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]No Pollution[ENDCOLOR]</Text>
+			<Text>+32 [ICON_RES_ELECTRICITY] Electricity. [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]No Pollution[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_DANISH_WIND_TURBINE_TEXT">
 			<Text>Denmark was a pioneer in developing commercial wind power during the 1970s, and today a substantial share of the wind turbines around the world are produced by Danish manufacturers such as Vestas and Siemens Wind Power along with many component suppliers.</Text>
@@ -622,7 +667,7 @@
 			<Text>[ICON_RES_ELECTRICITY] Wind Turbine</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_WIND_PLANT_HELP">
-			<Text>+4 [ICON_RES_ELECTRICITY] Electricity. [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]No Pollution[ENDCOLOR]</Text>
+			<Text>+16 [ICON_RES_ELECTRICITY] Electricity. [NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]No Pollution[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_BUILDINGS_WIND_PLANT_TEXT">
 			<Text>A wind turbine is a device that converts kinetic energy from the wind into electrical power. The term appears to have migrated from parallel hydroelectric technology (rotary propeller). The technical description for this type of machine is an aerofoil-powered generator.</Text>
@@ -771,7 +816,7 @@
 	<Language_en_US>
 		<Replace Tag="TXT_KEY_BUILDING_AQUEDUCT_HELP">
 			<Text>33% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born.[NEWLINE][NEWLINE]Must be built in Small Cities.
-			[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 5 [ICON_CITIZEN] Citizen.
+			[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 45 [ICON_CITIZEN] Citizen.
 			[NEWLINE][NEWLINE]Upon discovering Urbanization, this kind of building becomes [COLOR_NEGATIVE_TEXT]obsolete[ENDCOLOR] (it is no longer allowed to build and its bonuses are lost). 
 			[NEWLINE][NEWLINE]+2 [ICON_TOURISM] Tourism after discovering Internet.</Text>
 		</Replace>
@@ -808,7 +853,7 @@
 		<Row Tag="TXT_KEY_BUILDING_TAP_WATER_SUPPLY_HELP">
 			<Text>33% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born.
 			[NEWLINE][NEWLINE]Must be built in Small Cities. 
-			[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 5 [ICON_CITIZEN] Citizen.</Text>
+			[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_BUILDINGS_TAP_WATER_SUPPLY_TEXT">
 			<Text>Tap water (running water, city water, municipal water, etc.) is water supplied to a tap (valve). Its uses include drinking, washing, cooking, and the flushing of toilets. Indoor tap water is distributed through "indoor plumbing", which has existed since antiquity but was available to very few people until the second half of the 19th century when it began to propagate in what are now developed countries. </Text>
@@ -924,7 +969,7 @@
 			<Tag>TXT_KEY_BUILDING_WATER_TREATMENT_FACTORY_HELP</Tag>
 			<Text>33% of [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born. (The effect stackes with the Tap Water System)
 			[NEWLINE][NEWLINE]Must be built in Large Cities.
-			[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 4 [ICON_CITIZEN] Citizen.</Text>
+			[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen.</Text>
 		</Row>
 		
 		
@@ -1122,7 +1167,7 @@
 
 		<Replace Tag="TXT_KEY_BUILDING_HOSPITAL_HELP">
 			<Text>Reduces the [ICON_FOOD] Food Growth loss due to the Pollution by 25%.
-				[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 4 [ICON_CITIZEN] Citizen.
+				[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen.
 				[NEWLINE][NEWLINE]Must be built in Large Cities.
 		</Text>
 		</Replace>
@@ -1263,7 +1308,7 @@
 			<Tag>TXT_KEY_BUILDING_CHINESE_GARDEN_HELP</Tag>
 			<Text>
 				+25% [ICON_GREAT_PEOPLE] Great People generation rate in the city.
-				[NEWLINE]-2% [ICON_HAPPINESS_4] Unhappiness nationwide for every Chinese Garden.
+				[NEWLINE]-4% [ICON_HAPPINESS_4] Unhappiness nationwide for every Chinese Garden.
 				[NEWLINE][NEWLINE]Must be built in large Cities.</Text>
 		</Row>
 
@@ -1494,7 +1539,7 @@
 		<Replace Tag="TXT_KEY_BUILDING_MEDICAL_LAB_HELP">
 			<Text>[NEWLINE][NEWLINE]Reduces the [ICON_FOOD] Food Growth loss due to the Pollution by 25%.
 			[NEWLINE][NEWLINE]Must be built in XXL Cities.
-			[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 4 [ICON_CITIZEN] Citizen.</Text>
+			[NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every [ICON_CITIZEN] Citizen.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_BUILDING_STADIUM_DESC">

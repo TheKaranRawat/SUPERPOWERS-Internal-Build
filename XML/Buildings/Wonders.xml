@@ -1459,7 +1459,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>NEW_BLDG_ATLAS_DLC</IconAtlas>
 			<PortraitIndex>1</PortraitIndex>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 		</Row>
 		<Row>
 			<Type>BUILDING_NATIONAL_STOCK_EXCHANGE</Type>
@@ -1477,7 +1477,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>54</PortraitIndex>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 		</Row>
 		<Row>
 			<Type>BUILDING_NATIONAL_FINANCE</Type>
@@ -1495,7 +1495,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>51</PortraitIndex>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 		</Row>
 
 
@@ -1519,7 +1519,7 @@
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>56</PortraitIndex>
 			<FreePromotion>PROMOTION_NATIONAL_AUTOCRACY</FreePromotion>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 		</Row>
 
 		<Row>
@@ -1540,7 +1540,7 @@
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>57</PortraitIndex>
 			<GlobalSpaceProductionModifier>100</GlobalSpaceProductionModifier>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 		</Row>
 
 		<Row>
@@ -1562,7 +1562,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>58</PortraitIndex>
-			<NumTradeRouteBonus>4</NumTradeRouteBonus>
+			<NumTradeRouteBonus>2</NumTradeRouteBonus>
 		</Row>
 
 

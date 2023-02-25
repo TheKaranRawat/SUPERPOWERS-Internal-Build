@@ -2027,19 +2027,19 @@
 		<Row>
 			<UnitType>UNIT_RAILROAD_GUN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>5</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_KATYUSHA</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>7</Cost>
+			<Cost>5</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_ROCKET_ARTILLERY</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>5</Cost>
 		</Row>
 
 				

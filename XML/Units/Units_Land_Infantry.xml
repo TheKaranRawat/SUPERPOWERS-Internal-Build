@@ -4335,20 +4335,20 @@
 			<Row>
 				<UnitType>UNIT_FW_CRAWLER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>8</Cost>
+				<Cost>2</Cost>
 			</Row>
 
 			<Row>
 				<UnitType>UNIT_FW_BATTLESUIT</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>3</Cost>
+				<Cost>1</Cost>
 			</Row>
 			
 
 			<Row>
 				<UnitType>UNIT_FW_HOVERTANK</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>3</Cost>
+				<Cost>2</Cost>
 			</Row>
 
 			<Row>
@@ -4366,7 +4366,7 @@
 			<Row>
 				<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>2</Cost>
+				<Cost>3</Cost>
 			</Row>
 
 			<Row>
@@ -4378,7 +4378,7 @@
 			<Row>
 				<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>2</Cost>
+				<Cost>4</Cost>
 			</Row>
 
 

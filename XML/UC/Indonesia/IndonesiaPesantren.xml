@@ -31,7 +31,7 @@
 		<Row>
 			<BuildingType>BUILDING_PESANTREN</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>100</Yield>
+			<Yield>20</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PESANTREN</BuildingType>
@@ -69,7 +69,7 @@
 		<Row>
 			<BuildingType>BUILDING_PESANTREN</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>3</Yield>
+			<Yield>2</Yield>
 		</Row>
 	</Building_YieldChanges>
 	
@@ -88,7 +88,7 @@
 			<Text>[ICON_RESEARCH] Pesantren</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PESANTREN_HELP">
-			<Text>+1 [ICON_RESEARCH] Science and +1 [ICON_PEACE] Faith for every 2 [ICON_CITIZEN] Citizens in this City. +25% Religious Pressure from this City. Only Indonesia may build it.</Text>
+			<Text>+0.4 [ICON_RESEARCH] Science and +1 [ICON_PEACE] Faith for every 2 [ICON_CITIZEN] Citizens in this City. +25% Religious Pressure from this City. Only Indonesia may build it.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PESANTREN_STRATEGY">
 			<Text>The Indensian Pesantren replaces the Public School. In addition to the [ICON_RESEARCH] Science yield, it also generates [ICON_PEACE] Faith. Both yields are based on [ICON_CITIZEN] Population, so the Pesantren is most effective in larger cities. It also helps to spread religion faster. Build Pesantrens to help grow and unify your civilization in both religion and research.</Text>

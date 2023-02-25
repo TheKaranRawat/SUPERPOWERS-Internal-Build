@@ -13,7 +13,7 @@
 			<Recommendation>TXT_KEY_BUILD_FOOD_REC</Recommendation>
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<HotKey>KB_E</HotKey>
-			<OrderPriority>99</OrderPriority>
+			<OrderPriority>97</OrderPriority>
 			<IconIndex>0</IconIndex>
 			<IconAtlas>UNIT_ACTION_DLC02_ATLAS</IconAtlas>
 		</Row>
@@ -477,6 +477,14 @@
 		<Update>
 			<Set PrereqTech="TECH_BRONZE_WORKING"/>
 			<Where BuildType="BUILD_REMOVE_MARSH"/>
+		</Update>
+		<Update>
+			<Set PrereqTech="TECH_BRONZE_WORKING"/>
+			<Where BuildType="BUILD_REMOVE_JUNGLE"/>
+		</Update>
+		<Update>
+			<Set PrereqTech="TECH_BRONZE_WORKING"/>
+			<Where BuildType="BUILD_REMOVE_FOREST"/>
 		</Update>
 	</BuildFeatures>
 

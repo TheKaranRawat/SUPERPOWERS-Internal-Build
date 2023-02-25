@@ -63,6 +63,31 @@
 
 
 		<!-- ADDITIONS -->
+
+		<Row>
+			<Type>BELIEF_HOLY_TULIPS</Type>
+			<Description>TXT_KEY_BELIEF_HOLY_TULIPS</Description>
+			<ShortDescription>TXT_KEY_BELIEF_HOLY_TULIPS_SHORT</ShortDescription>
+			<Founder>true</Founder>
+		</Row>
+
+
+		<Row>
+			<Type>BELIEF_SACRED_FLAX</Type>
+			<Description>TXT_KEY_BELIEF_SACRED_FLAX</Description>
+			<ShortDescription>TXT_KEY_BELIEF_SACRED_FLAX_SHORT</ShortDescription>
+			<Founder>true</Founder>
+		</Row>
+
+
+		<Row>
+			<Type>BELIEF_LOVE_RICE</Type>
+			<Description>TXT_KEY_BELIEF_LOVE_RICE</Description>
+			<ShortDescription>TXT_KEY_BELIEF_LOVE_RICE_SHORT</ShortDescription>
+			<Founder>true</Founder>
+		</Row>		
+
+
 		<Row>
 			<Type>BELIEF_GODDESS_OF_BEAUTY</Type>
 			<Description>TXT_KEY_BELIEF_GODDESS_OF_BEAUTY</Description>
@@ -246,113 +271,113 @@
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_JADE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_AMBER</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_CORAL</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_CRAFTSMEN</BeliefType>
 			<ResourceType>RESOURCE_LAPIS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		
 		<Row>
 			<BeliefType>BELIEF_SUN_GOD</BeliefType>
 			<ResourceType>RESOURCE_OLIVE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_SUN_GOD</BeliefType>
 			<ResourceType>RESOURCE_TOBACCO</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_SUN_GOD</BeliefType>
 			<ResourceType>RESOURCE_PERFUME</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_SUN_GOD</BeliefType>
 			<ResourceType>RESOURCE_SUGAR</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_SPICES</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_BANANA</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_CITRUS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_EARTH_MOTHER</BeliefType>
 			<ResourceType>RESOURCE_COTTON</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 		<Row>
 			<BeliefType>BELIEF_HOLY_BEVERAGE</BeliefType>
 			<ResourceType>RESOURCE_COCOA</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_HOLY_BEVERAGE</BeliefType>
 			<ResourceType>RESOURCE_TEA</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_HOLY_BEVERAGE</BeliefType>
 			<ResourceType>RESOURCE_COFFEE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>				
 
 		<Row>
 			<BeliefType>BELIEF_GODDESS_OF_BEAUTY</BeliefType>
 			<ResourceType>RESOURCE_DYE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GODDESS_OF_BEAUTY</BeliefType>
 			<ResourceType>RESOURCE_SILK</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>		
 		<Row>
 			<BeliefType>BELIEF_GODDESS_OF_BEAUTY</BeliefType>
 			<ResourceType>RESOURCE_PERFUME</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>								
 
 		<!--<Row>
@@ -367,6 +392,49 @@
 	
 	<Belief_ImprovementYieldChanges>
 		<Delete BeliefType="BELIEF_GOD_SEA"/>
+
+
+		<Row>
+			<BeliefType>BELIEF_SACRED_FLAX</BeliefType>
+			<ImprovementType>IMPROVEMENT_EGYPTIAN_FLAX</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_SACRED_FLAX</BeliefType>
+			<ImprovementType>IMPROVEMENT_EGYPTIAN_FLAX</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>3</Yield>
+		</Row>	
+
+
+		<Row>
+			<BeliefType>BELIEF_HOLY_TULIPS</BeliefType>
+			<ImprovementType>IMPROVEMENT_TULIPS</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_HOLY_TULIPS</BeliefType>
+			<ImprovementType>IMPROVEMENT_TULIPS</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>5</Yield>
+		</Row>
+
+
+		<Row>
+			<BeliefType>BELIEF_LOVE_RICE</BeliefType>
+			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_LOVE_RICE</BeliefType>
+			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>5</Yield>
+		</Row>		
+
 
 
 		<Row>
@@ -386,7 +454,7 @@
 			<BeliefType>BELIEF_GODDESS_HUNT</BeliefType>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 	</Belief_ImprovementYieldChanges>
 	
@@ -406,7 +474,7 @@
 			<BeliefType>BELIEF_MARSH_BELIEF</BeliefType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_MARSH_BELIEF</BeliefType>
@@ -477,7 +545,7 @@
 			<BeliefType>BELIEF_SNOW_BELIEF</BeliefType>
 			<TerrainType>TERRAIN_SNOW</TerrainType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>6</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_DANCE_AURORA</BeliefType>
@@ -581,19 +649,19 @@
 			<BeliefType>BELIEF_CHARITES</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>6</YieldChange>
+			<YieldChange>5</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_CHARITES</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>6</YieldChange>
+			<YieldChange>5</YieldChange>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_CHARITES</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>6</YieldChange>
+			<YieldChange>5</YieldChange>
 		</Row>
 		<!--<Row>
 			<BeliefType>BELIEF_HOLY_WARRIORS</BeliefType>
@@ -614,12 +682,27 @@
 		<Row>
 			<BeliefType>BELIEF_MAZU</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>6</Happiness>
+			<Happiness>4</Happiness>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_RIVER_CRAFTSMAN</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_WATERMILL</BuildingClassType>
 			<Happiness>4</Happiness>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_HOLY_TULIPS</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_SACRED_FLAX</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_LOVE_RICE</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<Happiness>2</Happiness>
 		</Row>
 	</Belief_BuildingClassHappiness>
 	<Belief_MaxYieldModifierPerFollower>
@@ -656,6 +739,7 @@
 			<Tourism>40</Tourism>
 		</Row>
 	</Belief_BuildingClassTourism>
+
 
 
 	

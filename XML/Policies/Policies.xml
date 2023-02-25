@@ -12,21 +12,19 @@
 	<Policies>
 		
 		<Update>
-			<Set PlotCultureExponentModifier="-25" GreatGeneralRateModifier="10" GreatAdmiralRateModifier="10"/>
+			<Set PlotCultureExponentModifier="-25" HappinessPerXPopulation="2" BuildingProductionModifier="25" GreatGeneralRateModifier="10" GreatAdmiralRateModifier="10"/>
 			<Where Type="POLICY_TRADITION"/>
 		</Update>
-
 		<Update>
-			<Set CityCountUnhappinessMod="100" NumCitiesPolicyCostDiscount="-10"/>
+			<Set NumCitiesPolicyCostDiscount="-15"/>
 			<Where Type="POLICY_TRADITION"/>
 		</Update>
-		
 		<Update>
 			<Set HappinessPerXPopulation="0" WonderProductionModifier="0" NewCityExtraPopulation="1" PortraitIndex="28"/>
 			<Where Type="POLICY_ARISTOCRACY"/>
 		</Update>
 		<Update>
-			<Set NumCitiesFreeCultureBuilding="0" HappinessPerXPopulation="3" CapitalUnhappinessMod="-50" OneShot="false" GridX="3" GridY="1"/>
+			<Set NumCitiesFreeCultureBuilding="0" CapitalUnhappinessMod="-50" OneShot="false" GridX="3" GridY="1"/>
 			<Where Type="POLICY_LEGALISM"/>
 		</Update>
 		<Update>
@@ -34,17 +32,19 @@
 			<Where Type="POLICY_OLIGARCHY"/>
 		</Update>
 		<Update>
-			<Set CapitalGrowthMod="30" CityGrowthMod="20" GridX="5" GridY="1"/>
+			<Set CapitalGrowthMod="15" CityGrowthMod="10" GridX="5" GridY="1"/>
 			<Where Type="POLICY_LANDED_ELITE"/>
 		</Update>
 		<Update>
-			<Set CapitalUnhappinessMod="0" GridX="4" GridY="3"/>
+			<Set GridX="4" GridY="3"/>
 			<Where Type="POLICY_MONARCHY"/>
-		</Update>
+		</Update>		
 		<Update>
-			<Set CityCountUnhappinessMod="100" CityGrowthMod="0" NumFreeGreatPeople="0" NumCitiesFreeFoodBuilding="0"/>
+			<Set CityGrowthMod="0" NumFreeGreatPeople="0" NumCitiesFreeFoodBuilding="0"/>
 			<Where Type="POLICY_TRADITION_FINISHER"/>
 		</Update>
+	
+
 		<Row>
 			<Type>POLICY_PREFECTURE</Type>
 			<Description>TXT_KEY_POLICY_PREFECTURE</Description>
@@ -91,16 +91,14 @@
 	<Policies>
 		
 		<Update>
-			<Set WorkerSpeedModifier="33" GreatGeneralRateModifier="25" GreatAdmiralRateModifier="25"/>
+			<Set WorkerSpeedModifier="25" GreatGeneralRateModifier="25" GreatAdmiralRateModifier="25"/>
 			<Where Type="POLICY_LIBERTY"/>
 		</Update>
 
 		<Update>
-			<Set CityGrowthMod="-10" />
+			<Set CityGrowthMod="-15" />
 			<Where Type="POLICY_LIBERTY"/>
 		</Update>
-
-				
 
 		<Update>
 			<Set IncludesOneShotFreeUnits="true" WorkerSpeedModifier="0" GridX="3" GridY="1"/>
@@ -111,7 +109,7 @@
 			<Where Type="POLICY_COLLECTIVE_RULE"/>
 		</Update>
 		<Update>
-			<Set HappinessPerTradeRoute="4" BuildingProductionModifier="0" ExtraHappinessPerLuxury="1" GridX="3" GridY="2" PortraitIndex="29"/>
+			<Set BuildingProductionModifier="0" ExtraHappinessPerLuxury="5" GridX="3" GridY="2" PortraitIndex="29"/>
 			<Where Type="POLICY_REPUBLIC"/>
 		</Update>
 		<Update>
@@ -123,7 +121,7 @@
 			<Where Type="POLICY_MERITOCRACY"/>
 		</Update>
 		<Update>
-			<Set NumFreeGreatPeople="0" GoldenAgeTurns="20"/>
+			<Set NumFreeGreatPeople="0" GoldenAgeTurns="10"/>
 			<Where Type="POLICY_LIBERTY_FINISHER"/>
 		</Update>
 
@@ -165,7 +163,7 @@
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>2</GridY>
-			<OccupiedPopulationUnhappinessMod>50</OccupiedPopulationUnhappinessMod>
+			<OccupiedPopulationUnhappinessMod>0</OccupiedPopulationUnhappinessMod>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
@@ -179,7 +177,6 @@
 			<CultureCost>10</CultureCost>
 			<GridX>2</GridX>
 			<GridY>3</GridY>
-			<HappinessPerGarrisonedUnit>1</HappinessPerGarrisonedUnit>
 			<CulturePerGarrisonedUnit>2</CulturePerGarrisonedUnit>
 			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
@@ -222,6 +219,7 @@
 			<Help>TXT_KEY_POLICY_HORSEMAN_TRAINING_HELP</Help>
 			<PolicyBranchType>POLICY_BRANCH_HONOR</PolicyBranchType>
 			<CultureCost>10</CultureCost>
+			<HappinessPerGarrisonedUnit>5</HappinessPerGarrisonedUnit>			
 			<GridX>2</GridX>
 			<GridY>1</GridY>
 			<PortraitIndex>5</PortraitIndex>
@@ -246,7 +244,7 @@
 		</Update>
 
 		<Update>
-			<Set FaithCostModifier="-33"/>
+			<Set FaithCostModifier="-25"/>
 			<Where Type="POLICY_MANDATE_OF_HEAVEN"/>
 		</Update>		
 		<!--<Update>
@@ -380,11 +378,11 @@
 			<Where Type="POLICY_TRADE_UNIONS"/>
 		</Update>
 		<Update>
-			<Set RouteGoldMaintenanceMod="0" LandTradeRouteGoldChange="400" CityConnectionTradeRouteGoldModifier="25" GridX="1" GridY="1"/>
+			<Set RouteGoldMaintenanceMod="0" LandTradeRouteGoldChange="400" CityConnectionTradeRouteGoldModifier="50" GridX="1" GridY="1"/>
 			<Where Type="POLICY_CARAVANS"/>
 		</Update>
 		<Update>
-			<Set ExtraHappinessPerLuxury="0" InternalTradeRouteYieldModifier="250" RouteGoldMaintenanceMod="-50" GridX="1" GridY="2" PortraitIndex="31"/>
+			<Set ExtraHappinessPerLuxury="0" InternalTradeRouteYieldModifier="100" RouteGoldMaintenanceMod="-50" GridX="1" GridY="2" PortraitIndex="31"/>
 			<Where Type="POLICY_PROTECTIONISM"/>
 		</Update>
 		<Update>
@@ -396,7 +394,7 @@
 			<Where Type="POLICY_MERCANTILISM"/>
 		</Update>
 		<Update>
-			<Set BuildingGoldMaintenanceMod="-15" UnitGoldMaintenanceMod="-15"/>
+			<Set BuildingGoldMaintenanceMod="-20" UnitGoldMaintenanceMod="-10" CityConnectionTradeRouteGoldModifier="50" InternalTradeRouteYieldModifier="100"/>
 			<Where Type="POLICY_COMMERCE_FINISHER"/>
 		</Update>
 		<Row>
@@ -411,7 +409,7 @@
 			<PortraitIndex>11</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
-			<ExtraHappinessPerLuxury>1</ExtraHappinessPerLuxury>
+			<ExtraHappinessPerLuxury>5</ExtraHappinessPerLuxury>
 		</Row>
 
 	</Policies>
@@ -610,7 +608,7 @@
 		</Update>
 		
 		<Update>
-			<Set GoldenAgeTurns="30"/>
+			<Set UnhappinessMod="-25" GoldenAgeTurns="10"/>
 			<Where Type="POLICY_HERO_OF_THE_PEOPLE"/>
 		</Update>
 		<Update>
@@ -622,7 +620,7 @@
 			<Where Type="POLICY_RESETTLEMENT"/>
 		</Update>
 		<Update>
-			<Set SharedIdeologyTourismModifier="25" CultureWonderMultiplier="33" Level="1" />
+			<Set SharedIdeologyTourismModifier="25" CultureWonderMultiplier="33" Level="1" HappinessPerXPopulation="5"/>
 			<Where Type="POLICY_CULTURAL_REVOLUTION"/>
 		</Update>	
 		<Update>
@@ -667,7 +665,7 @@
 		
 				
 		<Update>
-			<Set UnhappinessMod="-30" GoldenAgeTurns="20" CommonFoeTourismModifier="0"/>
+			<Set UnhappinessMod="-25" GoldenAgeTurns="20" CommonFoeTourismModifier="0"/>
 			<Where Type="POLICY_CULT_PERSONALITY"/>
 		</Update>
 		<Update>
@@ -725,6 +723,7 @@
 			<PolicyType>POLICY_FAMILY_REGISTER</PolicyType>
 			<PrereqPolicy>POLICY_LANDED_ELITE</PrereqPolicy>
 		</Row>
+	
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<PrereqPolicy>POLICY_LEGALISM</PrereqPolicy>
@@ -1079,8 +1078,9 @@
 			<Description>TXT_KEY_POLICY_BRANCH_FREEDOM</Description>
 			<PortraitIndex>1</PortraitIndex>
 
-			<CityGrowthMod>25</CityGrowthMod>
-			<NewCityExtraPopulation>5</NewCityExtraPopulation>
+			<CityGrowthMod>10</CityGrowthMod>
+			<NewCityExtraPopulation>4</NewCityExtraPopulation>
+		
 
 			<Civilopedia>TXT_KEY_POLICY_FREEDOM_TEXT</Civilopedia>
 			<Help>TXT_KEY_POLICY_FREEDOM_HELP</Help>
@@ -1131,8 +1131,8 @@
 			<GridX>5</GridX>
 			<GridY>1</GridY>
 
-			<BuildingGoldMaintenanceMod>-15</BuildingGoldMaintenanceMod>
-			<CityGrowthMod>15</CityGrowthMod>
+			<BuildingGoldMaintenanceMod>-10</BuildingGoldMaintenanceMod>
+			<CityGrowthMod>10</CityGrowthMod>
 			
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>JFD_CONSERVATION_POLICY_ATLAS</IconAtlas>
@@ -1150,8 +1150,8 @@
 			<GridX>1</GridX>
 			<GridY>2</GridY>
 
-			<WorkerSpeedModifier>100</WorkerSpeedModifier>
-			<EmbarkedExtraMoves>2</EmbarkedExtraMoves>
+			<WorkerSpeedModifier>50</WorkerSpeedModifier>
+			<EmbarkedExtraMoves>1</EmbarkedExtraMoves>
 			
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>JFD_CONSERVATION_POLICY_ATLAS</IconAtlas>
@@ -1169,8 +1169,8 @@
 			<GridX>5</GridX>
 			<GridY>2</GridY>
 
-			<CulturePerWonder>8</CulturePerWonder>
-			<NumFreeTechs>3</NumFreeTechs>
+			<CulturePerWonder>10</CulturePerWonder>
+			<NumFreeTechs>2</NumFreeTechs>
 			
 			<PortraitIndex>1</PortraitIndex>
 			<IconAtlas>JFD_CONSERVATION_POLICY_ATLAS</IconAtlas>
@@ -1218,7 +1218,9 @@
 		<Row>
 			<Type>POLICY_ISKA_FREEDOM_FINISHER</Type>
 			<Description>TXT_KEY_POLICY_FREEDOM_FINISHER</Description>
-			<GoldenAgeDurationMod>20</GoldenAgeDurationMod>
+			<CityGrowthMod>10</CityGrowthMod>
+			<GoldenAgeDurationMod>10</GoldenAgeDurationMod>
+
 		</Row>
 
 		<!-- ########################################## -->
@@ -1351,7 +1353,7 @@
 			<PolicyBranchType>POLICY_ISKA_BRANCH_ORDER</PolicyBranchType>
 			<CultureCost>10</CultureCost>
 			
-			<UnitGoldMaintenanceMod>33</UnitGoldMaintenanceMod>
+			<UnitGoldMaintenanceMod>40</UnitGoldMaintenanceMod>
 
 			<GridX>5</GridX>
 			<GridY>3</GridY>
@@ -1495,6 +1497,7 @@
 
 			<BuildingProductionModifier>10</BuildingProductionModifier>
 			<CulturePerCity>10</CulturePerCity>
+
 			
 			<PortraitIndex>1</PortraitIndex>
 			<IconAtlas>JFD_INTRIGUE_POLICY_ATLAS</IconAtlas>
