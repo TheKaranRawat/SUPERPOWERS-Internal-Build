@@ -456,7 +456,8 @@
 				[COLOR_POSITIVE_TEXT]Republics[ENDCOLOR] value freedom and innovation.
 				[NEWLINE][NEWLINE]Opening Effects:
 				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture and +5% [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital
-				[NEWLINE][ICON_BULLET]-25% [ICON_CULTURE] Culture cost for acquiring new plots in all cities	
+				[NEWLINE][ICON_BULLET]-25% [ICON_CULTURE] Culture cost for acquiring new plots in all cities
+				[NEWLINE][ICON_BULLET]Buildings generating [ICON_RESEARCH] Science recieve -3 to their primary [ICON_RESEARCH]yield!
 				[NEWLINE][ICON_BULLET]Certain Policies will reduce your unhappiness for each city, having 4 cities is advised!			
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE] Policies increased by 15% for every city[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: Hanging Gardens
@@ -486,8 +487,8 @@
 		<Replace Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Collective Agriculture[ENDCOLOR]				
-				[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Food growth in every city.
-				[NEWLINE][ICON_BULLET]+15% bonus [ICON_FOOD] Food growth in the Capital.
+				[NEWLINE][ICON_BULLET]+5% [ICON_FOOD] Food growth in every city.
+				[NEWLINE][ICON_BULLET]+10% bonus [ICON_FOOD] Food growth in the Capital.
 				</Text>
 		</Replace>
 
@@ -580,7 +581,7 @@
 				[COLOR_POSITIVE_TEXT]Decentralisation[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]New Units receive +15 XP
 				[NEWLINE][ICON_BULLET]The [ICON_CITIZEN] Population Loss caused by Unit Casualties reduced by 50%
-				[NEWLINE][ICON_BULLET]+1 yield from [ICON_CITIZEN] Specialists	
+				[NEWLINE][ICON_BULLET]+1 primary yield from [ICON_CITIZEN] Specialists if Imperial Academy is present in the city	
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_CENTRALISATION_TEXT">
@@ -671,7 +672,7 @@
 		<Row Tag="TXT_KEY_POLICY_BILL_OF_RIGHTS_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Imperial Examination[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+3 [ICON_RESEARCH] Science for each Library, Academy, University, Observatory, Public School and Laboratory
+				[NEWLINE][ICON_BULLET]+3 [ICON_RESEARCH]Research from [ICON_RESEARCH]Buildings
 				[NEWLINE][ICON_BULLET]+3 [ICON_CULTURE] Culture for each Monument, Amphitheater, Art Gallery, Opera House, Museum and Brocast Tower</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_BILL_OF_RIGHTS_TEXT">

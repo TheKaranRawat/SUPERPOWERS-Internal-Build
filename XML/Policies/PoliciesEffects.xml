@@ -364,6 +364,15 @@
 		</Row>-->
 
 
+
+
+
+
+
+
+
+
+
 		<Row>
 			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
@@ -437,6 +446,18 @@
 			<BuildingClassType>BUILDINGCLASS_TCS_PAROCHIAL_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<YieldChange>-3</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>				
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TCS_PATENT_OFFICE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
@@ -449,7 +470,25 @@
 			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<YieldChange>-3</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_BIO_LAB</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_GENE_LAB</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
 		</Row>		
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_POLAR_STATION</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-3</YieldChange>
+		</Row>				
 
 		<Row>
 			<PolicyType>POLICY_PIETY</PolicyType>
@@ -478,6 +517,24 @@
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TCS_PAROCHIAL_SCHOOL</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>				
+		<Row>
+			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TCS_PATENT_OFFICE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>		
+		<Row>
+			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PUBLIC_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<YieldChange>3</YieldChange>
@@ -490,7 +547,19 @@
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_BIO_LAB</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_GENE_LAB</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>				
+		<Row>
+			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_POLAR_STATION</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<YieldChange>3</YieldChange>
 		</Row>
