@@ -209,7 +209,7 @@
 			<Text>Sacred Flax</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_SACRED_FLAX">
-			<Text>+2 [ICON_PRODUCTION] and +4 [ICON_PEACE] Faith from Flax Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Monument.</Text>
+			<Text>+1 [ICON_PRODUCTION] and +3 [ICON_PEACE] Faith from Flax Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Monument.</Text>
 		</Row>
 
 
@@ -217,7 +217,7 @@
 			<Text>Holy Tulips</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_HOLY_TULIPS">
-			<Text>+2 [ICON_PRODUCTION] and +5 [ICON_PEACE] Faith from Tulips Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Market.</Text>
+			<Text>+1 [ICON_PRODUCTION] and +3 [ICON_PEACE] Faith from Tulips Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Market.</Text>
 		</Row>	
 
 
@@ -225,8 +225,25 @@
 			<Text>Love Rice</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_LOVE_RICE">
-			<Text>+1 [ICON_PRODUCTION] and +5 [ICON_PEACE] Faith from Rice Farm Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Temple.</Text>
-		</Row>			
+			<Text>+1 [ICON_PRODUCTION] and +3 [ICON_PEACE] Faith from Rice Farm Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Temple.</Text>
+		</Row>	
+
+
+		<Row Tag="TXT_KEY_BELIEF_SHOULDERS_SHORT">
+			<Text>On the Shoulders</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_SHOULDERS">
+			<Text>+1 [ICON_PRODUCTION] and +3 [ICON_PEACE] Faith from Terrace Farm Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Temple.</Text>
+		</Row>					
+
+
+		<Row Tag="TXT_KEY_BELIEF_TIPI_SHORT">
+			<Text>Tipi!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_TIPI">
+			<Text>+2 [ICON_PRODUCTION] and +2 [ICON_PEACE] Faith from Tipi Improvement. +2 [ICON_HAPPINESS_1] Happiness for every Granary.</Text>
+		</Row>
+
 
 
 	</Language_en_US>

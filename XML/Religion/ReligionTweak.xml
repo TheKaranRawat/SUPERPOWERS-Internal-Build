@@ -64,6 +64,23 @@
 
 		<!-- ADDITIONS -->
 
+
+		<Row>
+			<Type>BELIEF_TIPI</Type>
+			<Description>TXT_KEY_BELIEF_TIPI</Description>
+			<ShortDescription>TXT_KEY_BELIEF_TIPI_SHORT</ShortDescription>
+			<Founder>true</Founder>
+		</Row>
+
+
+		<Row>
+			<Type>BELIEF_SHOULDERS</Type>
+			<Description>TXT_KEY_BELIEF_SHOULDERS</Description>
+			<ShortDescription>TXT_KEY_BELIEF_SHOULDERS_SHORT</ShortDescription>
+			<Founder>true</Founder>
+		</Row>	
+
+
 		<Row>
 			<Type>BELIEF_HOLY_TULIPS</Type>
 			<Description>TXT_KEY_BELIEF_HOLY_TULIPS</Description>
@@ -394,11 +411,40 @@
 		<Delete BeliefType="BELIEF_GOD_SEA"/>
 
 
+
+		<Row>
+			<BeliefType>BELIEF_TIPI</BeliefType>
+			<ImprovementType>IMPROVEMENT_SHOSHONE_TIPI</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_TIPI</BeliefType>
+			<ImprovementType>IMPROVEMENT_SHOSHONE_TIPI</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+
+		<Row>
+			<BeliefType>BELIEF_SHOULDERS</BeliefType>
+			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_SHOULDERS</BeliefType>
+			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>3</Yield>
+		</Row>
+
+
 		<Row>
 			<BeliefType>BELIEF_SACRED_FLAX</BeliefType>
 			<ImprovementType>IMPROVEMENT_EGYPTIAN_FLAX</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_SACRED_FLAX</BeliefType>
@@ -412,13 +458,13 @@
 			<BeliefType>BELIEF_HOLY_TULIPS</BeliefType>
 			<ImprovementType>IMPROVEMENT_TULIPS</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_HOLY_TULIPS</BeliefType>
 			<ImprovementType>IMPROVEMENT_TULIPS</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>5</Yield>
+			<Yield>3</Yield>
 		</Row>
 
 
@@ -432,7 +478,7 @@
 			<BeliefType>BELIEF_LOVE_RICE</BeliefType>
 			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>5</Yield>
+			<Yield>3</Yield>
 		</Row>		
 
 
@@ -704,6 +750,16 @@
 			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
 			<Happiness>2</Happiness>
 		</Row>
+		<Row>
+			<BeliefType>BELIEF_SHOULDERS</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_TIPI</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>				
 	</Belief_BuildingClassHappiness>
 	<Belief_MaxYieldModifierPerFollower>
 		<Row>
