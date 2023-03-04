@@ -26,22 +26,22 @@
 		</Row>
 	</Buildings>
 
-<!--	<Building_YieldChanges>
+	<Building_YieldChanges>
 		<Row>
 			<BuildingType>BUILDING_HOUSE_GARDEN</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
 	</Building_YieldChanges>
--->	
-<!--	<Building_YieldModifiers>
+	
+	<Building_YieldModifiers>
 		<Row>
-			<BuildingType>BUILDING_GRANARY</BuildingType>
+			<BuildingType>BUILDING_HOUSE_GARDEN</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>5</Yield>
 		</Row>
 	</Building_YieldModifiers>
--->	
+	
 	<Building_Flavors>
 		<Row>
 			<BuildingType>BUILDING_HOUSE_GARDEN</BuildingType>
@@ -92,7 +92,7 @@
 			<BuildingType>BUILDING_HOUSE_GARDEN</BuildingType>
 			<ResourceType>RESOURCE_BANANA</ResourceType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>3</Yield>
+			<Yield>4</Yield>
 		</Row>
 <!--		<Row>
 			<BuildingType>BUILDING_HOUSE_GARDEN</BuildingType>
