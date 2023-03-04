@@ -82,15 +82,15 @@
 			<Where Name="BASE_CITY_AIR_STACKING" />
 		</Update>
 		<Update>
-			<Set Value="10"/>
+			<Set Value="15"/>
 			<Where Name="BASE_CITY_GROWTH_THRESHOLD" />
 		</Update>
 		<Update>
-			<Set Value="10"/>
+			<Set Value="15"/>
 			<Where Name="CITY_GROWTH_MULTIPLIER" />
 		</Update>
 		<Update>
-			<Set Value="1.5"/>
+			<Set Value="1.6"/>
 			<Where Name="CITY_GROWTH_EXPONENT" />
 		</Update>
 		<Update>
@@ -112,7 +112,7 @@
 
 
 		<Update>
-			<Set Value="3"/>
+			<Set Value="5"/>
 			<Where Name="UNHAPPINESS_PER_CITY" />
 		</Update>
 		<Update>
@@ -120,7 +120,7 @@
 			<Where Name="UNHAPPINESS_PER_OCCUPIED_POPULATION" />
 		</Update>
 		<Update>
-			<Set Value="6"/>
+			<Set Value="10"/>
 			<Where Name="UNHAPPINESS_PER_CAPTURED_CITY" />
 		</Update>
 		<Update>
@@ -255,7 +255,7 @@
 		</Update>
 
 		<Update>
-			<Set Value="-15"/>
+			<Set Value="-25"/>
 			<Where Name="VERY_UNHAPPY_THRESHOLD" />
 		</Update>
 
@@ -265,13 +265,13 @@
 		</Update>
 
 		<Update>
-			<Set Value="-20"/>
+			<Set Value="-33"/>
 			<Where Name="VERY_UNHAPPY_MAX_COMBAT_PENALTY" />
 		</Update>
 
 
 		<Update>
-			<Set Value="-35"/>
+			<Set Value="-75"/>
 			<Where Name="STRATEGIC_RESOURCE_EXHAUSTED_PENALTY" />
 		</Update>
 
