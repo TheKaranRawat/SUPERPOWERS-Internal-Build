@@ -7,20 +7,6 @@
 		<Delete Type="IMPROVEMENT_FEITORIA"/>
 
 		<Row>
-			<Type>IMPROVEMENT_PADDY_UI</Type>
-			<Description>TXT_KEY_IMPROVEMENT_PADDY_UI</Description>
-			<Civilopedia>TXT_KEY_IMPROVEMENT_PADDY_UI_TEXT</Civilopedia>
-			<Help>TXT_KEY_IMPROVEMENT_PADDY_UI_HELP</Help>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_TERRACE_FARM</ArtDefineTag>
-			<HillsMakesValid>true</HillsMakesValid>
-			<SpecificCivRequired>true</SpecificCivRequired>
-			<CivilizationType>CIVILIZATION_CHINA</CivilizationType>
-			<PillageGold>18</PillageGold>
-			<PortraitIndex>0</PortraitIndex>
-			<IconAtlas>DLC02_TERRAIN_ATLAS</IconAtlas>
-		</Row>
-
-		<Row>
 			<Type>IMPROVEMENT_STEEL_PLANT</Type>
 			<Description>TXT_KEY_IMPROVEMENT_STEEL_PLANT</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_STEEL_PLANT_TEXT</Civilopedia>
@@ -276,7 +262,7 @@
 			<SpecificCivRequired>true</SpecificCivRequired>
 			<CivilizationType>CIVILIZATION_SHOSHONE</CivilizationType>
 			<RequiresFlatlands>true</RequiresFlatlands>
-			<PillageGold>100</PillageGold>
+			<PillageGold>15</PillageGold>
 			<PortraitIndex>3</PortraitIndex>
 			<IconAtlas>SP_IMPROVEMENTS_ATLAS</IconAtlas>
 		</Row>
@@ -715,12 +701,6 @@
 			<ImprovementType>IMPROVEMENT_CREATE_JUNGLE_MOD</ImprovementType>
 			<TerrainType>TERRAIN_PLAINS</TerrainType>
 		</Row>
-
-		<Row>
-			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
-			<TerrainType>TERRAIN_HILL</TerrainType>
-		</Row>
-
 	</Improvement_ValidTerrains>
 
 
@@ -898,12 +878,6 @@
 			<Yield>12</Yield>
 		</Row>
 		-->
-
-		<Row>
-			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
@@ -1095,50 +1069,26 @@
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<ResourceType>RESOURCE_WHALE</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<ResourceType>RESOURCE_WHALE</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>				
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<ResourceType>RESOURCE_PEARLS</ResourceType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<ResourceType>RESOURCE_PEARLS</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>		
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<ResourceType>RESOURCE_CRAB</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<ResourceType>RESOURCE_CRAB</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>		
-		<Row>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<ResourceType>RESOURCE_CORAL</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>6</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<ResourceType>RESOURCE_CORAL</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>		
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>6</Yield>
+		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
 			<ResourceType>RESOURCE_NATRUALGAS</ResourceType>
@@ -1576,21 +1526,6 @@
 			<IconAtlas>FW_IMPROVEMENTS_ATLAS</IconAtlas>
 		</Row>
 
-		<Row>
-			<Type>BUILD_PADDY_UI</Type>
-			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
-			<Time>400</Time>
-			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
-			<Description>TXT_KEY_BUILD_PADDY_UI</Description>
-			<Recommendation>TXT_KEY_BUILD_FOOD_REC</Recommendation>
-			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
-			<HotKey>KB_E</HotKey>
-			<OrderPriority>99</OrderPriority>
-			<IconIndex>0</IconIndex>
-			<IconAtlas>UNIT_ACTION_DLC02_ATLAS</IconAtlas>
-		</Row>
-
-
 	</Builds>
 	
 	
@@ -1600,11 +1535,6 @@
 	
 	
 	<Unit_Builds>
-
-		<Row>
-			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_PADDY_UI</BuildType>
-		</Row>
 
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
@@ -1758,22 +1688,6 @@
 			<Set ArtDefineTag="ART_DEF_IMPROVEMENT_FEITORIA" Coastal="true" PortraitIndex="3" IconAtlas="TERRAIN_IMPROVEMENT_ICON_ATLAS_EXP2" IgnoreOwnership="true" />
 			<Where Type="IMPROVEMENT_FORT"/>
 		</Update>
-
-	<Update>	
-		<Set>
-			<BuildableOnResources>false</BuildableOnResources>
-			<!--<DefenseModifier>0</DefenseModifier>-->
-			<InAdjacentFriendly>false</InAdjacentFriendly>
-			<CultureBombRadius>0</CultureBombRadius>
-			<CreatedByGreatPerson>false</CreatedByGreatPerson>
-			<NearbyEnemyDamage>0</NearbyEnemyDamage>
-			<NoTwoAdjacent>false</NoTwoAdjacent>
-			<DestroyedWhenPillaged>false</DestroyedWhenPillaged>
-			<PortraitIndex>0</PortraitIndex>
-			<IconAtlas>DLC02_TERRAIN_ATLAS</IconAtlas>
-		</Set>
-		<Where Type="IMPROVEMENT_PADDY_UI"/>
-	</Update>		
 		
 	<Update>	
 		<Set>
@@ -2543,26 +2457,6 @@
 	</Improvement_TechYieldChanges>
 
 	<Improvement_TechFreshWaterYieldChanges>
-		
-		<Row>
-			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
-			<TechType>TECH_CIVIL_SERVICE</TechType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
-			<TechType>TECH_AGRICULTURE</TechType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
-			<TechType>TECH_FERTILIZER</TechType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
-		</Row>				
-		
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_HYDROPONICS_DOME</ImprovementType>
 			<TechType>TECH_ARTIFICIAL_ENVIRONMENTS</TechType>
@@ -2583,22 +2477,9 @@
 		</Row>
 	</Improvement_TechFreshWaterYieldChanges>
 
-	<Improvement_TechNoFreshWaterYieldChanges>
-
-		<Row>
-			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
-			<TechType>TECH_CIVIL_SERVICE</TechType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
-			<TechType>TECH_FERTILIZER</TechType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
-		</Row>	
+	<!--<Improvement_TechNoFreshWaterYieldChanges>
 		
-	</Improvement_TechNoFreshWaterYieldChanges>
+	</Improvement_TechNoFreshWaterYieldChanges>-->
 
 	<!--<Improvement_TechFreshWaterYieldChanges>
 		<Row>
@@ -2909,7 +2790,6 @@
 	
 
 	<Improvement_Yields>
-	
 		<Row>
 			<ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>

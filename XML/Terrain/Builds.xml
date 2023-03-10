@@ -5,20 +5,6 @@
 	<Builds>
 
 		<Row>
-			<Type>BUILD_PADDY_UI</Type>
-			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
-			<Time>400</Time>
-			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
-			<Description>TXT_KEY_BUILD_PADDY_UI</Description>
-			<Recommendation>TXT_KEY_BUILD_FOOD_REC</Recommendation>
-			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
-			<HotKey>KB_E</HotKey>
-			<OrderPriority>99</OrderPriority>
-			<IconIndex>0</IconIndex>
-			<IconAtlas>UNIT_ACTION_DLC02_ATLAS</IconAtlas>
-		</Row>
-
-		<Row>
 			<Type>BUILD_STEEL_PLANT</Type>
 			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
 			<Time>1000</Time>
@@ -252,22 +238,6 @@
 		-->
 
 		<Row>
-			<BuildType>BUILD_PADDY_UI</BuildType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
-			<Time>700</Time>
-			<Remove>true</Remove>
-		</Row>
-		<Row>
-			<BuildType>BUILD_PADDY_UI</BuildType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
-			<Time>400</Time>
-			<Production>20</Production>
-			<Remove>true</Remove>
-		</Row>		
-
-		<Row>
 			<BuildType>BUILD_STEEL_PLANT</BuildType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
@@ -491,11 +461,6 @@
 
 		<Delete UnitType="UNIT_GREAT_GENERAL"/>
 		<Delete UnitType="UNIT_MONGOLIAN_KHAN"/>
-
-		<Row>
-			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_PADDY_UI</BuildType>
-		</Row>
 
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
