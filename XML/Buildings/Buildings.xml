@@ -3974,29 +3974,6 @@
 			<PortraitIndex>16</PortraitIndex>
 			<ConquestProb>66</ConquestProb>        
 		</Row>		
-
-		<Row>
-			<Type>BUILDING_AUTOHERSTELLER</Type>
-			<BuildingClass>BUILDINGCLASS_FACTORY</BuildingClass>
-			<Cost>275</Cost>
-			<HurryCostModifier>25</HurryCostModifier>
-			<GoldMaintenance>10</GoldMaintenance>
-			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
-			<Help>TXT_KEY_BUILDING_AUTOHERSTELLER_HELP</Help>
-			<Description>TXT_KEY_BUILDING_AUTOHERSTELLER</Description>
-			<Civilopedia>TXT_KEY_BUILDING_AUTOHERSTELLER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_AUTOHERSTELLER_STRATEGY</Strategy>
-			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>3</PortraitIndex>
-            <SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-            <SpecialistCount>3</SpecialistCount>
-            <XBuiltTriggersIdeologyChoice>5</XBuiltTriggersIdeologyChoice>
- 			<FoodKept>-15</FoodKept>
-			<ConquestProb>66</ConquestProb>        
-            <EnhancedYieldTech>TECH_REPLACEABLE_PARTS</EnhancedYieldTech>
-		</Row>		
 	
 	</Buildings>
 
@@ -4038,10 +4015,7 @@
 			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
 		</Row>	
 	
-		<Row>
-			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
-		</Row>
+
 
 	</Building_ClassesNeededInCity>
 

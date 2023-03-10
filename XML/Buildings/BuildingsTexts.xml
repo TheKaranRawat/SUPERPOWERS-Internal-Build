@@ -3559,19 +3559,6 @@
 			<Text>The Tax Collector should be used when you have sufficient population to make it worth it.</Text>
 		</Row>		
 
-		<Row Tag="TXT_KEY_BUILDING_AUTOHERSTELLER">
-			<Text>[ICON_PRODUCTION] Autohersteller</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_AUTOHERSTELLER_PEDIA">
-			<Text>German Carmakers made a lot of cars that are popular all aound the world and generate a lot of revenue for these companies.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_AUTOHERSTELLER_HELP">
-			<Text>+20[ICON_PRODUCTION] Production, more with Replaceable Parts. Increases [ICON_PRODUCTION] Production yield from Iron, Coal and Aluminium.</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_AUTOHERSTELLER_STRATEGY">
-			<Text>The Autohersteller is the German unique replacement for the Factory.Increased [ICON_PRODUCTION] Production for the City. Additional Yields at Replaceable Parts.</Text>
-		</Row>
-
 	</Language_en_US>
 
 	
