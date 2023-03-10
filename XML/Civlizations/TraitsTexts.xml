@@ -226,7 +226,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_ANNEX_CITY_STATE">
-			<Text>[ICON_BULLET]Can spend [ICON_GOLD] Gold to annex or puppet a City-State that has been your ally for 5 turns(starting from around 500 [ICON_GOLD] Gold in the Ancient Era and the price will rise when Austria entering a new era). A Great Musician appears after researching Acoustics. [NEWLINE][ICON_BULLET]Austrias rich cultural history grants +10% [ICON_CULTURE]culture from cultural buildings.</Text>
+			<Text>[ICON_BULLET]Can spend [ICON_GOLD] Gold to annex or puppet a City-State that has been your ally for 5 turns(starting from around 500 [ICON_GOLD] Gold in the Ancient Era and the price will rise when Austria entering a new era). A Great Musician appears after researching Acoustics. [NEWLINE][ICON_BULLET]Austrias rich cultural history grants +3 [ICON_CULTURE]culture from cultural buildings.</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CITY_STATE_BONUSES_SHORT">
