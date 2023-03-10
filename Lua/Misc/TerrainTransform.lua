@@ -77,19 +77,6 @@ function ImprovementBuilt(iPlayer, x, y, eImprovement)
 		pPlot:SetImprovementType(-1)
 		pPlot:SetImprovementType(GameInfo.Improvements["IMPROVEMENT_FARM"].ID)	
 		print ("Farm in Forest created!")
-
-
-	elseif (eImprovement == GameInfo.Improvements["IMPROVEMENT_STEEL_PLANT"].ID) then
-		pPlot:SetImprovementType(-1)		
-		for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-			local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
-			if pAdjacentPlot:GetResourceType() == GameInfoTypes.RESOURCE_COAL then 
-				pPlot:SetResourceType(GameInfoTypes.RESOURCE_ALUMINUM, 1)
-				pPlot:SetImprovementType(GameInfo.Improvements["IMPROVEMENT_STEEL_PLANT"].ID)
-				print ("Steel Plant with Aluminium created!")
-			end
-		end
-		    		
 				
 		
 	elseif (eImprovement == GameInfo.Improvements["IMPROVEMENT_ETHIOPIA_COFFEE"].ID) then	
