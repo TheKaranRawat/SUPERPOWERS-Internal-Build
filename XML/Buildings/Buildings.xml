@@ -3980,7 +3980,7 @@
 			<BuildingClass>BUILDINGCLASS_FACTORY</BuildingClass>
 			<Cost>275</Cost>
 			<HurryCostModifier>25</HurryCostModifier>
-			<GoldMaintenance>20</GoldMaintenance>
+			<GoldMaintenance>10</GoldMaintenance>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 			<Help>TXT_KEY_BUILDING_AUTOHERSTELLER_HELP</Help>
 			<Description>TXT_KEY_BUILDING_AUTOHERSTELLER</Description>
@@ -4001,9 +4001,9 @@
 		<Row>
 			<Type>BUILDING_BEERMAKER</Type>
 			<BuildingClass>BUILDINGCLASS_BEERMAKER</BuildingClass>
-			<Cost>250</Cost>
+			<Cost>100</Cost>
 			<HurryCostModifier>25</HurryCostModifier>
-			<GoldMaintenance>4</GoldMaintenance>
+			<GoldMaintenance>2</GoldMaintenance>
 			<Happiness>1</Happiness>
 			<PrereqTech>TECH_GUILDS</PrereqTech>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
@@ -4250,9 +4250,10 @@
 		<Row>
 			<Type>BUILDING_LAVRA</Type>
 			<BuildingClass>BUILDINGCLASS_LAVRA</BuildingClass>
-			<Cost>1000</Cost>
-			<GoldMaintenance>50</GoldMaintenance>
+			<Cost>500</Cost>
+			<GoldMaintenance>20</GoldMaintenance>
 			<PrereqTech>TECH_THEOLOGY</PrereqTech>
+			<EnhancedYieldTech>ARCHAEOLOGY</EnhancedYieldTech>
 			<Help>TXT_KEY_BUILDING_LAVRA_HELP</Help>
 			<Description>TXT_KEY_BUILDING_LAVRA</Description>
 			<Civilopedia>TXT_KEY_BUILDING_LAVRA_PEDIA</Civilopedia>
@@ -4261,8 +4262,11 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>38</PortraitIndex>
+			<IsReligious>true</IsReligious>
 			<CapturePlunderModifier>500</CapturePlunderModifier>
-			<ConquestProb>50</ConquestProb>						
+			<ReligiousPressureModifier>100</ReligiousPressureModifier>
+			<ConquestProb>50</ConquestProb>	
+			<TechEnhancedTourism>4</TechEnhancedTourism>					
 		</Row>		
 
 	</Buildings>
