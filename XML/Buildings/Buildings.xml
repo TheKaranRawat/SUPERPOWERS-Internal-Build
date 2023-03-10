@@ -3916,7 +3916,6 @@
 			<PortraitIndex>21</PortraitIndex>
 		</Row>
 		
-
 	
 	</Buildings>
 
@@ -3958,8 +3957,6 @@
 			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
 		</Row>	
 	
-
-
 	</Building_ClassesNeededInCity>
 
 	<!-- ***************************Religious Buildings***************************-->
@@ -4136,29 +4133,6 @@
 			<Happiness>1</Happiness>
 			<ConquestProb>100</ConquestProb>
 		</Row>
-
-		<Row>
-			<Type>BUILDING_LAVRA</Type>
-			<BuildingClass>BUILDINGCLASS_LAVRA</BuildingClass>
-			<Cost>500</Cost>
-			<GoldMaintenance>20</GoldMaintenance>
-			<PrereqTech>TECH_THEOLOGY</PrereqTech>
-			<EnhancedYieldTech>Archeology</EnhancedYieldTech>
-			<Help>TXT_KEY_BUILDING_LAVRA_HELP</Help>
-			<Description>TXT_KEY_BUILDING_LAVRA</Description>
-			<Civilopedia>TXT_KEY_BUILDING_LAVRA_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_LAVRA_STRATEGY</Strategy>
-			<ArtDefineTag>MONASTERY</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>38</PortraitIndex>
-			<IsReligious>true</IsReligious>
-			<CapturePlunderModifier>500</CapturePlunderModifier>
-			<ReligiousPressureModifier>100</ReligiousPressureModifier>
-			<ConquestProb>50</ConquestProb>	
-			<TechEnhancedTourism>4</TechEnhancedTourism>					
-		</Row>		
-
 	</Buildings>
 
 	<Building_ClassesNeededInCity>
@@ -4178,11 +4152,6 @@
 			<BuildingType>BUILDING_INDIA_TEMPLE</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
 		</Row>
-
-<!--		<Row>
-			<BuildingType>BUILDING_LAVRA</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-		</Row>		-->
 		
 	</Building_ClassesNeededInCity>
 	

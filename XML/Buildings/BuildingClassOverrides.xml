@@ -1002,12 +1002,6 @@
 			<BuildingType/>
 		</Row>
 		
-		<Row>
-			<CivilizationType>CIVILIZATION_RUSSIA</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_LAVRA</BuildingClassType>
-			<BuildingType>BUILDING_LAVRA</BuildingType>
-		</Row>		
-
 	</Civilization_BuildingClassOverrides>
 
 

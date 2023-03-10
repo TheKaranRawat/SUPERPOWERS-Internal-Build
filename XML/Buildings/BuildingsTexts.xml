@@ -3505,23 +3505,6 @@
 			<Text>The Golden Gate Bridge is a suspension bridge spanning the Golden Gate strait, the mile-wide, three-mile-long channel between San Francisco Bay and the Pacific Ocean, an area known as the Golden Gate. Completed in 1937, the structure links the U.S. city of San Francisco, on the northern tip of the San Francisco Peninsula, to Marin County, bridging both U.S. Route 101 and California State Route 1 across the strait. The bridge is one of the most internationally recognized symbols of San Francisco, California, and the United States. The Frommers travel guide considers the Golden Gate Bridge "possibly the most beautiful, certainly the most photographed, bridge in the world". Conceived, designed, and promoted by engineering student Joseph Strauss, it once had the longest suspension bridge main span in the world, at 4,200 feet, a title held by it until 1964.</Text>
 		</Row>
 
-		<Row Tag="TXT_KEY_BUILDING_LAVRA">
-			<Text>[ICON_PEACEEACE] Lavra</Text>
-		</Row>
-
-		<Row Tag="TXT_KEY_BUILDING_LAVRA_HELP">
-			<Text>
-				Provides various Religion related bonusses to the city. Only 5 may exist in the Empire.
-			</Text>
-		</Row>
-
-		<Row Tag="TXT_KEY_BUILDING_LAVRA_STRATEGY">
-			<Text>Makes Faith and Religion in the City better.</Text>
-		</Row>
-
-		<Row Tag="TXT_KEY_BUILDING_LAVRA_PEDIA">
-			<Text>Lavra is an honorary title of Orthodox monasteries.</Text>
-		</Row>
 
 	</Language_en_US>
 
