@@ -10,7 +10,6 @@
 			<Time>800</Time>
 			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
 			<Description>TXT_KEY_BUILD_RESORT</Description>
-			<Help>TXT_KEY_BUILD_RESORT_HELP</Help>			
 			<Recommendation>TXT_KEY_BUILD_RESORT_REC</Recommendation>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<HotKey>KB_Z</HotKey>
