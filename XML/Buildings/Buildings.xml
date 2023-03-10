@@ -3763,7 +3763,7 @@
 			<Type>BUILDING_RUSSIAN_BALLET_HALL</Type>
 			<BuildingClass>BUILDINGCLASS_OPERA_HOUSE</BuildingClass>
 			<Cost>150</Cost>
-			<GoldMaintenance>6</GoldMaintenance>
+			<GoldMaintenance>3</GoldMaintenance>
 			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
 			<SpecialistCount>2</SpecialistCount>
 			<PrereqTech>TECH_ACOUSTICS</PrereqTech>
@@ -3779,7 +3779,6 @@
 			<HurryCostModifier>50</HurryCostModifier>
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>24</PortraitIndex>
-			<Happiness>2</Happiness>			
 			<GlobalCultureRateModifier>3</GlobalCultureRateModifier>
 		</Row>
 		<Row>
