@@ -7,18 +7,6 @@
 		<Delete Type="IMPROVEMENT_FEITORIA"/>
 
 		<Row>
-			<Type>IMPROVEMENT_RESORT</Type>
-			<Description>TXT_KEY_IMPROVEMENT_RESORT</Description>
-			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_RESORT</Civilopedia>
-			<Help>TXT_KEY_CIV5_IMPROVEMENTS_RESORT_HELP</Help>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_CHATEAU</ArtDefineTag>
-			<SpecificCivRequired>false</SpecificCivRequired>
-			<PillageGold>200</PillageGold>
-			<PortraitIndex>2</PortraitIndex>
-			<IconAtlas>TERRAIN_IMPROVEMENT_ICON_ATLAS_EXP2</IconAtlas>
-		</Row>
-
-		<Row>
 			<Type>IMPROVEMENT_FW_HYDROPONICS_DOME</Type>
 			<Description>TXT_KEY_IMPROVEMENT_FW_HYDROPONICS_DOME</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_FW_HYDROPONICS_DOME_TEXT</Civilopedia>
@@ -350,27 +338,6 @@
 	
 	<Improvement_ValidTerrains>
 
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<TerrainType>TERRAIN_SNOW</TerrainType>
-		</Row>
-
 		<!--
 		<Row>
 			<ImprovementType>IMPROVEMENT_FW_COMM_ARRAY</ImprovementType>
@@ -678,19 +645,6 @@
 
 	<Improvement_ValidFeatures>
 
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<FeatureType>FEATURE_MARSH</FeatureType>
-		</Row>
-
 		<Delete ImprovementType="IMPROVEMENT_POLDER"/>
 
 		<Row>
@@ -827,23 +781,6 @@
 	
 
 	<Improvement_Yields>
-		
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>		
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>		
-		
 		<Delete ImprovementType="IMPROVEMENT_FISHING_BOATS"/>
 
 		<!-- COMM ARRAY 
@@ -1066,20 +1003,7 @@
 		</Row>
 	</Improvement_ResourceType_Yields>
 
-		<Improvement_TechYieldChanges>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<TechType>TECH_FLIGHT</TechType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<TechType>TECH_FLIGHT</TechType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		</Improvement_TechYieldChanges>
+
 
 	<!--<Improvement_TechYieldChanges>
 		<Row>
@@ -1465,21 +1389,6 @@
 				<IconAtlas>SPUINT_ACTION_ATLAS</IconAtlas>
 			</Row>
 			
-		<Row>
-			<Type>BUILD_RESORT</Type>
-			<PrereqTech>TECH_ECONOMICS</PrereqTech>
-			<Time>600</Time>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<Description>TXT_KEY_BUILD_RESORT</Description>
-			<Help>TXT_KEY_CIV5_IMPROVEMENTS_RESORT_HELP</Help>
-			<Recommendation>TXT_KEY_BUILD_RESORT_REC</Recommendation>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<HotKey>KB_Q</HotKey>
-			<OrderPriority>95</OrderPriority>
-			<IconIndex>41</IconIndex>
-			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
-		</Row>
-
 	</Builds>
 	
 	
@@ -1489,11 +1398,6 @@
 	
 	
 	<Unit_Builds>
-
-		<Row>
-			<UnitType>UNIT_WORKER</UnitType>
-			<BuildType>BUILD_RESORT</BuildType>
-		</Row>
 
 		<Delete BuildType="BUILD_FEITORIA"/>
 		
@@ -1629,21 +1533,7 @@
 			<Where Type="IMPROVEMENT_FORT"/>
 		</Update>
 		
-	<Update>	
-		<Set>
-			<BuildableOnResources>false</BuildableOnResources>
-			<!--<DefenseModifier>0</DefenseModifier>-->
-			<InAdjacentFriendly>false</InAdjacentFriendly>
-			<CultureBombRadius>0</CultureBombRadius>
-			<CreatedByGreatPerson>false</CreatedByGreatPerson>
-			<NearbyEnemyDamage>0</NearbyEnemyDamage>
-			<NoTwoAdjacent>true</NoTwoAdjacent>
-			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
-			<PortraitIndex>0</PortraitIndex>
-			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
-		</Set>
-		<Where Type="IMPROVEMENT_RESORT"/>
-	</Update>
+		
 
 		<Update>
 			<Set>
@@ -1964,32 +1854,6 @@
 
 
 	<Improvement_RouteYieldChanges>
-
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<RouteType>ROUTE_ROAD</RouteType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<RouteType>ROUTE_ROAD</RouteType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>		
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<RouteType>ROUTE_RAILROAD</RouteType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>4</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<RouteType>ROUTE_RAILROAD</RouteType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>4</Yield>
-		</Row>		
-
 		<Row>
 			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
 			<RouteType>ROUTE_ROAD</RouteType>
@@ -2431,6 +2295,7 @@
 	<Improvement_CoastalLandYields>
 
 		<Row>
+<<<<<<< HEAD
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>10</Yield>
@@ -2448,6 +2313,8 @@
 		</Row>
 
 		<Row>
+=======
+>>>>>>> parent of f450207 (Experimental Resort Terrain Improvement)
 			<ImprovementType>IMPROVEMENT_FW_ARCOLOGY</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>4</Yield>
@@ -2573,6 +2440,7 @@
 	<Improvement_AdjacentMountainYieldChanges>
 
 		<Row>
+<<<<<<< HEAD
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>5</Yield>
@@ -2590,6 +2458,8 @@
 		</Row>
 
 		<Row>
+=======
+>>>>>>> parent of f450207 (Experimental Resort Terrain Improvement)
 			<ImprovementType>IMPROVEMENT_FW_GENOCENTRE</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>4</Yield>

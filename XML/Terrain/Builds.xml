@@ -5,19 +5,6 @@
 	<Builds>
 
 		<Row>
-			<Type>BUILD_RESORT</Type>
-			<PrereqTech>TECH_ECONOMICS</PrereqTech>
-			<Time>800</Time>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<Description>TXT_KEY_BUILD_RESORT</Description>
-			<Recommendation>TXT_KEY_BUILD_RESORT_REC</Recommendation>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<HotKey>KB_Z</HotKey>
-			<IconIndex>3</IconIndex>
-			<IconAtlas>UNIT_ACTION_ATLAS_EXP2</IconAtlas>
-		</Row>			
-
-		<Row>
 			<Type>BUILD_REMOVE_ICE</Type>
 			<PrereqTech>TECH_ADV_ENGINEERING</PrereqTech>
 			<Description>TXT_KEY_BUILD_REMOVE_ICE</Description>
@@ -221,29 +208,6 @@
 			<Time>600</Time>
 		</Row>
 		-->
-
-		<Row>
-			<BuildType>BUILD_RESORT</BuildType>
-			<FeatureType>FEATURE_JUNGLE</FeatureType>
-			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
-			<Time>700</Time>
-			<Remove>true</Remove>
-		</Row>
-		<Row>
-			<BuildType>BUILD_RESORT</BuildType>
-			<FeatureType>FEATURE_FOREST</FeatureType>
-			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
-			<Time>400</Time>
-			<Production>20</Production>
-			<Remove>true</Remove>
-		</Row>
-		<Row>
-			<BuildType>BUILD_RESORT</BuildType>
-			<FeatureType>FEATURE_MARSH</FeatureType>
-			<PrereqTech>TECH_MASONRY</PrereqTech>
-			<Time>600</Time>
-			<Remove>true</Remove>
-		</Row>
 
 		<Row>
 			<BuildType>BUILD_FW_GENOCENTRE</BuildType>
