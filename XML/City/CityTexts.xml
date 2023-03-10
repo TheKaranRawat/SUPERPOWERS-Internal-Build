@@ -423,21 +423,6 @@
 			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV2]Provincial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. [NEWLINE][NEWLINE]Elimate the extra [ICON_CULTURE] Culture cost of adopting new Policies created by Lv2 Cities (stacked with the "Representation" Policy effect) . [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 6 [ICON_CITIZEN] Population. </Text>
 		</Row>
 
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2</Tag>
-			<Text>[ICON_CITYBANNER_CITY_LV2] Gubernia</Text>
-		</Row>
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2_PEDIA</Tag>
-			<Text>
-				The Gubernia was a major and principal administrative subdivision of the Russian Empire. It was abolished only during the times of the Soviet Union in 1929.
-			</Text>
-		</Row>
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2_HELP</Tag>
-			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV2]Provincial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. [NEWLINE][NEWLINE]Elimate the extra [ICON_CULTURE] Culture cost of adopting new Policies created by Lv2 Cities (stacked with the "Representation" Policy effect) . [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Population and consume 4 [ICON_RES_CONSUMER] Consumer Goods. </Text>
-		</Row>		
-
 
 		<Row Tag="TXT_KEY_BUILDING_SHERIFF_OFFICE">
 			<Text>[ICON_CITYBANNER_CITY_LV3] Sheriffs Office</Text>
@@ -449,20 +434,6 @@
 			<Text>In principle, a Sheriff is a legal official with responsibility for a "shire", i.e. county. In practice, the specific combination of legal, political and ceremonial duties of a sheriff varies greatly from country to country.</Text>
 		</Row>
 
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_3</Tag>
-			<Text>[ICON_CITYBANNER_CITY_LV3] Gubernia</Text>
-		</Row>
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_3_PEDIA</Tag>
-			<Text>
-				The Gubernia was a major and principal administrative subdivision of the Russian Empire. It was abolished only during the times of the Soviet Union in 1929.
-			</Text>
-		</Row>
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_3_HELP</Tag>
-			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV3]Territorial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. Lower the increasing [ICON_CULTURE] Culture Cost for adopting new Policies by this city to 10%. [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Population and consume 4 [ICON_RES_CONSUMER] Consumer Goods. </Text>
-		</Row>
 
 		<Replace Tag="TXT_KEY_BUILDING_POLICE_STATION">
 			<Text>[ICON_CITYBANNER_CITY_LV4] Police Station</Text>
@@ -471,20 +442,6 @@
 			<Text>Can only be built in in [ICON_CITYBANNER_CITY_LV4]Colonial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. Lower the increasing [ICON_CULTURE] Culture Cost for adopting new Policies by this city to 25%. [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 4 [ICON_CITIZEN] Population. </Text>
 		</Replace>
 
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4</Tag>
-			<Text>[ICON_CITYBANNER_CITY_LV4] Gubernia</Text>
-		</Row>
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4_PEDIA</Tag>
-			<Text>
-				The Gubernia was a major and principal administrative subdivision of the Russian Empire. It was abolished only during the times of the Soviet Union in 1929.
-			</Text>
-		</Row>
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4_HELP</Tag>
-			<Text>Can only be built in in [ICON_CITYBANNER_CITY_LV4]Colonial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. Lower the increasing [ICON_CULTURE] Culture Cost for adopting new Policies by this city to 25%. [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Population and consume 4 [ICON_RES_CONSUMER] Consumer Goods. </Text>
-		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_PROCURATORATE">
 			<Text>[ICON_CITYBANNER_CITY_LV5] Consulate</Text>
@@ -496,20 +453,6 @@
 			<Text>The judicial branch is one of three branches of government in the People's Republic of China, along with the executive and legislative branches. Strictly speaking, it refers to the activities of the People's Court system. The Chinese court system is based on civil law modeled after the legal systems of Germany and France, but with local characteristics.</Text>
 		</Row>
 
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_5</Tag>
-			<Text>[ICON_CITYBANNER_CITY_LV5] Gubernia</Text>
-		</Row>
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_5_PEDIA</Tag>
-			<Text>
-				The Gubernia was a major and principal administrative subdivision of the Russian Empire. It was abolished only during the times of the Soviet Union in 1929.
-			</Text>
-		</Row>
-		<Row>
-			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_5_HELP</Tag>
-			<Text>Can only be built in in [ICON_CITYBANNER_CITY_LV5]Peripheral Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. Lower the increasing [ICON_CULTURE] Culture Cost for adopting new Policies by this city to 25%. [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Population and consume 4 [ICON_RES_CONSUMER] Consumer Goods. </Text>
-		</Row>
 		
 		
 		<!--***************Manpower Condition Texts*****************-->
@@ -1218,7 +1161,6 @@
 		<Row>
 			<Tag>TXT_KEY_BUILDING_AMUSEMENT_PARK_HELP</Tag>
 			<Text>It cannot provide more [ICON_HAPPINESS_1] Happiness than there are [ICON_CITIZEN] Citizens in a city.
-				[NEWLINE]-1% [ICON_HAPPINESS_4] Unhappiness nationwide for every Amusement Park.			
 				[NEWLINE][NEWLINE]Must be built in large Cities.
 			</Text>
 		</Row>
@@ -1245,7 +1187,6 @@
 
 		<Replace Tag="TXT_KEY_BUILDING_GARDEN_HELP">
 			<Text>+25% [ICON_GREAT_PEOPLE] Great People generation rate in the city. 
-			[NEWLINE]-1% [ICON_HAPPINESS_4] Unhappiness nationwide for every Garden.
 			[NEWLINE][NEWLINE]Must be built in large Cities.</Text>
 		</Replace>
 		
@@ -1263,7 +1204,7 @@
 			<Tag>TXT_KEY_BUILDING_CHINESE_GARDEN_HELP</Tag>
 			<Text>
 				+25% [ICON_GREAT_PEOPLE] Great People generation rate in the city.
-				[NEWLINE]-2% [ICON_HAPPINESS_4] Unhappiness nationwide for every Chinese Garden.
+				[NEWLINE]-5% [ICON_HAPPINESS_4] Unhappiness nationwide for every Chinese Garden.
 				[NEWLINE][NEWLINE]Must be built in large Cities.</Text>
 		</Row>
 
@@ -1282,7 +1223,6 @@
 			<Tag>TXT_KEY_BUILDING_HALL_OF_WORTHIES_HELP</Tag>
 			<Text>
 				+25% [ICON_GREAT_PEOPLE] Great People generation rate in the city.
-				[NEWLINE]-1% [ICON_HAPPINESS_4] Unhappiness nationwide for every Hall of Worthies.			
 				[NEWLINE][NEWLINE]50% from [ICON_CULTURE] Culture of Wonders and improvements in the city added to its [ICON_TOURISM] Tourism output and +50% [ICON_TOURISM] Tourism output of Great Works in the city.
 				[NEWLINE][NEWLINE]Must be built in large Cities.
 			</Text>
@@ -1503,7 +1443,6 @@
 		
 		<Replace Tag="TXT_KEY_BUILDING_STADIUM_HELP">
 			<Text>It cannot provide more [ICON_HAPPINESS_1] Happiness than there are [ICON_CITIZEN] Citizens in a city.
-			[NEWLINE]-1% [ICON_HAPPINESS_4] Unhappiness nationwide for every Stadium.			
 			[NEWLINE][NEWLINE]Must be built in XXL Cities.</Text>
 		</Replace>
 
@@ -1673,7 +1612,6 @@
 			<Tag>TXT_KEY_BUILDING_VIDEO_GAME_COMPANY_HELP</Tag>
 			<Text>
 				It provides Global [ICON_HAPPINESS_1] Happiness! 
-				[NEWLINE]-1% [ICON_HAPPINESS_4] Unhappiness nationwide for every Video Game Company.				
 				[NEWLINE][NEWLINE]Must be built in Global Cities.</Text>
 		</Row>
 

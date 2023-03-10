@@ -530,27 +530,6 @@
 		</Row>
 
 		<Row>
-			<CivilizationType>CIVILIZATION_RUSSIA</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_RUSSIA</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClassType>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_RUSSIA</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_POLICE_STATION</BuildingClassType>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_RUSSIA</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_PROCURATORATE</BuildingClassType>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
-		</Row>								
-
-		<Row>
 			<CivilizationType>CIVILIZATION_MONGOL</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
 			<BuildingType>BUILDING_MONGOL_SECRETARIATS</BuildingType>

@@ -6100,26 +6100,6 @@
 			<Yield>-33</Yield>
 		</Row>
 		<Row>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-50</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-50</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-50</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-50</Yield>
-		</Row>								
-		<Row>
 			<BuildingType>BUILDING_MONGOL_SECRETARIATS</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>25</Yield>
