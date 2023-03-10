@@ -1475,13 +1475,7 @@
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 	    	<ResourceType>RESOURCE_CONSUMER</ResourceType>
 	    	<Quantity>4</Quantity>
-    	</Row>
-
-	    <Row>
-			<BuildingType>BUILDING_BEERMAKER</BuildingType>
-	    	<ResourceType>RESOURCE_CONSUMER</ResourceType>
-	    	<Quantity>1</Quantity>
-    	</Row>				
+    	</Row>		
 
 	</Building_ResourceQuantity>
 	
@@ -3069,12 +3063,6 @@
 			<Yield>20</Yield>
 		</Row>		
 
-		<Row>
-			<BuildingType>BUILDING_BEERMAKER</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
-		</Row>		
-
 	</Building_YieldChanges>
 
 
@@ -4012,15 +4000,8 @@
 
 
 	<Building_GlobalYieldModifiers>	
-		
 		<Row>
-			<BuildingType>BUILDING_BEERMAKER</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
-		</Row>		
-		
-		<Row>
-			<BuildingType>BUILDING_STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
+			<BuildingType>STEAM_LOCOMOTIVE_ASSEMBLY</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>5</Yield>
 		</Row>		
@@ -5860,7 +5841,6 @@
 
 
 	<Building_YieldChangesPerPop>
-
 		<Row>
 			<BuildingType>BUILDING_TAX_COLLECTOR</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -7086,19 +7066,7 @@
 
 
 	<Building_Flavors>
-
-		<Row>
-			<BuildingType>BUILDING_BEERMAKER</BuildingType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>10</Flavor>
-		</Row>
-
-		<Row>
-			<BuildingType>BUILDING_BEERMAKER</BuildingType>
-			<FlavorType>FLAVOR_FOOD</FlavorType>
-			<Flavor>50</Flavor>
-		</Row>		
-
+		
 		<Row>
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
