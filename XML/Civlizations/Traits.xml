@@ -481,6 +481,607 @@
 	<Traits>
 
 		<Row>
+			<Type>TRAIT_AHMAD_2</Type>
+			<Description>TXT_KEY_TRAIT_AHMAD_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_AHMAD_2</ShortDescription>
+
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+
+		</Row>
+
+		<Row>
+			<Type>TRAIT_ALEXANDER_2</Type>
+			<Description>TXT_KEY_TRAIT_ALEXANDER_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_ALEXANDER_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_ASHURBANIPAL_2</Type>
+			<Description>TXT_KEY_TRAIT_ASHURBANIPAL_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_ASHURBANIPAL_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_ASKIA_2</Type>
+			<Description>TXT_KEY_TRAIT_ASKIA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_ASKIA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_ATILLA_2</Type>
+			<Description>TXT_KEY_TRAIT_ATILLA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_ATILLA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_AUGUSTUS_2</Type>
+			<Description>TXT_KEY_TRAIT_AUGUSTUS_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_AUGUSTUS_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_BISMARCK_2</Type>
+			<Description>TXT_KEY_TRAIT_BISMARCK_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_BISMARCK_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_BOUDICCA_2</Type>
+			<Description>TXT_KEY_TRAIT_BOUDICCA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_BOUDICCA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_CASIMIR_2</Type>
+			<Description>TXT_KEY_TRAIT_CASIMIR_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_CASIMIR_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_CATHERINE_2</Type>
+			<Description>TXT_KEY_TRAIT_CATHERINE_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_CATHERINE_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_DARIUS_2</Type>
+			<Description>TXT_KEY_TRAIT_DARIUS_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_DARIUS_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_DIDO_2</Type>
+			<Description>TXT_KEY_TRAIT_DIDO_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_DIDO_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_ENRICO_2</Type>
+			<Description>TXT_KEY_TRAIT_ENRICO_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_ENRICO_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_GAJAH_2</Type>
+			<Description>TXT_KEY_TRAIT_GAJAH_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_GAJAH_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_GANDHI_2</Type>
+			<Description>TXT_KEY_TRAIT_GANDHI_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_GANDHI_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_GENGHIS_2</Type>
+			<Description>TXT_KEY_TRAIT_GENGHIS_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_GENGHIS_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_GUSTAVUS_2</Type>
+			<Description>TXT_KEY_TRAIT_GUSTAVUS_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_GUSTAVUS_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_SELASSIE_2</Type>
+			<Description>TXT_KEY_TRAIT_SELASSIE_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_SELASSIE_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_HARALD_2</Type>
+			<Description>TXT_KEY_TRAIT_HARALD_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_HARALD_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_HARUN_2</Type>
+			<Description>TXT_KEY_TRAIT_HARUN_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_HARUN_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_HIAWATHA_2</Type>
+			<Description>TXT_KEY_TRAIT_HIAWATHA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_HIAWATHA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_ISABELLA_2</Type>
+			<Description>TXT_KEY_TRAIT_ISABELLA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_ISABELLA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_KAMEHAMEHA_2</Type>
+			<Description>TXT_KEY_TRAIT_KAMEHAMEHA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_KAMEHAMEHA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_MARIA_I_2</Type>
+			<Description>TXT_KEY_TRAIT_MARIA_I_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_MARIA_I_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_MARIA_2</Type>
+			<Description>TXT_KEY_TRAIT_MARIA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_MARIA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_MONTEZUMA_2</Type>
+			<Description>TXT_KEY_TRAIT_MONTEZUMA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_MONTEZUMA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_NAPOLEON_2</Type>
+			<Description>TXT_KEY_TRAIT_NAPOLEON_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_NAPOLEON_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_NEBUCHADNEZZAR_2</Type>
+			<Description>TXT_KEY_TRAIT_NEBUCHADNEZZAR_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_NEBUCHADNEZZAR_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_ODA_2</Type>
+			<Description>TXT_KEY_TRAIT_ODA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_ODA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_PACAL_2</Type>
+			<Description>TXT_KEY_TRAIT_PACAL_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_PACAL_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_PACHACUTI_2</Type>
+			<Description>TXT_KEY_TRAIT_PACHACUTI_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_PACHACUTI_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_PEDRO_2</Type>
+			<Description>TXT_KEY_TRAIT_PEDRO_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_PEDRO_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_POCATELLO_2</Type>
+			<Description>TXT_KEY_TRAIT_POCATELLO_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_POCATELLO_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_RAMESSES_2</Type>
+			<Description>TXT_KEY_TRAIT_RAMESSES_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_RAMESSES_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_RAMKHAMHAENG_2</Type>
+			<Description>TXT_KEY_TRAIT_RAMKHAMHAENG_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_RAMKHAMHAENG_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_SEJONG_2</Type>
+			<Description>TXT_KEY_TRAIT_SEJONG_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_SEJONG_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_SHAKA_2</Type>
+			<Description>TXT_KEY_TRAIT_SHAKA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_SHAKA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_SULEIMAN_2</Type>
+			<Description>TXT_KEY_TRAIT_SULEIMAN_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_SULEIMAN_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_THEODORA_2</Type>
+			<Description>TXT_KEY_TRAIT_THEODORA_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_THEODORA_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_WASHINGTON_2</Type>
+			<Description>TXT_KEY_TRAIT_WASHINGTON_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_WASHINGTON_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_WILLIAM_2</Type>
+			<Description>TXT_KEY_TRAIT_WILLIAM_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_WILLIAM_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_WU_2</Type>
+			<Description>TXT_KEY_TRAIT_WU_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_WU_2</ShortDescription>
+		
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+
+
+	</Traits>
+
+	<Leader_Traits>
+		
+		<Row> 
+			<LeaderType>LEADER_AHMAD_ALMANSUR</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_ALEXANDER</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_ASHURBANIPAL</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_ASKIA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_ATTILA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_AUGUSTUS</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_BISMARCK</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_BOUDICCA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_CASIMIR</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_CATHERINE</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_DARIUS</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_DIDO</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_ENRICO_DANDOLO</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_GAJAH_MADA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_GANDHI</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_GENGHIS_KHAN</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_GUSTAVUS_ADOLPHUS</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_SELASSIE</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_HARALD</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_HARUN_AL_RASHID</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_HIAWATHA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_ISABELLA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_KAMEHAMEHA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_MARIA_I</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_MARIA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_MONTEZUMA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_NAPOLEON</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_NEBUCHADNEZZAR</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_ODA_NOBUNAGA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_PACAL</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_PACHACUTI</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_PEDRO</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_POCATELLO</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_RAMESSES</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_RAMKHAMHAENG</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_SEJONG</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_SHAKA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_SULEIMAN</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_THEODORA</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_WASHINGTON</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_WILLIAM</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_WU_ZETIAN</LeaderType> 
+			<TraitType>TRAIT_LONG_COUNT_2</TraitType> 
+		</Row>
+
+	</Leader_Traits>
+
+	<!-- MODERN TRAITS END -->
+
+
+	<Traits>
+
+		<Row>
 			<Type>TRAIT_LEADER_AHMAD_ALMANSUR_2</Type>
 			<Description>TXT_KEY_TRAIT_LONG_COUNT</Description>
 			<ShortDescription>TXT_KEY_TRAIT_LONG_COUNT_SHORT</ShortDescription>
