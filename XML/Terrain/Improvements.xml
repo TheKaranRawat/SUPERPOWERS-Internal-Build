@@ -2295,26 +2295,12 @@
 	<Improvement_CoastalLandYields>
 
 		<Row>
-<<<<<<< HEAD
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>10</Yield>
-		</Row>
+		</Row>		
 
 		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
-
-		<Row>
-=======
->>>>>>> parent of f450207 (Experimental Resort Terrain Improvement)
 			<ImprovementType>IMPROVEMENT_FW_ARCOLOGY</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>4</Yield>
@@ -2440,26 +2426,13 @@
 	<Improvement_AdjacentMountainYieldChanges>
 
 		<Row>
-<<<<<<< HEAD
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>5</Yield>
-		</Row>
+		</Row>		
 
 		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
 
-		<Row>
-=======
->>>>>>> parent of f450207 (Experimental Resort Terrain Improvement)
 			<ImprovementType>IMPROVEMENT_FW_GENOCENTRE</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>4</Yield>

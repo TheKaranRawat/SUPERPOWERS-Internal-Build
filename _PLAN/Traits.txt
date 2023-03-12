@@ -1,0 +1,192 @@
+MOROCCO TRAIT_AHMAD_2
+<BonusReligiousBelief>1</BonusReligiousBelief> 
+
+GREECE TRAIT_ALEXANDER_2
+<CombatBonusVsLargerCiv>25</CombatBonusVsLargerCiv> 
+
+ASSYRIA TRAIT_ASHURBANIPAL_2
+<PopulationUnhappinessModifier>10</PopulationUnhappinessModifier> 
+
+SONGHAI TRAIT_ASKIA_2
+<NumTradeRoutesModifier>15</NumTradeRoutesModifier> 
+
+HUNS TRAIT_ATILLA_2
+<CombatBonusVsHigherTech>25</CombatBonusVsHigherTech> 
+
+ROMAN TRAIT_AUGUSTUS_2
+<NavalUnitMaintenanceModifier>25</NavalUnitMaintenanceModifier> 
+
+GERMANY TRAIT_BISMARCK_2
+<LandUnitMaintenanceModifier>25</LandUnitMaintenanceModifier>
+
+CELTS TRAIT_BOUDICCA_2
+<ImprovementMaintenanceModifier>-50</ImprovementMaintenanceModifier>
+
+POLAND TRAIT_CASIMIR_2
+<UnresearchedTechBonusFromKills>15</UnresearchedTechBonusFromKills>
+
+RUSSIA TRAIT_CATHERINE_2	<Trait_SpecialistYieldChanges>		
+			 
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_SCIENCE</YieldType> 
+			<Yield>2</Yield> 
+		
+
+PERSIA TRAIT_DARIUS_2	<Trait_YieldChangesStrategicResources>
+
+			<TraitType>TRAIT_DARIUS_2</TraitType> 
+			<YieldType>YIELD_PRODUCTION</YieldType> 
+			<Yield>2</Yield> 
+
+
+CARTHAGE TRAIT_DIDO_2 
+<PolicyCostModifier>-10</PolicyCostModifier>
+
+VENICE TRAIT_ENRICO_2
+<TechFromCityConquer>1</TechFromCityConquer> 
+
+INDONESIA TRAIT_GAJAH_2	<Trait_ImprovementYieldChanges> 
+
+			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType> 
+			<YieldType>YIELD_FOOD</YieldType> 
+			<Yield>2</Yield> 
+		
+
+INDIA TRAIT_GANDHI_2	<Trait_SpecialistYieldChanges>
+
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType> 
+			<Yield>2</Yield> 
+		 
+MONGOLS TRAIT_GENGHIS_2
+<MoveFriendlyWoodsAsRoad>1</MoveFriendlyWoodsAsRoad> 
+<FasterAlongRiver>1</FasterAlongRiver> 
+<FasterInHills>1</FasterInHills> 
+
+SWEDEN TRAIT_GUSTAVUS_2		<Trait_SpecialistYieldChanges>
+
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_SCIENCE</YieldType> 
+			<Yield>3</Yield> 		 
+		
+ETHIOPIA TRAIT_SELASSIE_2
+<CrossesMountainsAfterGreatGeneral>1</CrossesMountainsAfterGreatGeneral>
+<UnresearchedTechBonusFromKills>10</UnresearchedTechBonusFromKills>  
+
+DENMARK TRAIT_HARALD_2
+<CityStateBonusModifier>50</CityStateBonusModifier> 
+
+ARABIA TRAIT_HARUN_2
+<FightWellDamaged>1</FightWellDamaged> 
+<CombatBonusVsHigherTech>15</CombatBonusVsHigherTech> 
+
+IROQUOIS TRAIT_HIAWATHA_2	<Trait_ImprovementYieldChanges>
+ 
+			<ImprovementType>IMPROVEMENT_FARM</ImprovementType> 
+			<YieldType>YIELD_FOOD</YieldType> 
+			<Yield>2</Yield> 
+		
+SPAIN TRAIT_ISABELLA_2
+<BonusReligiousBelief>1</BonusReligiousBelief> 
+
+POLYNESIA TRAIT_KAMEHAMEHA_2	<Trait_ImprovementYieldChanges>
+
+			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType> 
+			<YieldType>YIELD_CULTURE</YieldType> 
+			<Yield>2</Yield> 
+		
+PORTUGAL TRAIT_MARIA_I_2	<Trait_SpecialistYieldChanges>
+
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType> 
+			<Yield>2</Yield> 	
+
+AUSTRIA TRAIT_MARIA_2
+<CityCultureBonus>10</CityCultureBonus> 
+
+AZTECS TRAIT_MONTEZUMA_2
+<PlunderModifier>200</PlunderModifier>
+<CultureFromKills>300</CultureFromKills>
+
+FRANCE TRAIT_NAPOLEON_2
+<XBuiltTriggersIdeologyChoice>1</XBuiltTriggersIdeologyChoice>
+TECH_GUNPOWDER
+<FreeBuilding>BUILDING_TB_TRAIT_NAPOLEON_2</FreeBuilding>
+
+BABYLON TRAIT_NEBUCHADNEZZAR_2
+<FreeSocialPoliciesPerEra>2</FreeSocialPoliciesPerEra> 
+
+JAPAN TRAIT_ODA_2	<Trait_SpecialistYieldChanges>
+
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType> 
+			<Yield>3</Yield> 
+		
+MAYA TRAIT_PACAL_2
+<RazeSpeedModifier>300</RazeSpeedModifier> 
+
+INCA TRAIT_PACHACUTI_2
+<BonusReligiousBelief>1</BonusReligiousBelief> 
+<GoldenAgeDurationModifier>100</GoldenAgeDurationModifier>  
+
+BRAZIL TRAIT_PEDRO_2
+<NumTradeRoutesModifier>30</NumTradeRoutesModifier> 
+<TradeRouteResourceModifier>100</TradeRouteResourceModifier> 
+
+SHOSHONE TRAIT_POCATELLO_2	<Trait_SpecialistYieldChanges>
+
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType> 
+			<Yield>2</Yield> 
+		
+
+EGYPT TRAIT_RAMESSES_2
+<PolicyCostModifier>-15</PolicyCostModifier>
+<PopulationUnhappinessModifier>-15</PopulationUnhappinessModifier>  
+
+
+SIAM TRAIT_RAMKHAMHAENG_2
+<GreatPersonGiftInfluence>500</GreatPersonGiftInfluence>
+
+KOREA TRAIT_SEJONG_2	<Trait_YieldChangesPerTradePartner>
+
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>30</Yield>
+		
+ZULU TRAIT_SHAKA_2	<Trait_FreePromotionUnitCombats>
+
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType> 
+			<PromotionType>PROMOTION_MARCH</PromotionType> 
+
+OTTOMAN TRAIT_SULEIMAN_2
+<LandUnitMaintenanceModifier>-25</LandUnitMaintenanceModifier>
+
+BYZANTINE TRAIT_THEODORA_2
+<WonderProductionModifier>50</WonderProductionModifier> 
+
+USA TRAIT_WASHINGTON_2
+<LandUnitMaintenanceModifier>-25</LandUnitMaintenanceModifier>
+<PolicyCostModifier>-10</PolicyCostModifier> 
+			
+NETHERLANDS TRAIT_WILLIAM_2	<Trait_YieldChangesPerTradePartner>
+
+			<TraitType>TRAIT_WILLIAM_2</TraitType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>20</Yield>
+
+CHINA TRAIT_WU_2	<Trait_YieldChangesPerTradePartner> <Trait_YieldChangesIncomingTradeRoute>
+<NavalUnitMaintenanceModifier>-30</NavalUnitMaintenanceModifier>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
