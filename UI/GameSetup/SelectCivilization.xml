@@ -33,7 +33,7 @@
 	</Instance>
 
 	<Instance Name="IconInstance" >
-		<Container Anchor="L,T"  Size="100.100" Offset="8,0">
+		<Container Anchor="L,T"  Size="100.100" Offset="6,0">
 			<Image Anchor="C,C" Texture="Assets/UI/Art/Icons/LeaderPortraits1024Frame.dds" Size="128.128">
 				<Button Anchor="C,C"  Size="128,128" NoStateChange="1" ID="Portrait"/>
 			</Image>
