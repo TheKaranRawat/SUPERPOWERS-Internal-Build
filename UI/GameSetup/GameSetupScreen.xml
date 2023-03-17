@@ -238,10 +238,10 @@
     <Label Anchor="R,B" Offset="0,12" String="TXT_KEY_SP_VERSION" Font="TwCenMT16" ID="SPVersion"/>
 
     <LuaContext FileName="UI/FrontEnd/GameSetup/SelectCivilization" ID="SelectCivilization" Hidden="1" />
-    <LuaContext FileName="UI/FrontEnd/GameSetup/SelectGameSpeed" ID="SelectGameSpeed" Hidden="1" />
-    <LuaContext FileName="UI/FrontEnd/GameSetup/SelectDifficulty" ID="SelectDifficulty" Hidden="1" />
-    <LuaContext FileName="UI/FrontEnd/GameSetup/SelectMapType" ID="SelectMapType" Hidden="1" />
-    <LuaContext FileName="UI/FrontEnd/GameSetup/SelectMapSize" ID="SelectMapSize" Hidden="1" />
+    <LuaContext FileName="UI/FrontEnd/GameSetup/SelectGameSpeed" ID="SelectGameSpeed" Offset="0,30" Hidden="1" />
+    <LuaContext FileName="UI/FrontEnd/GameSetup/SelectDifficulty" ID="SelectDifficulty" Offset="0,30" Hidden="1" />
+    <LuaContext FileName="UI/FrontEnd/GameSetup/SelectMapType" ID="SelectMapType" Offset="0,30" Hidden="1" />
+    <LuaContext FileName="UI/FrontEnd/GameSetup/SelectMapSize" ID="SelectMapSize" Offset="0,30" Hidden="1" />
     <LuaContext FileName="UI/FrontEnd/GameSetup/AdvancedSetup" ID="AdvancedSetup" Hidden="1" DeferLoad="1" />
     <LuaContext FileName="UI/FrontEnd/GameSetup/SetCivNames" ID="SetCivNames" Hidden="1" />
     <LuaContext FileName="UI/Civilopedia/CivilopediaScreen" ID="Civilopedia" Hidden="1" DeferLoad="1"/>
