@@ -1,3 +1,13 @@
+	INDIA	GANDHI			<FreeBuilding>BUILDING_TB_TRAIT_GANDHI_2</FreeBuilding>
+	ROME	AUGUSTUS		<FreeBuilding>BUILDING_TB_TRAIT_AUGUSTUS_2</FreeBuilding> 
+	GERMANY	BISMARCK		<FreeBuilding>BUILDING_TB_TRAIT_BISMARCK_2</FreeBuilding> 
+	RUSSIA	CATHERINE		<FreeBuilding>BUILDING_TB_TRAIT_CATHERINE_2</FreeBuilding> 
+	ENGLAND	ELIZABETH		<FreeBuilding>BUILDING_TB_TRAIT_ELIZABETH_2</FreeBuilding> 
+	FRANCE	NAPOLEON		<FreeBuilding>BUILDING_TB_TRAIT_NAPOLEON_2</FreeBuilding>		DONE	
+	JAPAN	ODA				<FreeBuilding>BUILDING_TB_TRAIT_ODA_2</FreeBuilding>
+	AMERICA	WASHINGTON		<FreeBuilding>BUILDING_TB_TRAIT_WASHINGTON_2</FreeBuilding>
+	CHINA	WU				<FreeBuilding>BUILDING_TB_TRAIT_WU_2</FreeBuilding>
+	
 MOROCCO TRAIT_AHMAD_2
 <BonusReligiousBelief>1</BonusReligiousBelief> 
 
@@ -15,32 +25,38 @@ HUNS TRAIT_ATILLA_2
 
 ROMAN TRAIT_AUGUSTUS_2
 <NavalUnitMaintenanceModifier>25</NavalUnitMaintenanceModifier> 
+<BuildingProductionModifier>30</BuildingProductionModifier>	CITY
 
 GERMANY TRAIT_BISMARCK_2
 <LandUnitMaintenanceModifier>25</LandUnitMaintenanceModifier>
+<GreatPeopleRateModifier>30</GreatPeopleRateModifier>	CITY
+<MilitaryProductionModifier>35</MilitaryProductionModifier>	CITY
 
 CELTS TRAIT_BOUDICCA_2
-<ImprovementMaintenanceModifier>-50</ImprovementMaintenanceModifier>
+<CultureFromKills>200</CultureFromKills>
+<FaithFromKills>200</FaithFromKills>
 
 POLAND TRAIT_CASIMIR_2
 <UnresearchedTechBonusFromKills>15</UnresearchedTechBonusFromKills>
 
 RUSSIA TRAIT_CATHERINE_2	<Trait_SpecialistYieldChanges>		
 			 
-			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<YieldType>YIELD_SCIENCE</YieldType> 
-			<Yield>2</Yield> 
-		
+
+<GlobalPlotCultureCostModifier>-10</GlobalPlotCultureCostModifier> PER CITY		
 
 PERSIA TRAIT_DARIUS_2	<Trait_YieldChangesStrategicResources>
 
 			<TraitType>TRAIT_DARIUS_2</TraitType> 
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>10</Yield> 
 
 
 CARTHAGE TRAIT_DIDO_2 
 <PolicyCostModifier>-10</PolicyCostModifier>
+
+ENGLAND TRAIT_ELIZABETH_2
+<HappinessPerCity>2</HappinessPerCity> PER CITY
+<NumTradeRouteBonus>1</NumTradeRouteBonus>	PER CITY
 
 VENICE TRAIT_ENRICO_2
 <TechFromCityConquer>1</TechFromCityConquer> 
@@ -49,15 +65,21 @@ INDONESIA TRAIT_GAJAH_2	<Trait_ImprovementYieldChanges>
 
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType> 
 			<YieldType>YIELD_FOOD</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>3</Yield> 
 		
 
 INDIA TRAIT_GANDHI_2	<Trait_SpecialistYieldChanges>
 
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_FOOD</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>4</Yield> 
 		 
+<Building_YieldModifiers>
+	<YieldType>YIELD_FOOD</YieldType>
+	<Yield>15</Yield>
+	
+<CapitalBuildingModifier>25</CapitalBuildingModifier>
+
 MONGOLS TRAIT_GENGHIS_2
 <MoveFriendlyWoodsAsRoad>1</MoveFriendlyWoodsAsRoad> 
 <FasterAlongRiver>1</FasterAlongRiver> 
@@ -67,14 +89,14 @@ SWEDEN TRAIT_GUSTAVUS_2		<Trait_SpecialistYieldChanges>
 
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 			<YieldType>YIELD_SCIENCE</YieldType> 
-			<Yield>3</Yield> 		 
+			<Yield>4</Yield> 		 
 		
 ETHIOPIA TRAIT_SELASSIE_2
 <CrossesMountainsAfterGreatGeneral>1</CrossesMountainsAfterGreatGeneral>
 <UnresearchedTechBonusFromKills>10</UnresearchedTechBonusFromKills>  
 
 DENMARK TRAIT_HARALD_2
-<CityStateBonusModifier>50</CityStateBonusModifier> 
+<CityStateBonusModifier>150</CityStateBonusModifier> 
 
 ARABIA TRAIT_HARUN_2
 <FightWellDamaged>1</FightWellDamaged> 
@@ -93,7 +115,7 @@ POLYNESIA TRAIT_KAMEHAMEHA_2	<Trait_ImprovementYieldChanges>
 
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType> 
 			<YieldType>YIELD_CULTURE</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>3</Yield> 
 		
 PORTUGAL TRAIT_MARIA_I_2	<Trait_SpecialistYieldChanges>
 
@@ -102,16 +124,19 @@ PORTUGAL TRAIT_MARIA_I_2	<Trait_SpecialistYieldChanges>
 			<Yield>2</Yield> 	
 
 AUSTRIA TRAIT_MARIA_2
-<CityCultureBonus>10</CityCultureBonus> 
+<CityCultureBonus>25</CityCultureBonus> 
 
 AZTECS TRAIT_MONTEZUMA_2
 <PlunderModifier>200</PlunderModifier>
 <CultureFromKills>300</CultureFromKills>
 
 FRANCE TRAIT_NAPOLEON_2
+
+<FreeBuilding>BUILDING_TB_TRAIT_NAPOLEON_2</FreeBuilding>
 <XBuiltTriggersIdeologyChoice>1</XBuiltTriggersIdeologyChoice>
 TECH_GUNPOWDER
-<FreeBuilding>BUILDING_TB_TRAIT_NAPOLEON_2</FreeBuilding>
+
+<FreePolicies>3</FreePolicies>
 
 BABYLON TRAIT_NEBUCHADNEZZAR_2
 <FreeSocialPoliciesPerEra>2</FreeSocialPoliciesPerEra> 
@@ -120,7 +145,9 @@ JAPAN TRAIT_ODA_2	<Trait_SpecialistYieldChanges>
 
 			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<Yield>3</Yield> 
+			<Yield>4</Yield> 
+			
+<MilitaryProductionModifier>20</MilitaryProductionModifier>
 		
 MAYA TRAIT_PACAL_2
 <RazeSpeedModifier>300</RazeSpeedModifier> 
@@ -137,7 +164,7 @@ SHOSHONE TRAIT_POCATELLO_2	<Trait_SpecialistYieldChanges>
 
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>3</Yield> 
 		
 
 EGYPT TRAIT_RAMESSES_2
@@ -162,11 +189,12 @@ OTTOMAN TRAIT_SULEIMAN_2
 <LandUnitMaintenanceModifier>-25</LandUnitMaintenanceModifier>
 
 BYZANTINE TRAIT_THEODORA_2
-<WonderProductionModifier>50</WonderProductionModifier> 
+<CapitalBuildingModifier>30</CapitalBuildingModifier>
 
 USA TRAIT_WASHINGTON_2
 <LandUnitMaintenanceModifier>-25</LandUnitMaintenanceModifier>
-<PolicyCostModifier>-10</PolicyCostModifier> 
+<PolicyCostModifier>-10</PolicyCostModifier>
+<GreatScientistBeakerModifier>10</GreatScientistBeakerModifier> PER CITY
 			
 NETHERLANDS TRAIT_WILLIAM_2	<Trait_YieldChangesPerTradePartner>
 
@@ -174,8 +202,15 @@ NETHERLANDS TRAIT_WILLIAM_2	<Trait_YieldChangesPerTradePartner>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>20</Yield>
 
-CHINA TRAIT_WU_2	<Trait_YieldChangesPerTradePartner> <Trait_YieldChangesIncomingTradeRoute>
-<NavalUnitMaintenanceModifier>-30</NavalUnitMaintenanceModifier>
+CHINA TRAIT_WU_2	<Trait_YieldChangesPerTradePartner> 
+
+	<YieldType>YIELD_PRODUCTION</YieldType>
+	<Yield>25</Yield>
+	
+<NavalUnitMaintenanceModifier>-30</NavalUnitMaintenanceModifier
+<MilitaryProductionModifier>20</MilitaryProductionModifier>		PER CITY
+
+
 
 
 

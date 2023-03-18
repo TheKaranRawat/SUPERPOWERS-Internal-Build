@@ -158,6 +158,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_CULTURE_FROM_KILLS_SHORT</ShortDescription>
 			<CultureFromKills>70</CultureFromKills>
 			<LandUnitMaintenanceModifier>-20</LandUnitMaintenanceModifier>
+			<WonderProductionModifier>25</WonderProductionModifier>
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -202,8 +203,9 @@
 			<Description>TXT_KEY_TRAIT_POPULATION_GROWTH</Description>
 			<ShortDescription>TXT_KEY_TRAIT_POPULATION_GROWTH_SHORT</ShortDescription>
 			<!--<CityUnhappinessModifier>100</CityUnhappinessModifier>-->
-			<PopulationUnhappinessModifier>-25</PopulationUnhappinessModifier>
+			<PopulationUnhappinessModifier>-30</PopulationUnhappinessModifier>
 			<PolicyCostModifier>-15</PolicyCostModifier> 
+			<CapitalBuildingModifier>25</CapitalBuildingModifier>
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -529,7 +531,8 @@
 			<Type>TRAIT_AUGUSTUS_2</Type>
 			<Description>TXT_KEY_TRAIT_AUGUSTUS_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_AUGUSTUS_2</ShortDescription>
-			<NavalUnitMaintenanceModifier>25</NavalUnitMaintenanceModifier> 
+			<NavalUnitMaintenanceModifier>25</NavalUnitMaintenanceModifier>
+			<FreeBuilding>BUILDING_TB_TRAIT_AUGUSTUS_2</FreeBuilding> 
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -539,6 +542,7 @@
 			<Description>TXT_KEY_TRAIT_BISMARCK_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_BISMARCK_2</ShortDescription>
 			<LandUnitMaintenanceModifier>25</LandUnitMaintenanceModifier>
+			<FreeBuilding>BUILDING_TB_TRAIT_BISMARCK_2</FreeBuilding> 
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -547,7 +551,8 @@
 			<Type>TRAIT_BOUDICCA_2</Type>
 			<Description>TXT_KEY_TRAIT_BOUDICCA_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_BOUDICCA_2</ShortDescription>
-			<ImprovementMaintenanceModifier>-50</ImprovementMaintenanceModifier>
+			<CultureFromKills>500</CultureFromKills>
+			<FaithFromKills>500</FaithFromKills>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -557,6 +562,7 @@
 			<Description>TXT_KEY_TRAIT_CASIMIR_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_CASIMIR_2</ShortDescription>
 			<UnresearchedTechBonusFromKills>15</UnresearchedTechBonusFromKills>
+			<FightWellDamaged>true</FightWellDamaged>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -565,7 +571,8 @@
 			<Type>TRAIT_CATHERINE_2</Type>
 			<Description>TXT_KEY_TRAIT_CATHERINE_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_CATHERINE_2</ShortDescription>
-		
+			
+			<FreeBuilding>BUILDING_TB_TRAIT_CATHERINE_2</FreeBuilding> 
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -583,7 +590,17 @@
 			<Type>TRAIT_DIDO_2</Type>
 			<Description>TXT_KEY_TRAIT_DIDO_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_DIDO_2</ShortDescription>
-			<PolicyCostModifier>-10</PolicyCostModifier>
+			<PolicyCostModifier>-20</PolicyCostModifier>
+			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+					
+		</Row>
+
+		<Row>
+			<Type>TRAIT_ELIZABETH_2</Type>
+			<Description>TXT_KEY_TRAIT_ELIZABETH_2</Description>
+			<ShortDescription>TXT_KEY_TRAIT_ELIZABETH_2</ShortDescription>
+			
+			<FreeBuilding>BUILDING_TB_TRAIT_ELIZABETH_2</FreeBuilding> 
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -610,7 +627,8 @@
 			<Type>TRAIT_GANDHI_2</Type>
 			<Description>TXT_KEY_TRAIT_GANDHI_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_GANDHI_2</ShortDescription>
-		
+			
+			<FreeBuilding>BUILDING_TB_TRAIT_GANDHI_2</FreeBuilding>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -649,7 +667,7 @@
 			<Type>TRAIT_HARALD_2</Type>
 			<Description>TXT_KEY_TRAIT_HARALD_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_HARALD_2</ShortDescription>
-			<CityStateBonusModifier>50</CityStateBonusModifier> 
+			<CityStateBonusModifier>150</CityStateBonusModifier> 
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -707,7 +725,7 @@
 			<Type>TRAIT_MARIA_2</Type>
 			<Description>TXT_KEY_TRAIT_MARIA_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_MARIA_2</ShortDescription>
-			<CityCultureBonus>10</CityCultureBonus> 
+			<CityCultureBonus>35</CityCultureBonus> 
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -745,6 +763,7 @@
 			<Description>TXT_KEY_TRAIT_ODA_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_ODA_2</ShortDescription>
 			 
+			<FreeBuilding>BUILDING_TB_TRAIT_ODA_2</FreeBuilding> 
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -828,7 +847,7 @@
 			<Type>TRAIT_SULEIMAN_2</Type>
 			<Description>TXT_KEY_TRAIT_SULEIMAN_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_SULEIMAN_2</ShortDescription>
-			<LandUnitMaintenanceModifier>-25</LandUnitMaintenanceModifier>
+			<LandUnitMaintenanceModifier>-30</LandUnitMaintenanceModifier>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -837,7 +856,7 @@
 			<Type>TRAIT_THEODORA_2</Type>
 			<Description>TXT_KEY_TRAIT_THEODORA_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_THEODORA_2</ShortDescription>
-			<WonderProductionModifier>50</WonderProductionModifier> 
+			<CapitalBuildingModifier>30</CapitalBuildingModifier>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -847,7 +866,8 @@
 			<Description>TXT_KEY_TRAIT_WASHINGTON_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_WASHINGTON_2</ShortDescription>
 			<LandUnitMaintenanceModifier>-25</LandUnitMaintenanceModifier>
-			<PolicyCostModifier>-10</PolicyCostModifier> 
+			
+			<FreeBuilding>BUILDING_TB_TRAIT_WASHINGTON_2</FreeBuilding>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -866,6 +886,8 @@
 			<Description>TXT_KEY_TRAIT_WU_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_WU_2</ShortDescription>
 			<NavalUnitMaintenanceModifier>-30</NavalUnitMaintenanceModifier>
+
+			<FreeBuilding>BUILDING_TB_TRAIT_WU_2</FreeBuilding>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -934,6 +956,11 @@
 		<Row> 
 			<LeaderType>LEADER_DIDO</LeaderType> 
 			<TraitType>TRAIT_DIDO_2</TraitType> 
+		</Row>
+
+		<Row> 
+			<LeaderType>LEADER_ELIZABETH</LeaderType> 
+			<TraitType>TRAIT_ELIZABETH_2</TraitType> 
 		</Row>
 
 		<Row> 
@@ -1403,7 +1430,7 @@
 			<TraitType>TRAIT_GAJAH_2</TraitType> 
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType> 
 			<YieldType>YIELD_FOOD</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>3</Yield> 
 		</Row>
 
 		<Row> 
@@ -1417,7 +1444,7 @@
 			<TraitType>TRAIT_KAMEHAMEHA_2</TraitType> 
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType> 
 			<YieldType>YIELD_CULTURE</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>3</Yield> 
 		</Row>
 		
 	</Trait_ImprovementYieldChanges>
@@ -1472,7 +1499,7 @@
 		<Row> 
 			<TraitType>TRAIT_DARIUS_2</TraitType> 
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>10</Yield> 
 		</Row> 
 
 	</Trait_YieldChangesStrategicResources>
@@ -2109,25 +2136,27 @@
 			<Yield>2</Yield>
 		</Row>
 
+		<!--
 		<Row> 
 			<TraitType>TRAIT_CATHERINE_2</TraitType> 
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 			<YieldType>YIELD_SCIENCE</YieldType> 
 			<Yield>2</Yield> 
 		</Row> 
+		-->
 
 		<Row> 
 			<TraitType>TRAIT_GANDHI_2</TraitType> 
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_FOOD</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>4</Yield> 
 		</Row> 
 
 		<Row> 
 			<TraitType>TRAIT_GUSTAVUS_2</TraitType> 
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 			<YieldType>YIELD_SCIENCE</YieldType> 
-			<Yield>3</Yield> 
+			<Yield>4</Yield> 
 		</Row>
 		
 		<Row> 
@@ -2141,14 +2170,14 @@
 			<TraitType>TRAIT_ODA_2</TraitType> 
 			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<Yield>3</Yield> 
+			<Yield>4</Yield> 
 		</Row> 
 
 		<Row> 
 			<TraitType>TRAIT_POCATELLO_2</TraitType> 
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_PRODUCTION</YieldType> 
-			<Yield>2</Yield> 
+			<Yield>3</Yield> 
 		</Row> 
 
 
@@ -2198,7 +2227,7 @@
 		<Row>
 			<TraitType>TRAIT_SUPER_CITY_STATE</TraitType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>10</Yield>
+			<Yield>30</Yield>
 		</Row>
 
 		<Row>
@@ -2485,18 +2514,146 @@
 			<Description>TXT_KEY_TRAIT_NAPOLEON_2</Description>
 			<Help>TXT_KEY_TRAIT_NAPOLEON_2</Help>
 			<XBuiltTriggersIdeologyChoice>1</XBuiltTriggersIdeologyChoice>
+			<FreePolicies>3</FreePolicies>
 			<GreatWorkCount>-1</GreatWorkCount>
 		</Row>
 
+		<Row>
+			<Type>BUILDING_TB_TRAIT_GANDHI_2</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_TRAIT_GANDHI_2</Description>
+			<Help>TXT_KEY_TRAIT_GANDHI_2</Help>
 
-		
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_TB_TRAIT_AUGUSTUS_2</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_TRAIT_AUGUSTUS_2</Description>
+			<Help>TXT_KEY_TRAIT_AUGUSTUS_2</Help>
+			<BuildingProductionModifier>30</BuildingProductionModifier>
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_TB_TRAIT_BISMARCK_2</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_TRAIT_BISMARCK_2</Description>
+			<Help>TXT_KEY_TRAIT_BISMARCK_2</Help>
+			<GreatPeopleRateModifier>30</GreatPeopleRateModifier>
+			<MilitaryProductionModifier>35</MilitaryProductionModifier>
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_TB_TRAIT_CATHERINE_2</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_TRAIT_CATHERINE_2</Description>
+			<Help>TXT_KEY_TRAIT_CATHERINE_2</Help>
+			<GlobalPlotCultureCostModifier>-5</GlobalPlotCultureCostModifier>
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_TB_TRAIT_ELIZABETH_2</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_TRAIT_ELIZABETH_2</Description>
+			<Help>TXT_KEY_TRAIT_ELIZABETH_2</Help>
+			<HappinessPerCity>2</HappinessPerCity>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_TB_TRAIT_ODA_2</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_TRAIT_ODA_2</Description>
+			<Help>TXT_KEY_TRAIT_ODA_2</Help>
+			<MilitaryProductionModifier>20</MilitaryProductionModifier>
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_TB_TRAIT_WASHINGTON_2</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_TRAIT_WASHINGTON_2</Description>
+			<Help>TXT_KEY_TRAIT_WASHINGTON_2</Help>
+			<GreatScientistBeakerModifier>10</GreatScientistBeakerModifier>
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_TB_TRAIT_WU_2</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_TRAIT_WU_2</Description>
+			<Help>TXT_KEY_TRAIT_WU_2</Help>
+			<MilitaryProductionModifier>20</MilitaryProductionModifier>
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>	
 
 
 
 	</Buildings>
 
 
+	<Building_YieldModifiers>
 
+		<Row>
+			<BuildingType>BUILDING_TB_TRAIT_GANDHI_2</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>15</Yield>
+		</Row>
+
+	</Building_YieldModifiers>
 
 	<Building_YieldChanges>
 		<Row>

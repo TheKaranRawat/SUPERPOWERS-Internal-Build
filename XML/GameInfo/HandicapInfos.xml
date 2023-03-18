@@ -534,9 +534,9 @@
 		<Replace Tag="TXT_KEY_RANDOM_LEADER_HELP">
 			<Text>
 				[ICON_BULLET]The game will randomly pick one of the leaders for you to play.
-				[NEWLINE][ICON_BULLET]Every Civilization has three Unique Abilities (UA).
-				[NEWLINE][ICON_BULLET]The first two Unique Abilities are enabled from game start.
-				[NEWLINE][ICON_BULLET]The third Unique Ability is activated after Industrialization.
+				[NEWLINE][ICON_BULLET]Every Civilization has four Unique Abilities (UA).
+				[NEWLINE][ICON_BULLET]The first three Unique Abilities are enabled from game start.
+				[NEWLINE][ICON_BULLET]The fourth Unique Ability is activated after Industrialisation is researched.
 				[NEWLINE][ICON_BULLET]Civilizations have 6 Unique Components (Units and Buildings)
 				[NEWLINE][ICON_BULLET]Every Civilization has a unique spawn preference as well.
 

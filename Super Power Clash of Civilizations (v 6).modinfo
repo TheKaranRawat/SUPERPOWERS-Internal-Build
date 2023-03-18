@@ -3178,18 +3178,20 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="6C75DC8D3B123051C16FA1C2EC32C028" import="1">XML/UC/Zulu/GUMBOOT256.dds</File>
     <File md5="DC99D6744A0AFD76067CCB146A96A5A4" import="1">XML/UC/Zulu/GUMBOOT45.dds</File>
     <File md5="D0E37D2CE923401D1B7003B779A92505" import="1">XML/UC/Zulu/GUMBOOT64.dds</File>	
-	<File md5="FBB717CC43496281459874C6EE9CF9EF" import="1">UI/Override/SocialPolicyPopup.lua</File>
-	<File md5="CB3CB75D6D72C487D898224EF3A2D697" import="0">Lua/UI/WASDHotkeyFix.sql</File>
+    
+    <File md5="FBB717CC43496281459874C6EE9CF9EF" import="1">UI/Override/TechTree.xml</File>
+  	<File md5="FBB717CC43496281459874C6EE9CF9EF" import="1">UI/Override/SocialPolicyPopup.lua</File>
+	  <File md5="CB3CB75D6D72C487D898224EF3A2D697" import="0">Lua/UI/WASDHotkeyFix.sql</File>
     <File md5="C5810183FF9D011C50AF520D2D262C8D" import="1">Lua/UI/WorldView.lua</File>
-	<File md5="491E185DF3B9DC75767A7DE5B15E300E" import="0">XML/Gameplay/GoodyHutsNoMaps.xml</File>
-	<File md5="1908B10AAB7054123C3723721639F5EF" import="1">Lua/Utility/FeatureGenerator.lua</File>
-	<File md5="CC38F84CE9E5D8DE3F81F91B5BA348F5" import="1">Art/Projects/AsteroidMining_Splash.dds</File>
+  	<File md5="491E185DF3B9DC75767A7DE5B15E300E" import="0">XML/Gameplay/GoodyHutsNoMaps.xml</File>
+	  <File md5="1908B10AAB7054123C3723721639F5EF" import="1">Lua/Utility/FeatureGenerator.lua</File>
+  	<File md5="CC38F84CE9E5D8DE3F81F91B5BA348F5" import="1">Art/Projects/AsteroidMining_Splash.dds</File>
     <File md5="2583AE711760677197BCF14DB0CEF624" import="1">Art/Projects/Enlightenment_ARDL.dds</File>
     <File md5="2559E7DFBDD3AD36EBA85DC473B0606C" import="1">Art/Projects/GDRSplashy.dds</File>
     <File md5="90FD2C7AD2925129E1A130ED9913A7C3" import="1">Art/Projects/Philosophers_Legacy_939x614.dds</File>
-	<File md5="90FD2C7AD2925129E1A130ED9913A7C3" import="1">Art/Projects/Philosophers_Legacy_939x614.dds</File>
+  	<File md5="90FD2C7AD2925129E1A130ED9913A7C3" import="1">Art/Projects/Philosophers_Legacy_939x614.dds</File>
     <File md5="D3125EFE37B922EC1C457ADB8A8D8925" import="1">Art/Projects/TogetherTTS_939x614.dds</File>
-	<File md5="D3125EFE37B922EC1C457ADB8A8D8925" import="1">Art/Projects/GLOBAL_WARGAMES_939x614.dds</File>
+	  <File md5="D3125EFE37B922EC1C457ADB8A8D8925" import="1">Art/Projects/GLOBAL_WARGAMES_939x614.dds</File>
     <File md5="EBE078DB47A0095DB3B056AA2F1A28C2" import="1">Art/Projects/XcomHeadquartersSplash.dds</File>
     <File md5="EA8510FD99107A1775C1E1710B297D78" import="1">Art/Projects/XcomInitiativeProject_939x614.dds</File>
 	<!--
