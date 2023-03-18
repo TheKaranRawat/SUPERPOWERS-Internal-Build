@@ -688,6 +688,35 @@
 	</Building_YieldChangesPerPop>
 
 	<Building_YieldModifiers>
+		
+		
+		<Row>
+			<BuildingType>BUILDING_CITY_HALL_LV1</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CITY_HALL_LV2</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-10</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CITY_HALL_LV3</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-15</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CITY_HALL_LV4</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-20</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CITY_HALL_LV5</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-25</Yield>
+		</Row>
+
+		
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>

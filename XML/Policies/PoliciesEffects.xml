@@ -46,7 +46,7 @@
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>5</Yield>
+			<Yield>10</Yield>
 		</Row>
 
 	</Policy_CapitalYieldModifiers>
@@ -391,14 +391,14 @@
 			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_SOCIALIST_REALISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>4</YieldChange>
 		</Row>				
 
 
@@ -406,25 +406,25 @@
 			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>10</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>10</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>			
 		<Row>
 			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>10</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>10</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 
 
@@ -433,61 +433,61 @@
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TCS_PAROCHIAL_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>				
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TCS_PATENT_OFFICE</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PUBLIC_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_BIO_LAB</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GENE_LAB</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_POLAR_STATION</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-3</YieldChange>
+			<YieldChange>-1</YieldChange>
 		</Row>				
 
 		<Row>
@@ -501,67 +501,67 @@
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TCS_PAROCHIAL_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>				
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TCS_PATENT_OFFICE</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PUBLIC_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_BIO_LAB</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GENE_LAB</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>				
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_POLAR_STATION</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 
 
@@ -742,6 +742,12 @@
 	</Policy_CityYieldChanges>
 
 	<Policy_BuildingClassYieldModifiers>
+
+
+
+
+
+
 
 		<Row>
 			<PolicyType>POLICY_HELIOS</PolicyType>
@@ -977,137 +983,6 @@
 
 
 
-		<Row>
-			<PolicyType>POLICY_TRADITION</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_PIETY</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_PIETY_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_AESTHETICS</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_AESTHETICS_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_PATRONAGE</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_PATRONAGE_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_EXPLORATION</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_EXPLORATION_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_RATIONALISM</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_RATIONALISM_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_HONOR</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_FREEDOM</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_FREEDOM_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_COMMERCE</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>		
-
-		<Row>
-			<PolicyType>POLICY_COMMERCE_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_ISKA_AUTOCRACY</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_ISKA_AUTOCRACY_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_ISKA_FREEDOM</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
-			<Happiness>-5</Happiness>
-		</Row>
 
 
 
@@ -2851,7 +2726,7 @@
 
 	</Policy_YieldModifiers>
 
-	<Faith
+	
 
 
 
@@ -3504,7 +3379,7 @@
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>1</SpecialistCount>
+			<SpecialistCount>2</SpecialistCount>
 			<PortraitIndex>47</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_FAMILY_PRODUCTION</Description>

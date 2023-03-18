@@ -457,8 +457,7 @@
 				[NEWLINE][NEWLINE]Opening Effects:
 				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture and +5% [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital
 				[NEWLINE][ICON_BULLET]-25% [ICON_CULTURE] Culture cost for acquiring new plots in all cities
-				[NEWLINE][ICON_BULLET]Buildings generating [ICON_RESEARCH] Science recieve -3 to their primary [ICON_RESEARCH]yield!
-				[NEWLINE][ICON_BULLET]Certain Policies will reduce your unhappiness for each city, having 4 cities is advised!			
+				[NEWLINE][ICON_BULLET]Buildings generating [ICON_RESEARCH] Science recieve -1 to their primary [ICON_RESEARCH]yield!
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE] Policies increased by 15% for every city[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: Hanging Gardens
 				[NEWLINE][ICON_BULLET]Building Unlocked: Public Baths
@@ -563,7 +562,7 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Schools of Thought[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+0.1 [ICON_RESEARCH] Science and +0.1[ICON_CULTURE] Culture for every [ICON_CITIZEN] Citizen in a city. 
-				[NEWLINE][ICON_BULLET]Add 1 [RESEARCH] Scientist Slot in every city.				
+				[NEWLINE][ICON_BULLET]Add 2 [RESEARCH] Scientist Slot in every city.				
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_FAMILY_REGISTER_TEXT">
@@ -581,7 +580,7 @@
 				[COLOR_POSITIVE_TEXT]Decentralisation[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]New Units receive +15 XP
 				[NEWLINE][ICON_BULLET]The [ICON_CITIZEN] Population Loss caused by Unit Casualties reduced by 50%
-				[NEWLINE][ICON_BULLET]+1 primary yield from [ICON_CITIZEN] Specialists if Imperial Academy is present in the city	
+				[NEWLINE][ICON_BULLET]+2 primary yield from [ICON_CITIZEN] Specialists if Imperial Academy is present in the city	
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_CENTRALISATION_TEXT">
@@ -607,13 +606,14 @@
 
 				[NEWLINE][NEWLINE]Opening Effect:
 				[NEWLINE][ICON_BULLET]+10 [ICON_GOLD] Gold per city
-				[NEWLINE][ICON_BULLET]+25% Tile Improvement rate				
-				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]City [ICON_FOOD] growth rate reduced by 15%[ENDCOLOR]	
+				[NEWLINE][ICON_BULLET]+25% Tile Improvement rate			
+				[NEWLINE][ICON_BULLET]-1 primary yield from [ICON_CITIZEN] Specialists if Imperial Academy is present in the city					
+				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]City [ICON_FOOD] growth rate reduced by 10%[ENDCOLOR]	
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: The Pyramids
 				[NEWLINE][ICON_BULLET]Building Unlocked: Town Council
 				[NEWLINE][NEWLINE]Finishing Bonus:
 				[NEWLINE][ICON_BULLET]5 [ICON_HAPPINESS_1] per City	with a Town Council	
-				[NEWLINE][ICON_BULLET]1 free Settlers
+				[NEWLINE][ICON_BULLET]1 free Settler
 				[NEWLINE][ICON_BULLET]Starts a Golden Age
 				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Republic[ENDCOLOR]
 			</Text>
@@ -672,7 +672,7 @@
 		<Row Tag="TXT_KEY_POLICY_BILL_OF_RIGHTS_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Imperial Examination[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+3 [ICON_RESEARCH]Research from [ICON_RESEARCH]Buildings
+				[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH]Research from [ICON_RESEARCH]Buildings
 				[NEWLINE][ICON_BULLET]+3 [ICON_CULTURE] Culture for each Monument, Amphitheater, Art Gallery, Opera House, Museum and Brocast Tower</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_BILL_OF_RIGHTS_TEXT">

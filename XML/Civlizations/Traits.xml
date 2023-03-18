@@ -65,7 +65,7 @@
 			<Description>TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER</Description>
 			<ShortDescription>TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER_SHORT</ShortDescription>
 			<FreeBuilding>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</FreeBuilding>
-			<CityUnhappinessModifier>-33</CityUnhappinessModifier>
+			<CityUnhappinessModifier>-40</CityUnhappinessModifier>
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -2219,13 +2219,13 @@
 		<Row>
 			<BuildingType>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_TB_STRATEGIC_RICHES</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>6</Yield>
+			<Yield>10</Yield>
 		</Row>
 
 		<Row>
@@ -2269,7 +2269,7 @@
 		<Row>
 			<BuildingType>BUILDING_TB_STRATEGIC_RICHES</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Quantity>4</Quantity>
+			<Quantity>5</Quantity>
 		</Row>
 		
 	</Building_ResourceQuantity>

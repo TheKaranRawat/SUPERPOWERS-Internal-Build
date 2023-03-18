@@ -14,7 +14,7 @@
 			<Where Name="RELIGION_BASE_CHANCE_PROPHET_SPAWN"/>
 			<Set Value="100"/>
 		</Update>
-		
+	
 
 			
 		<!--Global Units per Plot and City Range-->
@@ -23,7 +23,7 @@
 			<Where Name="PLOT_UNIT_LIMIT" />
 		</Update>
 		<Update>
-			<Set Value="4"/>
+			<Set Value="3"/>
 			<Where Name="MIN_CITY_RANGE" />
 		</Update>
 

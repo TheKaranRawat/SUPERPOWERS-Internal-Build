@@ -48,7 +48,7 @@
 			<Where Type="WORLDSIZE_TINY"/>
 		</Update>
 		<Update>
-			<Set NumCitiesTechCostMod="5"/>
+			<Set NumCitiesTechCostMod="4"/>
 			<Where Type="WORLDSIZE_TINY"/>
 		</Update>
 		<Update>
@@ -64,11 +64,11 @@
 			<Where Type="WORLDSIZE_STANDARD"/>
 		</Update>
 		<Update>
-			<Set NumCitiesTechCostMod="4"/>
+			<Set NumCitiesTechCostMod="3"/>
 			<Where Type="WORLDSIZE_STANDARD"/>
 		</Update>
 		<Update>
-			<Set EstimatedNumCities="50"/>
+			<Set EstimatedNumCities="100"/>
 			<Where Type="WORLDSIZE_STANDARD"/>
 		</Update>
 
@@ -77,7 +77,7 @@
 			<Where Type="WORLDSIZE_LARGE"/>
 		</Update>
 		<Update>
-			<Set NumCitiesTechCostMod="3"/>
+			<Set NumCitiesTechCostMod="2"/>
 			<Where Type="WORLDSIZE_LARGE"/>
 		</Update>
 		<Update>
@@ -85,7 +85,7 @@
 			<Where Type="WORLDSIZE_LARGE"/>
 		</Update>
 		<Update>
-			<Set ResearchPercent="125"/>
+			<Set ResearchPercent="150"/>
 			<Where Type="WORLDSIZE_LARGE"/>
 		</Update>
 
@@ -94,7 +94,7 @@
 			<Where Type="WORLDSIZE_HUGE"/>
 		</Update>
 		<Update>
-			<Set NumCitiesTechCostMod="2"/>
+			<Set NumCitiesTechCostMod="1"/>
 			<Where Type="WORLDSIZE_HUGE"/>
 		</Update>
 
@@ -125,7 +125,7 @@
 		</Update>
 
 		<Update>
-			<Set EstimatedNumCities="150"/>
+			<Set EstimatedNumCities="200"/>
 			<Where Type="WORLDSIZE_HUGE"/>
 		</Update>
 		<Update>
