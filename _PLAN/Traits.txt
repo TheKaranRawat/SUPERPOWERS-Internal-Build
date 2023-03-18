@@ -193,7 +193,6 @@ BYZANTINE TRAIT_THEODORA_2
 
 USA TRAIT_WASHINGTON_2
 <LandUnitMaintenanceModifier>-25</LandUnitMaintenanceModifier>
-<PolicyCostModifier>-10</PolicyCostModifier>
 <GreatScientistBeakerModifier>10</GreatScientistBeakerModifier> PER CITY
 			
 NETHERLANDS TRAIT_WILLIAM_2	<Trait_YieldChangesPerTradePartner>
