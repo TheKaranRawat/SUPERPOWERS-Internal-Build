@@ -12,15 +12,15 @@
 	<Policies>
 		
 		<Update>
-			<Set PlotCultureExponentModifier="-25" HappinessPerXPopulation="2" BuildingProductionModifier="25" GreatGeneralRateModifier="10" GreatAdmiralRateModifier="10"/>
+			<Set PlotCultureExponentModifier="-25" HappinessPerXPopulation="3" BuildingProductionModifier="25" GreatGeneralRateModifier="10" GreatAdmiralRateModifier="10"/>
 			<Where Type="POLICY_TRADITION"/>
 		</Update>
 		<Update>
-			<Set NumCitiesPolicyCostDiscount="-15"/>
+			<Set NumCitiesPolicyCostDiscount="-10"/>
 			<Where Type="POLICY_TRADITION"/>
 		</Update>
 		<Update>
-			<Set HappinessPerXPopulation="0" WonderProductionModifier="0" NewCityExtraPopulation="1" PortraitIndex="28"/>
+			<Set HappinessPerXPopulation="0" WonderProductionModifier="0" NewCityExtraPopulation="2" PortraitIndex="28"/>
 			<Where Type="POLICY_ARISTOCRACY"/>
 		</Update>
 		<Update>
@@ -32,7 +32,7 @@
 			<Where Type="POLICY_OLIGARCHY"/>
 		</Update>
 		<Update>
-			<Set CapitalGrowthMod="10" CityGrowthMod="5" GridX="5" GridY="1"/>
+			<Set CapitalGrowthMod="10" CityGrowthMod="10" GridX="5" GridY="1"/>
 			<Where Type="POLICY_LANDED_ELITE"/>
 		</Update>
 		<Update>
@@ -163,7 +163,7 @@
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>2</GridY>
-			<OccupiedPopulationUnhappinessMod>0</OccupiedPopulationUnhappinessMod>
+			<OccupiedPopulationUnhappinessMod>-100</OccupiedPopulationUnhappinessMod>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>

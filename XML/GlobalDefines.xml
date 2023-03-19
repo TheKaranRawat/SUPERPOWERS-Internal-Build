@@ -90,7 +90,7 @@
 			<Where Name="CITY_GROWTH_MULTIPLIER" />
 		</Update>
 		<Update>
-			<Set Value="1.6"/>
+			<Set Value="2"/>
 			<Where Name="CITY_GROWTH_EXPONENT" />
 		</Update>
 		<Update>

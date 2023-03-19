@@ -457,6 +457,7 @@
 				[NEWLINE][NEWLINE]Opening Effects:
 				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture and +5% [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital
 				[NEWLINE][ICON_BULLET]-25% [ICON_CULTURE] Culture cost for acquiring new plots in all cities
+				[NEWLINE][ICON_BULLET]1 [ICON_HAPPINESS_1] happiness for every 3[ICON_CITIZEN]
 				[NEWLINE][ICON_BULLET]Buildings generating [ICON_RESEARCH] Science recieve -1 to their primary [ICON_RESEARCH]yield!
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE] Policies increased by 15% for every city[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: Hanging Gardens
@@ -474,7 +475,7 @@
 		<Replace Tag="TXT_KEY_POLICY_ARISTOCRACY_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Citizenship[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]New Cities start with an extra 1 [ICON_CITIZEN] Citizen
+				[NEWLINE][ICON_BULLET]New Cities start with an extra 2 [ICON_CITIZEN] Citizen
 				[NEWLINE][ICON_BULLET]100% [ICON_FOOD] Food is carried over after a new [ICON_CITIZEN] Citizen is born for every Town (Cities with a [ICON_CITIZEN] Population less than 6). It will be effective after the next [ICON_CITIZEN] Citizen is born.
 			</Text>
 		</Replace>
@@ -486,7 +487,7 @@
 		<Replace Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Collective Agriculture[ENDCOLOR]				
-				[NEWLINE][ICON_BULLET]+5% [ICON_FOOD] Food growth in every city.
+				[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Food growth in every city.
 				[NEWLINE][ICON_BULLET]+10% bonus [ICON_FOOD] Food growth in the Capital.
 				</Text>
 		</Replace>
@@ -527,7 +528,7 @@
 		<Replace Tag="TXT_KEY_POLICY_MONARCHY_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Representation[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]5 less [ICON_HAPPINESS_4] Unhappiness due to city's Population Size.			
+				[NEWLINE][ICON_BULLET]+5 extra [ICON_HAPPINESS_1] happiness from every Luxury Resource.
 				[NEWLINE][ICON_BULLET]+30% [ICON_RES_MANPOWER] Manpower provided by cities Population Size.		
 			</Text>
 		</Replace>		
@@ -688,7 +689,7 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Praetorian Guard[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]No [ICON_HAPPINESS_4] Unhappiness from Occupied Populations
-				[NEWLINE][ICON_BULLET]-5 [ICON_HAPPINESS_4] Unhappiness due to city level
+				[NEWLINE][ICON_BULLET]5 less [ICON_HAPPINESS_4] Unhappiness due to city level
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PROVINCE_TEXT">
@@ -722,8 +723,9 @@
 				[NEWLINE][ICON_BULLET]Lower the extra [ICON_CULTURE] Culture cost for adopting new Policies from Lv1 - Lv5 cities (Effects multiply with anti-corruption buildings):
 				[NEWLINE][ICON_BULLET]Lv 1 City: NO extra [ICON_CULTURE] Culture cost.
 				[NEWLINE][ICON_BULLET]Lv 2 City: Extra [ICON_CULTURE] Culture cost lowered from 10% to 5%.
-				[NEWLINE][ICON_BULLET]Lv 3 City: Extra [ICON_CULTURE] Culture cost lowered from 20% to 10%.
-				[NEWLINE][ICON_BULLET]Lv 4-5 City: Extra [ICON_CULTURE] Culture cost lowered from 33% to 15%.
+				[NEWLINE][ICON_BULLET]Lv 3 City: Extra [ICON_CULTURE] Culture cost lowered from 15% to 10%.
+				[NEWLINE][ICON_BULLET]Lv 4 City: Extra [ICON_CULTURE] Culture cost lowered from 20% to 15%.
+				[NEWLINE][ICON_BULLET]Lv 5 City: Extra [ICON_CULTURE] Culture cost lowered from 25% to 20%.				
 			</Text>
 		</Replace>
 		
