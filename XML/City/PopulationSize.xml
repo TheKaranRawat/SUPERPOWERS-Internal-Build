@@ -208,7 +208,7 @@
 		<Row>
 			<BuildingType>BUILDING_PALACE</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>25</Quantity>
+			<Quantity>20</Quantity>
 		</Row>
 
 		<Row>
@@ -221,25 +221,25 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_TOWN</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>6</Quantity>
+			<Quantity>5</Quantity>
 		</Row>
 		
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_SMALL</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>4</Quantity>
+			<Quantity>5</Quantity>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_MEDIUM</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>10</Quantity>
+			<Quantity>15</Quantity>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_LARGE</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>10</Quantity>
+			<Quantity>15</Quantity>
 		</Row>
 
 		<Row>
@@ -251,7 +251,7 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_XXL</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>30</Quantity>
+			<Quantity>20</Quantity>
 		</Row>
 
 		<Row>
@@ -2493,7 +2493,7 @@
 		<Row>
 			<BuildingType>BUILDING_FUTURE_FACTORY</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>15</Quantity>
+			<Quantity>10</Quantity>
 		</Row>
 		
 		<Row>
