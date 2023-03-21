@@ -482,7 +482,7 @@
 		</Row>		
 
 
-
+<!--
 		<Row>
 			<BeliefType>BELIEF_GOD_SEA</BeliefType>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
@@ -495,7 +495,7 @@
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		
+-->		
 		<Row>
 			<BeliefType>BELIEF_GODDESS_HUNT</BeliefType>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
@@ -516,6 +516,16 @@
 	
 	
 	<Belief_FeatureYieldChanges>
+
+
+		<Row>
+			<BeliefType>BELIEF_GOD_SEA</BeliefType>
+			<FeatureType>FEATURE_ATOLL</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>4</Yield>
+		</Row>
+
+
 		<Row>
 			<BeliefType>BELIEF_MARSH_BELIEF</BeliefType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
@@ -574,7 +584,13 @@
 			<TerrainType>TERRAIN_COAST</TerrainType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
-		</Row>	
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_GOD_SEA</BeliefType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>			
 		<Row>
 			<BeliefType>BELIEF_DESERT_FOLKLORE</BeliefType>
 			<TerrainType>TERRAIN_DESERT</TerrainType>
