@@ -1752,7 +1752,6 @@
 			<Help>TXT_KEY_UNIT_FW_RAILGUN_TANK_HELP</Help>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_ADAMANTIUM</ObsoleteTech>
 			<Pillage>true</Pillage>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<Mechanized>true</Mechanized>
@@ -1786,7 +1785,6 @@
 			<Help>TXT_KEY_UNIT_FW_MECH_ARTILLERY_HELP</Help>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_HYPERSTRUCTURES</ObsoleteTech>
 			<Pillage>true</Pillage>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<Mechanized>true</Mechanized>
@@ -1820,7 +1818,6 @@
 			<Help>TXT_KEY_UNIT_FW_VERTOL_HELP</Help>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_CYBERNETICS</ObsoleteTech>
 			<Pillage>true</Pillage>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<AdvancedStartCost>60</AdvancedStartCost>
@@ -2034,7 +2031,6 @@
 			<Strategy>TXT_KEY_UNIT_FW_UAV_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_FW_UAV_HELP</Help>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_IMPLANTS</ObsoleteTech>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<Mechanized>true</Mechanized>
 			<AdvancedStartCost>70</AdvancedStartCost>
