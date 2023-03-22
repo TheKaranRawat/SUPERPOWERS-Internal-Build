@@ -228,7 +228,7 @@
 		<Update>
 			<Where ResourceType="RESOURCE_DYE" YieldType="YIELD_GOLD"/>
 			<Set>
-				<Yield>3</Yield>
+				<Yield>2</Yield>
 			</Set>
 		</Update>
 		<Row>
