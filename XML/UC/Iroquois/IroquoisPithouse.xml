@@ -63,6 +63,11 @@
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_PIT_HOUSE</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
 	</Building_YieldChanges>
 	<Building_YieldModifiers>
 		<Row>
