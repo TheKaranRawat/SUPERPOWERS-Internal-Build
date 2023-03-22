@@ -77,7 +77,7 @@
 				A [COLOR_SELECTED_TEXT]Village[ENDCOLOR] is a small settlement. It is sparsely populated, and has weak defences.
 				[NEWLINE]
 				[NEWLINE][ICON_BULLET]Citizens [ICON_WORKER]Working Range of this city: 3 Tiles
-				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] 6 [ICON_RES_MANPOWER]Manpower
+				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] additional 5 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 3 [ICON_RES_ELECTRICITY]Electricity
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 3 [ICON_RES_CONSUMER]Consumer Goods
 				[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]Minimal Traffic and Pollution Problems[ENDCOLOR]
@@ -95,7 +95,7 @@
 				A [COLOR_SELECTED_TEXT]Town[ENDCOLOR] is a compactly settled area usually larger than a village but smaller than a city. The foundations of industry and culture are laid as the settlement expands.
 				[NEWLINE]
 				[NEWLINE][ICON_BULLET]Citizens [ICON_WORKER]Working Range of this city: 4 Tiles
-				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] 6 [ICON_RES_MANPOWER]Manpower
+				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] additional 5 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 6 [ICON_RES_ELECTRICITY]Electricity
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 6 [ICON_RES_CONSUMER]Consumer Goods
 				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Traffic and Pollution[ENDCOLOR] cause 2 [ICON_HAPPINESS_4]Unhappiness
@@ -113,7 +113,7 @@
 				A [COLOR_SELECTED_TEXT]City[ENDCOLOR] is a permanent and densely settled location, with administratively defined boundaries whose members work primarily on non-agricultural tasks. They serve as centers of Industry, Culture and Science.
 				[NEWLINE]
 				[NEWLINE][ICON_BULLET]Citizens [ICON_WORKER]Working Range of this city: 4 Tiles
-				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] 15 [ICON_RES_MANPOWER]Manpower
+				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] additional 15 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 12 [ICON_RES_ELECTRICITY]Electricity
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 12 [ICON_RES_CONSUMER]Consumer Goods
 				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Traffic and Pollution[ENDCOLOR] cause 4 [ICON_HAPPINESS_4]Unhappiness
@@ -131,7 +131,7 @@
 				A [COLOR_SELECTED_TEXT]Municipality[ENDCOLOR] is a large administrative division having corporate status and powers of self-government or jurisdiction as granted by national and regional laws to which it is subordinate. Development is heavily concentrated, and lays the groundwork for even more growth potential.
 				[NEWLINE]
 				[NEWLINE][ICON_BULLET]Citizens [ICON_WORKER]Working Range of this city: 4 Tiles
-				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] 26 [ICON_RES_MANPOWER]Manpower
+				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] additional 15 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 25 [ICON_RES_ELECTRICITY]Electricity
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 25 [ICON_RES_CONSUMER]Consumer Goods
 				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Traffic and Pollution[ENDCOLOR] cause 8 [ICON_HAPPINESS_4]Unhappiness
@@ -150,7 +150,7 @@
 				A [COLOR_SELECTED_TEXT]Metropolis[ENDCOLOR] is an urban region, which is a significant economic, political, and cultural center for a country or region, and an important hub for regional or international connections, commerce, and communications. With one foot in the past and one foot in the future, Metropolises are a symbol of human endurance and progress.
 				[NEWLINE]
 				[NEWLINE][ICON_BULLET]Citizens [ICON_WORKER]Working Range of this city: 5 Tiles
-				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] 40 [ICON_RES_MANPOWER]Manpower
+				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] additional 20 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 50 [ICON_RES_ELECTRICITY]Electricity
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 50 [ICON_RES_CONSUMER]Consumer Goods
 				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Traffic and Pollution[ENDCOLOR] cause 16 [ICON_HAPPINESS_4]Unhappiness
@@ -170,7 +170,7 @@
 				A [COLOR_SELECTED_TEXT]Megapolis[ENDCOLOR] is a thickly populated region centering in a metropolis or embracing several Metropolises. As multiple Metropolises merge into one, the resonance effect of dense population leads to exponentially more productive urban regions. The population of entire countries may inhabit such regions, rising crime and stratification of society leads to massive wealth inequality if not actively prevented.
 				[NEWLINE]
 				[NEWLINE][ICON_BULLET]Citizens [ICON_WORKER]Working Range of this city: 5 Tiles
-				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] 60 [ICON_RES_MANPOWER]Manpower
+				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] additional 20 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 75 [ICON_RES_ELECTRICITY]Electricity
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 75 [ICON_RES_CONSUMER]Consumer Goods
 				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Traffic and Pollution[ENDCOLOR] cause 32 [ICON_HAPPINESS_4]Unhappiness
@@ -191,7 +191,7 @@
 				A [COLOR_SELECTED_TEXT]Gigapolis[ENDCOLOR] is an amalgamation of Urban regions, combining the populations of many multiple settlements that rival the population of subcontinents. Urban dwellings reach kilometers into the sky, as sunlight becomes a luxury commodity in this dystopian construct. Arms and Limbs slave away in the underground Megafactories, and it is said a Gigapolis can manufacture more goods than entire Nation-States of past.
 				[NEWLINE]
 				[NEWLINE][ICON_BULLET]Citizens [ICON_WORKER]Working Range of this city: 5 Tiles
-				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] 80 [ICON_RES_MANPOWER]Manpower
+				[NEWLINE][ICON_BULLET][COLOR_FONT_GREEN]Provides[ENDCOLOR] additional 40 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 120 [ICON_RES_ELECTRICITY]Electricity
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Consumes[ENDCOLOR] 120 [ICON_RES_CONSUMER]Consumer Goods
 				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]Traffic and Pollution[ENDCOLOR] cause 64 [ICON_HAPPINESS_4]Unhappiness
