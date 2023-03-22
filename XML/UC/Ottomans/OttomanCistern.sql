@@ -67,12 +67,12 @@ SELECT 'BUILDING_5UC_CISTERN', ResourceType, YieldType, Yield
 FROM Building_ResourceYieldChanges  WHERE BuildingType = 'BUILDING_AQUEDUCT';
 
 ------------------------------	
--- Building_FeatureYieldChanges
+-- Building_TerrainYieldChanges
 ------------------------------
---INSERT INTO Building_FeatureYieldChanges 	
---			(BuildingType, FeatureType, YieldType, Yield)
---SELECT 'BUILDING_5UC_CISTERN', FeatureType, YieldType, Yield
---FROM Building_FeatureYieldChanges WHERE BuildingType = 'BUILDING_AQUEDUCT';
+INSERT INTO Building_YieldModifiers 	
+			(BuildingType, TerrainType, YieldType, Yield)
+VALUES ('BUILDING_5UC_CISTERN', 'TERRAIN_COAST','YIELD_PRODUCTION', 2);
+
 
 --------------------------------	
 -- Civilization_BuildingClassOverrides 
