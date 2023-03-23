@@ -7,7 +7,7 @@
 			<Type>UNIT_HARD_MOBILE_LAUNCHER</Type>
 			<PrereqTech>TECH_COMPUTERS</PrereqTech>
 			<Combat>5</Combat>
-			<Cost>275</Cost>
+			<Cost>1000</Cost>
 			<Moves>2</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -74,7 +74,7 @@
 	<Unit_FreePromotions>
 		<Row>
 			<UnitType>UNIT_HARD_MOBILE_LAUNCHER</UnitType>
-			<PromotionType>PROMOTION_CARGO_II</PromotionType>
+			<PromotionType>PROMOTION_CARGO_I</PromotionType>
 		</Row>
 	</Unit_FreePromotions>
 </GameData>

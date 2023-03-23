@@ -2134,8 +2134,8 @@
 			<Class>UNITCLASS_FW_HYPERMISSILE</Class>
 			<Type>UNIT_FW_HYPERMISSILE</Type>
 			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
-			<RangedCombat>150</RangedCombat>
-			<Cost>200</Cost>
+			<RangedCombat>1200</RangedCombat>
+			<Cost>800</Cost>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
