@@ -84,7 +84,7 @@
 			<Text>[ICON_BULLET]Every 50 [ICON_PRODUCTION]Production output in a city offer additional +10 [ICON_CULTURE]Culture and +10 [ICON_RESEARCH]Science output. 
 				[NEWLINE][ICON_BULLET]Generate [ICON_WAR]Great Generals 20% faster.
 				[NEWLINE][ICON_WAR][ICON_PRODUCTION]Military Production is increased by 30% 
-				[NEWLINE][ICON_BULLET]Land Unit [ICON_GOLD]Maintenance is decreased by 25% and gain a free Courthouse and Autobahn in conquered cities, after researching Industrialization.
+				[NEWLINE][ICON_BULLET]Land Unit [ICON_GOLD]Maintenance is decreased by 25% and gain a free Autobahn in Conquered [ICON_CITY_STATE]Cities, after researching Industrialization.
 			</Text>
 		</Replace>
 
