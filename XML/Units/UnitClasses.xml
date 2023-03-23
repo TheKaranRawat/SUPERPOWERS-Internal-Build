@@ -841,6 +841,14 @@
 			<DefaultUnit>UNIT_SPARTAN300</DefaultUnit>
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
+
+		<Row>
+			<Type>UNITCLASS_TDF</Type>
+			<Description>TXT_KEY_UNIT_TDF</Description>
+			<DefaultUnit>UNIT_TDF</DefaultUnit>
+			<MaxPlayerInstances>5</MaxPlayerInstances>
+		</Row>
+
 		<Row>
 			<Type>UNITCLASS_NUMIDIAN</Type>
 			<Description>TXT_KEY_UNIT_NUMIDIAN</Description>

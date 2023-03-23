@@ -1406,6 +1406,45 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="AC41C06BA721315512F26433220FEDF7" import="1">XML/Units/Uniques/Art/no_gloss_16x16.dds</File>
     <File md5="F861DA96D9342C190CFF5454056439B0" import="1">XML/Units/Uniques/Art/sv_covert_operative.dds</File>
 	
+	<File md5="10FBE81A38F4D40FBB262AA7848681E8" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_Attack.gr2</File>
+    <File md5="82C1973B3CED9ACEFFFE2C2003A603D4" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_Bombard_Defense.gr2</File>
+    <File md5="4E5C1205401B54CBE76140F440D3200D" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_DeathA.gr2</File>
+    <File md5="5D434BEDA164FA4674D624BBD5D5D2A1" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_DeathA_Idle.gr2</File>
+    <File md5="90EEA8E512E8E0B848BD323FE8A99780" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_DeathB.gr2</File>
+    <File md5="0208C41187615F90A266AB8AF44EFF0A" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_DeathB_Idle.gr2</File>
+    <File md5="17FA15D5AF19204D2FBDDBDF0BCD6313" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_Fidget.gr2</File>
+    <File md5="B63A001D59F2A07B413BB02898D2E656" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_Fortify.gr2</File>
+    <File md5="4DB8C1D2B17255833878519BA8CF4568" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_Fortify_Idle.gr2</File>
+    <File md5="A6DDF301AB9DFC99838E77EC71416A0C" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_Idle.gr2</File>
+    <File md5="DCB52786F02DF0FE8C8C64A68733041A" import="1">XML/Units/Uniques/Javelin/Art/Animations/ModernInfantry_Run.gr2</File>
+    <File md5="F68376737566DA3BD42F879185DBC14D" import="1">XML/Units/Uniques/Javelin/Art/Atlases/Alpha/SasZelenskyyAlpha_128.dds</File>
+    <File md5="A78A801BF078E8A474DF003D2D1F0223" import="1">XML/Units/Uniques/Javelin/Art/Atlases/Alpha/SasZelenskyyAlpha_16.dds</File>
+    <File md5="BC82853955A5875522F064432DD145FA" import="1">XML/Units/Uniques/Javelin/Art/Atlases/Alpha/SasZelenskyyAlpha_24.dds</File>
+    <File md5="46A64CEEB561F38133B8B71BFB7F435D" import="1">XML/Units/Uniques/Javelin/Art/Atlases/Alpha/SasZelenskyyAlpha_32.dds</File>
+    <File md5="BE6BDC3044B08D5CF12C8E2E7CDAAB91" import="1">XML/Units/Uniques/Javelin/Art/Atlases/Alpha/SasZelenskyyAlpha_45.dds</File>
+    <File md5="8BA00ECDECDDB403184A1ED301B14B14" import="1">XML/Units/Uniques/Javelin/Art/Atlases/Alpha/SasZelenskyyAlpha_48.dds</File>
+    <File md5="A717B3AC3BFEA0FC00729AF2FAA38A22" import="1">XML/Units/Uniques/Javelin/Art/Atlases/Alpha/SasZelenskyyAlpha_64.dds</File>
+    <File md5="F595B016E138A3AAC099298A9BE71D86" import="1">XML/Units/Uniques/Javelin/Art/Atlases/Alpha/SasZelenskyyAlpha_80.dds</File>
+    <File md5="BAEF52495DE35130F16811488957F611" import="1">XML/Units/Uniques/Javelin/Art/Atlases/SasZelenskyyIcons128.dds</File>
+    <File md5="06726E48E72A2B0E22AAD240B545249F" import="1">XML/Units/Uniques/Javelin/Art/Atlases/SasZelenskyyIcons256.dds</File>
+    <File md5="75F1A1BE785CEF55C4A0F64D4FA2F286" import="1">XML/Units/Uniques/Javelin/Art/Atlases/SasZelenskyyIcons32.dds</File>
+    <File md5="7B2812DB24DE929DFF882E87377880AC" import="1">XML/Units/Uniques/Javelin/Art/Atlases/SasZelenskyyIcons45.dds</File>
+    <File md5="15F21DEDA2E9A022DA6FCC4EDAAFE6C2" import="1">XML/Units/Uniques/Javelin/Art/Atlases/SasZelenskyyIcons64.dds</File>
+    <File md5="3A08CDC2DC3CED19F027F9D49503EBF2" import="1">XML/Units/Uniques/Javelin/Art/Atlases/SasZelenskyyIcons80.dds</File>
+    <File md5="5B8FBDD532486EB60ECB727286CA7706" import="1">XML/Units/Uniques/Javelin/Art/Models/fx_triggers_moderninfantry.ftsxml</File>
+    <File md5="458CF0C006CF198398599FA1069AB818" import="1">XML/Units/Uniques/Javelin/Art/Models/m16a2.dds</File>
+    <File md5="B63F5E307940C392AD9A3408D3099529" import="1">XML/Units/Uniques/Javelin/Art/Models/ModernInfantry.fxsxml</File>
+    <File md5="4E52C2C2B47EE50A1E6D95A0F54AFB27" import="1">XML/Units/Uniques/Javelin/Art/Models/Modern_Infantry.gr2</File>
+    <File md5="77D8BB39EF6823F8E001FAA19E8953F7" import="1">XML/Units/Uniques/Javelin/Art/Models/uscw_7.dds</File>
+    <File md5="C4A4981787C91DD1E80F9654EB6C8604" import="1">XML/Units/Uniques/Javelin/Art/SasTDFFlag.dds</File>
+    <File md5="94E8ED4FC993CA718D2D35666D3E02F5" import="1">XML/Units/Uniques/Javelin/Art/SasZelenskyy412.dds</File>
+    <File md5="E79A37AA9231A70AA550C583E4593934" import="1">XML/Units/Uniques/Javelin/Art/Sas_Zelenskyy_DOM.dds</File>
+    <File md5="5589E956E0343B2B6E924C57682E291C" import="1">XML/Units/Uniques/Javelin/Art/Sas_Zelenskyy_Scene.dds</File>
+    <File md5="588C38E335B1C8FF16DC3ACC5CE33740" import="1">XML/Units/Uniques/Javelin/Art/SV_Sas_TDF.dds</File>
+	
+	<File md5="D418F580A3D58747F6A7F1DD6A7E87F1" import="0">XML/Units/Uniques/Javelin/Core/ZelenskyyArtdefs.sql</File>
+	
+	<File md5="D82BEBF56BEEA4AA44316C69F6189048" import="0">XML/Units/Uniques/Javelin/Core/ZelenskyyText.xml</File>
 	
     <File md5="F95FABEFBB406F39C31C439BAA512D46" import="0">Lua/AI/NewHandicap.lua</File>
     <File md5="9524ED42A6CDF8B019B030C840AB7EDD" import="0">Lua/Combat/NewUnitsRules.lua</File>
@@ -4276,6 +4315,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/Units/Uniques/TacticalNuke/Units/CIV5Units_HardMobileLauncher.xml</UpdateDatabase>
       <UpdateDatabase>XML/Units/Uniques/TacticalNuke/Units/CIV5Units_TacticalNuclearMissile.xml</UpdateDatabase>
       <UpdateDatabase>XML/Units/Uniques/TacticalNuke/GameInfo/CIV5IconTextureAtlases.xml</UpdateDatabase>
+	  
+	  <UpdateDatabase>XML/Units/Uniques/Javelin/Core/ZelenskyyArtdefs.sql</UpdateDatabase>
+      
+      <UpdateDatabase>XML/Units/Uniques/Javelin/Core/ZelenskyyModSupport.sql</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/Javelin/Core/ZelenskyyText.xml</UpdateDatabase>
     </OnModActivated>	
   </Actions>
   
