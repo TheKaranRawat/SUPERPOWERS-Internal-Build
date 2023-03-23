@@ -1739,8 +1739,6 @@
 			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
 			<Combat>180</Combat>
 			<Cost>2000</Cost>
-			<FaithCost>1100</FaithCost>
-			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>5</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
@@ -2483,8 +2481,6 @@
 			<PrereqTech>TECH_AI</PrereqTech>
 			<Combat>150</Combat>
 			<Cost>1000</Cost>
-			<FaithCost>1000</FaithCost>
-			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
