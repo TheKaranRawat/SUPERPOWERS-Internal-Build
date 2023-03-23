@@ -3666,6 +3666,12 @@
 			<UnitType>UNIT_SSBN</UnitType>
 			<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_SSBN</UnitType>
+			<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
+		</Row>
+		
 	</Unit_AITypes>
 
 	

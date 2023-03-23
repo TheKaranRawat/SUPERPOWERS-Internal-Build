@@ -4819,10 +4819,7 @@
 			<UnitType>UNIT_FW_CRAWLER</UnitType>
 			<UnitAIType>UNITAI_EXPLORE</UnitAIType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_CRAWLER</UnitType>
-			<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
-		</Row>
+		
 
 		<!--
 		<Row>
