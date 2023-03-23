@@ -658,6 +658,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="5CF4D126B9129AF344DE56944063D12D" import="1">Art/IconAtlases/Units/SPUnits02Atlas45.dds</File>
     <File md5="5F33EBBAD47D378B8236E56A8A06F9F9" import="1">Art/IconAtlases/Units/SPUnits02Atlas64.dds</File>
     <File md5="C7A6C287CC2FA133BB092370408929F6" import="1">Art/IconAtlases/Units/SPUnits02Atlas80.dds</File>
+	
+	<File md5="C7A6C287CC2FA133BB092370408929F6" import="1">Art/IconAtlases/Units/UnitAlphaITGExtra1Atlas.dds</File>
+	<File md5="C7A6C287CC2FA133BB092370408929F6" import="1">Art/IconAtlases/Units/UnitAlphaITGExtra2Atlas.dds</File>
+	
+	
     <File md5="D82BD43B7145904B058A96D3C1EB2377" import="1">Art/Images/Aswan_splash.dds</File>
     <File md5="D9F06CC2E6A1CE49CCA5D6E459C7B75C" import="1">Art/Images/Bauhaus_splash.dds</File>
     <File md5="45015263B41AD4A898344900CD1E68E5" import="1">Art/Images/BurjTower_splash.dds</File>
@@ -3628,6 +3633,27 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	<!-- JFD BUILDING 
 	<File md5="3C18B4C1A72209CBD894F173FCB1D26F" import="0">SQL/JFD_BuildingClassesNeededInCityOR.sql</File>
 	-->
+	<File md5="9C714992E7224B22C9E1919D5BBF0E24" import="1">XML/Units/Uniques/TacticalNuke/Art/HardMobileLauncher128.dds</File>
+    <File md5="C54F804EA096CA9CAF8DC1E6715EC73B" import="1">XML/Units/Uniques/TacticalNuke/Art/HardMobileLauncher256.dds</File>
+    <File md5="1699F49DD4A1E6C282D6B08C3FC1223B" import="1">XML/Units/Uniques/TacticalNuke/Art/HardMobileLauncher45.dds</File>
+    <File md5="F298F236AD267C4B71B85AABB825AB9C" import="1">XML/Units/Uniques/TacticalNuke/Art/HardMobileLauncher64.dds</File>
+    <File md5="A535D859C96A011968F19B8B70A1BF33" import="1">XML/Units/Uniques/TacticalNuke/Art/HardMobileLauncher80.dds</File>
+    <File md5="16909F358E1279150DDA441AC674CCFB" import="1">XML/Units/Uniques/TacticalNuke/Art/TacticalNuclearMissile128.dds</File>
+    <File md5="BB399BE4865EAA5A2E7AB6498D6B5629" import="1">XML/Units/Uniques/TacticalNuke/Art/TacticalNuclearMissile256.dds</File>
+    <File md5="C038E69674C4A885A1AE76BEDFAD92E9" import="1">XML/Units/Uniques/TacticalNuke/Art/TacticalNuclearMissile45.dds</File>
+    <File md5="7C2F924E212DB0717471A02B5D60D4D8" import="1">XML/Units/Uniques/TacticalNuke/Art/TacticalNuclearMissile64.dds</File>
+    <File md5="161790A6EFCC6BE0362F30A981606F69" import="1">XML/Units/Uniques/TacticalNuke/Art/TacticalNuclearMissile80.dds</File>
+    <File md5="AAEEBF231F621BE845A10050DB47C83B" import="1">XML/Units/Uniques/TacticalNuke/GameInfo/CIV5IconTextureAtlases.xml</File>
+    <File md5="84CE51CEF26D921B68C8AE81AC9EE04A" import="0">XML/Units/Uniques/TacticalNuke/NewText/en_US/GameTextInfo_Civilopedia.xml</File>
+    <File md5="A8D6F10E0598C6EC7F7D9EB81286560F" import="0">XML/Units/Uniques/TacticalNuke/NewText/en_US/GameTextInfo_HardMobileLauncher.xml</File>
+    <File md5="5774F867521073D8FC2406A2B367941C" import="0">XML/Units/Uniques/TacticalNuke/NewText/en_US/GameTextInfo_TacticalNuclearMissile.xml</File>
+    <File md5="7619B7C44633060AD181A4B72C92A788" import="0">XML/Units/Uniques/TacticalNuke/Units/CIV5SpecialUnits_HardMobileLauncher.xml</File>
+    <File md5="186B22C4D5D1695EB81501F3A4DF228B" import="0">XML/Units/Uniques/TacticalNuke/Units/CIV5SpecialUnits_TacticalNuclearMissile.xml</File>
+    <File md5="61A9567A44D85B778D3F0D79C729A638" import="0">XML/Units/Uniques/TacticalNuke/Units/CIV5UnitClasses_HardMobileLauncher.xml</File>
+    <File md5="F63A86200527E8E71673E5CE854670B4" import="0">XML/Units/Uniques/TacticalNuke/Units/CIV5UnitClasses_TacticalNuclearMissile.xml</File>
+    <File md5="F34896F69F256DC8D3BFA933FF032E0B" import="0">XML/Units/Uniques/TacticalNuke/Units/CIV5UnitsExcludes.xml</File>
+    <File md5="3C9543AD442542EF2DC1B85797721588" import="0">XML/Units/Uniques/TacticalNuke/Units/CIV5Units_TacticalNuclearMissile.xml</File>
+    <File md5="1CCB17DB09C37EA93E99247E16AF4D4B" import="0">XML/Units/Uniques/TacticalNuke/Units/CIV5Units_HardMobileLauncher.xml</File>
 	
 	
 	
@@ -4239,6 +4265,17 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_en_US.xml</UpdateDatabase>
       <UpdateDatabase>Modules/Greatest Cities (v 11)/Localization/TopCities_DE_DE.xml</UpdateDatabase>
 	  
+	  <UpdateDatabase>XML/Units/Uniques/TacticalNuke/NewText/en_US/GameTextInfo_Civilopedia.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/NewText/en_US/GameTextInfo_TacticalNuclearMissile.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/NewText/en_US/GameTextInfo_HardMobileLauncher.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/Units/CIV5SpecialUnits_HardMobileLauncher.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/Units/CIV5SpecialUnits_TacticalNuclearMissile.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/Units/CIV5UnitClasses_HardMobileLauncher.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/Units/CIV5UnitClasses_TacticalNuclearMissile.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/Units/CIV5UnitsExcludes.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/Units/CIV5Units_HardMobileLauncher.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/Units/CIV5Units_TacticalNuclearMissile.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/TacticalNuke/GameInfo/CIV5IconTextureAtlases.xml</UpdateDatabase>
     </OnModActivated>	
   </Actions>
   

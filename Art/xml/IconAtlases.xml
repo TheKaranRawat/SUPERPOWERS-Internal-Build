@@ -25,6 +25,22 @@
 		-->
 
 		<Row>
+			<Atlas>UNIT_FLAG_ITG_EXTRA_1_ATLAS</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>UnitAlphaITGExtra1Atlas.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>5</IconsPerColumn>
+		</Row>
+
+		<Row>
+			<Atlas>UNIT_FLAG_ITG_EXTRA_2_ATLAS</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>UnitAlphaITGExtra2Atlas.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>5</IconsPerColumn>
+		</Row>
+
+		<Row>
 			<Atlas>DLC03_TERRAIN_ATLAS</Atlas>
 			<IconSize>128</IconSize>
 			<Filename>Art/Buildings/TerrainIcons256_DLC_032.dds</Filename>
