@@ -118,7 +118,7 @@
 			<PortraitIndex>57</PortraitIndex>
 			<Happiness>-4</Happiness>
 			<PolicyCostModifier>10</PolicyCostModifier>
-			<UnhappinessModifier>3</UnhappinessModifier>
+			<UnhappinessModifier>1</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_HALL_LV3</Type>
@@ -137,7 +137,7 @@
 			<PortraitIndex>58</PortraitIndex>
 			<Happiness>-6</Happiness>
 			<PolicyCostModifier>20</PolicyCostModifier>
-			<UnhappinessModifier>4</UnhappinessModifier>
+			<UnhappinessModifier>1</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_HALL_LV4</Type>
@@ -156,7 +156,7 @@
 			<PortraitIndex>59</PortraitIndex>
 			<Happiness>-8</Happiness>
 			<PolicyCostModifier>33</PolicyCostModifier>
-			<UnhappinessModifier>5</UnhappinessModifier>
+			<UnhappinessModifier>2</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_HALL_LV5</Type>
@@ -175,7 +175,7 @@
 			<PortraitIndex>60</PortraitIndex>
 			<Happiness>-10</Happiness>
 			<PolicyCostModifier>33</PolicyCostModifier>
-			<UnhappinessModifier>6</UnhappinessModifier>
+			<UnhappinessModifier>3</UnhappinessModifier>
 		</Row>
 
 		<Row>
@@ -254,52 +254,6 @@
 			<PolicyCostModifier>-10</PolicyCostModifier>
 			<UnhappinessModifier>-1</UnhappinessModifier>
 		</Row>
-<<<<<<< HEAD
-
-		<Row>
-			<Type>BUILDING_RUSSIAN_GUBERNIA_2</Type>
-			<BuildingClass>BUILDINGCLASS_CONSTABLE</BuildingClass>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>			
-			<Cost>320</Cost>
-			<GoldMaintenance>6</GoldMaintenance>
-			<PrereqTech>TECH_ADMINISTRATION</PrereqTech>
-			<Help>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2_HELP</Help>
-			<Description>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2</Description>
-			<Civilopedia>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_COURTHOUSE_STRATEGY</Strategy>
-			<MinAreaSize>-1</MinAreaSize>
-			<NeverCapture>true</NeverCapture>
-			<HurryCostModifier>15</HurryCostModifier>
-			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>12</PortraitIndex>
-			<Happiness>-2</Happiness>			
-			<PolicyCostModifier>-10</PolicyCostModifier>
-			<UnhappinessModifier>-1</UnhappinessModifier>
-			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>
-		</Row>		
-
-		<Row>
-			<Type>BUILDING_ENG_COLONIAL_OFFICE_1</Type>
-			<BuildingClass>BUILDINGCLASS_CONSTABLE</BuildingClass>
-			<Cost>250</Cost>
-			<GoldMaintenance>10</GoldMaintenance>
-			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>			
-			<Description>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_1</Description>
-			<Civilopedia>TXT_KEY_CIV5_ENG_BUILDINGS_COLONIAL_OFFICE_1_TEXT</Civilopedia>
-			<Help>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_1_HELP</Help>
-			<Strategy>TXT_KEY_BUILDING_COURTHOUSE_STRATEGY</Strategy>
-			<ArtDefineTag>COLESSEUM</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<HurryCostModifier>50</HurryCostModifier>
-			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>12</PortraitIndex>
-			<Happiness>-5</Happiness>
-			<NeverCapture>true</NeverCapture>
-			<PolicyCostModifier>-10</PolicyCostModifier>
-		</Row>		
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 		
 		<Row>
 			<Type>BUILDING_SHERIFF_OFFICE</Type>
@@ -319,27 +273,6 @@
 			<PolicyCostModifier>-5</PolicyCostModifier>
 			<UnhappinessModifier>-1</UnhappinessModifier>
 		</Row>
-		<Row>
-			<Type>BUILDING_ENG_COLONIAL_OFFICE_2</Type>
-			<BuildingClass>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClass>
-			<Cost>250</Cost>
-			<GoldMaintenance>10</GoldMaintenance>
-			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>			
-			<Description>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_2</Description>
-			<Civilopedia>TXT_KEY_CIV5_ENG_BUILDINGS_COLONIAL_OFFICE_2_TEXT</Civilopedia>
-			<Help>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_2_HELP</Help>
-			<Strategy>TXT_KEY_SP_ANTI_CORRUPTION_BUILDINGS_STRATEGY</Strategy>
-			<ArtDefineTag>COLESSEUM</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<HurryCostModifier>50</HurryCostModifier>
-			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
-			<PortraitIndex>49</PortraitIndex>
-			<Happiness>-5</Happiness>
-			<NeverCapture>true</NeverCapture>
-			<PolicyCostModifier>-10</PolicyCostModifier>
-		</Row>		
-
 		<Row>
 			<Type>BUILDING_POLICE_STATION</Type>
 			<BuildingClass>BUILDINGCLASS_POLICE_STATION</BuildingClass>
@@ -361,52 +294,6 @@
 		</Row>
 
 		<Row>
-<<<<<<< HEAD
-			<Type>BUILDING_RUSSIAN_GUBERNIA_4</Type>
-			<BuildingClass>BUILDINGCLASS_POLICE_STATION</BuildingClass>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>			
-			<Cost>320</Cost>
-			<GoldMaintenance>6</GoldMaintenance>
-			<PrereqTech>TECH_ADMINISTRATION</PrereqTech>
-			<Help>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4_HELP</Help>
-			<Description>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4</Description>
-			<Civilopedia>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_SP_ANTI_CORRUPTION_BUILDINGS_STRATEGY</Strategy>
-			<MinAreaSize>-1</MinAreaSize>
-			<NeverCapture>true</NeverCapture>
-			<HurryCostModifier>15</HurryCostModifier>
-			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>11</PortraitIndex>
-			<Happiness>-2</Happiness>			
-			<PolicyCostModifier>-18</PolicyCostModifier>
-			<UnhappinessModifier>-2</UnhappinessModifier>
-			<CityCountUnhappinessMod>-3</CityCountUnhappinessMod>			
-		</Row>		
-
-		<Row>
-			<Type>BUILDING_ENG_COLONIAL_OFFICE_3</Type>
-			<BuildingClass>BUILDINGCLASS_POLICE_STATION</BuildingClass>
-			<Cost>320</Cost>
-			<GoldMaintenance>10</GoldMaintenance>
-			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>			
-			<Description>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_3</Description>
-			<Civilopedia>TXT_KEY_CIV5_ENG_BUILDINGS_COLONIAL_OFFICE_3_TEXT</Civilopedia>
-			<Help>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_3_HELP</Help>
-			<Strategy>TXT_KEY_SP_ANTI_CORRUPTION_BUILDINGS_3_STRATEGY</Strategy>
-			<ArtDefineTag>COLESSEUM</ArtDefineTag>
-			<MinAreaSize>-1</MinAreaSize>
-			<HurryCostModifier>50</HurryCostModifier>
-			<IconAtlas>EXPANSION_BW_ATLAS_1</IconAtlas>
-			<NeverCapture>true</NeverCapture>
-			<PortraitIndex>11</PortraitIndex>
-			<Happiness>-5</Happiness>			
-			<PolicyCostModifier>-25</PolicyCostModifier>
-		</Row>
-
-		<Row>
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 			<Type>BUILDING_PROCURATORATE</Type>
 			<BuildingClass>BUILDINGCLASS_PROCURATORATE</BuildingClass>
 			<Cost>480</Cost>
@@ -526,47 +413,14 @@
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
 			</Row>
 			<Row>
-<<<<<<< HEAD
-				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
-				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			</Row>			
-			<Row>
-				<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			</Row>			
-			<Row>
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 				<BuildingType>BUILDING_SHERIFF_OFFICE</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
 			</Row>
 			<Row>
-<<<<<<< HEAD
-				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
-				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
-			</Row>			
-			<Row>
-				<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
-			</Row>
-			<Row>
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 				<BuildingType>BUILDING_POLICE_STATION</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
 			</Row>
 			<Row>
-<<<<<<< HEAD
-				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
-				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
-			</Row>
-			<Row>
-				<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
-			</Row>						
-			<Row>
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 				<BuildingType>BUILDING_PROCURATORATE</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
 			</Row>
@@ -585,147 +439,23 @@
 			<Yield>-16</Yield>
 		</Row>
 		<Row>
-<<<<<<< HEAD
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-100</Yield>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
-		</Row>		
-		<Row>
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 			<BuildingType>BUILDING_SHERIFF_OFFICE</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-33</Yield>
 		</Row>
 		<Row>
-<<<<<<< HEAD
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
-		</Row>				
-		<Row>
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 			<BuildingType>BUILDING_POLICE_STATION</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-66</Yield>
 		</Row>
 		<Row>
-<<<<<<< HEAD
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
-		</Row>		
-		<Row>
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 			<BuildingType>BUILDING_PROCURATORATE</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-100</Yield>
 		</Row>
-<<<<<<< HEAD
-		<Row>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-100</Yield>
-		</Row>		
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 	</Building_YieldChangesPerPop>
 
-	<Building_YieldModifiers>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-35</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-35</Yield>
-		</Row>	
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-35</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-35</Yield>
-		</Row>				
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-100</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-35</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-35</Yield>
-		</Row>							
 
-	</Building_YieldModifiers>	
 
 
 
@@ -765,317 +495,9 @@
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
 			<Cost>18</Cost>
 		</Row>
-<<<<<<< HEAD
-
-		<Row>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
-			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
-			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
-			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
-			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
-		</Row>
-
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>8</Cost>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>8</Cost>
-		</Row>						
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>8</Cost>
-		</Row>
-=======
->>>>>>> parent of 9d28c42 (Russia Gubernia + less Unhappiness)
 	</Building_ResourceQuantityRequirements>
 
-	<Building_BuildingClassHappiness>
 
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-			<Happiness>2</Happiness>
-		</Row>				
 
-	</Building_BuildingClassHappiness>
-
-	<Building_BuildingClassYieldChanges>
-
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>					
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>				
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>					
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
-		</Row>					
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-10</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-5</YieldChange>
-		</Row>		
-
-	</Building_BuildingClassYieldChanges>
 
 	</GameData>
