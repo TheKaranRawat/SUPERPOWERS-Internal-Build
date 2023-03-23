@@ -324,6 +324,7 @@
 			<Type>TRAIT_GATEWAY_AFRICA</Type>
 			<Description>TXT_KEY_TRAIT_GATEWAY_AFRICA</Description>
 			<ShortDescription>TXT_KEY_TRAIT_GATEWAY_AFRICA_SHORT</ShortDescription>
+			<BonusReligiousBelief>1</BonusReligiousBelief> 
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -494,7 +495,7 @@
 			<Type>TRAIT_AHMAD_2</Type>
 			<Description>TXT_KEY_TRAIT_AHMAD_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_AHMAD_2</ShortDescription>
-			<BonusReligiousBelief>1</BonusReligiousBelief> 
+			
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 
 		</Row>
@@ -2286,23 +2287,23 @@
 
 	<Trait_YieldChangesPerTradePartner>
 		<Row>
-			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
+			<TraitType>TRAIT_AHMAD_2</TraitType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>15</Yield>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
+			<TraitType>TRAIT_AHMAD_2</TraitType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>15</Yield>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
+			<TraitType>TRAIT_AHMAD_2</TraitType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>15</Yield>
 		</Row>
 
 		<Row>
-			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
+			<TraitType>TRAIT_AHMAD_2</TraitType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>15</Yield>
 		</Row>
@@ -2356,7 +2357,7 @@
 		<Row>
 			<TraitType>TRAIT_GATEWAY_AFRICA</TraitType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>30</Yield>
+			<Yield>25</Yield>
 		</Row>
 
 		<Row>
@@ -2378,42 +2379,43 @@
 
 	<Trait_ImprovementYieldChanges>
 		<!--<Delete TraitType="TRAIT_SCHOLARS_JADE_HALL"/>-->
-		<!--<Row>
+
+		<Row>
 			<TraitType>TRAIT_SCHOLARS_JADE_HALL</TraitType>
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_SCHOLARS_JADE_HALL</TraitType>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_SCHOLARS_JADE_HALL</TraitType>
 			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_SCHOLARS_JADE_HALL</TraitType>
 			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_SCHOLARS_JADE_HALL</TraitType>
 			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_SCHOLARS_JADE_HALL</TraitType>
 			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>-->
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>4</Yield>
+		</Row>
 
 
 		<Row>
