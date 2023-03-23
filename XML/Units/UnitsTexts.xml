@@ -4344,6 +4344,14 @@
 		<Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE_HELP">
 			<Text>Immnue to [COLOR_POSITIVE_TEXT]Nuclear Attacks[ENDCOLOR].</Text>
 		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_FRENCH_ARTY">
+			<Text>The Gribeauval System</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_FRENCH_ARTY_HELP">
+			<Text>+2 [ICON_MOVES] Movement and +2 [ICON_STRENGTH] Attacks for French Artillery Units</Text>
+		</Row>
 		
 
 

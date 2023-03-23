@@ -4751,6 +4751,22 @@
 	
 	<!--*****************************Civlization UA Promotions*******************************************-->
 	<UnitPromotions>
+		
+		<Row>
+			<Type>PROMOTION_FRENCH_ARTY</Type>
+			<Description>TXT_KEY_PROMOTION_FRENCH_ARTY</Description>
+			<Help>TXT_KEY_PROMOTION_FRENCH_ARTY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>23</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_RESTLESSNESS</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+			<MovesChange>2</MovesChange>
+			<ExtraAttacks>2</ExtraAttacks>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+		</Row>
+
 		<Row>
 			<Type>PROMOTION_HEAVY_PAYLOAD</Type>
 			<Description>TXT_KEY_PROMOTION_HEAVY_PAYLOAD</Description>
@@ -5247,6 +5263,7 @@
 			<ExtraAttacks>1</ExtraAttacks>
 			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
 		</Row>
+
 		<Row>
 			<Type>PROMOTION_RECRUITMENT</Type>
 			<Description>TXT_KEY_PROMOTION_RECRUITMENT</Description>

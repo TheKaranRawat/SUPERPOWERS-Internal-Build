@@ -13,9 +13,9 @@
 			<Type>TRAIT_ART_OF_WAR</Type>
 			<Description>TXT_KEY_TRAIT_ART_OF_WAR</Description>
 			<ShortDescription>TXT_KEY_TRAIT_ART_OF_WAR_SHORT</ShortDescription>
-			<NumTradeRoutesModifier>40</NumTradeRoutesModifier> 
-			<LandUnitMaintenanceModifier>-10</LandUnitMaintenanceModifier> 
+			<LandUnitMaintenanceModifier>-15</LandUnitMaintenanceModifier> 
 			<!--<GreatGeneralRateModifier>50</GreatGeneralRateModifier>-->
+			<FreeBuilding>BUILDING_TB_TRAIT_WU_2</FreeBuilding>
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		
@@ -23,8 +23,9 @@
 			<Type>TRAIT_RIVER_EXPANSION</Type>
 			<Description>TXT_KEY_TRAIT_RIVER_EXPANSION</Description>
 			<ShortDescription>TXT_KEY_TRAIT_RIVER_EXPANSION_SHORT</ShortDescription>
-			<CityCultureBonus>12</CityCultureBonus>
-			<NavalUnitMaintenanceModifier>-20</NavalUnitMaintenanceModifier> 
+			<CityCultureBonus>10</CityCultureBonus>
+			<FreeBuilding>BUILDING_TB_TRAIT_WASHINGTON_2</FreeBuilding>
+
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -32,7 +33,8 @@
 			<Description>TXT_KEY_TRAIT_STRATEGIC_RICHES</Description>
 			<ShortDescription>TXT_KEY_TRAIT_STRATEGIC_RICHES_SHORT</ShortDescription>
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
-			<LandUnitMaintenanceModifier>-10</LandUnitMaintenanceModifier>
+
+			<FreeBuilding>BUILDING_TB_TRAIT_CATHERINE_2</FreeBuilding> 
 			<FreeBuilding>BUILDING_TB_STRATEGIC_RICHES</FreeBuilding>
 		</Row>
 		<Row>
@@ -40,8 +42,12 @@
 			<Description>TXT_KEY_TRAIT_OCEAN_MOVEMENT</Description>
 			<ShortDescription>TXT_KEY_TRAIT_OCEAN_MOVEMENT_SHORT</ShortDescription>
 			<!--<ExtraSpies>1</ExtraSpies>-->
+			
+			<FreeBuilding>BUILDING_TB_TRAIT_ELIZABETH_2</FreeBuilding> 
+
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
+
 		<Row>
 			<Type>TRAIT_ENHANCED_CULTURE</Type>
 			<Description>TXT_KEY_TRAIT_ENHANCED_CULTURE</Description>
@@ -50,7 +56,9 @@
 			<LevelExperienceModifier>50</LevelExperienceModifier> 
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 			<FreeBuilding>BUILDING_TB_ENHANCED_CULTURE</FreeBuilding>
+			
 		</Row>
+
 		<Row>
 			<Type>TRAIT_CONVERTS_LAND_BARBARIANS</Type>
 			<Description>TXT_KEY_TRAIT_CONVERTS_LAND_BARBARIANS</Description>
@@ -58,6 +66,7 @@
 			<GreatGeneralRateModifier>20</GreatGeneralRateModifier> 			
 			<!--<FreeSocialPoliciesPerEra>1</FreeSocialPoliciesPerEra>-->
 			<!--<PrereqTech>TECH_EDUCATION</PrereqTech>-->
+			<FreeBuilding>BUILDING_TB_TRAIT_BISMARCK_2</FreeBuilding> 
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -110,8 +119,8 @@
 			<Description>TXT_KEY_TRAIT_FIGHT_WELL_DAMAGED</Description>
 			<ShortDescription>TXT_KEY_TRAIT_FIGHT_WELL_DAMAGED_SHORT</ShortDescription>
 			<FightWellDamaged>true</FightWellDamaged>
-			<LandUnitMaintenanceModifier>-10</LandUnitMaintenanceModifier> 
-			<NavalUnitMaintenanceModifier>-10</NavalUnitMaintenanceModifier> 
+			
+			<FreeBuilding>BUILDING_TB_TRAIT_ODA_2</FreeBuilding>  
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -204,8 +213,9 @@
 			<ShortDescription>TXT_KEY_TRAIT_POPULATION_GROWTH_SHORT</ShortDescription>
 			<!--<CityUnhappinessModifier>100</CityUnhappinessModifier>-->
 			<PopulationUnhappinessModifier>-30</PopulationUnhappinessModifier>
-			<PolicyCostModifier>-15</PolicyCostModifier> 
+			
 			<CapitalBuildingModifier>25</CapitalBuildingModifier>
+			<FreeBuilding>BUILDING_TB_TRAIT_GANDHI_2</FreeBuilding>
 			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
 		</Row>
 		<Row>
@@ -532,7 +542,9 @@
 			<Description>TXT_KEY_TRAIT_AUGUSTUS_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_AUGUSTUS_2</ShortDescription>
 			<NavalUnitMaintenanceModifier>25</NavalUnitMaintenanceModifier>
+			<!--
 			<FreeBuilding>BUILDING_TB_TRAIT_AUGUSTUS_2</FreeBuilding> 
+			-->
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -541,8 +553,11 @@
 			<Type>TRAIT_BISMARCK_2</Type>
 			<Description>TXT_KEY_TRAIT_BISMARCK_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_BISMARCK_2</ShortDescription>
+
 			<LandUnitMaintenanceModifier>25</LandUnitMaintenanceModifier>
-			<FreeBuilding>BUILDING_TB_TRAIT_BISMARCK_2</FreeBuilding> 
+			<FreeBuildingOnConquest>BUILDING_GERMAN_AUTOBAHN</FreeBuildingOnConquest>
+			<FreeBuildingOnConquest>BUILDING_COURTHOUSE</FreeBuildingOnConquest>
+
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -571,8 +586,9 @@
 			<Type>TRAIT_CATHERINE_2</Type>
 			<Description>TXT_KEY_TRAIT_CATHERINE_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_CATHERINE_2</ShortDescription>
+						
+			<LandUnitMaintenanceModifier>-20</LandUnitMaintenanceModifier>
 			
-			<FreeBuilding>BUILDING_TB_TRAIT_CATHERINE_2</FreeBuilding> 
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -600,7 +616,6 @@
 			<Description>TXT_KEY_TRAIT_ELIZABETH_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_ELIZABETH_2</ShortDescription>
 			
-			<FreeBuilding>BUILDING_TB_TRAIT_ELIZABETH_2</FreeBuilding> 
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -627,8 +642,10 @@
 			<Type>TRAIT_GANDHI_2</Type>
 			<Description>TXT_KEY_TRAIT_GANDHI_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_GANDHI_2</ShortDescription>
-			
+			<PolicyCostModifier>-20</PolicyCostModifier> 
+			<!--
 			<FreeBuilding>BUILDING_TB_TRAIT_GANDHI_2</FreeBuilding>
+			-->
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -640,7 +657,9 @@
 			<MoveFriendlyWoodsAsRoad>1</MoveFriendlyWoodsAsRoad> 
 			<FasterAlongRiver>1</FasterAlongRiver> 
 			<FasterInHills>1</FasterInHills> 
-			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+			<FreeBuildingOnConquest>BUILDING_TB_TRAIT_GENGHIS_2</FreeBuildingOnConquest> 
+			
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
 					
 		</Row>
 
@@ -744,9 +763,10 @@
 			<Type>TRAIT_NAPOLEON_2</Type>
 			<Description>TXT_KEY_TRAIT_NAPOLEON_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_NAPOLEON_2</ShortDescription>
-			<FreeBuilding>BUILDING_TB_TRAIT_NAPOLEON_2</FreeBuilding>
-			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
-					
+
+			<FightWellDamaged>true</FightWellDamaged>
+
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>					
 		</Row>
 
 		<Row>
@@ -763,7 +783,9 @@
 			<Description>TXT_KEY_TRAIT_ODA_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_ODA_2</ShortDescription>
 			 
-			<FreeBuilding>BUILDING_TB_TRAIT_ODA_2</FreeBuilding> 
+			<LandUnitMaintenanceModifier>-20</LandUnitMaintenanceModifier> 
+			<NavalUnitMaintenanceModifier>-20</NavalUnitMaintenanceModifier>
+			
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -865,9 +887,10 @@
 			<Type>TRAIT_WASHINGTON_2</Type>
 			<Description>TXT_KEY_TRAIT_WASHINGTON_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_WASHINGTON_2</ShortDescription>
-			<LandUnitMaintenanceModifier>-25</LandUnitMaintenanceModifier>
+
+			<LandUnitMaintenanceModifier>-25</LandUnitMaintenanceModifier>			
+			<NavalUnitMaintenanceModifier>-25</NavalUnitMaintenanceModifier> 			
 			
-			<FreeBuilding>BUILDING_TB_TRAIT_WASHINGTON_2</FreeBuilding>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -885,9 +908,9 @@
 			<Type>TRAIT_WU_2</Type>
 			<Description>TXT_KEY_TRAIT_WU_2</Description>
 			<ShortDescription>TXT_KEY_TRAIT_WU_2</ShortDescription>
-			<NavalUnitMaintenanceModifier>-30</NavalUnitMaintenanceModifier>
+			<NavalUnitMaintenanceModifier>-20</NavalUnitMaintenanceModifier>
+			<LandUnitMaintenanceModifier>-20</LandUnitMaintenanceModifier> 
 
-			<FreeBuilding>BUILDING_TB_TRAIT_WU_2</FreeBuilding>
 			<PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
 					
 		</Row>
@@ -1551,72 +1574,72 @@
 		
 
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>	
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>	
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_STRATEGIC_RICHES</TraitType>
+			<TraitType>TRAIT_CATHERINE_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
 			<PromotionType>PROMOTION_HOMELAND_GUARDIAN_BOOGALOO</PromotionType>
 		</Row>
@@ -1689,6 +1712,79 @@
 		</Row>
 		<Row>
 			<TraitType>TRAIT_OCEAN_MOVEMENT</TraitType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+
+		<!--  AMERICAN PROMOTION -->
+
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WASHINGTON_2</TraitType>
 			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
 			<PromotionType>PROMOTION_FOREIGN_LANDS_SMALL</PromotionType>
 		</Row>
@@ -1973,6 +2069,14 @@
 			<PromotionType>PROMOTION_MARCH</PromotionType> 
 		</Row> 
 
+		<Row> 
+			<TraitType>TRAIT_NAPOLEON_2</TraitType> 
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType> 
+			<PromotionType>PROMOTION_FRENCH_ARTY</PromotionType> 
+		</Row> 
+
+		
+
 	</Trait_FreePromotionUnitCombats>
 
 	<Trait_SpecialistYieldChanges>
@@ -2149,7 +2253,7 @@
 			<TraitType>TRAIT_GANDHI_2</TraitType> 
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_FOOD</YieldType> 
-			<Yield>4</Yield> 
+			<Yield>3</Yield> 
 		</Row> 
 
 		<Row> 
@@ -2213,15 +2317,15 @@
 		</Row>
 
 		<Row>
-			<TraitType>TRAIT_OCEAN_MOVEMENT</TraitType>
+			<TraitType>TRAIT_ELIZABETH_2</TraitType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>16</Yield>
+			<Yield>32</Yield>
 		</Row>
 
 		<Row>
-			<TraitType>TRAIT_OCEAN_MOVEMENT</TraitType>
+			<TraitType>TRAIT_ELIZABETH_2</TraitType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>16</Yield>
+			<Yield>32</Yield>
 		</Row>
 
 		<Row>
@@ -2558,9 +2662,12 @@
 			<PortraitIndex>21</PortraitIndex>
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_TRAIT_BISMARCK_2</Description>
-			<Help>TXT_KEY_TRAIT_BISMARCK_2</Help>
+			<Help>TXT_KEY_TRAIT_BISMARCK_2</Help>			
+			<!--
 			<GreatPeopleRateModifier>30</GreatPeopleRateModifier>
-			<MilitaryProductionModifier>35</MilitaryProductionModifier>
+			-->			
+			<MilitaryProductionModifier>25</MilitaryProductionModifier>
+
 			<GreatWorkCount>-1</GreatWorkCount>
 		</Row>
 
@@ -2575,7 +2682,9 @@
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_TRAIT_CATHERINE_2</Description>
 			<Help>TXT_KEY_TRAIT_CATHERINE_2</Help>
+
 			<GlobalPlotCultureCostModifier>-5</GlobalPlotCultureCostModifier>
+
 			<GreatWorkCount>-1</GreatWorkCount>
 		</Row>
 
@@ -2590,8 +2699,26 @@
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_TRAIT_ELIZABETH_2</Description>
 			<Help>TXT_KEY_TRAIT_ELIZABETH_2</Help>
-			<HappinessPerCity>2</HappinessPerCity>
+
 			<NumTradeRouteBonus>1</NumTradeRouteBonus>
+
+			<GreatWorkCount>-1</GreatWorkCount>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_TB_TRAIT_GENGHIS_2</Type>
+			<BuildingClass>BUILDINGCLASS_TAITS_EFFECTS_BUILDINGS</BuildingClass>
+			<Cost>-1</Cost>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<Description>TXT_KEY_TRAIT_ELIZABETH_2</Description>
+			<Help>TXT_KEY_TRAIT_ELIZABETH_2</Help>
+
+			<HappinessPerCity>2</HappinessPerCity>
+
 			<GreatWorkCount>-1</GreatWorkCount>
 		</Row>
 
