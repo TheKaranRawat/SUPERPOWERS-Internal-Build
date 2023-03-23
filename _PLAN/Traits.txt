@@ -1,12 +1,20 @@
 	INDIA	GANDHI			<FreeBuilding>BUILDING_TB_TRAIT_GANDHI_2</FreeBuilding>
 	ROME	AUGUSTUS		<FreeBuilding>BUILDING_TB_TRAIT_AUGUSTUS_2</FreeBuilding> 
 	GERMANY	BISMARCK		<FreeBuilding>BUILDING_TB_TRAIT_BISMARCK_2</FreeBuilding> 
-	RUSSIA	CATHERINE		<FreeBuilding>BUILDING_TB_TRAIT_CATHERINE_2</FreeBuilding> 
-	ENGLAND	ELIZABETH		<FreeBuilding>BUILDING_TB_TRAIT_ELIZABETH_2</FreeBuilding> 
-	FRANCE	NAPOLEON		<FreeBuilding>BUILDING_TB_TRAIT_NAPOLEON_2</FreeBuilding>		DONE	
-	JAPAN	ODA				<FreeBuilding>BUILDING_TB_TRAIT_ODA_2</FreeBuilding>
-	AMERICA	WASHINGTON		<FreeBuilding>BUILDING_TB_TRAIT_WASHINGTON_2</FreeBuilding>
-	CHINA	WU				<FreeBuilding>BUILDING_TB_TRAIT_WU_2</FreeBuilding>
+	RUSSIA	CATHERINE		<FreeBuilding>BUILDING_TB_TRAIT_CATHERINE_2</FreeBuilding> 	
+	ENGLAND	ELIZABETH		<FreeBuilding>BUILDING_TB_TRAIT_ELIZABETH_2</FreeBuilding> 	SWITCH
+	
+	FRANCE	NAPOLEON		<FreeBuilding>BUILDING_TB_TRAIT_NAPOLEON_2</FreeBuilding>	ART SALON
+	PROMOTION_FRENCH_ARTY
+	
+	JAPAN	ODA				<FreeBuilding>BUILDING_TB_TRAIT_ODA_2</FreeBuilding>		SWITCH
+	
+	AMERICA	WASHINGTON		<FreeBuilding>BUILDING_TB_TRAIT_WASHINGTON_2</FreeBuilding>	SWITCH
+	
+	CHINA	WU				<FreeBuilding>BUILDING_TB_TRAIT_WU_2</FreeBuilding>			SWITCH
+	
+	BUILDING_TB_TRAIT_GENGHIS_2
+	[NEWLINE][ICON_BULLET]Each [ICON_CITY_STATE]City gets an additive +2 [ICON_HAPPINESS_1]Happiness Bonus, this bonus is increased by +2 [ICON_HAPPINESS_1]Happiness for every City you own
 	
 MOROCCO TRAIT_AHMAD_2
 <BonusReligiousBelief>1</BonusReligiousBelief> 
@@ -22,15 +30,19 @@ SONGHAI TRAIT_ASKIA_2
 
 HUNS TRAIT_ATILLA_2
 <CombatBonusVsHigherTech>25</CombatBonusVsHigherTech> 
+<FreeBuildingOnConquest>BUILDING_COURTHOUSE</FreeBuildingOnConquest>
 
 ROMAN TRAIT_AUGUSTUS_2
 <NavalUnitMaintenanceModifier>25</NavalUnitMaintenanceModifier> 
 <BuildingProductionModifier>30</BuildingProductionModifier>	CITY
 
-GERMANY TRAIT_BISMARCK_2
+GERMANY TRAIT_BISMARCK_2	TRAIT_CONVERTS_LAND_BARBARIANS
 <LandUnitMaintenanceModifier>25</LandUnitMaintenanceModifier>
 <GreatPeopleRateModifier>30</GreatPeopleRateModifier>	CITY
 <MilitaryProductionModifier>35</MilitaryProductionModifier>	CITY
+
+??? <FreeBuildingOnConquest>BUILDING_COURTHOUSE</FreeBuildingOnConquest>
+BUILDING_GERMAN_AUTOBAHN
 
 CELTS TRAIT_BOUDICCA_2
 <CultureFromKills>200</CultureFromKills>
