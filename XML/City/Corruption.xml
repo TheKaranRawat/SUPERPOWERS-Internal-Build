@@ -635,12 +635,12 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
+			<Yield>100</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
+			<Yield>25</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_SHERIFF_OFFICE</BuildingType>
@@ -655,12 +655,12 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
+			<Yield>100</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
+			<Yield>25</Yield>
 		</Row>				
 		<Row>
 			<BuildingType>BUILDING_POLICE_STATION</BuildingType>
@@ -675,12 +675,12 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1000</Yield>
+			<Yield>100</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
+			<Yield>25</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_PROCURATORATE</BuildingType>
@@ -703,13 +703,18 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-100</Yield>
+			<Yield>-75</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
+			<Yield>25</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>25</Yield>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
@@ -723,13 +728,18 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-100</Yield>
+			<Yield>-75</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
+			<Yield>25</Yield>
 		</Row>		
+		<Row>
+			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>25</Yield>
+		</Row>			
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
@@ -743,13 +753,18 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-100</Yield>
+			<Yield>-75</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>100</Yield>
+			<Yield>25</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>25</Yield>
+		</Row>			
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
@@ -826,17 +841,17 @@
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>10</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>10</Cost>
 		</Row>						
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>10</Cost>
 		</Row>
 	</Building_ResourceQuantityRequirements>
 
@@ -876,7 +891,7 @@
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>5</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
@@ -888,7 +903,7 @@
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
@@ -900,31 +915,31 @@
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>				
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-40</YieldChange>
+			<YieldChange>-10</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-20</YieldChange>
+			<YieldChange>-5</YieldChange>
 		</Row>				
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>20</YieldChange>
+			<YieldChange>10</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>10</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
@@ -936,7 +951,7 @@
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
@@ -948,31 +963,31 @@
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>				
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-40</YieldChange>
+			<YieldChange>-10</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-20</YieldChange>
+			<YieldChange>-5</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>20</YieldChange>
+			<YieldChange>10</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>10</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
@@ -984,7 +999,7 @@
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>5</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
@@ -996,19 +1011,19 @@
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>5</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>				
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-40</YieldChange>
+			<YieldChange>-10</YieldChange>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>-20</YieldChange>
+			<YieldChange>-5</YieldChange>
 		</Row>		
 
 	</Building_BuildingClassYieldChanges>
