@@ -1487,7 +1487,6 @@
 			<MoveRate>WHEELED</MoveRate>
 			<ExtraMaintenanceCost>25</ExtraMaintenanceCost>
 		</Row>
-		
 		<Row>
 			<Class>UNITCLASS_CRUISER_TANK</Class>
 			<Type>UNIT_ENGLISH_CROMWELL_TANK</Type>
@@ -1908,12 +1907,10 @@
 			<UnitType>UNIT_CRUISER_TANK</UnitType>
 			<UnitClassType>UNITCLASS_HELICOPTER_GUNSHIP</UnitClassType>
 		</Row>
-		
 		<Row>
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 			<UnitClassType>UNITCLASS_HELICOPTER_GUNSHIP</UnitClassType>
 		</Row>
-		
 		<Row>
 			<UnitType>UNIT_HELICOPTER_GUNSHIP</UnitType>
 			<UnitClassType>UNITCLASS_ATTACK_HELICOPTER</UnitClassType>
@@ -2591,12 +2588,10 @@
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 			<PromotionType>PROMOTION_HITANDRUN</PromotionType>
 		</Row>
-		
-		<Row>
+		<!--<Row>
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
-		</Row>
-		
+		</Row>-->
 		<Row>
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 			<PromotionType>PROMOTION_MOBILITY</PromotionType>
@@ -3077,7 +3072,6 @@
 			<UnitType>UNIT_CRUISER_TANK</UnitType>
 			<UnitAIType>UNITAI_RANGED</UnitAIType>
 		</Row>
-		
 		<Row>
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
@@ -3316,99 +3310,99 @@
 		<Row>
 			<UnitType>UNIT_HORSEMAN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_CARTHAGINIAN_FOREST_ELEPHANT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_GREEK_COMPANIONCAVALRY</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_BARBARIAN_HORSEMAN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_BYZANTINE_CATAPHRACT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 
 
 		<Row>
 			<UnitType>UNIT_KNIGHT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_OTTOMAN_SIPAHI</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_PERSIAN_CATAPHRACT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SONGHAI_MUSLIMCAVALRY</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		
 		<Row>
 			<UnitType>UNIT_LANCER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SWEDISH_HAKKAPELIITTA</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_POLISH_WINGED_HUSSAR</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SIAMESE_WARELEPHANT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 
 
 		<Row>
 			<UnitType>UNIT_WWI_TANK</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_TANK</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_GERMAN_PANZER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_MAIN_BATTLE_TANK</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_RUSSIAN_T80</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_ZULU_OLIFANT</UnitType>
@@ -3419,17 +3413,17 @@
 		<Row>
 			<UnitType>UNIT_MODERN_ARMOR</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_CHINESE_TYPE99</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_PERSIAN_ZULFIQAR</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 
 <!--Hit and Run-->
@@ -3494,13 +3488,11 @@
 			<UnitType>UNIT_CRUISER_TANK</UnitType>
 			<ResourceType>RESOURCE_OIL</ResourceType>
 		</Row>
-		
 		<Row>
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 			<ResourceType>RESOURCE_OIL</ResourceType>
 		</Row>
-
-
+		
 		<Row>
 			<UnitType>UNIT_HELICOPTER_GUNSHIP</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
@@ -3621,7 +3613,6 @@
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
 			<Cost>2</Cost>
 		</Row>
-		
 		<Row>
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
@@ -3631,28 +3622,28 @@
 		<Row>
 			<UnitType>UNIT_HELICOPTER_GUNSHIP</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_POLISH_PZLW3_HELICOPTER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_ATTACK_HELICOPTER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_GERMAN_EUROCOPTER_TIGER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_AMERICAN_APACHE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 
 
@@ -3664,7 +3655,7 @@
 		<Row>
 			<UnitType>UNIT_SPANISH_CONQUISTADOR</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 	</Unit_ResourceQuantityRequirements>
 

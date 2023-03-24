@@ -841,6 +841,21 @@
 			<DefaultUnit>UNIT_SPARTAN300</DefaultUnit>
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
+
+		<Row>
+			<Type>UNITCLASS_TDF</Type>
+			<Description>TXT_KEY_UNIT_TDF</Description>
+			<DefaultUnit>UNIT_TDF</DefaultUnit>
+			<MaxPlayerInstances>5</MaxPlayerInstances>
+		</Row>
+
+		<Row>
+			<Type>UNITCLASS_VADER</Type>
+			<Description>TXT_KEY_UNIT_DVADERCIVUNIT</Description>
+			<DefaultUnit>UNIT_DVADERCIVUNIT</DefaultUnit>
+			<MaxPlayerInstances>6</MaxPlayerInstances>
+		</Row>
+
 		<Row>
 			<Type>UNITCLASS_NUMIDIAN</Type>
 			<Description>TXT_KEY_UNIT_NUMIDIAN</Description>
@@ -999,6 +1014,12 @@
 			<Description>TXT_KEY_UNIT_PAKFA_T50</Description>
 			<DefaultUnit>UNIT_PAKFA_T50</DefaultUnit>
 			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_MIG_21</Type>
+			<Description>TXT_KEY_UNIT_MC_SOVIET_MIG_21_HELP</Description>
+			<DefaultUnit>UNIT_MC_SOVIET_MIG_21</DefaultUnit>
+			<MaxPlayerInstances>10</MaxPlayerInstances>
 		</Row>
 		<Row>
 			<Type>UNITCLASS_MECH</Type>

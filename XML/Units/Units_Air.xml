@@ -1595,12 +1595,12 @@
 		<Row>
 			<UnitType>UNIT_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_AMERICAN_B17</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>8</Cost>
 		</Row>
 		
 
@@ -1630,7 +1630,7 @@
 		<Row>
 			<UnitType>UNIT_JET_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>10</Cost>
 		</Row>
 	
 
@@ -1654,7 +1654,7 @@
 		<Row>
 			<UnitType>UNIT_STEALTH_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>10</Cost>
+			<Cost>12</Cost>
 		</Row>
 
 
@@ -1693,7 +1693,7 @@
 		<Row>
 			<UnitType>UNIT_ICBM_MISSILE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>1</Cost>
+			<Cost>2</Cost>
 		</Row>
 		
 	</Unit_ResourceQuantityRequirements>

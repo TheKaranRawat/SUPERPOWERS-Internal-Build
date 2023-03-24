@@ -470,7 +470,6 @@
 			<UnitType>UNIT_CRUISER_TANK</UnitType>
 			<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
 		</Row>
-		
 		<Row>
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 			<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
@@ -678,6 +677,10 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_PAKFA_T50</UnitType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_MC_SOVIET_MIG_21</UnitType>
 			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
 		</Row>
 		<Row>

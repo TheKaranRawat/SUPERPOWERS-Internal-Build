@@ -67,13 +67,11 @@
 			<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
 			<UnitType>UNIT_ENGLISH_SHIPOFTHELINE</UnitType>
 		</Row>
-	
 		<Row>
 			<CivilizationType>CIVILIZATION_ENGLAND</CivilizationType>
 			<UnitClassType>UNITCLASS_CRUISER_TANK</UnitClassType>
 			<UnitType>UNIT_ENGLISH_CROMWELL_TANK</UnitType>
 		</Row>
-
 		<Row>
 			<CivilizationType>CIVILIZATION_ENGLAND</CivilizationType>
 			<UnitClassType>UNITCLASS_CARRIER_FIGHTER_JET</UnitClassType>
@@ -846,6 +844,26 @@
 		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitClassType>UNITCLASS_TDF</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_TDF</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitClassType>UNITCLASS_VADER</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_VADER</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<UnitClassType>UNITCLASS_STEALTH_HELICOPTER</UnitClassType>
 			<UnitType/>
 		</Row>
@@ -862,6 +880,16 @@
 		<Row>
 			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
 			<UnitClassType>UNITCLASS_PAKFA_T50</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitClassType>UNIT_MC_SOVIET_MIG_21</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNIT_MC_SOVIET_MIG_21</UnitClassType>
 			<UnitType/>
 		</Row>
 		<Row>
