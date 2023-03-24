@@ -1097,6 +1097,21 @@
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
 			<Quantity>3</Quantity>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_FALE_TELE</BuildingType>
+			<ResourceType>RESOURCE_CONSUMER</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_INDONESIA_SPICE_HARBOR</BuildingType>
+			<ResourceType>RESOURCE_CONSUMER</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_CARTHAGINIAN_COTHON</BuildingType>
+			<ResourceType>RESOURCE_CONSUMER</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>		
 
 
 
