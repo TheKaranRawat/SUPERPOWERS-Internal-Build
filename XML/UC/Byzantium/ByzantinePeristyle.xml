@@ -86,16 +86,40 @@
 	<Building_ResourceYieldChanges>
 		<Row>
 			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_AMBER</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
 			<ResourceType>RESOURCE_CITRUS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_COCOA</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_COFFEE</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
 			<ResourceType>RESOURCE_COPPER</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_CORAL</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_PERISTYLE</BuildingType>
 			<ResourceType>RESOURCE_COTTON</ResourceType>
@@ -134,6 +158,12 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_JADE</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
 			<ResourceType>RESOURCE_INCENSE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
@@ -146,16 +176,34 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_LAPIS</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
 			<ResourceType>RESOURCE_MARBLE</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_OLIVE</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
 			<ResourceType>RESOURCE_PEARLS</ResourceType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_PERFUME</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_PERISTYLE</BuildingType>
 			<ResourceType>RESOURCE_SALT</ResourceType>
@@ -186,6 +234,18 @@
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_TEA</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_PERISTYLE</BuildingType>
+			<ResourceType>RESOURCE_TOBACCO</ResourceType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_PERISTYLE</BuildingType>
 			<ResourceType>RESOURCE_TRUFFLES</ResourceType>
