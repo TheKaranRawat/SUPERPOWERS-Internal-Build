@@ -400,6 +400,19 @@
 		</Row>
 
 		<Row>
+			<Type>PROJECT_TDF</Type>
+			<Description>TXT_KEY_PROJECT_TDF</Description>
+			<Help>TXT_KEY_PROJECT_TDF_HELP</Help>
+			<Civilopedia>TXT_KEY_UNIT_SAS_TDF_TEXT</Civilopedia>
+			<TechPrereq>TECH_GLOBALIZATION</TechPrereq>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>2000</Cost>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>SPBalance_ATLAS</IconAtlas>
+		</Row>
+
+		<Row>
 			<Type>PROJECT_WEISHI_ROCKETS</Type>
 			<Description>TXT_KEY_PROJECT_WEISHI_ROCKETS</Description>
 			<Help>TXT_KEY_PROJECT_WEISHI_ROCKETS_HELP</Help>

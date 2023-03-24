@@ -192,10 +192,10 @@
 		</Row>
 		<!--Kilosh-->
 		<Row Tag="TXT_KEY_UNIT_SAS_TDF">
-			<Text>Territorial Defense Force</Text>
+			<Text>[COLOR_YELLOW]Territorial Defense Force[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SAS_TDF_HELP">
-			<Text>Unique Unit for Zelenskyy's Ukraine, able to move after attacking and costing less [ICON_PRODUCTION] to build than the Bazooka it replaces. Enemy units adjacent to a Territorial Defense Force receive a -10% [ICON_STRENGTH] Combat Strength penalty.</Text>
+			<Text>A foreign batalltion of the Territorial Defence Force, able to move after attacking. Enemy units adjacent to a Territorial Defense Force receive a -10% [ICON_STRENGTH] Combat Strength penalty.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SAS_TDF_STRATEGY">
 			<Text>Unique Unit for Zelenskyy's Ukraine, able to move after attacking and costing less [ICON_PRODUCTION] to build than the Bazooka it replaces. Enemy units adjacent to a Territorial Defense Force receive a -10% [ICON_STRENGTH] Combat Strength penalty.</Text>

@@ -711,18 +711,6 @@
 			<UnitClassType>UNITCLASS_SPARTAN300</UnitClassType>
 			<UnitType/>
 		</Row>
-
-		<Row>
-			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>UNITCLASS_TDF</UnitClassType>
-			<UnitType/>
-		</Row>
-		<Row>
-			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>UNITCLASS_TDF</UnitClassType>
-			<UnitType/>
-		</Row>
-
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<UnitClassType>UNITCLASS_NUMIDIAN</UnitClassType>
@@ -852,6 +840,26 @@
 		<Row>
 			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
 			<UnitClassType>UNITCLASS_TASKFORCE_141</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitClassType>UNITCLASS_TDF</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_TDF</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitClassType>UNITCLASS_VADER</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_VADER</UnitClassType>
 			<UnitType/>
 		</Row>
 		<Row>

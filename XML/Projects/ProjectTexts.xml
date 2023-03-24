@@ -314,6 +314,16 @@
 			<Text>Task Force 141, colloquially referred to as "The One-Four-One," is a multinational special operations force composed of members of British, Australian, American, Canadian and possibly other foreign personnel, usually those with previous Special Ops experience. </Text>
 		</Row>
 
+		<Row Tag="TXT_KEY_PROJECT_TDF">
+			<Text>Territorial Defence Force Project</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_TDF_HELP">
+			<Text>Only the [COLOR_POSITIVE_TEXT]First[ENDCOLOR] civilization finishing this project is allowed to build the elite infantry forces unit: [COLOR_YIELD_GOLD]Territorial Defence Force[ENDCOLOR]. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_TDF_PEDIA">
+			<Text>Task Force 141, colloquially referred to as "The One-Four-One," is a multinational special operations force composed of members of British, Australian, American, Canadian and possibly other foreign personnel, usually those with previous Special Ops experience. </Text>
+		</Row>
+
 
 		<Row Tag="TXT_KEY_PROJECT_WEISHI_ROCKETS">
 			<Text>Anti-ship MLRS Project</Text>

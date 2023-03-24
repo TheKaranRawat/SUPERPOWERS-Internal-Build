@@ -850,6 +850,13 @@
 		</Row>
 
 		<Row>
+			<Type>UNITCLASS_VADER</Type>
+			<Description>TXT_KEY_UNIT_DVADERCIVUNIT</Description>
+			<DefaultUnit>UNIT_DVADERCIVUNIT</DefaultUnit>
+			<MaxPlayerInstances>6</MaxPlayerInstances>
+		</Row>
+
+		<Row>
 			<Type>UNITCLASS_NUMIDIAN</Type>
 			<Description>TXT_KEY_UNIT_NUMIDIAN</Description>
 			<DefaultUnit>UNIT_NUMIDIAN</DefaultUnit>

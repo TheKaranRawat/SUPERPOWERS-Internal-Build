@@ -4,22 +4,22 @@
 	<Civilization_UnitClassOverrides>
 		<Row>
 			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>TACTICAL_NUCLEAR_MISSILE</UnitClassType>
+			<UnitClassType>UNITCLASS_TACTICAL_NUCLEAR_MISSILE</UnitClassType>
 			<UnitType/>
 		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
-			<UnitClassType>HARD_MOBILE_LAUNCHER</UnitClassType>
+			<UnitClassType>UNITCLASS_HARD_MOBILE_LAUNCHER</UnitClassType>
 			<UnitType/>
 		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>TACTICAL_NUCLEAR_MISSILE</UnitClassType>
+			<UnitClassType>UNITCLASS_TACTICAL_NUCLEAR_MISSILE</UnitClassType>
 			<UnitType/>
 		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
-			<UnitClassType>HARD_MOBILE_LAUNCHER</UnitClassType>
+			<UnitClassType>UNITCLASS_HARD_MOBILE_LAUNCHER</UnitClassType>
 			<UnitType/>
 		</Row>
 	</Civilization_UnitClassOverrides>

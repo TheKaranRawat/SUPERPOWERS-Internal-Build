@@ -57,40 +57,7 @@
 			<PortraitIndex>0</PortraitIndex>
 			<ProjectPrereq>PROJECT_SPARTAN300_TRAINING</ProjectPrereq>
 			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
-		</Row>
-
-		<Row>
-			<Class>UNITCLASS_TDF</Class>
-			<Type>UNIT_TDF</Type>
-			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
-			<BaseSightRange>2</BaseSightRange>
-			<Combat>30</Combat>
-			<Cost>110</Cost>
-			<Moves>2</Moves>
-			<HurryCostModifier>-1</HurryCostModifier>
-			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_SAS_TDF</Description>
-			<Civilopedia>TXT_KEY_UNIT_SAS_TDF_TEXT</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_SAS_TDF_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_SAS_TDF_HELP</Help>
-			<MilitarySupport>true</MilitarySupport>
-			<MilitaryProduction>true</MilitaryProduction>
-			<Pillage>true</Pillage>
-			<ObsoleteTech>TECH_GUNPOWDER</ObsoleteTech>
-			<AdvancedStartCost>15</AdvancedStartCost>
-			<XPValueAttack>3</XPValueAttack>
-			<XPValueDefense>3</XPValueDefense>
-			<Conscription>2</Conscription>
-			<UnitArtInfo>ART_DEF_UNIT_SAS_TDF</UnitArtInfo>
-			<UnitFlagIconOffset>0</UnitFlagIconOffset>
-			<UnitFlagAtlas>SAS_TDF_FLAG</UnitFlagAtlas>
-			<IconAtlas>SAS_ZELENSKYY_ICON_ATLAS</IconAtlas>
-			<PortraitIndex>2</PortraitIndex>
-			<ProjectPrereq>PROJECT_SPARTAN300_TRAINING</ProjectPrereq>
-			<ExtraMaintenanceCost>3</ExtraMaintenanceCost>
-		</Row>
+		</Row>		
 
 		<Row>
 			<Class>UNITCLASS_NUMIDIAN</Class>
@@ -968,8 +935,35 @@
 			<ExtraMaintenanceCost>20</ExtraMaintenanceCost>
 		</Row>
 
-
-
+		<Row>
+			<Class>UNITCLASS_TDF</Class>
+			<Type>UNIT_TDF</Type>
+			<PrereqTech>TECH_GLOBALIZATION</PrereqTech>
+			<BaseSightRange>3</BaseSightRange>
+			<Combat>180</Combat>
+			<Cost>1200</Cost>
+			<Moves>3</Moves>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SAS_TDF</Description>
+			<Civilopedia>TXT_KEY_UNIT_SAS_TDF_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SAS_TDF_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_SAS_TDF_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<XPValueAttack>6</XPValueAttack>
+			<XPValueDefense>6</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_SAS_TDF</UnitArtInfo>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<UnitFlagAtlas>SAS_TDF_FLAG</UnitFlagAtlas>
+			<IconAtlas>SAS_ZELENSKYY_ICON_ATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+			<ProjectPrereq>PROJECT_TDF</ProjectPrereq>
+			<ExtraMaintenanceCost>150</ExtraMaintenanceCost>
+		</Row>
 
 
 
