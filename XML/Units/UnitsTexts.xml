@@ -1068,7 +1068,7 @@
 		<Row Tag="TXT_KEY_UNIT_CRUISER_TANK_PEDIA">
 			<Text>The cruiser tank (also called cavalry tank or fast tank) was a British tank concept of the inter-war period. Dissatisfaction with experimental medium tank designs of the mid-1930s, led to the development of specialised fast, lightly-armoured cruiser tanks and slow, heavily-armoured Infantry tanks. </Text>
 		</Row>
-<!--
+
 		<Row Tag="TXT_KEY_UNIT_ENGLISH_CROMWELL_TANK">
 			<Text>Cromwell Tank</Text>
 			<Plurality>2</Plurality>
@@ -1079,7 +1079,7 @@
 		<Row Tag="TXT_KEY_UNIT_ENGLISH_CROMWELL_TANK_PEDIA">
 			<Text>The Cromwell tank was one of the most successful of the series of cruiser tanks fielded by Britain in the Second World War. Named after the English Civil War leader Oliver Cromwell, the Cromwell was the first tank put into service by the British to combine a dual-purpose gun, high speed from the powerful and reliable Meteor engine, and reasonable armour, in a balanced package. </Text>
 		</Row>
--->
+
 
 
 		<!--<Row Tag="TXT_KEY_UNIT_EGYPT_MAMLUK">
