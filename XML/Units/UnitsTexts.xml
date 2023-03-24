@@ -2953,17 +2953,6 @@
 			<Text>The Boeing-Sikorsky RAH-66 Comanche was an advanced five-blade armed reconnaissance and attack helicopter designed for the United States Army. The RAH-66 program was canceled in 2004, before mass production began, after nearly US$7 billion was spent on the program.
 			</Text>
 		</Row>
-		
-		<Row Tag="TXT_KEY_UNIT_DVADERCIVUNIT">
-			<Text>Stormtrooper</Text>
-		  </Row>
-		  <Row Tag="TXT_KEY_UNIT_DVADERCIVUNIT_STRATEGY">
-			<Text>An Elite Mercenary Group that aims to unite the world under a single Galactic Empire. +25% Combat Strength VS Wounded Units. +50% Combat Strength VS Armor Units. Gain -20 Unhappiness per Unit.</Text>
-		  </Row>
-		  <Row Tag="TXT_KEY_UNIT_HELP_DVADERCIVUNIT">
-			<Text>+25% Combat Strength VS Wounded Units. +50% Combat Strength VS Armor Units. Gain -20 Unhappiness per Unit.</Text>
-		  </Row>
-
 
 		<Row Tag="TXT_KEY_UNIT_TASKFORCE_141">
 			<Text>[COLOR_YELLOW]Task Force 141[ENDCOLOR]</Text>

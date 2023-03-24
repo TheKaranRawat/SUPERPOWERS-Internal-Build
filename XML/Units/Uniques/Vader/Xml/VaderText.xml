@@ -69,7 +69,15 @@
       <Text>Replaces Police station. +2 Happiness.  +1 [ICON_CULTURE] Culture. </Text>
     </Row>
 	
-	
+		  <Row Tag="TXT_KEY_UNIT_DVADERCIVUNIT">
+			<Text>[COLOR_YELLOW]Stormtrooper[ENDCOLOR]</Text>
+		  </Row>
+		  <Row Tag="TXT_KEY_UNIT_DVADERCIVUNIT_STRATEGY">
+			<Text>An Elite Mercenary Group that aims to unite the world under a single Galactic Empire. +25% Combat Strength VS Wounded Units. +50% Combat Strength VS Armor Units. Gain -20 Unhappiness per Unit.</Text>
+		  </Row>
+		  <Row Tag="TXT_KEY_UNIT_HELP_DVADERCIVUNIT">
+			<Text>+25% Combat Strength VS Wounded Units. +50% Combat Strength VS Armor Units. Gain -20 Unhappiness per Unit.</Text>
+		  </Row>
 	
 	
 	

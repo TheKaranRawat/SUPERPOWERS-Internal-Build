@@ -413,6 +413,19 @@
 		</Row>
 
 		<Row>
+			<Type>PROJECT_VADER</Type>
+			<Description>TXT_KEY_PROJECT_VADER</Description>
+			<Help>TXT_KEY_PROJECT_VADER_HELP</Help>
+			<Civilopedia>TXT_KEY_UNIT_HELP_DVADERCIVUNIT</Civilopedia>
+			<TechPrereq>TECH_INTERSTELLAR_TRAVEL</TechPrereq>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>5000</Cost>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>SPBalance_ATLAS</IconAtlas>
+		</Row>
+
+		<Row>
 			<Type>PROJECT_WEISHI_ROCKETS</Type>
 			<Description>TXT_KEY_PROJECT_WEISHI_ROCKETS</Description>
 			<Help>TXT_KEY_PROJECT_WEISHI_ROCKETS_HELP</Help>

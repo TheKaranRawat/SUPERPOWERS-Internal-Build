@@ -15,8 +15,8 @@
        <CombatClass>UNITCOMBAT_MELEE</CombatClass>
        <Domain>DOMAIN_LAND</Domain>
 	   <DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
-	   <Description>TXT_KEY_UNIT_DVADERCIVUNIT</Description>
-	   <Strategy>TXT_KEY_UNIT_DVADERCIVUNIT_STRATEGY</Strategy>
+	   <Description>TXT_KEY_UNIT_DVADERCIVUNIT_STRATEGY</Description>
+	   <Strategy>TXT_KEY_UNIT_DVADERCIVUNIT</Strategy>
 	   <Help>TXT_KEY_UNIT_HELP_DVADERCIVUNIT</Help>
 	   <Civilopedia>TXT_KEY_UNIT_DVADERCIVUNIT_STRATEGY</Civilopedia>
 	   <MilitarySupport>1</MilitarySupport>
