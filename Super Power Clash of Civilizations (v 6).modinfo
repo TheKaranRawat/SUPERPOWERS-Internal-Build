@@ -3759,7 +3759,38 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="A0E855DD26EC9E33E32E45A2247A1A97" import="0">XML/Units/Uniques/Vader/Xml/VaderPromotions.xml</File>    
     <File md5="A9A2123B12399813F14C0514F4CCB803" import="0">XML/Units/Uniques/Vader/Xml/VaderText.xml</File>    
     <File md5="B4E53EE1705E22863BA06A528AC05738" import="0">XML/Units/Uniques/Vader/Xml/VaderUnit.xml</File>
-	
+
+    <File md5="086FEA87D0AE4509038D281929320569" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_128.dds</File>
+    <File md5="56B57A70EADA96966C12E80E251F1A0B" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_24.dds</File>
+    <File md5="201B4ACEF89F3A8FB8CF525DC91CE1DF" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_256.dds</File>
+    <File md5="39EC5E57A235350448EA7649C74233D9" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_32.dds</File>
+    <File md5="FD505686BA62A4CA3FAA8C32F066FAF5" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_48.dds</File>
+    <File md5="0E02E892063A6BC2B1F8A89AB9C7B25C" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_64.dds</File>
+    <File md5="C14E37A72BAC4D14F53F4347E9D762E7" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_80.dds</File>
+    <File md5="9CCF48E5B395CCF6DF309988446B333F" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_Alpha_128.dds</File>
+    <File md5="8AC0FE0E1266DF887DD8CEEF7288AD92" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_Alpha_16.dds</File>
+    <File md5="E377D2D6158D125A1F7F7B7DFA1ABC52" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_Alpha_24.dds</File>
+    <File md5="DED4A2DFCE70C2389BE12BA83658DFC4" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_Alpha_256.dds</File>
+    <File md5="6C27952C7864774DFFC265D302F2923F" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_Alpha_32.dds</File>
+    <File md5="82AB3540683BDE021A341AB1D33D6C40" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_Alpha_48.dds</File>
+    <File md5="A3203F70941CADCCCF4358E558108C3D" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_Alpha_64.dds</File>
+    <File md5="5ABA8B06CF00B1D52AD357F43A896BC2" import="1">XML/Units/Uniques/Mig/Art/Atlases/MC_Soviets_45.dds</File>
+    <File md5="428ACB4B7B5BB4FF883937F9388BE23D" import="1">XML/Units/Uniques/Mig/Art/Models/MC_MiG21UnitFlag_32.dds</File>
+    <File md5="B4AFC8AD6C460DA2BA421E062BB5F3EB" import="1">XML/Units/Uniques/Mig/Art/Models/MiG-21/fx_triggers_MiG21.ftsxml</File>
+    <File md5="9242D2DE2CCF384EEF9DF63B6155A824" import="1">XML/Units/Uniques/Mig/Art/Models/MiG-21/MiG21.dds</File>
+    <File md5="DADD49173619A17B93218E98209C7E2F" import="1">XML/Units/Uniques/Mig/Art/Models/MiG-21/MiG21.fxsxml</File>
+    <File md5="C3FB5F0DB1FED4560BD33AAE624D4FC2" import="1">XML/Units/Uniques/Mig/Art/Models/MiG-21/MiG21.gr2</File>
+    <File md5="3CF4E631AC19C039461553091C02F4E2" import="1">XML/Units/Uniques/Mig/Art/Models/sv_MiG21.dds</File>
+    <File md5="C527ADEB442F3121D1A470778D3E774C" import="1">XML/Units/Uniques/Mig/Art/Scenes/MC_Soviets_DoM.dds</File>
+    <File md5="063E04FDC3587C37ECBD2EE8F339DA61" import="1">XML/Units/Uniques/Mig/Art/Scenes/MC_Soviets_Leaderscene.dds</File>
+    <File md5="5FEDB7AF5EAE00F7C523CA49E71DB2FF" import="1">XML/Units/Uniques/Mig/Art/Scenes/MC_Soviets_Map.dds</File>
+  
+    <File md5="B4E53EE1705E22863BA06A528AC05738" import="0">XML/Units/Uniques/Mig/Core/Art/MC_MiGArtDef.sql</File>
+    <File md5="B4E53EE1705E22863BA06A528AC05738" import="0">XML/Units/Uniques/Mig/Core/GameInfo/MC_Soviets_IconTextureAtlases.sql</File>
+    <File md5="B4E53EE1705E22863BA06A528AC05738" import="0">XML/Units/Uniques/Mig/Core/Text/MC_Soviets_Text.xml</File>
+    <File md5="B4E53EE1705E22863BA06A528AC05738" import="0">XML/Units/Uniques/Mig/Core/Units/mig.xml</File>
+    
+
   </Files>
   <Actions>
 	
@@ -4391,6 +4422,13 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	  <UpdateDatabase>XML/Units/Uniques/Vader/Xml/VaderIcons.xml</UpdateDatabase>      
       <UpdateDatabase>XML/Units/Uniques/Vader/Xml/VaderText.xml</UpdateDatabase>      
       <UpdateDatabase>XML/Units/Uniques/Vader/Xml/VaderUnit.xml</UpdateDatabase>
+
+      <UpdateDatabase>XML/Units/Uniques/Mig/Core/Art/MC_MiGArtDef.sql</UpdateDatabase>      
+      <UpdateDatabase>XML/Units/Uniques/Mig/Core/GameInfo/MC_Soviets_IconTextureAtlases.sql</UpdateDatabase>      
+      <UpdateDatabase>XML/Units/Uniques/Mig/Core/Text/MC_Soviets_Text.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Units/Uniques/Mig/Core/Units/mig.xml</UpdateDatabase>
+      
+      
 
     </OnModActivated>	
   </Actions>

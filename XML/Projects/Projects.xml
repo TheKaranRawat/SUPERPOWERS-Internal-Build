@@ -451,6 +451,19 @@
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 		</Row>
 
+		<Row>
+			<Type>PROJECT_MIG</Type>
+			<Description>TXT_KEY_PROJECT_MIG</Description>
+			<Help>TXT_KEY_PROJECT_MIG_HELP</Help>
+			<Civilopedia>TXT_KEY_UNIT_MC_SOVIET_MIG_21_PEDIA</Civilopedia>
+			<TechPrereq>TECH_ROCKETRY</TechPrereq>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>700</Cost>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>SPBalance_ATLAS</IconAtlas>
+		</Row>
+
 
 
 

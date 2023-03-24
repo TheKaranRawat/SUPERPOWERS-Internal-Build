@@ -1016,6 +1016,12 @@
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
 		<Row>
+			<Type>UNITCLASS_MIG_21</Type>
+			<Description>TXT_KEY_UNIT_MC_SOVIET_MIG_21_HELP</Description>
+			<DefaultUnit>UNIT_MC_SOVIET_MIG_21</DefaultUnit>
+			<MaxPlayerInstances>10</MaxPlayerInstances>
+		</Row>
+		<Row>
 			<Type>UNITCLASS_MECH</Type>
 			<Description>TXT_KEY_UNIT_MECH</Description>
 			<DefaultUnit>UNIT_MECH</DefaultUnit>

@@ -680,6 +680,10 @@
 			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
 		</Row>
 		<Row>
+			<UnitType>UNIT_MC_SOVIET_MIG_21</UnitType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+		</Row>
+		<Row>
 			<UnitType>UNIT_HACKER</UnitType>
 			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
 		</Row>

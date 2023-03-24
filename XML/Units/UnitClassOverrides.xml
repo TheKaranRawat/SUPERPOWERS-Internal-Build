@@ -884,6 +884,16 @@
 		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitClassType>UNIT_MC_SOVIET_MIG_21</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNIT_MC_SOVIET_MIG_21</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<UnitClassType>UNITCLASS_MECH</UnitClassType>
 			<UnitType/>
 		</Row>
