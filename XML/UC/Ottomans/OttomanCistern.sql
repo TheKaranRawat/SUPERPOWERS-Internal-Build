@@ -69,9 +69,9 @@ FROM Building_ResourceYieldChanges  WHERE BuildingType = 'BUILDING_AQUEDUCT';
 ------------------------------	
 -- Building_TerrainYieldChanges
 ------------------------------
-INSERT INTO Building_YieldModifiers 	
+INSERT INTO Building_TerrainYieldChanges	
 			(BuildingType, TerrainType, YieldType, Yield)
-VALUES ('BUILDING_5UC_CISTERN', 'TERRAIN_COAST','YIELD_PRODUCTION', 2);
+VALUES ('BUILDING_5UC_CISTERN', 'TERRAIN_COAST', 'YIELD_PRODUCTION', 2);
 
 
 --------------------------------	
