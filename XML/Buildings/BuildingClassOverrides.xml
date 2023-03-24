@@ -530,7 +530,7 @@
 			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
 			<BuildingType>BUILDING_BANK_OF_ENGLAND</BuildingType>
 		</Row>
-
+<!--
 		<Row>
 			<CivilizationType>CIVILIZATION_ENGLAND</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
@@ -546,7 +546,7 @@
 			<BuildingClassType>BUILDINGCLASS_POLICE_STATION</BuildingClassType>
 			<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 		</Row>
-
+-->
 		<Row>
 			<CivilizationType>CIVILIZATION_FRANCE</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>

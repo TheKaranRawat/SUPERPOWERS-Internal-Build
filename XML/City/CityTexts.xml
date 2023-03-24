@@ -422,7 +422,7 @@
 			<Tag>TXT_KEY_BUILDING_ROMAN_SENATE_HELP</Tag>
 			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV2]Provincial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. [NEWLINE][NEWLINE]Elimate the extra [ICON_CULTURE] Culture cost of adopting new Policies created by Lv2 Cities (stacked with the "Representation" Policy effect) . [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 6 [ICON_CITIZEN] Population. </Text>
 		</Row>
-
+<!--
 		<Row>
 			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_2</Tag>
 			<Text>[ICON_CITYBANNER_CITY_LV2] Gubernia</Text>
@@ -482,7 +482,7 @@
 			<Tag>TXT_KEY_BUILDING_ENG_COLONIAL_OFFICE_3_HELP</Tag>
 			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV4]Colonial Cities. [NEWLINE][NEWLINE]Does NOT eliminate extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. [NEWLINE][NEWLINE]Elimate the extra [ICON_CULTURE] Culture cost of adopting new Policies created by Lv2 Cities (stacked with the "Representation" Policy effect) . [NEWLINE][NEWLINE]Gain extra [ICON_GOLD] Gold at a cost to other yields and consume 8 [ICON_RES_CONSUMER] Consumer Goods. </Text>
 		</Row>				
-
+-->
 
 		<Row Tag="TXT_KEY_BUILDING_SHERIFF_OFFICE">
 			<Text>[ICON_CITYBANNER_CITY_LV3] Sheriffs Office</Text>
@@ -493,7 +493,7 @@
 		<Row Tag="TXT_KEY_CIV5_BUILDINGS_SHERIFF_OFFICE_TEXT">
 			<Text>In principle, a Sheriff is a legal official with responsibility for a "shire", i.e. county. In practice, the specific combination of legal, political and ceremonial duties of a sheriff varies greatly from country to country.</Text>
 		</Row>
-
+<!--
 		<Row>
 			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_3</Tag>
 			<Text>[ICON_CITYBANNER_CITY_LV3] Gubernia</Text>
@@ -508,14 +508,14 @@
 			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_3_HELP</Tag>
 			<Text>Can only be built in [ICON_CITYBANNER_CITY_LV3]Territorial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. Lower the increasing [ICON_CULTURE] Culture Cost for adopting new Policies by this city to 10%. [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Population and consume 4 [ICON_RES_CONSUMER] Consumer Goods. </Text>
 		</Row>
-
+-->
 		<Replace Tag="TXT_KEY_BUILDING_POLICE_STATION">
 			<Text>[ICON_CITYBANNER_CITY_LV4] Police Station</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_POLICE_STATION_HELP">
 			<Text>Can only be built in in [ICON_CITYBANNER_CITY_LV4]Colonial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. Lower the increasing [ICON_CULTURE] Culture Cost for adopting new Policies by this city to 25%. [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 4 [ICON_CITIZEN] Population. </Text>
 		</Replace>
-
+<!--
 		<Row>
 			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4</Tag>
 			<Text>[ICON_CITYBANNER_CITY_LV4] Gubernia</Text>
@@ -530,7 +530,7 @@
 			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_4_HELP</Tag>
 			<Text>Can only be built in in [ICON_CITYBANNER_CITY_LV4]Colonial Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. Lower the increasing [ICON_CULTURE] Culture Cost for adopting new Policies by this city to 25%. [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Population and consume 4 [ICON_RES_CONSUMER] Consumer Goods. </Text>
 		</Row>
-
+-->
 		<Row Tag="TXT_KEY_BUILDING_PROCURATORATE">
 			<Text>[ICON_CITYBANNER_CITY_LV5] Consulate</Text>
 		</Row>
@@ -540,7 +540,7 @@
 		<Row Tag="TXT_KEY_CIV5_BUILDINGS_PROCURATORATE_TEXT">
 			<Text>The judicial branch is one of three branches of government in the People's Republic of China, along with the executive and legislative branches. Strictly speaking, it refers to the activities of the People's Court system. The Chinese court system is based on civil law modeled after the legal systems of Germany and France, but with local characteristics.</Text>
 		</Row>
-
+<!--
 		<Row>
 			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_5</Tag>
 			<Text>[ICON_CITYBANNER_CITY_LV5] Gubernia</Text>
@@ -555,7 +555,7 @@
 			<Tag>TXT_KEY_BUILDING_RUSSIAN_GUBERNIA_5_HELP</Tag>
 			<Text>Can only be built in in [ICON_CITYBANNER_CITY_LV5]Peripheral Cities. [NEWLINE][NEWLINE]Eliminates extra Nationwide [ICON_HAPPINESS_4] Unhappiness caused by Corruption and Public Security problems. Lower the increasing [ICON_CULTURE] Culture Cost for adopting new Policies by this city to 25%. [NEWLINE][NEWLINE]Pay extra 1 [ICON_GOLD] Gold for every 2 [ICON_CITIZEN] Population and consume 4 [ICON_RES_CONSUMER] Consumer Goods. </Text>
 		</Row>
-		
+-->		
 		
 		<!--***************Manpower Condition Texts*****************-->
 

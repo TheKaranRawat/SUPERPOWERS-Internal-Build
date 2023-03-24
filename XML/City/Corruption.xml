@@ -256,7 +256,7 @@
 			<UnhappinessModifier>-4</UnhappinessModifier>
 			<Happiness>5</Happiness>			
 		</Row>
-
+<!--
 		<Row>
 			<Type>BUILDING_RUSSIAN_GUBERNIA_2</Type>
 			<BuildingClass>BUILDINGCLASS_CONSTABLE</BuildingClass>
@@ -300,7 +300,7 @@
 			<PolicyCostModifier>-5</PolicyCostModifier>
 			<Happiness>5</Happiness>			
 		</Row>		
-		
+-->		
 		<Row>
 			<Type>BUILDING_SHERIFF_OFFICE</Type>
 			<BuildingClass>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClass>
@@ -320,7 +320,7 @@
 			<UnhappinessModifier>-5</UnhappinessModifier>
 			<Happiness>5</Happiness>			
 		</Row>
-
+<!--
 		<Row>
 			<Type>BUILDING_RUSSIAN_GUBERNIA_3</Type>
 			<BuildingClass>BUILDINGCLASS_SHERIFF_OFFICE</BuildingClass>
@@ -364,7 +364,7 @@
 			<PolicyCostModifier>-5</PolicyCostModifier>
 			<Happiness>5</Happiness>			
 		</Row>		
-
+-->
 		<Row>
 			<Type>BUILDING_POLICE_STATION</Type>
 			<BuildingClass>BUILDINGCLASS_POLICE_STATION</BuildingClass>
@@ -385,7 +385,7 @@
 			<UnhappinessModifier>-6</UnhappinessModifier>
 			<Happiness>5</Happiness>			
 		</Row>
-
+<!--
 		<Row>
 			<Type>BUILDING_RUSSIAN_GUBERNIA_4</Type>
 			<BuildingClass>BUILDINGCLASS_POLICE_STATION</BuildingClass>
@@ -429,7 +429,7 @@
 			<PolicyCostModifier>-5</PolicyCostModifier>
 			<Happiness>5</Happiness>			
 		</Row>
-
+-->
 		<Row>
 			<Type>BUILDING_PROCURATORATE</Type>
 			<BuildingClass>BUILDINGCLASS_PROCURATORATE</BuildingClass>
@@ -449,7 +449,7 @@
 			<UnhappinessModifier>-7</UnhappinessModifier>
 			<Happiness>5</Happiness>			
 		</Row>
-
+<!--
 		<Row>
 			<Type>BUILDING_RUSSIAN_GUBERNIA_5</Type>
 			<BuildingClass>BUILDINGCLASS_PROCURATORATE</BuildingClass>
@@ -471,7 +471,7 @@
 			<CityCountUnhappinessMod>-5</CityCountUnhappinessMod>		
 			<Happiness>5</Happiness>				
 		</Row>
-
+-->
 	</Buildings>
 
 
@@ -573,6 +573,7 @@
 				<BuildingType>BUILDING_ROMAN_SENATE</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
 			</Row>
+<!--			
 			<Row>
 				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
@@ -581,10 +582,12 @@
 				<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_1</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
 			</Row>			
+-->			
 			<Row>
 				<BuildingType>BUILDING_SHERIFF_OFFICE</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
 			</Row>
+<!--			
 			<Row>
 				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
@@ -593,10 +596,12 @@
 				<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_2</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
 			</Row>
+-->			
 			<Row>
 				<BuildingType>BUILDING_POLICE_STATION</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
 			</Row>
+<!--			
 			<Row>
 				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
@@ -604,15 +609,18 @@
 			<Row>
 				<BuildingType>BUILDING_ENG_COLONIAL_OFFICE_3</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
-			</Row>						
+			</Row>				
+-->					
 			<Row>
 				<BuildingType>BUILDING_PROCURATORATE</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
 			</Row>
+<!--			
 			<Row>
 				<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
 				<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
 			</Row>			
+-->			
 		</Building_ClassesNeededInCity>
 
 
@@ -627,6 +635,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-10</Yield>
 		</Row>
+<!--		
 		<Row>
 			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -642,11 +651,13 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>25</Yield>
 		</Row>		
+-->		
 		<Row>
 			<BuildingType>BUILDING_SHERIFF_OFFICE</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-25</Yield>
 		</Row>
+<!--		
 		<Row>
 			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_3</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -662,11 +673,13 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>25</Yield>
 		</Row>				
+-->		
 		<Row>
 			<BuildingType>BUILDING_POLICE_STATION</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-35</Yield>
 		</Row>
+<!--		
 		<Row>
 			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_4</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -682,18 +695,21 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>25</Yield>
 		</Row>		
+-->		
 		<Row>
 			<BuildingType>BUILDING_PROCURATORATE</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-55</Yield>
 		</Row>
+<!--		
 		<Row>
 			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_5</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-65</Yield>
 		</Row>		
+-->		
 	</Building_YieldChangesPerPop>
-
+<!--
 	<Building_YieldModifiers>
 		
 		
@@ -777,7 +793,7 @@
 		</Row>							
 
 	</Building_YieldModifiers>	
-
+-->
 
 
 	<Building_ResourceQuantityRequirements>
@@ -816,7 +832,7 @@
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
 			<Cost>20</Cost>
 		</Row>
-
+<!--
 		<Row>
 			<BuildingType>BUILDING_RUSSIAN_GUBERNIA_2</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
@@ -853,8 +869,9 @@
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
 			<Cost>10</Cost>
 		</Row>
+-->		
 	</Building_ResourceQuantityRequirements>
-
+<!--
 	<Building_BuildingClassHappiness>
 
 
@@ -1027,7 +1044,7 @@
 		</Row>		
 
 	</Building_BuildingClassYieldChanges>
-
+-->
 
 	<Building_GlobalYieldModifiers>
 
