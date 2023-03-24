@@ -400,6 +400,32 @@
 		</Row>
 
 		<Row>
+			<Type>PROJECT_TDF</Type>
+			<Description>TXT_KEY_PROJECT_TDF</Description>
+			<Help>TXT_KEY_PROJECT_TDF_HELP</Help>
+			<Civilopedia>TXT_KEY_UNIT_SAS_TDF_TEXT</Civilopedia>
+			<TechPrereq>TECH_GLOBALIZATION</TechPrereq>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>2000</Cost>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>SPBalance_ATLAS</IconAtlas>
+		</Row>
+
+		<Row>
+			<Type>PROJECT_VADER</Type>
+			<Description>TXT_KEY_PROJECT_VADER</Description>
+			<Help>TXT_KEY_PROJECT_VADER_HELP</Help>
+			<Civilopedia>TXT_KEY_UNIT_HELP_DVADERCIVUNIT</Civilopedia>
+			<TechPrereq>TECH_INTERSTELLAR_TRAVEL</TechPrereq>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>5000</Cost>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>SPBalance_ATLAS</IconAtlas>
+		</Row>
+
+		<Row>
 			<Type>PROJECT_WEISHI_ROCKETS</Type>
 			<Description>TXT_KEY_PROJECT_WEISHI_ROCKETS</Description>
 			<Help>TXT_KEY_PROJECT_WEISHI_ROCKETS_HELP</Help>
@@ -421,6 +447,19 @@
 			<MaxGlobalInstances>1</MaxGlobalInstances>
 			<MaxTeamInstances>1</MaxTeamInstances>
 			<Cost>1000</Cost>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>SPBalance_ATLAS</IconAtlas>
+		</Row>
+
+		<Row>
+			<Type>PROJECT_MIG</Type>
+			<Description>TXT_KEY_PROJECT_MIG</Description>
+			<Help>TXT_KEY_PROJECT_MIG_HELP</Help>
+			<Civilopedia>TXT_KEY_UNIT_MC_SOVIET_MIG_21_PEDIA</Civilopedia>
+			<TechPrereq>TECH_ROCKETRY</TechPrereq>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>700</Cost>
 			<PortraitIndex>29</PortraitIndex>
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 		</Row>
