@@ -3141,7 +3141,7 @@
 		<Row>
 			<UnitType>UNIT_NUCLEAR_SUBMARINE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>6</Cost>
 		</Row>
 
 
@@ -3150,79 +3150,79 @@
 		<Row>
 			<UnitType>UNIT_VENETIAN_GALLEASS</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>5</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_KOREAN_TURTLE_SHIP</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>5</Cost>
 		</Row>
 		
 		<Row>
 			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_ENGLISH_SHIPOFTHELINE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SONGHAI_EXPEDITION_FLEET</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>6</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_PROTECTED_CRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>7</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_HEAVY_CRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_GREEK_ARMORED_CRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>8</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_MISSILE_CRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>9</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_KIROV_BATTLECRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>9</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FRANCE_MISTRAL</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>12</Cost>
 		</Row>
 
 
 		<Row>
 			<UnitType>UNIT_DREADNOUGHT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>10</Cost>
+			<Cost>12</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_ROMAN_REUMBERTO</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>8</Cost>
 		</Row>
 
 
 		<Row>
 			<UnitType>UNIT_BATTLESHIP</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>10</Cost>
+			<Cost>14</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_JAPANESE_BATTLESHIP</UnitType>
@@ -3233,30 +3233,30 @@
 		<Row>
 			<UnitType>UNIT_FUTURE_BATTLESHIP</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>16</Cost>
 		</Row>
 	
 
 		<Row>
 			<UnitType>UNIT_CARRIER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>10</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_NUCLEAR_CARRIER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>14</Cost>
+			<Cost>12</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_AMERICAN_NIMITZ</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>14</Cost>
+			<Cost>12</Cost>
 		</Row>
 		
 		<Row>
 			<UnitType>UNIT_SUPER_CARRIER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>16</Cost>
+			<Cost>14</Cost>
 		</Row>
 
 
@@ -3666,6 +3666,12 @@
 			<UnitType>UNIT_SSBN</UnitType>
 			<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_SSBN</UnitType>
+			<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
+		</Row>
+		
 	</Unit_AITypes>
 
 	

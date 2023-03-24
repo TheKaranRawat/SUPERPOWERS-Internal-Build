@@ -1739,8 +1739,6 @@
 			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
 			<Combat>180</Combat>
 			<Cost>2000</Cost>
-			<FaithCost>1100</FaithCost>
-			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>5</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
@@ -1752,7 +1750,6 @@
 			<Help>TXT_KEY_UNIT_FW_RAILGUN_TANK_HELP</Help>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_ADAMANTIUM</ObsoleteTech>
 			<Pillage>true</Pillage>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<Mechanized>true</Mechanized>
@@ -1786,7 +1783,6 @@
 			<Help>TXT_KEY_UNIT_FW_MECH_ARTILLERY_HELP</Help>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_HYPERSTRUCTURES</ObsoleteTech>
 			<Pillage>true</Pillage>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<Mechanized>true</Mechanized>
@@ -1820,7 +1816,6 @@
 			<Help>TXT_KEY_UNIT_FW_VERTOL_HELP</Help>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_CYBERNETICS</ObsoleteTech>
 			<Pillage>true</Pillage>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<AdvancedStartCost>60</AdvancedStartCost>
@@ -2034,7 +2029,6 @@
 			<Strategy>TXT_KEY_UNIT_FW_UAV_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_FW_UAV_HELP</Help>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_IMPLANTS</ObsoleteTech>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
 			<Mechanized>true</Mechanized>
 			<AdvancedStartCost>70</AdvancedStartCost>
@@ -2140,8 +2134,8 @@
 			<Class>UNITCLASS_FW_HYPERMISSILE</Class>
 			<Type>UNIT_FW_HYPERMISSILE</Type>
 			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
-			<RangedCombat>150</RangedCombat>
-			<Cost>200</Cost>
+			<RangedCombat>800</RangedCombat>
+			<Cost>800</Cost>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
@@ -2487,8 +2481,6 @@
 			<PrereqTech>TECH_AI</PrereqTech>
 			<Combat>150</Combat>
 			<Cost>1000</Cost>
-			<FaithCost>1000</FaithCost>
-			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>3</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
@@ -4335,20 +4327,20 @@
 			<Row>
 				<UnitType>UNIT_FW_CRAWLER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>2</Cost>
+				<Cost>8</Cost>
 			</Row>
 
 			<Row>
 				<UnitType>UNIT_FW_BATTLESUIT</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>1</Cost>
+				<Cost>3</Cost>
 			</Row>
 			
 
 			<Row>
 				<UnitType>UNIT_FW_HOVERTANK</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>2</Cost>
+				<Cost>3</Cost>
 			</Row>
 
 			<Row>
@@ -4366,7 +4358,7 @@
 			<Row>
 				<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>3</Cost>
+				<Cost>2</Cost>
 			</Row>
 
 			<Row>
@@ -4378,7 +4370,7 @@
 			<Row>
 				<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>4</Cost>
+				<Cost>2</Cost>
 			</Row>
 
 
@@ -4827,10 +4819,7 @@
 			<UnitType>UNIT_FW_CRAWLER</UnitType>
 			<UnitAIType>UNITAI_EXPLORE</UnitAIType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_CRAWLER</UnitType>
-			<UnitAIType>UNITAI_MISSILE_CARRIER_SEA</UnitAIType>
-		</Row>
+		
 
 		<!--
 		<Row>
