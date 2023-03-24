@@ -4,6 +4,23 @@
 	<!-- ************************New Builds ********************************-->
 	<Builds>
 
+
+		<Row>
+			<Type>BUILD_NATIONALPARK</Type>
+			<PrereqTech>TECH_RADIO</PrereqTech>
+			<Time>100</Time>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<Description>TXT_KEY_BUILD_NATIONALPARK</Description>
+			<Help>TXT_KEY_IMPROVEMENT_NATIONALPARK_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_NATIONALPARK_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
+			<HotKey>KB_K</HotKey>
+			<OrderPriority>99</OrderPriority>
+            <IconIndex>41</IconIndex>
+            <IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+
+
 		<Row>
 			<Type>BUILD_PADDY_UI</Type>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
@@ -499,6 +516,17 @@
 
 		<Delete UnitType="UNIT_GREAT_GENERAL"/>
 		<Delete UnitType="UNIT_MONGOLIAN_KHAN"/>
+
+
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_NATIONALPARK</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
+			<BuildType>BUILD_NATIONALPARK</BuildType>
+		</Row>		
+
 
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>

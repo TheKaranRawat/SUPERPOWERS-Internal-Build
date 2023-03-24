@@ -6,6 +6,19 @@
 
 		<Delete Type="IMPROVEMENT_FEITORIA"/>
 
+
+		<Row>
+			<Type>IMPROVEMENT_NATIONALPARK</Type>
+			<Description>TXT_KEY_IMPROVEMENT_NATIONALPARK</Description>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_NATIONALPARK_TEXT</Civilopedia>
+			<Help>TXT_KEY_IMPROVEMENT_NATIONALPARK_HELP</Help>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_TRADING_POST</ArtDefineTag>
+			<PillageGold>100</PillageGold>
+			<PortraitIndex>32</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+
+
 		<Row>
 			<Type>IMPROVEMENT_PADDY_UI</Type>
 			<Description>TXT_KEY_IMPROVEMENT_PADDY_UI</Description>
@@ -376,6 +389,29 @@
 	
 	<Improvement_ValidTerrains>
 
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>	
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>		
+
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
 			<TerrainType>TERRAIN_GRASS</TerrainType>
@@ -721,6 +757,21 @@
 
 
 	<Improvement_ValidFeatures>
+
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+		</Row>
+
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_STEEL_PLANT</ImprovementType>
@@ -1546,6 +1597,24 @@
 			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
 		</Row>
 
+
+		<Row>
+			<Type>BUILD_NATIONALPARK</Type>
+			<PrereqTech>TECH_RADIO</PrereqTech>
+			<Time>100</Time>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<Description>TXT_KEY_BUILD_NATIONALPARK</Description>
+			<Help>TXT_KEY_IMPROVEMENT_NATIONALPARK_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_NATIONALPARK_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
+			<HotKey>KB_K</HotKey>
+			<OrderPriority>99</OrderPriority>
+            <IconIndex>41</IconIndex>
+            <IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+
+
+
 		<Row>
 			<Type>BUILD_STEEL_PLANT</Type>
 			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
@@ -1585,6 +1654,17 @@
 	
 	
 	<Unit_Builds>
+
+
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_NATIONALPARK</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
+			<BuildType>BUILD_NATIONALPARK</BuildType>
+		</Row>		
+
 
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
@@ -1631,15 +1711,17 @@
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_IROQUOIAN_FOREST_FARM</BuildType>
 		</Row>
-
+<!--
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_FISHERY_MOD</BuildType>
 		</Row>
+-->		
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_FISHFARM_MOD</BuildType>
 		</Row>
+
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_GAS_RIG_MOD</BuildType>
@@ -1674,15 +1756,17 @@
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_MOUNTAIN_ROCKS</BuildType>
 		</Row>
-		
+<!--		
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_FISHERY_MOD</BuildType>
 		</Row>
+-->		
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_FISHFARM_MOD</BuildType>
 		</Row>
+		
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_GAS_RIG_MOD</BuildType>
@@ -1743,6 +1827,24 @@
 			<Set ArtDefineTag="ART_DEF_IMPROVEMENT_FEITORIA" Coastal="true" PortraitIndex="3" IconAtlas="TERRAIN_IMPROVEMENT_ICON_ATLAS_EXP2" IgnoreOwnership="true" />
 			<Where Type="IMPROVEMENT_FORT"/>
 		</Update>
+
+
+	<Update>	
+		<Set>
+			<BuildableOnResources>true</BuildableOnResources>
+			<!--<DefenseModifier>0</DefenseModifier>-->
+			<InAdjacentFriendly>false</InAdjacentFriendly>
+			<CultureBombRadius>0</CultureBombRadius>
+			<CreatedByGreatPerson>false</CreatedByGreatPerson>
+			<NearbyEnemyDamage>1</NearbyEnemyDamage>
+			<NoTwoAdjacent>false</NoTwoAdjacent>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+           <PortraitIndex>32</PortraitIndex>
+           <IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Set>
+		<Where Type="IMPROVEMENT_NATIONALPARK"/>
+	</Update>
+
 
 	<Update>	
 		<Set>
@@ -2047,6 +2149,30 @@
 	
 
 	<Improvement_Yields>
+
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+
+
 		<!--<Row>
 			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -2069,7 +2195,7 @@
 		</Row>-->
 		
 		<Update>
-			<Set Yield="10"/>
+			<Set Yield="5"/>
 			<Where ImprovementType="IMPROVEMENT_HOLY_SITE"/>
 		</Update>
 
@@ -2785,7 +2911,12 @@
 	</Improvement_RiverSideYields>
 
 	<Improvement_AdjacentMountainYieldChanges>
-
+		
+		<Row>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>5</Yield>
+		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>

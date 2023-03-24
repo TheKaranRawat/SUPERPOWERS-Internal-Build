@@ -8,6 +8,25 @@
 	
 	<Language_en_US>
 
+
+		<Row Tag="TXT_KEY_IMPROVEMENT_NATIONALPARK">
+			<Text>National Park</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_NATIONALPARK">
+			<Text>Found a National Park</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_NATIONALPARK_TEXT">
+			<Text>
+				National parks give a save haven for wildlife and prevent humans from defiling mother nature there.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_NATIONALPARK_HELP">
+			<Text>
+				A National Park can be built on any land tile, the tile will get marsh, jungle or forest, if possible. Possible to build only by Naturalists (only buyable with faith, unlocked with Harmony policy branch). Yields sth idk, though its gonna be worth it.
+			</Text>
+		</Row>
+
+
 		<Row Tag="TXT_KEY_IMPROVEMENT_PADDY_UI">
 			<Text>Rice Terrace</Text>
 		</Row>

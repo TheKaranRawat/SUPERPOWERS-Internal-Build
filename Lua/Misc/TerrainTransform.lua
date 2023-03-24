@@ -90,6 +90,36 @@ function ImprovementBuilt(iPlayer, x, y, eImprovement)
 			end
 		end
 		    		
+
+	elseif (eImprovement == GameInfo.Improvements["IMPROVEMENT_NATIONALPARK"].ID) then		
+		pPlot:SetImprovementType(-1)
+		pPlot:SetFeatureType(-1)
+		for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
+			local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
+			if ((pAdjacentPlot:GetImprovementType() == -1) or ((pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_NATIONALPARK"].ID)) then 
+				if pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_GRASS and pPlot:GetTerrainType() ~= GameInfoTypes.TERRAIN_HILL then
+					pPlot:SetFeatureType(GameInfoTypes.FEATURE_MARSH)
+					print ("Changed fatland grass to marsh")
+				end
+				if pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_GRASS and pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_HILL then
+					pPlot:SetFeatureType(GameInfoTypes.FEATURE_FOREST)
+					print ("Changed hilly grass to forest")
+				end					
+				if pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_PLAINS then
+					pPlot:SetFeatureType(GameInfoTypes.FEATURE_JUNGLE)
+					print ("Changed grass to jungle")
+				end					
+				if pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_TUNDRA then
+					pPlot:SetFeatureType(GameInfoTypes.FEATURE_FOREST)
+					print ("Changed grass to forest")
+				end	
+				pPlot:SetImprovementType(GameInfo.Improvements["IMPROVEMENT_NATIONALPARK"].ID)
+				print ("Nationalpark created!")
+			end
+		end
+
+
+
 				
 		
 	elseif (eImprovement == GameInfo.Improvements["IMPROVEMENT_ETHIOPIA_COFFEE"].ID) then	
