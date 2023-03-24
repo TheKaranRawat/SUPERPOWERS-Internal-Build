@@ -1092,7 +1092,11 @@
 	<Building_ResourceQuantity>
 
 
-
+		<Row>
+			<BuildingType>BUILDING_HARBOR</BuildingType>
+			<ResourceType>RESOURCE_CONSUMER</ResourceType>
+			<Quantity>3</Quantity>
+		</Row>
 
 
 
@@ -1698,12 +1702,12 @@
 		<Row>
 			<BuildingType>BUILDING_PALACE</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PALACE</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>4</Yield>
+			<Yield>3</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITYSTATE_RESOURCE</BuildingType>
@@ -3885,6 +3889,23 @@
 
 
 		<Row>
+			<BuildingType>BUILDING_WORKSHOP</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SAWMILL</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FACTORY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>5</Yield>
+		</Row>		
+
+
+		<Row>
 			<BuildingType>BUILDING_OBSERVATORY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>10</Yield>
@@ -4044,7 +4065,7 @@
 		<Row>
 			<BuildingType>BUILDING_IRONWORKS</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>20</Yield>
+			<Yield>15</Yield>
 		</Row>
 		
 
@@ -4068,22 +4089,22 @@
 		<Row>
 			<BuildingType>BUILDING_FW_GEOTHERMAL_PLANT</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>15</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_BOREHOLE</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_TIDAL_PLANT</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>15</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_TIDAL_ARRAY</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_TIDAL_ARRAY</BuildingType>
@@ -4093,7 +4114,7 @@
 		<Row>
 			<BuildingType>BUILDING_FW_FUSION_PLANT</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>15</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_LAUNCH_FACILITY</BuildingType>
@@ -4108,7 +4129,7 @@
 		<Row>
 			<BuildingType>BUILDING_FW_SPACE_STATION</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>25</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_SPACE_STATION</BuildingType>
@@ -4123,13 +4144,13 @@
 		<Row>
 			<BuildingType>BUILDING_FW_ALLOY_FOUNDRY</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>30</Yield>
+			<Yield>5</Yield>
 		</Row>
 		
 		<Row>
 			<BuildingType>BUILDING_FW_IMPLANT_CLINIC</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>15</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_IMPLANT_CLINIC</BuildingType>
@@ -4139,7 +4160,7 @@
 		<Row>
 			<BuildingType>BUILDING_FW_CYBERCLINIC</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>15</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FW_CYBERCLINIC</BuildingType>
@@ -4195,6 +4216,22 @@
 	<Building_GlobalYieldModifiers>	
 		
 
+		<Row>
+			<BuildingType>BUILDING_WORKSHOP</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SAWMILL</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FACTORY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>3</Yield>
+		</Row>	
+
 
 		<Row>
 			<BuildingType>BUILDING_OBSERVATORY</BuildingType>
@@ -4217,15 +4254,35 @@
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>0.5</Yield>
+			<Yield>-2</Yield>
 		</Row>
 
 
 		<Row>
-			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<BuildingType>BUILDINGCLASS_CITY_HALL_LV1</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>-1</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDINGCLASS_CITY_HALL_LV2</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDINGCLASS_CITY_HALL_LV3</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDINGCLASS_CITY_HALL_LV4</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDINGCLASS_CITY_HALL_LV5</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>						
 
 
 		<Row>
@@ -4470,12 +4527,46 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>3</Yield>
 		</Row>
-		<!--<Row>
+		<Row>
 			<BuildingType>BUILDING_HARBOR</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		-->
+		<Row>
+			<BuildingType>BUILDING_HARBOR</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_INDONESIA_SPICE_HARBOR</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_HARBOR</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SHIPYARD</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SHIPYARD</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_SEAPORT</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SHIPYARD</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>		
 	</Building_SeaPlotYieldChanges>
 	
 	<Building_LakePlotYieldChanges>
@@ -5459,6 +5550,85 @@
 
 
 		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>	
+
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>				
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+
+
+
+
+
+		<Row>
 			<BuildingType>BUILDING_FW_FLOATINGISLANDS</BuildingType>
 			<FeatureType>FEATURE_ATOLL</FeatureType>
 			<YieldType>YIELD_CULTURE</YieldType>
@@ -5626,6 +5796,185 @@
 	
 
 	<Building_TerrainYieldChanges>
+
+
+		<Row>
+			<BuildingType>BUILDING_EXPLORATION_REMOVE_DEBUFF</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EXPLORATION_REMOVE_DEBUFF</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+
+
+		<Row>
+			<BuildingType>BUILDING_ONE_VISION</BuildingType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ONE_VISION</BuildingType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ONE_VISION</BuildingType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_ONE_VISION</BuildingType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+
+
+
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>	
+
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+			<YieldType>YIELD_GRASS</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>				
+
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>	
+
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>	
+
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>	
+
+
+
+
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_EMPIRE_PORT</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
 
 		<Row>
 			<BuildingType>BUILDING_FW_HELIOS</BuildingType>
@@ -5820,7 +6169,12 @@
 	<Building_SpecialistYieldChanges>
 
 
-	
+		<Row>
+			<BuildingType>BUILDING_FW_SHANGHAI_WFC</BuildingType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>	
 
 
 
@@ -6091,76 +6445,41 @@
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>	
 
 
-		<Row>
-			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
-			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-1</Yield>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
-			<SpecialistType>SPECIALIST_WRITER</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
-			<SpecialistType>SPECIALIST_MUSICIAN</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-1</Yield>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
-			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-1</Yield>
-		</Row>		
-		<Row>
-			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
-			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1</Yield>
-		</Row>			
+			
 
 
 	</Building_SpecialistYieldChanges>
@@ -6170,9 +6489,21 @@
 	<Building_YieldChangesPerPop>
 
 
-
-
-
+		<Row>
+			<BuildingType>BUILDING_WORKSHOP</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SAWMILL</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FACTORY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>30</Yield>
+		</Row>
 
 
 
