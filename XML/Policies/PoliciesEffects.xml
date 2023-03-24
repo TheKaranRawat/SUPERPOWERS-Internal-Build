@@ -139,17 +139,6 @@
 			<Yield>2</Yield>
 		</Row>
 
-		<Row>
-			<PolicyType>POLICY_CENTRALISATION</PolicyType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
-		</Row>
-
-		<Row>
-			<PolicyType>POLICY_CENTRALISATION</PolicyType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
-		</Row>
 		
 		<Row>
 			<PolicyType>POLICY_ISKA_UNITED_FRONT</PolicyType>
@@ -157,6 +146,32 @@
 			<Yield>2</Yield>
 		</Row>
 
+
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-10</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>-10</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>-10</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>-10</Yield>
+		</Row>		
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-10</Yield>
+		</Row>
 
 	</Policy_SpecialistExtraYields>
 
@@ -406,7 +421,7 @@
 			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>3</YieldChange>
+			<YieldChange>2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
@@ -744,7 +759,30 @@
 	<Policy_BuildingClassYieldModifiers>
 
 
-
+		<Row>
+			<PolicyType>POLICY_ISKA_CONSTITUTION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldMod>-2</YieldMod>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ISKA_CONSTITUTION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldMod>-1</YieldMod>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ISKA_CONSTITUTION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldMod>-5</YieldMod>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ISKA_CONSTITUTION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldMod>-2</YieldMod>
+		</Row>				
 
 
 
@@ -914,6 +952,16 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<YieldMod>50</YieldMod>
 		</Row>
+
+
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_BIOPHILIA</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldMod>-10</YieldMod>
+		</Row>
+
+
 	</Policy_BuildingClassYieldModifiers>
 
 	
@@ -971,6 +1019,29 @@
 	<Policy_BuildingClassHappiness>
 
 
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<Happiness>10</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>		
+
+		<Row>
+			<PolicyType>POLICY_PROVINCE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>	
 
 
 
@@ -984,17 +1055,13 @@
 
 
 
-
-
-
-
-
+<!--
 		<Row>
 			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TCS_TOWN_COUNCIL</BuildingClassType>
 			<Happiness>5</Happiness>
 		</Row>
-
+-->
 
 		<Row>
 			<PolicyType>POLICY_RESETTLEMENT</PolicyType>
@@ -1143,64 +1210,34 @@
 		</Row>
 -->
 
-		<Row>
-			<PolicyType>POLICY_SERENE_REALM</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
-			<Happiness>5</Happiness>
-		</Row>
+
 		<Row>
 			<PolicyType>POLICY_SERENE_REALM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingClassType>
-			<Happiness>5</Happiness>
+			<Happiness>4</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SERENE_REALM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
-			<Happiness>5</Happiness>
+			<Happiness>4</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SERENE_REALM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
-			<Happiness>5</Happiness>
+			<Happiness>4</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SERENE_REALM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingClassType>
-			<Happiness>5</Happiness>
+			<Happiness>4</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SERENE_REALM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
-			<Happiness>5</Happiness>
+			<Happiness>4</Happiness>
 		</Row>
 
 
-		<Row>
-			<PolicyType>POLICY_PROVINCE</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV1</BuildingClassType>
-			<Happiness>5</Happiness>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_PROVINCE</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV2</BuildingClassType>
-			<Happiness>5</Happiness>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_PROVINCE</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV3</BuildingClassType>
-			<Happiness>5</Happiness>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_PROVINCE</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV4</BuildingClassType>
-			<Happiness>5</Happiness>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_PROVINCE</PolicyType>
-			<BuildingClassType>BUILDINGCLASS_CITY_HALL_LV5</BuildingClassType>
-			<Happiness>5</Happiness>
-		</Row>
-		
 		
 		
 		
@@ -1897,17 +1934,7 @@
 
 	<Policy_ImprovementCultureChanges>
 
-		<Row>
-			<PolicyType>POLICY_ISKA_CONSTITUTION</PolicyType>
-			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-			<CultureChange>2</CultureChange>
-		</Row>
 
-		<Row>
-			<PolicyType>POLICY_ISKA_CONSTITUTION</PolicyType>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
-			<CultureChange>2</CultureChange>
-		</Row>
 
 
 		<Row>
@@ -2682,6 +2709,15 @@
 
 
 	<Policy_YieldModifiers>
+		
+		
+		<Row>
+			<PolicyType>TXT_KEY_POLICY_RATIONALISM_FINISHER</PolicyType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>5</Yield>
+		</Row>
+
+		
 		<Row>
 			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
@@ -2703,26 +2739,32 @@
 			<Yield>5</Yield>
 		</Row>
 
+
 		<Row>
 			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
-		</Row>
-		<Row>
-			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>10</Yield>
+			<Yield>-10</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>-10</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>10</Yield>
-		</Row>		
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>10</Yield>
+		</Row>			
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>10</Yield>
+		</Row>			
 
 	</Policy_YieldModifiers>
 
@@ -3408,8 +3450,7 @@
 			<Cost>-1</Cost>
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>
-			<NumTradeRouteBonus>1</NumTradeRouteBonus>
+			<HurryCostModifier>-1</HurryCostModifier>		
 			<TradeRouteRecipientBonus>15</TradeRouteRecipientBonus>
 			<TradeRouteTargetBonus>15</TradeRouteTargetBonus>
 			<PortraitIndex>2</PortraitIndex>
@@ -3796,7 +3837,7 @@
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Description>
@@ -3810,7 +3851,7 @@
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Description>
@@ -3824,7 +3865,7 @@
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Description>

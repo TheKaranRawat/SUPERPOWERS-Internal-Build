@@ -53,7 +53,7 @@
 				[NEWLINE][NEWLINE]Finishing Bonus:
 				[NEWLINE][ICON_BULLET]Starts a [ICON_GOLDEN_AGE] Golden Age for 10 turns.	
 				[NEWLINE][ICON_BULLET]+10% [ICON_CITIZEN] Pop Growth.				
-				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold output in all cities
+				[NEWLINE][ICON_BULLET]10% [ICON_CULTURE][ICON_FOOD][ICON_PEACE], -10% [ICON_RESEARCH][ICON_PRODUCTION]in all cities
 			</Text>
 		</Row>
 
@@ -110,7 +110,6 @@
 			<Text>
 			[COLOR_POSITIVE_TEXT]The Pursuit of Profit[ENDCOLOR]
 			[NEWLINE]+15% [ICON_GOLD] Gold from [ICON_INTERNATIONAL_TRADE] Trade Routes
-			[NEWLINE]+1 [ICON_INTERNATIONAL_TRADE] Trade Route per City.
 			</Text>	
 		</Row>
 
@@ -338,8 +337,8 @@
 		<Row Tag="TXT_KEY_POLICY_ONE_VISION_HELP">
 			<Text>
 			[COLOR_POSITIVE_TEXT]One Vision[ENDCOLOR]
-			[NEWLINE]+2 [ICON_CULTURE] Culture from Mines.
-			[NEWLINE]+2 [ICON_CULTURE] Culture from Lumber Mills.
+			[NEWLINE]-2[ICON_PRODUCTION] and +1[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE] from Hills.
+			[NEWLINE]-1/2%[ICON_RESEARCH] and -2/5%[ICON_PRODUCTION] for Empire/Republic
 			</Text>
 		</Row>
 
@@ -354,8 +353,8 @@
 		<Row Tag="TXT_KEY_POLICY_BIOPHILIA_HELP">
 			<Text>
 			[COLOR_POSITIVE_TEXT]Biophilia[ENDCOLOR]
-			[NEWLINE]+1 [ICON_FOOD] Food from Farms.
-			[NEWLINE]+1 [ICON_FOOD] Food from Fishing Nets.
+			[NEWLINE]-10 to all of the yields of the Specialists (not only respective yields!)
+			[NEWLINE]All land tiles produce +1[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE], +3[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE] if forested or marsh, 
 			</Text>
 		</Row>
 
@@ -418,7 +417,7 @@
 		<Row Tag="TXT_KEY_POLICY_SERENE_HELP">
 			<Text>
 			[COLOR_POSITIVE_TEXT]The Serene Realm[ENDCOLOR]
-			[NEWLINE][ICON_BULLET]-5 [ICON_HAPPINESS_4] Unhappiness due to city's Population Size.
+			[NEWLINE][ICON_BULLET]-4 [ICON_HAPPINESS_4] Unhappiness due to city's Population Size (starting with City Size [ICON_CITYBANNER_CITY_MEDIUM]Medium).
 			[NEWLINE]-15% [ICON_CULTURE] Policy cost.
 			</Text>
 		</Row>
@@ -457,12 +456,15 @@
 				[NEWLINE][NEWLINE]Opening Effects:
 				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture and +5% [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital
 				[NEWLINE][ICON_BULLET]-25% [ICON_CULTURE] Culture cost for acquiring new plots in all cities
+				[NEWLINE][ICON_BULLET]10 [ICON_HAPPINESS_1] happiness in the palace				
 				[NEWLINE][ICON_BULLET]1 [ICON_HAPPINESS_1] happiness for every 3[ICON_CITIZEN]
+				[NEWLINE][ICON_BULLET]5 extra [ICON_HAPPINESS_4] unhappiness per city (with the Schools of Thought policy)
 				[NEWLINE][ICON_BULLET]Buildings generating [ICON_RESEARCH] Science recieve -1 to their primary [ICON_RESEARCH]yield!
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE] Policies increased by 15% for every city[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: Hanging Gardens
 				[NEWLINE][ICON_BULLET]Building Unlocked: Public Baths
 				[NEWLINE][NEWLINE]Finishing Bonus:
+				[NEWLINE][ICON_BULLET]5 extra [ICON_HAPPINESS_4] unhappiness per city (with the Schools of Thought policy)
 				[NEWLINE][ICON_BULLET]+5% [ICON_CULTURE] Culture, [ICON_RESEARCH] Science, [ICON_PRODUCTION] Production and [ICON_GOLD] Gold output in all cities			
 				[NEWLINE][ICON_BULLET]Allows the purchase of Great Engineers with [ICON_PEACE] Faith starting in the Industrial Era
 				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch CANNOT be active at the same time as Empire[ENDCOLOR]</Text>
@@ -579,9 +581,9 @@
 		<Row Tag="TXT_KEY_POLICY_CENTRALISATION_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Decentralisation[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]New Units receive +15 XP
+				[NEWLINE][ICON_BULLET]New Units receive +10 XP
 				[NEWLINE][ICON_BULLET]The [ICON_CITIZEN] Population Loss caused by Unit Casualties reduced by 50%
-				[NEWLINE][ICON_BULLET]+2 primary yield from [ICON_CITIZEN] Specialists if Imperial Academy is present in the city	
+				[NEWLINE][ICON_BULLET]+1 primary yield from [ICON_CITIZEN] Specialists if Imperial Academy is present in the city	
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_CENTRALISATION_TEXT">
@@ -613,7 +615,6 @@
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: The Pyramids
 				[NEWLINE][ICON_BULLET]Building Unlocked: Town Council
 				[NEWLINE][NEWLINE]Finishing Bonus:
-				[NEWLINE][ICON_BULLET]5 [ICON_HAPPINESS_1] per City	with a Town Council	
 				[NEWLINE][ICON_BULLET]1 free Settler
 				[NEWLINE][ICON_BULLET]Starts a Golden Age
 				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Republic[ENDCOLOR]
@@ -635,12 +636,14 @@
 
 		<Replace Tag="TXT_KEY_POLICY_REPUBLIC" >
 			<Text>Pax Imperia</Text>
+				[NEWLINE][ICON_BULLET]+25% [ICON_FOOD] Food and [ICON_PRODUCTION] Production provided by Internal trade routes.	
+				[NEWLINE][ICON_BULLET]-10% [ICON_GOLD] Gold for Unit Maintenance.						
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_POLICY_REPUBLIC_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Pax Imperia[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+5 extra [ICON_HAPPINESS_1] happiness from every Luxury Resource
+				[NEWLINE][ICON_BULLET]+5 extra [ICON_HAPPINESS_1] happiness from every Luxury Resource.				
 			</Text>
 		</Replace>
 
@@ -688,8 +691,8 @@
 		<Row Tag="TXT_KEY_POLICY_PROVINCE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Praetorian Guard[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]No [ICON_HAPPINESS_4] Unhappiness from Occupied Populations
-				[NEWLINE][ICON_BULLET]5 less [ICON_HAPPINESS_4] Unhappiness due to city level
+				[NEWLINE][ICON_BULLET]10% of the [ICON_HAPPINESS_4] Unhappiness from Occupied Population
+				[NEWLINE][ICON_BULLET]5 [ICON_HAPPINESS_1] happiness from Courthouses
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_PROVINCE_TEXT">
@@ -720,6 +723,7 @@
 		<Replace Tag="TXT_KEY_POLICY_REPRESENTATION_HELP">
 			<Text>
 				[COLOR_POSITIVE_TEXT]Oligarchy[ENDCOLOR]				
+				[NEWLINE][ICON_BULLET]1 [ICON_HAPPINESS_1] happiness for every 10[ICON_CITIZEN]			
 				[NEWLINE][ICON_BULLET]Lower the extra [ICON_CULTURE] Culture cost for adopting new Policies from Lv1 - Lv5 cities (Effects multiply with anti-corruption buildings):
 				[NEWLINE][ICON_BULLET]Lv 1 City: NO extra [ICON_CULTURE] Culture cost.
 				[NEWLINE][ICON_BULLET]Lv 2 City: Extra [ICON_CULTURE] Culture cost lowered from 10% to 5%.
@@ -880,7 +884,7 @@
 		<Row Tag="TXT_KEY_POLICY_RELIGIOUS_POLITICS_HELP">
 			<Text>
 				[COLOR_POSITIVE_TEXT]Dependent Origination[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]10% of the total [ICON_PEACE] Faith output each turn added to the amount of Global [ICON_HAPPINESS_1] Happiness. (At least +2 [ICON_HAPPINESS_1] Happiness, no upper limit)
+				[NEWLINE][ICON_BULLET]5% of the total [ICON_PEACE] Faith output each turn added to the amount of Global [ICON_HAPPINESS_1] Happiness. (At least +2 [ICON_HAPPINESS_1] Happiness, no upper limit)
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_RELIGIOUS_POLITICS_TEXT">
@@ -1161,6 +1165,7 @@
 				[NEWLINE][ICON_BULLET]Settlers will no longer lose HP if ends turns outside friendly territory.
 				[NEWLINE][ICON_BULLET]+1 [ICON_MOVES] Movement for Embarked Units, Workers, Settlers, Archaeologists, Great Prophet and Missionaries.
 				[NEWLINE][ICON_BULLET]+3 [ICON_MOVES] Movement for Great Admirals.
+				[NEWLINE][ICON_BULLET]+1 [ICON_FOOD][ICON_GOLD] on coast tiles			
 				[NEWLINE][ICON_BULLET]World Wonder Unlocked: Port of Rotterdam.
 				[NEWLINE][ICON_BULLET]National Wonder Unlocked: Ironworks.
 				[NEWLINE][ICON_BULLET]Building Unlocked: Botanical Gardens.
@@ -1175,7 +1180,6 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Maritime Infrastructure[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+10 [ICON_PRODUCTION] Production in all coastal Cities.
-				[NEWLINE][ICON_BULLET]+2 [ICON_PRODUCTION] Production for every Fishing Net, Workboats and Offshore Platform.
 			</Text>
 		</Replace>
 		
@@ -1188,7 +1192,7 @@
 		<Replace Tag="TXT_KEY_POLICY_NAVAL_TRADITION_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Naval Tradition[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+2 [ICON_CULTURE] Culture in all coastal Cities.
+				[NEWLINE][ICON_BULLET]+3 [ICON_CULTURE] Culture in all coastal Cities.
 				[NEWLINE][ICON_BULLET]+2 [ICON_CULTURE] Culture for every Lighthouse, Harbor and Seaport.
 			</Text>
 		</Replace>
@@ -1249,7 +1253,7 @@
 				[NEWLINE][ICON_BULLET]National Wonder Unlocked: National Laboratory.
 				[NEWLINE][ICON_BULLET]Building Unlocked: Patent Offices.				
 				[NEWLINE][NEWLINE]Finishing Bonus:
-				[NEWLINE][ICON_BULLET]+0.1[ICON_RESEARCH] Science per [ICON_CITIZEN] Population, but get less [ICON_RESEARCH] Science from buildings.
+				[NEWLINE][ICON_BULLET]5% more [ICON_RESEARCH] Science in every city
 				[NEWLINE][ICON_BULLET]One free Technology.				
 				[NEWLINE][ICON_BULLET]Allows the purchase of Great Scientists with [ICON_PEACE] Faith starting in the Industrial Era.
 			</Text>

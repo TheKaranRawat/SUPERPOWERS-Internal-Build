@@ -81,7 +81,7 @@
 			<GridX>2</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>3</PortraitIndex>
-			<FreeExperience>15</FreeExperience>
+			<FreeExperience>10</FreeExperience>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
@@ -113,7 +113,7 @@
 			<Where Type="POLICY_REPUBLIC"/>
 		</Update>
 		<Update>
-			<Set NumCitiesPolicyCostDiscount="0" GoldenAgeTurns="0" GridX="4" GridY="3" PortraitIndex="41"/>
+			<Set HappinessPerXPopulation="10" NumCitiesPolicyCostDiscount="0" GoldenAgeTurns="0" GridX="4" GridY="3" PortraitIndex="41"/>
 			<Where Type="POLICY_REPRESENTATION"/>
 		</Update>
 		<Update>
@@ -163,7 +163,7 @@
 			<CultureCost>10</CultureCost>
 			<GridX>5</GridX>
 			<GridY>2</GridY>
-			<OccupiedPopulationUnhappinessMod>-100</OccupiedPopulationUnhappinessMod>
+			<OccupiedPopulationUnhappinessMod>-90</OccupiedPopulationUnhappinessMod>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
