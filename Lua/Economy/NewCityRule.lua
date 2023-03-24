@@ -340,7 +340,7 @@ function DoInternationalImmigration(MoveOutPlayerID,MoveInPlayerID)
 
 	for pCity in MoveOutPlayer:Cities() do
 		local cityPop = pCity:GetPopulation()
-		if cityPop > 3 then
+		if cityPop > 16 then
 			MoveOutCities[MoveOutCounter] = pCity
 			MoveOutCounter = MoveOutCounter + 1
 		end		
@@ -350,7 +350,7 @@ function DoInternationalImmigration(MoveOutPlayerID,MoveInPlayerID)
 		local iRandChoice = Game.Rand(MoveOutCounter, "Choosing random city")
 		local targetCity = MoveOutCities[iRandChoice]
 		local Cityname = targetCity:GetName()	
-		if targetCity:GetPopulation() > 3 then
+		if targetCity:GetPopulation() > 16 then
 			targetCity:ChangePopulation(-1, true)
 			print ("Immigrant left this city:"..Cityname)
 			
