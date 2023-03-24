@@ -3082,6 +3082,7 @@
 			<TradeRouteTargetBonus>6</TradeRouteTargetBonus>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>50</PortraitIndex>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>			
 		</Row>
 		<Row>
 			<Type>BUILDING_VENICE_FONDACO</Type>
@@ -3256,6 +3257,7 @@
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>			
 		</Row>
 		<Row>
 			<Type>BUILDING_MOROCCO_MARKET</Type>
@@ -3276,6 +3278,7 @@
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>17</PortraitIndex>
 			<ExtraLuxuries>true</ExtraLuxuries>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>			
 		</Row>
 		
 		
@@ -3481,6 +3484,7 @@
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
 			<PortraitIndex>1</PortraitIndex>
+			<UnhappinessModifier>1</UnhappinessModifier>			
 		</Row>
 		<Row>
 			<Type>BUILDING_TCS_STRONGHOLD</Type>
