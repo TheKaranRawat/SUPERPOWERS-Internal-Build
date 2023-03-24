@@ -2953,8 +2953,6 @@
 			<Text>The Boeing-Sikorsky RAH-66 Comanche was an advanced five-blade armed reconnaissance and attack helicopter designed for the United States Army. The RAH-66 program was canceled in 2004, before mass production began, after nearly US$7 billion was spent on the program.
 			</Text>
 		</Row>
-		
-
 
 		<Row Tag="TXT_KEY_UNIT_TASKFORCE_141">
 			<Text>[COLOR_YELLOW]Task Force 141[ENDCOLOR]</Text>
@@ -4343,6 +4341,14 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE_HELP">
 			<Text>Immnue to [COLOR_POSITIVE_TEXT]Nuclear Attacks[ENDCOLOR].</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_FRENCH_ARTY">
+			<Text>The Gribeauval System</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_FRENCH_ARTY_HELP">
+			<Text>+2 [ICON_MOVES] Movement and +2 [ICON_STRENGTH] Attacks for French Artillery Units</Text>
 		</Row>
 		
 
