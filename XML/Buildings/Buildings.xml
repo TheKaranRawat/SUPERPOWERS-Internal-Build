@@ -3817,6 +3817,7 @@
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>21</PortraitIndex>
 			<GlobalGreatPeopleRateModifier>5</GlobalGreatPeopleRateModifier>
++			<XBuiltTriggersIdeologyChoice>1</XBuiltTriggersIdeologyChoice>			
 		</Row>
 
 		<Row>
