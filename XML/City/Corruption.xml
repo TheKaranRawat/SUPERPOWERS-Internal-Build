@@ -118,7 +118,7 @@
 			<PortraitIndex>57</PortraitIndex>
 			<Happiness>-10</Happiness>
 			<PolicyCostModifier>10</PolicyCostModifier>
-			<UnhappinessModifier>5</UnhappinessModifier>
+			<UnhappinessModifier>6</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_HALL_LV3</Type>
@@ -137,7 +137,7 @@
 			<PortraitIndex>58</PortraitIndex>
 			<Happiness>-15</Happiness>
 			<PolicyCostModifier>15</PolicyCostModifier>
-			<UnhappinessModifier>6</UnhappinessModifier>
+			<UnhappinessModifier>7</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_HALL_LV4</Type>
@@ -156,7 +156,7 @@
 			<PortraitIndex>59</PortraitIndex>
 			<Happiness>-20</Happiness>
 			<PolicyCostModifier>20</PolicyCostModifier>
-			<UnhappinessModifier>8</UnhappinessModifier>
+			<UnhappinessModifier>9</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_CITY_HALL_LV5</Type>
@@ -175,7 +175,7 @@
 			<PortraitIndex>60</PortraitIndex>
 			<Happiness>-25</Happiness>
 			<PolicyCostModifier>25</PolicyCostModifier>
-			<UnhappinessModifier>10</UnhappinessModifier>
+			<UnhappinessModifier>11</UnhappinessModifier>
 		</Row>
 
 		<Row>
@@ -235,7 +235,6 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>12</PortraitIndex>
 			<UnhappinessModifier>-4</UnhappinessModifier>
-			<Happiness>5</Happiness>
 		</Row>
 		<Row>
 			<Type>BUILDING_ROMAN_SENATE</Type>
@@ -317,8 +316,7 @@
 			<PortraitIndex>49</PortraitIndex>
 			<NeverCapture>true</NeverCapture>
 			<PolicyCostModifier>-5</PolicyCostModifier>
-			<UnhappinessModifier>-5</UnhappinessModifier>
-			<Happiness>5</Happiness>			
+			<UnhappinessModifier>-5</UnhappinessModifier>			
 		</Row>
 <!--
 		<Row>
@@ -382,8 +380,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>11</PortraitIndex>
 			<PolicyCostModifier>-5</PolicyCostModifier>
-			<UnhappinessModifier>-6</UnhappinessModifier>
-			<Happiness>5</Happiness>			
+			<UnhappinessModifier>-6</UnhappinessModifier>		
 		</Row>
 <!--
 		<Row>
@@ -446,8 +443,7 @@
 			<PortraitIndex>12</PortraitIndex>
 			<NeverCapture>true</NeverCapture>
 			<PolicyCostModifier>-5</PolicyCostModifier>
-			<UnhappinessModifier>-7</UnhappinessModifier>
-			<Happiness>5</Happiness>			
+			<UnhappinessModifier>-7</UnhappinessModifier>			
 		</Row>
 <!--
 		<Row>
@@ -810,27 +806,27 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV1</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV2</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>7</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV3</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>15</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV4</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>16</Cost>
+			<Cost>20</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV5</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>20</Cost>
+			<Cost>30</Cost>
 		</Row>
 <!--
 		<Row>

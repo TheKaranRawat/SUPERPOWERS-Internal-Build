@@ -3484,7 +3484,7 @@
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
 			<PortraitIndex>1</PortraitIndex>
-			<UnhappinessModifier>1</UnhappinessModifier>			
+			<UnhappinessModifier>3</UnhappinessModifier>			
 		</Row>
 		<Row>
 			<Type>BUILDING_TCS_STRONGHOLD</Type>

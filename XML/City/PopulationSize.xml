@@ -314,43 +314,43 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_TOWN</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>1</Cost>
+			<Cost>2</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_SMALL</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>3</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_MEDIUM</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>15</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_LARGE</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>15</Cost>
+			<Cost>20</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_XL</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>25</Cost>
+			<Cost>30</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_XXL</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>25</Cost>
+			<Cost>30</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_GLOBAL</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>25</Cost>
+			<Cost>30</Cost>
 		</Row>
 
 	</Building_ResourceQuantityRequirements>
@@ -1018,7 +1018,6 @@
 			<BuildingClass>BUILDINGCLASS_GARDEN</BuildingClass>
 			<Cost>75</Cost>
 			<GoldMaintenance>3</GoldMaintenance>
-			<Happiness>3</Happiness>
 			<PrereqTech>TECH_ART_THEORY</PrereqTech>
 			<Description>TXT_KEY_BUILDING_GARDEN</Description>
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_GARDEN_TEXT</Civilopedia>
@@ -1038,7 +1037,6 @@
 			<BuildingClass>BUILDINGCLASS_GARDEN</BuildingClass>
 			<Cost>75</Cost>
 			<GoldMaintenance>3</GoldMaintenance>
-			<Happiness>3</Happiness>
 			<PrereqTech>TECH_ART_THEORY</PrereqTech>
 			<Description>TXT_KEY_BUILDING_CHINESE_GARDEN</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CHINESE_GARDEN_TEXT</Civilopedia>
@@ -1051,14 +1049,13 @@
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>22</PortraitIndex>
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
-			<UnhappinessModifier>-4</UnhappinessModifier>
+			<UnhappinessModifier>-3</UnhappinessModifier>
 		</Row>
 		<Row>
 			<Type>BUILDING_HALL_OF_WORTHIES</Type>
 			<BuildingClass>BUILDINGCLASS_GARDEN</BuildingClass>
 			<Cost>75</Cost>
 			<GoldMaintenance>3</GoldMaintenance>
-			<Happiness>3</Happiness>
 			<PrereqTech>TECH_ART_THEORY</PrereqTech>
 			<Description>TXT_KEY_BUILDING_HALL_OF_WORTHIES</Description>
 			<Civilopedia>TXT_KEY_BUILDING_HALL_OF_WORTHIES_TEXT</Civilopedia>
