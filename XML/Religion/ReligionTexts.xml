@@ -136,13 +136,13 @@
 			<Text>Sudoku</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_RIVER_CRAFTSMAN">
-			<Text>+4 [ICON_HAPPINESS_1] Happiness for every Watermill.</Text>
+			<Text>+3 [ICON_HAPPINESS_1] Happiness for every Watermill.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_MAZU_SHORT">
 			<Text>Worship of Mazu</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_MAZU">
-			<Text>+5 [ICON_HAPPINESS_1] Happiness for every Harbor.</Text>
+			<Text>+3 [ICON_HAPPINESS_1] Happiness for every Harbor.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_CHARITES_SHORT">
 			<Text>Worship of Charites</Text>

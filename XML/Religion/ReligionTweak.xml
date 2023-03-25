@@ -744,12 +744,12 @@
 		<Row>
 			<BeliefType>BELIEF_MAZU</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
-			<Happiness>4</Happiness>
+			<Happiness>3</Happiness>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_RIVER_CRAFTSMAN</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_WATERMILL</BuildingClassType>
-			<Happiness>4</Happiness>
+			<Happiness>3</Happiness>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_HOLY_TULIPS</BeliefType>
