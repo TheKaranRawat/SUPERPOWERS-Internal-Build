@@ -98,7 +98,6 @@
 			<NukeImmune>true</NukeImmune>
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 			<PortraitIndex>56</PortraitIndex>
-			<Happiness>-5</Happiness>
 			<PolicyCostModifier>5</PolicyCostModifier>
 		</Row>
 		<Row>
