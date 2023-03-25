@@ -3137,19 +3137,7 @@
 	<Building_BuildingClassYieldChanges>
 
 
-		<Row>
-			<BuildingType>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>10</YieldChange>
-		</Row>
-
-		<Row>
-			<BuildingType>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>15</YieldChange>
-		</Row>		
+	
 
 
 		<Row>
