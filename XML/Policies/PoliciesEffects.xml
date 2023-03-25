@@ -1019,6 +1019,39 @@
 	<Policy_BuildingClassHappiness>
 
 
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TCS_TOWN_COUNCIL</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>		
+
+
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_ISKA_FREEDOM_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TCS_TOWN_COUNCIL</BuildingClassType>
+			<Happiness>-5</Happiness>
+		</Row>
+
+
+		<Row>
+			<PolicyType>POLICY_LIBERTY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<Happiness>5</Happiness>
+		</Row>
+
+
 
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
@@ -2044,11 +2077,6 @@
 		-->
 
 
-		<Row>
-			<PolicyType>POLICY_LIBERTY</PolicyType>
-			<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-			<Count>1</Count>
-		</Row>
 
 
 		<Row>

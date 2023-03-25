@@ -49,10 +49,12 @@
 				[NEWLINE][NEWLINE]Opening Effects:
 				[NEWLINE][ICON_BULLET]+10% [ICON_CITIZEN] Pop Growth.
 				[NEWLINE][ICON_BULLET]New [ICON_CITY_STATE] Cities start with +4 [ICON_CITIZEN] Population.
+				[NEWLINE][ICON_BULLET]5 extra [ICON_HAPPINESS_4] unhappiness per city				
 								
 				[NEWLINE][NEWLINE]Finishing Bonus:
 				[NEWLINE][ICON_BULLET]Starts a [ICON_GOLDEN_AGE] Golden Age for 10 turns.	
 				[NEWLINE][ICON_BULLET]+10% [ICON_CITIZEN] Pop Growth.				
+				[NEWLINE][ICON_BULLET]5 extra [ICON_HAPPINESS_4] unhappiness per city				
 				[NEWLINE][ICON_BULLET]10% [ICON_CULTURE][ICON_FOOD][ICON_PEACE], -10% [ICON_RESEARCH][ICON_PRODUCTION]in all cities
 			</Text>
 		</Row>
@@ -489,8 +491,8 @@
 		<Replace Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Collective Agriculture[ENDCOLOR]				
-				[NEWLINE][ICON_BULLET]+10% [ICON_FOOD] Food growth in every city.
-				[NEWLINE][ICON_BULLET]+10% bonus [ICON_FOOD] Food growth in the Capital.
+				[NEWLINE][ICON_BULLET]+15% [ICON_FOOD] Food growth in every city.
+				[NEWLINE][ICON_BULLET]+15% bonus [ICON_FOOD] Food growth in the Capital.
 				</Text>
 		</Replace>
 
@@ -610,12 +612,11 @@
 				[NEWLINE][NEWLINE]Opening Effect:
 				[NEWLINE][ICON_BULLET]+10 [ICON_GOLD] Gold per city
 				[NEWLINE][ICON_BULLET]+25% Tile Improvement rate		
-				[NEWLINE][ICON_BULLET]1 free Settler							
+				[NEWLINE][ICON_BULLET]+5 [ICON_HAPPINESS_1] happiness in the palace							
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]City [ICON_FOOD] growth rate reduced by 10%[ENDCOLOR]	
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: The Pyramids
 				[NEWLINE][ICON_BULLET]Building Unlocked: Town Council
-				[NEWLINE][NEWLINE]Finishing Bonus:
-				[NEWLINE][ICON_BULLET][ICON_CITYBANNER_CITY_LV1] cities cost the same [ICON_HAPPINESS_4] as [ICON_CITYBANNER_CITY_LV2] cities				
+				[NEWLINE][NEWLINE]Finishing Bonus:				
 				[NEWLINE][ICON_BULLET]1 free Settler
 				[NEWLINE][ICON_BULLET]Starts a Golden Age
 				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Republic[ENDCOLOR]
@@ -629,8 +630,8 @@
 		<Replace Tag="TXT_KEY_POLICY_COLLECTIVE_RULE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Settler Colonialism[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+15% [ICON_PRODUCTION] Bonus Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] in the Capital</Text>
+				[NEWLINE][ICON_BULLET]+25% [ICON_PRODUCTION] Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR]
+				[NEWLINE][ICON_BULLET]+25% [ICON_PRODUCTION] Bonus Production for training [COLOR_POSITIVE_TEXT]Settlers[ENDCOLOR] in the Capital</Text>
 		</Replace>
 
 		<!-- [NEWLINE][ICON_BULLET]One free Settler appears near the [ICON_CAPITAL] Capital.(Venice receives a Merchant of Venice instead of a Settler)  -->
