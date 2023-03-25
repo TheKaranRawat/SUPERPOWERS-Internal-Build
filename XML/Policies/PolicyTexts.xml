@@ -609,12 +609,13 @@
 
 				[NEWLINE][NEWLINE]Opening Effect:
 				[NEWLINE][ICON_BULLET]+10 [ICON_GOLD] Gold per city
-				[NEWLINE][ICON_BULLET]+25% Tile Improvement rate			
-				[NEWLINE][ICON_BULLET]-1 primary yield from [ICON_CITIZEN] Specialists if Imperial Academy is present in the city					
+				[NEWLINE][ICON_BULLET]+25% Tile Improvement rate		
+				[NEWLINE][ICON_BULLET]1 free Settler							
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]City [ICON_FOOD] growth rate reduced by 10%[ENDCOLOR]	
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: The Pyramids
 				[NEWLINE][ICON_BULLET]Building Unlocked: Town Council
 				[NEWLINE][NEWLINE]Finishing Bonus:
+				[NEWLINE][ICON_BULLET][ICON_CITYBANNER_CITY_LV1] cities cost the same [ICON_HAPPINESS_4] as [ICON_CITYBANNER_CITY_LV2] cities				
 				[NEWLINE][ICON_BULLET]1 free Settler
 				[NEWLINE][ICON_BULLET]Starts a Golden Age
 				[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Republic[ENDCOLOR]
@@ -723,7 +724,7 @@
 		<Replace Tag="TXT_KEY_POLICY_REPRESENTATION_HELP">
 			<Text>
 				[COLOR_POSITIVE_TEXT]Oligarchy[ENDCOLOR]				
-				[NEWLINE][ICON_BULLET]1 [ICON_HAPPINESS_1] happiness for every 10[ICON_CITIZEN]			
+				[NEWLINE][ICON_BULLET]1 [ICON_HAPPINESS_1] happiness for every 2[ICON_CITIZEN]			
 				[NEWLINE][ICON_BULLET]Lower the extra [ICON_CULTURE] Culture cost for adopting new Policies from Lv1 - Lv5 cities (Effects multiply with anti-corruption buildings):
 				[NEWLINE][ICON_BULLET]Lv 1 City: NO extra [ICON_CULTURE] Culture cost.
 				[NEWLINE][ICON_BULLET]Lv 2 City: Extra [ICON_CULTURE] Culture cost lowered from 10% to 5%.

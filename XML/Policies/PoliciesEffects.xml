@@ -1019,6 +1019,7 @@
 	<Policy_BuildingClassHappiness>
 
 
+
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
@@ -2041,6 +2042,14 @@
 			<Count>1</Count>
 		</Row>
 		-->
+
+
+		<Row>
+			<PolicyType>POLICY_LIBERTY</PolicyType>
+			<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+			<Count>1</Count>
+		</Row>
+
 
 		<Row>
 			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
