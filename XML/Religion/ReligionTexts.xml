@@ -58,7 +58,7 @@
 			<Text>Gain [ICON_PEACE] Faith if you win a battle within 16 tiles of your city. </Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BELIEF_MONASTERIES">
-			<Text>Use [ICON_PEACE] Faith to purchase Monasteries, +2 [ICON_PEACE] Faith, +1 [ICON_CULTURE] Culture, +25% [ICON_GREAT_PEOPLE] Great People generation rate in the city. </Text>
+			<Text>Use [ICON_PEACE] Faith to purchase Monasteries, +3 [ICON_HAPPINESS_1] +2 [ICON_PEACE] Faith, +1 [ICON_CULTURE] Culture, +25% [ICON_GREAT_PEOPLE] Great People generation rate in the city. </Text>
 		</Replace>
 
 
