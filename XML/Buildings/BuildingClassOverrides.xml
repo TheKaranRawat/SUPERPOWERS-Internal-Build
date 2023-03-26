@@ -549,7 +549,7 @@
 -->
 		<Row>
 			<CivilizationType>CIVILIZATION_FRANCE</CivilizationType>
-			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
+			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
 			<BuildingType>BUILDING_FRENCH_SALON</BuildingType>
 		</Row>
 
