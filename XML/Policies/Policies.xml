@@ -12,7 +12,7 @@
 	<Policies>
 		
 		<Update>
-			<Set PlotCultureExponentModifier="-25" HappinessPerXPopulation="1" BuildingProductionModifier="25" GreatGeneralRateModifier="10" GreatAdmiralRateModifier="10"/>
+			<Set PlotCultureExponentModifier="-25" HappinessPerXPopulation="3" BuildingProductionModifier="25" GreatGeneralRateModifier="10" GreatAdmiralRateModifier="10"/>
 			<Where Type="POLICY_TRADITION"/>
 		</Update>
 		<Update>
@@ -113,7 +113,7 @@
 			<Where Type="POLICY_REPUBLIC"/>
 		</Update>
 		<Update>
-			<Set HappinessPerXPopulation="2" NumCitiesPolicyCostDiscount="0" GoldenAgeTurns="0" GridX="4" GridY="3" PortraitIndex="41"/>
+			<Set HappinessPerXPopulation="10" NumCitiesPolicyCostDiscount="0" GoldenAgeTurns="0" GridX="4" GridY="3" PortraitIndex="41"/>
 			<Where Type="POLICY_REPRESENTATION"/>
 		</Update>
 		<Update>
