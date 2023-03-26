@@ -2176,7 +2176,7 @@
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_FACTORY_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SP_CITY_BASIC_BUILDINGS_STRATEGY</Strategy>
 			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
-			<!--<XBuiltTriggersIdeologyChoice>6</XBuiltTriggersIdeologyChoice>-->
+			<XBuiltTriggersIdeologyChoice>4</XBuiltTriggersIdeologyChoice>
 			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
 			<SpecialistCount>2</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
