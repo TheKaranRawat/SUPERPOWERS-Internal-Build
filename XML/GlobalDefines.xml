@@ -94,7 +94,7 @@
 			<Where Name="CITY_GROWTH_EXPONENT" />
 		</Update>
 		<Update>
-			<Set Value="2"/>
+			<Set Value="1"/>
 			<Where Name="UNHAPPINESS_PER_POPULATION" />
 		</Update>
  
@@ -116,7 +116,7 @@
 			<Where Name="UNHAPPINESS_PER_CITY" />
 		</Update>
 		<Update>
-			<Set Value="3"/>
+			<Set Value="2"/>
 			<Where Name="UNHAPPINESS_PER_OCCUPIED_POPULATION" />
 		</Update>
 		<Update>
