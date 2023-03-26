@@ -1026,7 +1026,7 @@
 		<Row>
 			<BuildingType>BUILDING_CIRCUS</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Cost>3</Cost>
+			<Cost>2</Cost>
 		</Row>
 
 		<Row>
