@@ -118,13 +118,13 @@
 		<Row>
 			<PolicyType>POLICY_WORKERS_FACULTIES</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>4</Yield>
+			<Yield>1</Yield>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_WORKERS_FACULTIES</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>4</Yield>
+			<Yield>1</Yield>
 		</Row>				
 
 		

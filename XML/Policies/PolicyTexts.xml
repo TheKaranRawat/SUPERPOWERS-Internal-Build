@@ -1431,7 +1431,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_WORKERS_FACULTIES_HELP" >
-			<Text>[COLOR_POSITIVE_TEXT]Workers' Faculties[ENDCOLOR][NEWLINE]+33% [ICON_PRODUCTION] Production, [ICON_RESEARCH] Science and [ICON_TOURISM] Tourism output from each Factory, +4[ICON_RESEARCH][ICON_PRODUCTION] and -4[ICON_GOLD] from Specialists.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Workers' Faculties[ENDCOLOR][NEWLINE]+33% [ICON_PRODUCTION] Production, [ICON_RESEARCH] Science and [ICON_TOURISM] Tourism output from each Factory, +1[ICON_RESEARCH][ICON_PRODUCTION] and -4[ICON_GOLD] from Specialists.</Text>
 		</Replace>
 
 
