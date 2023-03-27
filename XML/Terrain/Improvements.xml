@@ -2330,22 +2330,22 @@
 
 
 		<Row>
-			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>12</Yield>
 		</Row>
 		<Row>
-			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>12</Yield>
 		</Row>		
 		<Row>
-			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>12</Yield>
 		</Row>
 		<Row>
-			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>12</Yield>
 		</Row>	
