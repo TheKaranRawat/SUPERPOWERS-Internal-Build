@@ -339,7 +339,7 @@
 		<Row Tag="TXT_KEY_POLICY_ONE_VISION_HELP">
 			<Text>
 			[COLOR_POSITIVE_TEXT]One Vision[ENDCOLOR]
-			[NEWLINE]-2[ICON_PRODUCTION] and +1[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE] from Hills.
+			[NEWLINE]All landtiles have a base yield of 2[ICON_FOOD] now
 			[NEWLINE]-1/2%[ICON_RESEARCH] and -2/5%[ICON_PRODUCTION] for Empire/Republic
 			</Text>
 		</Row>
@@ -355,8 +355,9 @@
 		<Row Tag="TXT_KEY_POLICY_BIOPHILIA_HELP">
 			<Text>
 			[COLOR_POSITIVE_TEXT]Biophilia[ENDCOLOR]
+			[NEWLINE]Resorts yield +5[ICON_CULTURE]
 			[NEWLINE]-3 to all of the yields of the Specialists (not only respective yields!)
-			[NEWLINE]All land tiles produce +1[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE], +3[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE] if forested or marsh, 
+			[NEWLINE]All land tiles produce +1[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE], +2[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE] if forested or marsh.
 			</Text>
 		</Row>
 

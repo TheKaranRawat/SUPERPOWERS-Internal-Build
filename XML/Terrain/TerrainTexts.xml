@@ -9,6 +9,21 @@
 	<Language_en_US>
 
 
+		<Row Tag="TXT_KEY_IMPROVEMENT_PRESERVE">
+			<Text>Preserve</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PRESERVE_TEXT">
+			<Text>
+				Preserve a safe haven for wildlife and prevent humans from defiling mother nature there, even more than National Parks.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_PRESERVE_HELP">
+			<Text>
+				A Preserve only appears, when it is surrounded by national parks and gets the yields from surrounding National Parks or Preserves.
+			</Text>
+		</Row>
+
+
 		<Row Tag="TXT_KEY_IMPROVEMENT_NATIONALPARK">
 			<Text>National Park</Text>
 		</Row>
@@ -17,7 +32,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_NATIONALPARK_TEXT">
 			<Text>
-				National parks give a save haven for wildlife and prevent humans from defiling mother nature there.
+				National parks give a safe haven for wildlife and prevent humans from defiling mother nature there.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_IMPROVEMENT_NATIONALPARK_HELP">

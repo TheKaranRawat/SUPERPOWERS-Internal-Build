@@ -8,6 +8,18 @@
 
 
 		<Row>
+			<Type>IMPROVEMENT_PRESERVE</Type>
+			<Description>TXT_KEY_IMPROVEMENT_PRESERVE</Description>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_PRESERVE_TEXT</Civilopedia>
+			<Help>TXT_KEY_IMPROVEMENT_PRESERVE_HELP</Help>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_TRADING_POST</ArtDefineTag>
+			<PillageGold>1000</PillageGold>
+			<PortraitIndex>32</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+
+
+		<Row>
 			<Type>IMPROVEMENT_NATIONALPARK</Type>
 			<Description>TXT_KEY_IMPROVEMENT_NATIONALPARK</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_NATIONALPARK_TEXT</Civilopedia>
@@ -388,6 +400,9 @@
 	</Improvements>
 	
 	<Improvement_ValidTerrains>
+
+
+
 
 
 		<Row>
@@ -1833,6 +1848,23 @@
 
 	<Update>	
 		<Set>
+			<BuildableOnResources>false</BuildableOnResources>
+			<!--<DefenseModifier>0</DefenseModifier>-->
+			<InAdjacentFriendly>false</InAdjacentFriendly>
+			<CultureBombRadius>0</CultureBombRadius>
+			<CreatedByGreatPerson>false</CreatedByGreatPerson>
+			<NearbyEnemyDamage>2</NearbyEnemyDamage>
+			<NoTwoAdjacent>false</NoTwoAdjacent>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+           <PortraitIndex>32</PortraitIndex>
+           <IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Set>
+		<Where Type="IMPROVEMENT_PRESERVE"/>
+	</Update>
+
+
+	<Update>	
+		<Set>
 			<BuildableOnResources>true</BuildableOnResources>
 			<!--<DefenseModifier>0</DefenseModifier>-->
 			<InAdjacentFriendly>false</InAdjacentFriendly>
@@ -2156,22 +2188,22 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>		
 		<Row>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
-			<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>		
 
 

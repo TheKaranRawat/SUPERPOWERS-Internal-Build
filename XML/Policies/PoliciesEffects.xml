@@ -1961,6 +1961,11 @@
 	<Policy_ImprovementCultureChanges>
 
 
+		<Row>
+			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
+			<ImprovementType>IMPROVEMENT_RESORT</ImprovementType>
+			<CultureChange>5</CultureChange>
+		</Row>
 
 
 		<Row>

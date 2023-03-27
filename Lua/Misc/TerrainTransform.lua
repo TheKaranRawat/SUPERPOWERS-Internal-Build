@@ -43,7 +43,7 @@ function ImprovementBuilt(iPlayer, x, y, eImprovement)
 
 --	print ("Improvement Built:" ..eImprovement)
 	local pPlot = Map.GetPlot(x, y)
-	
+	local bPR = 1
 	
 	if pPlot == nil then
 		return
@@ -96,31 +96,48 @@ function ImprovementBuilt(iPlayer, x, y, eImprovement)
 		pPlot:SetFeatureType(-1)
 		for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 			local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
-			if (pAdjacentPlot:GetImprovementType() == -1) or ((pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_NATIONALPARK"].ID)) then 
-				if pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_GRASS and pPlot:GetTerrainType() ~= GameInfoTypes.TERRAIN_HILL then
-					pPlot:SetFeatureType(-1)
-					pPlot:SetFeatureType(GameInfoTypes.FEATURE_MARSH)
-					print ("Changed fatland grass to marsh")
-				end
-				if pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_GRASS and pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_HILL then
-					pPlot:SetFeatureType(-1)
-					pPlot:SetFeatureType(GameInfoTypes.FEATURE_FOREST)
-					print ("Changed hilly grass to forest")
-				end					
-				if pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_PLAINS then
-					pPlot:SetFeatureType(-1)
-					pPlot:SetFeatureType(GameInfoTypes.FEATURE_JUNGLE)
-					print ("Changed grass to jungle")
-				end					
-				if pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_TUNDRA then
-					pPlot:SetFeatureType(-1)
-					pPlot:SetFeatureType(GameInfoTypes.FEATURE_FOREST)
-					print ("Changed grass to forest")
-				end	
+			if pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_FARM"].ID then
+				print ("Nationalpark removed, Farm!")
+			end
+			if pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_MINE"].ID then
+				print ("Nationalpark removed, Mine!")
+			end
+			if pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_QUARRY"].ID then
+				print ("Nationalpark removed, Quarry!")
+			end
+			if pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_LUMBERMILL"].ID then			
+				print ("Nationalpark removed, Lumbermill!")
+			end			
+			if pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_STEEL_PLANT"].ID then
+				print ("Nationalpark removed, Steel Plant!")
+			end						
+			if pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_PLANTATION"].ID then
+				print ("Nationalpark removed, Plantation!")
+			end			
+			if pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_CITADEL"].ID then
+				print ("Nationalpark removed, Citadel!")
+			end		
+			if pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_RESORT"].ID then				
+				print ("Nationalpark removed, Resort!")
+			end						
+			if (pAdjacentPlot:GetImprovementType() == -1) then 
 				pPlot:SetImprovementType(GameInfo.Improvements["IMPROVEMENT_NATIONALPARK"].ID)
 				print ("Nationalpark created!")
 			end
-		end
+			if pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_NATIONALPARK"].ID then
+				bPR = bPR + 1
+				print ("counter: bPR + 1")
+			end	
+			if bPR == 7 then
+				pPlot:SetImprovementType(GameInfo.Improvements["IMPROVEMENT_PRESERVE"].ID)
+				print ("Preserve created!")
+			end	
+
+
+
+
+
+
 
 
 
