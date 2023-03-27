@@ -96,7 +96,7 @@ function ImprovementBuilt(iPlayer, x, y, eImprovement)
 		pPlot:SetFeatureType(-1)
 		for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
 			local pAdjacentPlot = Map.PlotDirection(pPlot:GetX(), pPlot:GetY(), direction)
-			if ((pAdjacentPlot:GetImprovementType() == -1) or ((pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_NATIONALPARK"].ID)) then 
+			if (pAdjacentPlot:GetImprovementType() == -1) or ((pAdjacentPlot:GetImprovementType() == GameInfo.Improvements["IMPROVEMENT_NATIONALPARK"].ID)) then 
 				if pPlot:GetTerrainType() == GameInfoTypes.TERRAIN_GRASS and pPlot:GetTerrainType() ~= GameInfoTypes.TERRAIN_HILL then
 					pPlot:SetFeatureType(GameInfoTypes.FEATURE_MARSH)
 					print ("Changed fatland grass to marsh")
