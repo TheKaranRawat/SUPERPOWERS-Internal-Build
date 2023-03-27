@@ -2785,6 +2785,18 @@
 	</Improvement_TechFreshWaterYieldChanges>-->
 
 	<Improvement_ValidFeatures>
+		
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>				
+
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
