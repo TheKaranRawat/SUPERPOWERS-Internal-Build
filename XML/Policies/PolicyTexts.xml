@@ -1290,7 +1290,7 @@
 		<Replace Tag="TXT_KEY_POLICY_SECULARISM_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Secularism[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] Science from every Specialist.
+				[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science from every Specialist.
 				[NEWLINE][ICON_BULLET]-50% [ICON_GOLD] Base Maintenance Cost for every Academy, University, Observatory, Laboratory and Polar Station.
 			</Text>
 		</Replace>
