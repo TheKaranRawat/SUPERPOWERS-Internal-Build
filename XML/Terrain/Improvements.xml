@@ -13,6 +13,7 @@
 			<Civilopedia>TXT_KEY_IMPROVEMENT_PRESERVE_TEXT</Civilopedia>
 			<Help>TXT_KEY_IMPROVEMENT_PRESERVE_HELP</Help>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_TRADING_POST</ArtDefineTag>
+			<CreatedByGreatPerson>true</CreatedByGreatPerson>	
 			<PillageGold>1000</PillageGold>
 			<PortraitIndex>32</PortraitIndex>
 			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
@@ -402,6 +403,26 @@
 	<Improvement_ValidTerrains>
 
 
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>	
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>	
 
 
 
@@ -773,6 +794,20 @@
 
 
 	<Improvement_ValidFeatures>
+
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+		</Row>
 
 
 		<Row>
@@ -1616,6 +1651,22 @@
 
 
 		<Row>
+			<Type>BUILD_PRESERVE</Type>
+			<PrereqTech>TECH_RADIO</PrereqTech>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<Description>TXT_KEY_BUILD_PRESERVE</Description>
+			<Help>TXT_KEY_IMPROVEMENT_PRESERVE_HELP</Help>
+			<Recommendation>TXT_KEY_BUILD_PRESERVE_REC</Recommendation>
+			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
+			<Kill>1</Kill>
+			<HotKey>KB_K</HotKey>
+			<OrderPriority>99</OrderPriority>
+            <IconIndex>41</IconIndex>
+            <IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+
+
+		<Row>
 			<Type>BUILD_NATIONALPARK</Type>
 			<PrereqTech>TECH_RADIO</PrereqTech>
 			<Time>100</Time>
@@ -1671,6 +1722,99 @@
 	
 	
 	<Unit_Builds>
+
+
+		<Row>
+			<UnitType>UNIT_ARTIST</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ARTIST</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_ENGINEER</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ENGINEER</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_GREAT_GENERAL</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_GREAT_GENERAL</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_MERCHANT</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_MERCHANT</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_MONGOLIAN_KHAN</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_MONGOLIAN_KHAN</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>		
+
+		<Row>
+			<UnitType>UNIT_MUSICIAN</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_MUSICIAN</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>		
+
+		<Row>
+			<UnitType>UNIT_PROPHET</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PROPHET</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>		
+
+		<Row>
+			<UnitType>UNIT_SCIENTIST</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SCIENTIST</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>		
+
+		<Row>
+			<UnitType>UNIT_VENETIAN_MERCHANT</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_VENETIAN_MERCHANT</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>		
+
+		<Row>
+			<UnitType>UNIT_WRITER</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WRITER</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+
+
 
 
 		<Row>
@@ -1848,11 +1992,11 @@
 
 	<Update>	
 		<Set>
-			<BuildableOnResources>false</BuildableOnResources>
+			<BuildableOnResources>true</BuildableOnResources>
 			<!--<DefenseModifier>0</DefenseModifier>-->
 			<InAdjacentFriendly>false</InAdjacentFriendly>
 			<CultureBombRadius>0</CultureBombRadius>
-			<CreatedByGreatPerson>false</CreatedByGreatPerson>
+			<CreatedByGreatPerson>true</CreatedByGreatPerson>
 			<NearbyEnemyDamage>2</NearbyEnemyDamage>
 			<NoTwoAdjacent>false</NoTwoAdjacent>
 			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
@@ -2188,23 +2332,46 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
+			<Yield>12</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>12</Yield>
 		</Row>		
 		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>12</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>12</Yield>
+		</Row>	
+
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
 		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		
 
 
 		<!--<Row>
@@ -2788,6 +2955,20 @@
 		
 
 		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+		</Row>	
+
+
+		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
 		</Row>
@@ -2795,6 +2976,10 @@
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
 		</Row>				
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+		</Row>			
 
 
 		<Row>

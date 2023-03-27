@@ -12,6 +12,9 @@
 		<Row Tag="TXT_KEY_IMPROVEMENT_PRESERVE">
 			<Text>Preserve</Text>
 		</Row>
+		<Row Tag="TXT_KEY_BUILD_PRESERVE">
+			<Text>Found a Preserve</Text>
+		</Row>		
 		<Row Tag="TXT_KEY_IMPROVEMENT_PRESERVE_TEXT">
 			<Text>
 				Preserve a safe haven for wildlife and prevent humans from defiling mother nature there, even more than National Parks.
