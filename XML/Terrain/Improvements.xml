@@ -2342,7 +2342,7 @@
 		
 		
 		<Update>
-			<Set Yield="5"/>
+			<Set Yield="2"/>
 			<Where ImprovementType="IMPROVEMENT_CUSTOMS_HOUSE"/>
 		</Update>
 		<Update>
@@ -2355,7 +2355,7 @@
 			<Where ImprovementType="IMPROVEMENT_MANUFACTORY" YieldType="YIELD_PRODUCTION"/>
 			<Set>
 				<TechType>TECH_MACHINERY</TechType>
-				<Yield>5</Yield>
+				<Yield>2</Yield>
 			</Set>
 		</Update>
 
@@ -2396,50 +2396,50 @@
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
 			<TechType>TECH_EDUCATION</TechType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
 			<TechType>TECH_ELECTRICITY</TechType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
 			<TechType>TECH_GUILDS</TechType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<TechType>TECH_CURRENCY</TechType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<TechType>TECH_ADMINISTRATION</TechType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<TechType>TECH_INTEGRATED_CIRCUIT</TechType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<TechType>TECH_INTERNET</TechType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<TechType>TECH_IOT_NETWORK</TechType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		
@@ -2448,25 +2448,25 @@
 			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
 			<TechType>TECH_ADV_ENGINEERING</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
 			<TechType>TECH_METAMATERIAL</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
 			<TechType>TECH_PARTICLE_PHYSICS</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
 			<TechType>TECH_TRANSHUMANISM</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 
@@ -2483,7 +2483,7 @@
 			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
 			<TechType>TECH_CIVIL_SERVICE</TechType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
@@ -2961,12 +2961,12 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
@@ -2986,11 +2986,7 @@
 			<Yield>4</Yield>
 		</Row>
 
-		<Row>
-			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
-		</Row>
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
