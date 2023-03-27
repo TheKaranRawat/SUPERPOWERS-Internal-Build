@@ -6356,7 +6356,7 @@
 			<Yield>1</Yield>
 		</Row>-->
 		
-
+<!--
 		<Row>
 			<BuildingType>BUILDING_NATIONAL_FINANCE</BuildingType>
 			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
@@ -6387,20 +6387,8 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>2</Yield>
 		</Row>
-
-		<Row>
-			<BuildingType>BUILDING_PURSUIT_PROFIT</BuildingType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>
-
-		<Row>
-			<BuildingType>BUILDING_PURSUIT_PROFIT</BuildingType>
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
-		</Row>		
+-->
+	
 		
 		
 		<Row>
@@ -6477,14 +6465,14 @@
 			<BuildingType>BUILDING_MARKET_IDEAS</BuildingType>
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_MARKET_IDEAS</BuildingType>
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 
 

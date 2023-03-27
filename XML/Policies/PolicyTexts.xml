@@ -142,8 +142,8 @@
 		<Row Tag="TXT_KEY_POLICY_IDEAS_HELP">
 			<Text>
 			[COLOR_POSITIVE_TEXT]Marketplace of Ideas[ENDCOLOR]
-			[NEWLINE]+2 [ICON_CULTURE] Culture per [ICON_CITIZEN] Merchant.
-			[NEWLINE]+2 [ICON_RESEARCH] Science per [ICON_CITIZEN] Merchant.
+			[NEWLINE]+1 [ICON_CULTURE] Culture per [ICON_CITIZEN] Merchant.
+			[NEWLINE]+1 [ICON_RESEARCH] Science per [ICON_CITIZEN] Merchant.
 			</Text>	
 		</Row>
 
