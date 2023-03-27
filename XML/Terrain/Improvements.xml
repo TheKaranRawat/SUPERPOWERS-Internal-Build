@@ -245,7 +245,7 @@
 			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
 		</Row>
-
+<!--
 		<Row>
 			<Type>IMPROVEMENT_GAS_RIG_MOD</Type>
 			<Description>TXT_KEY_IMPROVEMENT_GAS_RIG_MOD</Description>
@@ -258,7 +258,7 @@
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>SP_IMPROVEMENTS_ATLAS</IconAtlas>
 		</Row>
-
+-->
 
 		<Row>
 			<Type>IMPROVEMENT_CREATE_FOREST_MOD</Type>
@@ -724,11 +724,12 @@
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<TerrainType>TERRAIN_COAST</TerrainType>
 		</Row>-->
+<!--		
 		<Row>
 			<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
 			<TerrainType>TERRAIN_OCEAN</TerrainType>
 		</Row>
-
+-->
 
 		<!--<Row>
 			<ImprovementType>IMPROVEMENT_IROQUOIAN_FOREST_FARM</ImprovementType>
@@ -1064,12 +1065,13 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+<!--		
 		<Row>
 			<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>2</Yield>
 		</Row>
-		
+-->		
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -1515,7 +1517,7 @@
 				<IconIndex>35</IconIndex>
 				<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
 			</Row>
-
+<!--
 			<Row>
 				<Type>BUILD_GAS_RIG_MOD</Type>
 				<PrereqTech>TECH_TELEGRAPH</PrereqTech>
@@ -1532,7 +1534,7 @@
 				<IconIndex>26</IconIndex>
 				<IconAtlas>SPUINT_ACTION_ATLAS</IconAtlas>
 			</Row>
-
+-->
 
 
 
@@ -1721,12 +1723,12 @@
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_FISHFARM_MOD</BuildType>
 		</Row>
-
+<!--
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_GAS_RIG_MOD</BuildType>
 		</Row>
-		
+-->		
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_PONTOON_BRIDGE_MOD</BuildType>
@@ -1766,12 +1768,12 @@
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_FISHFARM_MOD</BuildType>
 		</Row>
-		
+<!--		
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_GAS_RIG_MOD</BuildType>
 		</Row>
-
+-->
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_PONTOON_BRIDGE_MOD</BuildType>
