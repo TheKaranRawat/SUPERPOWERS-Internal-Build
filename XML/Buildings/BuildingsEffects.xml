@@ -5582,74 +5582,74 @@
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_FOREST</FeatureType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>	
 
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_JUNGLE</FeatureType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>				
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
 			<FeatureType>FEATURE_MARSH</FeatureType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 
@@ -5920,8 +5920,8 @@
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BIOPHILIA</BuildingType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-			<YieldType>YIELD_GRASS</YieldType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>		
 		<Row>
