@@ -150,27 +150,27 @@
 		<Row>
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-10</Yield>
+			<Yield>-3</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>-10</Yield>
+			<Yield>-3</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>-10</Yield>
+			<Yield>-3</Yield>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>-10</Yield>
+			<Yield>-3</Yield>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-10</Yield>
+			<Yield>-3</Yield>
 		</Row>
 
 	</Policy_SpecialistExtraYields>

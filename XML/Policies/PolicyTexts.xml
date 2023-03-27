@@ -355,7 +355,7 @@
 		<Row Tag="TXT_KEY_POLICY_BIOPHILIA_HELP">
 			<Text>
 			[COLOR_POSITIVE_TEXT]Biophilia[ENDCOLOR]
-			[NEWLINE]-10 to all of the yields of the Specialists (not only respective yields!)
+			[NEWLINE]-3 to all of the yields of the Specialists (not only respective yields!)
 			[NEWLINE]All land tiles produce +1[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE], +3[ICON_FOOD][ICON_CULTURE][ICON_RESEARCH][ICON_PEACE] if forested or marsh, 
 			</Text>
 		</Row>
