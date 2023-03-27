@@ -382,7 +382,7 @@
 			<Where Type="POLICY_CARAVANS"/>
 		</Update>
 		<Update>
-			<Set ExtraHappinessPerLuxury="0" InternalTradeRouteYieldModifier="100" RouteGoldMaintenanceMod="-50" GridX="1" GridY="2" PortraitIndex="31"/>
+			<Set ExtraHappinessPerLuxury="0" InternalTradeRouteYieldModifier="50" RouteGoldMaintenanceMod="-50" GridX="1" GridY="2" PortraitIndex="31"/>
 			<Where Type="POLICY_PROTECTIONISM"/>
 		</Update>
 		<Update>
@@ -394,7 +394,7 @@
 			<Where Type="POLICY_MERCANTILISM"/>
 		</Update>
 		<Update>
-			<Set BuildingGoldMaintenanceMod="-20" UnitGoldMaintenanceMod="-10" CityConnectionTradeRouteGoldModifier="50" InternalTradeRouteYieldModifier="100"/>
+			<Set BuildingGoldMaintenanceMod="-20" UnitGoldMaintenanceMod="-10" CityConnectionTradeRouteGoldModifier="50" InternalTradeRouteYieldModifier="50"/>
 			<Where Type="POLICY_COMMERCE_FINISHER"/>
 		</Update>
 		<Row>

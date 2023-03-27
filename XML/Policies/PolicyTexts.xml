@@ -637,8 +637,7 @@
 		<!-- [NEWLINE][ICON_BULLET]One free Settler appears near the [ICON_CAPITAL] Capital.(Venice receives a Merchant of Venice instead of a Settler)  -->
 
 		<Replace Tag="TXT_KEY_POLICY_REPUBLIC" >
-			<Text>Pax Imperia</Text>
-				[NEWLINE][ICON_BULLET]+25% [ICON_FOOD] Food and [ICON_PRODUCTION] Production provided by Internal trade routes.	
+			<Text>Pax Imperia</Text>	
 				[NEWLINE][ICON_BULLET]-10% [ICON_GOLD] Gold for Unit Maintenance.						
 		</Replace>
 		
@@ -1078,7 +1077,7 @@
 				[NEWLINE][NEWLINE]Finishing Bonus:
 				[NEWLINE][ICON_BULLET]-25%  and 10% [ICON_GOLD] Maintenance Cost for Buildings and Units respectively.
 				[NEWLINE][ICON_BULLET]+50% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections.			
-				[NEWLINE][ICON_BULLET]+100% [ICON_FOOD] Food and [ICON_PRODUCTION] Production provided by Internal trade routes.				
+				[NEWLINE][ICON_BULLET]+50% [ICON_FOOD] Food and [ICON_PRODUCTION] Production provided by Internal trade routes.				
 				[NEWLINE][ICON_BULLET]Allows the purchase of Great Merchants with [ICON_PEACE] Faith starting in the Industrial Era.
 
 			</Text>
@@ -1125,7 +1124,7 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Protectionism[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]-50% [ICON_GOLD] Maintenance Cost for Roads and Railroads .
-				[NEWLINE][ICON_BULLET]+100% [ICON_FOOD] Food and [ICON_PRODUCTION] Production provided by Internal trade routes.
+				[NEWLINE][ICON_BULLET]+50% [ICON_FOOD] Food and [ICON_PRODUCTION] Production provided by Internal trade routes.
 			</Text>
 		</Replace>
 		
