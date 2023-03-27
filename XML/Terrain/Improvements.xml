@@ -1543,7 +1543,7 @@
 				<Description>TXT_KEY_BUILD_CREATE_FOREST</Description>
 				<Help>TXT_KEY_BUILD_CREATE_FOREST_HELP</Help>
 				<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
-				<Time>1300</Time>
+				<Time>100</Time>
 				<HotKey>KB_C</HotKey>
 				<OrderPriority>1</OrderPriority>
 				<AltDown>1</AltDown>
@@ -1558,7 +1558,7 @@
 				<Description>TXT_KEY_BUILD_CREATE_JUNGLE</Description>
 				<Help>TXT_KEY_BUILD_CREATE_JUNGLE_HELP</Help>
 				<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
-				<Time>2000</Time>
+				<Time>100</Time>
 				<HotKey>KB_C</HotKey>
 				<OrderPriority>1</OrderPriority>
 				<AltDown>1</AltDown>
