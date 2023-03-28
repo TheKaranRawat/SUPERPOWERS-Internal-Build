@@ -2990,10 +2990,33 @@
 
 	<Improvement_CoastalLandYields>
 
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>10</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
@@ -3068,16 +3091,40 @@
 	</Improvement_CoastalLandYields>
 
 	<Improvement_RiverSideYields>
+
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>10</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
@@ -3143,6 +3190,29 @@
 
 	<Improvement_AdjacentMountainYieldChanges>
 		
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
