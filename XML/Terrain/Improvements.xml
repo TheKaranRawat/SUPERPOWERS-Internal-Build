@@ -2440,7 +2440,7 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>5</Yield>
+			<Yield>2</Yield>
 		</Row>		
 	</Improvement_HillsYields>
 		
