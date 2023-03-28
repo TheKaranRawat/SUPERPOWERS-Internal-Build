@@ -271,7 +271,7 @@
 
 
 		<Update>
-			<Set Value="-75"/>
+			<Set Value="-50"/>
 			<Where Name="STRATEGIC_RESOURCE_EXHAUSTED_PENALTY" />
 		</Update>
 
