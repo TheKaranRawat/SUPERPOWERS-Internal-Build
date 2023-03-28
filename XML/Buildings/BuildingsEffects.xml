@@ -4215,71 +4215,69 @@
 		
 
 		<Row>
-			<BuildingType>BUILDING_WORKSHOP</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
+			<BuildingType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_SAWMILL</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_FACTORY</BuildingType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>3</Yield>
 		</Row>	
-
-
 		<Row>
-			<BuildingType>BUILDING_OBSERVATORY</BuildingType>
+			<BuildingType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_EGYPT_SIRIUS</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_INCA_QURIKANCHA</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
 		</Row>				
+		<Row>
+			<BuildingType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDINGCLASS_CITY_SIZE_XL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
 
 
 
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-2</Yield>
+			<Yield>-4</Yield>
 		</Row>
 
 
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV1</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1</Yield>
+			<Yield>-7</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV2</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1</Yield>
+			<Yield>-7</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV3</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1</Yield>
+			<Yield>-7</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV4</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1</Yield>
+			<Yield>-7</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV5</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1</Yield>
+			<Yield>-7</Yield>
 		</Row>						
 
 
@@ -4382,11 +4380,6 @@
 			<Yield>5</Yield>
 		</Row>
 
-		<Row>
-			<BuildingType>BUILDING_EGYPT_SIRIUS</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
-		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_ABUSIMBEL</BuildingType>
