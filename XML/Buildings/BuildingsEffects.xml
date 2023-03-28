@@ -3883,17 +3883,17 @@
 		<Row>
 			<BuildingType>BUILDING_OBSERVATORY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_EGYPT_SIRIUS</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_INCA_QURIKANCHA</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 
