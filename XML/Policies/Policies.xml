@@ -427,7 +427,7 @@
 			<Where Type="POLICY_MARITIME_INFRASTRUCTURE"/>
 		</Update>
 		<Update>
-			<Set SeaTradeRouteGoldChange="600" PortraitIndex="8" IconAtlas="POLICY_ATLAS_EXP2" IconAtlasAchieved="POLICY_A_ATLAS_EXP2" GridX="3" GridY="1"/>
+			<Set SeaTradeRouteGoldChange="1000" PortraitIndex="8" IconAtlas="POLICY_ATLAS_EXP2" IconAtlasAchieved="POLICY_A_ATLAS_EXP2" GridX="3" GridY="1"/>
 			<Where Type="POLICY_MERCHANT_NAVY"/>
 		</Update>
 		<Update>

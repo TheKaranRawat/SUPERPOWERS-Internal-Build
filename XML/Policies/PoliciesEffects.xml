@@ -3871,7 +3871,7 @@
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
-			<NumTradeRouteBonus>1</NumTradeRouteBonus>
+			<!--<NumTradeRouteBonus>1</NumTradeRouteBonus>-->
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Description>
@@ -3885,7 +3885,7 @@
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
-			<NumTradeRouteBonus>1</NumTradeRouteBonus>
+			<!--<NumTradeRouteBonus>1</NumTradeRouteBonus>-->
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Description>
@@ -3899,7 +3899,7 @@
 			<NeverCapture>true</NeverCapture>
 			<NukeImmune>true</NukeImmune>
 			<HurryCostModifier>-1</HurryCostModifier>
-			<NumTradeRouteBonus>1</NumTradeRouteBonus>
+			<!--<NumTradeRouteBonus>1</NumTradeRouteBonus>-->
 			<PortraitIndex>2</PortraitIndex>
 			<IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
 			<Description>TXT_KEY_BUILDING_BLD_TRADEROUTE_PLUS</Description>

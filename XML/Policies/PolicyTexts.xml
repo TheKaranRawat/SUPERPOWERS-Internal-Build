@@ -929,8 +929,7 @@
 		<Replace Tag="TXT_KEY_POLICY_MERCHANT_CONFEDERACY_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Merchant Confederacy[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]Gain 4 [ICON_INFLUENCE] Influence (at Standard speed) per turn  with City-States you have a trade route with.
-				[NEWLINE][ICON_BULLET]Gain an additional Trade Route slot.</Text>
+				[NEWLINE][ICON_BULLET]Gain 4 [ICON_INFLUENCE] Influence (at Standard speed) per turn  with City-States you have a trade route with.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_CONSULATES_HELP">
 			<Text>
@@ -1070,7 +1069,6 @@
 
 				[NEWLINE][NEWLINE]Opening Effect:
 				[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] Gold from every Trading Post
-				[NEWLINE][ICON_BULLET]+1 additional Trade Route slot.
 				[NEWLINE][ICON_BULLET]World Wonder Unlocked: The Big Ben.
 				[NEWLINE][ICON_BULLET]National Wonder Unlocked: West India Company.
 				[NEWLINE][ICON_BULLET]Building Unlocked: Depot.
@@ -1187,8 +1185,7 @@
 		<Replace Tag="TXT_KEY_POLICY_MERCHANT_NAVY_HELP">
 			<Text>
 				[COLOR_POSITIVE_TEXT]Merchant Navy[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 additional Trade Route slot.
-				[NEWLINE][ICON_BULLET]+6 [ICON_GOLD] Gold from all your sea trade routes.</Text>
+				[NEWLINE][ICON_BULLET]+10 [ICON_GOLD] Gold from all your sea trade routes.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_POLICY_NAVAL_TRADITION_HELP" >
 			<Text>
