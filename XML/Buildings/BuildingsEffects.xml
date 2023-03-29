@@ -994,22 +994,22 @@
 		<Row>
 			<BuildingType>BUILDING_COAL_TO_OIL</BuildingType>
 			<ResourceType>RESOURCE_COAL</ResourceType>
-			<Cost>8</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_COAL_TO_OIL</BuildingType>
 			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
-			<Cost>8</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_COAL_TO_URANIUM</BuildingType>
 			<ResourceType>RESOURCE_COAL</ResourceType>
-			<Cost>10</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_COAL_TO_URANIUM</BuildingType>
 			<ResourceType>RESOURCE_ELECTRICITY</ResourceType>
-			<Cost>10</Cost>
+			<Cost>6</Cost>
 		</Row>
 
 
@@ -1136,6 +1136,22 @@
 
 
 		<Row>
+			<BuildingType>BUILDING_SMELTER</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Quantity>4</Quantity>
+		</Row>
+
+
+		<Row>
+			<BuildingType>BUILDING_STANNARY</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Quantity>8</Quantity>
+		</Row>		
+
+
+
+
+		<Row>
 			<BuildingType>BUILDING_STABLE</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
 			<Quantity>12</Quantity>
@@ -1178,7 +1194,7 @@
 		<Row>
 			<BuildingType>BUILDING_COAL_TO_URANIUM</BuildingType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Quantity>4</Quantity>
+			<Quantity>6</Quantity>
 		</Row>
 
 
