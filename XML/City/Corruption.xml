@@ -805,27 +805,27 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV1</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>1</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV2</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>7</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV3</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>15</Cost>
+			<Cost>7</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV4</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>20</Cost>
+			<Cost>10</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV5</BuildingType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
-			<Cost>30</Cost>
+			<Cost>15</Cost>
 		</Row>
 <!--
 		<Row>
