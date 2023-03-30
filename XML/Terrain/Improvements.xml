@@ -403,49 +403,7 @@
 	<Improvement_ValidTerrains>
 
 
-		<Row>
-			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-		</Row>	
-		<Row>
-			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
-			<TerrainType>TERRAIN_SNOW</TerrainType>
-		</Row>	
 
-
-
-		<Row>
-			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
-			<TerrainType>TERRAIN_GRASS</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
-			<TerrainType>TERRAIN_PLAINS</TerrainType>
-		</Row>	
-		<Row>
-			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
-			<TerrainType>TERRAIN_DESERT</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
-			<TerrainType>TERRAIN_TUNDRA</TerrainType>
-		</Row>
-		<Row>
-			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
-			<TerrainType>TERRAIN_SNOW</TerrainType>
-		</Row>		
 
 
 		<Row>
@@ -789,6 +747,26 @@
 			<ImprovementType>IMPROVEMENT_PADDY_UI</ImprovementType>
 			<TerrainType>TERRAIN_HILL</TerrainType>
 		</Row>
+
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>								
 
 	</Improvement_ValidTerrains>
 
@@ -2332,44 +2310,44 @@
 		<Row>
 			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>12</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>12</Yield>
+			<Yield>4</Yield>
 		</Row>		
 		<Row>
 			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>12</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_PRESERVE</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>12</Yield>
+			<Yield>4</Yield>
 		</Row>	
 
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>		
 		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_NATIONALPARK</ImprovementType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>1</Yield>
 		</Row>
 		
 
