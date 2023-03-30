@@ -1046,27 +1046,27 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV1</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-0.5</Yield>
+			<Yield>-1</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV2</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-0.75</Yield>
+			<Yield>-2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV3</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1</Yield>
+			<Yield>-3</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV4</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1.25</Yield>
+			<Yield>-4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV5</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1.5</Yield>
+			<Yield>-5</Yield>
 		</Row>	
 
 	</Building_GlobalYieldModifiers>		
