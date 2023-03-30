@@ -7,14 +7,16 @@
 			<Type>POLICY_AI_MEDIEVAL</Type>
 			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 			<UnhappinessMod>-20</UnhappinessMod>
-			<CityGrowthMod>30</CityGrowthMod>
+			<HappinessToScience>5</HappinessToScience>			
+			<CityGrowthMod>40</CityGrowthMod>
 			
 		</Row>
 		<Row>
 			<Type>POLICY_AI_RENAISSANCE</Type>
 			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
-			<CityGrowthMod>35</CityGrowthMod>
+			<CityGrowthMod>40</CityGrowthMod>
 			<UnhappinessMod>-20</UnhappinessMod>
+			<HappinessToScience>5</HappinessToScience>			
 			<FreeExperience>15</FreeExperience>
 		</Row>
 		<Row>
@@ -24,7 +26,7 @@
 			<CatchSpiesModifier>-25</CatchSpiesModifier>
 			<CityGrowthMod>40</CityGrowthMod>
 			<UnhappinessMod>-20</UnhappinessMod>
-			<!--<HappinessToScience>5</HappinessToScience>-->
+			<HappinessToScience>10</HappinessToScience>
 			<FreeExperience>15</FreeExperience>
 			<PlotCultureExponentModifier>15</PlotCultureExponentModifier>
 		</Row>
@@ -34,11 +36,11 @@
 			<WonderProductionModifier>15</WonderProductionModifier>
 			<CatchSpiesModifier>-25</CatchSpiesModifier>
 			<MinorGoldFriendshipMod>25</MinorGoldFriendshipMod>
-			<CityGrowthMod>45</CityGrowthMod>
+			<CityGrowthMod>50</CityGrowthMod>
 			<UnitGoldMaintenanceMod>-25</UnitGoldMaintenanceMod>
 			<UnhappinessMod>-20</UnhappinessMod>
 			<ThemingBonusMultiplier>100</ThemingBonusMultiplier>
-			<!--<HappinessToScience>10</HappinessToScience>-->
+			<HappinessToScience>10</HappinessToScience>
 			<FreeExperience>30</FreeExperience>
 		</Row>
 		<Row>
@@ -50,7 +52,7 @@
 			<CityGrowthMod>50</CityGrowthMod>
 			<ProtectedMinorPerTurnInfluence>100</ProtectedMinorPerTurnInfluence>
 			<AfraidMinorPerTurnInfluence>100</AfraidMinorPerTurnInfluence>
-			<HappinessToScience>20</HappinessToScience>
+			<HappinessToScience>10</HappinessToScience>
 			<UnhappinessMod>-20</UnhappinessMod>
 			<ThemingBonusMultiplier>200</ThemingBonusMultiplier>
 		</Row>
@@ -59,7 +61,7 @@
 			<Description>TXT_KEY_POLICY_PHILANTHROPY</Description>
 			<WonderProductionModifier>25</WonderProductionModifier>
 			<MinorFriendshipDecayMod>-75</MinorFriendshipDecayMod>
-			<CityGrowthMod>55</CityGrowthMod>
+			<CityGrowthMod>60</CityGrowthMod>
 			<ProtectedMinorPerTurnInfluence>100</ProtectedMinorPerTurnInfluence>
 			<AfraidMinorPerTurnInfluence>100</AfraidMinorPerTurnInfluence>
 			<HappinessToScience>20</HappinessToScience>
@@ -88,6 +90,7 @@
 			<AfraidMinorPerTurnInfluence>800</AfraidMinorPerTurnInfluence>
 			<HappinessToCulture>50</HappinessToCulture>
 			<HappinessToScience>50</HappinessToScience>
+			<CityGrowthMod>300</CityGrowthMod>			
 			<UnhappinessMod>-30</UnhappinessMod>
 			<BuildingProductionModifier>100</BuildingProductionModifier>
 			<RiggingElectionModifier>100</RiggingElectionModifier>
