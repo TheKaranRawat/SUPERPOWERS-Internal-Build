@@ -4009,7 +4009,7 @@
 		<Row>
 			<BuildingType>BUILDING_BABYLON_WATER_PUMP</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>5</Yield>
+			<Yield>20</Yield>
 		</Row>
 
 		<Row>
@@ -4371,6 +4371,26 @@
 
 	<!--*********************Other Yield Changes********************-->
 	<Building_RiverPlotYieldChanges>
+
+
+		<Row>
+			<BuildingType>BUILDING_WATERMILL</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+
+		<Row>
+			<BuildingType>BUILDING_FLOATING_GARDENS</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_FLOATING_GARDENS</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>		
+
 
 		<Row>
 			<BuildingType>BUILDING_GOLDENGATE</BuildingType>
