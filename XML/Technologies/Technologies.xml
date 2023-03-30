@@ -2246,7 +2246,7 @@
 		
 		<Row>
 			<Type>TECH_FUTURE_TECH</Type>
-			<Cost>70000</Cost>
+			<Cost>70001</Cost>
 			<Description>TXT_KEY_TECH_FUTURE_TECH_TITLE</Description>
 			<Civilopedia>TXT_KEY_TECH_FUTURE_TECH_DESC</Civilopedia>
 			<Help>TXT_KEY_SP_TECH_GENERAL_HELP</Help>
