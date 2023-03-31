@@ -3789,7 +3789,51 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="B4E53EE1705E22863BA06A528AC05738" import="0">XML/Units/Uniques/Mig/Core/GameInfo/MC_Soviets_IconTextureAtlases.sql</File>
     <File md5="B4E53EE1705E22863BA06A528AC05738" import="0">XML/Units/Uniques/Mig/Core/Text/MC_Soviets_Text.xml</File>
     <File md5="B4E53EE1705E22863BA06A528AC05738" import="0">XML/Units/Uniques/Mig/Core/Units/mig.xml</File>
+
+    <File md5="BF213D729D57657C2EDDFA0F8C618AD1" import="1">Art/FontIcons/FontAnvilITG.ggxml</File>
+    <File md5="001A37627DF9E9F4A9E6BC55C6018CCE" import="1">Art/FontIcons/FontCandleITG.ggxml</File>
+    <File md5="9B6B839A8A40786C0EA78D09263F4282" import="1">Art/FontIcons/FontCustomsITG.ggxml</File>
+    <File md5="44DBA5B88A0279DF8C45E1451D30F469" import="1">Art/FontIcons/FontDriedHerbsITG.ggxml</File>
+    <File md5="DC9B1F8544B820D6FF08FE6361FC34FA" import="1">Art/FontIcons/FontGlassITG.ggxml</File>
+    <File md5="51822724B0620E31E72338A7E6BFA2C2" import="1">Art/FontIcons/FontIconAnvilHammer.dds</File>
+    <File md5="743A9D564744B01630B1ABF774790924" import="1">Art/FontIcons/FontIconCandleITG.dds</File>
+    <File md5="7FCECE699211B8E9F43DCAB1398EF8B3" import="1">Art/FontIcons/FontIconCustomsHouse.dds</File>
+    <File md5="52B326BCBB5BDA5CB14595860AB6B9CF" import="0">FontIcons/FontIconsDefines.xml</File>
+    <File md5="44367D42BC54CAC55C88FC07E7915338" import="1">Art/FontIcons/FontIconSupplyITG.dds</File>
+    <File md5="56EF4146BCBB59004132649EA2B08FF1" import="1">Art/FontIcons/FontITGAuthority.dds</File>
+    <File md5="DAB3D9ADA4ED402F8CC89DD3DFF476CE" import="1">Art/FontIcons/FontITGAuthority.ggxml</File>
+    <File md5="7102600D0D669C9F8FD600421F6173E0" import="1">Art/FontIcons/FontITGDefenseBroken.dds</File>
+    <File md5="825ADB510AB67E84D48A097D277C52E9" import="1">Art/FontIcons/FontITGDefenseBroken.ggxml</File>
+    <File md5="949BC357E5CA29A89A422111871AA1C5" import="1">Art/FontIcons/FontITGIconsAtlas.dds</File>
+    <File md5="C2EB0F8DE86CFEE05C067D5C399584AB" import="1">Art/FontIcons/FontITGIdeologies.dds</File>
+    <File md5="1C38D6287FC7180CE95ED848B788AA30" import="1">Art/FontIcons/FontITGIdeologies.ggxml</File>
+    <File md5="64C306DDAF8CCB7F2D2D4DC0AA846D24" import="1">Art/FontIcons/FontITGMercenary.dds</File>
+    <File md5="EF446CBD20C19208C971785F6D8CEF82" import="1">Art/FontIcons/FontITGPhilosopher.dds</File>
+    <File md5="30E0DDCB526EBAC4DA79FA31DB6253C1" import="1">Art/FontIcons/FontITGPresence.dds</File>
+    <File md5="E21871133A1E7F4A2084798F05BF1B88" import="1">Art/FontIcons/FontITGPresence.ggxml</File>
+    <File md5="A8609E28C741EC5F70210024A7718E12" import="1">Art/FontIcons/FontITGResHerbs.dds</File>
+    <File md5="B3CE4890664A41FB86F206DF80F41D80" import="1">Art/FontIcons/FontITGSatellite.dds</File>
+    <File md5="A3E6D4D65BEBF0E1644C7B6F7102AA11" import="1">Art/FontIcons/FontITGSatellite.ggxml</File>
+    <File md5="4E258BC64826F36A93D98ED36BF03372" import="1">Art/FontIcons/FontITGSupply.ggxml</File>
+    <File md5="8E0604BD30F68457D2C9C3D7EF59D146" import="1">Art/FontIcons/FontLegalPowerITG.ggxml</File>
+    <File md5="309B81FA2A59F134B6D3367B9509A7B8" import="1">Art/FontIcons/FontMercenaryITG.ggxml</File>
+    <File md5="C9BFD22C97DCD80015AEEDF24B3845B9" import="1">Art/FontIcons/FontNatUnityITG.ggxml</File>
+    <File md5="EFEA8C37C4AAFD7F80A36800A3787659" import="1">Art/FontIcons/FontPihlosopherrITG.ggxml</File>
+    <File md5="7BFB2D26CAC8D3ABC4B2D5E3C086F85D" import="1">Art/FontIcons/FontSettlerITG.ggxml</File>
+    <File md5="EF7636D80261B1B7B071011551C6EFD7" import="1">Art/FontIcons/FontVictoryPointsITG.ggxml</File>
+    <File md5="412790B395CBE8330DF279A260853899" import="1">Art/FontIcons/ITG_GlassFontIcon.dds</File>
+    <File md5="72E724FF2AFA2E59433617C52ED5812B" import="1">Art/FontIcons/LegalPowerFont.dds</File>
+    <File md5="4FF3C10636F32BB79B269F3C9410C9BB" import="1">Art/FontIcons/NatUnityITGFontIcon.dds</File>
+    <File md5="1B253D59AE32D5A6F4C8AFF799B54996" import="1">Art/FontIcons/FontITGIconAtlas.ggxml</File>
+    <File md5="C8566D557265CA67967D2C5B09E728C9" import="1">Art/FontIcons/SettlerITGFontIcon.dds</File>
+    <File md5="D951F968C062671535F01C5A603B467D" import="1">Art/FontIcons/SettlerITGFontIcon2.dds</File>
+    <File md5="B9DBE2CC4240D1B3EB5DC5E46FFF425C" import="1">Art/FontIcons/VictoryPointsFont.dds</File>
     
+    <File md5="7375631CE83FD638448D5CD6F4A544DF" import="1">Art/FontIcons2/FontAHLuxuriesITG.dds</File>
+    <File md5="17DDA380B5C7F6563201982F861C0BA9" import="1">Art/FontIcons2/FontAHLuxuriesITG.ggxml</File>
+    <File md5="6B8C5E7BFF637739B3E3924186785BCD" import="0">Art/FontIcons2/FontIconsDefines.xml</File>
+    <File md5="5FAABAB3458623252D9D9601B6121460" import="1">Art/FontIcons2/FontITGIconsAtlas_2.ggxml</File>
+    <File md5="6E1E33863741104CC0D1EEEB32A9550D" import="1">Art/FontIcons2/FontITGIconsAtlas_2.dds</File>
 
   </Files>
   <Actions>
@@ -4428,7 +4472,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/Units/Uniques/Mig/Core/Text/MC_Soviets_Text.xml</UpdateDatabase>
       <UpdateDatabase>XML/Units/Uniques/Mig/Core/Units/mig.xml</UpdateDatabase>
       
-      
+      <UpdateDatabase>Art/FontIcons/FontIconsDefines.xml</UpdateDatabase>
+      <UpdateDatabase>Art/FontIcons2/FontIconsDefines.xml</UpdateDatabase>
 
     </OnModActivated>	
   </Actions>
