@@ -1291,7 +1291,9 @@
 
 			<Row>
 				<Type>BUILD_FISHERY_MOD</Type>
+				<!--
 				<PrereqTech>TECH_OPTICS</PrereqTech>
+				-->
 				<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
 				<Description>TXT_KEY_BUILD_FISHERY_MOD</Description>
 				<Help>TXT_KEY_BUILD_FISHERY_MOD_HELP</Help>
@@ -1325,7 +1327,9 @@
 
 			<Row>
 				<Type>BUILD_GAS_RIG_MOD</Type>
+				<!--
 				<PrereqTech>TECH_TELEGRAPH</PrereqTech>
+				-->
 				<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
 				<Description>TXT_KEY_BUILD_GAS_RIG_MOD</Description>
 				<Help>TXT_KEY_BUILD_GAS_RIG_MOD_HELP</Help>
@@ -1430,18 +1434,26 @@
 			<BuildType>BUILD_IROQUOIAN_FOREST_FARM</BuildType>
 		</Row>
 
+		<!--
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_FISHERY_MOD</BuildType>
 		</Row>
+		-->
+
+		<!--
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_FISHFARM_MOD</BuildType>
 		</Row>
+		-->
+
+		<!--
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_GAS_RIG_MOD</BuildType>
 		</Row>
+		-->
 		
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
@@ -1464,18 +1476,26 @@
 			<BuildType>BUILD_MOUNTAIN_ROCKS</BuildType>
 		</Row>
 		
+		<!--
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_FISHERY_MOD</BuildType>
 		</Row>
+		-->
+
+		<!--
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_FISHFARM_MOD</BuildType>
 		</Row>
+		-->
+
+		<!--
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_GAS_RIG_MOD</BuildType>
 		</Row>
+		-->
 
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
