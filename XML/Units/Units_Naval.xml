@@ -1609,7 +1609,7 @@
 			<Type>UNIT_CARRIER</Type>
 			<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
 			<BaseSightRange>4</BaseSightRange>
-			<Combat>200</Combat>
+			<Combat>150</Combat>
 			<Cost>2600</Cost>
 			<Moves>7</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
@@ -1644,7 +1644,7 @@
 			<Type>UNIT_NUCLEAR_CARRIER</Type>
 			<PrereqTech>TECH_COMPUTERS</PrereqTech>
 			<BaseSightRange>4</BaseSightRange>
-			<Combat>300</Combat>
+			<Combat>200</Combat>
 			<Cost>4500</Cost>
 			<Moves>8</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
@@ -1680,7 +1680,7 @@
 			<Type>UNIT_AMERICAN_NIMITZ</Type>
 			<PrereqTech>TECH_COMPUTERS</PrereqTech>
 			<BaseSightRange>4</BaseSightRange>
-			<Combat>360</Combat>
+			<Combat>300</Combat>
 			<Cost>6000</Cost>
 			<Moves>8</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
@@ -1716,7 +1716,7 @@
 			<Type>UNIT_SUPER_CARRIER</Type>
 			<PrereqTech>TECH_NUCLEAR_FUSION</PrereqTech>
 			<BaseSightRange>4</BaseSightRange>
-			<Combat>360</Combat>
+			<Combat>250</Combat>
 			<Cost>8500</Cost>
 			<Moves>8</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>

@@ -200,7 +200,7 @@
 			<Cost>1200</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
-			<Range>25</Range>
+			<Range>20</Range>
 			<AirInterceptRange>20</AirInterceptRange>
 			<HurryCostModifier>150</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
@@ -274,12 +274,12 @@
 			<Class>UNITCLASS_JET_FIGHTER</Class>
 			<Type>UNIT_SWEDISH_JAS39_FIGHTER</Type>
 			<PrereqTech>TECH_STEALTH</PrereqTech>
-			<RangedCombat>400</RangedCombat>
+			<RangedCombat>250</RangedCombat>
 			<Cost>1500</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
-			<Range>35</Range>
-			<AirInterceptRange>35</AirInterceptRange>
+			<Range>25</Range>
+			<AirInterceptRange>25</AirInterceptRange>
 			<HurryCostModifier>150</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
@@ -691,12 +691,12 @@
 			<Class>UNITCLASS_CARRIER_FIGHTER_WWII</Class>
 			<Type>UNIT_JAPANESE_ZERO</Type>
 			<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
-			<RangedCombat>100</RangedCombat>
+			<RangedCombat>80</RangedCombat>
 			<Cost>-1</Cost>
 			<Moves>4</Moves>
 			<Immobile>true</Immobile>
-			<Range>10</Range>
-			<AirInterceptRange>10</AirInterceptRange>
+			<Range>7</Range>
+			<AirInterceptRange>7</AirInterceptRange>
 			<Special>SPECIALUNIT_FIGHTER</Special>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
@@ -728,12 +728,12 @@
 			<Class>UNITCLASS_CARRIER_FIGHTER_JET</Class>
 			<Type>UNIT_CARRIER_FIGHTER_JET</Type>
 			<PrereqTech>TECH_COMPUTERS</PrereqTech>
-			<RangedCombat>150</RangedCombat>
+			<RangedCombat>120</RangedCombat>
 			<Cost>-1</Cost>
 			<Moves>4</Moves>
 			<Immobile>true</Immobile>
-			<Range>14</Range>
-			<AirInterceptRange>14</AirInterceptRange>
+			<Range>10</Range>
+			<AirInterceptRange>10</AirInterceptRange>
 			<Special>SPECIALUNIT_FIGHTER</Special>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
@@ -764,12 +764,12 @@
 			<Class>UNITCLASS_CARRIER_FIGHTER_JET</Class>
 			<Type>UNIT_CARRIER_FIGHTER_ENGLISH_HARRIER</Type>
 			<PrereqTech>TECH_COMPUTERS</PrereqTech>
-			<RangedCombat>150</RangedCombat>
+			<RangedCombat>130</RangedCombat>
 			<Cost>-1</Cost>
 			<Moves>4</Moves>
 			<Immobile>true</Immobile>
-			<Range>14</Range>
-			<AirInterceptRange>14</AirInterceptRange>
+			<Range>12</Range>
+			<AirInterceptRange>12</AirInterceptRange>
 			<Special>SPECIALUNIT_FIGHTER</Special>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
@@ -801,12 +801,12 @@
 			<Class>UNITCLASS_CARRIER_FIGHTER_JET</Class>
 			<Type>UNIT_CARRIER_FIGHTER_ENGLISH_HARRIER_ADV</Type>
 			<PrereqTech>TECH_NUCLEAR_FUSION</PrereqTech>
-			<RangedCombat>225</RangedCombat>
+			<RangedCombat>140</RangedCombat>
 			<Cost>-1</Cost>
 			<Moves>4</Moves>
 			<Immobile>true</Immobile>
-			<Range>18</Range>
-			<AirInterceptRange>18</AirInterceptRange>
+			<Range>14</Range>
+			<AirInterceptRange>14</AirInterceptRange>
 			<Special>SPECIALUNIT_FIGHTER</Special>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
@@ -839,12 +839,12 @@
 			<Class>UNITCLASS_CARRIER_FIGHTER_ADV</Class>
 			<Type>UNIT_CARRIER_FIGHTER_ADV</Type>
 			<PrereqTech>TECH_NUCLEAR_FUSION</PrereqTech>
-			<RangedCombat>200</RangedCombat>
+			<RangedCombat>160</RangedCombat>
 			<Cost>-1</Cost>
 			<Moves>4</Moves>
 			<Immobile>true</Immobile>
-			<Range>18</Range>
-			<AirInterceptRange>18</AirInterceptRange>
+			<Range>15</Range>
+			<AirInterceptRange>15</AirInterceptRange>
 			<Special>SPECIALUNIT_FIGHTER</Special>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
