@@ -3207,7 +3207,7 @@
 			<Text>Armor Piercing I</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_AMBUSH_1_HELP">
-			<Text>+50% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Tanks[ENDCOLOR] .</Text>
+			<Text>+50% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Tanks[ENDCOLOR].</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_AMBUSH_2">
 			<Text>Armor Piercing II</Text>
@@ -4275,13 +4275,13 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_AIRFIGHT_1">
-			<Text>Top Gun I</Text>
+			<Text>Top Gun Program I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_AIRFIGHT_1_HELP">
 			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Intercepting[ENDCOLOR] or performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR]. [NEWLINE][ICON_BULLET]+1 [COLOR_POSITIVE_TEXT]Intercept[ENDCOLOR] chance per turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_AIRFIGHT_2">
-			<Text>Top Gun II</Text>
+			<Text>Top Gun Program II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_AIRFIGHT_2_HELP">
 			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Intercepting[ENDCOLOR] or performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR]. [NEWLINE][ICON_BULLET]+1 [COLOR_POSITIVE_TEXT]Intercept[ENDCOLOR] chance per turn.</Text>
@@ -4507,7 +4507,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_PROMOTION_DESERT_WARRIOR_HELP" >
-			<Text>+20% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR]Tiles</Text>
+			<Text>+20% [ICON_STRENGTH] Combat Strength when fighting in [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR] Tiles</Text>
 		</Replace>
 
 

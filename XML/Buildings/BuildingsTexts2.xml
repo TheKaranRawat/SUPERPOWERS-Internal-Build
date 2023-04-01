@@ -299,7 +299,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_CITY_FOCUS_HELP">
-			<Text>[ICON_CHECKBOX]City Focuses instruct the cities governors to prioritize labor towards certain objectives. The possible priorities are listed below.
+			<Text>[ICON_CHECKBOX]City Focuses instruct the Cities Governors to prioritize labor towards certain objectives. The possible priorities are listed below.
 			[NEWLINE][NEWLINE][ICON_FOOD][COLOR_FONT_GREEN]Food Focus[ENDCOLOR], prioritizes the growth of food. Useful for faster population growth.
 			[NEWLINE][ICON_PRODUCTION][COLOR_YIELD_FOOD]Production Focus[ENDCOLOR], prioritizes manufacturing and industry. Useful during wars, and for completing critical projects like Wonders.
 			[NEWLINE][ICON_GOLD][COLOR_SELECTED_TEXT]Gold Focus[ENDCOLOR], prioritizes commerce and trade. Useful for increasing the budget, and balancing deficits.

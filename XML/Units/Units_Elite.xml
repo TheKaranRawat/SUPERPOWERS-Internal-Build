@@ -1156,9 +1156,9 @@
 			<PrereqTech>TECH_PARTICLE_PHYSICS</PrereqTech>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<BaseSightRange>3</BaseSightRange>
-			<Combat>150</Combat>
-			<RangedCombat>200</RangedCombat>
-			<Cost>3800</Cost>
+			<Combat>1000</Combat>
+			<RangedCombat>600</RangedCombat>
+			<Cost>10000</Cost>
 			<Moves>9</Moves>
 			<Range>5</Range>
 			<Special>SPECIALUNIT_NUKE</Special>
@@ -1177,7 +1177,7 @@
 			<MinAreaSize>16</MinAreaSize>
 			<XPValueAttack>8</XPValueAttack>
 			<XPValueDefense>3</XPValueDefense>
-			<UnitArtInfo>ART_DEF_UNIT_MISSILE_CRUISER</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_NAVALFIGHTER04S</UnitArtInfo>
 			<UnitFlagIconOffset>70</UnitFlagIconOffset>
 			<UnitFlagAtlas>SPUnitFlags_FLAG</UnitFlagAtlas>
 			<IconAtlas>SPUNITS02_ATLAS</IconAtlas>

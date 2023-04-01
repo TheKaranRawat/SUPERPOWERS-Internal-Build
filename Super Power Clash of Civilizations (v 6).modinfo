@@ -3835,6 +3835,56 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="5FAABAB3458623252D9D9601B6121460" import="1">Art/FontIcons2/FontITGIconsAtlas_2.ggxml</File>
     <File md5="6E1E33863741104CC0D1EEEB32A9550D" import="1">Art/FontIcons2/FontITGIconsAtlas_2.dds</File>
 
+    <File md5="C7702B9F28571B4AE996C338FF459937" import="0">XML/Units/Uniques/NeoDreadnought/ArtDef.xml</File>
+    <File md5="5EB0AFCB813A3D29A40F511E3C1D1B1D" import="1">XML/Units/Uniques/NeoDreadnought/ART/fx_triggers_naval_fighter04s.ftsxml</File>
+    <File md5="5C620C1E6529699444D4EFEAC8FF8333" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s.fxsxml</File>
+    <File md5="4A511786A6EDACB5DE109842352CE2C2" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s.gr2</File>
+    <File md5="C42A47E53C840FB7A19B319ABC5C4E8F" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_aim_center.gr2</File>
+    <File md5="8B48C08BCD80B99B083F8C895DBFBCE4" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_aim_left.gr2</File>
+    <File md5="FCBAE88B39741DC0829416DAEB810EE3" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_aim_right.gr2</File>
+    <File md5="C3D784E1D25C4B72159258262B6ACD00" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_antiair_attack.gr2</File>
+    <File md5="24CC3BD5FFDE90137C7613F94D8A69D1" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_attackastarboardright.gr2</File>
+    <File md5="A11F8D4E644BB10EA66461C4D20FA5C0" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_attackbportleft.gr2</File>
+    <File md5="79A316FFF684AE163B042CD6224D9B08" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_attackcity.gr2</File>
+    <File md5="4F35C86AEF4B1B6AB3EF392880A47DAA" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_attackcitya_right.gr2</File>
+    <File md5="FD6AACB27324AF831A92A0A7F47B8959" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_attackcityb_left.gr2</File>
+    <File md5="83EBBEB6ACD7429E0BB80DE4A88F231B" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_bombarda_right.gr2</File>
+    <File md5="8981515D5C86CA9F2199F097550D6190" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_bombardb_left.gr2</File>
+    <File md5="CDA90AEE80ED90EE6B5DE25BFFD61341" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_bombardment.gr2</File>
+    <File md5="7594DE5BD50EF9EC2348991437CEAD0D" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_bombard_defense.gr2</File>
+    <File md5="BCA69140ED552DFDF85FFAA48FE59450" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_bombard_defense_idle.gr2</File>
+    <File md5="00B02DC0B8F1B521ED67F0644E6F9651" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_bombard_defense_idle_trans_idlea.gr2</File>
+    <File md5="6CC842EE8D4E55141108A307C494E864" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_combat_ready.gr2</File>
+    <File md5="3862D85F8AF7FDFE6DBFFB9184683AA9" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_combat_ready_idle.gr2</File>
+    <File md5="EAA167F9AC14E20605E107BFA6FD6906" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_combat_ready_idle_trans_idlea.gr2</File>
+    <File md5="0E7BF759C7EF54ACFFB21962E18234B4" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_deatha.gr2</File>
+    <File md5="34EE91B0014BD2CA3DC7D77DDD029D06" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_deatha_idle.gr2</File>
+    <File md5="92F043D8246B9B4E4C00A011EE3D04BD" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_deathb.gr2</File>
+    <File md5="5E3EDD00B0DE0822CAED727F69A71FB0" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_deathb_idle.gr2</File>
+    <File md5="46B3EA9D69EFA98491A53B03662C9A9D" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_diff.dds</File>
+    <File md5="0BBDE54FBBA4F0F18E6881A102E3CBB3" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_dmg_diff.dds</File>
+    <File md5="CA1F5C40750DE025C445D058027B525B" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_dmg_sref.dds</File>
+    <File md5="8C8AE887379FBE7BDC14AA4BC0DE2AED" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_fidgeta.gr2</File>
+    <File md5="C0767A652A8831F7CFCBCFB17BA1DED7" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_fidgetb.gr2</File>
+    <File md5="3ED93838F966B13169493A736F59CE45" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_fortify.gr2</File>
+    <File md5="D94C3F38F769D898A89806F0FD48B6C0" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_fortify_idle.gr2</File>
+    <File md5="73EBEA4F10D1FE15C7B09D5A0C34E620" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_fortify_idle_fidget.gr2</File>
+    <File md5="A1865B7234F9A3B2388949B0921620D7" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_fortify_idle_trans_combat_ready_idle.gr2</File>
+    <File md5="EB1C1E4446FEBF0C753177168B2EDF80" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_fortify_idle_trans_idlea.gr2</File>
+    <File md5="F70A71ECFC558C41D18E030113CF5D31" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_idlea.gr2</File>
+    <File md5="86B060BD426198454EB0BDC4E3ACAD2C" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_idlea_trans_idleb.gr2</File>
+    <File md5="0FB799CF175F9BB6A270749D3B7830F2" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_idleb.gr2</File>
+    <File md5="98AFA1F2245FB58111F8B4A35FC04247" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_idleb_trans_idlea.gr2</File>
+    <File md5="3629D781016C9FBFBFEFCF202B5078F9" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_run.gr2</File>
+    <File md5="3E738BD6A439D85BE5318950844AB912" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_sref.dds</File>
+    <File md5="4CF73825725386E77DF6AEAE60AF54B4" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_start_run.gr2</File>
+    <File md5="986EFC172993B46C1130FC9C73E3FB7B" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s_stop_run.gr2</File>
+    <File md5="E78C1FF8E30338515872B736064031F8" import="1">XML/Units/Uniques/NeoDreadnought/ART/unit_environment_dull.dds</File>
+    <File md5="BCECB5FE15C5869C9F86C84C240F3A00" import="1">XML/Units/Uniques/NeoDreadnought/ART/unit_environment_sharp.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/NeoDreadnought/ART/unit_irradiance.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/NeoDreadnought/ART/unit_sunlight_irradiance.dds</File>
+    
+
   </Files>
   <Actions>
 	
@@ -4474,6 +4524,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       
       <UpdateDatabase>Art/FontIcons/FontIconsDefines.xml</UpdateDatabase>
       <UpdateDatabase>Art/FontIcons2/FontIconsDefines.xml</UpdateDatabase>
+
+      <UpdateDatabase>XML/Units/Uniques/NeoDreadnought/ArtDef.xml</UpdateDatabase>
 
     </OnModActivated>	
   </Actions>
