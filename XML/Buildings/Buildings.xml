@@ -3042,7 +3042,7 @@
 			<ArtDefineTag>HARBOR</ArtDefineTag>
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<SpecialistCount>2</SpecialistCount>
-			<TradeRouteSeaGoldBonus>1000</TradeRouteSeaGoldBonus>
+			<TradeRouteSeaGoldBonus>500</TradeRouteSeaGoldBonus>
 			<TradeRouteRecipientBonus>10</TradeRouteRecipientBonus>
 			<TradeRouteTargetBonus>10</TradeRouteTargetBonus>
 			<Water>true</Water>
