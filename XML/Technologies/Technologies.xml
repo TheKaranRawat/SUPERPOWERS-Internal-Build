@@ -76,7 +76,6 @@
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
 			<AudioIntro>AS2D_TECH_CALENDAR</AudioIntro>
 			<AudioIntroHeader>AS2D_HEADING_TECH_CALENDAR</AudioIntroHeader>
-			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 		</Row>
 		<Row>
 			<Type>TECH_POTTERY</Type>
@@ -94,7 +93,6 @@
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
 			<AudioIntro>AS2D_TECH_POTTERY</AudioIntro>
 			<AudioIntroHeader>AS2D_HEADING_TECH_POTTERY</AudioIntroHeader>
-			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 		</Row>
 		<Row>
 			<Type>TECH_ANIMAL_HUSBANDRY</Type>
@@ -112,7 +110,6 @@
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
 			<AudioIntro>AS2D_TECH_ANIMAL_HUSBANDRY</AudioIntro>
 			<AudioIntroHeader>AS2D_HEADING_TECH_ANIMAL_HUSBANDRY</AudioIntroHeader>
-			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 		</Row>	
 		
 		<!--<Row>
@@ -168,7 +165,6 @@
 			<IconAtlas>TECH_ATLAS_1</IconAtlas>
 			<AudioIntro>AS2D_TECH_SAILING</AudioIntro>
 			<AudioIntroHeader>AS2D_HEADING_TECH_SAILING</AudioIntroHeader>
-			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 		</Row>	
 		<Row>
 			<Type>TECH_WRITING</Type>
