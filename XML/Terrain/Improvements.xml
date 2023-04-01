@@ -1514,7 +1514,7 @@
 
 			<Row>
 				<Type>BUILD_FISHERY_MOD</Type>
-				<PrereqTech>TECH_OPTICS</PrereqTech>
+<!--				<PrereqTech>TECH_OPTICS</PrereqTech>-->
 				<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
 				<Description>TXT_KEY_BUILD_FISHERY_MOD</Description>
 				<Help>TXT_KEY_BUILD_FISHERY_MOD_HELP</Help>
@@ -1855,12 +1855,12 @@
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_FISHERY_MOD</BuildType>
 		</Row>
--->		
+		
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_FISHFARM_MOD</BuildType>
 		</Row>
-<!--
+
 		<Row>
 			<UnitType>UNIT_WORKER</UnitType>
 			<BuildType>BUILD_GAS_RIG_MOD</BuildType>
@@ -1900,12 +1900,12 @@
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_FISHERY_MOD</BuildType>
 		</Row>
--->		
+		
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_FISHFARM_MOD</BuildType>
 		</Row>
-<!--		
+		
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_GAS_RIG_MOD</BuildType>
