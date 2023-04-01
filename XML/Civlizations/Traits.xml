@@ -16,7 +16,7 @@
 			<LandUnitMaintenanceModifier>-15</LandUnitMaintenanceModifier> 
 			<!--<GreatGeneralRateModifier>50</GreatGeneralRateModifier>-->
 			<FreeBuilding>BUILDING_TB_TRAIT_WU_2</FreeBuilding>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		
 		<Row>
@@ -26,13 +26,13 @@
 			<CityCultureBonus>10</CityCultureBonus>
 			<FreeBuilding>BUILDING_TB_TRAIT_WASHINGTON_2</FreeBuilding>
 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_STRATEGIC_RICHES</Type>
 			<Description>TXT_KEY_TRAIT_STRATEGIC_RICHES</Description>
 			<ShortDescription>TXT_KEY_TRAIT_STRATEGIC_RICHES_SHORT</ShortDescription>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<FreeBuilding>BUILDING_TB_STRATEGIC_RICHES</FreeBuilding>
 		</Row>
 		<Row>
@@ -43,7 +43,7 @@
 			
 			<FreeBuilding>BUILDING_TB_TRAIT_ELIZABETH_2</FreeBuilding> 
 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 
 		<Row>
@@ -52,7 +52,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_ENHANCED_CULTURE_SHORT</ShortDescription>
 			<PolicyCostModifier>-15</PolicyCostModifier> 
 			<LevelExperienceModifier>50</LevelExperienceModifier> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<FreeBuilding>BUILDING_TB_ENHANCED_CULTURE</FreeBuilding>
 			
 		</Row>
@@ -65,7 +65,7 @@
 			<!--<FreeSocialPoliciesPerEra>1</FreeSocialPoliciesPerEra>-->
 			<!--<PrereqTech>TECH_EDUCATION</PrereqTech>-->
 			<FreeBuilding>BUILDING_TB_TRAIT_BISMARCK_2</FreeBuilding> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_CAPITAL_BUILDINGS_CHEAPER</Type>
@@ -73,7 +73,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER_SHORT</ShortDescription>
 			<FreeBuilding>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</FreeBuilding>
 			<CityUnhappinessModifier>-33</CityUnhappinessModifier>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_ENHANCED_GOLDEN_AGES</Type>
@@ -83,7 +83,7 @@
 			<GoldenAgeMoveChange>2</GoldenAgeMoveChange>
 			<GoldenAgeCombatModifier>20</GoldenAgeCombatModifier>
 			<FasterInHills>1</FasterInHills> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 	<!--	Egypt 15% boost for buildings	-->	
 		<Row>
@@ -91,7 +91,7 @@
 			<Description>TXT_KEY_TRAIT_WONDER_BUILDER</Description>
 			<ShortDescription>TXT_KEY_TRAIT_WONDER_BUILDER_SHORT</ShortDescription>
 			<WonderProductionModifier>25</WonderProductionModifier>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<CapitalBuildingModifier>15</CapitalBuildingModifier> 
 			<FreeBuilding>BUILDING_TB_TRAIT_WONDER_BUILDER</FreeBuilding>
 		</Row>
@@ -110,7 +110,7 @@
 			<GreatGeneralExtraBonus>15</GreatGeneralExtraBonus>
 			<StaysAliveZeroCities>1</StaysAliveZeroCities> 
 			<TechFromCityConquer>1</TechFromCityConquer> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_FIGHT_WELL_DAMAGED</Type>
@@ -119,14 +119,14 @@
 			<FightWellDamaged>true</FightWellDamaged>
 			
 			<FreeBuilding>BUILDING_TB_TRAIT_ODA_2</FreeBuilding>  
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_BUFFALO_HORNS</Type>
 			<Description>TXT_KEY_TRAIT_BUFFALO_HORNS</Description>
 			<ShortDescription>TXT_KEY_TRAIT_BUFFALO_HORNS_SHORT</ShortDescription>
 			<LevelExperienceModifier>-50</LevelExperienceModifier>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<FreeBuilding>BUILDING_IKANDA</FreeBuilding>
 		</Row>
 		
@@ -136,7 +136,7 @@
 			<Description>TXT_KEY_TRAIT_CONVERTS_SEA_BARBARIANS</Description>
 			<ShortDescription>TXT_KEY_TRAIT_CONVERTS_SEA_BARBARIANS_SHORT</ShortDescription>
 			<PlotCultureCostModifier>-35</PlotCultureCostModifier> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<!--<NavalUnitMaintenanceModifier>-66</NavalUnitMaintenanceModifier>-->
 			<WorkerSpeedModifier>25</WorkerSpeedModifier>
 		</Row>
@@ -144,7 +144,7 @@
 			<Type>TRAIT_RAZE_AND_HORSES</Type>
 			<Description>TXT_KEY_TRAIT_RAZE_AND_HORSES</Description>
 			<ShortDescription>TXT_KEY_TRAIT_RAZE_AND_HORSES_SHORT</ShortDescription>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<StaysAliveZeroCities>1</StaysAliveZeroCities>
 			<!--<RazeSpeedModifier>100</RazeSpeedModifier>-->
 			<LandBarbarianConversionPercent>100</LandBarbarianConversionPercent>
@@ -157,7 +157,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_VIKING_FURY_SHORT</ShortDescription>
 			<!--<ExtraEmbarkMoves>1</ExtraEmbarkMoves>-->
 			<PlunderModifier>300</PlunderModifier>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_CULTURE_FROM_KILLS</Type>
@@ -166,7 +166,7 @@
 			<CultureFromKills>70</CultureFromKills>
 			<LandUnitMaintenanceModifier>-20</LandUnitMaintenanceModifier>
 			<WonderProductionModifier>25</WonderProductionModifier>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_CITY_STATE_FRIENDSHIP</Type>
@@ -175,14 +175,14 @@
 			<CityStateFriendshipModifier>100</CityStateFriendshipModifier>
 			<AfraidMinorPerTurnInfluence>300</AfraidMinorPerTurnInfluence>
 			<LevelExperienceModifier>-33</LevelExperienceModifier> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_SLAYER_OF_TIAMAT</Type>
 			<Description>TXT_KEY_TRAIT_SLAYER_OF_TIAMAT</Description>
 			<ShortDescription>TXT_KEY_TRAIT_SLAYER_OF_TIAMAT_SHORT</ShortDescription>
 			<TechFromCityConquer>true</TechFromCityConquer>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<NearbyImprovementCombatBonus>25</NearbyImprovementCombatBonus>
 			<NearbyImprovementBonusRange>2</NearbyImprovementBonusRange>
 			<CityCultureBonus>12</CityCultureBonus>
@@ -194,7 +194,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_SOLIDARITY_SHORT</ShortDescription>
 			<FreeSocialPoliciesPerEra>1</FreeSocialPoliciesPerEra>
 			<CombatBonusVsLargerCiv>15</CombatBonusVsLargerCiv> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 	</Traits>
 
@@ -214,14 +214,14 @@
 			
 			<CapitalBuildingModifier>25</CapitalBuildingModifier>
 			<FreeBuilding>BUILDING_TB_TRAIT_GANDHI_2</FreeBuilding>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_CITY_STATE_BONUSES</Type>
 			<Description>TXT_KEY_TRAIT_CITY_STATE_BONUSES</Description>
 			<ShortDescription>TXT_KEY_TRAIT_CITY_STATE_BONUSES_SHORT</ShortDescription>
 			<CityStateBonusModifier>200</CityStateBonusModifier>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<AbleToAnnexCityStates>1</AbleToAnnexCityStates>
 		</Row>
 		<Row>
@@ -233,14 +233,14 @@
 			<PolicyCostModifier>-10</PolicyCostModifier> 
 			<ExtraEmbarkMoves>4</ExtraEmbarkMoves> 
 			<UniqueLuxuryRequiresNewArea>true</UniqueLuxuryRequiresNewArea>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_FAITH_FROM_NATURE</Type>
 			<Description>TXT_KEY_TRAIT_FAITH_FROM_NATURE</Description>
 			<ShortDescription>TXT_KEY_TRAIT_FAITH_FROM_NATURE_SHORT</ShortDescription>
 			<FaithFromUnimprovedForest>true</FaithFromUnimprovedForest>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<BonusReligiousBelief>1</BonusReligiousBelief> 
 		</Row>
 		<Row>
@@ -251,7 +251,7 @@
 			<TradeReligionModifier>300</TradeReligionModifier>
 			<BonusReligiousBelief>1</BonusReligiousBelief>
 			<GoldenAgeDurationModifier>30</GoldenAgeDurationModifier>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_EXTRA_BELIEF</Type>
@@ -260,7 +260,7 @@
 			<BonusReligiousBelief>true</BonusReligiousBelief>
 			<TradeReligionModifier>50</TradeReligionModifier> 
 			<WonderProductionModifier>25</WonderProductionModifier> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<FreeUnit>UNITCLASS_PROPHET</FreeUnit>
 			<FreeUnitPrereqTech>TECH_WRITING</FreeUnitPrereqTech>
 		</Row>
@@ -270,14 +270,14 @@
 			<ShortDescription>TXT_KEY_TRAIT_BONUS_AGAINST_TECH_SHORT</ShortDescription>
 			<CombatBonusVsLargerCiv>25</CombatBonusVsLargerCiv>
 			<BonusReligiousBelief>1</BonusReligiousBelief>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_ANNEX_CITY_STATE</Type>
 			<Description>TXT_KEY_TRAIT_ANNEX_CITY_STATE</Description>
 			<ShortDescription>TXT_KEY_TRAIT_ANNEX_CITY_STATE_SHORT</ShortDescription>
 			<AbleToAnnexCityStates>true</AbleToAnnexCityStates>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<CultureBuildingYieldChange>3</CultureBuildingYieldChange>
 			<FreeUnit>UNITCLASS_MUSICIAN</FreeUnit>
 			<FreeUnitPrereqTech>TECH_ACOUSTICS</FreeUnitPrereqTech>
@@ -291,7 +291,7 @@
 			<GoldenAgeGreatMusicianRateModifier>100</GoldenAgeGreatMusicianRateModifier>
 			<GoldenAgeGreatWriterRateModifier>100</GoldenAgeGreatWriterRateModifier>
 			<PopulationUnhappinessModifier>-15</PopulationUnhappinessModifier> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 
 
@@ -307,7 +307,7 @@
 			<LuxuryHappinessRetention>100</LuxuryHappinessRetention>
 			<NavalUnitMaintenanceModifier>-25</NavalUnitMaintenanceModifier> 
 			<CombatBonusVsLargerCiv>30</CombatBonusVsLargerCiv>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<FreeBuilding>BUILDING_MARKET</FreeBuilding>
 		</Row>
 		<Row>
@@ -317,7 +317,7 @@
 			<TradeRouteResourceModifier>100</TradeRouteResourceModifier>
 			<NavalUnitMaintenanceModifier>-20</NavalUnitMaintenanceModifier> 
 			<CityStateCombatModifier>20</CityStateCombatModifier> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<FreeBuilding>BUILDING_HARBOR</FreeBuilding>
 		</Row>
 		<Row>
@@ -325,7 +325,7 @@
 			<Description>TXT_KEY_TRAIT_GATEWAY_AFRICA</Description>
 			<ShortDescription>TXT_KEY_TRAIT_GATEWAY_AFRICA_SHORT</ShortDescription>
 			<BonusReligiousBelief>1</BonusReligiousBelief> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_AMPHIB_WARLORD</Type>
@@ -333,7 +333,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_AMPHIB_WARLORD_SHORT</ShortDescription>
 			<RiverTradeRoad>true</RiverTradeRoad>
 			<FasterAlongRiver>true</FasterAlongRiver>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_PHOENICIAN_HERITAGE</Type>
@@ -341,7 +341,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_PHOENICIAN_HERITAGE_SHORT</ShortDescription>
 			<NumTradeRoutesModifier>30</NumTradeRoutesModifier>
 			<!-- <CrossesMountainsAfterGreatGeneral>1</CrossesMountainsAfterGreatGeneral> -->
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<FreeBuilding>BUILDING_TB_TRAIT_PHOENICIAN_HERITAGE</FreeBuilding>
 		</Row>
 		<Row>
@@ -353,7 +353,7 @@
 			<FreeUnitPrereqTech>TECH_OPTICS</FreeUnitPrereqTech>
 			<NumTradeRoutesModifier>100</NumTradeRoutesModifier>
 			<CapitalThemingBonusModifier>100</CapitalThemingBonusModifier>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		
 		
@@ -368,7 +368,7 @@
 			<Type>TRAIT_SCHOLARS_JADE_HALL</Type>
 			<Description>TXT_KEY_TRAIT_SCHOLARS_JADE_HALL</Description>
 			<ShortDescription>TXT_KEY_TRAIT_SCHOLARS_JADE_HALL_SHORT</ShortDescription>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_LONG_COUNT</Type>
@@ -378,7 +378,7 @@
 			<PrereqTech>TECH_THEOLOGY</PrereqTech>
 			<MoveFriendlyWoodsAsRoad>1</MoveFriendlyWoodsAsRoad> 
 			<TechBoostFromCapitalScienceBuildings>true</TechBoostFromCapitalScienceBuildings>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_DIPLOMACY_GREAT_PEOPLE</Type>
@@ -387,7 +387,7 @@
 			<GreatPersonGiftInfluence>500</GreatPersonGiftInfluence>
 			<DOFGreatPersonModifier>15</DOFGreatPersonModifier>
 			<GreatScientistRateModifier>33</GreatScientistRateModifier>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_INGENIOUS</Type>
@@ -396,7 +396,7 @@
 			<GreatScientistRateModifier>50</GreatScientistRateModifier>
 			<FreeUnit>UNITCLASS_SCIENTIST</FreeUnit>
 			<FreeUnitPrereqTech>TECH_WRITING</FreeUnitPrereqTech>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 
 
@@ -419,7 +419,7 @@
 			<TradeReligionModifier>300</TradeReligionModifier> 
 			<NavalUnitMaintenanceModifier>-33</NavalUnitMaintenanceModifier> 
 			<EmbarkedAllWater>1</EmbarkedAllWater> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_GREAT_ANDEAN_ROAD</Type>
@@ -429,14 +429,14 @@
 			<ImprovementMaintenanceModifier>-50</ImprovementMaintenanceModifier>
 			<MoveFriendlyWoodsAsRoad>1</MoveFriendlyWoodsAsRoad>
 			<NoHillsImprovementMaintenance>true</NoHillsImprovementMaintenance>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_IGNORE_TERRAIN_IN_FOREST</Type>
 			<Description>TXT_KEY_TRAIT_IGNORE_TERRAIN_IN_FOREST</Description>
 			<ShortDescription>TXT_KEY_TRAIT_IGNORE_TERRAIN_IN_FOREST_SHORT</ShortDescription>
 			<MoveFriendlyWoodsAsRoad>true</MoveFriendlyWoodsAsRoad>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 		</Row>
 		<Row>
 			<Type>TRAIT_WAYFINDING</Type>
@@ -446,7 +446,7 @@
 			<NearbyImprovementCombatBonus>10</NearbyImprovementCombatBonus>
 			<NearbyImprovementBonusRange>2</NearbyImprovementBonusRange>
 			<CombatBonusImprovement>IMPROVEMENT_MOAI</CombatBonusImprovement>
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<ExtraEmbarkMoves>4</ExtraEmbarkMoves> 
 			<FreeBuilding>BUILDING_TB_WAYFINDING</FreeBuilding>
 		</Row>
@@ -456,7 +456,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_GREAT_EXPANSE_SHORT</ShortDescription>
 			<ExtraFoundedCityTerritoryClaimRange>6</ExtraFoundedCityTerritoryClaimRange>
 			<AngerFreeIntrusionOfCityStates>1</AngerFreeIntrusionOfCityStates> 
-			<EmbarkedToLandFlatCost>true</EmbarkedToLandFlatCost>
+			
 			<FreeBuilding>BUILDING_GRANARY</FreeBuilding>
 		</Row>
 
