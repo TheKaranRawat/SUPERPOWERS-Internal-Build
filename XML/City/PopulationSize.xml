@@ -2306,20 +2306,11 @@
 			<Yield>25</Yield>
 		</Row>
 		
-		<Row>
-			<BuildingType>BUILDING_BIO_LAB</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
-		</Row>
+
 		<Row>
 			<BuildingType>BUILDING_LOGISTICS_COMPANY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>33</Yield>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_GENE_LAB</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_INTERNATIONAL_TRADE_COMPANY</BuildingType>
@@ -2358,32 +2349,32 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_XL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>3</Yield>
+			<Yield>30</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_XXL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>3</Yield>
+			<Yield>30</Yield>
 		</Row>	
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_GLOBAL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>4</Yield>
+			<Yield>40</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_XL</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>3</Yield>
+			<Yield>30</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_XXL</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>3</Yield>
+			<Yield>30</Yield>
 		</Row>	
 		<Row>
 			<BuildingType>BUILDING_CITY_SIZE_GLOBAL</BuildingType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>4</Yield>
+			<Yield>40</Yield>
 		</Row>			
 
 		

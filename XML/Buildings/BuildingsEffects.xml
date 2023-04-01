@@ -1729,7 +1729,7 @@
 		<Row>
 			<BuildingType>BUILDING_PALACE</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>3</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITYSTATE_RESOURCE</BuildingType>
@@ -1798,12 +1798,12 @@
 		<Row>
 			<BuildingType>BUILDING_OXFORD_UNIVERSITY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>10</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BABYLON_BABEL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>2</Yield>
+			<Yield>10</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_GREAT_LIBRARY</BuildingType>
@@ -1929,14 +1929,14 @@
 		<Row>
 			<BuildingType>BUILDING_PUBLIC_SCHOOL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 
 		<Row>
 			<BuildingType>BUILDING_LABORATORY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>12</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_SWEDISH_LABORATORY_SERVICES</BuildingType>
@@ -1947,7 +1947,7 @@
 		<Row>
 			<BuildingType>BUILDING_POLAR_STATION</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_POLAR_STATION</BuildingType>
@@ -2353,7 +2353,7 @@
 		<Row>
 			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
@@ -2521,7 +2521,7 @@
 		<Row>
 			<BuildingType>BUILDING_ACADEMY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
@@ -2539,7 +2539,7 @@
 		<Row>
 			<BuildingType>BUILDING_OBSERVATORY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_INCA_QURIKANCHA</BuildingType>
@@ -2851,7 +2851,7 @@
 		<Row>
 			<BuildingType>BUILDING_ARECIBO</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>32</Yield>
+			<Yield>20</Yield>
 		</Row>
 
 		<Row>
@@ -2929,7 +2929,7 @@
 		<Row>
 			<BuildingType>BUILDING_TCS_PAROCHIAL_SCHOOL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_TCS_PAROCHIAL_SCHOOL</BuildingType>
@@ -2969,7 +2969,7 @@
 		<Row>
 			<BuildingType>BUILDING_TCS_PATENT_OFFICE</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>2</Yield>
 		</Row>
 
 		<Row>
@@ -3147,18 +3147,7 @@
 	
 
 
-		<Row>
-			<BuildingType>BUILDING_CHINESE_EXAMINATION</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_CHINESE_EXAMINATION</BuildingType>
-			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<YieldChange>1</YieldChange>
-		</Row>		
+		
 
 
 
@@ -3899,17 +3888,17 @@
 		<Row>
 			<BuildingType>BUILDING_OBSERVATORY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
+			<Yield>10</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_EGYPT_SIRIUS</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
+			<Yield>10</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_INCA_QURIKANCHA</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>5</Yield>
+			<Yield>10</Yield>
 		</Row>
 
 
@@ -4196,32 +4185,32 @@
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>-1</Yield>
 		</Row>	
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>-1</Yield>
 		</Row>				
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>-1</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_SIZE_XL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>-1</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>-1</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>1</Yield>
+			<Yield>-1</Yield>
 		</Row>
 
 
@@ -4236,27 +4225,27 @@
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV1</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-7</Yield>
+			<Yield>-2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV2</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-7</Yield>
+			<Yield>-2</Yield>
 		</Row>		
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV3</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-7</Yield>
+			<Yield>-2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV4</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-7</Yield>
+			<Yield>-2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_HALL_LV5</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-7</Yield>
+			<Yield>-2</Yield>
 		</Row>						
 
 
@@ -4333,17 +4322,17 @@
 		<Row>
 			<BuildingType>BUILDING_AMERICAN_CREATIVE_COMPANY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>15</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_AMERICAN_CREATIVE_COMPANY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>15</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_AMERICAN_CREATIVE_COMPANY</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>15</Yield>
+			<Yield>5</Yield>
 		</Row>
 		
 		<Row>
@@ -6616,7 +6605,7 @@
 		<Row>
 			<BuildingType>BUILDING_SPHINX</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>20</Yield>
+			<Yield>25</Yield>
 		</Row>
 
 		<Row>
@@ -6634,7 +6623,7 @@
 		<Row>
 			<BuildingType>BUILDING_LIBRARY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>25</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
@@ -6644,26 +6633,26 @@
 		<Row>
 			<BuildingType>BUILDING_ROYAL_LIBRARY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>15</Yield>
+			<Yield>35</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PUBLIC_SCHOOL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>25</Yield>
 		</Row>
 
 
 		<Row>
 			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>25</Yield>
 		</Row>	
 
 
 		<Row>
 			<BuildingType>BUILDING_ARABIA_ISIAMIC_UNIVERSITY</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>15</Yield>
+			<Yield>35</Yield>
 		</Row>	
 
 
@@ -6684,7 +6673,7 @@
 		<Row>
 			<BuildingType>BUILDING_MUGHAL_FORT</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>15</Yield>
+			<Yield>35</Yield>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_MUGHAL_FORT</BuildingType>
@@ -6695,7 +6684,7 @@
 		<Row>
 			<BuildingType>BUILDING_WAT</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>15</Yield>
+			<Yield>35</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_WAT</BuildingType>
@@ -6703,6 +6692,40 @@
 			<Yield>25</Yield>
 		</Row>
 
+
+		<Row>
+			<BuildingType>BUILDING_LABORATORY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>25</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SWEDISH_LABORATORY_SERVICES</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>35</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_4UC_RUSSIANRESEARCH</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>35</Yield>
+		</Row>		
+
+		<Row>
+			<BuildingType>BUILDING_BIO_LAB</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>25</Yield>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_GENE_LAB</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>25</Yield>
+		</Row>		
+
+		<Row>
+			<BuildingType>BUILDING_POLAR_STATION</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>25</Yield>
+		</Row>
 
 
 		<Row>
@@ -7848,33 +7871,6 @@
 
 
 
-		<Row>
-			<BuildingType>BUILDING_CHINESE_EXAMINATION</BuildingType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>50</Flavor>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_CHINESE_EXAMINATION</BuildingType>
-			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-			<Flavor>35</Flavor>
-		</Row>		
-
-
-		<Row>
-			<BuildingType>BUILDING_NILOMETER</BuildingType>
-			<FlavorType>FLAVOR_GROWTH</FlavorType>
-			<Flavor>25</Flavor>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_NILOMETER</BuildingType>
-			<FlavorType>FLAVOR_SCIENCE</FlavorType>
-			<Flavor>5</Flavor>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_NILOMETER</BuildingType>
-			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
 
 
 
@@ -7891,7 +7887,7 @@
 
 
 
-
+<!--
 		<Row>
 			<BuildingType>BUILDING_BEERMAKER</BuildingType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -7903,7 +7899,7 @@
 			<FlavorType>FLAVOR_FOOD</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>		
-<!--
+
 		<Row>
 			<BuildingType>BUILDING_AUTOHERSTELLER</BuildingType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
