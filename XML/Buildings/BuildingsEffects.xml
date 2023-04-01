@@ -5433,6 +5433,42 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_LIGHTHOUSE</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_SHIPYARD</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_INTERNATIONAL_SHIPYARD</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_SHIPYARD</BuildingType>
+			<TerrainType>TERRAIN_OCEAN</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_INTERNATIONAL_SHIPYARD</BuildingType>
+			<TerrainType>TERRAIN_OCEAN</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
 	</Building_TerrainYieldChanges>
 
 
