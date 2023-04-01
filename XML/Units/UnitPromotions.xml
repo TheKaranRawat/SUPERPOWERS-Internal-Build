@@ -306,7 +306,7 @@
 		<Row>
 			<Type>PROMOTION_STEALTH_EVASION</Type>
 			<Description>TXT_KEY_PROMOTION_STEALTH_EVASION</Description>
-			<Help>TXT_KEY_PROMOTION_STEALTH_EVASION</Help>
+			<Help>TXT_KEY_PROMOTION_STEALTH_EVASION_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<LostWithUpgrade>true</LostWithUpgrade>
 			<CannotBeChosen>true</CannotBeChosen>
@@ -2093,7 +2093,7 @@
 		
 		<Row>
 			<Type>PROMOTION_HEAVY_SHOCK_1</Type>
-			<Description>TXT_KEY_PROMOTION_SHOCK_1</Description>
+			<Description>TXT_KEY_PROMOTION_HEAVY_SHOCK_1</Description>
 			<Help>TXT_KEY_PROMOTION_HEAVY_SHOCK_1_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<OrderPriority>11</OrderPriority>
@@ -2105,7 +2105,7 @@
 		</Row>
 		<Row>
 			<Type>PROMOTION_HEAVY_SHOCK_2</Type>
-			<Description>TXT_KEY_PROMOTION_SHOCK_2</Description>
+			<Description>TXT_KEY_PROMOTION_HEAVY_SHOCK_2</Description>
 			<Help>TXT_KEY_PROMOTION_HEAVY_SHOCK_2_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereq>PROMOTION_HEAVY_SHOCK_1</PromotionPrereq>
@@ -2118,7 +2118,7 @@
 		</Row>
 		<Row>
 			<Type>PROMOTION_HEAVY_SHOCK_3</Type>
-			<Description>TXT_KEY_PROMOTION_SHOCK_3</Description>
+			<Description>TXT_KEY_PROMOTION_HEAVY_SHOCK_3</Description>
 			<Help>TXT_KEY_PROMOTION_HEAVY_SHOCK_3_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereq>PROMOTION_HEAVY_SHOCK_2</PromotionPrereq>

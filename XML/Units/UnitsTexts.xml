@@ -370,7 +370,7 @@
 
 				[NEWLINE][NEWLINE][COLOR_CYAN]Tactics:[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Archery Units and Anti-air Units are very different from their counterparts in BNW. They are no longer main force units as they shoudl be. They are support units and must work with other units for a better output.
-				[NEWLINE][ICON_BULLET]Units with "Barrage" Promotions can paralyze any enemy's units. Use it to disable strong enemies which cannot be killed in the current turn. This is very helpful if you are outnumbered.
+				[NEWLINE][ICON_BULLET]Units with "Suppression" Promotions can paralyze any enemy's units. Use it to disable strong enemies which cannot be killed in the current turn. This is very helpful if you are outnumbered.
 				[NEWLINE][ICON_BULLET]The perfect defensive formation: stack an Infantry Unit, an Counter Unit, a Citadel Unit or a Militia Unit with a Ranged Unit which has "Fire Support" promotions together during defensive turns. The enemy's Infantry Units, Hit-and-run Units will suffer huge casualties if they dare to attack your position. However, it is useless against Siege Units' bombardment.
 				[NEWLINE][ICON_BULLET]Always work with Hit-and-run Units with "Scouting" promotions to have the best effect.
 				[NEWLINE][ICON_BULLET]Special Forces Units can offer "Target Guide" for this unit to boost its damage.
@@ -497,7 +497,7 @@
 				[NEWLINE][ICON_BULLET]Early Naval Melee Units are very powerful for a rush strategy since ealy cities are quite vulnerable. Two Trireme can take down an enemy's coastal Capital in two turns in Ancient Era. However, the cost of a Trireme almsot equals an ancient World Wonder.
 				[NEWLINE][NEWLINE][COLOR_MAGENTA]Counter Tactics:[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Naval Ranged Units and Cruisers have great combat bonus against them. In most cases, them can be destroyed in one or two hit by melee attacks.
-				[NEWLINE][ICON_BULLET]Although Naval Hit-and-run units are weak against them, but you can use wolfpack strategy to paralyze them by "Barrage" effects.
+				[NEWLINE][ICON_BULLET]Although Naval Hit-and-run units are weak against them, but you can use wolfpack strategy to paralyze them by "Suppression" effects.
 				[NEWLINE][ICON_BULLET]Destroyers have limited firepower against Fighters and Carrier-based Aircrafts. Use "Air Sweep" ability to damage or destroy them to clear a path for your air strike if your land units cannot reach them.
 			</Text>
 		</Row>
@@ -564,7 +564,7 @@
 				[NEWLINE][ICON_BULLET]Weak vs Counter Units which are much cheaper
 
 				[NEWLINE][NEWLINE][COLOR_CYAN]Tactics:[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]If owned both "Barrage" and Collateral Damage" promotions, Naval Ranged Ships can weaken enemy's both defending and attacking combat strength to quickly disable its combat effectiveness.
+				[NEWLINE][ICON_BULLET]If owned both "Suppression" and Collateral Damage" promotions, Naval Ranged Ships can weaken enemy's both defending and attacking combat strength to quickly disable its combat effectiveness.
 				[NEWLINE][ICON_BULLET]With decisive high melee combat strength, Naval Ranged Ships can efficiently destroy an enemy's Naval Melee Unit with minimum loss. Remember to use its melee attack ablity.
 				[NEWLINE][ICON_BULLET]Naval Ranged Ships can also capture coastal cities by using melee attacks, but it cannot move after capturing the city. So make sure the captured city is secure in the next turn.
 				[NEWLINE][ICON_BULLET]Heavy Cruisers and Missile Cruisers can provide capable anti-air support. Missile Cruisers can even intercept guided missiles.
@@ -3226,13 +3226,13 @@
 
 
 		<Row Tag="TXT_KEY_PROMOTION_CQB_COMBAT_1">
-			<Text>Close Quarters Combat I</Text>
+			<Text>Close Quarters Battle I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CQB_COMBAT_1_HELP">
 			<Text>When defending, if the attacker's HP is less than 80, the attacker will lose all [ICON_MOVES] MP after attacking this unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CQB_COMBAT_2">
-			<Text>Close Quarters Combat II</Text>
+			<Text>Close Quarters Battle II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CQB_COMBAT_2_HELP">
 			<Text>When defending, the attacker will lose all [ICON_MOVES] MP after attacking this unit.</Text>
@@ -3286,6 +3286,16 @@
 		</Row>
 
 
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_SHOCK_1" >
+			<Text>Breakthrough I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_SHOCK_2" >
+			<Text>Breakthrough II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_SHOCK_3" >
+			<Text>Breakthrough III</Text>
+		</Row>
+
 
 		<Row Tag="TXT_KEY_PROMOTION_HEAVY_SHOCK_1_HELP" >
 			<Text>+25% [ICON_STRENGTH] Combat Strength when attacking.</Text>
@@ -3294,7 +3304,7 @@
 			<Text>+25% [ICON_STRENGTH] Combat Strength when attacking.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HEAVY_SHOCK_3_HELP" >
-			<Text>Heals 15 HP If Kills Non-Barbarian Unit.</Text>
+			<Text>Heal 15 HP after killing a Non-Barbarian Unit.</Text>
 		</Row>
 		
 		
@@ -3345,14 +3355,29 @@
 			<Text>+15% [ICON_STRENGTH] Combat Strength when attacking.</Text>
 		</Replace>-->
 
+
+		<Replace Tag="TXT_KEY_PROMOTION_BARRAGE_1" >
+			<Text>Suppression I</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_PROMOTION_BARRAGE_2" >
+			<Text>Suppression II</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_PROMOTION_BARRAGE_3" >
+			<Text>Suppression III</Text>
+		</Replace>
+
+
+
 		<Replace Tag="TXT_KEY_PROMOTION_BARRAGE_1_HELP" >
-			<Text>[ICON_BULLET]If the Target Unit's HP is less than 60 after this attack, its [ICON_MOVES] MP will reduce to 1 for the next turn. [NEWLINE][ICON_BULLET]One more Barrage shot will make it lose all [ICON_MOVES] MP and suffers -1 [ICON_MOVES] MP Penalty for the next turn. It won't recover until HP is full.</Text>
+			<Text>[ICON_BULLET]If the Target Unit's HP is less than 60 after this attack, its [ICON_MOVES] MP will reduce to 1 for the next turn. [NEWLINE][ICON_BULLET]One more Suppression shot will make it lose all [ICON_MOVES] MP and suffers -1 [ICON_MOVES] MP Penalty for the next turn. It won't recover until HP is full.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BARRAGE_2_HELP" >
-			<Text>[ICON_BULLET]If the Target Unit's HP is less than 75 after this attack, its [ICON_MOVES] MP will reduce to 1 for the next turn. [NEWLINE][ICON_BULLET]One more Barrage shot will make it lose all [ICON_MOVES] MP and suffers -1 [ICON_MOVES] MP Penalty for the next turn. It won't recover until HP is full.</Text>
+			<Text>[ICON_BULLET]If the Target Unit's HP is less than 75 after this attack, its [ICON_MOVES] MP will reduce to 1 for the next turn. [NEWLINE][ICON_BULLET]One more Suppression shot will make it lose all [ICON_MOVES] MP and suffers -1 [ICON_MOVES] MP Penalty for the next turn. It won't recover until HP is full.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BARRAGE_3_HELP" >
-			<Text>[ICON_BULLET]If the Target Unit's HP is less than 90 after this attack, its [ICON_MOVES] MP will reduce to 1 for the next turn. [NEWLINE][ICON_BULLET]One more Barrage shot will make it lose all [ICON_MOVES] MP and suffers -1 [ICON_MOVES] MP Penalty for the next turn. It won't recover until HP is full.</Text>
+			<Text>[ICON_BULLET]If the Target Unit's HP is less than 90 after this attack, its [ICON_MOVES] MP will reduce to 1 for the next turn. [NEWLINE][ICON_BULLET]One more Suppression shot will make it lose all [ICON_MOVES] MP and suffers -1 [ICON_MOVES] MP Penalty for the next turn. It won't recover until HP is full.</Text>
 		</Replace>
 
 
@@ -3372,13 +3397,13 @@
 
 
 		<Row Tag="TXT_KEY_PROMOTION_FLANK_GUN_1">
-			<Text>Flak Cannon I</Text>
+			<Text>Air Superiority I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FLANK_GUN_1_HELP">
 			<Text>+50% [ICON_STRENGTH] Combat Strength when intercepting enemy aircraft. [NEWLINE][ICON_BULLET]+50% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Helicopter Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FLANK_GUN_2">
-			<Text>Flak Cannon II</Text>
+			<Text>Air Superiority II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FLANK_GUN_2_HELP">
 			<Text>+1 [COLOR_POSITIVE_TEXT]Interception[ENDCOLOR] per turn.</Text>
@@ -3440,38 +3465,38 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_1">
-			<Text>Sunder I</Text>
+			<Text>Shock I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_1_HELP">
 			<Text>If the Target Unit's HP is less than 60 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Defending[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50% )</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_2">
-			<Text>Sunder II</Text>
+			<Text>Shock II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_2_HELP">
 			<Text>If the Target Unit's HP is less than 75 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Defending[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50% )</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_3">
-			<Text>Sunder III</Text>
+			<Text>Shock III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_3_HELP">
 			<Text>If the Target Unit's HP is less than 90 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Defending[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50% )</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_HUNTDOWN_1">
-			<Text>Hunt Down I</Text>
+			<Text>Hunter Killer I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HUNTDOWN_1_HELP">
 			<Text>+33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Wounded Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HUNTDOWN_2">
-			<Text>Hunt Down II</Text>
+			<Text>Hunter Killer II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HUNTDOWN_2_HELP">
 			<Text>+33% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Wounded Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HUNTDOWN_3">
-			<Text>Hunt Down III</Text>
+			<Text>Hunter Killer III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_HUNTDOWN_3_HELP">
 			<Text>+34% [ICON_STRENGTH] Combat Strength VS [COLOR_POSITIVE_TEXT]Wounded Units[ENDCOLOR].</Text>
@@ -3487,34 +3512,34 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_PROMOTION_VOLLEY">
-			<Text>Volley I</Text>
+			<Text>Siege I</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_VOLLEY_HELP" >
 			<Text>+100% [ICON_RANGE_STRENGTH] Ranged Combat Strength VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR], [COLOR_POSITIVE_TEXT]Citadels[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].</Text>
 		</Replace>
 		<Row Tag="TXT_KEY_PROMOTION_VOLLEY_2">
-			<Text>Volley II</Text>
+			<Text>Siege II</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_VOLLEY_3">
-			<Text>Volley III</Text>
+			<Text>Siege III</Text>
 		</Row>
 
 
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_1">
-			<Text>Collateral Damage I</Text>
+			<Text>Concentrated Fire I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_1_HELP" >
 			<Text>[ICON_BULLET]+33% Damage to other units in the target plot. [NEWLINE][ICON_BULLET]If the Target Unit's HP is less than 60 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Attacking[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50%). It won't apply to other units suffered from collateral damage.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_2">
-			<Text>Collateral Damage II</Text>
+			<Text>Concentrated Fire II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_2_HELP" >
 			<Text>[ICON_BULLET]+33% Damage to other units in the target plot. [NEWLINE][ICON_BULLET]If the Target Unit's HP is less than 75 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Attacking[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50%). It won't apply to other units suffered from collateral damage.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_3">
-			<Text>Collateral Damage III</Text>
+			<Text>Concentrated Fire III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_3_HELP" >
 			<Text>[ICON_BULLET]+34% Damage to other units in the target plot. [NEWLINE][ICON_BULLET]If the Target Unit's HP is less than 90 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Attacking[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50%). It won't apply to other units suffered from collateral damage.</Text>
@@ -3537,13 +3562,13 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CLUSTER_ROCKET_1">
-			<Text>Firepower Coverage I</Text>
+			<Text>Overwhelming Firepower  I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CLUSTER_ROCKET_1_HELP">
 			<Text>Area of Effect damage +25%.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CLUSTER_ROCKET_2">
-			<Text>Firepower Coverage II</Text>
+			<Text>Overwhelming Firepower II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CLUSTER_ROCKET_2_HELP">
 			<Text>Area of Effect damage +25% .</Text>
@@ -3551,13 +3576,13 @@
 		
 		
 		<Row Tag="TXT_KEY_PROMOTION_FAE_ROCKET_1">
-			<Text>Anti-ship Rocket I</Text>
+			<Text>Anti-Ship Missile I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FAE_ROCKET_1_HELP">
-			<Text>+50% [ICON_RANGE_STRENGTH] Ranged Combat Strength attacking [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].</Text>
+			<Text>+50% [ICON_RANGE_STRENGTH] Ranged Combat Strength when attacking [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FAE_ROCKET_2">
-			<Text>Anti-ship Rocket Rocket II</Text>
+			<Text>Anti-Ship Missile II</Text>
 		</Row>
 		<!--<Row Tag="TXT_KEY_PROMOTION_FAE_ROCKET_2_HELP">
 			<Text>+50% [ICON_RANGE_STRENGTH] Ranged Combat Strength attacking [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR] and Units in [COLOR_POSITIVE_TEXT]Rough Terrain[ENDCOLOR].</Text>
@@ -3660,19 +3685,19 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_1">
-			<Text>Passive Skills I - Sabotage Supply Lines</Text>
+			<Text>Sabotage Supply</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_1_HELP">
 			<Text>The Target Enemy Unit will suffer -20 Hp if Ends Turn outside of Friendly Territory, no matter how much damage dealt. The Target Enemy Unit won't recover until its HP is full.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_2">
-			<Text>Passive Skills II - Sabotage Cities</Text>
+			<Text>Incite Rebellion</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_2_HELP">
 			<Text>[ICON_BULLET]Cause 1 turn Chaos in the target City when attacking the enemy [COLOR_POSITIVE_TEXT]City[ENDCOLOR] (the effect can multiply). [NEWLINE][ICON_BULLET]If the target City is without a garrsion, cause 250 Damage instantly to the city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_3">
-			<Text>Passive Skills III - Shock and Awe</Text>
+			<Text>Shock and Awe</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_3_HELP">
 			<Text>May [COLOR_POSITIVE_TEXT]Capture[ENDCOLOR] the defeated Enemy Unit.</Text>
@@ -3680,19 +3705,19 @@
 
 
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_I">
-			<Text>Active Skills I - Riot Control</Text>
+			<Text>Riot Control</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_I_HELP">
 			<Text>Can reduce the [COLOR_POSITIVE_TEXT]Resistance[ENDCOLOR] in your own cities. The Resistance Time must be longer than 3 turns.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_II">
-			<Text>Active Skills II - Target Guide</Text>
+			<Text>Spotter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_II_HELP">
 			<Text>[ICON_BULLET]Allows to enable the "Target Guide" ability: +33% [ICON_RANGE_STRENGTH] Ranged Combat Strength for the [COLOR_POSITIVE_TEXT]Ranged Unit[ENDCOLOR] in the Same Tile with this unit for this turn. [NEWLINE][ICON_BULLET]Using this ability will consume all [ICON_MOVES] MPs of this unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_III">
-			<Text>Active Skills III - Emergency Supply</Text>
+			<Text>Emergency Supply</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_III_HELP">
 			<Text>+50 HP for the other unit in the [COLOR_POSITIVE_TEXT]Same Tile[ENDCOLOR]. But cannot remove its debuff condition in this turn.</Text>
@@ -3701,7 +3726,7 @@
 		
 
 		<Row Tag="TXT_KEY_PROMOTION_STEALTH_OPERATION">
-			<Text>Small Size Unit</Text>
+			<Text>Concealment</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_STEALTH_OPERATION_HELP">
 			<Text>
@@ -3761,13 +3786,13 @@
 
 
 		<Replace Tag="TXT_KEY_PROMOTION_MEDIC" >
-			<Text>Military Reserve I</Text>
+			<Text>Field Hospital I</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_MEDIC_HELP" >
 			<Text>[ICON_BULLET]All units in adjacent tiles or in the same tile Heal +15 HP per turn. [NEWLINE][ICON_BULLET]This unit Heals +15 HP per turn.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_MEDIC_II" >
-			<Text>Military Reserve II</Text>
+			<Text>Field Hospital II</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_MEDIC_II_HELP" >
 			<Text>[ICON_BULLET]All units in adjacent tiles or in the same tile Heal +15 HP per turn. [NEWLINE][ICON_BULLET]This unit Heals +15 HP per turn.</Text>
@@ -3825,6 +3850,17 @@
 			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when intercepting enemy aircraft. [NEWLINE][ICON_BULLET]+1 [COLOR_POSITIVE_TEXT]Intercept[ENDCOLOR] chance per turn.</Text>
 		</Replace>
 
+
+		<Replace Tag="TXT_KEY_PROMOTION_DOGFIGHTING_1">
+			<Text>Wild Weasel I</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_DOGFIGHTING_2">
+			<Text>Wild Weasel II</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_DOGFIGHTING_3">
+			<Text>Wild Weasel III</Text>
+		</Replace>
+
 		<Replace Tag="TXT_KEY_PROMOTION_DOGFIGHTING_1_HELP">
 			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR]. [NEWLINE][ICON_BULLET]+1 [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR] chance per turn.</Text>
 		</Replace>
@@ -3852,19 +3888,19 @@
 
 		
 		<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_1">
-			<Text>Air Bombardment I</Text>
+			<Text>Close Air Support I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_1_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_2">
-			<Text>Air Bombardment II</Text>
+			<Text>Close Air Support II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_2_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_3">
-			<Text>Air Bombardment III</Text>
+			<Text>Close Air Support III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AIR_BOMBARDMENT_3_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].</Text>
@@ -3908,23 +3944,34 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_1">
-			<Text>Napalm Bomb I</Text>
+			<Text>Firebombing I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_1_HELP">
-			<Text>Kill 20% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the Target City. (Kill only 5% if the city has a bomb shelter)</Text>
+			<Text>Kill 10% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the Target City. (Kill only 5% if the city has a bomb shelter)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_2">
-			<Text>Napalm Bomb II</Text>
+			<Text>Firebombing II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_2_HELP">
-			<Text>Kill 40% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the Target City. (Kill only 10% if the city has a bomb shelter)</Text>
+			<Text>Kill 20% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the Target City. (Kill only 10% if the city has a bomb shelter)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_3">
-			<Text>Napalm Bomb III</Text>
+			<Text>Firebombing III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_3_HELP">
-			<Text>Kill 60% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the [COLOR_POSITIVE_TEXT]Target City[ENDCOLOR]. (Kill only 15% if the city has a bomb shelter)</Text>
+			<Text>Kill 30% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the [COLOR_POSITIVE_TEXT]Target City[ENDCOLOR]. (Kill only 15% if the city has a bomb shelter)</Text>
 		</Row>
+
+
+		<Replace Tag="TXT_KEY_PROMOTION_AIR_SIEGE_1_HELP" >
+			<Text>Strategic Bombing I</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIR_SIEGE_2_HELP" >
+			<Text>Strategic Bombing II</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMOTION_AIR_SIEGE_3_HELP" >
+			<Text>Strategic Bombing III</Text>
+		</Replace>
 
 		<Replace Tag="TXT_KEY_PROMOTION_AIR_SIEGE_1_HELP" >
 			<Text>Destroy 1 Military Building per attack in the [COLOR_POSITIVE_TEXT]Target City[ENDCOLOR].</Text>
@@ -3938,14 +3985,14 @@
 
 
 		<Row Tag="TXT_KEY_PROMOTION_DESTROY_SUPPLY_1">
-			<Text>Supply Line Bombardment I</Text>
+			<Text>Supply Strike I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_DESTROY_SUPPLY_1_HELP">
 			<Text>The Target [COLOR_POSITIVE_TEXT]Enemy Unit[ENDCOLOR] will suffer -20 Hp if Ends Turn outside of Friendly Territory, no matter how much damage dealt. The Target Enemy Unit won't recover until its HP is full.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_DESTROY_SUPPLY_2">
-			<Text>Supply Line Bombardment II (Area of Effect)</Text>
+			<Text>Supply Strike II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_DESTROY_SUPPLY_2_HELP">
 			<Text>The Target Enemy Unit and all [COLOR_POSITIVE_TEXT]Adjacent[ENDCOLOR] Enemy Units will suffer -20 Hp if Ends Turn outside of Friendly Territory, no matter how much damage dealt. Those Enemy Units won't recover until their HP is full.</Text>
@@ -3995,19 +4042,19 @@
 		</Row>
 
 		<Replace Tag="TXT_KEY_PROMOTION_BOARDING_PARTY_1" >
-			<Text>Naval Combat I</Text>
+			<Text>Decisive Battle I</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BOARDING_PARTY_1_HELP" >
 			<Text>+25% [ICON_STRENGTH] Combat Strength when attacking.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BOARDING_PARTY_2" >
-			<Text>Naval Combat II</Text>
+			<Text>Decisive Battle II</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BOARDING_PARTY_2_HELP" >
 			<Text>+25% [ICON_STRENGTH] Combat Strength when attacking.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BOARDING_PARTY_3" >
-			<Text>Naval Combat III</Text>
+			<Text>Decisive Battle III</Text>
 		</Replace>	
 		<Replace Tag="TXT_KEY_PROMOTION_BOARDING_PARTY_3_HELP" >
 			<Text>Have a chance of [COLOR_POSITIVE_TEXT]Capturing[ENDCOLOR] the defeated Enemy Unit.</Text>
@@ -4059,7 +4106,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_NAVAL_RANGED_CRUISER" >
-			<Text>Cruiser Unit</Text>
+			<Text>Cruiser</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAVAL_RANGED_CRUISER_HELP" >
 			<Text>
@@ -4075,7 +4122,7 @@
 
 		
 		<Row Tag="TXT_KEY_PROMOTION_NAVAL_CAPITAL_SHIP" >
-			<Text>Capital Ship Unit</Text>
+			<Text>Capital Ship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAVAL_CAPITAL_SHIP_HELP" >
 			<Text>
@@ -4088,13 +4135,13 @@
 
 
 		<Row Tag="TXT_KEY_PROMOTION_ARMOR_BATTLESHIP_1">
-			<Text>Belt Armor I</Text>
+			<Text>Armoured Citadel I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_ARMOR_BATTLESHIP_1_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Defending[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_ARMOR_BATTLESHIP_2">
-			<Text>Belt Armor II</Text>
+			<Text>Armoured Citadel II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_ARMOR_BATTLESHIP_2_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Defending[ENDCOLOR].</Text>
@@ -4188,19 +4235,19 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_SUPPLY_1">
-			<Text>Supply I</Text>
+			<Text>Carrier Logistics I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_SUPPLY_1_HELP">
 			<Text>[ICON_BULLET]All units in adjacent tiles or in the same tile Heal +15 HP per turn. [NEWLINE][ICON_BULLET]This unit Heals +15 HP per turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_SUPPLY_2">
-			<Text>Supply II</Text>
+			<Text>Carrier Logistics II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_SUPPLY_2_HELP">
 			<Text>This Aircraft Carrier and all its Carrier-based Aircrafts will Heal Every Turn, even if it performs an action.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_SUPPLY_3">
-			<Text>Supply III</Text>
+			<Text>Carrier Logistics III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_SUPPLY_3_HELP">
 			<Text>This Aircraft Carrier [COLOR_POSITIVE_TEXT]Resupplies[ENDCOLOR] its Carrier-based Aircrafts outside friendly territory.</Text>
@@ -4215,26 +4262,26 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_ANTI_AIR_1">
-			<Text>Air Combat I</Text>
+			<Text>Dogfighting I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_ANTI_AIR_1_HELP">
 			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Intercepting[ENDCOLOR] or performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR]. [NEWLINE][ICON_BULLET]+1 [COLOR_POSITIVE_TEXT]Intercept[ENDCOLOR] chance per turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_ANTI_AIR_2">
-			<Text>Air Combat II</Text>
+			<Text>Dogfighting II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_ANTI_AIR_2_HELP">
 			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Intercepting[ENDCOLOR] or performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR]. [NEWLINE][ICON_BULLET]+1 [COLOR_POSITIVE_TEXT]Intercept[ENDCOLOR] chance per turn.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_AIRFIGHT_1">
-			<Text>Air Combat I</Text>
+			<Text>Top Gun I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_AIRFIGHT_1_HELP">
 			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Intercepting[ENDCOLOR] or performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR]. [NEWLINE][ICON_BULLET]+1 [COLOR_POSITIVE_TEXT]Intercept[ENDCOLOR] chance per turn.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_AIRFIGHT_2">
-			<Text>Air Combat II</Text>
+			<Text>Top Gun II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_AIRFIGHT_2_HELP">
 			<Text>[ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Intercepting[ENDCOLOR] or performing an [COLOR_POSITIVE_TEXT]Air Sweep[ENDCOLOR]. [NEWLINE][ICON_BULLET]+1 [COLOR_POSITIVE_TEXT]Intercept[ENDCOLOR] chance per turn.</Text>
@@ -4242,13 +4289,13 @@
 
 		
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_ATTACK_1">
-			<Text>Air Attack I</Text>
+			<Text>Precision Munitions I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_ATTACK_1_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength when attacking.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_ATTACK_2">
-			<Text>Air Attack II</Text>
+			<Text>Precision Munitions II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_ATTACK_2_HELP">
 			<Text>+25% [ICON_STRENGTH] Combat Strength when attacking.</Text>
@@ -4256,13 +4303,13 @@
 
 
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_1">
-			<Text>Air Siege I</Text>
+			<Text>Sudden Strike I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_1_HELP">
 			<Text>The Target [COLOR_POSITIVE_TEXT]Enemy Unit[ENDCOLOR] will suffer -20 Hp if Ends Turn outside of Friendly Territory, no matter how much damage dealt. The Target Enemy Unit won't recover until its HP is full.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_2">
-			<Text>Air Siege II</Text>
+			<Text>Sudden Strike II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_2_HELP">
 			<Text>When attacking a city. Cause 20 Hp Damage to all enemy [COLOR_POSITIVE_TEXT]Garrisoned Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Aircrafts[ENDCOLOR] inside the Target City.</Text>
@@ -4308,14 +4355,14 @@
 			<Text>[COLOR_NEGATIVE_TEXT]Under Suppression[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_MOVEMENT_LOST_1_HELP">
-			<Text>[ICON_BULLET]This unit has been attacked by the enmey Archery Units, Anti-Air Units or naval Hit-and-run Units with [COLOR_NEGATIVE_TEXT]"Barrage"[ENDCOLOR] Effect and it is under suppression. [NEWLINE][ICON_BULLET]It has only 1 [ICON_MOVES] MP left for this turn.[NEWLINE][ICON_BULLET]It will recovers in the next turn.</Text>
+			<Text>[ICON_BULLET]This unit has been attacked by the enmey Archery Units, Anti-Air Units or naval Hit-and-run Units with [COLOR_NEGATIVE_TEXT]"Suppression"[ENDCOLOR] Effect and it is under suppression. [NEWLINE][ICON_BULLET]It has only 1 [ICON_MOVES] MP left for this turn.[NEWLINE][ICON_BULLET]It will recovers in the next turn.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_MOVEMENT_LOST_2">
 			<Text>[COLOR_NEGATIVE_TEXT]Pinned Down[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_MOVEMENT_LOST_2_HELP">
-			<Text>[ICON_BULLET]This unit has been attacked by the enmey Archery Units, Anti-Air Units or naval Hit-and-run Units with [COLOR_NEGATIVE_TEXT]"Barrage"[ENDCOLOR] Effect twice in a turn and now it is pinned down. [NEWLINE][ICON_BULLET]It is totally [COLOR_NEGATIVE_TEXT]Paralysed[ENDCOLOR] for this turn.[NEWLINE][ICON_BULLET]It will recovers in the next turn but will suffer -1 [ICON_MOVES] MP till unitl its HP fully restored.[NEWLINE][ICON_BULLET]If it survives to the next turn, You'd better withdraw it from the frontline  to heal or call your Great General, Great Admiral or Special Forces Unit to help it recover.</Text>
+			<Text>[ICON_BULLET]This unit has been attacked by the enmey Archery Units, Anti-Air Units or naval Hit-and-run Units with [COLOR_NEGATIVE_TEXT]"Suppression"[ENDCOLOR] Effect twice in a turn and now it is pinned down. [NEWLINE][ICON_BULLET]It is totally [COLOR_NEGATIVE_TEXT]Paralysed[ENDCOLOR] for this turn.[NEWLINE][ICON_BULLET]It will recovers in the next turn but will suffer -1 [ICON_MOVES] MP till unitl its HP fully restored.[NEWLINE][ICON_BULLET]If it survives to the next turn, You'd better withdraw it from the frontline  to heal or call your Great General, Great Admiral or Special Forces Unit to help it recover.</Text>
 		</Row>
 
 
