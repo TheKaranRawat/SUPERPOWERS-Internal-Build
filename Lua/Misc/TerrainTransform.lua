@@ -73,7 +73,7 @@ function ImprovementBuilt(iPlayer, x, y, eImprovement)
 --		print ("Gas Rig created!")
 		
 		
-	elseif (eImprovement == GameInfo.Improvements["IMPROVEMENT_IROQUOIAN_FOREST_FARM"].ID) then		
+	if (eImprovement == GameInfo.Improvements["IMPROVEMENT_IROQUOIAN_FOREST_FARM"].ID) then		
 		pPlot:SetImprovementType(-1)
 		pPlot:SetImprovementType(GameInfo.Improvements["IMPROVEMENT_FARM"].ID)	
 		print ("Farm in Forest created!")
