@@ -4832,7 +4832,7 @@
 			<Text>Tactical Nuclear Artillery</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NUCLEAR_ARTILLERY_HELP">
-			<Text>[ICON_BULLET]Cause 100% Damage to all units within 1 hex range.[NEWLINE][ICON_BULLET]Kill 60% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the [COLOR_POSITIVE_TEXT]Target City[ENDCOLOR]. (Kill only 15% if the city has a bomb shelter)[NEWLINE][ICON_BULLET]Won't create Fallout after firing.</Text>
+			<Text>[ICON_BULLET]Cause 100% Damage to all units within 1 hex range.[NEWLINE][ICON_BULLET]Kill 10% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the [COLOR_POSITIVE_TEXT]Target City[ENDCOLOR]. (Kill only 5% if the city has a bomb shelter)[NEWLINE][ICON_BULLET]Won't create Fallout after firing.</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CHAIN_REACTION">
