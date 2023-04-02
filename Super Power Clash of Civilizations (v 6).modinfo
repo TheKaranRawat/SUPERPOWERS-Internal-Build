@@ -137,6 +137,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="8FD4EF5AAB5BD6E16DB8EBE95963FC33" import="1">DLL-Core/DLL - Various Mod Components (v 88)/UI/InGame/YieldIconManager.xml</File>
 	-->
 	
+  
+
 	<File md5="6D4DFCD91B6C6E3D4EF779231EA95391" import="0">DLL/Global - City State Airbases (v 4)/LUA/CityStateAirbases.lua</File>
     <File md5="1FB64FC150537B7ACB4001583B1AB088" import="0">DLL/Global - City State Airbases (v 4)/XML/GlobalCityStateAirbases.xml</File>	
 	<File md5="0F25A350FEDA3D78C82BF09515825175" import="1">DLL/UI - City Happiness (v 17)/ART/EUI_DC45_CityHappiness.dds</File>
@@ -3884,7 +3886,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/NeoDreadnought/ART/unit_irradiance.dds</File>
     <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/NeoDreadnought/ART/unit_sunlight_irradiance.dds</File>
     
-
+    <File md5="5754B1BE6E37A2F9D04D9D4149E5CDDF" import="1">Lua/Utility/BarbarianFunctions.lua</File>
   </Files>
   <Actions>
 	
@@ -4614,6 +4616,12 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     </EntryPoint>
     <EntryPoint type="InGameUIAddin" file="Lua/Utility/Policy_FreeBuildingClass.lua">
       <Name>FreeBuildingClass</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+
+    <EntryPoint type="InGameUIAddin" file="Lua/Utility/BarbarianFunctions.lua">
+      <Name>BarbarianUpdate</Name>
       <Description>
       </Description>
     </EntryPoint>
