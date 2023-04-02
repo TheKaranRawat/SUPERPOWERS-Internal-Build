@@ -317,6 +317,7 @@
 			<Type>UNITCLASS_SCOUT</Type>
 			<Description>TXT_KEY_UNIT_SCOUT</Description>
 			<DefaultUnit>UNIT_SCOUT</DefaultUnit>
+			<MaxPlayerInstances>10</MaxPlayerInstances>
 		</Row>
 		<!--<Row>
 			<Type>UNITCLASS_SCOUT_HORSEMAN</Type>
@@ -699,6 +700,7 @@
 			<Type>UNITCLASS_EXPLORERX</Type>
 			<Description>TXT_KEY_UNIT_EXPLORERX</Description>
 			<DefaultUnit>UNIT_EXPLORERX</DefaultUnit>
+			<MaxPlayerInstances>10</MaxPlayerInstances>
 		</Row>	
 		
 		
