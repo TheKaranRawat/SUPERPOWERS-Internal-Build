@@ -1,0 +1,24 @@
+- barbarian units
+- unit obsolescence information to future
+- improvement osbsolescence?
+- carl gustav era change
+- carrier resupply for players
+- better CS city defences after capture
+- 45dds compression fixes in icons
+- merc ship promotion fixes for ocean traversal
+- all new merc/future unit promotion correction
+- late game gold surplus rebalance
+- unit maintenance rebalance
+- higher strat resource costs for certain units
+- domination spy fixes
+- final: unique unit/ cold war hot scenario
+- UI: toast notifications for important events
+- intro scene for changelog and fixes
+- internal trade policy fix mercantilism
+- new loading screens
+- some art changes
+- ministries changes
+- remove tech deficit from electricity (maybe)
+- add tech deficit surplus indicators
+- military class icons
+- new promotion icons
