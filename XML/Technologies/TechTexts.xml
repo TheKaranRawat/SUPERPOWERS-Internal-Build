@@ -1815,9 +1815,12 @@
 			<Text>The Aperture Science Enrichment Centre was the main facility operated by the Aperture Science corporation to develop and test new products. Constructed in a salt mine in Michigan, it was a truly enormous facility, built in shafts that extended kilometers into the ground. Part of the reason for this design was its research into high-energy physics and artificial intelligence, which necessitated a high degree of security and protection. However, in the early 22nd century, the Aperture Science corporation went bankrupt, and the Enrichment Centre was presumably abandoned.</Text>
 		</Row>
 
+		<!--
 		<Row Tag="TXT_KEY_BUILDING_FW_PHOLUS_MUTAGEN">
 			<Text>Pholus Mutagen</Text>
 		</Row>
+		-->
+
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_WONDER_FW_PHOLUS_MUTAGEN_HELP">
 			<Text>Units receive the Gengineered promotion for free. Fungal Growths will randomly appear in Plains or Grasslands tiles with Farms, Plantations, Nature Preserves, or no improvements.</Text>
