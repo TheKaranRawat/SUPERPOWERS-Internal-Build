@@ -6,68 +6,6 @@
 
 	<Buildings>
 
-		<Row>
-			<Type>BUILDING_WAAG</Type>
-			<BuildingClass>BUILDINGCLASS_BANK</BuildingClass>
-			<FreeStartEra>ERA_MODERN</FreeStartEra>
-			<Cost>100</Cost>
-			<PrereqTech>TECH_NAVIGATION</PrereqTech>
-			<Description>TXT_KEY_BUILDING_WAAG</Description>
-			<Help>TXT_KEY_BUILDING_WAAG_HELP</Help>			
-			<Strategy>TXT_KEY_BUILDING_WAAG_STRATEGY</Strategy>	
-			<Civilopedia>TXT_KEY_BUILDING_WAAG_PEDIA</Civilopedia>				
-			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-			<SpecialistCount>3</SpecialistCount>
-			<MinAreaSize>-1</MinAreaSize>
-			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>50</HurryCostModifier>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>18</PortraitIndex>
-		</Row>
-
-
-		<Row>
-			<Type>BUILDING_CHINESE_EXAMINATION</Type>
-			<BuildingClass>BUILDINGCLASS_UNIVERSITY</BuildingClass>
-			<Cost>150</Cost>
-			<GoldMaintenance>4</GoldMaintenance>
-			<PrereqTech>TECH_EDUCATION</PrereqTech>
-			<FaithCost>100</FaithCost>
-			<UnlockedByBelief>true</UnlockedByBelief>
-			<Description>TXT_KEY_BUILDING_CHINESE_EXAMINATION</Description>
-			<Help>TXT_KEY_BUILDING_CHINESE_EXAMINATION_HELP</Help>			
-			<Strategy>TXT_KEY_BUILDING_CHINESE_EXAMINATION_STRATEGY</Strategy>				
-			<Civilopedia>TXT_KEY_BUILDING_CHINESE_EXAMINATION_PEDIA</Civilopedia>
-			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>2</SpecialistCount>
-			<MinAreaSize>-1</MinAreaSize>
-			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>50</HurryCostModifier>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>13</PortraitIndex>
-		</Row>
-
-
-		<Row>
-			<Type>BUILDING_NILOMETER</Type>
-			<BuildingClass>BUILDINGCLASS_WATERMILL</BuildingClass>
-			<Cost>40</Cost>
-			<GoldMaintenance>2</GoldMaintenance>
-			<PrereqTech>TECH_THE_WHEEL</PrereqTech>
-			<Description>TXT_KEY_BUILDING_NILOMETER</Description>
-			<Help>TXT_KEY_BUILDING_NILOMETER_HELP</Help>			
-			<Strategy>TXT_KEY_BUILDING_NILOMETER_STRATEGY</Strategy>			
-			<Civilopedia>TXT_KEY_BUILDING_NILOMETER_PEDIA</Civilopedia>
-			<MinAreaSize>-1</MinAreaSize>
-			<NeverCapture>true</NeverCapture>
-			<HurryCostModifier>25</HurryCostModifier>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
-			<PortraitIndex>29</PortraitIndex>
-			<EnhancedYieldTech>TECH_MASS_MEDIA</EnhancedYieldTech>
-			<TechEnhancedTourism>1</TechEnhancedTourism>
-		</Row>	
-
-
 
 
 
@@ -100,7 +38,7 @@
 			<MutuallyExclusiveGroup>1</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>48</PortraitIndex>
 		</Row>
@@ -119,7 +57,7 @@
 			<MutuallyExclusiveGroup>1</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>46</PortraitIndex>
 		</Row>
@@ -137,7 +75,7 @@
 			<Water>true</Water>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>50</PortraitIndex>
 		</Row>
@@ -159,7 +97,7 @@
 			<Water>true</Water>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>51</PortraitIndex>
 		</Row>
@@ -178,7 +116,7 @@
 			<GreatPeopleRateModifier>25</GreatPeopleRateModifier>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>20</PortraitIndex>
 		</Row>
@@ -214,7 +152,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<FoodKept>15</FoodKept>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>5</PortraitIndex>
 		</Row>
@@ -249,7 +187,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>59</PortraitIndex>
 		</Row>
@@ -268,7 +206,7 @@
 			<MutuallyExclusiveGroup>3097</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>2</PortraitIndex>
 		</Row>
@@ -286,7 +224,7 @@
 			<TrainedFreePromotion>PROMOTION_FW_GENGINEERED</TrainedFreePromotion>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>22</PortraitIndex>
 		</Row>
@@ -303,7 +241,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>29</PortraitIndex>
 		</Row>
@@ -322,7 +260,7 @@
 			<MutuallyExclusiveGroup>876876</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>30</PortraitIndex>
 		</Row>
@@ -340,7 +278,7 @@
 			<Happiness>2</Happiness>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>62</PortraitIndex>
 		</Row>
@@ -360,7 +298,7 @@
 			<MutuallyExclusiveGroup>23495</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>31</PortraitIndex>
 		</Row>
@@ -396,7 +334,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>4</PortraitIndex>
 		</Row>
@@ -413,7 +351,7 @@
 			<Strategy>TXT_KEY_BUILDING_FW_VR_TRAINING_STRATEGY</Strategy>
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>0</PortraitIndex>
 		</Row>
@@ -428,7 +366,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>32</PortraitIndex>
 		</Row>
@@ -448,7 +386,7 @@
 			<TechEnhancedTourism>2</TechEnhancedTourism>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>42</PortraitIndex>
 		</Row>
@@ -467,7 +405,7 @@
 			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>34</PortraitIndex>
 		</Row>
@@ -488,7 +426,7 @@
 			<TradeRouteTargetBonus>80</TradeRouteTargetBonus>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>33</PortraitIndex>
 		</Row>
@@ -508,7 +446,7 @@
 			<MutuallyExclusiveGroup>490678</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>41</PortraitIndex>
 		</Row>
@@ -580,7 +518,7 @@
 			<MutuallyExclusiveGroup>876876</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>8</PortraitIndex>
 		</Row>
@@ -597,7 +535,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>1</PortraitIndex>
 		</Row>
@@ -632,7 +570,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>44</PortraitIndex>
 		</Row>
@@ -685,7 +623,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>3</PortraitIndex>
 		</Row>
@@ -723,7 +661,7 @@
 			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 			<PortraitIndex>6</PortraitIndex>
 		</Row>
@@ -745,7 +683,7 @@
 			<AllowsRangeStrike>true</AllowsRangeStrike>
 			<Defense>1800</Defense>
 			<ExtraCityHitPoints>50</ExtraCityHitPoints>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>33</PortraitIndex>
@@ -765,7 +703,7 @@
 			<SpaceProductionModifier>50</SpaceProductionModifier>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>30</PortraitIndex>
 		</Row>
@@ -786,7 +724,7 @@
 			<MutuallyExclusiveGroup>3097</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>12</PortraitIndex>
 		</Row>
@@ -824,7 +762,7 @@
 			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>9</PortraitIndex>
 		</Row>
@@ -882,7 +820,7 @@
 			<AllowsRangeStrike>true</AllowsRangeStrike>
 			<Defense>1200</Defense>
 			<ExtraCityHitPoints>100</ExtraCityHitPoints>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>11</PortraitIndex>
 		</Row>
@@ -923,7 +861,7 @@
 			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 			<PortraitIndex>4</PortraitIndex>
 		</Row>
@@ -945,7 +883,7 @@
 			<MutuallyExclusiveGroup>361</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>53</PortraitIndex>
 		</Row>
@@ -962,7 +900,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_FW_HYDRO_PLANT</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 			<PortraitIndex>3</PortraitIndex>
 		</Row>
@@ -979,7 +917,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_FW_HYDRO_PLANT</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
 			<PortraitIndex>2</PortraitIndex>
 		</Row>
@@ -997,7 +935,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_FW_HYDRO_PLANT</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>13</PortraitIndex>
 		</Row>
@@ -1019,7 +957,7 @@
 			<MutuallyExclusiveGroup>490678</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>61</PortraitIndex>
 		</Row>
@@ -1075,7 +1013,7 @@
 			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>27</PortraitIndex>
 		</Row>
@@ -1112,7 +1050,7 @@
 			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>28</PortraitIndex>
 		</Row>
@@ -1150,7 +1088,7 @@
 			<MutuallyExclusiveGroup>23495</MutuallyExclusiveGroup>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>25</PortraitIndex>
 		</Row>
@@ -1185,7 +1123,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>50</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>60</PortraitIndex>
 		</Row>
@@ -1203,7 +1141,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HOSPITAL</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
 			<PortraitIndex>26</PortraitIndex>
 		</Row>
@@ -1242,7 +1180,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<NukeImmune>true</NukeImmune>
 			<NumCityCostMod>30</NumCityCostMod>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>52</PortraitIndex>
@@ -1326,7 +1264,7 @@
 			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>56</PortraitIndex>
@@ -1347,7 +1285,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<NukeImmune>true</NukeImmune>
 			<NumCityCostMod>30</NumCityCostMod>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>0</PortraitIndex>
@@ -1368,7 +1306,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<NukeImmune>true</NukeImmune>
 			<NumCityCostMod>10</NumCityCostMod>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>36</PortraitIndex>
@@ -1388,7 +1326,7 @@
 			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
 			<PortraitIndex>58</PortraitIndex>
@@ -1517,7 +1455,7 @@
 			<Strategy>TXT_KEY_BUILDING_FW_GENOME_PROJECT_1_STRATEGY</Strategy>
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
@@ -1537,7 +1475,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<GlobalPopulationChange>2</GlobalPopulationChange>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
@@ -1556,7 +1494,7 @@
 			<Strategy>TXT_KEY_BUILDING_FW_ASTEROID_MINING_1_STRATEGY</Strategy>
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
@@ -1575,7 +1513,7 @@
 			<Strategy>TXT_KEY_BUILDING_FW_ASTEROID_MINING_2_STRATEGY</Strategy>
 			<ArtDefineTag>ART_DEF_BUILDING_LABORATORY</ArtDefineTag>
 			<NukeImmune>true</NukeImmune>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
@@ -2846,7 +2784,7 @@
 			<Cost>160</Cost>
 			<GoldMaintenance>4</GoldMaintenance>
 			<PrereqTech>TECH_EDUCATION</PrereqTech>
-			<FaithCost>100</FaithCost>
+			<FaithCost>200</FaithCost>
 			<UnlockedByBelief>true</UnlockedByBelief>
 			<Help>TXT_KEY_BUILDING_UNIVERSITY_HELP</Help>
 			<Description>TXT_KEY_BUILDING_UNIVERSITY</Description>
@@ -2867,7 +2805,7 @@
 			<Cost>160</Cost>
 			<GoldMaintenance>4</GoldMaintenance>
 			<PrereqTech>TECH_EDUCATION</PrereqTech>
-			<FaithCost>100</FaithCost>
+			<FaithCost>150</FaithCost>
 			<UnlockedByBelief>true</UnlockedByBelief>
 			<Help>TXT_KEY_BUILDING_ARABIA_ISIAMIC_UNIVERSITY_HELP</Help>
 			<Description>TXT_KEY_BUILDING_ARABIA_ISIAMIC_UNIVERSITY</Description>
@@ -2952,7 +2890,7 @@
 			<Cost>420</Cost>
 			<GoldMaintenance>6</GoldMaintenance>
 			<PrereqTech>TECH_PLASTIC</PrereqTech>
-			<FaithCost>200</FaithCost>
+			<FaithCost>500</FaithCost>
 			<UnlockedByBelief>true</UnlockedByBelief>
 			<Help>TXT_KEY_BUILDING_LABORATORY_HELP</Help>
 			<Description>TXT_KEY_BUILDING_LABORATORY</Description>
@@ -2973,7 +2911,7 @@
 			<Cost>420</Cost>
 			<GoldMaintenance>6</GoldMaintenance>
 			<PrereqTech>TECH_PLASTIC</PrereqTech>
-			<FaithCost>200</FaithCost>
+			<FaithCost>400</FaithCost>
 			<UnlockedByBelief>true</UnlockedByBelief>
 			<Help>TXT_KEY_BUILDING_SWEDISH_LABORATORY_SERVICES_HELP</Help>
 			<Description>TXT_KEY_BUILDING_SWEDISH_LABORATORY_SERVICES</Description>
@@ -3446,7 +3384,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HYDRO_PLANT</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>ANCIENT2_ICON_ATLAS</IconAtlas>
 			<PortraitIndex>4</PortraitIndex>
 		</Row>
@@ -4482,7 +4420,7 @@
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_MILITARYACADEMY_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_SP_CITY_MILITARY_BUILDINGS_STRATEGY</Strategy>
 			<MinAreaSize>-1</MinAreaSize>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>100</HurryCostModifier>
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>29</PortraitIndex>
@@ -4675,7 +4613,7 @@
 			<Strategy>TXT_KEY_SP_CITY_MILITARY_BUILDINGS_STRATEGY</Strategy>
 			<ArtDefineTag>ART_DEF_BUILDING_MILITARY_ACADEMY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>100</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>8</PortraitIndex>
@@ -4767,7 +4705,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<NeverCapture>true</NeverCapture>
 			<NumCityCostMod>60</NumCityCostMod>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>1000</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<PortraitIndex>19</PortraitIndex>
 			<MutuallyExclusiveGroup>12</MutuallyExclusiveGroup>
