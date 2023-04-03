@@ -66,6 +66,33 @@
 
 
 		<Row>
+			<Type>BELIEF_HS_YF</Type>
+			<Description>TXT_KEY_BELIEF_HSYF</Description>
+			<ShortDescription>TXT_KEY_BELIEF_HSYF_SHORT</ShortDescription>
+			<Founder>true</Founder>
+		</Row>
+		<Row>
+			<Type>BELIEF_HS_YP</Type>
+			<Description>TXT_KEY_BELIEF_HSYP</Description>
+			<ShortDescription>TXT_KEY_BELIEF_HSYP_SHORT</ShortDescription>
+			<Founder>true</Founder>
+		</Row>
+		<Row>
+			<Type>BELIEF_HS_YS</Type>
+			<Description>TXT_KEY_BELIEF_HSYS</Description>
+			<ShortDescription>TXT_KEY_BELIEF_HSYS_SHORT</ShortDescription>
+			<Founder>true</Founder>
+		</Row>
+		<Row>
+			<Type>BELIEF_HS_YC</Type>
+			<Description>TXT_KEY_BELIEF_HSYC</Description>
+			<ShortDescription>TXT_KEY_BELIEF_HSYC_SHORT</ShortDescription>
+			<Founder>true</Founder>
+		</Row>
+							
+
+
+		<Row>
 			<Type>BELIEF_TIPI</Type>
 			<Description>TXT_KEY_BELIEF_TIPI</Description>
 			<ShortDescription>TXT_KEY_BELIEF_TIPI_SHORT</ShortDescription>
@@ -411,6 +438,35 @@
 		<Delete BeliefType="BELIEF_GOD_SEA"/>
 
 
+		<Row>
+			<BeliefType>BELIEF_HS_YF</BeliefType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+
+		<Row>
+			<BeliefType>BELIEF_HS_YP</BeliefType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>
+
+		<Row>
+			<BeliefType>BELIEF_HS_YS</BeliefType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>10</Yield>
+		</Row>
+
+		<Row>
+			<BeliefType>BELIEF_HS_YC</BeliefType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>12</Yield>
+		</Row>								
+
+
 
 		<Row>
 			<BeliefType>BELIEF_TIPI</BeliefType>
@@ -741,6 +797,54 @@
 	
 	<Belief_BuildingClassHappiness>
 		<Delete BeliefType="BELIEF_PEACE_GARDENS" />
+
+
+		<Row>
+			<BeliefType>BELIEF_HS_YF</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_HS_YF</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+
+		<Row>
+			<BeliefType>BELIEF_HS_YP</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_HS_YP</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>					
+
+		<Row>
+			<BeliefType>BELIEF_HS_YS</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_HS_YS</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>	
+
+		<Row>
+			<BeliefType>BELIEF_HS_YC</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<BeliefType>BELIEF_HS_YC</BeliefType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>			
+
+
+
 		<Row>
 			<BeliefType>BELIEF_MAZU</BeliefType>
 			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>

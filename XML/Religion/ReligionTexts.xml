@@ -245,6 +245,35 @@
 		</Row>
 
 
+		<Row Tag="TXT_KEY_BELIEF_HSYF_SHORT">
+			<Text>Boon of Fertility</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_HSYF">
+			<Text>+5[ICON_FOOD] from [ICON_PEACE] Holy Sites.[ICON_HAPPINESS_1]according to base output of Shrine and Temple.</Text>
+		</Row>	
+
+		<Row Tag="TXT_KEY_BELIEF_HSYP_SHORT">
+			<Text>Work Ethic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_HSYP">
+			<Text>+5[ICON_PRODUCTION] from [ICON_PEACE] Holy Sites.[ICON_HAPPINESS_1]according to base output of Shrine and Temple.</Text>
+		</Row>			
+
+		<Row Tag="TXT_KEY_BELIEF_HSYS_SHORT">
+			<Text>Cult of Progression</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_HSYS">
+			<Text>+5[ICON_RESEARCH] from [ICON_PEACE] Holy Sites.[ICON_HAPPINESS_1]according to base output of Shrine and Temple.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BELIEF_HSYC_SHORT">
+			<Text>Religious Artwork</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BELIEF_HSYC">
+			<Text>+12[ICON_CULTURE] from [ICON_PEACE] Holy Sites.[ICON_HAPPINESS_1]according to base output of Shrine and Temple.</Text>
+		</Row>		
+
+
 
 	</Language_en_US>
   
