@@ -281,12 +281,14 @@
 			<Description>TXT_KEY_BUILDING_FW_MNEMOSYNE</Description>
 			<MaxGlobalInstances>1</MaxGlobalInstances>
 		</Row>
+<!--		
 		<Row>
 			<Type>BUILDINGCLASS_FW_PHOLUS_MUTAGEN</Type>
 			<DefaultBuilding>BUILDING_FW_PHOLUS_MUTAGEN</DefaultBuilding>
 			<Description>TXT_KEY_BUILDING_FW_PHOLUS_MUTAGEN</Description>
 			<MaxGlobalInstances>1</MaxGlobalInstances>
 		</Row>
+-->		
 		<Row>
 			<Type>BUILDINGCLASS_FW_CITADEL_STATION</Type>
 			<DefaultBuilding>BUILDING_FW_CITADEL_STATION</DefaultBuilding>
@@ -640,6 +642,7 @@
 			<WonderSplashImage>CitadelStation_Splash.dds</WonderSplashImage>
 			<WonderSplashAnchor>R,T</WonderSplashAnchor>
 		</Row>
+<!--		
 		<Row>
 			<Type>BUILDING_FW_PHOLUS_MUTAGEN</Type>
 			<BuildingClass>BUILDINGCLASS_FW_PHOLUS_MUTAGEN</BuildingClass>
@@ -660,6 +663,7 @@
 			<WonderSplashImage>PholusMutagen_Splash.dds</WonderSplashImage>
 			<WonderSplashAnchor>L,T</WonderSplashAnchor>
 		</Row>
+-->		
 		<Row>
 			<Type>BUILDING_FW_SKYNET</Type>
 			<BuildingClass>BUILDINGCLASS_FW_SKYNET</BuildingClass>
@@ -4554,13 +4558,13 @@
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>6</Cost>
 		</Row>
-
+<!--
          <Row>
 			<BuildingType>BUILDING_FW_PHOLUS_MUTAGEN</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>4</Cost>
 		</Row>
-
+-->
          <Row>
 			<BuildingType>BUILDING_FW_SKYNET</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>			

@@ -1815,22 +1815,19 @@
 			<Text>The Aperture Science Enrichment Centre was the main facility operated by the Aperture Science corporation to develop and test new products. Constructed in a salt mine in Michigan, it was a truly enormous facility, built in shafts that extended kilometers into the ground. Part of the reason for this design was its research into high-energy physics and artificial intelligence, which necessitated a high degree of security and protection. However, in the early 22nd century, the Aperture Science corporation went bankrupt, and the Enrichment Centre was presumably abandoned.</Text>
 		</Row>
 
-		<Row Tag="TXT_KEY_BUILDING_FW_PHOLUS_MUTAGEN">
+<!--		<Row Tag="TXT_KEY_BUILDING_FW_PHOLUS_MUTAGEN">
 			<Text>Pholus Mutagen</Text>
 		</Row>
-		<!-- Help tags -->
 		<Row Tag="TXT_KEY_WONDER_FW_PHOLUS_MUTAGEN_HELP">
 			<Text>Units receive the Gengineered promotion for free. Fungal Growths will randomly appear in Plains or Grasslands tiles with Farms, Plantations, Nature Preserves, or no improvements.</Text>
 		</Row>
-		<!-- Quote tags -->
 		<Row Tag="TXT_KEY_WONDER_FW_PHOLUS_MUTAGEN_QUOTE">
 			<Text>[NEWLINE]"The mutagen exhibits remarkable effects on plant life. Spontaneous development of mobility and defensive structures was observed in the mutagen treatment of a poinsettia. At last observation, the plant mutant had produced poisonous barbs and a rudimentary neural structure."[NEWLINE] - Hans Bichenbach[NEWLINE]</Text>
 		</Row>
-		<!-- Pedia tags -->
 		<Row Tag="TXT_KEY_WONDER_FW_PHOLUS_MUTAGEN_PEDIA">
-			<Text>Perhaps one of the most notable developments of genetic engineering towards the end of the 22nd century was the Pholus Mutagen. This mutagen appears to be highly adaptive, and works quickly to modify the entire ecology of its environment. While many of the effects are somewhat beneficial, with plants and animal life being stronger and more resilient, they also display rather hostile tendencies towards outsiders, which are often anyone who hasn't been similarly mutated. One unusual feature of the mutagen is the difficulty researchers have had in reverse-engineering it and modifying its effects -- efforts compounded by the adaptability and near-sapience of the entities affected by it. While most attribute these effects to accident, particularly due to the poor documentation of its design and release, there are some who attirbute the mutagen to an extraterrestrial origin. Others suggest it was the product of an artificial intelligence that has since vanished or been deleted. Oddly, both camps point towards the destruction of Citadel Station at approximately the same time as evidence to support their theories, although most dismiss this as mere coincidence.</Text>
-		</Row>
-
+			<Text>Perhaps one of the most notable developments of genetic engineering towards the end of the 22nd century was the Pholus Mutagen. This mutagen appears to be highly adaptive, and works quickly to modify the entire ecology of its environment. While many of the effects are somewhat beneficial, with plants and animal life being stronger and more resilient, they also display rather hostile tendencies towards outsiders, which are often anyone who hasn't been similarly mutated. One unusual feature of the mutagen is the difficulty researchers have had in reverse-engineering it and modifying its effects - efforts compounded by the adaptability and near-sapience of the entities affected by it. While most attribute these effects to accident, particularly due to the poor documentation of its design and release, there are some who attirbute the mutagen to an extraterrestrial origin. Others suggest it was the product of an artificial intelligence that has since vanished or been deleted. Oddly, both camps point towards the destruction of Citadel Station at approximately the same time as evidence to support their theories, although most dismiss this as mere coincidence.</Text>
+		</Row> 
+	-->
 		<Row Tag="TXT_KEY_BUILDING_FW_VIRTUAL_IDOL">
 			<Text>Virtual Idol</Text>
 		</Row>

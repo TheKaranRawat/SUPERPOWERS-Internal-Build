@@ -8526,12 +8526,13 @@
 			<Flavor>40</Flavor>
 		</Row>
 		-->
-
+<!--
 		<Row>
 			<BuildingType>BUILDING_FW_PHOLUS_MUTAGEN</BuildingType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
+-->		
 		<Row>
 			<BuildingType>BUILDING_FW_SKYNET</BuildingType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
