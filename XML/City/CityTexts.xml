@@ -215,6 +215,7 @@
 			<Text>
 				[ICON_CITYBANNER_CITY_LV1]Core Cities form part of the Core Territory of a Civilization. This is the very heartland, and the lands comprising the origin of its great journey.
 				[NEWLINE]
+				[NEWLINE] Generate 1% less [ICON_RESEARCH] in every city
 				[NEWLINE]The [ICON_PUPPET]Local Administration is under the direct purview of [ICON_CAPITAL]Central Administration and Bureaucrats
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 0 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 0 [ICON_RES_CONSUMER]Consumer Goods
@@ -234,6 +235,7 @@
 			<Text>
 				[ICON_CITYBANNER_CITY_LV2]Provincial Cities are auxillary cities, often built as a Civilization expands, and to support and defend Core Territory.
 				[NEWLINE]
+				[NEWLINE] Generate 2% less [ICON_RESEARCH] in every city
 				<!--[NEWLINE]The [ICON_PUPPET]Local Administration has been replaced with more competent [ICON_CAPITAL]Central Administration and Bureaucrats-->
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 6 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 4 [ICON_RES_CONSUMER]Consumer Goods
@@ -254,6 +256,7 @@
 			<Text>
 				[ICON_CITYBANNER_CITY_LV3]Territorial Cities are often newly settled cities, on the edges of Civilization. These cities are often far enough from the Capital to cause Bureaucratic issues.
 				[NEWLINE]
+				[NEWLINE] Generate 2% less [ICON_RESEARCH] in every city				
 				<!--[NEWLINE]The [ICON_PUPPET]Local Administration has been replaced with more competent [ICON_CAPITAL]Central Administration and Bureaucrats-->
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 12 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 8 [ICON_RES_CONSUMER]Consumer Goods
@@ -273,6 +276,7 @@
 			<Text>
 				[ICON_CITYBANNER_CITY_LV4]Colonial Cities are far flung cities, that are often disconnected from the Core Territories. These Cities may be of immense strategic value, however they suffer from Bureaucratic issues until better Communication Technology is invented.
 				[NEWLINE]
+				[NEWLINE] Generate 3% less [ICON_RESEARCH] in every city				
 				<!--[NEWLINE]The [ICON_PUPPET]Local Administration has been replaced with more competent [ICON_CAPITAL]Central Administration and Bureaucrats-->
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 24 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 16 [ICON_RES_CONSUMER]Consumer Goods
@@ -292,6 +296,7 @@
 			<Text>
 				[ICON_CITYBANNER_CITY_LV5]Peripheral Cities are not viewed as viable inhabitations except in special cases, and cause Bureaucratic and Monetary strain on a Civilization. These may hold massive Strategic value and often server as Military Bases.
 				[NEWLINE]
+				[NEWLINE] Generate 3% less [ICON_RESEARCH] in every city				
 				<!--[NEWLINE]The [ICON_PUPPET]Local Administration has been replaced with more competent [ICON_CAPITAL]Central Administration and Bureaucrats-->
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 48 [ICON_RES_MANPOWER]Manpower
 				[NEWLINE][ICON_BULLET][COLOR_FONT_RED]Requires[ENDCOLOR] 32 [ICON_RES_CONSUMER]Consumer Goods
@@ -353,6 +358,7 @@
 			<Tag>TXT_KEY_BUILDING_PUPPET_GOVERNEMENT_HELP</Tag>
 			<Text>
 				[ICON_BULLET]This city is a Puppet. It is free from Corruption and Public Security problems, however provides much lower resources.
+				[NEWLINE] Generate 1% less [ICON_RESEARCH] in every city				
 				[NEWLINE][ICON_BULLET]Consume 4 [ICON_RES_CONSUMER] Consumer Goods.
 				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]NO[ENDCOLOR] [ICON_RES_MANPOWER] Manpower is provided.
 				[NEWLINE][NEWLINE]As a puppet city, -33% [ICON_CULTURE] Culture output, [ICON_RESEARCH] Science output and -50% [ICON_FOOD] Food Growth. Also, You cannot control the city's production.

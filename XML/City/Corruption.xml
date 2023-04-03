@@ -1043,11 +1043,24 @@
 
 	<Building_GlobalYieldModifiers>
 
+
+		<Row>
+			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+
+
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV1</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>-1</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_SATRAPS_COURT</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV2</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
@@ -1056,18 +1069,57 @@
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV3</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-3</Yield>
+			<Yield>-2</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV4</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-4</Yield>
+			<Yield>-3</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CITY_HALL_LV5</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-5</Yield>
+			<Yield>-3</Yield>
 		</Row>	
+
+
+		<Row>
+			<BuildingType>BUILDING_PUPPET_GOVERNEMENT</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>	
+
+		<Row>
+			<BuildingType>BUILDING_CONSTABLE</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_ROMAN_SENATE</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>		
+
+		<Row>
+			<BuildingType>BUILDING_SHERIFF_OFFICE</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>		
+
+		<Row>
+			<BuildingType>BUILDING_POLICE_STATION</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>	
+
+		<Row>
+			<BuildingType>BUILDING_PROCURATORATE</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>					
+
+
 
 	</Building_GlobalYieldModifiers>		
 
