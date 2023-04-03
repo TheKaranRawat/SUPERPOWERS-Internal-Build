@@ -18,7 +18,7 @@
 
 	<Language_en_US>
 		<Row Tag="TXT_KEY_PROMOTION_3UC_DOUBLE">
-			<Text>Double Defense</Text>
+			<Text>Dauntless Defense</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_3UC_DOUBLE_HELP">
 			<Text>25% [ICON_STRENGTH] Combat Strength when defending in forest, jungle, or hills.</Text>

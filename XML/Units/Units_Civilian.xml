@@ -773,7 +773,7 @@
 			<AirInterceptRange>1</AirInterceptRange>
 			<Cost>-1</Cost>
 			<Moves>1</Moves>
-			<Range>1</Range>
+			<Range>2</Range>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_BOMBER</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -811,7 +811,7 @@
 			<RangedCombat>360</RangedCombat>
 			<Cost>-1</Cost>
 			<Moves>1</Moves>
-			<Range>1</Range>
+			<Range>2</Range>
 			<AirInterceptRange>3</AirInterceptRange>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_BOMBER</CombatClass>

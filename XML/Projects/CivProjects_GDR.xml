@@ -105,7 +105,7 @@
 			<Text>The Jaeger Program is the main research operation of the Jaeger prototype. Researchers have discovered a secret here to customizing their prototype for complete adapation to the environment.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SECLUSION">
-			<Text>Seclusion</Text>
+			<Text>Fighting Retreat</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SECLUSION_HELP">
 			<Text>+15% Chance to withdraw from Melee Combat.</Text>
