@@ -1833,7 +1833,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>23</GridX>
-			<GridY>0</GridY>
+			<GridY>1</GridY>
 			<Quote>TXT_KEY_TECH_FW_CLONING_QUOTE</Quote>
 			<PortraitIndex>9</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
@@ -1847,7 +1847,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>23</GridX>
-			<GridY>1</GridY>
+			<GridY>2</GridY>
 			<Quote>TXT_KEY_TECH_FW_MEMETICS_QUOTE</Quote>
 			<PortraitIndex>12</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -1861,7 +1861,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>23</GridX>
-			<GridY>3</GridY>
+			<GridY>4</GridY>
 			<Quote>TXT_KEY_TECH_FW_GRID_COMPUTING_QUOTE</Quote>
 			<PortraitIndex>11</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -1903,7 +1903,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>23</GridX>
-			<GridY>9</GridY>
+			<GridY>8</GridY>
 			<Quote>TXT_KEY_TECH_FW_ARTIFICIAL_ENVIRONMENTS_QUOTE</Quote>
 			<PortraitIndex>38</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -1974,7 +1974,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>24</GridX>
-			<GridY>8</GridY>
+			<GridY>7</GridY>
 			<Quote>TXT_KEY_TECH_FW_ORBITAL_DEV_QUOTE</Quote>
 			<PortraitIndex>34</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -1989,7 +1989,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>25</GridX>
-			<GridY>0</GridY>
+			<GridY>1</GridY>
 			<Quote>TXT_KEY_TECH_FW_TRANSGENICS_QUOTE</Quote>
 			<PortraitIndex>24</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -2017,7 +2017,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>25</GridX>
-			<GridY>5</GridY>
+			<GridY>6</GridY>
 			<Quote>TXT_KEY_TECH_FW_AUTONOMOUS_SYSTEMS_QUOTE</Quote>
 			<PortraitIndex>14</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -2031,7 +2031,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>25</GridX>
-			<GridY>9</GridY>
+			<GridY>8</GridY>
 			<Quote>TXT_KEY_TECH_FW_ARCOLOGIES_QUOTE</Quote>
 			<PortraitIndex>55</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
@@ -2046,7 +2046,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>26</GridX>
-			<GridY>0</GridY>
+			<GridY>1</GridY>
 			<Quote>TXT_KEY_TECH_FW_GENGINEERING_QUOTE</Quote>
 			<PortraitIndex>29</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -2074,7 +2074,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>26</GridX>
-			<GridY>3</GridY>
+			<GridY>4</GridY>
 			<Quote>TXT_KEY_TECH_FW_CYBERNETICS_QUOTE</Quote>
 			<PortraitIndex>9</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -2088,7 +2088,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>26</GridX>
-			<GridY>4</GridY>
+			<GridY>6</GridY>
 			<Quote>TXT_KEY_TECH_FW_AI_QUOTE</Quote>
 			<PortraitIndex>8</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -2102,7 +2102,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>26</GridX>
-			<GridY>8</GridY>
+			<GridY>7</GridY>
 			<Quote>TXT_KEY_TECH_FW_ADAMANTIUM_QUOTE</Quote>
 			<PortraitIndex>39</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -2117,7 +2117,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>27</GridX>
-			<GridY>0</GridY>
+			<GridY>1</GridY>
 			<Quote>TXT_KEY_TECH_FW_TERRAFORMING_QUOTE</Quote>
 			<PortraitIndex>36</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -2189,7 +2189,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>27</GridX>
-			<GridY>9</GridY>
+			<GridY>8</GridY>
 			<Quote>TXT_KEY_TECH_FW_HYPERSTRUCTURES_QUOTE</Quote>
 			<PortraitIndex>10</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
@@ -2218,7 +2218,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>28</GridX>
-			<GridY>5</GridY>
+			<GridY>4</GridY>
 			<Quote>TXT_KEY_TECH_FW_COMPUTRONIUM_QUOTE</Quote>
 			<PortraitIndex>13</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
@@ -2232,7 +2232,7 @@
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
 			<GridX>28</GridX>
-			<GridY>8</GridY>
+			<GridY>7</GridY>
 			<Quote>TXT_KEY_TECH_FW_SPACE_COLONIZATION_QUOTE</Quote>
 			<PortraitIndex>14</PortraitIndex>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
