@@ -29,7 +29,7 @@
 		<Row>
 			<Type>PROMOTION_FW_MOVE_ALL_TERRAIN</Type>
 			<Description>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN</Description>
-			<Help>TXT_KEY_PROMOTION_MOVE_ALL_TERRAIN_HELP</Help>
+			<Help>TXT_KEY_PROMOTION_FW_MOVE_ALL_TERRAIN_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
