@@ -1544,7 +1544,11 @@
 
 
 
-
+		<Row>
+			<BuildingType>BUILDING_LIBRARY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
 
 
 		<Row>
