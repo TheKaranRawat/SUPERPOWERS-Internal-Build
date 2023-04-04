@@ -7040,23 +7040,69 @@
 		<Row>
 			<BuildingType>BUILDING_LIBRARY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-50</Yield>
+			<Yield>-25</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ROYAL_LIBRARY</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-25</Yield>
-		</Row>		
+			<Yield>-10</Yield>
+		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-25</Yield>
 		</Row>-->
 		<Row>
+			<BuildingType>BUILDING_ACADEMY</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-25</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WAT</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-10</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-25</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ARABIA_ISIAMIC_UNIVERSITY</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-10</Yield>
+		</Row>
+		<Row>
 			<BuildingType>BUILDING_PUBLIC_SCHOOL</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-50</Yield>
+			<Yield>-25</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_LABORATORY</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-25</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SWEDISH_LABORATORY_SERVICES</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-10</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_4UC_RUSSIANRESEARCH</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-10</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BIO_LAB</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-25</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_GENE_LAB</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-25</Yield>
+		</Row>
+
 		
 
 
