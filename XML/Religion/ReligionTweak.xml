@@ -442,28 +442,28 @@
 			<BeliefType>BELIEF_HS_YF</BeliefType>
 			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 		<Row>
 			<BeliefType>BELIEF_HS_YP</BeliefType>
 			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 		<Row>
 			<BeliefType>BELIEF_HS_YS</BeliefType>
 			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 		<Row>
 			<BeliefType>BELIEF_HS_YC</BeliefType>
 			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>12</Yield>
+			<Yield>7</Yield>
 		</Row>								
 
 

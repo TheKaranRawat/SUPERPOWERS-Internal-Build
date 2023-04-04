@@ -270,7 +270,7 @@
 			<Text>Religious Artwork</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BELIEF_HSYC">
-			<Text>+12[ICON_CULTURE] from [ICON_PEACE] Holy Sites.[ICON_HAPPINESS_1]according to base output of Shrine and Temple.</Text>
+			<Text>+7[ICON_CULTURE] from [ICON_PEACE] Holy Sites.[ICON_HAPPINESS_1]according to base output of Shrine and Temple.</Text>
 		</Row>		
 
 
