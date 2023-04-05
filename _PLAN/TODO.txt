@@ -32,7 +32,7 @@ TD- carrier resupply for players
 - future units icons
 - mech artillery size increase
 D- Remove CS leaders
-- battlemech size reduction, count increase
+D- battlemech size reduction, count increase
 - domination great game rebalance
 - updated promotions art
 - updated unit/building icons

@@ -1531,9 +1531,9 @@
 			<GridX>5</GridX>
 			<GridY>3</GridY>
 			
-			<UnhappinessMod>25</UnhappinessMod>
-			<HappyPerMilitaryUnit>1</HappyPerMilitaryUnit>	
-			<MilitaryProductionModifier>10</MilitaryProductionModifier>				
+			<UnhappinessMod>20</UnhappinessMod>
+			<HappyPerMilitaryUnit>2</HappyPerMilitaryUnit>	
+			<MilitaryProductionModifier>20</MilitaryProductionModifier>				
 			
 			<PortraitIndex>5</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
