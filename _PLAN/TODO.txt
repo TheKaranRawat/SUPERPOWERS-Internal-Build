@@ -1,8 +1,8 @@
 TD- barbarian units
-- unit obsolescence information to future
+D- unit obsolescence information to future
 TD- improvement osbsolescence?
 D- carl gustav era change
-- carrier resupply for players
+TD- carrier resupply for players
 - better CS city defences after capture
 - 45dds compression fixes in icons
 - merc ship promotion fixes for ocean traversal
@@ -31,10 +31,16 @@ D- carl gustav era change
 - obsolete ww2 units by the modern era
 - future units icons
 - mech artillery size increase
-- Remove CS leaders
+D- Remove CS leaders
 - battlemech size reduction, count increase
 - domination great game rebalance
 - updated promotions art
 - updated unit/building icons
 - fix texts
 - FIX MERC SHIPS/UNITS
+
+
+CS DEFENCE BUILDING
+	UNIQUE DEFENCE BUILDINGS FOR CS
+	NEVER LOST ON CAPTURE
+	

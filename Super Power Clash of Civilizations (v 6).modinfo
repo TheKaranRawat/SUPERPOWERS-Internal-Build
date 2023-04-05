@@ -311,6 +311,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="01B0F0DD5210744F683EEA63BE31ACE3" import="0">Modules/Extra Victory Conditions (v 1)/XML/Victories.xml</File>
     <File md5="3AC565FB769409FD01759730CF695268" import="0">Modules/Extra Victory Conditions (v 1)/XML/VictorySpeech.xml</File>
 	
+	<!--
 	<File md5="D5BF918FB7F6F2B3A93D72DBB7A184F0" import="1">Modules/City States Leaders II (v 7)/Art/BNW/antananarivo_leadericon.dds</File>
     <File md5="BF5E7D4C090F68654ED268161D1346D2" import="1">Modules/City States Leaders II (v 7)/Art/BNW/antananarivo_leadericon2.dds</File>
     <File md5="569396623AE536152885307AB84B9378" import="1">Modules/City States Leaders II (v 7)/Art/BNW/bogota_leadericon.dds</File>
@@ -412,6 +413,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="D41D8CD98F00B204E9800998ECF8427E" import="1">Modules/City States Leaders II (v 7)/Assets/CityStateGreetingPopup.lua</File>
     <File md5="23E31670BD68C29CEC708B9DD4D9F008" import="0">Modules/City States Leaders II (v 7)/MinorCivLeaders.sql</File>
     <File md5="13C2F9F8477BF5814BA0F0694F810229" import="0">Modules/City States Leaders II (v 7)/MinorCivLeaders_en_US.xml</File>
+	-->
 	
 	<File md5="36A6C64A31BD29A25A2C56BF9325FBCD" import="1">Modules/Global Relations (v 7)/Lua/DiploCityStatesStatus.lua</File>
     <File md5="A7E7CBB9C4220CA2BF85B78D21ABA8B9" import="1">Modules/Global Relations (v 7)/Lua/DiploTradesStatus.lua</File>
@@ -4034,8 +4036,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/Victories.xml</UpdateDatabase>
       <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/VictorySpeech.xml</UpdateDatabase>
 	  
+	  <!--
 	  <UpdateDatabase>Modules/City States Leaders II (v 7)/MinorCivLeaders.sql</UpdateDatabase>
       <UpdateDatabase>Modules/City States Leaders II (v 7)/MinorCivLeaders_en_US.xml</UpdateDatabase>
+	  -->
 	  
 	  <UpdateDatabase>Modules/Global Relations (v 7)/XML/InfoAddictText_EN.xml</UpdateDatabase>
 	  
