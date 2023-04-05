@@ -875,6 +875,7 @@
 			<Class>UNITCLASS_MODERN_ARMOR</Class>
 			<Type>UNIT_MODERN_ARMOR</Type>
 			<PrereqTech>TECH_BVR_COMBAT</PrereqTech>
+			<ObsoleteTech>TECH_SUPERCONDUCTIVITY</ObsoleteTech>
 			<BaseSightRange>3</BaseSightRange>
 			<Combat>180</Combat>
 			<Cost>1300</Cost>
@@ -968,7 +969,37 @@
 			<ExtraMaintenanceCost>70</ExtraMaintenanceCost>
 		</Row>
 		
-		
+		<Row>
+			<Class>UNITCLASS_FW_RAILGUN_TANK</Class>
+			<Type>UNIT_FW_RAILGUN_TANK</Type>
+			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
+			<Combat>180</Combat>
+			<Cost>2000</Cost>
+			<Moves>5</Moves>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FW_RAILGUN_TANK</Description>
+			<Civilopedia>TXT_KEY_UNIT_FW_RAILGUN_TANK_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FW_RAILGUN_TANK_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FW_RAILGUN_TANK_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<Mechanized>true</Mechanized>
+			<AdvancedStartCost>70</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_FW_RAILGUN_TANK</UnitArtInfo>
+			<UnitFlagAtlas>FLAG_ATLAS_FUTURE</UnitFlagAtlas>
+			<UnitFlagIconOffset>1</UnitFlagIconOffset>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>50</PortraitIndex>
+			<MoveRate>WHEELED</MoveRate>
+			<ExtraMaintenanceCost>140</ExtraMaintenanceCost>
+		</Row>
 		
 		<!--Hit & Run-->
 
@@ -1600,6 +1631,7 @@
 			<Class>UNITCLASS_ATTACK_HELICOPTER</Class>
 			<Type>UNIT_ATTACK_HELICOPTER</Type>
 			<PrereqTech>TECH_MOBILE_TACTICS</PrereqTech>
+			<ObsoleteTech>TECH_GRID_COMPUTING</ObsoleteTech>
 			<BaseSightRange>5</BaseSightRange>
 			<Combat>130</Combat>
 			<RangedCombat>200</RangedCombat>
@@ -1694,6 +1726,37 @@
 			<IconAtlas>SPUNITS01_ATLAS</IconAtlas>
 			<MoveRate>WHEELED</MoveRate>
 			<ExtraMaintenanceCost>50</ExtraMaintenanceCost>
+		</Row>
+
+		<Row>
+			<Class>UNITCLASS_FW_VERTOL</Class>
+			<Type>UNIT_FW_VERTOL</Type>
+			<PrereqTech>TECH_GRID_COMPUTING</PrereqTech>
+			<Combat>170</Combat>
+			<Cost>1600</Cost>
+			<Moves>6</Moves>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FW_VERTOL</Description>
+			<Civilopedia>TXT_KEY_UNIT_FW_VERTOL_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FW_VERTOL_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FW_VERTOL_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<AdvancedStartCost>60</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_FW_VERTOL</UnitArtInfo>
+			<UnitFlagAtlas>FLAG_ATLAS_FUTURE</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>19</PortraitIndex>
+			<MoveRate>WHEELED</MoveRate>
+			<ExtraMaintenanceCost>90</ExtraMaintenanceCost>
 		</Row>
 
 	</Units>
@@ -1834,6 +1897,10 @@
 			<UnitClassType>UNITCLASS_MODERN_ARMOR</UnitClassType>
 		</Row>
 		
+		<Row>
+			<UnitType>UNIT_MODERN_ARMOR</UnitType>
+			<UnitClassType>UNITCLASS_FW_RAILGUN_TANK</UnitClassType>
+		</Row>
 		
 		<!--Hit and Run-->
 		
@@ -1914,6 +1981,10 @@
 		<Row>
 			<UnitType>UNIT_HELICOPTER_GUNSHIP</UnitType>
 			<UnitClassType>UNITCLASS_ATTACK_HELICOPTER</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ATTACK_HELICOPTER</UnitType>
+			<UnitClassType>UNITCLASS_FW_VERTOL</UnitClassType>
 		</Row>
 		<Row>
 			<UnitType>UNIT_POLISH_PZLW3_HELICOPTER</UnitType>

@@ -1,7 +1,7 @@
-- barbarian units
+TD- barbarian units
 - unit obsolescence information to future
-- improvement osbsolescence?
-- carl gustav era change
+TD- improvement osbsolescence?
+D- carl gustav era change
 - carrier resupply for players
 - better CS city defences after capture
 - 45dds compression fixes in icons
@@ -22,3 +22,19 @@
 - add tech deficit surplus indicators
 - military class icons
 - new promotion icons
+- more ancient era units
+- scg search function
+- happ rework
+
+- enable policy trees for the early game
+- future tech arrangement 
+- obsolete ww2 units by the modern era
+- future units icons
+- mech artillery size increase
+- Remove CS leaders
+- battlemech size reduction, count increase
+- domination great game rebalance
+- updated promotions art
+- updated unit/building icons
+- fix texts
+- FIX MERC SHIPS/UNITS

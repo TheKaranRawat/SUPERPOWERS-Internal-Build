@@ -237,6 +237,7 @@
 			<Class>UNITCLASS_JET_FIGHTER</Class>
 			<Type>UNIT_JET_FIGHTER</Type>
 			<PrereqTech>TECH_STEALTH</PrereqTech>
+			<ObsoleteTech>TECH_COGNITIVE_TECH</ObsoleteTech>
 			<RangedCombat>200</RangedCombat>
 			<Cost>2000</Cost>
 			<Moves>3</Moves>
@@ -308,6 +309,45 @@
 			<ExtraMaintenanceCost>32</ExtraMaintenanceCost>
 		</Row>
 		
+		<Row>
+			<Class>UNITCLASS_FW_DRONE_FIGHTER_2</Class>
+			<Type>UNIT_FW_DRONE_FIGHTER_2</Type>
+			<PrereqTech>TECH_COGNITIVE_TECH</PrereqTech>
+			<RangedCombat>200</RangedCombat>
+			<Cost>3000</Cost>
+			<Moves>2</Moves>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<Immobile>true</Immobile>
+			<Range>18</Range>
+			<AirInterceptRange>12</AirInterceptRange>
+			<!--
+			<Special>SPECIALUNIT_FIGHTER</Special>
+			-->
+			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
+			<Domain>DOMAIN_AIR</Domain>
+			<DefaultUnitAI>UNITAI_DEFENSE_AIR</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FW_DRONE_FIGHTER_2</Description>
+			<Civilopedia>TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<Mechanized>true</Mechanized>
+			<AdvancedStartCost>70</AdvancedStartCost>
+			<AirUnitCap>1</AirUnitCap>
+			<RangedCombatLimit>100</RangedCombatLimit>
+			<CombatLimit>0</CombatLimit>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>2</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_FW_DRONE_FIGHTER_2</UnitArtInfo>
+			<UnitFlagAtlas>FLAG_ATLAS_FUTURE_2</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>20</PortraitIndex>
+			<MoveRate>AIR_REBASE</MoveRate>
+			<ExtraMaintenanceCost>150</ExtraMaintenanceCost>			
+		</Row>
 		
 		<!--Attack Aircrafts-->
 		<Row>
@@ -426,7 +466,8 @@
 		<Row>
 			<Class>UNITCLASS_ATTACK_AIRCRAFT</Class>
 			<Type>UNIT_ATTACK_AIRCRAFT</Type>
-			<PrereqTech>TECH_ADV_FLIGHT</PrereqTech>
+			<PrereqTech>TECH_ADV_FLIGHT</PrereqTech>			
+			<ObsoleteTech>TECH_STEALTH</ObsoleteTech>
 			<RangedCombat>160</RangedCombat>
 			<Cost>1200</Cost>
 			<Moves>3</Moves>
@@ -613,6 +654,7 @@
 			<Class>UNITCLASS_JET_BOMBER</Class>
 			<Type>UNIT_JET_BOMBER</Type>
 			<PrereqTech>TECH_ADV_FLIGHT</PrereqTech>
+			<ObsoleteTech>TECH_STEALTH</ObsoleteTech>
 			<RangedCombat>300</RangedCombat>
 			<Cost>2000</Cost>
 			<Moves>2</Moves>
@@ -650,6 +692,7 @@
 			<Class>UNITCLASS_STEALTH_BOMBER</Class>
 			<Type>UNIT_STEALTH_BOMBER</Type>
 			<PrereqTech>TECH_STEALTH</PrereqTech>
+			<ObsoleteTech>TECH_IMPLANTS</ObsoleteTech>
 			<RangedCombat>500</RangedCombat>
 			<Cost>3500</Cost>
 			<Moves>2</Moves>
@@ -683,6 +726,42 @@
 			<ExtraMaintenanceCost>200</ExtraMaintenanceCost>
 		</Row>
 
+		<Row>
+			<Class>UNITCLASS_FW_SUBORBITAL_BOMBER</Class>
+			<Type>UNIT_FW_SUBORBITAL_BOMBER</Type>
+			<PrereqTech>TECH_IMPLANTS</PrereqTech>
+			<RangedCombat>400</RangedCombat>
+			<Cost>3800</Cost>
+			<Moves>3</Moves>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<Special>SPECIALUNIT_STEALTH</Special>
+			<Immobile>true</Immobile>
+			<Range>30</Range>
+			<CombatClass>UNITCOMBAT_BOMBER</CombatClass>
+			<Domain>DOMAIN_AIR</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK_AIR</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER</Description>
+			<Civilopedia>TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<Mechanized>true</Mechanized>
+			<AdvancedStartCost>70</AdvancedStartCost>
+			<AirUnitCap>1</AirUnitCap>
+			<RangedCombatLimit>100</RangedCombatLimit>
+			<CombatLimit>0</CombatLimit>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>2</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_FW_SUBORBITAL_BOMBER</UnitArtInfo>
+			<UnitFlagAtlas>FLAG_ATLAS_FUTURE_7</UnitFlagAtlas>
+			<UnitFlagIconOffset>1</UnitFlagIconOffset>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>57</PortraitIndex>
+			<MoveRate>AIR_REBASE</MoveRate>
+			<ExtraMaintenanceCost>350</ExtraMaintenanceCost>
+		</Row>
 
 		<!--Carrier-based aircraft-->
 
@@ -879,6 +958,7 @@
 			<Class>UNITCLASS_GUIDED_MISSILE</Class>
 			<Type>UNIT_GUIDED_MISSILE</Type>
 			<PrereqTech>TECH_ADVANCED_BALLISTICS</PrereqTech>
+			<ObsoleteTech>TECH_QUANTUM_COMPUTERS</ObsoleteTech>
 			<RangedCombat>350</RangedCombat>
 			<Cost>-1</Cost>
 			<Moves>2</Moves>
@@ -909,6 +989,43 @@
 			<PortraitIndex>30</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
 			<ExtraMaintenanceCost>2</ExtraMaintenanceCost>
+		</Row>
+
+		<Row>
+			<Class>UNITCLASS_FW_HYPERMISSILE</Class>
+			<Type>UNIT_FW_HYPERMISSILE</Type>
+			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
+			<RangedCombat>800</RangedCombat>
+			<Cost>800</Cost>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<Moves>3</Moves>
+			<Immobile>true</Immobile>
+			<NoMaintenance>true</NoMaintenance>
+			<Range>12</Range>
+			<Special>SPECIALUNIT_MISSILE</Special>
+			<Domain>DOMAIN_AIR</Domain>
+			<DefaultUnitAI>UNITAI_MISSILE_AIR</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FW_HYPERMISSILE</Description>
+			<Civilopedia>TXT_KEY_UNIT_FW_HYPERMISSILE_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FW_HYPERMISSILE_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FW_HYPERMISSILE_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<Mechanized>true</Mechanized>
+			<Suicide>true</Suicide>
+			<AdvancedStartCost>40</AdvancedStartCost>
+			<AirUnitCap>1</AirUnitCap>
+			<RangedCombatLimit>100</RangedCombatLimit>
+			<CombatLimit>0</CombatLimit>
+			<XPValueDefense>2</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_GUIDED_MISSILE</UnitArtInfo>
+			<UnitFlagAtlas>FLAG_ATLAS_FUTURE</UnitFlagAtlas>
+			<UnitFlagIconOffset>3</UnitFlagIconOffset>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>23</PortraitIndex>
+			<MoveRate>AIR_REBASE</MoveRate>
+			<ExtraMaintenanceCost>30</ExtraMaintenanceCost>
 		</Row>
 
 		<Row>
@@ -946,14 +1063,7 @@
 			<PortraitIndex>33</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
 			<ExtraMaintenanceCost>6</ExtraMaintenanceCost>
-		</Row>
-
-
-
-
-	
-		
-		
+		</Row>		
 		
 		
 		
@@ -1068,6 +1178,37 @@
 			<MoveRate>AIR_REBASE</MoveRate>
 			<ExtraMaintenanceCost>250</ExtraMaintenanceCost>
 		</Row>
+
+		<!-- UAV -->
+
+		<Row>
+			<Class>UNITCLASS_FW_UAV</Class>
+			<Type>UNIT_FW_UAV</Type>
+			<PrereqTech>TECH_INTERNET</PrereqTech>
+			<Combat>60</Combat>
+			<RangedCombat>90</RangedCombat>
+			<Cost>400</Cost>
+			<Moves>2</Moves>
+			<Range>2</Range>
+			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FW_UAV</Description>
+			<Civilopedia>TXT_KEY_UNIT_FW_UAV_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FW_UAV_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FW_UAV_HELP</Help>
+			<MilitaryProduction>true</MilitaryProduction>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<Mechanized>true</Mechanized>
+			<AdvancedStartCost>70</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>2</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_UAV</UnitArtInfo>
+			<UnitFlagAtlas>UNITS_UAV_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<IconAtlas>CIV_UNIT_ATLAS_UAV</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
 		
 	</Units>
 
@@ -1101,10 +1242,17 @@
 			<UnitType>UNIT_INTERCEPTER</UnitType>
 			<UnitClassType>UNITCLASS_JET_FIGHTER</UnitClassType>
 		</Row>
+
 		<Row>
 			<UnitType>UNIT_RUSSIAN_SU27</UnitType>
 			<UnitClassType>UNITCLASS_JET_FIGHTER</UnitClassType>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_JET_FIGHTER</UnitType>
+			<UnitClassType>UNITCLASS_FW_DRONE_FIGHTER_2</UnitClassType>
+		</Row>
+
 		<Row>
 			<UnitType>UNIT_ATTACK_AIRCRAFT</UnitType>
 			<UnitClassType>UNITCLASS_STEALTH_ATTACK_AIRCRAFT</UnitClassType>
@@ -1125,6 +1273,10 @@
 		<Row>
 			<UnitType>UNIT_JET_BOMBER</UnitType>
 			<UnitClassType>UNITCLASS_STEALTH_BOMBER</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_STEALTH_BOMBER</UnitType>
+			<UnitClassType>UNITCLASS_FW_SUBORBITAL_BOMBER</UnitClassType>
 		</Row>
 
 

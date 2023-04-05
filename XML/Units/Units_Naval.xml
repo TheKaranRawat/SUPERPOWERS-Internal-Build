@@ -505,6 +505,7 @@
 			<Class>UNITCLASS_DESTROYER</Class>
 			<Type>UNIT_DESTROYER</Type>
 			<PrereqTech>TECH_SONAR</PrereqTech>
+			<ObsoleteTech>TECH_ROBOTICS</ObsoleteTech>
 			<BaseSightRange>3</BaseSightRange>
 			<Combat>180</Combat>
 			<Cost>875</Cost>
@@ -810,6 +811,7 @@
 			<Class>UNITCLASS_SUBMARINE</Class>
 			<Type>UNIT_SUBMARINE</Type>
 			<PrereqTech>TECH_SONAR</PrereqTech>
+			<ObsoleteTech>TECH_COMPUTERS</ObsoleteTech>
 			<BaseSightRange>5</BaseSightRange>
 			<Combat>60</Combat>
 			<RangedCombat>120</RangedCombat>
@@ -846,6 +848,7 @@
 			<Class>UNITCLASS_SUBMARINE</Class>
 			<Type>UNIT_GERMAN_UBOAT</Type>
 			<PrereqTech>TECH_SONAR</PrereqTech>
+			<ObsoleteTech>TECH_COMPUTERS</ObsoleteTech>
 			<BaseSightRange>5</BaseSightRange>
 			<Combat>80</Combat>
 			<RangedCombat>120</RangedCombat>
@@ -955,8 +958,45 @@
 			<ExtraMaintenanceCost>100</ExtraMaintenanceCost>
 		</Row>
 
-		
-		
+		<Row>
+			<Class>UNITCLASS_SSBN</Class>
+			<Type>UNIT_SSBN</Type>
+			<PrereqTech>TECH_ADVANCED_BALLISTICS</PrereqTech>
+			<BaseSightRange>6</BaseSightRange>
+			<Combat>300</Combat>
+			<RangedCombat>250</RangedCombat>
+			<Cost>3500</Cost>
+			<Moves>10</Moves>
+			<Range>2</Range>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<CombatClass>UNITCOMBAT_SUBMARINE</CombatClass>
+			<Domain>DOMAIN_SEA</Domain>
+			<DefaultUnitAI>UNITAI_RESERVE_SEA</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SSBN</Description>
+			<Civilopedia>TXT_KEY_UNIT_SSBN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SSBN_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_SSBN_HELP</Help>
+			<ProjectPrereq>PROJECT_MANHATTAN_PROJECT</ProjectPrereq>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<Mechanized>true</Mechanized>
+			<AdvancedStartCost>80</AdvancedStartCost>
+			<MinAreaSize>20</MinAreaSize>
+			<RangeAttackOnlyInDomain>true</RangeAttackOnlyInDomain>
+			<XPValueAttack>12</XPValueAttack>
+			<XPValueDefense>12</XPValueDefense>
+			<SpecialCargo>SPECIALUNIT_NUKE</SpecialCargo>
+			<DomainCargo>DOMAIN_AIR</DomainCargo>
+			<UnitArtInfo>ART_DEF_UNIT_NUCLEAR_SUBMARINE</UnitArtInfo>
+			<UnitFlagAtlas>SPUnitFlags_FLAG</UnitFlagAtlas>
+			<UnitFlagIconOffset>76</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
+			<PortraitIndex>34</PortraitIndex>
+			<MoveRate>SUB</MoveRate>
+			<ExtraMaintenanceCost>120</ExtraMaintenanceCost>
+		</Row>		
 		
 
 		<!--Naval Ranged-->
@@ -1221,6 +1261,7 @@
 			<Class>UNITCLASS_HEAVY_CRUISER</Class>
 			<Type>UNIT_GREEK_ARMORED_CRUISER</Type>
 			<PrereqTech>TECH_SONAR</PrereqTech>
+			<ObsoleteTech>TECH_ADVANCED_BALLISTICS</ObsoleteTech>
 			<BaseSightRange>3</BaseSightRange>
 			<Combat>280</Combat>
 			<RangedCombat>180</RangedCombat>
@@ -1590,16 +1631,7 @@
 			<MoveRate>BOAT</MoveRate>
 			<ExtraMaintenanceCost>450</ExtraMaintenanceCost>
 		</Row>
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 		<!--Aircraft Carriers-->
 
@@ -1608,6 +1640,7 @@
 			<Class>UNITCLASS_CARRIER</Class>
 			<Type>UNIT_CARRIER</Type>
 			<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
+			<ObsoleteTech>TECH_COMPUTERS</ObsoleteTech>
 			<BaseSightRange>4</BaseSightRange>
 			<Combat>150</Combat>
 			<Cost>2600</Cost>
@@ -1816,50 +1849,6 @@
 			<MoveRate>BOAT</MoveRate>
 			<NoMaintenance>true</NoMaintenance>
 		</Row>
-		
-
-
-
-		<Row>
-			<Class>UNITCLASS_SSBN</Class>
-			<Type>UNIT_SSBN</Type>
-			<PrereqTech>TECH_ADVANCED_BALLISTICS</PrereqTech>
-			<BaseSightRange>6</BaseSightRange>
-			<Combat>300</Combat>
-			<RangedCombat>250</RangedCombat>
-			<Cost>3500</Cost>
-			<Moves>10</Moves>
-			<Range>2</Range>
-			<HurryCostModifier>-1</HurryCostModifier>
-			<CombatClass>UNITCOMBAT_SUBMARINE</CombatClass>
-			<Domain>DOMAIN_SEA</Domain>
-			<DefaultUnitAI>UNITAI_RESERVE_SEA</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_SSBN</Description>
-			<Civilopedia>TXT_KEY_UNIT_SSBN_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_SSBN_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_SSBN_HELP</Help>
-			<ProjectPrereq>PROJECT_MANHATTAN_PROJECT</ProjectPrereq>
-			<MilitarySupport>true</MilitarySupport>
-			<MilitaryProduction>true</MilitaryProduction>
-			<Pillage>true</Pillage>
-			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
-			<Mechanized>true</Mechanized>
-			<AdvancedStartCost>80</AdvancedStartCost>
-			<MinAreaSize>20</MinAreaSize>
-			<RangeAttackOnlyInDomain>true</RangeAttackOnlyInDomain>
-			<XPValueAttack>12</XPValueAttack>
-			<XPValueDefense>12</XPValueDefense>
-			<SpecialCargo>SPECIALUNIT_NUKE</SpecialCargo>
-			<DomainCargo>DOMAIN_AIR</DomainCargo>
-			<UnitArtInfo>ART_DEF_UNIT_NUCLEAR_SUBMARINE</UnitArtInfo>
-			<UnitFlagAtlas>SPUnitFlags_FLAG</UnitFlagAtlas>
-			<UnitFlagIconOffset>76</UnitFlagIconOffset>
-			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
-			<PortraitIndex>34</PortraitIndex>
-			<MoveRate>SUB</MoveRate>
-			<ExtraMaintenanceCost>120</ExtraMaintenanceCost>
-		</Row>
-		
 		
 	</Units>
 
