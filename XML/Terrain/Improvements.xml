@@ -2374,7 +2374,7 @@
 		</Row>-->
 		
 		<Update>
-			<Set Yield="5"/>
+			<Set Yield="10"/>
 			<Where ImprovementType="IMPROVEMENT_HOLY_SITE"/>
 		</Update>
 
