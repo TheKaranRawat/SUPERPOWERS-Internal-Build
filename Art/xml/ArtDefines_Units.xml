@@ -92,7 +92,7 @@
 	<ArtDefine_UnitMemberInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_MEMBER_FW_BATTLESUIT</Type>
-			<Scale>0.09</Scale>
+			<Scale>0.06</Scale>
 			<Model>Battlesuit.fxsxml</Model>
 			<MaterialTypeTag>METAL</MaterialTypeTag>
 			<MaterialTypeSoundOverrideTag>METALLRG</MaterialTypeSoundOverrideTag>
