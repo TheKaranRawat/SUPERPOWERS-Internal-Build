@@ -1164,7 +1164,7 @@
 
 				[NEWLINE][NEWLINE]Opening Effect:
 				[NEWLINE][ICON_BULLET]Settlers will no longer lose HP if ends turns outside friendly territory.
-				[NEWLINE][ICON_BULLET]+1 [ICON_MOVES] Movement for Embarked Units, Workers, Settlers, Archaeologists, Great Prophet and Missionaries.
+				[NEWLINE][ICON_BULLET]+1 [ICON_MOVES] Movement for Embarked Units, Workers, Archaeologists, Great Prophet and Missionaries.
 				[NEWLINE][ICON_BULLET]+3 [ICON_MOVES] Movement for Great Admirals.
 				[NEWLINE][ICON_BULLET]+1 [ICON_FOOD][ICON_GOLD] on coast tiles			
 				[NEWLINE][ICON_BULLET]World Wonder Unlocked: Port of Rotterdam.

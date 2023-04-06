@@ -2722,10 +2722,12 @@
 			<PromotionType>PROMOTION_FAST_WORKER</PromotionType>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 		</Row>
+<!--		
 		<Row>
 			<PromotionType>PROMOTION_FAST_WORKER</PromotionType>
 			<UnitType>UNIT_SETTLER</UnitType>
 		</Row>
+-->		
 		<Row>
 			<PromotionType>PROMOTION_FAST_WORKER</PromotionType>
 			<UnitType>UNIT_ARCHAEOLOGIST</UnitType>
@@ -2771,10 +2773,12 @@
 			<PromotionType>PROMOTION_FAST_WORKER_TECH</PromotionType>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 		</Row>
+<!--		
 		<Row>
 			<PromotionType>PROMOTION_FAST_WORKER_TECH</PromotionType>
 			<UnitType>UNIT_SETTLER</UnitType>
 		</Row>
+-->		
 	
 
 		<Row>

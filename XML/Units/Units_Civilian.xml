@@ -9,9 +9,9 @@
 			<ID>0</ID>
 			<Class>UNITCLASS_SETTLER</Class>
 			<Type>UNIT_SETTLER</Type>
-			<Moves>2</Moves>
-			<BaseSightRange>1</BaseSightRange>
-			<!--<Capture>UNITCLASS_WORKER</Capture>-->
+			<Moves>1</Moves>
+			<BaseSightRange>3</BaseSightRange>
+			<Capture>UNITCLASS_SETTLER</Capture>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Domain>DOMAIN_LAND</Domain>
@@ -22,7 +22,7 @@
 			<Help>TXT_KEY_UNIT_HELP_SETTLER</Help>
 			<Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
 			<Food>false</Food>
-			<Unhappiness>200</Unhappiness>
+			<Unhappiness>100</Unhappiness>
 			<Found>true</Found>
 			<CombatLimit>0</CombatLimit>
 			<UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
@@ -46,7 +46,7 @@
 			<Strategy>TXT_KEY_UNIT_WORKER_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_HELP_WORKER</Help>
 			<AdvancedStartCost>10</AdvancedStartCost>
-			<!--<MoveAfterPurchase>true</MoveAfterPurchase>-->
+			<MoveAfterPurchase>true</MoveAfterPurchase>
 			<WorkRate>100</WorkRate>
 			<MoveAfterPurchase>true</MoveAfterPurchase>
 			<CombatLimit>0</CombatLimit>
@@ -60,9 +60,9 @@
 		<Row>
 			<Class>UNITCLASS_WORKBOAT</Class>
 			<Type>UNIT_WORKBOAT</Type>
-			<PrereqTech>TECH_SAILING</PrereqTech>
-			<Cost>50</Cost>
-			<Moves>4</Moves>
+			<PrereqTech>TECH_FISHERY</PrereqTech>
+			<Cost>15</Cost>
+			<Moves>3</Moves>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_WORKER_SEA</DefaultUnitAI>
@@ -116,8 +116,8 @@
 		<Row>
 			<Class>UNITCLASS_CARAVAN</Class>
 			<Type>UNIT_CARAVAN</Type>
-			<!--<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>-->
-			<Cost>30</Cost>
+			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
+			<Cost>50</Cost>
 			<HurryCostModifier>20</HurryCostModifier>
 			<Moves>1</Moves>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
@@ -148,7 +148,7 @@
 			<Class>UNITCLASS_CARGO_SHIP</Class>
 			<Type>UNIT_CARGO_SHIP</Type>
 			<PrereqTech>TECH_SAILING</PrereqTech>
-			<Cost>120</Cost>
+			<Cost>100</Cost>
 			<HurryCostModifier>20</HurryCostModifier>
 			<NoMaintenance>true</NoMaintenance>
 			<Moves>1</Moves>
@@ -178,8 +178,8 @@
 		<Row>
 			<Class>UNITCLASS_CARGO_SHIP</Class>
 			<Type>UNIT_POLYNESIAN_CARGOSHIP</Type>
-			<PrereqTech>TECH_SAILING</PrereqTech>
-			<Cost>70</Cost>
+			<PrereqTech>TECH_FISHERY</PrereqTech>
+			<Cost>50</Cost>
 			<HurryCostModifier>10</HurryCostModifier>
 			<NoMaintenance>true</NoMaintenance>
 			<Moves>1</Moves>
