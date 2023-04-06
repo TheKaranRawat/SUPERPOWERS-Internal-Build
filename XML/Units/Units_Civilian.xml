@@ -48,7 +48,6 @@
 			<AdvancedStartCost>10</AdvancedStartCost>
 			<MoveAfterPurchase>true</MoveAfterPurchase>
 			<WorkRate>100</WorkRate>
-			<MoveAfterPurchase>true</MoveAfterPurchase>
 			<CombatLimit>0</CombatLimit>
 			<UnitArtInfo>ART_DEF_UNIT__WORKER</UnitArtInfo>
 			<UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
