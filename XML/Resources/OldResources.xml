@@ -481,6 +481,21 @@
 
 	<Improvement_ResourceType_Yields>
 		
+
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<ResourceType>RESOURCE_FISH</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>	
+		<Row>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<ResourceType>RESOURCE_FISH</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>			
+
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<ResourceType>RESOURCE_CITRUS</ResourceType>
