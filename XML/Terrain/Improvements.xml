@@ -1703,6 +1703,16 @@
 
 
 		<Row>
+			<UnitType>UNIT_ARABIAN_PROPHET</UnitType>
+			<BuildType>BUILD_HOLY_SITE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ARABIAN_PROPHET</UnitType>
+			<BuildType>BUILD_HOLY_SITE</BuildType>
+		</Row>	
+
+
+		<Row>
 			<UnitType>UNIT_ARTIST</UnitType>
 			<BuildType>BUILD_PRESERVE</BuildType>
 		</Row>
@@ -1764,6 +1774,15 @@
 			<UnitType>UNIT_PROPHET</UnitType>
 			<BuildType>BUILD_PRESERVE</BuildType>
 		</Row>		
+		
+		<Row>
+			<UnitType>UNIT_ARABIAN_PROPHET</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ARABIAN_PROPHET</UnitType>
+			<BuildType>BUILD_PRESERVE</BuildType>
+		</Row>			
 
 		<Row>
 			<UnitType>UNIT_SCIENTIST</UnitType>
