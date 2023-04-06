@@ -251,7 +251,7 @@
 			<TradeReligionModifier>300</TradeReligionModifier>
 			<BonusReligiousBelief>1</BonusReligiousBelief>
 			<GoldenAgeDurationModifier>30</GoldenAgeDurationModifier>
-			
+			<NumTradeRoutesModifier>5</NumTradeRouteBonus>
 		</Row>
 		<Row>
 			<Type>TRAIT_EXTRA_BELIEF</Type>
