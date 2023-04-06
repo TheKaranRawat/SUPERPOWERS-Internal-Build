@@ -9353,12 +9353,12 @@ function AssignStartingPlots:GetWorldLuxuryTargetNumbers()
 		}
 	elseif self.resource_setting == 3 then -- Abundant
 		worldsizes = {
-			[GameInfo.Worlds.WORLDSIZE_DUEL.ID] = {24, 3},
-			[GameInfo.Worlds.WORLDSIZE_TINY.ID] = {40, 4},
-			[GameInfo.Worlds.WORLDSIZE_SMALL.ID] = {60, 4},
-			[GameInfo.Worlds.WORLDSIZE_STANDARD.ID] = {80, 5},
-			[GameInfo.Worlds.WORLDSIZE_LARGE.ID] = {100, 5},
-			[GameInfo.Worlds.WORLDSIZE_HUGE.ID] = {128, 6}
+			[GameInfo.Worlds.WORLDSIZE_DUEL.ID] = {32, 4},
+			[GameInfo.Worlds.WORLDSIZE_TINY.ID] = {48, 4},
+			[GameInfo.Worlds.WORLDSIZE_SMALL.ID] = {80, 5},
+			[GameInfo.Worlds.WORLDSIZE_STANDARD.ID] = {96, 6},
+			[GameInfo.Worlds.WORLDSIZE_LARGE.ID] = {128, 7},
+			[GameInfo.Worlds.WORLDSIZE_HUGE.ID] = {160, 8}
 		}
 	else -- Standard
 		worldsizes = {
