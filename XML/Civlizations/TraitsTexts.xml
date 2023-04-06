@@ -397,7 +397,7 @@
 
 		<Replace Tag="TXT_KEY_TRAIT_LAND_TRADE_GOLD2">
 			<Text>[ICON_BULLET]+100% Range for [ICON_TRADE_WHITE]Caravans. [ICON_INTERNATIONAL_TRADE]Trade Routes spread the home city's [ICON_RELIGION]Religion 300% more effectively.
-				[NEWLINE][ICON_BULLET]+2 [ICON_CULTURE]Culture and +2 [ICON_PEACE]Faith from every Oasis. 
+				[NEWLINE][ICON_BULLET]+5 [ICON_CULTURE]Culture and +3 [ICON_PEACE]Faith from every Oasis. 
 				[NEWLINE][ICON_BULLET]Arab mysticism grants the ability to choose an extra [ICON_PROPHET]Religious Belief; [ICON_GOLDEN_AGE]Golden Ages are 30% longer. 
 				[NEWLINE][ICON_BULLET]Military Units do not lose Combat Strength after taking damage, and receive +15% Combat Bonus when fighting against an Advanced Civ, after researching Industrialization.
 			</Text>

@@ -1489,13 +1489,13 @@
 			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
 			<FeatureType>FEATURE_OASIS</FeatureType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
+			<Yield>5</Yield>
 		</Row>
 		<Row>
 			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
 			<FeatureType>FEATURE_OASIS</FeatureType>
 			<YieldType>YIELD_FAITH</YieldType>
-			<Yield>2</Yield>
+			<Yield>3</Yield>
 		</Row>
 	</Trait_UnimprovedFeatureYieldChanges>
 
