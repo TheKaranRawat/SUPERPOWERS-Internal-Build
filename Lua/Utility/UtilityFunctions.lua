@@ -595,7 +595,7 @@ function SetCityLevelbyDistance (player,city)
 	local WorldSizeLength = Map.GetGridSize()
 	local policyID = GameInfo.Policies["POLICY_DICTATORSHIP_PROLETARIAT"].ID
 		
-	local DistanceLV1 = 11
+	local DistanceLV1 = 9
 	print ("DistanceLV1:"..DistanceLV1)
 	
 --	local DistanceLV2 = WorldSizeLength / 8	
@@ -604,7 +604,7 @@ function SetCityLevelbyDistance (player,city)
 --	elseif DistanceLV2 < 14 then
 --	   DistanceLV2 = 14
 --	end
-	local DistanceLV2 = 22
+	local DistanceLV2 = 18
 	print ("DistanceLV2:"..DistanceLV2)
 	
 	
@@ -614,7 +614,7 @@ function SetCityLevelbyDistance (player,city)
 --	elseif DistanceLV3 < 26 then
 --	   DistanceLV3 = 26
 --	end
-	local DistanceLV3 = 44
+	local DistanceLV3 = 27
 	print ("DistanceLV3:"..DistanceLV3)	 
 	       
 --	local DistanceLV4 = WorldSizeLength / 3 	
@@ -623,7 +623,7 @@ function SetCityLevelbyDistance (player,city)
 --	elseif DistanceLV4 < 36 then
 --	   DistanceLV4 = 36
 --	end
-	local DistanceLV4 = 66
+	local DistanceLV4 = 36
 	print ("DistanceLV4:"..DistanceLV4)
 
 
