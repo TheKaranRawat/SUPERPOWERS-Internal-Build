@@ -2418,7 +2418,7 @@
 		</Row>
 
 
-		<Row>
+<!--		<Row>
 			<TraitType>TRAIT_VIKING_FURY</TraitType>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
@@ -2429,7 +2429,7 @@
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
-		</Row>
+		</Row>-->
 
 		<Row>
 			<TraitType>TRAIT_WAYFINDING</TraitType>
