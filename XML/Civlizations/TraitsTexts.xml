@@ -94,9 +94,9 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER">
-			<Text>[ICON_BULLET]+12 [ICON_PRODUCTION]Production for [ICON_CITY_STATE]Cities. 
+			<Text>[ICON_BULLET]+5 [ICON_PRODUCTION]Production for [ICON_CITY_STATE]Cities and for [ICON_PRODUCTION] Potteries. 
 				[NEWLINE][ICON_BULLET]+15% [ICON_PRODUCTION]Production when constructing Buildings. 
-				[NEWLINE][ICON_BULLET]Roman Expansionist Ethos grants -33% [ICON_HAPPINESS_4]Unhapiness from the number of [ICON_CITY_STATE]Controlled Cities.
+				[NEWLINE][ICON_BULLET]Roman Expansionist Ethos grants -40% [ICON_HAPPINESS_4]Unhapiness from the number of [ICON_CITY_STATE]Controlled Cities.
 				[NEWLINE][ICON_BULLET]Naval units cost 25% less [ICON_GOLD]Maintenance after researching Industrialization.
 			</Text>
 		</Replace>

@@ -72,7 +72,7 @@
 			<Description>TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER</Description>
 			<ShortDescription>TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER_SHORT</ShortDescription>
 			<FreeBuilding>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</FreeBuilding>
-			<CityUnhappinessModifier>-33</CityUnhappinessModifier>
+			<CityUnhappinessModifier>-40</CityUnhappinessModifier>
 			
 		</Row>
 		<Row>
@@ -2782,11 +2782,24 @@
 
 	</Building_YieldModifiers>
 
+
+	<Building_BuildingClassYieldChanges>
+
+		<Row>
+			<BuildingType>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_POTTER</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+
+	</Building_BuildingClassYieldChanges>			
+
+
 	<Building_YieldChanges>
 		<Row>
 			<BuildingType>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>12</Yield>
+			<Yield>5</Yield>
 		</Row>
 
 		<Row>
