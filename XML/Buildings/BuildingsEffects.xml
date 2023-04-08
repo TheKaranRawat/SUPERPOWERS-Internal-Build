@@ -1534,7 +1534,11 @@
 	<Building_YieldChanges>
 		
 
-	
+		<Row>
+			<BuildingType>BUILDING_STANNARY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>	
 
 
 
@@ -3890,6 +3894,17 @@
 	<!--*********************Building Yields Modifiers********************-->
 	<Building_YieldModifiers>
 
+
+		<Row>
+			<BuildingType>BUILDING_STANNARY</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>		
 
 	
 
@@ -6561,7 +6576,7 @@
 		<Row>
 			<BuildingType>BUILDING_STANNARY</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>20</Yield>
 		</Row>
 
 		<Row>
@@ -6573,7 +6588,7 @@
 		<Row>
 			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>20</Yield>
 		</Row>
 
 		<Row>
