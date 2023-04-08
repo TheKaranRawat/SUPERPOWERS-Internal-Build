@@ -1077,7 +1077,7 @@
 				[NEWLINE][NEWLINE]Finishing Bonus:
 				[NEWLINE][ICON_BULLET]-25%  and 10% [ICON_GOLD] Maintenance Cost for Buildings and Units respectively.
 				[NEWLINE][ICON_BULLET]+50% [ICON_GOLD] Gold from [ICON_CONNECTED] City Connections.			
-				[NEWLINE][ICON_BULLET]+50% [ICON_FOOD] Food and [ICON_PRODUCTION] Production provided by Internal trade routes.				
+				[NEWLINE][ICON_BULLET]+150% [ICON_FOOD] Food and [ICON_PRODUCTION] Production provided by Internal trade routes.				
 				[NEWLINE][ICON_BULLET]Allows the purchase of Great Merchants with [ICON_PEACE] Faith starting in the Industrial Era.
 
 			</Text>

@@ -394,7 +394,7 @@
 			<Where Type="POLICY_MERCANTILISM"/>
 		</Update>
 		<Update>
-			<Set BuildingGoldMaintenanceMod="-20" UnitGoldMaintenanceMod="-10" CityConnectionTradeRouteGoldModifier="50" InternalTradeRouteYieldModifier="50"/>
+			<Set BuildingGoldMaintenanceMod="-20" UnitGoldMaintenanceMod="-10" CityConnectionTradeRouteGoldModifier="50" InternalTradeRouteYieldModifier="150"/>
 			<Where Type="POLICY_COMMERCE_FINISHER"/>
 		</Update>
 		<Row>
