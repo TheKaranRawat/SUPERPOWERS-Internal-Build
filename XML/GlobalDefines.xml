@@ -164,9 +164,10 @@
 			<Where Name="UNIT_MAINTENANCE_GAME_EXPONENT_DIVISOR" />
 		</Update>
 		<Update>
-			<Set Value="20"/>
+			<Set Value="50"/>
 			<Where Name="TRADE_ROUTE_CAPITAL_POP_GOLD_MULTIPLIER" />
 		</Update>
+		<!-- per pop gold for trade routes /100 -->
 		<Update>
 			<Set Value="35"/>
 			<Where Name="TRADE_ROUTE_CITY_POP_GOLD_MULTIPLIER" />
@@ -184,11 +185,11 @@
 			<Where Name="GOLDEN_AGE_EACH_GA_ADDITIONAL_HAPPINESS" />
 		</Update>
 		<Update>
-			<Set Value="1"/>
+			<Set Value="3"/>
 			<Where Name="MAX_FORTIFY_TURNS" />
 		</Update>
 		<Update>
-			<Set Value="50"/>
+			<Set Value="25"/>
 			<Where Name="FORTIFY_MODIFIER_PER_TURN" />
 		</Update>
 
