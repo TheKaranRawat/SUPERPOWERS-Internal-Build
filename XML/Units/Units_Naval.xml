@@ -1669,7 +1669,7 @@
 			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
 			<PortraitIndex>23</PortraitIndex>
 			<MoveRate>BOAT</MoveRate>
-			<ExtraMaintenanceCost>200</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>300</ExtraMaintenanceCost>
 		</Row>
 
 		<Row>
@@ -1705,7 +1705,7 @@
 			<IconAtlas>SPUNITS01_ATLAS</IconAtlas>
 			<PortraitIndex>42</PortraitIndex>
 			<MoveRate>BOAT</MoveRate>
-			<ExtraMaintenanceCost>600</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>1000</ExtraMaintenanceCost>
 		</Row>
 		
 		<Row>
@@ -1741,7 +1741,7 @@
 			<IconAtlas>SPUNITS01_ATLAS</IconAtlas>
 			<PortraitIndex>39</PortraitIndex>
 			<MoveRate>BOAT</MoveRate>
-			<ExtraMaintenanceCost>600</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>1000</ExtraMaintenanceCost>
 		</Row>
 
 		<Row>
