@@ -3927,11 +3927,11 @@
 			<Yield>5</Yield>
 		</Row>
 -->
-		<Row>
+<!--		<Row>
 			<BuildingType>BUILDING_PYRAMID</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>15</Yield>
-		</Row>
+		</Row>-->
 
 		<Row>
 			<BuildingType>BUILDING_WILLIS</BuildingType>
@@ -4197,6 +4197,14 @@
 
 	<Building_GlobalYieldModifiers>	
 		
+
+		<Row>
+			<BuildingType>BUILDING_PYRAMID</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>15</Yield>
+		</Row>
+
+
 
 		<Row>
 			<BuildingType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingType>
