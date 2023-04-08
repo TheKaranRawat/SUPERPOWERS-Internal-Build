@@ -1760,6 +1760,12 @@
 			<UnitType>UNIT_MECH</UnitType>
 			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_MECH</UnitType>
+			<PromotionType>PROMOTION_FW_MOVE_ALL_TERRAIN</PromotionType>
+		</Row>
+		
+
 
 
 		<Row>

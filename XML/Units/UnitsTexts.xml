@@ -4889,6 +4889,9 @@
 		<Row Tag="TXT_KEY_PROMOTION_FW_NETWORKED_HELP">
 			<Text>+20% [ICON_STRENGTH] Combat Strength when adjacent to another friendly unit.</Text>
 		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FW_MOVE_ALL_TERRAIN_HELP">
+			<Text>This unit may traverse any terrain.</Text>
+		</Row>		
 		<Row Tag="TXT_KEY_PEDIA_PROMOTION_FW_NETWORKED">
 			<Text>+20% [ICON_STRENGTH] Combat Strength when adjacent to another friendly unit.</Text>
 		</Row>
@@ -5187,7 +5190,7 @@
 			<Text>Basic Unit of the future that requires no special resources to build.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY">
-			<Text>Cyberdyne T-800</Text>
+			<Text>T-800</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY_TEXT">
 			<Text>While powered armor gave human soldiers unparalleled protection and strength, it still relies on a human to operate the suit. Advances in artificial intelligence eventually lead to the ultimate soldier - a robotic unit that could fight equally as well as a human. Although there were a number of concerns about the prospect of fielding large numbers of robotic units with minimal human control, those societies that did so found them to be highly efficient and effective on the battlefield, with fewer issues involved in adapting them back to civilian duties during peacetime.</Text>
