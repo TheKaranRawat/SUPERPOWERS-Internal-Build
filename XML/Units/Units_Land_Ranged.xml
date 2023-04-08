@@ -1049,6 +1049,42 @@
 			<ExtraMaintenanceCost>80</ExtraMaintenanceCost>
 		</Row>
 
+		<Row>
+			<Class>UNITCLASS_FW_MECH_ARTILLERY</Class>
+			<Type>UNIT_FW_MECH_ARTILLERY</Type>
+			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
+			<Combat>90</Combat>
+			<RangedCombat>400</RangedCombat>
+			<Cost>1800</Cost>
+			<Moves>3</Moves>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<Range>1</Range>
+			<CombatClass>UNITCOMBAT_SIEGE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FW_MECH_ARTILLERY</Description>
+			<Civilopedia>TXT_KEY_UNIT_FW_MECH_ARTILLERY_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FW_MECH_ARTILLERY_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FW_MECH_ARTILLERY_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<Mechanized>true</Mechanized>
+			<AdvancedStartCost>60</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<SpecialCargo>SPECIALUNIT_MISSILE</SpecialCargo>
+			<DomainCargo>DOMAIN_AIR</DomainCargo>
+			<UnitArtInfo>ART_DEF_UNIT_FW_MECH_ARTILLERY</UnitArtInfo>
+			<UnitFlagAtlas>FLAG_ATLAS_FUTURE_4</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>51</PortraitIndex>
+			<MoveRate>WHEELED</MoveRate>
+			<ExtraMaintenanceCost>150</ExtraMaintenanceCost>
+		</Row>
+
 
 
 		<!--Heavy Artillery-->

@@ -1000,6 +1000,70 @@
 			<MoveRate>WHEELED</MoveRate>
 			<ExtraMaintenanceCost>140</ExtraMaintenanceCost>
 		</Row>
+
+		<Row>
+			<Class>UNITCLASS_FW_HOVERTANK</Class>
+			<Type>UNIT_FW_HOVERTANK</Type>
+			<PrereqTech>TECH_CYBERNETICS</PrereqTech>
+			<Combat>165</Combat>
+			<Cost>1500</Cost>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<Moves>6</Moves>
+			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FW_HOVERTANK</Description>
+			<Civilopedia>TXT_KEY_UNIT_FW_HOVERTANK_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FW_HOVERTANK_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FW_HOVERTANK_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<AdvancedStartCost>60</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_FW_HOVERTANK</UnitArtInfo>
+			<UnitFlagAtlas>FLAG_ATLAS_FUTURE_4</UnitFlagAtlas>
+			<UnitFlagIconOffset>2</UnitFlagIconOffset>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>42</PortraitIndex>
+			<MoveRate>WHEELED</MoveRate>
+			<ExtraMaintenanceCost>150</ExtraMaintenanceCost>
+		</Row>
+		
+		<Row>
+			<Class>UNITCLASS_FW_CRAWLER</Class>
+			<Type>UNIT_FW_CRAWLER</Type>
+			<PrereqTech>TECH_HYPERSTRUCTURES</PrereqTech>
+			<Combat>350</Combat>
+			<RangedCombat>250</RangedCombat>
+			<Cost>4000</Cost>
+			<Moves>3</Moves>
+			<Range>4</Range>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<CombatClass>UNITCOMBAT_SIEGE</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_CITY_BOMBARD</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FW_CRAWLER</Description>
+			<Civilopedia>TXT_KEY_UNIT_FW_CRAWLER_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FW_CRAWLER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FW_CRAWLER_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<SpecialCargo>SPECIALUNIT_MISSILE</SpecialCargo>
+			<DomainCargo>DOMAIN_AIR</DomainCargo>
+			<AdvancedStartCost>80</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_FW_CRAWLER</UnitArtInfo>
+			<UnitFlagAtlas>FLAG_ATLAS_FUTURE_6</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>58</PortraitIndex>
+			<ExtraMaintenanceCost>200</ExtraMaintenanceCost>
+		</Row>
 		
 		<!--Hit & Run-->
 
