@@ -8,7 +8,7 @@ D- 45dds compression fixes in icons
 - merc ship promotion fixes for ocean traversal
 - all new merc/future unit promotion correction
 D- late game gold surplus rebalance
-- unit maintenance rebalance
+D- unit maintenance rebalance
 - higher strat resource costs for certain units
 - domination spy fixes
 - final: unique unit/ cold war hot scenario
@@ -45,6 +45,8 @@ D- domination great game rebalance
 - integrate fish resource fixes
 - neo-dreadnought -> Juggernaut
 - CS cannot build many buildings/deliberation
+- AI Artillery promotions for siege
+- AI ship promotion vs cities
 
 -----------------------------------------------------------------------------------------------
 
