@@ -168,7 +168,7 @@
 			<Where Name="TRADE_ROUTE_CAPITAL_POP_GOLD_MULTIPLIER" />
 		</Update>
 		<Update>
-			<Set Value="50"/>
+			<Set Value="25"/>
 			<Where Name="TRADE_ROUTE_CITY_POP_GOLD_MULTIPLIER" />
 		</Update>
 		<Update>
@@ -770,11 +770,11 @@
 		<!--International Trade-->
 
 		<Update>
-			<Set Value="30"/>
+			<Set Value="10"/>
 			<Where Name="INTERNATIONAL_TRADE_BASE" />
 		</Update>
 		<Update>
-			<Set Value="25"/>
+			<Set Value="50"/>
 			<Where Name="INTERNATIONAL_TRADE_CITY_GPT_DIVISOR" />
 		</Update>
 
