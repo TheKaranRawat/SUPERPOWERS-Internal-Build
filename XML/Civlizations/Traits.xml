@@ -1463,9 +1463,9 @@
 
 		<Row> 
 			<TraitType>TRAIT_KAMEHAMEHA_2</TraitType> 
-			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType> 
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType> 
 			<YieldType>YIELD_CULTURE</YieldType> 
-			<Yield>3</Yield> 
+			<Yield>5</Yield> 
 		</Row>
 		
 	</Trait_ImprovementYieldChanges>
@@ -2429,33 +2429,33 @@
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
+		</Row>
+
+		<Row>
+			<TraitType>TRAIT_WAYFINDING</TraitType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WAYFINDING</TraitType>
+			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+		<Row>
+			<TraitType>TRAIT_WAYFINDING</TraitType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_WAYFINDING</TraitType>
+			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
 		</Row>-->
-
-		<Row>
-			<TraitType>TRAIT_WAYFINDING</TraitType>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
-		</Row>
-		<Row>
-			<TraitType>TRAIT_WAYFINDING</TraitType>
-			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
-		</Row>
-
-		<Row>
-			<TraitType>TRAIT_WAYFINDING</TraitType>
-			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
-		</Row>
-		<Row>
-			<TraitType>TRAIT_WAYFINDING</TraitType>
-			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
-		</Row>
 
 		<Row>
 			<TraitType>TRAIT_VIKING_FURY</TraitType>
@@ -2795,6 +2795,18 @@
 	</Building_BuildingClassYieldChanges>			
 
 
+	<Building_TerrainYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_TB_WAYFINDING</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+	</Building_TerrainYieldChanges>
+
+
+
+
 	<Building_YieldChanges>
 		<Row>
 			<BuildingType>BUILDING_TB_CAPITAL_BUILDINGS_CHEAPER</BuildingType>
@@ -2820,6 +2832,9 @@
 		</Row>
 
 	</Building_YieldChanges>
+
+
+	
 
 <!--	Egypt river (1p,1g)	-->
 	<Building_RiverPlotYieldChanges>
