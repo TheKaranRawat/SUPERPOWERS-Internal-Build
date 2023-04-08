@@ -1828,8 +1828,13 @@
 		<Row>
 			<BuildingType>BUILDING_MOROCCO_MARKET</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>2</Yield>
+			<Yield>4</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_BAZAAR</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>		
 		<Row>
 			<BuildingType>BUILDING_BAZAAR</BuildingType>
 			<YieldType>YIELD_FAITH</YieldType>
@@ -4019,6 +4024,13 @@
 		</Row>
 
 		<Row>
+			<BuildingType>BUILDING_BAZAAR</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>25</Yield>
+		</Row>
+
+
+		<Row>
 			<BuildingType>BUILDING_PUPPET_GOVERNEMENT_FULL</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>33</Yield>
@@ -5739,6 +5751,24 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>2</Yield>
 		</Row>
+		<Row>
+			<BuildingType>BUILDING_BAZAAR</BuildingType>
+			<FeatureType>FEATURE_OASIS</FeatureType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_BAZAAR</BuildingType>
+			<FeatureType>FEATURE_OASIS</FeatureType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>2</Yield>
+		</Row>	
+		<Row>
+			<BuildingType>BUILDING_BAZAAR</BuildingType>
+			<FeatureType>FEATURE_OASIS</FeatureType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>				
 		
 
 		<Row>
@@ -6748,11 +6778,11 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>25</Yield>
 		</Row>
-		<!--<Row>
+		<Row>
 			<BuildingType>BUILDING_BAZAAR</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>25</Yield>
-		</Row>-->
+		</Row>
 		<Row>
 			<BuildingType>BUILDING_BANK</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
