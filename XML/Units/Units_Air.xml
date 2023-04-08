@@ -799,7 +799,7 @@
 			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
 			<PortraitIndex>40</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
-			<ExtraMaintenanceCost>10</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>0</ExtraMaintenanceCost>
 		</Row>
 
 		
@@ -837,7 +837,7 @@
 			<IconAtlas>SPUNITS01_ATLAS</IconAtlas>
 			<PortraitIndex>43</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
-			<ExtraMaintenanceCost>15</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>0</ExtraMaintenanceCost>
 		</Row>
 		<Row>
 			<Class>UNITCLASS_CARRIER_FIGHTER_JET</Class>
@@ -873,7 +873,7 @@
 			<IconAtlas>SPUNITS01_ATLAS</IconAtlas>
 			<PortraitIndex>29</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
-			<ExtraMaintenanceCost>15</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>0</ExtraMaintenanceCost>
 		</Row>
 
 		<Row>
@@ -910,7 +910,7 @@
 			<IconAtlas>SPUNITS01_ATLAS</IconAtlas>
 			<PortraitIndex>29</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
-			<ExtraMaintenanceCost>15</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>0</ExtraMaintenanceCost>
 		</Row>
 		
 		
@@ -947,7 +947,7 @@
 			<IconAtlas>SPUNITS01_ATLAS</IconAtlas>
 			<PortraitIndex>44</PortraitIndex>
 			<MoveRate>AIR_REBASE</MoveRate>
-			<ExtraMaintenanceCost>20</ExtraMaintenanceCost>
+			<ExtraMaintenanceCost>0</ExtraMaintenanceCost>
 		</Row>
 		
 
