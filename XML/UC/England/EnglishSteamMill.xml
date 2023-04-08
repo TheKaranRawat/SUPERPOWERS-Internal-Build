@@ -85,9 +85,28 @@
 		<Row>
 			<BuildingType>BUILDING_ENGLISH_STEAM_MILL</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>20</Yield>
+			<Yield>3</Yield>
 		</Row>
 	</Building_YieldChanges>
+
+
+	<Building_YieldChangesPerPop>
+		<Row>
+			<BuildingType>BUILDING_ENGLISH_STEAM_MILL</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>20</Yield>
+		</Row>	
+	</Building_YieldChangesPerPop>	
+
+
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_ENGLISH_STEAM_MILL</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>10</Yield>
+		</Row>		
+	<Building_YieldModifiers>	
+
 
 	<Civilization_BuildingClassOverrides>
 		<Row>
