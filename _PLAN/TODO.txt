@@ -7,7 +7,7 @@ D- better CS city defences after capture
 D- 45dds compression fixes in icons
 - merc ship promotion fixes for ocean traversal
 - all new merc/future unit promotion correction
-- late game gold surplus rebalance
+D- late game gold surplus rebalance
 - unit maintenance rebalance
 - higher strat resource costs for certain units
 - domination spy fixes
