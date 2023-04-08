@@ -9,7 +9,7 @@
 			<ID>0</ID>
 			<Class>UNITCLASS_SETTLER</Class>
 			<Type>UNIT_SETTLER</Type>
-			<Moves>1</Moves>
+			<Moves>2</Moves>
 			<BaseSightRange>3</BaseSightRange>
 			<Capture>UNITCLASS_SETTLER</Capture>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
