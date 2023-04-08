@@ -2957,6 +2957,37 @@
 		<Row Tag="TXT_KEY_BUILDING_PALISADE_WALL">
 			<Text>[ICON_WAR] Palisade Wall</Text>
 		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_PALISADE_WALL_CS">
+			<Text>[ICON_WAR] City State Palisade Wall</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WALLS_CS">
+			<Text>[ICON_STRENGTH] City State Walls</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CASTLE_CS">
+			<Text>[ICON_STRENGTH] City State Castle</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_BARRACKS_CS">
+			<Text>[ICON_WAR] City State Barracks</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARMORY_CS">
+			<Text>[ICON_WAR] City State Armory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_ARSENAL_CS">
+			<Text>[ICON_WAR] City State Arsenal</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_MILITARY_BASE_CS">
+			<Text>[ICON_WAR] City State Military Base</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_WOOD_DOCK_CS">
+			<Text>[ICON_WAR] City State Dock</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SHIPYARD_CS">
+			<Text>[ICON_WAR] City State Shipyard</Text>
+		</Row>
+
 		<Row Tag="TXT_KEY_BUILDING_POTTER">
 			<Text>[ICON_PRODUCTION] Potter</Text>
 		</Row>
@@ -2976,6 +3007,7 @@
 		<Row Tag="TXT_KEY_BUILDING_WALLS_HELP">
 			<Text>Requires a Palisade Wall.</Text>
 		</Row>
+
 		<!-- Pedia Tags-->
 		<Row Tag="TXT_KEY_BUILDING_PALISADE_WALL_PEDIA">
 			<Text>Both the Greeks and Romans created palisades to protect their military camps. The Roman historian Livy describes the Greek method as being inferior to that of the Romans during the Second Macedonian War. The Greek stakes were too large to be easily carried, and were spaced too far apart. This made it easy for enemies to uproot them and create a large enough gap in which to enter. In contrast, the Romans used smaller and easier to carry stakes which were placed closer together, making them more difficult to uproot.[NEWLINE][NEWLINE]--Wikipedia</Text>
