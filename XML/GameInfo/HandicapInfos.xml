@@ -386,7 +386,7 @@
 				<AIStartingExploreUnits>2</AIStartingExploreUnits>
 				<AIStartingWorkerUnits>2</AIStartingWorkerUnits>
 				<!--<AIStartingUnitMultiplier>1</AIStartingUnitMultiplier>-->
-				<AIDeclareWarProb>500</AIDeclareWarProb>
+				<AIDeclareWarProb>400</AIDeclareWarProb>
 				<AIWorkRateModifier>350</AIWorkRateModifier>
 				<AIUnhappinessPercent>25</AIUnhappinessPercent>
 				<AIGrowthPercent>30</AIGrowthPercent>
@@ -446,7 +446,7 @@
 				<AIStartingExploreUnits>2</AIStartingExploreUnits>
 				<AIStartingWorkerUnits>2</AIStartingWorkerUnits>
 				<AIStartingUnitMultiplier>1</AIStartingUnitMultiplier>
-				<AIDeclareWarProb>1500</AIDeclareWarProb>
+				<AIDeclareWarProb>1000</AIDeclareWarProb>
 				<AIWorkRateModifier>400</AIWorkRateModifier>
 				<AIUnhappinessPercent>10</AIUnhappinessPercent>
 				<AIGrowthPercent>20</AIGrowthPercent>
