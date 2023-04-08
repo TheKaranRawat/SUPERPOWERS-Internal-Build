@@ -337,6 +337,10 @@
 	<!-- ***************************Palace***************************-->
 	<Buildings>
 
+
+
+
+
 		<Row>
 			<Type>BUILDING_FW_ULTIMATOWER</Type>
 			<BuildingClass>BUILDINGCLASS_FW_ULTIMATOWER</BuildingClass>
@@ -1854,6 +1858,215 @@
 	<!-- ***************************World Wonders***************************-->
 
 	<Buildings>
+
+
+
+		<Row>
+			<Type>BUILDING_TAIPEI</Type>
+			<BuildingClass>BUILDINGCLASS_TAIPEI</BuildingClass>
+			<Description>TXT_KEY_BUILDING_TAIPEI</Description>
+			<Help>TXT_KEY_WONDER_TAIPEI_HELP</Help>
+			<Civilopedia>TXT_KEY_WONDER_TAIPEI_PEDIA</Civilopedia>
+			<Quote>TXT_KEY_WONDER_TAIPEI_QUOTE</Quote>
+			<Cost>1250</Cost>
+			<PrereqTech>TECH_TELECOM</PrereqTech>
+			<MaxStartEra>ERA_FUTURE</MaxStartEra>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<GreatPeopleRateChange>3</GreatPeopleRateChange>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<Gold>10</Gold>
+			<IconAtlas>BW_ATLAS_TAIPEI</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<WonderSplashImage>TAIPEI_splash.dds</WonderSplashImage>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_ARECIBO</Type>
+			<BuildingClass>BUILDINGCLASS_ARECIBO</BuildingClass>
+			<Description>TXT_KEY_BUILDING_ARECIBO</Description>
+			<Help>TXT_KEY_WONDER_ARECIBO_HELP</Help>
+			<Civilopedia>TXT_KEY_WONDER_ARECIBO_PEDIA</Civilopedia>
+			<Quote>TXT_KEY_WONDER_ARECIBO_QUOTE</Quote>
+			<Cost>1250</Cost>
+			<PrereqTech>TECH_RADAR</PrereqTech>
+			<MaxStartEra>ERA_FUTURE</MaxStartEra>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<GreatPeopleRateChange>3</GreatPeopleRateChange>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<SpaceProductionModifier>50</SpaceProductionModifier>
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>BW_ATLAS_ARECIBO</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<WonderSplashImage>ARECIBO_splash.dds</WonderSplashImage>
+			<WonderSplashAnchor>R,B</WonderSplashAnchor>
+		</Row>
+		
+		<Row>
+			<Type>BUILDING_WILLIS</Type>
+			<BuildingClass>BUILDINGCLASS_WILLIS</BuildingClass>
+			<Cost>950</Cost>
+			<PrereqTech>TECH_ADV_FLIGHT</PrereqTech>
+			<Help>TXT_KEY_WONDER_WILLIS_HELP</Help>
+			<Description>TXT_KEY_BUILDING_WILLIS</Description>
+			<Civilopedia>TXT_KEY_WONDER_WILLIS_PEDIA</Civilopedia>
+			<Quote>TXT_KEY_WONDER_WILLIS_QUOTE</Quote>
+			<NukeImmune>true</NukeImmune>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<FreeBuildingThisCity>BUILDINGCLASS_BROADCAST_TOWER</FreeBuildingThisCity>
+	        <IconAtlas>WILLIS_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<WonderSplashImage>willis_splash.dds</WonderSplashImage>
+			<WonderSplashAnchor>R,T</WonderSplashAnchor>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_WASHINGTON</Type>
+			<BuildingClass>BUILDINGCLASS_WASHINGTON</BuildingClass>
+			<Description>TXT_KEY_BUILDING_WASHINGTON</Description>
+			<Help>TXT_KEY_WONDER_WASHINGTON_HELP</Help>
+			<Civilopedia>TXT_KEY_WONDER_WASHINGTON_PEDIA</Civilopedia>
+			<Quote>TXT_KEY_WONDER_WASHINGTON_QUOTE</Quote>
+			<Cost>750</Cost>
+			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
+			<MaxStartEra>ERA_MODERN</MaxStartEra>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<GlobalGreatPeopleRateModifier>25</GlobalGreatPeopleRateModifier>
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>BW_ATLAS_WASHINGTON</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<WonderSplashImage>WASHINGTON_splash.dds</WonderSplashImage>
+			<WonderSplashAnchor>R,T</WonderSplashAnchor>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_ABER</Type>
+			<BuildingClass>BUILDINGCLASS_ABER</BuildingClass>
+			<Description>TXT_KEY_BUILDING_ABER</Description>
+			<Help>TXT_KEY_WONDER_ABER_HELP</Help>
+			<Civilopedia>TXT_KEY_WONDER_ABER_PEDIA</Civilopedia>
+			<Quote>TXT_KEY_WONDER_ABER_QUOTE</Quote>
+			<Cost>400</Cost>
+			<Hill>true</Hill>
+			<PrereqTech>TECH_PHYSICS</PrereqTech>
+			<MaxStartEra>ERA_RENAISSANCE</MaxStartEra>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<ExtraLeagueVotes>1</ExtraLeagueVotes>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>BW_ATLAS_DIWALI</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+			<WonderSplashImage>ABER_splash.dds</WonderSplashImage>
+			<WonderSplashAnchor>L,T</WonderSplashAnchor>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_AGRA</Type>
+			<BuildingClass>BUILDINGCLASS_AGRA</BuildingClass>
+			<Description>TXT_KEY_BUILDING_AGRA</Description>
+			<Help>TXT_KEY_WONDER_AGRA_HELP</Help>
+			<Civilopedia>TXT_KEY_WONDER_AGRA_PEDIA</Civilopedia>
+			<Quote>TXT_KEY_WONDER_AGRA_QUOTE</Quote>
+			<Cost>500</Cost>
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<ExtraCityHitPoints>150</ExtraCityHitPoints>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>BW_ATLAS_DIWALI</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+			<WonderSplashImage>AGRA_splash.dds</WonderSplashImage>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_HARMANDIR</Type>
+			<BuildingClass>BUILDINGCLASS_HARMANDIR</BuildingClass>
+			<Description>TXT_KEY_BUILDING_HARMANDIR</Description>
+			<Help>TXT_KEY_WONDER_HARMANDIR_HELP</Help>
+			<Civilopedia>TXT_KEY_WONDER_HARMANDIR_PEDIA</Civilopedia>
+			<Quote>TXT_KEY_WONDER_HARMANDIR_QUOTE</Quote>
+			<Cost>625</Cost>
+			<PrereqTech>TECH_METALLURGY</PrereqTech>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<SpecialistCount>2</SpecialistCount>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>BW_ATLAS_DIWALI</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<WonderSplashImage>HARMANDIR_splash.dds</WonderSplashImage>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_HAWA</Type>
+			<BuildingClass>BUILDINGCLASS_HAWA</BuildingClass>
+			<Description>TXT_KEY_BUILDING_HAWA</Description>
+			<Help>TXT_KEY_WONDER_HAWA_HELP</Help>
+			<Civilopedia>TXT_KEY_WONDER_HAWA_PEDIA</Civilopedia>
+			<Quote>TXT_KEY_WONDER_HAWA_QUOTE</Quote>
+			<Cost>625</Cost>
+			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>BW_ATLAS_DIWALI</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+			<WonderSplashImage>HAWA_splash.dds</WonderSplashImage>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+
+		<Row>
+			<Type>BUILDING_MAHADEVA</Type>
+			<BuildingClass>BUILDINGCLASS_MAHADEVA</BuildingClass>
+			<Description>TXT_KEY_BUILDING_MAHADEVA</Description>
+			<Help>TXT_KEY_WONDER_MAHADEVA_HELP</Help>
+			<Civilopedia>TXT_KEY_WONDER_MAHADEVA_PEDIA</Civilopedia>
+			<Quote>TXT_KEY_WONDER_MAHADEVA_QUOTE</Quote>
+			<Cost>300</Cost>
+			<PrereqTech>TECH_THEOLOGY</PrereqTech>
+			<MaxStartEra>ERA_RENAISSANCE</MaxStartEra>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<NukeImmune>true</NukeImmune>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<IconAtlas>BW_ATLAS_DIWALI</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+			<WonderSplashImage>MAHADEVA_splash.dds</WonderSplashImage>
+			<WonderSplashAnchor>L,B</WonderSplashAnchor>
+		</Row>
+
+
 		<Row>
 			<Type>BUILDING_TEMPLE_ARTEMIS</Type>
 			<BuildingClass>BUILDINGCLASS_TEMPLE_ARTEMIS</BuildingClass>
