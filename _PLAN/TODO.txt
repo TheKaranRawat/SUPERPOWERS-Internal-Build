@@ -3,7 +3,7 @@ D- unit obsolescence information to future
 TD- improvement osbsolescence?
 D- carl gustav era change
 TD- carrier resupply for players
-- better CS city defences after capture
+D- better CS city defences after capture
 D- 45dds compression fixes in icons
 - merc ship promotion fixes for ocean traversal
 - all new merc/future unit promotion correction
