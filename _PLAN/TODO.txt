@@ -5,27 +5,27 @@ D- carl gustav era change
 TD- carrier resupply for players
 D- better CS city defences after capture
 D- 45dds compression fixes in icons
-- merc ship promotion fixes for ocean traversal
-- all new merc/future unit promotion correction
+D- merc ship promotion fixes for ocean traversal
+D- all new merc/future unit promotion correction
 D- late game gold surplus rebalance
 D- unit maintenance rebalance
 - higher strat resource costs for certain units
-- domination spy fixes
-- final: unique unit/ cold war hot scenario
+D- domination spy fixes
+TD- final: unique unit/ cold war hot scenario
 TD- UI: toast notifications for important events
-- intro scene for changelog and fixes
-- internal trade policy fix mercantilism
-- new loading screens
-- some art changes
-- ministries changes
+TD- intro scene for changelog and fixes
+TD- internal trade policy fix mercantilism
+TD- new loading screens
+TD- some art changes
+TD- ministries changes
 - remove tech deficit from electricity (maybe)
 - add tech deficit surplus indicators
-- military class icons
-- new promotion icons
-- more ancient era units
-- scg search function
-- happ rework
-- more unit maintenance
+TD- military class icons
+TD- new promotion icons
+TD- more ancient era units
+TD- scg search function
+D- happ rework
+D- more unit maintenance
 
 TD- enable policy trees for the early game
 D- future tech arrangement 
@@ -47,6 +47,17 @@ D- domination great game rebalance
 - CS cannot build many buildings/deliberation
 - AI Artillery promotions for siege
 - AI ship promotion vs cities
+- increase supply
+- fix IGE
+- allow purchasing in puppets
+- spawn preferences for civs
+- lakes yield
+- fix fireships
+- transfer fish farm yield to coast
+- transfer deep sea rig yield to ocean
+- integrate changes
+- city text fixes
+- cruiser air sweep balance
 
 -----------------------------------------------------------------------------------------------
 
@@ -67,3 +78,4 @@ BUILDING REPLACEMENT FOR CS
 	BUILDING_WOOD_DOCK			BUILDINGCLASS_WOOD_DOCK			BUILDING_WOOD_DOCK_CS			TXT_KEY_BUILDING_WOOD_DOCK
 	BUILDING_SHIPYARD			BUILDINGCLASS_SHIPYARD			BUILDING_SHIPYARD_CS			TXT_KEY_BUILDING_SHIPYARD
 	
+Unit_ResourceQuantityRequirements

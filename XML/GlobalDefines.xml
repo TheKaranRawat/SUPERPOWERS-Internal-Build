@@ -38,7 +38,7 @@
 
 
 		<Update>
-			<Set Value="4"/>
+			<Set Value="10"/>
 			<Where Name="RIVER_EXTRA_MOVEMENT" />
 		</Update>
 
@@ -195,7 +195,7 @@
 
 		<!-- City Damage-->
 		<Update>
-			<Set Value="60"/>
+			<Set Value="50"/>
 			<Where Name="NUKE_FALLOUT_PROB" />
 		</Update>
 		<Update>
@@ -215,7 +215,7 @@
 			<Where Name="NUKE_LEVEL2_POPULATION_DEATH_BASE" />
 		</Update>
 		<Update>
-			<Set Value="5"/>
+			<Set Value="15"/>
 			<Where Name="NUKE_LEVEL2_ELIM_POPULATION_THRESHOLD" />
 		</Update>
 		<Update>
@@ -251,12 +251,12 @@
 		</Update>
 
 		<Update>
-			<Set Value="-25"/>
+			<Set Value="-40"/>
 			<Where Name="VERY_UNHAPPY_GROWTH_PENALTY" />
 		</Update>
 
 		<Update>
-			<Set Value="-15"/>
+			<Set Value="-50"/>
 			<Where Name="VERY_UNHAPPY_THRESHOLD" />
 		</Update>
 
@@ -266,13 +266,13 @@
 		</Update>
 
 		<Update>
-			<Set Value="-20"/>
+			<Set Value="-40"/>
 			<Where Name="VERY_UNHAPPY_MAX_COMBAT_PENALTY" />
 		</Update>
 
 
 		<Update>
-			<Set Value="-35"/>
+			<Set Value="-40"/>
 			<Where Name="STRATEGIC_RESOURCE_EXHAUSTED_PENALTY" />
 		</Update>
 
@@ -297,7 +297,7 @@
 		</Update>
 
 		<Update>
-			<Set Value="-50"/>
+			<Set Value="-100"/>
 			<Where Name="SUPER_UNHAPPY_THRESHOLD" />
 		</Update>
 
@@ -326,7 +326,7 @@
 		<!-- REVOLT/ CITY FLIP-->
 
 		<Update>
-			<Set Value="10"/>
+			<Set Value="6"/>
 			<Where Name="REVOLT_COUNTER_MIN" />
 		</Update>
 
@@ -338,7 +338,7 @@
 		<!-- ECONOMIC -->
 
 		<Update>
-			<Set Value="100"/>
+			<Set Value="150"/>
 			<Where Name="NEW_HURRY_MODIFIER" />
 		</Update>
 
@@ -427,7 +427,7 @@
 			<Where Name="CITY_MIN_SIZE_FOR_SETTLERS" />
 		</Update>
 		<Update>
-			<Set Value="100"/>
+			<Set Value="150"/>
 			<Where Name="SETTLER_BUILD_ON_COAST_PERCENT" />
 		</Update>
 		<Update>
@@ -435,11 +435,11 @@
 			<Where Name="BUILD_ON_RIVER_PERCENT" />
 		</Update>
 		<Update>
-			<Set Value="10"/>
+			<Set Value="11"/>
 			<Where Name="SETTLER_EVALUATION_DISTANCE" />
 		</Update>
 		<Update>
-			<Set Value="75"/>
+			<Set Value="25"/>
 			<Where Name="SETTLER_DISTANCE_DROPOFF_MODIFIER" />
 		</Update>
 		<Update>
@@ -680,7 +680,7 @@
 			<Where Name="CULTURE_COST_LATER_PLOT_EXPONENT" />
 		</Update>
 		<Update>
-			<Set Value="7"/>
+			<Set Value="5"/>
 			<Where Name="MAXIMUM_ACQUIRE_PLOT_DISTANCE" />
 		</Update>
 
@@ -752,7 +752,7 @@
 			<Where Name="ESPIONAGE_GATHERING_INTEL_RATE_BY_SPY_RANK_PERCENT" />
 		</Update>
 		<Update>
-			<Set Value="3"/>
+			<Set Value="2"/>
 			<Where Name="ESPIONAGE_SURVEILLANCE_SIGHT_RANGE" />
 		</Update>
 		<Update>
@@ -805,15 +805,38 @@
 			<Set Value="100"/>
 			<Where Name="PERCENT_HIDDEN_SITES_WRITING" />
 		</Update>
-
+		
+		<!-- CITY ESTABLISHMENT DEFINES -->
 		<Update>
 			<Set Value="1"/>
 			<Where Name="BUILD_ON_RESOURCE_PERCENT" />
 		</Update>
 		<Update>
-			<Set Value="80"/>
+			<Set Value="-800"/>
 			<Where Name="ALREADY_OWNED_STRATEGIC_VALUE" />
 		</Update>
+		<Update>
+			<Where Name="CITY_RING_1_MULTIPLIER" />
+			<Set Value="6"/>			
+		</Update>
+		<Update>
+			<Where Name="CITY_RING_2_MULTIPLIER" />
+			<Set Value="5"/>			
+		</Update>
+		<Update>
+			<Where Name="CITY_RING_3_MULTIPLIER" />
+			<Set Value="4"/>			
+		</Update>
+		<Update>
+			<Where Name="CITY_RING_4_MULTIPLIER" />
+			<Set Value="3"/>			
+		</Update>
+		<Update>
+			<Where Name="CITY_RING_5_MULTIPLIER" />
+			<Set Value="2"/>			
+		</Update>
+
+
 		<Update>
 			<Set Value="1200"/>
 			<Where Name="ATTACK_SAME_STRENGTH_POSSIBLE_EXTRA_DAMAGE" />
@@ -821,11 +844,11 @@
 		
 		<!-- Puppet Changes -->
 		<Update>
-			<Set Value="-33"/>
+			<Set Value="-20"/>
 			<Where Name="PUPPET_SCIENCE_MODIFIER" />
 		</Update>
 		<Update>
-			<Set Value="-33"/>
+			<Set Value="-20"/>
 			<Where Name="PUPPET_CULTURE_MODIFIER" />
 		</Update>
 
@@ -884,6 +907,17 @@
                 <Value>4</Value>
             </Set>
         </Update>
+
+		<!-- MORE MISC -->
+		<Update>
+			<Where Name="EVENT_MESSAGE_TIME" />
+			<Set Value="20"/>			
+		</Update>
+
+
+
+
+
 
 	</Defines>
 

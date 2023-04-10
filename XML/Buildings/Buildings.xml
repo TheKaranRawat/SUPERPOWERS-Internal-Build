@@ -4302,7 +4302,6 @@
 			<Defense>1000</Defense>
 			<ExtraCityHitPoints>50</ExtraCityHitPoints>
 			<CityWall>true</CityWall>
-			<ConquestProb>100</ConquestProb>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<ConquestProb>100</ConquestProb>
@@ -4325,7 +4324,6 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
 			<Defense>2500</Defense>
-			<ConquestProb>100</ConquestProb>
 			<ExtraCityHitPoints>50</ExtraCityHitPoints>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
