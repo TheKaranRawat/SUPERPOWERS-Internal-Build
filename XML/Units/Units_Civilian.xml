@@ -11,6 +11,7 @@
 			<Type>UNIT_SETTLER</Type>
 			<Moves>2</Moves>
 			<BaseSightRange>1</BaseSightRange>
+			<Capture>UNITCLASS_SETTLER</Capture>
 			<!--<Capture>UNITCLASS_WORKER</Capture>-->
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
 			<HurryCostModifier>-1</HurryCostModifier>
