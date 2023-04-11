@@ -1442,7 +1442,7 @@
 		</Row>
 		<Row>
 			<TraitType>TRAIT_CONVERTS_SEA_BARBARIANS</TraitType>
-			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>4</Yield>
 		</Row>
@@ -1496,6 +1496,13 @@
 			<FeatureType>FEATURE_OASIS</FeatureType>
 			<YieldType>YIELD_FAITH</YieldType>
 			<Yield>2</Yield>
+		</Row>
+
+		<Row>
+			<TraitType>TRAIT_CONVERTS_SEA_BARBARIANS</TraitType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>4</Yield>
 		</Row>
 	</Trait_UnimprovedFeatureYieldChanges>
 

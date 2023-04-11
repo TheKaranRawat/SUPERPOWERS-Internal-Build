@@ -196,7 +196,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_TRAIT_CONVERTS_SEA_BARBARIANS">
-			<Text>[ICON_BULLET]+4 [ICON_PRODUCTION]Production for every Quarry, Fishing Net. +8 [ICON_PRODUCTION]Production from Strategic Resources. 
+			<Text>[ICON_BULLET]+4 [ICON_PRODUCTION]Production for every Quarry, Fishing Net and Forest. +8 [ICON_PRODUCTION]Production from Fishing Nets and Strategic Resources. 
 				[NEWLINE][ICON_BULLET]+25% speed for [ICON_WORKER]Worker's Tile Improvement construction rate. 
 				[NEWLINE][ICON_BULLET]Ottoman Administration grants faster city border growth rate.
 				[NEWLINE][ICON_BULLET]Land Unit [ICON_GOLD]Maintenance is reduced by 30% after researching Industrialization.
