@@ -6,7 +6,7 @@
 			<Class>UNITCLASS_TACTICAL_NUCLEAR_MISSILE</Class>
 			<Type>UNIT_TACTICAL_NUCLEAR_MISSILE</Type>
 			<PrereqTech>TECH_ADVANCED_BALLISTICS</PrereqTech>
-			<RangedCombat>1200</RangedCombat>
+			<RangedCombat>2000</RangedCombat>
 			<Cost>1500</Cost>
 			<Moves>2</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>

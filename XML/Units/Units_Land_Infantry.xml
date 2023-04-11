@@ -2105,6 +2105,11 @@
 			<PromotionType>PROMOTION_FW_NETWORKED</PromotionType>
 		</Row>
 		<Row>
+			<UnitType>UNIT_FW_ROBOT_INFANTRY</UnitType>
+			<PromotionType>PROMOTION_NO_CASUALTIES</PromotionType>
+		</Row>
+
+		<Row>
 			<UnitType>UNIT_FW_CRAWLER</UnitType>
 			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
 		</Row>

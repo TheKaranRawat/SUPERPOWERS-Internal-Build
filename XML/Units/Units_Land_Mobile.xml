@@ -975,9 +975,9 @@
 			<Class>UNITCLASS_FW_RAILGUN_TANK</Class>
 			<Type>UNIT_FW_RAILGUN_TANK</Type>
 			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
-			<Combat>180</Combat>
+			<Combat>250</Combat>
 			<Cost>2000</Cost>
-			<Moves>5</Moves>
+			<Moves>6</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -2483,6 +2483,11 @@
 			<UnitType>UNIT_PERSIAN_ZULFIQAR</UnitType>
 			<PromotionType>PROMOTION_UNLIMITED_ATTACK</PromotionType>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
+			<PromotionType>PROMOTION_TANK_COMBAT</PromotionType>
+		</Row>	
 
 
 		<!--Hit and Run-->

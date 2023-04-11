@@ -92,7 +92,7 @@
 	<ArtDefine_UnitMemberInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_MEMBER_FW_BATTLESUIT</Type>
-			<Scale>0.06</Scale>
+			<Scale>0.08</Scale>
 			<Model>Battlesuit.fxsxml</Model>
 			<MaterialTypeTag>METAL</MaterialTypeTag>
 			<MaterialTypeSoundOverrideTag>METALLRG</MaterialTypeSoundOverrideTag>
@@ -167,7 +167,7 @@
 	<ArtDefine_UnitMemberInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_MEMBER_FW_CRAWLER</Type>
-			<Scale>0.13</Scale>
+			<Scale>0.06</Scale>
 			<Model>Crawler.fxsxml</Model>
 			<MaterialTypeTag>METAL</MaterialTypeTag>
 			<MaterialTypeSoundOverrideTag>METALSM</MaterialTypeSoundOverrideTag>
@@ -490,7 +490,7 @@
 	<ArtDefine_UnitMemberInfos>
 		<Row>
 			<Type>ART_DEF_UNIT_MEMBER_FW_MECH_ARTILLERY</Type>
-			<Scale>0.0900000035762787</Scale>
+			<Scale>0.11</Scale>
 			<Model>MechArtillery.fxsxml</Model>
 			<MaterialTypeTag>METAL</MaterialTypeTag>
 			<MaterialTypeSoundOverrideTag>METALSM</MaterialTypeSoundOverrideTag>
