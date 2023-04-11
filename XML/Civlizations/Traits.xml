@@ -1449,9 +1449,9 @@
 
 		<Row> 
 			<TraitType>TRAIT_GAJAH_2</TraitType> 
-			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType> 
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType> 
 			<YieldType>YIELD_FOOD</YieldType> 
-			<Yield>3</Yield> 
+			<Yield>5</Yield> 
 		</Row>
 
 		<Row> 
