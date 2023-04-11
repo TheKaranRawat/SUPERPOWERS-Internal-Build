@@ -158,7 +158,7 @@
 		<Replace Tag="TXT_KEY_TRAIT_VIKING_FURY">
 			<Text>[ICON_BULLET]Land Melee units and Naval Melee units use no [ICON_MOVES]Movement to pillage, and pillage [ICON_GOLD]Gold equal to 300% of the damage inflicted on a city. 
 				[NEWLINE][ICON_BULLET]Receive triple [ICON_GOLD]Gold from Barbarian Encampments or pillaging [ICON_CITY_STATE]Cities. 
-				[NEWLINE][ICON_BULLET]The Danes are a nation of proud seafarers; gain +2 [ICON_CULTURE]Culture from every Fishing Net, Workboat and Offshore Platform. 
+				[NEWLINE][ICON_BULLET]The Danes are a nation of proud seafarers; gain +2 [ICON_CULTURE]Culture and +2 [ICON_FOOD]Food from Coast Tiles after building the Smokehouse. 
 				[NEWLINE][ICON_BULLET][ICON_FOOD] Food, [ICON_CULTURE] Culture, and [ICON_PEACE] Faith from friendly City-States increased by 150%, after researching Industrialization.
 			</Text>
 		</Replace>

@@ -2424,7 +2424,7 @@
 			<Yield>4</Yield>
 		</Row>
 
-
+		<!--
 		<Row>
 			<TraitType>TRAIT_VIKING_FURY</TraitType>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
@@ -2437,7 +2437,7 @@
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
 		</Row>
-
+	--> 
 		<Row>
 			<TraitType>TRAIT_WAYFINDING</TraitType>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
@@ -2464,12 +2464,15 @@
 			<Yield>2</Yield>
 		</Row>
 
+		<!--
 		<Row>
 			<TraitType>TRAIT_VIKING_FURY</TraitType>
 			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
 		</Row>
+		-->
+		
 	</Trait_ImprovementYieldChanges>
 
 
