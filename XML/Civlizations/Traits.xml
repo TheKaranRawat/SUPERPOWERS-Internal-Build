@@ -1463,9 +1463,9 @@
 
 		<Row> 
 			<TraitType>TRAIT_KAMEHAMEHA_2</TraitType> 
-			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType> 
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType> 
 			<YieldType>YIELD_CULTURE</YieldType> 
-			<Yield>3</Yield> 
+			<Yield>8</Yield> 
 		</Row>
 		
 	</Trait_ImprovementYieldChanges>
@@ -2444,12 +2444,7 @@
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		<Row>
-			<TraitType>TRAIT_WAYFINDING</TraitType>
-			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>1</Yield>
-		</Row>
+		
 
 		<Row>
 			<TraitType>TRAIT_WAYFINDING</TraitType>
@@ -2457,12 +2452,7 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>2</Yield>
 		</Row>
-		<Row>
-			<TraitType>TRAIT_WAYFINDING</TraitType>
-			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
-			<YieldType>YIELD_FOOD</YieldType>
-			<Yield>2</Yield>
-		</Row>
+		
 
 		<!--
 		<Row>

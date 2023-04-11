@@ -267,8 +267,8 @@
 		<Replace Tag="TXT_KEY_TRAIT_WAYFINDING">
 			<Text>[ICON_BULLET]Can embark and move over Oceans immediately. [ICON_CITYBANNER_CITY_LV4]Level 4 and [ICON_CITYBANNER_CITY_LV5]Level 5 Cities are treated as [ICON_CITYBANNER_CITY_LV3]Level 3 Cities. 
 				[NEWLINE][ICON_BULLET]Gain a +10% [ICON_STRENGTH]Combat Strength bonus within 2 tiles of a Moai.
-				[NEWLINE][ICON_BULLET]Polynesian naval tradition grants embarked units more [ICON_MOVES]Movement; Fishing nets yield +2 [ICON_FOOD]Food and +1 [ICON_CULTURE]Culture.
-				[NEWLINE][ICON_BULLET]Fishing Nets yield an additional +3 [ICON_CULTURE]Culture after researching Industrialization.
+				[NEWLINE][ICON_BULLET]Polynesian naval tradition grants embarked units more [ICON_MOVES]Movement; Coasts yield +2 [ICON_FOOD]Food and +1 [ICON_CULTURE]Culture after building the Fale Tele.
+				[NEWLINE][ICON_BULLET]Fishing Nets yield an additional +8 [ICON_CULTURE]Culture after researching Industrialization.
 			</Text>
 		</Replace>
 

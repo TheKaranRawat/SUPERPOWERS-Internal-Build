@@ -367,17 +367,16 @@
 	
 	<Belief_ImprovementYieldChanges>
 		<Delete BeliefType="BELIEF_GOD_SEA"/>
-
-
+		
 		<Row>
 			<BeliefType>BELIEF_GOD_SEA</BeliefType>
-			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>
 		<Row>
 			<BeliefType>BELIEF_GOD_SEA</BeliefType>
-			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>

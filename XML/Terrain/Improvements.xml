@@ -609,10 +609,14 @@
 			<ImprovementType>IMPROVEMENT_PONTOON_BRIDGE_MOD</ImprovementType>
 			<TerrainType>TERRAIN_COAST</TerrainType>
 		</Row>
+
+		<!--
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
 			<TerrainType>TERRAIN_COAST</TerrainType>
 		</Row>
+		-->
+
 		<!--<Row>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<TerrainType>TERRAIN_COAST</TerrainType>
@@ -900,24 +904,26 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		-->
-
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		-->
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>2</Yield>
 		</Row>
 		
+		<!--
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		-->
 
 		<Row>
 			<ImprovementType>IMPROVEMENT_SHOSHONE_TIPI</ImprovementType>
@@ -1785,10 +1791,12 @@
 			<ResourceType>RESOURCE_WINE</ResourceType>
 		</Row>
 
+		<!--
 		<Update>
 			<Set ImprovementType="IMPROVEMENT_FISHFARM_MOD"/>
 			<Where ResourceType="RESOURCE_FISH"/>
 		</Update>
+		-->
 		<Delete ImprovementType="IMPROVEMENT_CITADEL"/>
 
 		<!--<Row>
@@ -2127,18 +2135,21 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		<!-- 
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<TechType>TECH_FERTILIZER</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
 			<TechType>TECH_FERTILIZER</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		-->
 		
 
 
@@ -2172,18 +2183,24 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+
+		<!--
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<TechType>TECH_GENETIC_ENGEERING</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
 			<TechType>TECH_GENETIC_ENGEERING</TechType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		-->
+
 		<Row>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<TechType>TECH_GENETIC_ENGEERING</TechType>

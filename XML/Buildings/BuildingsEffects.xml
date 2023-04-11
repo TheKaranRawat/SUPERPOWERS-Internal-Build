@@ -5469,6 +5469,20 @@
 			<Yield>2</Yield>
 		</Row>
 
+		<Row>
+			<BuildingType>BUILDING_CL_FALE_TELE</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+
+		<Row>
+			<BuildingType>BUILDING_CL_FALE_TELE</BuildingType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
 	</Building_TerrainYieldChanges>
 
 

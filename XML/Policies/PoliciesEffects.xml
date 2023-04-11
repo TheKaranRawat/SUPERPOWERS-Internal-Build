@@ -1345,7 +1345,7 @@
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MARITIME_INFRASTRUCTURE</PolicyType>
-			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
@@ -1358,7 +1358,7 @@
 
 		<Row>
 			<PolicyType>POLICY_MARITIME_INFRASTRUCTURE</PolicyType>
-			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
@@ -1443,14 +1443,14 @@
 
 		<Row>
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
-			<ImprovementType>IMPROVEMENT_FISHERY_MOD</ImprovementType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>2</Yield>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_ISKA_UNIVERSAL_SUFFRAGE</PolicyType>
-			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>2</Yield>
 		</Row>
