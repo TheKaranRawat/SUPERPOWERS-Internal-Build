@@ -3275,8 +3275,9 @@
 			<HealOutsideFriendly>true</HealOutsideFriendly>
 			<CannotBeChosen>true</CannotBeChosen>
 			<InterceptChanceChange>100</InterceptChanceChange>
-			<NumInterceptionChange>1</NumInterceptionChange>
-			<AirSweepCombatModifier>50</AirSweepCombatModifier>
+			<NumInterceptionChange>3</NumInterceptionChange>
+			<InterceptionCombatModifier>150</InterceptionCombatModifier>
+			<AirSweepCombatModifier>150</AirSweepCombatModifier>
 		</Row>
 
 		<Row>
@@ -3870,6 +3871,13 @@
 			<DomainType>DOMAIN_SEA</DomainType>
 			<Modifier>100</Modifier>
 		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NAVAL_RANGED_CRUISER</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>100</Modifier>
+		</Row>
+
+
 	</UnitPromotions_Domains>
 
 
