@@ -1510,6 +1510,13 @@
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_CREATE_JUNGLE</BuildType>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_ARABIAN_PROPHET</UnitType>
+			<BuildType>BUILD_HOLY_SITE</BuildType>
+		</Row>
+		
+
 	</Unit_Builds>
 
 
