@@ -239,6 +239,39 @@
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
 			<CultureChange>100</CultureChange>
 		</Row>
+
+
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<CultureChange>-2</CultureChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
+			<CultureChange>2</CultureChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
+			<CultureChange>-2</CultureChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
+			<CultureChange>-2</CultureChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
+			<CultureChange>-2</CultureChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_BROADCAST_TOWER</BuildingClassType>
+			<CultureChange>-2</CultureChange>
+		</Row>
+
 		
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
@@ -365,6 +398,10 @@
 	</Policy_BuildingClassCultureChanges>
 
 	<Policy_BuildingClassYieldChanges>
+
+
+
+
 		<Row>
 			<PolicyType>POLICY_PIETY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
@@ -377,15 +414,6 @@
 			<YieldType>YIELD_FAITH</YieldType>
 			<YieldChange>2</YieldChange>
 		</Row>
-
-
-
-
-
-
-
-
-
 
 
 		<Row>
@@ -448,61 +476,61 @@
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TCS_PAROCHIAL_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>				
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_TCS_PATENT_OFFICE</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PUBLIC_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_BIO_LAB</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_GENE_LAB</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>		
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_POLAR_STATION</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>-1</YieldChange>
+			<YieldChange>-2</YieldChange>
 		</Row>				
 
 		<Row>
@@ -690,19 +718,19 @@
 			<PolicyType>POLICY_SECULARISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SECULARISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>2</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SECULARISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>1</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_SECULARISM</PolicyType>
@@ -714,7 +742,7 @@
 			<PolicyType>POLICY_SECULARISM</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_POLAR_STATION</BuildingClassType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>3</YieldChange>
 		</Row>
 	</Policy_BuildingClassYieldChanges>
 
