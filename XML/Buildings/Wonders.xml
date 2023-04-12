@@ -1467,7 +1467,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>NEW_BLDG_ATLAS_DLC</IconAtlas>
 			<PortraitIndex>1</PortraitIndex>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 		</Row>
 		<Row>
 			<Type>BUILDING_NATIONAL_STOCK_EXCHANGE</Type>
@@ -1485,7 +1485,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>54</PortraitIndex>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 		</Row>
 		<Row>
 			<Type>BUILDING_NATIONAL_FINANCE</Type>
@@ -1503,7 +1503,7 @@
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>SPWondersUB_ATLAS</IconAtlas>
 			<PortraitIndex>51</PortraitIndex>
-			<NumTradeRouteBonus>2</NumTradeRouteBonus>
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 		</Row>
 
 
@@ -3084,7 +3084,7 @@
 			<PortraitIndex>3</PortraitIndex>
 			<WonderSplashImage>EMPIRE_splash.dds</WonderSplashImage>
 			<WonderSplashAnchor>L,B</WonderSplashAnchor>
-			<!--<NumTradeRouteBonus>1</NumTradeRouteBonus>-->
+			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 			<!--<FreeBuilding>BUILDINGCLASS_TRADEROUTE_INCOME_BOOST_EMPIRE</FreeBuilding>-->
 		</Row>
 		<Row>
