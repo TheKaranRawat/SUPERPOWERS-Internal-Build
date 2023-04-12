@@ -22,7 +22,6 @@
 			<Help>TXT_KEY_UNIT_HELP_SETTLER</Help>
 			<Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
 			<Food>false</Food>
-			<Unhappiness>100</Unhappiness>
 			<Found>true</Found>
 			<CombatLimit>0</CombatLimit>
 			<UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
