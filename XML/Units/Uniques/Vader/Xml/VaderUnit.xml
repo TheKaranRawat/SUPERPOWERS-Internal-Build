@@ -47,7 +47,35 @@
       <UnitType>UNIT_DVADERCIVUNIT</UnitType>
       <PromotionType>PROMOTION_AMBUSH_1</PromotionType>
     </Row>
+
+	<Row>
+		<UnitType>UNIT_DVADERCIVUNIT</UnitType>
+		<PromotionType>PROMOTION_GUNPOWDER_INFANTRY_COMBAT</PromotionType>
+	</Row>
+
   </Unit_FreePromotions>
+
+	<Unit_ResourceQuantityRequirements>
+
+		<Row>
+			<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>5</Cost>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<Cost>2</Cost>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Cost>1</Cost>
+		</Row>	
+
+  	</Unit_ResourceQuantityRequirements>
   
   <Unit_AITypes>
     <Row>
@@ -145,5 +173,5 @@
 			<Asset>SV_PoweredArmorInfantry.dds</Asset>
 		</Row>
 	</ArtDefine_StrategicView>
-  
+	
 </GameData>

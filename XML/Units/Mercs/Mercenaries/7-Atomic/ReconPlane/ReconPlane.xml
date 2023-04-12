@@ -105,6 +105,10 @@
 		  <UnitType>UNIT_SMAN_EU_RECON_PLANE</UnitType>
 		  <PromotionType>PROMOTION_AIR_SWEEP</PromotionType>
 	  </Row>
+    <Row>
+			<UnitType>UNIT_SMAN_EU_RECON_PLANE</UnitType>
+			<PromotionType>PROMOTION_ANTI_AIR_II</PromotionType>
+		</Row>
 	  
   </Unit_FreePromotions>
 	
@@ -216,4 +220,3 @@
     </Row>
   </Language_en_US>
 </GameData>
-

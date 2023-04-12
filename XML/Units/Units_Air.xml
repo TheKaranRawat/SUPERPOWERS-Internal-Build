@@ -730,8 +730,8 @@
 			<Class>UNITCLASS_FW_SUBORBITAL_BOMBER</Class>
 			<Type>UNIT_FW_SUBORBITAL_BOMBER</Type>
 			<PrereqTech>TECH_IMPLANTS</PrereqTech>
-			<RangedCombat>400</RangedCombat>
-			<Cost>3800</Cost>
+			<RangedCombat>700</RangedCombat>
+			<Cost>4500</Cost>
 			<Moves>3</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
@@ -1432,6 +1432,11 @@
 			<PromotionType>PROMOTION_EVASION_II</PromotionType>
 		</Row>
 
+		<Row>
+			<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
+			<PromotionType>PROMOTION_STRATEGIC_BOMBER</PromotionType>
+		</Row>	
+
 		
 		
 		<Row>
@@ -1484,6 +1489,14 @@
 			<UnitType>UNIT_GUIDED_MISSILE</UnitType>
 			<PromotionType>PROMOTION_NO_CASUALTIES</PromotionType>
 		</Row>
+		<Row>
+			<UnitType>UNIT_FW_HYPERMISSILE</UnitType>
+			<PromotionType>PROMOTION_NO_CASUALTIES</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_TACTICAL_NUCLEAR_MISSILE</UnitType>
+			<PromotionType>PROMOTION_NO_CASUALTIES</PromotionType>
+		</Row>		
 		<Row>
 			<UnitType>UNIT_EMP_BOMBER_AIR</UnitType>
 			<PromotionType>PROMOTION_EMP_ATTACK</PromotionType>
@@ -1643,6 +1656,18 @@
 			<ResourceType>RESOURCE_OIL</ResourceType>
 			<Cost>2</Cost>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<Cost>3</Cost>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
+			<ResourceType>RESOURCE_OIL</ResourceType>
+			<Cost>3</Cost>
+		</Row>
+		
 
 		<!-- CARRIER AIRCRAFT SHOULD NOT BE ASSIGNED RESOURCES/ AI WILL DISBAND THEM -->
 
@@ -1805,6 +1830,12 @@
 	
 		<Row>
 			<UnitType>UNIT_STEALTH_BOMBER</UnitType>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>10</Cost>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
 			<Cost>12</Cost>
 		</Row>

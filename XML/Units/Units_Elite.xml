@@ -1058,7 +1058,7 @@
 			<RangedCombat>600</RangedCombat>
 			<Range>2</Range>
 			<Cost>5000</Cost>
-			<Moves>5</Moves>
+			<Moves>3</Moves>
 			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
@@ -1159,7 +1159,7 @@
 			<Combat>1000</Combat>
 			<RangedCombat>600</RangedCombat>
 			<Cost>10000</Cost>
-			<Moves>9</Moves>
+			<Moves>6</Moves>
 			<Range>5</Range>
 			<Special>SPECIALUNIT_NUKE</Special>
 			<CombatClass>UNITCOMBAT_NAVALRANGED</CombatClass>
@@ -1764,15 +1764,13 @@
 			<UnitType>UNIT_MECH</UnitType>
 			<PromotionType>PROMOTION_FW_MOVE_ALL_TERRAIN</PromotionType>
 		</Row>
-		
 
-
-
+		<!--
 		<Row>
 			<UnitType>UNIT_PARTICLE_CANNON</UnitType>
 			<PromotionType>PROMOTION_CHAIN_REACTION</PromotionType>
 		</Row>
-		<!--<Row>
+		<Row>
 			<UnitType>UNIT_PARTICLE_CANNON</UnitType>
 			<PromotionType>PROMOTION_NAVAL_RANGED_SHIP</PromotionType>
 		</Row>-->
@@ -1780,6 +1778,13 @@
 			<UnitType>UNIT_PARTICLE_CANNON</UnitType>
 			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_TDF</UnitType>
+			<PromotionType>PROMOTION_GUNPOWDER_INFANTRY_COMBAT</PromotionType>
+		</Row>
+
+		
 
 
 		<!--<Row>
@@ -2803,6 +2808,18 @@
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
 			<Cost>30</Cost>
 		</Row>
+
+		<Row>
+			<UnitType>UNIT_TDF</UnitType>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>3</Cost>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_TDF</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+
 	</Unit_ResourceQuantityRequirements>
 	
 	

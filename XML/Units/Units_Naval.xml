@@ -1306,7 +1306,7 @@
 			<Cost>1800</Cost>
 			<Moves>9</Moves>
 			<Range>3</Range>
-			<AirInterceptRange>4</AirInterceptRange>
+			<AirInterceptRange>5</AirInterceptRange>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_NAVALRANGED</CombatClass>
 			<Domain>DOMAIN_SEA</Domain>
@@ -2620,9 +2620,10 @@
 			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
 		</Row>
 	
-
-
-	
+		<Row>
+			<UnitType>UNIT_PARTICLE_CANNON</UnitType>
+			<PromotionType>PROMOTION_NAVAL_CAPITAL_SHIP</PromotionType>
+		</Row>	
 
 
 

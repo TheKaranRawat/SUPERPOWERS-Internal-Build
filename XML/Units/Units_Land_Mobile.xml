@@ -975,9 +975,9 @@
 			<Class>UNITCLASS_FW_RAILGUN_TANK</Class>
 			<Type>UNIT_FW_RAILGUN_TANK</Type>
 			<PrereqTech>TECH_SUPERCONDUCTIVITY</PrereqTech>
-			<Combat>180</Combat>
+			<Combat>250</Combat>
 			<Cost>2000</Cost>
-			<Moves>5</Moves>
+			<Moves>6</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -2218,23 +2218,6 @@
 			<UnitType>UNIT_EXOTIC_UNIT_CHEYENNE_DOG_SOLDIER</UnitType>
 			<PromotionType>PROMOTION_KNIGHT_COMBAT</PromotionType>
 		</Row>
-
-
-		<Row>
-			<UnitType>UNIT_SMAN_EU_BATTLE_ELEPHANT</UnitType>
-			<PromotionType>PROMOTION_KNIGHT_COMBAT</PromotionType>
-		</Row>
-
-		<Row>
-			<UnitType>UNIT_SMAN_EU_SIEGE_ELEPHANT</UnitType>
-			<PromotionType>PROMOTION_KNIGHT_COMBAT</PromotionType>
-		</Row>
-
-		<Row>
-			<UnitType>UNIT_SMAN_EU_TURRETED_ELEPHANT</UnitType>
-			<PromotionType>PROMOTION_KNIGHT_COMBAT</PromotionType>
-		</Row>
-
 		<Row>
 			<UnitType>UNIT_BARBARIAN_HORSEMAN</UnitType>
 			<PromotionType>PROMOTION_KNIGHT_COMBAT</PromotionType>
@@ -2501,6 +2484,11 @@
 			<PromotionType>PROMOTION_UNLIMITED_ATTACK</PromotionType>
 		</Row>
 
+		<Row>
+			<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
+			<PromotionType>PROMOTION_TANK_COMBAT</PromotionType>
+		</Row>	
+
 
 		<!--Hit and Run-->
 
@@ -2528,29 +2516,6 @@
 			<UnitType>UNIT_EXOTIC_UNIT_CHEYENNE_DOG_SOLDIER</UnitType>
 			<PromotionType>PROMOTION_HITANDRUN</PromotionType>
 		</Row>
-
-		<Row>
-			<UnitType>UNIT_SMAN_EU_CAMEL_BOWMAN</UnitType>
-			<PromotionType>PROMOTION_HITANDRUN</PromotionType>
-		</Row>
-
-		<Row>
-			<UnitType>UNIT_SMAN_EU_CAMEL_RAIDING_PARTY</UnitType>
-			<PromotionType>PROMOTION_HITANDRUN</PromotionType>
-		</Row>
-
-		<Row>
-			<UnitType>UNIT_SMAN_EU_CAMEL_RIFLEMAN</UnitType>
-			<PromotionType>PROMOTION_HITANDRUN</PromotionType>
-		</Row>
-
-		<Row>
-			<UnitType>UNIT_SMAN_EU_CAMEL_WAR_PARTY</UnitType>
-			<PromotionType>PROMOTION_HITANDRUN</PromotionType>
-		</Row>
-
-
-
 		<Row>
 			<UnitType>UNIT_BARBARIAN_AXMAN</UnitType>
 			<PromotionType>PROMOTION_HITANDRUN</PromotionType>

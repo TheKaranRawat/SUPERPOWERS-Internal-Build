@@ -1054,7 +1054,7 @@
 			<Type>UNIT_FW_MECH_ARTILLERY</Type>
 			<PrereqTech>TECH_QUANTUM_COMPUTERS</PrereqTech>
 			<Combat>150</Combat>
-			<RangedCombat>350</RangedCombat>
+			<RangedCombat>450</RangedCombat>
 			<Cost>1800</Cost>
 			<Moves>3</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
@@ -1740,7 +1740,10 @@
 			<UnitType>UNIT_ZULU_G6_SPG</UnitType>
 			<PromotionType>PROMOTION_CARGO_II</PromotionType>
 		</Row>
-		
+		<Row>
+			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
+			<PromotionType>PROMOTION_CITY_SIEGE</PromotionType>
+		</Row>
 		
 
 		<!--********AOE Units******-->
