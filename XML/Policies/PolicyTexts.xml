@@ -460,7 +460,6 @@
 				[NEWLINE][NEWLINE]Opening Effects:
 				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture and +5% [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital
 				[NEWLINE][ICON_BULLET]-25% [ICON_CULTURE] Culture cost for acquiring new plots in all cities
-				[NEWLINE][ICON_BULLET]5 [ICON_HAPPINESS_1] happiness in the palace				
 				[NEWLINE][ICON_BULLET]1 [ICON_HAPPINESS_1] happiness for every 3[ICON_CITIZEN]
 				[NEWLINE][ICON_BULLET]5 extra [ICON_HAPPINESS_4] unhappiness per city (with the Schools of Thought policy)
 				[NEWLINE][ICON_BULLET]Buildings generating [ICON_RESEARCH] Science recieve -1 to their primary [ICON_RESEARCH]yield!
@@ -570,7 +569,8 @@
 			<Text>
 				[COLOR_POSITIVE_TEXT]Schools of Thought[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]+0.1 [ICON_RESEARCH] Science and +0.1[ICON_CULTURE] Culture for every [ICON_CITIZEN] Citizen in a city. 
-				[NEWLINE][ICON_BULLET]Add 2 [RESEARCH] Scientist Slot in every city.				
+				[NEWLINE][ICON_BULLET]Add 2 [RESEARCH] Scientist Slot in every city.	
+				[NEWLINE][ICON_BULLET]2 extra [ICON_HAPPINESS-4] Unhappiness per Imperial Academy per City
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_POLICY_FAMILY_REGISTER_TEXT">

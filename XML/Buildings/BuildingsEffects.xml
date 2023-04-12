@@ -3641,6 +3641,15 @@
 	
 	
 	<Building_BuildingClassHappiness>
+		
+		
+		<Row>
+			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_FAMILY_PRODUCTION</BuildingClassType>
+			<Happiness>-2</Happiness>
+		</Row>		
+		
+		
 		<!--<Row>
 			<BuildingType>BUILDING_NATIONAL_LIBRARY</BuildingType>
 			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
