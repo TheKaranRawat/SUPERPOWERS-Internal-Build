@@ -461,6 +461,7 @@
 				[NEWLINE][ICON_BULLET]+10% [ICON_CULTURE] Culture and +5% [ICON_RESEARCH] Science in the [ICON_CAPITAL] Capital
 				[NEWLINE][ICON_BULLET]-25% [ICON_CULTURE] Culture cost for acquiring new plots in all cities
 				[NEWLINE][ICON_BULLET]1 [ICON_HAPPINESS_1] happiness for every 3[ICON_CITIZEN]
+				[NEWLINE][ICON_BULLET]Specialists require an extra upkeep of 4 [ICON_GOLD] Gold
 				[NEWLINE][ICON_BULLET]5 extra [ICON_HAPPINESS_4] unhappiness per city (with the Schools of Thought policy)
 				[NEWLINE][ICON_BULLET]Buildings generating [ICON_RESEARCH] Science recieve -1 to their primary [ICON_RESEARCH]yield!
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE] Policies increased by 15% for every city[ENDCOLOR]

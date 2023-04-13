@@ -110,6 +110,13 @@
 		
 
 		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-4</Yield>
+		</Row>
+
+
+		<Row>
 			<PolicyType>POLICY_WORKERS_FACULTIES</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>-4</Yield>
