@@ -3157,9 +3157,36 @@
 	<Building_BuildingClassYieldChanges>
 
 
-	
-
-
+		<Row>
+			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>	
+		<Row>
+			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>	
+		<Row>
+			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>	
+		<Row>
+			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_PUBLIC_SCHOOL</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>			
+		<Row>
+			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>-1</YieldChange>
+		</Row>			
 		
 
 
@@ -6527,7 +6554,7 @@
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
+			<Yield>4</Yield>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>

@@ -463,7 +463,7 @@
 				[NEWLINE][ICON_BULLET]1 [ICON_HAPPINESS_1] happiness for every 3[ICON_CITIZEN]
 				[NEWLINE][ICON_BULLET]Specialists require an extra upkeep of 4 [ICON_GOLD] Gold
 				[NEWLINE][ICON_BULLET]5 extra [ICON_HAPPINESS_4] unhappiness per city (with the Schools of Thought policy)
-				[NEWLINE][ICON_BULLET]Buildings generating [ICON_RESEARCH] Science recieve -1 to their primary [ICON_RESEARCH]yield!
+				[NEWLINE][ICON_BULLET]Buildings generating [ICON_RESEARCH] Science recieve -1 to their primary [ICON_RESEARCH] yield for each Imperial Academy
 				[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT]Culture cost of acquiring new [ICON_CULTURE] Policies increased by 15% for every city[ENDCOLOR]
 				[NEWLINE][ICON_BULLET]Wonder Unlocked: Hanging Gardens
 				[NEWLINE][ICON_BULLET]Building Unlocked: Public Baths
@@ -569,7 +569,7 @@
 		<Row Tag="TXT_KEY_POLICY_FAMILY_REGISTER_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Schools of Thought[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+0.1 [ICON_RESEARCH] Science and +0.1[ICON_CULTURE] Culture for every [ICON_CITIZEN] Citizen in a city. 
+				[NEWLINE][ICON_BULLET]+0.25 [ICON_RESEARCH] Science and +0.1[ICON_CULTURE] Culture for every [ICON_CITIZEN] Citizen in a city. 
 				[NEWLINE][ICON_BULLET]Add 2 [RESEARCH] Scientist Slot in every city.	
 				[NEWLINE][ICON_BULLET]2 extra [ICON_HAPPINESS-4] Unhappiness per Imperial Academy per City
 			</Text>

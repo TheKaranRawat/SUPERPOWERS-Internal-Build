@@ -4015,16 +4015,12 @@
 	<Building_YieldChangesPerPop>
 
 
-		<Row>
-			<BuildingType>BUILDING_RATIONALISM_SCIENCE_PER_POP</BuildingType>
-			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
-		</Row>
+
 
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>10</Yield>
+			<Yield>25</Yield>
 		</Row>
 
 		<Row>
