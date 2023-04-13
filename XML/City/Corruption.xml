@@ -1047,7 +1047,7 @@
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>-1</Yield>
+			<Yield>-4</Yield>
 		</Row>
 
 
