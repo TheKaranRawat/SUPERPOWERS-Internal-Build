@@ -112,7 +112,7 @@
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>-4</Yield>
+			<Yield>-2</Yield>
 		</Row>
 
 
