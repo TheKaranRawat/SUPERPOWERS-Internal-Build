@@ -494,8 +494,8 @@
 		<Replace Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Collective Agriculture[ENDCOLOR]				
-				[NEWLINE][ICON_BULLET]+15% [ICON_FOOD] Food growth in every city.
-				[NEWLINE][ICON_BULLET]+15% bonus [ICON_FOOD] Food growth in the Capital.
+				[NEWLINE][ICON_BULLET]+5% [ICON_FOOD] Food growth in every city.
+				[NEWLINE][ICON_BULLET]+5% bonus [ICON_FOOD] Food growth in the Capital.
 				</Text>
 		</Replace>
 
