@@ -388,6 +388,17 @@
 			<Text>Mecha is a science fiction genre that centers on robots or machines controlled by people. These machines vary greatly in size, shape, and appearance. Some are little more than cars with arms and legs, while others are giant humanoid constructs. Different sub-genres exist, with varying connotations of realism. The concept of Super Robot and Real Robot are two such examples found in Japanese anime.</Text>
 		</Row>
 
+		<Row Tag="TXT_KEY_PROJECT_METALGEAR">
+			<Text>Jaeger Program</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_METALGEAR_HELP">
+			<Text>Only the [COLOR_POSITIVE_TEXT]First[ENDCOLOR] civilization finishing this project is allowed to build the prototype mecha unit: [COLOR_YIELD_GOLD]Giant Death Robot[ENDCOLOR].
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_METALGEAR_PEDIA">
+			<Text>Mecha is a science fiction genre that centers on robots or machines controlled by people. These machines vary greatly in size, shape, and appearance. Some are little more than cars with arms and legs, while others are giant humanoid constructs. Different sub-genres exist, with varying connotations of realism. The concept of Super Robot and Real Robot are two such examples found in Japanese anime.</Text>
+		</Row>
+
 
 		<Row Tag="TXT_KEY_PROJECT_HACKER_ATTACK">
 			<Text>Bit Weapon Project</Text>

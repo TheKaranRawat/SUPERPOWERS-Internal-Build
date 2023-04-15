@@ -228,6 +228,11 @@
 			<Description>TXT_KEY_UNIT_XCOM_SQUAD</Description>
 			<DefaultUnit>UNIT_XCOM_SQUAD</DefaultUnit>
 		</Row>
+		<Row>
+			<Type>UNITCLASS_SPACEMARINE</Type>
+			<Description>TXT_KEY_UNIT_SPACEMARINE</Description>
+			<DefaultUnit>UNIT_SPACEMARINE</DefaultUnit>
+		</Row>
 
 
 		<!--******Infantry******-->
@@ -1027,7 +1032,13 @@
 			<Type>UNITCLASS_MECH</Type>
 			<Description>TXT_KEY_UNIT_MECH</Description>
 			<DefaultUnit>UNIT_MECH</DefaultUnit>
-			<MaxPlayerInstances>2</MaxPlayerInstances>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_METALGEAR</Type>
+			<Description>TXT_KEY_UNIT_METALGEAR</Description>
+			<DefaultUnit>UNIT_METALGEAR</DefaultUnit>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
 		<Row>
 			<Type>UNITCLASS_HACKER</Type>

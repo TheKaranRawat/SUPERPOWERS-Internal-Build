@@ -9,7 +9,7 @@ D- merc ship promotion fixes for ocean traversal
 D- all new merc/future unit promotion correction
 D- late game gold surplus rebalance
 D- unit maintenance rebalance
-- higher strat resource costs for certain units
+TD- higher strat resource costs for certain units
 D- domination spy fixes
 TD- final: unique unit/ cold war hot scenario
 TD- UI: toast notifications for important events
@@ -18,8 +18,8 @@ TD- internal trade policy fix mercantilism
 TD- new loading screens
 TD- some art changes
 TD- ministries changes
-- remove tech deficit from electricity (maybe)
-- add tech deficit surplus indicators
+TD- remove tech deficit from electricity (maybe)
+TD- add tech deficit surplus indicators
 TD- military class icons
 TD- new promotion icons
 TD- more ancient era units
@@ -30,19 +30,19 @@ D- more unit maintenance
 TD- enable policy trees for the early game
 D- future tech arrangement 
 D- obsolete ww2 units by the modern era
-- future units icons
-- mech artillery size increase
+TD- future units icons
+TD- mech artillery size increase
 D- Remove CS leaders
 D- battlemech size reduction, count increase
 D- domination great game rebalance
-- updated promotions art
-- updated unit/building icons
+TD- updated promotions art
+TD- updated unit/building icons
 - fix texts
-- FIX MERC SHIPS/UNITS
-- fix carrier aircraft not defending (?)
-- more pop growth for AI
-- reduce trade routes
-- integrate fish resource fixes
+T- FIX MERC SHIPS/UNITS
+TD- fix carrier aircraft not defending (?)
+D- more pop growth for AI
+D- reduce trade routes
+D- integrate fish resource fixes
 - neo-dreadnought -> Juggernaut
 - CS cannot build many buildings/deliberation
 - AI Artillery promotions for siege
@@ -57,7 +57,18 @@ D- domination great game rebalance
 - transfer deep sea rig yield to ocean
 - integrate changes
 - city text fixes
-- cruiser air sweep balance
+D- cruiser air sweep balance
+D- embarked strength increase
+- city AA changes
+- fishfarm adjustments/fixes
+- specialist slots increase
+- manpower adjust
+- PROMOTION TEXT CORRECTION
+- STRENGTH FIXES
+- city plane view
+- supercarrier icon change
+- automated armies
+- mecha projects
 
 -----------------------------------------------------------------------------------------------
 
@@ -79,3 +90,6 @@ BUILDING REPLACEMENT FOR CS
 	BUILDING_SHIPYARD			BUILDINGCLASS_SHIPYARD			BUILDING_SHIPYARD_CS			TXT_KEY_BUILDING_SHIPYARD
 	
 Unit_ResourceQuantityRequirements
+
+Units-------
+metal gear rex

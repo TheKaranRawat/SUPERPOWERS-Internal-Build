@@ -508,6 +508,19 @@
 			<PortraitIndex>29</PortraitIndex>
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 		</Row>
+
+		<Row>
+			<Type>PROJECT_METALGEAR</Type>
+			<Description>TXT_KEY_PROJECT_METALGEAR</Description>
+			<Help>TXT_KEY_PROJECT_METALGEAR_HELP</Help>
+			<Civilopedia>TXT_KEY_PROJECT_METALGEAR_PEDIA</Civilopedia>
+			<TechPrereq>TECH_NEURAL_INTERFACE</TechPrereq>
+			<MaxGlobalInstances>1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1600</Cost>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>SPBalance_ATLAS</IconAtlas>
+		</Row>
 		
 
 		<Row>
@@ -797,6 +810,22 @@
 		</Row>
 		<Row>
 			<ProjectType>PROJECT_ADV_MECH</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>950</Flavor>
+		</Row>
+
+		<Row>
+			<ProjectType>PROJECT_METALGEAR</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>950</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>PROJECT_METALGEAR</ProjectType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>950</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>PROJECT_METALGEAR</ProjectType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
 			<Flavor>950</Flavor>
 		</Row>

@@ -1585,7 +1585,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="30931B2D8F6CAB2E4487D38F6240315D" import="0">XML/Units/Units_Air.xml</File>
     <File md5="FAD137A55EF5CE7DC59D8A79AE15E867" import="0">XML/Units/Units_Civilian.xml</File>
     <File md5="A196D0D30E6AB3093C239B3552E02A2A" import="0">XML/Units/UnitsProductionBuildings.xml</File>
-	<File md5="D80E63F993B3360202D11044F4BD2E5F" import="1">Art/ERA_FW_Future.dds</File>
+	  <File md5="D80E63F993B3360202D11044F4BD2E5F" import="1">Art/ERA_FW_Future.dds</File>
     <File md5="307F7CE330F49184D0800DA1FCE53F24" import="1">Art/FutureIcons1.dds</File>
     <File md5="0483B5B17D267823F5EB57ADE3E1134E" import="1">Art/FutureIcons2.dds</File>
     <File md5="5AC0E1D73F8769FB77211CCEFEDC3FA2" import="1">Art/FutureIcons3.dds</File>
@@ -3838,7 +3838,14 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="6B8C5E7BFF637739B3E3924186785BCD" import="0">Art/FontIcons2/FontIconsDefines.xml</File>
     <File md5="5FAABAB3458623252D9D9601B6121460" import="1">Art/FontIcons2/FontITGIconsAtlas_2.ggxml</File>
     <File md5="6E1E33863741104CC0D1EEEB32A9550D" import="1">Art/FontIcons2/FontITGIconsAtlas_2.dds</File>
-
+	
+	<File md5="C7702B9F28571B4AE996C338FF459937" import="1">XML/Units/Uniques/NeoDreadnought/Icons/Juggernaut256.dds</File>
+	<File md5="C7702B9F28571B4AE996C338FF459937" import="1">XML/Units/Uniques/NeoDreadnought/Icons/Juggernaut128.dds</File>
+	<File md5="C7702B9F28571B4AE996C338FF459937" import="1">XML/Units/Uniques/NeoDreadnought/Icons/Juggernaut80.dds</File>
+	<File md5="C7702B9F28571B4AE996C338FF459937" import="1">XML/Units/Uniques/NeoDreadnought/Icons/Juggernaut64.dds</File>
+	<File md5="C7702B9F28571B4AE996C338FF459937" import="1">XML/Units/Uniques/NeoDreadnought/Icons/Juggernaut45.dds</File>
+	<File md5="C7702B9F28571B4AE996C338FF459937" import="1">XML/Units/Uniques/NeoDreadnought/Icons/JuggernautFlag.dds</File>
+	
     <File md5="C7702B9F28571B4AE996C338FF459937" import="0">XML/Units/Uniques/NeoDreadnought/ArtDef.xml</File>
     <File md5="5EB0AFCB813A3D29A40F511E3C1D1B1D" import="1">XML/Units/Uniques/NeoDreadnought/ART/fx_triggers_naval_fighter04s.ftsxml</File>
     <File md5="5C620C1E6529699444D4EFEAC8FF8333" import="1">XML/Units/Uniques/NeoDreadnought/ART/naval_fighter04s.fxsxml</File>
@@ -3887,8 +3894,124 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="BCECB5FE15C5869C9F86C84C240F3A00" import="1">XML/Units/Uniques/NeoDreadnought/ART/unit_environment_sharp.dds</File>
     <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/NeoDreadnought/ART/unit_irradiance.dds</File>
     <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/NeoDreadnought/ART/unit_sunlight_irradiance.dds</File>
+
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/Art/MetalGear256.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/Art/MetalGear128.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/Art/MetalGear80.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/Art/MetalGear64.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/Art/MetalGear45.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/Art/MetalGearFlag.dds</File>
+
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/MetalGearUnit/VV_metalgear.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/MetalGearUnit/metalgear.gr2</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/MetalGearUnit/metalgear.fxsxml</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/MetalGearUnit/4x4black.dds</File>
+
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MetalGear/MetalGearIcons.xml</File>    
     
     <File md5="5754B1BE6E37A2F9D04D9D4149E5CDDF" import="1">Lua/Utility/BarbarianFunctions.lua</File>
+
+    <File md5="1B3C575EDF5161F90E965BF87C4CA725" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/fx_triggers_sabr.ftsxml</File>
+    <File md5="513ADDC7F284A4CB1E4607B3B3ABED7F" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr.fxsxml</File>
+    <File md5="A32EEE72274E743EE2DD265422571525" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr.gr2</File>
+    <File md5="26745F1BE1AC73D07F24DA48184810A5" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_attacka.gr2</File>
+    <File md5="A9F1E9455235600C28CA0C6E8891C83D" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_attack_air.gr2</File>
+    <File md5="ED43A71D8502B8152FBACCB55623698E" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_attack_city.gr2</File>
+    <File md5="F2AB213C106B818986BD907CC97CD821" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_bombardment.gr2</File>
+    <File md5="54A2C80C8BA9B80A945A6DD98F166214" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_bombard_defense.gr2</File>
+    <File md5="D68C2AAF858B6D07B67B5FFA5C4BAD6E" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_bombard_defense_idle.gr2</File>
+    <File md5="677C26072DF12C5A60EA5568D5432D0B" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_bombard_defense_idle_trans_idlea.gr2</File>
+    <File md5="E294440263F43D6AB2F0D725EA9ADB74" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_combat_ready.gr2</File>
+    <File md5="F6E7F9A4F446BC464F152238BF706D06" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_combat_ready_idle.gr2</File>
+    <File md5="BDCD3DCF74B613F7C3195AF4FD6280BE" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_combat_ready_idle_trans_idlea.gr2</File>
+    <File md5="B48BE3FA0008D74AAE7F71CAA49B8904" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_deatha.gr2</File>
+    <File md5="D84740B3B39E849FE5AB7EE56F55D7F4" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_deatha_idle.gr2</File>
+    <File md5="A322737407AD86D2F71CCA7C5B5EF376" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_deathb.gr2</File>
+    <File md5="206D78950768DDAEB8238775EA4EFCE1" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_deathb_idle.gr2</File>
+    <File md5="A0AA49FFFDEE4B72C7629A4DBBC8BD5B" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_diff.dds</File>
+    <File md5="F0232BC4821A751F498EA94CF97DF209" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_fidgeta.gr2</File>
+    <File md5="558FD22B83D042C5829C3A9550FF09D1" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_fidgetb.gr2</File>
+    <File md5="655C03251B8F808153512D81BC588659" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_fortify.gr2</File>
+    <File md5="13EEA3A864D06A2C3871F47D6E9EC130" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_fortify_idle.gr2</File>
+    <File md5="A09F5941A5D379BEB62B3F139B9598C1" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_fortify_idle_fidget.gr2</File>
+    <File md5="C7015565DF146895A0DF23204AA205A1" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_fortify_idle_trans_combat_ready_idle.gr2</File>
+    <File md5="A5DCFCF114D07C71639BFBA930D035C7" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_fortify_idle_trans_idlea.gr2</File>
+    <File md5="A18E7A807DFAD468D90E2B1FC7D82863" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_idlea.gr2</File>
+    <File md5="03C59EC87C2BFE17094342B476E4DBB5" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_idlea_trans_idleb.gr2</File>
+    <File md5="3E2D43425EF0C68D6E9CBDB1F9B94DBD" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_run.gr2</File>
+    <File md5="E9F1C4E73235BE09C5E71E471A9AB674" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_shuffle.gr2</File>
+    <File md5="02CB04BC4340B23CE8B9857DE13CA0E5" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_sref.dds</File>
+    <File md5="AD153EF3987204EB4BFE12C458C80E8A" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_start_run.gr2</File>
+    <File md5="D7335153DAE994DD16B441DCADF19682" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/sabr_stop_run.gr2</File>
+    <File md5="E78C1FF8E30338515872B736064031F8" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/unit_environment_dull.dds</File>
+    <File md5="BCECB5FE15C5869C9F86C84C240F3A00" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/unit_environment_sharp.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/unit_irradiance.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MechArty/MechArtyUnit/unit_sunlight_irradiance.dds</File>
+
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MechArty/Art/MechArty256.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MechArty/Art/MechArty128.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MechArty/Art/MechArty80.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MechArty/Art/MechArty64.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MechArty/Art/MechArty45.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/MechArty/Art/MechArtyFlag.dds</File>
+
+    <File md5="885FCCB32C0400E1155525D456F21B11" import="0">XML/Units/Uniques/MechArty/ArtDef.xml</File>
+
+    <File md5="FCA9A2AB52E54AC53FCD31DE3CE85769" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/fx_triggers_marine01.ftsxml</File>
+    <File md5="1C14F38827E00260994E22618576CC4D" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01.fxsxml</File>
+    <File md5="1BCBDD38DCEAB336CF5C184A0D05D568" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01.gr2</File>
+    <File md5="166F8E55BE3619ECE5159B6B78954342" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_attacka.gr2</File>
+    <File md5="934B42BF739E70431E12F1096EB8BBE2" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_attackb.gr2</File>
+    <File md5="E514D722AC44234957B741E8EFD2A437" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_attack_air.gr2</File>
+    <File md5="6E5ED46809DA6268C80F1BFAA2BD75AC" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_attack_city.gr2</File>
+    <File md5="195F83A599E4B649A572309CE61A1C62" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_bombard_defense.gr2</File>
+    <File md5="4304669C632D2D454C38C1D952F60DD3" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_bombard_defense_idle.gr2</File>
+    <File md5="480CDA1E63DC06888DFAF557E71FCE3D" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_bombard_defense_idle_trans_idlea.gr2</File>
+    <File md5="3F2BD02A2BCC42182A50BC9A6B9F5403" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_charge_attack.gr2</File>
+    <File md5="4ACCCF7F3E3C736D19F84E662081531B" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_charge_run.gr2</File>
+    <File md5="1F8DDC16D149C6669085FB8892DF7986" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_charge_start_run.gr2</File>
+    <File md5="0A15F95104B148D8541C1FC235328605" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_combat_ready.gr2</File>
+    <File md5="E8290392948A77AFBA0D60AB69B005E8" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_combat_ready_idle.gr2</File>
+    <File md5="69D91AC4D7DF7FD0A392DD8B1950436A" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_combat_ready_idle_trans_idlea.gr2</File>
+    <File md5="FA932BCA09C1F4A51F171E0339F73C03" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_deatha.gr2</File>
+    <File md5="0E52352BFFF4821412138BD19A5006F1" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_deatha_idle.gr2</File>
+    <File md5="8EA155099EC3144EF4B41EB582BBE791" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_deathb.gr2</File>
+    <File md5="2A2FC3028950599B7D8B3CCF8D70AA56" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_deathb_idle.gr2</File>
+    <File md5="1D371181F16558A091CC01E328B4C0FC" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_diff.dds</File>
+    <File md5="936E3655ECDB17BF241251EF031D27FE" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_fidgeta.gr2</File>
+    <File md5="58A57E647055CEC7328C636C249993CE" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_fidgetb.gr2</File>
+    <File md5="42D1963D2D801C63610BFD419E1CAD0A" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_fortify.gr2</File>
+    <File md5="37180A9AD6D6B8458A0D0222987A751C" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_fortify_idle.gr2</File>
+    <File md5="D1727A8EB6888E280CFEF842610D3ED6" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_fortify_idle_fidget.gr2</File>
+    <File md5="D2CCA094EAC83B827D8DED6CE22511B6" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_fortify_idle_trans_combat_ready_idle.gr2</File>
+    <File md5="29FBDA80A4C460C334EBA59A71C8514F" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_fortify_idle_trans_idlea.gr2</File>
+    <File md5="CD0EB21F52F3F2F10A3E7639F3077DE7" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_idlea.gr2</File>
+    <File md5="491FC674795D210E1E6A67AC76850B41" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_idlea_trans_idleb.gr2</File>
+    <File md5="BE47D24ED4B889B1BC7EE27D7A9EF279" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_idleb.gr2</File>
+    <File md5="127C3E16C9D8360FDE6F2B207A83733E" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_idleb_trans_idlea.gr2</File>
+    <File md5="4B73E4EA27DDF7C3F1FC41A45D1684E8" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_run.gr2</File>
+    <File md5="7AE057FDDA0C33EDAADFD4F9852C7D6D" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_shuffle.gr2</File>
+    <File md5="DCD606800D45FE90F717B9224D719D85" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_sref.dds</File>
+    <File md5="29F9B826E4D342DABB1A168322769BE1" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_start_run.gr2</File>
+    <File md5="0AD8E4CAC637883AB347876247BF7CEA" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_stop_run.gr2</File>
+    <File md5="91954C26E628B7CCD8759D22314C5AAF" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_stop_run_b.gr2</File>
+    <File md5="7FFAEEE3957AD67014B2D325AF754B8F" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marine01_victory.gr2</File>
+    <File md5="3FAD96B1E40E39E02382CD7A454DC314" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marineweapon01_diff.dds</File>
+    <File md5="6337464DF8E4F8B198933E333C412EB7" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/marineweapon01_sref.dds</File>
+    <File md5="E78C1FF8E30338515872B736064031F8" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/unit_environment_dull.dds</File>
+    <File md5="BCECB5FE15C5869C9F86C84C240F3A00" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/unit_environment_sharp.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/unit_irradiance.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesUnit/unit_sunlight_irradiance.dds</File>
+    
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/SpaceMarines/Art/SpaceMarines256.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/SpaceMarines/Art/SpaceMarines128.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/SpaceMarines/Art/SpaceMarines80.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/SpaceMarines/Art/SpaceMarines64.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/SpaceMarines/Art/SpaceMarines45.dds</File>
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/SpaceMarines/Art/SpaceMarinesFlag.dds</File>
+
+    <File md5="D5498F8BAE0CED908F06243CAEC2299F" import="1">XML/Units/Uniques/SpaceMarines/SpaceMarinesIcons.xml</File>
+
   </Files>
   <Actions>
 	
@@ -4532,6 +4655,13 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>Art/FontIcons2/FontIconsDefines.xml</UpdateDatabase>
 
       <UpdateDatabase>XML/Units/Uniques/NeoDreadnought/ArtDef.xml</UpdateDatabase>
+
+      <UpdateDatabase>XML/Units/Uniques/MetalGear/MetalGearIcons.xml</UpdateDatabase>
+
+      <UpdateDatabase>XML/Units/Uniques/MechArty/ArtDef.xml</UpdateDatabase>
+
+      <UpdateDatabase>XML/Units/Uniques/SpaceMarines/SpaceMarinesIcons.xml</UpdateDatabase>
+
 
     </OnModActivated>	
   </Actions>

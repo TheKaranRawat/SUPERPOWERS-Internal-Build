@@ -2239,6 +2239,10 @@
 			<Text>[COLOR_SELECTED_TEXT]Orbital Drop Shock Troopers[ENDCOLOR]</Text>
 		</Replace>
 
+		<Row Tag="TXT_KEY_UNIT_SPACEMARINE">
+			<Text>[COLOR_SELECTED_TEXT]Space Marines[ENDCOLOR]</Text>
+		</Row>	
+
 	<!-- *************************New Hit-and-Run Units****************************-->
 	<Row Tag="TXT_KEY_UNIT_MEDIEVAL_CHARIOT">
 		<Text>Mounted Archer</Text>
@@ -2992,11 +2996,12 @@
 		</Row>
 		
 
-
+		<!--
 		<Replace Tag="TXT_KEY_UNIT_MECH">
 			<Text>[COLOR_YELLOW]Gipsy Danger[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Replace>	
+		-->
 		<Replace Tag="TXT_KEY_UNIT_HELP_MECH">
 			<Text>It is so tall that it can cross the mountains or walking in costal area. It is immune to strategic nuclear weapons' blasts and free from some debuff effects from the enemy like "sundered" and "slowed down". Can heal every turn.[NEWLINE][NEWLINE]Requires Prototype Jager Project and only one can exist in the world.</Text>
 		</Replace>
@@ -3058,7 +3063,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_PARTICLE_CANNON">
-			<Text>[COLOR_YELLOW]Neo-Dreadnought[ENDCOLOR]</Text>
+			<Text>[COLOR_YELLOW]Juggernaut[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_PARTICLE_CANNON">

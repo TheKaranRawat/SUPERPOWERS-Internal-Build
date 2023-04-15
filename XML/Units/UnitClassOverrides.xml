@@ -902,6 +902,16 @@
 			<UnitClassType>UNITCLASS_MECH</UnitClassType>
 			<UnitType/>
 		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitClassType>UNITCLASS_METALGEAR</UnitClassType>
+			<UnitType/>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitClassType>UNITCLASS_METALGEAR</UnitClassType>
+			<UnitType/>
+		</Row>
 	</Civilization_UnitClassOverrides>
 
 

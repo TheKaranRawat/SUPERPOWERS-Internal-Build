@@ -62,4 +62,54 @@
 			<Asset>SV_MissileCruiser.dds</Asset>
 		</Row>
 	</ArtDefine_StrategicView>
+	
+	<IconTextureAtlases>
+		
+		<Row>
+			<Atlas>JUGGERNAUT_ICON</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>Juggernaut256.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>JUGGERNAUT_ICON</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>Juggernaut128.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>JUGGERNAUT_ICON</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>Juggernaut80.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>JUGGERNAUT_ICON</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>Juggernaut64.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>JUGGERNAUT_ICON</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>Juggernaut45.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		
+		<!-- icon atlas -->
+		<Row>
+			<Atlas>FLAG_JUGGERNAUT</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>JuggernautFlag.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		
+	</IconTextureAtlases>	
+	
 </GameData>

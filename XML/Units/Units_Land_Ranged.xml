@@ -1076,11 +1076,11 @@
 			<XPValueDefense>3</XPValueDefense>
 			<SpecialCargo>SPECIALUNIT_MISSILE</SpecialCargo>
 			<DomainCargo>DOMAIN_AIR</DomainCargo>
-			<UnitArtInfo>ART_DEF_UNIT_FW_MECH_ARTILLERY</UnitArtInfo>
+			<UnitArtInfo>ART_DEF_UNIT_SABR</UnitArtInfo>
 			<UnitFlagAtlas>FLAG_ATLAS_FUTURE_4</UnitFlagAtlas>
 			<UnitFlagIconOffset>0</UnitFlagIconOffset>
-			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
-			<PortraitIndex>51</PortraitIndex>
+			<IconAtlas>MECHARTY_ICON</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
 			<MoveRate>WHEELED</MoveRate>
 			<ExtraMaintenanceCost>300</ExtraMaintenanceCost>
 		</Row>

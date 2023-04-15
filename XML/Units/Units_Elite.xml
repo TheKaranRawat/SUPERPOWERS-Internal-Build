@@ -1084,6 +1084,44 @@
 			<ExtraMaintenanceCost>600</ExtraMaintenanceCost>
 		</Row>
 
+		<Row>
+			<Class>UNITCLASS_METALGEAR</Class>
+			<Type>UNIT_METALGEAR</Type>
+			<PrereqTech>TECH_NEURAL_INTERFACE</PrereqTech>
+			<Combat>800</Combat>
+			<RangedCombat>600</RangedCombat>
+			<Range>2</Range>
+			<Cost>5000</Cost>
+			<Moves>3</Moves>
+			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_METALGEAR</Description>
+			<Civilopedia>TXT_KEY_CIVILOPEDIA_UNITS_MODERN_MECH_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_MECH_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_HELP_MECH</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<Mechanized>true</Mechanized>
+			<AdvancedStartCost>120</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_METALGEAR</UnitArtInfo>
+			
+			<UnitFlagAtlas>FLAG_METALGEAR</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+
+			<IconAtlas>METALGEAR_ICON</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+
+			<MoveRate>ROBOT</MoveRate>
+			<ProjectPrereq>PROJECT_METALGEAR</ProjectPrereq>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<ExtraMaintenanceCost>600</ExtraMaintenanceCost>
+		</Row>
+
 
 		<Row>
 			<Class>UNITCLASS_HACKER</Class>
@@ -1180,8 +1218,8 @@
 			<UnitArtInfo>ART_DEF_UNIT_NAVALFIGHTER04S</UnitArtInfo>
 			<UnitFlagIconOffset>70</UnitFlagIconOffset>
 			<UnitFlagAtlas>SPUnitFlags_FLAG</UnitFlagAtlas>
-			<IconAtlas>SPUNITS02_ATLAS</IconAtlas>
-			<PortraitIndex>18</PortraitIndex>
+			<IconAtlas>JUGGERNAUT_ICON</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
 			<MoveRate>BOAT</MoveRate>
 			<ProjectPrereq>PROJECT_PARTICLE_CANNON</ProjectPrereq>
 			<ExtraMaintenanceCost>70</ExtraMaintenanceCost>
@@ -1765,6 +1803,44 @@
 			<PromotionType>PROMOTION_FW_MOVE_ALL_TERRAIN</PromotionType>
 		</Row>
 
+
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<PromotionType>PROMOTION_TANK_COMBAT</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<PromotionType>PROMOTION_HOVERING_UNIT</PromotionType>
+		</Row>	
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<PromotionType>PROMOTION_NO_CASUALTIES</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<PromotionType>PROMOTION_ANTI_DEBUFF</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<PromotionType>PROMOTION_MARCH</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<PromotionType>PROMOTION_FW_MOVE_ALL_TERRAIN</PromotionType>
+		</Row>
+
 		<!--
 		<Row>
 			<UnitType>UNIT_PARTICLE_CANNON</UnitType>
@@ -1980,6 +2056,14 @@
 		</Row>
 		<Row>
 			<UnitType>UNIT_MECH</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
 			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
 		</Row>
 		<Row>
@@ -2602,12 +2686,23 @@
 		<Row>
 			<UnitType>UNIT_MECH</UnitType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
-			<Cost>2</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_MECH</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
-			<Cost>2</Cost>
+			<Cost>4</Cost>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<Cost>4</Cost>
+		</Row>
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<Cost>4</Cost>
 		</Row>
 
 		<Row>
@@ -2787,6 +2882,12 @@
 		
 		<Row>
 			<UnitType>UNIT_MECH</UnitType>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>8</Cost>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_METALGEAR</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
 			<Cost>8</Cost>
 		</Row>
