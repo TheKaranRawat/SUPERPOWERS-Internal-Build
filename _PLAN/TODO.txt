@@ -43,7 +43,7 @@ TD- fix carrier aircraft not defending (?)
 D- more pop growth for AI
 D- reduce trade routes
 D- integrate fish resource fixes
-- neo-dreadnought -> Juggernaut
+D- neo-dreadnought -> Juggernaut
 - CS cannot build many buildings/deliberation
 - AI Artillery promotions for siege
 - AI ship promotion vs cities
@@ -60,7 +60,7 @@ D- integrate fish resource fixes
 D- cruiser air sweep balance
 D- embarked strength increase
 - city AA changes
-- fishfarm adjustments/fixes
+D- fishfarm adjustments/fixes
 - specialist slots increase
 - manpower adjust
 - PROMOTION TEXT CORRECTION
@@ -69,6 +69,8 @@ D- embarked strength increase
 - supercarrier icon change
 - automated armies
 - mecha projects
+- AI buff adjust/two boss civs
+- puppet view
 
 -----------------------------------------------------------------------------------------------
 
