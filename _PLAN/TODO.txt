@@ -71,6 +71,7 @@ D- fishfarm adjustments/fixes
 - mecha projects
 - AI buff adjust/two boss civs
 - puppet view
+- CS defences given by lua
 
 -----------------------------------------------------------------------------------------------
 

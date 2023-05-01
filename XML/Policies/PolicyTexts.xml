@@ -484,10 +484,10 @@
 		<Replace Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Collective Agriculture[ENDCOLOR]
-				<!--[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food for every Farm and Fishing Net.-->				
+				[NEWLINE][ICON_BULLET]+1 [ICON_FOOD] Food for every Farm and Fishing Net.				
 				[NEWLINE][ICON_BULLET]+20% [ICON_FOOD] Food growth in every city.
 				[NEWLINE][ICON_BULLET]+30% bonus [ICON_FOOD] Food growth in the Capital.
-				</Text>
+			</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_POLICY_LEGALISM" >

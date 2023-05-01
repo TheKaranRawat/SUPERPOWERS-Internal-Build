@@ -5448,6 +5448,7 @@
 			<Yield>1</Yield>
 		</Row>
 
+		<!--
 		<Row>
 			<BuildingType>BUILDING_INTERNATIONAL_SHIPYARD</BuildingType>
 			<TerrainType>TERRAIN_COAST</TerrainType>
@@ -5456,18 +5457,21 @@
 		</Row>
 
 		<Row>
+			<BuildingType>BUILDING_INTERNATIONAL_SHIPYARD</BuildingType>
+			<TerrainType>TERRAIN_OCEAN</TerrainType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		-->
+
+		<Row>
 			<BuildingType>BUILDING_SHIPYARD</BuildingType>
 			<TerrainType>TERRAIN_OCEAN</TerrainType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>2</Yield>
 		</Row>
 
-		<Row>
-			<BuildingType>BUILDING_INTERNATIONAL_SHIPYARD</BuildingType>
-			<TerrainType>TERRAIN_OCEAN</TerrainType>
-			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>2</Yield>
-		</Row>
+		
 
 		<Row>
 			<BuildingType>BUILDING_CL_FALE_TELE</BuildingType>
