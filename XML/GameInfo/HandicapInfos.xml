@@ -15,7 +15,7 @@
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>15</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPopulationPercent>25</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
@@ -38,7 +38,7 @@
 				<BarbarianSeaTargetRange>10</BarbarianSeaTargetRange>
 				<AIDeclareWarProb>33</AIDeclareWarProb>
 				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>80</AIGrowthPercent>
+				<AIGrowthPercent>70</AIGrowthPercent>
 				<AITrainPercent>100</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>100</AIConstructPercent>
@@ -70,7 +70,7 @@
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>15</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPopulationPercent>25</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
@@ -93,7 +93,7 @@
 				<BarbarianSeaTargetRange>10</BarbarianSeaTargetRange>
 				<AIDeclareWarProb>66</AIDeclareWarProb>
 				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>70</AIGrowthPercent>
+				<AIGrowthPercent>60</AIGrowthPercent>
 				<AITrainPercent>100</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>100</AIConstructPercent>
@@ -123,7 +123,7 @@
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>15</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPopulationPercent>25</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
@@ -150,7 +150,7 @@
 				<AIDeclareWarProb>100</AIDeclareWarProb>
 				<AIWorkRateModifier>150</AIWorkRateModifier>
 				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>60</AIGrowthPercent>
+				<AIGrowthPercent>50</AIGrowthPercent>
 				<AITrainPercent>100</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>100</AIConstructPercent>
@@ -159,7 +159,7 @@
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>66</AIBuildingCostPercent>
 				<AIUnitCostPercent>100</AIUnitCostPercent>
-				<AIUnitSupplyPercent>0</AIUnitSupplyPercent>
+				<AIUnitSupplyPercent>5</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
 				<AIPerEraModifier>-1</AIPerEraModifier>
@@ -182,7 +182,7 @@
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>15</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPopulationPercent>25</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
@@ -209,7 +209,7 @@
 				<AIDeclareWarProb>100</AIDeclareWarProb>
 				<AIWorkRateModifier>200</AIWorkRateModifier>
 				<AIUnhappinessPercent>100</AIUnhappinessPercent>
-				<AIGrowthPercent>50</AIGrowthPercent>
+				<AIGrowthPercent>40</AIGrowthPercent>
 				<AITrainPercent>100</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>100</AIConstructPercent>
@@ -218,7 +218,7 @@
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>50</AIBuildingCostPercent>
 				<AIUnitCostPercent>100</AIUnitCostPercent>
-				<AIUnitSupplyPercent>0</AIUnitSupplyPercent>
+				<AIUnitSupplyPercent>10</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
 				<AIPerEraModifier>-2</AIPerEraModifier>
@@ -240,7 +240,7 @@
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>15</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPopulationPercent>25</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
@@ -269,7 +269,7 @@
 				<AIDeclareWarProb>100</AIDeclareWarProb>
 				<AIWorkRateModifier>250</AIWorkRateModifier>
 				<AIUnhappinessPercent>90</AIUnhappinessPercent>
-				<AIGrowthPercent>40</AIGrowthPercent>
+				<AIGrowthPercent>30</AIGrowthPercent>
 				<AITrainPercent>100</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>100</AIConstructPercent>
@@ -278,7 +278,7 @@
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>40</AIBuildingCostPercent>
 				<AIUnitCostPercent>100</AIUnitCostPercent>
-				<AIUnitSupplyPercent>0</AIUnitSupplyPercent>
+				<AIUnitSupplyPercent>15</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
 				<AIPerEraModifier>-5</AIPerEraModifier>
@@ -297,11 +297,11 @@
 				<AdvancedStartPointsMod>150</AdvancedStartPointsMod>
 				<HappinessDefault>20</HappinessDefault>
 				<NumCitiesUnhappinessMod>100</NumCitiesUnhappinessMod>
-				<PopulationUnhappinessMod>100</PopulationUnhappinessMod>
+				<PopulationUnhappinessMod>120</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>10</GoldFreeUnits>
 				<ProductionFreeUnits>15</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPopulationPercent>25</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>100</UnitCostPercent>
@@ -329,7 +329,7 @@
 				<AIDeclareWarProb>250</AIDeclareWarProb>
 				<AIWorkRateModifier>250</AIWorkRateModifier>
 				<AIUnhappinessPercent>60</AIUnhappinessPercent>
-				<AIGrowthPercent>30</AIGrowthPercent>
+				<AIGrowthPercent>20</AIGrowthPercent>
 				<AITrainPercent>60</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>80</AIConstructPercent>
@@ -338,7 +338,7 @@
 				<AIWorldCreatePercent>140</AIWorldCreatePercent>
 				<AIBuildingCostPercent>40</AIBuildingCostPercent>
 				<AIUnitCostPercent>45</AIUnitCostPercent>
-				<AIUnitSupplyPercent>0</AIUnitSupplyPercent>
+				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
 				<AIPerEraModifier>-7</AIPerEraModifier>
@@ -357,11 +357,11 @@
 				<AdvancedStartPointsMod>200</AdvancedStartPointsMod>
 				<HappinessDefault>20</HappinessDefault>
 				<NumCitiesUnhappinessMod>120</NumCitiesUnhappinessMod>
-				<PopulationUnhappinessMod>120</PopulationUnhappinessMod>
+				<PopulationUnhappinessMod>150</PopulationUnhappinessMod>
 				<Gold>0</Gold>
 				<GoldFreeUnits>15</GoldFreeUnits>
 				<ProductionFreeUnits>15</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPopulationPercent>25</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>120</UnitCostPercent>
@@ -389,7 +389,7 @@
 				<AIDeclareWarProb>400</AIDeclareWarProb>
 				<AIWorkRateModifier>350</AIWorkRateModifier>
 				<AIUnhappinessPercent>50</AIUnhappinessPercent>
-				<AIGrowthPercent>25</AIGrowthPercent>
+				<AIGrowthPercent>20</AIGrowthPercent>
 				<AITrainPercent>50</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>66</AIConstructPercent>
@@ -398,7 +398,7 @@
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>33</AIBuildingCostPercent>
 				<AIUnitCostPercent>40</AIUnitCostPercent>
-				<AIUnitSupplyPercent>15</AIUnitSupplyPercent>
+				<AIUnitSupplyPercent>50</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
 				<AIPerEraModifier>-9</AIPerEraModifier>
@@ -421,7 +421,7 @@
 				<Gold>0</Gold>
 				<GoldFreeUnits>0</GoldFreeUnits>
 				<ProductionFreeUnits>15</ProductionFreeUnits>
-				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
+				<ProductionFreeUnitsPopulationPercent>25</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>150</UnitCostPercent>
@@ -449,16 +449,16 @@
 				<AIDeclareWarProb>800</AIDeclareWarProb>
 				<AIWorkRateModifier>400</AIWorkRateModifier>
 				<AIUnhappinessPercent>33</AIUnhappinessPercent>
-				<AIGrowthPercent>20</AIGrowthPercent>
+				<AIGrowthPercent>15</AIGrowthPercent>
 				<AITrainPercent>33</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>50</AIConstructPercent>4
-				<AIWorldConstructPercent>350</AIWorldConstructPercent>
+				<AIWorldConstructPercent>400</AIWorldConstructPercent>
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
 				<AIBuildingCostPercent>33</AIBuildingCostPercent>
 				<AIUnitCostPercent>33</AIUnitCostPercent>
-				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
+				<AIUnitSupplyPercent>100</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
 				<AIPerEraModifier>-10</AIPerEraModifier>
