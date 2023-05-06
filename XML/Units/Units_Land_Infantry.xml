@@ -1119,6 +1119,7 @@
 		<Row>
 			<Class>UNITCLASS_FOREIGNLEGION</Class>
 			<Type>UNIT_FRENCH_FOREIGNLEGION</Type>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
 			<Combat>90</Combat>
 			<Cost>225</Cost>

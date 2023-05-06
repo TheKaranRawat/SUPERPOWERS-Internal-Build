@@ -33,19 +33,19 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_WORKER">
-			<Text>[ICON_WORKER]Worker</Text>
+			<Text>[ICON_WORKER] Worker</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_SETTLER">
-			<Text>[ICON_WORKER]Settler</Text>
+			<Text>[ICON_WORKER] Settler</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_CARAVAN">
-			<Text>[ICON_INTERNATIONAL_TRADE]Caravan</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] Caravan</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_CARGO_SHIP">
-			<Text>[ICON_INTERNATIONAL_TRADE]Cargo Ship</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] Cargo Ship</Text>
 		</Replace>
 		
 	</Language_en_US>
@@ -931,7 +931,7 @@
 			<Text>[COLOR_MAGENTA]Minuteman[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_IROQUOIAN_MOHAWKWARRIOR">
-			<Text>[COLOR_MAGENTA]Mohawk Warrior[ENDCOLOR]</Text>
+			<Text>[ICON_CAPITAL] [COLOR_MAGENTA]Mohawk Warrior[ENDCOLOR]</Text>
 		</Replace>
 		
 		
@@ -963,11 +963,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_INCAN_CHASQUI">
-			<Text>Chasqui</Text>
+			<Text>[ICON_CAPITAL] Chasqui</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_INCAN_CHASQUI_HEADING">
-			<Text>Chasqui</Text>
+			<Text>[ICON_CAPITAL] Chasqui</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_UNIT_INCAN_CHASQUI_TEXT">
 			<Text>The Chasquis (also Chaskis) were agile and highly trained and physically fit messengers that were in charge of carrying the quipus, messages and gifts throughout the Inca empire. A message could travel up to 240 km per day through the chasquis relay system. </Text>
@@ -995,22 +995,22 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_IROQUOIAN_MUSKETEER">
-			<Text>Iroquoian Musketman</Text>
+			<Text>[ICON_CAPITAL] Iroquoian Musketman</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_IROQUOIAN_MUSKETEER_HEADING">
-			<Text>Iroquoian Musketman</Text>
+			<Text>[ICON_CAPITAL] Iroquoian Musketman</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_IROQUOIAN_MUSKETEER_TEXT">
 			<Text>The Iroquoian soldiers were one of the most powerful and influential Indian nations. If their desperate efforts failed, they would all die -- either by musket and tomahawk in the burning villages, or by barbarous torture after capture. </Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_CELT_BLACKWATCH">
-			<Text>Black Watch</Text>
+			<Text>[ICON_CAPITAL] Black Watch</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELT_BLACKWATCH_HEADING">
-			<Text>Black Watch</Text>
+			<Text>[ICON_CAPITAL] Black Watch</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CELT_BLACKWATCH_PEDIA">
 			<Text>The Black Watch, 3rd Battalion, Royal Regiment of Scotland (3 SCOTS) is an infantry battalion of the Royal Regiment of Scotland.</Text>
@@ -1033,11 +1033,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_POLYNESIAN_CARGOSHIP">
-			<Text>Polynesian Cargoship</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] Polynesian Cargoship</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLYNESIAN_CARGOSHIP_HEADING">
-			<Text>Polynesian Cargoship</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] Polynesian Cargoship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_UNIT_POLYNESIAN_CARGOSHIP_TEXT">
 			<Text>
@@ -1070,11 +1070,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_ENGLISH_CROMWELL_TANK">
-			<Text>Cromwell Tank</Text>
+			<Text>[ICON_CAPITAL] A27 Cromwell</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ENGLISH_CROMWELL_TANK_HEADING">
-			<Text>Cromwell Tank</Text>
+			<Text>[ICON_CAPITAL] A27 Cromwell</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ENGLISH_CROMWELL_TANK_PEDIA">
 			<Text>The Cromwell tank was one of the most successful of the series of cruiser tanks fielded by Britain in the Second World War. Named after the English Civil War leader Oliver Cromwell, the Cromwell was the first tank put into service by the British to combine a dual-purpose gun, high speed from the powerful and reliable Meteor engine, and reasonable armour, in a balanced package. </Text>
@@ -1098,11 +1098,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_PERSIAN_CATAPHRACT">
-			<Text>Sassanid-era Cataphract</Text>
+			<Text>[ICON_CAPITAL] Sassanid Cataphract</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIAN_CATAPHRACT_HEADING">
-			<Text>Sassanid-era Cataphract</Text>
+			<Text>[ICON_CAPITAL] Sassanid Cataphract</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_PERSIAN_CATAPHRACT">
 			<Text>WIP</Text>
@@ -1139,11 +1139,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_RUSSIAN_T80">
-			<Text>T-80</Text>
+			<Text>[ICON_CAPITAL] T-80</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIAN_T80_HEADING">
-			<Text>T-80</Text>
+			<Text>[ICON_CAPITAL] T-80</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_RUSSIAN_T80">
 			<Text>WIP</Text>
@@ -1154,11 +1154,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_CHINESE_TYPE99">
-			<Text>Type 99A2</Text>
+			<Text>[ICON_CAPITAL] Type 99A2</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINESE_TYPE99_HEADING">
-			<Text>Type 99A2</Text>
+			<Text>[ICON_CAPITAL] Type 99A2</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_CHINESE_TYPE99">
 			<Text>WIP</Text>
@@ -1169,11 +1169,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_PERSIAN_ZULFIQAR">
-			<Text>Zulfiqar</Text>
+			<Text>[ICON_CAPITAL] Zulfiqar</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PERSIAN_ZULFIQAR_HEADING">
-			<Text>Zulfiqar</Text>
+			<Text>[ICON_CAPITAL] Zulfiqar</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_PERSIAN_ZULFIQAR">
 			<Text>WIP</Text>
@@ -1183,11 +1183,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_GERMAN_EUROCOPTER_TIGER">
-			<Text>Eurocopter Tiger (UAT)</Text>
+			<Text>[ICON_CAPITAL] Eurocopter Tiger</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMAN_EUROCOPTER_TIGER_HEADING">
-			<Text>Eurocopter Tiger (UAT)</Text>
+			<Text>[ICON_CAPITAL] Eurocopter Tiger</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMAN_EUROCOPTER_TIGER_HELP">
 			<Text>WIP</Text>
@@ -1200,11 +1200,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_MONGOLIAN_HUIHUIPAO">
-			<Text>Huihui Pao</Text>
+			<Text>[ICON_CAPITAL] Huihui Pao</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIAN_HUIHUIPAO_HEADING">
-			<Text>Huihui Pao</Text>
+			<Text>[ICON_CAPITAL] Huihui Pao</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONGOLIAN_HUIHUIPAO_PEDIA">
 			<Text>Counterweight trebuchets do not appear with certainty in Chinese historical records until about 1268, when the Mongols laid siege to Fancheng and Xiangyang. At the Siege of Fancheng and Xiangyang, the Mongol army, unable to capture the cities despite besieging the Song defenders for years, brought in two Persian engineers who built hinged counterweight trebuchets. These engines were called by the Chinese historians the Huihui Pao (回回砲)("huihui" means Muslim) or Xiangyang Pao (襄陽砲), because they were first encountered in that battle.</Text>
@@ -1219,11 +1219,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_ZULU_OLIFANT">
-			<Text>Olifant Mk1B</Text>
+			<Text>[ICON_CAPITAL] Olifant Mk1B</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_OLIFANT_HEADING">
-			<Text>Olifant Mk1B</Text>
+			<Text>[ICON_CAPITAL] Olifant Mk1B</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_OLIFANT_HELP">
 			<Text>WIP</Text>
@@ -1234,11 +1234,11 @@
 
 		
 		<Row Tag="TXT_KEY_UNIT_ZULU_G6_SPG">
-			<Text>G6 Rhino</Text>
+			<Text>[ICON_CAPITAL] G6 Rhino</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_G6_SPG_HEADING">
-			<Text>G6 Self-propelled Howitzer</Text>
+			<Text>[ICON_CAPITAL] G6 Self-propelled Howitzer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_G6_SPG_HELP">
 			<Text>WIP</Text>
@@ -1249,11 +1249,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_SKODA">
-			<Text>Skoda Howitzer</Text>
+			<Text>[ICON_CAPITAL] Skoda Howitzer</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_SKODA_HEADING">
-			<Text>Skoda Howitzer</Text>
+			<Text>[ICON_CAPITAL] Skoda Howitzer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AUSTRIAN_SKODA_PEDIA">
 			<Text>The Skoda 75 mm Model 1939 (75 mm M.39) was a mountain gun manufactured in by Skoda Works and exported in small numbers to Romania and Iran. The design was related to the Bofors L/22 sold to Switzerland. For transport, the gun could be broken into eight sections and carried by mule. </Text>
@@ -1347,14 +1347,14 @@
 	</Row>
 
 	<Row Tag="TXT_KEY_UNIT_FRANCE_BATTERY">
-		<Text>Grand Battery</Text>
+		<Text>[ICON_CAPITAL] Grand Battery</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_FRANCE_BATTERY_HELP">
 		<Text>Fast and Powerful Sige Unit. Only the France may build it. It can sunder the enemy and doesn't need to set up before attacking.</Text>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_FRANCE_BATTERY_HEADING">
-		<Text>Grand Battery</Text>
+		<Text>[ICON_CAPITAL] Grand Battery</Text>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_FRANCE_BATTERY_PEDIA">
 		<Text>Grand Battery (Grande Batterie, meaning big or great battery) was a French artillery tactic of the Napoleonic wars. It involved massing all available batteries into a single large, temporary one, and concentrating the firepower of their guns at a single point in the enemy's lines.</Text>
@@ -1374,11 +1374,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_OTTOMAN_COBRA">
-			<Text>Otokar Cobra</Text>
+			<Text>[ICON_CAPITAL] Otokar Cobra</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMAN_COBRA_HEADING">
-			<Text>Otokar Cobra Anti-air Vehicle</Text>
+			<Text>[ICON_CAPITAL] Otokar Cobra Anti-air Vehicle</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMAN_COBRA_PEDIA">
 			<Text>The Cobra (Turkish: Kobra) is an infantry mobility vehicle developed by Turkish firm Otokar which uses some mechanical components and sub-systems of the HMMWV.</Text>
@@ -1387,14 +1387,14 @@
 		
 		
 		<Row Tag="TXT_KEY_UNIT_SWEDISH_GUSTAV_RECOILESS_GUN">
-			<Text>Carl Gustav Recoilless Rifle</Text>
+			<Text>[ICON_CAPITAL] Norrlands Regiment</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SWEDISH_GUSTAV_RECOILESS_GUN_HEADING">
-			<Text>Carl Gustav Recoilless Rifle</Text>
+			<Text>[ICON_CAPITAL] Norrlands Regiment</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SWEDISH_GUSTAV_RECOILESS_GUN_PEDIA">
-			<Text>The Carl Gustaf (Swedish pronunciation: [ˈkʰɑːɭ ˈɡɵ̞stɑːv]; also known as, Gustaf Bazooka and M2CG) is an 84 mm man-portable reusable anti-tank recoilless rifle produced by Saab Bofors Dynamics (formerly Bofors Anti-Armour AB) in Sweden. Although most rounds fired by the Carl Gustav work on the classic recoilless principle, modern rounds sometimes add a post-firing booster that technically make it a rocket launcher.</Text>
+			<Text>The Norrbotten Regiment, is a Swedish Army arctic armoured, light infantry and commando regiment that traces its origins back to the 19th century.  The regiment has the responsibility for training two armoured and one special recon battalion, as well as number of Arctic light infantry battalions from the home guard as well as running the army's winter unit.</Text>
 		</Row>
 		
 
@@ -1440,11 +1440,11 @@
 
 		
 		<Row Tag="TXT_KEY_UNIT_SIAMESE_MONK">
-			<Text>Monk</Text>
+			<Text>[ICON_RELIGION_BUDDHISM] Monk</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAMESE_MONK_HEADING">
-			<Text>Monk</Text>
+			<Text>[ICON_RELIGION_BUDDHISM] Monk</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SIAMESE_MONK_HELP">
 			<Text>Monk is the unique religious unit of Siam, replacing the Missionary. It has better mobility and religious strength. It can Spreads religion to other cities three times.</Text>
@@ -1455,11 +1455,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_HUN_SHAMAN">
-			<Text>Shaman</Text>
+			<Text>[ICON_RELIGION_TENGRIISM] Shaman</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUN_SHAMAN_HEADING">
-			<Text>Shaman</Text>
+			<Text>[ICON_RELIGION_TENGRIISM] Shaman</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HUN_SHAMAN_HELP">
 			<Text>Shaman is the unique unit of Hun, replacing the Inquisitor. It can betrained or be purchased with faith in cities. However it is not a religious unit and cannot remove other religions from cities. It can use mysterious sorcery to remove any debuffs of your units and make units around it healing +30HP per turn.</Text>
@@ -1473,17 +1473,17 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_EGYPT_UNIT777">
-			<Text>[COLOR_SELECTED_TEXT]Unit 777[ENDCOLOR]</Text>
+			<Text>[ICON_CAPITAL] [COLOR_SELECTED_TEXT]Unit 777[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_EGYPT_UNIT777_HEADING">
-			<Text>[COLOR_SELECTED_TEXT]Unit 777[ENDCOLOR]</Text>
+			<Text>[ICON_CAPITAL] [COLOR_SELECTED_TEXT]Unit 777[ENDCOLOR]</Text>
 		</Row>
 		<!--<Row Tag="TXT_KEY_UNIT_EGYPT_UNIT777_HELP">
 			<Text>WIP</Text>
 		</Row>-->
 		<Row Tag="TXT_KEY_UNIT_EGYPT_UNIT777_TEXT">
-			<Text>Unit 777 (Arabic: الوحدة 777 قتال‎), also known as Task Force 777, is an Egyptian military counter-terrorism and special operations unit. It was created in 1978[1] by the government of Anwar Sadat in response to concerns of increased terrorist activity following the expulsion of Soviet military advisors from the country by Sadat and his efforts to achieve peace with Israel.</Text>
+			<Text>Unit 777, also known as Task Force 777, is an Egyptian military counter-terrorism and special operations unit. It was created in 1978[1] by the government of Anwar Sadat in response to concerns of increased terrorist activity following the expulsion of Soviet military advisors from the country by Sadat and his efforts to achieve peace with Israel.</Text>
 		</Row>
 
 
@@ -1535,7 +1535,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_ROMAN_REUMBERTO">
-			<Text>Ironclad Battleship</Text>
+			<Text>[ICON_CAPITAL] Ironclad Battleship</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ROMAN_REUMBERTO_HEADING">
@@ -1554,11 +1554,11 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_OTTOMAN_PRIVATEER">
-			<Text>Turkish Privateer</Text>
+			<Text>[ICON_CAPITAL] Turkish Privateer</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMAN_PRIVATEER_HEADING">
-			<Text>Turkish Privateer</Text>
+			<Text>[ICON_CAPITAL] Turkish Privateer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_OTTOMAN_PRIVATEER_PEDIA">
 			<Text>A privateer (sometimes called corsair or buccaneer) was a private person or ship authorized by a government by letters of marque to attack foreign vessels during wartime, and take them as prizes. Captured ships were subject to condemnation and sale under prize law, with the proceeds divided between the privateer shipowners and crew. Privateering was a way of mobilizing armed ships and sailors as naval auxiliaries.</Text>
@@ -1580,11 +1580,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_JAPANESE_DESTROYER">
-			<Text>1st Class Destroyer</Text>
+			<Text>[ICON_CAPITAL] 1st Class Destroyer</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JAPANESE_DESTROYER_HEADING">
-			<Text>1st Class Destroyers</Text>
+			<Text>[ICON_CAPITAL] 1st Class Destroyers</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_JAPANESE_DESTROYER">
 			<Text>WIP</Text>
@@ -1594,11 +1594,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_JAPANESE_BATTLESHIP">
-			<Text>Dreadnought Battleship</Text>
+			<Text>[ICON_CAPITAL] Dreadnought Battleship</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JAPANESE_BATTLESHIP_HEADING">
-			<Text>Dreadnought Battleship</Text>
+			<Text>[ICON_CAPITAL] Dreadnought Battleship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_JAPANESE_BATTLESHIP_PEDIA">
 			<Text>With their victory in the Russo-Japanese War of 1904–05, the Japanese became concerned about the potential for conflict with the US. The theorist Satō Tetsutarō developed the doctrine that Japan should have a battlefleet at least 70% the size of that of the US. This would enable the Japanese navy to win two decisive battles, the first early in a war against the US Pacific Fleet, and the second against the US Atlantic Fleet which would inevitably be dispatched as reinforcements.</Text>
@@ -1630,11 +1630,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_GREEK_ARMORED_CRUISER">
-			<Text>Cruiser Georgios Averof</Text>
+			<Text>[ICON_CAPITAL] Cruiser Georgios Averof</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREEK_ARMORED_CRUISER_HEADING">
-			<Text>Cruiser Georgios Averof</Text>
+			<Text>[ICON_CAPITAL] Cruiser Georgios Averof</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GREEK_ARMORED_CRUISER_PEDIA">
 			<Text>Georgios Averof (Greek: Θ/Κ Γεώργιος Αβέρωφ) is a modified Pisa-class armored cruiser built in Italy for the Royal Hellenic Navy in the first decade of the 20th century. The ship served as the Greek flagship during most of the first half of the century. Although popularly known as a battleship (θωρηκτό) in Greek, she is in fact an armored cruiser (θωρακισμένο καταδρομικό), the only ship of this type still in existence.</Text>
@@ -1646,17 +1646,17 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_CACADOR">
-			<Text>Caçador</Text>
+			<Text>[ICON_CAPITAL] Caçador</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		
 
 		<Row Tag="TXT_KEY_UNIT_GERMAN_UBOAT">
-			<Text>U-boat</Text>
+			<Text>[ICON_CAPITAL] U-Boat</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_GERMAN_UBOAT_HEADING">
-			<Text>U-boat</Text>
+			<Text>[ICON_CAPITAL] U-Boat</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_GERMAN_UBOAT">
 			<Text>WIP</Text>
@@ -1679,11 +1679,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_SONGHAI_EXPEDITION_FLEET">
-			<Text>Empire Expedition Fleet</Text>
+			<Text>[ICON_CAPITAL] Empire Expedition Fleet</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SONGHAI_EXPEDITION_FLEET_HEADING">
-			<Text>Empire Expedition Fleet</Text>
+			<Text>[ICON_CAPITAL] Empire Expedition Fleet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SONGHAI_EXPEDITION_FLEET_PEDIA">
 			<Text>The Songhai Empire held a great naval fleet and planned to cross the Atlantic Ocean. Unfortunately they failed to set off before the disintegration of the empire. </Text>
@@ -1691,16 +1691,16 @@
 		
 
 		<Replace Tag="TXT_KEY_UNIT_ENGLISH_SHIPOFTHELINE">
-			<Text>First Rate</Text>
+			<Text>[ICON_CAPITAL] First Rate</Text>
 		</Replace>
 
 		
 		<Row Tag="TXT_KEY_UNIT_KIROV_BATTLECRUISER">
-			<Text>Kirov-class Battlecruiser</Text>
+			<Text>[ICON_CAPITAL] Kirov-Class Battlecruiser</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_KIROV_BATTLECRUISER_HEADING">
-			<Text>Kirov-class Battlecruiser</Text>
+			<Text>[ICON_CAPITAL] Kirov-Class Battlecruiser</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_KIROV_BATTLECRUISER">
 			<Text>WIP</Text>
@@ -1712,11 +1712,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_FRANCE_MISTRAL">
-			<Text>Mistral-class Amphibious Assault Ship</Text>
+			<Text>[ICON_CAPITAL] Mistral-Class Amphibious Assault Ship</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_MISTRAL_HEADING">
-			<Text>Mistral-class Amphibious Assault Ship</Text>
+			<Text>[ICON_CAPITAL] Mistral-Class Amphibious Assault Ship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_FRANCE_MISTRAL">
 			<Text>WIP</Text>
@@ -1753,11 +1753,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_AMERICAN_NIMITZ">
-			<Text>Nimitz-class Carrier</Text>
+			<Text>[ICON_CAPITAL] Nimitz-class Carrier</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AMERICAN_NIMITZ_HEADING">
-			<Text>Nimitz-class Carrier</Text>
+			<Text>[ICON_CAPITAL] Nimitz-class Carrier</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AMERICAN_NIMITZ_HELP">
 			<Text>WIP</Text>
@@ -1811,11 +1811,11 @@
 		<Text>Destroyers (with a DD hull classification symbol) primarily perform anti-submarine warfare duty while guided missile destroyers (DDGs) are multi-mission (anti-submarine, anti-aircraft and anti-surface warfare) surface combatants, with an emphasis on anti-surface warfare.</Text>
 	</Row>
 		<Row Tag="TXT_KEY_UNIT_KOREAN_SEJONG_CLASS">
-			<Text>Sejong the Great-class Destroyer</Text>
+			<Text>[ICON_CAPITAL] Sejong the Great-Class Destroyer</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_KOREAN_SEJONG_CLASS_HEADING">
-			<Text>Sejong the Great-class Destroyer</Text>
+			<Text>[ICON_CAPITAL] Sejong the Great-Class Destroyer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_KOREAN_SEJONG_CLASS_PEDIA">
 			<Text>The Sejong the Great-class destroyers (Sejongdaewang-Ham or Hangul: 세종대왕급 구축함, Hanja: 世宗大王級驅逐艦), also known as KD-III, are guided missile destroyers of the Republic of Korea Navy (ROKN). The second ship was commissioned in August 2010. As of 2010, the ROKN has committed itself to deploy three ships with an option for three more.</Text>
@@ -1836,7 +1836,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_SPANISH_ARMADA">
-		<Text>La Armada Invincible</Text>
+		<Text>[ICON_CAPITAL] La Armada Invincible</Text>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_HELP_SPANISH_ARMADA">
 		<Text>La Armada Invincible is a heavy combat vessel that can also be used to gain some gold uppon defeat enermy naval units. Only the Spanish civilization can build it.</Text>
@@ -1875,7 +1875,7 @@
 	</Row>
 
 		<Row Tag="TXT_KEY_UNIT_DANISH_DRAGONSHIP">
-			<Text>Dragonship</Text>
+			<Text>[ICON_CAPITAL] Dragonship</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_UNIT_DANISH_DRAGONSHIP">
@@ -1889,7 +1889,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_DANISH_ABSALON">
-			<Text>[COLOR_MAGENTA]Absalon-class Frigate[ENDCOLOR]</Text>
+			<Text>[ICON_CAPITAL] [COLOR_MAGENTA]Absalon-class Frigate[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_DANISH_ABSALON_HEADING">
@@ -1912,7 +1912,7 @@
 	<!-- *************************Air Units****************************-->
 
 		<Row Tag="TXT_KEY_UNIT_FRANCE_MIRRAGE2000">
-			<Text>Mirage 2000</Text>
+			<Text>[ICON_CAPITAL] Mirage 2000</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FRANCE_MIRRAGE2000_HEADING">
@@ -1933,11 +1933,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_POLISH_PZL23">
-			<Text>PZL.23 Karas</Text>
+			<Text>[ICON_CAPITAL] PZL.23 Karas</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLISH_PZL23_HEADING">
-			<Text>PZL.23 Karas</Text>
+			<Text>[ICON_CAPITAL] PZL.23 Karas</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLISH_PZL23_HELP">
 			<Text>WIP</Text>
@@ -1947,11 +1947,11 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_POLISH_PZLW3_HELICOPTER">
-			<Text>PZL W3 Sokol</Text>
+			<Text>[ICON_CAPITAL] PZL W3 Sokol</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLISH_PZLW3_HELICOPTER_HEADING">
-			<Text>PZL W3 Sokol</Text>
+			<Text>[ICON_CAPITAL] PZL W3 Sokol</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_POLISH_PZLW3_HELICOPTER_HELP">
 			<Text>WIP</Text>
@@ -1963,7 +1963,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_SWEDISH_JAS39_FIGHTER">
-			<Text>JAS 39 Gripen</Text>
+			<Text>[ICON_CAPITAL] JAS 39 Gripen</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SWEDISH_JAS39_FIGHTER_HEADING">
@@ -1978,11 +1978,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_RUSSIAN_SU27">
-			<Text>Su-27 Flanker</Text>
+			<Text>[ICON_CAPITAL] Su-27 Flanker</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIAN_SU27_HEADING">
-			<Text>Sukhoi Su-27</Text>
+			<Text>[ICON_CAPITAL] Sukhoi Su-27</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_RUSSIAN_SU27_HELP">
 			<Text>WIP</Text>
@@ -2009,7 +2009,7 @@
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARRIER_FIGHTER_ADV_HEADING">
-			<Text>Carrier-based Aircraft ((STOVL)</Text>
+			<Text>Carrier-based Aircraft (STOVL)</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARRIER_FIGHTER_ADV_PEDIA">
 			<Text>STOVL takeoffs are accomplished with "ski-jumps", instead of a catapult. STOVL use usually allows aircraft to carry a larger payload as compared to during VTOL use, while avoiding the complexity of a catapult. The best known example is the Hawker Siddeley Harrier Jump Jet,[4] despite being capable of VTOL takeoffs, is usually operated as a STOVL aircraft to increase its fuel and weapons load. </Text>
@@ -2017,18 +2017,18 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_CARRIER_ENGLISH_HARRIER">
-			<Text>Sea Harrier FRS1</Text>
+			<Text>[ICON_CAPITAL] Sea Harrier FRS1</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARRIER_ENGLISH_HARRIER_HEADING">
-			<Text>Sea Harrier FRS1</Text>
+			<Text>[ICON_CAPITAL] Sea Harrier FRS1</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARRIER_ENGLISH_HARRIER_ADV">
-			<Text>Sea Harrier FA2</Text>
+			<Text>[ICON_CAPITAL] Sea Harrier FA2</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARRIER_ENGLISH_HARRIER_ADV_HEADING">
-			<Text>Sea Harrier FA2</Text>
+			<Text>[ICON_CAPITAL] Sea Harrier FA2</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_UNIT_HELP_ENGLISH_HARRIER_JET">
@@ -2100,12 +2100,12 @@
 	</Row>
 
 	<Row Tag="TXT_KEY_UNIT_AMERICAN_APACHE">
-		<Text>AH-64 Apahce</Text>
+		<Text>[ICON_CAPITAL] AH-64 Apahce</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	
 	<Row Tag="TXT_KEY_UNIT_AMERICAN_APACHE_HEADING">
-		<Text>AH-64 Apahce</Text>
+		<Text>[ICON_CAPITAL] AH-64 Apahce</Text>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_AMERICAN_APACHE_HELP">
 		<Text>WIP</Text>
@@ -2270,11 +2270,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE">
-			<Text>Eagle Warrior</Text>
+			<Text>[ICON_CAPITAL] Eagle Warrior</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_HEADING">
-			<Text>Eagle Warrior</Text>
+			<Text>[ICON_CAPITAL] Eagle Warrior</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_AZTEC_EAGLE_PEDIA">
 			<Text>Eagle warriors or eagle knights (Classical Nahuatl: cuāuhtli [ˈkʷaːwtɬi] (singular) or cuāuhmeh [ˈkʷaːwmeʔ] (plural)) were a special class of infantry soldier in the Aztec army, one of the two leading military orders in Aztec society. </Text>
@@ -2453,7 +2453,9 @@
 			<Text>The Conquistador is a multi-purpose unit that is strong both on land and at sea. Replacing the Explorer, it is a great scout on land with strong combat strength and extra visibility. It also has the ability to found new cities, but only on a foreign continent that does not contain the Spanish capital. The Conquistador can enter the ocean without researching Navigation and in the water, it has the defensive embarkation promotion that allows it to defend itself against naval units. </Text>
 		</Replace>
 
-
+		<Replace Tag="TXT_KEY_UNIT_BERBER_CAVALRY">
+			<Text>[ICON_CAPITAL] Berber Cavalry</Text>
+		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_BERBER_CAVALRY_HELP">
 			<Text>Unique unit of the Moroccan civilization. Replaces the Cavalry. It is a strng hit-and-run unit which boasts a better self-defense ability.</Text>
 		</Replace>
@@ -2461,9 +2463,188 @@
 			<Text>The Berber Cavalry is a unit good at desfesive actions. It has bonus defending enemy ranged units' attacks, which are the worst enemy of hit-and-run units. Therefore, the Berber Cavalry will give the Moroccans an edge when defending their territory in deserts.</Text>
 		</Replace>
 
+		<!-- UNIQUE UNITS NAME TAGS -->
 
+		<Replace Tag="TXT_KEY_UNIT_GREEK_HOPLITE">
+      		<Text>[ICON_CAPITAL] Hoplite</Text>
+   		</Replace>
 
+		<Replace Tag="TXT_KEY_UNIT_GREEK_COMPANIONCAVALRY">
+			<Text>[ICON_CAPITAL] Companion Cavalry</Text>
+		</Replace>
 
+		<Replace Tag="TXT_KEY_UNIT_ASSYRIAN_SIEGE_TOWER">
+			<Text>[ICON_CAPITAL] Siege Tower</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SONGHAI_MUSLIMCAVALRY">
+			<Text>[ICON_CAPITAL] Mandekalu Cavalry</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_HUN_BATTERING_RAM">
+			<Text>[ICON_CAPITAL] Battering Ram</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_HUN_HORSE_ARCHER">
+			<Text>[ICON_CAPITAL] Horse Archer</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_ROMAN_BALLISTA">
+			<Text>[ICON_CAPITAL] Ballista</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_ROMAN_LEGION">
+      		<Text>[ICON_CAPITAL] Legion</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_CELT_PICTISH_WARRIOR">
+			<Text>[ICON_CAPITAL] Pictish Warrior</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_POLISH_WINGED_HUSSAR">
+			<Text>[ICON_CAPITAL] Winged Hussar</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_PERSIAN_IMMORTAL">
+			<Text>[ICON_CAPITAL] Immortal</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_CARTHAGINIAN_FOREST_ELEPHANT">
+			<Text>[ICON_CAPITAL] African War Elephant</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_CARTHAGINIAN_QUINQUEREME">
+     		<Text>[ICON_CAPITAL] Quinquereme</Text>
+   		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_VENETIAN_MERCHANT">
+			<Text>[ICON_GREAT_PEOPLE] Merchant of Venice</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_INDONESIAN_KRIS_SWORDSMAN">
+			<Text>[ICON_CAPITAL] Kris Swordsman</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_INDIAN_WARELEPHANT">
+			<Text>[ICON_CAPITAL] War Elephant</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_MONGOL_KESHIK">
+			<Text>[ICON_CAPITAL] Keshik</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_MONGOL_KHAN">
+     		 <Text>[ICON_CAPITAL] Khan</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SWEDISH_CAROLEAN">
+			<Text>[ICON_CAPITAL] Carolean</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_MEHAL_SEFARI">
+      		<Text>[ICON_CAPITAL] Mehal Sefari</Text>
+  		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_DANISH_BERSERKER">
+     		<Text>[ICON_CAPITAL] Berserker</Text>
+  		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_ARABIAN_CAMELARCHER">
+			<Text>[ICON_CAPITAL] Camel Archer</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SPANISH_CONQUISTADOR">
+			<Text>[ICON_CAPITAL] Conquistador</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_POLYNESIAN_MAORI_WARRIOR">
+			<Text>[ICON_CAPITAL] Maori Warrior</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_PORTUGUESE_NAU">
+			<Text>[ICON_CAPITAL] Nau</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_AUSTRIAN_HUSSAR">
+			<Text>[ICON_CAPITAL] Hussar</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_AZTEC_JAGUAR">
+			<Text>[ICON_CAPITAL] Jaguar Warrior</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_BABYLON_BOWMAN">
+			<Text>[ICON_CAPITAL] Bowman</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_JAPANESE_SAMURAI">
+      		<Text>[ICON_CAPITAL] Samurai</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_MAYAN_ATLATLIST">
+			<Text>[ICON_CAPITAL] Atlatlist</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_INCAN_SLINGER">
+			<Text>[ICON_CAPITAL] Slinger</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_BRAZILIAN_PRACINHA">
+      		<Text>[ICON_CAPITAL] Pracinha</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SHOSHONE_PATHFINDER">
+			<Text>[ICON_CAPITAL] Pathfinder</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SHOSHONE_COMANCHE_RIDERS">
+			<Text>[ICON_CAPITAL] Comanche Riders</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_EGYPT_WARCHARIOT">
+			<Text>[ICON_CAPITAL] War Chariot</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SIAMESE_WARELEPHANT">
+			<Text>[ICON_CAPITAL] Naresuan's Elephant</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_CIV5_KOREA_TURTLESHIP_HEADING">
+          <Text>[ICON_CAPITAL] Turtle Ship</Text>
+        </Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_ZULU_IMPI">
+      		<Text>[ICON_CAPITAL] Impi</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_OTTOMAN_JANISSARY">
+			<Text>[ICON_CAPITAL] Janissary</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_BYZANTINE_CATAPHRACT">
+			<Text>[ICON_CAPITAL] Cataphract</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_CIV5_INDUSTRIAL_B17_HEADING">
+      		<Text>[ICON_CAPITAL] B-17</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SEA_BEGGAR">
+			<Text>[ICON_CAPITAL] Sea Beggar</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_CHINESE_CHUKONU">
+			<Text>[ICON_CAPITAL] Chu-Ko-Nu</Text>
+		</Replace>
+
+		<Row Tag="TXT_KEY_UNIT_INQUISITOR">
+      		<Text>[ICON_PROPHET] Inquisitor</Text>
+    	</Row>
+
+		<Row Tag="TXT_KEY_UNIT_MISSIONARY">
+      		<Text>[ICON_PROPHET] Missionary</Text>
+    	</Row>
+		
 	</Language_en_US>
 
 
@@ -2573,7 +2754,7 @@
 
 
 		<Replace Tag="TXT_KEY_UNIT_OTTOMAN_SIPAHI">
-			<Text>Assyrian Spear Horseman</Text>
+			<Text>[ICON_CAPITAL] Assyrian Spear Horseman</Text>
 			<Plurality>2</Plurality>
 		</Replace>
 		<!--<Row Tag="TXT_KEY_ELITE_NAME_OTTOMAN_SIPAHI">
@@ -2702,17 +2883,17 @@
 
 
 		<Replace Tag="TXT_KEY_UNIT_LAND_IRONCLAD">
-			<Text>[COLOR_YELLOW]Land Ironclad[ENDCOLOR]</Text>
+			<Text>[COLOR_YELLOW]Prototype Tank[ENDCOLOR]</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_LAND_IRONCLAD_HELP">
 			<Text>
 				An experimental steam-powered armored vehicle.
-				[NEWLINE][NEWLINE]Requires Land Ironclad Project. You can build or purchase as many as you want.
+				[NEWLINE][NEWLINE]Requires Prototype Tank Project. You can build or purchase as many as you want.
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_LAND_IRONCLAD_STRATEGY">
-			<Text>The Land Ironclad is a legendary steam-powered unit designed to break through enemy battle line. It is an Armored Unit so pikes cannot stop it for its heavy armor and machine gun so there is no way to stop this iron monster in its era. However, it will quickly become old-fashioned when landship is unlocked.</Text>
+			<Text>The Prototype Tank is a legendary steam-powered unit designed to break through enemy battle line. It is an Armored Unit so pikes cannot stop it for its heavy armor and machine gun so there is no way to stop this iron monster in its era. However, it will quickly become old-fashioned when landship is unlocked.</Text>
 		</Replace>
 
 
@@ -4761,7 +4942,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_GERMAN_PANZER">
-			<Text>Panzer VI Tiger</Text>
+			<Text>[ICON_CAPITAL] Panzer VI Tiger</Text>
 		</Replace>
 
 		

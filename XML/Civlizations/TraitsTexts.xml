@@ -1040,14 +1040,14 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_ARABIAN_PROPHET">
-			<Text>Prophet</Text>
+			<Text>[ICON_RELIGION_ISLAM] Prophet</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ARABIAN_PROPHET_HEADING">
-			<Text>Prophet</Text>
+			<Text>[ICON_RELIGION_ISLAM] Prophet</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ARABIAN_PROPHET_HELP">
-			<Text>Prophet is the unique prophet unit for Arabia. He can found or enhance a religion, construct the special Holy Site improvement and spread religion 4 times as the normal prophet unit. He can also conduct a trade mission in a City-State as the Great Merchant. </Text>
+			<Text>The Prophet is the unique prophet unit for Arabia. He can found or enhance a religion, construct the special Holy Site improvement and spread religion 4 times as the normal prophet unit. He can also conduct a trade mission in a City-State as the Great Merchant. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ARABIAN_PROPHET_TEXT">
 			<Text>Prophets in Islam include "messengers", bringers of a divine revelation via an angel; and "prophets", lawbringers that Muslims believe were sent by God to every people, bringing God's message in a language they can understand. Belief in Islamic prophets is one of the six articles of the Islamic faith, and specifically mentioned in the Quran.</Text>

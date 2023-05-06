@@ -1703,7 +1703,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_SAN_MARCO">
-			<Text>Piazza San Marco</Text>
+			<Text>[ICON_CULTURE]  San Marco</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_WONDER_SAN_MARCO_HELP">

@@ -320,6 +320,7 @@
 		<Row>
 			<Class>UNITCLASS_BRAZIL_SCOCCER_STAR</Class>
 			<Type>UNIT_BRAZIL_SCOCCER_STAR</Type>
+			<PrereqTech>TECH_RADIO</PrereqTech>
 			<Cost>-1</Cost>
 			<Moves>2</Moves>
 			<Capture>UNITCLASS_BRAZIL_SCOCCER_STAR</Capture>

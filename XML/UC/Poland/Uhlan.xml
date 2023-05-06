@@ -100,7 +100,7 @@
 
 	<Language_en_US>
 		<Row Tag="TXT_KEY_UNIT_UHLAN">
-			<Text>Uhlan</Text>
+			<Text>[ICON_CAPITAL] Uhlan</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_UHLAN_HELP">
 			<Text>Mounted Unit capable of fighting toe-to-toe with contemporary infantry units. Only Poland may build it.</Text>
