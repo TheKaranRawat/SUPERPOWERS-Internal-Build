@@ -1716,7 +1716,7 @@
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
-			<ResourceType>RESOURCE_FURS</ResourceType>
+			<ResourceType>RESOURCE_FUR</ResourceType>
 		</Row>
 		<Row>
 			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
