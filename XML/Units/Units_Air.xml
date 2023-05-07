@@ -320,9 +320,7 @@
 			<Immobile>true</Immobile>
 			<Range>18</Range>
 			<AirInterceptRange>12</AirInterceptRange>
-			<!--
-			<Special>SPECIALUNIT_FIGHTER</Special>
-			-->
+			<Special>SPECIALUNIT_STEALTH</Special>
 			<CombatClass>UNITCOMBAT_FIGHTER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_DEFENSE_AIR</DefaultUnitAI>
