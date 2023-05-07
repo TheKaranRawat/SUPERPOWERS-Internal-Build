@@ -906,7 +906,7 @@
 			<Text>The earliest experiments in cloning were conducted on farm animals. As human cloning has a variety of ethical concerns, the most likely uses of cloning in the near future will be to increase the productivity of animal herds.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_AQUACULTURE_LAB_DESC">
-			<Text>[ICON_RESEARCH][ICON_FOOD] Aquaculture Lab</Text>
+			<Text>[ICON_FOOD] Aquaculture Lab</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_AQUACULTURE_LAB_HELP">
 			<Text>Sea resources worked by the city produce +1 [ICON_FOOD] Food and [ICON_GOLD] Gold. Requires a Lighthouse, and city must not contain an Undersea Mining Platform.</Text>
@@ -993,7 +993,7 @@
 		</Row>
 		
 		<Row Tag="TXT_KEY_BUILDING_FW_NANOFORGE_DESC">
-			<Text>[ICON_RES_ELECTRICITY][ICON_PRODUCTION] Nanoforge</Text>
+			<Text>[ICON_PRODUCTION] Nanoforge</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_NANOFORGE_HELP">
 			<Text>Increases the production of military units by 15%. Requires an Autoplant.</Text>
@@ -1079,7 +1079,7 @@
 			<Text>As society became more ecologically conscious, the impact that heavy industry can have upon the environment also became increasingly scrutinized. Under increasing social pressure, industries began to try and find more ecologically-friendly ways to maintain production, switching their existing factories and industrial plants over to newer "biofactories", that had a reduced impact on both the natural environment, as well as the humans that worked in and around them. Eventually, these "biofactories" became similar to the synthecologies that were becoming common in some areas -- artificially created environments that served industrial needs. The most sophisticated of these incorporated modified humans into the ecological infrastructure, and the engineered ecologies were so sophisticated they could manufacture materials similar to basic nanotechnological processes.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_NETWORK_BACKBONE_DESC">
-			<Text>[ICON_RESEARCH][ICON_CULTURE] Network Backbone</Text>
+			<Text>[ICON_RESEARCH] Network Backbone</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_NETWORK_BACKBONE_HELP">
 			<Text>Adds 1 [ICON_RESEARCH] Science for each Research Server in the empire, adds 1 [ICON_CULTURE] Culture for each Entertainment Server in the empire, and adds 1 [ICON_GOLD] for each Comm Array in the City's radius. Requires a Server Hub. Cannot be built if the City contains an Information Hub, Distribution Hub, or Metroplex Hub.</Text>
@@ -1116,7 +1116,7 @@
 		</Row>
 		
 		<Row Tag="TXT_KEY_BUILDING_FW_SIMULATION_SERVER_DESC">
-			<Text>[ICON_RESEARCH][ICON_CULTURE] AI Network</Text>
+			<Text>[ICON_RESEARCH] AI Network</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_SIMULATION_SERVER_HELP">
 			<Text>Each AI Network in the empire adds 1 [ICON_RESEARCH] Science and 1 [ICON_CULTURE] Culture. Adds 1 [ICON_PRODUCTION] Production and 1 [ICON_GOLD] Gold for each Support Node in the city's radius. Requires a Network Backbone. Cannot be built if the City contains an Information Hub, Distribution Hub, or Metroplex Hub.</Text>
@@ -1349,7 +1349,7 @@
 			<Text>While very basic rockets could be sent to the edge of the atmosphere from practically any location, sending people and materiel into orbit required much more complex facilities. These launch facilities would construct and maintain the rockets and spacecraft needed to reach orbit, and were so expensive and required such immense support that any empire would typically only support a single facility to handle all of its launches. They did provide a significant boost to the scientific community, however, and aerospace development even helped support industrial efforts, as the facility would require a number of different services and skilled workers.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_SPACE_STATION_DESC">
-			<Text>[ICON_PRODUCTION][ICON_RESEARCH]Space Station</Text>
+			<Text>[ICON_RESEARCH]Space Station</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_SPACE_STATION_HELP">
 			<Text>Enables construction of Research, Engineering, and Commercial Modules. Requires your empire to have a Launch Facility.</Text>

@@ -991,7 +991,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_CELTS_IRISHPUB</Tag>
-			<Text>[ICON_GOLD][ICON_HAPPINESS_1] Irish Pub</Text>
+			<Text>[ICON_HAPPINESS_1] Irish Pub</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_CELTS_IRISHPUB_PEDIA</Tag>
@@ -1211,7 +1211,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_HALL_OF_WORTHIES</Tag>
-			<Text>[ICON_GREAT_WRITER][ICON_GREAT_PEOPLE] Hall of Worthies</Text>
+			<Text>[ICON_GREAT_PEOPLE] Hall of Worthies</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_HALL_OF_WORTHIES_TEXT</Tag>
@@ -1700,7 +1700,7 @@
 
 		<Replace Tag="TXT_KEY_BUILDING_MUGHAL_FORT_DESC">
 			<Text>
-				[ICON_GREAT_WRITER][ICON_RESEARCH] Mughal Mosque
+				[ICON_RESEARCH] Mughal Mosque
 			</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_MUGHAL_FORT_HELP">

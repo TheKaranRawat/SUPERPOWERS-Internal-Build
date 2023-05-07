@@ -41,7 +41,7 @@
 			<Text>[ICON_INTERNATIONAL_TRADE] Caravansary</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_BAZAAR_DESC">
-			<Text>[ICON_INTERNATIONAL_TRADE][ICON_PEACE] Bazaar</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] Bazaar</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_SEAPORT">
 			<Text>[ICON_INTERNATIONAL_TRADE] Seaport</Text>
@@ -52,10 +52,10 @@
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_BUILDING_STABLE">
-			<Text>[ICON_PRODUCTION][ICON_RES_HORSE] Stable</Text>
+			<Text>[ICON_RES_HORSE] Stable</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_DUCAL_STABLE_DESC">
-			<Text>[ICON_PRODUCTION][ICON_RES_HORSE] Ducal Stable</Text>
+			<Text>[ICON_RES_HORSE] Ducal Stable</Text>
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_BUILDING_WORKSHOP">
@@ -146,13 +146,13 @@
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_BUILDING_LIBRARY">
-			<Text>[ICON_GREAT_WRITER][ICON_RESEARCH] Library</Text>
+			<Text>[ICON_RESEARCH] Library</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_AMPHITHEATER">
 			<Text>[ICON_GREAT_WRITER] Amphitheater</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_PUBLIC_SCHOOL">
-			<Text>[ICON_GREAT_WRITER][ICON_RESEARCH] Public School</Text>
+			<Text>[ICON_RESEARCH] Public School</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_BUILDING_MUSEUM">
@@ -247,7 +247,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_HUN_YURT</Tag>
-			<Text>[ICON_FOOD][ICON_PRODUCTION] Yurt</Text>
+			<Text>[ICON_FOOD] Yurt</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_CIV5_BUILDING_HUN_YURT_TEXT</Tag>
@@ -573,7 +573,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_OIL_REFINERY</Tag>
-			<Text>[ICON_PRODUCTION][ICON_RES_OIL] Oil Refinery</Text>
+			<Text>[ICON_RES_OIL] Oil Refinery</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_CIV5_BUILDINGS_OIL_REFINERY_TEXT</Tag>
@@ -591,7 +591,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_STEEL_MILL</Tag>
-			<Text>[ICON_PRODUCTION][ICON_RES_URANIUM] Uraninite Refinery</Text>
+			<Text>[ICON_RES_URANIUM] Uraninite Refinery</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_CIV5_BUILDINGS_STEEL_MILL_TEXT</Tag>
@@ -707,7 +707,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_ARABIA_ISIAMIC_UNIVERSITY</Tag>
-			<Text>[ICON_RESEARCH][ICON_PEACE] Madrassah</Text>
+			<Text>[ICON_PEACE] Madrassah</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_ARABIA_ISIAMIC_UNIVERSITY_PEDIA</Tag>
@@ -827,7 +827,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_PORTUGAL_PORT</Tag>
-			<Text>[ICON_PRODUCTION][ICON_GOLD] Feitoria</Text>
+			<Text>[ICON_GOLD] Feitoria</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PORTUGAL_PORT_HELP">
 			<Text>
@@ -909,7 +909,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_OTTOMAN_EMPIRE_PORT</Tag>
-			<Text>[ICON_GOLD][ICON_PRODUCTION] Ottoman Imperial Seaport</Text>
+			<Text>[ICON_INTERNATIONAL_TRADE] Imperial Seaport</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_OTTOMAN_EMPIRE_PORT_HELP">
 			<Text>
@@ -1160,7 +1160,7 @@
 			<Text>[ICON_STRENGTH] Walls</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_WALLS_OF_BABYLON_DESC">
-			<Text>[ICON_STRENGTH][ICON_RESEARCH] Walls of Babylon</Text>
+			<Text>[ICON_STRENGTH] Walls of Babylon</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_BUILDING_CASTLE">
 			<Text>[ICON_STRENGTH] Castle</Text>
