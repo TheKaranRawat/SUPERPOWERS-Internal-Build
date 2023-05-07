@@ -502,7 +502,7 @@
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Combat>150</Combat>
 			<Cost>3000</Cost>
-			<Moves>2</Moves>
+			<Moves>3</Moves>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_PARADROP</DefaultUnitAI>
@@ -530,9 +530,9 @@
 			<PrereqTech>TECH_GEN_MANIP</PrereqTech>
 			<BaseSightRange>4</BaseSightRange>
 			<HurryCostModifier>-1</HurryCostModifier>
-			<Combat>150</Combat>
+			<Combat>300</Combat>
 			<Cost>3000</Cost>
-			<Moves>2</Moves>
+			<Moves>3</Moves>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_PARADROP</DefaultUnitAI>
@@ -2102,11 +2102,13 @@
 
 		<Unit_FreePromotions>
 
-		
+		<!--
 		<Row>
 			<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
 			<PromotionType>PROMOTION_CAN_MOVE_AFTER_ATTACKING</PromotionType>
 		</Row>
+		-->
+
 		<Row>
 			<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
 			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
@@ -2167,36 +2169,12 @@
 			<PromotionType>PROMOTION_CARGO_II</PromotionType>
 		</Row>
 		
-		<Row>
-			<UnitType>UNIT_FW_VERTOL</UnitType>
-			<PromotionType>PROMOTION_FLAT_MOVEMENT_COST</PromotionType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_VERTOL</UnitType>
-			<PromotionType>PROMOTION_HOVERING_UNIT</PromotionType>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_FW_VERTOL</UnitType>
 			<PromotionType>PROMOTION_ANTI_TANK</PromotionType>
 		</Row>
-		
-		
-		<Row>
-			<UnitType>UNIT_FW_HOVERTANK</UnitType>
-			<PromotionType>PROMOTION_FLAT_MOVEMENT_COST</PromotionType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_HOVERTANK</UnitType>
-			<PromotionType>PROMOTION_HOVERING_UNIT</PromotionType>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_HOVERTANK</UnitType>
-			<PromotionType>PROMOTION_ANTI_TANK</PromotionType>
-		</Row>
-		
-		
-		
-		
+							
 		<Row>
 			<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
 			<PromotionType>PROMOTION_AIR_SWEEP</PromotionType>
@@ -3556,17 +3534,6 @@
 			</Row>
 			
 
-			<Row>
-				<UnitType>UNIT_FW_HOVERTANK</UnitType>
-				<ResourceType>RESOURCE_ALUMINUM</ResourceType>
-				<Cost>2</Cost>
-			</Row>
-
-			<Row>
-				<UnitType>UNIT_FW_VERTOL</UnitType>
-				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>3</Cost>
-			</Row>
 
 			<Row>
 				<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
@@ -4747,28 +4714,19 @@
 		<Row>
 			<UnitType>UNIT_FW_UAV</UnitType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>8</Flavor>
+			<Flavor>2</Flavor>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_UAV</UnitType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>10</Flavor>
+			<Flavor>4</Flavor>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FW_UAV</UnitType>
 			<FlavorType>FLAVOR_RANGED</FlavorType>
-			<Flavor>16</Flavor>
+			<Flavor>5</Flavor>
 		</Row>
-		<Row>
-			<UnitType>UNIT_FW_BATTLESUIT</UnitType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>20</Flavor>
-		</Row>
-		<Row>
-			<UnitType>UNIT_FW_BATTLESUIT</UnitType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>24</Flavor>
-		</Row>
+		
 
 		<!--
 		<Row>
@@ -5450,13 +5408,24 @@
 				<FlavorType>FLAVOR_OFFENSE</FlavorType>
 				<Flavor>70</Flavor>
 			</Row>
+
 			<Row>
 				<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
 				<FlavorType>FLAVOR_DEFENSE</FlavorType>
 				<Flavor>70</Flavor>
 			</Row>
 
+			<Row>
+				<UnitType>UNIT_FW_BATTLESUIT</UnitType>
+				<FlavorType>FLAVOR_OFFENSE</FlavorType>
+				<Flavor>80</Flavor>
+			</Row>
 
+			<Row>
+				<UnitType>UNIT_FW_BATTLESUIT</UnitType>
+				<FlavorType>FLAVOR_DEFENSE</FlavorType>
+				<Flavor>80</Flavor>
+			</Row>
 
 
 			<Row>

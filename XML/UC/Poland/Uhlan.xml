@@ -12,8 +12,8 @@
 			<Class>UNITCLASS_CAVALRY</Class>
 			<Type>UNIT_UHLAN</Type>
 			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
-			<Combat>34</Combat>
-			<Cost>225</Cost>
+			<Combat>60</Combat>
+			<Cost>200</Cost>
 			<FaithCost>450</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>4</Moves>

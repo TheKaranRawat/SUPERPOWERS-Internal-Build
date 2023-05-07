@@ -1007,11 +1007,11 @@
 			<Class>UNITCLASS_FW_HOVERTANK</Class>
 			<Type>UNIT_FW_HOVERTANK</Type>
 			<PrereqTech>TECH_CYBERNETICS</PrereqTech>
-			<Combat>165</Combat>
-			<Cost>1500</Cost>
+			<Combat>300</Combat>
+			<Cost>2500</Cost>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Moves>6</Moves>
-			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
+			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_FW_HOVERTANK</Description>
@@ -2489,6 +2489,11 @@
 			<PromotionType>PROMOTION_TANK_COMBAT</PromotionType>
 		</Row>	
 
+		<Row>
+			<UnitType>UNIT_FW_HOVERTANK</UnitType>
+			<PromotionType>PROMOTION_TANK_COMBAT</PromotionType>
+		</Row>	
+
 
 		<!--Hit and Run-->
 
@@ -2763,6 +2768,11 @@
 		
 		<Row>
 			<UnitType>UNIT_ATTACK_HELICOPTER</UnitType>
+			<PromotionType>PROMOTION_HELI_ATTACK</PromotionType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_FW_VERTOL</UnitType>
 			<PromotionType>PROMOTION_HELI_ATTACK</PromotionType>
 		</Row>
 

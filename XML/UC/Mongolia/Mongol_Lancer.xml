@@ -6,8 +6,8 @@
 			<Class>UNITCLASS_LANCER</Class>
 			<Type>UNIT_GOLDENHORDE</Type>
 			<PrereqTech>TECH_METALLURGY</PrereqTech>
-			<Combat>25</Combat>
-			<Cost>250</Cost>
+			<Combat>60</Combat>
+			<Cost>100</Cost>
 			<FaithCost>370</FaithCost>
 			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
 			<Moves>5</Moves>

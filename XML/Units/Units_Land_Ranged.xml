@@ -529,10 +529,10 @@
 			<Type>UNIT_OTTOMAN_COBRA</Type>
 			<BaseSightRange>2</BaseSightRange>
 			<PrereqTech>TECH_LASERS</PrereqTech>
-			<Combat>50</Combat>
-			<RangedCombat>250</RangedCombat>
-			<Cost>475</Cost>
-			<Moves>5</Moves>
+			<Combat>200</Combat>
+			<RangedCombat>300</RangedCombat>
+			<Cost>400</Cost>
+			<Moves>6</Moves>
 			<Range>2</Range>
 			<AirInterceptRange>4</AirInterceptRange>
 			<HurryCostModifier>-1</HurryCostModifier>

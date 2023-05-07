@@ -1088,11 +1088,11 @@
 			<Class>UNITCLASS_METALGEAR</Class>
 			<Type>UNIT_METALGEAR</Type>
 			<PrereqTech>TECH_NEURAL_INTERFACE</PrereqTech>
-			<Combat>800</Combat>
-			<RangedCombat>600</RangedCombat>
-			<Range>2</Range>
+			<Combat>500</Combat>
+			<RangedCombat>500</RangedCombat>
+			<Range>3</Range>
 			<Cost>5000</Cost>
-			<Moves>3</Moves>
+			<Moves>5</Moves>
 			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
