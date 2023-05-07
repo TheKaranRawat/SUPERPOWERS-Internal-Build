@@ -283,7 +283,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_BABYLON_BABEL</Tag>
-			<Text>Tower of Babel</Text>
+			<Text>[ICON_RESEARCH] Tower of Babel</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_BABYLON_BABEL_PEDIA</Tag>
@@ -1703,7 +1703,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_SAN_MARCO">
-			<Text>[ICON_CULTURE]  San Marco</Text>
+			<Text>[ICON_CULTURE] San Marco</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_WONDER_SAN_MARCO_HELP">
@@ -1973,7 +1973,7 @@
 
 		<Update>
 			<Where Tag="TXT_KEY_BUILDING_HERMITAGE" />
-			<Set Text="National Museum" />
+			<Set Text="[ICON_CAPITAL] National Museum" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_BUILDING_HERMITAGE_HELP" />
@@ -1999,7 +1999,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_CARTHAGINIAN_AGORA</Tag>
-			<Text>Carthaginian Agora</Text>
+			<Text>[ICON_CULTURE] Carthaginian Agora</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_CARTHAGINIAN_AGORA_PEDIA</Tag>
@@ -2018,7 +2018,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_NATIONAL_TREASURY_II</Tag>
-			<Text>West India Company</Text>
+			<Text>[ICON_CAPITAL] West India Company</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_CIV5_BUILDINGS_NATIONAL_TREASURY_II_TEXT</Tag>
@@ -2038,7 +2038,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_INDUSTRIAL_ZONE</Tag>
-			<Text>National Industrial Zone</Text>
+			<Text>[ICON_CAPITAL] National Industrial Zone</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_CIV5_BUILDINGS_INDUSTRIAL_ZONE_TEXT</Tag>
@@ -2058,7 +2058,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_SHRINE">
-			<Text>Grand Shrine</Text>
+			<Text>[ICON_CAPITAL] Grand Shrine</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_SHRINE_HELP">
@@ -2083,7 +2083,7 @@
 		
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_CARAVANSARY">
-			<Text>National Fair</Text>
+			<Text>[ICON_CAPITAL] National Fair</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_CARAVANSARY_HELP">
@@ -2114,7 +2114,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_LIBRARY">
-			<Text>National Library</Text>
+			<Text>[ICON_CAPITAL] National Library</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_LIBRARY_HELP">
@@ -2150,7 +2150,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_THEATRE">
-			<Text>National Theatre</Text>
+			<Text>[ICON_CAPITAL] National Theatre</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_THEATRE_HELP">
@@ -2174,7 +2174,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_SCULPTURE">
-			<Text>Sclpture of the Emperor</Text>
+			<Text>[ICON_CAPITAL]Sculpture of the Emperor</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_SCULPTURE_HELP">
@@ -2209,7 +2209,7 @@
 		
 	
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_FINANCE">
-			<Text>National Finance Center</Text>
+			<Text>[ICON_CAPITAL] National Finance Center</Text>
 		</Row>
 	
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_FINANCE_HELP">
@@ -2226,7 +2226,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_BANK">
-			<Text>National Bank</Text>
+			<Text>[ICON_CAPITAL] National Bank</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_BANK_HELP">
@@ -2256,7 +2256,7 @@
 		
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_OPERA_HOUSE">
-			<Text>National Concert Hall</Text>
+			<Text>[ICON_CAPITAL] National Concert Hall</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_OPERA_HOUSE_HELP">
@@ -2273,7 +2273,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_EXHIBITION">
-			<Text>National Convention Center</Text>
+			<Text>[ICON_CAPITAL] National Convention Center</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_EXHIBITION_HELP">
@@ -2308,7 +2308,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_STOCK_EXCHANGE">
-			<Text>National Stock Exchange</Text>
+			<Text>[ICON_CAPITAL] National Stock Exchange</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_STOCK_EXCHANGE_HELP">
@@ -2327,7 +2327,7 @@
 		
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_HARVARD">
-			<Text>Harvard University</Text>
+			<Text>[ICON_CAPITAL] Harvard University</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_HARVARD_HELP">
@@ -2346,7 +2346,7 @@
 		
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_LABORATORY">
-			<Text>National Laboratory</Text>
+			<Text>[ICON_CAPITAL] National Laboratory</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_LABORATORY_HELP">
@@ -2367,7 +2367,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_AUTOCRACY">
-			<Text>Ministry of Peace</Text>
+			<Text>[ICON_CAPITAL] Ministry of Peace</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_AUTOCRACY_HELP">
@@ -2384,7 +2384,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_ORDER">
-			<Text>Ministry of Plenty</Text>
+			<Text>[ICON_CAPITAL] Ministry of Plenty</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_ORDER_HELP">
@@ -2401,7 +2401,7 @@
 
 		<!-- Description tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_FREEDOM">
-			<Text>Ministry of Truth</Text>
+			<Text>[ICON_CAPITAL] Ministry of Truth</Text>
 		</Row>
 		<!-- Help tags -->
 		<Row Tag="TXT_KEY_BUILDING_NATIONAL_FREEDOM_HELP">
@@ -2511,7 +2511,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_BUILDING_NEW_PALACE</Tag>
-			<Text>[COLOR_POSITIVE_TEXT]Move Captial[ENDCOLOR]</Text>
+			<Text>[ICON_CAPITAL] [COLOR_POSITIVE_TEXT]Move Capital[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_BUILDING_NEW_PALACE_TEXT</Tag>
@@ -2550,7 +2550,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_SPUTNIK</Tag>
-			<Text>[COLOR_GREEN]Sputnik 1[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Sputnik 1[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_SPUTNIK_PEDIA</Tag>
@@ -2571,7 +2571,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_RECONNAISSANCE</Tag>
-			<Text>[COLOR_GREEN]Reconnaissance Satellite[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Reconnaissance Satellite[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_RECONNAISSANCE_PEDIA</Tag>
@@ -2592,7 +2592,7 @@
 		
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_GPS</Tag>
-			<Text>[COLOR_GREEN]GPS Satellite Blocks[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]GPS Satellite[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_GPS_PEDIA</Tag>
@@ -2612,7 +2612,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_APOLLO11</Tag>
-			<Text>[COLOR_GREEN]Apollo 11[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Apollo 11[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_APOLLO11_PEDIA</Tag>
@@ -2632,7 +2632,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_HUBBLE</Tag>
-			<Text>[COLOR_GREEN]Hubble Space Telescope[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Hubble Space Telescope[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_HUBBLE_PEDIA</Tag>
@@ -2650,7 +2650,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_ECCM</Tag>
-			<Text>[COLOR_GREEN]ECCM Satellite[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]ECCM Satellite[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_ECCM_PEDIA</Tag>
@@ -2669,7 +2669,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_WEATHER</Tag>
-			<Text>[COLOR_GREEN]Project Eden[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Project Eden[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_WEATHER_PEDIA</Tag>
@@ -2689,7 +2689,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_TIANGONG</Tag>
-			<Text>[COLOR_GREEN]Tiangong-1[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Tiangong-1[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_TIANGONG_PEDIA</Tag>
@@ -2709,7 +2709,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_ENVIRONMENT</Tag>
-			<Text>[COLOR_GREEN]GOES Satellite[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]GOES Satellite[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_ENVIRONMENT_PEDIA</Tag>
@@ -2729,7 +2729,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_ANTIFALLOUT</Tag>
-			<Text>[COLOR_GREEN]Operation Scrubber[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Operation Scrubber[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_ANTIFALLOUT_PEDIA</Tag>
@@ -2749,7 +2749,7 @@
 
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_RESOURCEPLUS</Tag>
-			<Text>[COLOR_GREEN]Earth Resource Satellite[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Earth Resource Satellite[ENDCOLOR]</Text>
 		</Row>
 		<Row>
 			<Tag>TXT_KEY_UNIT_SATELLITE_RESOURCEPLUS_PEDIA</Tag>
@@ -3788,6 +3788,48 @@
 
 		-->
 
+
+		<!-- NATIONAL WONDERS -->
+
+		<Replace Tag="TXT_KEY_BUILDING_CIRCUS_MAXIMUS">
+      		<Text>[ICON_CAPITAL] Circus Maximus</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_BUILDING_EAST_INDIA">
+			<Text>[ICON_CAPITAL] East India Company</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_BUILDING_GRAND_TEMPLE">
+      		<Text>[ICON_CAPITAL] Grand Temple</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_BUILDING_HEROIC_EPIC">
+      		<Text>[ICON_CAPITAL] Heroic Epic</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_BUILDING_IRONWORKS">
+      		<Text>[ICON_CAPITAL] Ironworks</Text>      
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_BUILDING_NATIONAL_EPIC">
+      		<Text>[ICON_CAPITAL] National Epic</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_BUILDING_PALACE">
+      		<Text>[ICON_CAPITAL] Palace</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_BUILDING_NATIONAL_COLLEGE">
+      		<Text>[ICON_CAPITAL] National College</Text>
+    	</Replace>
+
+		<Replace Tag="TXT_KEY_BUILDING_INTELLIGENCE_AGENCY">
+			<Text>[ICON_CAPITAL] National Intelligence Agency</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_BUILDING_OXFORD_UNIVERSITY">
+      		<Text>[ICON_CAPITAL] Oxford University</Text>
+    	</Replace>
 
 	</Language_en_US>
 

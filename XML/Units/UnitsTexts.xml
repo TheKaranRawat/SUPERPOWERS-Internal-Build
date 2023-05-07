@@ -2637,13 +2637,13 @@
 			<Text>[ICON_CAPITAL] Chu-Ko-Nu</Text>
 		</Replace>
 
-		<Row Tag="TXT_KEY_UNIT_INQUISITOR">
-      		<Text>[ICON_PROPHET] Inquisitor</Text>
-    	</Row>
+		<Replace Tag="TXT_KEY_UNIT_INQUISITOR">
+      		<Text>[ICON_PEACE] Inquisitor</Text>
+    	</Replace>
 
-		<Row Tag="TXT_KEY_UNIT_MISSIONARY">
-      		<Text>[ICON_PROPHET] Missionary</Text>
-    	</Row>
+		<Replace Tag="TXT_KEY_UNIT_MISSIONARY">
+      		<Text>[ICON_PEACE] Missionary</Text>
+    	</Replace>
 		
 	</Language_en_US>
 

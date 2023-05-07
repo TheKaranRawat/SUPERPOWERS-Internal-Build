@@ -1287,7 +1287,7 @@
 			<Text>With the successful emergence of centralized distribution hubs in the largest cities, and the increasing population capacity of arcologies, the largest metroplexes began to take steps to ensure that their increasingly massive communities ran efficiently. Centralized city planning helped ensure that people and commerce were able to flow freely, even during peak business hours. While some objected to what was sometimes strict regulation in population and business zoning, the new metroplex arrangements ensured that people and commerce were able to flow freely through the city. No longer did citizens have to wait for hours in rush-hour traffic, wasting valuable time and energy. Planned traffic patterns and zoning meant that everyone could get to work, or return back home, quickly and efficiently, saving time and money.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_CENTRAL_COMMAND_DESC">
-			<Text>Central Command</Text>
+			<Text>[ICON_CAPITAL] Central Command</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_CENTRAL_COMMAND_HELP">
 			<Text>Adds 6 [ICON_CULTURE] Culture to each Information Hub, adds +6 [ICON_PRODUCTION] Production to each Distribution Hub, and adds +1 [ICON_GOLD] Gold to each Metroplex Hub. Requires an Information Hub in every city. Must be built in the Capital.</Text>
@@ -1516,7 +1516,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_FW_ASTEROID_MINING_1_DESC">
-			<Text>M-Type Asteroid</Text>
+			<Text>[ICON_ITG_LAWS_INFLUENCE] M-Type Asteroid</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_ASTEROID_MINING_1_HELP">
 			<Text>Gain 6 [ICON_RES_ALUMINUM] Aluminum.</Text>
@@ -1528,7 +1528,7 @@
 			<Text>M-type asteroids are asteroids of partially known composition; they are moderately bright (albedo 0.1–0.2). Some, but not all, are made of nickel–iron, either pure or mixed with small amounts of stone. These are thought to be pieces of the metallic core of differentiated asteroids that were fragmented by impacts, and are thought to be the source of iron meteorites. M-type asteroids are the third most common asteroid type.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_ASTEROID_MINING_2_DESC">
-			<Text>S-Type Asteroid</Text>
+			<Text>[ICON_ITG_LAWS_INFLUENCE] S-Type Asteroid</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_ASTEROID_MINING_2_HELP">
 			<Text>Gain 6 [ICON_RES_NANOMAT] Nanomaterials.</Text>
@@ -1541,7 +1541,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_FW_GENOME_PROJECT_1_DESC">
-			<Text>Research Exchange</Text>
+			<Text>[ICON_ITG_LAWS_INFLUENCE] Research Exchange</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_GENOME_PROJECT_1_HELP">
 			<Text>Research Labs gain +2 [ICON_RESEARCH] Science. Medical Labs gain +2 [ICON_FOOD] Food.</Text>
@@ -1553,7 +1553,7 @@
 			<Text>Those civilizations that contributed only minor amounts of time and resources towards the Human Genome Project still stood to benefit from the exchange of information and technology that resulted. Research laboratories benefited from the new technologies that were developed, while medical labs were able to more effectively treat diseases and other ailments.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_GENOME_PROJECT_2_DESC">
-			<Text>Genetic Treatments</Text>
+			<Text>[ICON_ITG_LAWS_INFLUENCE] Genetic Treatments</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_FW_GENOME_PROJECT_2_HELP">
 			<Text>All cities gain +2 [ICON_CITIZEN] Citizen.</Text>
