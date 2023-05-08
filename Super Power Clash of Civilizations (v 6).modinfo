@@ -138,9 +138,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	-->
 	
   
-
-	<File md5="6D4DFCD91B6C6E3D4EF779231EA95391" import="0">DLL/Global - City State Airbases (v 4)/LUA/CityStateAirbases.lua</File>
-    <File md5="1FB64FC150537B7ACB4001583B1AB088" import="0">DLL/Global - City State Airbases (v 4)/XML/GlobalCityStateAirbases.xml</File>	
+  
+  
 	<File md5="0F25A350FEDA3D78C82BF09515825175" import="1">DLL/UI - City Happiness (v 17)/ART/EUI_DC45_CityHappiness.dds</File>
     <File md5="69A9C2BBB20C4DFE8279132D07E086FF" import="0">DLL/UI - City Happiness (v 17)/UI/CityHappiness.lua</File>
     <File md5="FC87DE6EEBCBB6B964FC020AAA3EC1CC" import="0">DLL/UI - City Happiness (v 17)/UI/CityHappiness.xml</File>
@@ -177,10 +176,19 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="3209DABE4E516FC35EE41474FA565667" import="1">DLL/UI - Trade Routes Enhancements (v 7)/UI/InGame/Popups/TradeRouteOverview.xml</File>
     <File md5="D2ACBA38B9E881A58D09A5BE606A0729" import="0">DLL/UI - Trade Routes Enhancements (v 7)/XML/UITradeRoutesEnhancements.xml</File>
 	
+  <!--
+	  <File md5="6D4DFCD91B6C6E3D4EF779231EA95391" import="0">DLL/Global - City State Airbases (v 4)/LUA/CityStateAirbases.lua</File>
+    <File md5="1FB64FC150537B7ACB4001583B1AB088" import="0">DLL/Global - City State Airbases (v 4)/XML/GlobalCityStateAirbases.xml</File>	
+  
 	
     <File md5="8342B28DA73D581AA82FF27978F7237A" import="0">DLL/Global - Raze City States (v 1)/LUA/GlobalRazeCityStates.lua</File>
     <File md5="5ECB393E855B3A6B88A31E75843CC519" import="0">DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</File>
-	
+
+    <File md5="BF45527DDEE760C8DC3927A6AA41862D" import="0">Modules/Meaningful City State Colors (v 1)/Colors.xml</File>
+    <File md5="B9AD45CE8090D0AD73C5127111B785B5" import="0">Modules/Meaningful City State Colors (v 1)/MinorCivs.xml</File>
+    <File md5="2B19CB472DEDD167946B3D5649B49F0E" import="0">Modules/Meaningful City State Colors (v 1)/PlayerColors.xml</File>
+	-->
+
 	<File md5="E9DFEE5D23C31CB0D7B0732DFDAD9D21" import="0">DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</File>
 	
 	<!-- NUKE NOTIFICATION -->
@@ -189,9 +197,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="CD13927D253125D0BEC3B69FDD413860" import="1">Lua/Notifications/Nuclear Attack/CustomNotification/NuclearAttackNotification.xml</File>
     <File md5="BF57ADF990B31C2657D5DE4129A9F48A" import="0">Lua/Notifications/Nuclear Attack/LUA/GAIA_NotifyNuclearAttack.lua</File>
 	
-	<File md5="BF45527DDEE760C8DC3927A6AA41862D" import="0">Modules/Meaningful City State Colors (v 1)/Colors.xml</File>
-    <File md5="B9AD45CE8090D0AD73C5127111B785B5" import="0">Modules/Meaningful City State Colors (v 1)/MinorCivs.xml</File>
-    <File md5="2B19CB472DEDD167946B3D5649B49F0E" import="0">Modules/Meaningful City State Colors (v 1)/PlayerColors.xml</File>
+	  
 	
 	<File md5="CCBD90298A60849D82E4CF24AC66D00C" import="1">Modules/Greatest Cities (v 11)/Art/TopCities_Icon128.dds</File>
     <File md5="E74A71134C66F1F51ABE22F1B89AB86F" import="1">Modules/Greatest Cities (v 11)/Art/TopCities_Icon256.dds</File>
@@ -4073,14 +4079,20 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	  <UpdateDatabase>DLL/UI - City Production (v 15)/XML/UICityProductionDLL.xml</UpdateDatabase>
       <UpdateDatabase>DLL/UI - City Production (v 15)/XML/UICityProduction.xml</UpdateDatabase>
 	  <UpdateDatabase>DLL/UI - City Happiness (v 17)/XML/UICityHappiness.xml</UpdateDatabase>
+
+    <!--
 	  <UpdateDatabase>DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</UpdateDatabase>
+    
 	  <UpdateDatabase>DLL/Global - City State Airbases (v 4)/XML/GlobalCityStateAirbases.xml</UpdateDatabase>
-	  
+
+    <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/Colors.xml</UpdateDatabase>
+    <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/PlayerColors.xml</UpdateDatabase>
+    <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/MinorCivs.xml</UpdateDatabase>
+	  -->
+
 	  <UpdateDatabase>DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</UpdateDatabase>
 	  
-	  <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/Colors.xml</UpdateDatabase>
-      <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/PlayerColors.xml</UpdateDatabase>
-      <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/MinorCivs.xml</UpdateDatabase>
+	  
 	  
 	  
 	  <!--
@@ -4716,13 +4728,20 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       </Description>
     </EntryPoint>
 	
-	
-	<EntryPoint type="InGameUIAddin" file="DLL/Global - Raze City States (v 1)/LUA/GlobalRazeCityStates.lua">
+	<!--
+	  <EntryPoint type="InGameUIAddin" file="DLL/Global - Raze City States (v 1)/LUA/GlobalRazeCityStates.lua">
       <Name>GlobalRazeCityStates</Name>
       <Description>
       </Description>
     </EntryPoint>
-	
+
+    <EntryPoint type="InGameUIAddin" file="DLL/Global - City State Airbases (v 4)/LUA/CityStateAirbases.lua">
+      <Name>CityStateAirbases</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+	-->
+
 	<EntryPoint type="InGameUIAddin" file="DLL/UI - Notify Exit Resistance (v 1)/LUA/UINotifyExitResistance.lua">
       <Name>UINotifyExitResistance</Name>
       <Description>UINotifyExitResistance</Description>
@@ -4746,11 +4765,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       </Description>
     </EntryPoint>
 	
-	<EntryPoint type="InGameUIAddin" file="DLL/Global - City State Airbases (v 4)/LUA/CityStateAirbases.lua">
-      <Name>CityStateAirbases</Name>
-      <Description>
-      </Description>
-    </EntryPoint>
+	
 	
 	<EntryPoint type="InGameUIAddin" file="Modules/Greatest Cities (v 11)/Lua/TopCities_Main.lua">
       <Name>Top Cities Main</Name>
