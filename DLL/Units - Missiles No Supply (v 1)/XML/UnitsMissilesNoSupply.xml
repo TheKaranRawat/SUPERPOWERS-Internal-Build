@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Update>
+			<Where Name="UNITS_NO_SUPPLY"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+	
+	<Units>
+		<Update>
+			<Where Type="UNIT_GUIDED_MISSILE"/>
+			<Set NoSupply="1"/>
+		</Update>
+
+		<Update>
+			<Where Type="UNIT_NUCLEAR_MISSILE"/>
+			<Set NoSupply="1"/>
+		</Update>
+	</Units>
+<GameData>
