@@ -190,6 +190,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	-->
 
 	<File md5="E9DFEE5D23C31CB0D7B0732DFDAD9D21" import="0">DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</File>
+
+  <File md5="2A299C1EA9FF52B4C42F0EA49E57D9AC" import="0">DLL/Units - Missiles No Supply (v 1)/XML/UnitsMissilesNoSupply.xml</File>
 	
 	<!-- NUKE NOTIFICATION -->
 	<File md5="FBEC00A0A66559D823A0EB412FE33DA9" import="1">Lua/Notifications/Nuclear Attack/ART/NuclearAttack55.dds</File>
@@ -219,7 +221,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	
 	<File md5="CA02F80FFAC00A070C09F059CE239751" import="0">Modules/Global - Separate GP Counters (v 1)/XML/GlobalSeparateGPCounters.xml</File>
 	
-	<!--
+	
 	<File md5="C4933C99E92EE003C92D3DF8593EB2D3" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster128.dds</File>
     <File md5="D34D65755D92226BB78480204E34C795" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster16.dds</File>
     <File md5="89B712FBF090D67F2FA1975EEF18D556" import="1">Modules/Historical Religions Complete (BNW or GK) (v 45)/Art/HistoricalReligionsMaster214.dds</File>
@@ -295,7 +297,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="D46CFF4012A30F70EDFD23AB50597856" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText KO_KR.xml</File>
     <File md5="4C19B1F59DBF936C6D27A5D29F3E8EE0" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText PL_PL.xml</File>
     <File md5="719543C806BE89682F50124233D45AAF" import="0">Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Text/Non-English XML Tags/HistoricalReligionsMasterText RU_RU.xml</File>
-    -->
+    
 	
 	<File md5="4CD3D785097EAA4C9CABDF5D0C70F116" import="1">Modules/Extra Victory Conditions (v 1)/Art/CoronationOfCharlemagne.dds</File>
     <File md5="4270E07B078D97590B6294FF373198D7" import="1">Modules/Extra Victory Conditions (v 1)/Art/EVCIconBG45.dds</File>
@@ -4082,7 +4084,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 
     <!--
 	  <UpdateDatabase>DLL/Global - Raze City States (v 1)/SQL/GlobalRazeCityStates.sql</UpdateDatabase>
-    
+
 	  <UpdateDatabase>DLL/Global - City State Airbases (v 4)/XML/GlobalCityStateAirbases.xml</UpdateDatabase>
 
     <UpdateDatabase>Modules/Meaningful City State Colors (v 1)/Colors.xml</UpdateDatabase>
@@ -4091,11 +4093,13 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	  -->
 
 	  <UpdateDatabase>DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</UpdateDatabase>
+
+    <UpdateDatabase>DLL/Units - Missiles No Supply (v 1)/XML/UnitsMissilesNoSupply.xml</UpdateDatabase>
 	  
 	  
 	  
 	  
-	  <!--
+	  
 	  <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterArt.sql</UpdateDatabase>
       <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterReligion.sql</UpdateDatabase>
       <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/SQL/HistoricalReligionsMasterPreference.sql</UpdateDatabase>
@@ -4122,7 +4126,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Decisions Text.xml</UpdateDatabase>
       <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/XML/Historical Religions Mod Edits.xml</UpdateDatabase>
       <UpdateDatabase>Modules/Historical Religions Complete (BNW or GK) (v 45)/Decisions/Historical Religion Decisions BNW.xml</UpdateDatabase>
-	  -->
+	  
 	  
 	  <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/IconFontMapping.xml</UpdateDatabase>
       <UpdateDatabase>Modules/Extra Victory Conditions (v 1)/XML/Text.xml</UpdateDatabase>
@@ -4777,12 +4781,12 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>Top Cities UI</Description>
     </EntryPoint>
 	
-	<!--
+	
 	<EntryPoint type="InGameUIAddin" file="Modules/Historical Religions Complete (BNW or GK) (v 45)/Lua/Historical Religions Preference Handle.lua">
       <Name>Preference</Name>
       <Description>Preference</Description>
     </EntryPoint>
-	-->
+	
 	
 	<EntryPoint type="InGameUIAddin" file="Modules/Extra Victory Conditions (v 1)/Lua/ReligiousVictory.lua">
       <Name>ReligiousVictory</Name>
