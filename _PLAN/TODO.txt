@@ -73,6 +73,8 @@ D- fishfarm adjustments/fixes
 - puppet view
 - CS defences given by lua
 
+- ballista buff (naval + unit)
+- gametime (set to vanilla)
 -----------------------------------------------------------------------------------------------
 
 CS DEFENCE BUILDING
