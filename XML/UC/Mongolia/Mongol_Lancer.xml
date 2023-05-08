@@ -8,8 +8,7 @@
 			<PrereqTech>TECH_METALLURGY</PrereqTech>
 			<Combat>60</Combat>
 			<Cost>100</Cost>
-			<FaithCost>370</FaithCost>
-			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+			<HurryCostModifier>50</HurryCostModifier>
 			<Moves>5</Moves>
 			<CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>

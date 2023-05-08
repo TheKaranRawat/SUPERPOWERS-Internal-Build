@@ -14,8 +14,7 @@
 			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
 			<Combat>60</Combat>
 			<Cost>200</Cost>
-			<FaithCost>450</FaithCost>
-			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+			<HurryCostModifier>50</HurryCostModifier>
 			<Moves>4</Moves>
 			<CombatClass>UNITCOMBAT_MOUNTED</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>

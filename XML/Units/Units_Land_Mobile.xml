@@ -76,7 +76,7 @@
 			<Combat>5</Combat>
 			<Cost>25</Cost>
 			<Moves>5</Moves>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>50</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_RECON</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
@@ -107,7 +107,7 @@
 			<Combat>15</Combat>
 			<Cost>25</Cost>
 			<Moves>4</Moves>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>50</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_RECON</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>

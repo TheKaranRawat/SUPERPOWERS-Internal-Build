@@ -149,6 +149,7 @@
 			<BaseSightRange>2</BaseSightRange>
 			<Combat>24</Combat>
 			<Cost>38</Cost>
+			<HurryCostModifier>50</HurryCostModifier>
 			<Moves>2</Moves>
 			<CombatClass>UNITCOMBAT_RECON</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -280,7 +281,7 @@
 			<Class>UNITCLASS_NATIONAL_GUARD</Class>
 			<Type>UNIT_JAPANESE_SAMURAI</Type>
 			<PrereqTech>TECH_CIVIL_SERVICE</PrereqTech>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>50</HurryCostModifier>
 			<BaseSightRange>4</BaseSightRange>
 			<Combat>18</Combat>
 			<Cost>120</Cost>
@@ -465,7 +466,7 @@
 			<Class>UNITCLASS_PARATROOPER</Class>
 			<Type>UNIT_EGYPT_UNIT777</Type>
 			<PrereqTech>TECH_SATELLITES</PrereqTech>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>50</HurryCostModifier>
 			<BaseSightRange>4</BaseSightRange>
 			<Combat>110</Combat>
 			<Cost>750</Cost>
@@ -1395,7 +1396,7 @@
 			<Combat>18</Combat>
 			<Cost>25</Cost>
 			<Moves>2</Moves>
-			<HurryCostModifier>-1</HurryCostModifier>
+			<HurryCostModifier>50</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
