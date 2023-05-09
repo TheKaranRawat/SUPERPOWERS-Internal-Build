@@ -330,8 +330,8 @@
 			<Type>UNIT_DANISH_DRAGONSHIP</Type>
 			<PrereqTech>TECH_COMPASS</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>80</Combat>
-			<Cost>225</Cost>
+			<Combat>95</Combat>
+			<Cost>160</Cost>
 			<Moves>7</Moves>
 			<HurryCostModifier>25</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_NAVALMELEE</CombatClass>
@@ -399,8 +399,8 @@
 			<Type>UNIT_OTTOMAN_PRIVATEER</Type>
 			<PrereqTech>TECH_NAVIGATION</PrereqTech>
 			<BaseSightRange>3</BaseSightRange>
-			<Combat>100</Combat>
-			<Cost>340</Cost>
+			<Combat>110</Combat>
+			<Cost>200</Cost>
 			<Moves>8</Moves>
 			<HurryCostModifier>33</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_NAVALMELEE</CombatClass>
@@ -1042,9 +1042,9 @@
 			<Type>UNIT_KOREAN_TURTLE_SHIP</Type>
 			<PrereqTech>TECH_GUILDS</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>100</Combat>
-			<RangedCombat>60</RangedCombat>
-			<Cost>280</Cost>
+			<Combat>120</Combat>
+			<RangedCombat>80</RangedCombat>
+			<Cost>230</Cost>
 			<Moves>5</Moves>
 			<Range>3</Range>
 			<HurryCostModifier>50</HurryCostModifier>
@@ -1821,9 +1821,9 @@
 			<Type>UNIT_PORTUGUESE_NAU</Type>
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
 			<BaseSightRange>4</BaseSightRange>
-			<Combat>40</Combat>
+			<Combat>60</Combat>
 			<Cost>90</Cost>
-			<Moves>9</Moves>
+			<Moves>10</Moves>
 			<HurryCostModifier>50</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_RECON</CombatClass>
 			<Domain>DOMAIN_SEA</Domain>

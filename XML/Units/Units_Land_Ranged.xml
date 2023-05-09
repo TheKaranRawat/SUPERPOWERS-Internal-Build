@@ -52,7 +52,7 @@
 			<Class>UNITCLASS_ARCHER</Class>
 			<Type>UNIT_ARCHER</Type>
 			<BaseSightRange>1</BaseSightRange>
-			<Combat>6</Combat>
+			<Combat>5</Combat>
 			<RangedCombat>10</RangedCombat>
 			<Cost>35</Cost>
 			<Moves>2</Moves>
@@ -84,7 +84,7 @@
 			<Type>UNIT_BARBARIAN_ARCHER</Type>
 			<PrereqTech>TECH_HUNTING</PrereqTech>
 			<BaseSightRange>1</BaseSightRange>
-			<Combat>6</Combat>
+			<Combat>5</Combat>
 			<RangedCombat>10</RangedCombat>
 			<Cost>35</Cost>
 			<Moves>2</Moves>
@@ -116,7 +116,7 @@
 			<Type>UNIT_COMPOSITE_BOWMAN</Type>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<BaseSightRange>1</BaseSightRange>
-			<Combat>8</Combat>
+			<Combat>10</Combat>
 			<RangedCombat>15</RangedCombat>
 			<Cost>65</Cost>
 			<Moves>2</Moves>
@@ -149,8 +149,8 @@
 			<Type>UNIT_BABYLONIAN_BOWMAN</Type>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<BaseSightRange>1</BaseSightRange>
-			<Combat>8</Combat>
-			<RangedCombat>15</RangedCombat>
+			<Combat>10</Combat>
+			<RangedCombat>25</RangedCombat>
 			<Cost>65</Cost>
 			<Moves>2</Moves>
 			<Range>2</Range>
@@ -249,8 +249,8 @@
 			<Type>UNIT_MAYAN_ATLATLIST</Type>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<BaseSightRange>1</BaseSightRange>
-			<Combat>10</Combat>
-			<RangedCombat>25</RangedCombat>
+			<Combat>20</Combat>
+			<RangedCombat>30</RangedCombat>
 			<Cost>75</Cost>
 			<Moves>4</Moves>
 			<Range>2</Range>
@@ -318,11 +318,11 @@
 			<Type>UNIT_INCAN_SLINGER</Type>
 			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
 			<BaseSightRange>1</BaseSightRange>
-			<Combat>10</Combat>
-			<RangedCombat>30</RangedCombat>
+			<Combat>15</Combat>
+			<RangedCombat>40</RangedCombat>
 			<Cost>100</Cost>
-			<Moves>2</Moves>
-			<Range>2</Range>
+			<Moves>4</Moves>
+			<Range>1</Range>
 			<HurryCostModifier>40</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_SIEGE</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -529,7 +529,7 @@
 			<Type>UNIT_OTTOMAN_COBRA</Type>
 			<BaseSightRange>2</BaseSightRange>
 			<PrereqTech>TECH_LASERS</PrereqTech>
-			<Combat>100</Combat>
+			<Combat>150</Combat>
 			<RangedCombat>250</RangedCombat>
 			<Cost>400</Cost>
 			<Moves>6</Moves>
@@ -915,7 +915,7 @@
 			<Combat>20</Combat>
 			<RangedCombat>135</RangedCombat>
 			<Cost>650</Cost>
-			<Moves>2</Moves>
+			<Moves>3</Moves>
 			<Range>4</Range>
 			<HurryCostModifier>75</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_SIEGE</CombatClass>

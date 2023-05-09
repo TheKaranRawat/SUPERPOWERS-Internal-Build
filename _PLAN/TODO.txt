@@ -75,6 +75,12 @@ D- fishfarm adjustments/fixes
 
 - ballista buff (naval + unit)
 - gametime (set to vanilla)
+- manpower reduction
+- trade gold reduction
+- production automation ui icon
+- aircraft ranges
+- interception promotion for carriers
+- fix UU promotions
 -----------------------------------------------------------------------------------------------
 
 CS DEFENCE BUILDING

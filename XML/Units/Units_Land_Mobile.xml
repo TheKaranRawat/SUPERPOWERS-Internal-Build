@@ -73,7 +73,7 @@
 			<Class>UNITCLASS_SCOUT</Class>
 			<Type>UNIT_SHOSHONE_PATHFINDER</Type>
 			<BaseSightRange>3</BaseSightRange>
-			<Combat>5</Combat>
+			<Combat>15</Combat>
 			<Cost>25</Cost>
 			<Moves>5</Moves>
 			<HurryCostModifier>50</HurryCostModifier>
@@ -106,7 +106,7 @@
 			<BaseSightRange>3</BaseSightRange>
 			<Combat>15</Combat>
 			<Cost>25</Cost>
-			<Moves>4</Moves>
+			<Moves>5</Moves>
 			<HurryCostModifier>50</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_RECON</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
@@ -634,7 +634,7 @@
 			<Type>UNIT_SIAMESE_WARELEPHANT</Type>
 			<PrereqTech>TECH_METALLURGY</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>65</Combat>
+			<Combat>70</Combat>
 			<Cost>300</Cost>
 			<Moves>5</Moves>
 			<HurryCostModifier>33</HurryCostModifier>
@@ -842,7 +842,7 @@
 			<Type>UNIT_ZULU_OLIFANT</Type>
 			<PrereqTech>TECH_COMPOSITE</PrereqTech>
 			<BaseSightRange>3</BaseSightRange>
-			<Combat>155</Combat>
+			<Combat>170</Combat>
 			<Cost>755</Cost>
 			<Moves>7</Moves>
 			<HurryCostModifier>75</HurryCostModifier>
@@ -1107,8 +1107,8 @@
 			<Type>UNIT_EGYPTIAN_WARCHARIOT</Type>
 			<PrereqTech>TECH_THE_WHEEL</PrereqTech>
 			<BaseSightRange>3</BaseSightRange>
-			<Combat>24</Combat>
-			<RangedCombat>12</RangedCombat>
+			<Combat>25</Combat>
+			<RangedCombat>15</RangedCombat>
 			<Cost>90</Cost>
 			<Moves>6</Moves>
 			<Range>1</Range>
@@ -1377,10 +1377,10 @@
 			<Type>UNIT_AZTEC_EAGLE</Type>
 			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
 			<BaseSightRange>3</BaseSightRange>
-			<Combat>35</Combat>
-			<RangedCombat>25</RangedCombat>
+			<Combat>40</Combat>
+			<RangedCombat>30</RangedCombat>
 			<Cost>150</Cost>
-			<Moves>7</Moves>
+			<Moves>5</Moves>
 			<Range>1</Range>
 			<HurryCostModifier>33</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
@@ -1448,7 +1448,7 @@
 			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
 			<BaseSightRange>4</BaseSightRange>
 			<Combat>60</Combat>
-			<RangedCombat>40</RangedCombat>
+			<RangedCombat>50</RangedCombat>
 			<Cost>300</Cost>
 			<Range>1</Range>
 			<Moves>8</Moves>
@@ -1517,8 +1517,8 @@
 			<Type>UNIT_SHOSHONE_COMANCHE_RIDERS</Type>
 			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
 			<BaseSightRange>4</BaseSightRange>
-			<Combat>55</Combat>
-			<RangedCombat>40</RangedCombat>
+			<Combat>60</Combat>
+			<RangedCombat>50</RangedCombat>
 			<Cost>200</Cost>
 			<Range>1</Range>
 			<Moves>8</Moves>

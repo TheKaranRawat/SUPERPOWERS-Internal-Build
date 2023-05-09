@@ -466,7 +466,7 @@
 			<Type>UNIT_ATTACK_AIRCRAFT</Type>
 			<PrereqTech>TECH_ADV_FLIGHT</PrereqTech>			
 			<ObsoleteTech>TECH_STEALTH</ObsoleteTech>
-			<RangedCombat>160</RangedCombat>
+			<RangedCombat>150</RangedCombat>
 			<Cost>1200</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
@@ -502,8 +502,8 @@
 			<Class>UNITCLASS_ATTACK_AIRCRAFT</Class>
 			<Type>UNIT_FRANCE_MIRRAGE2000</Type>
 			<PrereqTech>TECH_ADV_FLIGHT</PrereqTech>
-			<RangedCombat>150</RangedCombat>
-			<Cost>1200</Cost>
+			<RangedCombat>170</RangedCombat>
+			<Cost>1000</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
 			<Range>20</Range>
@@ -539,8 +539,8 @@
 			<Class>UNITCLASS_STEALTH_ATTACK_AIRCRAFT</Class>
 			<Type>UNIT_STEALTH_ATTACK_AIRCRAFT</Type>
 			<PrereqTech>TECH_STEALTH</PrereqTech>
-			<RangedCombat>220</RangedCombat>
-			<Cost>2400</Cost>
+			<RangedCombat>200</RangedCombat>
+			<Cost>2500</Cost>
 			<Moves>3</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Immobile>true</Immobile>

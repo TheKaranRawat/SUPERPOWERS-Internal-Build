@@ -283,7 +283,7 @@
 			<PrereqTech>TECH_CIVIL_SERVICE</PrereqTech>
 			<HurryCostModifier>50</HurryCostModifier>
 			<BaseSightRange>4</BaseSightRange>
-			<Combat>18</Combat>
+			<Combat>30</Combat>
 			<Cost>120</Cost>
 			<Moves>3</Moves>
 			<CombatClass>UNITCOMBAT_GUN</CombatClass>
@@ -571,7 +571,7 @@
 			<Class>UNITCLASS_WARRIOR</Class>
 			<Type>UNIT_AZTEC_JAGUAR</Type>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>20</Combat>
+			<Combat>30</Combat>
 			<Cost>30</Cost>
 			<Moves>2</Moves>
 			<HurryCostModifier>20</HurryCostModifier>
@@ -1362,7 +1362,7 @@
 			<Type>UNIT_SPEARMAN</Type>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>18</Combat>
+			<Combat>20</Combat>
 			<Cost>25</Cost>
 			<Moves>2</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
@@ -1393,7 +1393,7 @@
 			<Type>UNIT_PERSIAN_IMMORTAL</Type>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>18</Combat>
+			<Combat>20</Combat>
 			<Cost>25</Cost>
 			<Moves>2</Moves>
 			<HurryCostModifier>50</HurryCostModifier>
@@ -1423,7 +1423,7 @@
 			<Type>UNIT_GREEK_HOPLITE</Type>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>22</Combat>
+			<Combat>25</Combat>
 			<Cost>25</Cost>
 			<Moves>2</Moves>
 			<HurryCostModifier>20</HurryCostModifier>
@@ -1453,7 +1453,7 @@
 			<Type>UNIT_CELT_PICTISH_WARRIOR</Type>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>18</Combat>
+			<Combat>25</Combat>
 			<Cost>25</Cost>
 			<Moves>2</Moves>
 			<HurryCostModifier>20</HurryCostModifier>
@@ -1487,7 +1487,7 @@
 			<Type>UNIT_BARBARIAN_SPEARMAN</Type>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>18</Combat>
+			<Combat>20</Combat>
 			<Cost>25</Cost>
 			<Moves>2</Moves>
 			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
@@ -1517,7 +1517,7 @@
 			<Type>UNIT_PIKEMAN</Type>
 			<PrereqTech>TECH_STEEL</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>28</Combat>
+			<Combat>30</Combat>
 			<Cost>50</Cost>
 			<Moves>2</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
@@ -1549,7 +1549,7 @@
 			<Type>UNIT_SPANISH_TERCIO</Type>
 			<PrereqTech>TECH_METALLURGY</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>38</Combat>
+			<Combat>40</Combat>
 			<RangedCombat>38</RangedCombat>
 			<Range>1</Range>
 			<Cost>75</Cost>
@@ -1583,7 +1583,7 @@
 			<Type>UNIT_ZULU_IMPI</Type>
 			<PrereqTech>TECH_METALLURGY</PrereqTech>
 			<BaseSightRange>2</BaseSightRange>
-			<Combat>38</Combat>
+			<Combat>45</Combat>
 			<RangedCombat>38</RangedCombat>
 			<Cost>60</Cost>
 			<Moves>2</Moves>
