@@ -55,21 +55,13 @@
 	</Unit_AITypes>
 	
 	<Unit_Flavors>
-		<Row>
-			<UnitType>UNIT_HARD_MOBILE_LAUNCHER</UnitType>
-			<FlavorType>FLAVOR_OFFENSE</FlavorType>
-			<Flavor>3</Flavor>
-		</Row>
-		<Row>
-			<UnitType>UNIT_HARD_MOBILE_LAUNCHER</UnitType>
-			<FlavorType>FLAVOR_DEFENSE</FlavorType>
-			<Flavor>2</Flavor>
-		</Row>
+		
 		<Row>
 			<UnitType>UNIT_HARD_MOBILE_LAUNCHER</UnitType>
 			<FlavorType>FLAVOR_NUKE</FlavorType>
-			<Flavor>6</Flavor>
+			<Flavor>1</Flavor>
 		</Row>
+
 	</Unit_Flavors>
 	<Unit_FreePromotions>
 		<Row>
