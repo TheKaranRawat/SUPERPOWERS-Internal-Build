@@ -2860,7 +2860,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_PROTOTYPE_AIRSHIP">
-			<Text>[COLOR_YELLOW]Zeppelin (Airship Carrier)[ENDCOLOR]</Text>
+			<Text>[COLOR_YELLOW]Airship Carrier[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PROTOTYPE_AIRSHIP_HELP">
@@ -3251,7 +3251,7 @@
 			<Text>Its proton collider gun will cause "butterfly effects", one shot will do damage to every visible enemy unit on the map. [NEWLINE][NEWLINE]Requires Particle Weapon Development Project and only one can exist in the world.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PARTICLE_CANNON_STRATEGY">
-			<Text>Just like the Proton Collider in Red Alert 3 for golbal bombardment. This superweapon can spread its damage to every visible enemy unit (33% of the damage caused to the target) across the whole map. There will be no safe place for your enemy to hide. However its combat strength is limited, it is almost impossible to kill all enemy units in one shot. </Text>
+			<Text>Just like the Proton Collider in Red Alert 3 for global bombardment. This superweapon can spread its damage to every visible enemy unit (33% of the damage caused to the target) across the whole map. There will be no safe place for your enemy to hide. However its combat strength is limited, it is almost impossible to kill all enemy units in one shot. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_PARTICLE_CANNON_TEXT">
 			<Text>Classified</Text>
@@ -3260,11 +3260,11 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_ORBITAL_STRIKE">
-			<Text>[COLOR_GREEN]Kinetic Bombardment System[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Kinetic Bombardment System[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_ORBITAL_STRIKE">
-			<Text>A superweapon for golbal bombardment. Once the tungsten rods launched, every enemy city's HP will immediately drop to 0. [NEWLINE][NEWLINE]If the controller unit is destroyed, this weapon system is disabled. </Text>
+			<Text>A superweapon for global bombardment. Once the tungsten rods launched, every enemy city's HP will immediately drop to 0. [NEWLINE][NEWLINE]If the controller unit is destroyed, this weapon system is disabled. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ORBITAL_STRIKE_STRATEGY">
 			<Text>The Kinetic Bombardment System can make all of your enemy cities capturable by one click at the [COLOR_POSITIVE_TEXT]"Start Global Kinetic rbital Strike"[ENDCOLOR] button on unit commands panel. If you have enough melee units in position, you are abel to wipe out a superpower country of more than 20 cities in one turn.</Text>
@@ -3281,17 +3281,19 @@
 
 
 		<Replace Tag="TXT_KEY_SS_STASIS_CHAMBER">
-			<Text>[COLOR_GREEN]SS Stasis Chamber[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Spaceship Stasis Chamber[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_SS_ENGINE">
-			<Text>[COLOR_GREEN]SS Stasis Engine[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Spaceship Engine[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_SS_COCKPIT">
-			<Text>[COLOR_GREEN]SS Stasis Cockpit[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Spaceship Cockpit[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_SS_BOOSTER">
-			<Text>[COLOR_GREEN]SS Stasis Booster[ENDCOLOR]</Text>
+			<Text>[ICON_ITG_SATELLITE] [COLOR_GREEN]Spaceship Booster[ENDCOLOR]</Text>
 		</Replace>
+
+		
 
 
 	</Language_en_US>

@@ -3659,7 +3659,7 @@
 
 			<!-- MERCS -->
 
-			<!--
+			
 
 			<Row>
 				<UnitType>UNIT_EXOTIC_UNIT_RABBLE</UnitType>
@@ -3796,7 +3796,7 @@
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
 			</Row>
 
-			-->
+			
 
 		</Unit_ResourceQuantityRequirements>
 

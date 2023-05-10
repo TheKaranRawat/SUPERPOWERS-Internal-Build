@@ -1230,7 +1230,11 @@
 		<Row>
 			<Class>UNITCLASS_ORBITAL_STRIKE</Class>
 			<Type>UNIT_ORBITAL_STRIKE</Type>
+
+			<!--
 			<PrereqTech>TECH_INTEGRATED_DEFENSE</PrereqTech>
+			-->
+			
 			<Cost>-1</Cost>
 			<Moves>1</Moves>
 			<Immobile>true</Immobile>
@@ -1238,10 +1242,15 @@
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_MISSILE_AIR</DefaultUnitAI>
+			
+			
+			<Civilopedia>TXT_KEY_CIVILOPEDIA_UNITS_ORBITAL_STRIKE_TEXT</Civilopedia>
 			<Description>TXT_KEY_UNIT_ORBITAL_STRIKE</Description>
-			<!--<Civilopedia>TXT_KEY_CIVILOPEDIA_UNITS_ORBITAL_STRIKE_TEXT</Civilopedia>-->
 			<Strategy>TXT_KEY_UNIT_ORBITAL_STRIKE_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_HELP_ORBITAL_STRIKE</Help>
+
+			
+			
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
 			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
