@@ -407,8 +407,8 @@
 			<ArtDefineTag>ART_DEF_BUILDING_STOCK_EXCHANGE</ArtDefineTag>
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<SpecialistCount>3</SpecialistCount>
-			<TradeRouteRecipientBonus>80</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>80</TradeRouteTargetBonus>
+			<TradeRouteRecipientBonus>50</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>50</TradeRouteTargetBonus>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
 			<HurryCostModifier>200</HurryCostModifier>
@@ -2864,8 +2864,8 @@
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<SpecialistCount>2</SpecialistCount>
 			<TradeRouteSeaGoldBonus>1000</TradeRouteSeaGoldBonus>
-			<TradeRouteRecipientBonus>10</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>10</TradeRouteTargetBonus>
+			<TradeRouteRecipientBonus>20</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>20</TradeRouteTargetBonus>
 			<Water>true</Water>
 			<MinAreaSize>20</MinAreaSize>
 			<ConquestProb>85</ConquestProb>
@@ -2892,8 +2892,8 @@
 			<SpecialistCount>2</SpecialistCount>
 			<TradeRouteSeaDistanceModifier>50</TradeRouteSeaDistanceModifier>
 			<TradeRouteSeaGoldBonus>1000</TradeRouteSeaGoldBonus>
-			<TradeRouteRecipientBonus>25</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>25</TradeRouteTargetBonus>
+			<TradeRouteRecipientBonus>24</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>24</TradeRouteTargetBonus>
 			<Water>true</Water>
 			<MinAreaSize>20</MinAreaSize>
 			<ConquestProb>85</ConquestProb>
@@ -2918,9 +2918,9 @@
 			<Help>TXT_KEY_BUILDING_SEAPORT_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_SEAPORT</ArtDefineTag>
 			<TradeRouteSeaDistanceModifier>50</TradeRouteSeaDistanceModifier>
-			<!--<TradeRouteSeaGoldBonus>1000</TradeRouteSeaGoldBonus>-->
-			<!--<TradeRouteRecipientBonus>10</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>10</TradeRouteTargetBonus>-->
+			<TradeRouteSeaGoldBonus>1000</TradeRouteSeaGoldBonus>
+			<TradeRouteRecipientBonus>10</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>10</TradeRouteTargetBonus>
 			<Water>true</Water>
 			<MinAreaSize>20</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
@@ -2941,8 +2941,8 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SEAPORT</ArtDefineTag>
 			<TradeRouteSeaDistanceModifier>30</TradeRouteSeaDistanceModifier>
 			<TradeRouteSeaGoldBonus>1000</TradeRouteSeaGoldBonus>
-			<TradeRouteRecipientBonus>35</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>35</TradeRouteTargetBonus>
+			<TradeRouteRecipientBonus>20</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>20</TradeRouteTargetBonus>
 			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 			<SpecialistCount>1</SpecialistCount>
 			<Water>true</Water>
@@ -3231,8 +3231,8 @@
 			<Help>TXT_KEY_BUILDING_TCS_CHANCERY_HELP</Help>
 			<MinAreaSize>-1</MinAreaSize>
 			<CityStateTradeRouteProductionModifier>2</CityStateTradeRouteProductionModifier>
-			<TradeRouteRecipientBonus>1</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>1</TradeRouteTargetBonus>
+			<TradeRouteRecipientBonus>10</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>10</TradeRouteTargetBonus>
 			<NukeImmune>true</NukeImmune>
 			<NeverCapture>true</NeverCapture>
 			<HurryCostModifier>25</HurryCostModifier>

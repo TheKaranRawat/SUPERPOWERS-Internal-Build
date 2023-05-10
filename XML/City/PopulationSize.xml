@@ -98,8 +98,8 @@
 			<Defense>1500</Defense>
 			<ExtraCityHitPoints>50</ExtraCityHitPoints>
 			<Happiness>-12</Happiness>
-			<TradeRouteSeaGoldBonus>500</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>500</TradeRouteLandGoldBonus>
+			<TradeRouteSeaGoldBonus>400</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>400</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>50</TradeRouteRecipientBonus>
 			<TradeRouteTargetBonus>50</TradeRouteTargetBonus>			
 			<GreatWorkCount>-5</GreatWorkCount>
@@ -120,8 +120,8 @@
 			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<FoodKept>-5</FoodKept>
 			<Happiness>-24</Happiness>
-			<TradeRouteSeaGoldBonus>1500</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>1500</TradeRouteLandGoldBonus>
+			<TradeRouteSeaGoldBonus>800</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>800</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>150</TradeRouteRecipientBonus>
 			<TradeRouteTargetBonus>150</TradeRouteTargetBonus>
 			<PolicyCostModifier>5</PolicyCostModifier>			
@@ -144,8 +144,8 @@
 			<FoodKept>-5</FoodKept>
 			<Happiness>-30</Happiness>
 			<CityWorkingChange>1</CityWorkingChange>
-			<TradeRouteSeaGoldBonus>3000</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>3000</TradeRouteLandGoldBonus>
+			<TradeRouteSeaGoldBonus>1200</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>1200</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>300</TradeRouteRecipientBonus>
 			<TradeRouteTargetBonus>300</TradeRouteTargetBonus>
 			<PolicyCostModifier>10</PolicyCostModifier>			
@@ -167,8 +167,8 @@
 			<ExtraCityHitPoints>150</ExtraCityHitPoints>
 			<FoodKept>-10</FoodKept>
 			<Happiness>-40</Happiness>
-			<TradeRouteSeaGoldBonus>6000</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>6000</TradeRouteLandGoldBonus>
+			<TradeRouteSeaGoldBonus>1600</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>1600</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>600</TradeRouteRecipientBonus>
 			<TradeRouteTargetBonus>600</TradeRouteTargetBonus>
 			<PolicyCostModifier>20</PolicyCostModifier>
@@ -190,8 +190,8 @@
 			<ExtraCityHitPoints>200</ExtraCityHitPoints>
 			<FoodKept>-13</FoodKept>
 			<Happiness>-40</Happiness>
-			<TradeRouteSeaGoldBonus>12000</TradeRouteSeaGoldBonus>
-			<TradeRouteLandGoldBonus>12000</TradeRouteLandGoldBonus>
+			<TradeRouteSeaGoldBonus>2000</TradeRouteSeaGoldBonus>
+			<TradeRouteLandGoldBonus>2000</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>1200</TradeRouteRecipientBonus>
 			<TradeRouteTargetBonus>1200</TradeRouteTargetBonus>
 			<PolicyCostModifier>25</PolicyCostModifier>
@@ -1152,9 +1152,9 @@
 			<LandmarksTourismPercent>50</LandmarksTourismPercent>
 			<GreatWorksTourismModifier>50</GreatWorksTourismModifier>
 			<TradeRouteLandGoldBonus>500</TradeRouteLandGoldBonus>
-			<TradeRouteSeaGoldBonus>500</TradeRouteSeaGoldBonus>
-			<TradeRouteRecipientBonus>5</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>5</TradeRouteTargetBonus>
+			<TradeRouteSeaGoldBonus>600</TradeRouteSeaGoldBonus>
+			<TradeRouteRecipientBonus>6</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>6</TradeRouteTargetBonus>
 			<Airlift>true</Airlift>
 			<AirModifier>4</AirModifier>
 			<MinAreaSize>-1</MinAreaSize>
@@ -1569,9 +1569,9 @@
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_INTERNATIONAL_AIRPORT_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_SP_CITYSIZE_BUILDINGS_STRATEGY</Strategy>
 			<TradeRouteLandGoldBonus>2500</TradeRouteLandGoldBonus>
-			<TradeRouteSeaGoldBonus>2500</TradeRouteSeaGoldBonus>
-			<TradeRouteRecipientBonus>25</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>25</TradeRouteTargetBonus>
+			<TradeRouteSeaGoldBonus>2000</TradeRouteSeaGoldBonus>
+			<TradeRouteRecipientBonus>20</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>20</TradeRouteTargetBonus>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
 			<HurryCostModifier>-1</HurryCostModifier>
@@ -1595,9 +1595,9 @@
 			<PortraitIndex>16</PortraitIndex>
 			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 			<TradeRouteLandGoldBonus>5000</TradeRouteLandGoldBonus>
-			<TradeRouteSeaGoldBonus>5000</TradeRouteSeaGoldBonus>
-			<TradeRouteRecipientBonus>50</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>50</TradeRouteTargetBonus>
+			<TradeRouteSeaGoldBonus>2000</TradeRouteSeaGoldBonus>
+			<TradeRouteRecipientBonus>30</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>30</TradeRouteTargetBonus>
 			<TradeRouteSeaDistanceModifier>50</TradeRouteSeaDistanceModifier>
 			<Water>true</Water>
 			<MinAreaSize>10</MinAreaSize>

@@ -4374,11 +4374,11 @@
 			<MinAreaSize>10</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
 			<TradeRouteSeaDistanceModifier>25</TradeRouteSeaDistanceModifier>
-			<TradeRouteSeaGoldBonus>100</TradeRouteSeaGoldBonus>
+			<TradeRouteSeaGoldBonus>5000</TradeRouteSeaGoldBonus>
 			<TradeRouteLandDistanceModifier>25</TradeRouteLandDistanceModifier>
 			<TradeRouteLandGoldBonus>100</TradeRouteLandGoldBonus>
-			<TradeRouteRecipientBonus>4</TradeRouteRecipientBonus>
-			<TradeRouteTargetBonus>2</TradeRouteTargetBonus>
+			<TradeRouteRecipientBonus>50</TradeRouteRecipientBonus>
+			<TradeRouteTargetBonus>50</TradeRouteTargetBonus>
 			<NumTradeRouteBonus>1</NumTradeRouteBonus>
 			<IconAtlas>MEGAPACKWONDERS_ATLAS</IconAtlas>
 			<PortraitIndex>51</PortraitIndex>
