@@ -3248,42 +3248,51 @@
 			<Row>
 				<UnitType>UNIT_NATIONAL_GUARD</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_JAPANESE_SAMURAI</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 		
 			
 			<Row>
 				<UnitType>UNIT_FRENCH_MUSKETEER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			
 			<Row>
 				<UnitType>UNIT_MARINE</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_WWI_PARATROOPER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_PARATROOPER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_EGYPT_UNIT777</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_XCOM_SQUAD</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>8</Cost>
 			</Row>
 
 			<Row>
 				<UnitType>UNIT_SPACEMARINE</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>8</Cost>
 			</Row>
 
 
@@ -3366,80 +3375,97 @@
 				<ResourceType>RESOURCE_IRON</ResourceType>
 			</Row>
 
-			
+			<!-- INFANTRY MANPOWER  -->
 			
 			<Row>
 				<UnitType>UNIT_SWORDSMAN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_KRIS_SWORDSMAN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_ROMAN_LEGION</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_GREEK_HOPLITE</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_LONGSWORDSMAN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_DANISH_BERSERKER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_MUSKETMAN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_OTTOMAN_JANISSARY</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_IROQUOIAN_MUSKETEER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_RIFLEMAN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_CELT_BLACKWATCH</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_SWEDISH_CAROLEAN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_ETHIOPIAN_MEHAL_SEFARI</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_GREAT_WAR_INFANTRY</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>6</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_FRENCH_FOREIGNLEGION</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>6</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_INFANTRY</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>6</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_BRAZILIAN_PRACINHA</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>6</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_MOTORISED_INFANTRY</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>2</Cost>
+				<Cost>8</Cost>
 			</Row>
 			<!--<Row>
 				<UnitType>UNIT_FRANCE_AMX</UnitType>
@@ -3449,7 +3475,7 @@
 			<Row>
 				<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>2</Cost>
+				<Cost>8</Cost>
 			</Row>
 
 			<!-- postfuture units-->
@@ -3465,50 +3491,50 @@
 			<Row>
 				<UnitType>UNIT_FW_CRAWLER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>8</Cost>
+				<Cost>16</Cost>
 			</Row>
 
 			<Row>
 				<UnitType>UNIT_FW_BATTLESUIT</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>3</Cost>
+				<Cost>12</Cost>
 			</Row>
 			
 
 			<Row>
 				<UnitType>UNIT_FW_HOVERTANK</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>3</Cost>
+				<Cost>12</Cost>
 			</Row>
 
 			<Row>
 				<UnitType>UNIT_FW_VERTOL</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>3</Cost>
+				<Cost>12</Cost>
 			</Row>
 
 			<Row>
 				<UnitType>UNIT_FW_MECH_ARTILLERY</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>2</Cost>
+				<Cost>12</Cost>
 			</Row>
 
 			<Row>
 				<UnitType>UNIT_FW_RAILGUN_TANK</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>2</Cost>
+				<Cost>12</Cost>
 			</Row>
 
 			<Row>
 				<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>4</Cost>
+				<Cost>10</Cost>
 			</Row>
 
 			<Row>
 				<UnitType>UNIT_FW_DRONE_FIGHTER_2</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-				<Cost>2</Cost>
+				<Cost>12</Cost>
 			</Row>
 
 
@@ -3581,51 +3607,59 @@
 			<Row>
 				<UnitType>UNIT_SPEARMAN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_BARBARIAN_SPEARMAN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_PERSIAN_IMMORTAL</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_CELT_PICTISH_WARRIOR</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			
 			<Row>
 				<UnitType>UNIT_PIKEMAN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_SPANISH_TERCIO</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>2</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_ANTI_TANK_GUN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_TANK_DESTROYER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_SWEDISH_GUSTAV_RECOILESS_GUN</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>4</Cost>
 			</Row>
 			<Row>
 				<UnitType>UNIT_ATGM_VEHICLE</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
+				<Cost>6</Cost>
 			</Row>
 
-			<Row>
-				<UnitType>UNIT_ATGM_VEHICLE</UnitType>
-				<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			</Row>
 
 			<!-- MERCS -->
+
+			<!--
 
 			<Row>
 				<UnitType>UNIT_EXOTIC_UNIT_RABBLE</UnitType>
@@ -3761,6 +3795,8 @@
 				<UnitType>UNIT_EXOTIC_UNIT_CHEYENNE_DOG_SOLDIER</UnitType>
 				<ResourceType>RESOURCE_MANPOWER</ResourceType>
 			</Row>
+
+			-->
 
 		</Unit_ResourceQuantityRequirements>
 

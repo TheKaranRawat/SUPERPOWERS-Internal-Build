@@ -1912,73 +1912,85 @@
 		<Row>
 			<UnitType>UNIT_ARCHER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_BARBARIAN_ARCHER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_INCAN_SLINGER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_BABYLONIAN_BOWMAN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_MAYAN_ATLATLIST</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>2</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_COMPOSITE_BOWMAN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>3</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_CROSSBOWMAN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>3</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_CHINESE_CHUKONU</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>3</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_VOLLEY_GUN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>4</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_GATLINGGUN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>4</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_MACHINE_GUN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>4</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_ANTI_AIRCRAFT_GUN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>4</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_MOBILE_AA_GUN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>6</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_SAM_INFANTRY</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_OTTOMAN_COBRA</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>6</Cost>
 		</Row>
 		
 

@@ -3025,76 +3025,76 @@
 		<Row>
 			<UnitType>UNIT_TRIREME</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_CARTHAGINIAN_QUINQUEREME</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>6</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_GALLEASS</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_DANISH_DRAGONSHIP</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>6</Cost>
 		</Row>
 
 		
 		<Row>
 			<UnitType>UNIT_FRIGATE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_OTTOMAN_PRIVATEER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SPANISH_ARMADA</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>8</Cost>
 		</Row>
 
 
 		<Row>
 			<UnitType>UNIT_IRONCLAD</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>10</Cost>
 		</Row>
 	
 
 		<Row>
 			<UnitType>UNIT_DESTROYER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>10</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_JAPANESE_DESTROYER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>10</Cost>
 		</Row>
 		
 		<Row>
 			<UnitType>UNIT_MODERN_DESTROYER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>12</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_KOREAN_SEJONG_CLASS</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>12</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_BYZANTINE_DROMON</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SLOOP_OF_WAR</UnitType>
@@ -3110,29 +3110,29 @@
 		<Row>
 			<UnitType>UNIT_LIGHT_IRONCLAD</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SUBMARINE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_GERMAN_UBOAT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>6</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_DIESEL_SUBMARINE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>8</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_NUCLEAR_SUBMARINE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>10</Cost>
 		</Row>
 
 
@@ -3141,130 +3141,132 @@
 		<Row>
 			<UnitType>UNIT_VENETIAN_GALLEASS</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_KOREAN_TURTLE_SHIP</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>6</Cost>
 		</Row>
 		
 		<Row>
 			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_ENGLISH_SHIPOFTHELINE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SONGHAI_EXPEDITION_FLEET</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>6</Cost>
+			<Cost>8</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_PROTECTED_CRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>7</Cost>
+			<Cost>10</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_HEAVY_CRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>12</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_GREEK_ARMORED_CRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>12</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_MISSILE_CRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>9</Cost>
+			<Cost>14</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_KIROV_BATTLECRUISER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>9</Cost>
+			<Cost>14</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FRANCE_MISTRAL</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>14</Cost>
 		</Row>
 
 
 		<Row>
 			<UnitType>UNIT_DREADNOUGHT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>16</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_ROMAN_REUMBERTO</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>16</Cost>
 		</Row>
 
 
 		<Row>
 			<UnitType>UNIT_BATTLESHIP</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>14</Cost>
+			<Cost>18</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_JAPANESE_BATTLESHIP</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>10</Cost>
+			<Cost>18</Cost>
 		</Row>
 		
 		<Row>
 			<UnitType>UNIT_FUTURE_BATTLESHIP</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>16</Cost>
+			<Cost>24</Cost>
 		</Row>
 	
 
 		<Row>
 			<UnitType>UNIT_CARRIER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>10</Cost>
+			<Cost>20</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_NUCLEAR_CARRIER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>24</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_AMERICAN_NIMITZ</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>24</Cost>
 		</Row>
 		
 		<Row>
 			<UnitType>UNIT_SUPER_CARRIER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>14</Cost>
+			<Cost>30</Cost>
 		</Row>
 
 
 		<Row>
 			<UnitType>UNIT_CARAVEL</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_PORTUGUESE_NAU</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>4</Cost>
 		</Row>
 
 
 		<Row>
 			<UnitType>UNIT_SSBN</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>8</Cost>
 		</Row>
 		
 	</Unit_ResourceQuantityRequirements>

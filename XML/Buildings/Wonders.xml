@@ -4601,7 +4601,7 @@
 		<Row>
 			<BuildingType>BUILDING_MOTHER_CALLS_MANPOWER</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Quantity>5</Quantity>
+			<Quantity>30</Quantity>
 		</Row>
 
 
@@ -4755,7 +4755,7 @@
 			<Cost>4</Cost>
 		</Row>
 
-                <Row>
+        <Row>
 			<BuildingType>BUILDING_FW_MNEMOSYNE</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>2</Cost>
@@ -4796,7 +4796,7 @@
         <Row>
 			<BuildingType>BUILDING_FW_VIRTUAL_IDOL</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
-			<Cost>2</Cost>
+			<Cost>8</Cost>
 		</Row>
 
          <Row>
@@ -4882,13 +4882,13 @@
 		<Row>
 			<BuildingType>BUILDING_HORYUJI</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
-			<Cost>2</Cost>
+			<Cost>4</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_MADOL</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
-			<Cost>2</Cost>
+			<Cost>4</Cost>
 		</Row>
 
 		<Row>
@@ -4952,20 +4952,17 @@
 
 		<Row>
 			<BuildingType>BUILDING_TEMPLE_ARTEMIS</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_MAUSOLEUM_HALICARNASSUS</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>2</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_STATUE_ZEUS</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>2</Cost>
 		</Row>
 
@@ -4974,121 +4971,102 @@
 
 		<Row>
 			<BuildingType>BUILDING_COLOSSEUM</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>2</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_HANSEATIC_LEAGUE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>4</Cost>
 		</Row>
 
 		<!--<Row>
 			<BuildingType>BUILDING_TRIUMPHAL_ARCH</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>6</Cost>
 		</Row>-->
 
 		<!--<Row>
 			<BuildingType>BUILDING_MOTHERLAND_CALLS</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>		
-		
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>				
 		</Row>-->
 
 		<Row>
 			<BuildingType>BUILDING_HOOVER_DAM</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ASWAN_DAM</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>7</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_LARGE_HADRON_COLLIDER</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>15</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>16</Cost>
 		</Row>
 
 
 		<Row>
 			<BuildingType>BUILDING_PORT_OF_ROTTERDAM</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-
 			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CAIRO</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_POTALA</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_EMPIRE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>7</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BAUHAUS</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>1</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_YANGTZE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>12</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_TOKYO_METRO</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PEARL_TOWER</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>12</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PETRONAS</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_UNITED_NATIONS_HQ</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>10</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BURJ_TOWER</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>12</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_SPACE_ELEVATOR</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>18</Cost>
 		</Row>
 
@@ -5096,264 +5074,221 @@
 
 		<Row>
 			<BuildingType>BUILDING_PYRAMID</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>2</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_GREAT_LIBRARY</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_STONEHENGE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>1</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_HANGING_GARDEN</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_COLOSSUS</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>2</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_GREAT_LIGHTHOUSE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>1</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ORACLE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>2</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_GREAT_WALL</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>2</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_HAGIA_SOPHIA</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>2</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_ANGKOR_WAT</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_NOTRE_DAME</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_MACHU_PICHU</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CHICHEN_ITZA</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_KREMLIN</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_SISTINE_CHAPEL</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_HIMEJI_CASTLE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PORCELAIN_TOWER</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_TAJ_MAHAL</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BIG_BEN</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BRANDENBURG_GATE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>7</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_LOUVRE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_EIFFEL_TOWER</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_STATUE_OF_LIBERTY</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CRISTO_REDENTOR</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PENTAGON</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>6</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_ALHAMBRA</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_CN_TOWER</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>10</Cost>
 		</Row>
 
 		<Row>
 			<BuildingType>BUILDING_SYDNEY_OPERA_HOUSE</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-
 			<Cost>10</Cost>
 		</Row>
 		
 		<!--<Row>
 			<BuildingType>BUILDING_HUBBLE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>12</Cost>
 		</Row>-->
 		<Row>
 			<BuildingType>BUILDING_LEANING_TOWER</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_MOSQUE_OF_DJENNE</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_NEUSCHWANSTEIN</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PETRA</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<!--<Row>
 			<BuildingType>BUILDING_TERRACOTTA_ARMY</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>3</Cost>
 		</Row>-->
 		<Row>
 			<BuildingType>BUILDING_GREAT_FIREWALL</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>10</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_UFFIZI</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>1</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_GLOBE_THEATER</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>1</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BROADWAY</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>1</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_RED_FORT</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>2</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PRORA_RESORT</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
 			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_BOROBUDUR</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>3</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_PARTHENON</BuildingType>
-			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			
-			<Cost>1</Cost>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>			
+			<Cost>2</Cost>
 		</Row>
 
 
@@ -5361,7 +5296,6 @@
 		<Row>
 			<BuildingType>BUILDING_MEGACITY_PYRAMID</BuildingType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-
 			<Cost>16</Cost>
 		</Row>
 

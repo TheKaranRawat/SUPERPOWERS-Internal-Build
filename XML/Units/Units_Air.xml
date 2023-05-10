@@ -1742,40 +1742,40 @@
 		<Row>
 			<UnitType>UNIT_TRIPLANE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_WWI_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>3</Cost>
+			<Cost>6</Cost>
 		</Row>
 	
 
 		<Row>
 			<UnitType>UNIT_FIGHTER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>6</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_DIVE_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_POLISH_PZL23</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>4</Cost>
+			<Cost>8</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>14</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_AMERICAN_B17</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>8</Cost>
+			<Cost>14</Cost>
 		</Row>
 		
 
@@ -1783,59 +1783,59 @@
 		<Row>
 			<UnitType>UNIT_INTERCEPTER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>12</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_RUSSIAN_SU27</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>12</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_ATTACK_AIRCRAFT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>10</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_FRANCE_MIRRAGE2000</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>10</Cost>
 		</Row>
 	
 
 		<Row>
 			<UnitType>UNIT_JET_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>10</Cost>
+			<Cost>18</Cost>
 		</Row>
 	
 
 		<Row>
 			<UnitType>UNIT_JET_FIGHTER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>14</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_SWEDISH_JAS39_FIGHTER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>14</Cost>
 		</Row>
 		
 		<Row>
 			<UnitType>UNIT_STEALTH_ATTACK_AIRCRAFT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>14</Cost>
 		</Row>
 	
 		<Row>
 			<UnitType>UNIT_STEALTH_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>10</Cost>
+			<Cost>20</Cost>
 		</Row>
 
 		<Row>
 			<UnitType>UNIT_FW_SUBORBITAL_BOMBER</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>12</Cost>
+			<Cost>24</Cost>
 		</Row>
 
 
@@ -1866,15 +1866,17 @@
 		<Row>
 			<UnitType>UNIT_ATOMIC_BOMB</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>4</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_NUCLEAR_MISSILE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Cost>8</Cost>
 		</Row>
 		<Row>
 			<UnitType>UNIT_ICBM_MISSILE</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>2</Cost>
+			<Cost>12</Cost>
 		</Row>
 		
 	</Unit_ResourceQuantityRequirements>

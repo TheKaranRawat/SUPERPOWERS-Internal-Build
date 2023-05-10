@@ -60,7 +60,7 @@
 		<Row>
 			<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
-			<Cost>5</Cost>
+			<Cost>12</Cost>
 		</Row>
 
 		<Row>
