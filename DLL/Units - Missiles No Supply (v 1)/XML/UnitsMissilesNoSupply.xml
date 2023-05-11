@@ -1,3 +1,5 @@
+<!--
+	
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<CustomModOptions>
@@ -18,4 +20,6 @@
 			<Set NoSupply="1"/>
 		</Update>
 	</Units>
-<GameData>
+</GameData>
+
+-->

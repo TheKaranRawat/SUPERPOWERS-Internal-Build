@@ -74,13 +74,14 @@ D- fishfarm adjustments/fixes
 - CS defences given by lua
 
 - ballista buff (naval + unit)
-- gametime (set to vanilla)
-- manpower reduction
-- trade gold reduction
+D- gametime (set to vanilla)
+D- manpower reduction
+D- trade gold reduction
 - production automation ui icon
 - aircraft ranges
 - interception promotion for carriers
 - fix UU promotions
+- more specialists
 -----------------------------------------------------------------------------------------------
 
 CS DEFENCE BUILDING

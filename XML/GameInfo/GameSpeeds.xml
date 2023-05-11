@@ -203,11 +203,11 @@
 		</Row>
 	</GameSpeed_Turns>
 
--->
+
 
 <GameSpeed_Turns>
 		<Delete GameSpeedType="GAMESPEED_STANDARD"/>
-		<!--	Now We Rebuild the Data	-->
+		
 		<Row>
 			<GameSpeedType>GAMESPEED_STANDARD</GameSpeedType>
 			<MonthIncrement>1440</MonthIncrement>
@@ -382,7 +382,7 @@
 			<TurnsPerIncrement>520</TurnsPerIncrement>
 		</Row>
 	</GameSpeed_Turns>
-
+-->
 
 
 
