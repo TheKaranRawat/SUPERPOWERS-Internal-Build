@@ -82,6 +82,7 @@ D- trade gold reduction
 - interception promotion for carriers
 - fix UU promotions
 - more specialists
+- orbital bombardment fix
 -----------------------------------------------------------------------------------------------
 
 CS DEFENCE BUILDING

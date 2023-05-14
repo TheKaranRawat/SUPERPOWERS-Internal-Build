@@ -51,6 +51,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
     <Dlc id="0E3751A1-F840-4e1b-9706-519BF484E59D" minversion="0" maxversion="999" />
     <Dlc id="8871E748-29A4-4910-8C57-8C99E32D0167" minversion="0" maxversion="999" />
+    <Mod id="f9b9c8aa-b6d1-4188-9239-c1de2207ab7c" minversion="0" maxversion="999" title="DLL MP - SUPERPOWER" />
   </Dependencies>
   <References>
     <Mod id="adbc3334-367b-4435-a584-fd783b712865" minversion="0" maxversion="999" title="Custom Advanced Setup Screen" />
