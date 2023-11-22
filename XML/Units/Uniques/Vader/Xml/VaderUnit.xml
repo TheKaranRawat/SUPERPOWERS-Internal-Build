@@ -58,19 +58,19 @@
 	<Unit_ResourceQuantityRequirements>
 
 		<Row>
-			<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
+			<UnitType>UNIT_DVADERCIVUNIT</UnitType>
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
 			<Cost>12</Cost>
 		</Row>
 
 		<Row>
-			<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
+			<UnitType>UNIT_DVADERCIVUNIT</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
 			<Cost>2</Cost>
 		</Row>
 
 		<Row>
-			<UnitType>UNIT_MECHANIZED_INFANTRY</UnitType>
+			<UnitType>UNIT_DVADERCIVUNIT</UnitType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 			<Cost>1</Cost>
 		</Row>	
