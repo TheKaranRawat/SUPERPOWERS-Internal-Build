@@ -260,22 +260,21 @@
 			<ResourceType>RESOURCE_IVORY</ResourceType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
-		</Row>			
+		</Row>		
+		<!--	
 		<Row>
 			<ResourceType>RESOURCE_PEARLS</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>2</Yield>
-		</Row>		
+		</Row>	
+		-->
+
 		<Row>
 			<ResourceType>RESOURCE_PEARLS</ResourceType>
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>2</Yield>
 		</Row>
-		<Row>
-			<ResourceType>RESOURCE_PEARLS</ResourceType>
-			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>2</Yield>
-		</Row>						
+						
 <!--		<Row>
 			<ResourceType>RESOURCE_SALT</ResourceType>
 			<YieldType>YIELD_FOOD</YieldType>
