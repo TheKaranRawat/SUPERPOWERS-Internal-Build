@@ -1519,6 +1519,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">UI/Override/EnemyUnitPanel.lua</File>
     <File md5="9CD3E75D737B372497A1C965EF843423" import="1">UI/Override/EnemyUnitPanel.xml</File>
     <File md5="73EFCD69708903DF41D341F502A18593" import="1">UI/Override/EnemyUnitPanel_small.xml</File>
+
+    <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">UI/Override/MPTurnPanel.lua</File>
+    <File md5="73EFCD69708903DF41D341F502A18593" import="1">UI/Override/MPTurnPanel.xml</File>
+    
     <File md5="81859D6C825870FE0BE877E466AF6834" import="1">UI/Override/InfoTooltipInclude.lua</File>
     <File md5="7803DFEB1CC49D546EED8C8A1DE998AA" import="1">UI/Override/InGame.lua</File>
     <File md5="87795029018082BF04AF16A5C0857B42" import="1">UI/Override/NewEraPopup.lua</File>
