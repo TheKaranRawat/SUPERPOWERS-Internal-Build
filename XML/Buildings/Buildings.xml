@@ -4271,7 +4271,7 @@
 			<Type>BUILDING_PALISADE_WALL_CS</Type>
 			<BuildingClass>BUILDINGCLASS_PALISADE_WALL</BuildingClass>
 			<FreeStartEra>ERA_RENAISSANCE</FreeStartEra>
-			<Cost>25</Cost>
+			<Cost>1</Cost>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			<Description>TXT_KEY_BUILDING_PALISADE_WALL_CS</Description>
 			<Civilopedia>TXT_KEY_BUILDING_PALISADE_WALL_PEDIA</Civilopedia>
@@ -4279,8 +4279,8 @@
 			<Help>TXT_KEY_BUILDING_PALISADE_WALL_HELP</Help>
 			<MinAreaSize>-1</MinAreaSize>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
-			<Defense>300</Defense>
-			<ExtraCityHitPoints>50</ExtraCityHitPoints>
+			<Defense>5000</Defense>
+			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<ConquestProb>100</ConquestProb>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>ANCIENT2_ICON_ATLAS</IconAtlas>
@@ -4290,7 +4290,7 @@
 		<Row>
 			<Type>BUILDING_WALLS_CS</Type>
 			<BuildingClass>BUILDINGCLASS_WALLS</BuildingClass>
-			<Cost>25</Cost>
+			<Cost>1</Cost>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<Help>TXT_KEY_DENFENSE_BUILDING_OBSOLETE_HELP</Help>
 			<Description>TXT_KEY_BUILDING_WALLS_CS</Description>
@@ -4299,8 +4299,8 @@
 			<ArtDefineTag>ART_DEF_BUILDING_WALLS</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
-			<Defense>1000</Defense>
-			<ExtraCityHitPoints>50</ExtraCityHitPoints>
+			<Defense>2000</Defense>
+			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<CityWall>true</CityWall>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
@@ -4314,7 +4314,7 @@
 		<Row>
 			<Type>BUILDING_CASTLE_CS</Type>
 			<BuildingClass>BUILDINGCLASS_CASTLE</BuildingClass>
-			<Cost>35</Cost>
+			<Cost>1</Cost>
 			<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			<Help>TXT_KEY_DENFENSE_BUILDING_OBSOLETE_HELP</Help>
 			<Description>TXT_KEY_BUILDING_CASTLE_CS</Description>
@@ -4323,8 +4323,8 @@
 			<ArtDefineTag>CASTLE</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
-			<Defense>2500</Defense>
-			<ExtraCityHitPoints>50</ExtraCityHitPoints>
+			<Defense>2000</Defense>
+			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<HurryCostModifier>25</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<ArtInfoCulturalVariation>true</ArtInfoCulturalVariation>
@@ -4339,7 +4339,7 @@
 		<Row>
 			<Type>BUILDING_BARRACKS_CS</Type>
 			<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass>
-			<Cost>25</Cost>
+			<Cost>1</Cost>
 			<GoldMaintenance>2</GoldMaintenance>
 			<!--<PrereqTech>TECH_HUNTING</PrereqTech>-->
 			<Help>TXT_KEY_BUILDING_BARRACKS_HELP</Help>
@@ -4353,14 +4353,14 @@
 			<ConquestProb>100</ConquestProb>
 			<PortraitIndex>5</PortraitIndex>
 			<MutuallyExclusiveGroup>13</MutuallyExclusiveGroup>
-			<Defense>500</Defense>
-			<ExtraCityHitPoints>50</ExtraCityHitPoints>
+			<Defense>3000</Defense>
+			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 		</Row>
 		
 		<Row>
 			<Type>BUILDING_ARMORY_CS</Type>
 			<BuildingClass>BUILDINGCLASS_ARMORY</BuildingClass>
-			<Cost>45</Cost>
+			<Cost>1</Cost>
 			<GoldMaintenance>4</GoldMaintenance>
 			<PrereqTech>TECH_THE_WHEEL</PrereqTech>
 			<Help>TXT_KEY_BUILDING_ARMORY_HELP</Help>
@@ -4373,8 +4373,8 @@
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<ConquestProb>100</ConquestProb>
 			<PortraitIndex>6</PortraitIndex>
-			<Defense>500</Defense>
-			<ExtraCityHitPoints>50</ExtraCityHitPoints>
+			<Defense>4000</Defense>
+			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<ObsoleteTech>TECH_MILITARY_LOGISTICS</ObsoleteTech>
 			<EnhancedYieldTech>TECH_INTERNET</EnhancedYieldTech>
 			<TechEnhancedTourism>2</TechEnhancedTourism>
@@ -4383,7 +4383,7 @@
 		<Row>
 			<Type>BUILDING_ARSENAL_CS</Type>
 			<BuildingClass>BUILDINGCLASS_ARSENAL</BuildingClass>
-			<Cost>120</Cost>
+			<Cost>1</Cost>
 			<GoldMaintenance>8</GoldMaintenance>
 			<PrereqTech>TECH_RIFLING</PrereqTech>
 			<Help>TXT_KEY_BUILDING_ARSENAL_HELP</Help>
@@ -4392,8 +4392,8 @@
 			<Strategy>TXT_KEY_SP_CITY_MILITARY_BUILDINGS_STRATEGY</Strategy>
 			<ArtDefineTag>ART_DEF_BUILDING_MILITARY_ACADEMY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
-			<Defense>2000</Defense>
-			<ExtraCityHitPoints>50</ExtraCityHitPoints>
+			<Defense>5000</Defense>
+			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<HurryCostModifier>50</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
 			<ConquestProb>100</ConquestProb>
@@ -4403,7 +4403,7 @@
 		<Row>
 			<Type>BUILDING_MILITARY_BASE_CS</Type>
 			<BuildingClass>BUILDINGCLASS_MILITARY_BASE</BuildingClass>
-			<Cost>250</Cost>
+			<Cost>1</Cost>
 			<GoldMaintenance>12</GoldMaintenance>
 			<PrereqTech>TECH_FLIGHT</PrereqTech>
 			<Help>TXT_KEY_BUILDING_MILITARY_BASE_HELP</Help>
@@ -4426,7 +4426,7 @@
 		<Row>
 			<Type>BUILDING_WOOD_DOCK_CS</Type>
 			<BuildingClass>BUILDINGCLASS_WOOD_DOCK</BuildingClass>
-			<Cost>30</Cost>
+			<Cost>1</Cost>
 			<PrereqTech>TECH_FISHERY</PrereqTech>
 			<GoldMaintenance>5</GoldMaintenance>
 			<Help>TXT_KEY_BUILDING_WOOD_DOCK_HELP</Help>
@@ -4438,8 +4438,8 @@
 			<ConquestProb>100</ConquestProb>
 			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
 			<PortraitIndex>0</PortraitIndex>
-			<Defense>500</Defense>
-			<ExtraCityHitPoints>50</ExtraCityHitPoints>
+			<Defense>3000</Defense>
+			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<ObsoleteTech>TECH_MARINE_ENGINEERING</ObsoleteTech>
 			<EnhancedYieldTech>TECH_INTERNET</EnhancedYieldTech>
 			<TechEnhancedTourism>2</TechEnhancedTourism>
@@ -4450,7 +4450,7 @@
 		<Row>
 			<Type>BUILDING_SHIPYARD_CS</Type>
 			<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
-			<Cost>160</Cost>
+			<Cost>1</Cost>
 			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
 			<GoldMaintenance>10</GoldMaintenance>
 			<Help>TXT_KEY_BUILDING_SHIPYARD_HELP</Help>
@@ -4462,8 +4462,8 @@
 			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
 			<PortraitIndex>1</PortraitIndex>
 			<ConquestProb>100</ConquestProb>
-			<Defense>2000</Defense>
-			<ExtraCityHitPoints>100</ExtraCityHitPoints>
+			<Defense>3000</Defense>
+			<ExtraCityHitPoints>300</ExtraCityHitPoints>
 			<Water>true</Water>
 			<MinAreaSize>30</MinAreaSize>
 		</Row>
