@@ -169,7 +169,7 @@
 		</Update>
 		<!-- per pop gold for trade routes /100 -->
 		<Update>
-			<Set Value="35"/>
+			<Set Value="30"/>
 			<Where Name="TRADE_ROUTE_CITY_POP_GOLD_MULTIPLIER" />
 		</Update>
 		<Update>
@@ -771,11 +771,11 @@
 		<!--International Trade-->
 
 		<Update>
-			<Set Value="10"/>
+			<Set Value="100"/>
 			<Where Name="INTERNATIONAL_TRADE_BASE" />
 		</Update>
 		<Update>
-			<Set Value="50"/>
+			<Set Value="15"/>
 			<Where Name="INTERNATIONAL_TRADE_CITY_GPT_DIVISOR" />
 		</Update>
 

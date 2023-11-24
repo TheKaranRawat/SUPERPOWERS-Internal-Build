@@ -86,6 +86,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<Trade>true</Trade>
 			<GoodyTech>true</GoodyTech>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>1</GridX>
 			<GridY>3</GridY>
 			<Quote>TXT_KEY_TECH_POTTERY_QUOTE</Quote>
@@ -251,6 +252,7 @@
 			<Help>TXT_KEY_SP_TECH_GENERAL_HELP</Help>
 			<Era>ERA_CLASSICAL</Era>
 			<AllowsEmbarking>true</AllowsEmbarking>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<Trade>true</Trade>
 			<GridX>3</GridX>
 			<GridY>1</GridY>
@@ -462,6 +464,7 @@
 			<Help>TXT_KEY_SP_TECH_GENERAL_HELP</Help>
 			<Era>ERA_MEDIEVAL</Era>
 			<Trade>true</Trade>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>5</GridX>
 			<GridY>5</GridY>
 			<Quote>TXT_KEY_TECH_GUILDS_QUOTE</Quote>
@@ -716,6 +719,7 @@
 			<Help>TXT_KEY_SP_TECH_GENERAL_HELP</Help>
 			<Era>ERA_RENAISSANCE</Era>
 			<Trade>true</Trade>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>8</GridX>
 			<GridY>5</GridY>
 			<Quote>TXT_KEY_TECH_ECONOMICS_QUOTE</Quote>
@@ -854,6 +858,7 @@
 			<Help>TXT_KEY_SP_TECH_GENERAL_HELP</Help>
 			<Era>ERA_INDUSTRIAL</Era>
 			<Trade>true</Trade>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>10</GridX>
 			<GridY>1</GridY>
 			<Quote>TXT_KEY_TECH_TELEGRAPH_QUOTE</Quote>
@@ -974,6 +979,7 @@
 			<Help>TXT_KEY_SP_TECH_GENERAL_HELP</Help>
 			<Era>ERA_MODERN</Era>
 			<Trade>true</Trade>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>11</GridX>
 			<GridY>5</GridY>
 			<Quote>TXT_KEY_TECH_COMBUSTION_QUOTE</Quote>
@@ -1210,6 +1216,7 @@
 			<Help>TXT_KEY_SP_TECH_GENERAL_HELP</Help>
 			<Era>ERA_WORLDWAR</Era>
 			<Trade>true</Trade>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>14</GridX>
 			<GridY>3</GridY>
 			<Quote>TXT_KEY_TECH_ELECTRONICS_QUOTE</Quote>
@@ -1269,6 +1276,7 @@
 			<Era>ERA_POSTMODERN</Era>
 			<Trade>true</Trade>
 			<InfluenceSpreadModifier>25</InfluenceSpreadModifier>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>15</GridX>
 			<GridY>1</GridY>
 			<Quote>TXT_KEY_TECH_MASS_MEDIA_QUOTE</Quote>
@@ -1619,6 +1627,7 @@
 			<Help>TXT_KEY_SP_TECH_GENERAL_HELP</Help>
 			<Era>ERA_INFORMATION</Era>
 			<Trade>true</Trade>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>19</GridX>
 			<GridY>3</GridY>
 			<Quote>TXT_KEY_TECH_IOT_NETWORK_QUOTE</Quote>
@@ -1860,6 +1869,7 @@
 			<Help>TXT_KEY_TECH_FW_GRID_COMPUTING_HELP</Help>
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>23</GridX>
 			<GridY>4</GridY>
 			<Quote>TXT_KEY_TECH_FW_GRID_COMPUTING_QUOTE</Quote>
@@ -2217,6 +2227,7 @@
 			<Help>TXT_KEY_TECH_FW_COMPUTRONIUM_HELP</Help>
 			<Era>ERA_FUTURE</Era>
 			<Trade>true</Trade>
+			<InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
 			<GridX>28</GridX>
 			<GridY>4</GridY>
 			<Quote>TXT_KEY_TECH_FW_COMPUTRONIUM_QUOTE</Quote>
