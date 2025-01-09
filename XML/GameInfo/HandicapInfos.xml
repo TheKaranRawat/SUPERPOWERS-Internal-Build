@@ -389,7 +389,7 @@
 				<AIDeclareWarProb>400</AIDeclareWarProb>
 				<AIWorkRateModifier>350</AIWorkRateModifier>
 				<AIUnhappinessPercent>50</AIUnhappinessPercent>
-				<AIGrowthPercent>20</AIGrowthPercent>
+				<AIGrowthPercent>15</AIGrowthPercent>
 				<AITrainPercent>50</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>66</AIConstructPercent>
@@ -449,7 +449,7 @@
 				<AIDeclareWarProb>800</AIDeclareWarProb>
 				<AIWorkRateModifier>400</AIWorkRateModifier>
 				<AIUnhappinessPercent>33</AIUnhappinessPercent>
-				<AIGrowthPercent>15</AIGrowthPercent>
+				<AIGrowthPercent>10</AIGrowthPercent>
 				<AITrainPercent>33</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>50</AIConstructPercent>4

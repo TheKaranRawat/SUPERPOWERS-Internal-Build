@@ -775,7 +775,7 @@
 			<Where Name="INTERNATIONAL_TRADE_BASE" />
 		</Update>
 		<Update>
-			<Set Value="15"/>
+			<Set Value="50"/>
 			<Where Name="INTERNATIONAL_TRADE_CITY_GPT_DIVISOR" />
 		</Update>
 
