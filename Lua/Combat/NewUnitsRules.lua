@@ -277,9 +277,9 @@ if player:IsHuman() then
 				    	print ("Promotions Transfer Finished on AAS!") 
 				    end
 				    
-				    
+				    --aircraft carrier resupply in enemy territory check
 					if not unit:IsFull() and not plot:IsCity() then
-						if plot:IsFriendlyTerritory(player) or unit:IsHasPromotion(CarrierSupply3ID) then
+						--if plot:IsFriendlyTerritory(player) or unit:IsHasPromotion(CarrierSupply3ID) then
 						    print ("Unit is avaliable for retoring cargo!")
 						    if (player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_ENGLAND"]) then
 						    	print ("English Navy")
@@ -287,7 +287,7 @@ if player:IsHuman() then
 						    else   	
 								CarrierRestore(unit,player,plot)				   
 							end
-						end	 
+						--end	 
 	    			end    		
 				end
 			end
