@@ -532,7 +532,7 @@
 	
 	<BuildFeatures>
 		<Update>
-			<Set Time="5000"/>
+			<Set Time="2000"/>
 			<Where BuildType="BUILD_SCRUB_FALLOUT"/>
 		</Update>
 		<Update>
