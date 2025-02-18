@@ -1075,7 +1075,7 @@
 			<Moves>2</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Immobile>true</Immobile>
-			<Range>15</Range>
+			<Range>10</Range>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_ICBM</DefaultUnitAI>
@@ -1112,7 +1112,7 @@
 			<Moves>2</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Immobile>true</Immobile>
-			<Range>25</Range>
+			<Range>20</Range>
 			<Special>SPECIALUNIT_NUKE</Special>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_ICBM</DefaultUnitAI>
@@ -1148,7 +1148,7 @@
 			<Moves>2</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Immobile>true</Immobile>
-			<Range>50</Range>
+			<Range>30</Range>
 			<Special>SPECIALUNIT_NUKE</Special>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_ICBM</DefaultUnitAI>
