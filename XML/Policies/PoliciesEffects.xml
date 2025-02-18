@@ -40,13 +40,13 @@
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>25</Yield>
+			<Yield>10</Yield>
 		</Row>
 
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<YieldType>YIELD_CULTURE</YieldType>
-			<Yield>25</Yield>
+			<Yield>10</Yield>
 		</Row>
 
 	</Policy_CapitalYieldModifiers>
@@ -114,6 +114,7 @@
 			<Yield>2</Yield>
 		</Row>
 
+		<!--	CENTRALIZATION POLICY SPECIALIST YIELDS
 		<Row>
 			<PolicyType>POLICY_CENTRALISATION</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
@@ -137,7 +138,8 @@
 			<YieldType>YIELD_CULTURE</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		
+		-->
+
 		<Row>
 			<PolicyType>POLICY_ISKA_UNITED_FRONT</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
@@ -215,32 +217,32 @@
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>6</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>6</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>6</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>6</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>6</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_BROADCAST_TOWER</BuildingClassType>
-			<CultureChange>4</CultureChange>
+			<CultureChange>6</CultureChange>
 		</Row>
 		<!--<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
@@ -361,37 +363,37 @@
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>6</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>6</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>6</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_PUBLIC_SCHOOL</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>6</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>6</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_BILL_OF_RIGHTS</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_OBSERVATORY</BuildingClassType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<YieldChange>4</YieldChange>
+			<YieldChange>6</YieldChange>
 		</Row>
 
 
@@ -552,14 +554,14 @@
 		<Row>
 			<PolicyType>POLICY_LIBERTY</PolicyType>
 			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>12</Yield>
+			<Yield>50</Yield>
 		</Row>
 		
 
 		<Row>
 			<PolicyType>POLICY_MERITOCRACY</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>10</Yield>
+			<Yield>20</Yield>
 		</Row>
 	</Policy_CityYieldChanges>
 
@@ -786,7 +788,7 @@
 	
 	<Policy_BuildingClassHappiness>
 
-
+		<!-- REPUBLIC CITY SIZE UNHAPPINESS REDUCTION -->
 		<!--<Row>
 			<PolicyType>POLICY_MONARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_SMALL</BuildingClassType>
@@ -795,7 +797,7 @@
 		<Row>
 			<PolicyType>POLICY_MONARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_MEDIUM</BuildingClassType>
-			<Happiness>2</Happiness>
+			<Happiness>4</Happiness>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_MONARCHY</PolicyType>
