@@ -196,22 +196,22 @@
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
-			<CultureChange>16</CultureChange>
+			<CultureChange>8</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
-			<CultureChange>32</CultureChange>
+			<CultureChange>24</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingClassType>
-			<CultureChange>36</CultureChange>
+			<CultureChange>16</CultureChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_PREFECTURE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
-			<CultureChange>40</CultureChange>
+			<CultureChange>16</CultureChange>
 		</Row>
 		
 		<Row>
@@ -478,25 +478,25 @@
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_LARGE</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>16</YieldChange>
+			<YieldChange>8</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XL</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>32	</YieldChange>
+			<YieldChange>24</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_XXL</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>36</YieldChange>
+			<YieldChange>16</YieldChange>
 		</Row>
 		<Row>
 			<PolicyType>POLICY_OLIGARCHY</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_CITY_SIZE_GLOBAL</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<YieldChange>40</YieldChange>
+			<YieldChange>16</YieldChange>
 		</Row>
 
 
@@ -561,7 +561,7 @@
 		<Row>
 			<PolicyType>POLICY_MERITOCRACY</PolicyType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
-			<Yield>20</Yield>
+			<Yield>25</Yield>
 		</Row>
 	</Policy_CityYieldChanges>
 
@@ -1330,6 +1330,19 @@
 			<Yield>1</Yield>
 		</Row>
 
+		<Row>
+			<PolicyType>POLICY_REPRESENTATION</PolicyType>
+			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+
+		<Row>
+			<PolicyType>POLICY_REPRESENTATION</PolicyType>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
 
 		<Row>
 			<PolicyType>POLICY_COMMERCE</PolicyType>
@@ -1662,7 +1675,7 @@
 		-->
 
 		<Row>
-			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
+			<PolicyType>POLICY_CENTRALISATION</PolicyType>
 			<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
 			<Count>1</Count>
 		</Row>

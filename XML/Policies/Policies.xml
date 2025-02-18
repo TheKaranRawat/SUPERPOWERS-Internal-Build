@@ -81,7 +81,7 @@
 			<GridX>2</GridX>
 			<GridY>3</GridY>
 			<PortraitIndex>3</PortraitIndex>
-			<FreeExperience>15</FreeExperience>
+			<FreeExperience>30</FreeExperience>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
 		</Row>
@@ -115,7 +115,7 @@
 			<Where Type="POLICY_REPUBLIC"/>
 		</Update>
 		<Update>
-			<Set NumCitiesPolicyCostDiscount="0" MilitaryProductionModifier="15" GoldenAgeTurns="0" GridX="4" GridY="3" PortraitIndex="41"/>
+			<Set NumCitiesPolicyCostDiscount="0" GoldenAgeTurns="0" GridX="4" GridY="3" PortraitIndex="41"/>
 			<Where Type="POLICY_REPRESENTATION"/>
 		</Update>
 		<Update>
@@ -123,7 +123,7 @@
 			<Where Type="POLICY_MERITOCRACY"/>
 		</Update>
 		<Update>
-			<Set NumFreeGreatPeople="0" GoldenAgeTurns="20"/>
+			<Set NumFreeGreatPeople="0" GoldenAgeTurns="20" MilitaryProductionModifier="15"/>
 			<Where Type="POLICY_LIBERTY_FINISHER"/>
 		</Update>
 
@@ -180,7 +180,7 @@
 			<GridX>2</GridX>
 			<GridY>3</GridY>
 			<HappinessPerGarrisonedUnit>4</HappinessPerGarrisonedUnit>
-			<CulturePerGarrisonedUnit>4</CulturePerGarrisonedUnit>
+			<CulturePerGarrisonedUnit>8</CulturePerGarrisonedUnit>
 			<PortraitIndex>23</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
 			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
