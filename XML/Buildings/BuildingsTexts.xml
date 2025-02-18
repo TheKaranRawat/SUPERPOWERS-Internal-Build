@@ -3359,7 +3359,7 @@
 			<Text>Nan Madol</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDER_MADOL_HELP">
-			<Text>Provides +6 [ICON_CULTURE] culture. +1 [ICON_FOOD] Food, +1 [ICON_GOLD] Gold and +1 [ICON_PRODUCTION] Production from Sea Tiles worked by the city. City must be built on the coast</Text>
+			<Text>Provides +6 [ICON_CULTURE] culture. +1 [ICON_FOOD] Food and +1 [ICON_PRODUCTION] Production from Sea Tiles worked by the city. City must be built on the coast</Text>
 		</Row>
 		<Row Tag="TXT_KEY_WONDER_MADOL_STRATEGY">
 			<Text>There should be some text!</Text>

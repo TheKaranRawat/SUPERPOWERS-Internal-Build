@@ -4100,11 +4100,7 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		<Row>
-			<BuildingType>BUILDING_MADOL</BuildingType>
-			<YieldType>YIELD_GOLD</YieldType>
-			<Yield>1</Yield>
-		</Row>
+		
 		<Row>
 			<BuildingType>BUILDING_MADOL</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
