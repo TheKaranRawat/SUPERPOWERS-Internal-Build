@@ -242,7 +242,7 @@ function CitySizeChanged(hexX, hexY, population, citySize)
 		return
 	end
 	
-	if player:IsBarbarian() or player:IsMinorCiv() then
+	if player:IsBarbarian() then
     	return
 	end
 
@@ -251,7 +251,77 @@ function CitySizeChanged(hexX, hexY, population, citySize)
 	   CitySetSize(city,player,cityPop)
 	   print ("Set CitySize!")
 	end
-	
+	-- CITY STATE DEFENCE PLACEMENT SCRIPT
+	if player:IsMinorCiv() then
+		--local iCounter = 0
+		--iCounter = era
+		print ("minor civ detected.")
+
+		local pplot = Map.GetPlot(ToGridFromHex(hexX, hexY))
+		local pcity = plot:GetPlotCity()
+
+		if (cityPop < 5 and cityPop >= 1)	then
+			pcity:SetNumRealBuilding(GameInfoTypes["BUILDING_PALISADE_WALL_CS"],1)
+			print ("CS Defence Lvl 1 Placed.")
+		
+		
+		elseif (cityPop < 10 and cityPop >= 5)	then
+			pcity:SetNumRealBuilding(GameInfoTypes["BUILDING_WALLS_CS"],1)
+			print ("CS Defence Lvl 2 Placed.")
+		
+
+		elseif (cityPop < 15 and cityPop >= 10)	then
+			pcity:SetNumRealBuilding(GameInfoTypes["BUILDING_CASTLE_CS"],1)
+			print ("CS Defence Lvl 3 Placed.")
+		
+
+		elseif (cityPop < 20 and cityPop >= 15)	then
+			pcity:SetNumRealBuilding(GameInfoTypes["BUILDING_BARRACKS_CS"],1)
+			print ("CS Defence Lvl 4 Placed.")
+		
+
+		elseif (cityPop < 25 and cityPop >= 20)	then
+			pcity:SetNumRealBuilding(GameInfoTypes["BUILDING_ARMORY_CS"],1)
+			print ("CS Defence Lvl 5 Placed.")
+		
+		
+		elseif (cityPop < 30 and cityPop >= 25)	then
+			pcity:SetNumRealBuilding(GameInfoTypes["BUILDING_ARSENAL_CS"],1)
+			print ("CS Defence Lvl 6 Placed.")
+		
+
+		elseif (cityPop >= 30)	then
+			pcity:SetNumRealBuilding(GameInfoTypes["BUILDING_MILITARY_BASE_CS"],1)
+			print ("CS Defence Lvl 7 Placed.")
+		end
+
+		--[[
+		if (iCounter == 2) then				
+			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_MEDIEVAL"].ID,true)
+			print ("AI Bonus!-MEDIEVAL")
+		elseif (iCounter == 3) then	
+			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_RENAISSANCE"].ID,true)   
+			print ("AI Bonus!-RENAISSANCE")				 		
+		elseif (iCounter == 4) then	
+			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_INDUSTRY"].ID,true)
+		--  			AIMapVisibility (player)
+			print ("AI Bonus!-INDUSTRY")							
+		elseif (iCounter == 5) then	
+			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_MODERN"].ID,true)   				
+			print ("AI Bonus!-MODERN")				  									
+		 elseif (iCounter == 6) then	
+			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_WORLDWAR"].ID,true)  		
+			print ("AI Bonus!-WORLDWAR")					
+	  elseif (iCounter == 7) then	
+			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_ATOMIC"].ID,true)  		
+			print ("AI Bonus!-ATOMIC")										
+	  elseif (iCounter == 8) then	
+			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_INFORMATION"].ID,true)	   
+			print ("AI Bonus!-INFORMATION")		 									
+	  end
+	  ]]--
+
+	end
 	
 end-------------Function End
 Events.SerialEventCityPopulationChanged.Add(CitySizeChanged)
