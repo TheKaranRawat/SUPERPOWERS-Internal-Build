@@ -50,10 +50,14 @@
 			<Set CanBeEmbarked="true" Kill="false" Time="600" Help="TXT_KEY_BUILD_SP_NOT_CONSUMED_HELP"/>
 			<Where Type="BUILD_FISHING_BOATS" />
 		</Update>
+
+		<!---	TRADING POST DISABLE
 		<Update>
 			<Set PrereqTech="TECH_CURRENCY" Time="500" OrderPriority="85"/>
 			<Where Type="BUILD_TRADING_POST"/>
 		</Update>
+		-->
+		<Delete Type="BUILD_TRADING_POST"/>
 		
 		<Update>
 			<Set PrereqTech="TECH_ART_THEORY"/>
