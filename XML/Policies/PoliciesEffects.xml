@@ -3475,7 +3475,7 @@
 		<Row>
 			<BuildingType>BUILDING_FAMILY_PRODUCTION</BuildingType>
 			<YieldType>YIELD_SCIENCE</YieldType>
-			<Yield>100</Yield>
+			<Yield>50</Yield>
 		</Row>
 
 		<Row>

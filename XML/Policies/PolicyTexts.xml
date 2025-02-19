@@ -561,7 +561,7 @@
 		<Row Tag="TXT_KEY_POLICY_FAMILY_REGISTER_HELP" >
 			<Text>
 				[COLOR_POSITIVE_TEXT]Schools of Thought[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science for every [ICON_CITIZEN] Citizens in a city. 
+				[NEWLINE][ICON_BULLET]+1 [ICON_RESEARCH] Science for every 2 [ICON_CITIZEN] Citizens in a city. 
 				[NEWLINE][ICON_BULLET]Add 2 [RESEARCH] Scientist Slots in every city.
 			</Text>
 		</Row>
