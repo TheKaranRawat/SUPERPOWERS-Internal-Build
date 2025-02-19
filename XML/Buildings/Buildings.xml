@@ -2548,7 +2548,7 @@
 			<Strategy>TXT_KEY_BUILDING_SP_CITY_BASIC_BUILDINGS_STRATEGY</Strategy>
 			<ArtDefineTag>WAT</ArtDefineTag>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>2</SpecialistCount>
+			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>75</ConquestProb>
 			<HurryCostModifier>25</HurryCostModifier>
@@ -2634,7 +2634,7 @@
 			<Help>TXT_KEY_BUILDING_EGYPT_SIRIUS_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_OBSERVATORY</ArtDefineTag>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>2</SpecialistCount>
+			<SpecialistCount>3</SpecialistCount>
 			<!--<NearbyMountainRequired>true</NearbyMountainRequired>-->
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
@@ -2653,7 +2653,7 @@
 			<Help>TXT_KEY_BUILDING_INCA_QURIKANCHA_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_OBSERVATORY</ArtDefineTag>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>2</SpecialistCount>
+			<SpecialistCount>3</SpecialistCount>
 			<NearbyMountainRequired>true</NearbyMountainRequired>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
@@ -2720,7 +2720,7 @@
 			<Strategy>TXT_KEY_BUILDING_SP_CITY_BASIC_BUILDINGS_STRATEGY</Strategy>
 			<NearbyTerrainRequired>TERRAIN_SNOW</NearbyTerrainRequired>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>1</SpecialistCount>
+			<SpecialistCount>3</SpecialistCount>
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>100</ConquestProb>
 			<HurryCostModifier>50</HurryCostModifier>
@@ -3213,7 +3213,7 @@
 			<Help>TXT_KEY_BUILDING_TCS_PAROCHIAL_SCHOOL_HELP</Help>
 			<MinAreaSize>-1</MinAreaSize>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>1</SpecialistCount>
+			<SpecialistCount>2</SpecialistCount>
 			<NukeImmune>true</NukeImmune>
 			<NeverCapture>true</NeverCapture>
 			<HurryCostModifier>25</HurryCostModifier>
@@ -3305,7 +3305,7 @@
 			<Help>TXT_KEY_BUILDING_TCS_PATENT_OFFICE_HELP</Help>
 			<MinAreaSize>-1</MinAreaSize>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<GreatPeopleRateChange>2</GreatPeopleRateChange>
 			<NukeImmune>true</NukeImmune>
 			<NeverCapture>true</NeverCapture>
 			<HurryCostModifier>25</HurryCostModifier>
@@ -4001,7 +4001,7 @@
 			<IconAtlas>NEB_BW_ATLAS</IconAtlas>
 			<PortraitIndex>0</PortraitIndex>
 			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-			<SpecialistCount>1</SpecialistCount>
+			<SpecialistCount>3</SpecialistCount>
 		</Row>
 		
 		<Row>

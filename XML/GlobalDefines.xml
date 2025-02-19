@@ -48,17 +48,17 @@
 		</Update>
 
 		<Update>
-			<Set Value="25"/>
+			<Set Value="10"/>
 			<Where Name="INDUSTRIAL_ROUTE_PRODUCTION_MOD" />
 		</Update>
 
 		<Update>
-			<Set Value="250"/>
+			<Set Value="100"/>
 			<Where Name="PROJECT_PRODUCTION_PERCENT" />
 		</Update>
 
 		<Update>
-			<Set Value="2"/>
+			<Set Value="1"/>
 			<Where Name="CIRCUMNAVIGATE_FREE_MOVES" />
 		</Update>
 		
