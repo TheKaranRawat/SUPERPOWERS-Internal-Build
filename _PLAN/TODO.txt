@@ -120,3 +120,7 @@ horizontal scroll city ui
 automate roads
 automate smaller tasks
 goody huts until middle ages
+city production tooltip fix
+MERCENARY REMOVE
+workboat remove
+militia remove

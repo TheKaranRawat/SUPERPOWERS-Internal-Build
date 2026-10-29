@@ -1053,6 +1053,10 @@
 			<Text>Prophets in Islam include "messengers", bringers of a divine revelation via an angel; and "prophets", lawbringers that Muslims believe were sent by God to every people, bringing God's message in a language they can understand. Belief in Islamic prophets is one of the six articles of the Islamic faith, and specifically mentioned in the Quran.</Text>
 		</Row>
 
+		<Row Tag="TXT_KEY_TURN_INDICATOR">
+			<Text>[ICON_SWAP]</Text>
+		</Row>
+
 
 	</Language_en_US>
 	

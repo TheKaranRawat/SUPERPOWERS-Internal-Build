@@ -321,14 +321,14 @@
 
 	<!-- Instances -->
 	<Instance Name="SelectionInstance">
-		<Button ID="Button" Anchor="L,T" Size="270,32" ToolTipType="EUI_CityViewLeftTooltip" >
+		<Button ID="Button" Anchor="L,T" Size="80,72" ToolTipType="EUI_CityViewLeftTooltip" >
 			<ShowOnMouseOver>
 				<AlphaAnim Anchor="R,T" Size="260,32" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
 					<Grid Anchor="L,C" Offset="0,1" Size="260,37" Style="Grid9FrameTurnsHL"/>
 				</AlphaAnim>
 			</ShowOnMouseOver>
 			<Box ID="DisabledProduction" Color="0,0,0,153" Size="270,31" Anchor="L,B" Hidden="1"/>
-			<Image ID="Portrait" Anchor="L,C" Offset="-4,0" Texture="WonderAtlas360.dds" Size="45,45" />
+			<Image ID="Portrait" Anchor="L,C" Offset="-4,0" Texture="WonderAtlas360.dds" Size="64,64" />
 			<Label ID="Name" Anchor="L,C" Offset="42,-8" Font="TwCenMT18"/>
 			<Label ID="Turns" Anchor="L,C" Offset="42,8" Font="TwCenMT14"/>
 			<Box ID="Disabled" Color="0,0,0,153" Size="270,31" Anchor="L,B" Hidden="1"/>

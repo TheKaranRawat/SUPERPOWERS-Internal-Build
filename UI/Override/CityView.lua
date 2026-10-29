@@ -60,17 +60,17 @@ local StackInstanceManager = StackInstanceManager
 local GameInfo = EUI.GameInfoCache -- warning! use iterator ONLY with table field conditions, NOT string SQL query
 
 --EUI_tooltips
-local GetHelpTextForUnit = EUI.GetHelpTextForUnit
-local GetHelpTextForBuilding = EUI.GetHelpTextForBuilding
-local GetHelpTextForProject = EUI.GetHelpTextForProject
-local GetHelpTextForProcess = EUI.GetHelpTextForProcess
-local GetFoodTooltip = EUI.GetFoodTooltip
-local GetGoldTooltip = civ5_mode and EUI.GetGoldTooltip or EUI.GetEnergyTooltip
-local GetScienceTooltip = EUI.GetScienceTooltip
-local GetProductionTooltip = EUI.GetProductionTooltip
-local GetCultureTooltip = EUI.GetCultureTooltip
-local GetFaithTooltip = EUI.GetFaithTooltip
-local GetTourismTooltip = EUI.GetTourismTooltip
+local GetHelpTextForUnit = GetHelpTextForUnit
+local GetHelpTextForBuilding = GetHelpTextForBuilding
+local GetHelpTextForProject = GetHelpTextForProject
+local GetHelpTextForProcess = GetHelpTextForProcess
+local GetFoodTooltip = GetFoodTooltip
+local GetGoldTooltip = civ5_mode and GetGoldTooltip or GetEnergyTooltip
+local GetScienceTooltip = GetScienceTooltip
+local GetProductionTooltip = GetProductionTooltip
+local GetCultureTooltip = GetCultureTooltip
+local GetFaithTooltip = GetFaithTooltip
+local GetTourismTooltip = GetTourismTooltip
 
 include( "SupportFunctions" )
 local TruncateString = TruncateString
@@ -227,17 +227,65 @@ local function ResizeProdQueue()
 	local queuePanelHeight = math_min( 190, Controls.QueueStack:IsHidden() and 0 or Controls.QueueStack:GetSizeY() )	-- 190 = 5 x 38=instance height
 	if not Controls.SelectionScrollPanel:IsHidden() then
 		Controls.SelectionStacks:CalculateSize()
-		selectionPanelHeight = math_max( math_min( g_leftStackHeigth - queuePanelHeight, Controls.SelectionStacks:GetSizeY() ), 64 )
+		selectionPanelHeight = math_max( math_min( g_leftStackHeigth - queuePanelHeight, Controls.SelectionStacks:GetSizeY() ), 260 )
 --		Controls.SelectionBackground:SetSizeY( selectionPanelHeight + 85 )
 		Controls.SelectionScrollPanel:SetSizeY( selectionPanelHeight )
-		Controls.SelectionScrollPanel:CalculateInternalSize()
+		--Controls.SelectionScrollPanel:CalculateInternalSize()
 		Controls.SelectionScrollPanel:ReprocessAnchoring()
 	end
 	Controls.QueueSlider:SetSizeY( queuePanelHeight + 38 )				-- 38 = Controls.PQbox:GetSizeY()
 	Controls.QueueScrollPanel:SetSizeY( queuePanelHeight )
 	Controls.QueueScrollPanel:CalculateInternalSize()
 	Controls.QueueBackground:SetSizeY( queuePanelHeight + selectionPanelHeight + 152 )	-- 125 = 38=Controls.PQbox:GetSizeY() + 87 + 27
+	
+	local unitPanelWidth = 0
+	local buildingPanelWidth = 0
+	local wonderPanelWidth = 0
+	
+	local unitPanelHeight = 0
+
+	-- dynamic production grid size 
+
+	if not Controls.UnitGrid:IsHidden() then
+		Controls.UnitButtonStack:CalculateSize()
+		unitPanelWidth = Controls.UnitButtonStack:GetSizeX()
+		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
+		Controls.UnitGrid:SetSizeX( unitPanelWidth )
+		Controls.UnitGrid:SetSizeY( 44 )
+		Controls.UnitGrid:ReprocessAnchoring()
+	end
+
+	if not Controls.BuildingGrid:IsHidden() then
+		Controls.BuildingButtonStack:CalculateSize()
+		buildingPanelWidth = Controls.BuildingButtonStack:GetSizeX()
+		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
+		Controls.BuildingGrid:SetSizeX( buildingPanelWidth )
+		Controls.BuildingGrid:SetSizeY( 44 )
+		Controls.BuildingGrid:ReprocessAnchoring()
+	end
+
+	if not Controls.WonderGrid:IsHidden() then
+		Controls.WonderButtonStack:CalculateSize()
+		wonderPanelWidth = Controls.WonderButtonStack:GetSizeX()
+		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
+		Controls.WonderGrid:SetSizeX( wonderPanelWidth )
+		Controls.WonderGrid:SetSizeY( 44 )
+		Controls.WonderGrid:ReprocessAnchoring()
+	end
+	
+
+	-- minimize production grid windows
+
+	--local zeroHeight = 0
+	--if Controls.UnitButtonStack:IsHidden() then
+	--	Controls.UnitGrid:SetSizeY( zeroHeight )
+	--end
+
+	print( "unit panel height" )
+	print( unitPanelWidth )
+	
 	return Controls.QueueBackground:ReprocessAnchoring()
+
 end
 
 local function ResizeRightStack()
@@ -1059,7 +1107,7 @@ local function SetupSelectionList( itemList, selectionIM, cityOwnerID, getUnitPo
 		instance.Name:SetText( itemDescription )
 		if not turnsLeft then
 		elseif turnsLeft > -1 and turnsLeft <= 999 then
-			instance.Turns:LocalizeAndSetText( "TXT_KEY_STR_TURNS", turnsLeft )
+			instance.Turns:LocalizeAndSetText( turnsLeft )
 		else
 			instance.Turns:LocalizeAndSetText( "TXT_KEY_PRODUCTION_HELP_INFINITE_TURNS" )
 		end
@@ -1176,10 +1224,11 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 		end
 		instance.PQbox:SetVoid1( queuedItemNumber )
 		instance.PQbox:RegisterCallback( Mouse.eMouseEnter, SwapQueueItem )
-		instance.PQbox:RegisterCallback( Mouse.eRClick, ProductionPedia )
+		instance.PQbox:RegisterCallback( Mouse.eRClick, RemoveQueueItem )
+		instance.PQbox:RegisterCallback( Mouse.eLClick, RemoveQueueItem )
 		instance.PQbox:SetToolTipCallback( ProductionToolTip )
 
-		instance.PQremove:SetHide( isQueueEmpty or g_isViewingMode )
+		instance.PQremove:SetHide( true )
 		instance.PQremove:SetVoid1( queuedItemNumber )
 		instance.PQremove:RegisterCallback( Mouse.eLClick, RemoveQueueItem )
 
@@ -1207,7 +1256,7 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 			instance.PQname:LocalizeAndSetText( item.Description )
 			if isMaintain or isQueueEmpty then
 			elseif isGeneratingProduction then
-				instance.PQturns:LocalizeAndSetText( "TXT_KEY_PRODUCTION_HELP_NUM_TURNS", turnsRemaining )
+				instance.PQturns:LocalizeAndSetText( turnsRemaining )
 			else
 				instance.PQturns:LocalizeAndSetText( "TXT_KEY_PRODUCTION_HELP_INFINITE_TURNS" )
 			end

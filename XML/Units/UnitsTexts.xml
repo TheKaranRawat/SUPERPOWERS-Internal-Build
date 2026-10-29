@@ -5573,6 +5573,10 @@
 			<Text>Siege unit that can carry three Missile units. Has a 33% chance of manufacturing one Missile unit each turn if carrying less than three.</Text>
 		</Row>
 
+		<Replace Tag="TXT_KEY_PRODUCTION_HELP_INFINITE_TURNS">
+			<Text>∞</Text>
+		</Replace>
+
 		<!--
 		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE">
 			<Text>Nanohive</Text>
