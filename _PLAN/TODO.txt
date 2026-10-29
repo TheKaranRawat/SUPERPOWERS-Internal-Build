@@ -112,4 +112,11 @@ weaken defences
 simplify scripts
 improve performance
 debloat buildings/units/techs
-
+remove electricity/consumer good effects
+simplify city scripts
+switch to new city UI
+transparent city UI
+horizontal scroll city ui
+automate roads
+automate smaller tasks
+goody huts until middle ages
