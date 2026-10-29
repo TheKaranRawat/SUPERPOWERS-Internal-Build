@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<!-- User Interface Options text (Gaia's Core Mod) -->
+<GameData>
+	<Language_DE_DE>
+		<!-- Dropdown entry (cyan) + popup title (beige) -->
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTIONS">
+			<Text>[COLOR_CYAN]UI-Optionen[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTIONS_TITLE">
+			<Text>UI-Optionen</Text>
+		</Replace>
+		<!-- Display toggles -->
+		<Replace Tag="TXT_KEY_GAIA_SMALL_RESOURCE_ICONS">
+			<Text>Kleine Ressourcen-Icons</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SMALL_RESOURCE_ICONS_HELP">
+			<Text>Ersetzt die Ressourcen-Icons in der 3D-Kartenansicht durch kleinere Versionen.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTION_PROMOTION_ICONS">
+			<Text>Beförderungs-Symbole</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTION_PROMOTION_ICONS_HELP">
+			<Text>Zeigt die Beförderungen jeder Einheit als kleine Symbole auf ihrer Flagge an.</Text>
+		</Replace>
+		<!-- Map Overlays -->
+		<Replace Tag="TXT_KEY_GAIA_MAP_OVERLAYS">
+			<Text>Karten-Overlays</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MAP_OVERLAYS_HELP">
+			<Text>Zeigt hilfreiche Karten-Overlays für die ausgewählte Einheit oder Stadt an. Aktiviert diese Option und wählt dann unten, welche Overlays angezeigt werden.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_CITY_LIMITS">
+			<Text>Stadtgrenzen</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_CITY_LIMITS_HELP">
+			<Text>Umreißt die bearbeitbaren Felder einer Stadt in der Stadtansicht sowie die voraussichtliche Stadt eines Siedlers und schattiert Felder, die sich mit einer benachbarten Stadt überschneiden würden.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_COMMANDER">
+			<Text>Kommandanteneinfluss</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_COMMANDER_HELP">
+			<Text>Umreißt den Aura-Bereich eines ausgewählten Großen Generals oder Großen Admirals.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_DIG_SITES">
+			<Text>Ausgrabungsstätten</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_DIG_SITES_HELP">
+			<Text>Hebt aufgedeckte Artefaktfelder hervor, während ein Archäologe ausgewählt ist; Stätten, die bereits von einem Eurer Archäologen angesteuert werden, erhalten eine andere Farbe.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_MOVEMENT_PATH">
+			<Text>Bewegungspfad</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_MOVEMENT_PATH_HELP">
+			<Text>Zeichnet die geplante Bewegungsroute der ausgewählten Einheit nach und markiert das Zielfeld mit einem Ring.</Text>
+		</Replace>
+		<!-- Quick Animations -->
+		<Replace Tag="TXT_KEY_GAIA_QUICK_ANIMATIONS">
+			<Text>Schnelle Animationen</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_QUICK_ANIMATIONS_HELP">
+			<Text>Beschleunigt die Züge, indem Kampf- und Bewegungsanimationen übersprungen werden. Aktiviert diese Option und wählt dann unten, wann sie gilt.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_PLAYER_WAR">
+			<Text>Schneller Krieg (Mensch)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_PLAYER_WAR_TOOLTIP">
+			<Text>Deaktiviert Animationen während der Spielerzüge in Kriegszeiten.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_PLAYER_PEACE">
+			<Text>Schneller Frieden (Mensch)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_PLAYER_PEACE_TOOLTIP">
+			<Text>Deaktiviert Animationen während der Spielerzüge in Friedenszeiten.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_AI_WAR">
+			<Text>Schneller Krieg (KI)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_AI_WAR_TOOLTIP">
+			<Text>Deaktiviert Animationen während der Züge von KI-Zivilisationen im Krieg mit Euch. KI-Züge im Frieden sind immer schnell (nicht mehr einstellbar).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_BARBARIANS">
+			<Text>Schnelle Barbaren</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_BARBARIAN_TOOLTIP">
+			<Text>Deaktiviert Animationen während der Barbaren-Züge. Da sie immer im Krieg sind, gelten diese Einstellungen immer.</Text>
+		</Replace>
+		<!-- Vanilla options-screen tooltip overrides -->
+		<Replace Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_COMBAT_TT">
+			<Text>
+				Aktiviert schnelle Kampfabläufe in Einzelspielerspielen.
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Achtung:[ENDCOLOR] Das Aktivieren dieser Option während des Spiels deaktiviert automatisch [COLOR_CYAN]Schnelle Animationen[ENDCOLOR]. Ihr könnt sie über die [COLOR_CYAN]UI-Optionen[ENDCOLOR] im Dropdown-Menü der Diplomatie-Ecke wieder aktivieren.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_MOVEMENT_TT">
+			<Text>
+				Aktiviert schnelle Bewegung von Einheiten in Einzelspielerspielen.
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Achtung:[ENDCOLOR] Das Aktivieren dieser Option während des Spiels deaktiviert automatisch [COLOR_CYAN]Schnelle Animationen[ENDCOLOR]. Ihr könnt sie über die [COLOR_CYAN]UI-Optionen[ENDCOLOR] im Dropdown-Menü der Diplomatie-Ecke wieder aktivieren.
+			</Text>
+		</Replace>
+		<!-- Auto End Turn button -->
+		<Replace Tag="TXT_KEY_GAIA_AUTO_END_TURN_BUTTON">
+			<Text>Schaltfläche für automatisches Zugende</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AUTO_END_TURN_BUTTON_HELP">
+			<Text>Zeigt neben Zug beenden eine Schaltfläche an, die das automatische Zugende (Einzelspieler) mit einem Klick ein- und ausschaltet.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_STATE_ON">
+			<Text>Derzeit [COLOR_POSITIVE_TEXT]aktiviert[ENDCOLOR]. Zum Deaktivieren klicken.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_STATE_OFF">
+			<Text>Derzeit [COLOR_NEGATIVE_TEXT]deaktiviert[ENDCOLOR]. Zum Aktivieren klicken.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_HIDE_HINT">
+			<Text>Diese Schaltfläche kann über die [COLOR_CYAN]UI-Optionen[ENDCOLOR] im Dropdown-Menü der Diplomatie-Ecke ausgeblendet werden.</Text>
+		</Replace>
+		<!-- Production menu toggles -->
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_SORT">
+			<Text>Gebäude nach Kosten sortieren</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_SORT_HELP">
+			<Text>Ordnet die Gebäudeliste im Produktionsmenü der Stadt aufsteigend nach Kosten, beim Bauen nach Runden bis zur Fertigstellung und beim Kauf nach Preis. Ansonsten werden Gebäude nach Zeitalter gruppiert.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_HIDE">
+			<Text>Einträge pro Stadt ausblenden</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_HIDE_HELP">
+			<Text>Umschalt+Klick auf einen Eintrag im Produktionsmenü der Stadt blendet ihn nur in dieser Stadt aus, beim Bauen wie beim Kauf. Ausgeblendete Einträge wandern in den Abschnitt „Ausgeblendet“ am Ende der Liste, wo Umschalt+Klick sie wieder einblendet. Jede Stadt speichert ihre eigene Liste im Spielstand. Ist die Option aus, werden alle Einträge angezeigt und die Listen bleiben erhalten.</Text>
+		</Replace>
+	</Language_DE_DE>
+</GameData>

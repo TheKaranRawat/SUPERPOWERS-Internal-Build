@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_KO_KR>
+		<!--Insults-->
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_1">
+			<Text>어째서 이런 헛소리로 계속 내 시간을 낭비하는 것입니까? 썩 물러가십시오!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_2">
+			<Text>처음에 한 말을 듣지 못했습니까? 물러가십시오!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_3">
+			<Text>이런, 귀가 어두우신 모양입니다? 대답은 언제나 '아니오'입니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_REPEAT_SHARE_OPINION_NO_1">
+			<Text>지금은 그런 요청을 받지 않겠습니다. 그만 물어보십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_REPEAT_SHARE_OPINION_NO_2">
+			<Text>이미 끝난 이야기입니다. 내 외교 문제를 당신에게 알려 주지 않을 것입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_REPEAT_SHARE_OPINION_NO_3">
+			<Text>대답은 여전히 '아니오'입니다. 지금은 외교 정보를 제공하지 않겠습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_SHARE_OPINION_NO_1">
+			<Text>당신 같은 악당과 우리의 외교 기밀을 나눌 일은 결코 없을 것입니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_SHARE_OPINION_NO_2">
+			<Text>내가 당신 같은 범죄자에게 우리의 외교 정책을 알려 줄 것이라고 정말 생각합니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_SHARE_OPINION_NO_3">
+			<Text>어째서 내 외교 문제나 캐물으며 시간을 낭비하는 것입니까? 당신이 상관할 바가 아닙니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NO_1">
+			<Text>미안하지만 우리는 외교 기밀을 안전하게 지키고자 합니다. 다음에 다시 시도해 보십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NO_2">
+			<Text>내 참모들은 우리의 외교 정책을 비밀에 부치는 것이 중요하다고 여깁니다. 다음 기회에 어떻겠습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NO_3">
+			<Text>지금은 우리의 외교 문제를 떠벌리고 싶지 않습니다. 다음 기회에 어떻겠습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_FRIENDLY_1">
+			<Text>{1_PlayerName:textkey}은(는) 진정한 친구이며 믿을 수 있는 사람입니다. (우호)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_FRIENDLY_2">
+			<Text>나는 {1_PlayerName:textkey}을(를) 무척 아끼며, 우리의 우정이 계속되기를 기대하고 있습니다. (우호)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_FRIENDLY_3">
+			<Text>{1_PlayerName:textkey}와(과) 나는 좋은 관계를 유지해 왔으며, 그것이 변할 이유는 없다고 봅니다. (우호)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NEUTRAL_1">
+			<Text>{1_PlayerName:textkey}에 대해서는 딱히 의견이 없습니다. (중립)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NEUTRAL_2">
+			<Text>{1_PlayerName:textkey}은(는) 나의 적도 친구도 아닙니다. (중립)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NEUTRAL_3">
+			<Text>{1_PlayerName:textkey}은(는) 내게 전혀 거슬리지 않습니다. (중립)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_GUARDED_1">
+			<Text>솔직히 말하지요. 나는 {1_PlayerName:textkey}을(를) 조금도 믿지 않습니다. (경계)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_GUARDED_2">
+			<Text>{1_PlayerName:textkey} 때문에 내 참모들이 긴장하고 있어, 상황을 주시하는 중입니다. (경계)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_GUARDED_3">
+			<Text>최근의 사건들로 인해 {1_PlayerName:textkey}을(를) 예의 주시하고 있습니다. (경계)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_HOSTILE_1">
+			<Text>{1_PlayerName:textkey}의 통치는 이 땅을 더럽히고 있으니, 그것이 끝난다 해도 아무 문제가 없을 것입니다. (적대)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_HOSTILE_2">
+			<Text>{1_PlayerName:textkey}은(는) 처리해야 할 폭군이자 악당입니다. (적대)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_HOSTILE_3">
+			<Text>{1_PlayerName:textkey}이(가) 아직도 이 땅을 활보하고 있다는 사실을 상기시키지 마십시오... (적대)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_AFRAID_1">
+			<Text>{1_PlayerName:textkey}을(를) 크게 선망하며 우러러보고 있습니다! (두려움)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_AFRAID_2">
+			<Text>{1_PlayerName:textkey}의 성공에 감탄하고 있습니다. (두려움)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_AFRAID_3">
+			<Text>언젠가 나도 {1_PlayerName:textkey}만큼 훌륭한 지도자가 되었으면 합니다. (두려움)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_WAR_1">
+			<Text>{1_PlayerName:textkey}와(과) 나는 전쟁 중입니다! ([COLOR_NEGATIVE_TEXT]전쟁 중![ENDCOLOR])</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_WAR_2">
+			<Text>{1_PlayerName:textkey}와(과) 나는 격전을 벌이고 있습니다.  ([COLOR_NEGATIVE_TEXT]전쟁 중![ENDCOLOR])</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_WAR_3">
+			<Text>지금 {1_PlayerName:textkey}와(과)의 분쟁을 해결하는 중입니다.  ([COLOR_NEGATIVE_TEXT]전쟁 중![ENDCOLOR])</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_PLANNING_WAR_1">
+			<Text>당신을 믿기에 고백하건대, 나는 {1_PlayerName:textkey}을(를) 상대로 전쟁을 계획하고 있습니다. (전쟁 계획 중!)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_PLANNING_WAR_2">
+			<Text>겉모습에 속지 마십시오. 나는 이 땅에서 {1_PlayerName:textkey}을(를) 없애 버릴 작정입니다. (전쟁 계획 중!)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_PLANNING_WAR_3">
+			<Text>{1_PlayerName:textkey}의 존재가 지긋지긋하여 곧 제거할 계획입니다. (전쟁 계획 중!)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_DECEPTIVE_1">
+			<Text>내가 {1_PlayerName:textkey}와(과) 친해 보일지 모르나, 그것은 모두 겉치레일 뿐입니다. (기만)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_DECEPTIVE_2">
+			<Text>비밀을 지킬 수 있겠습니까? 나는 기회가 닿는 대로 {1_PlayerName:textkey}을(를) 속일 생각입니다. (기만)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_DECEPTIVE_3">
+			<Text>세상에는 {1_PlayerName:textkey}이(가) 친구라고 말하고 다닙니다. 하지만 극비리에 말씀드리자면, 사실은 그렇지 않습니다. (기만)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_FRIEND_OFFERS_GIFT_1">
+			<Text>친구여, 우리의 우정에 대한 감사의 표시로 이 제안을 받아 주십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_FRIEND_OFFERS_GIFT_2">
+			<Text>어려운 시기를 겪고 있는 당신에게 선물을 드립니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_FRIEND_OFFERS_GIFT_3">
+			<Text>우리의 우정을 보여 주고자 당신의 백성에게 이것을 드립니다. 언젠가 이 호의에 보답해 주기를 바랍니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_GRANTED_1">
+			<Text>기꺼이 돕겠습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_GRANTED_2">
+			<Text>이 선물이 당신의 백성에게 번영을 가져다주기를 바랍니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_GRANTED_3">
+			<Text>어려움에 처한 이들을 돕는 것은 나의 기쁨입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_DECLINED_1">
+			<Text>당신과의 우정은 소중하지만, 그것은 줄 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_DECLINED_2">
+			<Text>그것은 내 백성이 내어줄 수 있는 것 이상입니다. 유감이지만 거절할 수밖에 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_DECLINED_3">
+			<Text>우리는 여전히 친구이며, 그것은 변하지 않을 것입니다. 하지만 내 대답은 '아니요'입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_TOO_SOON_1">
+			<Text>친구여, 당신은 얼마 전에 도움을 요청했습니다. 다시 요청하기 전에 시간을 좀 두십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_TOO_SOON_2">
+			<Text>지난번 요청을 받은 지 아직 얼마 되지 않았습니다. 아직은 새로운 요청을 고려할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_TOO_SOON_3">
+			<Text>지금은 그 요청을 들어줄 수 없습니다. 미안합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_SHARE_OPINION_1">
+			<Text>미안하지만 외교 기밀을 털어놓을 만큼 당신과 오래 알고 지내지 못했습니다. 나중이라면 모르겠지만요.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_SHARE_OPINION_2">
+			<Text>내 외교 정책을 밝힐 만큼 우리가 서로 오래 알고 지낸 사이가 아닙니다. 대답은 '아니오'입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_SHARE_OPINION_3">
+			<Text>나는 신뢰하는 이들에게만 외교 정책을 알려 줍니다. 이제 막 만난 사람을 신뢰할 수는 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_GREETS_MASTER_1">
+			<Text>당신이 우리 백성을 노예처럼 부리는 것은 우리 모두에게 수치입니다. 원하는 게 무엇입니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_GREETS_MASTER_2">
+			<Text>아, 폭군께서 또 얼굴을 비추시는군요. 이번에는 우리를 어떻게 더 착취하실 생각입니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_GREETS_MASTER_3">
+			<Text>오? 폭군께서 무슨 일로 내 문 앞까지 오셨습니까? 우리와 우리의 자존심에 더 침을 뱉으러 오신 것입니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_GREETING_VASSALAGE_VASSAL_1">
+			<Text>주군이시여, 저의 땅에 오신 것을 환영합니다. 무엇을 도와드릴까요?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_GREETING_VASSALAGE_VASSAL_2">
+			<Text>환영합니다! 저희 일꾼들이 주군께서 쓰실 자원을 생산하느라 열심히 일하고 있다는 소식이 기쁘게 들리시기를 바랍니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_GREETING_VASSALAGE_VASSAL_3">
+			<Text>아, 주군이시여, 환영합니다! 저희에게 어떤 도움을 구하러 오셨습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_DEMANDS_INDEPENDENCE_1">
+			<Text>우리는 당신의 한심한 통치에 진절머리가 났으며, 독립을 되찾기 위해 죽을 때까지 싸울 각오가 되어 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_DEMANDS_INDEPENDENCE_2">
+			<Text>우리 제국에 대한 지배를 포기하십시오. 아니면 그 대가를 치르게 될 것입니다. 어느 쪽이 더 현명해 보입니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_DEMANDS_INDEPENDENCE_3">
+			<Text>우리 백성은 독립을 원하며, 당신은 우리를 막을 수 없습니다. 자, 일이 쉽게 풀릴 수도 있고 험하게 흘러갈 수도 있습니다. 선택은 당신의 몫입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_VASSALAGE_REVOKE_VASSALAGE_1">
+			<Text>우리 백성이 이 세상에서 스스로의 길을 찾아야 할 때가 왔습니다. 우리는 독립국이 되기를 원합니다. 어떻게 하시겠습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_VASSALAGE_REVOKE_VASSALAGE_2">
+			<Text>우리 제국에 대한 당신의 지배를 내 백성들은 더 이상 견디지 못합니다. 이에 우리 백성이 독립된 주권 국가로 살아갈 수 있도록 허락해 줄 것을 정식으로 요청합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_VASSALAGE_REVOKE_VASSALAGE_3">
+			<Text>이제 우리의 종속 관계를 끝낼 때가 왔다고 생각합니다. 우리 백성은 독립적인 통치를 원합니다. 받아들이시겠습니까?</Text>
+		</Replace>
+		<!-- AI revokes Human Vassalage -->
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_GRANTED_1">
+			<Text>우리에게 독립을 허락해 주시기로 한 것에 우리 백성들이 감사하고 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_GRANTED_2">
+			<Text>우리 백성을 해방해 주시다니 참으로 관대하십니다. 감사드립니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_GRANTED_3">
+			<Text>우리의 독립을 되돌려 주시다니 참으로 자애로우십니다. 이날이 길이길이 기억되기를 바랍니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_REFUSED_WAR_1">
+			<Text>좋습니다. 우리 백성은 독립을 쟁취하기 위해 죽을 때까지 싸울 것입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_REFUSED_WAR_2">
+			<Text>당신은 이 일로 부하들의 피를 헛되이 흘리는 길을 택했습니다. 우리 백성은 독립 앞에서 물러서지 않을 것입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_REFUSED_WAR_3">
+			<Text>좋습니다. 그렇다면 우리는 자유를 쟁취하기 위해 죽을 때까지 싸우겠습니다.</Text>
+		</Replace>
+		<!-- Human asks AI to revoke his vassalage -->
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GRANTS_INDEPENDENCE_1">
+			<Text>좋습니다. 당신들의 독립을 허락하며, 당신의 백성을 독립국으로 인정하겠습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GRANTS_INDEPENDENCE_2">
+			<Text>수락하겠습니다. 당신들은 이제 내 제국의 지배에서 벗어났습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GRANTS_INDEPENDENCE_3">
+			<Text>알겠습니다. 당신들의 독립할 권리를 인정하겠습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_REFUSES_INDEPENDENCE_WAR_1">
+			<Text>지금 누구에게 말하고 있다고 생각합니까? 내 꼭두각시들은 그리 쉽게 나를 떠날 수 없습니다. 이제 당신의 반란을 짓밟아 주겠습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_REFUSES_INDEPENDENCE_WAR_2">
+			<Text>내가 당신을 그리 쉽게 놓아주리라 정말 생각했습니까? 하! 천만에요... 이제 죽을 준비나 하십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_REFUSES_INDEPENDENCE_WAR_3">
+			<Text>제정신이 아니군요? 내가 그토록 한심할 것이라고 정말 생각했습니까? 당신의 군대를 산산조각 내는 일을 즐겨 보겠습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_ATTACKED_BY_MASTER_1">
+			<Text>우리를 지켜 주리라 믿었건만, 오히려 우리를 공격하다니요. 참으로 수치스러운 일입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_ATTACKED_BY_MASTER_2">
+			<Text>이 얼마나 야만적입니까! 우리 백성을 보호하겠다고 약속해 놓고 도리어 우리를 공격하다니요! 분명히 말해 두건대, 나는 당신을 죽일 것이며, 그때 당신은 고통받게 될 것입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_ATTACKED_BY_MASTER_3">
+			<Text>당신은 우리의 보호자였습니다. 우리를 공격하는 자들을 물리쳐 주기로 했지, 그들과 한편이 되기로 한 것이 아니었습니다! 우리 모두에게 번영을 가져다주기로 했지, 우리를 어둠 속에 버려두기로 한 것이 아니었습니다! 당신은 길을 잃었고, 이제 온 세상이 그것을 알게 될 것입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_MASTER_GREETS_VASSAL_1">
+			<Text>이런, 나의 귀여운 애완 국가가 날 보러 왔군요. 원하는 게 무엇입니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_MASTER_GREETS_VASSAL_2">
+			<Text>당신의 백성들은 나를 만족시킬 자원을 만드느라 열심히 일하고 있어야 할 텐데요. 원하는 게 무엇입니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_MASTER_GREETS_VASSAL_3">
+			<Text>당신은 지금 윗사람 앞에 서 있습니다. 내 앞에 무릎을 꿇으십시오. 그러지 않으면 후회하게 될 것입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GREETS_VASSAL_1">
+			<Text>이게 무슨 일입니까? 내 속국이 찾아오다니요? 공물이라도 바치러 온 것입니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GREETS_VASSAL_2">
+			<Text>아, 나의 수많은 신하 중 하나로군요? 무엇을 바치러 왔습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GREETS_VASSAL_3">
+			<Text>내 병사들이 당신과 당신의 땅을 지켜 줄 것을 약속합니다. 원하는 것이 무엇입니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_AGREES_TO_MOVE_TROOPS_1">
+			<Text>원하시는 대로 국경에서 군대를 물리겠습니다. 이번 일로 끼친 심려에 사과드립니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_AGREES_TO_MOVE_TROOPS_2">
+			<Text>좋습니다. 군대를 다른 곳으로 돌리겠습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_AGREES_TO_MOVE_TROOPS_3">
+			<Text>알겠습니다. 즉시 군대를 이동시키겠습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_TROOPS_ONLY_PASSING_THROUGH_1">
+			<Text>부디 이해해 주십시오. 우리 군대는 그저 지나가는 중일 뿐입니다! 당신의 제국에 해를 끼칠 뜻은 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_TROOPS_ONLY_PASSING_THROUGH_2">
+			<Text>놀라지 마십시오. 당신을 해칠 생각은 없습니다. 우리 군대는 그저 훈련 중일 뿐입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_TROOPS_ONLY_PASSING_THROUGH_3">
+			<Text>최근 우리 군대의 이동으로 심려를 끼쳐 드렸다면 사과드립니다. 우리 군대는 그저 그 지역을 지나가는 중일 뿐이며, 전쟁을 일으킬 의도는 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_MOVE_TROOPS_NEUTRAL_HOSTILE_1">
+			<Text>당신의 영혼 없는 존재를 끝장내는 것도 가치 있는 일이겠지만, 내 병사들은 지금 당신을 공격할 생각이 없습니다. 운이 좋은 줄 아십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_MOVE_TROOPS_NEUTRAL_HOSTILE_2">
+			<Text>당신을 죽이는 일은 즐겁겠지만, 지금은 그럴 때가 아닙니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_MOVE_TROOPS_NEUTRAL_HOSTILE_3">
+			<Text>아니요, 내 병사들은 아직 당신에게 시간을 낭비할 생각이 없습니다. 다만 당신의 두려움은 꽤나 즐겁군요.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_CONQUEST_WAR_1">
+			<Text>생각보다 영리한 모양입니다. 내가 언젠가 세계를 제패하리라는 것을 예상이라도 했습니까? 아니면 그저 어리석은 것일 수도 있겠지요. 어느 쪽이든, 이제 죽을 시간입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_CONQUEST_WAR_2">
+			<Text>솔직히 당신에게 거짓말을 할 이유가 없군요. 당신은 그저 내가 위대함에 오르기 위한 디딤돌일 뿐입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_CONQUEST_WAR_3">
+			<Text>하! 미래의 지배자에게 그런 말버릇이라니요. 이제 대가를 치러야 할 것입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_BETRAYAL_WAR">
+			<Text>인정하지요. 한때는 당신을 꽤 좋은 친구라고 생각했습니다. 하지만 이제 본색을 드러낼 때가 왔습니다. 내 군대는 당신의 도시를 곧장 겨누고 있습니다. 죽을 시간입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_HOSTILE_WAR">
+			<Text>감히 나에게 명령하는 것입니까? 내 군대는 아무 데도 가지 않습니다. 당신의 영토로 쳐들어가는 것 말고는요.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THIRD_PARTY_AI_OFFERS_TO_FREE_VASSALS_1">
+			<Text>당신에게 예속된 나라들이 독립을 부르짖고 있습니다. 들리지 않습니까? 자, 그 외침에 귀를 기울이게 하려면 무엇을 드려야 합니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THIRD_PARTY_AI_OFFERS_TO_FREE_VASSALS_2">
+			<Text>간청합니다. 부디 당신의 속국들을 놓아주십시오. 이 제안이면 충분히 솔깃하지 않습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THIRD_PARTY_AI_OFFERS_TO_FREE_VASSALS_3">
+			<Text>독립은 천부의 권리입니다. 자, 당신의 속국들을 위해 합의를 이루어 균형을 되찾읍시다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_MASTER_FOR_LIBERATION_1">
+			<Text>이 친절한 호의는 쉽게 잊히지 않을 것입니다. 당신은 우리 백성에게 자유를 주었습니다. 이 은혜는 평생 잊지 않겠습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_MASTER_FOR_LIBERATION_2">
+			<Text>도의와 자유의 이름으로 자신의 권리를 내려놓는 일은 지혜롭고 용기 있는 지도자만이 할 수 있는 일입니다. 우리 백성은 앞으로 수 세기 동안 독립 기념일을 경축할 것입니다. 감사드립니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_MASTER_FOR_LIBERATION_3">
+			<Text>우리 백성을 독립국으로 인정해 주셔서 감사합니다. 두 나라의 백성이 동맹으로 함께 살아가기를 바랍니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_LIBERATES_VASSAL_1">
+			<Text>우리는 당신들의 땅에 대한 권리를 포기하기로 결정했습니다. 이제 자유로운 백성으로 살아가십시오. 당신들은 더 이상 우리의 속국이 아닙니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_LIBERATES_VASSAL_2">
+			<Text>당신들의 주군으로 지내던 시간도 이제 끝에 이르렀다고 봅니다. 당신들에게 독립을 허락합니다. 앞으로도 훌륭한 동맹으로 남기를 바랍니다. 당신들은 더 이상 우리의 속국이 아닙니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_LIBERATES_VASSAL_3">
+			<Text>신중한 고민 끝에 우리는 협정을 끝내고 당신들에게 자유를 주기로 결정했습니다. 앞으로 두 제국이 모두 번영하기를 바랍니다. 당신들은 더 이상 우리의 속국이 아닙니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_PROTESTS_TAX_RAISE_1">
+			<Text>우리의 세금을 올리기로 했다니 실망입니다. 그 돈은 우리 백성의 것입니다. 분명히 말해 두건대, 우리의 관계는 이 일로 틀어졌습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_PROTESTS_TAX_RAISE_2">
+			<Text>간청합니다. 우리 상인들에게 자비를 베풀어 주십시오. 당신의 과세는 우리 경제를 어지럽히고 있습니다. 이런 길을 택하셨다니 실망스럽습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_PROTESTS_TAX_RAISE_3">
+			<Text>우리의 세금 인상은 받아들일 수 없습니다. 우리의 정치를 좌지우지하는 것만으로는 그 탐욕이 채워지지 않습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_ANNOUNCES_TAX_RAISE_1">
+			<Text>다른 나라를 다스리는 데에는 큰 비용이 듭니다. 그래서 당신들의 세금을 올리기로 결정했습니다. 이해해 주기를 바랍니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_TAX_CUT_1">
+			<Text>우리의 세금을 낮춰 주셨다니 기쁩니다. 이것이 좋은 일들의 전조이기를 바랄 뿐입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_TAX_CUT_2">
+			<Text>세금 부담을 덜어 주셔서 감사합니다. 우리 경제가 성장하면 길게 보아 두 나라 모두에게 도움이 될 것을 약속드립니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_TAX_CUT_3">
+			<Text>우리의 세금을 낮추기로 한 당신의 결정은 두 나라 백성을 더 가깝게 만들어 줄 조치라고 생각합니다. 감사드립니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_ANNOUNCES_TAX_CUT_1">
+			<Text>당신들의 세금을 낮추었음을 기쁘게 알립니다. 우리 제국은 당신들의 도움 없이도 충분히 번영할 수 있으니, 불필요하게 관계를 긴장시킬 이유가 없다고 봅니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_OFFERS_VOLUNTARY_VASSALAGE_1">
+			<Text>저의 약함은 온 세상에 드러나 있습니다. 부디 저의 충성 서약을 받아 주십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_OFFERS_VOLUNTARY_VASSALAGE_2">
+			<Text>당신의 위대한 힘은 끝이 없습니다. 우리의 약함은 우리를 탐나는 표적으로 만듭니다. 삼가 당신의 보호를 요청합니다.</Text>
+		</Replace>
+	</Language_KO_KR>
+</GameData>

@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_KO_KR>
+<!--TWO_UNITS_PER_TILE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TWO_UNITS_PER_TILE">
+			<Text>[COLOR_GREEN]Two Units Per Tile[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TWO_UNITS_PER_TILE_HELP">
+			<Text>Allows stacking up to two combat units per tile. Plots that allow for a garrison (Cities, Forts and Citadels) will be able to stack up to three combat units.</Text>
+		</Replace>
+<!--BEST_STARTING_LOCATION-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_BEST_STARTING_LOCATION">
+			<Text>[COLOR_GREEN]최적의 시작 위치[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_BEST_STARTING_LOCATION_HELP">
+			<Text>
+				인간 플레이어는 주어진 맵에서 항상 최고의 시작 위치를 받습니다.
+				[NEWLINE][NEWLINE]이 옵션을 선택하면 선택한 문명의 시작 편향이 무시됩니다.
+			</Text>
+		</Replace>
+<!--FRIENDLY_CITADELS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_FRIENDLY_CITADELS">
+			<Text>[COLOR_GREEN]우호적인 성채[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_FRIENDLY_CITADELS_HELP">
+			<Text>성채는 다른 문명이나 도시 국가와 전쟁 중일 때만 그 영토에 건설하고 타일을 주장할 수 있으며, 그 외의 경우에는 중립 지역의 타일만 주장합니다.</Text>
+		</Replace>
+<!--SLOW_TECH-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_SLOW_TECH">
+			<Text>[COLOR_GREEN]느린 기술 연구[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_SLOW_TECH_HELP">
+			<Text>각 시대의 기술은 이전 시대보다 비용이 더 듭니다. 고대 시대부터 시대마다 +10%씩 늘어나 정보화 시대에는 최대 1.8배가 됩니다. 게임이 길어지면 지도에 유닛이 더 많아져 메모리를 더 사용합니다.</Text>
+		</Replace>
+<!--UNWELCOME_PROPHETS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_UNWELCOME_PROPHETS">
+			<Text>[COLOR_GREEN]불청객 예언자[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_UNWELCOME_PROPHETS_HELP">
+			<Text>AI는 자체 종교를 창건한 인간 플레이어가 소유한 도시에 선교사와 예언자를 보내지 않습니다. 종교가 없는 인간 플레이어는 여전히 유효한 대상입니다.</Text>
+		</Replace>
+<!--AI_ONE_CITY_CHALLENGE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_AI_ONE_CITY_CHALLENGE">
+			<Text>[COLOR_GREEN]AI 단일 도시 도전[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_AI_ONE_CITY_CHALLENGE_HELP">
+			<Text>AI 플레이어는 단 하나의 도시만 건설하거나 소유할 수 있습니다.</Text>
+		</Replace>
+<!--NO_AI_WONDERS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_AI_WONDERS">
+			<Text>[COLOR_GREEN]AI 불가사의 금지[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_AI_WONDERS_HELP">
+			<Text>AI가 [COLOR_WATER_TEXT]세계 불가사의[ENDCOLOR]를 건설하지 못하게 합니다.</Text>
+		</Replace>
+<!--NO_COMBAT_RANDOMNESS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_COMBAT_RANDOMNESS">
+			<Text>[COLOR_GREEN]전투 랜덤 요소 제거[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_COMBAT_RANDOMNESS_HELP">
+			<Text>전투 피해량의 랜덤 요소를 제거하여 항상 100% 피해를 입힙니다 (기존 80%-120% 범위 대신).</Text>
+		</Replace>
+<!--REMOVE_XP_CAP-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REMOVE_XP_CAP">
+			<Text>[COLOR_GREEN]경험치 제한 제거[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REMOVE_XP_CAP_HELP">
+			<Text>다음과 같은 경험치 제한을 제거합니다:[NEWLINE]요새, 성채, 기타 시설 및 도시 주둔군, 야만인, 도시 국가.</Text>
+		</Replace>
+
+<!--GOODY_HUTS_RECON_ONLY-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_RECON_ONLY">
+			<Text>[COLOR_GREEN]정찰 전용 고대 유적[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_RECON_ONLY_HELP">
+			<Text>정찰 유닛(정찰병, 탐험가 및 그 후속 유닛)만 고대 유적을 획득할 수 있습니다. 다른 유닛이 유적에 들어서면 유적은 그대로 남아 나중에 정찰 유닛이 획득할 수 있습니다. 도시 국경 확장은 여전히 유적을 정상적으로 획득합니다.</Text>
+		</Replace>
+<!--GOODY_HUTS_SCIENCE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_SCIENCE">
+			<Text>[COLOR_GREEN]Ancient Ruin Science[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_SCIENCE_HELP">
+			<Text>Ancient ruin rewards that would grant a free Technology instead grant a lump of Science, banked into your current research.</Text>
+		</Replace>
+<!--RETURNING_FOG-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_RETURNING_FOG">
+			<Text>[COLOR_GREEN]되돌아오는 안개[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_RETURNING_FOG_HELP">
+			<Text>더 이상 보이지 않는 탐험한 땅에 전장의 안개가 다시 끼어 지도를 다시 정찰해야 합니다. 도시와 그 주변, 자신의 영토, 자연 불가사의, 산, 고대 유적, 완전히 탐험한 대륙은 계속 드러나 있습니다. 모든 플레이어에게 적용됩니다.</Text>
+		</Replace>
+<!--TILE_CONQUEST-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TILE_CONQUEST">
+			<Text>[COLOR_GREEN]타일 정복[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TILE_CONQUEST_HELP">
+			<Text>전쟁 중에는 지상 전투 유닛이 점유한 적 타일과 조건을 충족하는 인접 타일을 점령합니다. 요새와 성채는 직접 점유해야만 차지할 수 있으며, 성채를 차지하면 주변 타일도 함께 점령합니다. 정복한 타일은 평화를 맺으면 반환됩니다.</Text>
+		</Replace>
+<!--REALISTIC_OCEAN_CROSSING-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REALISTIC_OCEAN_CROSSING">
+			<Text>[COLOR_GREEN]현실적인 대양 횡단[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REALISTIC_OCEAN_CROSSING_HELP">
+			<Text>승선한 지상 유닛은 대양 타일에 진입할 수 없습니다. 군대와 개척자는 병력 수송선에 타거나, 르네상스 시대 이후의 근접 군함에 있는 병력 선실에 한 유닛씩 타고 대양을 건넙니다.[NEWLINE][NEWLINE]이 규칙은 인간 플레이어에게만 적용됩니다. AI도 병력 수송선을 확보할 수 있을 때는 언제나 해상 침공군과 해외 개척자를 호위받는 병력 수송선에 태워 보냅니다. AI가 예외인 이유는 제때 준비된 함선이 없거나 수송선으로 감당할 수 없는 이동처럼 지나치게 가혹한 예외 상황에서 AI가 발이 묶이지 않도록 하기 위해서일 뿐입니다.</Text>
+		</Replace>
+<!--WONDER_RACE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_WONDER_RACE_NOTIFICATIONS">
+			<Text>[COLOR_CYAN]불가사의 경쟁 알림[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_WONDER_RACE_NOTIFICATIONS_HELP">
+			<Text>매 턴마다, 당신과 만난 적 있고 현재 보이는 경쟁자가 같은 세계 불가사의를 건설 중이면 앞서고 있는지 뒤처지고 있는지와 몇 턴 차이인지 알려줍니다. 전장의 안개를 존중합니다: 현재 도시를 볼 수 있는 경쟁자만 계산됩니다.</Text>
+		</Replace>
+<!-- VASSALAGE -->
+<!--VASSALAGE GAME OPTION-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_VASSALAGE">
+			<Text>[COLOR_GREEN]봉신화[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_VASSALAGE_HELP">
+			<Text>다른 문명을 봉신 상태로 만들 수 있습니다. 문명은 원래 수도를 점유당한 경우에만 평화 조약에서 항복하며, 어떤 문명의 원래 수도를 해방하면 그 문명은 자발적 속국이 됩니다.</Text>
+		</Replace>
+<!--VASSALAGE OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_FOOTER_YOUR_VASSAL_COUNT">
+			<Text>우리의 종속국 수: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_FOOTER_WORLD_VASSAL_COUNT">
+			<Text>세계의 종속국 수: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_LOCKED_UNTIL_ERA">
+			<Text>중세 시대에 진입하거나 다른 문명의 종속국이 되기 전까지는 종속 체제가 시작되지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_OVERVIEW_TITLE">
+			<Text>종속국 개요</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_LIST_MASTERS_HEADER">
+			<Text>당신의 주군</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_LIST_VASSALS_HEADER">
+			<Text>당신의 종속국</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_PROFILE_MASTER_HEADER">
+			<Text>주군 정보</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_PROFILE_VASSAL_HEADER">
+			<Text>종속국 정보</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TURNS_AS_VASSAL">
+			<Text>{1_NumTurns}턴 동안 종속 상태 (시작 턴: {2_TurnStarted})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_ALLOWED_LABEL">
+			<Text>독립 선언 가능 여부:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_RULES_SEEN_BY_MASTER_TT">
+			<Text>종속국이 독립 선언이 가능할 경우 언제든지 종속 상태를 철회할 수 있습니다. 이를 거부할 경우, 해당 종속국과 전쟁 상태에 돌입합니다. AI 종속국은 부당한 대우를 받고 있다고 느끼거나 그 전쟁에서 이길 수 있다고 판단할수록 독립을 요청할 확률이 높아집니다.[NEWLINE][NEWLINE]종속국이 독립 선언을 하기 위해 충족해야 하는 조건:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_RULES_SEEN_BY_VASSAL_TT">
+			<Text>당신이 독립 선언이 가능할 경우 언제든지 종속 상태를 철회할 수 있습니다. 주군이 이를 거부할 경우 전쟁 상태가 됩니다. AI 주군은 당신에게 호감을 갖고 있거나 당신의 군사력을 두려워할수록 독립을 받아들일 가능성이 높아집니다.[NEWLINE][NEWLINE]독립 선언을 하기 위해 충족해야 하는 조건:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_MIN_TURNS_TT">
+			<Text>1. {1_NumTurns}턴 동안 종속 상태 유지</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_ANY_OF_HEADER_TT">
+			<Text>2. 다음 조건 중 하나 만족:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_CITIES_LOST_TT">
+			<Text>[TAB][ICON_BULLET]종속 시작 당시 도시 수의 {1_CityPercent}% 이하 보유 (현재 {2_Percent}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_POPULATION_GROWN_TT">
+			<Text>[TAB][ICON_BULLET]종속 시작 당시 [ICON_CITIZEN] 인구의 {1_PopPercent}% 초과로 성장 (현재 {2_Percent}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_RIVALS_MASTER_TT">
+			<Text>[TAB][ICON_BULLET]종속국 팀이 주군 팀 도시 수의 {1_CityPercent}% 이상 및 [ICON_CITIZEN] 인구의 {2_PopPercent}% 이상 보유 (현재 {3_Percent}% 및 {4_Percent}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COLUMN_KEY_FIGURES_HEADER">
+			<Text>통계</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COLUMN_ADMINISTRATION_HEADER">
+			<Text>관리</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_START_LABEL">
+			<Text>현재 도시 비율:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_START_TT">
+			<Text>현재 종속국이 보유한 총 도시 수(팀 전체) 대비 종속 시작 당시 도시 수(팀 전체) 비율.[NEWLINE][NEWLINE][ICON_BULLET]현재 팀 도시 수: {1_CurrentCities}[NEWLINE][ICON_BULLET]종속 시작 당시 팀 도시 수: {2_StartCities}[NEWLINE][NEWLINE]현재 이 플레이어는 {3_PlayerCities}개의 도시를 보유 중입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_YOUR_TEAM_LABEL">
+			<Text>주군 도시 비율:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_YOUR_TEAM_TT">
+			<Text>현재 종속국이 보유한 총 도시 수(팀 전체) 대비 현재 주군 팀의 도시 수 비율.[NEWLINE][NEWLINE][ICON_BULLET]현재 종속국 팀 도시 수: {1_CurrentCities}[NEWLINE][ICON_BULLET]현재 주군 팀 도시 수: {2_MasterCities}[NEWLINE][NEWLINE]현재 이 플레이어는 {3_Cities}개의 도시를 보유 중입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_YOUR_TEAM_LABEL">
+			<Text>주군 인구 비율:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_YOUR_TEAM_TT">
+			<Text>현재 종속국이 보유한 총 [ICON_CITIZEN] 인구(팀 전체) 대비 현재 주군 팀의 [ICON_CITIZEN] 인구 비율.[NEWLINE][NEWLINE][ICON_BULLET]현재 팀 [ICON_CITIZEN] 인구: {1_CurrentPop}[NEWLINE][ICON_BULLET]현재 주군 팀 [ICON_CITIZEN] 인구: {2_MasterPop}[NEWLINE][NEWLINE]현재 이 플레이어는 {3_PlayerPop}명의 [ICON_CITIZEN] 인구를 보유 중입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_START_LABEL">
+			<Text>현재 인구 비율:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_START_TT">
+			<Text>현재 종속국이 보유한 총 [ICON_CITIZEN] 인구(팀 전체) 대비 종속 시작 당시 [ICON_CITIZEN] 인구(팀 전체) 비율.[NEWLINE][NEWLINE][ICON_BULLET]현재 팀 [ICON_CITIZEN] 인구: {1_CurrentPop}[NEWLINE][ICON_BULLET]종속 시작 당시 팀 [ICON_CITIZEN] 인구: {2_StartPop}[NEWLINE][NEWLINE]현재 이 플레이어는 {3_PlayerPop}명의 [ICON_CITIZEN] 인구를 보유 중입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_BUTTON">
+			<Text>종속국 해방</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_TT">
+			<Text>이 종속국을 해방하여 당신의 통제에서 벗어나게 합니다. 이는 평화적인 행동으로 전쟁을 유발하지 않으며, 해방된 종속국과의 외교 관계가 크게 향상됩니다.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]이 행동을 수행하면 {1_TeamName}는 더 이상 당신의 종속국이 아닙니다. 이 행동은 되돌릴 수 없습니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_TOO_SOON_TT">
+			<Text>종속국을 해방하려면 최소 {1_Num}턴 동안 종속 상태였어야 합니다. 해당 종속국을 {2_Num}턴 후에 해방할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_RATE_LABEL">
+			<Text>세율: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_OPINION_LABEL">
+			<Text>종속 상태에 대한 평가: {1_szStr}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_BREAKDOWN_HEADER_TT">
+			<Text>아래 항목을 기준으로 한 당신의 대우에 대한 종속국의 평가입니다:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_BREAKDOWN_NEUTRAL_TT">
+			<Text>당신의 통치에 대한 종속국의 감정은 균형을 이루고 있습니다. 현재로서는 어느 쪽으로도 기울지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_DEMANDS_TT">
+			<Text>요구한 사항: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_TAXES_TT">
+			<Text>현재 세금 정책: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_PROTECTION_TT">
+			<Text>영토 보호 수준: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_RELIGION_TT">
+			<Text>종교적 유대: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_TRADE_ROUTES_TT">
+			<Text>거래로 연결된 경로 수: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_TOTAL_TT">
+			<Text>총계: {1_Sum}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_SATISFIED">
+			<Text>[COLOR_GREY]만족[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_UNEASY">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]불만족[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_AGGRIEVED">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]학대받음[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_RESENTFUL">
+			<Text>[COLOR_NEGATIVE_TEXT]불행함[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_OPPRESSED">
+			<Text>[COLOR_NEGATIVE_TEXT]노예 상태[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_INCOME_SEEN_BY_MASTER_TT">
+			<Text>이 종속국은 {3_Num} [ICON_GOLD] 총 금화 수입의 {2_TaxRate}%를 세금으로 내며, 그중 당신의 몫은 {1_Num} [ICON_GOLD] 금화/턴입니다.[NEWLINE][NEWLINE]세금은 팀 구성원 간에 균등하게 분배됩니다.[NEWLINE][NEWLINE]납부할 세액은 매 턴 시작 시 다시 계산됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_CHANGE_COOLDOWN_TT">
+			<Text>세율 조정은 마지막 조정 이후 {1_NumTurns}턴이 지난 후에만 가능합니다.[NEWLINE][NEWLINE]다음 변경 가능 시점까지 {2_NumTurnsLeft}턴 남음.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_LAST_CHANGE_TURN">
+			<Text>세율은 {1_Turn}턴에 설정되었습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_NEVER_SET_SEEN_BY_MASTER">
+			<Text>[COLOR_NEGATIVE_TEXT]이 종속국에 대해 세율이 한 번도 설정되지 않았습니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_NEXT_CHANGE_TURN">
+			<Text>{1_Turn}턴에 세율 변경 가능.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_ADJUSTABLE_NOW_SEEN_BY_MASTER">
+			<Text>[COLOR_POSITIVE_TEXT]세율을 변경할 수 있습니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_CONFIRM_TAX_BUTTON">
+			<Text>변경 사항 적용</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_CONFIRM_TAX_BUTTON_TT">
+			<Text>종속국의 세율 변경 사항을 적용합니다. 변경 내용은 다음 턴부터 적용되며, 이후 몇 턴 동안 다시 변경할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_CHANGE_CONFIRM">
+			<Text>{2_TeamName}에게 {1_TaxRate}%의 세율을 적용하시겠습니까? 이 값은 {3_NumTurns}턴 동안 변경할 수 없습니다. 세율은 다음 턴부터 적용됩니다. [COLOR_WARNING_TEXT]이 행동은 되돌릴 수 없습니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_CONFIRM">
+			<Text>{1_TeamName}를 해방하시겠습니까? 해당 팀의 모든 문명이 당신의 통제에서 벗어납니다. [COLOR_WARNING_TEXT]이 행동은 되돌릴 수 없습니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_CONFIRM">
+			<Text>{1_TeamName}에게 독립을 요청하시겠습니까? 거부될 경우 당신의 문명은 [COLOR_WARNING_TEXT]전쟁[ENDCOLOR] 상태로 들어갑니다. [COLOR_WARNING_TEXT]이 행동은 되돌릴 수 없습니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_VOLUNTARY_LABEL">
+			<Text>자발적 종속국</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_VOLUNTARY_SEEN_BY_MASTER_TT">
+			<Text>이 문명은 평화 시 거래를 통해 당신에게 봉사하기로 합의했거나, 당신이 원래 수도를 해방하여 부활한 문명입니다. 짧은 최소 기간이 지나면 언제든지 독립을 요청할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_CAPITULATED_LABEL">
+			<Text>항복한 종속국</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_CAPITULATED_SEEN_BY_MASTER_TT">
+			<Text>항복한 종속국은 전쟁에서 패배하여 종속 상태에 들어간 문명입니다. 이들은 완전히 주군에게 종속되어 있으며 특정 조건을 만족할 때까지 종속 상태를 해제할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TOTAL_POPULATION_LABEL">
+			<Text>[ICON_CITIZEN] 인구</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_HAPPINESS_LEVEL_LABEL">
+			<Text>행복도</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_GROSS_GOLD_PER_TURN_LABEL">
+			<Text>[ICON_GOLD] 총 금화 수입/턴</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_NET_GOLD_PER_TURN_LABEL">
+			<Text>[ICON_GOLD] 순 금화 수입/턴</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TRADE_ROUTES_USED_LABEL">
+			<Text>[ICON_TURNS_REMAINING] 무역로</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TRADE_ROUTES_USED_OF_TOTAL">
+			<Text>{1_TradeRoutesUsed} / {2_TradeRoutesAvailable}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_IDEOLOGY_PASSTHROUGH">
+			<Text>{1_Str}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_CULTURE_PER_TURN_LABEL">
+			<Text>[ICON_CULTURE] 문화</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TOURISM_PER_TURN_LABEL">
+			<Text>[ICON_TOURISM] 관광</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_FAITH_PER_TURN_LABEL">
+			<Text>[ICON_PEACE] 신앙</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_SCIENCE_PER_TURN_LABEL">
+			<Text>[ICON_RESEARCH] 과학</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_CITY_COMPARISON_HEADER">
+			<Text>도시</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_DEMOGRAPHICS_HEADER">
+			<Text>인구</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_GOLD_AND_TRADE_HEADER">
+			<Text>경제</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_CULTURE_AND_IDEOLOGY_HEADER">
+			<Text>문화</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_RELIGION_AND_FAITH_HEADER">
+			<Text>종교</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_RESEARCH_HEADER">
+			<Text>과학</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_NO_IDEOLOGY">
+			<Text>이념 없음</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_NO_PREVAILING_RELIGION">
+			<Text>주요 종교 없음</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_PREVAILING_RELIGION">
+			<Text>주요 종교: {1_szReligion}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_CURRENT_IDEOLOGY">
+			<Text>채택한 이념: {1_szIdeology}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_INCOME_SEEN_BY_MASTER">
+			<Text>이 플레이어로부터 {1_Num} [ICON_GOLD] 금화/턴을 수령 중</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TOURISM_MOD_VASSAL_BONUS">
+			<Text>+{1_Num}% 종속국 보너스 [NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_TAXES_HEADER">
+			<Text>세금</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_RELATIONS_HEADER">
+			<Text>외교</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_INDEPENDENCE_CONDITIONS_HEADER">
+			<Text>독립</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_LIST_EMPTY_NO_VASSALS">
+			<Text>당신은 종속국을 보유하고 있지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_ALLOWED_WITH_VALUE">
+			<Text>독립 가능 여부: {1_Str}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_VALUE_LEADER_AND_TEAM">
+			<Text>{1_Num} (팀 {2_iTeamNum})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_VALUE_TEAM_PERCENT">
+			<Text>{1_iTeamNum}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_VALUE_LEADER_AND_TEAM_PERCENT">
+			<Text>{1_Num}% (팀 {2_iTeamNum}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_POPULATION_LABEL">
+			<Text>당신의 [ICON_CITIZEN] 인구</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_POPULATION_TT">
+			<Text>우리의 [ICON_CITIZEN] 인구 (팀 전체 [ICON_CITIZEN] 인구)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_POPULATION_LABEL">
+			<Text>상대의 [ICON_CITIZEN] 인구</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_POPULATION_TT">
+			<Text>상대의 [ICON_CITIZEN] 인구 (팀 전체 [ICON_CITIZEN] 인구)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_RATIO_LABEL">
+			<Text>[ICON_CITIZEN] 인구 %</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_RATIO_TT">
+			<Text>우리의 [ICON_CITIZEN] 인구와 {1_MasterPlayer}의 [ICON_CITIZEN] 인구 비율입니다.[NEWLINE][NEWLINE]플레이어 인구 비율 (팀 인구 비율)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_SINCE_START_LABEL">
+			<Text>[ICON_CITIZEN] 인구 (종속 시작 이후 %)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_SINCE_START_TT">
+			<Text>{1_TeamName}의 종속국이 된 이후 우리 팀의 현재 [ICON_CITIZEN] 인구 대비 당시 인구 비율입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_CITIES_LABEL">
+			<Text>당신의 도시 수</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_CITIES_TT">
+			<Text>우리의 도시 수 (팀 전체 도시 수)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_CITIES_LABEL">
+			<Text>상대의 도시 수</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_CITIES_TT">
+			<Text>상대의 도시 수 (팀 전체 도시 수)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITY_RATIO_LABEL">
+			<Text>도시 비율 %</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITY_RATIO_TT">
+			<Text>우리 도시 수와 {1_MasterPlayer}의 도시 수 비율입니다.[NEWLINE][NEWLINE]플레이어 도시 수 비율 (팀 도시 수 비율)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITIES_SINCE_START_LABEL">
+			<Text>도시 수 (종속 시작 이후 %)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITIES_SINCE_START_TT">
+			<Text>{1_TeamName}의 종속국이 된 이후 우리 팀의 현재 도시 수 대비 당시 도시 수 비율입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_ADJUSTABLE_NOW_SEEN_BY_VASSAL">
+			<Text>[COLOR_GREY]주군이 이번 턴에 당신의 세율을 변경할 수 있습니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_NEVER_SET_SEEN_BY_VASSAL">
+			<Text>[COLOR_POSITIVE_TEXT]주군이 아직 당신에게 세율을 설정한 적이 없습니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_PAYMENT_SEEN_BY_VASSAL">
+			<Text>당신은 {1_Num} [ICON_GOLD] 금/턴을 지불하고 있습니다</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_BUTTON">
+			<Text>독립 요청</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_TT">
+			<Text>주군으로부터 독립을 요청합니다. 이 행동을 실행하면 {1_TeamName}과의 종속 관계가 종료됩니다.[NEWLINE][NEWLINE]주군은 독립 요청을 수락하거나 거부할 수 있습니다. 거부 시 당신은 전쟁 상태에 돌입하게 됩니다! 상대보다 강할수록, 그리고 상대가 당신을 좋게 여길수록 평화적으로 독립할 확률이 증가합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_TOO_SOON_TT">
+			<Text>[COLOR_NEGATIVE_TEXT]종속된 지 {1_MinimumTurns}턴이 지나야 독립을 요청할 수 있습니다. {2_iNumTurns}턴 후에 요청 가능.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_CONDITIONS_UNMET_TT">
+			<Text>[COLOR_NEGATIVE_TEXT]독립 요청을 위한 조건을 모두 충족해야 요청할 수 있습니다. "독립 가능 여부"에 마우스를 올려 필요 조건을 확인하세요.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_RATE_SEEN_BY_VASSAL_TT">
+			<Text>당신은 [ICON_GOLD] 총 금화 수입의 {1_Num}%만큼 세금을 납부 중입니다. 주군 {2_TeamName}이 설정한 세율을 변경할 수 없습니다. 세금은 종속국 팀 구성원별로 개별 설정됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_PAYMENT_SEEN_BY_VASSAL_TT">
+			<Text>상대는 당신으로부터 {1_Num} [ICON_GOLD] 금/턴을 수령 중입니다. 이는 당신의 [ICON_GOLD] 총 금화 수입의 {2_TaxRate}%에 해당합니다 (현재 수입: {3_Num} [ICON_GOLD]).[NEWLINE][NEWLINE]세금은 당신의 턴 시작 시 계산됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_MASTER_BENEFITS_HEADER">
+			<Text>주군 혜택</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_OPEN_BORDERS_INTO_VASSALS">
+			<Text>[ICON_BULLET] 종속국 영토로의 국경 개방</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_DOUBLE_RELIGIOUS_PRESSURE">
+			<Text>[ICON_BULLET] +100% [ICON_PEACE] 종속국 도시에 대한 종교 압력</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_TOURISM_BONUS">
+			<Text>[ICON_BULLET] +33% [ICON_TOURISM] 종속국 대상 관광</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_DIPLOMAT_IN_VASSAL_CAPITAL">
+			<Text>[ICON_BULLET] 무료 [ICON_DIPLOMAT] 외교관이 종속국 [ICON_CAPITAL] 수도에 파견됨</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_SHARE_OF_VASSAL_YIELDS">
+			<Text>[ICON_BULLET] 종속국 [ICON_RESEARCH] 과학, [ICON_CULTURE] 문화, [ICON_PEACE] 신앙의 20% 획득</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_AI_VASSALS_ADOPT_IDEOLOGY">
+			<Text>[ICON_BULLET] AI 종속국은 주군의 이념을 채택</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_BUY_VASSAL_UNIQUE_UNITS">
+			<Text>[ICON_BULLET] 종속국 고유 유닛을 [ICON_GOLD] 금으로 구매</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_VOLUNTARY_SEEN_BY_VASSAL_TT">
+			<Text>자발적 종속국으로서 {1_Name}의 보호를 받고 있습니다. 항복한 종속국과 달리 짧은 최소 기간이 지나면 언제든지 독립을 요청할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_CAPITULATED_SEEN_BY_VASSAL_TT">
+			<Text>평화 협정으로 {1_Name}에게 항복한 종속국으로서 독립 선언이 크게 제한됩니다. 최소 기간이 지난 뒤에도, 주군의 보호에도 불구하고 너무 많은 도시를 잃거나, [ICON_CITIZEN] 인구를 크게 늘리거나, 도시 수와 [ICON_CITIZEN] 인구 모두에서 주군에 근접해야만 독립 가능성이 생깁니다.</Text>
+		</Replace>
+<!--DIPLOMACY-->
+		<Replace Tag="TXT_KEY_GAIA_OPINION_THEY_ARE_YOUR_VASSAL">
+			<Text>그들은 우리의 속국입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_THEY_ARE_YOUR_VOLUNTARY_VASSAL">
+			<Text>그들은 우리의 자발적 속국입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_CONTENT">
+			<Text>그들은 주군으로서 귀하의 대우에 만족하고 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_DISAGREE">
+			<Text>그들은 주군으로서 귀하의 통치 방식 중 일부에 반대합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_MISTREATED">
+			<Text>그들은 자신들이 주군에게 학대받고 있다고 생각합니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_UNHAPPY">
+			<Text>그들은 귀하의 통치에 매우 불만족해 하고 있습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_ENSLAVED">
+			<Text>그들은 귀하의 지배 아래에서 노예화되고 있다고 믿습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_DEFENDED_THEM">
+			<Text>귀하는 주군으로서 그들의 영토를 보호했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_FAILED_DEFENSE">
+			<Text>귀하는 주군으로서 그들의 영토를 보호하지 못했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_FREED_THEM_UNASKED">
+			<Text>그들은 요청 없이 귀하를 해방시켰습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_INDEPENDENCE_GRANTED">
+			<Text>귀하는 그들의 독립을 허락했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_INDEPENDENCE_REFUSED">
+			<Text>귀하는 그들이 요청했을 때 독립을 거부했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_ATTACKED_THEM">
+			<Text>귀하는 그들이 속국일 때 전쟁을 선포했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_FEARS_YOUR_VASSAL_COUNT">
+			<Text>그들은 귀하의 지나치게 많은 속국 보유를 두려워합니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_ASK_WITHDRAW_BORDER_TROOPS">
+			<Text>우리 국경에서 군대를 철수해 주십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_ASK_WITHDRAW_BORDER_TROOPS_HOSTILE">
+			<Text>우리를 공격할 생각이신가요, 망할 놈!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_ASK_WITHDRAW_BORDER_TROOPS_TT">
+			<Text>상대 지도자에게 국경에서 병력을 철수해 달라고 요청합니다. 수락하면 상대는 한동안 당신을 상대로 전쟁을 계획하지 않습니다. 거절할 경우 상대가 즉시 전쟁을 선포하니 주의하세요!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_SHARE_OPINION">
+			<Text>...에 대해 어떻게 생각합니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_VOLUNTARY_VASSAL">
+			<Text>속국 상태</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_VOLUNTARY_VASSAL_TT">
+			<Text>다른 문명의 자발적 속국이 됩니다. 자발적 속국은 {1_Num}턴이 지난 후 주군에게 독립을 요청할 수 있습니다.[NEWLINE][NEWLINE]경고: 속국은 전쟁과 평화에서 주군을 따릅니다. 속국이 되는 즉시 주군이 싸우고 있지 않은 모든 문명과 평화를 맺고, 주군이 벌이고 있는 모든 전쟁에 참전합니다.[NEWLINE][NEWLINE]항복하는 문명에 속국이 있다면, 그들은 새 주군의 속국이 됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_CAPITULATE">
+			<Text>항복</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_RELEASE_ALL_VASSALS">
+			<Text>해방</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_RELEASE_ALL_VASSALS_TT">
+			<Text>해당 문명이 모든 속국 관계를 해지하며, 각 속국은 다시 독립합니다. 속국이 하나 이상 있는 경우에만 가능합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_CAPITULATE_TT">
+			<Text>해당 문명에 항복하여 속국 상태가 됩니다. 원래 수도를 점유한 문명에게만 항복할 수 있습니다. 항복한 문명은 {1_Num}턴이 지나기 전까지는 주군으로부터 독립할 수 없습니다.[NEWLINE][NEWLINE]항복하는 문명에 속국이 있다면, 그들은 새 주군에게 넘어갑니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_REFUSE_VASSAL_INDEPENDENCE">
+			<Text>자유를 원한다면 싸워서 얻어내야 할 것이다. (전쟁)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_GRANT_VASSAL_INDEPENDENCE">
+			<Text>알겠습니다. 독립을 허락하겠습니다.</Text>
+		</Replace>
+<!--TOP PANEL-->
+		<Replace Tag="TXT_KEY_GAIA_TP_HAPPINESS_SHARED_BY_VASSALS">
+			<Text>속국 행복도 {1_Num} 제공</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_CULTURE_SHARED_BY_VASSALS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] 문화 속국 제공</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_SCIENCE_SHARED_BY_VASSALS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_RESEARCH] 과학 속국 제공</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_SHARED_BY_VASSALS">
+			<Text>속국으로부터 {1_Num} 획득</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_FAITH_SHARED_BY_VASSALS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] 신앙 속국 제공</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_VASSAL_UPKEEP">
+			<Text>속국 유지비로 {1_Num} 사용</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_VASSAL_TAX_COLLECTED">
+			<Text>속국 세금으로 {1_Num} 획득</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_VASSAL_TAX_PAID">
+			<Text>주군에게 세금으로 {1_Num} 납부</Text>
+		</Replace>
+<!--OTHER-->		
+		<Replace Tag="TXT_KEY_NOTIFICATION_CIV_RESURRECTED">
+			<Text>{1_PlayerName}님이 {2_CityName}을(를) 정복하고 {3_CivAdj}의 주권을 회복시켰습니다. 한때 꺼졌던 {4_CivName}의 불꽃이 다시 타오릅니다. {4_CivName}는 이제 {1_Playername}님의 속국입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POPUP_CITY_CAPTURE_INFO_LIBERATE_RESURRECT">
+			<Text>이 도시는 이전에 [COLOR_POSITIVE_TEXT]{@1_PlayerName}[ENDCOLOR]의 소유였습니다. 이 도시를 돌려줄 수 있으며, 그렇게 하면 영원한 감사의 표시를 받을 것입니다. 돌려줄 경우, 이 플레이어는 귀하의 [COLOR_POSITIVE_TEXT]자발적 속국[ENDCOLOR]이 됩니다.</Text>
+		</Replace>
+		<!-- Notifications -->
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALS_UNLOCKED_SUMMARY">
+			<Text>속국화 가능!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALS_UNLOCKED">
+			<Text>{1_EraName} 시대에 도달했으므로 이제 속국을 만들 수 있습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_CAPITULATED">
+			<Text>{1_TeamName}가 거의 패망 직전 귀하의 제국에 항복하여 속국이 되었습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_CAPITULATED_SUMMARY">
+			<Text>{1_TeamName}가 우리에게 항복했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_VOLUNTARY">
+			<Text>{1_TeamName}가 귀하의 강력한 힘을 인정하고 보호를 요청하며 속국이 되기를 수락했습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_VOLUNTARY_SUMMARY">
+			<Text>{1_TeamName}가 우리의 자발적 속국이 되었습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_BECAME_VASSAL">
+			<Text>당신의 문명은 이제 {1_TeamName}의 속국으로서 봉사합니다. 앞으로 모든 전쟁과 평화에서 주군을 따르게 됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_BECAME_VASSAL_SUMMARY">
+			<Text>{1_TeamName}의 속국이 되었습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE">
+			<Text>{1_PlyrName}가 {2_PlyrName}의 속국이 되었습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE_UNMET_VASSAL_SUMMARY">
+			<Text>{1_PlyrName}가 새로운 속국을 획득했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE_UNMET_VASSAL">
+			<Text>{1_PlyrName}가 {2_PlyrName}를 새로운 속국으로 삼았습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE_UNMET_MASTER">
+			<Text>{1_PlyrName}가 {2_PlyrName}의 속국이 되었습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_UNMET_PLAYER_TOOK_VASSAL">
+			<Text>{1_PlyrName}가 새로운 속국을 획득했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_LEFT_YOU_SUMMARY">
+			<Text>{1_TeamName}가 더 이상 귀하의 속국이 아닙니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_LEFT_YOU_PEACEFULLY">
+			<Text>{1_TeamName}은(는) 우리의 통치에서 벗어나 다시 스스로를 다스립니다.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]그들은 더 이상 우리의 속국이 아닙니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_LEFT_YOU_BY_WAR">
+			<Text>{1_TeamName}가 반란을 일으켜 독립을 선언하고 전쟁을 준비하고 있습니다![NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]그들은 더 이상 우리의 속국이 아닙니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_LEFT_MASTER_SUMMARY">
+			<Text>이제 {1_TeamName}의 속국이 아닙니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_LEFT_MASTER_PEACEFULLY">
+			<Text>{1_TeamName}로부터 해방되어 정치적 독립을 회복했습니다. 이제 우리는 자율적으로 우리의 길을 갈 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_LEFT_MASTER_BY_WAR">
+			<Text>혁명이 성공했습니다! 우리는 {1_TeamName}의 통치로부터 독립을 쟁취했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_ENDED_ELSEWHERE">
+			<Text>{1_PlyrName}가 {2_PlyrName}의 속국에서 벗어났습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_TAX_CAN_BE_SET">
+			<Text>{1_PlyrName}에 대한 세금 변경이 가능합니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_RAISED_YOUR_TAX_SUMMARY">
+			<Text>세금 인상!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_RAISED_YOUR_TAX">
+			<Text>{1_TeamName}가 귀하의 세금을 {2_Num}%에서 {3_Num}%로 인상했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_LOWERED_YOUR_TAX_SUMMARY">
+			<Text>세금 인하!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_LOWERED_YOUR_TAX">
+			<Text>{1_TeamName}가 귀하의 세금을 {2_Num}%에서 {3_Num}%로 인하했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_CAN_BE_LIBERATED_SUMMARY">
+			<Text>해방 가능!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_CAN_BE_LIBERATED">
+			<Text>오랜 기간 동안 우리의 속국이었던 {1_TeamName}를 이제 해방시킬 수 있습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_REPLAY_VASSALAGE_BEGAN">
+			<Text>{1_TeamName}가 {2_TeamName}의 속국이 되었습니다!</Text>
+		</Replace>
+<!--VASSALAGE RESOLUTION-->
+		<Replace Tag="TXT_KEY_RESOLUTION_GAIA_END_ALL_VASSALS">
+			<Text>전 세계 해방</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOLUTION_GAIA_END_ALL_VASSALS_HELP">
+			<Text>모든 주군-속국 관계가 즉시 평화롭게 해지됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEAGUE_PROPOSAL_INVALID_NOBODY_HAS_VASSALS">
+			<Text>속국이 없어 허용되지 않음.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_THEY_ARE_YOUR_MASTER">
+			<Text>그들은 귀하를 속국으로 두게 되어 기뻐합니다.</Text>
+		</Replace>
+		<!-- VictoryProgress domination tooltips + VassalageOverview static labels -->
+		<Replace Tag="TXT_KEY_GAIA_SCORE_BREAKDOWN_VASSALS_LABEL">
+			<Text>속국</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_YOU_ARE_VASSAL_OF_PLAYER">
+			<Text>[SPACE]{1_PlayerName}이(가) 당신을 속국으로 지배하고 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CIV_IS_YOUR_VASSAL">
+			<Text>[SPACE]당신은 {1_CivName}을(를) 속국으로 지배하고 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CIV_IS_VASSAL_OF_PLAYER">
+			<Text>[SPACE]{1_PlayerName}이(가) {2_CivName}을(를) 속국으로 지배하고 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_UNMET_VASSAL_OF_UNMET_PLAYER">
+			<Text> 아직 만나지 못한 플레이어가 또 다른 만나지 못한 문명을 속국으로 지배하고 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CITY_STATE_HOLDS_CAPITAL_FOR_ALLY">
+			<Text>{1_Name} 도시 국가가 {2_Num}을(를) 지배하고 있습니다. 이들은 해당 도시를 자신의 동맹에게 제공합니다. 동맹 관계를 깨뜨리거나 이들에게서 [ICON_CAPITAL] 수도를 빼앗으십시오![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CITY_STATE_HOLDS_CAPITAL_FOR_ALLYS_MASTER">
+			<Text>{1_Name} 도시 국가가 {2_Num}을(를) 지배하고 있습니다. 이들은 해당 도시를 자신의 동맹의 종주국에게 제공합니다. 동맹 관계를 깨뜨리거나, 그 동맹을 해방시키거나, 이들에게서 [ICON_CAPITAL] 수도를 빼앗으십시오![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CITY_STATE_HOLDS_CAPITAL_NO_ALLY">
+			<Text>{1_Name} 도시 국가가 {2_Num}을(를) 지배하고 있습니다. 현재 동맹이 없습니다. 이들과 동맹을 맺거나 이들에게서 [ICON_CAPITAL] 수도를 빼앗으십시오![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_VASSAL_HOLDS_CAPITAL_FOR_MASTER">
+			<Text>{1_Name}이(가) {2_Num}을(를) 지배하고 있습니다. 이들은 해당 도시를 자신의 종주국에게 제공합니다. 이들을 해방시키거나 이들에게서 [ICON_CAPITAL] 수도를 빼앗으십시오![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_VASSAL_KIND_DEFAULT">
+			<Text>속국</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_CONFIRM_DIALOG_DEFAULT">
+			<Text>정말로 진행하시겠습니까?</Text>
+		</Replace>
+<!--VASSAL RELATIONSHIP UI + NOTIFICATION-->
+		<Replace Tag="TXT_KEY_GAIA_WAR_BLOCKED_WHILE_VASSAL_TT">
+			<Text>May not declare war as a vassal (war is automatically declared when your Master declares war with this civilization).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_BLOCKED_ON_OWN_MASTER_TT">
+			<Text>You cannot declare war on your Master until you request independence or are liberated.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_WHILE_VASSAL_TT">
+			<Text>속국인 동안에는 평화 협상을 할 수 없습니다. 주군이 이 플레이어와 평화를 맺으면 자동으로 평화가 맺어집니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_TARGET_IS_VASSAL_TT">
+			<Text>이 문명은 속국이므로 직접 평화 협상을 할 수 없습니다. 주군인 {1_MasterName}와(과) 평화를 맺으면 자동으로 평화가 맺어집니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_MAY_NOT_ATTACK_VASSAL">
+			<Text>이 플레이어는 속국이므로 직접 전쟁을 선포할 수 없습니다. 전쟁은 그들의 종주국인 {1_MasterName}에 선포해야 합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DECLARE_WAR_TARGET_VASSALS_HEADER">
+			<Text>봉신</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELATIONS_YOUR_MASTER_LABEL">
+			<Text>[COLOR_GREY]당신은 그들의 속국입니다[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELATIONS_VASSAL_STATE_UNDER">
+			<Text>[COLOR_GREY]{1_CivName:textkey}의 속국[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DIPLO_SCORE_FROM_VASSALS">
+			<Text>속국에서 {1_Num}</Text>
+		</Replace>
+	</Language_KO_KR>
+</GameData>

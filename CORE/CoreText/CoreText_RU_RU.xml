@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<!-- Building era-population requirement -->
+	<Language_RU_RU>
+		<Replace Tag="TXT_KEY_BUILDING_NEED_MORE_POP">
+			<Text>[NEWLINE]Требуется ещё {1_Num} [ICON_CITIZEN] населения, чтобы построить {2_BuildingName:textkey}.</Text>
+		</Replace>
+		<!-- Empire-level mutual exclusion: production-list tooltip -->
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_EMPIRE_EXCLUSIVE">
+			<Text>[NEWLINE]Недоступно, пока ваша империя владеет или строит: {1_BuildingName:textkey}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_CITY_EXCLUSIVE">
+			<Text>[NEWLINE]Недоступно, пока в этом городе есть: {1_BuildingName:textkey}.</Text>
+		</Replace>
+		<!-- War-only unit: production-list tooltip -->
+		<Replace Tag="TXT_KEY_NO_ACTION_UNIT_REQUIRES_WAR">
+			<Text>[NEWLINE]Можно обучать только во время войны с крупной цивилизацией.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_MET_CIV_UNIQUE_UNITS_MAX">
+			<Text>[NEWLINE]У вас уже есть {1_Num} таких юнитов, больше купить нельзя.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_NEED_TENETS">
+			<Text>[NEWLINE]Требуется не менее {1_Num} {1_Num: plural 1?догмата; other?догматов;} этой идеологии.</Text>
+		</Replace>
+		<!-- Unique buildings of absent civilizations take effect -->
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_ABSENT_CIV_UNIQUES">
+			<Text>Исчезнувшие цивилизации живут в вашей империи: {1_Buildings} теперь заменяют свои обычные аналоги.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_ABSENT_CIV_UNIQUES">
+			<Text>Уникальные здания восстановлены</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_ABSENT_CIV_UNIQUES_DRAWN">
+			<Text>{2_Building:textkey} восстановит уникальные здания цивилизаций, отсутствующих в этом мире: {1_Buildings}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_ABSENT_CIV_UNIQUES_DRAWN">
+			<Text>Утраченные цивилизации записаны</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ABSENT_CIV_UNIQUES_TOOLTIP">
+			<Text>Возрождённые уникальные здания:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ABSENT_CIV_UNIQUE_BASE">
+			<Text>({2_Civ:textkey}: {3_Building:textkey})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_BUILDING_TT_RELIGIOUS_PRESSURE_MOD">
+			<Text>[ICON_PEACE] Религиозное давление: +{1_Num}%</Text>
+		</Replace>
+		<!-- Feature hazard strike -->
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_FEATURE_HAZARD_VICTIM">
+			<Text>Ваш отряд ({1_Unit:textkey}) атакован: {2_Hazard:textkey}, потеряно {3_Num} ОЗ.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_FEATURE_HAZARD_HOLDER">
+			<Text>Вражеский отряд ({1_Unit:textkey}) на вашей территории атакован: {2_Hazard:textkey}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_FEATURE_HAZARD">
+			<Text>{1_Hazard:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID">
+			<Text>Береговой набег</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID_HELP">
+			<Text>Грабит соседнее вражеское улучшение с корабля, не высаживаясь. Стоит одно очко грабежа; бесплатно для юнитов, грабящих без затрат передвижения.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID_DISABLED_HELP">
+			<Text>Нет соседнего вражеского улучшения для набега или не осталось передвижения.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPOILS_CARRIED">
+			<Text>{@1_UnitName} теперь несет {2_Num} [ICON_GOLD] добычи</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_SPOILS">
+			<Text>Добыча: {1_Num} [ICON_GOLD], накопленных грабежом. Выплачивается как [ICON_PRODUCTION] производство и [ICON_CULTURE] культура, когда этот юнит входит на вашу территорию.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_PLUNDER_PROTECTED">
+			<Text>Этот [ICON_INTERNATIONAL_TRADE] торговый путь защищён эскортом поблизости и не может быть разграблен.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_REPAIR_AT_WAR">
+			<Text>Разграбленные улучшения нельзя восстановить на вражеской территории.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SPOILS">
+			<Text>{@1_UnitName} вернулся с добычей: +{2_Num} [ICON_PRODUCTION] производства в городе {@3_CityName} и +{4_Num} [ICON_CULTURE] культуры.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SPOILS">
+			<Text>Добыча выплачена: {1_Num} [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED">
+			<Text>Держава-основатель ({@4_CivName}) уничтожена. Религия {@2_ReligionName} теперь принадлежит державе, которая владеет ее священным городом {@3_CityName}: {@1_CivName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED_ACTIVE_PLAYER">
+			<Text>Держава-основатель ({@3_CivName}) уничтожена. Религия {@1_ReligionName} теперь принадлежит вам, так как вы владеете ее священным городом {@2_CityName}. Вы получаете ее верование основателя, а ваши великие пророки могут укреплять и распространять ее.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED_UNKNOWN">
+			<Text>Ее основатель уничтожен. Религия {@1_ReligionName} теперь принадлежит неизвестной цивилизации, которая владеет ее священным городом.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_RELIGION_INHERITED">
+			<Text>{@1_ReligionName}: новый владелец</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_UNIT_GIFT">
+			<Text>Your vassal {1_CivName} has sent you a {2_UnitName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPLASH_MOVE">
+			<Text>Урон от натиска</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPLASH_PILLAGE">
+			<Text>Урон от набега</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_IDEOLOGY_IMPOSED">
+			<Text>Ваш повелитель навязал вашей империи свою идеологию. Анархия продлится {1_Num} {1_Num: plural 1?ход; 2?хода; 3?ходов;}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_IDEOLOGY_IMPOSED_SUMMARY">
+			<Text>Навязанная идеология</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEAGUE_LEGATION_VOTES">
+			<Text>[NEWLINE][ICON_BULLET]{1_NumVotes} {@1_NumVotes: plural 1?голос; 2?голоса; 3?голосов;} за легации</Text>
+		</Replace>
+
+		<!-- Espionage -->
+		<Replace Tag="TXT_KEY_NOTIFICATION_SPY_STOLE_RESEARCH">
+			<Text>Ваш {1_SpyRank} {2_SpyName} не смог похитить технологию в городе {3_CityName}, но добыл разведданные на {5_Num}[ICON_RESEARCH] для текущего исследования.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SPY_STOLE_RESEARCH_S">
+			<Text>Разведданные добыты: {1_SpyName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_DETECTED">
+			<Text>Неизвестный шпион пытался украсть технологию в городе {1_CityName}, но добыл лишь некоторые научные записи.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_DETECTED_S">
+			<Text>Кража технологии провалилась!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_IDENTIFIED">
+			<Text>{1_CivAdj} шпион пытался украсть технологию в городе {2_CityName}, но добыл лишь некоторые научные записи.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_IDENTIFIED_S">
+			<Text>{@1: gender masculine? ; feminine? ; neuter? ; other?Держава ;}{@1_CivShortDesc} {@1: plural 1?терпит; 2?терпят; other?терпит;} неудачу при краже технологии!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPY_STATE_REMOVED">
+			<Text>Устранён!</Text>
+		</Replace>
+
+		<!-- Religion -->
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_YOU">
+			<Text>Вы расширили свой пантеон, добавив новое верование.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_KNOWN_CIV">
+			<Text>Цивилизация {1_CivName} расширила свой пантеон, добавив новое верование.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_UNMET_CIV">
+			<Text>Неизвестная цивилизация расширила свой пантеон, добавив новое верование.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_SUMMARY">
+			<Text>Расширение пантеона</Text>
+		</Replace>
+
+		<!-- Spy names -->
+		<Replace Tag="TXT_KEY_GAIA_SPY_NAME_FALLBACK">
+			<Text>Неизвестно</Text>
+		</Replace>
+
+		<!-- Prophet UI tooltips -->
+		<Replace Tag="TXT_KEY_GAIA_AUTO_FAITH_SAVING_FOR_PROPHET">
+			<Text>Отложить на {1_UNITCLASS_PROPHET}</Text>
+		</Replace>
+
+		<!-- Descriptions for civilian unit categories -->
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_SETTLERS">
+			<Text>Поселенцы</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_WORKERS">
+			<Text>Рабочие</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_WORK_BOATS">
+			<Text>Рабочие лодки</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_CARGO_SHIP">
+			<Text>Грузовые суда</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_CARAVANS">
+			<Text>Караваны</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_INQUISITORS">
+			<Text>Инквизиторы</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_MISSIONARIES">
+			<Text>Миссионеры</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_ARCHAEOLOGISTS">
+			<Text>Археологи</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_MISSILES">
+			<Text>Ракеты</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_GREAT_PERSON">
+			<Text>Великие люди</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_SPACESHIP_PART">
+			<Text>Части космического корабля</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_ANTIAIR">
+			<Text>Зенитные юниты</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_MOUNTED_ARCHER">
+			<Text>Конные стрелковые юниты</Text>
+		</Replace>
+		<!-- Trade Routes UI -->
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_OVERVIEW_LOCATE_OR_RECALL_TT">
+			<Text>Нажмите для обзора или зажмите Control и кликните для возврата каравана\корабля.[NEWLINE]Торговый путь завершается сразу, а на следующем ходу юнит оказывается в родном городе и готов отправиться в другое место. Плата: один ход без дохода от этого пути.[NEWLINE][ICON_INFINITY] означает путь, который действует до возврата.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_OVERVIEW_RECALLED_MARK">
+			<Text>[COLOR_WARNING_TEXT]В[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_TRO_INDEFINITE">
+			<Text>[ICON_INFINITY]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_TRADE_ROUTE_INDEFINITE_HINT">
+			<Text>[ICON_INFINITY] Этот торговый путь действует, пока вы не вернёте юнита в Обзоре торговых путей.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_REHOME_TRADE_UNIT_ROUTE_COUNT_TT">
+			<Text>{1: plural 1?Доступен торговый путь; other?Доступно торговых путей;} {1} из {2_CityName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_FOOD">
+			<Text>[ICON_FOOD]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_PRODUCTION">
+			<Text>[ICON_PRODUCTION]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_GOLD">
+			<Text>[ICON_GOLD]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_SCIENCE">
+			<Text>[ICON_RESEARCH]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_CULTURE">
+			<Text>[ICON_CULTURE]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_FAITH">
+			<Text>[ICON_PEACE]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_TOURISM">
+			<Text>[ICON_TOURISM]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_RELIGION_SPREAD">
+			<Text>{1_ReligionIcon}+{2_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_SCIENCE_EXPLAINED">
+			<Text>{1_CivName} знает {2_Num} {2_Num: plural 1?технологию, о которой; 2?технологии, о которых; 3?технологий, о которых;} вы пока ничего не знаете.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_SCIENCE_INFLUENCE">
+			<Text>Вы получаете {1_Num} [ICON_RESEARCH] к науке от этого маршрута из-за вашего культурного влияния на них.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_EXPLAINED">
+			<Text>Вы открыли {1_Num} {1_Num: plural 1?технологию, о которой; 2?технологии, о которых; 3?технологий, о которых;} {2_CivName} пока ничего не знает.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_INFLUENCE">
+			<Text>Они получат {1_Num} [ICON_RESEARCH] к науке от этого маршрута из-за своего культурного влияния на вас.</Text>
+		</Replace>
+
+		<!-- GoodyHuts flavor -->
+		<Replace Tag="TXT_KEY_GOODY_GOLD">
+			<Text>В руинах вы находите сокровища древней империи!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_PROPHET_FAITH">
+			<Text>Вы нашли тайное религиозное сообщество. Проповедник предсказывает приход Великого Пророка.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_FAITH">
+			<Text>Вы нашли древний оракул. Жрица благословила вас божественным откровением.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_CULTURE">
+			<Text>Вы нашли культурные артефакты, перед которыми трепещут ваши граждане!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_RECEIVED_GOLD">
+			<Text>[SPACE]Вы получили {1_Num} [ICON_GOLD] золота!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RUINS_REWARD_CULTURE_SUFFIX">
+			<Text>[SPACE]Вы получили {1_Num} [ICON_CULTURE] культуры!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RUINS_REWARD_FAITH_SUFFIX">
+			<Text>[SPACE]Вы получили {1_Num} [ICON_PEACE] веры!</Text>
+		</Replace>
+
+		<!-- Yields feature - new yield types -->
+		<!-- YIELD_TOURISM -->
+		<Replace Tag="TXT_KEY_GAIA_YIELD_NAME_TOURISM">
+			<Text>Туризм</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_LIST_TOURISM_AMOUNT">
+			<Text>{1_Num} [ICON_TOURISM] туризма</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_TOURISM_FROM_TRADE_ROUTES">
+			<Text>{1_perTurn:number "#.##"} [ICON_TOURISM] от торговых путей, проложенных в этот город</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_MINOR_WARMONGER_KILLED">
+			<Text>Город-государство {1_MinorName} благодарит вас за уничтожение вражеского юнита, который ему угрожал!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SM_MINOR_WARMONGER_KILLED">
+			<Text>Враг уничтожен рядом с {1_MinorName}</Text>
+		</Replace>
+		<!-- Unit Missions -->
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER">
+			<Text>Международный блокбастер</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER_DISABLED_HELP">
+			<Text>Юнит должен быть полностью здоров.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER_HELP">
+			<Text>Этот приказ уничтожает юнит, предоставляя большое количество [ICON_GOLD] золота и распространяя [ICON_TOURISM] туризм среди всех цивилизаций.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK">
+			<Text>Кибератака</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK_DISABLED_HELP">
+			<Text>Юнит должен находиться на вашей территории.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK_HELP">
+			<Text>Этот приказ уничтожит юнит, вызвав 2 хода анархии во всех цивилизациях, с которыми вы воюете. Если вы в мире, это вызовет 1 ход анархии у всех остальных цивилизаций.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_CYBERATTACK">
+			<Text>Кибератака со стороны {@1_CivName} ввергла вашу цивилизацию в анархию.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_CYBERATTACK">
+			<Text>Кибератака!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE">
+			<Text>Торговое путешествие</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE_DISABLED_HELP">
+			<Text>Юнит должен быть полностью здоров.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE_HELP">
+			<Text>Этот приказ уничтожает юнит, предоставляя дополнительный слот для торгового пути.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP">
+			<Text>Основать корпорацию</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP_DISABLED_HELP">
+			<Text>Юнит должен находиться в городе или рядом с ним, и в одном из коммерческих зданий вашей империи должна быть доступная ячейка для корпорации.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP_HELP">
+			<Text>Эта команда приказывает [COLOR_UNIT_TEXT]Великому торговцу[ENDCOLOR] основать [COLOR_POSITIVE_TEXT]корпорацию[ENDCOLOR] в городе {2_CityName}. Корпорация будет зарегистрирована в здании {1_BuildingName}, заняв специальную корпоративную ячейку.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS">
+			<Text>Основать город-государство</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS_DISABLED_HELP">
+			<Text>Юнит должен находиться на [COLOR_YELLOW]Поселении коренных народов[ENDCOLOR] в нейтральной территории, не прилегающей к принадлежащей клетке.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS_HELP">
+			<Text>Эта команда приказывает [COLOR_UNIT_TEXT]Великому эмиссару[ENDCOLOR] основать [COLOR_POSITIVE_TEXT]город-государство[ENDCOLOR] в его текущем местоположении. [COLOR_UNIT_TEXT]Эмиссар[ENDCOLOR] при этом исчезает.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX">
+			<Text>Великое путешествие</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX_DISABLED_HELP">
+			<Text>Юнит должен находиться на вашей территории.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VOYAGE_LUXURY_NOTIFICATION">
+			<Text>Ваш {1_UnitType} возвращается из путешествия в далёкие земли с находкой: [COLOR_POSITIVE_TEXT]{2_ResourceNames}[ENDCOLOR], ресурс роскоши, которого нет нигде на этой карте. Вы получаете [COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR] экземпляра данного ресурса.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VOYAGE_LUXURY_NOTIFICATION_SUMMARY">
+			<Text>Путешествие вашего {1_UnitType} завершено!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ADMIRALTY_LUXURY_NOTIFICATION">
+			<Text>Под вашим новым улучшением {1_ImprovementName} уже что-то есть, поэтому ресурс роскоши не смог там появиться. Вместо этого вы получаете [COLOR_POSITIVE_TEXT]1[ENDCOLOR] экземпляр ресурса [COLOR_POSITIVE_TEXT]{2_ResourceName}[ENDCOLOR], который навсегда остаётся у вашей империи.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ADMIRALTY_LUXURY_NOTIFICATION_SUMMARY">
+			<Text>Улучшение {1_ImprovementName} приносит редкий ресурс роскоши</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX_HELP">
+			<Text>Если юнит находится на вашей территории, этот приказ уничтожит его, предоставив вам две копии ресурса роскоши, отсутствующего на карте. Эти ресурсы можно обменивать с другими цивилизациями.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY">
+			<Text>Эврика</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY_DISABLED_HELP">
+			<Text>Юнит должен быть полностью здоров.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY_HELP">
+			<Text>Этот приказ уничтожает юнит и предоставляет бесплатную [ICON_CULTURE] социальную политику.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL">
+			<Text>Телепортация домой</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL_DISABLED_HELP">
+			<Text>Юнит должен находиться на нейтральной территории.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL_HELP">
+			<Text>Этот приказ телепортирует юнит в вашу столицу.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM">
+			<Text>Преобразование</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM_DISABLED_HELP">
+			<Text>
+			Должен находиться на подходящей местности.
+			[NEWLINE]Наземный юнит: Земля или прибрежная вода.
+			[NEWLINE]Морской юнит: Вода или прибрежный город.
+			[NEWLINE]Требуется достаточно [ICON_GOLD] золота.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM_HELP">
+			<Text>Превращает данный юнит в другой. Стоит [ICON_GOLD] золото; бесплатно при обратном превращении в юнит, который можно обучить.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_DEFENSIVE_ALLIANCE">
+			<Text>Ваш новый оборонительный пакт включил вас в более крупный оборонительный союз. Теперь у вас также есть оборонительные пакты с: {1_CivList}.[NEWLINE]Нападение на любого из участников втянет вас в войну на его стороне.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEFENSIVE_ALLIANCE">
+			<Text>Оборонительный союз</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_1">
+			<Text>Я восхищаюсь вашей военной мощью. Заключим оборонительный пакт?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_2">
+			<Text>Нам следует заключить союз, чтобы погубить наших врагов. Хотите заключить оборонительный пакт?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_3">
+			<Text>Враги окружают нас. Если мы не будем действовать сообща, то непременно погибнем. Не желаете ли заключить оборонительный пакт?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_4">
+			<Text>Тираны мира дрожали бы у наших ног, будь мы союзниками. Видите ли вы пользу оборонительного пакта?</Text>
+		</Replace>
+		<!-- Combat Log -->
+		<Replace Tag="TXT_KEY_POP_COMBAT_LOG">
+			<Text>Боевой журнал</Text>
+		</Replace>
+		<!-- Great Works (Gaia Great Work slot tooltips) -->
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_EMPTY_TOOLTIP">
+			<Text>Свободное место для киношедевра</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_LABEL">
+			<Text>[ICON_GAIA_CINEMA] Киношедевры:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_CINEMA] Место для киношедевра: +{1_NumSlots}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_EMPTY_TOOLTIP">
+			<Text>Пустой слот корпорации</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_LABEL">
+			<Text>[ICON_GAIA_CORPORATION] Корпорации:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_CORPORATION] Слоты корпорации: +{1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_EMPTY_TOOLTIP">
+			<Text>Свободное место для реликвии</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_LABEL">
+			<Text>[ICON_GAIA_HOLY_ARTIFACT] Реликвии:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_HOLY_ARTIFACT] Место для реликвий: +{1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_EMPTY_TOOLTIP">
+			<Text>Свободное место для видеоигры</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_LABEL">
+			<Text>[ICON_GAIA_VIDEOGAME] Видеоигры:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_VIDEOGAME] Место для видеоигры: +{1_NumSlots}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SPECIALUNIT_ENTRENCHED">
+			<Text>Окопавшиеся юниты дальнего боя</Text>
+		</Replace>
+		<!-- Automate Actions -->
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION">
+			<Text>Распространение религии (Автоматически)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION_HELP">
+			<Text>Автоматизировать действия этого [COLOR_UNIT_TEXT]Миссионера[ENDCOLOR]: он сам отправляется в города, которые считает лучшими, и распространяет там свою религию. Юнит будет автоматизирован, пока вы не отмените автоматизацию или не отдадите ему новый приказ.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION_DISABLED_HELP">
+			<Text>Автоматизация сейчас недоступна для этого юнита.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE">
+			<Text>Выкапывать артефакты (Автоматически)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE_HELP">
+			<Text>Автоматизировать действия этого [COLOR_UNIT_TEXT]Археолога[ENDCOLOR]: он сам находит исторические места и ведёт на них раскопки. Юнит будет автоматизирован, пока вы не отмените автоматизацию или не отдадите ему новый приказ.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE_DISABLED_HELP">
+			<Text>Автоматизация сейчас недоступна для этого юнита.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_BUILDING_LOCAL_RES">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор от местного ресурса {2_ResourceName}: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_UNIT_LOCAL_RES">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор от местного ресурса {2_ResourceName}: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_CS_GIFTED_UNIT_RETURNED_SUMMARY">
+			<Text>{1_CivName:textkey} захвачен, подаренный юнит возвращён!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_CS_GIFTED_UNIT_RETURNED">
+			<Text>{1_CivName:textkey} был захвачен, поэтому ваш подаренный юнит {2_Unit} возвращён вам.</Text>
+		</Replace>
+		<!-- Circumnavigation trade-route reward -->
+		<Replace Tag="TXT_KEY_MISC_YOU_CIRC_GLOBE_TRADE_ROUTE">
+			<Text>Вы доказали, что земля круглая и теперь вам доступен дополнительный [ICON_INTERNATIONAL_TRADE] торговый путь.</Text>
+		</Replace>
+		<!-- EUPanel -->
+		<Replace Tag="TXT_KEY_EUPANEL_RECLAMATION_RESOLVE">
+			<Text>Решимость к возвращению столицы</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_FRIENDLY_COMBAT_AURA">
+			<Text>Аура дружеского юнита</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_ATTACK_CS_ALLIANCE_STRENGTH">
+			<Text>Бонус за союзников городов-государств</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_BONUS_VS_FULLY_HEALED_UNITS">
+			<Text>Бонус против полностью вылеченных юнитов</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_EMBARKATION_DEFENSE">
+			<Text>Защита при высадке на берег</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_PENALTY_VS_DOMAIN">
+			<Text>Штраф против юнитов этого типа</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_RANGED_DEFENSE_MODIFIER">
+			<Text>Модификатор защиты от дальних атак</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_RANGED_SUPPORT">
+			<Text>[COLOR_CYAN]Дополнительная поддержка дальнего боя[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_IGNORE_ZOC">
+			<Text>[COLOR_CYAN]Игнорирует эффекты зоны контроля[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_WITHDRAW_CHANCE">
+			<Text>[COLOR_CYAN]Шанс на отступление[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_UNITCOMBAT_DAMAGE_MODIFIER">
+			<Text>Здоровье юнита</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_MISC_BONUS">
+			<Text>Разное</Text>
+		</Replace>
+		<!-- TechHelp -->
+		<Replace Tag="TXT_KEY_GAIA_TECH_REQUIRES_ERA">
+			<Text>Требуются все технологии эпохи: {1_Era}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_UNITS">
+			<Text>[NEWLINE]Доступные юниты:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_BUILDINGS">
+			<Text>[NEWLINE]Доступные здания:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_WONDERS">
+			<Text>[NEWLINE]Доступные чудеса:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_PROJECTS">
+			<Text>[NEWLINE]Доступные проекты:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_PROCESSES">
+			<Text>[NEWLINE]Доступные процессы:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_RESOURCES">
+			<Text>[NEWLINE]Доступные ресурсы:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_BUILDS">
+			<Text>[NEWLINE]Доступные улучшения:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_ACTIONS">
+			<Text>[NEWLINE]Уникальные действия:[NEWLINE]</Text>
+		</Replace>
+		<Row Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_CITY_WORKRANGE">
+			<Text>Позволяет городам работать с дополнительным кольцом клеток.</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_YIELDS">
+			<Text>[NEWLINE]Изменения доходов:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_SPECIALISTS">
+			<Text>{1_SpecialistName:textkey} с: +{3_Num} {4_IconString} {2_YieldType:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_CITIES">
+			<Text>Города</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_FOLLOWERS">
+			<Text>Следующие</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_MAP_TAB">
+			<Text>Карта</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_FOUNDED">
+			<Text>Основан</Text>
+		</Replace>
+		<!-- Diplomacy -->
+		<Replace Tag="TXT_KEY_GAIA_JOINT_WAR_REQUEST_TT">
+				<Text>Попросить этого лидера присоединиться к вам в войне против другой цивилизации.[NEWLINE][NEWLINE]Если лидер согласится воевать сейчас, обе стороны немедленно объявят войну, и ни одна из них не сможет заключить мир с целью в течение 15 ходов. Вместо этого лидер может пообещать присоединиться через 10 ходов и тогда предложит вам начать войну вместе; отказ в этот момент будет считаться нарушенным обещанием.[NEWLINE][NEWLINE]Совместная война отменяется, если одна из сторон осудит другую или объявит ей войну, либо если с целью будет заключён мир.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_MAY_NOT_ATTACK_RELIGION">
+				<Text>Нельзя напасть на этого игрока до начала Индустриальной эпохи: религия, основанная одной из сторон этой войны, запрещает войну против тех, кто её исповедует. Запрет распространяется также на партнёров по оборонительному пакту и вассалов.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_SHARED_RELIGION">
+				<Text>[COLOR_POSITIVE_TEXT]Ваши народы исповедуют одну веру.[ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_THEY_CANNOT_ATTACK_US_RELIGION">
+				<Text>Они не могут объявить вам войну до начала Индустриальной эпохи: основанная религия связывает вас обоих.</Text>
+			</Replace>
+		<!-- Trade screen: deal/peace value readout, denounce, request-help -->
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_BUTTON">
+				<Text>Денонсировать</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_BUTTON_TT">
+				<Text>Нажатие этой кнопки приведет к [COLOR_NEGATIVE_TEXT]DENOUNCE[ENDCOLOR] другому игроку.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_DEAL_BUTTON">
+				<Text>ЗАПРОС</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE">
+				<Text>Ценность сделки для них: {1_Num}.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_TT">
+				<Text>Текущая оценка этой сделки лидером. Положительное значение выгодно лидеру, отрицательное выгодно вам; лидер отклоняет любую сделку, выгодную вам. Значение «невозможна!» означает, что лидер отказывается обменивать как минимум один из предметов в Сделке.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_ACCEPTABLE">
+				<Text>Стоимость сделки для них: приемлемая</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_VETOED">
+				<Text>Ценность сделки для них: невозможна!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_FROM_YOU">
+				<Text>{1_Num} [ICON_GOLD] или {2_Num} [ICON_GOLD]/ход от вас</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_GPT_FROM_YOU">
+				<Text>{1_Num} [ICON_GOLD]/ход от вас</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_FROM_THEM">
+				<Text>до {1_Num} [ICON_GOLD] или {2_Num} [ICON_GOLD]/ход от них</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_GPT_FROM_THEM">
+				<Text>до {1_Num} [ICON_GOLD]/ход от них</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH">
+				<Text>Стоимость мирного соглашения: {1_Num}.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH_TT">
+				<Text>Текущая оценка лидером этого мирного соглашения. Если здесь указано значение «Невозможно!», лидер отказывается обменивать один или несколько предметов Мирного соглашения.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH_VETOED">
+				<Text>Значение мирного соглашения: невозможно!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_CEILING">
+				<Text>Максимальное значение: {1_Num}.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_CEILING_TT">
+				<Text>Максимальная стоимость предметов в Мирном соглашении. Если значение слева от этого превышает это число, лидер откажется от сделки.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_FLOOR">
+				<Text>Минимальное значение: {1_Num}.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_FLOOR_TT">
+				<Text>Минимальная стоимость предметов в Peace Deal. Если это число превышает значение слева, лидер откажется от сделки.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_DEAL_WINNER_GIVES_NOTHING_TT">
+				<Text>Невозможно добавить к не сдавшейся стороне в Мирном соглашении.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_VASSALAGE_NEED_CAPITAL_TT">
+				<Text>{1_Civ} капитулирует только перед цивилизацией, которая удерживает её изначальную столицу, {2_City}.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_VASSALAGE_NEED_CAPITAL_RAZED_TT">
+				<Text>{1_Civ} капитулирует только перед цивилизацией, которая удерживает одну из её бывших столиц.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_RESTORED_CIV_JOINS_LIBERATOR">
+				<Text>{@1_PlayerName} {@1: plural 1?{@1: gender masculine?освободил; feminine?освободила; neuter?освободило;}; 2?освободили; other?освобождает;} город {2_CityName}, тем самым восстановив суверенитет {3_CivAdj: lower} державы. Возрождённая в своей древней столице, она присягает на верность освободителю как добровольный вассал.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DEFENSIVE_PACT_UNCAPPED_TT">
+				<Text>Если на одного из игроков нападает другая крупная цивилизация, другой игрок немедленно и автоматически вступит в войну с агрессором. Это соглашение длится {1_Num} ходов.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_LUXURY_WANTED_BY_CITIES_TT">
+				<Text>Следующие города в настоящее время нуждаются в этом ресурсе:</Text>
+			</Replace>
+		<!-- LeaderHeadRoot -->
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_BUTTON">
+			<Text>Попросить о помощи</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_BUTTON_TT">
+			<Text>Попросить о помощи игрока, с которым вы заключили декларацию дружбы. Этот вариант не влечет дипломатического штрафа.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEADER_DEMAND_TRIBUTE_TT">
+			<Text>Потребовать дань у этой цивилизации. Этот вариант влечет дипломатический штраф.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_THEY_ARE_LOCKED_TT">
+			<Text>Сейчас нельзя вести мирные переговоры: они связаны этой войной на несколько ходов.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_BY_RULES_TT">
+			<Text>Нельзя вести мирные переговоры с этим игроком из-за параметра игры или особого правила.</Text>
+		</Replace>
+		<!-- DeclareWarPopup / DiploGlobalRelationships -->
+		<Replace Tag="TXT_KEY_DECLARE_WAR_DEFENSE_PACT">
+				<Text>ОБОРОНИТЕЛЬНЫЕ ПАКТЫ</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THEY_ARE_OUR_PACT_PARTNER">
+				<Text>[COLOR_NEGATIVE_TEXT]У нас есть оборонительный пакт с ними![ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_POPUP_TARGET_MASTER_HEADER">
+				<Text>Повелители</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEFENSIVE_PACT_WITH">
+				<Text>[COLOR_POSITIVE_TEXT]Оборонительный пакт с {1_CivName:textkey}[ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AT_WAR_WITH">
+			<Text>[COLOR_NEGATIVE_TEXT]В состоянии войны с {1_enemy} (Военный счёт: {2_Num})[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PROJECTION_VALUE">
+				<Text>[COLOR_POSITIVE_TEXT]Военный счёт: {1_Num}[ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PROJECTION_TT">
+				<Text>Это значение показывает, как выглядит война с вашей стороны, с учётом соотношения военной и экономической мощи, потерь каждой стороны, игрового счёта и продолжительности войны. [COLOR_POSITIVE_TEXT]Положительные[ENDCOLOR] значения в вашу пользу, [COLOR_NEGATIVE_TEXT]отрицательные[ENDCOLOR] в пользу противника.[NEWLINE][COLOR_POSITIVE_TEXT]Сведения о текущей войне:[ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_NONE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Их предложение мира:[ENDCOLOR] Невозможно!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_ARMISTICE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Их предложение мира:[ENDCOLOR] Скромное возмещение.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SETTLEMENT">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Их предложение мира:[ENDCOLOR] Щедрое возмещение.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_BACKDOWN">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Их предложение мира:[ENDCOLOR] Возмещение и некоторые уступки.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SUBMISSION">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Их предложение мира:[ENDCOLOR] Возмещение и серьёзные уступки.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SURRENDER">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Их предложение мира:[ENDCOLOR] Готовы уступить город.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_CESSION">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Их предложение мира:[ENDCOLOR] Готовы уступить несколько городов.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_CAPITULATION">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Их предложение мира:[ENDCOLOR] Готовы уступить много городов.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_UNCONDITIONAL">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Их предложение мира:[ENDCOLOR] Готовы уступить все города, кроме столицы!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_PATHETIC">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Военная мощь:[ENDCOLOR] Они жалки!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_WEAK">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Военная мощь:[ENDCOLOR] Они очень слабы.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_POOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Военная мощь:[ENDCOLOR] Они слабее нас.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_AVERAGE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Военная мощь:[ENDCOLOR] Наши силы равны.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_STRONG">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Военная мощь:[ENDCOLOR] Они сильны.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_POWERFUL">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Военная мощь:[ENDCOLOR] Они могущественны.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_IMMENSE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Военная мощь:[ENDCOLOR] Их мощь колоссальна!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_PATHETIC">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Экономическая мощь:[ENDCOLOR] Их экономика в руинах!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_WEAK">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Экономическая мощь:[ENDCOLOR] Они намного беднее нас.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_POOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Экономическая мощь:[ENDCOLOR] Они бедны.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_AVERAGE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Экономическая мощь:[ENDCOLOR] Мы на равных.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_STRONG">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Экономическая мощь:[ENDCOLOR] Их экономика крепка.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_POWERFUL">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Экономическая мощь:[ENDCOLOR] Они богаты.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_IMMENSE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Экономическая мощь:[ENDCOLOR] Они очень богаты!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_MINOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] Потери на данный момент:[ENDCOLOR] Они потеряли больше, чем мы.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_MAJOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] Потери на данный момент:[ENDCOLOR] Они потеряли намного больше, чем мы.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_SERIOUS">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] Потери на данный момент:[ENDCOLOR] Они потеряли во много раз больше, чем мы.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_CRIPPLED">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] Потери на данный момент:[ENDCOLOR] Их потери несоизмеримо больше, чем у нас!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_MINOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] Потери на данный момент:[ENDCOLOR] Мы потеряли больше, чем они.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_MAJOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] Потери на данный момент:[ENDCOLOR] Мы потеряли намного больше, чем они.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_SERIOUS">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] Потери на данный момент:[ENDCOLOR] Мы потеряли во много раз больше, чем они.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_CRIPPLED">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] Потери на данный момент:[ENDCOLOR] Наши потери несоизмеримо больше, чем у них!</Text>
+			</Replace>
+		<!-- DiploList -->
+		<Replace Tag="TXT_KEY_DIPLOLIST_NUM_DEFENSE_PACTS">
+			<Text>Оборонительные пакты: {1_Num}</Text>
+		</Replace>
+		<!-- UI fallback labels + stock-missing victory-reset message -->
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_BELIEF_FALLBACK">
+			<Text>Неизвестно</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_DEFAULT_TT">
+			<Text>Осудить этого лидера.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VICTORY_PROGRESS_LOST_MESSAGE">
+			<Text>Прогресс {1_TeamName} на пути к победе ({2_VictoryName}) был сброшен!</Text>
+		</Replace>
+		<!-- City-State popups -->
+		<Replace Tag="TXT_KEY_GAIA_CS_POPUP_PROTECTORS_LABEL">
+			<Text>Под защитой:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_POPUP_PROTECTORS_TT">
+			<Text>Другие цивилизации, обязавшиеся защищать этот город-государство. Нападение на него или требование с него дани навлечёт на вас их гнев.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_SUZERAINTY">
+			<Text>Бонус союзника:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_SUZERAINTY_WHILE_ALLY">
+			<Text>Пока вы союзник</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_CSWONDER">
+			<Text>Чудо союзника:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_CSWONDER_TT">
+			<Text>Если вы будете союзником этого города-государства {2_NumTurns} ходов подряд, для вас откроется чудо света {1_WonderName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_CULTURE_FIRST">
+			<Text>Они дарят вам ценное произведение искусства, подарок стоимостью [COLOR_POSITIVE_TEXT]{1_NumCulture} [ICON_CULTURE] культуры[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FAITH_FIRST">
+			<Text>Вы первые чужеземцы, которых они встретили, поэтому они показывают вам своих почитаемых религиозных идолов. Вы получаете [COLOR_POSITIVE_TEXT]{1_NumFaith} [ICON_PEACE] веры[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_GOLD_FIRST">
+			<Text>Вы первая великая империя, которую они встретили, поэтому они преподносят вам дар в размере [COLOR_POSITIVE_TEXT]{1_NumGold} [ICON_GOLD] золота[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FOOD_FIRST">
+			<Text>Вы прибыли как раз к их ежегодному празднику урожая. Они отправили [COLOR_POSITIVE_TEXT]{1_NumFood} [ICON_FOOD] еды[ENDCOLOR] в один из ваших городов.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_UNIT_FIRST">
+			<Text>Их закалённые воины делятся боевым опытом с отрядом, который их обнаружил, и он получает [COLOR_POSITIVE_TEXT]{1_NumXP} опыта[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_CULTURE_LATER">
+			<Text>Они делятся своими познаниями в искусстве и дают вам [COLOR_POSITIVE_TEXT]{1_NumCulture} [ICON_CULTURE] культуры[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FAITH_LATER">
+			<Text>Они делятся знаниями о религиозных обрядах и дают вам [COLOR_POSITIVE_TEXT]{1_NumFaith} [ICON_PEACE] веры[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_GOLD_LATER">
+			<Text>Они преподносят вам дар в размере [COLOR_POSITIVE_TEXT]{1_NumGold} [ICON_GOLD] золота[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FOOD_LATER">
+			<Text>В знак доброй воли они отправляют [COLOR_POSITIVE_TEXT]{1_NumFood} [ICON_FOOD] еды[ENDCOLOR] в один из ваших городов.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_UNIT_LATER">
+			<Text>Их закалённые воины дают несколько уроков отряду, который их обнаружил, и он получает [COLOR_POSITIVE_TEXT]{1_NumXP} опыта[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_NONE">
+			<Text>К сожалению, им нечего вам предложить.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_INFLUENCE_ONLY">
+			<Text>К сожалению, им нечего вам предложить, но сама встреча с ними повышает ваше [COLOR_POSITIVE_TEXT][ICON_INFLUENCE] влияние на этот {2_Personality} город-государство на {1_NumFriendship}[ENDCOLOR].</Text>
+		</Replace>
+		<!--CS Legation-->
+		<Replace Tag="TXT_KEY_PLOTROLL_GAIA_LEGATION">
+			<Text>у {1_CivName:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PLOTROLL_GAIA_LEGATION_UNMET">
+			<Text>у неизвестного игрока</Text>
+		</Replace>
+<!--Military Overview XP column-->
+<!--MILITARY OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_MILITARY_OVERVIEW_EXPERIENCE_COLUMN">
+			<Text>XP</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MILITARY_OVERVIEW_SORT_EXPERIENCE_TT">
+			<Text>Сортировать по XP</Text>
+		</Replace>
+
+		<!-- Wake Units For Upgrade -->
+		<Replace Tag="TXT_KEY_WAKE_UPGRADEABLE_UNIT">
+			<Text>У вас есть юнит, готовый к улучшению</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WAKE_UPGRADEABLE_UNIT_SHORT">
+			<Text>Улучшить юнит</Text>
+		</Replace>
+		<!-- Recon-only Ancient Ruins -->
+		<Replace Tag="TXT_KEY_GAIA_GOODY_RECON_ONLY">
+			<Text>Только разведывательные юниты могут обыскивать древние руины!</Text>
+		</Replace>
+		<!-- Mixed Wonder Consolation -->
+		<Replace Tag="TXT_KEY_GAIA_WONDER_CONSOLATION_SHORT">
+			<Text>{1_CityName} больше не может строить {2_BldgName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WONDER_CONSOLATION">
+			<Text>{1_CityName} больше не может строить {2_BldgName}. Потерянное [ICON_PRODUCTION] Производство преобразовано в {3_NumGold}[ICON_GOLD] Золото, {4_NumCulture}[ICON_CULTURE] Культуру и {5_NumProduction}[ICON_PRODUCTION] избыточное Производство.</Text>
+		</Replace>
+		<!-- Wonder Race -->
+		<Replace Tag="TXT_KEY_WR_WINNING">
+			<Text>Вы выигрываете гонку чудес!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_WINNING_TOOLTIP">
+			<Text>Вы опережаете соперника {1_player} в гонке за строительство чуда {2_wonder}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_LOSING">
+			<Text>Вы проигрываете гонку чудес!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_LOSING_TOOLTIP">
+			<Text>{1_player} опережает вас в гонке за строительство чуда {2_wonder}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_BY_N_TURNS">
+			<Text>(на {1_Num} ходов)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SAPIENS_MP_RESYNC_NOTICE">
+			<Text>Обнаружена рассинхронизация в сетевой игре; игра была заново синхронизирована. Если это повторится, пришлите файлы net_message_debug.log, SapiensMod.log и Lua.log хоста и свои (Documents\My Games\Sid Meier's Civilization 5\Logs), скопированные до перезапуска игры.</Text>
+		</Replace>
+		<!-- Low Memory Warning -->
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING">
+			<Text>Заканчивается память</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING_TOOLTIP">
+			<Text>Игра приближается к пределу памяти 32-битных программ, это ограничение самой игры, а не вашего компьютера. Обычно какое-то время можно продолжать играть, но для загрузки более поздних сохранений могут понадобиться более низкие настройки графики. Сохраните игру, снизьте качество лидеров, тени, детализацию ландшафта и сглаживание и перед следующей загрузкой выйдите на рабочий стол.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING_AT_FLOOR_TOOLTIP">
+			<Text>Игра приближается к пределу памяти 32-битных программ, это ограничение самой игры, а не вашего компьютера. Обычно какое-то время можно продолжать играть, но более поздние сохранения могут перестать загружаться. Сохраните игру, а перед следующей загрузкой выйдите на рабочий стол и перезапустите игру; DirectX 11 и более низкое разрешение дают немного больше запаса.</Text>
+		</Replace>
+		<!-- Core DLL Not Loaded Warning -->
+		<Replace Tag="TXT_KEY_GAIA_DLL_NOT_LOADED_TITLE">
+			<Text>DLL Core Mod не загружена</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DLL_NOT_LOADED_TEXT">
+			<Text>Gaia's Core Mod включён, но его DLL не загрузилась, поэтому в этой игре не будет работать большинство его функций, а также функций модов на его основе, таких как Sapiens.[NEWLINE][NEWLINE]Версии игры для Mac и Linux не могут загружать DLL-моды. В Linux запустите Windows-версию через Steam Play (Proton). В Windows убедитесь, что не включён никакой другой DLL-мод, и перезапустите игру.[NEWLINE][NEWLINE]Моды, названия которых начинаются с + или =, не требуют DLL.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_BUILDINGCLASS_CITY_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]{2_Building}: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_WONDER_PEACE">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор чудес в мирное время: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_PROJECT_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор проектов: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_PEACE_YIELD">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор в мирное время: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_GREAT_PEOPLE_EARNED">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор за полученных великих людей: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_GAIA_FROM_FAITH">
+			<Text>{1_Num} [ICON_TOURISM] Туризма от [ICON_PEACE] Веры</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FOODMOD_GAIA_FRESH_WATER">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор пресной воды: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FOODMOD_GAIA_RELIGIONS_PRESENT">
+			<Text>[NEWLINE][ICON_BULLET]Религиозное разнообразие: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_GARRISONED_MILITARY">
+			<Text>[NEWLINE][ICON_BULLET]Город с гарнизоном: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_BELIEF_SETTLER">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор поселенцев от религиозных убеждений: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_UNIT_WAR">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор юнитов в военное время: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_YIELD_POLICY">
+			<Text>[NEWLINE]  [ICON_BULLET]{1_Num}% {2_PolicyName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_GAIA_POLICY_MOD">
+			<Text>{1_Num}% от общественных институтов</Text>
+		</Replace>
+		<!-- Feature-clearing food credit -->
+		<Replace Tag="TXT_KEY_MISC_CLEARING_FEATURE_FOOD">
+			<Text>Расчистка местности ({@1_FeatName}) принесла {2_Num} [ICON_FOOD] городу {@3_CityName}.</Text>
+		</Replace>
+		<!-- City capture choice notification (annex/puppet/raze) -->
+		<Replace Tag="TXT_KEY_NOTIFICATION_SAPIENS_CITY_CAPTURE">
+			<Text>Вы получили город {1_CityName}. Что вы хотите сделать с этим городом?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_SAPIENS_CITY_CAPTURE">
+			<Text>Что делать с городом {1_CityName}?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POPUP_GOLD_AND_CULTURE_CITY_CAPTURE">
+			<Text>Вы получили {1_Num} [ICON_GOLD], {2_Num} [ICON_CULTURE], и {3_Num} [ICON_GREAT_WORK], захватив город {@4_CityName}!!! Шедевры, для которых в этом городе нет свободной ячейки, перемещены в ваш ближайший город со свободной ячейкой.</Text>
+		</Replace>
+		<!-- Promotion Tree -->
+		<Replace Tag="TXT_KEY_PROMO_SWITCH_MODE" >
+			<Text>Сменить режим</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_DIPLO_CORNER_HOOK">
+			<Text>Дерево повышения</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_OVERVIEW_FOR_UNIT_TT">
+			<Text>Откройте дерево повышения, чтобы просмотреть текущие и доступные повышения для этого юнита.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_SIZE" >
+			<Text>Маленький (горячая клавиша: 'D')</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_EARNT" >
+			<Text>Получено</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_EARNT_TT" >
+			<Text>Повышения, уже полученные этим юнитом (не включая уникальные и полученные через чудеса света).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_AVAILABLE" >
+			<Text>Доступно</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_AVAILABLE_TT" >
+			<Text>Повышения, которые доступны для выбора этим юнитом.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_NOT_AVAILABLE" >
+			<Text>Пока недоступно</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_NOT_AVAILABLE_TT" >
+			<Text>Повышения, которые пока недоступны для этого юнита.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_UNIT" >
+			<Text>Юнит</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_CLASS" >
+			<Text>Боевой класс</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PROMOTION_TREE_GROUPING_LABEL">
+			<Text>Просмотр: Юнит / Боевой класс</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_BASE_TT">
+			<Text>Переключение между деревом повышений этого юнита и деревом по боевым классам. Горячая клавиша: 'S'.</Text>
+		</Replace>
+
+		<!-- Great People overview: Sapiens Great Person classes -->
+		<Replace Tag="TXT_KEY_GAIA_GP_THINKER_DETAILS">
+			<Text>[ICON_PLUS] Великие Мыслители</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_THINKER_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] Великие Мыслители</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_EMISSARY_DETAILS">
+			<Text>[ICON_PLUS] Великие эмиссары</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_EMISSARY_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] Великие эмиссары</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DIRECTOR_DETAILS">
+			<Text>[ICON_PLUS] Великие режиссёры</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DIRECTOR_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] Великие режиссёры</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DEVELOPER_DETAILS">
+			<Text>[ICON_PLUS] Великие разработчики игр</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DEVELOPER_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] Великие разработчики игр</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GREAT_WORK_SWAP">
+			<Text>{1_LeaderName} обменял ваш шедевр "{2_Work1Name}" на шедевр "{3_Work2Name}".</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SWAP_YOUR_WORKS_HEADER">
+			<Text>Ваши шедевры</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SWAP_OFFERED_WORKS_HEADER">
+			<Text>Предложены другими цивилизациями</Text>
+		</Replace>
+		<!-- Goodwill Mission -->
+		<Replace Tag="TXT_KEY_DIPLO_GAIA_GOODWILL_MISSIONS">
+			<Text>[COLOR_POSITIVE_TEXT]Вы отправляли к ним эмиссаров доброй воли.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GOODWILL_MISSION_RESULT">
+			<Text>Вашего эмиссара приняли радушно. Их правитель теперь относится к вам лучше.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL">
+			<Text>Миссия доброй воли</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL_DISABLED_HELP">
+			<Text>Юнит должен находиться в границах другой цивилизации, с которой вы в мире. Цивилизации под управлением игрока-человека не могут их принимать, а каждая цивилизация принимает от вас лишь ограниченное число таких миссий.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL_HELP">
+			<Text>Если юнит находится в границах другой цивилизации, с которой вы в мире, этот приказ израсходует юнита. С этого момента правитель этой цивилизации будет лучше к вам относиться. Каждая следующая миссия к той же цивилизации дает меньше, а объявление ей войны отменяет эффект.</Text>
+		</Replace>
+		<!-- Sealift -->
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT">
+			<Text>Морская переброска</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT_HELP">
+			<Text>Отправляет сухопутный юнит морем в другой ваш морской порт на том же море или рядом с ним. Юнит ждет в порту без приказов и через 2 хода высаживается в начале вашего хода с полным запасом хода и здоровьем, как после отдыха. Если юнит может достичь клетки воздушной перевозкой или десантированием, он сразу перемещается туда.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT_DISABLED_HELP">
+			<Text>Юнит должен быть сухопутным, не двигаться в этом ходу и находиться в вашем городе с морским портом или рядом с ним, а на том же море нужен еще один ваш морской порт. Заблокированный порт использовать нельзя.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_ORDERED">
+			<Text>{@1_UnitName} отплывает в город {@2_CityName} и высадится там на ходу {3_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_IN_TRANSIT">
+			<Text>В пути</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_IN_TRANSIT_TT">
+			<Text>В пути в город {@1_CityName}: высадка на ходу {2_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SEALIFT_LANDED">
+			<Text>{@1_UnitName} высадился в городе {@2_CityName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SEALIFT_LANDED">
+			<Text>Морская переброска завершена</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SEALIFT_CANCELLED">
+			<Text>Морская переброска юнита {@1_UnitName} отменена: порт больше нельзя использовать или нет безопасной клетки для высадки.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SEALIFT_CANCELLED">
+			<Text>Морская переброска отменена</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_COLONY_CITYSTATE_FOUNDED">
+			<Text>{@1_CityName} основан как новый полис. Сначала он ваш союзник.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_COLONY_CITYSTATE_FOUNDED">
+			<Text>Полис основан</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_COLONY_CITYSTATE_FALLBACK">
+			<Text>Новый полис основать не удалось, поэтому {@1_CityName} основан как марионеточный город.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_COLONY_CITYSTATE_FALLBACK">
+			<Text>Марионеточный город основан</Text>
+		</Replace>
+	</Language_RU_RU>
+</GameData>

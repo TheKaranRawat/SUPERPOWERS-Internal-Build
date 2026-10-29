@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<!-- User Interface Options text (Gaia's Core Mod) -->
+<GameData>
+	<Language_FR_FR>
+		<!-- Dropdown entry (cyan) + popup title (beige) -->
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTIONS">
+			<Text>[COLOR_CYAN]Options d'interface[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTIONS_TITLE">
+			<Text>Options d'interface</Text>
+		</Replace>
+		<!-- Display toggles -->
+		<Replace Tag="TXT_KEY_GAIA_SMALL_RESOURCE_ICONS">
+			<Text>Petits icônes de ressources</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SMALL_RESOURCE_ICONS_HELP">
+			<Text>Remplace les icônes de ressources dans la vue de la carte 3D par des versions plus petites.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTION_PROMOTION_ICONS">
+			<Text>Icônes de promotions</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTION_PROMOTION_ICONS_HELP">
+			<Text>Affiche les promotions de chaque unité sous forme de petites icônes sur son drapeau.</Text>
+		</Replace>
+		<!-- Map Overlays -->
+		<Replace Tag="TXT_KEY_GAIA_MAP_OVERLAYS">
+			<Text>Calques de carte</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MAP_OVERLAYS_HELP">
+			<Text>Affiche des calques informatifs sur la carte pour l'unité ou la ville sélectionnée. Activez cette option, puis choisissez les calques à afficher ci-dessous.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_CITY_LIMITS">
+			<Text>Limites de ville</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_CITY_LIMITS_HELP">
+			<Text>Trace les cases exploitables d'une ville dans la vue de ville, ainsi que la future ville d'un colon, en ombrant les cases qui chevaucheraient une ville voisine.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_COMMANDER">
+			<Text>Influence du commandant</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_COMMANDER_HELP">
+			<Text>Trace la portée de l'aura d'un Général illustre ou d'un Amiral illustre sélectionné.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_DIG_SITES">
+			<Text>Sites de fouilles</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_DIG_SITES_HELP">
+			<Text>Met en évidence les cases d'artefacts révélées lorsqu'un Archéologue est sélectionné ; les sites déjà ciblés par l'un de vos Archéologues utilisent une couleur différente.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_MOVEMENT_PATH">
+			<Text>Trajet de déplacement</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_MOVEMENT_PATH_HELP">
+			<Text>Trace l'itinéraire de déplacement en attente de l'unité sélectionnée, avec sa case de destination entourée.</Text>
+		</Replace>
+		<!-- Quick Animations -->
+		<Replace Tag="TXT_KEY_GAIA_QUICK_ANIMATIONS">
+			<Text>Animations Rapides</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_QUICK_ANIMATIONS_HELP">
+			<Text>Accélère les tours en ignorant les animations de combat et de déplacement. Activez cette option, puis choisissez ci-dessous quand elle s'applique.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_PLAYER_WAR">
+			<Text>Guerre Rapide (Humain)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_PLAYER_WAR_TOOLTIP">
+			<Text>Désactive les animations pour les tours du joueur pendant les périodes de guerre.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_PLAYER_PEACE">
+			<Text>Paix Rapide (Humain)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_PLAYER_PEACE_TOOLTIP">
+			<Text>Désactive les animations pour les tours du joueur pendant les périodes de paix.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_AI_WAR">
+			<Text>Guerre Rapide (IA)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_AI_WAR_TOOLTIP">
+			<Text>Désactive les animations pour les tours des civilisations IA en guerre avec vous. Les tours de l'IA en paix sont toujours rapides (ce n'est plus réglable).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_BARBARIANS">
+			<Text>Barbares Rapides</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_BARBARIAN_TOOLTIP">
+			<Text>Désactive les animations pour les tours des barbares. Les barbares sont toujours en guerre, ces réglages s'appliquent donc en permanence.</Text>
+		</Replace>
+		<!-- Vanilla options-screen tooltip overrides -->
+		<Replace Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_COMBAT_TT">
+			<Text>
+				Active une résolution rapide des combats en mode solo.
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Attention :[ENDCOLOR] Activer ce paramètre en cours de partie désactivera automatiquement [COLOR_CYAN]Animations Rapides[ENDCOLOR]. Vous pouvez les réactiver via les [COLOR_CYAN]Options d'interface[ENDCOLOR] dans le menu déroulant du Coin Diplomatique.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_MOVEMENT_TT">
+			<Text>
+				Active un déplacement rapide des unités en mode solo.
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Attention :[ENDCOLOR] Activer ce paramètre en cours de partie désactivera automatiquement [COLOR_CYAN]Animations Rapides[ENDCOLOR]. Vous pouvez les réactiver via les [COLOR_CYAN]Options d'interface[ENDCOLOR] dans le menu déroulant du Coin Diplomatique.
+			</Text>
+		</Replace>
+		<!-- Auto End Turn button -->
+		<Replace Tag="TXT_KEY_GAIA_AUTO_END_TURN_BUTTON">
+			<Text>Bouton de fin de tour automatique</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AUTO_END_TURN_BUTTON_HELP">
+			<Text>Affiche à côté de Fin de tour un bouton qui active et désactive la Fin de tour automatique (solo) en un clic.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_STATE_ON">
+			<Text>Actuellement [COLOR_POSITIVE_TEXT]activé[ENDCOLOR]. Cliquez pour désactiver.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_STATE_OFF">
+			<Text>Actuellement [COLOR_NEGATIVE_TEXT]désactivé[ENDCOLOR]. Cliquez pour activer.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_HIDE_HINT">
+			<Text>Vous pouvez masquer ce bouton via les [COLOR_CYAN]Options d'interface[ENDCOLOR] dans le menu déroulant du Coin Diplomatique.</Text>
+		</Replace>
+		<!-- Production menu toggles -->
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_SORT">
+			<Text>Trier les bâtiments par coût</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_SORT_HELP">
+			<Text>Trie la liste des bâtiments du menu de production de la ville du moins cher au plus cher, par tours restants en production et par prix à l'achat. Sinon, les bâtiments sont regroupés par ère.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_HIDE">
+			<Text>Masquer des éléments par ville</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_HIDE_HELP">
+			<Text>Faites Maj+clic sur un élément du menu de production de la ville pour le masquer dans cette ville uniquement, en production comme à l'achat. Les éléments masqués passent dans la section Masqués en bas de la liste, où Maj+clic les affiche de nouveau. Chaque ville conserve sa propre liste dans la sauvegarde. Si l'option est désactivée, tous les éléments sont affichés et les listes sont conservées.</Text>
+		</Replace>
+	</Language_FR_FR>
+</GameData>

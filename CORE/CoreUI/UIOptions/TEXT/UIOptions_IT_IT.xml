@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_IT_IT>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTIONS">
+			<Text>[COLOR_CYAN]Opzioni dell'interfaccia utente[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTIONS_TITLE">
+			<Text>Opzioni dell'interfaccia utente</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SMALL_RESOURCE_ICONS">
+			<Text>Icone piccole delle Risorse</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SMALL_RESOURCE_ICONS_HELP">
+			<Text>Sostituisce le icone delle Risorse nella vista 3D della mappa con versioni più piccole.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTION_PROMOTION_ICONS">
+			<Text>Promozioni sulle bandiere</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTION_PROMOTION_ICONS_HELP">
+			<Text>Mostra le Promozioni ottenute da ogni unità come piccole icone sulla sua bandiera.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MAP_OVERLAYS">
+			<Text>Sovrapposizioni sulla mappa</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MAP_OVERLAYS_HELP">
+			<Text>Mostra sovrapposizioni utili sulla mappa per l'unità o la città selezionata. Attiva questa opzione, poi scegli qui sotto quali sovrapposizioni visualizzare.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_CITY_LIMITS">
+			<Text>Limiti cittadini</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_CITY_LIMITS_HELP">
+			<Text>Delinea le caselle lavorabili di una città nella Vista città e quelle della futura città di un Colono, ombreggiando le caselle che si sovrapporrebbero a una città vicina.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_COMMANDER">
+			<Text>Influenza del comandante</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_COMMANDER_HELP">
+			<Text>Delinea il raggio dell'aura di un Grande Generale o Grande Ammiraglio selezionato.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_DIG_SITES">
+			<Text>Siti di scavo</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_DIG_SITES_HELP">
+			<Text>Evidenzia le caselle con Manufatti già rivelate quando è selezionato un Archeologo; i siti già presi di mira da uno dei tuoi Archeologi usano un colore diverso.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_MOVEMENT_PATH">
+			<Text>Percorso di movimento</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_MOVEMENT_PATH_HELP">
+			<Text>Traccia il percorso di movimento in coda dell'unità selezionata, cerchiandone la casella di destinazione.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_QUICK_ANIMATIONS">
+			<Text>Animazioni rapide</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_QUICK_ANIMATIONS_HELP">
+			<Text>Velocizza i turni saltando le animazioni di combattimento e movimento. Attiva questa opzione, poi scegli qui sotto quando applicarla.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_PLAYER_WAR">
+			<Text>Giocatore rapido in guerra</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_PLAYER_WAR_TOOLTIP">
+			<Text>Disattiva le animazioni durante i turni del giocatore in tempo di guerra.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_PLAYER_PEACE">
+			<Text>Giocatore rapido in pace</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_PLAYER_PEACE_TOOLTIP">
+			<Text>Disattiva le animazioni durante i turni del giocatore in tempo di pace.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_AI_WAR">
+			<Text>IA rapida in guerra</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_AI_WAR_TOOLTIP">
+			<Text>Disattiva le animazioni durante i turni delle civiltà IA in guerra con te. I turni dell'IA in pace sono sempre rapidi (non è più un'opzione).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_BARBARIANS">
+			<Text>Barbari rapidi</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_BARBARIAN_TOOLTIP">
+			<Text>Disattiva le animazioni durante i turni dei barbari. I barbari sono sempre in guerra, quindi queste impostazioni si applicano sempre.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_COMBAT_TT">
+			<Text>
+				Permette la risoluzione veloce dei combattimenti nelle partite a giocatore singolo.
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Attenzione:[ENDCOLOR] attivare questa opzione durante la partita disattiverà automaticamente le [COLOR_CYAN]Animazioni rapide[ENDCOLOR]. Puoi riattivarle tramite le [COLOR_CYAN]Opzioni dell'interfaccia utente[ENDCOLOR] nel menu a discesa dell'Angolo Diplomatico.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_MOVEMENT_TT">
+			<Text>
+				Permette il movimento rapido delle unità nelle partite a giocatore singolo.
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Attenzione:[ENDCOLOR] attivare questa opzione durante la partita disattiverà automaticamente le [COLOR_CYAN]Animazioni rapide[ENDCOLOR]. Puoi riattivarle tramite le [COLOR_CYAN]Opzioni dell'interfaccia utente[ENDCOLOR] nel menu a discesa dell'Angolo Diplomatico.
+			</Text>
+		</Replace>
+		<!-- Auto End Turn button -->
+		<Replace Tag="TXT_KEY_GAIA_AUTO_END_TURN_BUTTON">
+			<Text>Pulsante fine turno automatica</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AUTO_END_TURN_BUTTON_HELP">
+			<Text>Mostra accanto a Fine turno un pulsante che attiva e disattiva la Fine turno automatica (giocatore singolo) con un clic.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_STATE_ON">
+			<Text>Attualmente [COLOR_POSITIVE_TEXT]attivato[ENDCOLOR]. Clicca per disattivare.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_STATE_OFF">
+			<Text>Attualmente [COLOR_NEGATIVE_TEXT]disattivato[ENDCOLOR]. Clicca per attivare.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_HIDE_HINT">
+			<Text>Puoi nascondere questo pulsante tramite le [COLOR_CYAN]Opzioni dell'interfaccia utente[ENDCOLOR] nel menu a discesa dell'Angolo Diplomatico.</Text>
+		</Replace>
+		<!-- Production menu toggles -->
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_SORT">
+			<Text>Ordina gli edifici per costo</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_SORT_HELP">
+			<Text>Ordina la lista degli edifici del menu di produzione della città dal più economico al più costoso, per turni al completamento in produzione e per prezzo in acquisto. Altrimenti gli edifici sono raggruppati per era.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_HIDE">
+			<Text>Nascondi elementi per città</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_HIDE_HELP">
+			<Text>Fai Maiusc+clic su un elemento del menu di produzione della città per nasconderlo solo in quella città, sia in produzione sia in acquisto. Gli elementi nascosti passano nella sezione Nascosti in fondo alla lista, dove Maiusc+clic li mostra di nuovo. Ogni città conserva la propria lista nel salvataggio. Se disattivata, tutti gli elementi sono mostrati e le liste vengono conservate.</Text>
+		</Replace>
+	</Language_IT_IT>
+</GameData>

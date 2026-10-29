@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_zh_CN>
+		<Replace Tag="TXT_KEY_BUILDING_NEED_MORE_POP">
+			<Text>[NEWLINE]还需{1_Num}[ICON_CITIZEN]人口才能建造{2_BuildingName:textkey}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_EMPIRE_EXCLUSIVE">
+			<Text>[NEWLINE]当你的帝国拥有或正在建造{1_BuildingName:textkey}时不可用。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_CITY_EXCLUSIVE">
+			<Text>[NEWLINE]当此城市拥有{1_BuildingName:textkey}时不可用。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_UNIT_REQUIRES_WAR">
+			<Text>[NEWLINE]只能在与大文明交战时训练。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_MET_CIV_UNIQUE_UNITS_MAX">
+			<Text>[NEWLINE]你已拥有{1_Num}个此单位，已达可购买的上限。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_NEED_TENETS">
+			<Text>[NEWLINE]需要至少{1_Num}项此意识形态的理念。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_ABSENT_CIV_UNIQUES">
+			<Text>逝去的文明在你的帝国中延续：{1_Buildings}现已取代其对应的标准建筑。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_ABSENT_CIV_UNIQUES">
+			<Text>特色建筑已恢复</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_ABSENT_CIV_UNIQUES_DRAWN">
+			<Text>{2_Building:textkey}将恢复本世界中缺席文明的特色建筑：{1_Buildings}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_ABSENT_CIV_UNIQUES_DRAWN">
+			<Text>已记录失落文明</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ABSENT_CIV_UNIQUES_TOOLTIP">
+			<Text>特色建筑已恢复：</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ABSENT_CIV_UNIQUE_BASE">
+			<Text>（{1_CivAdj:textkey}{3_Building:textkey}）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_BUILDING_TT_RELIGIOUS_PRESSURE_MOD">
+			<Text>[ICON_PEACE]宗教压力：+{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_FEATURE_HAZARD_VICTIM">
+			<Text>你的{1_Unit:textkey}遭到{2_Hazard:textkey}袭击，损失了{3_Num}点生命值。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_FEATURE_HAZARD_HOLDER">
+			<Text>{2_Hazard:textkey}袭击了你领土内的敌方{1_Unit:textkey}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_FEATURE_HAZARD">
+			<Text>{1_Hazard:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID">
+			<Text>沿海突袭</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID_HELP">
+			<Text>无需登陆，直接从船上劫掠相邻的敌方设施。消耗一次劫掠所需的移动力；对于劫掠时无需消耗移动力的单位则免费。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID_DISABLED_HELP">
+			<Text>相邻没有可突袭的敌方设施，或已无剩余移动力。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPOILS_CARRIED">
+			<Text>{@1_UnitName}现携带{2_Num}[ICON_GOLD]战利品</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_SPOILS">
+			<Text>战利品：劫掠积存的{1_Num}[ICON_GOLD]。该单位进入你的领土时，将转化为[ICON_PRODUCTION]产能和[ICON_CULTURE]文化发放。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_PLUNDER_PROTECTED">
+			<Text>此[ICON_INTERNATIONAL_TRADE]商路受到附近护航单位的保护，无法劫掠。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_REPAIR_AT_WAR">
+			<Text>无法在敌方领土内修复被劫掠的设施。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SPOILS">
+			<Text>{@1_UnitName}携战利品归来：{@3_CityName}获得+{2_Num}[ICON_PRODUCTION]产能，你另获得+{4_Num}[ICON_CULTURE]文化。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SPOILS">
+			<Text>战利品已兑现：{1_Num}[ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED">
+			<Text>随着{4_CivName}被消灭，{@2_ReligionName}现归属于{1_CivName}，因其掌握着该宗教的圣城{@3_CityName}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED_ACTIVE_PLAYER">
+			<Text>随着{3_CivName}被消灭，你因掌握{@1_ReligionName}的圣城{@2_CityName}而成为该宗教的新主人。你获得其创立者信条，你的大先知也可以强化并传播该宗教。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED_UNKNOWN">
+			<Text>由于创立者已被消灭，{@1_ReligionName}现归属于掌握其圣城的一个未知文明。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_RELIGION_INHERITED">
+			<Text>{@1_ReligionName}易主</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_UNIT_GIFT">
+			<Text>你的附庸{1_CivName}向你送来了一个{2_UnitName}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPLASH_MOVE">
+			<Text>冲锋伤害</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPLASH_PILLAGE">
+			<Text>突袭伤害</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_IDEOLOGY_IMPOSED">
+			<Text>你的宗主国将其意识形态强加给你的帝国，你的帝国陷入{1_Num}回合的无政府状态。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_IDEOLOGY_IMPOSED_SUMMARY">
+			<Text>意识形态被强加</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEAGUE_LEGATION_VOTES">
+			<Text>[NEWLINE][ICON_BULLET]{1_NumVotes}票来自公使馆</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SPY_STOLE_RESEARCH">
+			<Text>你的{1_SpyRank}{2_SpyName}未能在{3_CityName}窃取科技，但收集到了价值{5_Num}[ICON_RESEARCH]的情报，已计入你当前的研究。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SPY_STOLE_RESEARCH_S">
+			<Text>{1_SpyName}收集到情报</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_DETECTED">
+			<Text>一名未知间谍试图从{1_CityName}窃取科技秘密，但只带走了一些研究笔记。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_DETECTED_S">
+			<Text>科技窃取失败！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_IDENTIFIED">
+			<Text>一名{1_CivAdj}间谍试图从{2_CityName}窃取科技秘密，但只带走了一些研究笔记。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_IDENTIFIED_S">
+			<Text>{1_CivShortDesc}未能窃取科技！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPY_STATE_REMOVED">
+			<Text>已被消灭！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_YOU">
+			<Text>你为你的神系增添了一项新信条，使其得到强化。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_KNOWN_CIV">
+			<Text>{1_CivName}为其神系增添了一项新信条，使其得到强化。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_UNMET_CIV">
+			<Text>一个未知文明为其神系增添了一项新信条，使其得到强化。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_SUMMARY">
+			<Text>神系已强化</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPY_NAME_FALLBACK">
+			<Text>未知</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AUTO_FAITH_SAVING_FOR_PROPHET">
+			<Text>保留用以催生{1_UNITCLASS_PROPHET}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_SETTLERS">
+			<Text>移民</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_WORKERS">
+			<Text>工人</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_WORK_BOATS">
+			<Text>工船</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_CARGO_SHIP">
+			<Text>货船</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_CARAVANS">
+			<Text>商队</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_INQUISITORS">
+			<Text>宗教裁判官</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_MISSIONARIES">
+			<Text>传教士</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_ARCHAEOLOGISTS">
+			<Text>考古学家</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_MISSILES">
+			<Text>导弹</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_GREAT_PERSON">
+			<Text>伟人</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_SPACESHIP_PART">
+			<Text>飞船组件</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_ANTIAIR">
+			<Text>防空单位</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_MOUNTED_ARCHER">
+			<Text>骑射单位</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_OVERVIEW_LOCATE_OR_RECALL_TT">
+			<Text>点击以跳转至该贸易单位。[NEWLINE]Ctrl+点击以召回该单位：商路立即终止，该单位将于下回合返回其所属城市，可另派他处。代价是损失该商路一回合的产出。[NEWLINE][ICON_INFINITY]表示该商路将持续运行，直至你将其召回。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_OVERVIEW_RECALLED_MARK">
+			<Text>[COLOR_WARNING_TEXT]召[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_TRO_INDEFINITE">
+			<Text>[ICON_INFINITY]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_TRADE_ROUTE_INDEFINITE_HINT">
+			<Text>[ICON_INFINITY]该商路将持续运行，直至你在商路总览中召回其贸易单位。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_REHOME_TRADE_UNIT_ROUTE_COUNT_TT">
+			<Text>从{2_CityName}出发共有{1}条可建立的商路</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_FOOD">
+			<Text>[ICON_FOOD]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_PRODUCTION">
+			<Text>[ICON_PRODUCTION]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_GOLD">
+			<Text>[ICON_GOLD]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_SCIENCE">
+			<Text>[ICON_RESEARCH]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_CULTURE">
+			<Text>[ICON_CULTURE]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_FAITH">
+			<Text>[ICON_PEACE]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_TOURISM">
+			<Text>[ICON_TOURISM]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_RELIGION_SPREAD">
+			<Text>{1_ReligionIcon}+{2_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_SCIENCE_EXPLAINED">
+			<Text>{1_CivName}发现了{2_Num}项你不知道的科技。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_SCIENCE_INFLUENCE">
+			<Text>你凭借对其的文化影响力从这条商路获得{1_Num}[ICON_RESEARCH]科研。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_EXPLAINED">
+			<Text>你发现了{1_Num}项{2_CivName}不知道的科技。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_INFLUENCE">
+			<Text>对方凭借对你的文化影响力从这条商路获得{1_Num}[ICON_RESEARCH]科研。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_GOLD">
+			<Text>探索废墟时发现远古帝国的宝藏！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_PROPHET_FAITH">
+			<Text>你发现了一个秘密宗教社团，布道者预言大先知即将出现。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_FAITH">
+			<Text>你发现了一个古代的神谕，女祭司以神圣的启示为你赐福。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_CULTURE">
+			<Text>你发现了令市民惊叹不已的珍贵文物！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_RECEIVED_GOLD">
+			<Text>[SPACE]你获得了{1_Num}[ICON_GOLD]金钱！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RUINS_REWARD_CULTURE_SUFFIX">
+			<Text>[SPACE]你获得了{1_Num}[ICON_CULTURE]文化！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RUINS_REWARD_FAITH_SUFFIX">
+			<Text>[SPACE]你获得了{1_Num}[ICON_PEACE]信仰！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_YIELD_NAME_TOURISM">
+			<Text>魅力</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_LIST_TOURISM_AMOUNT">
+			<Text>{1_Num}[ICON_TOURISM]魅力</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_TOURISM_FROM_TRADE_ROUTES">
+			<Text>{1_perTurn:number "#.##"}[ICON_TOURISM]来自与该城市建立的商路</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_MINOR_WARMONGER_KILLED">
+			<Text>城邦{1_MinorName}感谢你消灭了威胁他们的敌方单位！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SM_MINOR_WARMONGER_KILLED">
+			<Text>{1_MinorName}附近的敌人已被消灭</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER">
+			<Text>国际大片</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER_DISABLED_HELP">
+			<Text>单位必须处于满生命值状态。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER_HELP">
+			<Text>此命令将消耗该单位，为你带来大量[ICON_GOLD]金钱，并向所有文明传播[ICON_TOURISM]魅力。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK">
+			<Text>网络攻击</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK_DISABLED_HELP">
+			<Text>单位必须位于你自己的领土内。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK_HELP">
+			<Text>此命令将消耗该单位，使所有与你交战的文明陷入2回合无政府状态。若你未处于战争状态，则使所有其他文明陷入1回合无政府状态。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_CYBERATTACK">
+			<Text>{@1_CivName}对你的文明发动了网络攻击，使其陷入无政府状态。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_CYBERATTACK">
+			<Text>网络攻击！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE">
+			<Text>贸易航程</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE_DISABLED_HELP">
+			<Text>单位必须处于满生命值状态。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE_HELP">
+			<Text>此命令将消耗该单位，使你获得一个额外的商路名额。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP">
+			<Text>创立公司</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP_DISABLED_HELP">
+			<Text>单位必须位于你的城市中或与之相邻，且商业建筑中必须有可用的公司槽位。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP_HELP">
+			<Text>此命令将指示[COLOR_UNIT_TEXT]大商业家[ENDCOLOR]在{2_CityName}创立一家[COLOR_POSITIVE_TEXT]公司[ENDCOLOR]。该公司将注册于{1_BuildingName}，占用一个专用的公司槽位。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS">
+			<Text>建立城邦</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS_DISABLED_HELP">
+			<Text>该单位必须位于中立地域内的[COLOR_YELLOW]部落聚落[ENDCOLOR]上，且不与任何有主区块相邻。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS_HELP">
+			<Text>此命令将指示[COLOR_UNIT_TEXT]大使节[ENDCOLOR]在当前位置建立一个[COLOR_POSITIVE_TEXT]城邦[ENDCOLOR]。此过程将消耗该[COLOR_UNIT_TEXT]使节[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX">
+			<Text>大航海</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX_DISABLED_HELP">
+			<Text>单位必须位于己方领土内才能使用此能力。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VOYAGE_LUXURY_NOTIFICATION">
+			<Text>你的{1_UnitType}从遥远的国度归来，带回了[COLOR_POSITIVE_TEXT]{2_ResourceNames}[ENDCOLOR]，这是一种在此地图上任何地方都找不到的奢侈资源。你获得了[COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR]份该资源。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VOYAGE_LUXURY_NOTIFICATION_SUMMARY">
+			<Text>你的{1_UnitType}已完成航行！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ADMIRALTY_LUXURY_NOTIFICATION">
+			<Text>你新建的{1_ImprovementName}下方已有他物，因此奢侈资源无法在此浮现。作为替代，你获得了[COLOR_POSITIVE_TEXT]1[ENDCOLOR]份[COLOR_POSITIVE_TEXT]{2_ResourceName}[ENDCOLOR]，该资源将永久归你的帝国所有。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ADMIRALTY_LUXURY_NOTIFICATION_SUMMARY">
+			<Text>{1_ImprovementName}带来了一种稀有奢侈资源！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX_HELP">
+			<Text>若该单位位于己方领土内，此命令将消耗该单位，使你免费获得两份本地图上没有的奢侈资源。这些资源不会出现在地图上，但可以与其他文明交易。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY">
+			<Text>尤里卡</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY_DISABLED_HELP">
+			<Text>单位必须处于满生命值状态。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY_HELP">
+			<Text>此命令将消耗该单位，并使你免费获得一项[ICON_CULTURE]社会政策。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL">
+			<Text>带我回家</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL_DISABLED_HELP">
+			<Text>单位必须位于中立地域内。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL_HELP">
+			<Text>此命令将把该单位传送至你的首都。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM">
+			<Text>转换</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM_DISABLED_HELP">
+			<Text>
+			必须位于适合目标单位的地形上。[NEWLINE]陆地单位：陆地或沿海水域。[NEWLINE]海军单位：水域或沿海城市。[NEWLINE]需要足够的[ICON_GOLD]金钱。
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM_HELP">
+			<Text>转换该单位。需花费[ICON_GOLD]金钱；若转换回可训练的单位则免费。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_DEFENSIVE_ALLIANCE">
+			<Text>新签订的防御条约使你加入了一个更大的防御同盟。你现在还与以下文明签有防御条约：{1_CivList}。[NEWLINE]任何成员遭到攻击，你都将为其参战。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEFENSIVE_ALLIANCE">
+			<Text>防御同盟</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_1">
+			<Text>我很欣赏你的军事实力。我们签订防御条约如何？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_2">
+			<Text>我们应当结成同盟，让我们的敌人走向毁灭。你愿意签订防御条约吗？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_3">
+			<Text>我们四面受敌。若不携手合作，我们必将灭亡。你愿意签订防御条约吗？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_4">
+			<Text>只要我们结盟，世上的暴君都将在我们脚下颤抖。你是否认同防御条约的价值？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_COMBAT_LOG">
+			<Text>战斗日志</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_EMPTY_TOOLTIP">
+			<Text>电影杰作空位</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_LABEL">
+			<Text>[ICON_GAIA_CINEMA]电影杰作：</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_CINEMA]电影杰作展位：+{1_NumSlots}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_EMPTY_TOOLTIP">
+			<Text>公司空位</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_LABEL">
+			<Text>[ICON_GAIA_CORPORATION]公司：</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_CORPORATION]公司槽位：+{1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_EMPTY_TOOLTIP">
+			<Text>宗教文物空位</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_LABEL">
+			<Text>[ICON_GAIA_HOLY_ARTIFACT]宗教文物：</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_HOLY_ARTIFACT]宗教文物展位：+{1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_EMPTY_TOOLTIP">
+			<Text>游戏杰作空位</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_LABEL">
+			<Text>[ICON_GAIA_VIDEOGAME]游戏杰作：</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_VIDEOGAME]游戏杰作展位：+{1_NumSlots}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SPECIALUNIT_ENTRENCHED">
+			<Text>堑壕远程单位</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION">
+			<Text>传播宗教（自动）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION_HELP">
+			<Text>自动执行此[COLOR_UNIT_TEXT]传教士[ENDCOLOR]的行动：它会自行前往其认为最合适的城市并在那里传播宗教。该单位将保持自动状态，直到你取消自动化或对其下达新命令。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION_DISABLED_HELP">
+			<Text>该单位目前无法使用自动化。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE">
+			<Text>发掘文物（自动）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE_HELP">
+			<Text>自动执行此[COLOR_UNIT_TEXT]考古学家[ENDCOLOR]的行动：它会自行寻找并发掘历史古迹。该单位将保持自动状态，直到你取消自动化或对其下达新命令。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE_DISABLED_HELP">
+			<Text>该单位目前无法使用自动化。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_BUILDING_LOCAL_RES">
+			<Text>[NEWLINE][ICON_BULLET]本地资源修正（{2_ResourceName}）：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_UNIT_LOCAL_RES">
+			<Text>[NEWLINE][ICON_BULLET]本地资源修正（{2_ResourceName}）：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_CS_GIFTED_UNIT_RETURNED_SUMMARY">
+			<Text>{1_CivName:textkey}已被占领，赠送的单位已归还！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_CS_GIFTED_UNIT_RETURNED">
+			<Text>由于{1_CivName:textkey}已被占领，你赠送的{2_Unit}已归还给你。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_YOU_CIRC_GLOBE_TRADE_ROUTE">
+			<Text>你完成了环球航行！你的文明现在可以额外建立一条[ICON_INTERNATIONAL_TRADE]商路。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_RECLAMATION_RESOLVE">
+			<Text>收复决心</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_FRIENDLY_COMBAT_AURA">
+			<Text>友军光环</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_ATTACK_CS_ALLIANCE_STRENGTH">
+			<Text>城邦盟友加成</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_BONUS_VS_FULLY_HEALED_UNITS">
+			<Text>对未受损单位加成</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_EMBARKATION_DEFENSE">
+			<Text>海运防御</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_PENALTY_VS_DOMAIN">
+			<Text>领域惩罚</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_RANGED_DEFENSE_MODIFIER">
+			<Text>远程防御</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_RANGED_SUPPORT">
+			<Text>[COLOR_CYAN]远程攻击支援[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_IGNORE_ZOC">
+			<Text>无视控制区域</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_WITHDRAW_CHANCE">
+			<Text>撤退几率</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_UNITCOMBAT_DAMAGE_MODIFIER">
+			<Text>单位伤害</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_MISC_BONUS">
+			<Text>其他加成</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TECH_REQUIRES_ERA">
+			<Text>需要研究完{1_Era}的所有科技。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_UNITS">
+			<Text>[NEWLINE]解锁单位：[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_BUILDINGS">
+			<Text>[NEWLINE]解锁建筑：[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_WONDERS">
+			<Text>[NEWLINE]解锁奇观：[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_PROJECTS">
+			<Text>[NEWLINE]解锁工程：[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_PROCESSES">
+			<Text>[NEWLINE]解锁生产流程：[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_RESOURCES">
+			<Text>[NEWLINE]解锁资源：[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_BUILDS">
+			<Text>[NEWLINE]解锁设施：[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_ACTIONS">
+			<Text>[NEWLINE]特殊行动：[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_CITY_WORKRANGE">
+			<Text>允许城市额外工作一圈区块。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_YIELDS">
+			<Text>[NEWLINE]产出变化：[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_SPECIALISTS">
+			<Text>{1_SpecialistName:textkey}：+{3_Num}{4_IconString}{2_YieldType:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_CITIES">
+			<Text>城市</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_FOLLOWERS">
+			<Text>信徒</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_MAP_TAB">
+			<Text>地图</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_FOUNDED">
+			<Text>创立时间</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_JOINT_WAR_REQUEST_TT">
+			<Text>请求该领袖与你一同对另一个文明开战。[NEWLINE][NEWLINE]若该领袖同意立即参战，你们双方将同时宣战，且15回合内任何一方都无法与目标议和。该领袖也可能承诺在10回合后加入，届时会邀请你一同开战；若你届时拒绝，将被视为违背承诺。[NEWLINE][NEWLINE]若你们任何一方公开谴责对方或向对方宣战，或与目标达成和平，联合战争计划将被取消。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_MAY_NOT_ATTACK_RELIGION">
+			<Text>在工业时代之前，你不能攻击这个文明：此战争中一方创立的宗教禁止向其信徒开战。该禁令同样适用于防御条约伙伴和附庸。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_SHARED_RELIGION">
+			<Text>[COLOR_POSITIVE_TEXT]我们两国人民信仰相同。[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_THEY_CANNOT_ATTACK_US_RELIGION">
+			<Text>在工业时代之前，对方不能向你宣战：一个已创立的宗教将你们双方联系在一起。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_BUTTON">
+			<Text>公开谴责</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_BUTTON_TT">
+			<Text>点击此按钮将[COLOR_NEGATIVE_TEXT]公开谴责[ENDCOLOR]对方玩家。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_DEAL_BUTTON">
+			<Text>请求</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE">
+			<Text>对方的交易估值：{1_Num}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_TT">
+			<Text>该领袖当前对此交易的估值。正值对其有利，负值对你有利；该领袖会拒绝任何对你有利的交易。若显示“不可能！”，则表示该领袖拒绝交易其中至少一项内容。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_ACCEPTABLE">
+			<Text>对方的交易估值：可以接受</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_VETOED">
+			<Text>对方的交易估值：不可能！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_FROM_YOU">
+			<Text>需你付出 {1_Num} [ICON_GOLD] 或每回合 {2_Num} [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_GPT_FROM_YOU">
+			<Text>需你付出每回合 {1_Num} [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_FROM_THEM">
+			<Text>对方最多付出 {1_Num} [ICON_GOLD] 或每回合 {2_Num} [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_GPT_FROM_THEM">
+			<Text>对方最多付出每回合 {1_Num} [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH">
+			<Text>和平协议估值：{1_Num}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH_TT">
+			<Text>该领袖当前对此和平协议的估值。若此处显示“不可能！”，则表示该领袖拒绝交易和平协议中的一项或多项内容。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH_VETOED">
+			<Text>和平协议估值：不可能！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_CEILING">
+			<Text>最大值：{1_Num}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_CEILING_TT">
+			<Text>和平协议中各项内容的最大价值。若左侧数值超过此数，该领袖将拒绝此协议。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_FLOOR">
+			<Text>最小值：{1_Num}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_FLOOR_TT">
+			<Text>和平协议中各项内容的最小价值。若此数超过左侧数值，该领袖将拒绝此协议。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_DEAL_WINNER_GIVES_NOTHING_TT">
+			<Text>无法在和平协议中向非投降方添加项目。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_VASSALAGE_NEED_CAPITAL_TT">
+			<Text>{1_Civ}只会向占有其原首都{2_City}的文明投降。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_VASSALAGE_NEED_CAPITAL_RAZED_TT">
+			<Text>{1_Civ}只会向占有其任一旧首都的文明投降。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_RESTORED_CIV_JOINS_LIBERATOR">
+			<Text>{1_PlayerName}解放了{2_CityName}，恢复了{3_CivAdj}政权。在古老首都重生的{4_CivName}宣誓效忠其解放者，成为其自愿附庸。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DEFENSIVE_PACT_UNCAPPED_TT">
+			<Text>如果任何一方遭到其他大文明攻击，另一方将立即自动向攻击者宣战。本协议持续{1_Num}回合。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_LUXURY_WANTED_BY_CITIES_TT">
+			<Text>以下城市目前正需要此资源：</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_BUTTON">
+			<Text>请求援助</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_BUTTON_TT">
+			<Text>向与你签有友谊声明的玩家请求援助。此选项不会带来外交惩罚。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEADER_DEMAND_TRIBUTE_TT">
+			<Text>向这个文明索取贡品。此选项会带来外交惩罚。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_THEY_ARE_LOCKED_TT">
+			<Text>目前无法和谈：对方在若干回合内必须继续这场战争。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_BY_RULES_TT">
+			<Text>由于游戏选项或特殊规则，无法与这个文明和谈。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DECLARE_WAR_DEFENSE_PACT">
+			<Text>防御条约</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THEY_ARE_OUR_PACT_PARTNER">
+			<Text>[COLOR_NEGATIVE_TEXT]我们与他们签有防御条约！[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_POPUP_TARGET_MASTER_HEADER">
+			<Text>宗主国</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEFENSIVE_PACT_WITH">
+			<Text>[COLOR_POSITIVE_TEXT]与{1_CivName:textkey}签有防御条约[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AT_WAR_WITH">
+			<Text>[COLOR_NEGATIVE_TEXT]和{1_enemy}开战（战争分数：{2_Num}）[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PROJECTION_VALUE">
+			<Text>[COLOR_POSITIVE_TEXT]战争分数：{1_Num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PROJECTION_TT">
+			<Text>此数值反映从你的角度来看这场战争的形势，综合考量双方相对的军事与经济实力、各方所受损失、游戏得分以及战争持续时间。[COLOR_POSITIVE_TEXT]正值[ENDCOLOR]对你有利，[COLOR_NEGATIVE_TEXT]负值[ENDCOLOR]对对方有利。[NEWLINE][COLOR_POSITIVE_TEXT]当前战争信息：[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_NONE">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_PEACE]对方的和平提议：[ENDCOLOR]不可能！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_ARMISTICE">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_PEACE]对方的和平提议：[ENDCOLOR]少量赔偿。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SETTLEMENT">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_PEACE]对方的和平提议：[ENDCOLOR]丰厚赔偿。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_BACKDOWN">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_PEACE]对方的和平提议：[ENDCOLOR]赔偿外加部分让步。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SUBMISSION">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_PEACE]对方的和平提议：[ENDCOLOR]赔偿外加重大让步。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SURRENDER">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_PEACE]对方的和平提议：[ENDCOLOR]愿意割让一座城市。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_CESSION">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_PEACE]对方的和平提议：[ENDCOLOR]愿意割让数座城市。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_CAPITULATION">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_PEACE]对方的和平提议：[ENDCOLOR]愿意割让大量城市。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_UNCONDITIONAL">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_PEACE]对方的和平提议：[ENDCOLOR]愿意割让除首都外的所有城市！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_PATHETIC">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_STRENGTH]军事实力：[ENDCOLOR]他们不堪一击！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_WEAK">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_STRENGTH]军事实力：[ENDCOLOR]他们非常弱小。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_POOR">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_STRENGTH]军事实力：[ENDCOLOR]他们较弱。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_AVERAGE">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_STRENGTH]军事实力：[ENDCOLOR]我们势均力敌。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_STRONG">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_STRENGTH]军事实力：[ENDCOLOR]他们很强大。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_POWERFUL">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_STRENGTH]军事实力：[ENDCOLOR]他们十分强大。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_IMMENSE">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_STRENGTH]军事实力：[ENDCOLOR]他们无比强大！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_PATHETIC">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_GOLD]经济实力：[ENDCOLOR]他们的经济已经崩溃！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_WEAK">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_GOLD]经济实力：[ENDCOLOR]他们远比我们贫穷。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_POOR">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_GOLD]经济实力：[ENDCOLOR]他们较为贫穷。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_AVERAGE">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_GOLD]经济实力：[ENDCOLOR]我们旗鼓相当。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_STRONG">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_GOLD]经济实力：[ENDCOLOR]他们经济稳健。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_POWERFUL">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_GOLD]经济实力：[ENDCOLOR]他们十分富有。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_IMMENSE">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_GOLD]经济实力：[ENDCOLOR]他们富可敌国！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_MINOR">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_WAR]迄今损失：[ENDCOLOR]他们的损失比我们多。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_MAJOR">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_WAR]迄今损失：[ENDCOLOR]他们的损失比我们多得多。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_SERIOUS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_WAR]迄今损失：[ENDCOLOR]他们的损失远远超过我们。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_CRIPPLED">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_WAR]迄今损失：[ENDCOLOR]他们的损失远非我们可比！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_MINOR">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_RAZING]迄今损失：[ENDCOLOR]我们的损失比他们多。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_MAJOR">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_RAZING]迄今损失：[ENDCOLOR]我们的损失比他们多得多。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_SERIOUS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_RAZING]迄今损失：[ENDCOLOR]我们的损失远远超过他们。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_CRIPPLED">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT][ICON_RAZING]迄今损失：[ENDCOLOR]我们的损失远非他们可比！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLOLIST_NUM_DEFENSE_PACTS">
+			<Text>防御条约：{1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_BELIEF_FALLBACK">
+			<Text>未知</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_DEFAULT_TT">
+			<Text>公开谴责这位领袖。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VICTORY_PROGRESS_LOST_MESSAGE">
+			<Text>{1_TeamName}的{2_VictoryName}胜利进度已被重置！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_POPUP_PROTECTORS_LABEL">
+			<Text>保护者：</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_POPUP_PROTECTORS_TT">
+			<Text>已承诺保护此城邦的其他文明。攻击此城邦或向其索取贡品，都会招致这些文明的愤怒。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_SUZERAINTY">
+			<Text>盟友奖励：</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_SUZERAINTY_WHILE_ALLY">
+			<Text>你为其盟友期间</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_CSWONDER">
+			<Text>盟友奇观：</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_CSWONDER_TT">
+			<Text>连续{2_NumTurns}回合成为此城邦的盟友，即可为你解锁世界奇观{1_WonderName}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_CULTURE_FIRST">
+			<Text>他们赠予你一件珍贵的艺术品，价值[COLOR_POSITIVE_TEXT]{1_NumCulture}[ICON_CULTURE]文化[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FAITH_FIRST">
+			<Text>你们是他们遇到的第一批外来者，因此他们向你展示了珍藏的宗教偶像。你获得[COLOR_POSITIVE_TEXT]{1_NumFaith}[ICON_PEACE]信仰[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_GOLD_FIRST">
+			<Text>你是他们遇到的第一个伟大帝国，因此他们赠予你[COLOR_POSITIVE_TEXT]{1_NumGold}[ICON_GOLD]金钱[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FOOD_FIRST">
+			<Text>你恰好赶上了他们一年一度的丰收庆典。他们向你的一座城市送去了[COLOR_POSITIVE_TEXT]{1_NumFood}[ICON_FOOD]食物[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_UNIT_FIRST">
+			<Text>他们身经百战的勇士向发现他们的单位传授了来之不易的经验，该单位获得[COLOR_POSITIVE_TEXT]{1_NumXP}点经验值[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_CULTURE_LATER">
+			<Text>他们与你分享了艺术鉴赏的知识，使你获得[COLOR_POSITIVE_TEXT]{1_NumCulture}[ICON_CULTURE]文化[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FAITH_LATER">
+			<Text>他们与你分享了宗教仪式的知识，使你获得[COLOR_POSITIVE_TEXT]{1_NumFaith}[ICON_PEACE]信仰[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_GOLD_LATER">
+			<Text>他们赠予你[COLOR_POSITIVE_TEXT]{1_NumGold}[ICON_GOLD]金钱[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FOOD_LATER">
+			<Text>为表善意，他们向你的一座城市送去[COLOR_POSITIVE_TEXT]{1_NumFood}[ICON_FOOD]食物[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_UNIT_LATER">
+			<Text>他们身经百战的勇士向发现他们的单位传授了一些经验，该单位获得[COLOR_POSITIVE_TEXT]{1_NumXP}点经验值[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_NONE">
+			<Text>遗憾的是，他们没有什么可以给你的。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_INFLUENCE_ONLY">
+			<Text>遗憾的是，他们没有什么可以给你的，但与这个{2_Personality}的城邦会面，仍使你对其的[COLOR_POSITIVE_TEXT][ICON_INFLUENCE]影响力增加了{1_NumFriendship}[ENDCOLOR]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PLOTROLL_GAIA_LEGATION">
+			<Text>（属于{1_CivName:textkey}）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PLOTROLL_GAIA_LEGATION_UNMET">
+			<Text>（属于未知玩家）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MILITARY_OVERVIEW_EXPERIENCE_COLUMN">
+			<Text>经验值</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MILITARY_OVERVIEW_SORT_EXPERIENCE_TT">
+			<Text>按经验值排序</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WAKE_UPGRADEABLE_UNIT">
+			<Text>你有单位可以升级</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WAKE_UPGRADEABLE_UNIT_SHORT">
+			<Text>升级单位</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GOODY_RECON_ONLY">
+			<Text>只有侦察单位才能探索远古遗迹！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WONDER_CONSOLATION_SHORT">
+			<Text>{1_CityName}无法继续建造{2_BldgName}。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WONDER_CONSOLATION">
+			<Text>{1_CityName}无法继续建造{2_BldgName}。损失的[ICON_PRODUCTION]产能已转化为{3_NumGold}[ICON_GOLD]金钱、{4_NumCulture}[ICON_CULTURE]文化和{5_NumProduction}[ICON_PRODUCTION]溢出产能。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_WINNING">
+			<Text>你在奇观竞赛中领先！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_WINNING_TOOLTIP">
+			<Text>在建造{2_wonder}的竞赛中，你领先于{1_player}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_LOSING">
+			<Text>你在奇观竞赛中落后！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_LOSING_TOOLTIP">
+			<Text>在建造{2_wonder}的竞赛中，{1_player}领先于你</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_BY_N_TURNS">
+			<Text>（相差{1_Num}回合）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SAPIENS_MP_RESYNC_NOTICE">
+			<Text>检测到多人游戏不同步，游戏已重新同步。如果再次出现，请在重新启动游戏之前，复制并发送主机和你自己的 net_message_debug.log、SapiensMod.log 和 Lua.log（Documents\My Games\Sid Meier's Civilization 5\Logs）。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING">
+			<Text>内存即将不足</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING_TOOLTIP">
+			<Text>游戏正接近32位程序的内存上限，这是游戏本身的限制，与您的电脑无关。通常您还可以再玩一段时间，但之后的存档可能需要更低的图像设置才能载入。请立即存档，降低领袖画质、阴影、地形细节和抗锯齿，并在下次载入前退出到桌面。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING_AT_FLOOR_TOOLTIP">
+			<Text>游戏正接近32位程序的内存上限，这是游戏本身的限制，与您的电脑无关。通常您还可以再玩一段时间，但之后的存档可能无法载入。请立即存档，并在下次载入前退出到桌面、重新启动游戏；DirectX 11 和更低的分辨率能多出一点余量。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DLL_NOT_LOADED_TITLE">
+			<Text>核心模组DLL未加载</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DLL_NOT_LOADED_TEXT">
+			<Text>Gaia核心模组已启用，但其DLL未能加载，因此该模组及基于它构建的模组（如Sapiens）的大部分功能都将无法在本局游戏中生效。[NEWLINE][NEWLINE]Mac和Linux版本的游戏无法加载DLL模组。在Linux上，请通过Steam Play（Proton）运行Windows版本。在Windows上，请确保没有启用其他DLL模组，然后重新启动游戏。[NEWLINE][NEWLINE]名称以+或=开头的模组不需要该DLL。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FOODMOD_GAIA_FRESH_WATER">
+			<Text>[NEWLINE][ICON_BULLET]淡水修正：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FOODMOD_GAIA_RELIGIONS_PRESENT">
+			<Text>[NEWLINE][ICON_BULLET]宗教多样性：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_GARRISONED_MILITARY">
+			<Text>[NEWLINE][ICON_BULLET]有镇守单位的城市：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_BUILDINGCLASS_CITY_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]{2_Building}：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_WONDER_PEACE">
+			<Text>[NEWLINE][ICON_BULLET]和平时期奇观修正：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_PROJECT_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]项目修正：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_PEACE_YIELD">
+			<Text>[NEWLINE][ICON_BULLET]和平时期修正：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_GREAT_PEOPLE_EARNED">
+			<Text>[NEWLINE][ICON_BULLET]已获得伟人修正：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_GAIA_FROM_FAITH">
+			<Text>{1_Num}[ICON_TOURISM]魅力来自[ICON_PEACE]信仰</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_BELIEF_SETTLER">
+			<Text>[NEWLINE][ICON_BULLET]宗教信条的移民修正：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_UNIT_WAR">
+			<Text>[NEWLINE][ICON_BULLET]战争时期单位修正：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_YIELD_POLICY">
+			<Text>[NEWLINE]  [ICON_BULLET]{2_PolicyName}：{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_GAIA_POLICY_MOD">
+			<Text>{1_Num}%来自社会政策</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_CLEARING_FEATURE_FOOD">
+			<Text>清除{@1_FeatName}为{@3_CityName}带来了{2_Num}[ICON_FOOD]。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SAPIENS_CITY_CAPTURE">
+			<Text>你获得了{1_CityName}。你要怎么处理这座城市？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_SAPIENS_CITY_CAPTURE">
+			<Text>如何处理{1_CityName}？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POPUP_GOLD_AND_CULTURE_CITY_CAPTURE">
+			<Text>你从被攻占的{@4_CityName}劫掠了{1_Num}[ICON_GOLD]、{2_Num}[ICON_CULTURE]以及{3_Num}[ICON_GREAT_WORK]！该城市中没有空余展位的杰作已被移至距离最近且有空余展位的城市。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_SWITCH_MODE">
+			<Text>切换模式</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_DIPLO_CORNER_HOOK">
+			<Text>晋升树</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_OVERVIEW_FOR_UNIT_TT">
+			<Text>打开晋升树，查看该单位当前已有及可选的晋升。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_SIZE">
+			<Text>较小（快捷键：D）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_EARNT">
+			<Text>已获得</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_EARNT_TT">
+			<Text>该单位已获得的晋升（不含来自文明特质或奇观的晋升）。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_AVAILABLE">
+			<Text>可选</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_AVAILABLE_TT">
+			<Text>该单位当前可选择的晋升。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_NOT_AVAILABLE">
+			<Text>尚不可选</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_NOT_AVAILABLE_TT">
+			<Text>该单位尚不可选的晋升。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_UNIT">
+			<Text>单位</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_CLASS">
+			<Text>战斗类型</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PROMOTION_TREE_GROUPING_LABEL">
+			<Text>视图：单位/战斗类型</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_BASE_TT">
+			<Text>点击以在该单位的晋升树与按战斗类型分类的晋升树之间切换。快捷键：S。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_THINKER_DETAILS">
+			<Text>[ICON_PLUS]大思想家</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_THINKER_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS]大思想家</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_EMISSARY_DETAILS">
+			<Text>[ICON_PLUS]大使节</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_EMISSARY_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS]大使节</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DIRECTOR_DETAILS">
+			<Text>[ICON_PLUS]大导演</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DIRECTOR_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS]大导演</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DEVELOPER_DETAILS">
+			<Text>[ICON_PLUS]大游戏开发者</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DEVELOPER_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS]大游戏开发者</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GREAT_WORK_SWAP">
+			<Text>{1_LeaderName}将你的杰作《{2_Work1Name}》换成了杰作《{3_Work2Name}》。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SWAP_YOUR_WORKS_HEADER">
+			<Text>你的杰作</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SWAP_OFFERED_WORKS_HEADER">
+			<Text>其他文明提供的杰作</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_GAIA_GOODWILL_MISSIONS">
+			<Text>[COLOR_POSITIVE_TEXT]你曾向他们派遣亲善使节。[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GOODWILL_MISSION_RESULT">
+			<Text>你的使节受到了热情接待。对方领袖现在对你的印象更好了。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL">
+			<Text>亲善使命</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL_DISABLED_HELP">
+			<Text>该单位必须位于与你处于和平状态的其他文明的边界内。由人类玩家领导的文明无法接受亲善使命，且每个文明只接受你有限次数的亲善使命。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL_HELP">
+			<Text>若该单位位于与你处于和平状态的其他文明的边界内，此命令将消耗该单位。此后该文明的领袖将对你更有好感。之后向同一文明派出的每次使命效果都会递减，而向其宣战将使该效果失效。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT">
+			<Text>海上输送</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT_HELP">
+			<Text>通过海路将此陆地单位运送至同一海域中你另一座海运码头所在或相邻的区块。航行期间该单位在港口待命，无法接受命令，并于2回合后你的回合开始时登陆，届时移动力全满，并如同休整过一般恢复生命值。若空运或空降可抵达该区块，该单位将改为立即前往。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT_DISABLED_HELP">
+			<Text>该单位必须是本回合尚未移动的陆地单位，且位于你拥有海运码头的城市中或与之相邻；同时你需要在同一海域拥有另一座海运码头。被封锁的港口无法使用。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_ORDERED">
+			<Text>{@1_UnitName}启航前往{@2_CityName}，将于第{3_Num}回合在该地登陆。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_IN_TRANSIT">
+			<Text>运输途中</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_IN_TRANSIT_TT">
+			<Text>运输途中，前往{@1_CityName}：将于第{2_Num}回合登陆。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SEALIFT_LANDED">
+			<Text>{@1_UnitName}已在{@2_CityName}登陆。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SEALIFT_LANDED">
+			<Text>海上输送已登陆</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SEALIFT_CANCELLED">
+			<Text>{@1_UnitName}的海上输送已取消：某个港口已无法使用，或没有可安全登陆的区块。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SEALIFT_CANCELLED">
+			<Text>海上输送已取消</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_COLONY_CITYSTATE_FOUNDED">
+			<Text>{@1_CityName}已作为新的城邦建立，初始与你结盟。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_COLONY_CITYSTATE_FOUNDED">
+			<Text>城邦已建立</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_COLONY_CITYSTATE_FALLBACK">
+			<Text>无法建立新的城邦，因此{@1_CityName}被建立为傀儡城市。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_COLONY_CITYSTATE_FALLBACK">
+			<Text>傀儡城市已建立</Text>
+		</Replace>
+	</Language_zh_CN>
+</GameData>

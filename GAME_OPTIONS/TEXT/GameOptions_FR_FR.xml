@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_FR_FR>
+<!--TWO_UNITS_PER_TILE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TWO_UNITS_PER_TILE">
+			<Text>[COLOR_GREEN]Two Units Per Tile[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TWO_UNITS_PER_TILE_HELP">
+			<Text>Allows stacking up to two combat units per tile. Plots that allow for a garrison (Cities, Forts and Citadels) will be able to stack up to three combat units.</Text>
+		</Replace>
+<!--BEST_STARTING_LOCATION-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_BEST_STARTING_LOCATION">
+			<Text>[COLOR_GREEN]Meilleure position de départ[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_BEST_STARTING_LOCATION_HELP">
+			<Text>
+				Le joueur humain obtiendra toujours la meilleure position de départ sur une carte donnée.
+				[NEWLINE][NEWLINE]Le biais de départ de votre civilisation choisie sera ignoré lorsque cette option est activée.
+			</Text>
+		</Replace>
+<!--FRIENDLY_CITADELS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_FRIENDLY_CITADELS">
+			<Text>[COLOR_GREEN]Citadelles amicales[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_FRIENDLY_CITADELS_HELP">
+			<Text>Les citadelles ne peuvent être construites sur le territoire d'une autre civilisation ou d'une cité-État, et y revendiquer des cases, que si vous êtes en guerre avec elle. Sinon, elles ne revendiquent que les cases en territoire neutre.</Text>
+		</Replace>
+<!--SLOW_TECH-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_SLOW_TECH">
+			<Text>[COLOR_GREEN]Recherche lente[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_SLOW_TECH_HELP">
+			<Text>Les technologies de chaque époque coûtent plus cher que celles de la précédente : +10 % par époque dès l'Antiquité, jusqu'à 1,8 fois à l'ère de l'information. Une partie plus longue place plus d'unités sur la carte, ce qui consomme plus de mémoire.</Text>
+		</Replace>
+<!--UNWELCOME_PROPHETS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_UNWELCOME_PROPHETS">
+			<Text>[COLOR_GREEN]Prophètes indésirables[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_UNWELCOME_PROPHETS_HELP">
+			<Text>L'IA n'enverra pas de missionnaires ni de prophètes dans les villes appartenant à un joueur humain qui a fondé sa propre religion. Les humains sans religion restent des cibles valides.</Text>
+		</Replace>
+<!--AI_ONE_CITY_CHALLENGE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_AI_ONE_CITY_CHALLENGE">
+			<Text>[COLOR_GREEN]Défi à une seule ville pour l'IA[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_AI_ONE_CITY_CHALLENGE_HELP">
+			<Text>Les joueurs IA ne pourront jamais construire ou posséder qu'une seule ville.</Text>
+		</Replace>
+<!--NO_AI_WONDERS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_AI_WONDERS">
+			<Text>[COLOR_GREEN]Pas de merveilles pour l'IA[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_AI_WONDERS_HELP">
+			<Text>Empêche l'IA de construire des [COLOR_WATER_TEXT]merveilles du monde[ENDCOLOR].</Text>
+		</Replace>
+<!--NO_COMBAT_RANDOMNESS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_COMBAT_RANDOMNESS">
+			<Text>[COLOR_GREEN]Pas de hasard dans les combats[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_COMBAT_RANDOMNESS_HELP">
+			<Text>Supprime l'aléatoire des dégâts de combat pour qu'ils soient toujours à 100 % (au lieu de varier entre 80 % et 120 %).</Text>
+		</Replace>
+<!--REMOVE_XP_CAP-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REMOVE_XP_CAP">
+			<Text>[COLOR_GREEN]Points d'expérience illimités[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REMOVE_XP_CAP_HELP">
+			<Text>Supprime les limites de points d'expérience :[NEWLINE]forts, citadelles, autres aménagements et garnisons, barbares et cités-États.</Text>
+		</Replace>
+
+<!--GOODY_HUTS_RECON_ONLY-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_RECON_ONLY">
+			<Text>[COLOR_GREEN]Ruines antiques : reconnaissance uniquement[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_RECON_ONLY_HELP">
+			<Text>Seules les unités de reconnaissance (éclaireurs, explorateurs et leurs successeurs) peuvent fouiller les Ruines antiques. Toute autre unité qui pénètre sur une ruine la laisse intacte pour qu'une unité de reconnaissance la récupère plus tard. L'expansion des frontières des villes récupère toujours les ruines normalement.</Text>
+		</Replace>
+<!--GOODY_HUTS_SCIENCE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_SCIENCE">
+			<Text>[COLOR_GREEN]Ancient Ruin Science[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_SCIENCE_HELP">
+			<Text>Ancient ruin rewards that would grant a free Technology instead grant a lump of Science, banked into your current research.</Text>
+		</Replace>
+<!--RETURNING_FOG-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_RETURNING_FOG">
+			<Text>[COLOR_GREEN]Retour du brouillard[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_RETURNING_FOG_HELP">
+			<Text>Le brouillard de guerre recouvre de nouveau les terres explorées que vous ne voyez plus, vous obligeant à réexplorer la carte. Les villes et leurs environs, votre propre territoire, les merveilles naturelles, les montagnes, les ruines antiques et les continents entièrement explorés restent révélés. S'applique à tous les joueurs.</Text>
+		</Replace>
+<!--TILE_CONQUEST-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TILE_CONQUEST">
+			<Text>[COLOR_GREEN]Conquête de cases[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TILE_CONQUEST_HELP">
+			<Text>En temps de guerre, vos unités militaires terrestres s'emparent des cases ennemies qu'elles occupent ainsi que des cases adjacentes admissibles. Les forts et les citadelles ne peuvent être pris qu'en les occupant ; prendre une citadelle revendique aussi les cases qui l'entourent. Les cases conquises sont rendues lors de la signature de la paix.</Text>
+		</Replace>
+<!--REALISTIC_OCEAN_CROSSING-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REALISTIC_OCEAN_CROSSING">
+			<Text>[COLOR_GREEN]Traversée océanique réaliste[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REALISTIC_OCEAN_CROSSING_HELP">
+			<Text>Les unités terrestres embarquées ne peuvent pas entrer sur les cases d'océan : armées et colons traversent l'océan à bord d'un Transport de troupes, ou une unité à la fois dans la place pour troupes d'un navire de guerre de mêlée à partir de la Renaissance.[NEWLINE][NEWLINE]Cette règle ne s'applique qu'aux joueurs humains. L'IA fait tout de même voyager ses invasions navales et ses colons d'outre-mer dans des Transports de troupes escortés chaque fois qu'elle peut en obtenir ; elle n'en est exemptée que pour que des cas particuliers (aucun navire prêt à temps, ou un déplacement qu'aucun transport ne couvre) ne la laissent jamais bloquée, ce qui serait trop sévère.</Text>
+		</Replace>
+<!--WONDER_RACE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_WONDER_RACE_NOTIFICATIONS">
+			<Text>[COLOR_CYAN]Notifications de course aux merveilles[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_WONDER_RACE_NOTIFICATIONS_HELP">
+			<Text>Une fois par tour, lorsque vous et un rival rencontré et visible construisez la même Merveille du monde, on vous indique si vous êtes en avance ou en retard, et de combien de tours. Respecte le brouillard de guerre : seuls les rivaux dont vous voyez actuellement la ville sont pris en compte.</Text>
+		</Replace>
+<!-- VASSALAGE -->
+<!--VASSALAGE GAME OPTION-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_VASSALAGE">
+			<Text>[COLOR_GREEN]Vassalité[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_VASSALAGE_HELP">
+			<Text>Permet de soumettre des civilisations rivales à l'état de vassalité. Une civilisation ne capitule dans un traité de paix que si vous tenez sa capitale d'origine ; libérer la capitale d'origine d'une civilisation en fait votre vassal volontaire.</Text>
+		</Replace>
+<!--VASSALAGE OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_FOOTER_YOUR_VASSAL_COUNT">
+			<Text>Nombre de vassaux que nous possédons : {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_FOOTER_WORLD_VASSAL_COUNT">
+			<Text>Nombre de vassaux dans le monde : {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_LOCKED_UNTIL_ERA">
+			<Text>Le système de vassalage ne commence qu'à l'ère Médiévale, ou lorsque vous devenez le vassal de quelqu'un.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_OVERVIEW_TITLE">
+			<Text>Vue d'ensemble du vassalage</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_LIST_MASTERS_HEADER">
+			<Text>VOS SUZERAINES</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_LIST_VASSALS_HEADER">
+			<Text>VOS VASSAUX</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_PROFILE_MASTER_HEADER">
+			<Text>DÉTAILS DU SUZERAIN</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_PROFILE_VASSAL_HEADER">
+			<Text>DÉTAILS DU VASSAL</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TURNS_AS_VASSAL">
+			<Text>Vassal depuis {1_NumTurns} tour(s) (Tour {2_TurnStarted})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_ALLOWED_LABEL">
+			<Text>Peut déclarer son indépendance :</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_RULES_SEEN_BY_MASTER_TT">
+			<Text>Si un vassal peut déclarer son indépendance, il peut révoquer son statut de vassal à tout moment. Si vous refusez cette demande, vous entrerez en guerre avec votre vassal. Un vassal IA est plus susceptible de faire cette demande s'il se sent maltraité ou s'il pense pouvoir gagner cette guerre.[NEWLINE][NEWLINE]Votre vassal peut déclarer son indépendance lorsque les conditions suivantes sont remplies :</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_RULES_SEEN_BY_VASSAL_TT">
+			<Text>Si vous pouvez déclarer votre indépendance, vous pouvez révoquer votre statut de vassal à tout moment. Attention, si votre suzerain refuse cette demande, il vous déclarera la guerre. Un suzerain IA sera plus enclin à accepter s'il vous apprécie ou s'il craint votre force militaire.[NEWLINE][NEWLINE]Vous pouvez déclarer votre indépendance lorsque les conditions suivantes sont remplies :</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_MIN_TURNS_TT">
+			<Text>1. Être vassal depuis {1_NumTurns} tour(s)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_ANY_OF_HEADER_TT">
+			<Text>2. L'une des conditions suivantes :</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_CITIES_LOST_TT">
+			<Text>[TAB][ICON_BULLET]L'équipe du vassal possède {1_CityPercent}% ou moins de villes par rapport au début du vassalage. (actuellement {2_Percent}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_POPULATION_GROWN_TT">
+			<Text>[TAB][ICON_BULLET]La [ICON_CITIZEN] population de l'équipe du vassal a dépassé {1_PopPercent}% de sa taille au début du vassalage. (actuellement {2_Percent}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_RIVALS_MASTER_TT">
+			<Text>[TAB][ICON_BULLET]L'équipe du vassal possède au moins {1_CityPercent}% du nombre de villes de l'équipe du suzerain ET au moins {2_PopPercent}% de la population [ICON_CITIZEN] de l'équipe du suzerain. (actuellement {3_Percent}% et {4_Percent}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COLUMN_KEY_FIGURES_HEADER">
+			<Text>STATISTIQUES</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COLUMN_ADMINISTRATION_HEADER">
+			<Text>GESTION</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_START_LABEL">
+			<Text>Pourcentage actuel de villes :</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_START_TT">
+			<Text>Rapport entre le nombre total de villes que votre vassal possède actuellement (équipe entière) et le nombre de villes qu'il possédait au moment où il est devenu votre vassal.[NEWLINE][NEWLINE][ICON_BULLET]Nombre de villes de l'équipe maintenant : {1_CurrentCities}[NEWLINE][ICON_BULLET]Nombre de villes de l'équipe au début du vassalage : {2_StartCities}[NEWLINE][NEWLINE]Ce joueur possède actuellement {3_PlayerCities} ville(s).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_YOUR_TEAM_LABEL">
+			<Text>Pourcentage de villes du suzerain :</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_YOUR_TEAM_TT">
+			<Text>Rapport entre le nombre total de villes que votre vassal possède actuellement (équipe entière) et le nombre de villes que votre équipe possède actuellement.[NEWLINE][NEWLINE][ICON_BULLET]Nombre de villes de l'équipe du vassal maintenant : {1_CurrentCities}[NEWLINE][ICON_BULLET]Nombre de villes de l'équipe du suzerain : {2_MasterCities}[NEWLINE][NEWLINE]Ce joueur possède actuellement {3_Cities} ville(s).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_YOUR_TEAM_LABEL">
+			<Text>Pourcentage de population du suzerain :</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_YOUR_TEAM_TT">
+			<Text>Rapport entre la population totale [ICON_CITIZEN] que votre vassal possède actuellement (équipe entière) et la population totale [ICON_CITIZEN] de votre équipe actuelle.[NEWLINE][NEWLINE][ICON_BULLET]Population totale de l'équipe maintenant : {1_CurrentPop}[NEWLINE][ICON_BULLET]Population totale de l'équipe du suzerain : {2_MasterPop}[NEWLINE][NEWLINE]Ce joueur possède actuellement {3_PlayerPop} [ICON_CITIZEN] population.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_START_LABEL">
+			<Text>Pourcentage actuel de population :</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_START_TT">
+			<Text>Rapport entre la population totale [ICON_CITIZEN] que votre vassal possède actuellement (équipe entière) et la population totale [ICON_CITIZEN] qu'il possédait au moment où il est devenu votre vassal.[NEWLINE][NEWLINE][ICON_BULLET]Population totale de l'équipe maintenant : {1_CurrentPop}[NEWLINE][ICON_BULLET]Population totale de l'équipe au début du vassalage : {2_StartPop}[NEWLINE][NEWLINE]Ce joueur possède actuellement {3_PlayerPop} [ICON_CITIZEN] population.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_BUTTON">
+			<Text>Libérer le vassal</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_TT">
+			<Text>Libérer ce vassal, le délivrant de votre contrôle. Il s'agit d'une action pacifique, qui ne provoquera pas de guerre, et entraînera un gain diplomatique très important avec votre ancien vassal.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Après avoir effectué cette action, {1_TeamName} ne sera plus votre vassal. Cette action est irréversible.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_TOO_SOON_TT">
+			<Text>Vous ne pouvez effectuer cette action qu'après avoir eu un vassal pendant au moins {1_Num} tour(s). Vous pourrez libérer ce vassal dans {2_Num} tour(s).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_RATE_LABEL">
+			<Text>Taux d'imposition : {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_OPINION_LABEL">
+			<Text>Opinion sur le vassalage : {1_szStr}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_BREAKDOWN_HEADER_TT">
+			<Text>Opinion de votre vassal sur la manière dont vous le traitez, basée sur les éléments suivants :</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_BREAKDOWN_NEUTRAL_TT">
+			<Text>L'opinion de votre vassal sur votre domination est équilibrée : rien ne la fait actuellement pencher d'un côté ou de l'autre.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_DEMANDS_TT">
+			<Text>Demandes faites : {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_TAXES_TT">
+			<Text>Politique fiscale actuelle : {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_PROTECTION_TT">
+			<Text>Protection de ses terres : {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_RELIGION_TT">
+			<Text>Intérêts religieux communs : {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_TRADE_ROUTES_TT">
+			<Text>Routes commerciales avec lui : {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_TOTAL_TT">
+			<Text>Total : {1_Sum}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_SATISFIED">
+			<Text>[COLOR_GREY]Satisfait[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_UNEASY">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]En désaccord[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_AGGRIEVED">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]Maltraité[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_RESENTFUL">
+			<Text>[COLOR_NEGATIVE_TEXT]Mécontent[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_OPPRESSED">
+			<Text>[COLOR_NEGATIVE_TEXT]Esclave[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_INCOME_SEEN_BY_MASTER_TT">
+			<Text>Vous recevez {1_Num} [ICON_GOLD] or par tour de ce vassal, basé sur {2_TaxRate}% de ses {3_Num} [ICON_GOLD] revenus bruts par tour.[NEWLINE][NEWLINE]Les taxes sont réparties équitablement entre les membres de votre équipe.[NEWLINE][NEWLINE]Le montant dû est recalculé au début de chaque tour.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_CHANGE_COOLDOWN_TT">
+			<Text>Vous ne pouvez modifier le taux d'imposition d'un vassal qu'après {1_NumTurns} tour(s) depuis votre dernier ajustement.[NEWLINE][NEWLINE]Vous pourrez effectuer un autre ajustement dans {2_NumTurnsLeft} tour(s).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_LAST_CHANGE_TURN">
+			<Text>Les taxes ont été fixées au tour {1_Turn}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_NEVER_SET_SEEN_BY_MASTER">
+			<Text>[COLOR_NEGATIVE_TEXT]Les taxes n'ont jamais été fixées pour ce vassal.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_NEXT_CHANGE_TURN">
+			<Text>Les taxes pourront être modifiées au tour {1_Turn}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_ADJUSTABLE_NOW_SEEN_BY_MASTER">
+			<Text>[COLOR_POSITIVE_TEXT]Les taxes peuvent être modifiées.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_CONFIRM_TAX_BUTTON">
+			<Text>Appliquer les changements</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_CONFIRM_TAX_BUTTON_TT">
+			<Text>Appliquer les changements au taux d'imposition du vassal. Le nouveau taux sera prélevé à partir du tour suivant et ne pourra plus être modifié pendant plusieurs tours.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_CHANGE_CONFIRM">
+			<Text>Voulez-vous vraiment appliquer un taux d'imposition de {1_TaxRate}% à {2_TeamName} ? Vous ne pourrez pas modifier cette valeur pendant {3_NumTurns} tour(s). L'impôt sera appliqué au tour suivant. [COLOR_WARNING_TEXT]Cette action est IRRÉVERSIBLE.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_CONFIRM">
+			<Text>Voulez-vous vraiment libérer {1_TeamName} ? Cela libérera TOUTES les civilisations de cette équipe de votre contrôle. [COLOR_WARNING_TEXT]Cette action est IRRÉVERSIBLE.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_CONFIRM">
+			<Text>Voulez-vous vraiment demander l'indépendance de {1_TeamName} ? Si la demande est refusée, vos civilisations entreront en [COLOR_WARNING_TEXT]guerre[ENDCOLOR]. [COLOR_WARNING_TEXT]Cette action est IRRÉVERSIBLE.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_VOLUNTARY_LABEL">
+			<Text>Vassal volontaire</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_VOLUNTARY_SEEN_BY_MASTER_TT">
+			<Text>Cette civilisation a accepté de vous servir dans le cadre d'un accord conclu en temps de paix, ou a été ramenée à la vie lorsque vous avez libéré sa capitale d'origine. Elle peut demander l'indépendance à tout moment une fois une courte période minimale écoulée.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_CAPITULATED_LABEL">
+			<Text>Vassal capitulé</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_CAPITULATED_SEEN_BY_MASTER_TT">
+			<Text>Les vassaux capitulés sont des vassaux obtenus après avoir été fortement affaiblis pendant la guerre. Les vassaux capitulés sont entièrement soumis au suzerain et ne peuvent quitter ce statut qu'après avoir rempli une série de conditions.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TOTAL_POPULATION_LABEL">
+			<Text>[ICON_CITIZEN] Population</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_HAPPINESS_LEVEL_LABEL">
+			<Text>Bonheur</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_GROSS_GOLD_PER_TURN_LABEL">
+			<Text>[ICON_GOLD] Revenus bruts d'or par tour</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_NET_GOLD_PER_TURN_LABEL">
+			<Text>[ICON_GOLD] Or net par tour</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TRADE_ROUTES_USED_LABEL">
+			<Text>[ICON_TURNS_REMAINING] Routes commerciales</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TRADE_ROUTES_USED_OF_TOTAL">
+			<Text>{1_TradeRoutesUsed} / {2_TradeRoutesAvailable}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_IDEOLOGY_PASSTHROUGH">
+			<Text>{1_Str}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_CULTURE_PER_TURN_LABEL">
+			<Text>[ICON_CULTURE] Culture</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TOURISM_PER_TURN_LABEL">
+			<Text>[ICON_TOURISM] Tourisme</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_FAITH_PER_TURN_LABEL">
+			<Text>[ICON_PEACE] Foi</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_SCIENCE_PER_TURN_LABEL">
+			<Text>[ICON_RESEARCH] Science</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_CITY_COMPARISON_HEADER">
+			<Text>Villes</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_DEMOGRAPHICS_HEADER">
+			<Text>Population</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_GOLD_AND_TRADE_HEADER">
+			<Text>Économie</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_CULTURE_AND_IDEOLOGY_HEADER">
+			<Text>Culture</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_RELIGION_AND_FAITH_HEADER">
+			<Text>Religion</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_RESEARCH_HEADER">
+			<Text>Science</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_NO_IDEOLOGY">
+			<Text>Aucune idéologie</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_NO_PREVAILING_RELIGION">
+			<Text>Aucune religion majoritaire</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_PREVAILING_RELIGION">
+			<Text>Religion majoritaire : {1_szReligion}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_CURRENT_IDEOLOGY">
+			<Text>Idéologie adoptée : {1_szIdeology}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_INCOME_SEEN_BY_MASTER">
+			<Text>Reçoit {1_Num} [ICON_GOLD] or par tour de ce joueur</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TOURISM_MOD_VASSAL_BONUS">
+			<Text>+{1_Num}% bonus pour être votre vassal[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_TAXES_HEADER">
+			<Text>Fiscalité</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_RELATIONS_HEADER">
+			<Text>Diplomatie</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_INDEPENDENCE_CONDITIONS_HEADER">
+			<Text>Indépendance</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_LIST_EMPTY_NO_VASSALS">
+			<Text>Vous n'avez aucun vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_ALLOWED_WITH_VALUE">
+			<Text>Peut déclarer l'indépendance : {1_Str}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_VALUE_LEADER_AND_TEAM">
+			<Text>{1_Num} (équipe {2_iTeamNum})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_VALUE_TEAM_PERCENT">
+			<Text>{1_iTeamNum}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_VALUE_LEADER_AND_TEAM_PERCENT">
+			<Text>{1_Num}% (équipe {2_iTeamNum}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_POPULATION_LABEL">
+			<Text>Votre population [ICON_CITIZEN]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_POPULATION_TT">
+			<Text>Notre population [ICON_CITIZEN] (population de l'équipe)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_POPULATION_LABEL">
+			<Text>Leur population [ICON_CITIZEN]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_POPULATION_TT">
+			<Text>Leur population [ICON_CITIZEN] (population de l'équipe)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_RATIO_LABEL">
+			<Text>% de population [ICON_CITIZEN]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_RATIO_TT">
+			<Text>Ratio entre notre population [ICON_CITIZEN] et celle de {1_MasterPlayer}.[NEWLINE][NEWLINE]Ratio entre la population du joueur (ratio entre la population de l'équipe)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_SINCE_START_LABEL">
+			<Text>% de population depuis le début du vasselage [ICON_CITIZEN]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_SINCE_START_TT">
+			<Text>Ratio entre la population [ICON_CITIZEN] actuelle de notre équipe et celle que nous avions lorsque nous sommes devenus le vassal de {1_TeamName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_CITIES_LABEL">
+			<Text>Votre nombre de villes</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_CITIES_TT">
+			<Text>Nombre de nos villes (nombre de villes de l'équipe)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_CITIES_LABEL">
+			<Text>Leur nombre de villes</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_CITIES_TT">
+			<Text>Nombre de leurs villes (nombre de villes de l'équipe)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITY_RATIO_LABEL">
+			<Text>% de villes</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITY_RATIO_TT">
+			<Text>Ratio entre notre nombre de villes et celui de {1_MasterPlayer}.[NEWLINE][NEWLINE]Ratio entre les villes du joueur (ratio entre les villes de l'équipe)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITIES_SINCE_START_LABEL">
+			<Text>% de villes depuis le début du vasselage</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITIES_SINCE_START_TT">
+			<Text>Ratio entre le nombre de villes actuel de notre équipe et celui que nous avions lorsque nous sommes devenus le vassal de {1_TeamName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_ADJUSTABLE_NOW_SEEN_BY_VASSAL">
+			<Text>[COLOR_GREY]Votre maître peut modifier vos taxes ce tour.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_NEVER_SET_SEEN_BY_VASSAL">
+			<Text>[COLOR_POSITIVE_TEXT]Votre maître n'a jamais défini de taxes pour vous.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_PAYMENT_SEEN_BY_VASSAL">
+			<Text>Reçoit {1_Num} [ICON_GOLD] or par tour de vous !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_BUTTON">
+			<Text>Demander l'indépendance</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_TT">
+			<Text>Demander l'indépendance de votre maître. Après cette action, votre vasselage avec {1_TeamName} prendra fin.[NEWLINE][NEWLINE]Votre maître pourra accepter ou refuser votre demande. En cas de refus, vous entrerez en guerre contre lui ! Plus votre puissance est grande par rapport à celle de votre maître, et plus il vous apprécie, plus vos chances d'obtenir l'indépendance pacifiquement augmentent.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_TOO_SOON_TT">
+			<Text>[COLOR_NEGATIVE_TEXT]Vous ne pouvez pas demander l'indépendance tant que vous n'avez pas été vassal pendant {1_MinimumTurns} tours. Vous pourrez effectuer cette action dans {2_iNumTurns} tour(s).[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_CONDITIONS_UNMET_TT">
+			<Text>[COLOR_NEGATIVE_TEXT]Vous ne pouvez pas demander l'indépendance tant que vous n'avez pas rempli toutes les conditions requises. Survolez "Peut déclarer l'indépendance" pour voir les exigences nécessaires.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_RATE_SEEN_BY_VASSAL_TT">
+			<Text>Vous payez {1_Num}% de vos revenus bruts [ICON_GOLD] or par tour en taxes. Vous ne pouvez pas contrôler le taux d'imposition que {2_TeamName} fixe pour vous. Les taxes sont appliquées individuellement à chaque membre vassal de l'équipe.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_PAYMENT_SEEN_BY_VASSAL_TT">
+			<Text>Ils reçoivent {1_Num} [ICON_GOLD] or par tour de vous, basé sur {2_TaxRate}% de vos {3_Num} [ICON_GOLD] revenus bruts par tour.[NEWLINE][NEWLINE]Vos revenus imposés sont calculés au début de votre tour.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_MASTER_BENEFITS_HEADER">
+			<Text>Bénéfices pour le maître</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_OPEN_BORDERS_INTO_VASSALS">
+			<Text>[ICON_BULLET] Frontières ouvertes chez les vassaux</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_DOUBLE_RELIGIOUS_PRESSURE">
+			<Text>[ICON_BULLET] +100% de pression [ICON_PEACE] sur les villes vassales</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_TOURISM_BONUS">
+			<Text>[ICON_BULLET] +33% de tourisme [ICON_TOURISM] envers les vassaux</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_DIPLOMAT_IN_VASSAL_CAPITAL">
+			<Text>[ICON_BULLET] [ICON_DIPLOMAT] Diplomate gratuit en capitale [ICON_CAPITAL] vassale</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_SHARE_OF_VASSAL_YIELDS">
+			<Text>[ICON_BULLET] Vous recevez 20% de [ICON_RESEARCH], [ICON_CULTURE] et [ICON_PEACE] du vassal</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_AI_VASSALS_ADOPT_IDEOLOGY">
+			<Text>[ICON_BULLET] Les vassaux IA adoptent l'idéologie du maître</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_BUY_VASSAL_UNIQUE_UNITS">
+			<Text>[ICON_BULLET] Achat des unités exclusives des vassaux avec de l'[ICON_GOLD] or</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_VOLUNTARY_SEEN_BY_VASSAL_TT">
+			<Text>En tant que vassal volontaire, vous comptez sur {1_Name} pour protéger vos terres. Contrairement à un vassal capitulé, vous pouvez demander l'indépendance à tout moment une fois une courte période minimale écoulée.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_CAPITULATED_SEEN_BY_VASSAL_TT">
+			<Text>Vous avez capitulé face à {1_Name} dans un traité de paix, l'indépendance est donc difficile à obtenir. Après une durée minimale, vous devez en plus perdre trop de villes malgré la protection de votre maître, faire fortement croître votre population [ICON_CITIZEN], ou vous rapprocher de votre maître à la fois en nombre de villes et en population [ICON_CITIZEN].</Text>
+		</Replace>
+<!--DIPLOMACY-->
+		<Replace Tag="TXT_KEY_GAIA_OPINION_THEY_ARE_YOUR_VASSAL">
+			<Text>Ils sont notre état vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_THEY_ARE_YOUR_VOLUNTARY_VASSAL">
+			<Text>Ils sont notre vassal volontaire.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_CONTENT">
+			<Text>Ils sont satisfaits de votre traitement en tant que suzerain.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_DISAGREE">
+			<Text>Ils désapprouvent certains aspects de votre domination sur eux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_MISTREATED">
+			<Text>Ils estiment être maltraités sous votre domination !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_UNHAPPY">
+			<Text>Ils sont extrêmement mécontents de votre domination !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_ENSLAVED">
+			<Text>Ils estiment être réduits en esclavage sous votre domination !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_DEFENDED_THEM">
+			<Text>Vous avez protégé leur territoire en tant que suzerain !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_FAILED_DEFENSE">
+			<Text>Vous n'avez pas protégé leur territoire en tant que suzerain !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_FREED_THEM_UNASKED">
+			<Text>Vous les avez libérés sans qu'ils le demandent.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_INDEPENDENCE_GRANTED">
+			<Text>Vous leur avez accordé l'indépendance !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_INDEPENDENCE_REFUSED">
+			<Text>Vous avez refusé de leur accorder l'indépendance quand ils l'ont demandée !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_ATTACKED_THEM">
+			<Text>Vous leur avez déclaré la guerre alors qu'ils étaient votre vassal !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_FEARS_YOUR_VASSAL_COUNT">
+			<Text>Ils craignent votre acquisition de plusieurs vassaux !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_ASK_WITHDRAW_BORDER_TROOPS">
+			<Text>Veuillez retirer vos troupes de notre frontière.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_ASK_WITHDRAW_BORDER_TROOPS_HOSTILE">
+			<Text>Vous comptez nous attaquer, misérable ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_ASK_WITHDRAW_BORDER_TROOPS_TT">
+			<Text>Demandez au dirigeant de retirer ses troupes de votre frontière. S'il accepte, il ne planifiera pas de guerre contre vous pendant un certain temps. S'il refuse, il vous déclarera immédiatement la guerre, alors prudence !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_SHARE_OPINION">
+			<Text>Que pensez-vous de...</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_VOLUNTARY_VASSAL">
+			<Text>ÉTAT VASSAL</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_VOLUNTARY_VASSAL_TT">
+			<Text>Devenir volontairement le vassal d'une autre civilisation. Un vassal volontaire peut demander l'indépendance à son suzerain une fois {1_Num} tours écoulés.[NEWLINE][NEWLINE]AVERTISSEMENT : un vassal suit son suzerain dans la guerre comme dans la paix. Dès son entrée en vassalité, il fait immédiatement la paix avec tous ceux que son suzerain ne combat pas et entre dans toutes les guerres que mène son suzerain.[NEWLINE][NEWLINE]Si la civilisation qui se soumet possède des vassaux, ceux-ci deviennent les vassaux du nouveau suzerain.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_CAPITULATE">
+			<Text>CAPITULATION</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_RELEASE_ALL_VASSALS">
+			<Text>LIBÉRATION</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_RELEASE_ALL_VASSALS_TT">
+			<Text>Cette civilisation renonce à son contrôle sur tous ses vassaux, et chacun d'eux redevient indépendant. Ne peut être utilisé que si elle a au moins un vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_CAPITULATE_TT">
+			<Text>Cette civilisation se rend à l'autre joueur et devient son État vassal. Elle ne peut capituler que devant une civilisation qui tient sa capitale d'origine. Une civilisation capitulée ne peut se libérer de son maître qu'après {1_Num} tours.[NEWLINE][NEWLINE]Si la civilisation qui capitule possède des vassaux, ces derniers passent au nouveau maître.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_REFUSE_VASSAL_INDEPENDENCE">
+			<Text>Si vous voulez votre liberté, il vous faudra vous battre pour l'obtenir. (GUERRE)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_GRANT_VASSAL_INDEPENDENCE">
+			<Text>Très bien. Nous vous accordons votre indépendance.</Text>
+		</Replace>
+<!--TOP PANEL-->
+		<Replace Tag="TXT_KEY_GAIA_TP_HAPPINESS_SHARED_BY_VASSALS">
+			<Text>{1_Num} provenant du bonheur des vassaux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_CULTURE_SHARED_BY_VASSALS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] provenant des vassaux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_SCIENCE_SHARED_BY_VASSALS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_RESEARCH] provenant des vassaux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_SHARED_BY_VASSALS">
+			<Text>{1_Num} provenant des vassaux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_FAITH_SHARED_BY_VASSALS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] provenant des vassaux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_VASSAL_UPKEEP">
+			<Text>{1_Num} dépensés pour l'entretien des vassaux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_VASSAL_TAX_COLLECTED">
+			<Text>{1_Num} provenant des impôts des vassaux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_VASSAL_TAX_PAID">
+			<Text>{1_Num} versés en taxes à votre maître.</Text>
+		</Replace>
+<!--OTHER-->		
+		<Replace Tag="TXT_KEY_NOTIFICATION_CIV_RESURRECTED">
+			<Text>{1_PlayerName} a conquis {2_CityName} et restauré la souveraineté de {3_CivAdj}. La flamme de {4_CivName}, autrefois éteinte, brûle à nouveau. {4_CivName} est désormais le vassal de {1_Playername}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POPUP_CITY_CAPTURE_INFO_LIBERATE_RESURRECT">
+			<Text>Cette ville appartenait auparavant à [COLOR_POSITIVE_TEXT]{@1_PlayerName}[ENDCOLOR]. Vous avez la possibilité de la leur rendre, ce qui leur vaudra une grande reconnaissance. Cela fera de ce joueur votre [COLOR_POSITIVE_TEXT]vassal volontaire[ENDCOLOR].</Text>
+		</Replace>
+		<!-- Notifications -->
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALS_UNLOCKED_SUMMARY">
+			<Text>Vassalité activée !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALS_UNLOCKED">
+			<Text>Vous avez atteint l'ère {1_EraName} : vous pouvez désormais acquérir des vassaux !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_CAPITULATED">
+			<Text>Face à une défaite presque certaine, {1_TeamName} s'est soumis à notre grande civilisation en tant que vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_CAPITULATED_SUMMARY">
+			<Text>{1_TeamName} a capitulé devant nous !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_VOLUNTARY">
+			<Text>Reconnaissant votre grande puissance, {1_TeamName} a accepté de se placer sous votre protection en tant que vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_VOLUNTARY_SUMMARY">
+			<Text>{1_TeamName} est désormais notre vassal volontaire !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_BECAME_VASSAL">
+			<Text>Votre civilisation sert désormais {1_TeamName} en tant que vassal. Dorénavant, vous suivez votre suzerain dans chacune de ses guerres et chacune de ses paix.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_BECAME_VASSAL_SUMMARY">
+			<Text>Vous êtes désormais le vassal de {1_TeamName} !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE">
+			<Text>{1_PlyrName} est désormais le vassal de {2_PlyrName} !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE_UNMET_VASSAL_SUMMARY">
+			<Text>{1_PlyrName} a acquis un nouveau vassal !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE_UNMET_VASSAL">
+			<Text>{1_PlyrName} a fait de {2_PlyrName} son nouveau vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE_UNMET_MASTER">
+			<Text>{1_PlyrName} est désormais le vassal de {2_PlyrName} !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_UNMET_PLAYER_TOOK_VASSAL">
+			<Text>{1_PlyrName} a acquis un nouveau vassal !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_LEFT_YOU_SUMMARY">
+			<Text>{1_TeamName} n'est plus votre vassal !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_LEFT_YOU_PEACEFULLY">
+			<Text>{1_TeamName} n'est plus sous notre domination et se gouverne de nouveau.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Ils ne sont plus notre vassal.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_LEFT_YOU_BY_WAR">
+			<Text>Les chiens perfides menés par {1_TeamName} ont pris les armes contre notre empire ! Ils ont déclaré leur indépendance et sont prêts à se battre jusqu'à la mort pour défendre leur cause.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Ils ne sont plus notre vassal.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_LEFT_MASTER_SUMMARY">
+			<Text>Vous n'êtes plus le vassal de {1_TeamName} !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_LEFT_MASTER_PEACEFULLY">
+			<Text>Notre vasselage envers {1_TeamName} a pris fin. Nous ne suivons plus notre ancien suzerain dans la guerre ni dans la paix et pouvons de nouveau tracer notre propre voie.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_LEFT_MASTER_BY_WAR">
+			<Text>Vive la révolution ! Notre peuple a pris les armes pour défendre le droit de notre pays à l'indépendance face à la domination de {1_TeamName} !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_ENDED_ELSEWHERE">
+			<Text>{1_PlyrName} n'est plus le vassal de {2_PlyrName} !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_TAX_CAN_BE_SET">
+			<Text>Le taux d'imposition de {1_PlyrName} peut être modifié !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_RAISED_YOUR_TAX_SUMMARY">
+			<Text>Impôts augmentés !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_RAISED_YOUR_TAX">
+			<Text>{1_TeamName} a augmenté vos impôts de {2_Num}% à {3_Num}% !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_LOWERED_YOUR_TAX_SUMMARY">
+			<Text>Impôts réduits !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_LOWERED_YOUR_TAX">
+			<Text>{1_TeamName} a réduit vos impôts de {2_Num}% à {3_Num}% !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_CAN_BE_LIBERATED_SUMMARY">
+			<Text>Libération possible !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_CAN_BE_LIBERATED">
+			<Text>Parce qu'ils sont notre vassal depuis de nombreuses années, nous pouvons désormais libérer {1_TeamName} !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_REPLAY_VASSALAGE_BEGAN">
+			<Text>{1_TeamName} est devenu le vassal de {2_TeamName} !</Text>
+		</Replace>
+<!--VASSALAGE RESOLUTION-->
+		<Replace Tag="TXT_KEY_RESOLUTION_GAIA_END_ALL_VASSALS">
+			<Text>Libération globale</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOLUTION_GAIA_END_ALL_VASSALS_HELP">
+			<Text>Toutes les relations Maître-Vassal sont immédiatement et pacifiquement annulées.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEAGUE_PROPOSAL_INVALID_NOBODY_HAS_VASSALS">
+			<Text>Non autorisé en l'absence de vassaux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_THEY_ARE_YOUR_MASTER">
+			<Text>Ils sont satisfaits de vous avoir pour vassal.</Text>
+		</Replace>
+		<!-- VictoryProgress domination tooltips + VassalageOverview static labels -->
+		<Replace Tag="TXT_KEY_GAIA_SCORE_BREAKDOWN_VASSALS_LABEL">
+			<Text>Vassaux</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_YOU_ARE_VASSAL_OF_PLAYER">
+			<Text>[SPACE]{1_PlayerName} vous contrôle en tant que vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CIV_IS_YOUR_VASSAL">
+			<Text>[SPACE]Vous contrôlez {1_CivName} en tant que vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CIV_IS_VASSAL_OF_PLAYER">
+			<Text>[SPACE]{1_PlayerName} contrôle {2_CivName} en tant que vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_UNMET_VASSAL_OF_UNMET_PLAYER">
+			<Text> Un joueur inconnu contrôle une autre civilisation inconnue en tant que vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CITY_STATE_HOLDS_CAPITAL_FOR_ALLY">
+			<Text>La cité-état de {1_Name} contrôle {2_Num}. Elle apporte cette ville à son allié. Rompez son alliance ou prenez-lui la [ICON_CAPITAL] capitale ![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CITY_STATE_HOLDS_CAPITAL_FOR_ALLYS_MASTER">
+			<Text>La cité-état de {1_Name} contrôle {2_Num}. Elle apporte cette ville au maître de son allié. Rompez son alliance, libérez son allié ou prenez-lui la [ICON_CAPITAL] capitale ![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CITY_STATE_HOLDS_CAPITAL_NO_ALLY">
+			<Text>La cité-état de {1_Name} contrôle {2_Num}. Elle n'a actuellement aucun allié. Devenez son allié ou prenez-lui la [ICON_CAPITAL] capitale ![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_VASSAL_HOLDS_CAPITAL_FOR_MASTER">
+			<Text>{1_Name} contrôle {2_Num}. Elle apporte cette ville à son maître. Libérez-la ou prenez-lui la [ICON_CAPITAL] capitale ![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_VASSAL_KIND_DEFAULT">
+			<Text>Vassal</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_CONFIRM_DIALOG_DEFAULT">
+			<Text>Confirmez-vous ?</Text>
+		</Replace>
+<!--VASSAL RELATIONSHIP UI + NOTIFICATION-->
+		<Replace Tag="TXT_KEY_GAIA_WAR_BLOCKED_WHILE_VASSAL_TT">
+			<Text>May not declare war as a vassal (war is automatically declared when your Master declares war with this civilization).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_BLOCKED_ON_OWN_MASTER_TT">
+			<Text>You cannot declare war on your Master until you request independence or are liberated.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_WHILE_VASSAL_TT">
+			<Text>Vous ne pouvez pas négocier la paix en tant que vassal. La paix avec ce joueur se fait automatiquement lorsque votre suzerain la conclut avec lui.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_TARGET_IS_VASSAL_TT">
+			<Text>Vous ne pouvez pas négocier la paix avec cette civilisation, car c'est un vassal. Faites la paix avec son suzerain, {1_MasterName}, et elle suivra.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_MAY_NOT_ATTACK_VASSAL">
+			<Text>Impossible de leur déclarer la guerre directement : ils sont vassaux. La guerre doit être déclarée à leur suzerain, {1_MasterName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DECLARE_WAR_TARGET_VASSALS_HEADER">
+			<Text>VALETS</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELATIONS_YOUR_MASTER_LABEL">
+			<Text>[COLOR_GREY]Vous êtes leur vassal[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELATIONS_VASSAL_STATE_UNDER">
+			<Text>[COLOR_GREY]Vassal de {1_CivName:textkey}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DIPLO_SCORE_FROM_VASSALS">
+			<Text>{1_Num} des vassaux</Text>
+		</Replace>
+	</Language_FR_FR>
+</GameData>

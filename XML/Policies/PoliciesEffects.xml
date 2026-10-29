@@ -2005,7 +2005,6 @@
 			<Help>TXT_KEY_PROMOTION_PASSABLE_WORKER_TECH</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<CanCrossMountains>true</CanCrossMountains>
 			<CanMoveImpassable>true</CanMoveImpassable>
 			<AlwaysHeal>true</AlwaysHeal>
 			<FriendlyHealChange>50</FriendlyHealChange>
@@ -3540,11 +3539,7 @@
 	</Building_ResourceQuantity>
 	
 
-	<Policy_FaithPurchaseUnitClasses>
-		<Delete UnitClassType="UNITCLASS_GREAT_DIPLOMAT"/>
-		
-	</Policy_FaithPurchaseUnitClasses>
-
+	
 
 
 

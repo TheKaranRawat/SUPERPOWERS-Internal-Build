@@ -162,7 +162,6 @@
 			<Description>TXT_KEY_IMPROVEMENT_MOUNTAIN_ROCKS</Description>
 			<Help>TXT_KEY_CIV5_IMPROVEMENTS_MOUNTAIN_ROCKS_HELP</Help>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_QUARRY</ArtDefineTag>
-			<MountainsMakesValid>true</MountainsMakesValid>
 			<NoTwoAdjacent>true</NoTwoAdjacent>
 			<PortraitIndex>15</PortraitIndex>
 			<IconAtlas>SP_IMPROVEMENTS_ATLAS</IconAtlas>

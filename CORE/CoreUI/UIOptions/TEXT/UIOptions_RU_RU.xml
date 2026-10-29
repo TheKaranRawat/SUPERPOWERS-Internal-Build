@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<!-- User Interface Options text (Gaia's Core Mod) -->
+<GameData>
+	<Language_RU_RU>
+		<!-- Dropdown entry (cyan) + popup title (beige) -->
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTIONS">
+			<Text>[COLOR_CYAN]Настройки интерфейса[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTIONS_TITLE">
+			<Text>Настройки интерфейса</Text>
+		</Replace>
+		<!-- Display toggles -->
+		<Replace Tag="TXT_KEY_GAIA_SMALL_RESOURCE_ICONS">
+			<Text>Маленькие иконки ресурсов</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SMALL_RESOURCE_ICONS_HELP">
+			<Text>Заменяет иконки ресурсов на 3D-карте на уменьшенные версии.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTION_PROMOTION_ICONS">
+			<Text>Значки повышений</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UI_OPTION_PROMOTION_ICONS_HELP">
+			<Text>Показывает повышения каждого юнита в виде маленьких значков на его флаге.</Text>
+		</Replace>
+		<!-- Map Overlays -->
+		<Replace Tag="TXT_KEY_GAIA_MAP_OVERLAYS">
+			<Text>Наложения на карту</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MAP_OVERLAYS_HELP">
+			<Text>Показывает полезные наложения на карту для выбранного юнита или города. Включите эту функцию, затем выберите ниже, какие наложения отображать.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_CITY_LIMITS">
+			<Text>Границы города</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_CITY_LIMITS_HELP">
+			<Text>Обводит клетки, которые город может обрабатывать, в режиме города, а также будущий город поселенца, затеняя клетки, пересекающиеся с соседним городом.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_COMMANDER">
+			<Text>Влияние командира</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_COMMANDER_HELP">
+			<Text>Обводит радиус ауры выбранного великого генерала или великого адмирала.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_DIG_SITES">
+			<Text>Места раскопок</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_DIG_SITES_HELP">
+			<Text>Подсвечивает открытые клетки с артефактами, когда выбран археолог; места, уже намеченные одним из ваших археологов, отмечаются другим цветом.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_MOVEMENT_PATH">
+			<Text>Путь передвижения</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OVERLAY_MOVEMENT_PATH_HELP">
+			<Text>Прочерчивает намеченный маршрут передвижения выбранного юнита и обводит клетку назначения.</Text>
+		</Replace>
+		<!-- Quick Animations -->
+		<Replace Tag="TXT_KEY_GAIA_QUICK_ANIMATIONS">
+			<Text>Быстрая Анимация</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_QUICK_ANIMATIONS_HELP">
+			<Text>Ускоряет ходы, пропуская анимации боя и передвижения. Включите эту функцию, затем выберите ниже, когда она применяется.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_PLAYER_WAR">
+			<Text>Быстрая Война (Игрок)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_PLAYER_WAR_TOOLTIP">
+			<Text>Отключить анимации для игрока во время войны.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_PLAYER_PEACE">
+			<Text>Быстрый Мир (Игрок)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_PLAYER_PEACE_TOOLTIP">
+			<Text>Отключить анимации для игрока в мирное время.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_AI_WAR">
+			<Text>Быстрая Война (ИИ)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_AI_WAR_TOOLTIP">
+			<Text>Отключает анимации для ходов ИИ-цивилизаций, воюющих с вами. Ходы ИИ в мирное время всегда быстрые (больше не настраивается).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_OPT_BARBARIANS">
+			<Text>Быстрые Варвары</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FURIOUSTURNS_BARBARIAN_TOOLTIP">
+			<Text>Отключить анимации для варваров. Варвары всегда находятся в состоянии войны, поэтому настройки всегда применяются.</Text>
+		</Replace>
+		<!-- Vanilla options-screen tooltip overrides -->
+		<Replace Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_COMBAT_TT">
+			<Text>
+				Включает быстрое разрешение боёв в одиночных играх.
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Внимание:[ENDCOLOR] Включение этой настройки во время игры автоматически отключит [COLOR_CYAN]Быструю Анимацию[ENDCOLOR]. Вы можете снова включить её через [COLOR_CYAN]Настройки интерфейса[ENDCOLOR] в выпадающем меню Уголка Дипломатии.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_OPSCREEN_SPLAYER_QUICK_MOVEMENT_TT">
+			<Text>
+				Включает быстрое передвижение юнитов в одиночных играх.
+				[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Внимание:[ENDCOLOR] Включение этой настройки во время игры автоматически отключит [COLOR_CYAN]Быструю Анимацию[ENDCOLOR]. Вы можете снова включить её через [COLOR_CYAN]Настройки интерфейса[ENDCOLOR] в выпадающем меню Уголка Дипломатии.
+			</Text>
+		</Replace>
+		<!-- Auto End Turn button -->
+		<Replace Tag="TXT_KEY_GAIA_AUTO_END_TURN_BUTTON">
+			<Text>Кнопка автозавершения хода</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AUTO_END_TURN_BUTTON_HELP">
+			<Text>Показывает рядом с кнопкой Завершить ход кнопку, которая одним нажатием включает и выключает автозавершение хода (одиночная игра).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_STATE_ON">
+			<Text>Сейчас [COLOR_POSITIVE_TEXT]включено[ENDCOLOR]. Нажмите, чтобы выключить.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_STATE_OFF">
+			<Text>Сейчас [COLOR_NEGATIVE_TEXT]выключено[ENDCOLOR]. Нажмите, чтобы включить.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TAET_HIDE_HINT">
+			<Text>Эту кнопку можно скрыть в [COLOR_CYAN]Настройках интерфейса[ENDCOLOR] в выпадающем меню Уголка Дипломатии.</Text>
+		</Replace>
+		<!-- Production menu toggles -->
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_SORT">
+			<Text>Сортировка зданий по стоимости</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_SORT_HELP">
+			<Text>Упорядочивает список зданий в меню производства города от самых дешёвых, по числу ходов до завершения при строительстве и по цене при покупке. Если выключено, здания группируются по эпохам.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_HIDE">
+			<Text>Скрытие элементов по городам</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PRODUCTION_HIDE_HELP">
+			<Text>Shift+щелчок по элементу в меню производства города скрывает его только в этом городе, как при строительстве, так и при покупке. Скрытые элементы переходят в раздел «Скрытые» внизу списка, где Shift+щелчок снова их показывает. Каждый город хранит свой список в сохранении. Если выключено, показываются все элементы, а списки сохраняются.</Text>
+		</Replace>
+	</Language_RU_RU>
+</GameData>

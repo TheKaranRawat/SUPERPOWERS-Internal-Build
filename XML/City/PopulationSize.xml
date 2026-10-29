@@ -76,7 +76,6 @@
 			<Defense>1000</Defense>
 			<ExtraCityHitPoints>40</ExtraCityHitPoints>
 			<Happiness>-1</Happiness>
-			<CityWorkingChange>1</CityWorkingChange>
 			<TradeRouteSeaGoldBonus>500</TradeRouteSeaGoldBonus>
 			<TradeRouteLandGoldBonus>500</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>10</TradeRouteRecipientBonus>
@@ -143,7 +142,6 @@
 			<ExtraCityHitPoints>120</ExtraCityHitPoints>
 			<FoodKept>-5</FoodKept>
 			<Happiness>-6</Happiness>
-			<CityWorkingChange>1</CityWorkingChange>
 			<TradeRouteSeaGoldBonus>2000</TradeRouteSeaGoldBonus>
 			<TradeRouteLandGoldBonus>2000</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>30</TradeRouteRecipientBonus>
@@ -4199,6 +4197,8 @@
 			<Yield>1000</Yield>
 		</Row>
 	</Building_YieldChangesPerReligion>
+
+	
 	
 	
 

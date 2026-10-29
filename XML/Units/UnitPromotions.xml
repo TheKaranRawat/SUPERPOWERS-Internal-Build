@@ -5,10 +5,7 @@
 	<!--Be very careful with the <GreatGeneral/> Tag, CIV 5 will treat any unit born with it as great generals! And may cause real great generals fail to appear!-->
 
 
-	<UnitPromotions_UnitName>
-		<Delete PromotionType="PROMOTION_ENEMY_BLADE"/>
-		<Delete PromotionType="PROMOTION_EVIL_SPIRITS"/>
-	</UnitPromotions_UnitName>
+	
 
 	<!-- postfuture promotions-->
 
@@ -6370,7 +6367,6 @@
 			<Help>TXT_KEY_PROMOTION_CAN_CROSS_MOUNTAINS</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PortraitIndex>0</PortraitIndex>
-			<CanCrossMountains>true</CanCrossMountains>
 			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_SCOUTING</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_CAN_CROSS_MOUNTAINS</PediaEntry>

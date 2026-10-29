@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<!-- Building era-population requirement -->
+	<Language_KO_KR>
+		<Replace Tag="TXT_KEY_BUILDING_NEED_MORE_POP">
+			<Text>[NEWLINE]{2_BuildingName:textkey}을(를) 건설하려면 [ICON_CITIZEN] 인구가 {1_Num} 더 필요합니다.</Text>
+		</Replace>
+		<!-- Empire-level mutual exclusion: production-list tooltip -->
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_EMPIRE_EXCLUSIVE">
+			<Text>[NEWLINE]제국이 {1_BuildingName:textkey}을(를) 보유하거나 건설 중인 동안에는 건설할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_CITY_EXCLUSIVE">
+			<Text>[NEWLINE]이 도시가 {1_BuildingName:textkey}을(를) 보유하는 동안에는 건설할 수 없습니다.</Text>
+		</Replace>
+		<!-- War-only unit: production-list tooltip -->
+		<Replace Tag="TXT_KEY_NO_ACTION_UNIT_REQUIRES_WAR">
+			<Text>[NEWLINE]주요 문명과 전쟁 중일 때만 훈련할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_MET_CIV_UNIQUE_UNITS_MAX">
+			<Text>[NEWLINE]이 유닛을 이미 {1_Num}개 보유하고 있어 더 구매할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_NEED_TENETS">
+			<Text>[NEWLINE]이 이념의 주의가 최소 {1_Num}개 필요합니다.</Text>
+		</Replace>
+		<!-- Unique buildings of absent civilizations take effect -->
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_ABSENT_CIV_UNIQUES">
+			<Text>잃어버린 문명이 당신의 제국에서 되살아납니다: 이제 {1_Buildings}이(가) 일반 건물을 대체합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_ABSENT_CIV_UNIQUES">
+			<Text>고유 건물 복원</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_ABSENT_CIV_UNIQUES_DRAWN">
+			<Text>{2_Building:textkey}은(는) 이 세계에 없는 문명들의 고유 건물을 복원합니다: {1_Buildings}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_ABSENT_CIV_UNIQUES_DRAWN">
+			<Text>잃어버린 문명 기록</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ABSENT_CIV_UNIQUES_TOOLTIP">
+			<Text>되살아난 고유 건물:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ABSENT_CIV_UNIQUE_BASE">
+			<Text>({2_Civ:textkey}: {3_Building:textkey})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_BUILDING_TT_RELIGIOUS_PRESSURE_MOD">
+			<Text>[ICON_PEACE] 종교 압력: +{1_Num}%</Text>
+		</Replace>
+		<!-- Feature hazard strike -->
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_FEATURE_HAZARD_VICTIM">
+			<Text>당신의 {1_Unit:textkey}이(가) {2_Hazard:textkey}의 공격을 받아 체력을 {3_Num} 잃었습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_FEATURE_HAZARD_HOLDER">
+			<Text>{2_Hazard:textkey}이(가) 당신의 영토에서 적 {1_Unit:textkey}을(를) 공격했습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_FEATURE_HAZARD">
+			<Text>{1_Hazard:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID">
+			<Text>해안 습격</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID_HELP">
+			<Text>하선하지 않고 배 위에서 인접한 적 시설을 약탈합니다. 약탈 이동력이 소모되며, 이동력 소모 없이 약탈하는 유닛은 무료입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID_DISABLED_HELP">
+			<Text>습격할 인접한 적 시설이 없거나 남은 이동력이 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPOILS_CARRIED">
+			<Text>{@1_UnitName}이(가) 이제 전리품 [ICON_GOLD] {2_Num}을(를) 지니고 있습니다</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_SPOILS">
+			<Text>전리품: 약탈로 모은 [ICON_GOLD] 금 {1_Num}. 이 유닛이 아군 영토에 들어오면 [ICON_PRODUCTION] 생산력과 [ICON_CULTURE] 문화로 지급됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_PLUNDER_PROTECTED">
+			<Text>이 [ICON_INTERNATIONAL_TRADE] 교역로는 근처의 호위 유닛이 보호하고 있어 약탈할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_REPAIR_AT_WAR">
+			<Text>약탈된 시설은 적의 영토에서 수리할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SPOILS">
+			<Text>{@1_UnitName}이(가) 전리품을 가지고 돌아왔습니다: {@3_CityName}에 [ICON_PRODUCTION] 생산력 +{2_Num}, [ICON_CULTURE] 문화 +{4_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SPOILS">
+			<Text>전리품 지급: {1_Num} [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED">
+			<Text>창시 문명({4_CivName})이 멸망했습니다. 종교인 {@2_ReligionName}은(는) 이제 성도 {@3_CityName}을(를) 보유한 문명의 것입니다: {1_CivName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED_ACTIVE_PLAYER">
+			<Text>창시 문명({3_CivName})이 멸망했습니다. 성도 {@2_CityName}을(를) 보유하고 있으므로 종교인 {@1_ReligionName}은(는) 이제 당신의 것입니다. 창시자 교리를 얻으며, 위대한 선지자로 이 종교를 강화하고 전파할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED_UNKNOWN">
+			<Text>창시 문명이 멸망했습니다. 종교인 {@1_ReligionName}은(는) 이제 성도를 보유한, 아직 만나지 못한 문명의 것입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_RELIGION_INHERITED">
+			<Text>종교 계승: {@1_ReligionName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_UNIT_GIFT">
+			<Text>Your vassal {1_CivName} has sent you a {2_UnitName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPLASH_MOVE">
+			<Text>돌격 피해</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPLASH_PILLAGE">
+			<Text>습격 피해</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_IDEOLOGY_IMPOSED">
+			<Text>주군이 당신의 제국에 자신의 이념을 강요했습니다. 앞으로 {1_Num}턴간 제국이 무정부주의 상태가 됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_IDEOLOGY_IMPOSED_SUMMARY">
+			<Text>이념 강요</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEAGUE_LEGATION_VOTES">
+			<Text>[NEWLINE][ICON_BULLET] 공사관 {1_NumVotes}표</Text>
+		</Replace>
+
+		<!-- Espionage -->
+		<Replace Tag="TXT_KEY_NOTIFICATION_SPY_STOLE_RESEARCH">
+			<Text>당신의 {1_SpyRank} {2_SpyName}이(가) {3_CityName}에서 기술을 훔치지 못했지만, 현재 연구에 사용할 {5_Num}[ICON_RESEARCH]만큼의 정보를 수집했습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SPY_STOLE_RESEARCH_S">
+			<Text>정보 수집 완료: {1_SpyName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_DETECTED">
+			<Text>정체불명의 스파이가 {1_CityName}에서 기술을 훔치려 했지만 연구 노트 일부만 가져갔습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_DETECTED_S">
+			<Text>기술 탈취 실패!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_IDENTIFIED">
+			<Text>{1_CivAdj} 스파이가 {2_CityName}에서 기술을 훔치려 했지만 연구 노트 일부만 가져갔습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_IDENTIFIED_S">
+			<Text>{1_CivShortDesc}이(가) 기술을 훔치지 못했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPY_STATE_REMOVED">
+			<Text>제거됨!</Text>
+		</Replace>
+
+		<!-- Religion -->
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_YOU">
+			<Text>새로운 신앙을 추가하여 만신전을 강화했습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_KNOWN_CIV">
+			<Text>{1_CivName}이(가) 새로운 신앙을 추가하여 만신전을 강화했습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_UNMET_CIV">
+			<Text>알 수 없는 문명이 새로운 신앙을 추가하여 만신전을 강화했습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_SUMMARY">
+			<Text>만신전 강화됨</Text>
+		</Replace>
+
+		<!-- Spy names -->
+		<Replace Tag="TXT_KEY_GAIA_SPY_NAME_FALLBACK">
+			<Text>알 수 없음</Text>
+		</Replace>
+
+		<!-- Prophet UI tooltips -->
+		<Replace Tag="TXT_KEY_GAIA_AUTO_FAITH_SAVING_FOR_PROPHET">
+			<Text>{1_UNITCLASS_PROPHET}을(를) 위해 저축</Text>
+		</Replace>
+
+		<!-- Descriptions for civilian unit categories -->
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_SETTLERS">
+			<Text>개척자</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_WORKERS">
+			<Text>노동자</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_WORK_BOATS">
+			<Text>작업선</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_CARGO_SHIP">
+			<Text>화물선</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_CARAVANS">
+			<Text>캐러밴</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_INQUISITORS">
+			<Text>종교재판관</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_MISSIONARIES">
+			<Text>선교사</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_ARCHAEOLOGISTS">
+			<Text>고고학자</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_MISSILES">
+			<Text>미사일</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_GREAT_PERSON">
+			<Text>위인</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_SPACESHIP_PART">
+			<Text>우주선 부품</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_ANTIAIR">
+			<Text>대공 유닛</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_MOUNTED_ARCHER">
+			<Text>기마 원거리 유닛</Text>
+		</Replace>
+		<!-- Trade Routes UI -->
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_OVERVIEW_LOCATE_OR_RECALL_TT">
+			<Text>클릭하여 보기, Ctrl+클릭으로 회수.[NEWLINE]교역로가 즉시 종료되고 다음 턴에 유닛이 출발 도시로 돌아와 다른 곳으로 다시 보낼 수 있습니다. 대가는 그 교역로의 산출을 한 턴 잃는 것입니다.[NEWLINE][ICON_INFINITY]는 회수할 때까지 유지되는 교역로를 뜻합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_OVERVIEW_RECALLED_MARK">
+			<Text>[COLOR_WARNING_TEXT]회[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_TRO_INDEFINITE">
+			<Text>[ICON_INFINITY]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_TRADE_ROUTE_INDEFINITE_HINT">
+			<Text>[ICON_INFINITY] 이 교역로는 교역로 개요에서 유닛을 회수할 때까지 유지됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_REHOME_TRADE_UNIT_ROUTE_COUNT_TT">
+			<Text>{2_CityName}에서 {1}개의 가능한 무역로</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_FOOD">
+			<Text>[ICON_FOOD]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_PRODUCTION">
+			<Text>[ICON_PRODUCTION]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_GOLD">
+			<Text>[ICON_GOLD]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_SCIENCE">
+			<Text>[ICON_RESEARCH]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_CULTURE">
+			<Text>[ICON_CULTURE]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_FAITH">
+			<Text>[ICON_PEACE]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_TOURISM">
+			<Text>[ICON_TOURISM]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_RELIGION_SPREAD">
+			<Text>{1_ReligionIcon}+{2_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_SCIENCE_EXPLAINED">
+			<Text>{1_CivName}은(는) 플레이어가 보유하지 못한 {2_Num}개의 기술을 발견하였습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_SCIENCE_INFLUENCE">
+			<Text>플레이어는 해당 문명에 문화적 영향력을 행사하고 있기 때문에 이 교역로를 통해 {1_Num} [ICON_RESEARCH] 과학을 받습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_EXPLAINED">
+			<Text>{2_CivName}이(가) 개발하지 못한 {1_Num}개의 기술을 발견하였습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_INFLUENCE">
+			<Text>해당 문명은 플레이어에게 문화적 영향력을 행사하고 있기 때문에 이 교역로를 통해 {1_Num} [ICON_RESEARCH] 과학을 받습니다.</Text>
+		</Replace>
+		<!-- GoodyHuts flavor -->
+		<Replace Tag="TXT_KEY_GOODY_GOLD">
+			<Text>폐허 속에서 고대 제국의 보물을 발견했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_PROPHET_FAITH">
+			<Text>비밀 종교 공동체를 발견했습니다. 설교자가 위대한 예언자의 도래를 예언합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_FAITH">
+			<Text>고대의 신탁소를 발견했습니다. 여사제가 신성한 계시로 당신을 축복했습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_CULTURE">
+			<Text>시민들을 경탄하게 하는 문화 유물을 발견했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_RECEIVED_GOLD">
+			<Text>[SPACE]{1_Num} [ICON_GOLD] 골드를 받았습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RUINS_REWARD_CULTURE_SUFFIX">
+			<Text>[SPACE]{1_Num} [ICON_CULTURE] 문화를 획득했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RUINS_REWARD_FAITH_SUFFIX">
+			<Text>[SPACE]{1_Num} [ICON_PEACE] 신앙을 획득했습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_YIELD_NAME_TOURISM">
+			<Text>관광</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_LIST_TOURISM_AMOUNT">
+			<Text>{1_Num} [ICON_TOURISM] 관광</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_TOURISM_FROM_TRADE_ROUTES">
+			<Text>이 도시와 연결된 교역로에서 {1_perTurn:number "#.##"} [ICON_TOURISM] 획득</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_MINOR_WARMONGER_KILLED">
+			<Text>{1_MinorName} 도시 국가가 자신들을 위협하던 적 유닛을 처치해 준 것에 감사하고 있습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SM_MINOR_WARMONGER_KILLED">
+			<Text>{1_MinorName} 인근에서 적 처치</Text>
+		</Replace>
+
+		<!-- Unit Missions -->
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER">
+			<Text>국제적인 히트작</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER_DISABLED_HELP">
+			<Text>유닛이 완전한 체력을 가져야 합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER_HELP">
+			<Text>이 명령은 유닛을 소모하여 대량의 [ICON_GOLD] 골드를 제공하고 모든 문명에 [ICON_TOURISM] 관광을 확산시킵니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK">
+			<Text>사이버 공격</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK_DISABLED_HELP">
+			<Text>유닛이 귀하의 영토 안에 있어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK_HELP">
+			<Text>이 명령은 유닛을 소모하여, 전쟁 중인 모든 문명에서 2턴 동안 무정부 상태를 야기합니다. 평화 상태일 경우, 다른 모든 문명에서 1턴 동안 무정부 상태를 야기합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_CYBERATTACK">
+			<Text>{@1_CivName}이(가) 귀하의 문명에 사이버 공격을 감행하여 무정부 상태에 빠뜨렸습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_CYBERATTACK">
+			<Text>사이버 공격!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE">
+			<Text>무역 항로</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE_DISABLED_HELP">
+			<Text>유닛이 완전한 체력을 가져야 합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE_HELP">
+			<Text>이 명령은 유닛을 소모하여 추가 무역 항로 슬롯을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP">
+			<Text>기업 설립</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP_DISABLED_HELP">
+			<Text>유닛은 당신의 도시 안이나 인접한 곳에 있어야 하며, 상업 건물에 유효한 기업 슬롯이 있어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP_HELP">
+			<Text>이 명령은 [COLOR_UNIT_TEXT]위대한 상인[ENDCOLOR]에게 {2_CityName} 도시에 [COLOR_POSITIVE_TEXT]기업[ENDCOLOR]을 설립하도록 지시합니다. 기업은 {1_BuildingName} 건물에 등록되며 전용 기업 슬롯을 차지합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS">
+			<Text>도시국가 설립</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS_DISABLED_HELP">
+			<Text>유닛은 소유된 타일에 인접하지 않은 중립 영토의 [COLOR_YELLOW]원주민 정착지[ENDCOLOR]에 있어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS_HELP">
+			<Text>이 명령은 [COLOR_UNIT_TEXT]위대한 사절[ENDCOLOR]에게 현재 위치에 [COLOR_POSITIVE_TEXT]도시 국가[ENDCOLOR]를 설립하도록 지시합니다. [COLOR_UNIT_TEXT]사절[ENDCOLOR]은 이 과정에서 소모됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX">
+			<Text>대항해</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX_DISABLED_HELP">
+			<Text>유닛이 소유한 영토에 있어야 이 능력을 사용할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VOYAGE_LUXURY_NOTIFICATION">
+			<Text>당신의 {1_UnitType}이(가) 머나먼 땅으로의 여행에서 이 지도 어디에도 없는 사치 자원인 [COLOR_POSITIVE_TEXT]{2_ResourceNames}[ENDCOLOR]을(를) 가지고 돌아왔습니다. 이 자원 [COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR]개를 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VOYAGE_LUXURY_NOTIFICATION_SUMMARY">
+			<Text>당신의 {1_UnitType}의 여정이 완료되었습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ADMIRALTY_LUXURY_NOTIFICATION">
+			<Text>새로 지은 {1_ImprovementName} 아래에 이미 무언가가 있어 그곳에 사치 자원이 나타날 수 없었습니다. 대신 [COLOR_POSITIVE_TEXT]{2_ResourceName}[ENDCOLOR] [COLOR_POSITIVE_TEXT]1[ENDCOLOR]개를 얻으며, 이 자원은 당신의 제국에 영구히 남습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ADMIRALTY_LUXURY_NOTIFICATION_SUMMARY">
+			<Text>{1_ImprovementName}에서 희귀한 사치 자원을 얻었습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX_HELP">
+			<Text>유닛이 소유한 영토에 있을 경우, 이 명령은 유닛을 소모하여 이 지도에서 사용할 수 없는 사치 자원의 두 가지 복사본을 제공합니다. 이 자원은 지도에 표시되지 않지만, 다른 문명과 거래할 수 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY">
+			<Text>유레카</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY_DISABLED_HELP">
+			<Text>유닛이 완전한 체력을 가져야 합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY_HELP">
+			<Text>이 명령은 유닛을 소모하여 무료 [ICON_CULTURE] 사회 정책을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL">
+			<Text>집으로 데려다줘</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL_DISABLED_HELP">
+			<Text>유닛이 중립 지역에 있어야 합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL_HELP">
+			<Text>이 명령은 유닛을 수도로 순간이동시킵니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM">
+			<Text>변환</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM_DISABLED_HELP">
+			<Text>
+			목표 유닛에 적합한 지형에 있어야 합니다.
+			[NEWLINE]육상 유닛: 육지 또는 해안 지역.
+			[NEWLINE]해상 유닛: 해상 또는 해안 도시.
+			[NEWLINE][ICON_GOLD] 골드가 필요합니다.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM_HELP">
+			<Text>이 유닛을 변환합니다. [ICON_GOLD] 골드가 필요하며, 훈련할 수 있는 유닛으로 되돌아갈 때는 무료입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_DEFENSIVE_ALLIANCE">
+			<Text>새로운 방위 협정으로 더 큰 방위 동맹에 합류했습니다. 이제 다음 세력과도 방위 협정을 맺습니다: {1_CivList}.[NEWLINE]구성원 중 누구라도 공격받으면 당신은 해당 구성원을 위해 참전하게 됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEFENSIVE_ALLIANCE">
+			<Text>방위 동맹</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_1">
+			<Text>당신의 군사적 역량에 감탄합니다. 방위 협정을 맺겠습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_2">
+			<Text>우리의 적들에게 파멸을 안기려면 동맹을 맺어야 합니다. 방위 협정을 맺으시겠습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_3">
+			<Text>적들이 우리를 에워싸고 있습니다. 힘을 합치지 않으면 분명 멸망할 것입니다. 방위 협정을 맺으시겠습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_4">
+			<Text>우리가 동맹을 맺기만 한다면 세상의 폭군들이 우리 발밑에서 떨 것입니다. 방위 협정의 가치를 아시겠습니까?</Text>
+		</Replace>
+		<!-- Combat Log -->
+		<Replace Tag="TXT_KEY_POP_COMBAT_LOG">
+			<Text>전투 일지</Text>
+		</Replace>
+		<!-- Great Works (Gaia Great Work slot tooltips) -->
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_EMPTY_TOOLTIP">
+			<Text>빈 영화 슬롯</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_LABEL">
+			<Text>[ICON_GAIA_CINEMA] 영화:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_CINEMA] 영화 슬롯: +{1_NumSlots}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_EMPTY_TOOLTIP">
+			<Text>빈 기업 슬롯</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_LABEL">
+			<Text>[ICON_GAIA_CORPORATION] 기업:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_CORPORATION] 기업 슬롯: +{1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_EMPTY_TOOLTIP">
+			<Text>빈 종교 유물 슬롯</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_LABEL">
+			<Text>[ICON_GAIA_HOLY_ARTIFACT] 종교 유물:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_HOLY_ARTIFACT] 종교 유물 슬롯: +{1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_EMPTY_TOOLTIP">
+			<Text>빈 비디오 게임 슬롯</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_LABEL">
+			<Text>[ICON_GAIA_VIDEOGAME] 비디오 게임:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_VIDEOGAME] 비디오 게임 슬롯: +{1_NumSlots}</Text>
+		</Replace>
+		<!-- Special Units -->
+		<Replace Tag="TXT_KEY_SPECIALUNIT_ENTRENCHED">
+			<Text>고정된 원거리 유닛</Text>
+		</Replace>
+		<!-- Automate Actions -->
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION">
+			<Text>종교 전파 (자동화)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION_HELP">
+			<Text>이 [COLOR_UNIT_TEXT]선교사[ENDCOLOR]의 행동을 자동화합니다. 스스로 가장 적합하다고 판단한 도시로 이동해 종교를 전파합니다. 유닛은 자동화를 취소하거나 새로운 명령을 내릴 때까지 자동으로 행동합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION_DISABLED_HELP">
+			<Text>현재 이 유닛은 자동화를 사용할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE">
+			<Text>유물 발굴 (자동화)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE_HELP">
+			<Text>이 [COLOR_UNIT_TEXT]고고학자[ENDCOLOR]의 행동을 자동화합니다. 스스로 사적지를 찾아 발굴합니다. 유닛은 자동화를 취소하거나 새로운 명령을 내릴 때까지 자동으로 행동합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE_DISABLED_HELP">
+			<Text>현재 이 유닛은 자동화를 사용할 수 없습니다.</Text>
+		</Replace>
+		<!-- Resource Production Modifiers -->
+		<Replace Tag="TXT_KEY_PRODMOD_BUILDING_LOCAL_RES">
+			<Text>[NEWLINE][ICON_BULLET]{2_ResourceName}에 대한 지역 자원 수정치: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_UNIT_LOCAL_RES">
+			<Text>[NEWLINE][ICON_BULLET]{2_ResourceName}에 대한 지역 자원 수정치: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_CS_GIFTED_UNIT_RETURNED_SUMMARY">
+			<Text>{1_CivName:textkey} 점령됨, 선물 유닛 반환!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_CS_GIFTED_UNIT_RETURNED">
+			<Text>{1_CivName:textkey}이(가) 점령되어 선물로 받은 {2_Unit} 유닛이 반환되었습니다.</Text>
+		</Replace>
+		<!-- Circumnavigation trade-route reward -->
+		<Replace Tag="TXT_KEY_MISC_YOU_CIRC_GLOBE_TRADE_ROUTE">
+			<Text>여러분은 세계가 둥글다는 것을 증명했으며 추가 [ICON_INTERNATIONAL_TRADE] 무역 항로를 설정할 수 있습니다.</Text>
+		</Replace>
+		<!-- Enemy Unit Panel -->
+		<Replace Tag="TXT_KEY_EUPANEL_RECLAMATION_RESOLVE">
+			<Text>수복의 결의</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_FRIENDLY_COMBAT_AURA">
+			<Text>아군 유닛 오라</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_ATTACK_CS_ALLIANCE_STRENGTH">
+			<Text>도시 국가 동맹 보너스</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_BONUS_VS_FULLY_HEALED_UNITS">
+			<Text>완전히 치유된 유닛에 대한 보너스</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_EMBARKATION_DEFENSE">
+			<Text>승선 방어</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_PENALTY_VS_DOMAIN">
+			<Text>도메인에 대한 패널티</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_RANGED_DEFENSE_MODIFIER">
+			<Text>원거리 방어 수정치</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_RANGED_SUPPORT">
+			<Text>[COLOR_CYAN]추가 원거리 공격[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_IGNORE_ZOC">
+			<Text>[COLOR_CYAN]조컨 효과를 무시합니다[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_WITHDRAW_CHANCE">
+			<Text>[COLOR_CYAN]철수 확률[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_UNITCOMBAT_DAMAGE_MODIFIER">
+			<Text>유닛 체력</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_MISC_BONUS">
+			<Text>기타</Text>
+		</Replace>
+		<!-- Short Tech Help -->
+		<Replace Tag="TXT_KEY_GAIA_TECH_REQUIRES_ERA">
+			<Text>{1_Era}의 모든 기술이 필요합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_UNITS">
+			<Text>[NEWLINE]잠금 해제된 유닛:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_BUILDINGS">
+			<Text>[NEWLINE]잠금 해제된 건물:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_WONDERS">
+			<Text>[NEWLINE]잠금 해제된 불가사의:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_PROJECTS">
+			<Text>[NEWLINE]잠금 해제된 프로젝트:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_PROCESSES">
+			<Text>[NEWLINE]잠금 해제된 생산 방식:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_RESOURCES">
+			<Text>[NEWLINE]잠금 해제된 자원:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_BUILDS">
+			<Text>[NEWLINE]잠금 해제된 개량:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_ACTIONS">
+			<Text>[NEWLINE]고유 행동:[NEWLINE]</Text>
+		</Replace>
+		<Row Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_CITY_WORKRANGE">
+			<Text>도시가 추가적인 타일 링을 작업할 수 있도록 합니다.</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_YIELDS">
+			<Text>[NEWLINE]수확량 변화:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_SPECIALISTS">
+			<Text>{1_SpecialistName:textkey}들: +{3_Num} {4_IconString} {2_YieldType:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_CITIES">
+			<Text>뉴스</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_FOLLOWERS">
+			<Text>요인</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_MAP_TAB">
+			<Text>지도</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_FOUNDED">
+			<Text>찾았다</Text>
+		</Replace>
+		<!-- Diplomacy -->
+		<Replace Tag="TXT_KEY_GAIA_JOINT_WAR_REQUEST_TT">
+				<Text>이 지도자에게 다른 문명을 상대로 한 전쟁에 함께해 달라고 요청합니다.[NEWLINE][NEWLINE]상대가 지금 싸우기로 동의하면 두 문명 모두 즉시 전쟁을 선포하며, 15턴 동안 둘 다 대상과 평화를 맺을 수 없습니다. 상대가 대신 10턴 후에 참전하겠다고 약속할 수도 있으며, 그때 함께 전쟁을 시작하자고 요청해 옵니다. 이때 거절하면 약속을 어긴 것으로 간주됩니다.[NEWLINE][NEWLINE]둘 중 한쪽이 상대를 비난하거나 상대에게 전쟁을 선포하거나, 대상과 평화가 맺어지면 협동 전쟁 계획은 취소됩니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_MAY_NOT_ATTACK_RELIGION">
+				<Text>산업 시대까지 이 플레이어를 공격할 수 없습니다. 이 전쟁의 한쪽에서 창시된 종교가 그 종교를 믿는 자들에 대한 전쟁을 금지합니다. 이 금지는 방위 협정 상대와 봉신에게도 적용됩니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_SHARED_RELIGION">
+				<Text>[COLOR_POSITIVE_TEXT]두 나라의 백성이 같은 신앙을 따릅니다.[ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_THEY_CANNOT_ATTACK_US_RELIGION">
+				<Text>산업 시대까지 그들은 당신에게 전쟁을 선포할 수 없습니다. 창시된 종교가 두 나라를 묶고 있습니다.</Text>
+			</Replace>
+		<!-- Trade screen: deal/peace value readout, denounce, request-help -->
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_BUTTON">
+				<Text>비난</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_BUTTON_TT">
+				<Text>이 버튼을 누르면 상대 플레이어를 [COLOR_NEGATIVE_TEXT]비난[ENDCOLOR]합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_DEAL_BUTTON">
+				<Text>요청</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE">
+				<Text>상대에게의 거래 가치: {1_Num}.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_TT">
+				<Text>이 거래에 대한 지도자의 현재 평가입니다. 양수는 상대에게, 음수는 당신에게 유리하며, 지도자는 당신에게 유리한 거래는 모두 거부합니다. '불가능!'이면 지도자가 거래 항목 중 하나 이상의 교환을 거부하는 것입니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_ACCEPTABLE">
+				<Text>상대에게의 거래 가치: 수용 가능</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_VETOED">
+				<Text>상대에게의 거래 가치: 불가능!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_FROM_YOU">
+				<Text>당신이 {1_Num} [ICON_GOLD] 또는 턴당 {2_Num} [ICON_GOLD] 지불</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_GPT_FROM_YOU">
+				<Text>당신이 턴당 {1_Num} [ICON_GOLD] 지불</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_FROM_THEM">
+				<Text>상대가 최대 {1_Num} [ICON_GOLD] 또는 턴당 {2_Num} [ICON_GOLD] 지불</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_GPT_FROM_THEM">
+				<Text>상대가 최대 턴당 {1_Num} [ICON_GOLD] 지불</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH">
+				<Text>평화 협정 가치: {1_Num}.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH_TT">
+				<Text>이 평화 협정에 대한 지도자의 현재 평가입니다. 값이 '불가능!'이면 지도자가 협정 항목 중 하나 이상의 교환을 거부하는 것입니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH_VETOED">
+				<Text>평화 협정 가치: 불가능!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_CEILING">
+				<Text>최대 가치: {1_Num}.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_CEILING_TT">
+				<Text>평화 협정 항목의 최대 가치입니다. 왼쪽 값이 이 수치를 넘으면 지도자가 협정을 거부합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_FLOOR">
+				<Text>최소 가치: {1_Num}.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_FLOOR_TT">
+				<Text>평화 협정 항목의 최소 가치입니다. 이 수치가 왼쪽 값을 넘으면 지도자가 협정을 거부합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_DEAL_WINNER_GIVES_NOTHING_TT">
+				<Text>평화 협정에서 항복하지 않는 쪽에는 항목을 추가할 수 없습니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_VASSALAGE_NEED_CAPITAL_TT">
+				<Text>{1_Civ}은(는) 원래 수도인 {2_City}을(를) 점유한 문명에게만 항복합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_VASSALAGE_NEED_CAPITAL_RAZED_TT">
+				<Text>{1_Civ}은(는) 과거 수도 중 하나를 점유한 문명에게만 항복합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_RESTORED_CIV_JOINS_LIBERATOR">
+				<Text>{1_PlayerName}이(가) {2_CityName}을(를) 해방하여 {3_CivAdj}을(를) 수복했습니다. 옛 수도에서 부활한 {4_CivName}이(가) 해방자에게 충성을 맹세하고 자발적 속국이 되었습니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DEFENSIVE_PACT_UNCAPPED_TT">
+				<Text>두 플레이어 중 한쪽이 다른 주요 문명에게 공격받으면, 다른 한쪽은 즉시 자동으로 침략자와 전쟁에 돌입합니다. 이 협정은 {1_Num}턴 동안 유지됩니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_LUXURY_WANTED_BY_CITIES_TT">
+				<Text>다음 도시들이 현재 이 자원을 요구합니다:</Text>
+			</Replace>
+		<!-- LeaderHeadRoot -->
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_BUTTON">
+			<Text>도움 요청</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_BUTTON_TT">
+			<Text>우호 선언을 맺은 플레이어에게 도움을 요청합니다. 이 선택지에는 외교적 불이익이 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEADER_DEMAND_TRIBUTE_TT">
+			<Text>이 문명에게 조공을 요구합니다. 이 선택지에는 외교적 불이익이 따릅니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_THEY_ARE_LOCKED_TT">
+			<Text>지금은 평화를 협상할 수 없습니다. 상대는 일정 턴 동안 이 전쟁에 묶여 있습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_BY_RULES_TT">
+			<Text>게임 옵션 또는 특수 규칙으로 인해 이 플레이어와 평화를 협상할 수 없습니다.</Text>
+		</Replace>
+		<!-- DeclareWarPopup / DiploGlobalRelationships -->
+		<Replace Tag="TXT_KEY_DECLARE_WAR_DEFENSE_PACT">
+				<Text>방어 동맹</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THEY_ARE_OUR_PACT_PARTNER">
+				<Text>[COLOR_NEGATIVE_TEXT]우리는 그들과 방어 동맹을 맺고 있습니다![ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_POPUP_TARGET_MASTER_HEADER">
+				<Text>주군</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEFENSIVE_PACT_WITH">
+				<Text>[COLOR_POSITIVE_TEXT]{1_CivName:textkey}와의 방위 협정[ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AT_WAR_WITH">
+			<Text>[COLOR_NEGATIVE_TEXT]{1_enemy}와(과) 전쟁 중 (전쟁 점수: {2_Num})[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PROJECTION_VALUE">
+				<Text>[COLOR_POSITIVE_TEXT]전쟁 점수: {1_Num}[ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PROJECTION_TT">
+				<Text>이 값은 당신의 입장에서 본 전쟁 상황으로, 상대적인 군사력과 경제력, 양측이 입은 손실, 게임 점수, 전쟁 기간을 종합한 것입니다. [COLOR_POSITIVE_TEXT]양수[ENDCOLOR]는 당신에게, [COLOR_NEGATIVE_TEXT]음수[ENDCOLOR]는 상대에게 유리함을 뜻합니다.[NEWLINE][COLOR_POSITIVE_TEXT]현재 전쟁 정보:[ENDCOLOR]</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_NONE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] 상대의 평화 제안:[ENDCOLOR] 불가능합니다!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_ARMISTICE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] 상대의 평화 제안:[ENDCOLOR] 소액의 배상.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SETTLEMENT">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] 상대의 평화 제안:[ENDCOLOR] 후한 배상.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_BACKDOWN">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] 상대의 평화 제안:[ENDCOLOR] 배상과 어느 정도의 양보.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SUBMISSION">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] 상대의 평화 제안:[ENDCOLOR] 배상과 상당한 양보.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SURRENDER">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] 상대의 평화 제안:[ENDCOLOR] 도시 하나를 할양할 용의가 있음.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_CESSION">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] 상대의 평화 제안:[ENDCOLOR] 여러 도시를 할양할 용의가 있음.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_CAPITULATION">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] 상대의 평화 제안:[ENDCOLOR] 많은 도시를 할양할 용의가 있음.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_UNCONDITIONAL">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] 상대의 평화 제안:[ENDCOLOR] 수도를 제외한 모든 도시를 할양할 용의가 있음!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_PATHETIC">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] 군사력:[ENDCOLOR] 상대는 보잘것없습니다!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_WEAK">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] 군사력:[ENDCOLOR] 상대는 매우 약합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_POOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] 군사력:[ENDCOLOR] 상대는 우리보다 약합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_AVERAGE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] 군사력:[ENDCOLOR] 우리는 대등합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_STRONG">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] 군사력:[ENDCOLOR] 상대는 강합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_POWERFUL">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] 군사력:[ENDCOLOR] 상대는 막강합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_IMMENSE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] 군사력:[ENDCOLOR] 상대는 압도적입니다!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_PATHETIC">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] 경제력:[ENDCOLOR] 상대의 경제는 엉망입니다!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_WEAK">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] 경제력:[ENDCOLOR] 상대는 우리보다 훨씬 빈약합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_POOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] 경제력:[ENDCOLOR] 상대는 빈약합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_AVERAGE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] 경제력:[ENDCOLOR] 우리는 대등합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_STRONG">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] 경제력:[ENDCOLOR] 상대는 탄탄합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_POWERFUL">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] 경제력:[ENDCOLOR] 상대는 부유합니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_IMMENSE">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] 경제력:[ENDCOLOR] 상대는 매우 부유합니다!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_MINOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] 지금까지의 손실:[ENDCOLOR] 상대가 우리보다 더 많이 잃었습니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_MAJOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] 지금까지의 손실:[ENDCOLOR] 상대가 우리보다 훨씬 많이 잃었습니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_SERIOUS">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] 지금까지의 손실:[ENDCOLOR] 상대가 우리보다 월등히 많이 잃었습니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_CRIPPLED">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] 지금까지의 손실:[ENDCOLOR] 상대의 손실은 우리와 비교도 되지 않을 만큼 큽니다!</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_MINOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] 지금까지의 손실:[ENDCOLOR] 우리가 상대보다 더 많이 잃었습니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_MAJOR">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] 지금까지의 손실:[ENDCOLOR] 우리가 상대보다 훨씬 많이 잃었습니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_SERIOUS">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] 지금까지의 손실:[ENDCOLOR] 우리가 상대보다 월등히 많이 잃었습니다.</Text>
+			</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_CRIPPLED">
+				<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] 지금까지의 손실:[ENDCOLOR] 우리의 손실은 상대와 비교도 되지 않을 만큼 큽니다!</Text>
+			</Replace>
+		<!-- DiploList -->
+		<Replace Tag="TXT_KEY_DIPLOLIST_NUM_DEFENSE_PACTS">
+			<Text>방어 조약: {1_Num}</Text>
+		</Replace>
+		<!-- UI fallback labels + stock-missing victory-reset message -->
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_BELIEF_FALLBACK">
+			<Text>알 수 없음</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_DEFAULT_TT">
+			<Text>이 지도자를 비난합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VICTORY_PROGRESS_LOST_MESSAGE">
+			<Text>{1_TeamName}의 {2_VictoryName} 승리를 향한 진행이 초기화되었습니다!</Text>
+		</Replace>
+		<!-- City-State popups -->
+		<Replace Tag="TXT_KEY_GAIA_CS_POPUP_PROTECTORS_LABEL">
+			<Text>보호 세력:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_POPUP_PROTECTORS_TT">
+			<Text>이 도시 국가를 보호하기로 약속한 다른 문명들입니다. 이 도시 국가를 공격하거나 조공을 요구하면 이들의 분노를 사게 됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_SUZERAINTY">
+			<Text>동맹 보너스:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_SUZERAINTY_WHILE_ALLY">
+			<Text>동맹인 동안</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_CSWONDER">
+			<Text>동맹 불가사의:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_CSWONDER_TT">
+			<Text>이 도시 국가의 동맹을 {2_NumTurns}턴 연속 유지하면 세계 불가사의 {1_WonderName}이(가) 해금됩니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_CULTURE_FIRST">
+			<Text>그들이 소중히 여기던 예술품을 건네며 [COLOR_POSITIVE_TEXT]{1_NumCulture} [ICON_CULTURE] 문화[ENDCOLOR] 상당의 선물을 줍니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FAITH_FIRST">
+			<Text>당신은 그들이 만난 첫 외지인이기에, 소중히 여기는 종교적 우상을 보여 줍니다. [COLOR_POSITIVE_TEXT]{1_NumFaith} [ICON_PEACE] 신앙[ENDCOLOR]을 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_GOLD_FIRST">
+			<Text>당신은 그들이 만난 첫 대제국이기에, [COLOR_POSITIVE_TEXT]{1_NumGold} [ICON_GOLD] 골드[ENDCOLOR]를 선물로 줍니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FOOD_FIRST">
+			<Text>때마침 그들의 연례 추수 축제에 도착했습니다. 그들이 당신의 도시 중 한 곳에 [COLOR_POSITIVE_TEXT]{1_NumFood} [ICON_FOOD] 식량[ENDCOLOR]을 보냈습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_UNIT_FIRST">
+			<Text>그들의 노련한 전사들이 자신들을 발견한 유닛에게 비결을 전수하여, 그 유닛이 [COLOR_POSITIVE_TEXT]경험치 {1_NumXP}[ENDCOLOR]을(를) 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_CULTURE_LATER">
+			<Text>그들이 예술적 소양을 나누어 [COLOR_POSITIVE_TEXT]{1_NumCulture} [ICON_CULTURE] 문화[ENDCOLOR]를 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FAITH_LATER">
+			<Text>그들이 종교 의식에 대한 지식을 나누어 [COLOR_POSITIVE_TEXT]{1_NumFaith} [ICON_PEACE] 신앙[ENDCOLOR]을 제공합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_GOLD_LATER">
+			<Text>그들이 [COLOR_POSITIVE_TEXT]{1_NumGold} [ICON_GOLD] 골드[ENDCOLOR]를 선물합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FOOD_LATER">
+			<Text>그들이 호의의 표시로 당신의 도시 중 한 곳에 [COLOR_POSITIVE_TEXT]{1_NumFood} [ICON_FOOD] 식량[ENDCOLOR]을 보냅니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_UNIT_LATER">
+			<Text>그들의 노련한 전사들이 자신들을 발견한 유닛에게 몇 가지 요령을 전수하여, 그 유닛이 [COLOR_POSITIVE_TEXT]경험치 {1_NumXP}[ENDCOLOR]을(를) 얻습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_NONE">
+			<Text>안타깝게도 그들은 당신에게 줄 것이 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_INFLUENCE_ONLY">
+			<Text>안타깝게도 그들은 줄 것이 없지만, {2_Personality} 도시 국가와 만난 것만으로도 그들에 대한 [COLOR_POSITIVE_TEXT][ICON_INFLUENCE] 영향력이 {1_NumFriendship}만큼 증가합니다[ENDCOLOR].</Text>
+		</Replace>
+		<!--CS Legation-->
+		<Replace Tag="TXT_KEY_PLOTROLL_GAIA_LEGATION">
+			<Text>{1_CivName:textkey}의</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PLOTROLL_GAIA_LEGATION_UNMET">
+			<Text>알 수 없는 플레이어의</Text>
+		</Replace>
+<!--Military Overview XP column-->
+<!--MILITARY OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_MILITARY_OVERVIEW_EXPERIENCE_COLUMN">
+			<Text>XP</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MILITARY_OVERVIEW_SORT_EXPERIENCE_TT">
+			<Text>XP로 정렬</Text>
+		</Replace>
+
+		<!-- Wake Units For Upgrade -->
+		<Replace Tag="TXT_KEY_WAKE_UPGRADEABLE_UNIT">
+			<Text>업그레이드 가능한 유닛이 있습니다</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WAKE_UPGRADEABLE_UNIT_SHORT">
+			<Text>유닛 업그레이드</Text>
+		</Replace>
+		<!-- Recon-only Ancient Ruins -->
+		<Replace Tag="TXT_KEY_GAIA_GOODY_RECON_ONLY">
+			<Text>정찰 유닛만 고대 유적을 조사할 수 있습니다!</Text>
+		</Replace>
+		<!-- Mixed Wonder Consolation -->
+		<Replace Tag="TXT_KEY_GAIA_WONDER_CONSOLATION_SHORT">
+			<Text>{1_CityName}에서 더 이상 {2_BldgName}을(를) 건설할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WONDER_CONSOLATION">
+			<Text>{1_CityName}에서 더 이상 {2_BldgName}을(를) 건설할 수 없습니다. 손실된 [ICON_PRODUCTION] 생산력이 {3_NumGold}[ICON_GOLD] 골드, {4_NumCulture}[ICON_CULTURE] 문화, 그리고 {5_NumProduction}[ICON_PRODUCTION] 초과 생산력으로 변환되었습니다.</Text>
+		</Replace>
+		<!-- Wonder Race -->
+		<Replace Tag="TXT_KEY_WR_WINNING">
+			<Text>불가사의 경쟁에서 앞서고 있습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_WINNING_TOOLTIP">
+			<Text>{2_wonder} 건설 경쟁에서 귀하가 {1_player}보다 앞서고 있습니다</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_LOSING">
+			<Text>불가사의 경쟁에서 뒤처지고 있습니다!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_LOSING_TOOLTIP">
+			<Text>{2_wonder} 건설 경쟁에서 {1_player}이(가) 귀하보다 앞서고 있습니다</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_BY_N_TURNS">
+			<Text>({1_Num}턴 차이)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SAPIENS_MP_RESYNC_NOTICE">
+			<Text>멀티플레이 동기화 오류가 감지되어 게임이 다시 동기화되었습니다. 다시 발생하면 호스트와 본인의 net_message_debug.log, SapiensMod.log, Lua.log 파일(Documents\My Games\Sid Meier's Civilization 5\Logs)을 게임을 다시 시작하기 전에 복사해서 보내 주세요.</Text>
+		</Replace>
+		<!-- Low Memory Warning -->
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING">
+			<Text>메모리 부족 경고</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING_TOOLTIP">
+			<Text>게임이 32비트 프로그램의 메모리 한계에 가까워지고 있습니다. 이는 게임 자체의 한계이며 사용 중인 컴퓨터의 문제가 아닙니다. 보통은 당분간 계속 플레이할 수 있지만, 이후의 저장 파일은 불러오려면 더 낮은 그래픽 설정이 필요할 수 있습니다. 지금 저장하고 지도자 품질, 그림자, 지형 상세도, 안티앨리어싱을 낮춘 뒤, 다음에 불러오기 전에 바탕 화면으로 완전히 종료하십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING_AT_FLOOR_TOOLTIP">
+			<Text>게임이 32비트 프로그램의 메모리 한계에 가까워지고 있습니다. 이는 게임 자체의 한계이며 사용 중인 컴퓨터의 문제가 아닙니다. 보통은 당분간 계속 플레이할 수 있지만, 이후의 저장 파일은 불러오지 못할 수 있습니다. 지금 저장하고, 다음에 불러오기 전에 바탕 화면으로 완전히 종료한 뒤 게임을 새로 실행하십시오. DirectX 11과 더 낮은 해상도를 쓰면 여유가 조금 더 생깁니다.</Text>
+		</Replace>
+		<!-- Core DLL Not Loaded Warning -->
+		<Replace Tag="TXT_KEY_GAIA_DLL_NOT_LOADED_TITLE">
+			<Text>Core Mod DLL이 로드되지 않았습니다</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DLL_NOT_LOADED_TEXT">
+			<Text>Gaia's Core Mod가 활성화되어 있지만 DLL이 로드되지 않았습니다. 따라서 이 게임에서는 Core Mod의 기능 대부분과 Sapiens처럼 이를 기반으로 하는 모드의 기능이 작동하지 않습니다.[NEWLINE][NEWLINE]게임의 Mac 및 Linux 버전에서는 DLL 모드를 로드할 수 없습니다. Linux에서는 Steam Play(Proton)를 통해 Windows 버전을 실행하십시오. Windows에서는 다른 DLL 모드가 활성화되어 있지 않은지 확인한 뒤 게임을 다시 시작하십시오.[NEWLINE][NEWLINE]이름이 + 또는 =로 시작하는 모드는 DLL이 필요하지 않습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_BUILDINGCLASS_CITY_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]{2_Building}: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_WONDER_PEACE">
+			<Text>[NEWLINE][ICON_BULLET]평화 시 불가사의 수정치: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_PROJECT_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]프로젝트 보정치: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_PEACE_YIELD">
+			<Text>[NEWLINE][ICON_BULLET]평화 시 보정치: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_GREAT_PEOPLE_EARNED">
+			<Text>[NEWLINE][ICON_BULLET]획득한 위인 보정치: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_GAIA_FROM_FAITH">
+			<Text>{1_Num} [ICON_TOURISM] [ICON_PEACE] 신앙에서 얻는 관광</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FOODMOD_GAIA_FRESH_WATER">
+			<Text>[NEWLINE][ICON_BULLET]담수 수정치: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FOODMOD_GAIA_RELIGIONS_PRESENT">
+			<Text>[NEWLINE][ICON_BULLET]종교 다양성: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_GARRISONED_MILITARY">
+			<Text>[NEWLINE][ICON_BULLET]주둔 도시: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_BELIEF_SETTLER">
+			<Text>[NEWLINE][ICON_BULLET]종교 교리 개척자 수정치: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_UNIT_WAR">
+			<Text>[NEWLINE][ICON_BULLET]전쟁 시 유닛 수정치: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_YIELD_POLICY">
+			<Text>[NEWLINE]  [ICON_BULLET]{1_Num}% {2_PolicyName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_GAIA_POLICY_MOD">
+			<Text>사회 정책으로 {1_Num}%</Text>
+		</Replace>
+		<!-- Feature-clearing food credit -->
+		<Replace Tag="TXT_KEY_MISC_CLEARING_FEATURE_FOOD">
+			<Text>{@1_FeatName}을(를) 제거하여 {@3_CityName}이(가) {2_Num} [ICON_FOOD]을(를) 얻었습니다.</Text>
+		</Replace>
+		<!-- City capture choice notification (annex/puppet/raze) -->
+		<Replace Tag="TXT_KEY_NOTIFICATION_SAPIENS_CITY_CAPTURE">
+			<Text>{1_CityName}을(를) 획득했습니다. 이 도시를 어떻게 하시겠습니까?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_SAPIENS_CITY_CAPTURE">
+			<Text>{1_CityName} 처리 결정</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POPUP_GOLD_AND_CULTURE_CITY_CAPTURE">
+			<Text>{@4_CityName}을(를) 점령해 [ICON_GOLD] 금 {1_Num}, [ICON_CULTURE] 문화 {2_Num} 및 [ICON_GREAT_WORK] 걸작 {3_Num}개를 약탈했습니다. 이 도시에 빈 슬롯이 없는 걸작은 빈 슬롯이 있는 가장 가까운 도시로 옮겨졌습니다.</Text>
+		</Replace>
+		<!-- Promotion Tree -->
+		<Replace Tag="TXT_KEY_PROMO_SWITCH_MODE" >
+			<Text>모드 전환</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_DIPLO_CORNER_HOOK">
+			<Text>승급 트리</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_OVERVIEW_FOR_UNIT_TT">
+			<Text>해당 유닛이 획득한 승급과 선택 가능한 승급을 확인하려면 승급 트리를 여십시오.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_SIZE" >
+			<Text>작게 (단축키: 'D')</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_EARNT" >
+			<Text>획득함</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_EARNT_TT" >
+			<Text>이 유닛이 이미 획득한 승급입니다 (고유 능력 또는 불가사의로 얻은 승급은 제외).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_AVAILABLE" >
+			<Text>사용 가능</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_AVAILABLE_TT" >
+			<Text>현재 이 유닛이 선택할 수 있는 승급입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_NOT_AVAILABLE" >
+			<Text>아직 사용 불가</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_NOT_AVAILABLE_TT" >
+			<Text>이 유닛이 아직 선택할 수 없는 승급입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_UNIT" >
+			<Text>유닛</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_CLASS" >
+			<Text>전투 클래스</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PROMOTION_TREE_GROUPING_LABEL">
+			<Text>보기: 유닛 / 전투 클래스</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_BASE_TT">
+			<Text>이 유닛의 승급 트리와 전투 클래스별 트리 사이를 전환합니다. 단축키: 'S'</Text>
+		</Replace>
+
+		<!-- Great People overview: Sapiens Great Person classes -->
+		<Replace Tag="TXT_KEY_GAIA_GP_THINKER_DETAILS">
+			<Text>[ICON_PLUS] 위대한 사상가</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_THINKER_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] 위대한 사상가</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_EMISSARY_DETAILS">
+			<Text>[ICON_PLUS] 위대한 사절</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_EMISSARY_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] 위대한 사절</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DIRECTOR_DETAILS">
+			<Text>[ICON_PLUS] 위대한 감독</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DIRECTOR_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] 위대한 감독</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DEVELOPER_DETAILS">
+			<Text>[ICON_PLUS] 위대한 게임 개발자</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DEVELOPER_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] 위대한 게임 개발자</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GREAT_WORK_SWAP">
+			<Text>{1_LeaderName}이(가) 당신의 위대한 작품 "{2_Work1Name}"을(를) 위대한 작품 "{3_Work2Name}"과(와) 교환했습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SWAP_YOUR_WORKS_HEADER">
+			<Text>당신의 위대한 작품</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SWAP_OFFERED_WORKS_HEADER">
+			<Text>다른 문명이 제안한 작품</Text>
+		</Replace>
+		<!-- Goodwill Mission -->
+		<Replace Tag="TXT_KEY_DIPLO_GAIA_GOODWILL_MISSIONS">
+			<Text>[COLOR_POSITIVE_TEXT]상대에게 친선 사절을 보냈습니다.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GOODWILL_MISSION_RESULT">
+			<Text>사절이 따뜻한 환영을 받았습니다. 그 지도자가 이제 당신을 더 좋게 평가합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL">
+			<Text>친선 임무</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL_DISABLED_HELP">
+			<Text>유닛은 평화 상태인 다른 문명의 국경 안에 있어야 합니다. 인간 플레이어가 이끄는 문명은 받을 수 없으며, 각 문명은 당신에게서 제한된 횟수만 받습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL_HELP">
+			<Text>평화 상태인 다른 문명의 국경 안에 있을 경우, 이 명령은 유닛을 소모합니다. 그 문명의 지도자는 이후 당신을 더 좋게 평가합니다. 같은 문명에 대한 이후의 임무는 효과가 줄어들며, 그 문명에 선전포고하면 효과가 사라집니다.</Text>
+		</Replace>
+		<!-- Sealift -->
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT">
+			<Text>해상 수송</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT_HELP">
+			<Text>이 지상 유닛을 같은 바다에 있는 다른 항구 안이나 옆의 타일로 바다를 통해 보냅니다. 항해하는 동안 명령을 받지 않고 항구에서 대기하며, 2턴 뒤 턴이 시작될 때 이동력을 모두 가진 채 휴식한 것처럼 회복하여 상륙합니다. 항공 이동이나 공수 작전으로 그 타일에 이동할 수 있으면 대신 즉시 이동합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT_DISABLED_HELP">
+			<Text>이번 턴에 이동하지 않은 지상 유닛이 항구가 있는 아군 도시 안이나 옆에 있어야 하며, 같은 바다에 다른 항구가 하나 더 있어야 합니다. 봉쇄된 항구는 사용할 수 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_ORDERED">
+			<Text>{@1_UnitName}이(가) {@2_CityName}(으)로 출항했습니다. {3_Num}턴에 상륙합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_IN_TRANSIT">
+			<Text>이동 중</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_IN_TRANSIT_TT">
+			<Text>{@1_CityName}(으)로 이동 중: {2_Num}턴에 상륙합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SEALIFT_LANDED">
+			<Text>{@1_UnitName}이(가) {@2_CityName}에 상륙했습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SEALIFT_LANDED">
+			<Text>해상 수송 완료</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SEALIFT_CANCELLED">
+			<Text>{@1_UnitName}의 해상 수송이 취소되었습니다: 항구를 더 이상 사용할 수 없거나 상륙할 안전한 타일이 없습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SEALIFT_CANCELLED">
+			<Text>해상 수송 취소</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_COLONY_CITYSTATE_FOUNDED">
+			<Text>{@1_CityName}이(가) 새로운 도시 국가로 세워졌습니다. 처음에는 당신과 동맹입니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_COLONY_CITYSTATE_FOUNDED">
+			<Text>도시 국가 설립</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_COLONY_CITYSTATE_FALLBACK">
+			<Text>새로운 도시 국가를 세울 수 없어 {@1_CityName}이(가) 꼭두각시 도시로 건설되었습니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_COLONY_CITYSTATE_FALLBACK">
+			<Text>꼭두각시 도시 건설</Text>
+		</Replace>
+	</Language_KO_KR>
+</GameData>

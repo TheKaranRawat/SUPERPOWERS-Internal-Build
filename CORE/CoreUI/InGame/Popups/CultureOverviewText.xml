@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_en_US>
+<!--CULTURE OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>Optimize Great Works</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>Rearrange owned Great Works into valid Themes where possible.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]Their [ICON_TOURISM] Tourism Influence on {1_Civ}: {2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM] Tourism Influence Trend: {1_Trend}</Text>
+		</Replace>
+	</Language_en_US>
+
+	<Language_DE_DE>
+<!--CULTURE OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>Großwerke optimieren</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>Ordne im Besitz befindliche Großwerke nach Möglichkeit zu gültigen Themen an.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]Euer [ICON_TOURISM] Tourismus-Einfluss auf {1_Civ}: {2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM] Tendenz des Tourismus-Einflusses: {1_Trend}</Text>
+		</Replace>
+	</Language_DE_DE>
+
+	<Language_ES_ES>
+<!--CULTURE OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>Optimizar Grandes Obras</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>Reorganiza las Grandes Obras que posees en Temas válidos cuando sea posible.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]Su influencia de [ICON_TOURISM] turismo sobre {1_Civ}: {2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM] Tendencia de la influencia de turismo: {1_Trend}</Text>
+		</Replace>
+	</Language_ES_ES>
+
+	<Language_FR_FR>
+<!--CULTURE OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>Optimiser les Grandes Œuvres</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>Réorganise les Grandes Œuvres possédées en Thèmes valides lorsque c’est possible.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]Leur influence [ICON_TOURISM] touristique sur {1_Civ} : {2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM] Tendance de l'influence touristique : {1_Trend}</Text>
+		</Replace>
+	</Language_FR_FR>
+
+	<Language_KO_KR>
+<!--CULTURE OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>위대한 작품 최적화</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>가능한 경우 보유한 위대한 작품을 유효한 주제에 맞게 재배치합니다.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]{1_Civ}에 대한 그들의 [ICON_TOURISM] 관광 영향력: {2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM] 관광 영향력 추세: {1_Trend}</Text>
+		</Replace>
+	</Language_KO_KR>
+
+	<Language_RU_RU>
+<!--CULTURE OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>Оптимизировать Великие Произведения</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>Распределите имеющиеся Великие Произведения по допустимым Темам, где это возможно.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]Их [ICON_TOURISM] Влияние туризма на {1_Civ}: {2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM] Тенденция влияния туризма: {1_Trend}</Text>
+		</Replace>
+	</Language_RU_RU>
+	<Language_PL_PL>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>Optymalizuj wielkie dzieła</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>Układa posiadane wielkie dzieła w prawidłowe motywy tam, gdzie to możliwe.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]Ich wpływ [ICON_TOURISM] turystyki na {1_Civ}: {2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM] Trend wpływu turystyki: {1_Trend}</Text>
+		</Replace>
+	</Language_PL_PL>
+	<Language_IT_IT>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>Ottimizza i Capolavori</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>Riorganizza i Capolavori posseduti in Temi validi, ove possibile.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]La loro influenza [ICON_TOURISM] turistica su {1_Civ}: {2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM] Tendenza dell'influenza turistica: {1_Trend}</Text>
+		</Replace>
+	</Language_IT_IT>
+	<Language_PT_BR>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>Otimizar Grandes Obras</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>Reorganiza suas Grandes Obras em Temas válidos sempre que possível.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]Influência de [ICON_TOURISM] Turismo deles sobre {1_Civ}: {2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM] Tendência da Influência de Turismo: {1_Trend}</Text>
+		</Replace>
+	</Language_PT_BR>
+	<Language_zh_CN>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW">
+			<Text>优化杰作</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPTIMIZEGW_TT">
+			<Text>尽可能将你拥有的杰作重新排列，以组成有效的主题。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_LEVEL">
+			<Text>[NEWLINE][NEWLINE]对方对{1_Civ}的[ICON_TOURISM]魅力影响力：{2_Level}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CO_THEIR_TREND">
+			<Text>[NEWLINE][ICON_TOURISM]魅力影响力趋势：{1_Trend}</Text>
+		</Replace>
+	</Language_zh_CN>
+</GameData>

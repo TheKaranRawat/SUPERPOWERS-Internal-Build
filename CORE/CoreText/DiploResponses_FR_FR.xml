@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_FR_FR>
+		<!--Insults-->
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_1">
+			<Text>Pourquoi continuez-vous à me faire perdre mon temps avec ces sottises ? Hors de ma vue !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_2">
+			<Text>Ne m'avez-vous pas entendu la première fois ? Allez-vous-en !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_3">
+			<Text>Pardonnez-moi, auriez-vous l'oreille dure ? La réponse sera toujours non !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_REPEAT_SHARE_OPINION_NO_1">
+			<Text>Je n'examinerai pas de telles requêtes pour le moment. Cessez de me le demander, je vous prie.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_REPEAT_SHARE_OPINION_NO_2">
+			<Text>Nous en avons déjà parlé. Je ne vous dirai rien de mes affaires.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_REPEAT_SHARE_OPINION_NO_3">
+			<Text>La réponse demeure non. Nous ne divulguerons aucun détail diplomatique pour le moment.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_SHARE_OPINION_NO_1">
+			<Text>Jamais nous ne partagerions nos secrets diplomatiques avec une canaille de votre espèce !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_SHARE_OPINION_NO_2">
+			<Text>Pensez-vous sincèrement que je révélerais ma politique étrangère à une crapule telle que vous ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_SHARE_OPINION_NO_3">
+			<Text>Pourquoi perdre votre temps à m'interroger sur mes affaires étrangères ? Cela ne vous regarde en rien !</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NO_1">
+			<Text>Je regrette, mais nous préférons garder nos secrets diplomatiques bien à l'abri. Revenez une autre fois.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NO_2">
+			<Text>Mes conseillers jugent important de garder notre politique étrangère confidentielle. Une autre fois, peut-être ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NO_3">
+			<Text>Il ne nous paraît pas opportun d'étaler nos affaires étrangères pour le moment. Une autre fois, peut-être ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_FRIENDLY_1">
+			<Text>{1_PlayerName:textkey} m'offre une amitié véritable, digne de confiance. (Amical)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_FRIENDLY_2">
+			<Text>J'apprécie beaucoup {1_PlayerName:textkey} et me réjouis de voir notre amitié se poursuivre. (Amical)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_FRIENDLY_3">
+			<Text>{1_PlayerName:textkey} et moi sommes en bons termes, et je ne vois aucune raison que cela change. (Amical)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NEUTRAL_1">
+			<Text>Je n'ai pas vraiment d'opinion sur {1_PlayerName:textkey}. (Neutre)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NEUTRAL_2">
+			<Text>Entre {1_PlayerName:textkey} et moi, il n'y a ni inimitié ni amitié. (Neutre)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NEUTRAL_3">
+			<Text>{1_PlayerName:textkey} ne me dérange aucunement. (Neutre)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_GUARDED_1">
+			<Text>Je vous le dis franchement : je ne fais pas la moindre confiance à {1_PlayerName:textkey}. (Méfiant)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_GUARDED_2">
+			<Text>{1_PlayerName:textkey} a alarmé mes conseillers et nous surveillons la situation. (Méfiant)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_GUARDED_3">
+			<Text>Nous gardons un œil sur {1_PlayerName:textkey} à la suite de récents incidents. (Méfiant)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_HOSTILE_1">
+			<Text>Le règne de {1_PlayerName:textkey} souille cette terre, et je ne verrais aucun inconvénient à ce qu'il prenne fin. (Hostile)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_HOSTILE_2">
+			<Text>{1_PlayerName:textkey} est un tyran et une canaille dont il faudra s'occuper. (Hostile)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_HOSTILE_3">
+			<Text>Ne me rappelez pas que {1_PlayerName:textkey} foule encore cette terre... (Hostile)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_AFRAID_1">
+			<Text>Je regarde {1_PlayerName:textkey} avec la plus grande admiration ! (Effrayé)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_AFRAID_2">
+			<Text>Je m'émerveille du succès de {1_PlayerName:textkey}. (Effrayé)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_AFRAID_3">
+			<Text>J'espère devenir un jour un aussi bon dirigeant que {1_PlayerName:textkey}. (Effrayé)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_WAR_1">
+			<Text>{1_PlayerName:textkey} et moi sommes en guerre ! ([COLOR_NEGATIVE_TEXT]EN GUERRE ![ENDCOLOR])</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_WAR_2">
+			<Text>{1_PlayerName:textkey} et moi nous livrons un combat sans merci. ([COLOR_NEGATIVE_TEXT]EN GUERRE ![ENDCOLOR])</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_WAR_3">
+			<Text>Je règle actuellement un différend avec {1_PlayerName:textkey}. ([COLOR_NEGATIVE_TEXT]EN GUERRE ![ENDCOLOR])</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_PLANNING_WAR_1">
+			<Text>Je vous fais suffisamment confiance pour vous avouer que je prépare la guerre contre {1_PlayerName:textkey}. (Guerre en préparation !)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_PLANNING_WAR_2">
+			<Text>Ne vous fiez pas aux apparences. Je compte débarrasser cette terre de {1_PlayerName:textkey}. (Guerre en préparation !)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_PLANNING_WAR_3">
+			<Text>La présence de {1_PlayerName:textkey} m'insupporte, et je compte l'éliminer sous peu. (Guerre en préparation !)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_DECEPTIVE_1">
+			<Text>Je puis sembler en bons termes avec {1_PlayerName:textkey}, mais tout cela n'est que façade. (Fourbe)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_DECEPTIVE_2">
+			<Text>Savez-vous garder un secret ? Je compte duper {1_PlayerName:textkey} à la première occasion. (Fourbe)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_DECEPTIVE_3">
+			<Text>Je dis au monde entier que {1_PlayerName:textkey} a mon amitié. Je vous confie, dans le plus grand secret, qu'il n'en est rien. (Fourbe)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_FRIEND_OFFERS_GIFT_1">
+			<Text>Acceptez cette offre en gage de gratitude pour notre amitié.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_FRIEND_OFFERS_GIFT_2">
+			<Text>Dans ces temps difficiles, je vous offre un présent.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_FRIEND_OFFERS_GIFT_3">
+			<Text>En témoignage de notre amitié, j'offre ceci à votre peuple, dans l'espoir qu'un jour vous nous rendrez la pareille.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_GRANTED_1">
+			<Text>C'est avec joie que je vous aide.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_GRANTED_2">
+			<Text>Puisse ce présent apporter la prospérité à votre peuple.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_GRANTED_3">
+			<Text>C'est un plaisir pour moi de venir en aide à ceux qui sont dans le besoin.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_DECLINED_1">
+			<Text>Je tiens à notre amitié, mais je ne peux pas vous accorder cela.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_DECLINED_2">
+			<Text>C'est plus que mon peuple ne saurait céder. Je crains de devoir refuser.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_DECLINED_3">
+			<Text>Notre amitié demeure, et cela ne changera pas. Mais ma réponse est non.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_TOO_SOON_1">
+			<Text>Vous m'avez demandé de l'aide tout récemment. Par amitié, laissez passer un peu de temps avant de me solliciter à nouveau.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_TOO_SOON_2">
+			<Text>Trop peu de temps s'est écoulé depuis votre dernière demande. Je crains de ne pas pouvoir encore en envisager une autre.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_TOO_SOON_3">
+			<Text>Je ne puis satisfaire cette requête pour le moment. Je le regrette.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_SHARE_OPINION_1">
+			<Text>Je regrette, mais nous ne vous connaissons pas depuis assez longtemps pour divulguer nos secrets diplomatiques. Plus tard, peut-être ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_SHARE_OPINION_2">
+			<Text>Nous ne nous connaissons pas depuis assez longtemps pour que je vous révèle ma politique étrangère. La réponse est non.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_SHARE_OPINION_3">
+			<Text>Je ne dévoile ma politique étrangère qu'à ceux en qui j'ai confiance. Or, je ne puis me fier à quelqu'un que je viens à peine de rencontrer.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_GREETS_MASTER_1">
+			<Text>L'asservissement de mon peuple est une honte pour nous tous. Que voulez-vous ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_GREETS_MASTER_2">
+			<Text>Oh, le tyran montre à nouveau son visage. Comment comptez-vous nous exploiter cette fois ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_GREETS_MASTER_3">
+			<Text>Oh ? Qu'est-ce qui amène le tyran à ma porte ? Venez-vous cracher encore sur nous et sur notre fierté ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_GREETING_VASSALAGE_VASSAL_1">
+			<Text>Bienvenue sur mes terres. En quoi puis-je vous être utile ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_GREETING_VASSALAGE_VASSAL_2">
+			<Text>Salutations ! J'espère qu'il vous plaira d'apprendre que nos ouvriers travaillent sans relâche à produire des ressources pour votre usage.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_GREETING_VASSALAGE_VASSAL_3">
+			<Text>Ah, bienvenue ! Quelle aide attendez-vous de nous ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_DEMANDS_INDEPENDENCE_1">
+			<Text>Nous sommes las de votre règne pitoyable et sommes prêts à nous battre jusqu'à la mort pour recouvrer notre indépendance.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_DEMANDS_INDEPENDENCE_2">
+			<Text>Renoncez à votre emprise sur notre empire, ou subissez-en les conséquences. Lequel de ces choix vous semble le plus avisé ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_DEMANDS_INDEPENDENCE_3">
+			<Text>Mon peuple veut son indépendance, et rien de ce que vous ferez ne pourra nous arrêter. Nous pouvons régler cela à l'amiable, ou par la force. À vous de choisir.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_VASSALAGE_REVOKE_VASSALAGE_1">
+			<Text>Le temps est venu pour mon peuple de suivre sa propre voie en ce monde. Nous désirons une nation indépendante. Qu'en dites-vous ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_VASSALAGE_REVOKE_VASSALAGE_2">
+			<Text>Votre occupation de notre empire n'est plus tolérable aux yeux de mes sujets, et je vous adresse une requête officielle afin que vous permettiez à mon peuple de vivre en État souverain.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_VASSALAGE_REVOKE_VASSALAGE_3">
+			<Text>Nous estimons que le moment est venu de mettre fin à notre accord de vassalité. Notre peuple désire se gouverner lui-même. L'accepterez-vous ?</Text>
+		</Replace>
+		<!-- AI revokes Human Vassalage -->
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_GRANTED_1">
+			<Text>Mon peuple vous est reconnaissant d'avoir décidé de nous accorder notre indépendance.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_GRANTED_2">
+			<Text>Libérer mon peuple est très généreux de votre part. Vous avez toute ma gratitude.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_GRANTED_3">
+			<Text>Nous rendre notre indépendance est d'une grande magnanimité. Puisse ce jour rester dans les mémoires pour les siècles à venir.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_REFUSED_WAR_1">
+			<Text>Fort bien. Notre peuple se battra jusqu'à la mort pour garantir notre indépendance.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_REFUSED_WAR_2">
+			<Text>Vous avez choisi de verser inutilement le sang de vos troupes. Notre peuple ne renoncera pas à son indépendance.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_REFUSED_WAR_3">
+			<Text>Soit. Nous nous battrons jusqu'à la mort pour garantir notre liberté.</Text>
+		</Replace>
+		<!-- Human asks AI to revoke his vassalage -->
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GRANTS_INDEPENDENCE_1">
+			<Text>Fort bien. Nous vous accordons votre indépendance et reconnaissons votre peuple comme un État souverain.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GRANTS_INDEPENDENCE_2">
+			<Text>J'accepte. Votre peuple est libéré du contrôle de mon empire.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GRANTS_INDEPENDENCE_3">
+			<Text>Entendu. Nous reconnaissons votre droit à l'indépendance.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_REFUSES_INDEPENDENCE_WAR_1">
+			<Text>À qui croyez-vous donc parler ? Mes pantins ne m'échappent pas si aisément. Je vais maintenant écraser votre insurrection.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_REFUSES_INDEPENDENCE_WAR_2">
+			<Text>Vous pensiez sincèrement que je vous laisserais partir si facilement ? Ha ! Non... préparez-vous à mourir.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_REFUSES_INDEPENDENCE_WAR_3">
+			<Text>Vous avez perdu la raison, n'est-ce pas ? Pensiez-vous sincèrement que je serais aussi pitoyable ? Je prendrai plaisir à réduire vos armées en miettes.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_ATTACKED_BY_MASTER_1">
+			<Text>Je vous avais confié notre défense, et voilà que vous nous attaquez. Quelle honte.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_ATTACKED_BY_MASTER_2">
+			<Text>Quelle barbarie ! Vous aviez promis de protéger notre peuple, et au lieu de cela, vous nous attaquez ! N'en doutez pas, je vous tuerai, et ce jour-là, vous souffrirez.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_ATTACKED_BY_MASTER_3">
+			<Text>Vous étiez notre rempart. Vous deviez anéantir nos agresseurs, non vous joindre à eux ! Apporter la prospérité à nos deux peuples, non nous abandonner aux ténèbres ! Vous avez fait fausse route, et désormais, le monde entier le saura.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_MASTER_GREETS_VASSAL_1">
+			<Text>Tiens donc, ma petite nation apprivoisée vient me rendre visite. Que voulez-vous ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_MASTER_GREETS_VASSAL_2">
+			<Text>Vos sujets ont intérêt à travailler dur pour produire des ressources dignes de moi. Que voulez-vous ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_MASTER_GREETS_VASSAL_3">
+			<Text>Vous vous tenez devant votre supérieur. Agenouillez-vous devant moi, ou gare à vous.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GREETS_VASSAL_1">
+			<Text>Qu'est-ce donc ? Une visite de mon vassal ? Est-ce un tribut que vous m'apportez ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GREETS_VASSAL_2">
+			<Text>Ah, l'un de mes nombreux vassaux ? Qu'avez-vous à m'offrir ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GREETS_VASSAL_3">
+			<Text>Je vous promets que mes soldats vous protégeront, vous et vos terres. Que voulez-vous ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_AGREES_TO_MOVE_TROOPS_1">
+			<Text>Comme vous voudrez, j'éloignerai mes troupes de votre frontière. Toutes mes excuses pour les désagréments causés par cet incident.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_AGREES_TO_MOVE_TROOPS_2">
+			<Text>Très bien, je dirigerai mes armées ailleurs.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_AGREES_TO_MOVE_TROOPS_3">
+			<Text>Entendu. Je déplacerai mes troupes sur-le-champ.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_TROOPS_ONLY_PASSING_THROUGH_1">
+			<Text>Comprenez-le bien, mes troupes ne font que passer ! Nous ne voulons aucun mal à votre empire.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_TROOPS_ONLY_PASSING_THROUGH_2">
+			<Text>Ne vous alarmez pas. Nous ne vous voulons aucun mal. Nos troupes ne font que des manœuvres.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_TROOPS_ONLY_PASSING_THROUGH_3">
+			<Text>Je vous présente mes excuses pour l'inquiétude que les récents mouvements de mes troupes ont pu vous causer. Nos soldats ne font que traverser la région et nous n'avons aucune intention belliqueuse.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_MOVE_TROOPS_NEUTRAL_HOSTILE_1">
+			<Text>Votre existence sans âme mériterait certes qu'on y mette fin, mais mes hommes ne souhaitent pas vous attaquer pour l'instant. Remerciez votre bonne étoile.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_MOVE_TROOPS_NEUTRAL_HOSTILE_2">
+			<Text>Bien que vous tuer me serait un plaisir, l'heure n'est pas encore venue.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_MOVE_TROOPS_NEUTRAL_HOSTILE_3">
+			<Text>Non, mes hommes ne vont pas perdre leur temps avec vous. Pas encore. Votre peur m'amuse, cependant.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_CONQUEST_WAR_1">
+			<Text>Peut-être êtes-vous plus perspicace que je ne le pensais. Peut-être aviez-vous pressenti mon ascension vers la domination du monde ? Ou peut-être êtes-vous simplement stupide. Quoi qu'il en soit, l'heure de mourir a sonné.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_CONQUEST_WAR_2">
+			<Text>À vrai dire, il est inutile de vous mentir. Vous n'êtes qu'un marchepied sur le chemin de ma grandeur.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_CONQUEST_WAR_3">
+			<Text>Ha ! Ce n'est pas ainsi que l'on s'adresse à son futur souverain. Maintenant, vous allez souffrir.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_BETRAYAL_WAR">
+			<Text>Je l'admets, il fut un temps où je tenais notre amitié pour assez solide. Mais l'heure est venue de montrer mon vrai visage. Mes troupes marchent droit sur vos villes. L'heure de mourir a sonné.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_HOSTILE_WAR">
+			<Text>Vous osez me donner des ordres ? Mes troupes ne bougeront pas, sauf pour entrer sur vos terres.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THIRD_PARTY_AI_OFFERS_TO_FREE_VASSALS_1">
+			<Text>Vos nations sujettes crient leur soif d'indépendance. L'entendez-vous ? Allons, que faudra-t-il vous offrir pour que vous les écoutiez ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THIRD_PARTY_AI_OFFERS_TO_FREE_VASSALS_2">
+			<Text>Je vous en conjure, libérez vos vassaux. Cette offre est-elle assez alléchante ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THIRD_PARTY_AI_OFFERS_TO_FREE_VASSALS_3">
+			<Text>L'indépendance est un droit naturel. Allons, rétablissons l'équilibre en concluant un accord pour le bien de vos vassaux.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_MASTER_FOR_LIBERATION_1">
+			<Text>Ce geste de bonté ne sera pas oublié de sitôt. Vous avez offert sa liberté à mon peuple. Ma gratitude vous est acquise à jamais.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_MASTER_FOR_LIBERATION_2">
+			<Text>Il faut beaucoup de sagesse et de courage pour renoncer à ses prétentions au nom de l'honneur et de la liberté. Mon peuple célébrera le jour de notre indépendance pendant des siècles. Vous avez toute ma gratitude.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_MASTER_FOR_LIBERATION_3">
+			<Text>Nous vous remercions d'avoir reconnu notre peuple comme un État indépendant. Puissent nos peuples vivre côte à côte, unis en tant qu'alliés.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_LIBERATES_VASSAL_1">
+			<Text>Nous avons décidé de renoncer à nos prétentions sur vos terres. Vous pouvez vivre désormais en peuple libre. Vous n'êtes plus notre vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_LIBERATES_VASSAL_2">
+			<Text>Je crois que notre temps en tant que votre maître touche à sa fin. Je vous accorde votre indépendance. Puissions-nous demeurer de grands alliés à l'avenir. Vous n'êtes plus notre vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_LIBERATES_VASSAL_3">
+			<Text>Après mûre réflexion, nous avons décidé de mettre fin à notre accord et de vous rendre votre liberté. Puissent nos empires prospérer dans les temps à venir. Vous n'êtes plus notre vassal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_PROTESTS_TAX_RAISE_1">
+			<Text>Je déplore que vous ayez choisi d'augmenter nos impôts. Cet argent appartient à mon peuple. Sachez que nos relations en pâtissent.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_PROTESTS_TAX_RAISE_2">
+			<Text>Je vous en prie, ayez pitié de nos marchands. Vos impôts désorganisent notre économie. Je déplore que vous ayez choisi cette voie.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_PROTESTS_TAX_RAISE_3">
+			<Text>Cette augmentation de nos impôts est inacceptable. Le contrôle de nos affaires politiques ne suffit-il donc pas à assouvir votre avidité ?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_ANNOUNCES_TAX_RAISE_1">
+			<Text>Gouverner un autre État nous impose de lourdes dépenses. Nous avons décidé d'augmenter vos impôts. J'espère que vous le comprendrez.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_TAX_CUT_1">
+			<Text>Nous nous réjouissons d'apprendre que vous avez réduit nos impôts. Nous osons espérer que c'est là le signe de jours meilleurs.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_TAX_CUT_2">
+			<Text>Je vous remercie d'avoir allégé nos impôts. Croyez bien que l'essor de notre économie profitera à long terme à nos deux nations.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_TAX_CUT_3">
+			<Text>Votre décision de réduire nos impôts est, selon nous, un geste qui rapprochera nos peuples. Nous vous en remercions.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_ANNOUNCES_TAX_CUT_1">
+			<Text>J'ai le plaisir de vous annoncer que j'ai réduit vos impôts. Notre empire peut prospérer sans votre aide, et je ne vois aucune raison de tendre inutilement nos relations.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_OFFERS_VOLUNTARY_VASSALAGE_1">
+			<Text>Ma faiblesse est connue du monde entier. Je vous prie d'accepter mon offre d'allégeance.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_OFFERS_VOLUNTARY_VASSALAGE_2">
+			<Text>Votre grande puissance ne connaît aucune limite. Notre faiblesse fait de nous une cible tentante. Nous sollicitons humblement votre protection.</Text>
+		</Replace>
+	</Language_FR_FR>
+</GameData>

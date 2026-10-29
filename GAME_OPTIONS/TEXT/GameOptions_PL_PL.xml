@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_PL_PL>
+<!--TWO_UNITS_PER_TILE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TWO_UNITS_PER_TILE">
+			<Text>[COLOR_GREEN]Dwie jednostki na polu[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TWO_UNITS_PER_TILE_HELP">
+			<Text>Pozwala umieścić na jednym polu do dwóch jednostek bojowych. Na polach dopuszczających garnizon (miasta, forty i cytadele) mogą stacjonować do trzech jednostek bojowych.</Text>
+		</Replace>
+<!--NO_RESEARCH_AGREEMENTS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_RESEARCH_AGREEMENTS">
+			<Text>[COLOR_GREEN]Bez umów naukowych[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_RESEARCH_AGREEMENTS_HELP">
+			<Text>Wyłącza umowy naukowe z innymi cywilizacjami.</Text>
+		</Replace>
+<!--BEST_STARTING_LOCATION-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_BEST_STARTING_LOCATION">
+			<Text>[COLOR_GREEN]Najlepsze położenie startowe[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_BEST_STARTING_LOCATION_HELP">
+			<Text>
+				Ludzki gracz zawsze otrzyma najlepsze położenie startowe na dowolnej mapie.
+				[NEWLINE][NEWLINE]Po włączeniu tej opcji preferencje startowe wybranej cywilizacji zostaną zignorowane.
+			</Text>
+		</Replace>
+<!--FRIENDLY_CITADELS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_FRIENDLY_CITADELS">
+			<Text>[COLOR_GREEN]Przyjazne cytadele[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_FRIENDLY_CITADELS_HELP">
+			<Text>Cytadele można budować na terytorium innej cywilizacji lub miasta-państwa i przejmować tam pola tylko wtedy, gdy jesteś w stanie wojny z jego właścicielem. W przeciwnym razie przejmują jedynie pola na terytorium neutralnym.</Text>
+		</Replace>
+<!--SLOW_TECH-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_SLOW_TECH">
+			<Text>[COLOR_GREEN]Powolny rozwój technologii[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_SLOW_TECH_HELP">
+			<Text>Technologie każdej epoki kosztują więcej niż poprzedniej: +10% za każdą epokę, począwszy od starożytności, aż do 1,8-krotności w epoce informacji. Dłuższa gra oznacza więcej jednostek na mapie, co zużywa więcej pamięci.</Text>
+		</Replace>
+<!--UNWELCOME_PROPHETS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_UNWELCOME_PROPHETS">
+			<Text>[COLOR_GREEN]Niemile widziani prorocy[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_UNWELCOME_PROPHETS_HELP">
+			<Text>Cywilizacje SI nie wysyłają misjonarzy ani wielkich proroków do miast należących do ludzkiego gracza, który założył własną religię.[NEWLINE][NEWLINE]Ludzcy gracze bez religii pozostają dozwolonym celem: ochrona zaczyna działać dopiero wtedy, gdy masz własną religię do obrony.[NEWLINE][NEWLINE]Uwaga: bierna presja religijna z sąsiednich obcych miast pozostaje bez zmian.</Text>
+		</Replace>
+<!--AI_ONE_CITY_CHALLENGE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_AI_ONE_CITY_CHALLENGE">
+			<Text>[COLOR_GREEN]Starcie pojedynczych miast dla SI[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_AI_ONE_CITY_CHALLENGE_HELP">
+			<Text>Gracze SI mogą wybudować lub posiadać tylko jedno miasto.</Text>
+		</Replace>
+<!--NO_AI_WONDERS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_AI_WONDERS">
+			<Text>[COLOR_GREEN]Zakaz cudów dla SI[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_AI_WONDERS_HELP">
+			<Text>Uniemożliwia SI budowanie [COLOR_WATER_TEXT]cudów świata[ENDCOLOR].</Text>
+		</Replace>
+<!--NO_COMBAT_RANDOMNESS-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_COMBAT_RANDOMNESS">
+			<Text>[COLOR_GREEN]Bez losowości w walce[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_NO_COMBAT_RANDOMNESS_HELP">
+			<Text>Usuwa losowość obrażeń w walce, dzięki czemu zawsze wynoszą one 100% (zamiast mieścić się w przedziale od 80% do 120%).</Text>
+		</Replace>
+<!--REMOVE_XP_CAP-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REMOVE_XP_CAP">
+			<Text>[COLOR_GREEN]Nieograniczone doświadczenie[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REMOVE_XP_CAP_HELP">
+			<Text>Usuwa limity doświadczenia dla:[NEWLINE]fortów, cytadel, innych ulepszeń i garnizonów, barbarzyńców oraz państw-miast.</Text>
+		</Replace>
+<!--GOODY_HUTS_RECON_ONLY-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_RECON_ONLY">
+			<Text>[COLOR_GREEN]Starożytne ruiny tylko dla zwiadu[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_RECON_ONLY_HELP">
+			<Text>Nagrody ze starożytnych ruin mogą przejąć wyłącznie jednostki rozpoznawcze (zwiadowcy, odkrywcy i ich następcy). Każda inna jednostka, która wkroczy na ruiny, pozostawia je nietknięte dla jednostki rozpoznawczej. Rozrost granic miasta przejmuje ruiny jak zwykle.</Text>
+		</Replace>
+<!--GOODY_HUTS_SCIENCE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_SCIENCE">
+			<Text>[COLOR_GREEN]Nauka ze starożytnych ruin[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_GOODY_HUTS_SCIENCE_HELP">
+			<Text>Nagrody ze starożytnych ruin, które dawałyby darmową technologię, dają zamiast niej jednorazową porcję nauki dopisywaną do bieżących badań.</Text>
+		</Replace>
+
+<!--RETURNING_FOG-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_RETURNING_FOG">
+			<Text>[COLOR_GREEN]Powracająca mgła[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_RETURNING_FOG_HELP">
+			<Text>Mgła wojny ponownie zasnuwa odkryte lądy, których już nie widzisz, więc mapę trzeba rozpoznawać od nowa. Miasta i ich okolice, twoje własne terytorium, cuda natury, góry, starożytne ruiny oraz w pełni zbadane kontynenty pozostają odkryte. Dotyczy wszystkich graczy.</Text>
+		</Replace>
+<!--TILE_CONQUEST-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TILE_CONQUEST">
+			<Text>[COLOR_GREEN]Podbój pól[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_TILE_CONQUEST_HELP">
+			<Text>Podczas wojny twoje lądowe jednostki bojowe przejmują zajmowane pola wroga oraz odpowiednie pola sąsiednie. Forty i cytadele można zdobyć wyłącznie przez ich zajęcie; zdobycie cytadeli daje także pola wokół niej. Podbite pola wracają do właściciela po zawarciu pokoju.</Text>
+		</Replace>
+<!--REALISTIC_OCEAN_CROSSING-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REALISTIC_OCEAN_CROSSING">
+			<Text>[COLOR_GREEN]Realistyczna przeprawa przez ocean[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_REALISTIC_OCEAN_CROSSING_HELP">
+			<Text>Zaokrętowane jednostki lądowe nie mogą wchodzić na pola oceanu: armie i osadnicy przeprawiają się przez ocean na pokładzie transportowca wojska albo pojedynczo, w miejscu dla wojska na okręcie wojennym do walki wręcz od renesansu.[NEWLINE][NEWLINE]Zasada dotyczy wyłącznie graczy ludzkich. SI i tak wysyła swoje desanty morskie i osadników za morze w eskortowanych transportowcach wojska, gdy tylko może je zdobyć; jest z niej zwolniona tylko po to, by w nietypowych sytuacjach (brak okrętu gotowego na czas albo ruch, którego nie obsłuży żaden transportowiec) nigdy nie utknęła, co byłoby dla niej zbyt surowe.</Text>
+		</Replace>
+<!--WONDER_RACE-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_WONDER_RACE_NOTIFICATIONS">
+			<Text>[COLOR_CYAN]Powiadomienia o wyścigu cudów[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_WONDER_RACE_NOTIFICATIONS_HELP">
+			<Text>Raz na turę, gdy ty i poznany, widoczny rywal budujecie ten sam cud świata, otrzymujesz informację, czy prowadzisz, czy jesteś w tyle i o ile tur. Uczciwie wobec mgły wojny: liczą się tylko ci rywale, których miasto właśnie widzisz.</Text>
+		</Replace>
+<!-- VASSALAGE -->
+<!--VASSALAGE GAME OPTION-->
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_VASSALAGE">
+			<Text>[COLOR_GREEN]Wasalstwo[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAME_OPTION_GAIA_VASSALAGE_HELP">
+			<Text>Pozwala uczynić rywalizujące cywilizacje swoimi wasalami. Cywilizacja kapituluje w traktacie pokojowym tylko wtedy, gdy władasz jej pierwotną stolicą; wyzwolenie pierwotnej stolicy cywilizacji czyni ją twoim dobrowolnym wasalem.</Text>
+		</Replace>
+<!--VASSALAGE OVERVIEW-->
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_FOOTER_YOUR_VASSAL_COUNT">
+			<Text>Liczba naszych wasali: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_FOOTER_WORLD_VASSAL_COUNT">
+			<Text>Liczba wasali na świecie: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_LOCKED_UNTIL_ERA">
+			<Text>Wasalstwo nie zaczyna obowiązywać, dopóki nie wkroczysz w epokę średniowiecza albo nie zostaniesz czyimś wasalem.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_OVERVIEW_TITLE">
+			<Text>Przegląd wasalstwa</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_LIST_MASTERS_HEADER">
+			<Text>TWOI SENIORZY</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_LIST_VASSALS_HEADER">
+			<Text>TWOI WASALE</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_PROFILE_MASTER_HEADER">
+			<Text>SZCZEGÓŁY O SENIORZE</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_PROFILE_VASSAL_HEADER">
+			<Text>SZCZEGÓŁY O WASALU</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TURNS_AS_VASSAL">
+			<Text>Wasal przez {1_NumTurns} {1_NumTurns: plural 1?turę; 2?tury; 3?tur;} (od tury {2_TurnStarted})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_ALLOWED_LABEL">
+			<Text>Może ogłosić niepodległość:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_RULES_SEEN_BY_MASTER_TT">
+			<Text>Jeśli wasal może ogłosić niepodległość, wolno mu w dowolnej chwili zrzec się statusu twojego wasala. Odrzucenie takiej prośby oznacza wojnę z nim. Wasal sterowany przez SI chętniej o nią poprosi, gdy czuje się źle traktowany lub uzna, że może wygrać tę wojnę.[NEWLINE][NEWLINE]Twój wasal może ogłosić niepodległość po spełnieniu następujących warunków:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_RULES_SEEN_BY_VASSAL_TT">
+			<Text>Jeśli możesz ogłosić niepodległość, wolno ci w dowolnej chwili zrzec się statusu wasala. Zachowaj ostrożność: jeśli senior odrzuci twoje żądanie, wypowie ci wojnę. Senior sterowany przez SI chętniej się zgodzi, jeśli darzy cię sympatią lub obawia się twojej armii.[NEWLINE][NEWLINE]Możesz ogłosić niepodległość po spełnieniu następujących warunków:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_MIN_TURNS_TT">
+			<Text>1. Wasal przez {1_NumTurns} {1_NumTurns: plural 1?turę; 2?tury; 3?tur;}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_ANY_OF_HEADER_TT">
+			<Text>2. Jeden z poniższych warunków:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_CITIES_LOST_TT">
+			<Text>[TAB][ICON_BULLET]Drużyna wasala ma {1_CityPercent}% lub mniej miast niż w chwili rozpoczęcia wasalstwa. (obecnie {2_Percent}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_POPULATION_GROWN_TT">
+			<Text>[TAB][ICON_BULLET][ICON_CITIZEN] Populacja drużyny wasala wzrosła do ponad {1_PopPercent}% stanu z chwili rozpoczęcia wasalstwa. (obecnie {2_Percent}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_COND_RIVALS_MASTER_TT">
+			<Text>[TAB][ICON_BULLET]Drużyna wasala ma co najmniej {1_CityPercent}% liczby miast drużyny seniora (w całej drużynie) ORAZ co najmniej {2_PopPercent}% [ICON_CITIZEN] populacji drużyny seniora. (obecnie {3_Percent}% i {4_Percent}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COLUMN_KEY_FIGURES_HEADER">
+			<Text>STATYSTYKI</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COLUMN_ADMINISTRATION_HEADER">
+			<Text>ZARZĄDZANIE</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_START_LABEL">
+			<Text>Obecny odsetek miast:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_START_TT">
+			<Text>Stosunek liczby miast, które twój wasal posiada obecnie (w całej drużynie), do liczby miast (w całej drużynie), jaką miał w chwili zostania twoim wasalem.[NEWLINE][NEWLINE][ICON_BULLET]Miasta drużyny obecnie: {1_CurrentCities}[NEWLINE][ICON_BULLET]Miasta drużyny na początku wasalstwa: {2_StartCities}[NEWLINE][NEWLINE]Ten gracz ma obecnie {3_PlayerCities} {3_PlayerCities: plural 1?miasto; 2?miasta; 3?miast;}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_YOUR_TEAM_LABEL">
+			<Text>Odsetek miast seniora:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_CITIES_VS_YOUR_TEAM_TT">
+			<Text>Stosunek łącznej liczby miast, które twój wasal posiada obecnie (w całej drużynie), do liczby miast, jaką ma teraz twoja drużyna.[NEWLINE][NEWLINE][ICON_BULLET]Miasta drużyny wasala obecnie: {1_CurrentCities}[NEWLINE][ICON_BULLET]Miasta drużyny seniora: {2_MasterCities}[NEWLINE][NEWLINE]Ten gracz ma obecnie {3_Cities} {3_Cities: plural 1?miasto; 2?miasta; 3?miast;}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_YOUR_TEAM_LABEL">
+			<Text>Odsetek populacji seniora:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_YOUR_TEAM_TT">
+			<Text>Stosunek łącznej [ICON_CITIZEN] populacji, którą twój wasal posiada obecnie (w całej drużynie), do [ICON_CITIZEN] populacji, jaką ma teraz twoja drużyna.[NEWLINE][NEWLINE][ICON_BULLET][ICON_CITIZEN] Populacja drużyny obecnie: {1_CurrentPop}[NEWLINE][ICON_BULLET][ICON_CITIZEN] Populacja drużyny seniora: {2_MasterPop}[NEWLINE][NEWLINE]Ten gracz ma obecnie {3_PlayerPop} [ICON_CITIZEN] populacji.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_START_LABEL">
+			<Text>Obecny odsetek populacji:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_POPULATION_VS_START_TT">
+			<Text>Stosunek łącznej [ICON_CITIZEN] populacji, którą twój wasal posiada obecnie (w całej drużynie), do [ICON_CITIZEN] populacji (w całej drużynie), jaką miał w chwili zostania twoim wasalem.[NEWLINE][NEWLINE][ICON_BULLET][ICON_CITIZEN] Populacja drużyny obecnie: {1_CurrentPop}[NEWLINE][ICON_BULLET][ICON_CITIZEN] Populacja drużyny na początku wasalstwa: {2_StartPop}[NEWLINE][NEWLINE]Ten gracz ma obecnie {3_PlayerPop} [ICON_CITIZEN] populacji.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_BUTTON">
+			<Text>Wyzwól wasala</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_TT">
+			<Text>Wyzwól tego wasala, uwalniając go spod swojej kontroli. To działanie pokojowe: nie doprowadzi do wojny, a stosunki dyplomatyczne z byłym wasalem znacznie się poprawią.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Po wykonaniu tego działania {1_TeamName} przestanie być twoim wasalem. Nie można tego cofnąć.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_TOO_SOON_TT">
+			<Text>Możesz to zrobić dopiero wtedy, gdy ktoś jest twoim wasalem od co najmniej {1_Num} {1_Num: plural 1?tury; 2?tur; 3?tur;}. Tego wasala wyzwolisz za {2_Num} {2_Num: plural 1?turę; 2?tury; 3?tur;}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_RATE_LABEL">
+			<Text>Podatek: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_OPINION_LABEL">
+			<Text>Opinia o wasalstwie: {1_szStr}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_BREAKDOWN_HEADER_TT">
+			<Text>Ocena, jak twój wasal postrzega twoje traktowanie, oparta na następujących czynnikach:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_BREAKDOWN_NEUTRAL_TT">
+			<Text>Opinia twojego wasala o twoich rządach jest wyważona: obecnie nic nie przechyla jej w żadną stronę.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_DEMANDS_TT">
+			<Text>Stawiane mu żądania: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_TAXES_TT">
+			<Text>Obecna polityka podatkowa: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_PROTECTION_TT">
+			<Text>Ochrona jego ziem: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_RELIGION_TT">
+			<Text>Wspólne interesy religijne: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_TRADE_ROUTES_TT">
+			<Text>Szlaki handlowe z nim: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_FACTOR_TOTAL_TT">
+			<Text>Łącznie: {1_Sum}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_SATISFIED">
+			<Text>[COLOR_GREY]Zadowolenie[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_UNEASY">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]Nie zgadza się[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_AGGRIEVED">
+			<Text>[COLOR_FADING_NEGATIVE_TEXT]Złe traktowanie[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_RESENTFUL">
+			<Text>[COLOR_NEGATIVE_TEXT]Niezadowolenie[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TREATMENT_LEVEL_OPPRESSED">
+			<Text>[COLOR_NEGATIVE_TEXT]Zniewolenie[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_INCOME_SEEN_BY_MASTER_TT">
+			<Text>Otrzymujesz od tego wasala {1_Num} [ICON_GOLD] złota na turę, czyli {2_TaxRate}% jego dochodu brutto wynoszącego {3_Num} [ICON_GOLD] złota na turę.[NEWLINE][NEWLINE]Podatki dzielone są równo między członków twojej drużyny.[NEWLINE][NEWLINE]Podatek wasalny naliczany jest na początku tury.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_CHANGE_COOLDOWN_TT">
+			<Text>Zmiany podatku wasalnego możesz wprowadzić dopiero po upływie {1_NumTurns} {1_NumTurns: plural 1?tury; 2?tur; 3?tur;} od ostatniej korekty.[NEWLINE][NEWLINE]Kolejnej korekty dokonasz za {2_NumTurnsLeft} {2_NumTurnsLeft: plural 1?turę; 2?tury; 3?tur;}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_LAST_CHANGE_TURN">
+			<Text>Podatki ustalono w turze {1_Turn}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_NEVER_SET_SEEN_BY_MASTER">
+			<Text>[COLOR_NEGATIVE_TEXT]Nigdy nie ustalono podatków dla tego wasala.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_NEXT_CHANGE_TURN">
+			<Text>Podatki będzie można zmienić w turze {1_Turn}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_ADJUSTABLE_NOW_SEEN_BY_MASTER">
+			<Text>[COLOR_POSITIVE_TEXT]Podatki można teraz zmienić.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_CONFIRM_TAX_BUTTON">
+			<Text>Zastosuj zmiany</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_CONFIRM_TAX_BUTTON_TT">
+			<Text>Zastosuj zmiany podatku wasalnego. Nowa stawka będzie pobierana od następnej tury i przez kilka tur nie będzie można jej ponownie zmienić.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_CHANGE_CONFIRM">
+			<Text>Czy na pewno chcesz ustalić podatek na {1_TaxRate}% dla {2_TeamName}? Nie zmienisz tej wartości przez {3_NumTurns} {3_NumTurns: plural 1?turę; 2?tury; 3?tur;}. Podatek zacznie obowiązywać w następnej turze. [COLOR_WARNING_TEXT]Tego działania NIE MOŻNA cofnąć.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_GRANT_INDEPENDENCE_CONFIRM">
+			<Text>Czy na pewno chcesz wyzwolić {1_TeamName}? Spod twojej kontroli uwolnią się WSZYSTKIE cywilizacje z tej drużyny. [COLOR_WARNING_TEXT]Tego działania NIE MOŻNA cofnąć.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_CONFIRM">
+			<Text>Czy na pewno chcesz zażądać niepodległości od {1_TeamName}? W razie odmowy twoje cywilizacje wkroczą w stan [COLOR_WARNING_TEXT]wojny[ENDCOLOR]. [COLOR_WARNING_TEXT]Tego działania NIE MOŻNA cofnąć.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_VOLUNTARY_LABEL">
+			<Text>Dobrowolny wasal</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_VOLUNTARY_SEEN_BY_MASTER_TT">
+			<Text>Ta cywilizacja zgodziła się ci służyć na mocy umowy zawartej w czasie pokoju albo odrodziła się po wyzwoleniu przez ciebie jej pierwotnej stolicy. Może zażądać niepodległości w dowolnej chwili, gdy minie krótki okres minimalny.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_CAPITULATED_LABEL">
+			<Text>Wasal po kapitulacji</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_CAPITULATED_SEEN_BY_MASTER_TT">
+			<Text>Wasale po kapitulacji to wasale zdobyci dzięki złamaniu ich sił na wojnie. Podlegają seniorowi całkowicie i nie mogą go opuścić, dopóki nie spełnią szeregu warunków.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TOTAL_POPULATION_LABEL">
+			<Text>[ICON_CITIZEN] Populacja</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_HAPPINESS_LEVEL_LABEL">
+			<Text>Zadowolenie</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_GROSS_GOLD_PER_TURN_LABEL">
+			<Text>[ICON_GOLD] Dochód brutto ze złota na turę</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_NET_GOLD_PER_TURN_LABEL">
+			<Text>[ICON_GOLD] Złoto netto na turę</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TRADE_ROUTES_USED_LABEL">
+			<Text>[ICON_TURNS_REMAINING] Szlaki handlowe</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TRADE_ROUTES_USED_OF_TOTAL">
+			<Text>{1_TradeRoutesUsed} / {2_TradeRoutesAvailable}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_IDEOLOGY_PASSTHROUGH">
+			<Text>{1_Str}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_CULTURE_PER_TURN_LABEL">
+			<Text>[ICON_CULTURE] Kultura</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_TOURISM_PER_TURN_LABEL">
+			<Text>[ICON_TOURISM] Turystyka</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_FAITH_PER_TURN_LABEL">
+			<Text>[ICON_PEACE] Wiara</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_SCIENCE_PER_TURN_LABEL">
+			<Text>[ICON_RESEARCH] Nauka</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_CITY_COMPARISON_HEADER">
+			<Text>Miasta</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_DEMOGRAPHICS_HEADER">
+			<Text>Populacja</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_GOLD_AND_TRADE_HEADER">
+			<Text>Gospodarka</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_CULTURE_AND_IDEOLOGY_HEADER">
+			<Text>Kultura</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_RELIGION_AND_FAITH_HEADER">
+			<Text>Religia</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_RESEARCH_HEADER">
+			<Text>Nauka</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_NO_IDEOLOGY">
+			<Text>Brak ideologii</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_NO_PREVAILING_RELIGION">
+			<Text>Brak przeważającej religii</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_PREVAILING_RELIGION">
+			<Text>Przeważająca religia: {1_szReligion}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_STAT_CURRENT_IDEOLOGY">
+			<Text>Przyjęta ideologia: {1_szIdeology}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_INCOME_SEEN_BY_MASTER">
+			<Text>Otrzymujesz od tego gracza {1_Num} [ICON_GOLD] złota na turę</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TOURISM_MOD_VASSAL_BONUS">
+			<Text>+{1_Num}% premii za bycie twoim wasalem[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_TAXES_HEADER">
+			<Text>Opodatkowanie</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_RELATIONS_HEADER">
+			<Text>Dyplomacja</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_INDEPENDENCE_CONDITIONS_HEADER">
+			<Text>Niepodległość</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_LIST_EMPTY_NO_VASSALS">
+			<Text>Nie masz żadnych wasali.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_INDEPENDENCE_ALLOWED_WITH_VALUE">
+			<Text>Może ogłosić niepodległość: {1_Str}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_VALUE_LEADER_AND_TEAM">
+			<Text>{1_Num} (drużyna {2_iTeamNum})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_VALUE_TEAM_PERCENT">
+			<Text>{1_iTeamNum}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_VALUE_LEADER_AND_TEAM_PERCENT">
+			<Text>{1_Num}% (drużyna {2_iTeamNum}%)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_POPULATION_LABEL">
+			<Text>Twoja [ICON_CITIZEN] populacja</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_POPULATION_TT">
+			<Text>Nasza [ICON_CITIZEN] populacja ([ICON_CITIZEN] populacja drużyny)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_POPULATION_LABEL">
+			<Text>Ich [ICON_CITIZEN] populacja</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_POPULATION_TT">
+			<Text>Ich [ICON_CITIZEN] populacja ([ICON_CITIZEN] populacja drużyny)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_RATIO_LABEL">
+			<Text>[ICON_CITIZEN] Populacja %</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_RATIO_TT">
+			<Text>Stosunek naszej [ICON_CITIZEN] populacji do [ICON_CITIZEN] populacji gracza {1_MasterPlayer}.[NEWLINE][NEWLINE]Stosunek [ICON_CITIZEN] populacji graczy (stosunek [ICON_CITIZEN] populacji drużyn)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_SINCE_START_LABEL">
+			<Text>[ICON_CITIZEN] Populacja od początku wasalstwa %</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_POPULATION_SINCE_START_TT">
+			<Text>Stosunek obecnej [ICON_CITIZEN] populacji naszej drużyny do [ICON_CITIZEN] populacji, jaką miała w chwili, gdy zostaliśmy wasalem drużyny {1_TeamName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_CITIES_LABEL">
+			<Text>Twoja liczba miast</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_YOUR_CITIES_TT">
+			<Text>Liczba naszych miast (liczba miast drużyny)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_CITIES_LABEL">
+			<Text>Ich liczba miast</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_MASTER_CITIES_TT">
+			<Text>Liczba ich miast (liczba miast ich drużyny)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITY_RATIO_LABEL">
+			<Text>Liczba miast %</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITY_RATIO_TT">
+			<Text>Stosunek liczby naszych miast do liczby miast gracza {1_MasterPlayer}.[NEWLINE][NEWLINE]Stosunek liczby miast graczy (stosunek liczby miast drużyn)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITIES_SINCE_START_LABEL">
+			<Text>Liczba miast od początku wasalstwa %</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_COMPARE_MASTER_CITIES_SINCE_START_TT">
+			<Text>Stosunek obecnej liczby miast naszej drużyny do liczby miast, jaką miała w chwili, gdy zostaliśmy wasalem drużyny {1_TeamName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_ADJUSTABLE_NOW_SEEN_BY_VASSAL">
+			<Text>[COLOR_GREY]Twój senior może w tej turze zmienić twoje podatki.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_NEVER_SET_SEEN_BY_VASSAL">
+			<Text>[COLOR_POSITIVE_TEXT]Twój senior nigdy nie ustalił dla ciebie podatków.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_PAYMENT_SEEN_BY_VASSAL">
+			<Text>Otrzymuje od ciebie {1_Num} [ICON_GOLD] złota na turę!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_BUTTON">
+			<Text>Zażądaj niepodległości</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_TT">
+			<Text>Zażądaj niepodległości od swojego seniora. Po wykonaniu tego działania twoje wasalstwo wobec {1_TeamName} dobiegnie końca.[NEWLINE][NEWLINE]Senior może przyjąć albo odrzucić twoje żądanie niepodległości. W razie odmowy wybuchnie wojna z tym graczem! Szansa na pokojowe odzyskanie niepodległości rośnie wraz z twoją przewagą nad seniorem i jego dobrą opinią o tobie.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_TOO_SOON_TT">
+			<Text>[COLOR_NEGATIVE_TEXT]Nie możesz zażądać niepodległości, dopóki nie będziesz wasalem przez {1_MinimumTurns} {1_MinimumTurns: plural 1?turę; 2?tury; 3?tur;}. Wykonasz to działanie za {2_iNumTurns} {2_iNumTurns: plural 1?turę; 2?tury; 3?tur;}.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SEEK_INDEPENDENCE_CONDITIONS_UNMET_TT">
+			<Text>[COLOR_NEGATIVE_TEXT]Nie możesz zażądać niepodległości, dopóki nie spełnisz wszystkich wymaganych warunków. Najedź kursorem na „Może ogłosić niepodległość”, aby zobaczyć niezbędne wymagania.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_RATE_SEEN_BY_VASSAL_TT">
+			<Text>Płacisz podatek w wysokości {1_Num}% swojego [ICON_GOLD] dochodu brutto na turę. Nie masz wpływu na stawkę, którą wyznacza ci {2_TeamName}. Podatek ustalany jest osobno dla każdego członka drużyny wasala.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TAX_PAYMENT_SEEN_BY_VASSAL_TT">
+			<Text>Otrzymują od ciebie {1_Num} [ICON_GOLD] złota na turę, co stanowi {2_TaxRate}% twojego dochodu brutto wynoszącego {3_Num} [ICON_GOLD] złota na turę.[NEWLINE][NEWLINE]Opodatkowany dochód obliczany jest na początku twojej tury.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_SECTION_MASTER_BENEFITS_HEADER">
+			<Text>Korzyści dla seniora</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_OPEN_BORDERS_INTO_VASSALS">
+			<Text>[ICON_BULLET] Otwarte granice do ziem wasali</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_DOUBLE_RELIGIOUS_PRESSURE">
+			<Text>[ICON_BULLET] +100% [ICON_PEACE] nacisku na miasta wasali</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_TOURISM_BONUS">
+			<Text>[ICON_BULLET] +33% [ICON_TOURISM] turystyki wobec wasali</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_DIPLOMAT_IN_VASSAL_CAPITAL">
+			<Text>[ICON_BULLET] Darmowy [ICON_DIPLOMAT] dyplomata w [ICON_CAPITAL] stolicach wasali</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_SHARE_OF_VASSAL_YIELDS">
+			<Text>[ICON_BULLET] Otrzymujesz 20% [ICON_RESEARCH], [ICON_CULTURE] i [ICON_PEACE] wasala</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_AI_VASSALS_ADOPT_IDEOLOGY">
+			<Text>[ICON_BULLET] Wasale SI przyjmują ideologię seniora</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_MASTER_BENEFIT_BUY_VASSAL_UNIQUE_UNITS">
+			<Text>[ICON_BULLET] Zakup unikatowych jednostek wasali za [ICON_GOLD] złoto</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_VOLUNTARY_SEEN_BY_VASSAL_TT">
+			<Text>Jesteś dobrowolnym wasalem i liczysz na to, że {1_Name} zapewni ochronę twoim ziemiom. W przeciwieństwie do wasala po kapitulacji możesz zażądać niepodległości w dowolnej chwili, gdy minie krótki okres minimalny.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSALAGE_TYPE_CAPITULATED_SEEN_BY_VASSAL_TT">
+			<Text>Jesteś wasalem po kapitulacji w traktacie pokojowym, a twoim seniorem jest {1_Name}, więc trudno ci odzyskać niepodległość. Po upływie minimalnego okresu musisz dodatkowo stracić zbyt wiele miast mimo ochrony seniora, znacznie powiększyć swoją [ICON_CITIZEN] populację albo zbliżyć się do seniora zarówno pod względem liczby miast, jak i [ICON_CITIZEN] populacji.</Text>
+		</Replace>
+<!--DIPLOMACY-->
+		<Replace Tag="TXT_KEY_GAIA_OPINION_THEY_ARE_YOUR_VASSAL">
+			<Text>Są naszym wasalem.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_THEY_ARE_YOUR_VOLUNTARY_VASSAL">
+			<Text>Są naszym dobrowolnym wasalem.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_CONTENT">
+			<Text>Są zadowoleni z tego, jak traktujesz ich jako senior.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_DISAGREE">
+			<Text>Nie zgadzają się z niektórymi twoimi decyzjami jako seniora.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_MISTREATED">
+			<Text>Uważają, że jako twój wasal są źle traktowani!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_UNHAPPY">
+			<Text>Są skrajnie niezadowoleni z twoich rządów nad nimi!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_VASSAL_RULE_ENSLAVED">
+			<Text>Uważają, że twoje rządy są dla nich zniewoleniem!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_DEFENDED_THEM">
+			<Text>Jako senior bronisz ich terytorium!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_FAILED_DEFENSE">
+			<Text>Jako senior zawodzisz w obronie ich terytorium!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_FREED_THEM_UNASKED">
+			<Text>Zostali przez ciebie wyzwoleni, choć wcale o to nie prosili.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_INDEPENDENCE_GRANTED">
+			<Text>Ich naród otrzymał od ciebie niepodległość!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_INDEPENDENCE_REFUSED">
+			<Text>Gdy poprosili o niepodległość, spotkali się z twoją odmową!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_MASTER_ATTACKED_THEM">
+			<Text>Otrzymali od ciebie wypowiedzenie wojny, gdy byli twoim wasalem!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_FEARS_YOUR_VASSAL_COUNT">
+			<Text>Obawiają się, że zdobywasz coraz więcej wasali!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_ASK_WITHDRAW_BORDER_TROOPS">
+			<Text>Odsuń swoje wojska od naszych granic.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_ASK_WITHDRAW_BORDER_TROOPS_HOSTILE">
+			<Text>Zamierzasz nas zaatakować, ty świnio?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_ASK_WITHDRAW_BORDER_TROOPS_TT">
+			<Text>Poproś przywódcę o wycofanie wojsk sprzed twoich granic. Jeśli się zgodzi, przez pewien czas nie będzie planować wojny przeciwko tobie. Jeśli odrzuci twoją prośbę, natychmiast wypowie ci wojnę, więc zachowaj ostrożność!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_SHARE_OPINION">
+			<Text>Co sądzisz o...</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_VOLUNTARY_VASSAL">
+			<Text>WASAL</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_VOLUNTARY_VASSAL_TT">
+			<Text>Dobrowolnie zostań wasalem drugiej cywilizacji. Dobrowolny wasal może zażądać od seniora niepodległości po upływie {1_Num} {1_Num: plural 1?tury; 2?tur; 3?tur;}.[NEWLINE][NEWLINE]UWAGA: wasal podąża za seniorem na wojnie i w pokoju. Z chwilą przystąpienia natychmiast zawiera pokój ze wszystkimi, z którymi senior nie walczy, i przyłącza się do każdej wojny, którą senior prowadzi.[NEWLINE][NEWLINE]Jeśli poddająca się cywilizacja ma własnych wasali, stają się oni wasalami nowego seniora.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_CAPITULATE">
+			<Text>KAPITULACJA</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_RELEASE_ALL_VASSALS">
+			<Text>WYZWOLENIE</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_RELEASE_ALL_VASSALS_TT">
+			<Text>Ta cywilizacja zrzeka się zwierzchnictwa nad wszystkimi swoimi wasalami, a każdy z nich odzyskuje niepodległość. Możliwe tylko wtedy, gdy ma co najmniej jednego wasala.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_ITEM_CAPITULATE_TT">
+			<Text>Ta cywilizacja poddaje się drugiemu graczowi i zostaje jego wasalem. Może skapitulować tylko przed cywilizacją, która włada jej pierwotną stolicą. Cywilizacja, która skapitulowała, nie może opuścić swojego seniora przed upływem {1_Num} {1_Num: plural 1?tury; 2?tur; 3?tur;}.[NEWLINE][NEWLINE]Jeśli kapitulująca cywilizacja ma własnych wasali, przechodzą oni do nowego seniora.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_REFUSE_VASSAL_INDEPENDENCE">
+			<Text>Jeśli chcesz wolności, przyjdzie ci o nią walczyć. (WOJNA)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DISCUSS_GRANT_VASSAL_INDEPENDENCE">
+			<Text>Rozumiemy. Przyznajemy wam niepodległość.</Text>
+		</Replace>
+<!--TOP PANEL-->
+		<Replace Tag="TXT_KEY_GAIA_TP_HAPPINESS_SHARED_BY_VASSALS">
+			<Text>{1_Num} z zadowolenia wasali.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_CULTURE_SHARED_BY_VASSALS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] od wasali.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_SCIENCE_SHARED_BY_VASSALS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_RESEARCH] od wasali.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_SHARED_BY_VASSALS">
+			<Text>{1_Num} od wasali.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_FAITH_SHARED_BY_VASSALS">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] od wasali.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_VASSAL_UPKEEP">
+			<Text>{1_Num} na utrzymanie wasali.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_VASSAL_TAX_COLLECTED">
+			<Text>{1_Num} z podatków wasalnych.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TP_GOLD_VASSAL_TAX_PAID">
+			<Text>{1_Num} zapłacone w podatkach twojemu seniorowi.</Text>
+		</Replace>
+<!--OTHER-->		
+		<Replace Tag="TXT_KEY_NOTIFICATION_CIV_RESURRECTED">
+			<Text>{1_PlayerName} {1_PlayerName: plural 1?podbija; 2?podbijają;} terytorium {2_CityName[2]}, dzięki czemu {3_CivAdj[6]} suwerenność zostaje przywrócona. Płomień {4_CivName[2]}, niegdyś zduszony, płonie na nowo. Cywilizacja {4_CivName} jest teraz wasalem gracza {1_Playername}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POPUP_CITY_CAPTURE_INFO_LIBERATE_RESURRECT">
+			<Text>Dawniej miasto należało do [COLOR_POSITIVE_TEXT]{@1_PlayerName[2]}[ENDCOLOR]. Możesz je zwrócić, za co będą ci dozgonnie wdzięczni. W ten sposób gracz ten stanie się twoim [COLOR_POSITIVE_TEXT]dobrowolnym wasalem[ENDCOLOR].</Text>
+		</Replace>
+		<!-- Notifications -->
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALS_UNLOCKED_SUMMARY">
+			<Text>Wasalstwo dostępne!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALS_UNLOCKED">
+			<Text>Twoja cywilizacja osiągnęła nową epokę ({1_EraName}) i może już pozyskiwać wasali!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_CAPITULATED">
+			<Text>W obliczu niemal pewnej klęski {1_TeamName} poddaje się i zostaje wasalem naszej wielkiej cywilizacji.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_CAPITULATED_SUMMARY">
+			<Text>{1_TeamName} kapituluje przed nami!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_VOLUNTARY">
+			<Text>Uznając twoją potęgę, {1_TeamName} zgadza się przyjąć twoją opiekę i zostaje twoim wasalem.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_NEW_VASSAL_VOLUNTARY_SUMMARY">
+			<Text>{1_TeamName} jest teraz naszym dobrowolnym wasalem!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_BECAME_VASSAL">
+			<Text>Twoja cywilizacja jest teraz wasalem, a jej seniorem jest {1_TeamName}. Odtąd przystępujesz do każdej wojny swojego seniora i zawierasz każdy jego pokój.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_BECAME_VASSAL_SUMMARY">
+			<Text>Twoim seniorem jest teraz {1_TeamName}!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE">
+			<Text>{1_PlyrName} jest teraz wasalem! Senior: {2_PlyrName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE_UNMET_VASSAL_SUMMARY">
+			<Text>{1_PlyrName} pozyskuje nowego wasala!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE_UNMET_VASSAL">
+			<Text>{1_PlyrName} pozyskuje nowego wasala: {2_PlyrName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_BEGAN_ELSEWHERE_UNMET_MASTER">
+			<Text>{1_PlyrName} zostaje wasalem! Senior: {2_PlyrName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_UNMET_PLAYER_TOOK_VASSAL">
+			<Text>{1_PlyrName} pozyskuje nowego wasala!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_LEFT_YOU_SUMMARY">
+			<Text>{1_TeamName} nie jest już twoim wasalem!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_LEFT_YOU_PEACEFULLY">
+			<Text>{1_TeamName} nie podlega już naszym rządom i znów rządzi się samodzielnie.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Nie jest już naszym wasalem.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_LEFT_YOU_BY_WAR">
+			<Text>{1_TeamName} podnosi bunt przeciwko naszemu imperium! Te zdradzieckie psy ogłosiły niepodległość i są gotowe bronić jej do ostatniej kropli krwi.[NEWLINE][NEWLINE][COLOR_NEGATIVE_TEXT]Nie jest już naszym wasalem.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_LEFT_MASTER_SUMMARY">
+			<Text>{1_TeamName} nie jest już twoim seniorem!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_LEFT_MASTER_PEACEFULLY">
+			<Text>Nasze wasalstwo wobec {1_TeamName} dobiegło końca. Nie podążamy już za dawnym seniorem na wojnie ani w pokoju i znów możemy obrać własny kurs.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_YOU_LEFT_MASTER_BY_WAR">
+			<Text>Niech żyje rewolucja! Nasz lud chwycił za broń, by wywalczyć niepodległość i zrzucić rządy, jakie narzuca nam {1_TeamName}!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSALAGE_ENDED_ELSEWHERE">
+			<Text>{1_PlyrName} nie jest już wasalem! Dawny senior: {2_PlyrName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_TAX_CAN_BE_SET">
+			<Text>Zmiana podatku wasalnego jest już możliwa! Wasal: {1_PlyrName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_RAISED_YOUR_TAX_SUMMARY">
+			<Text>Podatki podniesione!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_RAISED_YOUR_TAX">
+			<Text>{1_TeamName} podnosi twoje podatki z {2_Num}% do {3_Num}%!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_LOWERED_YOUR_TAX_SUMMARY">
+			<Text>Podatki obniżone!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_MASTER_LOWERED_YOUR_TAX">
+			<Text>{1_TeamName} obniża twoje podatki z {2_Num}% do {3_Num}%!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_CAN_BE_LIBERATED_SUMMARY">
+			<Text>Wyzwolenie możliwe!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_VASSAL_CAN_BE_LIBERATED">
+			<Text>{1_TeamName} jest naszym wasalem od wielu lat. Możemy teraz wyzwolić tę cywilizację!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_REPLAY_VASSALAGE_BEGAN">
+			<Text>{1_TeamName} zostaje wasalem! Nowy senior: {2_TeamName}.</Text>
+		</Replace>
+<!--VASSALAGE RESOLUTION-->
+		<Replace Tag="TXT_KEY_RESOLUTION_GAIA_END_ALL_VASSALS">
+			<Text>Powszechne wyzwolenie</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_RESOLUTION_GAIA_END_ALL_VASSALS_HELP">
+			<Text>Wszystkie więzi między seniorami a wasalami zostają natychmiast i pokojowo zerwane.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEAGUE_PROPOSAL_INVALID_NOBODY_HAS_VASSALS">
+			<Text>Niedozwolone z powodu braku wasali.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_OPINION_THEY_ARE_YOUR_MASTER">
+			<Text>Jesteś ich wasalem i bardzo im to odpowiada!</Text>
+		</Replace>
+		<!-- VictoryProgress domination tooltips + VassalageOverview static labels -->
+		<Replace Tag="TXT_KEY_GAIA_SCORE_BREAKDOWN_VASSALS_LABEL">
+			<Text>Wasale</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_YOU_ARE_VASSAL_OF_PLAYER">
+			<Text>[SPACE]{1_PlayerName} kontroluje cię jako wasala.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CIV_IS_YOUR_VASSAL">
+			<Text>[SPACE]Kontrolujesz cywilizację {1_CivName} jako wasala.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CIV_IS_VASSAL_OF_PLAYER">
+			<Text>[SPACE]{1_PlayerName} kontroluje cywilizację {2_CivName} jako wasala.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_UNMET_VASSAL_OF_UNMET_PLAYER">
+			<Text> Nieznany gracz kontroluje inną nieznaną cywilizację jako wasala.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CITY_STATE_HOLDS_CAPITAL_FOR_ALLY">
+			<Text>Państwo-miasto {1_Name} kontroluje {2_Num}. Miasto to liczy się jego sojusznikowi. Zerwij ten sojusz albo odbierz mu [ICON_CAPITAL] stolicę![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CITY_STATE_HOLDS_CAPITAL_FOR_ALLYS_MASTER">
+			<Text>Państwo-miasto {1_Name} kontroluje {2_Num}. Miasto to liczy się seniorowi jego sojusznika. Zerwij ten sojusz, wyzwól jego sojusznika albo odbierz mu [ICON_CAPITAL] stolicę![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_CITY_STATE_HOLDS_CAPITAL_NO_ALLY">
+			<Text>Państwo-miasto {1_Name} kontroluje {2_Num}. Nie ma obecnie sojusznika. Zawrzyj z nim sojusz albo odbierz mu [ICON_CAPITAL] stolicę![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DOMINATION_TT_VASSAL_HOLDS_CAPITAL_FOR_MASTER">
+			<Text>{1_Name} kontroluje {2_Num}. Miasto to liczy się seniorowi tego wasala. Wyzwól wasala albo odbierz mu [ICON_CAPITAL] stolicę![NEWLINE][NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_VASSAL_KIND_DEFAULT">
+			<Text>Wasal</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_OVERVIEW_CONFIRM_DIALOG_DEFAULT">
+			<Text>Czy na pewno?</Text>
+		</Replace>
+<!--VASSAL RELATIONSHIP UI + NOTIFICATION-->
+		<Replace Tag="TXT_KEY_GAIA_WAR_BLOCKED_WHILE_VASSAL_TT">
+			<Text>Jako wasal nie możesz wypowiadać wojny (wojna zostaje wypowiedziana automatycznie, gdy twój senior wypowie ją tej cywilizacji).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_BLOCKED_ON_OWN_MASTER_TT">
+			<Text>Nie możesz wypowiedzieć wojny swojemu seniorowi, dopóki nie zażądasz niepodległości albo senior cię nie wyzwoli.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_WHILE_VASSAL_TT">
+			<Text>Jako wasal nie możesz zawierać pokoju (pokój zostaje zawarty automatycznie, gdy twój senior zawrze go z tą cywilizacją).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_TARGET_IS_VASSAL_TT">
+			<Text>Nie możesz negocjować pokoju bezpośrednio z nimi: są wasalem. Pokój trzeba zawrzeć z ich seniorem, którym jest {1_MasterName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_MAY_NOT_ATTACK_VASSAL">
+			<Text>Nie możesz wypowiedzieć im wojny bezpośrednio: są wasalem. Wojnę trzeba wypowiedzieć ich seniorowi, którym jest {1_MasterName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DECLARE_WAR_TARGET_VASSALS_HEADER">
+			<Text>WASALE</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELATIONS_YOUR_MASTER_LABEL">
+			<Text>[COLOR_GREY]Jesteś ich wasalem[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELATIONS_VASSAL_STATE_UNDER">
+			<Text>[COLOR_GREY]Wasal cywilizacji {1_CivName:textkey}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DIPLO_SCORE_FROM_VASSALS">
+			<Text>{1_Num} od wasali</Text>
+		</Replace>
+	</Language_PL_PL>
+</GameData>

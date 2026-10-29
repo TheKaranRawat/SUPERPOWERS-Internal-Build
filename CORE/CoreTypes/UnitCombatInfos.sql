@@ -1,0 +1,90 @@
+-- written by GAIA using Notepad++
+CREATE TABLE IF NOT EXISTS Sapiens_DBUpdates (Name TEXT PRIMARY KEY, Value INTEGER DEFAULT 0);
+INSERT OR IGNORE INTO Sapiens_DBUpdates (Name) VALUES ('UnitCombatInfos');
+--====================================================================================================================
+-- UNIT COMBAT INFOS
+--====================================================================================================================
+
+INSERT OR IGNORE INTO UnitCombatInfos
+		(Type,							Description)
+VALUES	('UNITCOMBAT_SETTLER',			'TXT_KEY_GAIA_COMBAT_CLASS_SETTLERS'),
+		('UNITCOMBAT_WORKER',			'TXT_KEY_GAIA_COMBAT_CLASS_WORKERS'),
+		('UNITCOMBAT_WORKBOAT',			'TXT_KEY_GAIA_COMBAT_CLASS_WORK_BOATS'),
+		('UNITCOMBAT_CARGO_SHIP',		'TXT_KEY_UNITCOMBAT_CARGO_SHIP'),
+		('UNITCOMBAT_CARAVAN',			'TXT_KEY_GAIA_COMBAT_CLASS_CARAVANS'),
+		('UNITCOMBAT_INQUISITOR',		'TXT_KEY_GAIA_COMBAT_CLASS_INQUISITORS'),
+		('UNITCOMBAT_MISSIONARY',		'TXT_KEY_GAIA_COMBAT_CLASS_MISSIONARIES'),
+		('UNITCOMBAT_ARCHAEOLOGIST',	'TXT_KEY_GAIA_COMBAT_CLASS_ARCHAEOLOGISTS'),
+		('UNITCOMBAT_MISSILE',			'TXT_KEY_GAIA_COMBAT_CLASS_MISSILES'),
+		('UNITCOMBAT_GREAT_PERSON',		'TXT_KEY_UNITCOMBAT_GREAT_PERSON'),
+		('UNITCOMBAT_SPACESHIP_PART',	'TXT_KEY_UNITCOMBAT_SPACESHIP_PART');
+
+INSERT OR IGNORE INTO UnitCombatInfos
+		(Type,							Description)
+VALUES	('UNITCOMBAT_ANTIAIR',			'TXT_KEY_UNITCOMBAT_ANTIAIR'),
+		('UNITCOMBAT_MOUNTED_ARCHER',	'TXT_KEY_UNITCOMBAT_MOUNTED_ARCHER');
+
+UPDATE Units SET CombatClass = 'UNITCOMBAT_SETTLER'			WHERE Class   = 'UNITCLASS_SETTLER'        AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_WORKER'			WHERE Class   = 'UNITCLASS_WORKER'         AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_WORKBOAT'		WHERE Class   = 'UNITCLASS_WORKBOAT'       AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_CARGO_SHIP'		WHERE Class   = 'UNITCLASS_CARGO_SHIP'     AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_CARAVAN'			WHERE Class   = 'UNITCLASS_CARAVAN'        AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_INQUISITOR'		WHERE Class   = 'UNITCLASS_INQUISITOR'     AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_MISSIONARY'		WHERE Class   = 'UNITCLASS_MISSIONARY'     AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_ARCHAEOLOGIST'	WHERE Class   = 'UNITCLASS_ARCHAEOLOGIST'  AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_MISSILE'			WHERE Special = 'SPECIALUNIT_MISSILE'      AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_GREAT_PERSON'	WHERE Special = 'SPECIALUNIT_PEOPLE'       AND CombatClass IS NULL;
+UPDATE Units SET CombatClass = 'UNITCOMBAT_SPACESHIP_PART'	WHERE DefaultUnitAI = 'UNITAI_SPACESHIP_PART' AND CombatClass IS NULL;
+
+------------------------------------------------------------------------------------------------------------------------
+-- Auto-assign CombatClass for any newly inserted Unit
+CREATE TRIGGER IF NOT EXISTS GAIA_CombatClasses
+AFTER INSERT ON Units
+WHEN NEW.CombatClass IS NULL
+BEGIN
+	UPDATE Units SET CombatClass = CASE
+	WHEN Class			= 'UNITCLASS_SETTLER'		THEN  'UNITCOMBAT_SETTLER'
+	WHEN Class			= 'UNITCLASS_WORKER'		THEN  'UNITCOMBAT_WORKER'
+	WHEN Class			= 'UNITCLASS_WORKBOAT'		THEN  'UNITCOMBAT_WORKBOAT'
+	WHEN Class			= 'UNITCLASS_CARGO_SHIP'	THEN  'UNITCOMBAT_CARGO_SHIP'
+	WHEN Class			= 'UNITCLASS_CARAVAN'		THEN  'UNITCOMBAT_CARAVAN'
+	WHEN Class			= 'UNITCLASS_INQUISITOR'	THEN  'UNITCOMBAT_INQUISITOR'
+	WHEN Class			= 'UNITCLASS_MISSIONARY'	THEN  'UNITCOMBAT_MISSIONARY'
+	WHEN Class			= 'UNITCLASS_ARCHAEOLOGIST'	THEN  'UNITCOMBAT_ARCHAEOLOGIST'
+	WHEN Special		= 'SPECIALUNIT_MISSILE'		THEN  'UNITCOMBAT_MISSILE'
+	WHEN Special		= 'SPECIALUNIT_PEOPLE'		THEN  'UNITCOMBAT_GREAT_PERSON'
+	WHEN DefaultUnitAI	= 'UNITAI_SPACESHIP_PART'	THEN  'UNITCOMBAT_SPACESHIP_PART'
+	ELSE NULL END WHERE Type = NEW.Type;
+END;
+
+--====================================================================================================================
+-- SPECIAL UNITS
+--====================================================================================================================
+INSERT OR IGNORE INTO SpecialUnits
+		(Type,						Description,						Valid,	CityLoad)
+VALUES	('SPECIALUNIT_ENTRENCHED',	'TXT_KEY_SPECIALUNIT_ENTRENCHED',	1,		1);
+
+--====================================================================================================================
+-- PROMOTION COMBAT CLASS DEFAULT UNITS
+--====================================================================================================================
+INSERT OR IGNORE INTO _UnitCombatClass_DefaultUnits (CombatClass, DefaultUnitType) VALUES
+-- CORE PROMOTION COMBAT CLASSES
+('UNITCOMBAT_ANTIAIR',			'UNIT_ANTI_AIRCRAFT_GUN'),
+('UNITCOMBAT_MOUNTED_ARCHER',	'UNIT_MONGOLIAN_KESHIK'),
+-- BASE GAME PROMOTION COMBAT CLASSES
+('UNITCOMBAT_RECON',			'UNIT_SCOUT'),
+('UNITCOMBAT_MELEE',			'UNIT_SWORDSMAN'),
+('UNITCOMBAT_GUN',				'UNIT_RIFLEMAN'),
+('UNITCOMBAT_MOUNTED',			'UNIT_HORSEMAN'),
+('UNITCOMBAT_ARMOR',			'UNIT_TANK'),
+('UNITCOMBAT_ARCHER',			'UNIT_ARCHER'),
+('UNITCOMBAT_SIEGE',			'UNIT_CATAPULT'),
+('UNITCOMBAT_HELICOPTER',		'UNIT_HELICOPTER_GUNSHIP'),
+('UNITCOMBAT_NAVALMELEE',		'UNIT_TRIREME'),
+('UNITCOMBAT_NAVALRANGED',		'UNIT_GALLEASS'),
+('UNITCOMBAT_CARRIER',			'UNIT_CARRIER'),
+('UNITCOMBAT_SUBMARINE',		'UNIT_SUBMARINE'),
+('UNITCOMBAT_FIGHTER',			'UNIT_FIGHTER'),
+('UNITCOMBAT_BOMBER',			'UNIT_BOMBER');
+--====================================================================================================================
+UPDATE Sapiens_DBUpdates SET Value = 1 WHERE Name = 'UnitCombatInfos';

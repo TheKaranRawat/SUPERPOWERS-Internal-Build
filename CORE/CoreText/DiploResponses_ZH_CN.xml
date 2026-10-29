@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_zh_CN>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_1">
+			<Text>你为什么还要拿这些废话浪费我的时间？滚开！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_2">
+			<Text>我第一次说的话你没听见吗？走开！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_REPEAT_SHARE_OPINION_NO_3">
+			<Text>抱歉，你是耳朵不好使吗？答案永远是不！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_REPEAT_SHARE_OPINION_NO_1">
+			<Text>我目前不会受理此类请求。请别再问了。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_REPEAT_SHARE_OPINION_NO_2">
+			<Text>这事我们以前谈过了。我不会把我的事务告诉你。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_REPEAT_SHARE_OPINION_NO_3">
+			<Text>答案依然是不。我们目前不会提供外交细节。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_SHARE_OPINION_NO_1">
+			<Text>我们绝不会和你这种恶棍分享我们的外交机密！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_SHARE_OPINION_NO_2">
+			<Text>你真以为我会把我的外交政策告诉你这种罪犯吗？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_HOSTILE_SHARE_OPINION_NO_3">
+			<Text>你为什么要浪费时间打听我的外交事务？这与你无关！</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NO_1">
+			<Text>抱歉，我们更愿意守住自己的外交机密。改天再问吧。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NO_2">
+			<Text>我的顾问们认为，对我们的外交政策保密十分重要。也许改天吧？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NO_3">
+			<Text>我们目前不便公开我们的外交事务。也许下次吧？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_FRIENDLY_1">
+			<Text>{1_PlayerName:textkey}是真正的朋友，值得信赖。（友好）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_FRIENDLY_2">
+			<Text>我很喜欢{1_PlayerName:textkey}，期待我们的友谊长存。（友好）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_FRIENDLY_3">
+			<Text>{1_PlayerName:textkey}和我一直关系良好，我看不出有什么理由会改变。（友好）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NEUTRAL_1">
+			<Text>我对{1_PlayerName:textkey}确实没什么看法。（中立）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NEUTRAL_2">
+			<Text>{1_PlayerName:textkey}既不是我的敌人，也不是我的朋友。（中立）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_NEUTRAL_3">
+			<Text>{1_PlayerName:textkey}一点也不碍我的事。（中立）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_GUARDED_1">
+			<Text>老实说，我一点也不信任{1_PlayerName:textkey}。（提防）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_GUARDED_2">
+			<Text>{1_PlayerName:textkey}引起了我的顾问们的警觉，我们正在密切关注局势。（提防）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_GUARDED_3">
+			<Text>鉴于最近发生的事件，我们正在留意{1_PlayerName:textkey}。（提防）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_HOSTILE_1">
+			<Text>{1_PlayerName:textkey}的统治玷污了这片大地，就算它终结了，我也毫不在意。（敌对）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_HOSTILE_2">
+			<Text>{1_PlayerName:textkey}是个暴君和恶棍，必须加以解决。（敌对）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_HOSTILE_3">
+			<Text>别提醒我{1_PlayerName:textkey}还活在这世上……（敌对）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_AFRAID_1">
+			<Text>我对{1_PlayerName:textkey}既仰慕又嫉妒！（畏惧）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_AFRAID_2">
+			<Text>{1_PlayerName:textkey}的成就令我惊叹。（畏惧）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_AFRAID_3">
+			<Text>希望有一天我能成为像{1_PlayerName:textkey}那样出色的领袖。（畏惧）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_WAR_1">
+			<Text>{1_PlayerName:textkey}和我正在交战！（[COLOR_NEGATIVE_TEXT]交战中！[ENDCOLOR]）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_WAR_2">
+			<Text>{1_PlayerName:textkey}和我正激战不休。（[COLOR_NEGATIVE_TEXT]交战中！[ENDCOLOR]）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_WAR_3">
+			<Text>我目前正在与{1_PlayerName:textkey}解决争端。（[COLOR_NEGATIVE_TEXT]交战中！[ENDCOLOR]）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_PLANNING_WAR_1">
+			<Text>我足够信任你，所以坦白告诉你：我正在计划对{1_PlayerName:textkey}开战。（计划开战！）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_PLANNING_WAR_2">
+			<Text>别被表象蒙蔽了。我打算将{1_PlayerName:textkey}从这世上铲除。（计划开战！）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_PLANNING_WAR_3">
+			<Text>我受够了{1_PlayerName:textkey}的存在，打算很快消灭他们。（计划开战！）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_DECEPTIVE_1">
+			<Text>我看起来也许和{1_PlayerName:textkey}关系友好，但那全是做戏。（欺骗）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_DECEPTIVE_2">
+			<Text>你能保守秘密吗？我打算一有机会就欺骗{1_PlayerName:textkey}。（欺骗）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_SHARE_OPINION_DECEPTIVE_3">
+			<Text>我对全世界说{1_PlayerName:textkey}是朋友，但我要私下告诉你，事实并非如此。（欺骗）</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_FRIEND_OFFERS_GIFT_1">
+			<Text>朋友，请接受这份提议，以表达我对我们友谊的感激之情。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_FRIEND_OFFERS_GIFT_2">
+			<Text>在你危难之际，我愿赠你一份礼物。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_FRIEND_OFFERS_GIFT_3">
+			<Text>为表示我们对这份友谊的支持，我将此物献给你的人民，希望有朝一日你也能投桃报李。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_GRANTED_1">
+			<Text>我很乐意帮忙。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_GRANTED_2">
+			<Text>愿这份礼物为你的人民带来繁荣。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_GRANTED_3">
+			<Text>能帮助有需要的人是我的荣幸。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_DECLINED_1">
+			<Text>我珍视我们的友谊，但这个我无法给你。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_DECLINED_2">
+			<Text>这已超出我的人民所能拿出的限度。恐怕我必须拒绝。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_DECLINED_3">
+			<Text>我们依然是朋友，这一点不会改变。但我的回答是：不行。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_TOO_SOON_1">
+			<Text>朋友，你不久前才向我求助过。过些时候再来请求吧。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_TOO_SOON_2">
+			<Text>你上次提出请求才过去不久。我暂时还不能考虑新的请求。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_FRIEND_HELP_REQUEST_TOO_SOON_3">
+			<Text>我目前无法满足这个请求。抱歉。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_SHARE_OPINION_1">
+			<Text>抱歉，我们与你相识时间尚短，还不能透露我们的外交机密。也许将来可以？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_SHARE_OPINION_2">
+			<Text>我们相识的时间还不够长，我不能透露我的外交政策。答案是不。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_TOO_SOON_FOR_SHARE_OPINION_3">
+			<Text>我只向我信任的人透露我的外交政策。我无法信任一个刚认识的人。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_GREETS_MASTER_1">
+			<Text>你对我的人民的奴役让我们所有人蒙羞。你想要什么？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_GREETS_MASTER_2">
+			<Text>哦，暴君又露面了。你还想怎样进一步压榨我们？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_GREETS_MASTER_3">
+			<Text>哦？是什么风把暴君吹到我门口来了？你是来进一步践踏我们和我们的尊严吗？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_GREETING_VASSALAGE_VASSAL_1">
+			<Text>欢迎来到我的领土，宗主大人。有什么可以为你效劳的？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_GREETING_VASSALAGE_VASSAL_2">
+			<Text>你好！希望你乐于得知，我们的工人正在努力为你生产资源。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_GREETING_VASSALAGE_VASSAL_3">
+			<Text>啊，欢迎你，宗主大人！你需要我们提供什么帮助？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_DEMANDS_INDEPENDENCE_1">
+			<Text>我们受够了你对我们可悲的统治，已准备好为重获独立而死战到底。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_DEMANDS_INDEPENDENCE_2">
+			<Text>放弃对我们帝国的控制，否则后果自负。哪个听起来更明智？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_VASSAL_DEMANDS_INDEPENDENCE_3">
+			<Text>我的人民渴望独立，你无法阻止我们。现在，我们可以好说好商量，也可以兵戎相见。你自己选吧。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_VASSALAGE_REVOKE_VASSALAGE_1">
+			<Text>我的人民在这世上寻求自己道路的时刻已经到来。我们渴望成为一个独立的国家。你意下如何？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_VASSALAGE_REVOKE_VASSALAGE_2">
+			<Text>我的臣民再也无法容忍你对我们帝国的占领，我正式请求你允许我的人民作为一个独立的主权国家生存。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_VASSALAGE_REVOKE_VASSALAGE_3">
+			<Text>我们认为终止附庸协议的时候到了。我们的人民渴望自治。你会接受吗？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_GRANTED_1">
+			<Text>我的人民感激你决定给予我们独立。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_GRANTED_2">
+			<Text>你解放了我的人民，实在宽宏大量。我对你感激不尽。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_GRANTED_3">
+			<Text>你恢复了我们的独立，实在仁慈。愿这一天被世代铭记。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_REFUSED_WAR_1">
+			<Text>很好。我们的人民将死战到底，以确保我们的独立。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_REFUSED_WAR_2">
+			<Text>你选择为此让你的士兵白白流血。我们的人民绝不会在独立面前退缩。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_INDEPENDENCE_REFUSED_WAR_3">
+			<Text>那好吧。我们将死战到底，以确保我们的自由。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GRANTS_INDEPENDENCE_1">
+			<Text>很好。我们准许你们独立，并承认你的人民为一个独立国家。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GRANTS_INDEPENDENCE_2">
+			<Text>我同意。你们不再受我帝国的控制。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GRANTS_INDEPENDENCE_3">
+			<Text>明白。我们承认你们的独立权利。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_REFUSES_INDEPENDENCE_WAR_1">
+			<Text>你以为你在跟谁说话？我的傀儡可没那么容易离开我。现在我要镇压你的叛乱。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_REFUSES_INDEPENDENCE_WAR_2">
+			<Text>你真以为我会这么轻易放你走？哈！不……现在准备受死吧。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_REFUSES_INDEPENDENCE_WAR_3">
+			<Text>你疯了吧？你真以为我会那么可悲？我会尽情享受把你的军队碾成碎片的乐趣。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_ATTACKED_BY_MASTER_1">
+			<Text>我信任你会保护我们，你却反过来攻击我们。真是可耻。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_ATTACKED_BY_MASTER_2">
+			<Text>你真是野蛮！你承诺保护我们的人民，却反过来攻击我们！别搞错了，我会杀了你，到那时你将饱受折磨。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_ATTACKED_BY_MASTER_3">
+			<Text>你曾是我们的保护者。人们说你会消灭攻击我们的人，而不是与他们同流合污！你本该为我们双方带来繁荣，而不是让我们陷入黑暗！你已经堕落了，现在全世界都会知道。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_MASTER_GREETS_VASSAL_1">
+			<Text>哟，看看，我的小宠物国来看我了。你想要什么？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_MASTER_GREETS_VASSAL_2">
+			<Text>你的人最好在努力生产资源来讨我欢心。你想要什么？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_HOSTILE_AI_MASTER_GREETS_VASSAL_3">
+			<Text>你正身处主上面前。跪下，否则后果自负。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GREETS_VASSAL_1">
+			<Text>怎么？我的附庸来访了？是来进贡的吗？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GREETS_VASSAL_2">
+			<Text>啊，是我众多仆从中的一个？你有什么要献上的？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_GREETS_VASSAL_3">
+			<Text>我承诺我的士兵会保护你和你的领土。你想要什么？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_AGREES_TO_MOVE_TROOPS_1">
+			<Text>如你所愿，我会把军队从你的边境撤走。对此事造成的任何麻烦，我深表歉意。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_AGREES_TO_MOVE_TROOPS_2">
+			<Text>很好，我会把军队调往别处。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_AGREES_TO_MOVE_TROOPS_3">
+			<Text>明白。我会立即调走我的军队。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_TROOPS_ONLY_PASSING_THROUGH_1">
+			<Text>请理解，我的军队只是路过而已！我们对你的帝国并无恶意。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_TROOPS_ONLY_PASSING_THROUGH_2">
+			<Text>别紧张。我们无意伤害你。我们的军队只是在进行演习。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_TROOPS_ONLY_PASSING_THROUGH_3">
+			<Text>我最近的部队调动若让你担忧，我深表歉意。我们的军队只是途经此地，我们并无开战之意。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_MOVE_TROOPS_NEUTRAL_HOSTILE_1">
+			<Text>尽管你这毫无灵魂的存在很值得被终结，但我的士兵目前并不想攻击你。算你走运。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_MOVE_TROOPS_NEUTRAL_HOSTILE_2">
+			<Text>虽然我很乐意杀了你，但现在还不是时候。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_MOVE_TROOPS_NEUTRAL_HOSTILE_3">
+			<Text>不，我的士兵暂时还不打算在你身上浪费时间。不过，你的恐惧倒是让我觉得有趣。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_CONQUEST_WAR_1">
+			<Text>也许你比我想象的要聪明。也许你早已料到我终将称霸世界？又或许你只是愚蠢。不管怎样，你的死期到了。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_CONQUEST_WAR_2">
+			<Text>说实话，没必要对你撒谎。你不过是我走向伟大的一块垫脚石。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_CONQUEST_WAR_3">
+			<Text>哈！你可不该这样跟你未来的统治者说话。现在，你必须付出代价。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_BETRAYAL_WAR">
+			<Text>我承认，我曾一度以为你是个相当不错的朋友。然而，是时候露出我的真面目了。我的军队已直指你的城市。你的死期到了。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_REFUSES_TO_MOVE_TROOPS_HOSTILE_WAR">
+			<Text>你竟敢对我发号施令？我的部队哪儿也不会去，除非是进军你的领土。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THIRD_PARTY_AI_OFFERS_TO_FREE_VASSALS_1">
+			<Text>你治下的国家正在呼唤独立。你听到了吗？来吧，要付出什么代价你才肯倾听？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THIRD_PARTY_AI_OFFERS_TO_FREE_VASSALS_2">
+			<Text>我恳求你，请释放你的附庸。这个提议够诱人吗？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THIRD_PARTY_AI_OFFERS_TO_FREE_VASSALS_3">
+			<Text>独立是天赋的权利。来吧，为了你的附庸，让我们达成协议，恢复平衡。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_MASTER_FOR_LIBERATION_1">
+			<Text>这份善意将被长久铭记。你给予了我的人民自由。我永远感激你。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_MASTER_FOR_LIBERATION_2">
+			<Text>只有睿智而勇敢的领袖，才会以正义与自由之名放弃自己的主权要求。我的人民将世世代代庆祝我们的独立日。我对你深表感激。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_MASTER_FOR_LIBERATION_3">
+			<Text>感谢你承认我们的人民为一个独立国家。愿我们两国人民作为盟友共同繁衍生息。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_LIBERATES_VASSAL_1">
+			<Text>我们决定放弃对你们土地的主权要求。你们可以作为自由的人民生存下去。你们不再是我们的附庸。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_LIBERATES_VASSAL_2">
+			<Text>我认为我们作为你们宗主国的时代已经结束。我准许你们独立。愿我们将来仍是亲密的盟友。你们不再是我们的附庸。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_LIBERATES_VASSAL_3">
+			<Text>经过慎重考虑，我们决定终止协议，还你们自由。愿我们两国在未来繁荣昌盛。你们不再是我们的附庸。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_PROTESTS_TAX_RAISE_1">
+			<Text>你选择提高我们的税收，令我很失望。那些钱属于我的人民。毫无疑问，我们的关系已经受到了损害。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_PROTESTS_TAX_RAISE_2">
+			<Text>我恳求你，可怜可怜我们的商人吧。你的税收扰乱了我们的经济。你选择走这条路，令我很失望。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_PROTESTS_TAX_RAISE_3">
+			<Text>你对我们加税是不可接受的。控制我们的政治事务还不足以满足你的贪婪吗？</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_ANNOUNCES_TAX_RAISE_1">
+			<Text>统治另一个国家给我们带来了巨大的开销。我们决定提高你们的税收。希望你能理解。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_TAX_CUT_1">
+			<Text>得知你降低了我们的税收，我们很高兴。我们只希望这是好事将至的征兆。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_TAX_CUT_2">
+			<Text>感谢你为我们减轻了税负。我们保证，经济的增长从长远来看将惠及我们两国。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_VASSAL_THANKS_TAX_CUT_3">
+			<Text>我们认为你降低税收的决定将使我们两国人民更加亲近。我们感谢你。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_MASTER_ANNOUNCES_TAX_CUT_1">
+			<Text>我很高兴地宣布，我已降低了你们的税收。没有你们的帮助，我们的帝国也能繁荣昌盛，我认为没有必要让我们的关系无谓地紧张。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_OFFERS_VOLUNTARY_VASSALAGE_1">
+			<Text>我的弱小已是世人皆知。请接受我的效忠吧。</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_OFFERS_VOLUNTARY_VASSALAGE_2">
+			<Text>你的强大力量无边无际。我们的弱小使我们成为诱人的目标。我们谦卑地请求你的保护。</Text>
+		</Replace>
+	</Language_zh_CN>
+</GameData>

@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<GameData>
+	<Language_PT_BR>
+		<Replace Tag="TXT_KEY_BUILDING_NEED_MORE_POP">
+			<Text>[NEWLINE]Requer mais {1_Num} de [ICON_CITIZEN] População para construir {2_BuildingName:textkey}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_EMPIRE_EXCLUSIVE">
+			<Text>[NEWLINE]Indisponível enquanto seu império possuir ou estiver construindo {1_BuildingName:textkey}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_CITY_EXCLUSIVE">
+			<Text>[NEWLINE]Indisponível enquanto esta cidade possuir {1_BuildingName:textkey}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_UNIT_REQUIRES_WAR">
+			<Text>[NEWLINE]Só pode ser treinada enquanto você estiver em guerra com uma civilização principal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_MET_CIV_UNIQUE_UNITS_MAX">
+			<Text>[NEWLINE]Você já tem {1_Num} desta unidade, o máximo que pode comprar.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NO_ACTION_BUILDING_GAIA_NEED_TENETS">
+			<Text>[NEWLINE]Requer ao menos {1_Num} {1_Num: plural 1?Princípio; other?Princípios;} desta Ideologia.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_ABSENT_CIV_UNIQUES">
+			<Text>Civilizações perdidas sobrevivem em seu império: {1_Buildings} agora substituem seus equivalentes padrão.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_ABSENT_CIV_UNIQUES">
+			<Text>Edifícios Exclusivos Restaurados</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_ABSENT_CIV_UNIQUES_DRAWN">
+			<Text>{2_Building:textkey} restaurará os edifícios exclusivos de civilizações ausentes deste mundo: {1_Buildings}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_ABSENT_CIV_UNIQUES_DRAWN">
+			<Text>Civilizações Perdidas Registradas</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ABSENT_CIV_UNIQUES_TOOLTIP">
+			<Text>Edifícios Exclusivos restaurados:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ABSENT_CIV_UNIQUE_BASE">
+			<Text>({3_Building:textkey} {1_CivAdj:textkey})</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_BUILDING_TT_RELIGIOUS_PRESSURE_MOD">
+			<Text>[ICON_PEACE] Pressão Religiosa: +{1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_FEATURE_HAZARD_VICTIM">
+			<Text>Sua unidade {1_Unit:textkey} foi atingida por {2_Hazard:textkey} e perdeu {3_Num} HP.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_FEATURE_HAZARD_HOLDER">
+			<Text>{2_Hazard:textkey} atingiu uma unidade inimiga ({1_Unit:textkey}) em seu território.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_FEATURE_HAZARD">
+			<Text>{1_Hazard:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID">
+			<Text>Saque Costeiro</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID_HELP">
+			<Text>Saqueie uma Melhoria inimiga adjacente a bordo do navio, sem desembarcar. Custa um movimento de saque; gratuito para Unidades que saqueiam sem gastar Movimentação.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_COASTAL_RAID_DISABLED_HELP">
+			<Text>Sem Melhoria inimiga adjacente para saquear ou sem Movimentação restante.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPOILS_CARRIED">
+			<Text>{@1_UnitName} agora carrega {2_Num} [ICON_GOLD] de Espólios</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_SPOILS">
+			<Text>Espólios: {1_Num} [ICON_GOLD] acumulados com saques. Pagos como [ICON_PRODUCTION] Produção e [ICON_CULTURE] Cultura quando esta Unidade entrar em seu território.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_PLUNDER_PROTECTED">
+			<Text>Esta [ICON_INTERNATIONAL_TRADE] Rota Comercial está protegida por uma escolta próxima e não pode ser saqueada.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UPANEL_REPAIR_AT_WAR">
+			<Text>Melhorias saqueadas não podem ser reparadas em território inimigo.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SPOILS">
+			<Text>{@1_UnitName} voltou com Espólios: +{2_Num} [ICON_PRODUCTION] de Produção em {@3_CityName} e +{4_Num} [ICON_CULTURE] de Cultura.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SPOILS">
+			<Text>Espólios resgatados: {1_Num} [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED">
+			<Text>Com a eliminação de {4_CivName}, {@2_ReligionName} agora pertence a {1_CivName}, que detém sua Cidade Sagrada, {@3_CityName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED_ACTIVE_PLAYER">
+			<Text>Com a eliminação de {3_CivName}, {@1_ReligionName} agora é sua, pois você detém sua Cidade Sagrada, {@2_CityName}. Você ganha sua Crença de Fundação, e seus Grandes Profetas podem aprimorá-la e disseminá-la.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_RELIGION_INHERITED_UNKNOWN">
+			<Text>Com a eliminação de seu fundador, {@1_ReligionName} agora pertence a uma civilização desconhecida que detém sua Cidade Sagrada.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_RELIGION_INHERITED">
+			<Text>{@1_ReligionName} muda de mãos</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_UNIT_GIFT">
+			<Text>Seu vassalo {1_CivName} enviou a você uma unidade: {2_UnitName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPLASH_MOVE">
+			<Text>Dano de carga</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPLASH_PILLAGE">
+			<Text>Dano de saque</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_IDEOLOGY_IMPOSED">
+			<Text>Seu suserano impôs sua Ideologia ao seu império, que entra em Anarquia por {1_Num} {1_Num: plural 1?turno; other?turnos;}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VASSAL_IDEOLOGY_IMPOSED_SUMMARY">
+			<Text>Ideologia Imposta</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEAGUE_LEGATION_VOTES">
+			<Text>[NEWLINE][ICON_BULLET]{1_NumVotes} de Legações</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SPY_STOLE_RESEARCH">
+			<Text>Seu {1_SpyRank} {2_SpyName} não conseguiu roubar uma tecnologia em {3_CityName}, mas reuniu informações que valem {5_Num}[ICON_RESEARCH] para sua pesquisa atual.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SPY_STOLE_RESEARCH_S">
+			<Text>Informações Reunidas por {1_SpyName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_DETECTED">
+			<Text>Um espião não identificado tentou roubar segredos tecnológicos {1: gender *:noart?de; feminine?{1: plural 2?das; other?da;}; masculine?{1: plural 2?dos; other?do;}; other?de;} {1_CityName}, mas só levou algumas anotações de pesquisa.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_DETECTED_S">
+			<Text>Roubo de tecnologia fracassado!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_IDENTIFIED">
+			<Text>Um espião {1_CivAdj[1]} tentou roubar segredos tecnológicos {2: gender *:noart?de; feminine?{2: plural 2?das; other?da;}; masculine?{2: plural 2?dos; other?do;}; other?de;} {2_CityName}, mas só levou algumas anotações de pesquisa.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_NOTHING_STOLEN_SPY_IDENTIFIED_S">
+			<Text>{1: gender *:noart?{}; feminine?{1: plural 2?As ; other?A ;}; masculine?{1: plural 2?Os ; other?O ;}; other?{};}{1_CivShortDesc} não {1: plural 2?conseguiram; other?conseguiu;} roubar uma tecnologia!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPY_STATE_REMOVED">
+			<Text>Eliminado!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_YOU">
+			<Text>Você aprimorou seu panteão adicionando uma nova crença.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_KNOWN_CIV">
+			<Text>{1_CivName} {1: plural 1?aprimorou; 2?aprimoraram;} seu panteão adicionando uma nova crença.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_UNMET_CIV">
+			<Text>Uma civilização desconhecida aprimorou seu panteão adicionando uma nova crença.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PANTHEON_BELIEF_ADDED_SUMMARY">
+			<Text>Panteão Aprimorado</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SPY_NAME_FALLBACK">
+			<Text>Desconhecido</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AUTO_FAITH_SAVING_FOR_PROPHET">
+			<Text>Guardar para {1_UNITCLASS_PROPHET}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_SETTLERS">
+			<Text>Colonizadores</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_WORKERS">
+			<Text>Trabalhadores</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_WORK_BOATS">
+			<Text>Barcos de Serviço</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_CARGO_SHIP">
+			<Text>Navios Cargueiros</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_CARAVANS">
+			<Text>Caravanas</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_INQUISITORS">
+			<Text>Inquisidores</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_MISSIONARIES">
+			<Text>Missionários</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_ARCHAEOLOGISTS">
+			<Text>Arqueólogos</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_COMBAT_CLASS_MISSILES">
+			<Text>Mísseis</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_GREAT_PERSON">
+			<Text>Grandes Pessoas</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_SPACESHIP_PART">
+			<Text>Partes da Espaçonave</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_ANTIAIR">
+			<Text>Unidades Antiaéreas</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNITCOMBAT_MOUNTED_ARCHER">
+			<Text>Unidades montadas de combate a distância</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_OVERVIEW_LOCATE_OR_RECALL_TT">
+			<Text>Clique para ir até a unidade comercial.[NEWLINE]Ctrl+Clique para chamá-la de volta: a rota termina na hora e a unidade volta à sua cidade de origem no próximo turno, livre para ser enviada a outro lugar. O custo é um turno de rendimentos dessa rota.[NEWLINE][ICON_INFINITY] marca uma rota que continua até você chamá-la de volta.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_OVERVIEW_RECALLED_MARK">
+			<Text>[COLOR_WARNING_TEXT]R[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_TRO_INDEFINITE">
+			<Text>[ICON_INFINITY]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_TRADE_ROUTE_INDEFINITE_HINT">
+			<Text>[ICON_INFINITY] Esta Rota Comercial continua até você chamar a unidade de volta na Visão de Rotas Comerciais.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_REHOME_TRADE_UNIT_ROUTE_COUNT_TT">
+			<Text>{1} rota{1: plural 2?s;} {1: plural 1?comercial possível; other?comerciais possíveis;} a partir de {2_CityName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_FOOD">
+			<Text>[ICON_FOOD]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_PRODUCTION">
+			<Text>[ICON_PRODUCTION]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_GOLD">
+			<Text>[ICON_GOLD]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_SCIENCE">
+			<Text>[ICON_RESEARCH]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_CULTURE">
+			<Text>[ICON_CULTURE]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_FAITH">
+			<Text>[ICON_PEACE]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_YIELD_TOURISM">
+			<Text>[ICON_TOURISM]{1_Num: number "'+'##;'[COLOR_RED]-'##"}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_PICKER_RELIGION_SPREAD">
+			<Text>{1_ReligionIcon}+{2_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_SCIENCE_EXPLAINED">
+			<Text>{1_CivName} descobriu {2_Num} tecnologias que você não conhece.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_YOUR_SCIENCE_INFLUENCE">
+			<Text>Você está recebendo {1_Num} [ICON_RESEARCH] de Ciência nesta rota devido à sua Influência Cultural sobre eles.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_EXPLAINED">
+			<Text>Você descobriu {1_Num} tecnologias que {2_CivName} não conhece.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_INFLUENCE">
+			<Text>Eles estão recebendo {1_Num} [ICON_RESEARCH] de Ciência nesta rota devido à Influência Cultural deles sobre você.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_GOLD">
+			<Text>Nas ruínas, você encontra os tesouros de um antigo império!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_PROPHET_FAITH">
+			<Text>Você encontrou uma comunidade religiosa secreta. O pregador prevê a chegada de um Grande Profeta.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_FAITH">
+			<Text>Você encontrou um antigo oráculo. A sacerdotisa abençoou você com uma revelação divina.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GOODY_CULTURE">
+			<Text>Você encontrou artefatos culturais que maravilham seus cidadãos!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_RECEIVED_GOLD">
+			<Text>[SPACE]Você recebeu {1_Num} [ICON_GOLD] de Ouro!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RUINS_REWARD_CULTURE_SUFFIX">
+			<Text>[SPACE]Você recebeu {1_Num} [ICON_CULTURE] de Cultura!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RUINS_REWARD_FAITH_SUFFIX">
+			<Text>[SPACE]Você recebeu {1_Num} [ICON_PEACE] de Fé!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_YIELD_NAME_TOURISM">
+			<Text>Turismo</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ROUTE_LIST_TOURISM_AMOUNT">
+			<Text>{1_Num} [ICON_TOURISM] de Turismo</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_TOURISM_FROM_TRADE_ROUTES">
+			<Text>{1_perTurn:number "#.##"} [ICON_TOURISM] de Rotas Comerciais estabelecidas com esta cidade</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_MINOR_WARMONGER_KILLED">
+			<Text>A Cidade-Estado de {1_MinorName} agradece a você por abater uma unidade inimiga que a ameaçava!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SM_MINOR_WARMONGER_KILLED">
+			<Text>Inimigo Abatido Perto de {1_MinorName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER">
+			<Text>Blockbuster Internacional</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER_DISABLED_HELP">
+			<Text>A Unidade precisa estar com Saúde total.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_BLOCKBUSTER_HELP">
+			<Text>Esta ordem consumirá a Unidade, dando a você uma grande quantidade de [ICON_GOLD] Ouro e espalhando [ICON_TOURISM] Turismo para todas as civilizações.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK">
+			<Text>Ataque Cibernético</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK_DISABLED_HELP">
+			<Text>A unidade precisa estar dentro do seu próprio território.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_CYBERATTACK_HELP">
+			<Text>Esta ordem consumirá a unidade e causará 2 turnos de Anarquia em todas as civilizações com as quais você está em guerra. Se estiver em paz, causará 1 turno de Anarquia em todas as outras civilizações.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_CYBERATTACK">
+			<Text>{@1_CivName} lançou um Ataque Cibernético contra a sua civilização e a mergulhou na Anarquia.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_CYBERATTACK">
+			<Text>Ataque Cibernético!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE">
+			<Text>Viagem Comercial</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE_DISABLED_HELP">
+			<Text>A Unidade precisa estar com Saúde total.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_EXTRA_TRADEROUTE_HELP">
+			<Text>Esta ordem consumirá a Unidade, concedendo uma Rota Comercial adicional.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP">
+			<Text>Fundar Corporação</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP_DISABLED_HELP">
+			<Text>A Unidade precisa estar em uma de suas cidades ou adjacente a ela, e deve haver um espaço de Corporação válido disponível em um edifício comercial.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCORP_HELP">
+			<Text>Este comando instrui o [COLOR_UNIT_TEXT]Grande Mercador[ENDCOLOR] a fundar uma [COLOR_POSITIVE_TEXT]Corporação[ENDCOLOR] na cidade de {2_CityName}. A Corporação será registrada em {1_BuildingName}, ocupando um espaço corporativo dedicado.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS">
+			<Text>Fundar Cidade-Estado</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS_DISABLED_HELP">
+			<Text>A unidade precisa estar em um [COLOR_YELLOW]Assentamento Tribal[ENDCOLOR] localizado em território neutro e não adjacente a nenhum hexágono com dono.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FOUNDCS_HELP">
+			<Text>Este comando instrui o [COLOR_UNIT_TEXT]Grande Emissário[ENDCOLOR] a estabelecer uma [COLOR_POSITIVE_TEXT]Cidade-Estado[ENDCOLOR] em sua localização atual. O [COLOR_UNIT_TEXT]Emissário[ENDCOLOR] é consumido no processo.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX">
+			<Text>Grande Viagem</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX_DISABLED_HELP">
+			<Text>A Unidade precisa estar em território próprio para usar esta habilidade.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VOYAGE_LUXURY_NOTIFICATION">
+			<Text>Seu {1_UnitType} retorna de uma viagem a terras distantes com [COLOR_POSITIVE_TEXT]{2_ResourceNames}[ENDCOLOR], um recurso de luxo que não existe em nenhum lugar deste mapa! Você recebe [COLOR_POSITIVE_TEXT]{3_Num}[ENDCOLOR] cópias deste Recurso.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VOYAGE_LUXURY_NOTIFICATION_SUMMARY">
+			<Text>Viagem de seu {1_UnitType} concluída!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ADMIRALTY_LUXURY_NOTIFICATION">
+			<Text>Já existe algo sob seu novo {1_ImprovementName}, então nenhum recurso de luxo pôde surgir ali. Em vez disso, você recebe [COLOR_POSITIVE_TEXT]1[ENDCOLOR] cópia de [COLOR_POSITIVE_TEXT]{2_ResourceName}[ENDCOLOR], que seu império mantém para sempre.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ADMIRALTY_LUXURY_NOTIFICATION_SUMMARY">
+			<Text>Seu {1_ImprovementName} fornece um recurso de luxo raro!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREELUX_HELP">
+			<Text>Se a Unidade estiver em seu próprio território, esta ordem a consumirá, concedendo a você duas cópias gratuitas de um Recurso de Luxo não disponível neste mapa. Esses Recursos não aparecerão no mapa, mas podem ser negociados com outras civilizações.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY">
+			<Text>Eureca</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY_DISABLED_HELP">
+			<Text>A Unidade precisa estar com Saúde total.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_FREEPOLICY_HELP">
+			<Text>Esta ordem consumirá a unidade e concederá uma [ICON_CULTURE] Política Social gratuita.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL">
+			<Text>Leve-me para Casa</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL_DISABLED_HELP">
+			<Text>A Unidade precisa estar em território neutro.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TELEPORT_CAPITAL_HELP">
+			<Text>Esta ordem teleportará a Unidade para sua Capital.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM">
+			<Text>Transformar</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM_DISABLED_HELP">
+			<Text>
+			Precisa estar em terreno adequado para a unidade de destino.
+			[NEWLINE]UNIDADE TERRESTRE:	Terra OU Água Costeira.
+			[NEWLINE]UNIDADE NAVAL: Água OU Cidade Costeira.
+			[NEWLINE]Precisa de [ICON_GOLD] Ouro suficiente.
+			</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_TRANSFORM_HELP">
+			<Text>Converte esta unidade. Custa [ICON_GOLD] Ouro; gratuito ao voltar a ser uma unidade que pode ser treinada.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_DEFENSIVE_ALLIANCE">
+			<Text>Seu novo Pacto Defensivo uniu você a uma Aliança Defensiva maior. Agora você também tem Pactos Defensivos com: {1_CivList}.[NEWLINE]Um ataque a qualquer membro levará você à guerra em sua defesa.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEFENSIVE_ALLIANCE">
+			<Text>Aliança Defensiva</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_1">
+			<Text>Admiro sua competência militar. Que tal firmarmos um Pacto Defensivo?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_2">
+			<Text>Deveríamos formar uma aliança para levar nossos inimigos à ruína. Você quer firmar um Pacto Defensivo?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_3">
+			<Text>Nossos inimigos nos cercam. Se não trabalharmos juntos, certamente pereceremos. Gostaria de firmar um Pacto Defensivo?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GENERIC_DEFENSIVE_PACT_OFFER_4">
+			<Text>Os tiranos do mundo tremeriam a nossos pés se fôssemos aliados. Você vê valor em um Pacto Defensivo?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_COMBAT_LOG">
+			<Text>Registro de Combate</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_EMPTY_TOOLTIP">
+			<Text>Espaço Vazio para Filme</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_LABEL">
+			<Text>[ICON_GAIA_CINEMA] Filmes:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CINEMA_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_CINEMA] Espaços de Filme: +{1_NumSlots}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_EMPTY_TOOLTIP">
+			<Text>Espaço Vazio para Corporação</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_LABEL">
+			<Text>[ICON_GAIA_CORPORATION] Corporações:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_CORPORATION_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_CORPORATION] Espaços de Corporação: +{1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_EMPTY_TOOLTIP">
+			<Text>Espaço Vazio para Artefato Religioso</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_LABEL">
+			<Text>[ICON_GAIA_HOLY_ARTIFACT] Artefatos Religiosos:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_HOLY_ARTIFACT_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_HOLY_ARTIFACT] Espaços de Artefato Religioso: +{1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_EMPTY_TOOLTIP">
+			<Text>Espaço Vazio para Videogame</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_LABEL">
+			<Text>[ICON_GAIA_VIDEOGAME] Videogames:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GREAT_WORK_SLOT_GAIA_VIDEOGAME_SLOTS_TOOLTIP">
+			<Text>[ICON_GAIA_VIDEOGAME] Espaços de Videogame: +{1_NumSlots}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SPECIALUNIT_ENTRENCHED">
+			<Text>Unidades de combate a distância entrincheiradas</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION">
+			<Text>Disseminar Religião (Automatizado)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION_HELP">
+			<Text>Automatiza este [COLOR_UNIT_TEXT]Missionário[ENDCOLOR], que viaja às cidades que julgar melhores e dissemina sua religião nelas por conta própria. A unidade permanecerá automatizada até você cancelar a automação ou lhe dar uma nova ordem.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_SPREAD_RELIGION_DISABLED_HELP">
+			<Text>A automação não está disponível para esta unidade no momento.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE">
+			<Text>Escavar Artefatos (Automatizado)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE_HELP">
+			<Text>Automatiza este [COLOR_UNIT_TEXT]Arqueólogo[ENDCOLOR], que procura Sítios Arqueológicos e os escava por conta própria. A unidade permanecerá automatizada até você cancelar a automação ou lhe dar uma nova ordem.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_UNIT_AUTOMATION_EXCAVATE_DISABLED_HELP">
+			<Text>A automação não está disponível para esta unidade no momento.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_BUILDING_LOCAL_RES">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Recurso Local para {2_ResourceName}: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_UNIT_LOCAL_RES">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Recurso Local para {2_ResourceName}: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_CS_GIFTED_UNIT_RETURNED_SUMMARY">
+			<Text>{1_CivName:textkey} capturada, Unidade presenteada devolvida!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_CS_GIFTED_UNIT_RETURNED">
+			<Text>Como {1_CivName:textkey} foi capturada, a unidade {2_Unit} que você havia presenteado foi devolvida a você.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_YOU_CIRC_GLOBE_TRADE_ROUTE">
+			<Text>Você deu a volta ao mundo! Sua civilização agora pode estabelecer uma [ICON_INTERNATIONAL_TRADE] Rota Comercial adicional.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_RECLAMATION_RESOLVE">
+			<Text>Determinação de Reconquista</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_FRIENDLY_COMBAT_AURA">
+			<Text>Aura de unidade aliada</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_ATTACK_CS_ALLIANCE_STRENGTH">
+			<Text>Bônus de Cidade-Estado aliada</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_BONUS_VS_FULLY_HEALED_UNITS">
+			<Text>Bônus vs unidades com vida cheia</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_EMBARKATION_DEFENSE">
+			<Text>Defesa embarcada</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_PENALTY_VS_DOMAIN">
+			<Text>Penalidade de domínio</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_RANGED_DEFENSE_MODIFIER">
+			<Text>Defesa a distância</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_RANGED_SUPPORT">
+			<Text>[COLOR_CYAN]Apoio de ataque a distância[ENDCOLOR]</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_IGNORE_ZOC">
+			<Text>Ignora ZdC</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_WITHDRAW_CHANCE">
+			<Text>Chance de retirada</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_UNITCOMBAT_DAMAGE_MODIFIER">
+			<Text>Dano de unidade</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_GAIA_MISC_BONUS">
+			<Text>Diversos</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TECH_REQUIRES_ERA">
+			<Text>Requer todas as tecnologias da era: {1_Era}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_UNITS">
+			<Text>[NEWLINE]Unidades Liberadas:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_BUILDINGS">
+			<Text>[NEWLINE]Edifícios Liberados:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_WONDERS">
+			<Text>[NEWLINE]Maravilhas Liberadas:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_PROJECTS">
+			<Text>[NEWLINE]Projetos Liberados:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_PROCESSES">
+			<Text>[NEWLINE]Processos Liberados:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_RESOURCES">
+			<Text>[NEWLINE]Recursos Liberados:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_BUILDS">
+			<Text>[NEWLINE]Melhorias Liberadas:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_ACTIONS">
+			<Text>[NEWLINE]Ações Exclusivas:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_CITY_WORKRANGE">
+			<Text>Permite às cidades trabalhar um anel extra de hexágonos.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_YIELDS">
+			<Text>[NEWLINE]Mudanças de Rendimento:[NEWLINE]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SHORT_TECH_HELP_SPECIALISTS">
+			<Text>Cada {1_SpecialistName:textkey}: +{3_Num} {4_IconString} de {2_YieldType:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_CITIES">
+			<Text>Cidades</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_FOLLOWERS">
+			<Text>Seguidores</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_MAP_TAB">
+			<Text>Mapa</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_COLUMN_FOUNDED">
+			<Text>Fundação</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_JOINT_WAR_REQUEST_TT">
+			<Text>Peça a este líder que se junte a você em uma guerra contra outra civilização.[NEWLINE][NEWLINE]Se o líder aceitar lutar agora, as duas partes declaram guerra imediatamente e nenhuma delas pode fazer paz com o alvo por 15 turnos. Em vez disso, o líder pode prometer entrar na guerra em 10 turnos, quando pedirá que a guerra seja iniciada em conjunto; recusar nesse momento conta como uma promessa quebrada.[NEWLINE][NEWLINE]A guerra cooperativa é cancelada se uma das partes denunciar a outra ou declarar guerra a ela, ou se for feita a paz com o alvo.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_MAY_NOT_ATTACK_RELIGION">
+			<Text>Não é possível atacar este jogador até a Era Industrial: uma Religião fundada por um dos lados desta guerra proíbe a guerra contra aqueles que a seguem. A proibição também cobre parceiros de Pacto Defensivo e vassalos.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_SHARED_RELIGION">
+			<Text>[COLOR_POSITIVE_TEXT]Seus povos compartilham a mesma fé.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_THEY_CANNOT_ATTACK_US_RELIGION">
+			<Text>Eles não podem declarar guerra a você até a Era Industrial: uma Religião fundada une os dois lados.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_BUTTON">
+			<Text>Denunciar</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_BUTTON_TT">
+			<Text>Clicar neste botão irá [COLOR_NEGATIVE_TEXT]DENUNCIAR[ENDCOLOR] o outro jogador.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_DEAL_BUTTON">
+			<Text>SOLICITAR</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE">
+			<Text>Valor do Acordo para Eles: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_TT">
+			<Text>A avaliação atual do líder sobre este Acordo. Um valor positivo favorece o líder e um negativo favorece você; o líder recusa qualquer Acordo que favoreça você. 'Impossível!' significa que pelo menos um item do Acordo está fora de questão para o líder.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_ACCEPTABLE">
+			<Text>Valor do Acordo para Eles: Aceitável</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AI_DEAL_BALANCE_VETOED">
+			<Text>Valor do Acordo para Eles: Impossível!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_FROM_YOU">
+			<Text>{1_Num} [ICON_GOLD] ou {2_Num} [ICON_GOLD]/turno da sua parte</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_GPT_FROM_YOU">
+			<Text>{1_Num} [ICON_GOLD]/turno da sua parte</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_FROM_THEM">
+			<Text>até {1_Num} [ICON_GOLD] ou {2_Num} [ICON_GOLD]/turno da parte deles</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEAL_VALUE_EVEN_GPT_FROM_THEM">
+			<Text>até {1_Num} [ICON_GOLD]/turno da parte deles</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH">
+			<Text>Valor do Acordo de Paz: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH_TT">
+			<Text>A avaliação atual do líder sobre este Acordo de Paz. Se o valor aqui for 'Impossível!', o líder se recusa a negociar um ou mais itens do Acordo de Paz.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_WORTH_VETOED">
+			<Text>Valor do Acordo de Paz: Impossível!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_CEILING">
+			<Text>Valor Máx.: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_CEILING_TT">
+			<Text>Valor máximo dos itens no Acordo de Paz. Se o valor à esquerda deste exceder este número, o líder recusará o acordo.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_FLOOR">
+			<Text>Valor Mín.: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_TERMS_FLOOR_TT">
+			<Text>Valor mínimo dos itens no Acordo de Paz. Se este número exceder o valor à esquerda, o líder recusará o acordo.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_DEAL_WINNER_GIVES_NOTHING_TT">
+			<Text>Não é possível adicionar itens ao lado que não se rende no Acordo de Paz.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_VASSALAGE_NEED_CAPITAL_TT">
+			<Text>{1_Civ} só capitulará a uma civilização que detenha sua capital original, {2_City}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_VASSALAGE_NEED_CAPITAL_RAZED_TT">
+			<Text>{1_Civ} só capitulará a uma civilização que detenha uma de suas antigas capitais.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_NOTIFY_RESTORED_CIV_JOINS_LIBERATOR">
+			<Text>{1_PlayerName} libertou {2_CityName} e restaurou a soberania do povo {3_CivAdj}. A civilização {4_CivName}, renascida em sua antiga capital, jura lealdade a quem a libertou como Vassalo Voluntário.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DEFENSIVE_PACT_UNCAPPED_TT">
+			<Text>Se um dos dois jogadores for atacado por outra civilização principal, o outro entrará imediata e automaticamente em guerra contra o agressor. Este acordo dura {1_Num} turnos.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_TRADE_LUXURY_WANTED_BY_CITIES_TT">
+			<Text>As seguintes cidades atualmente exigem este Recurso:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_BUTTON">
+			<Text>Solicitar Ajuda</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_ASK_FRIEND_FOR_HELP_BUTTON_TT">
+			<Text>Solicite ajuda a um jogador com quem você fez uma Declaração de Amizade. Esta opção não acarreta penalidade diplomática.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_LEADER_DEMAND_TRIBUTE_TT">
+			<Text>Exija tributo desta civilização. Esta opção acarreta penalidade diplomática.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_THEY_ARE_LOCKED_TT">
+			<Text>Não é possível negociar paz agora: eles estão presos a esta guerra por alguns turnos.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PEACE_BLOCKED_BY_RULES_TT">
+			<Text>Não é possível negociar paz com este jogador devido a uma opção de jogo ou regra especial.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DECLARE_WAR_DEFENSE_PACT">
+			<Text>PACTOS DEFENSIVOS</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_THEY_ARE_OUR_PACT_PARTNER">
+			<Text>[COLOR_NEGATIVE_TEXT]Temos um Pacto Defensivo com eles![ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_POPUP_TARGET_MASTER_HEADER">
+			<Text>SUSERANOS</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_DEFENSIVE_PACT_WITH">
+			<Text>[COLOR_POSITIVE_TEXT]Pacto Defensivo com {1_CivName:textkey}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_AT_WAR_WITH">
+			<Text>[COLOR_NEGATIVE_TEXT]Em guerra com {1_enemy} (Placar de Guerra: {2_Num})[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PROJECTION_VALUE">
+			<Text>[COLOR_POSITIVE_TEXT]Placar de Guerra: {1_Num}[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PROJECTION_TT">
+			<Text>Este valor indica como sua guerra está indo, considerando a força militar e econômica relativa, as perdas sofridas por cada lado, a pontuação do jogo e a duração da guerra. Valores [COLOR_POSITIVE_TEXT]positivos[ENDCOLOR] favorecem você, e valores [COLOR_NEGATIVE_TEXT]negativos[ENDCOLOR] favorecem o inimigo.[NEWLINE][COLOR_POSITIVE_TEXT]Informações da guerra atual:[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_NONE">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Oferta de Paz Deles:[ENDCOLOR] Impossível!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_ARMISTICE">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Oferta de Paz Deles:[ENDCOLOR] Um pagamento modesto.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SETTLEMENT">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Oferta de Paz deles:[ENDCOLOR] Um pagamento generoso.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_BACKDOWN">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Oferta de Paz deles:[ENDCOLOR] Um pagamento e algumas concessões.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SUBMISSION">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Oferta de Paz deles:[ENDCOLOR] Um pagamento e grandes concessões.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_SURRENDER">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Oferta de Paz deles:[ENDCOLOR] A cessão de uma cidade.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_CESSION">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Oferta de Paz deles:[ENDCOLOR] A cessão de várias cidades.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_CAPITULATION">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Oferta de Paz deles:[ENDCOLOR] A cessão de muitas cidades.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_PEACE_TIER_UNCONDITIONAL">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_PEACE] Oferta de Paz deles:[ENDCOLOR] A cessão de todas as cidades, exceto a capital!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_PATHETIC">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Poder Militar:[ENDCOLOR] Eles são patéticos!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_WEAK">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Poder Militar:[ENDCOLOR] Eles são muito fracos.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_POOR">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Poder Militar:[ENDCOLOR] Eles são mais fracos.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_AVERAGE">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Poder Militar:[ENDCOLOR] Somos iguais.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_STRONG">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Poder Militar:[ENDCOLOR] Eles são fortes.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_POWERFUL">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Poder Militar:[ENDCOLOR] Eles são poderosos.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_MILITARY_IMMENSE">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_STRENGTH] Poder Militar:[ENDCOLOR] Eles são imensos!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_PATHETIC">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Poder Econômico:[ENDCOLOR] Eles estão em frangalhos!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_WEAK">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Poder Econômico:[ENDCOLOR] Eles são muito pobres.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_POOR">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Poder Econômico:[ENDCOLOR] Eles são pobres.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_AVERAGE">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Poder Econômico:[ENDCOLOR] Somos iguais.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_STRONG">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Poder Econômico:[ENDCOLOR] Eles são robustos.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_POWERFUL">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Poder Econômico:[ENDCOLOR] Eles são ricos.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_ECONOMY_IMMENSE">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_GOLD] Poder Econômico:[ENDCOLOR] Eles são muito ricos!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_MINOR">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] Perdas até agora:[ENDCOLOR] Eles perderam mais do que nós.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_MAJOR">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] Perdas até agora:[ENDCOLOR] Eles perderam muito mais do que nós.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_SERIOUS">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] Perdas até agora:[ENDCOLOR] Eles perderam muitíssimo mais do que nós.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_THEM_CRIPPLED">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_WAR] Perdas até agora:[ENDCOLOR] As perdas deles tornam as nossas insignificantes!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_MINOR">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] Perdas até agora:[ENDCOLOR] Perdemos mais do que eles.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_MAJOR">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] Perdas até agora:[ENDCOLOR] Perdemos muito mais do que eles.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_SERIOUS">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] Perdas até agora:[ENDCOLOR] Perdemos muitíssimo mais do que eles.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WAR_PANEL_LOSSES_US_CRIPPLED">
+			<Text>[ICON_BULLET] [COLOR_POSITIVE_TEXT][ICON_RAZING] Perdas até agora:[ENDCOLOR] Nossas perdas tornam as deles insignificantes!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLOLIST_NUM_DEFENSE_PACTS">
+			<Text>Pactos Defensivos: {1_Num}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_RELIGION_OVERVIEW_BELIEF_FALLBACK">
+			<Text>Desconhecido</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PVP_TRADE_DENOUNCE_DEFAULT_TT">
+			<Text>Denunciar este líder.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_VICTORY_PROGRESS_LOST_MESSAGE">
+			<Text>O progresso de {1_TeamName} rumo a uma vitória {2_VictoryName} foi reiniciado!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_POPUP_PROTECTORS_LABEL">
+			<Text>Protegida por:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_POPUP_PROTECTORS_TT">
+			<Text>Outros jogadores que se comprometeram a proteger esta Cidade-Estado. Atacar esta Cidade-Estado ou exigir tributo dela provocará a ira desses jogadores.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_SUZERAINTY">
+			<Text>Bônus de Aliado:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_SUZERAINTY_WHILE_ALLY">
+			<Text>Durante sua Aliança</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_CSWONDER">
+			<Text>Maravilha de Aliado:</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_CSTATE_CSWONDER_TT">
+			<Text>Manter a aliança com esta Cidade-Estado por {2_NumTurns} turnos consecutivos desbloqueia para você a Maravilha Mundial {1_WonderName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_CULTURE_FIRST">
+			<Text>Eles lhe dão uma preciosa obra de arte, um presente que vale [COLOR_POSITIVE_TEXT]{1_NumCulture} [ICON_CULTURE] de Cultura[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FAITH_FIRST">
+			<Text>Você é o primeiro povo de fora que eles encontram, então eles lhe mostram seus preciosos ídolos religiosos. Você ganha [COLOR_POSITIVE_TEXT]{1_NumFaith} [ICON_PEACE] de Fé[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_GOLD_FIRST">
+			<Text>Você é o primeiro grande império que eles encontram, por isso eles lhe presenteiam com [COLOR_POSITIVE_TEXT]{1_NumGold} [ICON_GOLD] de Ouro[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FOOD_FIRST">
+			<Text>Você chegou bem a tempo do Festival da Colheita anual deles. Eles enviam [COLOR_POSITIVE_TEXT]{1_NumFood} [ICON_FOOD] de Alimento[ENDCOLOR] para uma de suas cidades.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_UNIT_FIRST">
+			<Text>Seus guerreiros veteranos compartilham lições duramente aprendidas com a unidade que os descobriu, que ganha [COLOR_POSITIVE_TEXT]{1_NumXP} de Experiência[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_CULTURE_LATER">
+			<Text>Eles compartilham seu conhecimento sobre mérito artístico, dando a você [COLOR_POSITIVE_TEXT]{1_NumCulture} [ICON_CULTURE] de Cultura[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FAITH_LATER">
+			<Text>Eles compartilham seu conhecimento sobre rituais religiosos, dando a você [COLOR_POSITIVE_TEXT]{1_NumFaith} [ICON_PEACE] de Fé[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_GOLD_LATER">
+			<Text>Eles lhe presenteiam com [COLOR_POSITIVE_TEXT]{1_NumGold} [ICON_GOLD] de Ouro[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_FOOD_LATER">
+			<Text>Eles enviam [COLOR_POSITIVE_TEXT]{1_NumFood} [ICON_FOOD] de Alimento[ENDCOLOR] para uma de suas cidades como sinal de boa vontade.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_UNIT_LATER">
+			<Text>Seus guerreiros veteranos compartilham algumas lições com a unidade que os descobriu, que ganha [COLOR_POSITIVE_TEXT]{1_NumXP} de Experiência[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_NONE">
+			<Text>Infelizmente, eles não têm nada a lhe oferecer.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_CS_MEETING_GIFT_INFLUENCE_ONLY">
+			<Text>Infelizmente, eles não têm nada a lhe oferecer, mas conhecer {2: gender *:an?uma; other?uma;} Cidade-Estado {2_Personality} ainda aumenta sua [COLOR_POSITIVE_TEXT][ICON_INFLUENCE] Influência sobre ela em {1_NumFriendship}[ENDCOLOR].</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PLOTROLL_GAIA_LEGATION">
+			<Text>de {1_CivName:textkey}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PLOTROLL_GAIA_LEGATION_UNMET">
+			<Text>de Jogador desconhecido</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MILITARY_OVERVIEW_EXPERIENCE_COLUMN">
+			<Text>XP</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_MILITARY_OVERVIEW_SORT_EXPERIENCE_TT">
+			<Text>Ordenar por XP</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WAKE_UPGRADEABLE_UNIT">
+			<Text>Você tem uma unidade pronta para atualização</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WAKE_UPGRADEABLE_UNIT_SHORT">
+			<Text>Atualizar unidade</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GOODY_RECON_ONLY">
+			<Text>Só unidades de Reconhecimento podem explorar Ruínas Antigas!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WONDER_CONSOLATION_SHORT">
+			<Text>{1_CityName} não pode mais trabalhar em {2_BldgName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_WONDER_CONSOLATION">
+			<Text>{1_CityName} não pode mais trabalhar em {2_BldgName}. A [ICON_PRODUCTION] Produção perdida foi convertida em {3_NumGold}[ICON_GOLD] de Ouro, {4_NumCulture}[ICON_CULTURE] de Cultura e {5_NumProduction}[ICON_PRODUCTION] de Produção excedente.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_WINNING">
+			<Text>Você está vencendo uma corrida por uma Maravilha!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_WINNING_TOOLTIP">
+			<Text>Você está à frente de {1_player} na corrida para construir {2_wonder}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_LOSING">
+			<Text>Você está perdendo uma corrida por uma Maravilha!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_LOSING_TOOLTIP">
+			<Text>{1_player} está à frente de você na corrida para construir {2_wonder}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_WR_BY_N_TURNS">
+			<Text>(por {1_Num} turnos)</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SAPIENS_MP_RESYNC_NOTICE">
+			<Text>Dessincronização multijogador detectada; a partida foi ressincronizada. Se acontecer de novo, envie os arquivos net_message_debug.log, SapiensMod.log e Lua.log do anfitrião e os seus (Documents\My Games\Sid Meier's Civilization 5\Logs), copiados antes de reiniciar o jogo.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING">
+			<Text>Memória quase esgotada</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING_TOOLTIP">
+			<Text>O jogo está perto do limite de memória dos programas de 32 bits, um limite do próprio jogo, não do seu computador. Normalmente você pode continuar jogando por um tempo, mas os jogos salvos mais tarde podem precisar de configurações gráficas mais baixas para carregar. Salve agora, reduza a qualidade dos líderes, as sombras, o detalhe do terreno e o anti-aliasing, e saia para a área de trabalho antes de carregar de novo.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_LOW_MEMORY_WARNING_AT_FLOOR_TOOLTIP">
+			<Text>O jogo está perto do limite de memória dos programas de 32 bits, um limite do próprio jogo, não do seu computador. Normalmente você pode continuar jogando por um tempo, mas os jogos salvos mais tarde podem deixar de carregar. Salve agora e, antes de carregar de novo, saia para a área de trabalho e reinicie o jogo; o DirectX 11 e uma resolução mais baixa dão um pouco mais de folga.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DLL_NOT_LOADED_TITLE">
+			<Text>DLL do mod principal não carregada</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_DLL_NOT_LOADED_TEXT">
+			<Text>O Core Mod de Gaia está ativado, mas sua DLL não carregou, então a maioria de seus recursos, e os dos mods baseados nele, como Sapiens, não funcionará neste jogo.[NEWLINE][NEWLINE]As versões do jogo para Mac e Linux não conseguem carregar mods de DLL. No Linux, rode a versão Windows pelo Steam Play (Proton). No Windows, certifique-se de que nenhum outro mod de DLL esteja ativado e reinicie o jogo.[NEWLINE][NEWLINE]Mods cujo nome começa com + ou = não precisam da DLL.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FOODMOD_GAIA_FRESH_WATER">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Água Potável: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_FOODMOD_GAIA_RELIGIONS_PRESENT">
+			<Text>[NEWLINE][ICON_BULLET]Diversidade Religiosa: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_GARRISONED_MILITARY">
+			<Text>[NEWLINE][ICON_BULLET]Cidade com Unidade Alojada: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_BUILDINGCLASS_CITY_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]{2_Building}: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_WONDER_PEACE">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Maravilhas em Paz: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_PROJECT_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Projetos: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_PEACE_YIELD">
+			<Text>[NEWLINE][ICON_BULLET]Modificador em Paz: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_GREAT_PEOPLE_EARNED">
+			<Text>[NEWLINE][ICON_BULLET]Modificador por Grandes Pessoas obtidas: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_GAIA_FROM_FAITH">
+			<Text>{1_Num} de [ICON_TOURISM] Turismo da [ICON_PEACE] Fé</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_BELIEF_SETTLER">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Colonizador por Crenças Religiosas: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_UNIT_WAR">
+			<Text>[NEWLINE][ICON_BULLET]Modificador de Unidades em Guerra: {1_Num}%</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PRODMOD_GAIA_YIELD_POLICY">
+			<Text>[NEWLINE]  [ICON_BULLET]{1_Num}% {2_PolicyName}</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CO_CITY_TOURISM_GAIA_POLICY_MOD">
+			<Text>{1_Num}% de Políticas Sociais</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_CLEARING_FEATURE_FOOD">
+			<Text>Limpar {TXT_KEY_GRAMMAR_A_AN &lt;&lt; {@1_FeatName}} gerou {2_Num} [ICON_FOOD] para {@3_CityName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SAPIENS_CITY_CAPTURE">
+			<Text>Você adquiriu {1_CityName}. O que deseja fazer com esta Cidade?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_SAPIENS_CITY_CAPTURE">
+			<Text>O que fazer com {1_CityName}?</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POPUP_GOLD_AND_CULTURE_CITY_CAPTURE">
+			<Text>Você saqueou {1_Num} [ICON_GOLD], {2_Num} [ICON_CULTURE] e {3_Num} [ICON_GREAT_WORK] na captura de {@4_CityName}!!! As Grandes Obras sem espaço livre nesta Cidade foram transferidas para a sua Cidade mais próxima que tenha um.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_SWITCH_MODE">
+			<Text>Alternar Modo</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_DIPLO_CORNER_HOOK">
+			<Text>Árvore de Promoções</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_OVERVIEW_FOR_UNIT_TT">
+			<Text>Abra a Árvore de Promoções para ver as promoções atuais e disponíveis desta unidade.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_SIZE">
+			<Text>Pequeno (Atalho: 'D')</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_EARNT">
+			<Text>Obtidas</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_EARNT_TT">
+			<Text>Promoções que esta unidade já obteve (exclui as de características exclusivas ou Maravilhas).</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_AVAILABLE">
+			<Text>Disponível</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_AVAILABLE_TT">
+			<Text>Promoções atualmente disponíveis para esta unidade escolher.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_NOT_AVAILABLE">
+			<Text>Ainda não disponível</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_NOT_AVAILABLE_TT">
+			<Text>Promoções ainda não disponíveis para esta unidade.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_UNIT">
+			<Text>Unidade</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_CLASS">
+			<Text>Classe de Combate</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_PROMOTION_TREE_GROUPING_LABEL">
+			<Text>Exibir: Unidade / Classe de Combate</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PROMO_GROUP_BASE_TT">
+			<Text>Clique para alternar entre a árvore de promoções desta unidade e a árvore organizada por classe de combate. Tecla de atalho: 'S'.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_THINKER_DETAILS">
+			<Text>[ICON_PLUS] Grandes Pensadores</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_THINKER_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] Grandes Pensadores</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_EMISSARY_DETAILS">
+			<Text>[ICON_PLUS] Grandes Emissários</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_EMISSARY_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] Grandes Emissários</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DIRECTOR_DETAILS">
+			<Text>[ICON_PLUS] Grandes Diretores</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DIRECTOR_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] Grandes Diretores</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DEVELOPER_DETAILS">
+			<Text>[ICON_PLUS] Grandes Desenvolvedores de Jogos</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GP_DEVELOPER_DETAILS_COLLAPSE">
+			<Text>[ICON_MINUS] Grandes Desenvolvedores de Jogos</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GREAT_WORK_SWAP">
+			<Text>{1_LeaderName} trocou sua Grande Obra "{2_Work1Name}" pela Grande Obra "{3_Work2Name}".</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_SWAP_YOUR_WORKS_HEADER">
+			<Text>Suas Grandes Obras</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_SWAP_OFFERED_WORKS_HEADER">
+			<Text>Oferecidas por Outras Civilizações</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_GAIA_GOODWILL_MISSIONS">
+			<Text>[COLOR_POSITIVE_TEXT]Você enviou emissários a eles em sinal de boa vontade.[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_GOODWILL_MISSION_RESULT">
+			<Text>Seu emissário foi calorosamente recebido. A liderança deles agora tem uma opinião melhor de você.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL">
+			<Text>Missão de Boa Vontade</Text>
+			<Gender>feminine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL_DISABLED_HELP">
+			<Text>A unidade precisa estar dentro das fronteiras de outra civilização em paz com você. Civilizações lideradas por um Jogador Humano não podem receber emissários, e cada civilização aceita de você apenas um número limitado deles.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_GOODWILL_HELP">
+			<Text>Se a unidade estiver dentro das fronteiras de outra civilização com a qual você está em paz, esta ordem consumirá a unidade. A partir de então, a liderança dessa civilização passará a ter uma opinião melhor de você. Cada missão posterior à mesma civilização vale menos, e declarar guerra a ela cancela o efeito.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT">
+			<Text>Transporte Marítimo</Text>
+			<Gender>masculine</Gender>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT_HELP">
+			<Text>Envia esta Unidade terrestre por mar até um hexágono em outro de seus Portos no mesmo mar ou adjacente a ele. Ela aguarda no porto sem ordens durante a viagem e desembarca no início do seu turno 2 turnos depois, com Movimentação completa e curada como se tivesse descansado. Se uma Ponte Aérea ou um Lançamento de Paraquedistas puder alcançar o hexágono, a Unidade vai para lá imediatamente, em vez disso.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISSION_GAIA_SEALIFT_DISABLED_HELP">
+			<Text>A Unidade precisa ser uma Unidade terrestre que não se moveu neste turno, em uma de suas Cidades com Porto ou adjacente a ela, e você precisa de outro Porto no mesmo mar. Um porto bloqueado não pode ser usado.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_ORDERED">
+			<Text>{@1_UnitName} zarpa rumo a {@2_CityName} e desembarcará lá no turno {3_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_IN_TRANSIT">
+			<Text>Em trânsito</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_GAIA_SEALIFT_IN_TRANSIT_TT">
+			<Text>Em trânsito para {@1_CityName}: desembarca no turno {2_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SEALIFT_LANDED">
+			<Text>{@1_UnitName} desembarcou em {@2_CityName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SEALIFT_LANDED">
+			<Text>Transporte marítimo desembarcou</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_SEALIFT_CANCELLED">
+			<Text>O Transporte Marítimo de {@1_UnitName} foi cancelado: um porto não pode mais ser usado ou não há hexágono seguro para desembarcar.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_SEALIFT_CANCELLED">
+			<Text>Transporte marítimo cancelado</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_COLONY_CITYSTATE_FOUNDED">
+			<Text>{@1_CityName} foi fundada como uma nova Cidade-Estado. Ela começa aliada a você.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_COLONY_CITYSTATE_FOUNDED">
+			<Text>Cidade-Estado fundada</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_GAIA_COLONY_CITYSTATE_FALLBACK">
+			<Text>Nenhuma nova Cidade-Estado pôde ser fundada, então {@1_CityName} foi fundada como Cidade Fantoche.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_NOTIFICATION_SUMMARY_GAIA_COLONY_CITYSTATE_FALLBACK">
+			<Text>Cidade Fantoche fundada</Text>
+		</Replace>
+	</Language_PT_BR>
+</GameData>

@@ -1,0 +1,45 @@
+[h1]A Brave New World DLL mod (Windows only) with bug fixes, AI improvements, API extensions, and quality-of-life features.[/h1]
+
+Gaia's Core Mod replaces the Brave New World game core with a deterministic, multiplayer-safe DLL. It is not a content pack; it provides the shared AI, database, API, bug-fix, quality-of-life, and interface framework used by Gaia's mods and modules.
+
+[b]Gameplay content now lives in the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2309504487]Sapiens[/url] mod.[/b] The Core supplies the framework it runs on.
+
+[quote][h2]Configure it yourself: CORE_OPTIONS.sql and USER_SETTINGS.sql[/h2]
+Two plain-text files sit in the mod's own folder and control everything the Core does. Open either one in any text editor, change what you like, save, and start a new game.
+
+[b]CORE_OPTIONS.sql[/b] is the on/off list for every Core feature, each with a one-line explanation of what it does. By default only [b]AI improvements[/b], [b]bug fixes[/b], and selected [b]quality-of-life fixes[/b] are enabled. Set them all to 0 to restore [b]exact vanilla Brave New World[/b] behavior, engine and rules alike.
+
+[b]USER_SETTINGS.sql[/b] holds the numbers: animation speed, barbarian behavior, AI gold reserves, etc. Every line explains what it changes and notes its original default, so you can always put it back.
+
+A Workshop update replaces both files, so keep a copy of your edits if you change them.
+[/quote]
+[quote][h3]LANGUAGE SUPPORT[/h3]
+Fully localized in: [b]English[/b], [b]French[/b], [b]German[/b], [b]Spanish[/b], [b]Korean[/b], [b]Russian[/b], [b]Polish[/b], [b]Italian[/b], [b]Brazilian Portuguese[/b] (requires the [url=https://steamcommunity.com/groups/Civ5Brasil/discussions/0/366298942109075969/]Civ5-PTBR language patch[/url]), and [b]Simplified Chinese[/b] (requires the [url=https://steamcommunity.com/groups/tianmiao/discussions/0/684839199122032875/]CivClub/Tianmiao language patch[/url]).
+[/quote]
+[img=https://imgur.com/rwYP22S.gif[/img]
+
+[quote][h3]COMPATIBILITY[/h3]
+Requires the [b]Brave New World[/b] expansion. Because it includes its own game-core DLL, Gaia's Core Mod is [b]not compatible with other DLL mods[/b], including VMC, CP / Vox Populi, and LEKMOD.
+
+Like every DLL mod, it works only on the [b]Windows version[/b] of the game. The Mac and Linux (Aspyr) ports cannot load custom DLL mods; on Linux, run the Windows build through Steam Play (Proton). Mods from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3446329507]this collection[/url] whose names start with [b]+[/b] or [b]=[/b] do not need the DLL and still work on Mac and Linux.
+
+On the interface side, the Core is fully compatible with [b]EUI[/b]. Alternatively, you can install [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2405220158]Gaia's Core UI[/url], a custom interface replacement for EUI that enables additional Core functions unavailable through the stock UI.
+[/quote]
+[quote][h3]ORIGINS AND INDEPENDENCE[/h3]
+Gaia's Core Mod is an independent project. Its game core DLL is [b]not based on VMC, CP, or any other DLL mod[/b]; it is built directly on the original Brave New World game core. All code is original work unless explicitly credited. If you believe your work should be credited here, please contact me and I will correct it.[/quote]
+[quote][h3]COMMUNITY[/h3]
+Questions, bug reports and the monthly Game of the Month all live on the [url=https://discord.gg/zvpWpEHrFE]Sapiens Discord[/url]. Come and say hello.
+[/quote]
+[quote][h3]CREDITS AND THANKS[/h3]
+Concept, coding, research, and overall design by [b]Gaia[/b].
+DLL AI coding and code-optimization support by [b]Albermousse[/b].
+
+Special thanks to everyone who contributed translations, feedback, suggestions, testing, or bug reports. Your support has been invaluable.
+[/quote]
+[quote][h3]DISCLAIMER[/h3]
+Sid Meier's Civilization V, Civilization, Civ, Firaxis Games, 2K Games, and Take-Two Interactive Software are trademarks of Take-Two Interactive Software, Inc. This mod is not affiliated with, endorsed by, or sponsored by Take-Two, Firaxis, or any of their subsidiaries.
+
+This is a fan-made project. It is provided "as is" with no warranties, express or implied, including but not limited to warranties of merchantability or fitness for a particular purpose. Use at your own risk.
+
+Redistribution, re-hosting, or inclusion of this mod or any of its components in other works is prohibited without written permission from the authors. All rights to third-party content remain with their respective owners.
+[/quote]

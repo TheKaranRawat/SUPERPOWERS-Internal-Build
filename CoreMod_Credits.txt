@@ -1,0 +1,28 @@
+--------------------------------
+ CREDITS AND THANKS
+--------------------------------
+Concept, coding, research, and overall design by Gaia.
+DLL AI coding and code-optimization support by Albermousse.
+
+--------------------------------
+ Third-party content
+--------------------------------
+AI fixes: paratrooper mustering and barbarian-threat evaluation, based on
+Artificial Unintelligence (AUI) by Delnar_Kolin.
+Hidden antiquity site and archaeological dig models: Archaeology Aesthetic
+Adjustments by Calypso.
+Vassalage Game Option: based on Civ IV Diplomatic Features by Putmalk.
+
+--------------------------------
+ Translations
+--------------------------------
+With thanks to the many community translators who have contributed the
+French, German, Italian, Korean, Polish, Russian, and Spanish versions
+over the years.
+
+--------------------------------
+ Notes
+--------------------------------
+All other code and artwork is original work.
+If you believe your work should be credited here, please contact me and I
+will correct it.

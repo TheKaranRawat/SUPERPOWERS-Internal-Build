@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Gaia -->
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT22" FontStyle="Shadow" >
+  <Box Style="BGBlock_ClearTopBar" />
+  <Grid ID="Grid" Size="480,270" Anchor="C,C" Offset="0,0" Padding="50,70" Style="Grid9DetailFive140" >
+    <Box Style="MenuLeftSideTreatment" />
+    <Box Style="MenuRightSideTreatment" />
+    <Label Style="MenuTitleCaption" String="TXT_KEY_GAIA_DLL_NOT_LOADED_TITLE" />
+    <Label ID="DescriptionLabel" Anchor="C,T" Offset="0,70" WrapWidth="440" LeadingOffset="-4" Font="TwCenMT20" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+    <GridButton ID="CloseButton" Size="200,36" Anchor="C,B" AnchorSide="I.I" Offset="0,50" Style="BaseButton" String="TXT_KEY_OK_BUTTON" />
+  </Grid>
+</Context>
