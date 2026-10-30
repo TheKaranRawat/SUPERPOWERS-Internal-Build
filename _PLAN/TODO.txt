@@ -124,4 +124,6 @@ city production tooltip fix
 MERCENARY REMOVE
 workboat remove
 militia remove
+REMOVE SATELLITES
 remove inquisitors/missionaries
+player nerf with era

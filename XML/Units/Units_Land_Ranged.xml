@@ -1518,12 +1518,6 @@
 		
 		<!--********Siege Units******-->
 
-	
-
-		<Row>
-			<UnitType>UNIT_SMAN_EU_SIEGE_ELEPHANT</UnitType>
-			<PromotionType>PROMOTION_CITY_SIEGE</PromotionType>
-		</Row>
 
 		<Row>
 			<UnitType>UNIT_CATAPULT</UnitType>
