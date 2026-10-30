@@ -1874,9 +1874,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="81859D6C825870FE0BE877E466AF6834" import="1">UI/Override/InfoTooltipInclude.lua</File>
     <File md5="7803DFEB1CC49D546EED8C8A1DE998AA" import="1">UI/Override/InGame.lua</File>
     <File md5="87795029018082BF04AF16A5C0857B42" import="1">UI/Override/NewEraPopup.lua</File>
+    <File md5="87795029018082BF04AF16A5C0857B42" import="1">UI/Override/NotificationPanel.lua</File>
     <File md5="E53DA553867A544E5313A12101E1E395" import="1">UI/Override/PuppetCityPopup.lua</File>
-	<File md5="9DBA1146801AAF3E081A8CB2F06E8BF9" import="1">UI/Override/ProductionPopup.lua</File>
-	<File md5="E78E97E950F7230C21B239E22A4C4497" import="1">UI/Override/ProductionPopup.xml</File>
+	  <File md5="9DBA1146801AAF3E081A8CB2F06E8BF9" import="1">UI/Override/ProductionPopup.lua</File>
+	  <File md5="E78E97E950F7230C21B239E22A4C4497" import="1">UI/Override/ProductionPopup.xml</File>
     <File md5="0B74C39F64EEC78000094D79E60871A4" import="1">UI/Override/ResourceIconManager.lua</File>
     <File md5="8B3F1DDD71A884B0D3666BDA0DBC873B" import="1">UI/Override/SocialPolicyPopup.xml</File>
     <File md5="FB5C0A82D7F460FECBFDD1DFC376A703" import="1">UI/Override/TopPanel.lua</File>
@@ -1886,7 +1887,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="B9C2A372ABF0973AFAC0C83DFA6D2545" import="1">UI/Override/UnitPanel.lua</File>
     <File md5="2D4BE442AFCBFFD373B136285E43B109" import="1">UI/Override/UnitPanel.xml</File>
     <File md5="5D5B61E59E40D8A153CC51FDB60350CC" import="1">UI/Override/UnitPanel_small.xml</File>
-	<File md5="16F58935E0971B8433D9628ED42A66E8" import="1">UI/Override/MiniMapPanel.xml</File>
+	  <File md5="16F58935E0971B8433D9628ED42A66E8" import="1">UI/Override/MiniMapPanel.xml</File>
     <File md5="BC2203EBABADAAFB67ED64C670A47968" import="0">XML/AI/AIBonus.xml</File>
     <File md5="97E5D4AB753233A8E9AAE0B4A8595E94" import="0">XML/AI/AIStrategiesTweak.xml</File>
     <File md5="A12FC0FD7A08AA97723C6E7EADD6E385" import="0">XML/Buildings/BuildingClasses.xml</File>
@@ -1894,7 +1895,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="FE70E791D9B56D7362D1EBFAD162F119" import="0">XML/Buildings/Buildings.xml</File>
     <File md5="E332B3DE97A020E414DCBA510517F070" import="0">XML/Buildings/BuildingsEffects.xml</File>
     <File md5="5B1432D9A6992C84A97B2E1085BC26F6" import="0">XML/Buildings/BuildingsTexts.xml</File>
-	<File md5="2831080273A32B237E72EA9B61AFEAF3" import="0">XML/Buildings/BuildingsTexts2.xml</File>
+	  <File md5="2831080273A32B237E72EA9B61AFEAF3" import="0">XML/Buildings/BuildingsTexts2.xml</File>
     <File md5="02D386C8D20743CC68491D20436B9D99" import="0">XML/Buildings/Wonders.xml</File>
     <File md5="5D89F877753296959BE413031462A61D" import="0">XML/City/CityTexts.xml</File>
     <File md5="7C8343CB1DA59764C3D5524688EB6973" import="0">XML/City/Corruption.xml</File>

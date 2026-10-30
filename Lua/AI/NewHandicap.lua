@@ -13,10 +13,10 @@ include( "UtilityFunctions.lua" )
 
 function PlayerIntoNewEra(era, playerID) -- AI will get bonus when Human Player entering new Eras
 
-local handicap = Game:GetHandicapType()
+	local handicap = Game:GetHandicapType()
 
---print("handicap="..Game:GetHandicapType())
---print("Player Era="..era)
+	--print("handicap="..Game:GetHandicapType())
+	--print("Player Era="..era)
 
 	local player = Players[playerID]
 	
@@ -42,19 +42,14 @@ local handicap = Game:GetHandicapType()
 		end		
 	end	
 	
-	
 end --function END
 
 Events.SerialEventEraChanged.Add(PlayerIntoNewEra)
 
 
 
-function AIForceImprovements() -- AI will get bouns when entering new Eras	
-
-	
-
-
-end --function END
+--function AIForceImprovements() -- AI will get bouns when entering new Eras	
+--end --function END
 
 
 
@@ -67,7 +62,7 @@ function AIEraBonus(iCounter) -- AI will get bouns when entering new Eras
 			print ("No players")
 			return
 		end
---		local player = Players[iPlayerLoop]
+	--		local player = Players[iPlayerLoop]
 
 		if (player:GetNumCities() > 1 and not player:IsMinorCiv() and not player:IsBarbarian() and not player:IsHuman()) then  
 		
@@ -82,7 +77,7 @@ function AIEraBonus(iCounter) -- AI will get bouns when entering new Eras
   				print ("AI Bonus!-RENAISSANCE")				 		
   			elseif (iCounter == 4) then	
   				player:SetHasPolicy(GameInfo.Policies["POLICY_AI_INDUSTRY"].ID,true)
---  			AIMapVisibility (player)
+	--  			AIMapVisibility (player)
   				print ("AI Bonus!-INDUSTRY")							
   			elseif (iCounter == 5) then	
   				player:SetHasPolicy(GameInfo.Policies["POLICY_AI_MODERN"].ID,true)   				
@@ -122,8 +117,9 @@ end--function END
 --end
 --
 
-
+--[[	DISABLE AI AUTO/IMPROVEMENTS
 ------------------------------------------------------------ Force AI to build improvemnts on resources since they always forget------------------------------------------------
+
 
 function AIForceImprovements (player)	
 
@@ -194,7 +190,7 @@ function AIForceImprovements (player)
 	end
 
 end
-
+]]--
 
 
 ------------------------------------------------------------ AI get bonus when human expand!------------------------------------------------
@@ -439,27 +435,29 @@ function AIUnitsAssist(playerID)
 			
 				local plot = unit:GetPlot()
 				
-		--------------------------Fix AI turn freeze when moving certain Units (temp method)--this bug has been confirmed since G&K, when AI who is at war moving too many units on map -----maybe I'll find a better method in the future 
-	--				if not PlotIsVisibleToHuman(plot) then
-	--				 	if unit:IsRanged() and unit:GetDomainType()~= DomainTypes.DOMAIN_AIR then
-	--				 		local OriPlotX = plot:GetX()	
-	--				 		local OriPlotY = plot:GetY()			 	 
-	--						unit:JumpToNearestValidPlot()
-	--						unit:SetXY (OriPlotX,OriPlotY)
-	----						print ("---------------------BUG Check------------------------------------Unit moved")
-	--					end
-	--				end
-				
-				
-		------------------------AI Remove Obsolete Units (If force AI to upgrade their units it may cause freezing! so just delete them)
+				--------------------------Fix AI turn freeze when moving certain Units (temp method)--this bug has been confirmed since G&K, when AI who is at war moving too many units on map -----maybe I'll find a better method in the future 
+				--				if not PlotIsVisibleToHuman(plot) then
+				--				 	if unit:IsRanged() and unit:GetDomainType()~= DomainTypes.DOMAIN_AIR then
+				--				 		local OriPlotX = plot:GetX()	
+				--				 		local OriPlotY = plot:GetY()			 	 
+				--						unit:JumpToNearestValidPlot()
+				--						unit:SetXY (OriPlotX,OriPlotY)
+				----						print ("---------------------BUG Check------------------------------------Unit moved")
+				--					end
+				--				end
+							
+							
+				------------------------AI Remove Obsolete Units (If force AI to upgrade their units it may cause freezing! so just delete them)
 
-		------------------------AI Force Upgrade Units	----------May cause CTD!!!!!!!!!!!!!!Disabled for safety
-	--								
-	--				if unit:CanUpgradeRightNow() then
-	--					unit:DoCommand(CommandTypes["COMMAND_UPGRADE"])
-	--					print ("AI Unit upgraded!")
-	--				end	
-	--					
+				------------------------AI Force Upgrade Units	----------May cause CTD!!!!!!!!!!!!!!Disabled for safety
+				--								
+				--				if unit:CanUpgradeRightNow() then
+				--					unit:DoCommand(CommandTypes["COMMAND_UPGRADE"])
+				--					print ("AI Unit upgraded!")
+				--				end	
+				--					
+				
+				--[[ DISABLE UNIT UPGRADE/OBSOLETE CHECKS FOR PERF
 
 				if not PlayerAtWarWithHuman(player) and not PlotIsVisibleToHuman(plot) then
 					if unit:CanUpgradeRightNow() then
@@ -484,7 +482,8 @@ function AIUnitsAssist(playerID)
 					   print ("Obselete units outside removed!")
 					end			
 				end
-
+				
+				]]--
 			
 			
 						-------	Fix Possible 0 HP Unit Bug (Temp Method)
@@ -497,8 +496,8 @@ function AIUnitsAssist(playerID)
 
 				
 	
-	
-					-------------------Remove AI miss-placed units
+				--[[ DISABLE CITADEL CHECKS
+				-------------------Remove AI miss-placed units
 				if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_CITADEL_DEFENSE"].ID) then
 					if plot~= nil then
 						if plot:GetImprovementType() == nil or plot:GetImprovementType() ~= GameInfo.Improvements["IMPROVEMENT_CITADEL"].ID then
@@ -507,9 +506,11 @@ function AIUnitsAssist(playerID)
 						end	
 					end
 				end
-	
-					------------------------AI Units Restoring
-	
+				]]--
+
+				------------------------AI Units Restoring
+				
+				--[[ SSBN RESUPPLY 
 				if unit:GetUnitType() == GameInfoTypes.UNIT_SSBN and not unit:IsFull() then	
 				
 				    if plot ~= nil and not plot:IsCity() then
@@ -517,7 +518,8 @@ function AIUnitsAssist(playerID)
 						print ("AI:Missile restored!")					    	
 				    end
 				end		
-				
+				]]--
+
 				if unit:GetUnitType() == GameInfoTypes.UNIT_FRANCE_MISTRAL and not unit:IsFull() then	
 			
 				    if plot ~= nil and not plot:IsCity() then
@@ -529,7 +531,7 @@ function AIUnitsAssist(playerID)
 				    end
 				end	
 				
-					
+				--[[ DISABLE MISSILE RESUPPLY	
 				if unit:IsHasPromotion(MissileCarrierID) and not unit:IsFull() then
 				
 				
@@ -542,10 +544,10 @@ function AIUnitsAssist(playerID)
 					if plot ~= nil and not plot:IsCity() then
 					
 						if unit:GetUnitType() == GameInfoTypes.UNIT_KIROV_BATTLECRUISER then
-							player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
-							player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
-							player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
-							player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
+						--	player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
+						--	player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
+						--	player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
+						--	player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
 						--	player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
 						--	 player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
 						--	 player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)			
@@ -575,6 +577,7 @@ function AIUnitsAssist(playerID)
 					--				end									
 					
 				end	
+				]]--
 				
 				if unit:IsHasPromotion(CarrierID) and not unit:IsFull() then
 						
@@ -640,16 +643,16 @@ function AIUnitsAssist(playerID)
 				end
 				
 			end	
+		end
+	
+	
 	end
-	
-	
-end
 end
 	
 GameEvents.PlayerDoTurn.Add(AIUnitsAssist)
 
 
-
+--[[ DISABLE REMOVE AI BONUS
 ------------------------------------------------------------ Remove AI Resources Bonus when it is losing------------------------------------------------
 
 function AIRemoveResources(oldPlayerID, iCapital, iX, iY, newPlayerID, bConquest, iGreatWorksPresent, iGreatWorksXferred)
@@ -682,10 +685,10 @@ function AIRemoveResources(oldPlayerID, iCapital, iX, iY, newPlayerID, bConquest
 	
 	    if OldPlayer == CityOriginalOwner then
 			
---			if NewPlayer:GetNumUnits() <= 100 then
---			   pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_AI_CHEAT_UNITS_CAPTURING_CITY"],1)
---			   print ("AI Cheating New Units Created!")
---			end
+			--			if NewPlayer:GetNumUnits() <= 100 then
+			--			   pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_AI_CHEAT_UNITS_CAPTURING_CITY"],1)
+			--			   print ("AI Cheating New Units Created!")
+			--			end
 			
 			local ConsumerResID = GameInfoTypes["RESOURCE_CONSUMER"]
 			local ElectricityResID = GameInfoTypes["RESOURCE_ELECTRICITY"]
@@ -748,7 +751,7 @@ function AIRemoveResources(oldPlayerID, iCapital, iX, iY, newPlayerID, bConquest
 end
 GameEvents.CityCaptureComplete.Add(AIRemoveResources)
 
-
+]]--
 
 
 

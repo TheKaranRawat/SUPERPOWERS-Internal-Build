@@ -38,7 +38,7 @@ function RangedUnitRules(iAttackingPlayer, iAttackingUnit, attackerDamage, attac
 
 
 
------Larger AI's Bonus against Smaller AIs - AI is easier to become a Boss! Player will feel excited fighting Boss!
+	-----Larger AI's Bonus against Smaller AIs - AI is easier to become a Boss! Player will feel excited fighting Boss!
 	--AI will capture another AI's city by ranged attack
 	if not pDefendingPlayer:IsHuman() and not pAttackingPlayer:IsHuman() then 
 	
@@ -70,7 +70,7 @@ function RangedUnitRules(iAttackingPlayer, iAttackingUnit, attackerDamage, attac
 					if cityPop < 15 then
 						local TempUnit = pAttackingPlayer:InitUnit(GameInfoTypes.UNIT_ROMAN_LEGION, plotX, plotY, UNITAI_ATTACK)
 						TempUnit:Kill()
---		   				pAttackingUnit:SetXY(plotX, plotY)		
+	--		   				pAttackingUnit:SetXY(plotX, plotY)		
 		  	 			print ("AI Ranged Units Takes another AI's city!")
 					end
 				end
@@ -84,11 +84,11 @@ function RangedUnitRules(iAttackingPlayer, iAttackingUnit, attackerDamage, attac
 
 
 	
---Complex Effects Only for Human VS AI(reduce time and enhance stability)
---	if not pDefendingPlayer:IsHuman() and not pAttackingPlayer:IsHuman() then 
---		print ("Only Effective bewteen AI and Humans!")
---		return
---	end	
+	--Complex Effects Only for Human VS AI(reduce time and enhance stability)
+	--	if not pDefendingPlayer:IsHuman() and not pAttackingPlayer:IsHuman() then 
+	--		print ("Only Effective bewteen AI and Humans!")
+	--		return
+	--	end	
 	
 	if pAttackingPlayer:IsBarbarian() then ---Not for Barbarins
 		return
@@ -132,7 +132,7 @@ function RangedUnitRules(iAttackingPlayer, iAttackingUnit, attackerDamage, attac
 	local NuclearArtilleryID = GameInfo.UnitPromotions["PROMOTION_NUCLEAR_ARTILLERY"].ID	
 	
 	
-if not pDefendingUnit then --------------If attacking Cities
+ if not pDefendingUnit then --------------If attacking Cities
 	print ("attacking city!")
 	if pAttackingUnit:IsHasPromotion(StgBomberID) then 	----------------Strategic Bomber damage City 
 				
@@ -224,7 +224,7 @@ if not pDefendingUnit then --------------If attacking Cities
 					iCounterLv2=2
 					
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_WIND_PLANT"].ID) then
-					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_TIDAL_PLANT"],0);	
+					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_WIND_PLANT"],0);	
 					iCounterLv2=2	
 					
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_HYDRO_PLANT"].ID) then
@@ -239,7 +239,7 @@ if not pDefendingUnit then --------------If attacking Cities
 					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_GAS_PLANT"],0);
 					iCounterLv2=2
 					
-					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_TIDAL_PLANTT"].ID) then
+					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_TIDAL_PLANT"].ID) then
 					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_TIDAL_PLANT"],0);	
 					iCounterLv2=2
 					
@@ -256,36 +256,36 @@ if not pDefendingUnit then --------------If attacking Cities
 					iCounterLv3=2	
 					
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_FUTURE_FACTORY"].ID) then
-					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_FACTORY"],0);
-					iCounterLv2=2						
+					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_FUTURE_FACTORY"],0);
+					iCounterLv3=2						
 														
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_FACTORY"].ID) then
 					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_FACTORY"],0);
-					iCounterLv2=2
+					iCounterLv3=2
 									
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_STEEL_MILL"].ID) then
 					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_STEEL_MILL"],0);
-					iCounterLv2=2				
+					iCounterLv3=2				
 									
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_OIL_REFINERY"].ID) then
 					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_OIL_REFINERY"],0);					
-					iCounterLv2=2
+					iCounterLv3=2
 										
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_FORGE"].ID) then
 					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_FORGE"],0);
-					iCounterLv2=2
+					iCounterLv3=2
 					
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_MINGING_FACTORY"].ID) then
 					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_MINGING_FACTORY"],0);
-					iCounterLv2=2
+					iCounterLv3=2
 				
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_INLAND_CANAL"].ID) then
 					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_INLAND_CANAL"],0);
-					iCounterLv2=2
+					iCounterLv3=2
 				
 					elseif pDefendingCity:IsHasBuilding(GameInfo.Buildings["BUILDING_METAL_FACTORY"].ID) then
 					pDefendingCity:SetNumRealBuilding(GameInfoTypes["BUILDING_METAL_FACTORY"],0);
-					iCounterLv2=2
+					iCounterLv3=2
 					
 					
 				

@@ -51,7 +51,7 @@ include( "UtilityFunctions.lua" )
 
 
 
-
+--[[ ELECTRIC AND CONSUMER GOOD RECALC DISABLE
 
 function PlayerEditCity()------------------------This will trigger when player edit the specialists slots inside their cities.
 
@@ -92,7 +92,7 @@ end
 Events.SerialEventCityInfoDirty.Add(PlayerEditCity)
 
 
-
+]]--
 
 
 
@@ -130,16 +130,16 @@ function NewCitySystem(playerID)
 	elseif player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_CHINA"] then
 		SetGoldenAgeBonus(player)
 		print ("China's UA!")
---	elseif player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_HUNS"] then
---		SetOutputFromRazing(player)
---		print ("Hun's UA!")	
+	--	elseif player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_HUNS"] then
+	--		SetOutputFromRazing(player)
+	--		print ("Hun's UA!")	
 	end
 	
 	
---	if not player:IsAlive() then
---		print ("No players")
---		return
---	end
+	--	if not player:IsAlive() then
+	--		print ("No players")
+	--		return
+	--	end
 
 	if not player:IsHuman() then ------(only for human players for now)
 		print ("Not available!")
@@ -149,7 +149,7 @@ function NewCitySystem(playerID)
 	
 	
 	
--------------Special Policy Effects
+	-------------Special Policy Effects
 	
 	if player:HasPolicy(GameInfoTypes["POLICY_RELIGIOUS_POLITICS"]) or player:HasPolicy(GameInfoTypes["POLICY_CAPITALISM"]) then
 		SetPolicyPerTurnEffects(player)		
@@ -157,7 +157,8 @@ function NewCitySystem(playerID)
 	end
 	
 	
--------------Set City Per Turn Effects
+	-------------Set City Per Turn Effects
+	--[[ DISABLE CITY EFFECTS/DESYNC
 
 	if player:GetNumCities() > 0 then 
 		local ManpowerRes = player:GetNumResourceAvailable(GameInfoTypes["RESOURCE_MANPOWER"], true)
@@ -179,19 +180,19 @@ function NewCitySystem(playerID)
 			SetHappinessEffects (player,ExcessHappiness)
 		end		
 		
-		
-		
 		print("City per Turn Effects set!!")	
 	end
-	
-	
 
+	]]--
+	
 end---------Function End
 GameEvents.PlayerDoTurn.Add(NewCitySystem)
 
 
 
 --------------Trigger the city system when player build new city
+--[[DISABLE NO NEED TO CALC EFFECTS
+
 function HumanFoundingNewCities (iPlayerID,iX,iY)
 
 	local player = Players[iPlayerID]
@@ -211,12 +212,13 @@ function HumanFoundingNewCities (iPlayerID,iX,iY)
 	end
 end
 GameEvents.PlayerCityFounded.Add(HumanFoundingNewCities)
+]]--
 
 
 
 
 
-
+--[[ IDEALLY DISABLE/ SWITCH MANPOWER TO SUPPLY INSTEAD ]]--
 
 ----------------City sized changing by population growth
 
@@ -354,8 +356,9 @@ print("New City Rule Check Pass!")
 
 
 
-
+--[[ DISABLE INTERNATIONAL IMMIGRATION
 ---------------------International Immigration
+
 function InternationalImmigration(iPlayer)
 	local HumanPlayerID = iPlayer:GetID()	
 
@@ -377,21 +380,6 @@ function InternationalImmigration(iPlayer)
 	end
 
 end---------function end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function DoInternationalImmigration(MoveOutPlayerID,MoveInPlayerID)
 		
@@ -473,7 +461,7 @@ function DoInternationalImmigration(MoveOutPlayerID,MoveInPlayerID)
 
 end---------function end
 
-
+]]--
 
 
 
@@ -608,7 +596,7 @@ end---------function end
 --
 
 
-
+--[[ DISABLE DEPRECATED CITY EFFECTS/DESYNC
 
 function SetCityPerTurnEffects (player)
 
@@ -644,8 +632,9 @@ function SetCityPerTurnEffects (player)
 			
 end-------------Function End
 
+]]--
 
-
+--[[ DISABLE RESOURCE/CITY EFFECTS
 
 function SetCityAntiNegGoldBonus(player,city)
 
@@ -708,15 +697,6 @@ function SetCitySpecialistResources(player,city)
 			end		
 
 end---------function end
-
-
-
-
-
-
-
-
-
 
 
 function SetHappinessEffects(player,ExcessHappiness)	
@@ -931,7 +911,7 @@ function SetCityResEffects(player,ManpowerRes,ConsumerRes,ElectricityRes)
 	
 end-------------Function End
 
-
+]]--
 
 
 

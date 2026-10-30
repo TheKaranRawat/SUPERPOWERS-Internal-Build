@@ -140,7 +140,7 @@ if player:IsHuman() then
 	
 		for unit in player:Units() do
 		
-		
+	--[[ DISABLE UAV AND PLOT KILL CHECKS
 	-------	Fix Possible 0 HP Unit Bug (Temp Method)
 			if unit:GetDamage() >=100 or unit:GetCurrHitPoints() <=0 then
 				unit:Kill()	
@@ -159,7 +159,7 @@ if player:IsHuman() then
 			if unit:GetUnitType() == GameInfoTypes.UNIT_NUCLEAR_SUBMARINE or unit:GetUnitType() == GameInfoTypes.UNIT_STEALTH_HELICOPTER then
 				unit:SetHasPromotion(DroneCarrierID, true)
 			end
-
+	]]--
 
 		
 		
@@ -185,8 +185,8 @@ if player:IsHuman() then
 				end		
 		
 		
-		
-----------Remove mis-placed units	
+	--[[	CITADEL VALIDITY CHECKS
+	----------Remove mis-placed units	
 				if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_CITADEL_DEFENSE"].ID) then
 					local plot = unit:GetPlot()
 					if plot~= nil then
@@ -196,7 +196,7 @@ if player:IsHuman() then
 						end	
 					end
 				end
-		
+	]]--	
 		
 		
 		
@@ -265,7 +265,7 @@ if player:IsHuman() then
 				    
 				    if unit:IsHasPromotion(AirCraftCarrierID) then
 				    
-				    	unit:SetHasPromotion(DroneCarrierID, true)
+				    	--unit:SetHasPromotion(DroneCarrierID, true)
 				    	CarrierPromotionTransfer(unit,player,plot) 
 				    	
 				    	print ("Promotions Transfer Finished!") 
@@ -544,7 +544,7 @@ end
 GameEvents.PlayerDoTurn.Add(AICarrierResupply)
 ]]--
 
-
+--[[
 function LegionMovement (playerID, unitID, bRemainingMoves)
 
 	print ("Grouped Function loaded!")
@@ -566,14 +566,14 @@ function LegionMovement (playerID, unitID, bRemainingMoves)
 		local DesPlot = unit:LastMissionPlot()
 		UnitGroupMovement(player,DesPlot,unitID)
 		
-		--[[REMOVES PROMOTION ]]--
+		--REMOVES PROMOTION --
 		--unit:SetHasPromotion(GameInfo.UnitPromotions["PROMOTION_LEGION_GROUP"].ID, false)				
 		print ("Find a Legion moved!")
 	end
 
 end	------function end
 Events.UnitSelectionChanged.Add(LegionMovement);
-
+]]--
 
 
 
@@ -581,7 +581,7 @@ Events.UnitSelectionChanged.Add(LegionMovement);
 
 ----------------------------------------------------------------------Utilities--------------------------------------
 
-
+--[[
 function UnitGroupMovement(player,DesPlot,unitID)---------Move all Units in a Legion
 	for unit in player:Units() do
 		if unit:IsCombatUnit() and unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_LEGION_GROUP"].ID) and unit:GetID() ~= unitID then
@@ -614,7 +614,7 @@ function UnitGroupMovement(player,DesPlot,unitID)---------Move all Units in a Le
 		end
 	end
 end
-
+]]--
 
 
 
@@ -665,12 +665,13 @@ function CarrierRestoreEngland(unit,player,plot) ---------English Carrier with H
 		print ("Aircrafts restored on English super-carrier!")
 	end
 	
-	if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_MISSILE_CARRIER"].ID) then	
-		while not unit:IsFull() do
-			player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR):SetMoves(0)			
-			print ("Missile restored!")
+	--DISABLE MISSILE RESUPPLY CRUISER
+	--if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_MISSILE_CARRIER"].ID) then	
+	--	while not unit:IsFull() do
+	--		player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR):SetMoves(0)			
+	--		print ("Missile restored!")
 		end
-	end
+	--end
 		
 --	if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_DRONE_CARRIER"].ID) then
 --		print ("UAV Carrier found!")
@@ -777,14 +778,14 @@ function CarrierRestore(unit,player,plot) ----------------Other Nations' normal 
 		end
 	end
 	
-	
+	--[[ DISABLE MISSILE CRUISER RESTOCK
 	if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_MISSILE_CARRIER"].ID) then	
 		while not unit:IsFull() do
 			player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR):SetMoves(0)			
 			print ("Missile restored!")
 		end
 	end
-	
+	]]--
 		
 --	if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_DRONE_CARRIER"].ID) then
 --		print ("UAV Carrier found!")
@@ -930,7 +931,7 @@ local pTeam = Teams[iTeam]
 	end
 	
 	local player = Players[Game.GetActivePlayer()]
-	if player:IsMinorCiv() and player:IsBarbarian()  then
+	if player:IsMinorCiv() or player:IsBarbarian()  then
 	 	return
 	end
 		

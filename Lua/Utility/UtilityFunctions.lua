@@ -9,6 +9,7 @@
 
 ------------------------------------------------Players Functions------------------------------------------------------
 
+--[[
 function GetPlayerByCivilization(civilizationType)--------------Get Player by civilizationType
 	for _, pPlayer in pairs(Players) do
 		if pPlayer:GetCivilizationType() == civilizationType then 
@@ -16,11 +17,13 @@ function GetPlayerByCivilization(civilizationType)--------------Get Player by ci
 		end
 	end
 end
+]]--
 
 
 
 
 -------------If two players are AT WAR?
+-- DEPRECATE [COMBAT]
 
 function PlayersAtWar(iPlayer,ePlayer)
 	local iTeam = Teams[iPlayer:GetTeam()];
@@ -34,6 +37,7 @@ end
 
 
 ---------If the AI player is at war with Human?
+-- DEPRECATE [COMBAT]
 
 function PlayerAtWarWithHuman(player) 
 	local CurrentPlayerTeam = Teams[player:GetTeam()]
@@ -112,7 +116,7 @@ end
 
 -----------------------------------------------Plot Functions------------------------------------------------------
 
-
+-- DEPRECATE [COMBAT]
 function PlotIsVisibleToHuman(plot) --------------------Is the plot can be seen by Human
 	for playerID,HumanPlayer in pairs(Players) do
 		if HumanPlayer:IsHuman() then
@@ -135,6 +139,7 @@ end
 
 
 
+-- DEPRECATE [NO USE DETECTED]
 
 function isFriendlyCity(pUnit, pCity)--------------Is the plot a Friendly City?
 	  local bFriendly = (pCity:GetTeam() == pUnit:GetTeam())
