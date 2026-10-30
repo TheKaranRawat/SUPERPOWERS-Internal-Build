@@ -153,7 +153,7 @@ local g_activePlayerID = Game.GetActivePlayer()
 local g_activePlayer = Players[ g_activePlayerID ]
 local g_finishedItems = {}
 
-local g_workerHeadingOpen = OptionsManager.IsNoCitizenWarning()
+local g_workerHeadingOpen = true
 
 local g_rightTipControls = {}
 local g_leftTipControls = {}
@@ -1791,7 +1791,7 @@ local function UpdateCityViewNow()
 		-------------------------------------------
 		-- Great Person Meters
 		-------------------------------------------
-		if civ5_mode then
+		if false then
 			g_GreatPeopleIM.ResetInstances()
 			for specialist in GameInfo.Specialists() do
 
@@ -2174,7 +2174,8 @@ end
 local function UpdateOptionsAndCityView()
 	g_isAdvisor = not ( g_options and g_options.GetValue and g_options.GetValue( "CityAdvisor" ) == 0 )
 	g_isAutoClose = not ( g_options and g_options.GetValue and g_options.GetValue( "AutoClose" ) == 0 )
-	g_FocusSelectIM.Collapse( not OptionsManager.IsNoCitizenWarning() )
+	--g_FocusSelectIM.Collapse( not OptionsManager.IsNoCitizenWarning() )
+	g_FocusSelectIM.Collapse( false )
 	Controls.BuyPlotCheckBox:SetCheck( g_BuyPlotMode )
 	return UpdateCityView()
 end
@@ -2190,7 +2191,7 @@ g_UnitSelectIM		= StackInstanceManager( "SelectionInstance", "Button", Controls.
 g_BuildingSelectIM	= StackInstanceManager( "SelectionInstance", "Button", Controls.BuildingButtonStack, Controls.BuildingsButton, ResizeProdQueue )
 g_WonderSelectIM	= StackInstanceManager( "SelectionInstance", "Button", Controls.WonderButtonStack, Controls.WondersButton, ResizeProdQueue )
 g_ProcessSelectIM	= StackInstanceManager( "SelectionInstance", "Button", Controls.OtherButtonStack, Controls.OtherButton, ResizeProdQueue )
-g_FocusSelectIM		= StackInstanceManager( "", "", Controls.WorkerManagementBox, Controls.WorkerHeader, function(self, collapsed) g_workerHeadingOpen = not collapsed ResizeRightStack() UpdateWorkingHexes() end, true, not g_workerHeadingOpen )
+g_FocusSelectIM		= StackInstanceManager( "", "", Controls.WorkerManagementBox, Controls.WorkerHeader, function(self, collapsed) g_workerHeadingOpen = not collapsed ResizeRightStack() UpdateWorkingHexes() end, true, false )
 
 local function SetToolTipString( toolTipFunc )
 	g_leftTipControls.Text:SetText( toolTipFunc( UI_GetHeadSelectedCity() ) )
@@ -2345,8 +2346,15 @@ if gk_mode then
 end
 Controls.GPFocusButton:SetHide( civBE_mode )
 Controls.FaithBox:SetHide( civBE_mode or not gk_mode )
+--Controls.GPFocusButton:SetHide( true )
+--Controls.FaithFocusButton:SetHide( true )
+
 Controls.FaithFocusButton:SetHide( civBE_mode or not gk_mode )
-Controls.TourismBox:SetHide( not civ5bnw_mode )
+
+--Controls.TourismBox:SetHide( not civ5bnw_mode )
+Controls.TourismBox:SetHide( true )
+Controls.GPHeader:SetHide( true )
+Controls.GPStack:SetHide( true )
 
 SetupCallbacks( Controls, g_toolTips, "EUI_CityViewLeftTooltip", g_callBacks )
 
@@ -2506,3 +2514,8 @@ for addin in Modding.GetActivatedModEntryPoints("CityViewUIAddin") do
 		print( addinPath, result )
 	end
 end
+
+--Controls.CultureFocusButton:SetHide( true )
+Controls.WorkerHeader:SetHide( true )
+--Controls.GPFocusButton:SetHide( true )
+--Controls.FaithFocusButton:SetHide( true )
