@@ -276,8 +276,9 @@ local function ResizeProdQueue()
 	if not Controls.UnitGrid:IsHidden() then
 		Controls.UnitButtonStack:CalculateSize()
 		unitPanelWidth = Controls.UnitButtonStack:GetSizeX()
+		unitpanelfinal = math_max( unitPanelWidth, 273 )
 		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
-		Controls.UnitGrid:SetSizeX( unitPanelWidth )
+		Controls.UnitGrid:SetSizeX( unitpanelfinal )
 		Controls.UnitGrid:SetSizeY( 44 )
 		Controls.UnitGrid:ReprocessAnchoring()
 	end
@@ -285,8 +286,9 @@ local function ResizeProdQueue()
 	if not Controls.BuildingGrid:IsHidden() then
 		Controls.BuildingButtonStack:CalculateSize()
 		buildingPanelWidth = Controls.BuildingButtonStack:GetSizeX()
+		buildingPanelfinal = math_max( buildingPanelWidth, 273 )
 		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
-		Controls.BuildingGrid:SetSizeX( buildingPanelWidth )
+		Controls.BuildingGrid:SetSizeX( buildingPanelfinal )
 		Controls.BuildingGrid:SetSizeY( 44 )
 		Controls.BuildingGrid:ReprocessAnchoring()
 	end
@@ -294,8 +296,9 @@ local function ResizeProdQueue()
 	if not Controls.WonderGrid:IsHidden() then
 		Controls.WonderButtonStack:CalculateSize()
 		wonderPanelWidth = Controls.WonderButtonStack:GetSizeX()
+		wonderPanelfinal = math_max( wonderPanelWidth, 273 )
 		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
-		Controls.WonderGrid:SetSizeX( wonderPanelWidth )
+		Controls.WonderGrid:SetSizeX( wonderPanelfinal )
 		Controls.WonderGrid:SetSizeY( 44 )
 		Controls.WonderGrid:ReprocessAnchoring()
 	end
@@ -733,10 +736,11 @@ local function SetupBuildingList( city, buildings, buildingIM )
 		textButton:SetHide( true )
 		if isNewInstance then
 			buildingButton:RegisterCallback( Mouse.eRClick, BuildingPedia )
+			buildingButton:RegisterCallback( Mouse.eLClick, SellBuilding )
 			buildingButton:SetToolTipCallback( BuildingToolTip )
 			sellButton:RegisterCallback( Mouse.eLClick, SellBuilding )
-			textButton:RegisterCallback( Mouse.eLClick, YourCulturePopup )
-			textButton:RegisterCallback( Mouse.eMouseEnter, ThemingTooltip )
+			--textButton:RegisterCallback( Mouse.eLClick, YourCulturePopup )
+			--textButton:RegisterCallback( Mouse.eMouseEnter, ThemingTooltip )
 		else
 			for _, slot in pairs( controls[1] ) do
 				g_slots:insert( slot )
@@ -753,7 +757,7 @@ local function SetupBuildingList( city, buildings, buildingIM )
 		-- Can we sell this building?
 		if not g_isViewingMode and city:IsBuildingSellable( buildingID ) then
 			sellButton:SetText( city:GetSellBuildingRefund( buildingID ) .. g_currencyIcon )
-			sellButton:SetHide( false )
+			sellButton:SetHide( true )	--false
 			sellButton:SetVoid1( buildingID )
 		else
 			sellButton:SetHide( true )
@@ -762,9 +766,9 @@ local function SetupBuildingList( city, buildings, buildingIM )
 		local slotStack = controls.SlotStack
 		local instance = {}
 
---!!!BE portrait size is bigger
+	--!!!BE portrait size is bigger
 
-		controls.Portrait:SetHide( not IconHookup( building.PortraitIndex, 64, building.IconAtlas, controls.Portrait ) )
+		controls.Portrait:SetHide( not IconHookup( building.PortraitIndex, 128, building.IconAtlas, controls.Portrait ) )
 
 		-------------------
 		-- Great Work Slots
@@ -928,9 +932,12 @@ local function SetupBuildingList( city, buildings, buildingIM )
 				buildingYieldPerPop = buildingYieldPerPop + (row.Yield or 0)
 			end
 			buildingYieldRate = buildingYieldRate + buildingYieldPerPop * population / 100
+			
+			-- building grid yields
+			--buildingYieldRate = buildingYieldRate * cityYieldRateModifier + ( cityYieldRate - buildingYieldRate ) * buildingYieldModifier
+			buildingYieldRate = buildingYieldRate 
 
-			buildingYieldRate = buildingYieldRate * cityYieldRateModifier + ( cityYieldRate - buildingYieldRate ) * buildingYieldModifier
-			tips:insertIf( isProducing and buildingYieldRate ~= 0 and buildingYieldRate / 100 .. tostring(YieldIcons[ yieldID ]) )
+			tips:insertIf( isProducing and buildingYieldRate ~= 0 and buildingYieldRate .. tostring(YieldIcons[ yieldID ]) )
 		end
 
 		-- Culture leftovers
@@ -1058,6 +1065,8 @@ local function SortSelectionList(a,b)
 	return a[3]<b[3]
 end
 
+-- control queue length
+local g_maxQueueLength = 7
 local g_SelectionListCallBacks = {
 	Button = {
 		[Mouse.eLClick] = function( orderID, itemID )
@@ -1065,6 +1074,11 @@ local g_SelectionListCallBacks = {
 			if city then
 				local cityOwnerID = city:GetOwner()
 				if cityOwnerID == g_activePlayerID and not city:IsPuppet() then
+
+					-- Queue limit (shift-click replaces the queue, so allow it)
+					if city:GetOrderQueueLength() >= g_maxQueueLength and not UI.ShiftKeyDown() then
+						return Events.AudioPlay2DSound( "AS2D_INTERFACE_BUTTON_CLICK_DISABLED" ) -- optional feedback; remove if the sound key doesn't exist
+					end
 					-- cityPushOrder( city, orderID, itemID, bAlt, bShift, bCtrl )
 					-- cityPushOrder( city, orderID, itemID, repeatBuild, replaceQueue, bottomOfQueue )
 					Game.CityPushOrder( city, orderID, itemID, UI.AltKeyDown(), UI.ShiftKeyDown(), not UI.CtrlKeyDown() )
@@ -1084,7 +1098,15 @@ local g_SelectionListCallBacks = {
 				end
 			end
 		end,
-		[Mouse.eRClick] = SelectionPedia,
+		-- right click buy unit
+		-- [Mouse.eRClick] = SelectionPedia,
+		[Mouse.eRClick] = function( orderID, itemID )
+		-- Ctrl + right click keeps the old Pedia behaviour
+		if orderID == OrderTypes.ORDER_TRAIN and GetSelectedModifiableCity() and not UI.CtrlKeyDown() then
+			return SelectionPurchase( orderID, itemID, g_yieldCurrency, "AS2D_INTERFACE_CITY_SCREEN_PURCHASE" )
+		end
+		return SelectionPedia( orderID, itemID )
+end,
 	},
 	GoldButton = {
 		[Mouse.eLClick] = function( orderID, itemID )

@@ -124,3 +124,4 @@ city production tooltip fix
 MERCENARY REMOVE
 workboat remove
 militia remove
+remove inquisitors/missionaries

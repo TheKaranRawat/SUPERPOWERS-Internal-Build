@@ -8,7 +8,7 @@
 
 	<!-- Left Side Panel -->
 	<!-- City Information -->
-	<Grid ID="CityInfoBG" Size="240,390" ConsumeMouse="1" Anchor="L,T" Offset="-16,-9" Style="Grid9DetailSix140" Hidden="1" >
+	<Grid ID="CityInfoBG" Size="240,390" ConsumeMouse="1" Anchor="L,T" Offset="-16,-9" Style="Grid9DetailSix140" Hidden="0" >
 		<Label Anchor="C,T" Offset="0,18" String="TXT_KEY_CITYVIEW_CITYINFO_TEXT"/>
 		<Stack Anchor="L,T" Offset="17,60" StackGrowth="Bottom" >
 			<!-- Population Info -->
@@ -76,7 +76,7 @@
 
 	<!-- Production Meter Image -->
 	<Image ID="LeftTrim" Anchor="L,B" Offset="282,0" Texture="citytrimleft.dds" Size="141.78" >
-		<Button ID="ProductionPortraitButton" Void1="0" Anchor="L,B" Offset="-3,8" Size="128.128" Texture="TechTreeMeterBack.dds" NoStateChange="1" ToolTip="TXT_KEY_CITYVIEW_PROD_METER_TT">
+		<Button ID="ProductionPortraitButton" Void1="0" Anchor="L,B" Offset="-3,42" Size="128.128" Texture="TechTreeMeterBack.dds" NoStateChange="1" ToolTip="TXT_KEY_CITYVIEW_PROD_METER_TT">
 			<Meter ID="PQmeter" Anchor="L,B" Size="128,128" Texture="ProductionPanelMeter128.dds" HasShadow="1" />
 			<Image Anchor="L,B" Size="128.128" Texture="TechTreeMeterFrame.dds" />
 			<Image ID="PQportrait" Anchor="L,B" Size="128.128" Texture="UnitPortraitsAncientMedieval1024.dds" />
@@ -118,6 +118,7 @@
 					</Label>
 				</Label>
 			</Button>
+
 			<!-- Order Selection -->
       <!-- horizontal selection for different categories/wonders/units/buildings/icon only no name-->
 			<Box  ID="SelectionScrollPanel"Anchor="L,B" Size="270,308"  >
@@ -267,11 +268,15 @@
 					</Button>
 					<Box ID="ResetFooter"Anchor="L,B" Color="27.53.64.255" Size="254,2" />
 				</Stack>
+        
 				<!-- Great People -->
+        <!--
 				<Button ID="GPHeader" Anchor="L,B" Size="254,27" Offset="2,0" Texture="CivilopediaButtons272x27.dds">
 					<Label Anchor="L,C" Offset="40,-2" Font="TwCenMT18" String="TXT_KEY_CITYVIEW_GREAT_PEOPLE_TEXT"/>
 				</Button>
 				<Stack ID="GPStack" Anchor="L,T" StackGrowth="B"/>
+        -->
+
 				<!-- Unemployment-->
 				<Button ID="SlackerHeader" Anchor="L,B" Size="254,27" Offset="2,0" Texture="CivilopediaButtons272x27.dds">
 					<Label Anchor="L,C" Offset="40,-2" Font="TwCenMT18" String="TXT_KEY_CITYVIEW_UNEMPLOYED_TEXT"/>
@@ -352,11 +357,11 @@
 				</AlphaAnim>
 			</ShowOnMouseOver>
 
-			<Box ID="DisabledProduction" Color="0,0,0,153" Size="38,38" Anchor="L,B" Hidden="1"/>
+			<Box ID="DisabledProduction" Color="0,0,0,153" Size="36,36" Anchor="L,B" Hidden="1"/>
 			<Image ID="Portrait" Anchor="L,C" Offset="-4,0" Texture="WonderAtlas360.dds" Size="45,45" />
 			<Label ID="Name" Anchor="L,C" Offset="42,-8" Font="TwCenMT18" Hidden="1"/>
 			<Label ID="Turns" Anchor="L,C" Offset="4,13" Font="TwCenMT14"/>
-			<Box ID="Disabled" Color="0,0,0,153" Size="38,38" Anchor="L,B" Hidden="1"/>
+			<Box ID="Disabled" Color="0,0,0,153" Size="36,36" Anchor="L,B" Hidden="1"/>
 
 			<Stack Anchor="R,B" StackGrowth="L" Hidden="1">
 				<Image ID="ScienceRecommendation" ToolTip="TXT_KEY_CITY_CONSTRUCTION_ADVISOR_RECOMMENDATION_SCIENCE" Anchor="L,C" Size="32,32" Texture="AdvisorSymbolScience.dds" Hidden="1">
@@ -400,16 +405,18 @@
 		</GridButton>
 	</Instance>
 
+  <!-- right panel building grid -->
 	<Instance Name="BuildingInstance">
 		<Button ID="Button" Size="254,64" ToolTipType="EUI_CityViewRightTooltip" >
 			<Image Anchor="R,T" Size="64,64" Texture="64x64FrameButtons.dds">
-				<Image ID="Portrait" Anchor="C,C" Size="64,64" />
+				<Image ID="Portrait" Offset="-2,-15" Anchor="C,C" Size="100,95" />
 			</Image>
 			<Stack ID="Stack" Anchor="R,T" Offset="0,8" StackGrowth="Down" Padding="8" >
 				<Label ID="Name" Anchor="R,T" Offset="64,0" Font="TwCenMT18" TruncateWidth="190"/>
-				<Stack ID="SlotStack" Anchor="R,T" StackGrowth="Left" WrapGrowth="Down" WrapWidth="254">
-					<Container Size="64.1"/>
-					<TextButton ID="TextButton" Anchor="R,C"/>
+        <!-- building yield display -->
+				<Stack ID="SlotStack" Anchor="R,T" Offset="20,0 " StackGrowth="Left" WrapGrowth="Down" WrapWidth="254">
+					<Container Size="48.1"/>
+					<TextButton ID="TextButton" Anchor="R,C" />
 				</Stack>
 				<Label ID="Label" Anchor="R,B" WrapWidth="254"/>
 			</Stack>
