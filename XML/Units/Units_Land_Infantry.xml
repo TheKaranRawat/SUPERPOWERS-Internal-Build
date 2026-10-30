@@ -2771,17 +2771,6 @@
 				<PromotionType>PROMOTION_ANTI_GUNPOWDER</PromotionType>
 			</Row>
 
-			<Row>
-				<UnitType>UNIT_EXOTIC_UNIT_GHAZI</UnitType>
-				<PromotionType>PROMOTION_INFANTRY_COMBAT</PromotionType>
-			</Row>
-
-			
-	
-			<Row>
-				<UnitType>UNIT_EXOTIC_UNIT_CONDOTTIERI</UnitType>
-				<PromotionType>PROMOTION_INFANTRY_COMBAT</PromotionType>
-			</Row>
 
 			<Row>
 				<UnitType>UNIT_LONGSWORDSMAN</UnitType>
@@ -2958,26 +2947,6 @@
 				<PromotionType>PROMOTION_GUNPOWDER_INFANTRY_COMBAT</PromotionType>
 			</Row>
 
-			<Row>
-				<UnitType>UNIT_EXOTIC_UNIT_SOF</UnitType>
-				<PromotionType>PROMOTION_GUNPOWDER_INFANTRY_COMBAT</PromotionType>
-			</Row>
-
-			<Row>
-				<UnitType>UNIT_EXOTIC_UNIT_PMC</UnitType>
-				<PromotionType>PROMOTION_GUNPOWDER_INFANTRY_COMBAT</PromotionType>
-			</Row>
-
-			<Row>
-				<UnitType>UNIT_EXOTIC_UNIT_GURKHA</UnitType>
-				<PromotionType>PROMOTION_GUNPOWDER_INFANTRY_COMBAT</PromotionType>
-			</Row>
-
-			<Row>
-				<UnitType>UNIT_EXOTIC_UNIT_GUERILLA</UnitType>
-				<PromotionType>PROMOTION_GUNPOWDER_INFANTRY_COMBAT</PromotionType>
-			</Row>
-			
 
 
 			<Row>
