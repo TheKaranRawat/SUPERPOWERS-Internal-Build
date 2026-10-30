@@ -953,7 +953,8 @@ local function SetupBuildingList( city, buildings, buildingIM )
 					) or 0 )
 --			local enhancedYieldTechID = GameInfoTypes[ building.EnhancedYieldTech ]
 			tourism = tourism + (tonumber(building.TechEnhancedTourism) or 0)
-			tips:insertIf( tourism ~= 0 and tourism.."[ICON_TOURISM]" )
+			-- disable tourism yield display
+			--tips:insertIf( tourism ~= 0 and tourism.."[ICON_TOURISM]" )
 		end
 
 		if civ5_mode and building.IsReligious then
@@ -1400,7 +1401,20 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 		SetupSelectionList( buildingSelectList, g_BuildingSelectIM )
 		SetupSelectionList( wonderSelectList, g_WonderSelectIM )
 		SetupSelectionList( processSelectList, g_ProcessSelectIM )
+		
+		-- keep the Buildings header visible even when the list is empty
+		Controls.BuildingsButton:SetHide( false )
+		Controls.BuildingGrid:SetHide( false )
 
+		Controls.UnitButton:SetHide( false )
+		Controls.UnitGrid:SetHide( false )
+
+		Controls.WondersButton:SetHide( false )
+		Controls.WonderGrid:SetHide( false )
+
+		Controls.OtherButton:SetHide( false )
+		Controls.OtherGrid:SetHide( false )
+		
 	end
 	return ResizeProdQueue()
 end
