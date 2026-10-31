@@ -1948,10 +1948,14 @@
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_MINE</BuildType>
 		</Row>
+
+		<!--
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_TRADING_POST</BuildType>
 		</Row>
+		-->
+		
 		<Row>
 			<UnitType>UNIT_BRAZILIAN_LABOR</UnitType>
 			<BuildType>BUILD_LUMBERMILL</BuildType>

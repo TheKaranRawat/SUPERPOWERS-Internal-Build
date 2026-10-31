@@ -12,7 +12,7 @@
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_MELEE</CombatClass>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_RECON</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_RANGED</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_HARD_MOBILE_LAUNCHER</Description>
 			<Civilopedia>TXT_KEY_CIV5_HARD_MOBILE_LAUNCHER_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_HARD_MOBILE_LAUNCHER_STRATEGY</Strategy>
@@ -39,7 +39,7 @@
 	<SpecialUnit_CarrierUnitAI>
 		<Row>
 			<SpecialUnitType>SPECIALUNIT_TACTICALNUCLEARMISSILE</SpecialUnitType>
-			<UnitAIType>UNITAI_MISSILE_CARRIER_TACTICAL</UnitAIType>
+			<UnitAIType>UNITAI_RANGED</UnitAIType>
 		</Row>		
 	</SpecialUnit_CarrierUnitAI>
 	
