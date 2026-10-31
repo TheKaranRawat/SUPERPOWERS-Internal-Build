@@ -134,7 +134,13 @@
 					</Button>    
 
               <Grid ID="UnitGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
+
+                <Box ID="UnitBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
+                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                </Box>
+
                 <Stack ID="UnitButtonStack" Anchor="L,T" StackGrowth="Right" />
+
               </Grid>
 
 					<Button ID="BuildingsButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
@@ -142,7 +148,13 @@
 					</Button>
 
               <Grid ID="BuildingGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
+
+                <Box ID="BuildBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
+                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                </Box>
+
                 <Stack ID="BuildingButtonStack" Anchor="L,T" StackGrowth="Right" />
+
               </Grid>
 					
 					<Button ID="WondersButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
@@ -150,6 +162,11 @@
 					</Button>
 
               <Grid ID="WonderGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
+
+                <Box ID="WonderBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
+                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                </Box>
+
                 <Stack ID="WonderButtonStack" Anchor="L,T" StackGrowth="Right" />
               </Grid>
 					
@@ -158,6 +175,11 @@
 					</Button>
 
               <Grid ID="OtherGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
+
+                <Box ID="OtherBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
+                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                </Box>
+
                 <Stack ID="OtherButtonStack" Anchor="L,T" Size="256,32" StackGrowth="Right" />
               </Grid>
 					
@@ -179,8 +201,14 @@
 		</Image>
 		<Button ID="NextCityButton" Anchor="C,C" Size="32,32" Offset="164.0" TextureOffset="32.0" Texture="CityNamePanelArrows.dds"/>
 		<Button ID="PrevCityButton" Anchor="C,C" Size="32,32" Offset="-164.0" Texture="CityNamePanelArrows.dds"/>
-		<TextButton ID="CityNameTitleBarLabel" Anchor="C,C" Font="TwCenMT22" FontStyle="SoftShadow" >
+		<TextButton ID="CityNameTitleBarLabel" Offset="0,-1" Anchor="C,C" Font="TwCenMT22" FontStyle="SoftShadow" >
 			<Label ID="CityCapitalIcon" AnchorSide="O.I" Offset="0,-1" Anchor="L,C" String="[ICON_CAPITAL]" Hidden="1"/>
+
+      <!-- CITY POPULATION IN MILLIONS Stroke -->
+      <Label ID="CityPop" Anchor="R,C" AnchorSide="I.O" Offset="-38,6"  Font="TwCenMT14" FontStyle="SoftShadow" >
+				<Label ID="CityPopSuffix" Anchor="L,C" Offset="3,0" String="" Font="TwCenMT16" FontStyle="SoftShadow" Hidden="1" />
+			</Label>
+
 		</TextButton>
 		<!-- City Strength -->
 		<Label ID="Defense" Offset="3,18" Anchor="C,T" Font="TwCenMT24" ToolTip="TXT_KEY_CITYVIEW_CITY_COMB_STRENGTH_TT"/>
@@ -390,8 +418,11 @@
 		</Button>
 	</Instance>
 
+
+  <!-- PROD INSTANCE -->
 	<Instance Name="ProductionInstance">
-		<GridButton ID="PQbox" Anchor="L,T" Style="ListItem" Size="45,38" ToolTipType="EUI_CityViewLeftTooltip" >
+		<GridButton ID="PQbox" Anchor="L,T" Style="ListItem" Size="45,38" ToolTipType="EUI_CityViewLeftTooltip" >      
+
 			<Stack Anchor="L,C" Offset="0,-1" Padding="4" StackGrowth="Right" >
 				<Label ID="PQrank" Anchor="L,C" Font="TwCenMT24" Hidden="1"/>
 				<Image ID="PQportrait" Anchor="L,C" Texture="UnitPortraitsAncientMedieval360.dds" Size="45.45"/>

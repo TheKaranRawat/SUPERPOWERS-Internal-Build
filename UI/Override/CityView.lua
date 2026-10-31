@@ -278,9 +278,14 @@ local function ResizeProdQueue()
 		unitPanelWidth = Controls.UnitButtonStack:GetSizeX()
 		unitpanelfinal = math_max( unitPanelWidth, 273 )
 		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
-		Controls.UnitGrid:SetSizeX( unitpanelfinal )
+		Controls.UnitGrid:SetSizeX( unitpanelfinal )		
 		Controls.UnitGrid:SetSizeY( 44 )
 		Controls.UnitGrid:ReprocessAnchoring()
+
+		Controls.UnitBG:SetSizeX( unitpanelfinal - 3 )
+		Controls.UnitBG:SetSizeY( 40 )
+		Controls.UnitBG:ReprocessAnchoring()
+
 	end
 
 	if not Controls.BuildingGrid:IsHidden() then
@@ -291,6 +296,11 @@ local function ResizeProdQueue()
 		Controls.BuildingGrid:SetSizeX( buildingPanelfinal )
 		Controls.BuildingGrid:SetSizeY( 44 )
 		Controls.BuildingGrid:ReprocessAnchoring()
+		
+		--set bg for selection stack
+		Controls.BuildBG:SetSizeX( buildingPanelfinal - 3 )
+		Controls.BuildBG:SetSizeY( 40 )
+		Controls.BuildBG:ReprocessAnchoring()
 	end
 
 	if not Controls.WonderGrid:IsHidden() then
@@ -301,6 +311,22 @@ local function ResizeProdQueue()
 		Controls.WonderGrid:SetSizeX( wonderPanelfinal )
 		Controls.WonderGrid:SetSizeY( 44 )
 		Controls.WonderGrid:ReprocessAnchoring()
+
+		--set bg for selection stack
+		Controls.WonderBG:SetSizeX( buildingPanelfinal - 3 )
+		Controls.WonderBG:SetSizeY( 40 )
+		Controls.WonderBG:ReprocessAnchoring()
+
+		--set bg for selection stack
+		Controls.OtherBG:SetSizeX( 269 )
+		Controls.OtherBG:SetSizeY( 36 )
+		Controls.OtherBG:ReprocessAnchoring()		
+
+		--set bg for selection stack
+		--Controls.PQBG:SetSizeX( 269 )
+		--Controls.PQBG:SetSizeY( 40 )
+		--Controls.PQBG:ReprocessAnchoring()	
+
 	end
 	
 
@@ -1748,7 +1774,27 @@ local function UpdateCityViewNow()
 
 		--Update suffix to use correct plurality.
 		Controls.CityPopulationLabelSuffix:LocalizeAndSetText( "TXT_KEY_CITYVIEW_CITIZENS_TEXT", cityPopulation )
+		
+		-- CITY POP FORMAT FUNCTION
+		local function FormatNumber( n )
+			local absN = math.abs( n )
+			if absN >= 1e9 then
+				return string.format( "%.1fB", n / 1e9 )
+			elseif absN >= 1e6 then
+				return string.format( "%.1fM", n / 1e6 )
+			elseif absN >= 1e3 then
+				return string.format( "%.1fK", n / 1e3 )
+			else
+				return string.format( "%d", math.floor( n + 0.5 ) )
+			end
+		end
 
+
+		-- CITY POP IN MILLIONS
+		local cityPopMil = math.floor( 1000 * cityPopulation ^ 2.8 + 0.5 )
+
+		Controls.CityPop:SetText(FormatNumber(cityPopMil))
+		Controls.CityPopSuffix:LocalizeAndSetText( "TXT_KEY_POPS_MIL", cityPopulation )
 
 		-------------------------------------------
 		-- Citizen Focus & Slackers

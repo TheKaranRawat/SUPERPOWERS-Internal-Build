@@ -670,17 +670,17 @@ function CarrierRestoreEngland(unit,player,plot) ---------English Carrier with H
 	--	while not unit:IsFull() do
 	--		player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR):SetMoves(0)			
 	--		print ("Missile restored!")
-		end
+		--end
 	--end
 		
---	if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_DRONE_CARRIER"].ID) then
---		print ("UAV Carrier found!")
---		local pTeam = Teams[player:GetTeam()]
---		if pTeam:IsHasTech(GameInfoTypes["TECH_ARTIFICIAL_INTELLIGENCE"]) then
---			player:InitUnit(GameInfoTypes.UNIT_UAV, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR):SetMoves(0)
---			print ("UAV restored!")
---		end		
---   	end 
+	--	if unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_DRONE_CARRIER"].ID) then
+	--		print ("UAV Carrier found!")
+	--		local pTeam = Teams[player:GetTeam()]
+	--		if pTeam:IsHasTech(GameInfoTypes["TECH_ARTIFICIAL_INTELLIGENCE"]) then
+	--			player:InitUnit(GameInfoTypes.UNIT_UAV, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR):SetMoves(0)
+	--			print ("UAV restored!")
+	--		end		
+	--   	end 
    	
 end
 
