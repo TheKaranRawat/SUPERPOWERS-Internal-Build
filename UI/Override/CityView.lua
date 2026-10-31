@@ -313,7 +313,7 @@ local function ResizeProdQueue()
 		Controls.WonderGrid:ReprocessAnchoring()
 
 		--set bg for selection stack
-		Controls.WonderBG:SetSizeX( buildingPanelfinal - 3 )
+		Controls.WonderBG:SetSizeX( wonderPanelfinal - 3 )
 		Controls.WonderBG:SetSizeY( 40 )
 		Controls.WonderBG:ReprocessAnchoring()
 

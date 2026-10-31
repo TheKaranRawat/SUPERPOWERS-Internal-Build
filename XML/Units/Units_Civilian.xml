@@ -615,7 +615,7 @@
 			<Class>UNITCLASS_INQUISITOR</Class>
 			<Type>UNIT_INQUISITOR</Type>
 			<Cost>-1</Cost>
-			<FaithCost>75</FaithCost>
+			<FaithCost>-1</FaithCost>
 			<Moves>4</Moves>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
 			<Domain>DOMAIN_LAND</Domain>
@@ -670,7 +670,7 @@
 			<Class>UNITCLASS_MISSIONARY</Class>
 			<Type>UNIT_MISSIONARY</Type>
 			<Cost>-1</Cost>
-			<FaithCost>120</FaithCost>
+			<FaithCost>-1</FaithCost>
 			<Moves>4</Moves>
 			<Capture>UNITCLASS_MISSIONARY</Capture>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>

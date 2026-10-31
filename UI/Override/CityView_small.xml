@@ -76,10 +76,10 @@
 
 	<!-- Production Meter Image -->
 	<Image ID="LeftTrim" Anchor="L,B" Offset="282,0" Texture="citytrimleft.dds" Size="141.78" >
-		<Button ID="ProductionPortraitButton" Void1="0" Anchor="L,B" Offset="-3,6" Size="128.128" Texture="TechTreeMeterBack.dds" NoStateChange="1" ToolTip="TXT_KEY_CITYVIEW_PROD_METER_TT">
-			<Meter ID="PQmeter" Anchor="L,B" Size="128,128" Texture="ProductionPanelMeter128.dds" HasShadow="1" />
-			<Image Anchor="L,B" Size="128.128" Texture="TechTreeMeterFrame.dds" />
-			<Image ID="PQportrait" Anchor="L,B" Size="128.128" Texture="UnitPortraitsAncientMedieval1024.dds" />
+		<Button ID="ProductionPortraitButton" Void1="0" Anchor="L,B" Offset="-3,-27" Size="256.256" Texture="ProductionPanelBack.dds" NoStateChange="1" ToolTip="TXT_KEY_CITYVIEW_PROD_METER_TT">
+			<Meter ID="PQmeter" Anchor="L,B" Size="256,256" Texture="ProductionPanelMeter.dds" HasShadow="1" />
+			<Image Anchor="L,B" Size="256.256" Texture="ProductionPanelFrame.dds" />
+			<Image ID="PQportrait" Anchor="L,B" Size="256.256" Texture="UnitPortraitsAncientMedieval1024.dds" />
 		</Button>
 	</Image>
 
@@ -205,7 +205,7 @@
 			<Label ID="CityCapitalIcon" AnchorSide="O.I" Offset="0,-1" Anchor="L,C" String="[ICON_CAPITAL]" Hidden="1"/>
 
       <!-- CITY POPULATION IN MILLIONS Stroke -->
-      <Label ID="CityPop" Anchor="R,C" AnchorSide="I.O" Offset="-38,6"  Font="TwCenMT14" FontStyle="SoftShadow" >
+      <Label ID="CityPop" Anchor="R,C" AnchorSide="I.O" Offset="-41,6"  Font="TwCenMT14" FontStyle="SoftShadow" >
 				<Label ID="CityPopSuffix" Anchor="L,C" Offset="3,0" String="" Font="TwCenMT16" FontStyle="SoftShadow" Hidden="1" />
 			</Label>
 

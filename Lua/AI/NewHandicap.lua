@@ -1,28 +1,131 @@
 -- New Handicap
 
+-- MOVED FROM LINE 821 CACHE ONLY ONCE
+local handicap = Game:GetHandicapType()
 
+-- CACHE PROMOTIONS RUN ONLY ONCE
+--[[
+local PROMO_NAMES = {
+    "PROMOTION_ARCHERY_COMBAT", "PROMOTION_CITY_SIEGE", "PROMOTION_SPLASH_DAMAGE",
+    "PROMOTION_HITANDRUN", "PROMOTION_HELI_ATTACK", "PROMOTION_NAVAL_HIT_AND_RUN",
+    "PROMOTION_NAVAL_RANGED_SHIP", "PROMOTION_SUBMARINE_COMBAT",
+    "PROMOTION_NAVAL_CAPITAL_SHIP", "PROMOTION_CARRIER_UNIT", "PROMOTION_CARGO_IX",
+    "PROMOTION_STRATEGIC_BOMBER", "PROMOTION_AIR_ATTACK",
+    "PROMOTION_COLLATERAL_DAMAGE_1", "PROMOTION_COLLATERAL_DAMAGE_2", "PROMOTION_COLLATERAL_DAMAGE_3",
+    "PROMOTION_BARRAGE_1", "PROMOTION_BARRAGE_2", "PROMOTION_BARRAGE_3",
+    "PROMOTION_FIRESUPPORT_UNIT_1", "PROMOTION_FIRESUPPORT_UNIT_2",
+    "PROMOTION_SUNDER_1", "PROMOTION_SUNDER_2", "PROMOTION_SUNDER_3",
+    "PROMOTION_CLUSTER_ROCKET_1", "PROMOTION_CLUSTER_ROCKET_2",
+    "PROMOTION_ARMOR_BATTLESHIP_1", "PROMOTION_ARMOR_BATTLESHIP_2",
+    "PROMOTION_NAPALMBOMB_1", "PROMOTION_NAPALMBOMB_2", "PROMOTION_NAPALMBOMB_3",
+    "PROMOTION_DESTROY_SUPPLY_1", "PROMOTION_DESTROY_SUPPLY_2",
+    "PROMOTION_AIR_BOMBARDMENT_1", "PROMOTION_AIR_BOMBARDMENT_2", "PROMOTION_AIR_BOMBARDMENT_3",
+    "PROMOTION_AIR_TARGETING_1", "PROMOTION_AIR_TARGETING_2", "PROMOTION_AIR_TARGETING_3",
+    "PROMOTION_RANGE_REDUCE", "PROMOTION_RANGE", "PROMOTION_MUST_SET_UP",
+    "PROMOTION_MILITIA_COMBAT", "PROMOTION_SATELLITE_UNIT",
+}
 
+local P = {}
+for _, name in ipairs(PROMO_NAMES) do
+    P[name] = GameInfoTypes[name]
+    if P[name] == nil then
+        --print("WARNING: missing promotion in database: " .. name)
+    end
+end
+]]--
+
+	local RangedUnitID = GameInfo.UnitPromotions["PROMOTION_ARCHERY_COMBAT"].ID
+	local CitySiegeID = GameInfo.UnitPromotions["PROMOTION_CITY_SIEGE"].ID
+	local LandAOEUnitID = GameInfo.UnitPromotions["PROMOTION_SPLASH_DAMAGE"].ID
+	local HitandRunID = GameInfo.UnitPromotions["PROMOTION_HITANDRUN"].ID
+	local HelicopterID = GameInfo.UnitPromotions["PROMOTION_HELI_ATTACK"].ID
+	local NavalHitandRunID = GameInfo.UnitPromotions["PROMOTION_NAVAL_HIT_AND_RUN"].ID
+	local NavalRangedID = GameInfo.UnitPromotions["PROMOTION_NAVAL_RANGED_SHIP"].ID
+	local SubmarineID = GameInfo.UnitPromotions["PROMOTION_SUBMARINE_COMBAT"].ID
+	local CapitalShipID = GameInfo.UnitPromotions["PROMOTION_NAVAL_CAPITAL_SHIP"].ID
+	local CarrierID = GameInfo.UnitPromotions["PROMOTION_CARRIER_UNIT"].ID
+	local SSBNID = GameInfo.UnitPromotions["PROMOTION_CARGO_IX"].ID
+	local BomberID = GameInfo.UnitPromotions["PROMOTION_STRATEGIC_BOMBER"].ID
+	local AirAttackID = GameInfo.UnitPromotions["PROMOTION_AIR_ATTACK"].ID
+	local CollDamageLV1ID = GameInfo.UnitPromotions["PROMOTION_COLLATERAL_DAMAGE_1"].ID
+	local CollDamageLV2ID = GameInfo.UnitPromotions["PROMOTION_COLLATERAL_DAMAGE_2"].ID
+	local CollDamageLV3ID = GameInfo.UnitPromotions["PROMOTION_COLLATERAL_DAMAGE_3"].ID
+	local Barrage1ID = GameInfo.UnitPromotions["PROMOTION_BARRAGE_1"].ID
+	local Barrage2ID = GameInfo.UnitPromotions["PROMOTION_BARRAGE_2"].ID
+	local Barrage3ID = GameInfo.UnitPromotions["PROMOTION_BARRAGE_3"].ID
+	local FireSupport1ID = GameInfo.UnitPromotions["PROMOTION_FIRESUPPORT_UNIT_1"].ID
+	local FireSupport2ID = GameInfo.UnitPromotions["PROMOTION_FIRESUPPORT_UNIT_2"].ID
+	local Sunder1ID = GameInfo.UnitPromotions["PROMOTION_SUNDER_1"].ID
+	local Sunder2ID = GameInfo.UnitPromotions["PROMOTION_SUNDER_2"].ID
+	local Sunder3ID = GameInfo.UnitPromotions["PROMOTION_SUNDER_3"].ID
+	local AOEAttack1ID = GameInfo.UnitPromotions["PROMOTION_CLUSTER_ROCKET_1"].ID
+	local AOEAttack2ID = GameInfo.UnitPromotions["PROMOTION_CLUSTER_ROCKET_2"].ID
+	local CapitalShipArmor1ID = GameInfo.UnitPromotions["PROMOTION_ARMOR_BATTLESHIP_1"].ID
+	local CapitalShipArmor2ID = GameInfo.UnitPromotions["PROMOTION_ARMOR_BATTLESHIP_2"].ID
+	local NapalmBomb1ID = GameInfo.UnitPromotions["PROMOTION_NAPALMBOMB_1"].ID
+	local NapalmBomb2ID = GameInfo.UnitPromotions["PROMOTION_NAPALMBOMB_2"].ID
+	local NapalmBomb3ID = GameInfo.UnitPromotions["PROMOTION_NAPALMBOMB_3"].ID
+	local DestroySupply1ID = GameInfo.UnitPromotions["PROMOTION_DESTROY_SUPPLY_1"].ID
+	local DestroySupply2ID = GameInfo.UnitPromotions["PROMOTION_DESTROY_SUPPLY_2"].ID
+	local AirBomb1ID = GameInfo.UnitPromotions["PROMOTION_AIR_BOMBARDMENT_1"].ID
+	local AirBomb2ID = GameInfo.UnitPromotions["PROMOTION_AIR_BOMBARDMENT_2"].ID
+	local AirBomb3ID = GameInfo.UnitPromotions["PROMOTION_AIR_BOMBARDMENT_3"].ID
+	local AirTarget1ID = GameInfo.UnitPromotions["PROMOTION_AIR_TARGETING_1"].ID
+	local AirTarget2ID = GameInfo.UnitPromotions["PROMOTION_AIR_TARGETING_2"].ID
+	local AirTarget3ID = GameInfo.UnitPromotions["PROMOTION_AIR_TARGETING_3"].ID
+	local AIHitandRunID = GameInfo.UnitPromotions["PROMOTION_RANGE_REDUCE"].ID
+	local AIRangeID = GameInfo.UnitPromotions["PROMOTION_RANGE"].ID
+	local SetUpID = GameInfo.UnitPromotions["PROMOTION_MUST_SET_UP"].ID	
+	local MilitiaUnitID = GameInfo.UnitPromotions["PROMOTION_MILITIA_COMBAT"].ID	
+	local SatelliteID = GameInfo.UnitPromotions["PROMOTION_SATELLITE_UNIT"].ID
+
+--- RESOURCE CACHE 
+	local ConsumerResID = GameInfoTypes["RESOURCE_CONSUMER"]
+	local ElectricityResID = GameInfoTypes["RESOURCE_ELECTRICITY"]
+	local ManPowerResID = GameInfoTypes["RESOURCE_MANPOWER"]
+
+-- CARRIER CACHE
+
+	local CARRIER_PROMO = GameInfoTypes["PROMOTION_CARRIER_UNIT"]
+	local UNIT_MISTRAL  = GameInfoTypes["UNIT_FRANCE_MISTRAL"]
+
+	local UNIT_CARRIER_TYPES = {
+		[GameInfoTypes["UNIT_CARRIER"]] = true,
+		[GameInfoTypes["UNIT_AMERICAN_NIMITZ"]] = true,
+		[GameInfoTypes["UNIT_NUCLEAR_CARRIER"]] = true,
+		[GameInfoTypes["UNIT_SUPER_CARRIER"]] = true,
+	}
+
+	local CarrierAircraftID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER"].ID		
+	local CarrierAirFight1ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_AIRFIGHT_1"].ID
+	local CarrierAirFight2ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_AIRFIGHT_2"].ID
+	local CarrierAirAttack1ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_ATTACK_1"].ID
+	local CarrierAirAttack2ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_ATTACK_2"].ID
+	local CarrierAirSiege1ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_SIEGE_1"].ID	
+	local CarrierAirSiege2ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_SIEGE_2"].ID	
+
+-----------------------------------
 
 include( "UtilityFunctions.lua" )
 
 
 
-
+-- DISABLE FOR DESYNC RISK
 ------------------------------------------------------------AI will catch up if fallen behind------------------------------------------------
-
+--[[
 
 function PlayerIntoNewEra(era, playerID) -- AI will get bonus when Human Player entering new Eras
 
 	local handicap = Game:GetHandicapType()
 
-	--print("handicap="..Game:GetHandicapType())
-	--print("Player Era="..era)
+	----print("handicap="..Game:GetHandicapType())
+	----print("Player Era="..era)
 
 	local player = Players[playerID]
 	
 	
 		if player == nil then
-			print ("No players")
+			--print ("No players")
 			return
 		end
 		
@@ -38,59 +141,90 @@ function PlayerIntoNewEra(era, playerID) -- AI will get bonus when Human Player 
 		if player:IsHuman() then 			
 		    iCounter = era			   
 		    AIEraBonus(iCounter)	
-		    print("Player Enter New Era"..iCounter)	
+		    --print("Player Enter New Era"..iCounter)	
 		end		
 	end	
 	
 end --function END
 
+-- CHANGE FOR DESYNC
 Events.SerialEventEraChanged.Add(PlayerIntoNewEra)
+--GameEvents.PlayerDoTurn.Add(PlayerIntoNewEra)
+]]--
 
+-- POTENTIAL REPLACEMENT
+
+--[[
+
+	local lastEra = {}
+
+	function CheckHumanEra(playerID)
+		local player = Players[playerID]
+		if player == nil or not player:IsHuman() or not player:IsAlive() then
+			return
+		end
+
+		local era = player:GetCurrentEra()
+		if lastEra[playerID] == nil then
+			lastEra[playerID] = era   -- first run or after loading a save
+			return
+		end
+
+		if era > lastEra[playerID] then
+			lastEra[playerID] = era
+			if Game:GetHandicapType() > 3 then
+				AIEraBonus(era)
+			end
+		end
+	end
+	GameEvents.PlayerDoTurn.Add(CheckHumanEra)
+
+]]--
 
 
 --function AIForceImprovements() -- AI will get bouns when entering new Eras	
 --end --function END
 
 
-
+-- DISABLED DOES NOT GET CALLED FOR NOW
 
 function AIEraBonus(iCounter) -- AI will get bouns when entering new Eras	
-	print("iCounter="..iCounter)
+	--print("iCounter="..iCounter)
 		
 	for playerID,player in pairs(Players) do
 		if player == nil then
-			print ("No players")
+			--print ("No players")
 			return
 		end
 	--		local player = Players[iPlayerLoop]
 
 		if (player:GetNumCities() > 1 and not player:IsMinorCiv() and not player:IsBarbarian() and not player:IsHuman()) then  
 		
-			AIForceImprovements(player)	
+			--AIForceImprovements(player)	
 			
 		
 			if (iCounter == 2) then				
   				player:SetHasPolicy(GameInfo.Policies["POLICY_AI_MEDIEVAL"].ID,true)
-  				print ("AI Bonus!-MEDIEVAL")
+  				--print ("AI Bonus!-MEDIEVAL")
   			elseif (iCounter == 3) then	
   				player:SetHasPolicy(GameInfo.Policies["POLICY_AI_RENAISSANCE"].ID,true)   
-  				print ("AI Bonus!-RENAISSANCE")				 		
+  				--print ("AI Bonus!-RENAISSANCE")				 		
   			elseif (iCounter == 4) then	
   				player:SetHasPolicy(GameInfo.Policies["POLICY_AI_INDUSTRY"].ID,true)
 	--  			AIMapVisibility (player)
-  				print ("AI Bonus!-INDUSTRY")							
+  				--print ("AI Bonus!-INDUSTRY")							
   			elseif (iCounter == 5) then	
   				player:SetHasPolicy(GameInfo.Policies["POLICY_AI_MODERN"].ID,true)   				
-  				print ("AI Bonus!-MODERN")				  									
+  				--print ("AI Bonus!-MODERN")				  									
    			elseif (iCounter == 6) then	
   				player:SetHasPolicy(GameInfo.Policies["POLICY_AI_WORLDWAR"].ID,true)  		
-  				print ("AI Bonus!-WORLDWAR")					
+  				--print ("AI Bonus!-WORLDWAR")					
 			elseif (iCounter == 7) then	
   				player:SetHasPolicy(GameInfo.Policies["POLICY_AI_ATOMIC"].ID,true)  		
-  				print ("AI Bonus!-ATOMIC")										
+  				--print ("AI Bonus!-ATOMIC")										
 			elseif (iCounter == 8) then	
   				player:SetHasPolicy(GameInfo.Policies["POLICY_AI_INFORMATION"].ID,true)	   
-  				print ("AI Bonus!-INFORMATION")		 									
+  				--print ("AI Bonus!-INFORMATION")		 									
 			end
 		end
 	end
@@ -104,7 +238,7 @@ end--function END
 ----------------------------------------- ------------------Give AI Map visibility so their units won't wander around---Cost too much system resource so canceled		------------------------------------------------
 --function AIMapVisibility (player)
 --   local AITeamID = player:GetTeam()
---   print ("AI Map Visibility!")
+--   --print ("AI Map Visibility!")
 --  	  
 --   for i = 0, Map.GetNumPlots()-1, 1 do
 --		local plot = Map.GetPlotByIndex(i);
@@ -183,7 +317,7 @@ function AIForceImprovements (player)
 					elseif plot:CanHaveImprovement (GameInfo.Improvements.IMPROVEMENT_OFFSHORE_PLATFORM.ID) and player:GetCurrentEra() >= 5 then
 						plot:SetImprovementType (GameInfo.Improvements.IMPROVEMENT_OFFSHORE_PLATFORM.ID)
 					end
-					print ("AI's Plot with resource but they don't build an improvement on it, so force them to build improvement on resource!")
+					--print ("AI's Plot with resource but they don't build an improvement on it, so force them to build improvement on resource!")
 			  	end 	
 			end
 		end		
@@ -200,7 +334,7 @@ function AIBonusWhenPlayerExpand(vHexPos, playerID, cityID)
 
 local NewPlayer = Players[playerID]
 	if NewPlayer == nil then
-		print ("No players")
+		--print ("No players")
 		return
 	end 
 	
@@ -209,7 +343,7 @@ local NewPlayer = Players[playerID]
 	if NewPlayer:IsHuman()then		
 		local HumanCitycount = NewPlayer:GetNumCities()
 		local WorldCityTotal = Game.GetNumCities() 
-		print ("WorldCityTotal:"..WorldCityTotal)
+		--print ("WorldCityTotal:"..WorldCityTotal)
 		
 		
 		if HumanCitycount > 1 then
@@ -218,17 +352,18 @@ local NewPlayer = Players[playerID]
 		
 	end
 end
-Events.SerialEventCityCreated.Add(AIBonusWhenPlayerExpand)
+--Events.SerialEventCityCreated.Add(AIBonusWhenPlayerExpand)
+GameEvents.PlayerCityFounded.Add(AIBonusWhenPlayerExpand)
 
 
 
 function AIBonusByPlayer(HumanCitycount,WorldCityTotal) 
 
-	print ("Human's city count:"..HumanCitycount)
+	--print ("Human's city count:"..HumanCitycount)
 	
 	for playerID,player in pairs(Players) do		
 		if player == nil then
-			print ("No players")
+			--print ("No players")
 			return
 		end
 		
@@ -236,7 +371,7 @@ function AIBonusByPlayer(HumanCitycount,WorldCityTotal)
 		
 		
 		
-		if not player:IsMinorCiv() and not player:IsBarbarian() and not player:IsHuman() and not player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_VENICE"] then  
+		if not player:IsMinorCiv() and not player:IsBarbarian() and not player:IsHuman() and player:GetCivilizationType() ~= GameInfoTypes["CIVILIZATION_VENICE"] then  
 		
 			if player:GetUnitClassCount(GameInfo.UnitClasses.UNITCLASS_SETTLER.ID) < 1 and player:GetCurrentEra() <= 6 then
   				local pCity = player:GetCapitalCity()
@@ -246,7 +381,7 @@ function AIBonusByPlayer(HumanCitycount,WorldCityTotal)
 	   				local NewUnit = player:InitUnit(SettlerID, pPlot:GetX(), pPlot:GetY(),UNITAI_SETTLE)
 	   				NewUnit:SetHasPromotion(GameInfo.UnitPromotions["PROMOTION_EMBARKATION"].ID, true)
    					NewUnit:JumpToNearestValidPlot()
-					print ("AI Bonus!-Human is expending! AI get new settler to fill the map!")
+					--print ("AI Bonus!-Human is expending! AI get new settler to fill the map!")
    				end
    				
  
@@ -254,22 +389,22 @@ function AIBonusByPlayer(HumanCitycount,WorldCityTotal)
 			
 			
 			if AICanBeBoss (player) then
-				print ("AI Bonus!-Only for AI who can fight against Human!")
+				--print ("AI Bonus!-Only for AI who can fight against Human!")
 				if HumanCitycount >= 40 or HumanCitycount >= WorldCityTotal/2 then
-					print ("Human is unstopable!!!")
+					--print ("Human is unstopable!!!")
 					return
 				elseif HumanCitycount >= 36 or HumanCitycount >= WorldCityTotal/3 then
 				  	player:SetHasPolicy(GameInfo.Policies["POLICY_AI_PLAYER_CITIES_30"].ID,true)
-	  				print ("AI Bonus!-Human has 1/3 world! We must do something!")
+	  				--print ("AI Bonus!-Human has 1/3 world! We must do something!")
 				elseif HumanCitycount >= 30 or HumanCitycount >= WorldCityTotal/5 and HumanCitycount < WorldCityTotal/3 then
 					player:SetHasPolicy(GameInfo.Policies["POLICY_AI_PLAYER_CITIES_20"].ID,true)
-	  				print ("AI Bonus!-Human has 1/5 world! We must do something!")
+	  				--print ("AI Bonus!-Human has 1/5 world! We must do something!")
 				elseif HumanCitycount >= 22 or HumanCitycount >= WorldCityTotal/8 and HumanCitycount < WorldCityTotal/5 then
 					player:SetHasPolicy(GameInfo.Policies["POLICY_AI_PLAYER_CITIES_10"].ID,true)
-	  				print ("AI Bonus!-Human has 1/8 world! We must do something!")
+	  				--print ("AI Bonus!-Human has 1/8 world! We must do something!")
 	  			elseif HumanCitycount >= 12 or HumanCitycount >= WorldCityTotal/10 and HumanCitycount < WorldCityTotal/8 then
 					player:SetHasPolicy(GameInfo.Policies["POLICY_AI_PLAYER_CITIES_6"].ID,true)
-	  				print ("AI Bonus!-Human has 1/10 world! We must do something!")						
+	  				--print ("AI Bonus!-Human has 1/10 world! We must do something!")						
 				end
 			end
 		end
@@ -278,11 +413,12 @@ end
 
 
 
-
+-- DISABLE DUE TO DESYNC RISK
 ------------------------------------------------------------ AI will annex the city to recover quikly------------------------------------------------
+--[[
 function AIAutoAnnexCity(hexX, hexY, population, citySize)
 	if hexX == nil or hexY ==nil then
-		print ("No Plot")
+		--print ("No Plot")
 	return
 	end	
 
@@ -290,7 +426,7 @@ function AIAutoAnnexCity(hexX, hexY, population, citySize)
 	local city = plot:GetPlotCity();
 	
 	if city ==nil then
-		print ("No cities")
+		--print ("No cities")
 	return
 	end
 	
@@ -298,7 +434,7 @@ function AIAutoAnnexCity(hexX, hexY, population, citySize)
 
 	
 	if player == nil then
-		print ("No players")
+		--print ("No players")
 		return
 	end
 		
@@ -328,13 +464,13 @@ function AIAutoAnnexCity(hexX, hexY, population, citySize)
 			city:SetPuppet(false)
 			city:SetOccupied(true)
 --			city:DoAnnex()
-			print("AI Annexes City!")
+			--print("AI Annexes City!")
 		end
 	end
 end
 
 Events.SerialEventCityPopulationChanged.Add(AIAutoAnnexCity)
-
+]]--
 
 ---------------------------------------------------------------------AI Units Assistance help AI to get required Promotions and restore carrier's aircrafts (TEMP)----------------------------------------------------
 
@@ -342,7 +478,7 @@ function AIUnitsAssist(playerID)
     local player = Players[playerID]
     
     	if player == nil then
-			print ("No players")
+			--print ("No players")
 			return
 		end
     
@@ -363,46 +499,45 @@ function AIUnitsAssist(playerID)
 
     
 	--    local handicap = Game:GetHandicapType()   	
-
-
+	--safe helper
+	--[[
+	local function ID(typeString)
+		local id = GameInfoTypes[typeString]
+		if id == nil then --print("WARNING: unknown type " .. typeString) end
+		return id
+	end
+	]]--
 	
+	--[[ TO BE CACHED	->CarrierID
 	local CarrierID = GameInfo.UnitPromotions["PROMOTION_CARRIER_UNIT"].ID
-	
+	]]--
+
 	local MissileCarrierID = GameInfo.UnitPromotions["PROMOTION_MISSILE_CARRIER"].ID
 	local DroneCarrierID = GameInfo.UnitPromotions["PROMOTION_DRONE_CARRIER"].ID
 	
-	local CarrierAircraftID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER"].ID	
 	
-	local CarrierAirFight1ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_AIRFIGHT_1"].ID
-	local CarrierAirFight2ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_AIRFIGHT_2"].ID
-	local CarrierAirAttack1ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_ATTACK_1"].ID
-	local CarrierAirAttack2ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_ATTACK_2"].ID
-	local CarrierAirSiege1ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_SIEGE_1"].ID	
-	local CarrierAirSiege2ID = GameInfo.UnitPromotions["PROMOTION_CARRIER_FIGHTER_SIEGE_2"].ID	
 	
 	local AICityCount = player:GetNumCities()
 		
 	if AICityCount >= 1 then
 	
 		-----------Give AI additional Resources
-		local ConsumerResID = GameInfoTypes["RESOURCE_CONSUMER"]
-		local ElectricityResID = GameInfoTypes["RESOURCE_ELECTRICITY"]
-		local ManPowerResID = GameInfoTypes["RESOURCE_MANPOWER"]
+		
 		
 		 
 		if player:GetNumResourceAvailable(ElectricityResID,true) <= 0 and player:GetCurrentEra() >= 5 and AICanBeBoss (player) then
 			player:ChangeNumResourceTotal(ElectricityResID,1)
-			print ("AI get Electricity Supply!")
+			--print ("AI get Electricity Supply!")
 		end	
 		
 		if player:GetNumResourceAvailable(ConsumerResID,true) <= 0 then
 			player:ChangeNumResourceTotal(ConsumerResID,2)
-			print ("AI get Consumer Goods Supply!")
+			--print ("AI get Consumer Goods Supply!")
 		end	
 				
 		if player:GetNumResourceAvailable(ManPowerResID,true) <= 0 and AICanBeBoss (player) then
 			player:ChangeNumResourceTotal(ManPowerResID,1)
-			print ("AI get Manpower Supply!")
+			--print ("AI get Manpower Supply!")
 		end		
 		
 				--		
@@ -414,13 +549,13 @@ function AIUnitsAssist(playerID)
 				--				
 				--					if OtherAIPlayer:IsWillAcceptPeaceWithPlayer (playerID) and not player:IsPeaceBlocked (OtherAIPlayer:GetTeam()) then
 				--						Teams[player:GetTeam()]:MakePeace(OtherAIPlayer:GetTeam())
-				--						print ("We two AIs have no need to fight! It might be the human's provocation! We should make peace!")
+				--						--print ("We two AIs have no need to fight! It might be the human's provocation! We should make peace!")
 				--					end
 				--				
 				--				
 				--					if and not player:IsPeaceBlocked (OtherAIPlayer:GetTeam()) then
 				--						Teams[player:GetTeam()]:MakePeace(OtherAIPlayer:GetTeam())
-				--						print ("We two AIs have no need to fight! It might be the human's provocation! We should make peace!")
+				--						--print ("We two AIs have no need to fight! It might be the human's provocation! We should make peace!")
 				--					end
 				--					
 				--					
@@ -431,9 +566,15 @@ function AIUnitsAssist(playerID)
 		
 	
 		for unit in player:Units() do
-			if unit ~= nil then
-			
+
+			local uType = unit:GetUnitType()
+			--if unit ~= nil then
+			if uType == UNIT_MISTRAL or UNIT_CARRIER_TYPES[uType] then   -- one cheap check filters ~99% of units
+				if not unit:IsFull() then
+
+				--local plot = unit:GetPlot()
 				local plot = unit:GetPlot()
+           			if plot ~= nil and not plot:IsCity() then
 				
 				--------------------------Fix AI turn freeze when moving certain Units (temp method)--this bug has been confirmed since G&K, when AI who is at war moving too many units on map -----maybe I'll find a better method in the future 
 				--				if not PlotIsVisibleToHuman(plot) then
@@ -442,7 +583,7 @@ function AIUnitsAssist(playerID)
 				--				 		local OriPlotY = plot:GetY()			 	 
 				--						unit:JumpToNearestValidPlot()
 				--						unit:SetXY (OriPlotX,OriPlotY)
-				----						print ("---------------------BUG Check------------------------------------Unit moved")
+				----						--print ("---------------------BUG Check------------------------------------Unit moved")
 				--					end
 				--				end
 							
@@ -453,7 +594,7 @@ function AIUnitsAssist(playerID)
 				--								
 				--				if unit:CanUpgradeRightNow() then
 				--					unit:DoCommand(CommandTypes["COMMAND_UPGRADE"])
-				--					print ("AI Unit upgraded!")
+				--					--print ("AI Unit upgraded!")
 				--				end	
 				--					
 				
@@ -468,9 +609,9 @@ function AIUnitsAssist(playerID)
    																
 						if sUnitType ~= ThisUnitType then
 							unit:Kill()	
-							print("AI can build new unit of this type, so this old unit is removed!")
+							--print("AI can build new unit of this type, so this old unit is removed!")
 						else
-							print ("Unique Unit, keep it!")	
+							--print ("Unique Unit, keep it!")	
 						end				
 					end
 				end
@@ -479,7 +620,7 @@ function AIUnitsAssist(playerID)
 			    if player:GetCurrentEra() >= 6 then
 					if unit:GetUnitClassType() == GameInfo.UnitClasses.UNITCLASS_CARAVEL.ID or unit:GetUnitClassType() == GameInfo.UnitClasses.UNITCLASS_SCOUT.ID or unit:GetUnitClassType() == GameInfo.UnitClasses.UNITCLASS_EXPLORERX.ID or unit:GetUnitClassType() == GameInfo.UnitClasses.UNITCLASS_MISSIONARY.ID or unit:GetUnitClassType() == GameInfo.UnitClasses.UNITCLASS_INQUISITOR.ID or unit:GetUnitClassType() == GameInfo.UnitClasses.UNITCLASS_PROPHET.ID or unit:GetUnitClassType() == GameInfo.UnitClasses.UNITCLASS_SCOUT.ID or unit:GetUnitClassType() == GameInfo.UnitClasses.UNITCLASS_SLOOP_OF_WAR.ID then
 					   unit:Kill()	
-					   print ("Obselete units outside removed!")
+					   --print ("Obselete units outside removed!")
 					end			
 				end
 				
@@ -488,7 +629,7 @@ function AIUnitsAssist(playerID)
 			
 						-------	Fix Possible 0 HP Unit Bug (Temp Method)
 					--				if unit:GetDamage() >=100 or unit:GetCurrHitPoints() <=0 then
-					--					print ("-----------------------BUG Fix-------0HP Unit---------------")
+					--					--print ("-----------------------BUG Fix-------0HP Unit---------------")
 					--					unit:Kill()	
 					--				end
 					--			
@@ -502,7 +643,7 @@ function AIUnitsAssist(playerID)
 					if plot~= nil then
 						if plot:GetImprovementType() == nil or plot:GetImprovementType() ~= GameInfo.Improvements["IMPROVEMENT_CITADEL"].ID then
 							unit:Kill()	
-							print ("AI miss-placed Citidal units Removed!")
+							--print ("AI miss-placed Citidal units Removed!")
 						end	
 					end
 				end
@@ -515,7 +656,7 @@ function AIUnitsAssist(playerID)
 				
 				    if plot ~= nil and not plot:IsCity() then
 				   	    player:InitUnit(GameInfoTypes.UNIT_EMP_BOMBER_AIR, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)
-						print ("AI:Missile restored!")					    	
+						--print ("AI:Missile restored!")					    	
 				    end
 				end		
 				]]--
@@ -527,7 +668,7 @@ function AIUnitsAssist(playerID)
 				   	    player:InitUnit(GameInfoTypes.UNIT_FRANCE_EUROCOPTER_TIGER, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)
 						player:InitUnit(GameInfoTypes.UNIT_FRANCE_EUROCOPTER_TIGER, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)
 				   	    player:InitUnit(GameInfoTypes.UNIT_FRANCE_EUROCOPTER_TIGER, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)
-						print ("AI:Eurocopter restored on AAS!")					    	
+						--print ("AI:Eurocopter restored on AAS!")					    	
 				    end
 				end	
 				
@@ -538,7 +679,7 @@ function AIUnitsAssist(playerID)
 								-------------------	Can cause infinite loop for no reason!!!!!!!!For safty Use stupid temp method
 					--				 	while not unit:IsFull() do				 	
 					--						player:InitUnit(GameInfoTypes.UNIT_GUIDED_MISSILE, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR):SetMoves(0)			
-					--						print ("Missile restored!")
+					--						--print ("Missile restored!")
 					--					end	
 				
 					if plot ~= nil and not plot:IsCity() then
@@ -572,7 +713,7 @@ function AIUnitsAssist(playerID)
 					--		
 					--				    if plot ~= nil and not plot:IsCity() then
 					--				        player:InitUnit(GameInfoTypes.UNIT_UAV, plot:GetX(), plot:GetY(),UNITAI_MISSILE_AIR)				
-					--					    print ("AI:UAV restored!")
+					--					    --print ("AI:UAV restored!")
 					--				    end					
 					--				end									
 					
@@ -589,7 +730,7 @@ function AIUnitsAssist(playerID)
 					end   
 					
 					if unit:GetUnitType() == GameInfoTypes.UNIT_AMERICAN_NIMITZ then
-						print ("Found AI Nimitz!")
+						--print ("Found AI Nimitz!")
 						local pTeam = Teams[player:GetTeam()]
 						if pTeam:IsHasTech(GameInfoTypes["TECH_NUCLEAR_FUSION"]) then
 			
@@ -609,13 +750,13 @@ function AIUnitsAssist(playerID)
 					if unit:GetUnitType() == GameInfoTypes.UNIT_NUCLEAR_CARRIER then
 				
 						if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_ENGLAND"] then
-							print ("Found AI English Nuclear Carrier!")
+							--print ("Found AI English Nuclear Carrier!")
 	
 							if plot ~= nil and not plot:IsCity() then
 								player:InitUnit(GameInfoTypes.UNIT_CARRIER_FIGHTER_ENGLISH_HARRIER, plot:GetX(), plot:GetY(),UNITAI_ATTACK_AIR)								 
 							end		
 						else
-							print ("Found AI Normal Nuclear Carrier!")
+							--print ("Found AI Normal Nuclear Carrier!")
 	
 							if plot ~= nil and not plot:IsCity() then
 								player:InitUnit(GameInfoTypes.UNIT_CARRIER_FIGHTER_JET, plot:GetX(), plot:GetY(),UNITAI_ATTACK_AIR)
@@ -628,18 +769,18 @@ function AIUnitsAssist(playerID)
 						if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_ENGLAND"] then
 
 							if plot ~= nil and not plot:IsCity() then
-								print ("Found AI English Super Carrier!")
+								--print ("Found AI English Super Carrier!")
 								player:InitUnit(GameInfoTypes.UNIT_CARRIER_FIGHTER_ENGLISH_HARRIER_ADV, plot:GetX(), plot:GetY(),UNITAI_ATTACK_AIR)								 
 							end			
 						else
 
 							if plot ~= nil and not plot:IsCity() then
-								print ("Found AI Normal Super Carrier!")
+								--print ("Found AI Normal Super Carrier!")
 								player:InitUnit(GameInfoTypes.UNIT_CARRIER_FIGHTER_ADV, plot:GetX(), plot:GetY(),UNITAI_ATTACK_AIR)
 							end			
 						end				   
 					end
-					print ("AI:Aircrafts carrier loaded!")
+					--print ("AI:Aircrafts carrier loaded!")
 				end
 				
 			end	
@@ -666,17 +807,17 @@ function AIRemoveResources(oldPlayerID, iCapital, iX, iY, newPlayerID, bConquest
  	local CityOriginalOwner = Players[CityOriginalOwnerID] 
 	
 	if OldPlayer == nil or NewPlayer == nil then
-		print ("No players")
+		--print ("No players")
 		return
 	end
 
 	if OldPlayer:GetNumCities()<=1 then
-		print ("AI no city left!")-------In case of "complete kill" selected will crash the game 
+		--print ("AI no city left!")-------In case of "complete kill" selected will crash the game 
 		return
 	end
 
 	if AICanBeBoss (OldPlayer) then
-		print ("Not effective with Boss!")
+		--print ("Not effective with Boss!")
 		return
 	end
 
@@ -687,7 +828,7 @@ function AIRemoveResources(oldPlayerID, iCapital, iX, iY, newPlayerID, bConquest
 			
 			--			if NewPlayer:GetNumUnits() <= 100 then
 			--			   pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_AI_CHEAT_UNITS_CAPTURING_CITY"],1)
-			--			   print ("AI Cheating New Units Created!")
+			--			   --print ("AI Cheating New Units Created!")
 			--			end
 			
 			local ConsumerResID = GameInfoTypes["RESOURCE_CONSUMER"]
@@ -715,7 +856,7 @@ function AIRemoveResources(oldPlayerID, iCapital, iX, iY, newPlayerID, bConquest
 					AIForceBuildInfantryUnits (iX, iY, NewPlayer)
 					AIForceBuildNavalEscortUnits (iX, iY, NewPlayer)
 					AIForceBuildNavalHRUnits (iX, iY, NewPlayer)
-					print ("Coastal city is captured!Offer AI boss more navy to advance!")					
+					--print ("Coastal city is captured!Offer AI boss more navy to advance!")					
 				else
 					AIForceBuildInfantryUnits (iX, iY, NewPlayer)
 					AIForceBuildMobileUnits (iX, iY, NewPlayer)
@@ -723,7 +864,7 @@ function AIRemoveResources(oldPlayerID, iCapital, iX, iY, newPlayerID, bConquest
 					AIForceBuildInfantryUnits (iX+1, iY+1, NewPlayer)
 					AIForceBuildMobileUnits (iX+1, iY+1, NewPlayer)
 					AIForceBuildLandHRUnits	(iX-1, iY-1, NewPlayer)
-					print ("Inland city is captured!Offer AI boss more army to advance!")		
+					--print ("Inland city is captured!Offer AI boss more army to advance!")		
 				end			
 			end
 		
@@ -735,13 +876,13 @@ function AIRemoveResources(oldPlayerID, iCapital, iX, iY, newPlayerID, bConquest
 					   if plot ~= nil then
 						   if not PlotIsVisibleToHuman(plot) then
 						   	  unit:Kill()
-						   	  print ("Kill Weak AI's units to let AI's war go faster!")
+						   	  --print ("Kill Weak AI's units to let AI's war go faster!")
 						   end	   	  	
 						end	
 					end
 				end	
 			end	
-			print ("Defeated AI Remove Resources Bonus so it can die faster and save system's resource!")	
+			--print ("Defeated AI Remove Resources Bonus so it can die faster and save system's resource!")	
 		end
 		
 		
@@ -756,7 +897,7 @@ GameEvents.CityCaptureComplete.Add(AIRemoveResources)
 
 
 
-
+-- forces AI TO BUILD UNITS OF ALL TYPES
 ---------------------------------------------------------------------AI Force Promotion and Unitclass Balance----------------------------------------------------
 
 function AIPromotion(iPlayer, iCity, iUnit, bGold, bFaith)
@@ -764,7 +905,7 @@ function AIPromotion(iPlayer, iCity, iUnit, bGold, bFaith)
     
     
     	if player == nil then
-			print ("No players")
+			--print ("No players")
 			return
 		end
     
@@ -785,10 +926,12 @@ function AIPromotion(iPlayer, iCity, iUnit, bGold, bFaith)
     	end
     	
 
-    local handicap = Game:GetHandicapType()
+    --local handicap = Game:GetHandicapType()
     
     local city = player:GetCityByID(iCity) 
     local plot = city	
+	
+	--[[ DEPRECATE CACHED AT START
 
 	local RangedUnitID = GameInfo.UnitPromotions["PROMOTION_ARCHERY_COMBAT"].ID
 	local CitySiegeID = GameInfo.UnitPromotions["PROMOTION_CITY_SIEGE"].ID
@@ -852,6 +995,8 @@ function AIPromotion(iPlayer, iCity, iUnit, bGold, bFaith)
 	
 	
 	local SatelliteID = GameInfo.UnitPromotions["PROMOTION_SATELLITE_UNIT"].ID
+
+	]]--
 		
 	local AICityCount = player:GetNumCities()	
 	
@@ -881,15 +1026,15 @@ function AIPromotion(iPlayer, iCity, iUnit, bGold, bFaith)
 	if unit:GetUnitType() == GameInfoTypes.UNIT_WORKER then
 	   if player:GetUnitClassCount(ThisUnitClass) > AICityCount or player:GetUnitClassCount(ThisUnitClass) > 20 then
 	    	unit:Kill()	
-	    	print ("Major Civ removed too many workers to let the turn goes faster!")
+	    	--print ("Major Civ removed too many workers to let the turn goes faster!")
 	   end	
 	end
 
 
-	if unit:IsHasPromotion(MilitiaUnitID) and not PlayerAtWarWithHuman(player) then	   
+	if unit:IsHasPromotion(P.PROMOTION_CITY_SIEGE) and not PlayerAtWarWithHuman(player) then	   
 	   if player:GetUnitClassCount(ThisUnitClass) > AICityCount then
 	   	  unit:Kill()
-	   	  print ("Reduce AI Militia units' number when not at war with Human to let the turn goes faster!")	
+	   	  --print ("Reduce AI Militia units' number when not at war with Human to let the turn goes faster!")	
 	   end	  
 	end	
 	
@@ -898,12 +1043,12 @@ function AIPromotion(iPlayer, iCity, iUnit, bGold, bFaith)
 		local city = player:GetCapitalCity()
 		SatelliteLaunchEffects (unit,city,player)
 		SatelliteEffectsGlobal(unit)
-		print ("AI has built a Satellite Unit!")		
+		--print ("AI has built a Satellite Unit!")		
 	end
 
 
-
-	if handicap >= 4 and player:GetCurrentEra() > 1 and player:GetNumResourceAvailable(GameInfoTypes["RESOURCE_MANPOWER"],true) > 0 and not PlotIsVisibleToHuman(plot) then 
+	-- REMOVED FROM CONDITION END  and not PlotIsVisibleToHuman(plot) 
+	if handicap >= 4 and player:GetCurrentEra() > 1 and player:GetNumResourceAvailable(GameInfoTypes["RESOURCE_MANPOWER"],true) > 0 then 
 
 		if unit:IsHasPromotion(BomberID) then
 	       unit:SetHasPromotion(NapalmBomb1ID, true)
@@ -1122,7 +1267,7 @@ function AIForceBuildAirEscortUnits (unitX, unitY, player)
     
     AINewUnitSetUp (NewUnit, NewUnitEXP)
     
-    print ("Stupid AI need more Fighters!")
+    --print ("Stupid AI need more Fighters!")
 end
 
 
@@ -1150,7 +1295,7 @@ function AIForceBuildNavalEscortUnits (unitX, unitY, player)
     
     AINewUnitSetUp (NewUnit, NewUnitEXP)
     
-    print ("Stupid AI need more Naval Melee Ships!")
+    --print ("Stupid AI need more Naval Melee Ships!")
 end
 
 
@@ -1176,7 +1321,7 @@ function AIForceBuildNavalHRUnits (unitX, unitY, player)
    
     AINewUnitSetUp (NewUnit, NewUnitEXP)
      
-    print ("Stupid AI need more Naval Hit and Run Ships!")
+    --print ("Stupid AI need more Naval Hit and Run Ships!")
 end
 
 
@@ -1205,7 +1350,7 @@ function AIForceBuildInfantryUnits (unitX, unitY, player)
   	AINewUnitSetUp (NewUnit, NewUnitEXP)
   
      
-    print ("Stupid AI need more Infantry!")
+    --print ("Stupid AI need more Infantry!")
 end
 
 
@@ -1230,7 +1375,7 @@ function AIForceBuildMobileUnits (unitX, unitY, player)
    
     AINewUnitSetUp (NewUnit, NewUnitEXP)
      
-    print ("Stupid AI need more Mobile Units!")
+    --print ("Stupid AI need more Mobile Units!")
 end
 
 
@@ -1257,25 +1402,28 @@ function AIForceBuildLandHRUnits  (unitX, unitY, player)
    
     AINewUnitSetUp (NewUnit, NewUnitEXP)
      
-    print ("Stupid AI need more Land Hit and Run Units!")
+    --print ("Stupid AI need more Land Hit and Run Units!")
 end
 
 
 
 
 function AINewUnitSetUp (NewUnit, NewUnitEXP)
-	NewUnit:SetExperience (NewUnitEXP)
 
 	if NewUnit == nil then
 		return
 	end
+
+	NewUnit:SetExperience (NewUnitEXP)
+
+	
 	
 	if NewUnit:GetDomainType() == DomainTypes.DOMAIN_LAND or NewUnit:GetDomainType() == DomainTypes.DOMAIN_SEA then
  		NewUnit:JumpToNearestValidPlot()
 	end
 	
 --	local NewUnitName = NewUnit:GetName()
---	print ("AI New Unit Setup Finsihed:"..NewUnitName)
+--	--print ("AI New Unit Setup Finsihed:"..NewUnitName)
 
 end
 
@@ -1290,7 +1438,7 @@ function UnitIsOutofDate(player,unit)
 	local sNewUnitClass = GameInfo.Units[sUnitType].GoodyHutUpgradeUnitClass
 	 	
 	if sNewUnitClass ~= nil and player:GetUnitClassCount(sNewUnitClass)>= 1 then
-		print ("AI already has some advanced units!")
+		--print ("AI already has some advanced units!")
 		return true
 	else
 		return false
@@ -1303,8 +1451,11 @@ end
 
 
 function AIHasTooManySameUnits(player,ThisUnitClass)
-	local UnitRatio = player:GetNumMilitaryUnits ()* 0.2
-	print ("Ai UnitRatio:"..UnitRatio)
+	--local UnitRatio = player:GetNumMilitaryUnits ()* 0.2
+
+	-- add floor for better performance
+	local UnitRatio = math.max(player:GetNumMilitaryUnits() * 0.2, 3)
+	-- --print ("Ai UnitRatio:"..UnitRatio)
 	if AICanBeBoss (player) or PlayerAtWarWithHuman(player) or player:GetUnitClassCount(ThisUnitClass) >= UnitRatio then
 		return true	
 	else
@@ -1320,7 +1471,7 @@ end
 function MinorNoCombatUnits(iPlayer, iCity, iUnit, bGold, bFaith)
 	local player = Players[iPlayer]
 	if player == nil then
-		print ("No players")
+		--print ("No players")
 		return
 	end
 	
@@ -1339,17 +1490,17 @@ function MinorNoCombatUnits(iPlayer, iCity, iUnit, bGold, bFaith)
 		
 		if unit:GetUnitType() == GameInfoTypes.UNIT_WORKER and player:GetUnitClassCount(GameInfo.UnitClasses.UNITCLASS_WORKER.ID) > 1 then
 			unit:Kill()	
-			print ("Minor Civ removed too many workers!")
+			--print ("Minor Civ removed too many workers!")
 		end
 		if unit:IsCombatUnit() and player:GetNumMilitaryUnits()> 3 then			
 			unit:Kill()	
-			print ("Minor Civ removed too many military units!")
+			--print ("Minor Civ removed too many military units!")
 		end	
 	end
 end
 
 
 GameEvents.CityTrained.Add(MinorNoCombatUnits)
-print("New Handicap Check Pass!")
+--print("New Handicap Check Pass!")
 
 
