@@ -337,8 +337,8 @@ local function ResizeProdQueue()
 	--	Controls.UnitGrid:SetSizeY( zeroHeight )
 	--end
 
-	print( "unit panel height" )
-	print( unitPanelWidth )
+	--print( "unit panel height" )
+	--print( unitPanelWidth )
 	
 	return Controls.QueueBackground:ReprocessAnchoring()
 

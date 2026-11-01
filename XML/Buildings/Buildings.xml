@@ -3147,6 +3147,9 @@
 			<PortraitIndex>4</PortraitIndex>
 		</Row>
 
+		<!-- POLICY BUILDINGS DEPRECATE -->
+
+		<!--
 		<Row>
 			<Type>BUILDING_TCS_PUBLIC_BATHS</Type>
 			<BuildingClass>BUILDINGCLASS_TCS_PUBLIC_BATHS</BuildingClass>
@@ -3312,6 +3315,7 @@
 			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
 			<PortraitIndex>8</PortraitIndex>
 		</Row>
+		-->
 
 		<Row>
 			<Type>BUILDING_CURE_FOR_CANCER</Type>

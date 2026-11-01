@@ -401,11 +401,17 @@
 			<Experience>25</Experience>
 		</Row>
 
+		<!-- POLICY BUILDINGS DEPRECATE -->
+
+		<!--
+
 		<Row>
 			<BuildingType>BUILDING_TCS_STRONGHOLD</BuildingType>
 			<DomainType>DOMAIN_LAND</DomainType>
 			<Experience>15</Experience>
 		</Row>
+
+		-->
 		
 	</Building_DomainFreeExperiences>
 
@@ -2787,6 +2793,8 @@
 			<Yield>16</Yield>
 		</Row>
 
+		<!-- POLICY BUILDINGS DEPRECATE -->
+		<!--
 		<Row>
 			<BuildingType>BUILDING_TCS_PUBLIC_BATHS</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -2847,6 +2855,7 @@
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>3</Yield>
 		</Row>
+		-->
 
 		<Row>
 			<BuildingType>BUILDING_LONDON_ARRAY</BuildingType>
@@ -3803,11 +3812,17 @@
 			<Yield>25</Yield>
 		</Row>
 
+		<!-- POLICY BUILDINGS DEPRECATE -->
+
+		<!--
+
 		<Row>
 			<BuildingType>BUILDING_TCS_PUBLIC_BATHS</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>10</Yield>
 		</Row>
+
+		-->
 
 		<Row>
 			<BuildingType>BUILDING_PALMJUMEIRAH</BuildingType>
@@ -4866,6 +4881,10 @@
 			<Yield>1</Yield>
 		</Row>
 
+		<!-- POLICY BUILDINGS DEPRECATE -->
+
+		<!--
+
 		<Row>
 			<BuildingType>BUILDING_TCS_STRONGHOLD</BuildingType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
@@ -4908,6 +4927,7 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		-->
 
 		<Row>
 			<BuildingType>BUILDING_NATIONAL_BIOSPHERE</BuildingType>
@@ -6103,11 +6123,15 @@
 			<Yield>300</Yield>
 		</Row>
 
+		<!-- POLICY BUILDINGS DEPRECATE -->
+
+		<!--
 		<Row>
 			<BuildingType>BUILDING_TCS_PATENT_OFFICE</BuildingType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>25</Yield>
 		</Row>
+		-->
 
 	</Building_YieldChangesPerPop>
 
@@ -10746,8 +10770,10 @@
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>
+		
+		<!-- POLICY BUILDINGS DEPRECATE -->
 
-		<!-- Public Baths-->
+		<!--
 		<Row>
 			<BuildingType>BUILDING_TCS_PUBLIC_BATHS</BuildingType>
 			<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -10758,7 +10784,6 @@
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-		<!-- Town Council-->
 		<Row>
 			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
@@ -10779,7 +10804,6 @@
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-		<!-- TCS_STRONGHOLD-->
 		<Row>
 			<BuildingType>BUILDING_TCS_STRONGHOLD</BuildingType>
 			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
@@ -10800,7 +10824,6 @@
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-		<!-- Parochial School-->
 		<Row>
 			<BuildingType>BUILDING_TCS_PAROCHIAL_SCHOOL</BuildingType>
 			<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -10811,7 +10834,6 @@
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
 			<Flavor>15</Flavor>
 		</Row>
-		<!-- TCS_CHANCERY-->
 		<Row>
 			<BuildingType>BUILDING_TCS_CHANCERY</BuildingType>
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -10822,13 +10844,11 @@
 			<FlavorType>FLAVOR_GOLD</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
-		<!-- TCS_MEMORIAL-->
 		<Row>
 			<BuildingType>BUILDING_TCS_MEMORIAL</BuildingType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
 			<Flavor>30</Flavor>
 		</Row>
-		<!-- TCS_DEPOT-->
 		<Row>
 			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -10839,7 +10859,6 @@
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>20</Flavor>
 		</Row>
-		<!-- Botanical Gardens-->
 		<Row>
 			<BuildingType>BUILDING_TCS_BOTANICAL_GARDENS</BuildingType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -10860,7 +10879,6 @@
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
-		<!-- Patent Office-->
 		<Row>
 			<BuildingType>BUILDING_TCS_PATENT_OFFICE</BuildingType>
 			<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -10871,6 +10889,7 @@
 			<FlavorType>FLAVOR_GOLD</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
+		-->
 
 		<Row>
 			<BuildingType>BUILDING_LONDON_ARRAY</BuildingType>

@@ -27,6 +27,6 @@ UPDATE Missions SET CtrlDown = 1 WHERE Type = 'MISSION_DISEMBARK';
 UPDATE Missions SET HotKey = 'KB_X' WHERE Type = 'MISSION_SET_UP_FOR_RANGED_ATTACK';--S => X
 
 
-UPDATE Missions SET HotKey = 'KB_F' WHERE Type = 'MISSION_ALERT';					--A => Z
-UPDATE Missions SET HotKey = 'KB_Z' WHERE Type = 'MISSION_SKIP';					--A => Z
-UPDATE Missions SET HotKey = 'KB_SPACE' WHERE Type = 'MISSION_SLEEP';					--A => Z
+UPDATE Missions SET HotKey = 'KB_Z' WHERE Type = 'MISSION_ALERT';					--A => Z
+UPDATE Missions SET HotKey = 'KB_SPACE' WHERE Type = 'MISSION_SKIP';					--A => Z
+UPDATE Missions SET HotKey = 'KB_F' WHERE Type = 'MISSION_SLEEP';					--A => Z
