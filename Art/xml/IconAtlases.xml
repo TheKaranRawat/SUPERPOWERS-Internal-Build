@@ -1302,6 +1302,8 @@
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
 
+		<!-- BUILDINGS2 DEPRECATE 
+
 		<Row>
 			<Atlas>ANCIENT2_ICON_ATLAS</Atlas>
 			<IconSize>256</IconSize>
@@ -1337,7 +1339,10 @@
 			<IconsPerRow>5</IconsPerRow>
 			<IconsPerColumn>1</IconsPerColumn>
 		</Row>
+		-->
 
+		<!-- DEPRECATE POLICY BUILDINGS -->
+		<!--
 		<Row>
 			<Atlas>POLICY_ICONATLAS</Atlas>
 			<IconSize>256</IconSize>
@@ -1373,6 +1378,7 @@
 			<IconsPerRow>8</IconsPerRow>
 			<IconsPerColumn>8</IconsPerColumn>
 		</Row>
+		-->
 
 		<Row>
 			<Atlas>CFC_ATLAS</Atlas>

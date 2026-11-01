@@ -1710,6 +1710,8 @@
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
 
+		<!-- BUILDING 2 DEPRECATE -->
+		<!--
 		<Row>
 			<Type>BUILDINGCLASS_PALISADE_WALL</Type>
 			<DefaultBuilding>BUILDING_PALISADE_WALL</DefaultBuilding>
@@ -1732,6 +1734,7 @@
 			<Description>TXT_KEY_BUILDING_NUCLEAR_FISSION_REACTOR_PLANT</Description>
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
+		-->
 
 		<!-- POLICY BUILDINGS DEPRECATE -->
 		<!--

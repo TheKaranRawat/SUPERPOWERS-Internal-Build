@@ -581,6 +581,7 @@
 			<ResourceType>RESOURCE_OIL</ResourceType>
 		</Row>
 
+		<!--
 		<Row>
 			<BuildingType>BUILDING_SMELTER</BuildingType>
 			<ResourceType>RESOURCE_IRON</ResourceType>
@@ -589,6 +590,7 @@
 			<BuildingType>BUILDING_SMELTER</BuildingType>
 			<ResourceType>RESOURCE_COPPER</ResourceType>
 		</Row>
+		-->
 		
 	</Building_LocalResourceOrs>
 
@@ -1428,11 +1430,16 @@
 			<Quantity>8</Quantity>
 		</Row>
 
+		<!-- BUILDING 2 DEPRECATE -->
+		<!--
+
 		<Row>
 			<BuildingType>BUILDING_NUCLEAR_FISSION_REACTOR_PLANT</BuildingType>
 			<ResourceType>RESOURCE_URANIUM</ResourceType>
 			<Quantity>4</Quantity>
 		</Row>
+
+		-->
 
 	</Building_ResourceQuantity>
 	
@@ -2771,6 +2778,8 @@
 			<Yield>10</Yield>
 		</Row>
 
+		<!--
+
 		<Row>
 			<BuildingType>BUILDING_POTTER</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
@@ -2786,12 +2795,18 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>3</Yield>
 		</Row>
+		-->
+
+		<!-- BUILDING 2 DEPRECATE -->
+		<!--
 
 		<Row>
 			<BuildingType>BUILDING_NUCLEAR_FISSION_REACTOR_PLANT</BuildingType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>16</Yield>
 		</Row>
+
+		-->
 
 		<!-- POLICY BUILDINGS DEPRECATE -->
 		<!--
@@ -4862,6 +4877,7 @@
 			<Yield>4</Yield>
 		</Row>
 
+		<!--
 		<Row>
 			<BuildingType>BUILDING_POTTER</BuildingType>
 			<ResourceType>RESOURCE_WINE</ResourceType>
@@ -4880,6 +4896,7 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		-->
 
 		<!-- POLICY BUILDINGS DEPRECATE -->
 
@@ -10734,6 +10751,9 @@
 			<Flavor>25</Flavor>
 		</Row>
 
+		<!-- BUILDING 2 DEPRECATE -->
+		<!--
+
 		<Row>
 			<BuildingType>BUILDING_PALISADE_WALL</BuildingType>
 			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
@@ -10770,6 +10790,8 @@
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>50</Flavor>
 		</Row>
+		-->
+		
 		
 		<!-- POLICY BUILDINGS DEPRECATE -->
 

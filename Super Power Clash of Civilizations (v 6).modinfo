@@ -774,7 +774,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="13C2F9F8477BF5814BA0F0694F810229" import="0">Modules/City States Leaders II (v 7)/MinorCivLeaders_en_US.xml</File>
 	-->
 	
-	<File md5="36A6C64A31BD29A25A2C56BF9325FBCD" import="1">Modules/Global Relations (v 7)/Lua/DiploCityStatesStatus.lua</File>
+  <!--
+	  <File md5="36A6C64A31BD29A25A2C56BF9325FBCD" import="1">Modules/Global Relations (v 7)/Lua/DiploCityStatesStatus.lua</File>
     <File md5="A7E7CBB9C4220CA2BF85B78D21ABA8B9" import="1">Modules/Global Relations (v 7)/Lua/DiploTradesStatus.lua</File>
     <File md5="E5877A642C94C1834A15C083E81D2212" import="1">Modules/Global Relations (v 7)/Lua/InfoAddictCivRelations.lua</File>
     <File md5="C549B31A360BE00AC333D571DBD06B81" import="1">Modules/Global Relations (v 7)/Lua/InfoAddictHooks.lua</File>
@@ -787,7 +788,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="D8DB592AF64F00C025330E60704D0402" import="1">Modules/Global Relations (v 7)/XML/InfoAddictHooks.xml</File>
     <File md5="D423D8636D1EB1062023C8F004ECCBB4" import="1">Modules/Global Relations (v 7)/XML/InfoAddictScreen.xml</File>
 	<File md5="C36C50BA5E429387624E513FF1FEADBB" import="1">Modules/Global Relations (v 7)/XML/InfoAddictText_EN.xml</File>
-	
+	-->
+  
 	<!--
     <File md5="CD0E73BBD6042C6F3EC3A8433AE3B8A3" import="1">Modules/Global Relations (v 7)/XML/InfoAddictText_DE.xml</File>    
     <File md5="3679A065BD0E48210371E22D8FF63FEA" import="1">Modules/Global Relations (v 7)/XML/InfoAddictText_ES.xml</File>

@@ -48,10 +48,6 @@
 			<UnitType>UNIT_HARD_MOBILE_LAUNCHER</UnitType>
 			<UnitAIType>UNITAI_RANGED</UnitAIType>
 		</Row>
-		<Row>
-			<UnitType>UNIT_HARD_MOBILE_LAUNCHER</UnitType>
-			<UnitAIType>UNITAI_MISSILE_CARRIER_TACTICAL</UnitAIType>
-		</Row>
 	</Unit_AITypes>
 	
 	<Unit_Flavors>
