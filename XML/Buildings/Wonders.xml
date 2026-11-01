@@ -3656,7 +3656,7 @@
 			<WonderSplashImage>Apollo11.dds</WonderSplashImage>
 			<WonderSplashAnchor>L,T</WonderSplashAnchor>
 		</Row>
-		-->
+		
 
 		<Row>
 			<Type>BUILDING_HUBBLE</Type>
@@ -3679,6 +3679,7 @@
 			<WonderSplashAnchor>L,T</WonderSplashAnchor>
 			<!--<WonderSplashAudio>AS2D_WONDER_SPEECH_HUBBLE_SPACE_TELESCOPE</WonderSplashAudio>-->
 		</Row>
+		-->
 
 		<!-- SATELLITE DISABLE
 		<Row>
