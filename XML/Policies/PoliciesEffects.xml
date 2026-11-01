@@ -1722,7 +1722,7 @@
 	<!-- **********************Tourism Created*************************** -->
 	<Policy_TourismOnUnitCreation>
 
-
+		<!-- SATELLITE DISABLE
 		<Row>
 			<PolicyType>POLICY_TRADITION</PolicyType>
 			<UnitClassType>UNITCLASS_SATELLITE_SPUTNIK</UnitClassType>
@@ -1733,7 +1733,8 @@
 			<UnitClassType>UNITCLASS_SATELLITE_SPUTNIK</UnitClassType>
 			<Tourism>9999</Tourism>
 		</Row>
-		
+		-->
+
 		<Row>
 			<PolicyType>POLICY_OPEN_SOCIETY</PolicyType>
 			<UnitClassType>UNITCLASS_WRITER</UnitClassType>

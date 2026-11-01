@@ -3547,6 +3547,8 @@
 	<!-- ***************************Satellite Units Building Effects***************************-->
 
 	<Buildings>
+
+		<!-- SATELLITE DISABLE
 		<Row>
 			<Type>BUILDING_SATELLITE_SPUTNIK</Type>
 			<BuildingClass>BUILDINGCLASS_BUILDING_SATELLITEEFFECTS</BuildingClass>
@@ -3631,6 +3633,9 @@
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
 			<FreePromotion>PROMOTION_GPS_MOVEMENT_SMALL</FreePromotion>
 		</Row>
+		-->
+
+		<!-- MOON LANDING 
 		<Row>
 			<Type>BUILDING_SATELLITE_APOLLO11</Type>
 			<BuildingClass>BUILDINGCLASS_BUILDING_SATELLITEEFFECTS</BuildingClass>
@@ -3645,12 +3650,14 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>49</PortraitIndex>
 			<IconAtlas>SPBalance_ATLAS</IconAtlas>
-			<!--<FreeTechs>1</FreeTechs>-->
-			<!--<FreePolicies>1</FreePolicies>-->
+			<FreeTechs>1</FreeTechs>
+			<FreePolicies>1</FreePolicies>
 			<GreatScientistBeakerModifier>33</GreatScientistBeakerModifier>
 			<WonderSplashImage>Apollo11.dds</WonderSplashImage>
 			<WonderSplashAnchor>L,T</WonderSplashAnchor>
 		</Row>
+		-->
+
 		<Row>
 			<Type>BUILDING_HUBBLE</Type>
 			<BuildingClass>BUILDINGCLASS_BUILDING_SATELLITEEFFECTS</BuildingClass>
@@ -3672,6 +3679,8 @@
 			<WonderSplashAnchor>L,T</WonderSplashAnchor>
 			<!--<WonderSplashAudio>AS2D_WONDER_SPEECH_HUBBLE_SPACE_TELESCOPE</WonderSplashAudio>-->
 		</Row>
+
+		<!-- SATELLITE DISABLE
 		<Row>
 			<Type>BUILDING_SATELLITE_WEATHER</Type>
 			<BuildingClass>BUILDINGCLASS_BUILDING_SATELLITEEFFECTS</BuildingClass>
@@ -3778,6 +3787,7 @@
 			<WonderSplashImage>ResourceSate.dds</WonderSplashImage>
 			<WonderSplashAnchor>L,T</WonderSplashAnchor>
 		</Row>
+		-->
 
 		
 	</Buildings>

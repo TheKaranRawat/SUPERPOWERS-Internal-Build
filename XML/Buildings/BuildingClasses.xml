@@ -1058,7 +1058,7 @@
 			</Row>
 
 
-
+		<!-- SATELLITE DISABLE
 		<Row>
 			<Type>BUILDINGCLASS_BUILDING_SATELLITEEFFECTS</Type>
 			<DefaultBuilding>BUILDING_SATELLITE_GPS</DefaultBuilding>
@@ -1078,6 +1078,7 @@
 			<Description>TXT_KEY_BUILDING_SATELLITEEFFECTS</Description>
 			<MaxPlayerInstances>1</MaxPlayerInstances>
 		</Row>
+		-->
 
 		<!-- NEW_WONDERS-->
 

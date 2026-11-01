@@ -1130,7 +1130,7 @@
 			<Quantity>25</Quantity>
 		</Row>
 
-
+		<!-- SATELLITE DISABLE
 		<Row>
 			<BuildingType>BUILDING_SATELLITE_RESOURCEPLUS</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
@@ -1161,6 +1161,7 @@
 			<ResourceType>RESOURCE_IRON</ResourceType>
 			<Quantity>8</Quantity>
 		</Row>
+		-->
 
 		<Row>
 			<BuildingType>BUILDING_TERRACOTTA_ARMY</BuildingType>
@@ -3870,6 +3871,7 @@
 			<Yield>25</Yield>
 		</Row>
 
+		<!-- SATELLITE DISABLE
 		<Row>
 			<BuildingType>BUILDING_SATELLITE_WEATHER</BuildingType>
 			<YieldType>YIELD_FOOD</YieldType>
@@ -3880,6 +3882,7 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>15</Yield>
 		</Row>
+		-->
 
 		<Row>
 			<BuildingType>BUILDING_KREMLIN</BuildingType>
@@ -6196,7 +6199,7 @@
 		</Row>
 
 
-
+		<!-- SATELLITE DISABLE
 		<Row>
 			<Type>PROMOTION_SATELLITE_RECON</Type>
 			<Description>TXT_KEY_PROMOTION_SATELLITE_RECON</Description>
@@ -6209,6 +6212,7 @@
 			<PediaType>PEDIA_SHARED</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_SATELLITE_RECON</PediaEntry>
 		</Row>
+		-->
 
 		
 		<Row>
@@ -6306,6 +6310,7 @@
 			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
 		</Row>
 		
+		<!-- SATELLITE DISABLE
 		<Row>
 			<PromotionType>PROMOTION_SATELLITE_RECON</PromotionType>
 			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
@@ -6358,11 +6363,7 @@
 			<PromotionType>PROMOTION_SATELLITE_RECON</PromotionType>
 			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
 		</Row>
-
-
-
-
-
+		-->
 
 
 		<Row>

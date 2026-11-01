@@ -849,6 +849,7 @@
 	<!--***********************Satellite and Spaceship Units***********************-->
 	<Units>
 
+		<!-- SATELLITE DISABLE
 		<Row>
 			<Class>UNITCLASS_SATELLITE_SPUTNIK</Class>
 			<Type>UNIT_SATELLITE_SPUTNIK</Type>
@@ -1145,7 +1146,7 @@
 			<ExtraMaintenanceCost>80</ExtraMaintenanceCost>
 			<ProjectPrereq>PROJECT_APOLLO_PROGRAM</ProjectPrereq>
 		</Row>
-
+		-->
 
 
 
@@ -1384,7 +1385,7 @@
 		</Row>
 
 
-
+		<!-- SATELLITE DISABLE
 		<Row>
 			<UnitType>UNIT_SATELLITE_SPUTNIK</UnitType>
 			<PromotionType>PROMOTION_SATELLITE_UNIT</PromotionType>
@@ -1433,6 +1434,7 @@
 			<UnitType>UNIT_SATELLITE_ORBITAL_STRIKE</UnitType>
 			<PromotionType>PROMOTION_SATELLITE_UNIT</PromotionType>
 		</Row>
+		-->
 		
 	</Unit_FreePromotions>
 	
@@ -1675,6 +1677,7 @@
 			<Cost>4</Cost>
 		</Row>-->
 
+		<!-- SATELLITE DISABLE
 		<Row>
 			<UnitType>UNIT_SATELLITE_ORBITAL_STRIKE</UnitType>
 			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
@@ -1685,6 +1688,7 @@
 			<ResourceType>RESOURCE_MANPOWER</ResourceType>
 			<Cost>12</Cost>
 		</Row>
+		-->
 		
 	</Unit_ResourceQuantityRequirements>
 
@@ -1828,7 +1832,7 @@
 		</Row>
 
 
-
+		<!-- SATELLITE DISABLE
 		<Row>
 			<UnitType>UNIT_SATELLITE_SPUTNIK</UnitType>
 			<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -1904,7 +1908,7 @@
 			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
 			<Flavor>999</Flavor>
 		</Row>
-		
+		-->
 		
 		<Row>
 			<UnitType>UNIT_SS_STASIS_CHAMBER</UnitType>
