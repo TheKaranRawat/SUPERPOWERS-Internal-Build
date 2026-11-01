@@ -573,12 +573,14 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<YieldMod>15</YieldMod>
 		</Row>
+		<!--
 		<Row>
 			<PolicyType>POLICY_BOREHOLE</PolicyType>
 			<BuildingClassType>BUILDINGCLASS_FW_GEOTHERMAL_PLANT</BuildingClassType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<YieldMod>15</YieldMod>
 		</Row>
+		-->
 
 		<Row>
 			<PolicyType>POLICY_COASTAL_ADMINISTRATION</PolicyType>
@@ -1232,6 +1234,7 @@
 
 		<Delete ImprovementType="IMPROVEMENT_HOLY_SITE" />
 
+		<!--
 		<Row>
 			<PolicyType>POLICY_GENE_VAULT</PolicyType>
 			<ImprovementType>IMPROVEMENT_FW_PRESERVE</ImprovementType>
@@ -1250,6 +1253,8 @@
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>2</Yield>
 		</Row>
+
+		-->
 		<Row>
 			<PolicyType>POLICY_BOREHOLE</PolicyType>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
@@ -1263,6 +1268,8 @@
 			<Yield>1</Yield>
 		</Row>
 
+		
+		<!--
 		<Row>
 			<PolicyType>POLICY_NEW_DEAL</PolicyType>
 			<ImprovementType>IMPROVEMENT_FW_HERC</ImprovementType>
@@ -1288,14 +1295,13 @@
 			<Yield>1</Yield>
 		</Row>
 
-		<!--
 		<Row>
 			<PolicyType>POLICY_FREE_THOUGHT</PolicyType>
 			<ImprovementType>IMPROVEMENT_FW_COMM_ARRAY</ImprovementType>
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		-->
+		
 		
 		<Row>
 			<PolicyType>POLICY_FREE_THOUGHT</PolicyType>
@@ -1303,6 +1309,7 @@
 			<YieldType>YIELD_SCIENCE</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		-->
 
 
 		<Row>
@@ -1323,12 +1330,15 @@
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+
+		<!--
 		<Row>
 			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
 			<ImprovementType>IMPROVEMENT_FISHFARM_MOD</ImprovementType>
 			<YieldType>YIELD_FOOD</YieldType>
 			<Yield>1</Yield>
 		</Row>
+		-->
 
 		<Row>
 			<PolicyType>POLICY_REPRESENTATION</PolicyType>
@@ -1377,13 +1387,15 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
+
+		<!--
 		<Row>
 			<PolicyType>POLICY_MARITIME_INFRASTRUCTURE</PolicyType>
 			<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>1</Yield>
 		</Row>
-		
+		-->
 		
 		<Row>
 			<PolicyType>POLICY_FREE_THOUGHT</PolicyType>
@@ -1441,12 +1453,15 @@
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>3</Yield>
 		</Row>
+
+		<!--
 		<Row>
 			<PolicyType>POLICY_FIVE_YEAR_PLAN</PolicyType>
 			<ImprovementType>IMPROVEMENT_GAS_RIG_MOD</ImprovementType>
 			<YieldType>YIELD_PRODUCTION</YieldType>
 			<Yield>3</Yield>
 		</Row>
+		-->
 
 		<!-- NEW POLICIES -->
 		<Row>

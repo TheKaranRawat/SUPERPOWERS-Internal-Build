@@ -77,7 +77,7 @@ end
 	local AIRangeID = GameInfo.UnitPromotions["PROMOTION_RANGE"].ID
 	local SetUpID = GameInfo.UnitPromotions["PROMOTION_MUST_SET_UP"].ID	
 	local MilitiaUnitID = GameInfo.UnitPromotions["PROMOTION_MILITIA_COMBAT"].ID	
-	local SatelliteID = GameInfo.UnitPromotions["PROMOTION_SATELLITE_UNIT"].ID
+	--local SatelliteID = GameInfo.UnitPromotions["PROMOTION_SATELLITE_UNIT"].ID
 
 --- RESOURCE CACHE 
 	local ConsumerResID = GameInfoTypes["RESOURCE_CONSUMER"]
@@ -1037,14 +1037,14 @@ function AIPromotion(iPlayer, iCity, iUnit, bGold, bFaith)
 	   end	  
 	end	
 	
-	
+	--[[ SATELLITE
 	if unit:IsHasPromotion(SatelliteID) and player:GetCurrentEra() >= 6 then
 		local city = player:GetCapitalCity()
 		SatelliteLaunchEffects (unit,city,player)
 		SatelliteEffectsGlobal(unit)
 		--print ("AI has built a Satellite Unit!")		
 	end
-
+	]]--
 
 	-- REMOVED FROM CONDITION END  and not PlotIsVisibleToHuman(plot) 
 	if handicap >= 4 and player:GetCurrentEra() > 1 and player:GetNumResourceAvailable(GameInfoTypes["RESOURCE_MANPOWER"],true) > 0 then 

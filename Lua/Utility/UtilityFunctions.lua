@@ -218,7 +218,7 @@ end
 --end
 --
 
-
+--[[ SATELLITE DISABLE
 function SatelliteLaunchEffects(unit,city,player)
 	
 	if not unit:IsHasPromotion(GameInfo.UnitPromotions["PROMOTION_SATELLITE_UNIT"].ID) then 
@@ -390,7 +390,7 @@ function SatelliteEffectsGlobal(unit)
 	
 	
 end-----------function END
-
+]]--
 
 
 
