@@ -94,7 +94,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_MUTATION</PediaEntry>
 		</Row>
@@ -106,7 +106,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_GENGINEERED</PediaEntry>
 		</Row>
@@ -119,7 +119,7 @@
 			<RoughAttack>20</RoughAttack>
 			<RoughDefense>20</RoughDefense>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_ADRENAL_GLANDS</PediaEntry>
 		</Row>
@@ -130,7 +130,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_FW_ADRENAL_GLANDS</PromotionPrereqOr1>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_PREDATOR_INSTINCT</PediaEntry>
 		</Row>
@@ -142,7 +142,7 @@
 			<PromotionPrereqOr1>PROMOTION_FW_PREDATOR_INSTINCT</PromotionPrereqOr1>
 			<Invisible>INVISIBLE_SUBMARINE</Invisible>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_CHAMELEON</PediaEntry>
 		</Row>
@@ -154,7 +154,7 @@
 			<PromotionPrereqOr1>PROMOTION_FW_GENGINEERED</PromotionPrereqOr1>
 			<RangedDefenseMod>33</RangedDefenseMod>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_ENHANCED_REFLEXES</PediaEntry>
 		</Row>
@@ -166,7 +166,7 @@
 			<PromotionPrereqOr1>PROMOTION_FW_ENHANCED_REFLEXES</PromotionPrereqOr1>
 			<VisibilityChange>1</VisibilityChange>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_ENHANCED_VISION</PediaEntry>
 		</Row>
@@ -179,7 +179,7 @@
 			<MovesChange>1</MovesChange>
 			<IgnoreTerrainCost>true</IgnoreTerrainCost>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_ENHANCED_MUSCLES</PediaEntry>
 		</Row>
@@ -195,7 +195,7 @@
 			<RoughAttack>10</RoughAttack>
 			<RoughDefense>10</RoughDefense>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_BIOMODS</PediaEntry>
 		</Row>
@@ -206,7 +206,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>			
 			<PortraitIndex>4</PortraitIndex>
 			<PromotionPrereqOr1>PROMOTION_FW_BIOMODS</PromotionPrereqOr1>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_STIM_MOD</PediaEntry>
 		</Row>
@@ -217,7 +217,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
 			<PortraitIndex>6</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_STIM_MOD_EMPTY</PediaEntry>
 		</Row>
@@ -228,7 +228,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_FW_BIOMODS</PromotionPrereqOr1>
 			<PortraitIndex>4</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_BOOST_MOD</PediaEntry>
 		</Row>
@@ -239,7 +239,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
 			<PortraitIndex>6</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_BOOST_MOD_EMPTY</PediaEntry>
 		</Row>
@@ -254,7 +254,7 @@
 			<RoughDefense>30</RoughDefense>
 			<PortraitIndex>4</PortraitIndex>
 			<PromotionPrereqOr1>PROMOTION_FW_BIOMODS</PromotionPrereqOr1>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_BOOST_MOD_EFFECT_3</PediaEntry>
 		</Row>
@@ -269,7 +269,7 @@
 			<RoughDefense>20</RoughDefense>
 			<PortraitIndex>4</PortraitIndex>
 			<PromotionPrereqOr1>PROMOTION_FW_BIOMODS</PromotionPrereqOr1>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_BOOST_MOD_EFFECT_2</PediaEntry>
 		</Row>
@@ -284,7 +284,7 @@
 			<RoughDefense>10</RoughDefense>
 			<PortraitIndex>4</PortraitIndex>
 			<PromotionPrereqOr1>PROMOTION_FW_BIOMODS</PromotionPrereqOr1>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_BOOST_MOD_EFFECT_1</PediaEntry>
 		</Row>
@@ -295,7 +295,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PortraitIndex>4</PortraitIndex>
 			<PromotionPrereqOr1>PROMOTION_FW_BIOMODS</PromotionPrereqOr1>
-			<IconAtlas>CIV_COLOR_ATLAS_FW_PROMOTIONS</IconAtlas>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_FW_TOXIN_MOD</PediaEntry>
 		</Row>

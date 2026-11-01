@@ -205,7 +205,7 @@
 			<Label ID="CityCapitalIcon" AnchorSide="O.I" Offset="0,-1" Anchor="L,C" String="[ICON_CAPITAL]" Hidden="1"/>
 
       <!-- CITY POPULATION IN MILLIONS Stroke -->
-      <Label ID="CityPop" Anchor="R,C" AnchorSide="I.O" Offset="-41,6"  Font="TwCenMT14" FontStyle="SoftShadow" >
+      <Label ID="CityPop" Anchor="R,C" AnchorSide="I.O" Offset="-45,6"  Font="TwCenMT14" FontStyle="SoftShadow" >
 				<Label ID="CityPopSuffix" Anchor="L,C" Offset="3,0" String="" Font="TwCenMT16" FontStyle="SoftShadow" Hidden="1" />
 			</Label>
 

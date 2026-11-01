@@ -5224,9 +5224,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>
       </Description>
     </EntryPoint>
-	-->
 
-	<EntryPoint type="InGameUIAddin" file="DLL/UI - Notify Exit Resistance (v 1)/LUA/UINotifyExitResistance.lua">
+    <EntryPoint type="InGameUIAddin" file="DLL/UI - Notify Exit Resistance (v 1)/LUA/UINotifyExitResistance.lua">
       <Name>UINotifyExitResistance</Name>
       <Description>UINotifyExitResistance</Description>
     </EntryPoint>
@@ -5248,6 +5247,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>
       </Description>
     </EntryPoint>
+    
+	-->
+
+	
 	
 	
 	
@@ -5267,7 +5270,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>Preference</Description>
     </EntryPoint>
 	
-	
+	<!--
 	<EntryPoint type="InGameUIAddin" file="Modules/Extra Victory Conditions (v 1)/Lua/ReligiousVictory.lua">
       <Name>ReligiousVictory</Name>
       <Description>Adds Religious Victory code</Description>
@@ -5278,11 +5281,12 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>Adds Economic Victory code</Description>
     </EntryPoint>
 	
-	<EntryPoint type="InGameUIAddin" file="Modules/Global Relations (v 7)/Lua/InfoAddictInit.lua">
+	  <EntryPoint type="InGameUIAddin" file="Modules/Global Relations (v 7)/Lua/InfoAddictInit.lua">
       <Name>init</Name>
       <Description>Global Relations Code</Description>
     </EntryPoint>
-	
+	-->
+
 	<EntryPoint type="InGameUIAddin" file="Lua/Notifications/Nuclear Attack/LUA/GAIA_NotifyNuclearAttack.lua">
       <Name>NotifyNuclearAttack</Name>
       <Description>NotifyNuclearAttack</Description>

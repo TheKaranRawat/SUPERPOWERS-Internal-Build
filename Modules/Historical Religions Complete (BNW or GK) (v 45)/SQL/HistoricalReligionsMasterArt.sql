@@ -119,9 +119,9 @@ VALUES		('HISTORICAL_RELIGIONS_TEMP_ATLAS', 				256,      'HRCTemp256.dds',				6
 			('HISTORICAL_RELIGIONS_TEMP_ATLAS', 				 24, 	   'HRCTemp24.dds',				6, 				1),
 			('HISTORICAL_RELIGIONS_TEMP_ATLAS', 				 16, 	   'HRCTemp16.dds',				6, 				1);
 
-INSERT INTO IconFontTextures 
-			(IconFontTexture, 											           IconFontTextureFile)
-VALUES		('ICON_FONT_TEXTURE_HISTORICAL_RELIGIONS_TEMP', 			            'HRCTempFontIcons');
+--INSERT INTO IconFontTextures 
+--			(IconFontTexture, 											           IconFontTextureFile)
+--VALUES		('ICON_FONT_TEXTURE_HISTORICAL_RELIGIONS_TEMP', 			            'HRCTempFontIcons');
 
 INSERT INTO IconFontMapping 
 			(IconName, 																		  IconFontTexture,	 IconMapping)
