@@ -781,14 +781,13 @@ function AIUnitsAssist(playerID)
 						end				   
 					end
 					--print ("AI:Aircrafts carrier loaded!")
-				end
-				
-			end	
-		end
-	
-	
-	end
-end
+				end -- if IsHasPromotion(CarrierID)
+			 end -- if plot ~= nil	
+			end -- if not unit:IsFull()
+		end -- if uType == ...
+	  end -- for unit	
+	end -- if AICityCount >= 1
+end -- function
 	
 GameEvents.PlayerDoTurn.Add(AIUnitsAssist)
 
@@ -1031,7 +1030,7 @@ function AIPromotion(iPlayer, iCity, iUnit, bGold, bFaith)
 	end
 
 
-	if unit:IsHasPromotion(P.PROMOTION_CITY_SIEGE) and not PlayerAtWarWithHuman(player) then	   
+	if unit:IsHasPromotion(CitySiegeID) and not PlayerAtWarWithHuman(player) then	   
 	   if player:GetUnitClassCount(ThisUnitClass) > AICityCount then
 	   	  unit:Kill()
 	   	  --print ("Reduce AI Militia units' number when not at war with Human to let the turn goes faster!")	

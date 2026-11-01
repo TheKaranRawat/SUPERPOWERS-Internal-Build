@@ -253,7 +253,10 @@ function CitySizeChanged(hexX, hexY, population, citySize)
 	   CitySetSize(city,player,cityPop)
 	   print ("Set CitySize!")
 	end
+
+
 	-- CITY STATE DEFENCE PLACEMENT SCRIPT
+	--[[
 	if player:IsMinorCiv() then
 		--local iCounter = 0
 		--iCounter = era
@@ -297,33 +300,9 @@ function CitySizeChanged(hexX, hexY, population, citySize)
 			print ("CS Defence Lvl 7 Placed.")
 		end
 
-		--[[
-		if (iCounter == 2) then				
-			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_MEDIEVAL"].ID,true)
-			print ("AI Bonus!-MEDIEVAL")
-		elseif (iCounter == 3) then	
-			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_RENAISSANCE"].ID,true)   
-			print ("AI Bonus!-RENAISSANCE")				 		
-		elseif (iCounter == 4) then	
-			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_INDUSTRY"].ID,true)
-		--  			AIMapVisibility (player)
-			print ("AI Bonus!-INDUSTRY")							
-		elseif (iCounter == 5) then	
-			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_MODERN"].ID,true)   				
-			print ("AI Bonus!-MODERN")				  									
-		 elseif (iCounter == 6) then	
-			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_WORLDWAR"].ID,true)  		
-			print ("AI Bonus!-WORLDWAR")					
-	  elseif (iCounter == 7) then	
-			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_ATOMIC"].ID,true)  		
-			print ("AI Bonus!-ATOMIC")										
-	  elseif (iCounter == 8) then	
-			player:SetHasPolicy(GameInfo.Policies["POLICY_AI_INFORMATION"].ID,true)	   
-			print ("AI Bonus!-INFORMATION")		 									
-	  end
-	  ]]--
-
 	end
+
+	]]--
 	
 end-------------Function End
 Events.SerialEventCityPopulationChanged.Add(CitySizeChanged)
