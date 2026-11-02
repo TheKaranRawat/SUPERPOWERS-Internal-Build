@@ -17,13 +17,13 @@
 		
 
 			
-		<!--Global Units per Plot and City Range-->
+		<!--Global Units per Plot and City Range 4 -->
 		<Update>
 			<Set Value="2"/>
 			<Where Name="PLOT_UNIT_LIMIT" />
 		</Update>
 		<Update>
-			<Set Value="4"/>
+			<Set Value="6"/>
 			<Where Name="MIN_CITY_RANGE" />
 		</Update>
 
@@ -524,10 +524,6 @@
 		<Update>
 			<Set Value="100"/>
 			<Where Name="MINOR_CIV_PRODUCTION_PERCENT" />
-		</Update>
-		<Update>
-			<Set Value="300"/>
-			<Where Name="MINOR_CIV_PLOT_CULTURE_COST_MULTIPLIER" />
 		</Update>
 		<Update>
 			<Set Value="40"/>

@@ -189,7 +189,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="05AC4E708555ACAE74FF8663AA30371A" import="0">GAME_OPTIONS/TEXT/GameOptions_ZH_CN.xml</File>
     <File md5="A4F4BAC090AB7656A7C1CB63EBFB4CE6" import="1">GAME_OPTIONS/UI/VassalageOverview.lua</File>
     <File md5="492F62D83E012EF80C03587A8E59BA16" import="1">GAME_OPTIONS/UI/VassalageOverview.xml</File>
+	<!-- DLL
     <File md5="D7818B93633B379ED4366B7EDB062795" import="0">DLL/Release/CvGameCore_Expansion2.dll</File>
+	-->
     <File md5="164BB27F8F52EFBD4F4EB3892CDF99E7" import="1">CORE/CoreUI/InGame/YieldIconManager.lua</File>
     <File md5="453BDAD67D98DF1E4B311E9F07F1A761" import="1">CORE/CoreUI/InGame/YieldIconManager.xml</File>
     <File md5="48BAA9B4803BF54A96042A3BAFB985DD" import="1">CORE/CoreUI/InGame/GenericWorldAnchor.lua</File>
