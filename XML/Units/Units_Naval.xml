@@ -916,8 +916,8 @@
 			<UnitArtInfo>ART_DEF_UNIT_DIESEL_SUBMARINE</UnitArtInfo>
 			<UnitFlagAtlas>SPUnitFlags_FLAG</UnitFlagAtlas>
 			<UnitFlagIconOffset>112</UnitFlagIconOffset>
-			<IconAtlas>ShipAtlas_ATLAS</IconAtlas>
-			<PortraitIndex>28</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>46</PortraitIndex>
 			<MoveRate>SUB</MoveRate>
 			<ExtraMaintenanceCost>60</ExtraMaintenanceCost>
 		</Row>

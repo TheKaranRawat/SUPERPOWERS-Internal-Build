@@ -794,7 +794,7 @@
 			<IconsPerColumn>8</IconsPerColumn>
 		</Row>
 
-		<!-- SHIP ATLAS -->
+		<!-- SHIP ATLAS 
 
 		<Row>
 			<Atlas>ShipAtlas_ATLAS</Atlas>
@@ -838,7 +838,7 @@
 			<IconsPerRow>8</IconsPerRow>
 			<IconsPerColumn>8</IconsPerColumn>
 		</Row>
-
+		-->
 
 
 		<Row>
@@ -876,6 +876,7 @@
 			<IconsPerRow>8</IconsPerRow>
 			<IconsPerColumn>8</IconsPerColumn>
 		</Row>
+		<!--
 		<Row>
 			<Atlas>SPPROMOTION_ATLAS</Atlas>
 			<IconSize>214</IconSize>
@@ -883,6 +884,7 @@
 			<IconsPerRow>8</IconsPerRow>
 			<IconsPerColumn>8</IconsPerColumn>
 		</Row>
+		-->
 		<Row>
 			<Atlas>SPPROMOTION_ATLAS</Atlas>
 			<IconSize>256</IconSize>

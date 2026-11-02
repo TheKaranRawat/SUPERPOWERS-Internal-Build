@@ -148,11 +148,13 @@
 			<UnitType>UNIT_CARGO_SHIP</UnitType>
 			<NumUnits>1</NumUnits>
 		</Row>
+		<!--
 		<Row>
 			<BuildingType>BUILDING_HUBBLE</BuildingType>
 			<UnitType>UNIT_SCIENTIST</UnitType>
 			<NumUnits>1</NumUnits>
 		</Row>
+		-->
 		<Row>
 			<BuildingType>BUILDING_PETRA</BuildingType>
 			<UnitType>UNIT_CARAVAN</UnitType>

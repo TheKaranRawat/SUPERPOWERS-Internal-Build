@@ -671,7 +671,7 @@
 			<HurryCostModifier>200</HurryCostModifier>
 			<NeverCapture>true</NeverCapture>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_3</IconAtlas>
-			<PortraitIndex>33</PortraitIndex>
+			<PortraitIndex>2</PortraitIndex>
 		</Row>
 		<Row>
 			<Type>BUILDING_AEROSPACE_COMPLEX</Type>
