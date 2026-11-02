@@ -34,7 +34,7 @@ REPLACE INTO Sapiens_ModOptions (Name, Value) VALUES
 ('LOCKED_BULB_VALUES',         1),  -- a Great Scientist or Writer locks in its output when created, not when used
 ('NO_ENEMY_REPAIRS',           1),  -- workers cannot repair a pillaged improvement in the lands of a civ you are at war with (roads still can)
 ('PARATROOPS_AA_DAMAGE',       1),  -- anti-air fire can hit paratroopers during a drop (vanilla bugfix)
-('QUICK_AI_ANIMATIONS',        1),  -- AI-only combat and movement resolve instantly while off-screen; anything in your line of sight still animates
+('QUICK_AI_ANIMATIONS',        0),  -- AI-only combat and movement resolve instantly while off-screen; anything in your line of sight still animates
 ('RANDOM_CITY_NAMES',          1);  -- a civ's later cities take random names; the first few stay canonical
 REPLACE INTO Defines (Name, Value) VALUES
 	('GD_TOP_N_CITY_NAMES',                    3);  -- this many of a civ's first cities keep their canonical names; later ones draw randomly.

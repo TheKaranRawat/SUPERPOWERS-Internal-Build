@@ -289,19 +289,19 @@ UPDATE MinorCivilizations SET DefaultPlayerColor = 'PLAYERCOLOR_MINOR_WITTENBERG
 --------------------------------------------------------------------------------
 
 -- Hidden Antiquity Site
-UPDATE ArtDefine_Landmarks
-	SET Model = 'hidden_antiquity_site.fxsxml'
-	WHERE ResourceType = 'ART_DEF_RESOURCE_HIDDEN_ARTIFACTS' AND ImprovementType = 'ART_DEF_IMPROVEMENT_NONE';
+--UPDATE ArtDefine_Landmarks
+--	SET Model = 'hidden_antiquity_site.fxsxml'
+--	WHERE ResourceType = 'ART_DEF_RESOURCE_HIDDEN_ARTIFACTS' AND ImprovementType = 'ART_DEF_IMPROVEMENT_NONE';
 
 -- Active Archaeological Dig
-DELETE FROM ArtDefine_Landmarks
-	WHERE ResourceType = 'ART_DEF_RESOURCE_ALL' AND ImprovementType = 'ART_DEF_IMPROVEMENT_ARCHAEOLOGICAL_DIG';
+--DELETE FROM ArtDefine_Landmarks
+--	WHERE ResourceType = 'ART_DEF_RESOURCE_ALL' AND ImprovementType = 'ART_DEF_IMPROVEMENT_ARCHAEOLOGICAL_DIG';
 
-INSERT INTO ArtDefine_Landmarks (Era, State, Scale, ImprovementType, LayoutHandler, ResourceType, Model, TerrainContour)
-	SELECT 'Any', 'Any', 0.8, 'ART_DEF_IMPROVEMENT_ARCHAEOLOGICAL_DIG', 'SNAPSHOT', 'ART_DEF_RESOURCE_ARTIFACTS', 'Archaeological_Dig.fxsxml', 1;
+--INSERT INTO ArtDefine_Landmarks (Era, State, Scale, ImprovementType, LayoutHandler, ResourceType, Model, TerrainContour)
+--	SELECT 'Any', 'Any', 0.8, 'ART_DEF_IMPROVEMENT_ARCHAEOLOGICAL_DIG', 'SNAPSHOT', 'ART_DEF_RESOURCE_ARTIFACTS', 'Archaeological_Dig.fxsxml', 1;
 
-INSERT INTO ArtDefine_Landmarks (Era, State, Scale, ImprovementType, LayoutHandler, ResourceType, Model, TerrainContour)
-	SELECT 'Any', 'Any', 0.8, 'ART_DEF_IMPROVEMENT_ARCHAEOLOGICAL_DIG', 'SNAPSHOT', 'ART_DEF_RESOURCE_HIDDEN_ARTIFACTS', 'Hidden_Archaeological_Dig.fxsxml', 1;
+--INSERT INTO ArtDefine_Landmarks (Era, State, Scale, ImprovementType, LayoutHandler, ResourceType, Model, TerrainContour)
+--	SELECT 'Any', 'Any', 0.8, 'ART_DEF_IMPROVEMENT_ARCHAEOLOGICAL_DIG', 'SNAPSHOT', 'ART_DEF_RESOURCE_HIDDEN_ARTIFACTS', 'Hidden_Archaeological_Dig.fxsxml', 1;
 
 --------------------------------------------------------------------------------
 -- CIVILIAN UNITS change appearance in Modern Era
