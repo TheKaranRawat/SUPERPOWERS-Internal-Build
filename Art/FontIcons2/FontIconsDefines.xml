@@ -114,7 +114,7 @@
 
 		<!-- law -->
 		<Row>
-			<IconName>ICON_LAWS</IconName>
+			<IconName>ICON_JETS</IconName>
 			<IconFontTexture>ICON_FONT_ATLAS_ITGSG_TWO</IconFontTexture>
 			<IconMapping>15</IconMapping>
 		</Row>

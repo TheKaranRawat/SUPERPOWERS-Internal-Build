@@ -3,7 +3,7 @@
 <GameData>
 	<Language_en_US>
 		<Row Tag="TXT_KEY_UNIT_HARD_MOBILE_LAUNCHER">
-			<Text>Hard Mobile Launcher</Text>
+			<Text>Mobile Launcher</Text>
 		</Row>
 		<Row Tag="TXT_KEY_SPECIALUNIT_HARD_MOBILE_LAUNCHER">
 			<Text>Hard Mobile Launcher</Text>
