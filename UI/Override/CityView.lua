@@ -168,7 +168,7 @@ local g_leftStackHeigth = g_screenHeight - 40 - Controls.CityInfoBG:GetOffsetY()
 
 local g_PlotButtonIM	= StackInstanceManager( "PlotButtonInstance", "PlotButtonAnchor", Controls.PlotButtonContainer )
 local g_BuyPlotButtonIM	= StackInstanceManager( "BuyPlotButtonInstance", "BuyPlotButtonAnchor", Controls.PlotButtonContainer )
-local g_ProdQueueIM, g_SpecialBuildingsIM, g_GreatWorkIM, g_WondersIM, g_BuildingsIM, g_GreatPeopleIM, g_SlackerIM, g_UnitSelectIM, g_BuildingSelectIM, g_WonderSelectIM, g_ProcessSelectIM, g_FocusSelectIM
+local g_ProdQueueIM, g_SpecialBuildingsIM, g_GreatWorkIM, g_WondersIM, g_BuildingsIM, g_GreatPeopleIM, g_SlackerIM, g_UnitSelectIM, g_CivilianSelectIM, g_BuildingSelectIM, g_WonderSelectIM, g_ProcessSelectIM, g_FocusSelectIM
 local g_slots = table()
 local g_works = table()
 local g_heap = Controls.Scrap
@@ -183,6 +183,22 @@ local g_previousCity, g_isCityViewDirty, g_isCityHexesDirty
 
 local g_isButtonPopupChooseProduction = false
 local g_isAutoClose
+
+-- units that have no Combat/RangedCombat but should stay in the military list
+local g_forceMilitary = {
+    UNIT_ATOMIC_BOMB = true,
+    UNIT_NUCLEAR_MISSILE = true,
+	UNIT_TSAR_BOMBA = true,
+	UNIT_ICBM_MISSILE = true,
+}
+
+local function IsCivilianUnit( item )
+    if g_forceMilitary[ item.Type ] then
+        return false
+    end
+    return (tonumber(item.Combat) or 0) <= 0 and (tonumber(item.RangedCombat) or 0) <= 0
+end
+
 
 local g_slotTexture = {
 	SPECIALIST_CITIZEN = "CitizenUnemployed.dds",
@@ -286,6 +302,19 @@ local function ResizeProdQueue()
 		Controls.UnitBG:SetSizeY( 40 )
 		Controls.UnitBG:ReprocessAnchoring()
 
+	end
+
+	if not Controls.CivilianGrid:IsHidden() then
+		Controls.CivilianButtonStack:CalculateSize()
+		local civilianPanelWidth = Controls.CivilianButtonStack:GetSizeX()
+		local civilianPanelFinal = math_max( civilianPanelWidth, 273 )
+		Controls.CivilianGrid:SetSizeX( civilianPanelFinal )
+		Controls.CivilianGrid:SetSizeY( 44 )
+		Controls.CivilianGrid:ReprocessAnchoring()
+
+		Controls.CivilianBG:SetSizeX( civilianPanelFinal - 3 )
+		Controls.CivilianBG:SetSizeY( 40 )
+		Controls.CivilianBG:ReprocessAnchoring()
 	end
 
 	if not Controls.BuildingGrid:IsHidden() then
@@ -1250,6 +1279,8 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 	-------------------------------------------
 	-- Update Production Queue
 	-------------------------------------------
+	local unitSelectList = table()
+	local civilianSelectList = table()
 	local queueLength = city:GetOrderQueueLength()
 	local currentProductionPerTurnTimes100 = city:GetCurrentProductionDifferenceTimes100(false, false)
 	local isGeneratingProduction = not bnw_mode or ( currentProductionPerTurnTimes100 > 0)
@@ -1386,14 +1417,17 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 			-- Units
 			orderID = OrderTypes.ORDER_TRAIN
 			for item in GameInfo.Units() do
-				AddSelectionItem( city, item,
-							unitSelectList,
-							orderID,
-							city.CanTrain,
-							item.ID, -1, -1,
-							city.GetUnitProductionTurnsLeft,
-							city.GetUnitPurchaseCost,
-							city.GetUnitFaithPurchaseCost )
+				-- hide no combat strength unts
+				--if (tonumber(item.Combat) or 0) > 0 or (tonumber(item.RangedCombat) or 0) > 0 then
+					AddSelectionItem( city, item,
+						IsCivilianUnit( item ) and civilianSelectList or unitSelectList,
+						orderID,
+						city.CanTrain,
+						item.ID, -1, -1,
+						city.GetUnitProductionTurnsLeft,
+						city.GetUnitPurchaseCost,
+						city.GetUnitFaithPurchaseCost )
+				--end
 			end
 			-- Projects
 			orderID = OrderTypes.ORDER_CREATE
@@ -1424,6 +1458,7 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 		end
 
 		SetupSelectionList( unitSelectList, g_UnitSelectIM, cityOwnerID, UI_GetUnitPortraitIcon )
+		SetupSelectionList( civilianSelectList, g_CivilianSelectIM, cityOwnerID, UI_GetUnitPortraitIcon )
 		SetupSelectionList( buildingSelectList, g_BuildingSelectIM )
 		SetupSelectionList( wonderSelectList, g_WonderSelectIM )
 		SetupSelectionList( processSelectList, g_ProcessSelectIM )
@@ -1440,6 +1475,9 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 
 		Controls.OtherButton:SetHide( false )
 		Controls.OtherGrid:SetHide( false )
+
+		Controls.CivilianButton:SetHide( false )
+		Controls.CivilianGrid:SetHide( false )
 		
 	end
 	return ResizeProdQueue()
@@ -2248,6 +2286,7 @@ g_GreatPeopleIM		= StackInstanceManager( "GPInstance", "GPBox", Controls.GPStack
 g_SlackerIM		= StackInstanceManager( "Slot", "Button", Controls.SlackerStack, Controls.SlackerHeader, ResizeRightStack )
 g_ProdQueueIM		= StackInstanceManager( "ProductionInstance", "PQbox", Controls.QueueStack, Controls.ProdBox, ResizeProdQueue, true )
 g_UnitSelectIM		= StackInstanceManager( "SelectionInstance", "Button", Controls.UnitButtonStack, Controls.UnitButton, ResizeProdQueue )
+g_CivilianSelectIM = StackInstanceManager( "SelectionInstance", "Button", Controls.CivilianButtonStack, Controls.CivilianButton, ResizeProdQueue )
 g_BuildingSelectIM	= StackInstanceManager( "SelectionInstance", "Button", Controls.BuildingButtonStack, Controls.BuildingsButton, ResizeProdQueue )
 g_WonderSelectIM	= StackInstanceManager( "SelectionInstance", "Button", Controls.WonderButtonStack, Controls.WondersButton, ResizeProdQueue )
 g_ProcessSelectIM	= StackInstanceManager( "SelectionInstance", "Button", Controls.OtherButtonStack, Controls.OtherButton, ResizeProdQueue )

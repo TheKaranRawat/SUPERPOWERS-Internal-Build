@@ -127,7 +127,25 @@
 				<UpButton Style="ScrollBarUp" Anchor="R,T" AnchorSide="O.I" />
 				<DownButton Style="ScrollBarDown" Anchor="R,B" AnchorSide="O.I" />
         -->
-				<Stack ID="SelectionStacks" Anchor="L,T" StackGrowth="B" >
+			<Stack ID="SelectionStacks" Anchor="L,T" StackGrowth="B" >
+
+			<!-- CIVILIAN STACK  -->
+
+					<Button ID="CivilianButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
+						<Label Anchor="L,C" Offset="40,-1" Font="TwCenMT18" String="CIVILIAN UNITS" />
+					</Button>    
+
+              <Grid ID="CivilianGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
+
+                <Box ID="CivilianBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
+                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                </Box>
+
+                <Stack ID="CivilianButtonStack" Anchor="L,T" StackGrowth="Right" />
+
+              </Grid>
+			
+			<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
         
 					<Button ID="UnitButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
 						<Label Anchor="L,C" Offset="40,-1" Font="TwCenMT18" String="TXT_KEY_POP_UNITS" />
