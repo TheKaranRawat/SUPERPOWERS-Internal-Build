@@ -2136,6 +2136,7 @@
 			<Help>TXT_KEY_PROMOTION_CHARGE_1_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<OrderPriority>6</OrderPriority>
+			<FlankAttackModifier>20</FlankAttackModifier>
 			<PortraitIndex>5</PortraitIndex>
 			<IconAtlas>SPPROMOTION_ATLAS</IconAtlas>
 			<PediaType>PEDIA_MELEE</PediaType>
@@ -2147,6 +2148,7 @@
 			<Help>TXT_KEY_PROMOTION_CHARGE_2_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereq>PROMOTION_CHARGE_1</PromotionPrereq>
+			<FlankAttackModifier>25</FlankAttackModifier>
 			<OrderPriority>6</OrderPriority>
 			<PortraitIndex>6</PortraitIndex>
 			<IconAtlas>SPPROMOTION_ATLAS</IconAtlas>
@@ -2159,6 +2161,7 @@
 			<Help>TXT_KEY_PROMOTION_CHARGE_3_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereq>PROMOTION_CHARGE_2</PromotionPrereq>
+			<FlankAttackModifier>25</FlankAttackModifier>
 			<OrderPriority>6</OrderPriority>
 			<PortraitIndex>7</PortraitIndex>
 			<IconAtlas>SPPROMOTION_ATLAS</IconAtlas>

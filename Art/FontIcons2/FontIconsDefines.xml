@@ -44,7 +44,7 @@
 
 		<!-- eye -->
 		<Row>
-			<IconName>ICON_EYE</IconName>
+			<IconName>ICON_ARTY</IconName>
 			<IconFontTexture>ICON_FONT_ATLAS_ITGSG_TWO</IconFontTexture>
 			<IconMapping>5</IconMapping>
 		</Row>

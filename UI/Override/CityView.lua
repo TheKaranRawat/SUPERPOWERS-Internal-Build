@@ -98,6 +98,9 @@ local GetProductionTooltip = GetProductionTooltip
 local GetCultureTooltip = GetCultureTooltip
 local GetFaithTooltip = GetFaithTooltip
 local GetTourismTooltip = GetTourismTooltip
+local Teams = Teams
+local g_entryWidth = 56		-- width of one SelectionInstance button + stack padding (measure this in the XML)
+local g_entriesPerRow = 5
 
 include( "SupportFunctions" )
 local TruncateString = TruncateString
@@ -268,14 +271,7 @@ end
 local function ResizeProdQueue()
 	local selectionPanelHeight = 0
 	local queuePanelHeight = math_min( 190, Controls.QueueStack:IsHidden() and 0 or Controls.QueueStack:GetSizeY() )	-- 190 = 5 x 38=instance height
-	if not Controls.SelectionScrollPanel:IsHidden() then
-		Controls.SelectionStacks:CalculateSize()
-		selectionPanelHeight = math_max( math_min( g_leftStackHeigth - queuePanelHeight, Controls.SelectionStacks:GetSizeY() ), 260 )
---		Controls.SelectionBackground:SetSizeY( selectionPanelHeight + 85 )
-		Controls.SelectionScrollPanel:SetSizeY( selectionPanelHeight )
-		--Controls.SelectionScrollPanel:CalculateInternalSize()
-		Controls.SelectionScrollPanel:ReprocessAnchoring()
-	end
+	
 	Controls.QueueSlider:SetSizeY( queuePanelHeight + 38 )				-- 38 = Controls.PQbox:GetSizeY()
 	Controls.QueueScrollPanel:SetSizeY( queuePanelHeight )
 	Controls.QueueScrollPanel:CalculateInternalSize()
@@ -288,21 +284,6 @@ local function ResizeProdQueue()
 	local unitPanelHeight = 0
 
 	-- dynamic production grid size 
-
-	if not Controls.UnitGrid:IsHidden() then
-		Controls.UnitButtonStack:CalculateSize()
-		unitPanelWidth = Controls.UnitButtonStack:GetSizeX()
-		unitpanelfinal = math_max( unitPanelWidth, 273 )
-		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
-		Controls.UnitGrid:SetSizeX( unitpanelfinal )		
-		Controls.UnitGrid:SetSizeY( 44 )
-		Controls.UnitGrid:ReprocessAnchoring()
-
-		Controls.UnitBG:SetSizeX( unitpanelfinal - 3 )
-		Controls.UnitBG:SetSizeY( 40 )
-		Controls.UnitBG:ReprocessAnchoring()
-
-	end
 
 	if not Controls.CivilianGrid:IsHidden() then
 		Controls.CivilianButtonStack:CalculateSize()
@@ -317,38 +298,69 @@ local function ResizeProdQueue()
 		Controls.CivilianBG:ReprocessAnchoring()
 	end
 
+	local unitPanelHeight = Controls.UnitButtonStack:GetSizeY()
+	if not Controls.UnitGrid:IsHidden() then
+		--stack info
+		Controls.UnitButtonStack:SetWrapWidth( g_entryWidth * g_entriesPerRow )
+		--
+		Controls.UnitButtonStack:CalculateSize()
+		unitPanelWidth = Controls.UnitButtonStack:GetSizeX()
+
+		unitpanelfinal = math_max( unitPanelWidth, 273 )
+		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
+		Controls.UnitGrid:SetSizeX( unitpanelfinal )		
+		Controls.UnitGrid:SetSizeY( unitPanelHeight + 4 )
+		Controls.UnitGrid:ReprocessAnchoring()
+
+		Controls.UnitBG:SetSizeX( unitpanelfinal - 3 )
+		Controls.UnitBG:SetSizeY( unitPanelHeight )
+		Controls.UnitBG:ReprocessAnchoring()
+
+	end
+	
+
+	local buildingPanelHeight = Controls.BuildingButtonStack:GetSizeY()
 	if not Controls.BuildingGrid:IsHidden() then
+		--stack info
+		Controls.BuildingButtonStack:SetWrapWidth( g_entryWidth * g_entriesPerRow )
+		--
 		Controls.BuildingButtonStack:CalculateSize()
 		buildingPanelWidth = Controls.BuildingButtonStack:GetSizeX()
+
 		buildingPanelfinal = math_max( buildingPanelWidth, 273 )
 		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
 		Controls.BuildingGrid:SetSizeX( buildingPanelfinal )
-		Controls.BuildingGrid:SetSizeY( 44 )
+		Controls.BuildingGrid:SetSizeY( buildingPanelHeight + 4 )
 		Controls.BuildingGrid:ReprocessAnchoring()
 		
 		--set bg for selection stack
 		Controls.BuildBG:SetSizeX( buildingPanelfinal - 3 )
-		Controls.BuildBG:SetSizeY( 40 )
+		Controls.BuildBG:SetSizeY( buildingPanelHeight )
 		Controls.BuildBG:ReprocessAnchoring()
 	end
 
+	local wonderPanelHeight = Controls.WonderButtonStack:GetSizeY()
 	if not Controls.WonderGrid:IsHidden() then
+		--stack info
+		Controls.WonderButtonStack:SetWrapWidth( g_entryWidth * g_entriesPerRow )
+		--
 		Controls.WonderButtonStack:CalculateSize()
 		wonderPanelWidth = Controls.WonderButtonStack:GetSizeX()
+		
 		wonderPanelfinal = math_max( wonderPanelWidth, 273 )
 		-- Controls.SelectionBackground:SetSizeY( unitPanelWidth + 85 )
 		Controls.WonderGrid:SetSizeX( wonderPanelfinal )
-		Controls.WonderGrid:SetSizeY( 44 )
+		Controls.WonderGrid:SetSizeY( wonderPanelHeight + 4 )
 		Controls.WonderGrid:ReprocessAnchoring()
 
 		--set bg for selection stack
 		Controls.WonderBG:SetSizeX( wonderPanelfinal - 3 )
-		Controls.WonderBG:SetSizeY( 40 )
+		Controls.WonderBG:SetSizeY( wonderPanelHeight )
 		Controls.WonderBG:ReprocessAnchoring()
 
 		--set bg for selection stack
 		Controls.OtherBG:SetSizeX( 269 )
-		Controls.OtherBG:SetSizeY( 36 )
+		Controls.OtherBG:SetSizeY( 41 )
 		Controls.OtherBG:ReprocessAnchoring()		
 
 		--set bg for selection stack
@@ -358,7 +370,14 @@ local function ResizeProdQueue()
 
 	end
 	
-
+	if not Controls.SelectionScrollPanel:IsHidden() then
+		Controls.SelectionStacks:CalculateSize()
+		selectionPanelHeight = math_max( math_min( g_leftStackHeigth - queuePanelHeight + wonderPanelHeight + buildingPanelHeight + unitPanelHeight, Controls.SelectionStacks:GetSizeY() ), 260 )
+--		Controls.SelectionBackground:SetSizeY( selectionPanelHeight + 85 )
+		Controls.SelectionScrollPanel:SetSizeY( selectionPanelHeight )
+		--Controls.SelectionScrollPanel:CalculateInternalSize()
+		Controls.SelectionScrollPanel:ReprocessAnchoring()
+	end
 	-- minimize production grid windows
 
 	--local zeroHeight = 0
@@ -1199,7 +1218,7 @@ local function FirstLetter( text )
     return Locale.ToUpper( text:match( "[%z\1-\127\194-\244][\128-\191]*" ) or text )
 end
 
-local function SetupSelectionList( itemList, selectionIM, cityOwnerID, getUnitPortraitIcon )
+local function SetupSelectionList( itemList, selectionIM, cityOwnerID, getUnitPortraitIcon, nameMode  )
 	itemList:sort( SortSelectionList )
 	selectionIM.ResetInstances()
 	local cash = g_activePlayer:GetGold()
@@ -1231,7 +1250,18 @@ local function SetupSelectionList( itemList, selectionIM, cityOwnerID, getUnitPo
 		--instance.Name:SetText( getUnitPortraitIcon and FirstLetter( itemDescription ) or itemDescription )
 
 		--for all
-		instance.Name:SetText( FirstLetter( itemDescription ) )
+		--instance.Name:SetText( FirstLetter( itemDescription ) )
+
+		-- conditonal
+		--instance.Name:SetText( useInitial and FirstLetter( itemDescription ) or itemDescription )
+
+		if nameMode == "none" then
+			instance.Name:SetText( "" )
+			instance.Name:SetHide( true )
+		else
+			instance.Name:SetHide( false )   -- instances are reused, so always reset this
+			instance.Name:SetText( nameMode == "initial" and FirstLetter( itemDescription ) or itemDescription )
+		end
 
 		if not turnsLeft then
 		elseif turnsLeft > -1 and turnsLeft <= 999 then
@@ -1296,6 +1326,19 @@ local function SwapQueueItem( queuedItemNumber )
 		end
 	end
 	g_queuedItemNumber = queuedItemNumber or g_queuedItemNumber
+end
+
+-- check project unit prereq
+local function IsProjectPrereqMet( item )
+	local prereq = item.ProjectPrereq
+	if not prereq then
+		return true	-- unit has no project requirement
+	end
+	local projectID = GameInfoTypes[ prereq ]
+	if not projectID then
+		return false	-- mistyped or missing project type
+	end
+	return Teams[ g_activePlayer:GetTeam() ]:GetProjectCount( projectID ) > 0
 end
 
 local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVeniceException )
@@ -1440,6 +1483,7 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 			-- Units
 			orderID = OrderTypes.ORDER_TRAIN
 			for item in GameInfo.Units() do
+				if IsProjectPrereqMet( item ) then
 				-- hide no combat strength unts
 				--if (tonumber(item.Combat) or 0) > 0 or (tonumber(item.RangedCombat) or 0) > 0 then
 					AddSelectionItem( city, item,
@@ -1450,7 +1494,7 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 						city.GetUnitProductionTurnsLeft,
 						city.GetUnitPurchaseCost,
 						city.GetUnitFaithPurchaseCost )
-				--end
+				end
 			end
 			-- Projects
 			orderID = OrderTypes.ORDER_CREATE
@@ -1458,7 +1502,8 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 			for item in GameInfo.Projects() do
 				if not queueItems[ code + item.ID ] then
 					AddSelectionItem( city, item,
-							wonderSelectList,
+							--wonderSelectList,
+							processSelectList,		-- was wonderSelectList
 							orderID,
 							city.CanCreate,
 							-1, -1, item.ID,
@@ -1480,11 +1525,14 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 			end
 		end
 
-		SetupSelectionList( unitSelectList, g_UnitSelectIM, cityOwnerID, UI_GetUnitPortraitIcon )
-		SetupSelectionList( civilianSelectList, g_CivilianSelectIM, cityOwnerID, UI_GetUnitPortraitIcon )
-		SetupSelectionList( buildingSelectList, g_BuildingSelectIM )
-		SetupSelectionList( wonderSelectList, g_WonderSelectIM )
-		SetupSelectionList( processSelectList, g_ProcessSelectIM )
+		SetupSelectionList( unitSelectList, g_UnitSelectIM, cityOwnerID, UI_GetUnitPortraitIcon, "initial" )
+		SetupSelectionList( civilianSelectList, g_CivilianSelectIM, cityOwnerID, UI_GetUnitPortraitIcon, "initial" )
+		--SetupSelectionList( buildingSelectList, g_BuildingSelectIM, true )
+		--SetupSelectionList( wonderSelectList, g_WonderSelectIM )
+		--SetupSelectionList( processSelectList, g_ProcessSelectIM )
+		SetupSelectionList( buildingSelectList, g_BuildingSelectIM, nil, nil, "initial" )
+		SetupSelectionList( wonderSelectList, g_WonderSelectIM, nil, nil, "none" )
+		SetupSelectionList( processSelectList, g_ProcessSelectIM, nil, nil, "none" )
 		
 		-- keep the Buildings header visible even when the list is empty
 		Controls.BuildingsButton:SetHide( false )

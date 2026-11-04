@@ -443,7 +443,7 @@
 			</Image>
 			<Stack ID="Stack" Anchor="R,T" Offset="0,8" StackGrowth="Down" Padding="8" >
 				<Label ID="Name" Anchor="R,T" Offset="64,0" Font="TwCenMT18" TruncateWidth="190"/>
-        <!-- building yield display -->
+        	<!-- building yield display -->
 				<Stack ID="SlotStack" Anchor="R,T" Offset="20,0 " StackGrowth="Left" WrapGrowth="Down" WrapWidth="254">
 					<Container Size="48.1"/>
 					<TextButton ID="TextButton" Anchor="R,C" />

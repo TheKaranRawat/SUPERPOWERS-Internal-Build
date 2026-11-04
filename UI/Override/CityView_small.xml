@@ -8,69 +8,79 @@
 
 	<!-- Left Side Panel -->
 	<!-- City Information -->
-	<Grid ID="CityInfoBG" Size="240,358" ConsumeMouse="1" Anchor="L,T" Offset="-16,-9" Style="Grid9DetailSix140" Hidden="0" >
-		<Label Anchor="C,T" Offset="0,18" String="TXT_KEY_CITYVIEW_CITYINFO_TEXT"/>
-		<Stack Anchor="L,T" Offset="17,60" StackGrowth="Bottom" >
-			<!-- Population Info -->
-			<Button ID="PopulationBox" Size="210,64">
+	
+	<!-- Population Info Offset="290,42" -->
+			<Button ID="PopulationBox" Anchor="C,T" Offset="-173,51" Size="210,64">
 				<Image Anchor="L,C" Texture="NotificationFrameBase.dds" Size="80.80" >
-					<Image Anchor="C,C" Offset="-1,-1" Color="White.32" Texture="CitizenMeter54.dds" Size="54.54"/>
+					<Image Anchor="C,C" Offset="81,-1" Color="White.32" Texture="CitizenMeter54.dds" Size="54.54"/>
 					<TextureBar ID="PeopleMeter" Anchor="C,C" Offset="-1,-1" Size="54.54" Texture="CitizenMeter54.dds" Direction="Up" />
-					<Stack Anchor="R,T" AnchorSide="O.I" Offset="-6,0" StackGrowth="Bottom">
+					<Stack Anchor="R,T" AnchorSide="O.I" Offset="-160,0" StackGrowth="Bottom">
 						<Label ID="CityPopulationLabel" Anchor="L,C" Font="TwCenMT22">
 							<Label ID="CityPopulationLabelSuffix" Anchor="R,C" AnchorSide="O.I" Offset="3,0" String="" Font="TwCenMT22"/>
 						</Label>
-						<CheckBox ID="AvoidGrowthButton" Style="SquareCheck" String="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TEXT" Font="TwCenMT16" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" ToolTip="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TT"/>
-						<Label ID="CityGrowthLabel" LeadingOffset="-4" WrapWidth="132" String="" Color0="Food.255" Color1="0.0.0.128" Font="TwCenMT14"/>
+						<CheckBox ID="AvoidGrowthButton" Style="SquareCheck" String="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TEXT" Font="TwCenMT14" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" ToolTip="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TT" Hidden="1"/>
+						<Label ID="CityGrowthLabel" LeadingOffset="-4" Offset="0,5" WrapWidth="102" String="" Color0="Food.255" Color1="0.0.0.128" Font="TwCenMT14"/>
 					</Stack>
 				</Image>
 			</Button>
-			<!-- Food Info -->
-			<Button ID="FoodBox" Size="196,24">
-				<Label Anchor="L,C" Offset="6,0" String="[ICON_FOOD]"/>
-				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_CITYVIEW_FOOD_TEXT" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="FoodPerTurnLabel" Anchor="R,C" String="" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="196,1"/>
-			</Button>
-			<!-- Gold Info -->
-			<Button ID="GoldBox" Size="196,24">
-				<Label Anchor="L,C" Offset="6,0" String="[ICON_GOLD]"/>
-				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_CITYVIEW_GOLD_TEXT" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="GoldPerTurnLabel" Anchor="R,C" String="" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="196,1"/>
-			</Button>
-			<!-- Science Info -->
-			<Button ID="ScienceBox" Size="196,24">
-				<Label Anchor="L,C" Offset="6,0" String="[ICON_RESEARCH]"/>
-				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_CITYVIEW_RESEARCH_TEXT" Color0="Science.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="SciencePerTurnLabel" Anchor="R,C" String="" Color0="Science.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="196,1"/>
-			</Button>
-			<!-- Faith Info -->
-			<Button ID="FaithBox" Size="196,24">
-				<Label Anchor="L,C" Offset="6,0" String="[ICON_PEACE]"/>
-				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_CITYVIEW_FAITH_TEXT"/>
-				<Label ID="FaithPerTurnLabel" Anchor="R,C" String=""/>
-				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="196,1"/>
-			</Button>
-			<!-- Tourism Info -->
-			<Button ID="TourismBox" Size="196,24">
-				<Label Anchor="L,C" Offset="6,0" String="[ICON_TOURISM"/>
-				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_CITYVIEW_TOURISM_TEXT"/>
-				<Label ID="TourismPerTurnLabel" Anchor="R,C" String=""/>
-				<Box Anchor="L,B" Color="27.53.64.255" Offset="4,0" Size="196,1"/>
-			</Button>
-			<!-- Culture Info NotificationTileFrame -->
-			<Button ID="CultureBox" Size="196,24">
-				<Label Anchor="L,C" Offset="6,0" String="[ICON_CULTURE]"/>
-				<Label Anchor="L,C" Offset="32,0" String="TXT_KEY_CITYVIEW_CULTURE_TEXT" Color0="Culture.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="CulturePerTurnLabel" Anchor="R,C" String="" Color0="Culture.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="CultureTimeTillGrowthLabel" LeadingOffset="-4" WrapWidth="132" Anchor="L,T" Offset="72,44" String="" Color0="Culture.255" Color1="0.0.0.128" Font="TwCenMT14"/>
-			</Button>
-			<Image Anchor="L,C" Offset="0,-4" Size="80,80" Texture="NotificationTileFrame.dds">
+	
+	<!-- TURNS UNTIL GROWTH Offset="-270,55" -->
+	<Image Anchor="C,T" Offset="230,45" Size="80,80" Texture="NotificationTileFrame.dds">
+				<Label ID="CultureTimeTillGrowthLabel" LeadingOffset="-4" WrapWidth="132" Anchor="C,C" Offset="89,-20" String="" Color0="Culture.255" Color1="0.0.0.128" Font="TwCenMT14"/>
 				<Image Anchor="C,C" Offset="0,-1" Size="46,52" Color="White.64" Texture="MeterBarCultureBorder.dds"/>
 				<TextureBar ID="CultureMeter" Anchor="C,C" Offset="0,-1" Size="46.52" Texture="MeterBarCultureBorder.dds" Direction="Up" />
 			</Image>
+
+	<Grid ID="CityInfoBG" Size="390,130" ConsumeMouse="1" Anchor="C,T" Offset="-2,37" Style="Grid9DetailSix140" Hidden="0" >
+		<!-- CITY INFORMATION LABEL -->
+		<Label Anchor="C,T" Offset="0,18" String="TXT_KEY_CITYVIEW_CITYINFO_TEXT" Hidden="1"/>
+
+		
+
+		<Stack Anchor="C,T" Offset="10,67" StackGrowth="Right" >
+			
+			<!-- Food Info -->
+			<Button ID="FoodBox" Size="70,20">
+				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_FOOD]"/>
+				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_FOOD_TEXT" Font="TwCenMT18" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="FoodPerTurnLabel" Offset="7,0" Anchor="L,C" String="" Font="TwCenMT18" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				
+			</Button>
+			<!-- Gold Info -->
+			<Button ID="GoldBox" Size="70,20">
+				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_GOLD]"/>
+				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_GOLD_TEXT" Font="TwCenMT18" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="GoldPerTurnLabel" Offset="7,0" Anchor="L,C" String="" Color0="Gold.255" Font="TwCenMT18" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				
+			</Button>
+			<!-- Science Info -->
+			<Button ID="ScienceBox" Size="80,20">
+				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_RESEARCH]"/>
+				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_RESEARCH_TEXT" Font="TwCenMT18" Color0="Science.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="SciencePerTurnLabel" Offset="7,0" Anchor="L,C" String="" Color0="Science.255" Font="TwCenMT18" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				
+			</Button>
+			<!-- Faith Info -->
+			<Button ID="FaithBox" Size="60,20">
+				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_PEACE]"/>
+				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_FAITH_TEXT" Font="TwCenMT18"/>
+				<Label ID="FaithPerTurnLabel" Offset="7,0" Anchor="L,C" Font="TwCenMT18" String=""/>
+			</Button>
+			<!-- Tourism Info -->
+			<Button ID="TourismBox" Size="70,20" Hidden="1">
+				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_TOURISM"/>
+				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_TOURISM_TEXT" Font="TwCenMT18"/>
+				<Label ID="TourismPerTurnLabel" Offset="7,0" Anchor="L,C" Font="TwCenMT18" String=""/>
+			</Button>
+			<!-- Culture Info NotificationTileFrame -->
+			<Button ID="CultureBox" Size="70,20">
+				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_CULTURE]"/>
+				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_CULTURE_TEXT" Font="TwCenMT18" Color0="Culture.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="CulturePerTurnLabel" Offset="7,0" Anchor="L,C" String="" Font="TwCenMT18" Color0="Culture.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				
+			</Button>
+
+			
 		</Stack>
 	</Grid>
 
@@ -99,12 +109,12 @@
 			<GridButton ID="PQbox" Anchor="L,B" Size="270,38" Style="ListItem" ToolTipType="EUI_CityViewLeftTooltip" >
 				<Stack Anchor="L,C" Offset="10,-1" Padding="8" StackGrowth="Right" >
 					<Label ID="PQrank" Anchor="L,C" String="1." Font="TwCenMT24" Hidden="1"/>
-					<Label ID="ProductionFinished" Anchor="L,C" Font="TwCenMT24" String="TXT_KEY_RESEARCH_FINISHED" />
+					<Label ID="ProductionFinished" Anchor="L,C" Font="TwCenMT18" String="TXT_KEY_RESEARCH_FINISHED" />
           <!--
           <Image ID="PQportrait" Anchor="L,C" Texture="UnitPortraitsAncientMedieval360.dds" Size="45.45"/>
           -->
           
-					<Label ID="PQname" Anchor="C,C" Font="TwCenMT18" Color0="Production.255" Color1="0.0.0.128" Color2="255.255.200.255"/> 
+					<Label ID="PQname" Anchor="C,C" Font="TwCenMT16" Color0="Production.255" Color1="0.0.0.128" Color2="255.255.200.255"/> 
           <Label ID="PQturns" Anchor="C,C" Offset="-2,10" Font="TwCenMT14"/>   
 				</Stack>
 				<Button ID="PQremove" Anchor="L,C" Offset="4,-1" Size="32,32" Texture="IconFrame32Delete.dds" ToolTip="TXT_KEY_CITYVIEW_Q_X_TEXT" />
@@ -141,7 +151,7 @@
                   <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
-                <Stack ID="CivilianButtonStack" Anchor="L,T" StackGrowth="Right" />
+                <Stack ID="CivilianButtonStack" Offset="6,0" Anchor="L,T" StackGrowth="Right" />
 
               </Grid>
 			
@@ -157,7 +167,7 @@
                   <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
-                <Stack ID="UnitButtonStack" Anchor="L,T" StackGrowth="Right" />
+                <Stack ID="UnitButtonStack" Anchor="L,T" Offset="6,0" StackGrowth="Right" Wrap="1" WrapGrowth="Bottom" />
 
               </Grid>
 
@@ -171,7 +181,7 @@
                   <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
-                <Stack ID="BuildingButtonStack" Anchor="L,T" StackGrowth="Right" />
+                <Stack ID="BuildingButtonStack" Anchor="L,T" Offset="6,0" StackGrowth="Right" Wrap="1" WrapGrowth="Bottom" />
 
               </Grid>
 					
@@ -185,20 +195,20 @@
                   <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
-                <Stack ID="WonderButtonStack" Anchor="L,T" StackGrowth="Right" />
+                <Stack ID="WonderButtonStack" Anchor="L,T" Offset="6,0" StackGrowth="Right" Wrap="1" WrapGrowth="Bottom" />
               </Grid>
 					
 					<Button ID="OtherButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
 						<Label Anchor="L,C" Offset="40,-1" Font="TwCenMT18" String="TXT_KEY_CITYVIEW_OTHER" />
 					</Button>
 
-              <Grid ID="OtherGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
+              <Grid ID="OtherGrid" Size="272,46" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
 
                 <Box ID="OtherBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
                   <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
-                <Stack ID="OtherButtonStack" Anchor="L,T" Size="256,32" StackGrowth="Right" />
+                <Stack ID="OtherButtonStack" Anchor="L,T" Offset="6,0" Size="256,32" StackGrowth="Right" />
               </Grid>
 					
 				</Stack>
@@ -212,7 +222,7 @@
 	</Grid>
 
 	<!-- City Name Panel -->
-	<Image ID="TitlePanel" Anchor="C,T" Offset="0,36" Texture="CityNamePanel.dds" Size="512.128" ConsumeMouse="1">
+	<Image ID="TitlePanel" Anchor="C,T" Offset="0,-5" Texture="CityNamePanel.dds" Size="512.128" ConsumeMouse="1">
 		<!-- City Health Bar -->
 		<Image ID="HealthFrame" Anchor="C,T" Offset="0,42" Texture="CityNamePanelHealthBar.dds" Size="278.10" >
 			<TextureBar ID="HealthMeter" Anchor="L,C" Size="278.10" Direction="Right" Texture="CityNamePanelHealthBarGreen.dds" />
@@ -244,12 +254,12 @@
 				<Label ID="CityIsOccupied" Anchor="C,C" String="[ICON_OCCUPIED]" ToolTip="TXT_KEY_CITY_OCCUPIED" Hidden="1"/>
 			</Stack>
 		</Stack>
-		<TextButton ID="EditButton" Offset="155,27" Anchor="C,C" Style="Font16or20" String="TXT_KEY_EDIT_BUTTON" MouseOverStyle="SoftShadow" ConsumeMouse="1" />
+		<TextButton ID="EditButton" Offset="155,-30" Anchor="C,C" Style="Font16or20" String="TXT_KEY_EDIT_BUTTON" MouseOverStyle="SoftShadow" ConsumeMouse="1" />
 	</Image>
 	<!-- /City Name Panel -->
 
 	<!-- Civ Icon -->
-	<Stack Anchor="L,T" Offset="216,26" StackGrowth="R" >
+	<Stack Anchor="L,T" Offset="216,26" StackGrowth="R" Hidden="1">
 		<Image ID="CivIconFrame" Texture="IconFrame64.dds" Size="64.64" >
 			<Image ID="CivIconBG" Size="64.64" Anchor="C,C" Offset="-1,-1" Texture="CivIconBGSizes.dds"/>
 			<Image ID="CivIconShadow" Size="48.48" Anchor="C,C" Offset="1,1" Texture="CivSymbolAtlas48.dds" Color="Black.128"/>
@@ -462,11 +472,11 @@
 			<Stack ID="Stack" Anchor="R,T" Offset="0,8" StackGrowth="Down" Padding="8" >
 				<Label ID="Name" Anchor="R,T" Offset="64,0" Font="TwCenMT18" TruncateWidth="190"/>
         <!-- building yield display -->
-				<Stack ID="SlotStack" Anchor="R,T" Offset="20,0 " StackGrowth="Left" WrapGrowth="Down" WrapWidth="254">
+				<Stack ID="SlotStack" Anchor="R,T" Offset="20,0" StackGrowth="Left" WrapGrowth="Down" WrapWidth="254">
 					<Container Size="48.1"/>
 					<TextButton ID="TextButton" Anchor="R,C" />
 				</Stack>
-				<Label ID="Label" Anchor="R,B" WrapWidth="254"/>
+				<Label ID="Label" Anchor="R,B" Font="TwCenMT14" WrapWidth="154"/>
 			</Stack>
 			<GridButton ID="SellButton" Anchor="L,T" Size="70,22" Style="SmallButton" Color="255,128,128,255" Font="TwCenMT16" ToolTip="TXT_KEY_CLICK_TO_SELL" />
 			<Box Anchor="C,B" Color="27.53.64.255" Size="254,2"/>

@@ -842,11 +842,11 @@
 
 		<!-- **********Citadel Units*******-->
 		<Row Tag="TXT_KEY_UNITCOMBAT_CITADEL">
-			<Text>Citadel</Text>
+			<Text>[ICON_ARTY] Citadel</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_UNIT_CITADEL_EARLY">
-			<Text>[COLOR_YIELD_FOOD]Stronghold[ENDCOLOR]</Text>
+			<Text>[ICON_ARTY] [COLOR_YIELD_FOOD]Stronghold[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CITADEL_EARLY_PEDIA">
@@ -854,7 +854,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_CITADEL_MID">
-			<Text>[COLOR_YIELD_FOOD]Firebase[ENDCOLOR]</Text>
+			<Text>[ICON_ARTY] [COLOR_YIELD_FOOD]Firebase[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CITADEL_MID_PEDIA">
@@ -862,7 +862,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_CITADEL_LATE">
-			<Text>[COLOR_YIELD_FOOD]Military Airbase[ENDCOLOR]</Text>
+			<Text>[ICON_ARTY] [COLOR_YIELD_FOOD]Military Airbase[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CITADEL_LATE_PEDIA">
@@ -1081,7 +1081,7 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_CARRIER">
-			<Text>[ICON_ANCHORS] Carrier</Text>
+			<Text>[ICON_ANCHOR] Carrier</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_DESTROYER">
@@ -1204,6 +1204,22 @@
 			<Text>[ICON_DIVIDE] Tank</Text>
 		</Replace>
 
+		<Replace Tag="TXT_KEY_UNIT_STEALTH_BOMBER">
+			<Text>[ICON_JETS] Stealth Bomber</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_HELICOPTER_GUNSHIP">
+			<Text>[ICON_JETS] Helicopter Gunship</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_MECHANIZED_INFANTRY">
+			<Text>[ICON_INFANTRY] Mechanized Infantry</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_MODERN_ARMOR">
+			<Text>[ICON_DIVIDE] Modern Armor</Text>
+		</Replace>
+
 		<!--  -->
 
 		
@@ -1253,7 +1269,7 @@
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_UNIT_BATTLESHIP">
-			<Text>[ICON_ANCHORS] Battleship</Text>
+			<Text>[ICON_ANCHOR] Battleship</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_BOMBER">
@@ -1340,7 +1356,7 @@
 		</Row>
 		
 		<Row Tag="TXT_KEY_UNIT_MAIN_BATTLE_TANK">
-			<Text>Main Battle Tank</Text>
+			<Text>[ICON_DIVIDE] Main Battle Tank</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MAIN_BATTLE_TANK_HEADING">
@@ -1452,7 +1468,7 @@
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_G6_SPG_HEADING">
-			<Text>[ICON_CAPITAL] G6 Self-propelled Howitzer</Text>
+			<Text>[ICON_ARTY] G6 Self-propelled Howitzer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ZULU_G6_SPG_HELP">
 			<Text>WIP</Text>
@@ -1476,7 +1492,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_SELF_PROPELLED_ARTILLERY">
-		<Text>[ICON_ARTILLERY] Mobile Artillery</Text>
+		<Text>[ICON_ARTY] Mobile Artillery</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_SELF_PROPELLED_ARTILLERY_HEADING">
@@ -1487,7 +1503,7 @@
 	</Row>
 
 	<Row Tag="TXT_KEY_UNIT_KATYUSHA">
-		<Text>Rocket Artillery</Text>
+		<Text>[ICON_ARTY] Rocket Artillery</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_KATYUSHA_HELP">
@@ -1521,7 +1537,7 @@
 		<Plurality>2</Plurality>
 	</Row>	
 	<Row Tag="TXT_KEY_UNIT_HOWITZER_HEADING">
-		<Text>Howitzer</Text>
+		<Text>[ICON_ARTY] Howitzer</Text>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_HOWITZER_PEDIA">
 		<Text>A howitzer is a type of artillery piece characterized by a relatively short barrel and the use of comparatively small propellant charges to propel projectiles at relatively high trajectories, with a steep angle of descent. Until fairly recently, about the end of the Second World War, such weapons were characterized by a barrel length 15 to 25 times the caliber of the gun.</Text>
@@ -1539,7 +1555,7 @@
 	</Row>
 
 	<Row Tag="TXT_KEY_UNIT_MOTORISED_INFANTRY">
-		<Text>Motorised Infantry</Text>
+		<Text>[ICON_INFANTRY] Motorised Infantry</Text>
 		<Plurality>2</Plurality>
 	</Row>	
 		<Row Tag="TXT_KEY_UNIT_MOTORISED_INFANTRY_HEADING">
@@ -1881,7 +1897,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_SHIP_OF_THE_LINE">
-			<Text>[ICON_ANCHORS] Ship of the Line</Text>
+			<Text>[ICON_ANCHOR] Ship of the Line</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_SHIP_OF_THE_LINE_HEADING">
@@ -1956,7 +1972,7 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_NUCLEAR_CARRIER">
-			<Text>[ICON_ANCHORS] Nuclear-powered Carrier</Text>
+			<Text>[ICON_ANCHOR] Nuclear-powered Carrier</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NUCLEAR_CARRIER_HEADING">
@@ -1982,7 +1998,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_FUTURE_BATTLESHIP">
-			<Text>[ICON_ANCHORS] Railgun Battleship</Text>
+			<Text>[ICON_ANCHOR] Railgun Battleship</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FUTURE_BATTLESHIP_HEADING">
@@ -2039,7 +2055,7 @@
 		
 
 	<Row Tag="TXT_KEY_UNIT_DREADNOUGHT">
-		<Text>[ICON_ANCHORS] Dreadnought</Text>
+		<Text>[ICON_ANCHOR] Dreadnought</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_DREADNOUGHT_HEADING">
@@ -2111,7 +2127,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_SUPER_CARRIER">
-		<Text>[ICON_ANCHORS] Supercarrier</Text>
+		<Text>[ICON_ANCHOR] Supercarrier</Text>
 	</Row>	
 	<Row Tag="TXT_KEY_UNIT_SUPER_CARRIER_TEXT">
 		<Text>The Super-Carrier is the nuclear age evolution of the Aircraft Carrier.</Text>
@@ -2215,7 +2231,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_CARRIER_FIGHTER_ADV">
-			<Text>[ICON_FIGHTER] Carrier VTOL</Text>
+			<Text>[ICON_JETS] Carrier VTOL</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARRIER_FIGHTER_ADV_HEADING">
@@ -2280,12 +2296,12 @@
 	</Row>
 
 	<Row Tag="TXT_KEY_UNIT_STEALTH_ATTACK_AIRCRAFT">
-		<Text>Stealth Attack Aircraft</Text>
+		<Text>[ICON_JETS] Stealth Attack Aircraft</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	
 	<Row Tag="TXT_KEY_UNIT_STEALTH_ATTACK_AIRCRAFT_HEADING">
-		<Text>Stealth Attack Aircraft</Text>
+		<Text>[ICON_JETS] Stealth Attack Aircraft</Text>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_STEALTH_ATTACK_AIRCRAFT_PEDIA">
 		<Text>Stealth aircraft are designed to avoid detection using a variety of advanced technologies that reduce reflection/emission of radar, infrared, visible light, radio-frequency (RF) spectrum, and audio, collectively known as stealth technology.</Text>
@@ -2298,7 +2314,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_ATTACK_HELICOPTER">
-		<Text>Attack Helicopter</Text>
+		<Text>[ICON_JETS] Attack Helicopter</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	
@@ -2326,7 +2342,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_JET_BOMBER">
-		<Text>Strategic Bomber</Text>
+		<Text>[ICON_JETS] Strategic Bomber</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	
@@ -2360,7 +2376,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_INTERCEPTER">
-		<Text>Interceptor Aircraft</Text>
+		<Text>[ICON_JETS] Interceptor Aircraft</Text>
 		<Plurality>2</Plurality>
 	</Row>	
 	<Row Tag="TXT_KEY_UNIT_INTERCEPTER_HEADING">
@@ -2371,7 +2387,7 @@
 	</Row>
 
 	<Row Tag="TXT_KEY_UNIT_UAV">
-		<Text>[ICON_CROSSED] Drone UAV</Text>
+		<Text>[ICON_JETS] Drone UAV</Text>
 		<Plurality>2</Plurality>
 	</Row>
 
@@ -2569,11 +2585,11 @@
 	-->
 
 	<Replace Tag="TXT_KEY_UNIT_JET_FIGHTER">
-		<Text>Stealth Fighter</Text>
+		<Text>[ICON_JETS] Stealth Fighter</Text>
 	</Replace>
 
 	<Replace Tag="TXT_KEY_UNIT_ROCKET_ARTILLERY">
-		<Text>MLRS</Text>
+		<Text>[ICON_ARTY] MLRS</Text>
 	</Replace>
 	<Replace Tag="TXT_KEY_UNIT_ROCKET_ARTILLERY_HEADING">
 		<Text>Multiple Launch Rocket System</Text>
@@ -3404,7 +3420,7 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_PAKFA_T50">
-			<Text>[ICON_SWORD] [COLOR_YELLOW]PAK FA T-50[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]SU-57 PAK FA[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_PAKFA_T50">
@@ -5497,7 +5513,7 @@
 		
 		
 		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2">
-			<Text>Drone Fighter</Text>
+			<Text>[ICON_JETS] Drone Fighter</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_DRONE_FIGHTER_2_TEXT">
 			<Text>Advances in drone technology and autonomous computer systems lead to the development of advanced drone fighters, capable of handling air superiority roles. One of the major limitations on the development of fighter aircraft was the human element, as there was a limit to how many G stresses a human body could tolerate before failing. An automated fighter had no such restrictions, and thus could perform to the full capability of modern engineering.</Text>
@@ -5509,7 +5525,7 @@
 			<Text>Air Unit designed to dominate the skies and intercept incoming enemy aircraft.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER">
-			<Text>Suborbital Bomber</Text>
+			<Text>[ICON_JETS] Suborbital Bomber</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_SUBORBITAL_BOMBER_TEXT">
 			<Text>In an effort to try and push the range and striking power of bombers to their limit, newer generations of bombers were developed capable of travelling high in the atmosphere, just short of actually travelling into orbit. At these altitudes, they were extremely difficult to intercept, and could travel quickly through the thin atmosphere on semi-ballistic trajectories.</Text>
@@ -5578,7 +5594,7 @@
 		-->
 
 		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT">
-			<Text>BattleMech</Text>
+			<Text>[ICON_INFANTRY] BattleMech</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_BATTLESUIT_TEXT">
 			<Text>While powered armor gave human soldiers unparalleled protection and strength, it still relies on a human to operate the suit. Advances in artificial intelligence eventually lead to the ultimate soldier - a robotic unit that could fight equally as well as a human. Although there were a number of concerns about the prospect of fielding large numbers of robotic units with minimal human control, those societies that did so found them to be highly efficient and effective on the battlefield, with fewer issues involved in adapting them back to civilian duties during peacetime.</Text>
@@ -5590,7 +5606,7 @@
 			<Text>Basic Unit of the future that requires no special resources to build.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY">
-			<Text>T-800</Text>
+			<Text>[ICON_IDEOLOGY_AUTOCRACY] T-800</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_ROBOT_INFANTRY_TEXT">
 			<Text>While powered armor gave human soldiers unparalleled protection and strength, it still relies on a human to operate the suit. Advances in artificial intelligence eventually lead to the ultimate soldier - a robotic unit that could fight equally as well as a human. Although there were a number of concerns about the prospect of fielding large numbers of robotic units with minimal human control, those societies that did so found them to be highly efficient and effective on the battlefield, with fewer issues involved in adapting them back to civilian duties during peacetime.</Text>
@@ -5603,7 +5619,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK">
-			<Text>Railgun Armor</Text>
+			<Text>[ICON_DIVIDE] Railgun Armor</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_RAILGUN_TANK_TEXT">
 			<Text>While conventional tank munitions have continued to improve over the decades, electromotive weapons hold the potential to be even more devastating. Conventional cannons had increasingly adopted sabot rounds to penetrate enemy armor, as these rounds could focus more energy on a smaller area, but railguns could fire rounds with a similarly small surface area even faster. The earliest railguns were mounted upon naval vessels, but advances in power plants and energy systems eventually lead to newer generations of railguns that could be mounted on armored vehicles.</Text>
@@ -5615,7 +5631,7 @@
 			<Text>Fast and powerful futuristic Unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY">
-			<Text>Mech Artillery</Text>
+			<Text>[ICON_ARTY] Mech Artillery</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_MECH_ARTILLERY_TEXT">
 			<Text>While wheeled and tracked vehicles are still the most practical, the concept of a legged combat vehicle has long captured the imagination of engineers and scientists. It was inevitable that experimentation towards making viable legged vehicles would be conducted, with the earliest practical prototypes being multilegged frames. These walkers could traverse some rough terrain that even tracked vehicles couldn't, although most were outfitted with wheeled secondary movement systems to allow them to drive along roads and smooth terrain at higher speeds than they could walk. Their articulated frames had difficulty withstanding the recoil of tank cannons, however, and thus they were typically outfitted with missile systems to avoid any problems. These mechs became useful as artillery platforms, able to fire from locations unreachable by conventional vehicles, confounding efforts to deter them.</Text>
@@ -5627,7 +5643,7 @@
 			<Text>Powerful siege unit of the future.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_VERTOL">
-			<Text>Heavy Gunship</Text>
+			<Text>[ICON_JETS] Heavy Gunship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_VERTOL_TEXT">
 			<Text>As the technology behind vertical take-off and landing aircraft matured, an increasing variety of designs began to appear, displacing the standard helicopter gunship. An increasing number of VTOL aircraft utilized jet turbines, but were designed to allow the engines to pivot or otherwise direct their thrust. These aircraft, because of their VTOL capabilities, were often referred to as "vertols" as a shorthand.</Text>
@@ -5639,7 +5655,7 @@
 			<Text>Unit specialized in fighting Modern and Railgun Armor. It is capable of hovering over Mountains, but takes damage if ending its turn on one.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK">
-			<Text>Hovertank</Text>
+			<Text>[ICON_RECON] Hovertank</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_HOVERTANK_TEXT">
 			<Text>The concept of a tank that could cross any terrain by hovering over it has long been a staple of science fiction. Eventually, however, advances in materials engineering, power plants, and control systems made this a reality. With improved power plants, vertols could be configured to carry enough armor to rival a ground-based tank, and sophisticated expert systems and cybernetic controls permitted their crews to handle the aerodynamically unstable craft. These new units were as fast as older vertols, but as heavily armed and armored as tanks. Often they were configured with missiles with EMP warheads, allowing them to devastate advanced armor units, although they proved to be less successful against infantry utilizing biomodifications.</Text>
@@ -5719,7 +5735,7 @@
 		-->
 
 		<Row Tag="TXT_KEY_UNIT_FW_UAV">
-			<Text>[ICON_CROSSED] UCAV</Text>
+			<Text>[ICON_JETS] UCAV</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_UAV_TEXT">
 			<Text>Unmanned aerial vehicles were used as early as 1964, during the Vietnam War, but did not enter widespread use until the necessary technologies matured towards the end of the 20th century. While initially used in a primarily reconnaissance role in environments too hazardous to risk human pilots in, armed UAVs became increasingly prevalent as a means of delivering precision strikes at long range without needing an expensive manned aircraft.</Text>
@@ -5773,7 +5789,7 @@
 			<Text>A one-shot Unit that may be used once to damage enemy Units or Cities.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER">
-			<Text>Mechanized Support Unit</Text>
+			<Text>[ICON_CROSSED] Mechanized Support Unit</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_CRAWLER_TEXT">
 			<Text>As Mech Artillery became increasingly predominant, certain logistical issues began to crop up, as Mech Artillery units could travel to locations where resupply was difficult with conventional logistics methods. At the same time, advances in materials engineering and compact fusion power plants lead to the concept of superheavy vehicles. While this was found most notably in combat units such as the GDR, one unconventional solution to the logistical issues facing artillery units was the Crawler, a gigantic mobile factory and munitions plant. Capable of consuming local resources, converting them into useful raw materials, and then processing those materials into munitions, the first Crawlers were deployed as logistical support to Mech Artillery battalions. The Crawlers themselves were vulnerable to attack from highly mobile units such as Hovertanks, however, and thus were soon armed with their own defensive missile batteries, capable of using the munitions they manufactured in their own defense. As these weapons were more properly integrated into the Crawler design, however, some designers began to wonder why the Crawlers should be kept in a supporting role, when they could be easily converted into viable, self-sustaining artillery vehicles in their own right. Thus, the Crawler eventually became the ultimate artillery weapon -- a long range missile platform that could resupply itself in the field.</Text>

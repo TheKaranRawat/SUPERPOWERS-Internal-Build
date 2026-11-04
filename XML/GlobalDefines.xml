@@ -23,7 +23,7 @@
 			<Where Name="PLOT_UNIT_LIMIT" />
 		</Update>
 		<Update>
-			<Set Value="6"/>
+			<Set Value="4"/>
 			<Where Name="MIN_CITY_RANGE" />
 		</Update>
 
