@@ -517,10 +517,13 @@
 			<XPValueAttack>6</XPValueAttack>
 			<XPValueDefense>6</XPValueDefense>
 			<UnitArtInfo>ART_DEF_UNIT_XCOM_SQUAD</UnitArtInfo>
-			<UnitFlagAtlas>SPUnitFlags_FLAG</UnitFlagAtlas>
-			<UnitFlagIconOffset>15</UnitFlagIconOffset>
-			<IconAtlas>SPACEMARINE_ICON</IconAtlas>
-			<PortraitIndex>0</PortraitIndex>
+			
+			<UnitFlagAtlas>UNIT_FLAG_ITG_EXTRA_1_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>13</UnitFlagIconOffset>
+
+			<IconAtlas>CIV_COLOR_ATLAS_FW</IconAtlas>
+			<PortraitIndex>16</PortraitIndex>
+
 			<MoveRate>QUADRUPED</MoveRate>
 			<ExtraMaintenanceCost>200</ExtraMaintenanceCost>
 		</Row>

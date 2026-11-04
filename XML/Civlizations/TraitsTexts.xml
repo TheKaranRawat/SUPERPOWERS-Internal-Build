@@ -1244,7 +1244,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_BRAZIL_SCOCCER_STAR">
-			<Text>Brazilian Soccer Player</Text>
+			<Text>[ICON_CAPITAL] Brazilian Soccer Player</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_BRAZIL_SCOCCER_STAR_HELP">
 			<Text>

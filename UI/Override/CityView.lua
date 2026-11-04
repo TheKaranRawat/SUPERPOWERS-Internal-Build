@@ -1185,6 +1185,20 @@ local g_SelectionListTooltips = {
 	end,
 }
 
+-- first character of a string, safe for multi-byte UTF-8 (accents, CJK, etc.)
+local function FirstLetter( text )
+    text = tostring( text or "" )
+    -- skip leading colour tags such as [COLOR_YELLOW]
+    text = text:gsub( "^%s*%[COLOR_[%w_]+%]", "" )
+    -- name starts with a text icon: return the whole icon tag
+    local icon = text:match( "^%s*(%[ICON_[%w_]+%])" )
+    if icon then
+        return icon
+    end
+    -- otherwise the first (UTF-8 safe) character, uppercased
+    return Locale.ToUpper( text:match( "[%z\1-\127\194-\244][\128-\191]*" ) or text )
+end
+
 local function SetupSelectionList( itemList, selectionIM, cityOwnerID, getUnitPortraitIcon )
 	itemList:sort( SortSelectionList )
 	selectionIM.ResetInstances()
@@ -1209,7 +1223,16 @@ local function SetupSelectionList( itemList, selectionIM, cityOwnerID, getUnitPo
 		else
 			IconHookup( item.PortraitIndex, 45, item.IconAtlas, instance.Portrait )
 		end
-		instance.Name:SetText( itemDescription )
+
+		--original
+		--instance.Name:SetText( itemDescription )
+
+		--render text icon in front of name in list
+		--instance.Name:SetText( getUnitPortraitIcon and FirstLetter( itemDescription ) or itemDescription )
+
+		--for all
+		instance.Name:SetText( FirstLetter( itemDescription ) )
+
 		if not turnsLeft then
 		elseif turnsLeft > -1 and turnsLeft <= 999 then
 			instance.Turns:LocalizeAndSetText( turnsLeft )

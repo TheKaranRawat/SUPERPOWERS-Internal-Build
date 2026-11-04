@@ -155,11 +155,41 @@ MOVE SPECIAL UNITS TO PROJECTS
 PREVENT SPECIAL UNITS FROM SHOWING UP IN UI UNTIL PROJECT IS DONE
 enable work_boat again
 disable workers from building on water
+remove all militia
+remove 1 pop for every unit built
 
-FW_ICON_ATLAS_3			CIV_COLOR_ATLAS_FW_3
-29	4	0	3	33	30	27	28	25	26	21	19	6	32	17	7	16	5	21	19	18	31	15	10	9	8	12	11	13	14
-	BUILDING_FW_GENEJACK_FACILITY	29
+icon types
+	militia			fort			ICON_SHIELD		ICON_SWORD
+	infantry		helmet			
+	ranged			archery target
+	hit and run		sword
+	cavalry			horse
+	siege		 	cannon
 	
-UNIT_TSAR_BOMBA
-UNIT_ICBM_MISSILE
-UNIT_NUCLEAR_MISSILE
+	naval melee
+	naval hit and run
+	naval ranged
+	
+	air fighter
+	air bomber
+		
+	nuke			ICON_NUKE
+	special forces	ICON_SHIELD
+	
+	ICON_FONT_TEXTURE_ITG_AUTHORITY
+	
+	ICON_WONDER	ICON_SHIELD		ICON_SWORD
+	ICON_EYE	ICON_FIGHTER	ICON_EAGLE
+	ICON_NUKE	ICON_ANCHORS	ICON_ARTILLERY
+	ICON_RECON	ICON_DIVIDE		ICON_ANCHOR		ICON_EYE
+	ICON_LAWS	ICON_FORT	ICON_CROSSED	ICON_CAVALRY	
+	ICON_INFANTRY	ICON_RANGED
+	
+DISABLE MILITIA	
+	
+simplify 
+	land
+	sea
+	air
+	
+UNITED STATES SPAWNS AT SEA

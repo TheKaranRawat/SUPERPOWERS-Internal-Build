@@ -884,7 +884,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_ICBM_MISSILE">
-			<Text>Intercontinental Ballistic Missile (ICBM)</Text>
+			<Text>[ICON_NUKE] ICBM</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_ICBM_MISSILE_HELP">
@@ -911,11 +911,11 @@
 		
 
 		<Replace Tag="TXT_KEY_UNIT_WARRIOR">
-			<Text>[COLOR_MAGENTA]Warrior[ENDCOLOR]</Text>
+			<Text>[ICON_SHIELD] [COLOR_MAGENTA]Warrior[ENDCOLOR]</Text>
 		</Replace>
 		
 		<Row Tag="TXT_KEY_UNIT_MILITIA_ANCIENT">
-			<Text>[COLOR_MAGENTA]Militia[ENDCOLOR]</Text>
+			<Text>[ICON_SHIELD] [COLOR_MAGENTA]Militia[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MILITIA_ANCIENT_HEADING">
@@ -928,7 +928,7 @@
 
 		
 		<Replace Tag="TXT_KEY_UNIT_AMERICAN_MINUTEMAN">
-			<Text>[COLOR_MAGENTA]Minuteman[ENDCOLOR]</Text>
+			<Text>[ICON_SHIELD] [COLOR_MAGENTA]Minuteman[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_IROQUOIAN_MOHAWKWARRIOR">
 			<Text>[ICON_CAPITAL] [COLOR_MAGENTA]Mohawk Warrior[ENDCOLOR]</Text>
@@ -936,7 +936,7 @@
 		
 		
 		<Row Tag="TXT_KEY_UNIT_CONSCRIPTMAN">
-			<Text>[COLOR_MAGENTA]Conscript[ENDCOLOR]</Text>
+			<Text>[ICON_SHIELD] [COLOR_MAGENTA]Conscript[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CONSCRIPTMAN_HEADING">
@@ -948,7 +948,7 @@
 
 		
 		<Row Tag="TXT_KEY_UNIT_MILITIA_MODERN">
-			<Text>[COLOR_MAGENTA]Territorial Army[ENDCOLOR]</Text>
+			<Text>[ICON_SHIELD] [COLOR_MAGENTA]Territorial Army[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_MILITIA_MODERN_TEXT">
 			<Text>Territorial Armies serve as the auxillary modern national defense force.</Text>
@@ -978,7 +978,7 @@
 		
 		
 		<Row Tag="TXT_KEY_UNIT_NATIONAL_GUARD">
-			<Text>[COLOR_SELECTED_TEXT]The Imperial Guards[ENDCOLOR]</Text>
+			<Text>[ICON_IDEOLOGY_AUTOCRACY] [COLOR_SELECTED_TEXT]Imperial Guards[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NATIONAL_GUARD_HEADING">
@@ -989,7 +989,7 @@
 		</Row>
 
 		<Replace Tag="TXT_KEY_UNIT_FRENCH_MUSKETEER">
-			<Text>[COLOR_SELECTED_TEXT]Musketeers of the Guard[ENDCOLOR]</Text>
+			<Text>[ICON_IDEOLOGY_AUTOCRACY] [COLOR_SELECTED_TEXT]Musketeers of the Guard[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Replace>
 
@@ -1044,8 +1044,123 @@
 				The first sailing canoes emerged in ancient Polynesia over 1,000 years ago.The canoes were built from island materials such as plaited leaf sails, island woods, organic webbing.
 			</Text>
 		</Row>
+		<!-- TEXTICON -->
+		<Replace Tag="TXT_KEY_UNIT_ATOMIC_BOMB">
+			<Text>[ICON_NUKE] Atomic Bomb</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_NUCLEAR_MISSILE">
+			<Text>[ICON_NUKE] Nuclear Missile</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_CARAVEL">
+			<Text>[ICON_ANCHOR] Caravel</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_GALLEASS">
+			<Text>[ICON_ANCHOR]  Galleass</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_VENETIAN_GALLEASS">
+			<Text>[ICON_ANCHOR] Great Galleass</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_FRIGATE">
+			<Text>[ICON_ANCHOR] Frigate</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_ENGLISH_SHIPOFTHELINE">
+			<Text>[ICON_ANCHOR] Ship of the Line</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_IRONCLAD">
+			<Text>[ICON_ANCHOR] Ironclad</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_CARRIER">
+			<Text>[ICON_ANCHORS] Carrier</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_DESTROYER">
+			<Text>[ICON_ANCHOR] Destroyer</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SUBMARINE">
+			<Text>[ICON_ANCHOR] Submarine</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_NUCLEAR_SUBMARINE">
+			<Text>[ICON_ANCHOR] Nuclear Attack Submarine</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_ARCHAEOLOGIST">
+				<Text>[ICON_GREAT_WORK] Archaeologist</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SWEDISH_HAKKAPELIITTA">
+			<Text>[ICON_CAPITAL] Hakkapeliitta</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_FRENCH_FOREIGNLEGION">
+			<Text>[ICON_CAPITAL] Foreign Legion</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_HORSEMAN">
+			<Text>[ICON_CAVALRY] Horseman</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_BRUTE">
+			<Text>[ICON_HAPPINESS_4] Brute</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_AXMAN">
+			<Text>[ICON_HAPPINESS_4] Hand-Axe</Text>
+		</Replace>
 		
+		<Replace Tag="TXT_KEY_UNIT_WORK_BOAT">
+			<Text>[ICON_WORKER] Work Boat</Text>
+		</Replace>
 		
+		<Replace Tag="TXT_KEY_UNIT_SCOUT">
+			<Text>[ICON_RECON] Scout</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_ARCHER">
+			<Text>[ICON_RANGED] Archer</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SWORDSMAN">
+			<Text>[ICON_KNIGHT] Swordsman</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_SPEARMAN">
+			<Text>[ICON_KNIGHT] Spearman</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_TRIREME">
+			<Text>[ICON_ANCHOR] Trireme</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_CATAPULT">
+			<Text>[ICON_ARTILLERY] Catapult</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_CHARIOT_ARCHER">
+			<Text>[ICON_CROSSED] Chariot Archer</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_CANNON">
+			<Text>[ICON_ARTILLERY] Cannon</Text>
+		</Replace>
+		
+		<Replace Tag="TXT_KEY_UNIT_BATTLESHIP">
+			<Text>[ICON_ANCHORS] Battleship</Text>
+		</Replace>
+
+		<Replace Tag="TXT_KEY_UNIT_BOMBER">
+			<Text>[ICON_FIGHTER] Bomber</Text>
+		</Replace>
+
 		<!--<Row Tag="TXT_KEY_UNIT_SCOUT_HELICOPTER">
 			<Text>Scout Helicopter</Text>
 			<Plurality>2</Plurality>
@@ -1489,7 +1604,7 @@
 
 		<!-- *************************Sea Units****************************-->
 		<Row Tag="TXT_KEY_UNIT_NAVAL_MILITIA">
-			<Text>[COLOR_MAGENTA]Galley[ENDCOLOR]</Text>
+			<Text>[ICON_ANCHOR] [COLOR_MAGENTA]Galley[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NAVAL_MILITIA_HEADING">
@@ -1501,7 +1616,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_MONITOR_SHIP">
-			<Text>[COLOR_MAGENTA]Monitor[ENDCOLOR]</Text>
+			<Text>[ICON_ANCHOR] [COLOR_MAGENTA]Monitor[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_MONITOR_SHIP_HEADING">
@@ -1512,7 +1627,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_CORVETTE">
-			<Text>[COLOR_MAGENTA]Corvette[ENDCOLOR]</Text>
+			<Text>[ICON_ANCHOR] [COLOR_MAGENTA]Corvette[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CORVETTE_HEADING">
@@ -1523,7 +1638,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_LITTORAL_COMBAT_SHIP">
-			<Text>[COLOR_MAGENTA]Littoral Combat Ship[ENDCOLOR]</Text>
+			<Text>[ICON_ANCHOR] [COLOR_MAGENTA]Modern Corvette[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_LITTORAL_COMBAT_SHIP_HEADING">
@@ -1566,7 +1681,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_PROTECTED_CRUISER">
-			<Text>Protected Cruiser</Text>
+			<Text>[ICON_ANCHOR] Protected Cruiser</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PROTECTED_CRUISER_HEADING">
@@ -1607,7 +1722,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_LIGHT_IRONCLAD">
-			<Text>Light Ironclad</Text>
+			<Text>[ICON_ANCHOR] Light Ironclad</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_LIGHT_IRONCLAD_HEADING">
@@ -1619,7 +1734,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_HEAVY_CRUISER">
-			<Text>Heavy Cruiser</Text>
+			<Text>[ICON_ANCHOR] Heavy Cruiser</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HEAVY_CRUISER_HEADING">
@@ -1641,7 +1756,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_DIESEL_SUB">
-			<Text>Diesel-Electric Attack Submarine</Text>
+			<Text>[ICON_ANCHOR]  Diesel Attack Submarine</Text>
 			<Plurality>2</Plurality>
 		</Row>
 
@@ -1742,7 +1857,7 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_NUCLEAR_CARRIER">
-			<Text>Nuclear-powered Carrier</Text>
+			<Text>[ICON_ANCHORS] Nuclear-powered Carrier</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NUCLEAR_CARRIER_HEADING">
@@ -1768,7 +1883,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_FUTURE_BATTLESHIP">
-			<Text>Railgun Battleship</Text>
+			<Text>[ICON_ANCHORS] Railgun Battleship</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FUTURE_BATTLESHIP_HEADING">
@@ -1780,10 +1895,11 @@
 
 
 
-		<Row Tag="TXT_KEY_UNIT_SSBN">
-		<Text>Ballistic Missile Submarine (SSBN)</Text>
+	<Row Tag="TXT_KEY_UNIT_SSBN">
+		<Text>[ICON_ANCHOR] Ballistic Missile Submarine</Text>
 		<Plurality>2</Plurality>
 	</Row>
+	
 	<Row Tag="TXT_KEY_UNIT_SSBN_HELP">
 		<Text>Can carry up to 9 Nuclear Missiles.</Text>
 	</Row>
@@ -1801,7 +1917,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_MODERN_DESTROYER">
-		<Text>Guided-Missile Destroyer (DDG)</Text>
+		<Text>[ICON_ANCHOR] Missile Destroyer</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_MODERN_DESTROYER_HEADING">
@@ -1824,7 +1940,7 @@
 		
 
 	<Row Tag="TXT_KEY_UNIT_DREADNOUGHT">
-		<Text>Dreadnought</Text>
+		<Text>[ICON_ANCHORS] Dreadnought</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_DREADNOUGHT_HEADING">
@@ -1846,25 +1962,20 @@
 	</Row>
 
 	<Replace Tag="TXT_KEY_UNIT_BYZANTINE_DROMON">
-		<Text>Fire Ship</Text>
+		<Text>[ICON_ANCHOR] Fire Ship</Text>
 	</Replace>
+
 	<Replace Tag="TXT_KEY_CIV5_BYZANTINE_DROMON_TEXT">
 		<Text>A fire ship, used in the days of wooden Replaceed or sailing ships, was a ship filled with combustibles, deliberately set on fire and steered (or, where possible, allowed to drift) into an enemy fleet, in order to destroy ships, or to create panic and make the enemy break formation. </Text>
 	</Replace>
 
-
-		<Replace Tag="TXT_KEY_UNIT_NUCLEAR_SUBMARINE">
-			<Text>Nuclear-powered Attack Submarine</Text>
-		</Replace>
-
-
-		<Replace Tag="TXT_KEY_UNIT_HUN_BATTERING_RAM_STRATEGY">
+	<Replace Tag="TXT_KEY_UNIT_HUN_BATTERING_RAM_STRATEGY">
 		<Text>Battering Rams are a Hunnic unique unit replacing the Catapult. Use Battering Rams to knock down the defenses of a city. They have the Cover I promotion to keep them safe from ranged units; attack them with melee units to defeat them.</Text>
 	</Replace>
 
 
 	<Row Tag="TXT_KEY_UNIT_SLOOP_OF_WAR">
-		<Text>Sloop of War</Text>
+		<Text>[ICON_ANCHOR] Sloop of War</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	<Row Tag="TXT_KEY_UNIT_SLOOP_OF_WAR_HEADING">
@@ -1901,7 +2012,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_SUPER_CARRIER">
-		<Text>Supercarrier</Text>
+		<Text>[ICON_ANCHORS] Supercarrier</Text>
 	</Row>	
 	<Row Tag="TXT_KEY_UNIT_SUPER_CARRIER_TEXT">
 		<Text>The Super-Carrier is the nuclear age evolution of the Aircraft Carrier.</Text>
@@ -2129,7 +2240,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_EMP_BOMBER_AIR">
-		<Text>EMP Missile</Text>
+		<Text>[ICON_NUKE] EMP Missile</Text>
 		<Plurality>2</Plurality>
 	</Row>	
 	<Row Tag="TXT_KEY_UNIT_EMP_BOMBER_AIR_HEADING">
@@ -2182,7 +2293,7 @@
 	<!-- *************************New Recon Units****************************-->
 
 	<Row Tag="TXT_KEY_UNIT_EXPLORERX">
-		<Text>Explorer</Text>
+		<Text>[ICON_RECON] Explorer</Text>
 	</Row>
 	<!--<Row Tag="TXT_KEY_UNIT_EXPLORERX_STRATEGY">
 		<Text>
@@ -2216,7 +2327,7 @@
 
 
 	<Row Tag="TXT_KEY_UNIT_WWI_PARATROOPER">
-		<Text>[COLOR_SELECTED_TEXT]Paratrooper[ENDCOLOR]</Text>
+		<Text>[ICON_IDEOLOGY_AUTOCRACY] [COLOR_SELECTED_TEXT]Paratrooper[ENDCOLOR]</Text>
 	</Row>	
 	<Row Tag="TXT_KEY_UNIT_WWI_PARATROOPER_PEDIA">
 		<Text>Paratroopers are military parachutists — soldiers, marines, and others trained in parachuting into an operation and usually functioning as part of an airborne force. In World War II, paratroopers most often used parachutes of a round design. These parachutes could be steered to a small degree by pulling on the risers (four straps connecting the paratrooper's harness to the connectors) and suspension lines which attach to the parachute canopy itself. </Text>
@@ -2224,7 +2335,7 @@
 
 
 	<Replace Tag="TXT_KEY_UNIT_PARATROOPER">
-		<Text>[COLOR_SELECTED_TEXT]Special Forces[ENDCOLOR]</Text>
+		<Text>[ICON_IDEOLOGY_AUTOCRACY]  [COLOR_SELECTED_TEXT]Special Forces[ENDCOLOR]</Text>
 	</Replace>	
 	<Replace Tag="TXT_KEY_UNIT_PARATROOPER_STRATEGY">
 		<Text>The Airborne Forces is an advanced paradropping unit specially developed to breach enemy lines. This specialized infantry acts coupled with transport airplanes which allow them to use a Paradrop maneuver to instantly move up to 20 tiles into enemy territory (he has to start from friendly territory), and then it could even use its remaining moves to take up a suitable attack position. After earning the "Blitz" Promotion, it can attack in the same turn as paradropping.</Text>
@@ -2232,20 +2343,20 @@
 
 
 		<Replace Tag="TXT_KEY_UNIT_MARINE">
-			<Text>[COLOR_SELECTED_TEXT]Marine[ENDCOLOR]</Text>
+			<Text>[ICON_IDEOLOGY_AUTOCRACY] [COLOR_SELECTED_TEXT]Marine[ENDCOLOR]</Text>
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_UNIT_XCOM_SQUAD">
-			<Text>[COLOR_SELECTED_TEXT]Orbital Drop Shock Troopers[ENDCOLOR]</Text>
+			<Text>[ICON_IDEOLOGY_AUTOCRACY] [COLOR_SELECTED_TEXT]Orbital Drop Shock Troopers[ENDCOLOR]</Text>
 		</Replace>
 
 		<Row Tag="TXT_KEY_UNIT_SPACEMARINE">
-			<Text>[COLOR_SELECTED_TEXT]Space Marines[ENDCOLOR]</Text>
+			<Text>[ICON_IDEOLOGY_AUTOCRACY] [COLOR_SELECTED_TEXT]Space Marines[ENDCOLOR]</Text>
 		</Row>	
 
 	<!-- *************************New Hit-and-Run Units****************************-->
 	<Row Tag="TXT_KEY_UNIT_MEDIEVAL_CHARIOT">
-		<Text>Mounted Archer</Text>
+		<Text>[ICON_RECON] Mounted Archer</Text>
 		<Plurality>2</Plurality>
 	</Row>
 	
@@ -2298,7 +2409,7 @@
 	</Replace>
 
 	<Replace Tag="TXT_KEY_UNIT_MISSILE_CRUISER">
-		<Text>Guided-Missile Cruiser (CG)</Text>
+		<Text>[ICON_ANCHOR] Missile Cruiser</Text>
 	</Replace>	
 
 	<Replace Tag="TXT_KEY_UNIT_HELP_MISSILE_CRUISER">
@@ -2652,7 +2763,7 @@
 	<Language_en_US>
 
 		<Row Tag="TXT_KEY_UNIT_SPARTAN300">
-			<Text>[COLOR_YELLOW]Elite Infantry[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Elite Infantry[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_ELITE_NAME_SPARTAN300">
@@ -2673,7 +2784,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_NUMIDIAN">
-			<Text>[COLOR_YELLOW]Elite Light Cavalry[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Elite Light Cavalry[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_ELITE_NAME_NUMIDIAN">
@@ -2695,7 +2806,7 @@
 
 
 		<Replace Tag="TXT_KEY_UNIT_ENGLISH_LONGBOWMAN">
-			<Text>[COLOR_YELLOW]Longbowman[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Longbowman[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_LONGBOWMAN">
@@ -2708,7 +2819,7 @@
 		
 		
 		<Replace Tag="TXT_KEY_UNIT_GERMAN_LANDSKNECHT">
-			<Text>[COLOR_YELLOW]Landsknecht[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD]  [COLOR_YELLOW]Landsknecht[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_LANDSKNECHT">
@@ -2732,7 +2843,7 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_ELITE_RIDER">
-			<Text>[COLOR_YELLOW]Elite Rider[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Elite Rider[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_ELITE_NAME_ELITE_RIDER">
@@ -2769,7 +2880,7 @@
 
 
 		<Replace Tag="TXT_KEY_CIV5_KOREA_HWACHA_HEADING">
-			<Text>[COLOR_YELLOW]Multiple Rocket Launcher[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Multiple Rocket Launcher[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Replace>
 		<Row Tag="TXT_KEY_ELITE_NAME_KOREA_HWACHA">
@@ -2785,7 +2896,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_ZHENGHE_FLEET">
-			<Text>[COLOR_YELLOW]Zheng He's Fleet[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Zheng He's Fleet[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>		
 		<Row Tag="TXT_KEY_UNIT_HELP_ZHENGHE_FLEET">
@@ -2803,7 +2914,7 @@
 
 
 		<Replace Tag="TXT_KEY_UNIT_DANISH_SKI_INFANTRY">
-			<Text>[COLOR_YELLOW]Ski Infantry[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Ski Infantry[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_CIV5_DENMARK_SKI_INFANTRY_HELP">
 			<Text>Elite Infantry Unit which has great bonus fighting in snow, tundra, or hills. [NEWLINE][NEWLINE]Requires Ski Infantry Training Project. Cannot be purchased. You can build as many as you want.</Text>
@@ -2814,7 +2925,7 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_PROTOTYPE_SUBMARINE">
-			<Text>[COLOR_YELLOW]Prototype Submarine[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Prototype Submarine[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_ELITE_NAME_PROTOTYPE_SUBMARINE">
@@ -2838,7 +2949,7 @@
 		
 		
 		<Row Tag="TXT_KEY_UNIT_SUPER_HOWITZER">
-			<Text>[COLOR_YELLOW]Super Howitzer[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Super Howitzer[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_ELITE_NAME_SUPER_HOWITZER">
@@ -2860,7 +2971,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_PROTOTYPE_AIRSHIP">
-			<Text>[COLOR_YELLOW]Airship Carrier[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Airship Carrier[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_PROTOTYPE_AIRSHIP_HELP">
@@ -2883,7 +2994,7 @@
 
 
 		<Replace Tag="TXT_KEY_UNIT_LAND_IRONCLAD">
-			<Text>[COLOR_YELLOW]Prototype Tank[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Prototype Tank[ENDCOLOR]</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_LAND_IRONCLAD_HELP">
@@ -2898,7 +3009,7 @@
 
 
 		<Replace Tag="TXT_KEY_UNIT_RUSSIAN_COSSACK">
-			<Text>[COLOR_YELLOW]Cossack Militia[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Cossack Militia[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_COSSACK">
 			<Text>Elite mercenary militia unit. Can only be purchased in the city and can move after purchase. [NEWLINE][NEWLINE]Requires Elite Militia Project. You can purchase as many as you want.</Text>
@@ -2912,7 +3023,7 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_ELITE_SNIPER">
-			<Text>[COLOR_YELLOW]Sniper Elite[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Sniper Elite[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_ELITE_SNIPER">
@@ -2929,7 +3040,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_ELITE_BATTLECRUISER">
-			<Text>[COLOR_YELLOW]Bismarck[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Bismarck[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_ELITE_BATTLECRUISER">
@@ -2946,7 +3057,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_SR71_BLACKBIRD">
-			<Text>[COLOR_YELLOW]SR-71 Blackbird[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]SR-71 Blackbird[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_SR71_BLACKBIRD">
@@ -2970,7 +3081,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_SUPER_TANK">
-			<Text>[COLOR_YELLOW]Panzer VIII Maus[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Panzer VIII Maus[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_SUPER_TANK">
@@ -2994,7 +3105,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_SUPER_BATTLESHIP">
-			<Text>[COLOR_YELLOW]Yamato[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Yamato[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_SUPER_BATTLESHIP">
@@ -3012,7 +3123,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_PROTOTYPE_BOMBER">
-			<Text>[COLOR_YELLOW]Horten Ho 229[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Horten Ho 229[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_ELITE_NAME_PROTOTYPE_BOMBER">
@@ -3034,7 +3145,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_TSAR_BOMBA">
-			<Text>[COLOR_YELLOW]Tsar Bomba[ENDCOLOR]</Text>
+			<Text>[ICON_NUKE] [COLOR_YELLOW]Tsar Bomba[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_TSAR_BOMBA">
@@ -3048,7 +3159,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_NUCLEAR_ARTILLERY">
-			<Text>[COLOR_YELLOW]2A3 Kondensator[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]2A3 Kondensator[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_NUCLEAR_ARTILLERY">
@@ -3065,7 +3176,7 @@
 		</Row>
 
 		<Replace Tag="TXT_KEY_UNIT_BAZOOKA">
-			<Text>[COLOR_YELLOW]M-29 Davy Crockett[ENDCOLOR]</Text>
+			<Text>[ICON_NUKE] [COLOR_YELLOW]M-29 Davy Crockett[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNIT_HELP_BAZOOKA">
 			<Text>A tactical nuclear device launching a rocket with nuclear warhead, which can destroy any single unit in one-hit. The shooter himself will also be killed in the explosion. [NEWLINE][NEWLINE]Requires Tactical Nuclear Recoilless Gun Project. Only one can exist in the world. </Text>
@@ -3082,7 +3193,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_UNDERWATER_CARRIER">
-			<Text>[COLOR_YELLOW]SSV-1 Hydra[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]SSV-1 Hydra[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_UNDERWATER_CARRIER_HELP">
@@ -3103,7 +3214,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_CRUSADER_ARTILLERY">
-			<Text>[COLOR_YELLOW]XM2001 Crusader[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]XM2001 Crusader[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CRUSADER_ARTILLERY_HELP">
@@ -3122,7 +3233,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_STEALTH_HELICOPTER">
-			<Text>[COLOR_YELLOW]RAH-66 Comanche[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]RAH-66 Comanche[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_STEALTH_HELICOPTER_HELP">
@@ -3140,7 +3251,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_TASKFORCE_141">
-			<Text>[COLOR_YELLOW]Task Force 141[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Task Force 141[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_TASKFORCE_141">
@@ -3192,7 +3303,7 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_PAKFA_T50">
-			<Text>[COLOR_YELLOW]PAK FA T-50[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]PAK FA T-50[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_PAKFA_T50">
@@ -3210,7 +3321,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_CHINESE_WEISHI">
-			<Text>[COLOR_YELLOW]WS-64 Weishi MLRS[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]WS-64 Weishi MLRS[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CHINESE_WEISHI_HEADING">
@@ -3228,7 +3339,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UNIT_HACKER">
-			<Text>[COLOR_YELLOW]Super Hacker[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Super Hacker[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_HACKER">
@@ -3244,7 +3355,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_PARTICLE_CANNON">
-			<Text>[COLOR_YELLOW]Juggernaut[ENDCOLOR]</Text>
+			<Text>[ICON_SWORD] [COLOR_YELLOW]Juggernaut[ENDCOLOR]</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_HELP_PARTICLE_CANNON">
@@ -5549,7 +5660,7 @@
 		-->
 
 		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE">
-			<Text>Hypersonic Missile</Text>
+			<Text>[ICON_NUKE] Hypersonic Missile</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_FW_HYPERMISSILE_TEXT">
 			<Text>Improvements in nanomaterials engineering and propulsion technologies lead to a leap forwards in the design of guided missiles. Utilizing ramjet engines with extra-lightweight frames, this new generation of missiles was capable of reaching hypersonic speeds, allowing them to strike from further away before a response could be made.</Text>

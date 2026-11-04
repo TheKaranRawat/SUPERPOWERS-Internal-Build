@@ -404,8 +404,8 @@
 
 			<Box ID="DisabledProduction" Color="0,0,0,153" Size="36,36" Anchor="L,B" Hidden="1"/>
 			<Image ID="Portrait" Anchor="L,C" Offset="-4,0" Texture="WonderAtlas360.dds" Size="45,45" />
-			<Label ID="Name" Anchor="L,C" Offset="42,-8" Font="TwCenMT18" Hidden="1"/>
-			<Label ID="Turns" Anchor="L,C" Offset="4,13" Font="TwCenMT14"/>
+			<Label ID="Name" Anchor="L,C" Offset="15,9" Font="TwCenMT18" Hidden="0"/>
+			<Label ID="Turns" Anchor="L,C" Offset="2,13" Font="TwCenMT14"/>
 			<Box ID="Disabled" Color="0,0,0,153" Size="36,39" Anchor="L,B" Hidden="1"/>
 
 			<Stack Anchor="R,B" StackGrowth="L" Hidden="1">
