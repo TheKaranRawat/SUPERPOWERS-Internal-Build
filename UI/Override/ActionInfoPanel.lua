@@ -130,6 +130,25 @@ local function SetEndTurnFlashing ( flashingState )
 	Controls.EndTurnButtonMouseOverAlpha:SetHide( flashingState == FLASHING_END_TURN )
 end
 
+local format = string.format
+--[[ format numbers ]]
+local function FormatK( n )
+	local sign = ""
+	if n < 0 then
+		sign = "-"
+		n = -n
+	end
+	local s
+	if n >= 1000000 then
+		s = format( "%.1f", floor( n / 100000 ) / 10 ):gsub( "%.0$", "" ) .. "M"
+	elseif n >= 1000 then
+		s = format( "%.1f", floor( n / 100 ) / 10 ):gsub( "%.0$", "" ) .. "K"
+	else
+		s = format( "%i", floor( n ) )
+	end
+	return sign .. s
+end
+
 local function GotoPlot( plot )
 	if plot and not g_leaderMode then
 		UI.LookAt( plot )
@@ -1373,7 +1392,8 @@ local function UpdateCivList()
 					local goldRate = player:CalculateGoldRate()
 					if deal:IsPossibleToTradeItem( playerID, activePlayerID, TradeableItems.TRADE_ITEM_GOLD, 1 ) then -- includes DoF check
 						gold = player:GetGold()
-						instance.Gold:SetText( "[COLOR_YELLOW]" .. gold .. "[/COLOR]" )	--[ICON_GOLD]
+						gold2 = FormatK ( gold )
+						instance.Gold:SetText( "[COLOR_YELLOW]" .. gold2 .. "[/COLOR]" )	--[ICON_GOLD]
 					else
 						instance.Gold:SetText()
 						if not deal:IsPossibleToTradeItem( playerID, activePlayerID, TradeableItems.TRADE_ITEM_GOLD_PER_TURN, 1 ) then
