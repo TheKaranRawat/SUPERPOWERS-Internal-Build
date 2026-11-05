@@ -541,12 +541,13 @@ end
 -- Input handling
 ----------------------------------------------------------------
 ContextPtr:SetInputHandler(
+
 function( uiMsg, wParam )--, lParam )
 	if uiMsg == KeyEvents.KeyDown then
 		if wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN then
 			--if Controls.SellBuildingConfirm:IsHidden() then
-				--ExitCityScreen()
-				Events.SerialEventExitCityScreen();
+				ExitCityScreen()
+				--Events.SerialEventExitCityScreen();
 			--else
 			--	CancelBuildingSale()
 			--end
@@ -558,6 +559,17 @@ function( uiMsg, wParam )--, lParam )
 			GotoNextCity()
 			return true
 		end
+	end
+	return false
+end)
+
+ContextPtr:SetInputHandler(
+function( uiMsg, wParam )
+	if uiMsg == KeyEvents.KeyDown then
+		-- ...existing key handling...
+	elseif uiMsg == MouseEvents.RButtonUp then
+		ExitCityScreen()
+		return true
 	end
 	return false
 end)
@@ -1273,6 +1285,8 @@ local g_SelectionListCallBacks = {
 					Game.CityPushOrder( city, orderID, itemID, UI.AltKeyDown(), UI.ShiftKeyDown(), not UI.CtrlKeyDown() )
 					Events.SpecificCityInfoDirty( cityOwnerID, city:GetID(), CityUpdateTypes.CITY_UPDATE_TYPE_BANNER )
 					Events.SpecificCityInfoDirty( cityOwnerID, city:GetID(), CityUpdateTypes.CITY_UPDATE_TYPE_PRODUCTION )
+					
+					--[[ disable so production popup doesn't auto close after a single entry 
 					if g_isButtonPopupChooseProduction then
 						-- is there another city without production order ?
 						for cityX in g_activePlayer:Cities() do
@@ -1284,6 +1298,8 @@ local g_SelectionListCallBacks = {
 						-- all cities are producing...
 						return ExitCityScreen()
 					end
+					]]--
+
 				end
 			end
 		end,

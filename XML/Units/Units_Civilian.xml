@@ -63,7 +63,8 @@
 			<Class>UNITCLASS_WORKBOAT</Class>
 			<Type>UNIT_WORKBOAT</Type>
 			<PrereqTech>TECH_SAILING</PrereqTech>
-			<Cost>50</Cost>
+			<!-- disable -->
+			<Cost>-1</Cost>
 			<Moves>4</Moves>
 			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_LOW</CivilianAttackPriority>
 			<Domain>DOMAIN_SEA</Domain>

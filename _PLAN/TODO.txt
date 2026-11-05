@@ -194,8 +194,9 @@ FIX BALANCE
 FIX FW WONDERS
 CHANGE PROJECT ICON
 SWITCH PROJECTS TO OTHER CATEGORY
+
 fish improvements automatic from building
-resource demanded wltkd overlap
+	resource demanded wltkd overlap
 right side leader gold k and m
 change crusader icon to sword and shield
 disable glowing/jingling sound
@@ -205,6 +206,14 @@ over_resource -> overconsumption of resource
 supply tooltip
 stop ai galley spam
 reduce default civs per map size
+adjust number of default CS
+CS defences by default
+reduce pantheons
+religions that can be founded
+AUTOMATE MILITARY UNITS
+SELECT QUEUE ON PRODUCTION POPUP
+RIGHT CLICK CLOSE POPUPS
+TOOLTIP TIME
 	
 UNITED STATES SPAWNS AT SEA
 

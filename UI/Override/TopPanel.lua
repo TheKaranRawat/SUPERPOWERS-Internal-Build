@@ -131,6 +131,8 @@ local function Colorize( x )
 	end
 end
 
+
+--[[ format numbers ]]
 local function FormatK( n )
 	local sign = ""
 	if n < 0 then

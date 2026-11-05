@@ -31,52 +31,54 @@
 				<TextureBar ID="CultureMeter" Anchor="C,C" Offset="0,-1" Size="46.52" Texture="MeterBarCultureBorder.dds" Direction="Up" />
 			</Image>
 
-	<Grid ID="CityInfoBG" Size="390,130" ConsumeMouse="1" Anchor="C,T" Offset="-2,37" Style="Grid9DetailSix140" Hidden="0" >
+	<!-- GridBlackIndent8 -->
+	<Grid ID="CityInfoBG" Size="390,60" ConsumeMouse="1" Anchor="C,T" Offset="0,77" Color="0,0,0,160"  Hidden="0" >
+		<Grid Anchor="C.C" Size="396,66" Style="Grid9Frame" ID="CityInfoFrame" />
 		<!-- CITY INFORMATION LABEL -->
 		<Label Anchor="C,T" Offset="0,18" String="TXT_KEY_CITYVIEW_CITYINFO_TEXT" Hidden="1"/>
 
 		
 
-		<Stack Anchor="C,T" Offset="10,67" StackGrowth="Right" >
+		<Stack Anchor="C,T" Offset="8,30" StackGrowth="Right" >
 			
 			<!-- Food Info -->
-			<Button ID="FoodBox" Size="70,20">
+			<Button ID="FoodBox" Size="80,20">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_FOOD]"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_FOOD_TEXT" Font="TwCenMT18" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="FoodPerTurnLabel" Offset="7,0" Anchor="L,C" String="" Font="TwCenMT18" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="FoodPerTurnLabel" Offset="4,0" Anchor="L,C" String="" Font="TwCenMT18" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
 				
 			</Button>
 			<!-- Gold Info -->
-			<Button ID="GoldBox" Size="70,20">
+			<Button ID="GoldBox" Size="75,20">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_GOLD]"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_GOLD_TEXT" Font="TwCenMT18" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="GoldPerTurnLabel" Offset="7,0" Anchor="L,C" String="" Color0="Gold.255" Font="TwCenMT18" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="GoldPerTurnLabel" Offset="4,0" Anchor="L,C" String="" Color0="Gold.255" Font="TwCenMT18" Color1="0.0.0.128" Color2="255.255.200.255"/>
 				
 			</Button>
 			<!-- Science Info -->
-			<Button ID="ScienceBox" Size="80,20">
+			<Button ID="ScienceBox" Size="75,20">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_RESEARCH]"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_RESEARCH_TEXT" Font="TwCenMT18" Color0="Science.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="SciencePerTurnLabel" Offset="7,0" Anchor="L,C" String="" Color0="Science.255" Font="TwCenMT18" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="SciencePerTurnLabel" Offset="4,0" Anchor="L,C" String="" Color0="Science.255" Font="TwCenMT18" Color1="0.0.0.128" Color2="255.255.200.255"/>
 				
 			</Button>
 			<!-- Faith Info -->
-			<Button ID="FaithBox" Size="60,20">
+			<Button ID="FaithBox" Size="75,20">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_PEACE]"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_FAITH_TEXT" Font="TwCenMT18"/>
-				<Label ID="FaithPerTurnLabel" Offset="7,0" Anchor="L,C" Font="TwCenMT18" String=""/>
+				<Label ID="FaithPerTurnLabel" Offset="4,0" Anchor="L,C" Font="TwCenMT18" String=""/>
 			</Button>
 			<!-- Tourism Info -->
-			<Button ID="TourismBox" Size="70,20" Hidden="1">
+			<Button ID="TourismBox" Size="75,20" Hidden="1">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_TOURISM"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_TOURISM_TEXT" Font="TwCenMT18"/>
-				<Label ID="TourismPerTurnLabel" Offset="7,0" Anchor="L,C" Font="TwCenMT18" String=""/>
+				<Label ID="TourismPerTurnLabel" Offset="4,0" Anchor="L,C" Font="TwCenMT18" String=""/>
 			</Button>
 			<!-- Culture Info NotificationTileFrame -->
-			<Button ID="CultureBox" Size="70,20">
+			<Button ID="CultureBox" Size="75,20">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_CULTURE]"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_CULTURE_TEXT" Font="TwCenMT18" Color0="Culture.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="CulturePerTurnLabel" Offset="7,0" Anchor="L,C" String="" Font="TwCenMT18" Color0="Culture.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="CulturePerTurnLabel" Offset="4,0" Anchor="L,C" String="" Font="TwCenMT18" Color0="Culture.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
 				
 			</Button>
 
