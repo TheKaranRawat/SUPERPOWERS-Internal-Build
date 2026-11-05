@@ -3645,13 +3645,13 @@
 			<Text>Close Quarters Battle I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CQB_COMBAT_1_HELP">
-			<Text>When defending, if the attacker's HP is less than 80, the attacker will lose all [ICON_MOVES] MP after attacking this unit.</Text>
+			<Text>Grants +30HP after defeating an enemy unit.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CQB_COMBAT_2">
 			<Text>Close Quarters Battle II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CQB_COMBAT_2_HELP">
-			<Text>When defending, the attacker will lose all [ICON_MOVES] MP after attacking this unit.</Text>
+			<Text>Grants +30HP after defeating an enemy unit.</Text>
 		</Row>
 		
 
@@ -3686,19 +3686,19 @@
 			<Text>Charge I</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_CHARGE_1_HELP" >
-			<Text>If the enemy unit attacked by this unit withdraws, this unit +1 [ICON_MOVES] MP for this turn.</Text>
+			<Text>Grants +20% Flanking bonus. Attacking a surrounded unit deals more damage.</Text>
 		</Replace>
 		<Row Tag="TXT_KEY_PROMOTION_CHARGE_2">
 			<Text>Charge II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CHARGE_2_HELP" >
-			<Text>[ICON_BULLET]If the enemy unit attacked by this unit withdraws, cause 100% damage to the another unit in the same tile with the enemy unit attacked.[NEWLINE][ICON_BULLET]The withdrawn enemy unit will receive additional 10 HP damage</Text>
+			<Text>Grants +20% Flanking bonus. Attacking a surrounded unit deals more damage.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CHARGE_3">
 			<Text>Charge III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CHARGE_3_HELP" >
-			<Text>[ICON_BULLET]If the enemy unit attacked by this unit withdraws, cause 150% damage to the another unit in the same tile with the enemy unit attacked.[NEWLINE][ICON_BULLET]The withdrawn enemy unit will receive additional 20 HP damage</Text>
+			<Text>Grants +20% Flanking bonus. Attacking a surrounded unit deals more damage.</Text>
 		</Row>
 
 
@@ -3787,13 +3787,13 @@
 
 
 		<Replace Tag="TXT_KEY_PROMOTION_BARRAGE_1_HELP" >
-			<Text>[ICON_BULLET]If the Target Unit's HP is less than 60 after this attack, its [ICON_MOVES] MP will reduce to 1 for the next turn. [NEWLINE][ICON_BULLET]One more Suppression shot will make it lose all [ICON_MOVES] MP and suffers -1 [ICON_MOVES] MP Penalty for the next turn. It won't recover until HP is full.</Text>
+			<Text>+20% Strength when adjacent to a friendly unit.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BARRAGE_2_HELP" >
-			<Text>[ICON_BULLET]If the Target Unit's HP is less than 75 after this attack, its [ICON_MOVES] MP will reduce to 1 for the next turn. [NEWLINE][ICON_BULLET]One more Suppression shot will make it lose all [ICON_MOVES] MP and suffers -1 [ICON_MOVES] MP Penalty for the next turn. It won't recover until HP is full.</Text>
+			<Text>+20% Strength when adjacent to a friendly unit.</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_BARRAGE_3_HELP" >
-			<Text>[ICON_BULLET]If the Target Unit's HP is less than 90 after this attack, its [ICON_MOVES] MP will reduce to 1 for the next turn. [NEWLINE][ICON_BULLET]One more Suppression shot will make it lose all [ICON_MOVES] MP and suffers -1 [ICON_MOVES] MP Penalty for the next turn. It won't recover until HP is full.</Text>
+			<Text>+20% Strength when adjacent to a friendly unit.</Text>
 		</Replace>
 
 
@@ -3801,13 +3801,13 @@
 			<Text>Fire Support I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FIRESUPPORT_UNIT_1_HELP">
-			<Text>When Stacking with an [COLOR_POSITIVE_TEXT]Infantry Unit[ENDCOLOR], [COLOR_POSITIVE_TEXT]Counter Unit[ENDCOLOR] or [COLOR_POSITIVE_TEXT]Citadel Unit[ENDCOLOR], this unit will automatically launch a Counter-attack at the enemy unit when this Tile is attacked by an enemy [COLOR_POSITIVE_TEXT]Melee[ENDCOLOR] Unit. [NEWLINE][ICON_BULLET]Times of Counter-attack in one turn is Unlimited.[NEWLINE][ICON_BULLET]If your stacked unit is killed in the combat, the Counter-attack cannot be performed.</Text>
+			<Text>Nearby units gain a +10% combat strength modifier.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FIRESUPPORT_UNIT_2">
 			<Text>Fire Support II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_FIRESUPPORT_UNIT_2_HELP">
-			<Text>The Counter-attack is also available even the attacking enemy is a [COLOR_POSITIVE_TEXT]Ranged Unit[ENDCOLOR] as long as the enemy unit is within the shooting range of this unit.</Text>
+			<Text>Nearby units gain a +10% combat strength modifier.</Text>
 		</Row>
 
 
@@ -3884,19 +3884,19 @@
 			<Text>Shock I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_1_HELP">
-			<Text>If the Target Unit's HP is less than 60 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Defending[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50% )</Text>
+			<Text>Reduced nearby enemy strength by 10%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_2">
 			<Text>Shock II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_2_HELP">
-			<Text>If the Target Unit's HP is less than 75 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Defending[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50% )</Text>
+			<Text>Reduced nearby enemy strength by 10%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_3">
 			<Text>Shock III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUNDER_3_HELP">
-			<Text>If the Target Unit's HP is less than 90 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Defending[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50% )</Text>
+			<Text>Reduced nearby enemy strength by 10%</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_HUNTDOWN_1">
@@ -3931,7 +3931,7 @@
 			<Text>Siege I</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_VOLLEY_HELP" >
-			<Text>+100% [ICON_RANGE_STRENGTH] Ranged Combat Strength VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR], [COLOR_POSITIVE_TEXT]Citadels[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].</Text>
+			<Text>+50% [ICON_RANGE_STRENGTH] Ranged Combat Strength VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR], [COLOR_POSITIVE_TEXT]Citadels[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].</Text>
 		</Replace>
 		<Row Tag="TXT_KEY_PROMOTION_VOLLEY_2">
 			<Text>Siege II</Text>
@@ -3946,19 +3946,19 @@
 			<Text>Concentrated Fire I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_1_HELP" >
-			<Text>[ICON_BULLET]+33% Damage to other units in the target plot. [NEWLINE][ICON_BULLET]If the Target Unit's HP is less than 60 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Attacking[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50%). It won't apply to other units suffered from collateral damage.</Text>
+			<Text>[ICON_BULLET]Grants +30% Ranged Damage</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_2">
 			<Text>Concentrated Fire II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_2_HELP" >
-			<Text>[ICON_BULLET]+33% Damage to other units in the target plot. [NEWLINE][ICON_BULLET]If the Target Unit's HP is less than 75 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Attacking[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50%). It won't apply to other units suffered from collateral damage.</Text>
+			<Text>[ICON_BULLET]Grants +30% Ranged Damage</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_3">
 			<Text>Concentrated Fire III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_3_HELP" >
-			<Text>[ICON_BULLET]+34% Damage to other units in the target plot. [NEWLINE][ICON_BULLET]If the Target Unit's HP is less than 90 after this attack, the target unit suffers -25% [ICON_STRENGTH] Combat Strength when [COLOR_POSITIVE_TEXT]Attacking[ENDCOLOR] and it won't recover until HP is full. (This effect can be multiplied to -50%). It won't apply to other units suffered from collateral damage.</Text>
+			<Text>[ICON_BULLET]Grants +30% Ranged Damage</Text>
 		</Row>
 
 
@@ -3981,13 +3981,13 @@
 			<Text>Overwhelming Firepower  I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CLUSTER_ROCKET_1_HELP">
-			<Text>Area of Effect damage +25%.</Text>
+			<Text>Strengthens ranged attacks by +50%</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CLUSTER_ROCKET_2">
 			<Text>Overwhelming Firepower II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CLUSTER_ROCKET_2_HELP">
-			<Text>Area of Effect damage +25% .</Text>
+			<Text>Strengthens ranged attacks by +50%</Text>
 		</Row>
 		
 		
@@ -4326,19 +4326,19 @@
 			<Text>Surgical Strike I</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_AIR_TARGETING_1_HELP" >
-			<Text>When attacking a city. Cause 20 Hp Damage to all enemy [COLOR_POSITIVE_TEXT]Garrisoned Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Aircraft[ENDCOLOR] inside the Target City.</Text>
+			<Text>Heals +30HP after destroying an enemy unit</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_AIR_TARGETING_2" >
 			<Text>Surgical Strike II</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_AIR_TARGETING_2_HELP" >
-			<Text>When attacking a city. Cause 30 Hp Damage to all enemy [COLOR_POSITIVE_TEXT]Garrisoned Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Aircraft[ENDCOLOR] inside the Target City.</Text>
+			<Text>Heals +30HP after destroying an enemy unit</Text>
 		</Replace>
 		<Row Tag="TXT_KEY_PROMOTION_AIR_TARGETING_3">
 			<Text>Surgical Strike III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_AIR_TARGETING_3_HELP">
-			<Text>When attacking a city. Cause 40 Hp Damage to all enemy [COLOR_POSITIVE_TEXT]Garrisoned Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Aircraft[ENDCOLOR] inside the Target City.</Text>
+			<Text>Heals +30HP after destroying an enemy unit</Text>
 		</Row>
 
 		<!--<Replace Tag="TXT_KEY_PROMOTION_AIR_AMBUSH_1_HELP" >
@@ -4363,19 +4363,19 @@
 			<Text>Firebombing I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_1_HELP">
-			<Text>Kill 10% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the Target City. (Kill only 5% if the city has a bomb shelter)</Text>
+			<Text>Grants +25% Ranged Strength</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_2">
 			<Text>Firebombing II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_2_HELP">
-			<Text>Kill 20% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the Target City. (Kill only 10% if the city has a bomb shelter)</Text>
+			<Text>Grants +25% Ranged Strength</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_3">
 			<Text>Firebombing III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_NAPALMBOMB_3_HELP">
-			<Text>Kill 30% [COLOR_POSITIVE_TEXT]Citizens[ENDCOLOR] per attack in the [COLOR_POSITIVE_TEXT]Target City[ENDCOLOR]. (Kill only 15% if the city has a bomb shelter)</Text>
+			<Text>Grants +25% Ranged Strength</Text>
 		</Row>
 
 
@@ -4390,13 +4390,13 @@
 		</Replace>
 
 		<Replace Tag="TXT_KEY_PROMOTION_AIR_SIEGE_1_HELP" >
-			<Text>Destroy 1 Military Building per attack in the [COLOR_POSITIVE_TEXT]Target City[ENDCOLOR].</Text>
+			<Text>+25% Ranged Strength vs Cities</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_AIR_SIEGE_2_HELP" >
-			<Text>Destroy 1 Power Plant Building per attack in the [COLOR_POSITIVE_TEXT]Target City[ENDCOLOR].</Text>
+			<Text>+25% Ranged Strength vs Cities</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_PROMOTION_AIR_SIEGE_3_HELP" >
-			<Text>Destroy 1 Production Building per attack in the [COLOR_POSITIVE_TEXT]Target City[ENDCOLOR].</Text>
+			<Text>+25% Ranged Strength vs Cities</Text>
 		</Replace>
 
 
@@ -4404,14 +4404,14 @@
 			<Text>Supply Strike I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_DESTROY_SUPPLY_1_HELP">
-			<Text>The Target [COLOR_POSITIVE_TEXT]Enemy Unit[ENDCOLOR] will suffer -20 Hp if Ends Turn outside of Friendly Territory, no matter how much damage dealt. The Target Enemy Unit won't recover until its HP is full.</Text>
+			<Text>Grants +33% combat strength on Air Sweeps</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_DESTROY_SUPPLY_2">
 			<Text>Supply Strike II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_DESTROY_SUPPLY_2_HELP">
-			<Text>The Target Enemy Unit and all [COLOR_POSITIVE_TEXT]Adjacent[ENDCOLOR] Enemy Units will suffer -20 Hp if Ends Turn outside of Friendly Territory, no matter how much damage dealt. Those Enemy Units won't recover until their HP is full.</Text>
+			<Text>Grants +33% combat strength on Air Sweeps</Text>
 		</Row>
 
 
@@ -4722,13 +4722,13 @@
 			<Text>Sudden Strike I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_1_HELP">
-			<Text>The Target [COLOR_POSITIVE_TEXT]Enemy Unit[ENDCOLOR] will suffer -20 Hp if Ends Turn outside of Friendly Territory, no matter how much damage dealt. The Target Enemy Unit won't recover until its HP is full.</Text>
+			<Text>Grants +25% Ranged Strength</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_2">
 			<Text>Sudden Strike II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_2_HELP">
-			<Text>When attacking a city. Cause 20 Hp Damage to all enemy [COLOR_POSITIVE_TEXT]Garrisoned Units[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Aircraft[ENDCOLOR] inside the Target City.</Text>
+			<Text>Grants +25% Ranged Strength</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SORTIE">

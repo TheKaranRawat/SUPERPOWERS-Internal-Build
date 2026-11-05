@@ -1,4 +1,4 @@
-UPDATE Automates SET HotKey = 'KB_A' WHERE Type = 'AUTOMATE_BUILD';					--A => Z
+UPDATE Automates SET HotKey = 'KB_Q' WHERE Type = 'AUTOMATE_BUILD';					--A => Z
 UPDATE Builds SET HotKey = '' WHERE Type = 'BUILD_ACADEMY';							--A => NULL
 --UPDATE Builds SET HotKey = 'KB_A' WHERE Type = 'BUILD_ARCHAEOLOGY_DIG';			--Ctrl+A
 --UPDATE Builds SET CtrlDown = 1 WHERE Type = 'BUILD_ARCHAEOLOGY_DIG';
