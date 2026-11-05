@@ -1492,10 +1492,6 @@
 			<PromotionType>PROMOTION_NO_CASUALTIES</PromotionType>
 		</Row>
 		<Row>
-			<UnitType>UNIT_TACTICAL_NUCLEAR_MISSILE</UnitType>
-			<PromotionType>PROMOTION_NO_CASUALTIES</PromotionType>
-		</Row>		
-		<Row>
 			<UnitType>UNIT_EMP_BOMBER_AIR</UnitType>
 			<PromotionType>PROMOTION_EMP_ATTACK</PromotionType>
 		</Row>
