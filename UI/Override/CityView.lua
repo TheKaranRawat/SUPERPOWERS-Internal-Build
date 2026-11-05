@@ -609,6 +609,10 @@ end
 
 ContextPtr:SetInputHandler(
 function( uiMsg, wParam )
+	--record keystrokes in log
+	if uiMsg ~= MouseEvents.MouseMove then
+		print( "INPUT", uiMsg, wParam )
+	end
 	if wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN then
 		if uiMsg == KeyEvents.KeyDown then
 			return true				-- swallow; act on key-up
@@ -629,7 +633,11 @@ function( uiMsg, wParam )
 		local ok, err = pcall( CloseOrAdvanceCityScreen )
 		if not ok then print( err ) end
 		return true
+	elseif uiMsg == 523 then
+		GotoNextCity()
+		return true
 	end
+	
 	return false
 end)
 

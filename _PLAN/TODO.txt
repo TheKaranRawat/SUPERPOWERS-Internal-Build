@@ -197,7 +197,7 @@ SWITCH PROJECTS TO OTHER CATEGORY
 
 fish improvements automatic from building
 	resource demanded wltkd overlap
-right side leader gold k and m
+	right side leader gold k and m
 change crusader icon to sword and shield
 disable glowing/jingling sound
 right click sound effect if can't purchase
@@ -211,10 +211,10 @@ CS defences by default
 reduce pantheons
 religions that can be founded
 AUTOMATE MILITARY UNITS
-SELECT QUEUE ON PRODUCTION POPUP
+	SELECT QUEUE ON PRODUCTION POPUP
 RIGHT CLICK CLOSE POPUPS
-TOOLTIP TIME
-add tooltip for purchasing units to explain civ can be bought and only mil uc can be bought
+map TOOLTIP faster
+	add tooltip for purchasing units to explain civ can be bought and only mil uc can be bought
 	
 UNITED STATES SPAWNS AT SEA
 

@@ -45,25 +45,25 @@
 			<Button ID="FoodBox" Size="80,20">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_FOOD]"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_FOOD_TEXT" Font="TwCenMT18" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="FoodPerTurnLabel" Offset="4,0" Anchor="L,C" String="" Font="TwCenMT18" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="FoodPerTurnLabel" Offset="1,0" Anchor="L,C" String="" Font="TwCenMT18" Color0="Food.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
 				
 			</Button>
 			<!-- Gold Info -->
 			<Button ID="GoldBox" Size="75,20">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_GOLD]"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_GOLD_TEXT" Font="TwCenMT18" Color0="Gold.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
-				<Label ID="GoldPerTurnLabel" Offset="4,0" Anchor="L,C" String="" Color0="Gold.255" Font="TwCenMT18" Color1="0.0.0.128" Color2="255.255.200.255"/>
+				<Label ID="GoldPerTurnLabel" Offset="1,0" Anchor="L,C" String="" Color0="Gold.255" Font="TwCenMT18" Color1="0.0.0.128" Color2="255.255.200.255"/>
 				
 			</Button>
 			<!-- Science Info -->
-			<Button ID="ScienceBox" Size="75,20">
+			<Button ID="ScienceBox" Size="85,20">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_RESEARCH]"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_RESEARCH_TEXT" Font="TwCenMT18" Color0="Science.255" Color1="0.0.0.128" Color2="255.255.200.255"/>
 				<Label ID="SciencePerTurnLabel" Offset="4,0" Anchor="L,C" String="" Color0="Science.255" Font="TwCenMT18" Color1="0.0.0.128" Color2="255.255.200.255"/>
 				
 			</Button>
 			<!-- Faith Info -->
-			<Button ID="FaithBox" Size="75,20">
+			<Button ID="FaithBox" Size="65,20">
 				<Label Anchor="L,C" Offset="-10,-20" String="[ICON_PEACE]"/>
 				<Label Anchor="L,C" Offset="10,-20" String="TXT_KEY_CITYVIEW_FAITH_TEXT" Font="TwCenMT18"/>
 				<Label ID="FaithPerTurnLabel" Offset="4,0" Anchor="L,C" Font="TwCenMT18" String=""/>
@@ -143,7 +143,7 @@
 
 			<!-- CIVILIAN STACK  -->
 
-					<Button ID="CivilianButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
+					<Button ID="CivilianButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" ToolTip="TXT_KEY_CIV_BUTTON" >
 						<Label Anchor="L,C" Offset="40,-1" Font="TwCenMT18" String="CIVILIAN UNITS" />
 					</Button>    
 
@@ -159,7 +159,7 @@
 			
 			<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
         
-					<Button ID="UnitButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
+					<Button ID="UnitButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" ToolTip="TXT_KEY_UNIT_BUTTON" >
 						<Label Anchor="L,C" Offset="40,-1" Font="TwCenMT18" String="TXT_KEY_POP_UNITS" />
 					</Button>    
 
@@ -173,7 +173,7 @@
 
               </Grid>
 
-					<Button ID="BuildingsButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
+					<Button ID="BuildingsButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" ToolTip="TXT_KEY_BUILDING_BUTTON" >
 						<Label Anchor="L,C" Offset="40,-1" Font="TwCenMT18" String="TXT_KEY_POP_BUILDINGS" />
 					</Button>
 
@@ -187,7 +187,7 @@
 
               </Grid>
 					
-					<Button ID="WondersButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
+					<Button ID="WondersButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" ToolTip="TXT_KEY_WONDER_BUTTON" >
 						<Label Anchor="L,C" Offset="40,-1" Font="TwCenMT18" String="TXT_KEY_POP_WONDERS" />
 					</Button>
 
@@ -200,7 +200,7 @@
                 <Stack ID="WonderButtonStack" Anchor="L,T" Offset="6,0" StackGrowth="Right" Wrap="1" WrapGrowth="Bottom" />
               </Grid>
 					
-					<Button ID="OtherButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" >
+					<Button ID="OtherButton" Anchor="L,T" Size="272,27" Offset="1,0" Texture="CivilopediaButtons272x27.dds" ToolTip="TXT_KEY_OTHER_BUTTON" >
 						<Label Anchor="L,C" Offset="40,-1" Font="TwCenMT18" String="TXT_KEY_CITYVIEW_OTHER" />
 					</Button>
 

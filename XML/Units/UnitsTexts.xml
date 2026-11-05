@@ -5805,6 +5805,41 @@
 			<Text>∞</Text>
 		</Replace>
 
+		<Row Tag="TXT_KEY_CIV_BUTTON">
+			<Text>[ICON_BULLET] Train [ICON_WORKER] Civilian Units
+				  [NEWLINE]Civilian units can be purchased.
+				  [NEWLINE](Right Click to purchase)
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_BUTTON">
+			<Text>[ICON_BULLET] Train [ICON_INFANTRY Military Units
+				  [NEWLINE]Only Unique military units can be purchased.
+				  [NEWLINE](Right Click to purchase Unique Units)
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_BUILDING_BUTTON">
+			<Text>[ICON_BULLET] Construct Buildings
+				  [NEWLINE]Buildings cannot be purchased.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_WONDER_BUTTON">
+			<Text>Build Wonders
+				  [NEWLINE][ICON_CAPITAL] National Wonders can be built at any time. 
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_OTHER_BUTTON">
+			<Text>[ICON_BULLET] Other Processes and Projects
+				  [NEWLINE][ICON_SWORD] Projects grant special units. 
+				  [NEWLINE]The first country to build a project is granted a project unit.
+			</Text>
+		</Row>
+		
+
+
 		<!--
 		<Row Tag="TXT_KEY_UNIT_FW_NANOHIVE">
 			<Text>Nanohive</Text>
