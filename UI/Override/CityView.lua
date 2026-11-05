@@ -569,6 +569,7 @@ end
 ----------------------------------------------------------------
 -- Input handling
 ----------------------------------------------------------------
+
 ContextPtr:SetInputHandler(
 
 function( uiMsg, wParam )--, lParam )
@@ -594,14 +595,28 @@ end)
 
 ContextPtr:SetInputHandler(
 function( uiMsg, wParam )
-	if uiMsg == KeyEvents.KeyDown then
-		-- ...existing key handling...
+	if wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN then
+		if uiMsg == KeyEvents.KeyDown then
+			return true				-- swallow, don't act yet
+		elseif uiMsg == KeyEvents.KeyUp then
+			ExitCityScreen()
+			return true
+		end
+	elseif uiMsg == KeyEvents.KeyDown then
+		if wParam == Keys.VK_LEFT then
+			GotoPrevCity()
+			return true
+		elseif wParam == Keys.VK_RIGHT then
+			GotoNextCity()
+			return true
+		end
 	elseif uiMsg == MouseEvents.RButtonUp then
 		ExitCityScreen()
 		return true
 	end
 	return false
 end)
+
 
 
 -------------------------------
@@ -1499,6 +1514,17 @@ local function IsProjectPrereqMet( item )
 	return Teams[ g_activePlayer:GetTeam() ]:GetProjectCount( projectID ) > 0
 end
 
+-- fix unique unit display
+local g_civOnlyUnits = {
+	UNIT_SIAMESE_MONK   = "CIVILIZATION_SIAM",
+	UNIT_HUN_SHAMAN = "CIVILIZATION_HUNS",
+}
+
+local function IsUnitAllowedForCiv( item )
+	local civ = g_civOnlyUnits[ item.Type ]
+	return not civ or GameInfo.Civilizations[ g_activePlayer:GetCivilizationType() ].Type == civ
+end
+
 local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVeniceException )
 	local civilianSelectList = table()
 	local queueLength = city:GetOrderQueueLength()
@@ -1642,7 +1668,8 @@ local function UpdateCityProductionQueueNow( city, cityID, cityOwnerID, isVenice
 			orderID = OrderTypes.ORDER_TRAIN
 			for i = 1, #g_unitList do
 				local item = g_unitList[i]
-				if IsProjectPrereqMet( item ) then
+				--if IsProjectPrereqMet( item ) then
+				if IsProjectPrereqMet( item ) and IsUnitAllowedForCiv( item ) then
 					AddSelectionItem( city, item,
 						g_isCivilianUnit[ item.ID ] and civilianSelectList or unitSelectList,
 						orderID,

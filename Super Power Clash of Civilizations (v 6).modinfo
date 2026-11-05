@@ -3905,6 +3905,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	
 	
 	<File md5="43939FF7C370D80989CCD674F775923A" import="0">SQL/cityrange.sql</File>
+
+  <File md5="YOUR_MD5" import="1">Modules/WarPopup/WarPopup.lua</File>
+  <File md5="YOUR_MD5" import="1">Modules/WarPopup/WarPopup.xml</File>
 	
   </Files>
   <Actions>
@@ -4483,6 +4486,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>Look at the title</Description>
     </EntryPoint>
 	-->
+    <EntryPoint type="InGameUIAddin" file="Modules/WarPopup/WarPopup.lua">
+      <Name>War Declaration Popup</Name>
+      <Description>Shows a banner when a civ declares war</Description>
+    </EntryPoint>
 	
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
       <Name>Terra</Name>
