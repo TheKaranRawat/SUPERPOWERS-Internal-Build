@@ -4471,47 +4471,6 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
   
   <EntryPoints>
   
-	<EntryPoint type="InGameUIAddin" file="CORE/CoreUI/InGame/Popups/CombatLogPopup.xml">
-      <Name>CombatLog</Name>
-      <Description>CombatLog</Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="CORE/CoreUI/InGame/Popups/PromotionTree.lua">
-      <Name>PromotionTree</Name>
-      <Description>PromotionTree</Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="CORE/CoreUI/InGame/SapiensSessionLog.lua">
-      <Name>SapiensSessionLog</Name>
-      <Description>Diagnostic session snapshot (mod list, DLC, setup) to SapiensMod.log</Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="CORE/CoreUI/InGame/CoreDLLCheck.xml">
-      <Name>CoreDLLCheck</Name>
-      <Description>Warning popup when the Core Mod DLL is not running (Mac or Linux port, or another DLL mod enabled)</Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="CORE/CoreUI/InGame/ToggleAutoEndTurn.xml">
-      <Name>ToggleAutoEndTurn</Name>
-      <Description>One-click Auto End Turn button docked beside End Turn; shown or hidden from the UI Options menu</Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="CORE/CoreUI/UIOptions/UI/UIOptionsMenu.xml">
-      <Name>UIOptionsMenu</Name>
-      <Description>In-game display/QoL preferences menu (Small Resource Icons, Promotion Flags, Map Overlays, Quick Animations)</Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="CORE/CoreUI/UIOptions/LUA/GAIA_BorderOverlays.lua">
-      <Name>GAIA_BorderOverlays</Name>
-      <Description>Map overlays for the selected unit or city (City Limits, Commander Influence, Dig Sites, Movement Path); gated by the UI Options menu</Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="CORE/CoreUI/UIOptions/LUA/GAIA_QuickAnimations.lua">
-      <Name>GAIA_QuickAnimations</Name>
-      <Description>Quick Animations engine: turn/war animation logic (owns MapModData.FuriousTurns; controls live in the UI Options menu)</Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="CORE/CoreUI/InGame/Popups/WonderSplashUtils.lua">
-      <Name>WonderSplashUtils</Name>
-      <Description>WonderSplashUtils</Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="GAME_OPTIONS/UI/VassalageOverview.xml">
-      <Name>VassalageOverview</Name>
-      <Description>VassalageOverview</Description>
-    </EntryPoint>
-  
     <!--
 	<EntryPoint type="InGameUIAddin" file="DLL-Core/DLL - Various Mod Components (v 88)/LUA/Stfu.lua">
       <Name>STFU</Name>
@@ -4532,11 +4491,6 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     </EntryPoint>
     <EntryPoint type="InGameUIAddin" file="Lua/Misc/TerrainTransform.lua">
       <Name>Terrain</Name>
-      <Description>
-      </Description>
-    </EntryPoint>
-    <EntryPoint type="InGameUIAddin" file="Lua/Economy/NuclearWinter.lua">
-      <Name>Nuclear Winter</Name>
       <Description>
       </Description>
     </EntryPoint>
@@ -4622,17 +4576,6 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	<EntryPoint type="InGameUIAddin" file="Modules/Historical Religions Complete (BNW or GK) (v 45)/Lua/Historical Religions Preference Handle.lua">
       <Name>Preference</Name>
       <Description>Preference</Description>
-    </EntryPoint>
-	
-
-	<EntryPoint type="InGameUIAddin" file="Lua/Notifications/Nuclear Attack/LUA/GAIA_NotifyNuclearAttack.lua">
-      <Name>NotifyNuclearAttack</Name>
-      <Description>NotifyNuclearAttack</Description>
-    </EntryPoint>
-	
-    <EntryPoint type="CustomNotificationAddin" file="Lua/Notifications/Nuclear Attack/CustomNotification/NuclearAttackNotification.lua">
-      <Name>NuclearAttackNotification</Name>
-      <Description>NuclearAttackNotification</Description>
     </EntryPoint>
 
     <EntryPoint type="MapScript" file="SUPERPOWERS_Earth.lua">

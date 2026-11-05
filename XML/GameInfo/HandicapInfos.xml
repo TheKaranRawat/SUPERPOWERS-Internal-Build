@@ -366,7 +366,7 @@
 				<RouteCostPercent>100</RouteCostPercent>
 				<UnitCostPercent>120</UnitCostPercent>
 				<BuildingCostPercent>100</BuildingCostPercent>
-				<ResearchPercent>100</ResearchPercent>
+				<ResearchPercent>200</ResearchPercent>
 				<PolicyPercent>130</PolicyPercent>
 				<ImprovementCostPercent>100</ImprovementCostPercent>
 				<CityProductionNumOptionsConsidered>2</CityProductionNumOptionsConsidered>
@@ -424,9 +424,9 @@
 				<ProductionFreeUnitsPopulationPercent>15</ProductionFreeUnitsPopulationPercent>
 				<ProductionFreeUnitsPerCity>5</ProductionFreeUnitsPerCity>
 				<RouteCostPercent>100</RouteCostPercent>
-				<UnitCostPercent>150</UnitCostPercent>
+				<UnitCostPercent>200</UnitCostPercent>
 				<BuildingCostPercent>150</BuildingCostPercent>
-				<ResearchPercent>100</ResearchPercent>
+				<ResearchPercent>300</ResearchPercent>
 				<PolicyPercent>175</PolicyPercent>
 				<ImprovementCostPercent>100</ImprovementCostPercent>
 				<CityProductionNumOptionsConsidered>2</CityProductionNumOptionsConsidered>

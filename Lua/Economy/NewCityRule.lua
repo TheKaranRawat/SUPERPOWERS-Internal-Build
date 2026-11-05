@@ -222,6 +222,7 @@ GameEvents.PlayerCityFounded.Add(HumanFoundingNewCities)
 
 ----------------City sized changing by population growth
 
+--[[
 function CitySizeChanged(hexX, hexY, population, citySize)
 	if hexX == nil or hexY ==nil then
 		print ("No Plot")
@@ -255,7 +256,48 @@ function CitySizeChanged(hexX, hexY, population, citySize)
 	end
 
 
-	-- CITY STATE DEFENCE PLACEMENT SCRIPT
+	
+	
+end
+Events.SerialEventCityPopulationChanged.Add(CitySizeChanged)
+]]--
+
+function CitySizeUpdate(playerID)
+	local player = Players[playerID]
+	if player == nil or not player:IsAlive() or player:IsBarbarian() then
+		return
+	end
+
+	for city in player:Cities() do
+		local cityPop = city:GetPopulation()
+		if cityPop >= 1 then
+			CitySetSize(city, player, cityPop)
+		end
+
+		-- CITY STATE DEFENCE PLACEMENT (uncomment when ready)
+		--[[
+		if player:IsMinorCiv() then
+			SetCSDefence(city, cityPop)
+		end
+		]]
+	end
+end
+GameEvents.PlayerDoTurn.Add(CitySizeUpdate)
+
+-- Optional: apply immediately when a city is founded or captured
+function CitySizeOnFounded(playerID, x, y)
+	local plot = Map.GetPlot(x, y)
+	local city = plot and plot:GetPlotCity()
+	local player = Players[playerID]
+	if city and player and not player:IsBarbarian() then
+		CitySetSize(city, player, city:GetPopulation())
+	end
+end
+GameEvents.PlayerCityFounded.Add(CitySizeOnFounded)
+
+print("New City Rule Check Pass!")
+
+-- CITY STATE DEFENCE PLACEMENT SCRIPT
 	--[[
 	if player:IsMinorCiv() then
 		--local iCounter = 0
@@ -303,17 +345,6 @@ function CitySizeChanged(hexX, hexY, population, citySize)
 	end
 
 	]]--
-	
-end-------------Function End
-Events.SerialEventCityPopulationChanged.Add(CitySizeChanged)
-
-
-
-
-
-print("New City Rule Check Pass!")
-
-
 
 ----------------------------------------------Utilities----------------------------------------
 --
