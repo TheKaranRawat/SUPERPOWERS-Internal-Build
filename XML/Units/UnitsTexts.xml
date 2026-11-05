@@ -1972,11 +1972,11 @@
 		
 
 		<Row Tag="TXT_KEY_UNIT_NUCLEAR_CARRIER">
-			<Text>[ICON_ANCHOR] Nuclear-powered Carrier</Text>
+			<Text>[ICON_ANCHOR] Nuclear Carrier</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NUCLEAR_CARRIER_HEADING">
-			<Text>Nuclear-powered Carrier</Text>
+			<Text>NuclearCarrier</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_NUCLEAR_CARRIER_PEDIA">
 			<Text>Aircraft carriers have evolved from converted cruisers to nuclear-powered warships that carry numerous fighter planes, strike aircraft, helicopters, and other types of aircraft.</Text>
@@ -2220,7 +2220,7 @@
 
 
 		<Row Tag="TXT_KEY_UNIT_CARRIER_FIGHTER_JET">
-			<Text>[ICON_FIGHTER] Carrier Jet</Text>
+			<Text>[ICON_JETS] Carrier Jet</Text>
 			<Plurality>2</Plurality>
 		</Row>
 		<Row Tag="TXT_KEY_UNIT_CARRIER_FIGHTER_JET_HEADING">
