@@ -198,6 +198,7 @@ local g_BuyPlotMode = not ( g_options and g_options.GetValue and g_options.GetVa
 local g_previousCity, g_isCityViewDirty, g_isCityHexesDirty
 
 local g_isButtonPopupChooseProduction = false
+local g_chainVisited = {}
 local g_isAutoClose
 
 -- units that have no Combat/RangedCombat but should stay in the military list
@@ -518,6 +519,7 @@ local function ExitCityButNotScreen()
 	g_leftTipControls.Box:SetHide( true )
 	g_rightTipControls.Box:SetHide( true )
 	g_isButtonPopupChooseProduction = false
+	g_chainVisited = {}
 	Controls.RightScrollPanel:SetScrollValue(0)
 	return CancelBuildingSale()
 end
@@ -566,40 +568,53 @@ local function ExitCityScreen()
 	end
 end
 
+local function FindNextIdleCity( currentCity )
+	-- MP: only act on your own turn
+	if Game.IsNetworkMultiPlayer() and not g_activePlayer:IsTurnActive() then
+		return nil
+	end
+	local currentID = currentCity and currentCity:GetID()
+	for cityX in g_activePlayer:Cities() do
+		local id = cityX:GetID()
+		if id ~= currentID and not g_chainVisited[ id ] and not cityX:IsPuppet() and cityX:GetOrderQueueLength() < 1 then
+			return cityX
+		end
+	end
+end
+
+-- ESC / right click: go to the next idle city, or leave when there are none left
+local function CloseOrAdvanceCityScreen()
+	if g_isButtonPopupChooseProduction then
+		local city = UI_GetHeadSelectedCity()
+		if city then
+			g_chainVisited[ city:GetID() ] = true	-- skipped cities are not revisited (prevents ping-pong)
+		end
+		local nextCity = FindNextIdleCity( city )
+		if nextCity then
+			g_leftTipControls.Box:SetHide( true )
+			g_rightTipControls.Box:SetHide( true )
+			Controls.RightScrollPanel:SetScrollValue( 0 )
+			CancelBuildingSale()
+			UI.SelectCity( nextCity )
+			return UI.LookAtSelectionPlot()
+		end
+	end
+	return ExitCityScreen()
+end
+
 ----------------------------------------------------------------
 -- Input handling
 ----------------------------------------------------------------
 
-ContextPtr:SetInputHandler(
-
-function( uiMsg, wParam )--, lParam )
-	if uiMsg == KeyEvents.KeyDown then
-		if wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN then
-			--if Controls.SellBuildingConfirm:IsHidden() then
-				ExitCityScreen()
-				--Events.SerialEventExitCityScreen();
-			--else
-			--	CancelBuildingSale()
-			--end
-			return true
-		elseif wParam == Keys.VK_LEFT then
-			GotoPrevCity()
-			return true
-		elseif wParam == Keys.VK_RIGHT then
-			GotoNextCity()
-			return true
-		end
-	end
-	return false
-end)
 
 ContextPtr:SetInputHandler(
 function( uiMsg, wParam )
 	if wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN then
 		if uiMsg == KeyEvents.KeyDown then
-			return true				-- swallow, don't act yet
+			return true				-- swallow; act on key-up
 		elseif uiMsg == KeyEvents.KeyUp then
-			ExitCityScreen()
+			local ok, err = pcall( CloseOrAdvanceCityScreen )
+			if not ok then print( err ) end
 			return true
 		end
 	elseif uiMsg == KeyEvents.KeyDown then
@@ -611,7 +626,8 @@ function( uiMsg, wParam )
 			return true
 		end
 	elseif uiMsg == MouseEvents.RButtonUp then
-		ExitCityScreen()
+		local ok, err = pcall( CloseOrAdvanceCityScreen )
+		if not ok then print( err ) end
 		return true
 	end
 	return false
@@ -2733,6 +2749,17 @@ UpdateOptionsAndCityView()
 Events.SerialEventEnterCityScreen.Add(
 function()
 
+	local city = UI_GetHeadSelectedCity()
+	if not g_isButtonPopupChooseProduction
+		and city
+		and city:GetOwner() == g_activePlayerID
+		and not city:IsPuppet()
+		and city:GetOrderQueueLength() < 1
+	then
+		g_isButtonPopupChooseProduction = true
+		g_chainVisited = {}
+	end
+
 --	local city = UI_GetHeadSelectedCity()
 --	if city then
 --		Network.SendUpdateCityCitizens( city:GetID() )
@@ -2825,7 +2852,7 @@ function( popupInfo )
 			if orderID >= 0 and itemID >= 0 then
 				g_finishedItems[ cityID ] = { orderID, itemID }
 			end
-			g_isButtonPopupChooseProduction = g_isAutoClose
+			g_isButtonPopupChooseProduction = true
 			return UI.DoSelectCityAtPlot( city:Plot() )	-- open city screen
 		end
 	end
