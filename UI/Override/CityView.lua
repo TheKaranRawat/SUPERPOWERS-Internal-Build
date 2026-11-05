@@ -532,9 +532,38 @@ local function GotoPrevCity()
 	return Game.DoControl( GameInfoTypes.CONTROL_PREVCITY )
 end
 
+-- scroll to next city function kraw
+local function ScrollToNextIdleCity( fromCityID )
+	-- MP: only act while it's your turn
+	if Game.IsNetworkMultiPlayer() and not g_activePlayer:IsTurnActive() then
+		return false
+	end
+	for cityX in g_activePlayer:Cities() do
+		if cityX:GetID() ~= fromCityID and not cityX:IsPuppet() and cityX:GetOrderQueueLength() < 1 then
+			--UI.LookAt( cityX:Plot() )		-- camera only
+			g_isButtonPopupChooseProduction = g_isAutoClose		-- keeps the chain going on the next ESC
+			UI.DoSelectCityAtPlot( cityX:Plot() )
+			return true
+		end
+	end
+	return false
+end
+
+--[[
 local function ExitCityScreen()
 	ExitCityButNotScreen()
 	return Events.SerialEventExitCityScreen()
+end
+]]--
+local function ExitCityScreen()
+	local wasProductionPopup = g_isButtonPopupChooseProduction	-- ExitCityButNotScreen() resets it
+	local city = UI_GetHeadSelectedCity()
+	local cityID = city and city:GetID()
+	ExitCityButNotScreen()
+	Events.SerialEventExitCityScreen()
+	if wasProductionPopup and cityID then
+		ScrollToNextIdleCity( cityID )	-- after exit, so the exit handler's own camera move can't override it
+	end
 end
 
 ----------------------------------------------------------------
@@ -573,6 +602,7 @@ function( uiMsg, wParam )
 	end
 	return false
 end)
+
 
 -------------------------------
 -- Pedia

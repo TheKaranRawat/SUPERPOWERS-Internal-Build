@@ -214,6 +214,7 @@ AUTOMATE MILITARY UNITS
 SELECT QUEUE ON PRODUCTION POPUP
 RIGHT CLICK CLOSE POPUPS
 TOOLTIP TIME
+add tooltip for purchasing units to explain civ can be bought and only mil uc can be bought
 	
 UNITED STATES SPAWNS AT SEA
 
