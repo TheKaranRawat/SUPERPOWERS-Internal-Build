@@ -18,7 +18,7 @@
 						<Label ID="CityPopulationLabel" Anchor="L,C" Font="TwCenMT22">
 							<Label ID="CityPopulationLabelSuffix" Anchor="R,C" AnchorSide="O.I" Offset="3,0" String="" Font="TwCenMT22"/>
 						</Label>
-						<CheckBox ID="AvoidGrowthButton" Style="SquareCheck" String="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TEXT" Font="TwCenMT14" ColorLayer0="Beige" ColorLayer1="Black" TextAnchor="R,C" TextAnchorSide="O,O" IsChecked="0" ToolTip="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TT" Hidden="1"/>
+						
 						<Label ID="CityGrowthLabel" LeadingOffset="-4" Offset="0,5" WrapWidth="102" String="" Color0="Food.255" Color1="0.0.0.128" Font="TwCenMT14"/>
 					</Stack>
 				</Image>
@@ -148,7 +148,7 @@
               <Grid ID="CivilianGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
 
                 <Box ID="CivilianBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
-                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                  <Stack ID="MyStack1" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
                 <Stack ID="CivilianButtonStack" Offset="6,0" Anchor="L,T" StackGrowth="Right" />
@@ -164,7 +164,7 @@
               <Grid ID="UnitGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
 
                 <Box ID="UnitBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
-                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                  <Stack ID="MyStack2" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
                 <Stack ID="UnitButtonStack" Anchor="L,T" Offset="6,0" StackGrowth="Right" Wrap="1" WrapGrowth="Bottom" />
@@ -178,7 +178,7 @@
               <Grid ID="BuildingGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
 
                 <Box ID="BuildBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
-                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                  <Stack ID="MyStack3" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
                 <Stack ID="BuildingButtonStack" Anchor="L,T" Offset="6,0" StackGrowth="Right" Wrap="1" WrapGrowth="Bottom" />
@@ -192,7 +192,7 @@
               <Grid ID="WonderGrid" Size="272,40" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
 
                 <Box ID="WonderBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
-                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                  <Stack ID="MyStack4" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
                 <Stack ID="WonderButtonStack" Anchor="L,T" Offset="6,0" StackGrowth="Right" Wrap="1" WrapGrowth="Bottom" />
@@ -205,7 +205,7 @@
               <Grid ID="OtherGrid" Size="272,46" Anchor="L,T" Offset="0,0" Style="WindowGridBlack">
 
                 <Box ID="OtherBG" Color="0,0,0,200" Offset="0,2" Anchor="L,T" Size="200,100">
-                  <Stack ID="MyStack" Anchor="L,T" StackGrowth="Right" />
+                  <Stack ID="MyStack5" Anchor="L,T" StackGrowth="Right" />
                 </Box>
 
                 <Stack ID="OtherButtonStack" Anchor="L,T" Offset="6,0" Size="256,32" StackGrowth="Right" />
@@ -216,8 +216,8 @@
 
 		</Stack>
 		<!-- Queue Slider Control -->
-		<Slider ID="QueueSlider" ConsumeMouseWheel="0" Anchor="L,B" Offset="56,43" Vertical="1" Texture="Blank.dds" Length="200" Size="230,1" >
-			<Shuttle Vertical="1" Texture="Blank.dds" Size="230,38" />
+		<Slider ID="QueueSlider" ConsumeMouseWheel="0" Anchor="L,B" Offset="16,43" Vertical="1" Texture="Blank.dds" Length="200" Size="270,1" >
+			<Shuttle Vertical="1" Texture="Blank.dds" Size="270,38" />
 		</Slider>
 	</Grid>
 
@@ -419,26 +419,7 @@
 			<Box ID="Disabled" Color="0,0,0,153" Size="36,39" Anchor="L,B" Hidden="1"/>
 
 			<Stack Anchor="R,B" StackGrowth="L" Hidden="1">
-				<Image ID="ScienceRecommendation" ToolTip="TXT_KEY_CITY_CONSTRUCTION_ADVISOR_RECOMMENDATION_SCIENCE" Anchor="L,C" Size="32,32" Texture="AdvisorSymbolScience.dds" Hidden="1">
-					<ScrollAnim Size="32.32" Speed=".2" Pause=".5" Texture="AdvisorShine.dds" MaskTexture="AdvisorMaskScience.dds"/>
-					<AlphaAnim Anchor="C,C" Offset="4,4" Size="32,32" Texture="AdvisorSpecShine.dds" Pause="5" Cycle="Bounce" Speed="4" AlphaStart="0" AlphaEnd="1"/>
-					<AlphaAnim Anchor="C,C" Offset="0,-4" Size="32,32" Texture="AdvisorSpecShine.dds" Pause="3" Cycle="Bounce" Speed="4" AlphaStart="0" AlphaEnd="1"/>
-				</Image>
-				<Image ID="ForeignRecommendation" ToolTip="TXT_KEY_CITY_CONSTRUCTION_ADVISOR_RECOMMENDATION_FOREIGN" Anchor="L,C" Size="32,32" Texture="AdvisorSymbolForeign.dds" Hidden="1">
-					<ScrollAnim Size="32.32" Speed=".2" Pause=".5" Texture="AdvisorShine.dds" MaskTexture="AdvisorMaskForeign.dds"/>
-					<AlphaAnim Anchor="C,C" Offset="6,5" Size="32,32" Texture="AdvisorSpecShine.dds" Pause="5" Cycle="Bounce" Speed="4" AlphaStart="0" AlphaEnd=".7"/>
-					<AlphaAnim Anchor="C,C" Offset="-2,-5" Size="32,32" Texture="AdvisorSpecShine.dds" Pause="3" Cycle="Bounce" Speed="4" AlphaStart="0" AlphaEnd=".7"/>
-				</Image>
-				<Image ID="EconomicRecommendation" ToolTip="TXT_KEY_CITY_CONSTRUCTION_ADVISOR_RECOMMENDATION_ECONOMIC" Anchor="L,C" Size="32,32" Texture="AdvisorSymbolEconomic.dds" Hidden="1">
-					<ScrollAnim Size="32.32" Speed=".2" Pause=".5" Texture="AdvisorShine.dds" MaskTexture="AdvisorMaskEconomic.dds"/>
-					<AlphaAnim Anchor="C,C" Offset="4,4" Size="32,32" Texture="AdvisorSpecShine.dds" Pause="5" Cycle="Bounce" Speed="4" AlphaStart="0" AlphaEnd="1"/>
-					<AlphaAnim Anchor="C,C" Offset="0,-4" Size="32,32" Texture="AdvisorSpecShine.dds" Pause="3" Cycle="Bounce" Speed="4" AlphaStart="0" AlphaEnd="1"/>
-				</Image>
-				<Image ID="MilitaryRecommendation" ToolTip="TXT_KEY_CITY_CONSTRUCTION_ADVISOR_RECOMMENDATION_MILITARY" Anchor="L,C" Size="32,32" Texture="AdvisorSymbolMilitary.dds" Hidden="1">
-					<ScrollAnim Size="32.32" Speed=".2" Pause=".5" Texture="AdvisorShine.dds" MaskTexture="AdvisorMaskMilitary.dds"/>
-					<AlphaAnim Anchor="C,C" Offset="4,4" Size="32,32" Texture="AdvisorSpecShine.dds" Pause="5" Cycle="Bounce" Speed="4" AlphaStart="0" AlphaEnd=".7"/>
-					<AlphaAnim Anchor="C,C" Offset="-3,-6" Size="32,32" Texture="AdvisorSpecShine.dds" Pause="3" Cycle="Bounce" Speed="4" AlphaStart="0" AlphaEnd=".7"/>
-				</Image>
+				
 				<GridButton ID="GoldButton" Anchor="R,B" Size="70,22" Style="SmallButton" ToolTipType="EUI_CityViewLeftTooltip" Font="TwCenMT16"/>
 				<GridButton ID="FaithButton" Anchor="R,B" Size="70,22" Style="SmallButton" ToolTipType="EUI_CityViewLeftTooltip" Font="TwCenMT16"/>
 			</Stack>
