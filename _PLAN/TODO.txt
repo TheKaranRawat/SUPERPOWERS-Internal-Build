@@ -194,12 +194,17 @@ FIX BALANCE
 FIX FW WONDERS
 CHANGE PROJECT ICON
 SWITCH PROJECTS TO OTHER CATEGORY
-
-	
-simplify 
-	land
-	sea
-	air
+fish improvements automatic from building
+resource demanded wltkd overlap
+right side leader gold k and m
+change crusader icon to sword and shield
+disable glowing/jingling sound
+right click sound effect if can't purchase
+purchase buildings
+over_resource -> overconsumption of resource
+supply tooltip
+stop ai galley spam
+reduce default civs per map size
 	
 UNITED STATES SPAWNS AT SEA
 

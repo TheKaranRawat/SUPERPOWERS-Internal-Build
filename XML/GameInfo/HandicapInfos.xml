@@ -389,16 +389,16 @@
 				<AIDeclareWarProb>400</AIDeclareWarProb>
 				<AIWorkRateModifier>350</AIWorkRateModifier>
 				<AIUnhappinessPercent>50</AIUnhappinessPercent>
-				<AIGrowthPercent>15</AIGrowthPercent>
+				<AIGrowthPercent>20</AIGrowthPercent>
 				<AITrainPercent>50</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
 				<AIConstructPercent>66</AIConstructPercent>
 				<AIWorldConstructPercent>300</AIWorldConstructPercent>
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
-				<AIBuildingCostPercent>33</AIBuildingCostPercent>
-				<AIUnitCostPercent>40</AIUnitCostPercent>
-				<AIUnitSupplyPercent>50</AIUnitSupplyPercent>
+				<AIBuildingCostPercent>50</AIBuildingCostPercent>
+				<AIUnitCostPercent>50</AIUnitCostPercent>
+				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
 				<AIPerEraModifier>-9</AIPerEraModifier>
@@ -449,16 +449,16 @@
 				<AIDeclareWarProb>800</AIDeclareWarProb>
 				<AIWorkRateModifier>400</AIWorkRateModifier>
 				<AIUnhappinessPercent>33</AIUnhappinessPercent>
-				<AIGrowthPercent>10</AIGrowthPercent>
-				<AITrainPercent>33</AITrainPercent>
+				<AIGrowthPercent>20</AIGrowthPercent>
+				<AITrainPercent>50</AITrainPercent>
 				<AIWorldTrainPercent>100</AIWorldTrainPercent>
-				<AIConstructPercent>50</AIConstructPercent>4
+				<AIConstructPercent>50</AIConstructPercent>
 				<AIWorldConstructPercent>400</AIWorldConstructPercent>
 				<AICreatePercent>100</AICreatePercent>
 				<AIWorldCreatePercent>100</AIWorldCreatePercent>
-				<AIBuildingCostPercent>33</AIBuildingCostPercent>
-				<AIUnitCostPercent>33</AIUnitCostPercent>
-				<AIUnitSupplyPercent>100</AIUnitSupplyPercent>
+				<AIBuildingCostPercent>50</AIBuildingCostPercent>
+				<AIUnitCostPercent>50</AIUnitCostPercent>
+				<AIUnitSupplyPercent>25</AIUnitSupplyPercent>
 				<AIUnitUpgradePercent>5</AIUnitUpgradePercent>
 				<!--<AIInflationPercent>80</AIInflationPercent>-->
 				<AIPerEraModifier>-10</AIPerEraModifier>

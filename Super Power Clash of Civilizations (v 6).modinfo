@@ -4552,12 +4552,13 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       </Description>
     </EntryPoint>
 
+    <!--
     <EntryPoint type="InGameUIAddin" file="Lua/Utility/BarbarianFunctions.lua">
       <Name>BarbarianUpdate</Name>
       <Description>
       </Description>
     </EntryPoint>
-	
+    -->
 	
 	
 	

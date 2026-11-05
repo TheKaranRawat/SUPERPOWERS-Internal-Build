@@ -242,7 +242,7 @@
 		<Label ID="Defense" Offset="3,18" Anchor="C,T" Font="TwCenMT24" ToolTip="TXT_KEY_CITYVIEW_CITY_COMB_STRENGTH_TT"/>
 		<Stack ID="NotificationStack" Offset="0,88" Anchor="C,T" StackGrowth="Bottom" Padding="3" >
 			<!-- Resource Demanded -->
-			<Grid ID="ResourceDemandedBox" ConsumeMouse="1" Anchor="C,T" Style="WindowGrid" Size="300,26" ToolTip="TXT_KEY_CITYVIEW_RESOURCE_DEMANDED_TT" Hidden="1">
+			<Grid ID="ResourceDemandedBox" ConsumeMouse="1" Anchor="C,T" Offset="0,50" Style="WindowGrid" Size="300,26" ToolTip="TXT_KEY_CITYVIEW_RESOURCE_DEMANDED_TT" Hidden="1">
 				<Label ID="ResourceDemandedString" Anchor="C,C" Offset="0,-1" Font="TwCenMT16"/>
 			</Grid>
 			<Stack ID="IconsStack" Anchor="C,T" StackGrowth="Right" >
