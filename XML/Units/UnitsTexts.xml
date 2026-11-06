@@ -5814,19 +5814,19 @@
 
 		<Row Tag="TXT_KEY_UNIT_BUTTON">
 			<Text>[ICON_BULLET] Train [ICON_INFANTRY Military Units
-				  [NEWLINE]Only Unique military units can be purchased.
+				  [NEWLINE]Only [ICON_SWORD] Unique and [ICON_SHIELD] Militia units can be purchased.
 				  [NEWLINE](Right Click to purchase Unique Units)
 			</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_BUILDING_BUTTON">
-			<Text>[ICON_BULLET] Construct Buildings
+			<Text>[ICON_BULLET] Construct [ICON_FORT] Buildings
 				  [NEWLINE]Buildings cannot be purchased.
 			</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_WONDER_BUTTON">
-			<Text>Build Wonders
+			<Text>Build [ICON_WONDER] Wonders
 				  [NEWLINE][ICON_CAPITAL] National Wonders can be built at any time. 
 			</Text>
 		</Row>

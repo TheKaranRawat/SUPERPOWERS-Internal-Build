@@ -215,6 +215,10 @@ AUTOMATE MILITARY UNITS
 RIGHT CLICK CLOSE POPUPS
 map TOOLTIP faster
 	add tooltip for purchasing units to explain civ can be bought and only mil uc can be bought
+hide has grown notification
+AI siege units
+policy tree rebalance
+policy popup right click exit
 	
 UNITED STATES SPAWNS AT SEA
 

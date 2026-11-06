@@ -6,10 +6,10 @@
 
 -- ===== options =====
 local DISPLAY_SECONDS      = 4     -- time the banner stays fully visible
-local FADE_IN_SECONDS      = 0.9
-local FADE_OUT_SECONDS     = 1.1
+local FADE_IN_SECONDS      = 1.2
+local FADE_OUT_SECONDS     = 1.5
 local SLIDE_PIXELS         = 250     -- banner slides down this far while fading in (up while fading out); 0 = fade only
-local BASE_Y               = 60    -- must match the Offset Y of WarBox in WarPopup.xml
+local BASE_Y               = 50    -- must match the Offset Y of WarBox in WarPopup.xml
 local ICON_SIZE            = 64     -- must match the icon Image sizes in WarPopup.xml
 local SHOW_CITY_STATES     = false   -- also announce wars involving city-states
 local ONLY_IF_MET_BOTH     = true   -- only announce wars between civs you have met (or that involve you)
