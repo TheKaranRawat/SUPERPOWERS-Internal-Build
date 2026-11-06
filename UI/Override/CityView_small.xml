@@ -32,14 +32,14 @@
 			</Image>
 
 	<!-- GridBlackIndent8 -->
-	<Grid ID="CityInfoBG" Size="390,60" ConsumeMouse="1" Anchor="C,T" Offset="0,77" Color="0,0,0,160"  Hidden="0" >
-		<Grid Anchor="C.C" Size="396,66" Style="Grid9Frame" ID="CityInfoFrame" />
+	<Grid ID="CityInfoBG" Size="390,53" ConsumeMouse="1" Anchor="C,T" Offset="0,79" Color="0,0,0,160"  Hidden="0" >
+		<Grid Anchor="C.C" Size="396,59" Style="Grid9Frame" ID="CityInfoFrame" />
 		<!-- CITY INFORMATION LABEL -->
 		<Label Anchor="C,T" Offset="0,18" String="TXT_KEY_CITYVIEW_CITYINFO_TEXT" Hidden="1"/>
 
 		
 
-		<Stack Anchor="C,T" Offset="8,30" StackGrowth="Right" >
+		<Stack Anchor="C,T" Offset="8,27" StackGrowth="Right" >
 			
 			<!-- Food Info -->
 			<Button ID="FoodBox" Size="80,20">
