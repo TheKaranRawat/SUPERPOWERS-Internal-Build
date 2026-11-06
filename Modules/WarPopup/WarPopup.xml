@@ -22,7 +22,7 @@
 			<Image ID="DefenderIcon"   Anchor="C,C" Size="64,64" Texture="CivSymbolsColor256.dds"/>
 		</Container>
 
-		<Label ID="WarText" Anchor="C,C" Offset="0,-2" WrapWidth="320" Font="TwCenMT16" String=""/>
+		<Label ID="WarText" Anchor="C,C" Offset="0,7" WrapWidth="370" Font="TwCenMT16" String=""/>
 
 		<Button ID="CloseButton" Anchor="C,B" Offset="0,10" Size="110,30" Font="TwCenMT16" String="OK" Style="BaseButton" Hidden="1"/>
 
