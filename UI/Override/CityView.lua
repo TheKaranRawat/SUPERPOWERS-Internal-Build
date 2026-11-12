@@ -1786,6 +1786,9 @@ end
 -------------------------------------------------
 -- City Hexes Update
 -------------------------------------------------
+
+local STAGE = 0   -- test 0..6
+
 local function UpdateWorkingHexesNow()
 
 	g_isCityHexesDirty = false
@@ -1806,6 +1809,8 @@ local function UpdateWorkingHexesNow()
 
 		g_PlotButtonIM.ResetInstances()
 		g_BuyPlotButtonIM.ResetInstances()
+
+		print( "stage 1" )
 
 		-- Show plots that will be acquired by culture
 		local purchasablePlots = {city:GetBuyablePlotList()}
@@ -1855,21 +1860,13 @@ local function UpdateWorkingHexesNow()
 					end
 				else
 					local workingCity = plot:GetWorkingCity()
-					-- worked by another one of our Cities
-					if workingCity:IsWorkingPlot( plot ) then
+					if workingCity and workingCity:IsWorkingPlot( plot ) then
 						iconID = 12
 						tipKey = "TXT_KEY_CITYVIEW_NUTHA_CITY_TILE"
-
-					-- Workable plot
-					elseif workingCity:CanWork( plot ) then
+					elseif workingCity and workingCity:CanWork( plot ) then
 						iconID = 9
 						tipKey = "TXT_KEY_CITYVIEW_UNWORKED_CITY_TILE"
-
-					-- Blockaded water plot
 					elseif plot:IsWater() and city:IsPlotBlockaded( plot ) then
-						iconID = 13
-						tipKey = "TXT_KEY_CITYVIEW_BLOCKADED_CITY_TILE"
-						cityPlotIndex = nil
 
 					-- Enemy Unit standing here
 					elseif plot:IsVisibleEnemyUnit( cityOwnerID ) then
@@ -1878,7 +1875,7 @@ local function UpdateWorkingHexesNow()
 						cityPlotIndex = nil
 					end
 					if notInStrategicView then
-						if workingCity ~= city then
+						if workingCity and workingCity ~= city then
 							Events_SerialEventHexHighlight( hexPos , true, nil, "OverlapFill" )
 							Events_SerialEventHexHighlight( hexPos , true, nil, "OverlapOutline" )
 						elseif cityPlotIndex then
@@ -1906,6 +1903,8 @@ local function UpdateWorkingHexesNow()
 			end
 		end --loop
 
+		print( "stage 2" )
+
 		-- display buy plot buttons
 		if g_BuyPlotMode and not g_isViewingMode then
 			local cash = g_activePlayer:GetGold()
@@ -1922,6 +1921,7 @@ local function UpdateWorkingHexesNow()
 						local plotCost = city:GetBuyPlotCost( x, y )
 						local tip, txt, alpha
 						local canBuy = city:CanBuyPlotAt( x, y, false )
+						print( "stage 3" )
 						if canBuy then
 							tip = L( "TXT_KEY_CITYVIEW_CLAIM_NEW_LAND", plotCost )
 							txt = plotCost

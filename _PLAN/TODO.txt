@@ -222,6 +222,15 @@ policy popup right click exit
 generate mipmaps for DXT1	
 UNITED STATES SPAWNS AT SEA
 city crash logging
+mouse button 5 for next turn/action button
+grouped movement
+mouse button sleep units
+mouse button heal
+policy stuck no new trees
+stuck on adopt policy
+stuck on adopt policy
+supply text description
+2351 city refresh
 
 disable UpdateWorkingHexesNow in cityview.lua
 
