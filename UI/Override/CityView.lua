@@ -439,6 +439,7 @@ function( uiMsg, wParam )
 		end
 	elseif uiMsg == MouseEvents.RButtonUp then
 		return SafeCloseOrAdvance()
+	-- mouse left button 523
 	elseif uiMsg == 523 then
 		GotoNextCity()
 		return true
