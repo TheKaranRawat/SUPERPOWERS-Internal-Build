@@ -1088,8 +1088,16 @@ local g_SelectionListCallBacks = {
 			end
 		end,
 		-- right click buys units, Ctrl + right click opens the Pedia
+		-- add purchase fail sound
 		[Mouse.eRClick] = function( orderID, itemID )
-			if orderID == OrderTypes.ORDER_TRAIN and GetSelectedModifiableCity() and not UI.CtrlKeyDown() then
+			local city = GetSelectedModifiableCity()
+			if orderID == OrderTypes.ORDER_TRAIN and city and not UI.CtrlKeyDown() then
+				-- IsCanPurchase( testCost, testTrainable, unitID, buildingID, projectID, yieldType )
+				if not city:IsCanPurchase( true, true, itemID, -1, -1, g_yieldCurrency )
+					and city:IsCanPurchase( true, true, itemID, -1, -1, YieldTypes.YIELD_FAITH )
+				then
+					return SelectionPurchase( orderID, itemID, YieldTypes.YIELD_FAITH, "AS2D_INTERFACE_FAITH_PURCHASE" )
+				end
 				return SelectionPurchase( orderID, itemID, g_yieldCurrency, "AS2D_INTERFACE_CITY_SCREEN_PURCHASE" )
 			end
 			return SelectionPedia( orderID, itemID )
