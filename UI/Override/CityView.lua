@@ -415,7 +415,15 @@ end
 
 ContextPtr:SetInputHandler(
 function( uiMsg, wParam )
-	if wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN then
+	-- key strokes in log
+	if uiMsg == KeyEvents.KeyDown then
+		print("Key down: " .. tostring(wParam))
+	end
+
+	-- mouse keys
+	print("uiMsg: " .. tostring(uiMsg) .. "  wParam: " .. tostring(wParam))
+
+	if wParam == Keys.VK_ESCAPE then
 		if uiMsg == KeyEvents.KeyDown then
 			return true				-- swallow; act on key-up
 		elseif uiMsg == KeyEvents.KeyUp then
