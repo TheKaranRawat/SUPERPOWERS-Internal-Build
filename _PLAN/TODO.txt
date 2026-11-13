@@ -231,6 +231,8 @@ stuck on adopt policy
 stuck on adopt policy
 supply text description
 2351 city refresh
+dynamic civ names
+uiMsg == 523
 
 disable UpdateWorkingHexesNow in cityview.lua
 
@@ -239,5 +241,6 @@ increase production costs/nerf empire production
 minor civ popup disable
 automate button visible workers
 city founding crash sometimes
+ENABLE UNIT ABILITIES BUT ONLY IN SINGLEPLAYER
 
 
