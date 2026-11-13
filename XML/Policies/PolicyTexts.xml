@@ -662,7 +662,7 @@
 		<Replace Tag="TXT_KEY_POLICY_MERITOCRACY_HELP">
 			<Text>
 				[COLOR_POSITIVE_TEXT]Landed Elite[ENDCOLOR]
-				[NEWLINE][ICON_BULLET]+20 [ICON_PRODUCTION] Production for every City
+				[NEWLINE][ICON_BULLET]+10 [ICON_PRODUCTION] Production for every City
 				[NEWLINE][ICON_BULLET]+20% [ICON_PRODUCTION] Production in cities when constructing Buildings
 			</Text>
 		</Replace>
