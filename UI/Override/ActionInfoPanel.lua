@@ -392,7 +392,8 @@ do
 		if uiMsg == KeyDown and wParam == VK_RETURN then
 			OnEndTurnClicked( true ) --UI.ShiftKeyDown() or UI.AltKeyDown() or UI.CtrlKeyDown() )
 			return true
-		elseif uiMsg == MButtonUp then
+		--mmb and mouse button 5 next turn
+		elseif uiMsg == MButtonUp or uiMsg == 523 then
 			OnEndTurnClicked( true )
 			return true
 		end
