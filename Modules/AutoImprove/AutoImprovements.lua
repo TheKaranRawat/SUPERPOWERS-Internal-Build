@@ -3,7 +3,8 @@
 -- Worker-less terrain improvement for Civilization V (BNW / Gods & Kings).
 --
 -- Every turn, each qualifying player automatically gets N new improvements
--- (or repairs) placed on tiles inside their borders.
+-- placed on tiles inside their borders. Pillaged improvements are repaired
+-- by a separate, slower pass (see REPAIR_* in CONFIG).
 --   N = BASE_PER_TURN + number of bonus techs the player's team has researched.
 --
 -- MULTIPLAYER SAFETY
@@ -47,8 +48,12 @@ local CONFIG = {
 	APPLY_TO_AI          = true,    -- set false if the AI keeps using workers
 	APPLY_TO_CITY_STATES = true,
 
-	-- Repair pillaged improvements (counts as one action).
-	REPAIR_PILLAGED = true,
+	-- Slow repair of pillaged improvements, independent of the build count.
+	-- Each city repairs REPAIRS_PER_CITY tile(s) every REPAIR_INTERVAL turns.
+	-- Cities are staggered by city ID so the work spreads across turns.
+	REPAIR_PILLAGED  = true,
+	REPAIR_INTERVAL  = 4,
+	REPAIRS_PER_CITY = 1,
 
 	-- Skip tiles that currently hold an enemy-owned unit at war.
 	SKIP_OCCUPIED_BY_ENEMY = true,
@@ -71,7 +76,6 @@ local CONFIG = {
 	},
 	RESOURCE_CONNECT_BONUS = 100,   -- connecting a resource beats most yield gains
 	WORKED_TILE_BONUS      = 20,    -- prefer tiles a citizen is actually working
-	REPAIR_BONUS           = 500,   -- fixing pillaged tiles comes first
 	UPGRADE_BONUS          = 300,   -- replacing a stand-in with the proper resource improvement
 
 	DEBUG = false,
@@ -126,7 +130,6 @@ end
 
 -- Candidate improvement builds (ordered by Build ID -> deterministic)
 local improvementBuilds = {}   -- { {build=, improvement=, tech=}, ... }
-local repairBuildID = GameInfoTypes["BUILD_REPAIR"]
 for row in GameInfo.Builds() do
 	local impID = row.ImprovementType and GameInfoTypes[row.ImprovementType]
 	if impID and not row.Kill and not excludedImprovement[impID] then
@@ -324,10 +327,6 @@ local function CollectCityCandidates(pCity, iPlayer, iTeam, builds, nBuilds, see
 					local b, score = EvaluateUpgrade(pPlot, iPlayer, iTeam, builds, nBuilds, imp, bWorked)
 					if b then
 						candidate = { plot = pPlot, build = b, score = score, x = x, y = y }
-					elseif CONFIG.REPAIR_PILLAGED and pPlot:IsImprovementPillaged() then
-						local bonus = CONFIG.REPAIR_BONUS
-						if bWorked then bonus = bonus + CONFIG.WORKED_TILE_BONUS end
-						candidate = { plot = pPlot, repair = true, score = bonus, x = x, y = y }
 					end
 				end
 
@@ -358,16 +357,69 @@ local function ApplyBest(out, count, iPlayer)
 		out[total] = nil
 		total = total - 1
 
-		if c.repair then
-			c.plot:SetImprovementPillaged(false)
-		else
-			c.plot:SetImprovementType(c.build.improvement, iPlayer)
-			c.plot:SetImprovementPillaged(false)
-		end
+		c.plot:SetImprovementType(c.build.improvement, iPlayer)
+		c.plot:SetImprovementPillaged(false)
 		applied = applied + 1
-		dprint("Player", iPlayer, c.repair and "repaired" or "built", c.x, c.y)
+		dprint("Player", iPlayer, "built", c.x, c.y)
 	end
 	return applied
+end
+
+--------------------------------------------------------------------------
+-- REPAIR PASS
+-- Stateless and deterministic: a city is "due" when
+-- (game turn + city ID) % REPAIR_INTERVAL == 0, so every client agrees
+-- without storing anything. Pillaged tiles with an enemy unit on them are
+-- skipped.
+--------------------------------------------------------------------------
+local function RepairPillaged(pPlayer, iPlayer, iTeam)
+	local interval = CONFIG.REPAIR_INTERVAL
+	if interval < 1 then interval = 1 end
+	local turn = Game.GetGameTurn()
+	local seen = {}
+
+	for pCity in pPlayer:Cities() do
+		if (turn + pCity:GetID()) % interval == 0 then
+			local repaired = 0
+			local numPlots = pCity:GetNumCityPlots()
+
+			-- Repeat the (cheap) scan once per repair so ordering stays
+			-- deterministic: worked tiles first, then lowest y, then lowest x.
+			while repaired < CONFIG.REPAIRS_PER_CITY do
+				local best, bestWorked, bestX, bestY
+				for i = 0, numPlots - 1 do
+					local pPlot = pCity:GetCityIndexPlot(i)
+					if pPlot and pPlot:GetOwner() == iPlayer
+						and pPlot:GetImprovementType() ~= NO_IMPROVEMENT
+						and pPlot:IsImprovementPillaged() then
+						local x, y = pPlot:GetX(), pPlot:GetY()
+						if not seen[y * 4096 + x] and not TileHasEnemy(pPlot, iTeam) then
+							local worked = pCity:IsWorkingPlot(pPlot)
+							local better = false
+							if best == nil then
+								better = true
+							elseif worked ~= bestWorked then
+								better = worked
+							elseif y ~= bestY then
+								better = y < bestY
+							else
+								better = x < bestX
+							end
+							if better then
+								best, bestWorked, bestX, bestY = pPlot, worked, x, y
+							end
+						end
+					end
+				end
+
+				if not best then break end
+				best:SetImprovementPillaged(false)
+				seen[bestY * 4096 + bestX] = true
+				repaired = repaired + 1
+				dprint("Player", iPlayer, "repaired", bestX, bestY)
+			end
+		end
+	end
 end
 
 --------------------------------------------------------------------------
@@ -379,9 +431,14 @@ function AutoImprovements_PlayerDoTurn(iPlayer)
 	if pPlayer:GetNumCities() == 0 then return end
 
 	local iTeam = pPlayer:GetTeam()
+
+	if CONFIG.REPAIR_PILLAGED then
+		RepairPillaged(pPlayer, iPlayer, iTeam)
+	end
+
 	local perTurn = GetActionsPerTurn(iTeam)
 	local builds, nBuilds = GetAvailableBuilds(iTeam, pPlayer:GetCivilizationType())
-	if nBuilds == 0 and not CONFIG.REPAIR_PILLAGED then return end
+	if nBuilds == 0 then return end
 
 	local seen = {}
 
