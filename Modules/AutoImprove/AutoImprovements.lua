@@ -34,6 +34,12 @@ local CONFIG = {
 
 	BASE_PER_TURN = 1,
 
+	-- Improvements are only placed every BUILD_INTERVAL turns (1 = every turn).
+	-- The count above is placed on each build turn. Stateless stagger: in
+	-- "PLAYER" mode players are offset by player ID, in "CITY" mode cities
+	-- are offset by city ID, so the work is spread over different turns.
+	BUILD_INTERVAL = 3,
+
 	-- Each tech the team owns adds +1 to the per-turn count.
 	-- Techs missing from your database are skipped silently.
 	BONUS_TECHS = {
@@ -52,8 +58,8 @@ local CONFIG = {
 	-- Each city repairs REPAIRS_PER_CITY tile(s) every REPAIR_INTERVAL turns.
 	-- Cities are staggered by city ID so the work spreads across turns.
 	REPAIR_PILLAGED  = true,
-	REPAIR_INTERVAL  = 4,
-	REPAIRS_PER_CITY = 1,
+	REPAIR_INTERVAL  = 3,
+	REPAIRS_PER_CITY = 2,
 
 	-- Skip tiles that currently hold an enemy-owned unit at war.
 	SKIP_OCCUPIED_BY_ENEMY = true,
@@ -436,6 +442,13 @@ function AutoImprovements_PlayerDoTurn(iPlayer)
 		RepairPillaged(pPlayer, iPlayer, iTeam)
 	end
 
+	local interval = CONFIG.BUILD_INTERVAL
+	if interval < 1 then interval = 1 end
+	local turn = Game.GetGameTurn()
+
+	-- Off-turn for this player in PLAYER mode: skip all scanning.
+	if CONFIG.MODE ~= "CITY" and (turn + iPlayer) % interval ~= 0 then return end
+
 	local perTurn = GetActionsPerTurn(iTeam)
 	local builds, nBuilds = GetAvailableBuilds(iTeam, pPlayer:GetCivilizationType())
 	if nBuilds == 0 then return end
@@ -444,9 +457,11 @@ function AutoImprovements_PlayerDoTurn(iPlayer)
 
 	if CONFIG.MODE == "CITY" then
 		for pCity in pPlayer:Cities() do
-			local out = {}
-			CollectCityCandidates(pCity, iPlayer, iTeam, builds, nBuilds, seen, out)
-			if #out > 0 then ApplyBest(out, perTurn, iPlayer) end
+			if (turn + pCity:GetID()) % interval == 0 then
+				local out = {}
+				CollectCityCandidates(pCity, iPlayer, iTeam, builds, nBuilds, seen, out)
+				if #out > 0 then ApplyBest(out, perTurn, iPlayer) end
+			end
 		end
 	else
 		local out = {}
