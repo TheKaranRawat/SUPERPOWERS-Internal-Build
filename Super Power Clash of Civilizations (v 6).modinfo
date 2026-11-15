@@ -3925,6 +3925,12 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/AutoCityFire/AutoCityFire.lua</File>
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/AutoCityFire/AutoCityFire.xml</File>
 
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/GroupMove/GroupMove.lua</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/GroupMove/GroupMove.xml</File>
+
+
+    
+
   </Files>
   <Actions>
 	
@@ -4527,7 +4533,12 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Name>AutoCityFire</Name>
       <Description>Automatically fire from cities</Description>
     </EntryPoint>
-	
+
+    <EntryPoint type="InGameUIAddin" file="Modules/GroupMove/GroupMove.lua">
+      <Name>GroupMove</Name>
+      <Description>Move in groups</Description>
+    </EntryPoint>
+		
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
       <Name>Terra</Name>
       <Description>
