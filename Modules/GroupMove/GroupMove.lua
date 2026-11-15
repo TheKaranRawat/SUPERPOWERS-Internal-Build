@@ -15,10 +15,27 @@
 -- PERFORMANCE
 --  * No polling. Everything runs from input, selection or unit events.
 --  * The per-frame callback is only installed while there is deferred work
---    (a highlight redraw or an arrival check) and removes itself afterward.
+--    (a highlight redraw or a trip check) and removes itself afterward.
 --  * Refreshes are coalesced to at most one per frame, and the highlight is
 --    only redrawn when the set of occupied tiles actually changed.
 --  * Mouse moves cost one comparison unless a box is being dragged.
+--
+-- ORDER PACING
+--  * Orders are sent one unit per frame, and the next unit is only ordered once the
+--    previous one shows that its order registered (otherwise it is re-sent).
+--
+-- MULTI-TURN TRIPS
+--  * A dispatch creates a "trip" (state.moveTrack) that is independent of the
+--    selection. It survives turn changes and survives you selecting other units.
+--  * On every check, a trip unit that is not at its destination and has no
+--    running mission (the engine dropped its order, e.g. because a friendly
+--    unit blocked the tile it wanted to end its turn on) gets its move order
+--    re-sent, at most once per turn. If it keeps failing it is sent to a free
+--    tile near the original target, and after MAX_RETRIES turns without any
+--    progress it is given up on.
+--  * Selecting a trip unit yourself takes it out of the trip (manual control).
+--  * When every trip unit has arrived (or been given up), the arrived military
+--    units are put on alert and the trip ends.
 --
 -- The script keeps its own "logical" group (state.selected). The engine may
 -- only be able to highlight one unit at a time, so the group is NOT read back
@@ -42,7 +59,10 @@ local CLICK_CANCELS    = true  -- a plain left click deselects a multi-unit grou
 local ALERT_AFTER_MOVE = true  -- put units on alert when the group finishes moving
 local SPREAD_UNITS     = true  -- units from different tiles get different destinations
 local SPREAD_RADIUS    = 4     -- how far from the clicked hex to look for free tiles
-local MAX_TRACK_TURNS  = 5     -- stop watching a dispatched group after this many turns
+local MAX_TRACK_TURNS  = 30    -- stop watching a dispatched group after this many turns
+local MAX_RETRIES      = 4     -- turns a unit may stay stuck (no progress) before it is given up on
+local ORDER_WAIT_TICKS  = 20    -- frames to wait for proof that an order registered before re-sending it
+local MAX_SEND_ATTEMPTS = 3    -- times one order is sent before it is left for the next turn
 local HIGHLIGHT        = true  -- light up the hex under every unit in the group
 local HL_COLOR         = { 1.0, 0.9, 0.5, 1.0 }   -- r, g, b, a (0 to 1)
 local HL_STYLE         = nil   -- optional highlight style name passed to the game
@@ -218,40 +238,286 @@ local function RefreshHighlights(force)
 end
 
 ----------------------------------------------------------------
--- Deferred work: highlight redraws, arrival checks, "was that the user?"
+-- Tile helpers (used by destination spreading and by trip re-routing)
+----------------------------------------------------------------
+
+-- True if the tile has a unit the player can see on it
+local function TileHasVisibleUnit(plot, team)
+    for i = 0, plot:GetNumUnits() - 1 do
+        local u = plot:GetUnit(i)
+        if u then
+            local hidden = u.IsInvisible and u:IsInvisible(team, false)
+            if not hidden then return true end
+        end
+    end
+    return false
+end
+
+-- A free tile that any unit could plausibly stand on. Only tiles the player
+-- can currently see are considered, so nothing hidden influences the choice.
+local function GenericTileOk(plot, team)
+    if plot:IsImpassable() or plot:IsMountain() then return false end
+    if not plot:IsVisible(team, false) then return false end
+    if plot:IsCity() then return false end
+    if TileHasVisibleUnit(plot, team) then return false end
+    return true
+end
+
+local function DomainOk(plot, unit)
+    local d = unit:GetDomainType()
+    if d == DomainTypes.DOMAIN_SEA then return plot:IsWater() end
+    if d == DomainTypes.DOMAIN_LAND then return not plot:IsWater() end
+    return false                            -- air etc.: no spreading
+end
+
+-- Finds the free tile closest to the unit among the nearest ring around
+-- (cx, cy) that has any. `taken` holds tile keys already promised to others.
+local function PickFreeTile(unit, cx, cy, taken)
+    local team = Game.GetActiveTeam()
+    local ux, uy = unit:GetX(), unit:GetY()
+    for r = 0, SPREAD_RADIUS + 2 do
+        local best, bestDist
+        for x = cx - r, cx + r do
+            for y = cy - r, cy + r do
+                if Map.PlotDistance(cx, cy, x, y) == r and not taken[x * 1024 + y] then
+                    local p = Map.GetPlot(x, y)
+                    if p and DomainOk(p, unit) and GenericTileOk(p, team) then
+                        local d = Map.PlotDistance(ux, uy, x, y)
+                        if not bestDist or d < bestDist then best, bestDist = p, d end
+                    end
+                end
+            end
+        end
+        if best then return best end
+    end
+    return nil
+end
+
+----------------------------------------------------------------
+-- Deferred work: highlight redraws, trip checks, paced orders
 ----------------------------------------------------------------
 local hlDirty = false
 local hlForce = false
 local refreshing = false
-local moveTrackActive = false   -- a dispatched group is being watched for arrival
+local checking = false          -- inside a trip check (its own orders must not re-trigger it)
+local moveTrackActive = false   -- a dispatched group is being watched
 local moveCheckDirty = false
 local updateInstalled = false
 
 local QueueRefresh              -- forward declarations, assigned below
 local OnFrameUpdate
+local InstallUpdate
+local EnqueueOrder
 
--- Sends the Alert (sentry) order to each unit. Like the move orders, it goes
--- through the engine's networked mission message, one unit at a time.
-local function SetAlert(units)
-    if not (MissionTypes and MissionTypes.MISSION_ALERT
-            and GameMessageTypes and Game.SelectionListGameNetMessage) then
-        error("alert mission or message API not available")
-    end
+local function UnitOnMission(unit)
+    return ActivityTypes ~= nil
+       and unit:GetActivityType() == ActivityTypes.ACTIVITY_MISSION
+end
+
+-- Awake (or skipped) with no orders: the engine dropped its mission.
+-- Sleeping, fortified, alerted etc. count as "the player took over".
+local function UnitIsIdle(unit)
+    if not ActivityTypes then return false end
+    local a = unit:GetActivityType()
+    return a == ActivityTypes.ACTIVITY_AWAKE
+        or (ActivityTypes.ACTIVITY_HOLD ~= nil and a == ActivityTypes.ACTIVITY_HOLD)
+end
+
+local function MovesLeftOf(unit)
+    if unit.MovesLeft then return unit:MovesLeft() end
+    if unit.GetMoves then return unit:GetMoves() end
+    return 0
+end
+
+----------------------------------------------------------------
+-- Paced orders
+----------------------------------------------------------------
+-- The engine's order calls work on the current selection, and a multi-turn
+-- move can take longer to register than a one-turn move. Sending a whole group
+-- in one burst therefore only reliably moved the first unit. Orders are now
+-- sent ONE PER FRAME, and the next one is only sent after the previous unit
+-- shows proof that its order registered (it moved, it has a mission, or it
+-- spent movement). A unit that shows no proof is re-sent a few times.
+-- Every order still goes through the engine's networked order calls.
+local orderQueue = {}    -- orders waiting to be sent
+local current = nil      -- order that was just sent and awaits proof
+local queued = {}        -- queued[unitID] = true while a MOVE for that unit is queued or in flight
+local snap = nil         -- the player's selection from before we started changing it
+local tick = 0
+
+local function EnsureSnapshot()
+    if snap then return end
+    local s = GetState(Game.GetActivePlayer())
+    local ok, head = pcall(UI.GetHeadSelectedUnit)
+    if not ok then head = nil end
+    snap = {
+        headID = head and head:GetID() or nil,
+        group  = head ~= nil and s.selected[head:GetID()] ~= nil
+                 and CountSet(s.selected, 2) >= 2,
+    }
+end
+
+-- Puts the player's selection back (the group if it was the visible
+-- selection, otherwise the single unit that was selected)
+local function RestoreSnapshot()
+    if not snap then return end
+    local sn = snap
+    snap = nil
+    local pid = Game.GetActivePlayer()
+    local player = Players[pid]
+    local s = GetState(pid)
     guard = true
-    for _, unit in ipairs(units) do
+    pcall(function()
         UI.ClearSelectionList()
-        UI.SelectUnit(unit)
-        Game.SelectionListGameNetMessage(GameMessageTypes.GAMEMESSAGE_PUSH_MISSION,
-                                         MissionTypes.MISSION_ALERT, 0, 0, 0, false, false)
-    end
+        if sn.group then
+            for id in pairs(s.selected) do
+                local u = player:GetUnitByID(id)
+                if u and not u:IsDelayedDeath() then UI.SelectUnit(u) end
+            end
+        elseif sn.headID then
+            local u = player:GetUnitByID(sn.headID)
+            if u and not u:IsDelayedDeath() then UI.SelectUnit(u) end
+        end
+    end)
     guard = false
 end
 
--- After a dispatch, watches the group and drops it once movement is over.
--- A unit counts as "still going" while it has a mission running and hasn't
--- reached its destination. The group is dropped when none are still going
--- (after at least one was seen going, or when all have arrived). Watching
--- stops by itself after MAX_TRACK_TURNS turns.
+local function DropAllOrders()
+    orderQueue, current, queued, snap = {}, nil, {}, nil
+end
+
+local function SendOrder(player, e)
+    local unit = player:GetUnitByID(e.id)
+    if not unit or unit:IsDelayedDeath() then
+        if e.kind == "move" then queued[e.id] = nil end
+        return
+    end
+    local plot
+    if e.kind == "move" then
+        if unit:GetX() == e.x and unit:GetY() == e.y then
+            queued[e.id] = nil
+            return
+        end
+        plot = Map.GetPlot(e.x, e.y)
+        if not plot then
+            queued[e.id] = nil
+            return
+        end
+    end
+
+    EnsureSnapshot()
+    e.attempts = e.attempts + 1
+    guard = true
+    local ok, err = pcall(function()
+        UI.ClearSelectionList()
+        UI.SelectUnit(unit)
+        if e.kind == "alert" then
+            if not (MissionTypes and MissionTypes.MISSION_ALERT
+                    and GameMessageTypes and Game.SelectionListGameNetMessage) then
+                error("alert mission or message API not available")
+            end
+            Game.SelectionListGameNetMessage(GameMessageTypes.GAMEMESSAGE_PUSH_MISSION,
+                                             MissionTypes.MISSION_ALERT, 0, 0, 0, false, false)
+        else
+            Game.SelectionListMove(plot, e.alt, e.shift, e.ctrl)
+        end
+    end)
+    guard = false
+    if not ok then
+        Log("order for unit " .. e.id .. " failed: " .. tostring(err))
+        if e.kind == "move" then queued[e.id] = nil end
+        return
+    end
+
+    e.tick  = tick
+    e.key   = unit:GetX() * 1024 + unit:GetY()
+    e.moves = MovesLeftOf(unit)
+    current = e
+    if DEBUG_VERBOSE then
+        Log("sent " .. e.kind .. " order to unit " .. e.id .. " (attempt " .. e.attempts .. ")")
+    end
+end
+
+-- Runs once per frame while orders are pending
+local function ProcessOrders()
+    local pid = Game.GetActivePlayer()
+    local player = Players[pid]
+    tick = tick + 1
+
+    -- Still waiting for proof that the last order registered?
+    if current then
+        local e = current
+        local unit = player:GetUnitByID(e.id)
+        local done, resend = false, false
+        if not unit or unit:IsDelayedDeath() or e.kind == "alert" then
+            done = true
+        elseif unit:GetX() * 1024 + unit:GetY() ~= e.key
+               or UnitOnMission(unit)
+               or MovesLeftOf(unit) ~= e.moves then
+            done = true
+        elseif tick - e.tick >= ORDER_WAIT_TICKS then
+            done = true
+            local act = ActivityTypes and unit:GetActivityType() or "?"
+            if e.attempts < MAX_SEND_ATTEMPTS then
+                resend = true
+                Log("unit " .. e.id .. " showed no response to its order (activity "
+                    .. tostring(act) .. "), resending")
+            else
+                Log("unit " .. e.id .. " ignored " .. e.attempts
+                    .. " orders (activity " .. tostring(act) .. "), leaving it for the next turn")
+            end
+        end
+        if not done then return end
+        current = nil
+        if resend then
+            table.insert(orderQueue, 1, e)
+        elseif e.kind == "move" then
+            queued[e.id] = nil
+        end
+    end
+
+    local e = table.remove(orderQueue, 1)
+    if e then
+        if CanIssueOrders(player) then
+            SendOrder(player, e)
+        else
+            -- Not our turn: drop everything, the trip check re-sends later
+            if e.kind == "move" then queued[e.id] = nil end
+            for _, o in ipairs(orderQueue) do
+                if o.kind == "move" then queued[o.id] = nil end
+            end
+            orderQueue = {}
+        end
+    end
+
+    if not current and not orderQueue[1] then RestoreSnapshot() end
+end
+
+EnqueueOrder = function(e)
+    e.attempts = e.attempts or 0
+    if e.kind == "move" then
+        for i = #orderQueue, 1, -1 do           -- newest order for a unit wins
+            local o = orderQueue[i]
+            if o.kind == "move" and o.id == e.id then table.remove(orderQueue, i) end
+        end
+        queued[e.id] = true
+    end
+    orderQueue[#orderQueue + 1] = e
+    InstallUpdate()
+end
+
+----------------------------------------------------------------
+-- Trip check
+----------------------------------------------------------------
+-- Looks after a dispatched group across turns:
+--  * units that arrived are left alone
+--  * units still travelling (or with an order queued) are left alone
+--  * units that stopped short with no orders get their move order re-sent
+--    (once per turn); repeated failures re-route them to a free tile near the
+--    original target, and units that make no progress for MAX_RETRIES turns
+--    are given up on
+--  * when nobody is left travelling, arrived military units go on alert and
+--    the trip ends
 local function CheckMovementComplete()
     local pid = Game.GetActivePlayer()
     local s = GetState(pid)
@@ -261,70 +527,117 @@ local function CheckMovementComplete()
         return
     end
 
-    if Game.GetGameTurn() - t.turn > MAX_TRACK_TURNS then
+    local player = Players[pid]
+    local turn = Game.GetGameTurn()
+
+    if turn - t.turn > MAX_TRACK_TURNS then
         s.moveTrack = nil
         moveTrackActive = false
         Log("stopped watching the group (took too long), selection kept")
         return
     end
 
-    local player = Players[pid]
-    local tracked, arrived, going = 0, 0, 0
+    -- Tiles already promised to someone in this trip
+    local taken = {}
+    for _, d in pairs(t.dest) do taken[d.x * 1024 + d.y] = true end
+
+    local arrived, redo, pending = {}, {}, 0
     for id, d in pairs(t.dest) do
-        if s.selected[id] then
-            local unit = player:GetUnitByID(id)
-            if unit and not unit:IsDelayedDeath() then
-                tracked = tracked + 1
-                if unit:GetX() == d.x and unit:GetY() == d.y then
-                    arrived = arrived + 1
-                elseif ActivityTypes
-                       and unit:GetActivityType() == ActivityTypes.ACTIVITY_MISSION then
-                    going = going + 1
-                end
+        local unit = player:GetUnitByID(id)
+        if not unit or unit:IsDelayedDeath() then
+            t.dest[id] = nil
+        elseif t.gaveUp[id] then
+            -- finished with this one, nothing to do
+        elseif unit:GetX() == d.x and unit:GetY() == d.y then
+            arrived[#arrived + 1] = unit
+        elseif queued[id] then
+            pending = pending + 1               -- an order is on its way
+        else
+            -- any movement since the last check counts as progress
+            local key = unit:GetX() * 1024 + unit:GetY()
+            if t.pos[id] ~= key then
+                t.pos[id] = key
+                t.tries[id] = 0
             end
-        end
-    end
 
-    if going > 0 then
-        t.sawBusy = true
-        return
-    end
-    if tracked > 0 and not t.sawBusy and arrived < tracked then
-        return                          -- orders may not have registered yet
-    end
-
-    -- Movement is over: put the military units on alert where they stopped
-    -- (only on our own turn, since orders are rejected otherwise)
-    if ALERT_AFTER_MOVE and CanIssueOrders(player) then
-        local alertUnits = {}
-        for id in pairs(t.dest) do
-            if s.selected[id] then
-                local unit = player:GetUnitByID(id)
-                if unit and not unit:IsDelayedDeath() and unit:IsCombatUnit() then
-                    alertUnits[#alertUnits + 1] = unit
+            if UnitOnMission(unit) then
+                pending = pending + 1
+            elseif UnitIsIdle(unit) then
+                pending = pending + 1
+                if t.ordered[id] ~= turn and CanIssueOrders(player) then
+                    local tries = (t.tries[id] or 0) + 1
+                    if tries > MAX_RETRIES then
+                        t.gaveUp[id] = true
+                        pending = pending - 1
+                        Log("giving up on unit " .. id .. ", no progress for " .. MAX_RETRIES .. " turns")
+                    else
+                        t.tries[id] = tries
+                        redo[#redo + 1] = { id = id, unit = unit, d = d, tries = tries }
+                    end
                 end
-            end
-        end
-        if #alertUnits > 0 then
-            local aok, aerr = pcall(SetAlert, alertUnits)
-            guard = false
-            if aok then
-                Log("set " .. #alertUnits .. " units to alert")
             else
-                Log("alert failed: " .. tostring(aerr))
+                -- fortified, sleeping, on alert...: the player took over
+                t.dest[id] = nil
             end
         end
     end
 
-    -- Then drop the group (and the engine's selection too, but
-    -- only if it is still showing one of our units)
-    local ok, head = pcall(UI.GetHeadSelectedUnit)
-    if ok and head and s.selected[head:GetID()] then
-        guard = true
-        pcall(UI.ClearSelectionList)
-        guard = false
+    -- Re-send orders for units whose mission was dropped
+    local resent = 0
+    for _, r in ipairs(redo) do
+        local plot = Map.GetPlot(r.d.x, r.d.y)
+        if r.tries >= 2 then
+            -- same order failed before: try a free tile near the original target
+            local alt = PickFreeTile(r.unit, r.d.tx, r.d.ty, taken)
+            if alt then
+                plot = alt
+                r.d.x, r.d.y = alt:GetX(), alt:GetY()
+                taken[r.d.x * 1024 + r.d.y] = true
+            end
+        end
+        if plot then
+            t.ordered[r.id] = turn
+            EnqueueOrder({ kind = "move", id = r.id, x = plot:GetX(), y = plot:GetY(),
+                           alt = false, shift = false, ctrl = false })
+            resent = resent + 1
+        end
     end
-    s.selected = {}
+    if resent > 0 then Log("re-sending move orders for " .. resent .. " unit(s)") end
+
+    if pending > 0 then return end          -- someone is still on the way
+
+    -- Orders can only be issued on our own turn, so finish then
+    if #arrived > 0 and ALERT_AFTER_MOVE and not CanIssueOrders(player) then return end
+
+    -- Everyone has arrived or been given up on: put the military units on
+    -- alert where they stopped
+    local alertUnits = {}
+    if ALERT_AFTER_MOVE then
+        for _, unit in ipairs(arrived) do
+            if unit:IsCombatUnit() then alertUnits[#alertUnits + 1] = unit end
+        end
+    end
+    if #alertUnits > 0 then EnsureSnapshot() end
+
+    -- Drop the trip units from the logical group
+    for id in pairs(t.dest) do s.selected[id] = nil end
+
+    if #alertUnits > 0 then
+        -- the engine's selection must not end up showing the finished units
+        if snap and snap.headID and t.dest[snap.headID] then snap.headID = nil end
+        for _, unit in ipairs(alertUnits) do
+            EnqueueOrder({ kind = "alert", id = unit:GetID() })
+        end
+        Log("setting " .. #alertUnits .. " units to alert")
+    else
+        local ok, head = pcall(UI.GetHeadSelectedUnit)
+        if ok and head and t.dest[head:GetID()] then
+            guard = true
+            pcall(UI.ClearSelectionList)
+            guard = false
+        end
+    end
+
     s.moveTrack = nil
     moveTrackActive = false
     Log("movement complete, group cleared")
@@ -341,9 +654,12 @@ OnFrameUpdate = function()
 
     if moveCheckDirty then
         moveCheckDirty = false
+        checking = true
         local ok, err = pcall(CheckMovementComplete)
+        checking = false
         if not ok then
             moveTrackActive = false
+            guard = false
             Log("movement check error: " .. tostring(err))
         end
     end
@@ -359,10 +675,22 @@ OnFrameUpdate = function()
             Log("hex highlight error, disabled: " .. tostring(err))
         end
     end
+
+    if current or orderQueue[1] then
+        local ok, err = pcall(ProcessOrders)
+        if not ok then
+            Log("order error: " .. tostring(err))
+            DropAllOrders()
+            guard = false
+        end
+    end
+
+    -- Orders are paced one frame at a time, so keep running while any are pending
+    if current or orderQueue[1] then InstallUpdate() end
 end
 
 -- Installs the per-frame callback once; it removes itself when it has run
-local function InstallUpdate()
+InstallUpdate = function()
     if updateInstalled then return end
     updateInstalled = true
     if not pcall(SetUpdateNow) then updateInstalled = false end
@@ -386,18 +714,21 @@ local function MarkUserAction()
     InstallUpdate()
 end
 
--- Keep the highlight and the arrival check up to date as units move. Both
--- hooks do nothing unless a highlight or a watched dispatch is active.
+-- Keep the highlight and the trip check up to date as units move. Both
+-- hooks do nothing unless a highlight or a watched trip is active.
 if Events.SerialEventUnitInfoDirty then
     Events.SerialEventUnitInfoDirty.Add(function()
-        if refreshing then return end
+        if refreshing or checking then return end
         if litCount > 0 then QueueRefresh(false) end
         if moveTrackActive then QueueMoveCheck() end
     end)
 end
 if Events.ActivePlayerTurnStart then
     Events.ActivePlayerTurnStart.Add(function()
-        -- Also covers hotseat: the new active player gets their own highlight
+        -- A new turn is when blocked units need their orders re-sent. This also
+        -- covers hotseat: the new active player gets their own trip and highlight.
+        DropAllOrders()
+        moveTrackActive = GetState(Game.GetActivePlayer()).moveTrack ~= nil
         if litCount > 0 then QueueRefresh(true) end
         if moveTrackActive then QueueMoveCheck() end
     end)
@@ -410,7 +741,8 @@ end
 -- makes on its own, such as auto-advancing to the next unit after an order,
 -- are ignored too, so they can't silently drop the group. Only a change that
 -- follows a left click or key press collapses the group to what the user
--- picked (Shift adds instead).
+-- picked (Shift adds instead). A unit the user picks this way also leaves
+-- any trip it was on, so the trip never fights a manual order.
 local function OnSelectionChanged(playerID, unitID, i, j, k, isSelected)
     if guard then return end
     if playerID ~= Game.GetActivePlayer() then return end
@@ -422,6 +754,7 @@ local function OnSelectionChanged(playerID, unitID, i, j, k, isSelected)
     end
     local s = GetState(playerID)
     if isSelected then
+        if s.moveTrack then s.moveTrack.dest[unitID] = nil end
         if UIManager:GetShift() then
             s.selected[unitID] = true
         else
@@ -430,7 +763,6 @@ local function OnSelectionChanged(playerID, unitID, i, j, k, isSelected)
     elseif s.selected[unitID] and CountSet(s.selected, 2) < 2 then
         s.selected[unitID] = nil
     end
-    s.moveTrack = nil
     QueueRefresh(true)
 end
 if Events.UnitSelectionChanged then
@@ -442,6 +774,7 @@ local function OnUnitDestroyed(playerID, unitID)
     local s = GetState(playerID)
     local wasSelected = s.selected[unitID]
     s.selected[unitID] = nil
+    if s.moveTrack then s.moveTrack.dest[unitID] = nil end
     for n = 1, MAX_GROUPS do s.groups[n][unitID] = nil end
     if wasSelected then QueueRefresh(true) end
 end
@@ -488,7 +821,6 @@ local function RecallGroup(n)
 
     if next(recalled) == nil then return false end
     s.selected = recalled
-    s.moveTrack = nil
     QueueRefresh(true)
     return true
 end
@@ -578,7 +910,6 @@ local function BoxSelect(x1, y1, x2, y2, addToSelection)
     if not addToSelection then
         UI.ClearSelectionList()
         s.selected = {}
-        s.moveTrack = nil
     end
     for _, unit in ipairs(picked) do
         UI.SelectUnit(unit)
@@ -592,35 +923,6 @@ end
 ----------------------------------------------------------------
 -- Group dispatch (runs once per right-click, only with 2+ units selected)
 ----------------------------------------------------------------
-
--- True if the tile has a unit the player can see on it
-local function TileHasVisibleUnit(plot, team)
-    for i = 0, plot:GetNumUnits() - 1 do
-        local u = plot:GetUnit(i)
-        if u then
-            local hidden = u.IsInvisible and u:IsInvisible(team, false)
-            if not hidden then return true end
-        end
-    end
-    return false
-end
-
--- A free tile that any unit could plausibly stand on. Only tiles the player
--- can currently see are considered, so nothing hidden influences the choice.
-local function GenericTileOk(plot, team)
-    if plot:IsImpassable() or plot:IsMountain() then return false end
-    if not plot:IsVisible(team, false) then return false end
-    if plot:IsCity() then return false end
-    if TileHasVisibleUnit(plot, team) then return false end
-    return true
-end
-
-local function DomainOk(plot, unit)
-    local d = unit:GetDomainType()
-    if d == DomainTypes.DOMAIN_SEA then return plot:IsWater() end
-    if d == DomainTypes.DOMAIN_LAND then return not plot:IsWater() end
-    return false                            -- air etc.: no spreading
-end
 
 -- Groups units by the tile they start on. Units sharing a tile get the SAME
 -- destination (so they travel together); units on different tiles get
@@ -729,40 +1031,33 @@ local function DispatchMove(plot, alt, shift, ctrl)
 
     Log("dispatching " .. #units .. " units in " .. #clusters .. " tile group(s) toward " .. px .. "," .. py)
 
-    -- The order loop runs in a pcall so the guard flag can never stay set
-    local sent, err = pcall(function()
-        guard = true
-        for _, c in ipairs(clusters) do
-            for _, e in ipairs(c.units) do
-                UI.ClearSelectionList()
-                UI.SelectUnit(e.unit)
-                Game.SelectionListMove(c.dest, alt, shift, ctrl)
-            end
-        end
-
-        -- Restore the group as the visible selection (best effort)
-        UI.ClearSelectionList()
-        for _, e in ipairs(units) do
-            UI.SelectUnit(e.unit)
-        end
-    end)
-    guard = false
-    if not sent then
-        Log("ERROR while sending orders: " .. tostring(err))
-        return true                         -- orders may be partly sent; don't double-send
-    end
 
     local keep = {}
     for _, e in ipairs(units) do keep[e.id] = true end
     s.selected = keep
 
-    -- Watch the group so it can be dropped once everyone has arrived
-    local dest = {}
+    -- Start (or extend) the trip: remember where each unit is going so it can
+    -- be re-ordered on later turns if the engine drops its mission. Units from
+    -- an earlier, still-running trip keep their own destinations.
+    local turn = Game.GetGameTurn()
+    local t = s.moveTrack
+    if not t then
+        t = { dest = {}, ordered = {}, tries = {}, gaveUp = {}, pos = {} }
+        s.moveTrack = t
+    end
+    t.turn = turn
     for _, c in ipairs(clusters) do
         local dx, dy = c.dest:GetX(), c.dest:GetY()
-        for _, e in ipairs(c.units) do dest[e.id] = { x = dx, y = dy } end
+        for _, e in ipairs(c.units) do
+            t.dest[e.id]   = { x = dx, y = dy, tx = px, ty = py }
+            t.ordered[e.id] = turn          -- just ordered, don't re-send this turn
+            t.tries[e.id]  = 0
+            t.gaveUp[e.id] = nil
+            t.pos[e.id]    = nil
+            EnqueueOrder({ kind = "move", id = e.id, x = dx, y = dy,
+                           alt = alt, shift = shift, ctrl = ctrl })
+        end
     end
-    s.moveTrack = { dest = dest, sawBusy = false, turn = Game.GetGameTurn() }
     moveTrackActive = true
     QueueMoveCheck()
     QueueRefresh(true)
@@ -835,6 +1130,7 @@ local function InputHandlerImpl(uiMsg, wParam)
         -- Plain click (not a drag) while a group is selected: cancel it.
         -- The click still passes through; we only clear if the group is still
         -- the logical selection, so clicking a unit keeps that new selection.
+        -- (Units already sent on a trip keep travelling.)
         if clickTracking then
             clickTracking = false
             local x, y = UIManager:GetMousePos()
@@ -846,7 +1142,6 @@ local function InputHandlerImpl(uiMsg, wParam)
                 guard = false
                 local s = GetState(Game.GetActivePlayer())
                 s.selected = {}
-                s.moveTrack = nil
                 QueueRefresh(true)
             end
         end
@@ -875,7 +1170,6 @@ local function InputHandlerImpl(uiMsg, wParam)
             Log("group dropped: the selected unit is not part of it")
             local s = GetState(Game.GetActivePlayer())
             s.selected = {}
-            s.moveTrack = nil
             QueueRefresh(true)
             return false                -- let the engine move the selected unit
         end
