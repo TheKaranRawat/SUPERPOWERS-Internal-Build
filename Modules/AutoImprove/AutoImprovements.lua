@@ -60,6 +60,8 @@ local CONFIG = {
 	REPAIR_PILLAGED  = true,
 	REPAIR_INTERVAL  = 4,
 	REPAIRS_PER_CITY = 1,
+	-- Also clear fallout from a tile when its improvement is repaired.
+	REMOVE_FALLOUT   = true,
 
 	-- Skip tiles that currently hold an enemy-owned unit at war.
 	SKIP_OCCUPIED_BY_ENEMY = true,
@@ -162,6 +164,10 @@ for row in GameInfo.Builds() do
 		}
 	end
 end
+
+-- Fallout feature (nil if the ruleset has none)
+local FALLOUT_ID = GameInfoTypes["FEATURE_FALLOUT"]
+local NO_FEATURE = -1
 
 -- Improvements this script could have placed (only these may be replaced)
 local buildableImprovement = {}
@@ -441,6 +447,11 @@ local function RepairPillaged(pPlayer, iPlayer, iTeam)
 				end
 
 				if not best then break end
+				if CONFIG.REMOVE_FALLOUT and FALLOUT_ID
+					and best:GetFeatureType() == FALLOUT_ID then
+					best:SetFeatureType(NO_FEATURE)
+					dprint("Player", iPlayer, "cleared fallout", bestX, bestY)
+				end
 				best:SetImprovementPillaged(false)
 				seen[bestY * 4096 + bestX] = true
 				repaired = repaired + 1
