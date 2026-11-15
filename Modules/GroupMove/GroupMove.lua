@@ -62,7 +62,16 @@ local SPREAD_RADIUS    = 4     -- how far from the clicked hex to look for free 
 local MAX_TRACK_TURNS  = 30    -- stop watching a dispatched group after this many turns
 local MAX_RETRIES      = 4     -- turns a unit may stay stuck (no progress) before it is given up on
 local ORDER_WAIT_TICKS  = 20    -- frames to wait for proof that an order registered before re-sending it
-local MAX_SEND_ATTEMPTS = 3    -- times one order is sent before it is left for the next turn
+local MAX_SEND_ATTEMPTS = 1    -- times one order is sent in a row (1 = never repeat a failed order;
+                               -- the once-per-turn check on later turns still tries again)
+local RELAX_RADIUS     = 2     -- if no normal free tile works, any tile this close to the target is allowed
+local KEEP_GROUP_SELECTED  = false -- true: re-select the whole group in the engine after ordering it.
+                                   -- false: leave the engine selection empty (the group stays selected
+                                   -- inside the script and is still highlighted). This avoids the game's
+                                   -- auto-cycle jumping between units that already have orders.
+local RIGHT_DRAG_DISPATCHES = true  -- true: hold right button, move to a hex, release = group goes to the
+                                    -- hex you release on (like the game's hold-to-preview move).
+                                    -- false: a right-drag longer than DRAG_THRESHOLD is passed to the engine
 local HIGHLIGHT        = true  -- light up the hex under every unit in the group
 local HL_COLOR         = { 1.0, 0.9, 0.5, 1.0 }   -- r, g, b, a (0 to 1)
 local HL_STYLE         = nil   -- optional highlight style name passed to the game
@@ -270,6 +279,15 @@ local function DomainOk(plot, unit)
     return false                            -- air etc.: no spreading
 end
 
+-- True if the game can find a path for this unit to the tile (read-only
+-- check). If the API is missing or fails, the tile is not rejected.
+local function CanReach(unit, plot)
+    if not unit.GeneratePath then return true end
+    local ok, res = pcall(unit.GeneratePath, unit, plot)
+    if not ok then return true end
+    return res and true or false
+end
+
 -- Finds the free tile closest to the unit among the nearest ring around
 -- (cx, cy) that has any. `taken` holds tile keys already promised to others.
 local function PickFreeTile(unit, cx, cy, taken)
@@ -283,7 +301,7 @@ local function PickFreeTile(unit, cx, cy, taken)
                     local p = Map.GetPlot(x, y)
                     if p and DomainOk(p, unit) and GenericTileOk(p, team) then
                         local d = Map.PlotDistance(ux, uy, x, y)
-                        if not bestDist or d < bestDist then best, bestDist = p, d end
+                        if (not bestDist or d < bestDist) and CanReach(unit, p) then best, bestDist = p, d end
                     end
                 end
             end
@@ -291,6 +309,46 @@ local function PickFreeTile(unit, cx, cy, taken)
         if best then return best end
     end
     return nil
+end
+
+----------------------------------------------------------------
+-- Destination fallbacks (so an order is only sent where the unit can go)
+----------------------------------------------------------------
+-- Last resort: ignores visibility, units and cities, and only asks that the
+-- unit can path to the tile. Looks at the target itself and the rings
+-- around it up to RELAX_RADIUS, nearest ring first.
+local function PickRelaxedTile(unit, cx, cy, taken)
+    local ux, uy = unit:GetX(), unit:GetY()
+    for r = 0, RELAX_RADIUS do
+        local best, bestDist
+        for x = cx - r, cx + r do
+            for y = cy - r, cy + r do
+                if Map.PlotDistance(cx, cy, x, y) == r and not taken[x * 1024 + y] then
+                    local p = Map.GetPlot(x, y)
+                    if p and DomainOk(p, unit) and not p:IsImpassable() then
+                        local d = Map.PlotDistance(ux, uy, x, y)
+                        if (not bestDist or d < bestDist) and CanReach(unit, p) then
+                            best, bestDist = p, d
+                        end
+                    end
+                end
+            end
+        end
+        if best then return best end
+    end
+    return nil
+end
+
+-- Picks where to really send the unit: the planned tile if it can path there,
+-- otherwise a free reachable tile near the target, otherwise any reachable
+-- tile within RELAX_RADIUS of the target, otherwise the planned tile anyway.
+local function ResolveDestination(unit, plot, tx, ty, taken)
+    if CanReach(unit, plot) then return plot end
+    local alt = PickFreeTile(unit, tx, ty, taken)
+    if alt then return alt end
+    alt = PickRelaxedTile(unit, tx, ty, taken)
+    if alt then return alt end
+    return plot
 end
 
 ----------------------------------------------------------------
@@ -370,7 +428,7 @@ local function RestoreSnapshot()
     pcall(function()
         UI.ClearSelectionList()
         if sn.group then
-            for id in pairs(s.selected) do
+            for id in pairs(KEEP_GROUP_SELECTED and s.selected or {}) do
                 local u = player:GetUnitByID(id)
                 if u and not u:IsDelayedDeath() then UI.SelectUnit(u) end
             end
@@ -402,6 +460,31 @@ local function SendOrder(player, e)
         if not plot then
             queued[e.id] = nil
             return
+        end
+
+        -- Never send an order the unit can't path to: re-aim near the target first
+        if e.tx then
+            local trip = GetState(Game.GetActivePlayer()).moveTrack
+            local taken = {}
+            if trip then
+                for oid, d in pairs(trip.dest) do
+                    if oid ~= e.id then taken[d.x * 1024 + d.y] = true end
+                end
+            end
+            local better = ResolveDestination(unit, plot, e.tx, e.ty, taken)
+            if better:GetX() ~= plot:GetX() or better:GetY() ~= plot:GetY() then
+                Log("unit " .. e.id .. " cannot path to " .. e.x .. "," .. e.y
+                    .. ", sending it to " .. better:GetX() .. "," .. better:GetY() .. " instead")
+                plot = better
+                e.x, e.y = plot:GetX(), plot:GetY()
+                if trip and trip.dest[e.id] then
+                    trip.dest[e.id].x, trip.dest[e.id].y = e.x, e.y
+                end
+                if unit:GetX() == e.x and unit:GetY() == e.y then
+                    queued[e.id] = nil
+                    return
+                end
+            end
         end
     end
 
@@ -458,13 +541,37 @@ local function ProcessOrders()
         elseif tick - e.tick >= ORDER_WAIT_TICKS then
             done = true
             local act = ActivityTypes and unit:GetActivityType() or "?"
-            if e.attempts < MAX_SEND_ATTEMPTS then
+            local moves = MovesLeftOf(unit)
+            local where = ""
+            if e.kind == "move" then
+                where = " (unit at " .. unit:GetX() .. "," .. unit:GetY()
+                        .. ", target " .. e.x .. "," .. e.y .. ", moves left " .. tostring(moves) .. ")"
+            end
+            if e.kind == "move" and moves <= 0 then
+                Log("unit " .. e.id .. " has no movement left, order not accepted" .. where
+                    .. ", leaving it for the next turn")
+            elseif e.attempts < MAX_SEND_ATTEMPTS then
                 resend = true
                 Log("unit " .. e.id .. " showed no response to its order (activity "
-                    .. tostring(act) .. "), resending")
+                    .. tostring(act) .. ")" .. where .. ", resending")
+                if e.kind == "move" and e.tx then
+                    -- that tile may be unreachable for this unit: aim at another free
+                    -- tile near the original target instead
+                    e.tried = e.tried or {}
+                    e.tried[e.x * 1024 + e.y] = true
+                    local alt = PickFreeTile(unit, e.tx, e.ty, e.tried)
+                    if alt then
+                        e.x, e.y = alt:GetX(), alt:GetY()
+                        local trip = GetState(pid).moveTrack
+                        if trip and trip.dest[e.id] then
+                            trip.dest[e.id].x, trip.dest[e.id].y = e.x, e.y
+                        end
+                    end
+                end
             else
                 Log("unit " .. e.id .. " ignored " .. e.attempts
-                    .. " orders (activity " .. tostring(act) .. "), leaving it for the next turn")
+                    .. " orders (activity " .. tostring(act) .. ")" .. where
+                    .. ", leaving it for the next turn")
             end
         end
         if not done then return end
@@ -598,6 +705,7 @@ local function CheckMovementComplete()
         if plot then
             t.ordered[r.id] = turn
             EnqueueOrder({ kind = "move", id = r.id, x = plot:GetX(), y = plot:GetY(),
+                           tx = r.d.tx, ty = r.d.ty,
                            alt = false, shift = false, ctrl = false })
             resent = resent + 1
         end
@@ -972,16 +1080,22 @@ local function AssignDestinations(units, plot)
         local c = clusters[ci]
         local lead = c.units[1].unit
         local best, bestScore, bestIdx
-        for pi = 1, #pool do
-            if not taken[pi] then
-                local e = pool[pi]
-                if DomainOk(e.p, lead) then
-                    local score = Map.PlotDistance(c.x, c.y, e.x, e.y) + e.ring
-                    if not bestScore or score < bestScore then
-                        best, bestScore, bestIdx = e.p, score, pi
+        local unreachable = {}
+        while true do
+            best, bestScore, bestIdx = nil, nil, nil
+            for pi = 1, #pool do
+                if not taken[pi] and not unreachable[pi] then
+                    local e = pool[pi]
+                    if DomainOk(e.p, lead) then
+                        local score = Map.PlotDistance(c.x, c.y, e.x, e.y) + e.ring
+                        if not bestScore or score < bestScore then
+                            best, bestScore, bestIdx = e.p, score, pi
+                        end
                     end
                 end
             end
+            if not best or CanReach(lead, best) then break end
+            unreachable[bestIdx] = true         -- no path there, try the next best tile
         end
         if best then
             c.dest = best
@@ -1054,7 +1168,7 @@ local function DispatchMove(plot, alt, shift, ctrl)
             t.tries[e.id]  = 0
             t.gaveUp[e.id] = nil
             t.pos[e.id]    = nil
-            EnqueueOrder({ kind = "move", id = e.id, x = dx, y = dy,
+            EnqueueOrder({ kind = "move", id = e.id, x = dx, y = dy, tx = px, ty = py,
                            alt = alt, shift = shift, ctrl = ctrl })
         end
     end
@@ -1073,7 +1187,7 @@ end
 local function GroupMatchesEngineSelection()
     local ok, head = pcall(UI.GetHeadSelectedUnit)
     if not ok then return true end          -- can't tell, assume it matches
-    if not head then return false end
+    if not head then return true end        -- nothing selected: the script's group still applies
     return GetState(Game.GetActivePlayer()).selected[head:GetID()] ~= nil
 end
 
@@ -1158,8 +1272,9 @@ local function InputHandlerImpl(uiMsg, wParam)
         if not rDown then return false end
         rDown = false
         local x, y = UIManager:GetMousePos()
-        if math.abs(x - rStartX) > DRAG_THRESHOLD
-           or math.abs(y - rStartY) > DRAG_THRESHOLD then
+        if not RIGHT_DRAG_DISPATCHES
+           and (math.abs(x - rStartX) > DRAG_THRESHOLD
+                or math.abs(y - rStartY) > DRAG_THRESHOLD) then
             return false
         end
         if not HasGroupSelected() then
