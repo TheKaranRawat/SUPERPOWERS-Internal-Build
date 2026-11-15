@@ -3915,7 +3915,13 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="43939FF7C370D80989CCD674F775945A" import="1">Modules/AutoImprove/AutoImprovements.lua</File>
     <File md5="43939FF7C370D80989CCD674F775945A" import="1">Modules/SettlerDelay/SettlerFoundDelay.lua</File>
     <File md5="43939FF7C370D80989CCD674F775945A" import="1">Modules/AutoRoad/AutoRoad.lua</File>
-	
+
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">UI/Override/LeaderHeadRoot.lua</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">UI/Override/LeaderHeadRoot.xml</File>
+
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/LeaderStats/LeaderStatsPanel.lua</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/LeaderStats/LeaderStatsPanel.xml</File>
+
   </Files>
   <Actions>
 	
