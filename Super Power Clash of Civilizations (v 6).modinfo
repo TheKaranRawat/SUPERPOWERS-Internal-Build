@@ -3922,6 +3922,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/LeaderStats/LeaderStatsPanel.lua</File>
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/LeaderStats/LeaderStatsPanel.xml</File>
 
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/AutoCityFire/AutoCityFire.lua</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/AutoCityFire/AutoCityFire.xml</File>
+
   </Files>
   <Actions>
 	
@@ -4518,6 +4521,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <EntryPoint type="InGameUIAddin" file="Modules/AutoRoad/AutoRoad.lua">
       <Name>AutoRoad</Name>
       <Description>Automatically builds roads</Description>
+    </EntryPoint>
+
+    <EntryPoint type="InGameUIAddin" file="Modules/AutoCityFire/AutoCityFire.lua">
+      <Name>AutoCityFire</Name>
+      <Description>Automatically fire from cities</Description>
     </EntryPoint>
 	
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
