@@ -23,6 +23,21 @@ local function FormatK(n, signed)
     return sign .. s
 end
 
+local function GetScoreRank(iPlayer)
+    local myScore = Players[iPlayer]:GetScore()
+    local rank, total = 1, 0
+    for i = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
+        local p = Players[i]
+        if p and p:IsAlive() and not p:IsMinorCiv() and not p:IsBarbarian() then
+            total = total + 1
+            if i ~= iPlayer and p:GetScore() > myScore then
+                rank = rank + 1
+            end
+        end
+    end
+    return rank, total
+end
+
 local function FormatPopulation(pl)
     local total = 0
     for city in pl:Cities() do
@@ -67,6 +82,9 @@ local function Refresh()
     local over     = pl:GetNumUnits()
 
     Controls.Title:SetText(Locale.ConvertTextKey(pl:GetCivilizationShortDescriptionKey()))
+    local rank, total = GetScoreRank(g_iPlayer)
+    Controls.Rank:SetText("#" .. rank)
+
     CivIconHookup(g_iPlayer, 128, Controls.CivIcon, Controls.CivIconBG, Controls.CivIconShadow)
 
     -- Military

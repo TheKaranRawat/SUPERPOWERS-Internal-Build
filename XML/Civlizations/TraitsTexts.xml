@@ -1288,7 +1288,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_POWER_STATS">
-			<Text>[ICON_WAR] Military Might</Text>
+			<Text>[ICON_WAR] Might</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_GOLD_STATS">
@@ -1322,6 +1322,15 @@
 		<Row Tag="TXT_KEY_HAPPINESS_STATS">
 			<Text>[ICON_HAPPINESS_1] Happiness</Text>
 		</Row>
+
+		<Row Tag="TXT_KEY_EUI_CLOSED_BORDERS_YOUR">
+			<Text>You have closed your borders to them.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_EUI_CLOSED_BORDERS_THEIR">
+			<Text>They have closed their borders to us.</Text>
+		</Row>
+
 
 
 

@@ -8,7 +8,7 @@
   
   <!-- Panel: open by default -->
   <Box ID="Panel" Anchor="L,B" Offset="40,160" Size="360,320"
-       Color="10,12,18,90" Hidden="0">
+       Color="10,12,18,110" Hidden="0">
     <Stack ID="Rows" Anchor="C,T" Offset="0,12" StackGrowth="Bottom" Padding="6">
 
       <!-- deprecate 
@@ -17,11 +17,11 @@
       -->
 
       <Container ID="TitleRow" Offset="15,0" Size="300,18">
-        <Image ID="CivIconBG" Offset="0,-40" Anchor="C,C" Size="128" Texture="CivIconBGSizes.dds" />
-        <Image ID="CivIconShadow" Offset="0,-40" Anchor="C,C" Size="128,128" Texture="CivSymbolsColor512.dds" Color="0,0,0,128" />
-        <Image ID="CivIcon" Offset="0,-40" Anchor="C,C" Size="128,128" Texture="CivSymbolsColor512.dds" />
-        <Label ID="Title" Anchor="C,C" Offset="0,-4" Font="TwCenMT24"
-              ColorSet="Beige_Black_Alpha" FontStyle="Shadow"/>
+        <Image ID="CivIconBG" Offset="0,-50" Anchor="C,C" Size="128" Texture="CivIconBGSizes.dds" />
+        <Image ID="CivIconShadow" Offset="0,-50" Anchor="C,C" Size="128,128" Texture="CivSymbolsColor512.dds" Color="0,0,0,128" />
+        <Image ID="CivIcon" Offset="0,-50" Anchor="C,C" Size="128,128" Texture="CivSymbolsColor512.dds" />
+        <Label ID="Title" Anchor="C,C" Offset="0,-4" Font="TwCenMT24" Color0="Beige" Color1="0.0.0.160" FontStyle="SoftShadow" />
+        <Label ID="Rank" Anchor="R,C" Offset="0,0" Font="TwCenMT22" Color="201,162,74,255" FontStyle="Shadow"/>
       </Container>
 
       <!-- Divider: explicit color so it isn't white -->
