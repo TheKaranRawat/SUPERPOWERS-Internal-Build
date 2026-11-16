@@ -460,11 +460,11 @@
 			<Where Name="BUILD_ON_RIVER_PERCENT" />
 		</Update>
 		<Update>
-			<Set Value="11"/>
+			<Set Value="12"/>
 			<Where Name="SETTLER_EVALUATION_DISTANCE" />
 		</Update>
 		<Update>
-			<Set Value="25"/>
+			<Set Value="90"/>
 			<Where Name="SETTLER_DISTANCE_DROPOFF_MODIFIER" />
 		</Update>
 		<Update>
