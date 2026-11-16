@@ -70,8 +70,8 @@
     <LuaContext FileName="Assets/DLC/Expansion2/UI/InGame/Popups/ChooseAdmiralNewPort" ID="ChooseAdmiralNewPort" Hidden="True"/>
     <LuaContext FileName="Assets/DLC/Expansion2/UI/InGame/Popups/LeagueSplash" ID="LeagueSplash" Hidden="True"/>
 		<LuaContext FileName="Assets/UI/InGame/TopPanel" ID="TopPanel"/>
-		<!-- top bar notifications -->
-		<Stack Anchor="L,T" Size="Full,Full" StackGrowth="Bottom" Padding="10" ID="AlertStack" Offset="0,300"/>
+		<!-- alert top bar notifications -->
+		<Stack Anchor="L,T" Size="Full,Full" StackGrowth="Bottom" Padding="10" ID="AlertStack" Offset="15,200"/>
 		
 		<LuaContext FileName="Assets/UI/InGame/Menus/GameMenu" ID="GameMenu" Hidden="True"/>
 		<LuaContext FileName="Assets/UI/InGame/PlayerChange" ID="PlayerChange" Hidden="True"/>
@@ -100,7 +100,7 @@
 	<Label ID="LocalMachineEventStream" String="LocalMachineEventStream" Anchor="C,B" Offset="0,120" Hidden="True"/>
 	<Label ID="TimerRate" String="Timer" Anchor="C,B" Offset="0,140" Hidden="True"/>
 	<Instance Name="AlertMessageInstance">
-		<Label ID="AlertMessageLabel" String="" Color0="255,255,200,255" Color1="0,0,0,200" Font="TwCenMT14" FontStyle="Stroke" Anchor="L,T"/>
+		<Label ID="AlertMessageLabel" String="" Color0="255,255,200,255" Color1="0,0,0,130" Font="TwCenMT14" FontStyle="Stroke" Anchor="L,T"/>
 	</Instance>
 	<Instance Name="PopupText">
 		<WorldAnchor ID="Anchor" Anchor="c,c">

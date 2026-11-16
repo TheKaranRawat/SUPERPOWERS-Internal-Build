@@ -22,10 +22,10 @@ local mustRefreshAlerts = false;
 local pendingAlerts = {};
 local STAGGER_DELAY = 1;             -- seconds between alerts appearing
 local staggerTimer = STAGGER_DELAY;  -- start charged so the first alert shows immediately
-local ALERT_DURATION = 10;           -- seconds an alert stays on screen
-local FADE_DURATION = 0.6;           -- seconds to fade in
-local SLIDE_DISTANCE = 50;           -- pixels the alert rises from below
-local FADE_OUT_DURATION = 1.0;       -- seconds to fade out at the end of the timer
+local ALERT_DURATION = 12;           -- seconds an alert stays on screen
+local FADE_DURATION = 1.0;           -- seconds to fade in
+local SLIDE_DISTANCE = 80;           -- pixels the alert rises from below
+local FADE_OUT_DURATION = 1.3;       -- seconds to fade out at the end of the timer
 local fadeErrorShown = false;        -- so the log isn't spammed
 
 local bHideDebug = true;
@@ -1056,6 +1056,9 @@ function ApplyAlertFade( v )
 	end
 
 	local alpha = tIn * tOut;
+	if v.expired then
+		alpha = 0;
+	end
 
 	local label = v.control.AlertMessageLabel;
 
@@ -1091,21 +1094,24 @@ function OnUpdate(fDTime)
 			if v.shownYet == true then
 				v.elapsedTime = v.elapsedTime + fDTime;
 			end
-			if v.elapsedTime >= ALERT_DURATION then
+			if v.elapsedTime >= ALERT_DURATION and not v.expired then
+				v.expired = true;	-- keeps its slot (invisible) so the others don't shift
 				mustRefreshAlerts = true;
 			end
 		end
 		
 		if mustRefreshAlerts then
-			local newAlertTable = {};
 			g_InstanceManager:ResetInstances();
+
+			-- Expired alerts stay as invisible placeholders so the alerts below
+			-- them don't slide up. Only trailing expired alerts are dropped
+			-- (that can't move anything), and everything is cleared once all expired.
 			for i, v in ipairs( alertTable ) do
-				if v.elapsedTime < ALERT_DURATION then
-					v.shownYet = true;
-					table.insert( newAlertTable, v );
-				end
+				v.shownYet = true;
 			end
-			alertTable = newAlertTable;
+			while #alertTable > 0 and alertTable[#alertTable].expired do
+				table.remove( alertTable );
+			end
 			for i, v in ipairs( alertTable ) do
 				local controlTable = g_InstanceManager:GetInstance();
 				controlTable.AlertMessageLabel:SetText( v.text );
@@ -1125,8 +1131,8 @@ function OnUpdate(fDTime)
 			if v.fadeTime ~= nil and v.fadeTime < FADE_DURATION then
 				v.fadeTime = v.fadeTime + fDTime;
 			end
-			if (v.fadeTime ~= nil and v.fadeTime < FADE_DURATION)
-			   or v.elapsedTime > ALERT_DURATION - FADE_OUT_DURATION then
+			if not v.expired and ((v.fadeTime ~= nil and v.fadeTime < FADE_DURATION)
+			   or v.elapsedTime > ALERT_DURATION - FADE_OUT_DURATION) then
 				ApplyAlertFade( v );
 			end
 		end
