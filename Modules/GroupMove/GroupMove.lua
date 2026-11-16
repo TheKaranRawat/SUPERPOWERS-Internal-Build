@@ -19,6 +19,18 @@
 --  * Refreshes are coalesced to at most one per frame, and the highlight is
 --    only redrawn when the set of occupied tiles actually changed.
 --  * Mouse moves cost one comparison unless a box is being dragged.
+--  * Unit events from other players' turns are ignored (they fire constantly
+--    and none of our units can change then).
+--  * Trip checks are throttled to one per CHECK_INTERVAL seconds, and a
+--    throttled check stays pending so nothing is missed.
+--  * Plain unit-movement events only refresh the highlight, never the preview.
+--
+-- NETWORK MULTIPLAYER
+--  * The wait for an order to register is longer (ORDER_WAIT_TICKS_MP) since
+--    orders take a network round trip. A late order is never sent twice: the
+--    trip check re-sends at most once per unit per turn.
+--  * Only tiles the player has seen (visible, or revealed for the last-resort
+--    fallback and the preview) are ever examined when picking destinations.
 --
 -- ORDER PACING
 --  * Orders are sent one unit per frame, and the next unit is only ordered once the
@@ -33,7 +45,10 @@
 --    re-sent, at most once per turn. If it keeps failing it is sent to a free
 --    tile near the original target, and after MAX_RETRIES turns without any
 --    progress it is given up on.
---  * Selecting a trip unit yourself takes it out of the trip (manual control).
+--  * Left-clicking a unit that is part of a trip lights up its destination hex.
+--  * Right-clicking with such a unit selected detaches it from the trip: it
+--    heads to the clicked hex on its own, an alert says so, and the rest of
+--    the group carries on to the original objective.
 --  * When every trip unit has arrived (or been given up), the arrived military
 --    units are put on alert and the trip ends.
 --
@@ -61,7 +76,9 @@ local SPREAD_UNITS     = true  -- units from different tiles get different desti
 local SPREAD_RADIUS    = 4     -- how far from the clicked hex to look for free tiles
 local MAX_TRACK_TURNS  = 30    -- stop watching a dispatched group after this many turns
 local MAX_RETRIES      = 4     -- turns a unit may stay stuck (no progress) before it is given up on
-local ORDER_WAIT_TICKS  = 20    -- frames to wait for proof that an order registered before re-sending it
+local ORDER_WAIT_TICKS  = 20    -- frames to wait for proof that an order registered before moving on
+local ORDER_WAIT_TICKS_MP = 90  -- same, in network multiplayer, where an order takes a network round trip
+local CHECK_INTERVAL   = 0.25   -- seconds between trip checks (needs os.clock; otherwise one per frame)
 local MAX_SEND_ATTEMPTS = 1    -- times one order is sent in a row (1 = never repeat a failed order;
                                -- the once-per-turn check on later turns still tries again)
 local RELAX_RADIUS     = 2     -- if no normal free tile works, any tile this close to the target is allowed
@@ -81,11 +98,53 @@ local PREVIEW_COLOR    = { 0.5, 0.8, 1.0, 1.0 }   -- r, g, b, a (0 to 1)
 local HIGHLIGHT        = true  -- light up the hex under every unit in the group
 local HL_COLOR         = { 1.0, 0.9, 0.5, 1.0 }   -- r, g, b, a (0 to 1)
 local HL_STYLE         = nil   -- optional highlight style name passed to the game
+local SHOW_DEST        = true  -- selecting a single unit that is on a group trip lights its destination hex
+                               -- (needs HIGHLIGHT)
+local DEST_COLOR       = { 0.4, 1.0, 0.4, 1.0 }   -- r, g, b, a (0 to 1)
 local DEBUG            = true  -- writes key events to Lua.log
 local DEBUG_VERBOSE    = false -- also logs routine events (can be noisy)
 
 local function Log(msg)
     if DEBUG then print("GroupMove: " .. msg) end
+end
+
+-- On-screen alert (the same message line the game uses for gameplay alerts).
+-- Falls back to the log if the event isn't available in this build.
+local function Alert(msg)
+    local shown = false
+    if Events and Events.GameplayAlertMessage then
+        shown = pcall(Events.GameplayAlertMessage, msg)
+    end
+    if shown then
+        Log(msg)
+    else
+        print("GroupMove: " .. msg)
+    end
+end
+
+local function UnitDisplayName(unit)
+    local ok, name = pcall(function() return Locale.ConvertTextKey(unit:GetNameKey()) end)
+    if ok and name and name ~= "" then return name end
+    return "Unit " .. unit:GetID()
+end
+
+-- Seconds, if the game exposes a clock. Without one, trip checks are simply
+-- not throttled (CHECK_GAP is 0).
+local function Now()
+    if os and os.clock then return os.clock() end
+    return 0
+end
+local CHECK_GAP = (os and os.clock) and CHECK_INTERVAL or 0
+
+-- Frames to wait for an order to register: longer in network multiplayer
+local orderWait = nil
+local function OrderWait()
+    if not orderWait then
+        local ok, mp = pcall(function() return Game.IsNetworkMultiPlayer() end)
+        orderWait = (ok and mp) and ORDER_WAIT_TICKS_MP or ORDER_WAIT_TICKS
+        Log("order wait is " .. orderWait .. " frames" .. ((ok and mp) and " (multiplayer)" or ""))
+    end
+    return orderWait
 end
 
 ----------------------------------------------------------------
@@ -145,6 +204,13 @@ end
 local function CanIssueOrders(player)
     if player.IsTurnActive and not player:IsTurnActive() then return false end
     return true
+end
+
+-- True while the active player can act. Other players' turns fire unit events
+-- constantly, but none of our own units can change then, so event handlers
+-- use this to skip all work.
+local function IsMyTurn()
+    return CanIssueOrders(Players[Game.GetActivePlayer()])
 end
 
 ----------------------------------------------------------------
@@ -252,6 +318,57 @@ local function RefreshHighlights(force)
     if DEBUG_VERBOSE then Log("highlighted " .. litCount .. " tiles") end
 end
 
+-- Destination highlight (visual only). When exactly one unit is selected and
+-- it belongs to a dispatched trip, its destination hex is lit in DEST_COLOR.
+-- Nothing is drawn for a unit that is not on a trip or has already arrived.
+local destLit = nil             -- { key = tile key, hex = hex position } while a destination is lit
+local destColor = nil
+
+local function ClearDestHighlight()
+    if not destLit then return end
+    SetHexHighlight(destLit.hex, false, destColor)
+    local lit = litHex[destLit.key]
+    if lit then SetHexHighlight(lit, true, hlColor) end    -- don't strip a group highlight
+    destLit = nil
+end
+
+local function RefreshDestHighlight()
+    if not SHOW_DEST or not CheckHighlight() then return end
+    if not destColor then
+        destColor = MakeVec4(DEST_COLOR[1], DEST_COLOR[2], DEST_COLOR[3], DEST_COLOR[4])
+    end
+
+    local pid = Game.GetActivePlayer()
+    local s = GetState(pid)
+    local t = s.moveTrack
+
+    local wantX, wantY
+    if t and CountSet(s.selected, 2) == 1 then
+        local id = next(s.selected)
+        local d = t.dest[id]
+        if d and not t.gaveUp[id] then
+            local unit = Players[pid]:GetUnitByID(id)
+            if unit and not unit:IsDelayedDeath()
+               and not (unit:GetX() == d.x and unit:GetY() == d.y) then
+                wantX, wantY = d.x, d.y
+            end
+        end
+    end
+
+    if not wantX then
+        ClearDestHighlight()
+        return
+    end
+
+    local key = wantX * 1024 + wantY
+    if destLit and destLit.key == key then return end
+    ClearDestHighlight()
+    local hex = MakeHex(wantX, wantY)
+    SetHexHighlight(hex, true, destColor)
+    destLit = { key = key, hex = hex }
+    if DEBUG_VERBOSE then Log("destination lit at " .. wantX .. "," .. wantY) end
+end
+
 ----------------------------------------------------------------
 -- Tile helpers (used by destination spreading and by trip re-routing)
 ----------------------------------------------------------------
@@ -324,6 +441,7 @@ end
 -- unit can path to the tile. Looks at the target itself and the rings
 -- around it up to RELAX_RADIUS, nearest ring first.
 local function PickRelaxedTile(unit, cx, cy, taken)
+    local team = Game.GetActiveTeam()
     local ux, uy = unit:GetX(), unit:GetY()
     for r = 0, RELAX_RADIUS do
         local best, bestDist
@@ -331,7 +449,9 @@ local function PickRelaxedTile(unit, cx, cy, taken)
             for y = cy - r, cy + r do
                 if Map.PlotDistance(cx, cy, x, y) == r and not taken[x * 1024 + y] then
                     local p = Map.GetPlot(x, y)
-                    if p and DomainOk(p, unit) and not p:IsImpassable() then
+                    -- revealed tiles only: never probe terrain the player hasn't seen
+                    if p and p:IsRevealed(team, false) and DomainOk(p, unit)
+                       and not p:IsImpassable() then
                         local d = Map.PlotDistance(ux, uy, x, y)
                         if (not bestDist or d < bestDist) and CanReach(unit, p) then
                             best, bestDist = p, d
@@ -366,6 +486,7 @@ local refreshing = false
 local checking = false          -- inside a trip check (its own orders must not re-trigger it)
 local moveTrackActive = false   -- a dispatched group is being watched
 local moveCheckDirty = false
+local lastCheck = -1000         -- Now() of the last trip check (throttle)
 local updateInstalled = false
 
 local QueueRefresh              -- forward declarations, assigned below
@@ -563,7 +684,7 @@ local function ProcessOrders()
                or UnitOnMission(unit)
                or MovesLeftOf(unit) ~= e.moves then
             done = true
-        elseif tick - e.tick >= ORDER_WAIT_TICKS then
+        elseif tick - e.tick >= OrderWait() then
             done = true
             local act = ActivityTypes and unit:GetActivityType() or "?"
             local moves = MovesLeftOf(unit)
@@ -727,7 +848,8 @@ local function RefreshPreview()
         local gy = math.floor(r + 0.5)
         local gx = math.floor(q + (gy - gy % 2) / 2 + 0.5)
         local plot = Map.GetPlot(gx, gy)
-        if plot and DomainOk(plot, pts[i].unit) then
+        if plot and plot:IsRevealed(Game.GetActiveTeam(), false)
+           and DomainOk(plot, pts[i].unit) then
             want[gx * 1024 + gy] = { gx, gy }
         end
     end
@@ -777,6 +899,7 @@ local function CheckMovementComplete()
         s.moveTrack = nil
         moveTrackActive = false
         Log("stopped watching the group (took too long), selection kept")
+        QueueRefresh(true)
         return
     end
 
@@ -896,15 +1019,22 @@ OnFrameUpdate = function()
     pcall(ClearUpdateNow)
     userAction = false
 
+    -- Trip checks are throttled to one per CHECK_GAP seconds. A check that is
+    -- too early stays pending (and keeps this callback alive, see the end of
+    -- the function) so the last unit's arrival is never missed.
     if moveCheckDirty then
-        moveCheckDirty = false
-        checking = true
-        local ok, err = pcall(CheckMovementComplete)
-        checking = false
-        if not ok then
-            moveTrackActive = false
-            guard = false
-            Log("movement check error: " .. tostring(err))
+        local now = Now()
+        if now - lastCheck >= CHECK_GAP then
+            lastCheck = now
+            moveCheckDirty = false
+            checking = true
+            local ok, err = pcall(CheckMovementComplete)
+            checking = false
+            if not ok then
+                moveTrackActive = false
+                guard = false
+                Log("movement check error: " .. tostring(err))
+            end
         end
     end
 
@@ -913,10 +1043,15 @@ OnFrameUpdate = function()
         hlDirty, hlForce = false, false
         refreshing = true
         local ok, err = pcall(RefreshHighlights, force)
-        refreshing = false
         if not ok then
             hlAvailable = false
             Log("hex highlight error, disabled: " .. tostring(err))
+        end
+        local okd, errd = pcall(RefreshDestHighlight)
+        refreshing = false
+        if not okd then
+            SHOW_DEST = false
+            Log("destination highlight error, disabled: " .. tostring(errd))
         end
     end
 
@@ -942,8 +1077,9 @@ OnFrameUpdate = function()
         end
     end
 
-    -- Orders are paced one frame at a time, so keep running while any are pending
-    if current or orderQueue[1] then InstallUpdate() end
+    -- Orders are paced one frame at a time, and a throttled trip check waits
+    -- for its interval, so keep running while either is pending
+    if current or orderQueue[1] or moveCheckDirty then InstallUpdate() end
 end
 
 -- Installs the per-frame callback once; it removes itself when it has run
@@ -956,8 +1092,12 @@ end
 QueueRefresh = function(force)
     if hlAvailable == false then return end
     hlDirty = true
-    pvDirty = true
-    if force then hlForce = true end
+    if force then
+        -- the preview only depends on the selection, which forced refreshes
+        -- cover; plain unit-movement refreshes don't need to redo it
+        hlForce = true
+        pvDirty = true
+    end
     InstallUpdate()
 end
 
@@ -972,12 +1112,72 @@ local function MarkUserAction()
     InstallUpdate()
 end
 
+----------------------------------------------------------------
+-- Detaching one unit from a running trip
+----------------------------------------------------------------
+-- Takes the unit out of the trip so the trip check never re-sends its old
+-- orders, drops any of its orders still waiting in the queue, and tells the
+-- player. The rest of the trip is untouched and keeps its original targets.
+-- The unit's NEW order is not sent here: the caller lets the engine handle
+-- the right-click as usual.
+local function DetachFromTrip(unit)
+    local pid = Game.GetActivePlayer()
+    local s = GetState(pid)
+    local t = s.moveTrack
+    local id = unit:GetID()
+    if not (t and t.dest[id]) then return false end
+
+    t.dest[id]    = nil
+    t.ordered[id] = nil
+    t.tries[id]   = nil
+    t.gaveUp[id]  = nil
+    t.pos[id]     = nil
+    queued[id]    = nil
+    for i = #orderQueue, 1, -1 do
+        local o = orderQueue[i]
+        if o.kind == "move" and o.id == id then table.remove(orderQueue, i) end
+    end
+
+    local remaining = CountSet(t.dest)
+    local name = UnitDisplayName(unit)
+    if remaining > 0 then
+        Alert(name .. " removed from the group and is moving on its own. "
+              .. remaining .. " unit(s) continue to the original objective.")
+        QueueMoveCheck()
+    else
+        Alert(name .. " removed from the group and is moving on its own. The group has no units left.")
+        s.moveTrack = nil
+        moveTrackActive = false
+    end
+    QueueRefresh(true)
+    return true
+end
+
+-- Right-click with a single unit selected: if the game's selected unit is on a
+-- group trip, it leaves the trip (the engine then moves it to the clicked hex).
+local function TryDetachSelected()
+    local pid = Game.GetActivePlayer()
+    local t = GetState(pid).moveTrack
+    if not t then return end
+    if not CanIssueOrders(Players[pid]) then return end
+
+    local ok, head = pcall(UI.GetHeadSelectedUnit)
+    if not ok or not head then return end
+    if not t.dest[head:GetID()] then return end
+
+    local hx, hy = UI.GetMouseOverHex()
+    if not (hx and Map.GetPlot(hx, hy)) then return end
+
+    DetachFromTrip(head)
+end
+
 -- Keep the highlight and the trip check up to date as units move. Both
 -- hooks do nothing unless a highlight or a watched trip is active.
 if Events.SerialEventUnitInfoDirty then
     Events.SerialEventUnitInfoDirty.Add(function()
         if refreshing or checking then return end
-        if litCount > 0 then QueueRefresh(false) end
+        if not IsMyTurn() then return end       -- other players' turns: nothing of ours can change
+        if litCount > 0 or destLit then QueueRefresh(false) end
         if moveTrackActive then QueueMoveCheck() end
     end)
 end
@@ -987,7 +1187,8 @@ if Events.ActivePlayerTurnStart then
         -- covers hotseat: the new active player gets their own trip and highlight.
         DropAllOrders()
         moveTrackActive = GetState(Game.GetActivePlayer()).moveTrack ~= nil
-        if litCount > 0 then QueueRefresh(true) end
+        -- (also repaints or clears overlays left by the previous hotseat player)
+        if litCount > 0 or destLit or next(pvHex) then QueueRefresh(true) end
         if moveTrackActive then QueueMoveCheck() end
     end)
 end
@@ -999,8 +1200,9 @@ end
 -- makes on its own, such as auto-advancing to the next unit after an order,
 -- are ignored too, so they can't silently drop the group. Only a change that
 -- follows a left click or key press collapses the group to what the user
--- picked (Shift adds instead). A unit the user picks this way also leaves
--- any trip it was on, so the trip never fights a manual order.
+-- picked (Shift adds instead). Picking a unit that is on a trip does NOT
+-- remove it from the trip: it just lights up its destination (see
+-- RefreshDestHighlight). A right-click with it selected detaches it.
 local function OnSelectionChanged(playerID, unitID, i, j, k, isSelected)
     if guard then return end
     if playerID ~= Game.GetActivePlayer() then return end
@@ -1012,7 +1214,6 @@ local function OnSelectionChanged(playerID, unitID, i, j, k, isSelected)
     end
     local s = GetState(playerID)
     if isSelected then
-        if s.moveTrack then s.moveTrack.dest[unitID] = nil end
         if UIManager:GetShift() then
             s.selected[unitID] = true
         else
@@ -1454,6 +1655,10 @@ local function InputHandlerImpl(uiMsg, wParam)
             return false
         end
         if not HasGroupSelected() then
+            -- A single unit that is part of a running group trip leaves the
+            -- trip here. The click itself passes through, so the engine sends
+            -- the unit to the clicked hex on its own.
+            TryDetachSelected()
             if DEBUG_VERBOSE then Log("right-click passed to engine, no group selected") end
             return false
         end
