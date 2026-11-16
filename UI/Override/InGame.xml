@@ -71,7 +71,7 @@
     <LuaContext FileName="Assets/DLC/Expansion2/UI/InGame/Popups/LeagueSplash" ID="LeagueSplash" Hidden="True"/>
 		<LuaContext FileName="Assets/UI/InGame/TopPanel" ID="TopPanel"/>
 		<!-- alert top bar notifications -->
-		<Stack Anchor="L,T" Size="Full,Full" StackGrowth="Bottom" Padding="10" ID="AlertStack" Offset="15,200"/>
+		<Stack Anchor="L,T" Size="Full,Full" StackGrowth="Bottom" Padding="10" ID="AlertStack" Offset="10,200"/>
 		
 		<LuaContext FileName="Assets/UI/InGame/Menus/GameMenu" ID="GameMenu" Hidden="True"/>
 		<LuaContext FileName="Assets/UI/InGame/PlayerChange" ID="PlayerChange" Hidden="True"/>
