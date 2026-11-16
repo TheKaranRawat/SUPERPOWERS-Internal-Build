@@ -72,6 +72,12 @@ local KEEP_GROUP_SELECTED  = false -- true: re-select the whole group in the eng
 local RIGHT_DRAG_DISPATCHES = true  -- true: hold right button, move to a hex, release = group goes to the
                                     -- hex you release on (like the game's hold-to-preview move).
                                     -- false: a right-drag longer than DRAG_THRESHOLD is passed to the engine
+local DESELECT_AFTER_ORDER = true -- true: the group is deselected (highlight off, nothing selected in the
+                                  -- game) as soon as you send it; the units keep travelling on their own
+local PREVIEW          = true  -- show where the group would end up under the mouse (needs HIGHLIGHT)
+local PREVIEW_MODE     = "always"  -- "always": whenever a group is selected
+                                   -- "hold": only while the right mouse button is held
+local PREVIEW_COLOR    = { 0.5, 0.8, 1.0, 1.0 }   -- r, g, b, a (0 to 1)
 local HIGHLIGHT        = true  -- light up the hex under every unit in the group
 local HL_COLOR         = { 1.0, 0.9, 0.5, 1.0 }   -- r, g, b, a (0 to 1)
 local HL_STYLE         = nil   -- optional highlight style name passed to the game
@@ -403,6 +409,24 @@ local queued = {}        -- queued[unitID] = true while a MOVE for that unit is 
 local snap = nil         -- the player's selection from before we started changing it
 local tick = 0
 
+-- The game enters its "move to" preview when the right button goes down and
+-- leaves it when the button comes up. We swallow the button-up when we send a
+-- group, so the game never leaves that mode and every unit you cycle to shows
+-- its movement prediction. This puts the game back in normal selection mode.
+-- With onlyIfMoveMode, any other mode (an attack, a ranged strike...) is left alone.
+local function ResetMoveMode(onlyIfMoveMode)
+    if not (UI and UI.SetInterfaceMode and InterfaceModeTypes
+            and InterfaceModeTypes.INTERFACEMODE_SELECTION) then
+        return
+    end
+    if onlyIfMoveMode then
+        local ok, mode = pcall(UI.GetInterfaceMode)
+        local moveTo = InterfaceModeTypes.INTERFACEMODE_MOVE_TO
+        if not (ok and moveTo ~= nil and mode == moveTo) then return end
+    end
+    pcall(UI.SetInterfaceMode, InterfaceModeTypes.INTERFACEMODE_SELECTION)
+end
+
 local function EnsureSnapshot()
     if snap then return end
     local s = GetState(Game.GetActivePlayer())
@@ -438,6 +462,7 @@ local function RestoreSnapshot()
         end
     end)
     guard = false
+    ResetMoveMode(true)
 end
 
 local function DropAllOrders()
@@ -614,6 +639,117 @@ EnqueueOrder = function(e)
 end
 
 ----------------------------------------------------------------
+-- Destination preview (visual only)
+----------------------------------------------------------------
+-- With a group selected, lights a hex for every unit around the hex under the
+-- mouse, keeping the units' positions relative to each other as they are now.
+-- The unit nearest the group's centre sits on the hovered hex. This is only a
+-- rough guide: the real dispatch still spreads units over free tiles.
+local pvHex = {}                -- pvHex[key] = hex position currently lit for the preview
+local pvColor = nil
+local pvX, pvY = nil, nil       -- hex under the mouse
+local pvDirty = false
+local pvBroken = false
+local previewOn = false         -- true while mouse moves need to be watched
+
+local function PreviewChanged()
+    pvDirty = true
+    InstallUpdate()
+end
+
+local function ClearPreview()
+    for key, hex in pairs(pvHex) do
+        SetHexHighlight(hex, false, pvColor)
+        local lit = litHex[key]
+        if lit then SetHexHighlight(lit, true, hlColor) end   -- don't strip a group highlight
+    end
+    pvHex = {}
+end
+
+local function RefreshPreview()
+    if pvBroken then return end
+    if not PREVIEW or not CheckHighlight() then
+        previewOn = false
+        return
+    end
+    if not pvColor then
+        pvColor = MakeVec4(PREVIEW_COLOR[1], PREVIEW_COLOR[2], PREVIEW_COLOR[3], PREVIEW_COLOR[4])
+    end
+
+    local pid = Game.GetActivePlayer()
+    local s = GetState(pid)
+    local grouped = CountSet(s.selected, 2) >= 2
+    previewOn = grouped
+    if not grouped or (PREVIEW_MODE == "hold" and not rDown) then
+        ClearPreview()
+        return
+    end
+    if not pvX then pvX, pvY = UI.GetMouseOverHex() end
+    if not pvX or pvX < 0 then
+        ClearPreview()
+        return
+    end
+
+    -- Units as axial hex coordinates (the same conversion MakeHex uses)
+    local player = Players[pid]
+    local pts, n = {}, 0
+    local sumQ, sumR = 0, 0
+    for id in pairs(s.selected) do
+        local u = player:GetUnitByID(id)
+        if u and not u:IsDelayedDeath() then
+            local ux, uy = u:GetX(), u:GetY()
+            local q = ux - (uy - uy % 2) / 2
+            n = n + 1
+            pts[n] = { q = q, r = uy, unit = u }
+            sumQ, sumR = sumQ + q, sumR + uy
+        end
+    end
+    if n < 2 then
+        ClearPreview()
+        return
+    end
+
+    -- Anchor: the unit closest to the group's centre, so the shape doesn't
+    -- jump around as the mouse moves
+    local cq, cr = sumQ / n, sumR / n
+    local anchor, bestD
+    for i = 1, n do
+        local dq, dr = pts[i].q - cq, pts[i].r - cr
+        local d = (math.abs(dq) + math.abs(dr) + math.abs(dq + dr)) / 2
+        if not bestD or d < bestD then anchor, bestD = pts[i], d end
+    end
+
+    local hq = pvX - (pvY - pvY % 2) / 2
+    local want = {}
+    for i = 1, n do
+        local r = pvY + (pts[i].r - anchor.r)
+        local q = hq + (pts[i].q - anchor.q)
+        local gy = math.floor(r + 0.5)
+        local gx = math.floor(q + (gy - gy % 2) / 2 + 0.5)
+        local plot = Map.GetPlot(gx, gy)
+        if plot and DomainOk(plot, pts[i].unit) then
+            want[gx * 1024 + gy] = { gx, gy }
+        end
+    end
+
+    for key, hex in pairs(pvHex) do
+        if not want[key] or litHex[key] then
+            SetHexHighlight(hex, false, pvColor)
+            local lit = litHex[key]
+            if lit then SetHexHighlight(lit, true, hlColor) end
+            pvHex[key] = nil
+        end
+    end
+    for key, xy in pairs(want) do
+        if not pvHex[key] and not litHex[key] then
+            local hex = MakeHex(xy[1], xy[2])
+            SetHexHighlight(hex, true, pvColor)
+            pvHex[key] = hex
+        end
+    end
+end
+
+----------------------------------------------------------------
 -- Trip check
 ----------------------------------------------------------------
 -- Looks after a dispatched group across turns:
@@ -784,6 +920,19 @@ OnFrameUpdate = function()
         end
     end
 
+    if pvDirty then
+        pvDirty = false
+        refreshing = true
+        local ok, err = pcall(RefreshPreview)
+        refreshing = false
+        if not ok then
+            pvBroken = true
+            previewOn = false
+            Log("destination preview error, disabled: " .. tostring(err))
+            pcall(ClearPreview)
+        end
+    end
+
     if current or orderQueue[1] then
         local ok, err = pcall(ProcessOrders)
         if not ok then
@@ -807,6 +956,7 @@ end
 QueueRefresh = function(force)
     if hlAvailable == false then return end
     hlDirty = true
+    pvDirty = true
     if force then hlForce = true end
     InstallUpdate()
 end
@@ -1146,9 +1296,18 @@ local function DispatchMove(plot, alt, shift, ctrl)
     Log("dispatching " .. #units .. " units in " .. #clusters .. " tile group(s) toward " .. px .. "," .. py)
 
 
-    local keep = {}
-    for _, e in ipairs(units) do keep[e.id] = true end
-    s.selected = keep
+    if DESELECT_AFTER_ORDER then
+        -- The trip below keeps looking after the units, so the group itself is
+        -- released now: no highlight, and nothing is re-selected when the
+        -- orders have gone out.
+        s.selected = {}
+        snap = snap or {}
+        snap.headID, snap.group = nil, false
+    else
+        local keep = {}
+        for _, e in ipairs(units) do keep[e.id] = true end
+        s.selected = keep
+    end
 
     -- Start (or extend) the trip: remember where each unit is going so it can
     -- be re-ordered on later turns if the engine drops its mission. Units from
@@ -1225,6 +1384,14 @@ local function InputHandlerImpl(uiMsg, wParam)
             if dragging then DrawBox(startX, startY, x, y) end
             return true
         end
+        if previewOn then
+            -- one comparison per mouse move; the redraw itself waits for the next frame
+            local hx, hy = UI.GetMouseOverHex()
+            if hx ~= pvX or hy ~= pvY then
+                pvX, pvY = hx, hy
+                PreviewChanged()
+            end
+        end
         return false
 
     elseif uiMsg == MSG_LUP then
@@ -1266,11 +1433,20 @@ local function InputHandlerImpl(uiMsg, wParam)
     elseif uiMsg == MSG_RDOWN then
         rDown = true
         rStartX, rStartY = UIManager:GetMousePos()
+        if PREVIEW_MODE == "hold" then PreviewChanged() end
+        -- With a group selected the button-up is ours (it sends the group), so the
+        -- button-down is swallowed too. If the game saw the down without the up, it
+        -- would stay in its hold-to-preview state and show movement paths for every
+        -- unit you select afterwards.
+        if HasGroupSelected() and GroupMatchesEngineSelection() then
+            return true
+        end
         return false
 
     elseif uiMsg == MSG_RUP then
         if not rDown then return false end
         rDown = false
+        if PREVIEW_MODE == "hold" then PreviewChanged() end
         local x, y = UIManager:GetMousePos()
         if not RIGHT_DRAG_DISPATCHES
            and (math.abs(x - rStartX) > DRAG_THRESHOLD
@@ -1294,7 +1470,9 @@ local function InputHandlerImpl(uiMsg, wParam)
             Log("right-click ignored, no plot under cursor")
             return false
         end
-        return DispatchMove(plot, UIManager:GetAlt(), UIManager:GetShift(), UIManager:GetControl())
+        local handled = DispatchMove(plot, UIManager:GetAlt(), UIManager:GetShift(), UIManager:GetControl())
+        if handled then ResetMoveMode(false) end   -- we ate the button-up, so end the game's move preview
+        return handled
 
     -- Keyboard: Ctrl+1..9 assigns, 1..9 recalls
     elseif uiMsg == MSG_KEY then
@@ -1317,7 +1495,7 @@ end
 -- never leave the script stuck in a half-finished state.
 local function InputHandler(uiMsg, wParam, lParam)
     -- Fast path: mouse moves are by far the most frequent message
-    if uiMsg == MSG_MOVE and not boxing then return false end
+    if uiMsg == MSG_MOVE and not boxing and not previewOn then return false end
 
     local ok, result = pcall(InputHandlerImpl, uiMsg, wParam)
     if ok then return result end
