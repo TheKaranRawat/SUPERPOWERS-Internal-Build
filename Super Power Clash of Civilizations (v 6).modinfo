@@ -1449,6 +1449,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="7803DFEB1CC49D546EED8C8A1DE998AA" import="1">UI/Override/InGame.xml</File>
     <File md5="87795029018082BF04AF16A5C0857B42" import="1">UI/Override/NewEraPopup.lua</File>
     <File md5="87795029018082BF04AF16A5C0857B42" import="1">UI/Override/NotificationPanel.lua</File>
+    <File md5="87795029018082BF04AF16A5C0857B42" import="1">UI/Override/NotificationPanel.xml</File>
     <File md5="E53DA553867A544E5313A12101E1E395" import="1">UI/Override/PuppetCityPopup.lua</File>
 	  <File md5="9DBA1146801AAF3E081A8CB2F06E8BF9" import="1">UI/Override/ProductionPopup.lua</File>
 	  <File md5="E78E97E950F7230C21B239E22A4C4497" import="1">UI/Override/ProductionPopup.xml</File>
@@ -3929,9 +3930,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/GroupMove/GroupMove.lua</File>
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/GroupMove/GroupMove.xml</File>
 
-
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/UnitAutoNaming/UnitAutoNaming.lua</File>
     
-
   </Files>
   <Actions>
 	
@@ -4538,6 +4538,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <EntryPoint type="InGameUIAddin" file="Modules/GroupMove/GroupMove.lua">
       <Name>GroupMove</Name>
       <Description>Move in groups</Description>
+    </EntryPoint>
+
+    <EntryPoint type="InGameUIAddin" file="Modules/UnitAutoNaming/UnitAutoNaming.lua">
+      <Name>UnitAutoNaming</Name>
+      <Description>Auto name units</Description>
     </EntryPoint>
 		
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
