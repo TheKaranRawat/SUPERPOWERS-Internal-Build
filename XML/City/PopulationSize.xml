@@ -118,7 +118,8 @@
 			<Defense>1500</Defense>
 			<ExtraCityHitPoints>100</ExtraCityHitPoints>
 			<FoodKept>-5</FoodKept>
-			<Happiness>-4</Happiness>
+			<Happiness>-4</Happiness>			
+			<GlobalCityWorkingChange>1</GlobalCityWorkingChange>
 			<TradeRouteSeaGoldBonus>1500</TradeRouteSeaGoldBonus>
 			<TradeRouteLandGoldBonus>1500</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>20</TradeRouteRecipientBonus>
@@ -142,7 +143,6 @@
 			<ExtraCityHitPoints>120</ExtraCityHitPoints>
 			<FoodKept>-5</FoodKept>
 			<Happiness>-6</Happiness>
-			<GlobalCityWorkingChange>1</GlobalCityWorkingChange>
 			<TradeRouteSeaGoldBonus>2000</TradeRouteSeaGoldBonus>
 			<TradeRouteLandGoldBonus>2000</TradeRouteLandGoldBonus>
 			<TradeRouteRecipientBonus>30</TradeRouteRecipientBonus>
