@@ -61,6 +61,14 @@ local CONFIG = {
 	-- Do not build on tiles holding an at-war unit (repairs always skip them).
 	SKIP_OCCUPIED_BY_ENEMY = true,
 
+	-- How far from a city (in tiles) it may build and repair on tiles that
+	-- the player owns. 3 = the normal city work area; 5 reaches purchased /
+	-- culture-expanded border tiles. Larger values scan more tiles per city.
+	BUILD_RANGE = 5,
+	-- A city can only WORK tiles up to this distance (3 in the base game).
+	-- It only affects the worked-tile score bonus.
+	WORK_RADIUS = 5,
+
 	-- Never auto-built (unit-consuming builds are excluded automatically).
 	EXCLUDED_IMPROVEMENTS = {
 		"IMPROVEMENT_FORT",
@@ -114,6 +122,8 @@ local USE_PREFILTER = CONFIG.USE_BUILD_PREFILTER
 local CONNECT_BONUS = CONFIG.RESOURCE_CONNECT_BONUS
 local WORKED_BONUS = CONFIG.WORKED_TILE_BONUS
 local UPGRADE_BONUS = CONFIG.UPGRADE_BONUS
+local BUILD_RANGE = math.max(1, math.floor(CONFIG.BUILD_RANGE))
+local WORK_RADIUS = math.max(0, math.floor(CONFIG.WORK_RADIUS))
 
 local FALLOUT_ID = GameInfoTypes["FEATURE_FALLOUT"]
 
@@ -231,6 +241,19 @@ end
 -- Reusable scratch arrays (avoid per-tile allocations)
 local scratchLegal  = {}
 local scratchBefore = {}
+local scratchPlots  = {}   -- owned tiles within BUILD_RANGE of the current city
+local scratchInWork = {}   -- true when that tile is inside the city's work radius
+
+-- Range lookup: the engine helper handles map wrapping. The fallback does
+-- not wrap around the map seam (only used if the helper is missing).
+local PlotXYWithRangeCheck = Map.PlotXYWithRangeCheck
+if not PlotXYWithRangeCheck then
+	PlotXYWithRangeCheck = function(x, y, dx, dy, range)
+		local p = Map.GetPlot(x + dx, y + dy)
+		if p and Map.PlotDistance(x, y, p:GetX(), p:GetY()) <= range then return p end
+		return nil
+	end
+end
 
 --------------------------------------------------------------------------
 -- HELPERS
@@ -281,6 +304,25 @@ local function BlockedByEnemy(pPlot, iTeam)
 	return false
 end
 
+-- Fills scratchPlots / scratchInWork with the player's owned, non-city tiles
+-- within BUILD_RANGE of the city (fixed dx/dy order -> deterministic) and
+-- returns how many were found. Done once per city per turn.
+local function CollectCityPlots(pCity, iPlayer)
+	local cx, cy = pCity:GetX(), pCity:GetY()
+	local n = 0
+	for dx = -BUILD_RANGE, BUILD_RANGE do
+		for dy = -BUILD_RANGE, BUILD_RANGE do
+			local pPlot = PlotXYWithRangeCheck(cx, cy, dx, dy, BUILD_RANGE)
+			if pPlot and pPlot:GetOwner() == iPlayer and not pPlot:IsCity() then
+				n = n + 1
+				scratchPlots[n] = pPlot
+				scratchInWork[n] = Map.PlotDistance(cx, cy, pPlot:GetX(), pPlot:GetY()) <= WORK_RADIUS
+			end
+		end
+	end
+	return n
+end
+
 -- Conservative: false only if the database proves the improvement cannot
 -- be valid here. CanBuild still makes the final decision.
 local function MayApply(imp, terrain, feature, resID)
@@ -322,6 +364,7 @@ local function ScoreBuild(pPlot, b, iPlayer, connects, bWorked, resID)
 	return score
 end
 
+-- pCity is passed as nil when the tile is outside the city's work radius.
 -- Unimproved tile: best build and its score (nil if nothing suitable).
 -- Resource tiles whose proper improvement is not unlocked yet receive a
 -- stand-in; EvaluateUpgrade replaces it later.
@@ -349,7 +392,7 @@ local function EvaluateEmptyPlot(pCity, pPlot, iPlayer, iTeam, builds, nBuilds)
 	end
 	if nLegal == 0 then return nil end
 
-	local bWorked = pCity:IsWorkingPlot(pPlot)
+	local bWorked = (pCity ~= nil) and pCity:IsWorkingPlot(pPlot) or false
 	if HAS_YIELD_QUERY then FillBefore(pPlot) end
 
 	local bestBuild, bestScore
@@ -389,7 +432,7 @@ local function EvaluateUpgrade(pCity, pPlot, iPlayer, iTeam, builds, nBuilds, im
 		if ic and ic[resID] and pPlot:CanBuild(b.build, iPlayer) then
 			if not prepared then
 				prepared = true
-				bWorked = pCity:IsWorkingPlot(pPlot)
+				bWorked = (pCity ~= nil) and pCity:IsWorkingPlot(pPlot) or false
 				if HAS_YIELD_QUERY then FillBefore(pPlot) end
 			end
 			local score = ScoreBuild(pPlot, b, iPlayer, true, bWorked, resID) + UPGRADE_BONUS
@@ -431,30 +474,28 @@ local function ApplyOne(c, iPlayer)
 end
 
 --------------------------------------------------------------------------
--- BUILD PASS (one city)
+-- BUILD PASS (one city) - works on the tiles gathered by CollectCityPlots
 --------------------------------------------------------------------------
-local function BuildForCity(pCity, iPlayer, iTeam, builds, nBuilds, perTurn)
+local function BuildForCity(pCity, iPlayer, iTeam, builds, nBuilds, perTurn, nPlots)
 	local top = {}
-	local numPlots = pCity:GetNumCityPlots()
-	for i = 0, numPlots - 1 do
-		local pPlot = pCity:GetCityIndexPlot(i)
-		if pPlot and pPlot:GetOwner() == iPlayer and not pPlot:IsCity() then
-			local imp = pPlot:GetImprovementType()
-			local b, score
-			if imp == NO_IMPROVEMENT then
-				if not (SKIP_ENEMY and BlockedByEnemy(pPlot, iTeam)) then
-					b, score = EvaluateEmptyPlot(pCity, pPlot, iPlayer, iTeam, builds, nBuilds)
-				end
-			else
-				b, score = EvaluateUpgrade(pCity, pPlot, iPlayer, iTeam, builds, nBuilds, imp)
-				if b and SKIP_ENEMY and BlockedByEnemy(pPlot, iTeam) then b = nil end
+	for i = 1, nPlots do
+		local pPlot = scratchPlots[i]
+		local workCity = scratchInWork[i] and pCity or nil
+		local imp = pPlot:GetImprovementType()
+		local b, score
+		if imp == NO_IMPROVEMENT then
+			if not (SKIP_ENEMY and BlockedByEnemy(pPlot, iTeam)) then
+				b, score = EvaluateEmptyPlot(workCity, pPlot, iPlayer, iTeam, builds, nBuilds)
 			end
-			if b then InsertTop(top, perTurn, pPlot, b, score) end
+		else
+			b, score = EvaluateUpgrade(workCity, pPlot, iPlayer, iTeam, builds, nBuilds, imp)
+			if b and SKIP_ENEMY and BlockedByEnemy(pPlot, iTeam) then b = nil end
 		end
+		if b then InsertTop(top, perTurn, pPlot, b, score) end
 	end
 	for i = 1, #top do ApplyOne(top[i], iPlayer) end
 	if CONFIG.DEBUG then
-		dprint("Player", iPlayer, "city", pCity:GetID(), "built", #top)
+		dprint("Player", iPlayer, "city", pCity:GetID(), "tiles", nPlots, "built", #top)
 	end
 end
 
@@ -462,18 +503,16 @@ end
 -- REPAIR PASS (one city)
 -- Worked tiles first, then lowest y, then lowest x (deterministic).
 --------------------------------------------------------------------------
-local function RepairCity(pCity, iPlayer, iTeam)
-	local numPlots = pCity:GetNumCityPlots()
+local function RepairCity(pCity, iPlayer, iTeam, nPlots)
 	for _ = 1, REPAIRS_PER_CITY do
 		local best, bestWorked, bestX, bestY
-		for i = 0, numPlots - 1 do
-			local pPlot = pCity:GetCityIndexPlot(i)
-			if pPlot and pPlot:GetOwner() == iPlayer
-				and pPlot:GetImprovementType() ~= NO_IMPROVEMENT
+		for i = 1, nPlots do
+			local pPlot = scratchPlots[i]
+			if pPlot:GetImprovementType() ~= NO_IMPROVEMENT
 				and pPlot:IsImprovementPillaged()
 				and not BlockedByEnemy(pPlot, iTeam) then
 				local x, y = pPlot:GetX(), pPlot:GetY()
-				local worked = pCity:IsWorkingPlot(pPlot)
+				local worked = scratchInWork[i] and pCity:IsWorkingPlot(pPlot) or false
 				local better
 				if best == nil then
 					better = true
@@ -515,18 +554,24 @@ local function DoTurn(iPlayer)
 
 	for pCity in pPlayer:Cities() do
 		local key = turn + pCity:GetID()
+		local doRepair = REPAIR_ENABLED and key % REPAIR_INTERVAL == 0
+		local doBuild  = key % BUILD_INTERVAL == 0
 
-		if REPAIR_ENABLED and key % REPAIR_INTERVAL == 0 then
-			RepairCity(pCity, iPlayer, iTeam)
-		end
+		if doRepair or doBuild then
+			local nPlots = CollectCityPlots(pCity, iPlayer)   -- once per city
 
-		if key % BUILD_INTERVAL == 0 then
-			if builds == nil then   -- computed once per player, only if needed
-				perTurn = GetActionsPerTurn(iTeam)
-				builds, nBuilds = GetAvailableBuilds(iTeam, pPlayer:GetCivilizationType())
+			if doRepair then
+				RepairCity(pCity, iPlayer, iTeam, nPlots)
 			end
-			if nBuilds > 0 then
-				BuildForCity(pCity, iPlayer, iTeam, builds, nBuilds, perTurn)
+
+			if doBuild then
+				if builds == nil then   -- computed once per player, only if needed
+					perTurn = GetActionsPerTurn(iTeam)
+					builds, nBuilds = GetAvailableBuilds(iTeam, pPlayer:GetCivilizationType())
+				end
+				if nBuilds > 0 then
+					BuildForCity(pCity, iPlayer, iTeam, builds, nBuilds, perTurn, nPlots)
+				end
 			end
 		end
 	end
