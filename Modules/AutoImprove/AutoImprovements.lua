@@ -2,78 +2,72 @@
 -- AutoImprovements.lua
 -- Worker-less terrain improvement for Civilization V (BNW / Gods & Kings).
 --
--- Every turn, each qualifying player automatically gets N new improvements
--- placed on tiles inside their borders. Pillaged improvements are repaired
--- by a separate, slower pass (see REPAIR_* in CONFIG).
---   N = BASE_PER_TURN + number of bonus techs the player's team has researched.
+-- Every BUILD_INTERVAL turns (staggered per city) each city places
+--   N = BASE_PER_TURN + number of researched BONUS_TECHS
+-- improvements on tiles inside its borders. Pillaged improvements are
+-- repaired by a separate, slower pass (REPAIR_*), optionally clearing fallout.
 --
--- MULTIPLAYER SAFETY
---   * Runs only inside GameEvents.PlayerDoTurn, which fires identically on
---     every machine.
---   * Fully deterministic: no math.random, no os.time/os.clock, no pairs()
---     over hash tables, no Game.GetActivePlayer(), no UI calls, no
---     persistent state that can differ between clients (a reload or a late
---     join cannot desync it).
---   * Ties are broken by plot coordinates, never by chance.
+-- MULTIPLAYER STABILITY
+--   * Runs only from GameEvents.PlayerDoTurn, which fires identically on
+--     every machine, and only reads/writes synchronized game state.
+--   * Fully deterministic: no math.random, no clocks in game logic, no
+--     pairs() over hash tables after load, no Game.GetActivePlayer(), no UI.
+--   * Stateless: schedules come from (game turn + city ID), so a reload or
+--     a late join can never put one client out of step with another.
+--   * Cities are processed in the engine's own (synchronized) ID order and
+--     ties are broken by plot coordinates, never by chance.
+--   * The whole handler is wrapped in pcall so one bad tile or a modded
+--     ruleset quirk cannot break the turn for other scripts.
+--   * Re-loading the script replaces its old handler (no double builds).
 --
 -- PERFORMANCE
---   * All database lookups (builds, improvements, resources, techs, yields)
---     are cached once at load time.
---   * Per turn, work is limited to the owner's city tiles; improved tiles
---     are rejected with a single cheap call before anything else is done.
---   * Top-N selection is a tiny partial selection pass, no sorting.
+--   * All database lookups are cached once at load.
+--   * Idle turns cost one loop over the player's cities and a modulo check.
+--   * Per tile: cheap ownership/improvement checks first, a database-driven
+--     prefilter before the expensive CanBuild call, yield "before" values
+--     computed once per tile, worked-tile lookup only when needed.
+--   * Top-N selection is done inline with a tiny insertion list: no
+--     per-candidate tables for losing tiles and no sorting.
 --==========================================================================
 
 --------------------------------------------------------------------------
 -- CONFIG
 --------------------------------------------------------------------------
 local CONFIG = {
-	-- "PLAYER": N improvements per turn for the whole empire (literal reading)
-	-- "CITY"  : N improvements per turn for EACH city
-	MODE = "PLAYER",
-
+	-- Improvements each city places on its build turn.
 	BASE_PER_TURN = 1,
+	-- Each tech the team owns adds +1 per build turn (unknown techs ignored).
+	BONUS_TECHS = {
+		"TECH_INDUSTRIALIZATION",   -- 2 per build turn
+		-- "TECH_ELECTRICITY",      -- uncomment for 3
+		-- "TECH_ROBOTICS",         -- uncomment for 4
+	},
+	HARD_CAP_PER_TURN = 6,
 
-	-- Improvements are only placed every BUILD_INTERVAL turns (1 = every turn).
-	-- The count above is placed on each build turn. Stateless stagger: in
-	-- "PLAYER" mode players are offset by player ID, in "CITY" mode cities
-	-- are offset by city ID, so the work is spread over different turns.
+	-- A city builds only every BUILD_INTERVAL turns (1 = every turn).
+	-- Cities are offset by city ID so they do not all build on the same turn.
 	BUILD_INTERVAL = 3,
 
-	-- Each tech the team owns adds +1 to the per-turn count.
-	-- Techs missing from your database are skipped silently.
-	BONUS_TECHS = {
-		"TECH_INDUSTRIALIZATION",   -- 2 per turn
-		-- "TECH_ELECTRICITY",      -- uncomment for 3 per turn
-		-- "TECH_ROBOTICS",         -- uncomment for 4 per turn
-	},
-
-	HARD_CAP_PER_TURN = 6,          -- safety ceiling
-
 	APPLY_TO_HUMANS      = true,
-	APPLY_TO_AI          = true,    -- set false if the AI keeps using workers
+	APPLY_TO_AI          = true,
 	APPLY_TO_CITY_STATES = true,
 
 	-- Slow repair of pillaged improvements, independent of the build count.
-	-- Each city repairs REPAIRS_PER_CITY tile(s) every REPAIR_INTERVAL turns.
-	-- Cities are staggered by city ID so the work spreads across turns.
 	REPAIR_PILLAGED  = true,
-	REPAIR_INTERVAL  = 4,
+	REPAIR_INTERVAL  = 4,       -- each city repairs every 4 turns (staggered)
 	REPAIRS_PER_CITY = 1,
-	-- Also clear fallout from a tile when its improvement is repaired.
-	REMOVE_FALLOUT   = true,
+	REMOVE_FALLOUT   = true,    -- clear fallout from tiles being repaired
 
-	-- Skip tiles that currently hold an enemy-owned unit at war.
+	-- Do not build on tiles holding an at-war unit (repairs always skip them).
 	SKIP_OCCUPIED_BY_ENEMY = true,
 
-	-- Improvements never auto-built (great person / unit-consuming ones are
-	-- excluded automatically via Build.Kill).
+	-- Never auto-built (unit-consuming builds are excluded automatically).
 	EXCLUDED_IMPROVEMENTS = {
 		"IMPROVEMENT_FORT",
 		"IMPROVEMENT_CITADEL",
 	},
 
-	-- Tile scoring weights (used with the engine's yield-with-build query)
+	-- Tile scoring
 	YIELD_WEIGHTS = {
 		YIELD_FOOD       = 12,
 		YIELD_PRODUCTION = 10,
@@ -82,27 +76,46 @@ local CONFIG = {
 		YIELD_CULTURE    = 8,
 		YIELD_FAITH      = 6,
 	},
-	RESOURCE_CONNECT_BONUS = 100,   -- connecting any resource beats most yield gains
-	-- Extra priority (added on top of the connect bonus) for tiles whose
-	-- resource improvement is available right now. Raise to be stricter.
-	STRATEGIC_BONUS        = 400,   -- iron, horses, coal, oil, aluminum, uranium...
-	LUXURY_BONUS           = 400,   -- luxury resources
-	WORKED_TILE_BONUS      = 20,    -- prefer tiles a citizen is actually working
-	UPGRADE_BONUS          = 300,   -- replacing a stand-in with the proper resource improvement
+	RESOURCE_CONNECT_BONUS = 100,   -- connecting any resource
+	STRATEGIC_BONUS        = 400,   -- extra for strategic resources
+	LUXURY_BONUS           = 400,   -- extra for luxury resources
+	WORKED_TILE_BONUS      = 20,
+	UPGRADE_BONUS          = 300,   -- replace a stand-in with the proper improvement
 
+	-- Skip the expensive CanBuild call for improvements that cannot be valid
+	-- on a tile's terrain/feature/resource (built from the game database and
+	-- deliberately conservative). Set false if a custom rule in your mod
+	-- makes some improvement valid in a way the database does not describe.
+	USE_BUILD_PREFILTER = true,
+
+	-- Logs per-player timing and actions to Lua.log.
 	DEBUG = false,
 }
 
 --------------------------------------------------------------------------
--- LOAD-TIME CACHES (identical on every client: built from the same DB)
+-- LOAD-TIME CACHES (built from the same database on every client)
 --------------------------------------------------------------------------
--- Civ 5 has no ImprovementTypes / ResourceTypes globals; "none" is always -1.
-local NO_IMPROVEMENT = -1
+local NO_IMPROVEMENT = -1   -- Civ 5 defines no NO_* globals for these
 local NO_RESOURCE    = -1
+local NO_FEATURE     = -1
 
 local function dprint(...)
 	if CONFIG.DEBUG then print("[AutoImprovements]", ...) end
 end
+
+-- Sanitised, localised config values (fast upvalue access in hot loops)
+local BUILD_INTERVAL = math.max(1, math.floor(CONFIG.BUILD_INTERVAL))
+local REPAIR_INTERVAL = math.max(1, math.floor(CONFIG.REPAIR_INTERVAL))
+local REPAIRS_PER_CITY = math.max(1, math.floor(CONFIG.REPAIRS_PER_CITY))
+local REPAIR_ENABLED = CONFIG.REPAIR_PILLAGED
+local REMOVE_FALLOUT = CONFIG.REMOVE_FALLOUT
+local SKIP_ENEMY = CONFIG.SKIP_OCCUPIED_BY_ENEMY
+local USE_PREFILTER = CONFIG.USE_BUILD_PREFILTER
+local CONNECT_BONUS = CONFIG.RESOURCE_CONNECT_BONUS
+local WORKED_BONUS = CONFIG.WORKED_TILE_BONUS
+local UPGRADE_BONUS = CONFIG.UPGRADE_BONUS
+
+local FALLOUT_ID = GameInfoTypes["FEATURE_FALLOUT"]
 
 -- Excluded improvement IDs
 local excludedImprovement = {}
@@ -111,7 +124,7 @@ for _, typeName in ipairs(CONFIG.EXCLUDED_IMPROVEMENTS) do
 	if id then excludedImprovement[id] = true end
 end
 
--- Bonus tech IDs
+-- Bonus tech IDs (ordered list)
 local bonusTechIDs = {}
 for _, typeName in ipairs(CONFIG.BONUS_TECHS) do
 	local id = GameInfoTypes[typeName]
@@ -119,8 +132,8 @@ for _, typeName in ipairs(CONFIG.BONUS_TECHS) do
 end
 
 -- Which improvements connect which resource
-local improvementConnects = {}   -- [improvementID][resourceID] = true
-local resourceHasImprovement = {} -- [resourceID] = true
+local improvementConnects = {}      -- [improvementID][resourceID] = true
+local resourceHasImprovement = {}   -- [resourceID] = true
 for row in GameInfo.Improvement_ResourceTypes() do
 	local impID = GameInfoTypes[row.ImprovementType]
 	local resID = GameInfoTypes[row.ResourceType]
@@ -131,13 +144,58 @@ for row in GameInfo.Improvement_ResourceTypes() do
 	end
 end
 
--- Unique improvements: [improvementID] = civilizationID that owns it
+-- Terrain / feature validity (used only by the conservative prefilter)
+local validTerrain = {}   -- [improvementID][terrainID] = true
+local validFeature = {}   -- [improvementID][featureID] = true
+for row in GameInfo.Improvement_ValidTerrains() do
+	local impID, terID = GameInfoTypes[row.ImprovementType], GameInfoTypes[row.TerrainType]
+	if impID and terID then
+		validTerrain[impID] = validTerrain[impID] or {}
+		validTerrain[impID][terID] = true
+	end
+end
+for row in GameInfo.Improvement_ValidFeatures() do
+	local impID, feaID = GameInfoTypes[row.ImprovementType], GameInfoTypes[row.FeatureType]
+	if impID and feaID then
+		validFeature[impID] = validFeature[impID] or {}
+		validFeature[impID][feaID] = true
+	end
+end
+
+-- Unique improvements: [improvementID] = owning civilizationID
+-- Improvements with special validity flags: never prefiltered
 local improvementCiv = {}
+local alwaysPass = {}
 for row in GameInfo.Improvements() do
+	local id = row.ID
 	if row.CivilizationType then
 		local civID = GameInfoTypes[row.CivilizationType]
-		if civID then improvementCiv[row.ID] = civID end
+		if civID then improvementCiv[id] = civID end
 	end
+	if row.HillsMakesValid or row.FreshWaterMakesValid or row.RiverSideMakesValid
+		or row.Water or (not validTerrain[id] and not validFeature[id]) then
+		alwaysPass[id] = true
+	end
+end
+
+-- Candidate improvement builds (ordered by build ID -> deterministic)
+local improvementBuilds = {}
+for row in GameInfo.Builds() do
+	local impID = row.ImprovementType and GameInfoTypes[row.ImprovementType]
+	if impID and not row.Kill and not excludedImprovement[impID] then
+		improvementBuilds[#improvementBuilds + 1] = {
+			build       = row.ID,
+			improvement = impID,
+			tech        = row.PrereqTech and GameInfoTypes[row.PrereqTech] or nil,
+		}
+	end
+end
+table.sort(improvementBuilds, function(a, b) return a.build < b.build end)
+
+-- Improvements this script could have placed (only these may be replaced)
+local buildableImprovement = {}
+for i = 1, #improvementBuilds do
+	buildableImprovement[improvementBuilds[i].improvement] = true
 end
 
 -- Resource priority: [resourceID] = extra score for strategic / luxury
@@ -152,36 +210,14 @@ for row in GameInfo.Resources() do
 	end
 end
 
--- Candidate improvement builds (ordered by Build ID -> deterministic)
-local improvementBuilds = {}   -- { {build=, improvement=, tech=}, ... }
-for row in GameInfo.Builds() do
-	local impID = row.ImprovementType and GameInfoTypes[row.ImprovementType]
-	if impID and not row.Kill and not excludedImprovement[impID] then
-		improvementBuilds[#improvementBuilds + 1] = {
-			build       = row.ID,
-			improvement = impID,
-			tech        = row.PrereqTech and GameInfoTypes[row.PrereqTech] or nil,
-		}
-	end
-end
-
--- Fallout feature (nil if the ruleset has none)
-local FALLOUT_ID = GameInfoTypes["FEATURE_FALLOUT"]
-local NO_FEATURE = -1
-
--- Improvements this script could have placed (only these may be replaced)
-local buildableImprovement = {}
-for i = 1, #improvementBuilds do
-	buildableImprovement[improvementBuilds[i].improvement] = true
-end
-
--- Yield list for scoring
+-- Yield list for scoring (fixed order)
 local yieldList = {}
 for typeName, weight in pairs(CONFIG.YIELD_WEIGHTS) do
 	local id = GameInfoTypes[typeName]
 	if id then yieldList[#yieldList + 1] = { id = id, weight = weight } end
 end
-table.sort(yieldList, function(a, b) return a.id < b.id end) -- fixed order
+table.sort(yieldList, function(a, b) return a.id < b.id end)
+local nYields = #yieldList
 
 -- Engine query support check (older/modded DLLs may lack it)
 local HAS_YIELD_QUERY = false
@@ -191,6 +227,10 @@ do
 		and testPlot.GetYieldWithBuild ~= nil
 		and testPlot.CalculateYield ~= nil
 end
+
+-- Reusable scratch arrays (avoid per-tile allocations)
+local scratchLegal  = {}
+local scratchBefore = {}
 
 --------------------------------------------------------------------------
 -- HELPERS
@@ -230,9 +270,10 @@ local function GetAvailableBuilds(iTeam, iCiv)
 	return list, n
 end
 
-local function TileHasEnemy(pPlot, iTeam)
-	local team = Teams[iTeam]
+local function BlockedByEnemy(pPlot, iTeam)
 	local numUnits = pPlot:GetNumUnits()
+	if numUnits == 0 then return false end
+	local team = Teams[iTeam]
 	for i = 0, numUnits - 1 do
 		local pUnit = pPlot:GetUnit(i)
 		if pUnit and team:IsAtWar(pUnit:GetTeam()) then return true end
@@ -240,56 +281,85 @@ local function TileHasEnemy(pPlot, iTeam)
 	return false
 end
 
+-- Conservative: false only if the database proves the improvement cannot
+-- be valid here. CanBuild still makes the final decision.
+local function MayApply(imp, terrain, feature, resID)
+	if alwaysPass[imp] then return true end
+	local vt = validTerrain[imp]
+	if vt and vt[terrain] then return true end
+	if feature >= 0 then
+		local vf = validFeature[imp]
+		if vf and vf[feature] then return true end
+	end
+	if resID >= 0 then
+		local ic = improvementConnects[imp]
+		if ic and ic[resID] then return true end
+	end
+	return false
+end
+
+local function FillBefore(pPlot)
+	for j = 1, nYields do
+		scratchBefore[j] = pPlot:CalculateYield(yieldList[j].id, true)
+	end
+end
+
 local function ScoreBuild(pPlot, b, iPlayer, connects, bWorked, resID)
 	local score = 0
 	if connects then
-		score = score + CONFIG.RESOURCE_CONNECT_BONUS
-		-- Strategic / luxury resources are connected first
-		if resID and resourcePriority[resID] then
-			score = score + resourcePriority[resID]
-		end
+		score = score + CONNECT_BONUS
+		local extra = resourcePriority[resID]   -- strategic / luxury first
+		if extra then score = score + extra end
 	end
 	if HAS_YIELD_QUERY then
-		for j = 1, #yieldList do
+		local buildID = b.build
+		for j = 1, nYields do
 			local y = yieldList[j]
-			local after  = pPlot:GetYieldWithBuild(b.build, y.id, true, iPlayer)
-			local before = pPlot:CalculateYield(y.id, true)
-			score = score + y.weight * (after - before)
+			score = score + y.weight * (pPlot:GetYieldWithBuild(buildID, y.id, true, iPlayer) - scratchBefore[j])
 		end
 	end
-	if bWorked then score = score + CONFIG.WORKED_TILE_BONUS end
+	if bWorked then score = score + WORKED_BONUS end
 	return score
 end
 
--- Unimproved tile: returns bestBuild, bestScore (nil if nothing suitable).
+-- Unimproved tile: best build and its score (nil if nothing suitable).
 -- Resource tiles whose proper improvement is not unlocked yet receive a
--- stand-in improvement; it is replaced later by the upgrade pass.
-local function EvaluatePlot(pPlot, iPlayer, iTeam, builds, nBuilds, bWorked)
-	local resID = pPlot:GetResourceType(iTeam)
-	local hasResource = (resID ~= nil and resID ~= NO_RESOURCE)
+-- stand-in; EvaluateUpgrade replaces it later.
+local function EvaluateEmptyPlot(pCity, pPlot, iPlayer, iTeam, builds, nBuilds)
+	local terrain = pPlot:GetTerrainType()
+	local feature = pPlot:GetFeatureType()
+	local resID   = pPlot:GetResourceType(iTeam)
+	if resID == nil then resID = NO_RESOURCE end
+	local hasResource = resID >= 0
 
-	local legal, nLegal = nil, 0
+	local nLegal = 0
 	local anyConnects = false
 	for i = 1, nBuilds do
 		local b = builds[i]
-		if pPlot:CanBuild(b.build, iPlayer) then
-			legal = legal or {}
+		local imp = b.improvement
+		if (not USE_PREFILTER or MayApply(imp, terrain, feature, resID))
+			and pPlot:CanBuild(b.build, iPlayer) then
 			nLegal = nLegal + 1
-			legal[nLegal] = b
-			if hasResource and improvementConnects[b.improvement]
-				and improvementConnects[b.improvement][resID] then
-				anyConnects = true
+			scratchLegal[nLegal] = b
+			if hasResource then
+				local ic = improvementConnects[imp]
+				if ic and ic[resID] then anyConnects = true end
 			end
 		end
 	end
 	if nLegal == 0 then return nil end
 
+	local bWorked = pCity:IsWorkingPlot(pPlot)
+	if HAS_YIELD_QUERY then FillBefore(pPlot) end
+
 	local bestBuild, bestScore
 	for i = 1, nLegal do
-		local b = legal[i]
-		local connects = hasResource and improvementConnects[b.improvement]
-			and improvementConnects[b.improvement][resID] or false
-
+		local b = scratchLegal[i]
+		local connects = false
+		if hasResource then
+			local ic = improvementConnects[b.improvement]
+			connects = (ic ~= nil and ic[resID] == true)
+		end
 		-- If the proper improvement is available, only consider those.
 		if (not anyConnects) or connects then
 			local score = ScoreBuild(pPlot, b, iPlayer, connects, bWorked, resID)
@@ -301,25 +371,28 @@ local function EvaluatePlot(pPlot, iPlayer, iTeam, builds, nBuilds, bWorked)
 	return bestBuild, bestScore
 end
 
--- Improved tile: if it holds a non-connecting improvement we placed (or
--- could have placed) and a connecting improvement is now unlocked, return
--- that build and its score.
-local function EvaluateUpgrade(pPlot, iPlayer, iTeam, builds, nBuilds, imp, bWorked)
+-- Improved tile: if it holds a non-connecting improvement we could have
+-- placed, and a connecting improvement is now unlocked, return that build.
+local function EvaluateUpgrade(pCity, pPlot, iPlayer, iTeam, builds, nBuilds, imp)
 	if not buildableImprovement[imp] or excludedImprovement[imp] then return nil end
 
 	local resID = pPlot:GetResourceType(iTeam)
-	if resID == nil or resID == NO_RESOURCE or not resourceHasImprovement[resID] then
-		return nil
-	end
-	-- Already the proper improvement
-	if improvementConnects[imp] and improvementConnects[imp][resID] then return nil end
+	if resID == nil or resID < 0 or not resourceHasImprovement[resID] then return nil end
+	local current = improvementConnects[imp]
+	if current and current[resID] then return nil end   -- already proper
 
 	local bestBuild, bestScore
+	local prepared, bWorked = false, false
 	for i = 1, nBuilds do
 		local b = builds[i]
-		if improvementConnects[b.improvement] and improvementConnects[b.improvement][resID]
-			and pPlot:CanBuild(b.build, iPlayer) then
-			local score = ScoreBuild(pPlot, b, iPlayer, true, bWorked, resID) + CONFIG.UPGRADE_BONUS
+		local ic = improvementConnects[b.improvement]
+		if ic and ic[resID] and pPlot:CanBuild(b.build, iPlayer) then
+			if not prepared then
+				prepared = true
+				bWorked = pCity:IsWorkingPlot(pPlot)
+				if HAS_YIELD_QUERY then FillBefore(pPlot) end
+			end
+			local score = ScoreBuild(pPlot, b, iPlayer, true, bWorked, resID) + UPGRADE_BONUS
 			if bestScore == nil or score > bestScore then
 				bestBuild, bestScore = b, score
 			end
@@ -336,174 +409,150 @@ local function Better(score, x, y, other)
 	return x < other.x
 end
 
--- Collect candidates for one city into 'out' (shared 'seen' avoids duplicates)
-local function CollectCityCandidates(pCity, iPlayer, iTeam, builds, nBuilds, seen, out)
+-- Keep the best k candidates, best first (tiny insertion list)
+local function InsertTop(top, k, pPlot, b, score)
+	local n = #top
+	local x, y = pPlot:GetX(), pPlot:GetY()
+	if n >= k and not Better(score, x, y, top[n]) then return end
+	local c = { plot = pPlot, build = b, score = score, x = x, y = y }
+	local i = (n >= k) and n or (n + 1)
+	top[i] = c
+	while i > 1 and Better(score, x, y, top[i - 1]) do
+		top[i] = top[i - 1]
+		top[i - 1] = c
+		i = i - 1
+	end
+end
+
+local function ApplyOne(c, iPlayer)
+	c.plot:SetImprovementType(c.build.improvement, iPlayer)
+	c.plot:SetImprovementPillaged(false)
+	dprint("Player", iPlayer, "built", c.x, c.y)
+end
+
+--------------------------------------------------------------------------
+-- BUILD PASS (one city)
+--------------------------------------------------------------------------
+local function BuildForCity(pCity, iPlayer, iTeam, builds, nBuilds, perTurn)
+	local top = {}
 	local numPlots = pCity:GetNumCityPlots()
 	for i = 0, numPlots - 1 do
 		local pPlot = pCity:GetCityIndexPlot(i)
 		if pPlot and pPlot:GetOwner() == iPlayer and not pPlot:IsCity() then
-			local x, y = pPlot:GetX(), pPlot:GetY()
-			local key = y * 4096 + x
-			if not seen[key] then
-				seen[key] = true
+			local imp = pPlot:GetImprovementType()
+			local b, score
+			if imp == NO_IMPROVEMENT then
+				if not (SKIP_ENEMY and BlockedByEnemy(pPlot, iTeam)) then
+					b, score = EvaluateEmptyPlot(pCity, pPlot, iPlayer, iTeam, builds, nBuilds)
+				end
+			else
+				b, score = EvaluateUpgrade(pCity, pPlot, iPlayer, iTeam, builds, nBuilds, imp)
+				if b and SKIP_ENEMY and BlockedByEnemy(pPlot, iTeam) then b = nil end
+			end
+			if b then InsertTop(top, perTurn, pPlot, b, score) end
+		end
+	end
+	for i = 1, #top do ApplyOne(top[i], iPlayer) end
+	if CONFIG.DEBUG then
+		dprint("Player", iPlayer, "city", pCity:GetID(), "built", #top)
+	end
+end
 
-				local imp = pPlot:GetImprovementType()
-				local candidate = nil
-
-				if imp == NO_IMPROVEMENT then
-					local bWorked = pCity:IsWorkingPlot(pPlot)
-					local b, score = EvaluatePlot(pPlot, iPlayer, iTeam, builds, nBuilds, bWorked)
-					if b then
-						candidate = { plot = pPlot, build = b, score = score, x = x, y = y }
-					end
+--------------------------------------------------------------------------
+-- REPAIR PASS (one city)
+-- Worked tiles first, then lowest y, then lowest x (deterministic).
+--------------------------------------------------------------------------
+local function RepairCity(pCity, iPlayer, iTeam)
+	local numPlots = pCity:GetNumCityPlots()
+	for _ = 1, REPAIRS_PER_CITY do
+		local best, bestWorked, bestX, bestY
+		for i = 0, numPlots - 1 do
+			local pPlot = pCity:GetCityIndexPlot(i)
+			if pPlot and pPlot:GetOwner() == iPlayer
+				and pPlot:GetImprovementType() ~= NO_IMPROVEMENT
+				and pPlot:IsImprovementPillaged()
+				and not BlockedByEnemy(pPlot, iTeam) then
+				local x, y = pPlot:GetX(), pPlot:GetY()
+				local worked = pCity:IsWorkingPlot(pPlot)
+				local better
+				if best == nil then
+					better = true
+				elseif worked ~= bestWorked then
+					better = worked
+				elseif y ~= bestY then
+					better = y < bestY
 				else
-					local bWorked = pCity:IsWorkingPlot(pPlot)
-					local b, score = EvaluateUpgrade(pPlot, iPlayer, iTeam, builds, nBuilds, imp, bWorked)
-					if b then
-						candidate = { plot = pPlot, build = b, score = score, x = x, y = y }
-					end
+					better = x < bestX
 				end
-
-				if candidate and CONFIG.SKIP_OCCUPIED_BY_ENEMY
-					and TileHasEnemy(pPlot, iTeam) then
-					candidate = nil
+				if better then
+					best, bestWorked, bestX, bestY = pPlot, worked, x, y
 				end
-
-				if candidate then out[#out + 1] = candidate end
 			end
 		end
-	end
-end
 
--- Pull the best 'count' candidates out of the list (partial selection)
-local function ApplyBest(out, count, iPlayer)
-	local applied = 0
-	local total = #out
-	while applied < count and total > 0 do
-		local bestIdx
-		for i = 1, total do
-			local c = out[i]
-			local bestC = bestIdx and out[bestIdx] or nil
-			if Better(c.score, c.x, c.y, bestC) then bestIdx = i end
+		if not best then return end
+		if REMOVE_FALLOUT and FALLOUT_ID and best:GetFeatureType() == FALLOUT_ID then
+			best:SetFeatureType(NO_FEATURE)
+			dprint("Player", iPlayer, "cleared fallout", bestX, bestY)
 		end
-		local c = out[bestIdx]
-		out[bestIdx] = out[total]
-		out[total] = nil
-		total = total - 1
-
-		c.plot:SetImprovementType(c.build.improvement, iPlayer)
-		c.plot:SetImprovementPillaged(false)
-		applied = applied + 1
-		dprint("Player", iPlayer, "built", c.x, c.y)
-	end
-	return applied
-end
-
---------------------------------------------------------------------------
--- REPAIR PASS
--- Stateless and deterministic: a city is "due" when
--- (game turn + city ID) % REPAIR_INTERVAL == 0, so every client agrees
--- without storing anything. Pillaged tiles with an enemy unit on them are
--- skipped.
---------------------------------------------------------------------------
-local function RepairPillaged(pPlayer, iPlayer, iTeam)
-	local interval = CONFIG.REPAIR_INTERVAL
-	if interval < 1 then interval = 1 end
-	local turn = Game.GetGameTurn()
-	local seen = {}
-
-	for pCity in pPlayer:Cities() do
-		if (turn + pCity:GetID()) % interval == 0 then
-			local repaired = 0
-			local numPlots = pCity:GetNumCityPlots()
-
-			-- Repeat the (cheap) scan once per repair so ordering stays
-			-- deterministic: worked tiles first, then lowest y, then lowest x.
-			while repaired < CONFIG.REPAIRS_PER_CITY do
-				local best, bestWorked, bestX, bestY
-				for i = 0, numPlots - 1 do
-					local pPlot = pCity:GetCityIndexPlot(i)
-					if pPlot and pPlot:GetOwner() == iPlayer
-						and pPlot:GetImprovementType() ~= NO_IMPROVEMENT
-						and pPlot:IsImprovementPillaged() then
-						local x, y = pPlot:GetX(), pPlot:GetY()
-						if not seen[y * 4096 + x] and not TileHasEnemy(pPlot, iTeam) then
-							local worked = pCity:IsWorkingPlot(pPlot)
-							local better = false
-							if best == nil then
-								better = true
-							elseif worked ~= bestWorked then
-								better = worked
-							elseif y ~= bestY then
-								better = y < bestY
-							else
-								better = x < bestX
-							end
-							if better then
-								best, bestWorked, bestX, bestY = pPlot, worked, x, y
-							end
-						end
-					end
-				end
-
-				if not best then break end
-				if CONFIG.REMOVE_FALLOUT and FALLOUT_ID
-					and best:GetFeatureType() == FALLOUT_ID then
-					best:SetFeatureType(NO_FEATURE)
-					dprint("Player", iPlayer, "cleared fallout", bestX, bestY)
-				end
-				best:SetImprovementPillaged(false)
-				seen[bestY * 4096 + bestX] = true
-				repaired = repaired + 1
-				dprint("Player", iPlayer, "repaired", bestX, bestY)
-			end
-		end
+		best:SetImprovementPillaged(false)
+		dprint("Player", iPlayer, "repaired", bestX, bestY)
 	end
 end
 
 --------------------------------------------------------------------------
 -- MAIN
+-- Schedules are stateless: a city acts when (turn + cityID) % interval == 0.
 --------------------------------------------------------------------------
-function AutoImprovements_PlayerDoTurn(iPlayer)
+local function DoTurn(iPlayer)
 	local pPlayer = Players[iPlayer]
 	if not PlayerQualifies(pPlayer) then return end
 	if pPlayer:GetNumCities() == 0 then return end
 
 	local iTeam = pPlayer:GetTeam()
-
-	if CONFIG.REPAIR_PILLAGED then
-		RepairPillaged(pPlayer, iPlayer, iTeam)
-	end
-
-	local interval = CONFIG.BUILD_INTERVAL
-	if interval < 1 then interval = 1 end
 	local turn = Game.GetGameTurn()
+	local builds, nBuilds, perTurn
 
-	-- Off-turn for this player in PLAYER mode: skip all scanning.
-	if CONFIG.MODE ~= "CITY" and (turn + iPlayer) % interval ~= 0 then return end
+	for pCity in pPlayer:Cities() do
+		local key = turn + pCity:GetID()
 
-	local perTurn = GetActionsPerTurn(iTeam)
-	local builds, nBuilds = GetAvailableBuilds(iTeam, pPlayer:GetCivilizationType())
-	if nBuilds == 0 then return end
+		if REPAIR_ENABLED and key % REPAIR_INTERVAL == 0 then
+			RepairCity(pCity, iPlayer, iTeam)
+		end
 
-	local seen = {}
-
-	if CONFIG.MODE == "CITY" then
-		for pCity in pPlayer:Cities() do
-			if (turn + pCity:GetID()) % interval == 0 then
-				local out = {}
-				CollectCityCandidates(pCity, iPlayer, iTeam, builds, nBuilds, seen, out)
-				if #out > 0 then ApplyBest(out, perTurn, iPlayer) end
+		if key % BUILD_INTERVAL == 0 then
+			if builds == nil then   -- computed once per player, only if needed
+				perTurn = GetActionsPerTurn(iTeam)
+				builds, nBuilds = GetAvailableBuilds(iTeam, pPlayer:GetCivilizationType())
+			end
+			if nBuilds > 0 then
+				BuildForCity(pCity, iPlayer, iTeam, builds, nBuilds, perTurn)
 			end
 		end
-	else
-		local out = {}
-		for pCity in pPlayer:Cities() do
-			CollectCityCandidates(pCity, iPlayer, iTeam, builds, nBuilds, seen, out)
-		end
-		if #out > 0 then ApplyBest(out, perTurn, iPlayer) end
 	end
 end
 
-GameEvents.PlayerDoTurn.Add(AutoImprovements_PlayerDoTurn)
-print("AutoImprovements loaded. Yield query available: " .. tostring(HAS_YIELD_QUERY))
+-- Error-isolating entry point (timing is debug output only, never logic)
+local function SafeDoTurn(iPlayer)
+	local t0 = nil
+	if CONFIG.DEBUG and os and os.clock then t0 = os.clock() end
+
+	local ok, err = pcall(DoTurn, iPlayer)
+	if not ok then
+		print("[AutoImprovements] ERROR for player " .. tostring(iPlayer) .. ": " .. tostring(err))
+	end
+
+	if t0 then
+		print(string.format("[AutoImprovements] player %d took %.2f ms", iPlayer, (os.clock() - t0) * 1000))
+	end
+end
+
+-- Replace any previously registered copy of this handler (no double builds)
+if AutoImprovements_Handler then
+	pcall(GameEvents.PlayerDoTurn.Remove, AutoImprovements_Handler)
+end
+AutoImprovements_Handler = SafeDoTurn
+GameEvents.PlayerDoTurn.Add(SafeDoTurn)
+
+print("AutoImprovements loaded. Yield query: " .. tostring(HAS_YIELD_QUERY)
+	.. ", prefilter: " .. tostring(USE_PREFILTER))
