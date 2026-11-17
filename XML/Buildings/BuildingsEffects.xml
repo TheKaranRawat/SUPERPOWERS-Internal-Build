@@ -1090,7 +1090,7 @@
 		<Row>
 			<BuildingType>BUILDING_MECHANIZED_FARM</BuildingType>
 			<ResourceType>RESOURCE_HORSE</ResourceType>
-			<Quantity>5</Quantity>
+			<Quantity>10</Quantity>
 		</Row>
 		<Row>
 			<BuildingType>BUILDING_SHOSHONE_HUNTING</BuildingType>
