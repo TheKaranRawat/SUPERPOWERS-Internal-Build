@@ -211,6 +211,12 @@
 			<Quantity>20</Quantity>
 		</Row>
 
+		<Row>
+			<BuildingType>BUILDING_3_GRANDPALACE</BuildingType>
+			<ResourceType>RESOURCE_MANPOWER</ResourceType>
+			<Quantity>20</Quantity>
+		</Row>
+
 		<!--
 		<Row>
 			<BuildingType>BUILDING_PALACE</BuildingType>
