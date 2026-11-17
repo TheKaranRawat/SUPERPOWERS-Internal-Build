@@ -3934,6 +3934,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/UnitAutoNaming/UnitAutoNaming.lua</File>
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/DisableCSUnits/DisableCSUnits.lua</File>
+
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/WarTracker/WarTrackerGlow.dds</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/WarTracker/WarTracker.lua</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/WarTracker/WarTracker.xml</File>
     
     
 
@@ -4554,6 +4558,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Name>DisableCSUnits</Name>
       <Description>Disable CS from building units</Description>
     </EntryPoint>    
+
+    <EntryPoint type="InGameUIAddin" file="Modules/WarTracker/WarTracker.lua">
+      <Name>WarTracker</Name>
+      <Description>War Tracker</Description>
+    </EntryPoint>        
 		
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
       <Name>Terra</Name>

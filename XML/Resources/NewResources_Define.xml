@@ -148,7 +148,7 @@
 		<Delete Type="RESOURCE_LAPIS_LAZULI"/>
 		<Row>
 			<Type>RESOURCE_COFFEE</Type>
-			<Happiness>6</Happiness>
+			<Happiness>10</Happiness>
 			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<Description>TXT_KEY_RESOURCE_COFFEE</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_COFFEE_TEXT</Civilopedia>
@@ -259,7 +259,7 @@
 		<Row>
 			<Type>RESOURCE_OLIVE</Type>
 			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
-			<Happiness>4</Happiness>
+			<Happiness>6</Happiness>
 			<Description>TXT_KEY_RESOURCE_OLIVE</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_OLIVE_TEXT</Civilopedia>
 			<ResourceClassType>RESOURCECLASS_LUXURY</ResourceClassType>
@@ -280,7 +280,7 @@
 		</Row>
 		<Row>
 			<Type>RESOURCE_PERFUME</Type>
-			<Happiness>8</Happiness>
+			<Happiness>10</Happiness>
 			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<Description>TXT_KEY_RESOURCE_PERFUME</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_PERFUME_TEXT</Civilopedia>
@@ -323,7 +323,7 @@
 		</Row>
 		<Row>
 			<Type>RESOURCE_LAPIS</Type>
-			<Happiness>4</Happiness>
+			<Happiness>6</Happiness>
 			<TechCityTrade>TECH_BRONZE_WORKING</TechCityTrade>
 			<Description>TXT_KEY_RESOURCE_LAPIS</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_LAPIS_TEXT</Civilopedia>
@@ -345,7 +345,7 @@
 		<!-- City-State -->
 		<Row>
 			<Type>RESOURCE_GLASS</Type>
-			<Happiness>6</Happiness>
+			<Happiness>8</Happiness>
 			<Description>TXT_KEY_RESOURCE_GLASS</Description>
 			<Civilopedia>TXT_KEY_CIV5_RESOURCE_GLASS_TEXT</Civilopedia>
 			<Help>TXT_KEY_RESOURCE_GLASS_HELP</Help>
