@@ -34,15 +34,23 @@
 			<Set NumCitiesUnhappinessPercent="100"/>
 			<Where Type="WORLDSIZE_HUGE"/>
 		</Update>
-
+		<!-- large 13:8 104x64 5152 6656| huge 8:5 128/80 6656 10240-->
 		<Update>
-			<Set GridWidth="120"/>
+			<Set GridWidth="104"/>
+			<Where Type="WORLDSIZE_HUGE"/>
+		</Update>
+		<Update>
+			<Set GridHeight="64"/>
 			<Where Type="WORLDSIZE_HUGE"/>
 		</Update>
 
 		<Update>
-			<Set GridHeight="75"/>
-			<Where Type="WORLDSIZE_HUGE"/>
+			<Set GridWidth="92"/>	
+			<Where Type="WORLDSIZE_LARGE"/>
+		</Update>
+		<Update>
+			<Set GridHeight="56"/>
+			<Where Type="WORLDSIZE_LARGE"/>
 		</Update>
 		
 		<Update>
