@@ -682,6 +682,11 @@
 			<Where Name="MAX_EXPERIENCE_PER_COMBAT" />
 		</Update>
 
+		<Update>
+			<Set Value="1"/>
+			<Where Name="MAX_BARBARIANS_FROM_CAMP_NEARBY" />
+		</Update>
+
 		<!-- Cost of acquiring new Plots -->
 
 		<Update>
