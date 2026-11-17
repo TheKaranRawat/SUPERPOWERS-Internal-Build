@@ -320,11 +320,13 @@ function AIUnitsAssist(playerID)
 			if needManpower then player:ChangeNumResourceTotal(ManPowerResID, 1) end
 		end
 	end
-
+	
+	--[[ RESOURCE_CONSUMER DEP
 	if ConsumerResID ~= nil and player:GetNumResourceAvailable(ConsumerResID, true) <= 0 then
 		player:ChangeNumResourceTotal(ConsumerResID, 2)
 	end
-
+	]]--
+	
 	-- Carrier resupply: skip the unit scan entirely when no carrier exists
 	if not PlayerHasAnyCarrier(player) then return end
 

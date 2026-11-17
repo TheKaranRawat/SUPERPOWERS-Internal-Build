@@ -1579,6 +1579,7 @@
 
 
 	<Unit_ResourceQuantityRequirements>
+		<!--
 		<Row>
 			<UnitType>UNIT_SETTLER</UnitType>
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
@@ -1592,6 +1593,7 @@
 			<ResourceType>RESOURCE_CONSUMER</ResourceType>
 			<Cost>3</Cost>
 		</Row>
+		-->
 
 		<!-- GPs do not use CG
 		<Row>
