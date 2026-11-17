@@ -281,7 +281,7 @@
 		</Update>
 
 		<Update>
-			<Set Value="-50"/>
+			<Set Value="-100"/>
 			<Where Name="VERY_UNHAPPY_THRESHOLD" />
 		</Update>
 
@@ -334,17 +334,17 @@
 		</Update>
 
 		<Update>
-			<Set Value="2"/>
+			<Set Value="4"/>
 			<Where Name="UPRISING_COUNTER_MIN" />
 		</Update>
 
 		<Update>
-			<Set Value="200"/>
+			<Set Value="150"/>
 			<Where Name="UPRISING_NUM_BASE" />
 		</Update>
 
 		<Update>
-			<Set Value="400"/>
+			<Set Value="200"/>
 			<Where Name="UPRISING_NUM_CITY_COUNT" />
 		</Update>
 
