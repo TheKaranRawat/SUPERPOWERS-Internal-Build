@@ -36,7 +36,7 @@ MINOR_CIV_PRESETS = {
 	WORLDSIZE_SMALL		= 5,
 	WORLDSIZE_STANDARD	= 6,
 	WORLDSIZE_LARGE		= 8,
-	WORLDSIZE_HUGE		= 10,
+	WORLDSIZE_HUGE		= 9,
 };
 
 -- true  = a map script's own DefaultCityStates value wins over the preset
