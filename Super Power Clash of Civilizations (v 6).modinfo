@@ -326,6 +326,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 	<File md5="9CD3E75D737B372497A1C965EF843423" import="1">UI/Override/StackInstanceManager.lua</File>
     <File md5="73EFCD69708903DF41D341F502A18593" import="1">UI/Override/UserInterfaceSettingCache.lua</File>
 	<File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">UI/Override/UserInterfaceSettings.lua</File>
+  <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">UI/Override/AdvancedSetup.lua</File>
+  
     
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">UI/Override/TechPanel.lua</File>
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">UI/Override/TechPanel.xml</File>
@@ -3931,7 +3933,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/GroupMove/GroupMove.xml</File>
 
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/UnitAutoNaming/UnitAutoNaming.lua</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/DisableCSUnits/DisableCSUnits.lua</File>
     
+    
+
   </Files>
   <Actions>
 	
@@ -3945,7 +3950,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     </OnGetDLLPath>
 	-->
 	
-    <OnModActivated>
+  <OnModActivated>
 	
 	  
 	  <UpdateDatabase>DLL/AI - Warmonger Adjustments (v 4)/XML/AIWarmongerAdjustments.xml</UpdateDatabase>
@@ -4544,6 +4549,11 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Name>UnitAutoNaming</Name>
       <Description>Auto name units</Description>
     </EntryPoint>
+
+    <EntryPoint type="InGameUIAddin" file="Modules/DisableCSUnits/DisableCSUnits.lua">
+      <Name>DisableCSUnits</Name>
+      <Description>Disable CS from building units</Description>
+    </EntryPoint>    
 		
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
       <Name>Terra</Name>
