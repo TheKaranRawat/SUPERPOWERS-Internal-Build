@@ -220,13 +220,22 @@ local function TeamHasRealPlayers(team)
 	return false
 end
 
+-- True if the team has at least one living major civ (city-states don't count)
+local function TeamHasMajorPlayers(team)
+	for pid = 0, MAX_CIV_PLAYERS - 1 do
+		local p = Players[pid]
+		if IsRealPlayer(p) and not p:IsMinorCiv() and p:GetTeam() == team then return true end
+	end
+	return false
+end
+
 -------------------------------------------------
 -- Bottom chips
 -------------------------------------------------
 local function RebuildChips()
 	g_ChipIM:ResetInstances()
 	if not Ready() then return end
-	local ICON, STEP, PAD, CHIP_H = 64, 32, 16, 96     -- STEP = ICON / 2 -> icons overlap by half
+	local ICON, STEP, PAD, CHIP_H = 64, 32, 16, 42     -- STEP = ICON / 2 -> icons overlap by half
 
 	for _, c in ipairs(g_Conflicts) do
 		local chip  = g_ChipIM:GetInstance()
@@ -350,7 +359,7 @@ local function ScanExistingWars()
 			local p = Players[pid]
 			if IsRealPlayer(p) then
 				local t = p:GetTeam()
-				if t ~= me and not done[t] then
+				if t ~= me and not done[t] and not p:IsMinorCiv() then
 					done[t] = true
 					if pTeam:IsHasMet(t) and pTeam:IsAtWar(t) then AddWar(t, "ongoing") end
 				end
@@ -535,7 +544,8 @@ Events.WarStateChanged.Add(function(team1, team2, isAtWar)
 	local other = (team1 == me) and team2 or team1
 
 	if isAtWar then
-		if not TeamHasRealPlayers(other) then return end   -- ignore barbarians / dead teams
+		-- Events.WarStateChanged
+		if not TeamHasMajorPlayers(other) then return end   -- ignore barbarians / city-states / dead teams
 		local weAttacked = (team1 == me)
 		AddWar(other, weAttacked and "attacker" or "defender")
 	else
@@ -563,7 +573,8 @@ Events.ActivePlayerTurnStart.Add(function()
 	for i = #g_Conflicts, 1, -1 do
 		local c = g_Conflicts[i]
 		for t in pairs(c.enemyTeams) do
-			if not TeamHasRealPlayers(t) or not me:IsAtWar(t) then
+			-- Events.ActivePlayerTurnStart prune loop
+			if not TeamHasMajorPlayers(t) or not me:IsAtWar(t) then
 				c.enemyTeams[t] = nil
 				changed = true
 			end
