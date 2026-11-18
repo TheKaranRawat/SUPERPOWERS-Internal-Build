@@ -297,12 +297,14 @@ local function RebuildChips()
 	if not Ready() then return end
 	local ICON, STEP, PAD, CHIP_H = 64, 32, 16, 96     -- STEP = ICON / 2 -> icons overlap by half
 
-	for _, c in ipairs(g_Conflicts) do
+	for _, c in ipairs(g_Conflicts) do		
 		local chip  = g_ChipIM:GetInstance()
 		local slots = { chip.E1, chip.E2, chip.E3, chip.E4, chip.E5 }
 		local glows = { chip.G1, chip.G2, chip.G3, chip.G4, chip.G5 }
+		local shadows = { chip.S1, chip.S2, chip.S3, chip.S4, chip.S5 }
 		local shown, total = 0, 0
-		local tooltip = c.name .. " (turn " .. c.turn .. ")"
+		--local tooltip = c.name .. " (turn " .. c.turn .. ")"
+		local tooltip = c.name
 
 		for team in pairs(c.enemyTeams) do
 			total = total + 1
@@ -312,6 +314,7 @@ local function RebuildChips()
 					if shown < CFG.MAX_CHIP_ICONS then
 						shown = shown + 1
 						SetCivIcon(slots[shown], pid, ICON)
+						SetCivIcon(shadows[shown], pid, ICON)
 					end
 					tooltip = tooltip .. "[NEWLINE]- " .. CivName(p)
 					break
@@ -322,6 +325,7 @@ local function RebuildChips()
 		for i = 1, #slots do
 			slots[i]:SetHide(i > shown)
 			glows[i]:SetHide(i > shown)
+			shadows[i]:SetHide(i > shown)
 		end
 
 		-- single war icon on the lower-right corner of the last (top-most) icon
