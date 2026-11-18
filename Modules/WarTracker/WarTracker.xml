@@ -173,6 +173,6 @@
   </Container>
 
   <!-- ============ CHIP BAR ============ -->
-  <Stack ID="ChipStack" Anchor="C,B" Offset="0,6" StackGrowth="Right" Padding="4"/>
+  <Stack ID="ChipStack" Anchor="C,B" Offset="0,-8" StackGrowth="Right" Padding="-30"/>
 
 </Context>
