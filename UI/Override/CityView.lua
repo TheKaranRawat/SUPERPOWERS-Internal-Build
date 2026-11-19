@@ -1803,8 +1803,9 @@ local function UpdateYields( city )
 
 	if Game.IsOption( GameOptionTypes.GAMEOPTION_NO_SCIENCE ) then
 		Controls.SciencePerTurnLabel:LocalizeAndSetText( "TXT_KEY_CITYVIEW_OFF" )
-	else
-		Controls.SciencePerTurnLabel:LocalizeAndSetText( "TXT_KEY_CITYVIEW_PERTURN_TEXT", city:GetYieldRateTimes100( YieldTypes.YIELD_SCIENCE ) / 100 )
+	else		
+		local currentSPT = city:GetYieldRateTimes100( YieldTypes.YIELD_SCIENCE ) / 100
+		Controls.SciencePerTurnLabel:LocalizeAndSetText( "TXT_KEY_CITYVIEW_PERTURN_TEXT", math.floor( currentSPT + 0.5 )  )
 	end
 
 	local culturePerTurn, cultureStored, cultureNext
