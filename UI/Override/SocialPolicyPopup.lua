@@ -66,6 +66,26 @@ local g_PolicyPipeYOffset = 68;
 local m_gPolicyID;
 local m_gAdoptingPolicy;
 
+local g_bReopenAfterBranchSwitch = false;
+
+-- Close this screen so the branch switch (anarchy) popup is not layered under it
+local function ShowBranchSwitchPopup( iBranch )
+	g_bReopenAfterBranchSwitch = true;
+	OnClose();
+	Events.SerialEventGameMessagePopup({
+		Type = ButtonPopupTypes.BUTTONPOPUP_CONFIRM_POLICY_BRANCH_SWITCH,
+		Data1 = iBranch,
+	});
+end
+
+-- Bring the policy screen back once the switch popup is dismissed (confirm or cancel)
+Events.SerialEventGameMessagePopupProcessed.Add(function( popupType )
+	if popupType == ButtonPopupTypes.BUTTONPOPUP_CONFIRM_POLICY_BRANCH_SWITCH and g_bReopenAfterBranchSwitch then
+		g_bReopenAfterBranchSwitch = false;
+		Events.SerialEventGameMessagePopup({ Type = ButtonPopupTypes.BUTTONPOPUP_CHOOSEPOLICY });
+	end
+end);
+
 -- Branches that require ANY ONE of the listed branches to be fully adopted
 local g_BranchPrereqAny = {
 	-- POLICY_BRANCH_HONOR = { "POLICY_BRANCH_TRADITION", "POLICY_BRANCH_LIBERTY" },
@@ -183,11 +203,7 @@ function PolicySelected( policyIndex )
 			
 			print("Policy Branch: " .. tostring(iPolicyBranch));
 			
-			local popupInfo = {
-				Type = ButtonPopupTypes.BUTTONPOPUP_CONFIRM_POLICY_BRANCH_SWITCH,
-				Data1 = iPolicyBranch;
-			}
-			Events.SerialEventGameMessagePopup(popupInfo);
+			ShowBranchSwitchPopup(iPolicyBranch);
 			
 		end
     end
@@ -245,11 +261,7 @@ function PolicyBranchSelected( policyBranchIndex )
 			
 			bUnblockingPolicyBranch = true;
 			
-			local popupInfo = {
-				Type = ButtonPopupTypes.BUTTONPOPUP_CONFIRM_POLICY_BRANCH_SWITCH,
-				Data1 = policyBranchIndex;
-			}
-			Events.SerialEventGameMessagePopup(popupInfo);
+			ShowBranchSwitchPopup(policyBranchIndex);
 		end
     end
     
