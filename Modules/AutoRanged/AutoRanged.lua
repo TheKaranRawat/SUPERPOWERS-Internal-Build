@@ -9,14 +9,16 @@ end
 
 local STYLE = "FireRangeBorder"
 local COLOR = Vector4(1, 0.3, 0.3, 1)
-local HIGHLIGHT_OWN_TILE = true   -- extra highlight on the unit's own tile
+local HIGHLIGHT_OWN_TILE = true    -- extra highlight on the unit's own tile
+local INCLUDE_NONCOMBAT = true     -- count workers/settlers etc. as targets
 local DEBUG = false
 
 local RANGE_MODE = InterfaceModeTypes.INTERFACEMODE_RANGE_ATTACK
 local SELECT_MODE = InterfaceModeTypes.INTERFACEMODE_SELECTION
 
-local g_weSetMode = false   -- true only if this script entered the mode
+local g_weSetMode = false
 local g_ownTileShown = false
+local g_gameCheckBroken = false
 
 ------------------------------------------------------------
 -- Helpers
@@ -40,7 +42,6 @@ local function IsRangedUnit(unit)
     return ranged and GetUnitRange(unit) > 0
 end
 
--- Mirrors when the ranged attack button is usable
 local function CanShowFor(unit)
     if unit.IsEmbarked and unit:IsEmbarked() then return false end
     if unit.IsOutOfAttacks and unit:IsOutOfAttacks() then return false end
@@ -48,6 +49,53 @@ local function CanShowFor(unit)
     return true
 end
 
+------------------------------------------------------------
+-- Target detection
+------------------------------------------------------------
+local function TileHasTarget(unit, plot)
+    local px, py = plot:GetX(), plot:GetY()
+
+    -- Preferred: the game's own check (range, line of sight, war status, target present)
+    if unit.CanRangeStrikeAt and not g_gameCheckBroken then
+        local ok, res = pcall(unit.CanRangeStrikeAt, unit, px, py, true, INCLUDE_NONCOMBAT)
+        if ok then
+            return res and true or false
+        end
+        g_gameCheckBroken = true
+        print("RangeDisplay: CanRangeStrikeAt failed, using fallback: " .. tostring(res))
+    end
+
+    -- Fallback: visible enemy unit or enemy city (no line-of-sight check)
+    if plot.IsVisibleEnemyUnit and plot:IsVisibleEnemyUnit(unit:GetOwner()) then
+        return true
+    end
+    if plot.IsEnemyCity and plot:IsEnemyCity(unit) then
+        return true
+    end
+    return false
+end
+
+local function HasTargetInRange(unit)
+    local x, y, range = unit:GetX(), unit:GetY(), GetUnitRange(unit)
+    local team = Game.GetActiveTeam()
+
+    for dx = -range, range do
+        for dy = -range, range do
+            local plot = Map.PlotXYWithRangeCheck(x, y, dx, dy, range)
+            if plot and not (plot:GetX() == x and plot:GetY() == y) then
+                -- only consider tiles the player can currently see (no fog-of-war leaks)
+                if plot:IsVisible(team, false) and TileHasTarget(unit, plot) then
+                    return true
+                end
+            end
+        end
+    end
+    return false
+end
+
+------------------------------------------------------------
+-- Own tile highlight
+------------------------------------------------------------
 local function ClearOwnTile()
     if g_ownTileShown then
         g_ownTileShown = false
@@ -78,7 +126,7 @@ local function EnterRangeMode(unit)
         return
     end
     g_weSetMode = true
-    ShowOwnTile(unit)   -- after the mode, so the game's highlights don't wipe it
+    ShowOwnTile(unit)
     if DEBUG then print("RangeDisplay: entered range mode") end
 end
 
@@ -99,13 +147,15 @@ Events.UnitSelectionChanged.Add(function(playerID, unitID, i, j, k, isSelected)
     if not Players[playerID]:IsTurnActive() then return end
 
     local unit = Players[playerID]:GetUnitByID(unitID)
-    if unit and IsRangedUnit(unit) and CanShowFor(unit) then
+    if not unit or not IsRangedUnit(unit) or not CanShowFor(unit) then return end
+
+    if HasTargetInRange(unit) then
         EnterRangeMode(unit)
+    elseif DEBUG then
+        print("RangeDisplay: no target in range, staying in normal mode")
     end
 end)
 
--- If the player cancels or changes mode (right-click, attack, etc.), clean up
--- and do NOT re-enter until the unit is selected again
 Events.InterfaceModeChanged.Add(function(oldMode, newMode)
     if newMode ~= RANGE_MODE then
         ClearOwnTile()

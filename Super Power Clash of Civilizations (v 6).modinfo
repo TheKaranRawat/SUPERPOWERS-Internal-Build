@@ -3941,6 +3941,12 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/AutoRanged/AutoRanged.lua</File>
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/AutoRanged/AutoRanged.xml</File>
+
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/MouseSleep/MouseSleep.lua</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/MouseSleep/MouseSleep.xml</File>
+
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/EventBanner/EventBanner.lua</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/EventBanner/EventBanner.xml</File>
     
     
 
@@ -4567,9 +4573,19 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>War Tracker</Description>
     </EntryPoint>       
 
-     <EntryPoint type="InGameUIAddin" file="Modules/AutoRanged/AutoRanged.lua">
+    <EntryPoint type="InGameUIAddin" file="Modules/AutoRanged/AutoRanged.lua">
       <Name>AutoRanged</Name>
       <Description>Auto Range Unit Target</Description>
+    </EntryPoint>    
+
+    <EntryPoint type="InGameUIAddin" file="Modules/MouseSleep/MouseSleep.lua">
+      <Name>MouseSleep</Name>
+      <Description>Moues Hotkey Sleep/Aware</Description>
+    </EntryPoint>    
+
+    <EntryPoint type="InGameUIAddin" file="Modules/EventBanner/EventBanner.lua">
+      <Name>EventBanner</Name>
+      <Description>News Event Banner</Description>
     </EntryPoint>    
 
 		
