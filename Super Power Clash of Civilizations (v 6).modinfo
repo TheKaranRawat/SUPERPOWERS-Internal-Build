@@ -3938,6 +3938,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/WarTracker/WarTrackerGlow.dds</File>
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/WarTracker/WarTracker.lua</File>
     <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/WarTracker/WarTracker.xml</File>
+
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/AutoRanged/AutoRanged.lua</File>
+    <File md5="43939FF7C370D80989CCD674F775944A" import="1">Modules/AutoRanged/AutoRanged.xml</File>
     
     
 
@@ -4562,7 +4565,13 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <EntryPoint type="InGameUIAddin" file="Modules/WarTracker/WarTracker.lua">
       <Name>WarTracker</Name>
       <Description>War Tracker</Description>
-    </EntryPoint>        
+    </EntryPoint>       
+
+     <EntryPoint type="InGameUIAddin" file="Modules/AutoRanged/AutoRanged.lua">
+      <Name>AutoRanged</Name>
+      <Description>Auto Range Unit Target</Description>
+    </EntryPoint>    
+
 		
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
       <Name>Terra</Name>
