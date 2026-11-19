@@ -15,23 +15,28 @@
 --    lowest player ID.
 --  * The first poll after load is silent, so loading a save never replays
 --    old events.
+--  * Winners are found once, globally. Each viewer (active player) is then
+--    told about them separately, so hotseat players each get their own
+--    banners, filtered by what THEY have met.
 -------------------------------------------------
 include("IconSupport")
 
 -------------------------------------------------
 -- CONFIG
 -------------------------------------------------
-local SLIDE_TIME      = 1   -- seconds for slide in / out (match Speed in the XML)
-local HOLD_TIME       = 8.0    -- seconds the banner stays fully shown
-local GAP_TIME        = 0.50   -- pause between queued banners
+local SLIDE_TIME      = 0.35   -- seconds for slide in / out (match Speed in the XML)
+local HOLD_TIME       = 5.0    -- seconds the banner stays fully shown
+local GAP_TIME        = 0.40   -- pause between queued banners
 local MAX_QUEUE       = 6      -- oldest queued banner is dropped beyond this
 local CIV_ICON_SIZE   = 128  -- must match the CivIcon image sizes in EventBanner.xml
 local EVENT_ICON_SIZE = 128  -- unit/building/tech icon size (must match EventIcon in the XML; falls back to 64 if the atlas has no 128)
 
--- true  = only announce civs your team has met (or yourself). Prevents leaking
---         info about civs you shouldn't know about (recommended for multiplayer).
--- false = announce everything to everyone.
-local REQUIRE_CONTACT = true
+-- Civs you have not met are still announced, but shown anonymously:
+-- the name becomes UNKNOWN_CIV_NAME and the civ icon becomes the "?" icon.
+-- true  = reveal the real civ even if you haven't met them.
+-- false = hide unmet civs behind "Unknown Civ" (default).
+local REVEAL_UNMET_CIVS = false
+local UNKNOWN_CIV_NAME  = "Unknown Civ"
 
 -------------------------------------------------
 -- EVENTS  (edit this list)
@@ -64,6 +69,11 @@ local EVENTS = {
       title = "Knights Take the Field",
       desc  = "{1_Civ} fields the first armored knights." },
 
+      { id = "UNIT_DREADNOUGHT",
+      kind = "UNIT", key = "UNIT_DREADNOUGHT",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
     { id = "BUILDING_PYRAMID",
       kind = "BUILDING", key = "BUILDING_PYRAMID", -- shows the Pyramids' own icon
       title = "The Pyramids Are Complete",
@@ -74,6 +84,9 @@ local EVENTS = {
 -- STATE
 -------------------------------------------------
 local watching  = {}      -- events nobody has won yet
+local winners   = {}      -- events that have been won: { ev = ev, pid = winnerID or nil }
+local old       = {}      -- events already won when the game was loaded (never announced)
+local seenBy    = {}      -- activePlayerID -> { [ev] = true } already announced / skipped for them
 local queue     = {}      -- banners waiting to be shown
 local baselined = false   -- first poll is silent
 local state     = "IDLE"  -- IDLE | IN | HOLD | OUT | GAP
@@ -140,8 +153,9 @@ local function FindFirst(ev)
     return nil
 end
 
+-- true if the viewer is allowed to see WHICH civ did it (themselves, same team, or met)
 local function CanSee(activePlayerID, pid)
-    if not REQUIRE_CONTACT then return true end
+    if REVEAL_UNMET_CIVS then return true end
     local myTeam    = Players[activePlayerID]:GetTeam()
     local theirTeam = Players[pid]:GetTeam()
     return myTeam == theirTeam or Teams[myTeam]:IsHasMet(theirTeam)
@@ -161,8 +175,26 @@ local function PlayerColorVec(pid, which)
     return Vector4(c.Red, c.Green, c.Blue, 1)
 end
 
+-- "?" placeholder for civs the viewer hasn't met. The unknown-civ icon is the game's
+-- CIVILIZATION_RANDOM entry (index 22 of CIV_COLOR_ATLAS), a complete round badge,
+-- so the BG and shadow images are hidden.
+local function SetUnknownCivIcon()
+    local index, atlas = 22, "CIV_COLOR_ATLAS"
+    local info = GameInfo.Civilizations["CIVILIZATION_RANDOM"]
+    if info and info.PortraitIndex and info.IconAtlas then
+        index, atlas = info.PortraitIndex, info.IconAtlas
+    end
+    Controls.CivIconBG:SetHide(true)
+    Controls.CivIconShadow:SetHide(true)
+    pcall(function() Controls.CivIcon:SetColor(Vector4(1, 1, 1, 1)) end)   -- clear any civ tint
+    IconHookup(index, CIV_ICON_SIZE, atlas, Controls.CivIcon)
+    pcall(function() Controls.Accent:SetColor(Vector4(0.6, 0.66, 0.76, 1)) end)
+end
+
 -- Round civ flag via the game's own CivIconHookup (same call shape the base UI uses).
 local function SetCivIcon(pid)
+    Controls.CivIconBG:SetHide(false)
+    Controls.CivIconShadow:SetHide(false)
     CivIconHookup(pid, CIV_ICON_SIZE, Controls.CivIcon, Controls.CivIconBG, Controls.CivIconShadow, false, true)
 
     -- accent bar takes the civ's primary colour (falls back to gold if unavailable)
@@ -175,7 +207,9 @@ local function Populate(item)
     local ev  = item.ev
     local pid = item.pid
     local civName = ""
-    if pid then
+    if pid and item.unknown then
+        civName = UNKNOWN_CIV_NAME
+    elseif pid then
         local civInfo = GameInfo.Civilizations[Players[pid]:GetCivilizationType()]
         civName = Locale.ConvertTextKey(civInfo.ShortDescription)
     end
@@ -187,7 +221,9 @@ local function Populate(item)
     -- TECH events automatically show the game's own icon for that item.
     local iconShown = false
     if ev.icon then
+        pcall(function() Controls.EventIcon:SetTextureOffsetVal(0, 0) end)   -- clear any atlas offset
         Controls.EventIcon:SetTexture(ev.icon)
+        Controls.EventIcon:SetSizeVal(EVENT_ICON_SIZE, EVENT_ICON_SIZE)
         iconShown = true
     elseif ev.info and ev.info.IconAtlas and ev.info.PortraitIndex then
         local size = EVENT_ICON_SIZE
@@ -202,10 +238,14 @@ local function Populate(item)
 
     if pid and ev.showCiv ~= false then
         Controls.CivIconBox:SetHide(false)
-        SetCivIcon(pid)
+        if item.unknown then
+            SetUnknownCivIcon()
+        else
+            SetCivIcon(pid)
+        end
     else
         Controls.CivIconBox:SetHide(true)
-        Controls.Accent:SetColor(Vector4(1, 0.82, 0.47, 1))
+        pcall(function() Controls.Accent:SetColor(Vector4(1, 0.82, 0.47, 1)) end)
     end
 end
 
@@ -220,7 +260,11 @@ local function ShowNext()
         return
     end
 
-    Populate(item)
+    local ok, err = pcall(Populate, item)
+    if not ok then
+        print("EventBanner populate error: " .. tostring(err))
+        return ShowNext()                   -- skip the broken item, try the next one
+    end
     Controls.BannerAlpha:SetHide(false)
     Controls.BannerAlpha:SetToBeginning()
     Controls.BannerSlide:SetToBeginning()
@@ -234,7 +278,7 @@ end
 
 -- Runs only while a banner is active.
 OnUpdate = function(dt)
-    timer = timer - dt
+    timer = timer - (dt or 0.033)
     if timer > 0 then return end
 
     if state == "IN" then
@@ -254,11 +298,11 @@ OnUpdate = function(dt)
     end
 end
 
-local function Enqueue(ev, pid)
+local function Enqueue(ev, pid, unknown)
     if #queue >= MAX_QUEUE then
         table.remove(queue, 1)              -- drop the oldest
     end
-    table.insert(queue, { ev = ev, pid = pid })
+    table.insert(queue, { ev = ev, pid = pid, unknown = unknown })
     if state == "IDLE" then
         ShowNext()
     end
@@ -271,33 +315,44 @@ local function Poll()
     local active = Game.GetActivePlayer()
     if active == nil or active < 0 or Players[active] == nil then return end
 
-    local silent = not baselined
+    -- 1) Find winners. Shared by every viewer; the watch list shrinks as events are won.
+    if #watching > 0 then
+        local year = Game.GetGameTurnYear()
+        local stillWatching = {}
+        for _, ev in ipairs(watching) do
+            local fired, pid = false, nil
+            if ev.kind == "YEAR" then
+                fired = (year >= ev.year)
+            else
+                pid = FindFirst(ev)
+                fired = (pid ~= nil)
+            end
+
+            if fired then
+                winners[#winners + 1] = { ev = ev, pid = pid }
+                if not baselined then old[ev] = true end   -- already true at load: stay silent
+            else
+                stillWatching[#stillWatching + 1] = ev
+            end
+        end
+        watching = stillWatching
+    end
     baselined = true
 
-    local year = Game.GetGameTurnYear()
-    local stillWatching = {}
-
-    for _, ev in ipairs(watching) do
-        local fired, pid = false, nil
-
-        if ev.kind == "YEAR" then
-            fired = (year >= ev.year)
-        else
-            pid = FindFirst(ev)
-            fired = (pid ~= nil)
-        end
-
-        if fired then
-            -- won: stop watching this event for good
-            if not silent and (pid == nil or CanSee(active, pid)) then
-                Enqueue(ev, pid)
-            end
-        else
-            table.insert(stillWatching, ev)
+    -- 2) Tell THIS viewer about anything they haven't heard yet (per-viewer, so hotseat works).
+    local seen = seenBy[active]
+    if not seen then
+        seen = {}
+        seenBy[active] = seen
+    end
+    for _, w in ipairs(winners) do
+        local ev = w.ev
+        if not seen[ev] and not old[ev] then
+            seen[ev] = true
+            -- everyone gets the banner; unmet civs are shown anonymously
+            Enqueue(ev, w.pid, w.pid ~= nil and not CanSee(active, w.pid))
         end
     end
-
-    watching = stillWatching
 end
 
 local function SafePoll()

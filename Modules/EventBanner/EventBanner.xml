@@ -24,9 +24,9 @@
       <Box ID="Accent" Anchor="C,B" Offset="0,20" Size="460,3" Color="255,210,120,255"/>
 
       <!-- MIDDLE: headline + description (sits between the two icons) -->
-      <Stack ID="TextStack" Anchor="L,C" Offset="144,-20" StackGrowth="Bottom" Padding="3">
-        <Label ID="Headline" Font="TwCenMT22" FontStyle="Shadow" Color="255,236,190,255" String=""/>
-        <Label ID="Desc" Font="TwCenMT16" WrapWidth="290" LeadingOffset="0" Color="195,205,220,255" String=""/>
+      <Stack ID="TextStack" Anchor="L,T" Offset="121,17" StackGrowth="Bottom" Padding="5">
+        <Label ID="Headline" Offset="40,0" Font="TwCenMT24" FontStyle="Shadow" Color="255,236,190,255" String=""/>
+        <Label ID="Desc" Font="TwCenMT16" WrapWidth="350" LeadingOffset="0" Color="195,205,220,255" String=""/>
       </Stack>
 
       <!-- LEFT: unit / building / tech icon, or your custom .dds (set from Lua). Half outside the box. -->
