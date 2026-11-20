@@ -23,14 +23,23 @@
       <!-- Accent line along the box's bottom edge (tinted with the civ colour from Lua) -->
       <Box ID="Accent" Anchor="C,B" Offset="0,20" Size="460,3" Color="255,210,120,255"/>
 
-      <!-- MIDDLE: headline + description (sits between the two icons) -->
-      <Stack ID="TextStack" Anchor="L,T" Offset="121,17" StackGrowth="Bottom" Padding="5">
-        <Label ID="Headline" Offset="40,0" Font="TwCenMT24" FontStyle="Shadow" Color="255,236,190,255" String=""/>
-        <Label ID="Desc" Font="TwCenMT16" WrapWidth="350" LeadingOffset="0" Color="195,205,220,255" String=""/>
-      </Stack>
+      <!-- MIDDLE: headline + description, centred between the two icons.
+           TextBox spans the gap between the icons (x 128..460), so its centre is the banner's centre.
+           Move the text up / down with the Y values of the two Offsets (the box itself is y 20..108). -->
+      <Box ID="TextBox" Anchor="C,T" Offset="0,15" Size="332,88" Color="0,0,0,0">
+        <Label ID="Headline" Anchor="C,T" Offset="0,8"  Font="TwCenMT22" FontStyle="Shadow" Color="255,236,190,255" String=""/>
+        <Label ID="Desc"     Anchor="C,T" Offset="0,28" Font="TwCenMT16" WrapWidth="360" LeadingOffset="0" Color="195,205,220,255" String=""/>
+      </Box>
 
       <!-- LEFT: unit / building / tech icon, or your custom .dds (set from Lua). Half outside the box. -->
       <Image ID="EventIcon" Anchor="L,C" Offset="0,0" Size="128,128" Texture="CivSymbolsColor256.dds"/>
+
+      <!-- LEFT (alternate): a civ flag, used instead of EventIcon for war / treaty / city-capture banners. -->
+      <Box ID="LeftCivBox" Anchor="L,C" Offset="0,0" Size="128,128" Color="0,0,0,0" Hidden="1">
+        <Image ID="LeftCivIconBG"     Anchor="C,C" Size="128,128" Texture="CivIconBGSizes.dds"/>
+        <Image ID="LeftCivIconShadow" Anchor="C,C" Size="128,128" Texture="CivSymbolsColor256.dds"/>
+        <Image ID="LeftCivIcon"       Anchor="C,C" Size="128,128" Texture="CivSymbolsColor256.dds"/>
+      </Box>
 
       <!-- RIGHT: civ that triggered the event. Half outside the box.
            All three images must match CIV_ICON_SIZE in the Lua. -->

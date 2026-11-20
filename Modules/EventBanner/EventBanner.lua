@@ -1,35 +1,37 @@
 -------------------------------------------------
 -- EventBanner.lua
--- Sleek slide-in banner for big world events.
+-- Sleek slide-in banner for big world events:
+--   * milestones: game year, first civ to a tech / unit / building
+--   * wars declared
+--   * declarations of friendship signed
+--   * defensive pacts signed
+--   * cities captured
 --
 -- Design notes (performance + multiplayer):
 --  * 100% client-side UI. It only READS game state. It never changes
 --    gameplay, never uses GameEvents/LuaEvents/network calls -> cannot desync.
 --  * No per-frame work while idle. The update callback is only registered
 --    while a banner is on screen and is cleared afterwards.
---  * Detection is a tiny poll once per turn (a few hash lookups per
---    watched event per major civ). An event is dropped from the watch list
---    the moment someone wins it, so the work shrinks over time.
+--  * Milestones and treaties are found by a tiny poll once per turn. Wars and
+--    captures use the UI events the game already fires (no polling at all).
 --  * Every client sees the same game state, so every client independently
---    reaches the same "first civ" result. Ties on the same turn go to the
---    lowest player ID.
+--    reaches the same result.
 --  * The first poll after load is silent, so loading a save never replays
 --    old events.
---  * Winners are found once, globally. Each viewer (active player) is then
---    told about them separately, so hotseat players each get their own
---    banners, filtered by what THEY have met.
+--  * Random text uses math.random on the UI side only. It never touches the
+--    gameplay RNG, so it cannot desync.
 -------------------------------------------------
 include("IconSupport")
 
 -------------------------------------------------
--- CONFIG
+-- CONFIG: timing / look
 -------------------------------------------------
-local SLIDE_TIME      = 0.35   -- seconds for slide in / out (match Speed in the XML)
-local HOLD_TIME       = 5.0    -- seconds the banner stays fully shown
-local GAP_TIME        = 0.40   -- pause between queued banners
-local MAX_QUEUE       = 6      -- oldest queued banner is dropped beyond this
-local CIV_ICON_SIZE   = 128  -- must match the CivIcon image sizes in EventBanner.xml
-local EVENT_ICON_SIZE = 128  -- unit/building/tech icon size (must match EventIcon in the XML; falls back to 64 if the atlas has no 128)
+local SLIDE_TIME      = 1.2   -- seconds for slide in / out (match Speed in the XML)
+local HOLD_TIME       = 8.0    -- seconds the banner stays fully shown
+local GAP_TIME        = 0.80   -- pause between queued banners
+local MAX_QUEUE       = 8      -- oldest queued banner is dropped beyond this
+local CIV_ICON_SIZE   = 128    -- must match the civ icon images in EventBanner.xml
+local EVENT_ICON_SIZE = 128    -- left icon size (falls back to 64 if the atlas has no 128)
 
 -- Civs you have not met are still announced, but shown anonymously:
 -- the name becomes UNKNOWN_CIV_NAME and the civ icon becomes the "?" icon.
@@ -37,60 +39,577 @@ local EVENT_ICON_SIZE = 128  -- unit/building/tech icon size (must match EventIc
 -- false = hide unmet civs behind "Unknown Civ" (default).
 local REVEAL_UNMET_CIVS = false
 local UNKNOWN_CIV_NAME  = "Unknown Civ"
+local UNKNOWN_CITY_NAME = "an unknown city"   -- {CITY} for civs you haven't met (hides where it happened)
+local CITY_FALLBACK     = "a city"            -- {CITY} when no city could be worked out
 
 -------------------------------------------------
--- EVENTS  (edit this list)
+-- TREATY ICON (friendship + defensive pact)
 --
---  kind     "YEAR"     key = nil,  year = number         (fires once when game year >= year)
---           "TECH"     key = "TECH_xxx"                  (first civ to know the tech)
+-- Set this to the game's defensive pact icon. Two forms are supported:
+--     local TREATY_ICON = { texture = "TheFileName.dds" }
+--     local TREATY_ICON = { atlas = "SOME_ATLAS", index = 3 }
+-- To find it: search the game's UI files (e.g. DiploList.xml / DiploOverview.xml,
+-- in Assets/UI/InGame) for "DefensivePact" and copy the Texture / atlas it uses.
+-- While this is nil, treaty banners show the two civ flags instead.
+-------------------------------------------------
+local TREATY_ICON = nil
+
+-------------------------------------------------
+-- TEXT TOKENS (use inside any title / desc)
+--   milestones : {CIV} {CITY}               ({CITY} = city the UNIT / BUILDING was built in; not set for TECH / YEAR)
+--   war        : {AGGRESSOR} {DEFENDER}      ({CIV} = aggressor)
+--   friendship : {CIV1} {CIV2}               (you are CIV1 if you are involved)
+--   pact       : {CIV1} {CIV2}
+--   capture    : {NEW} {OLD} {CITY}          ({CIV} = new owner)
+-- Titles / descs may be plain text or TXT_KEYs.
+-- Give a group several `variants` and one is picked at random each time
+-- (never the same one twice in a row). A single title/desc also works:
+--     { title = "...", desc = "..." }
+-------------------------------------------------
+
+-------------------------------------------------
+-- MILESTONES  (edit this list)
+--
+--  kind     "YEAR"     year = number                     (fires once when game year >= year)
+--           "TECH"     key = "TECH_xxx"                  (first civ to know the tech; always shows the tech's own icon)
 --           "UNIT"     key = "UNIT_xxx"                  (first civ to own one; matches by unit class)
 --           "BUILDING" key = "BUILDING_xxx"              (first civ to have one; matches by building class)
---  icon     optional custom .dds file name. Leave it out on UNIT / BUILDING / TECH
---           events to show the game's own icon of that unit / building / tech.
---  title    plain text or a TXT_KEY. {1_Civ} is replaced by the civ's short name.
---  desc     plain text or a TXT_KEY. {1_Civ} works here too. Keep it ~80 chars (2 lines).
+--  icon     optional custom .dds. YEAR events need one. UNIT / BUILDING use the game's own icon
+--           when you leave it out. TECH ignores it (tech icon is always used).
 --  showCiv  false hides the civ icon (YEAR events never show one)
 -------------------------------------------------
 local EVENTS = {
-    { id = "ZERO_AD",
+    --------------------------------------------------
+    -- YEAR
+    --[[ disabled until textures are set 
+    {
+      id = "ZERO_AD",
       kind = "YEAR", year = 0,
       icon = "EB_ZeroAD.dds",
       title = "The Dawn of a New Age",
       desc  = "The world has reached 0 AD." },
+    
+    {
+      id = "2000_AD",
+      kind = "YEAR", year = 2000,
+      icon = "EB_ZeroAD.dds",
+      title = "A New Millenium",
+      desc  = "The world has reached 2000 AD." },
+    ]]--
 
-    { id = "TECH_PHILOSOPHY",
-      kind = "TECH", key = "TECH_PHILOSOPHY",       -- custom .dds image
+    --------------------------------------------------
+    -- TECHS
+    -- TECH_THE_WHEEL TECH_IRON_WORKING 
+    --  TECH_CURRENCY  TECH_HORSEBACK_RIDING    
+    --  TECH_STEEL TECH_ASTRONOMY  TECH_EDUCATION   
+    --  TECH_SCIENTIFIC_THEORY TECH_GUNPOWDER   TECH_ECONOMICS
+    -- TECH_STEAM_POWER TECH_INDUSTRIALIZATION  TECH_RAILROAD     
+    -- TECH_FLIGHT  TECH_COMBUSTION TECH_DYNAMITE
+    --  TECH_ATOMIC_THEORY  TECH_ELECTRONICS    TECH_REFRIGERATION
+    --  TECH_NUCLEAR_FISSION    TECH_COMPUTERS  TECH_TELECOM
+    --  TECH_INTERNET   TECH_LASERS TECH_NUCLEAR_FUSION TECH_GLOBALIZATION
+    --  TECH_SPACE_TECHNOLOGY   TECH_INTERSTELLAR_TRAVEL    TECH_CLONING    TECH_ORBITAL_DEV    TECH_IMPLANTS
+    --  TECH_ARCOLOGIES TECH_AUTONOMOUS_SYSTEMS TECH_ARTIFICIAL_INTELLIGENCE    TECH_HYPERSTRUCTURES    TECH_SPACE_COLONIZATION
+    --  
+    { id = "TECH_THE_WHEEL",
+      kind = "TECH", key = "TECH_THE_WHEEL",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "A New Shape?",
+      desc  = "Citizens in {CITY} have begun the use of strange objects to ease their burdens. Our people suggest this may need to be reinvented later." },
+
+    { id = "TECH_IRON_WORKING",
+      kind = "TECH", key = "TECH_IRON_WORKING",       -- custom .dds image
       icon = "EB_Philosophy.dds",
       title = "Philosophy Discovered",
       desc  = "{1_Civ} is the first to master philosophy." },
 
-    { id = "UNIT_KNIGHT",
-      kind = "UNIT", key = "UNIT_KNIGHT",           -- shows the Knight's own icon
+    { id = "TECH_CURRENCY",
+      kind = "TECH", key = "TECH_CURRENCY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_HORSEBACK_RIDING",
+      kind = "TECH", key = "TECH_HORSEBACK_RIDING",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_STEEL",
+      kind = "TECH", key = "TECH_STEEL",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ASTRONOMY",
+      kind = "TECH", key = "TECH_ASTRONOMY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_EDUCATION",
+      kind = "TECH", key = "TECH_EDUCATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_SCIENTIFIC_THEORY",
+      kind = "TECH", key = "TECH_SCIENTIFIC_THEORY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_GUNPOWDER",
+      kind = "TECH", key = "TECH_GUNPOWDER",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ECONOMICS",
+      kind = "TECH", key = "TECH_ECONOMICS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_STEAM_POWER",
+      kind = "TECH", key = "TECH_STEAM_POWER",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_INDUSTRIALIZATION",
+      kind = "TECH", key = "TECH_INDUSTRIALIZATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_RAILROAD",
+      kind = "TECH", key = "TECH_RAILROAD",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_FLIGHT",
+      kind = "TECH", key = "TECH_FLIGHT",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_COMBUSTION",
+      kind = "TECH", key = "TECH_COMBUSTION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_DYNAMITE",
+      kind = "TECH", key = "TECH_DYNAMITE",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ATOMIC_THEORY",
+      kind = "TECH", key = "TECH_ATOMIC_THEORY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ELECTRONICS",
+      kind = "TECH", key = "TECH_ELECTRONICS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_REFRIGERATION",
+      kind = "TECH", key = "TECH_REFRIGERATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_NUCLEAR_FISSION",
+      kind = "TECH", key = "TECH_NUCLEAR_FISSION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_COMPUTERS",
+      kind = "TECH", key = "TECH_COMPUTERS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_TELECOM",
+      kind = "TECH", key = "TECH_TELECOM",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_INTERNET",
+      kind = "TECH", key = "TECH_INTERNET",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_LASERS",
+      kind = "TECH", key = "TECH_LASERS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_NUCLEAR_FUSION",
+      kind = "TECH", key = "TECH_NUCLEAR_FUSION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_GLOBALIZATION",
+      kind = "TECH", key = "TECH_GLOBALIZATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_SPACE_TECHNOLOGY",
+      kind = "TECH", key = "TECH_SPACE_TECHNOLOGY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_INTERSTELLAR_TRAVEL",
+      kind = "TECH", key = "TECH_INTERSTELLAR_TRAVEL",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_IMPLANTS",
+      kind = "TECH", key = "TECH_IMPLANTS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_AUTONOMOUS_SYSTEMS",
+      kind = "TECH", key = "TECH_AUTONOMOUS_SYSTEMS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ARTIFICIAL_INTELLIGENCE",
+      kind = "TECH", key = "TECH_ARTIFICIAL_INTELLIGENCE",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_SPACE_COLONIZATION",
+      kind = "TECH", key = "TECH_SPACE_COLONIZATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+      
+
+    --------------------------------------------------
+    -- UNITS
+    --  UNIT_SPARTAN300    UNIT_SWORDSMAN
+    --  UNIT_TEUTONIC_KNIGHT    
+    --  UNIT_CARAVEL    UNIT_TREBUCHET  UNIT_KNIGHT UNIT_CROSSBOWMAN
+    --  UNIT_SHIP_OF_THE_LINE   UNIT_CULVERIN   UNIT_MUSKETMAN  UNIT_VOLLEY_GUN
+    --  UNIT_DREADNOUGHT    UNIT_RIFLEMAN   UNIT_GATLINGGUN
+    --  UNIT_ARTILLERY  UNIT_WWI_TANK   UNIT_TRIPLANE   UNIT_PARATROOPER
+    --  UNIT_BATTLESHIP UNIT_CARRIER    UNIT_SUBMARINE  UNIT_BOMBER 
+    -- UNIT_NUCLEAR_CARRIER UNIT_HELICOPTER_GUNSHIP UNIT_ATOMIC_BOMB    UNIT_SSBN   UNIT_MECHANIZED_INFANTRY
+    --  UNIT_STEALTH_ATTACK_AIRCRAFT    UNIT_FW_MECH_ARTILLERY  UNIT_FW_BATTLESUIT  UNIT_FW_ROBOT_INFANTRY  UNIT_ICBM_MISSILE
+    { id = "UNIT_SPARTAN300",
+      kind = "UNIT", key = "UNIT_SPARTAN300",           -- shows the Knight's own icon
       title = "Knights Take the Field",
       desc  = "{1_Civ} fields the first armored knights." },
 
-      { id = "UNIT_DREADNOUGHT",
+    { id = "UNIT_SWORDSMAN",
+      kind = "UNIT", key = "UNIT_SWORDSMAN",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_TEUTONIC_KNIGHT",
+      kind = "UNIT", key = "UNIT_TEUTONIC_KNIGHT",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_CARAVEL",
+      kind = "UNIT", key = "UNIT_CARAVEL",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_TREBUCHET",
+      kind = "UNIT", key = "UNIT_TREBUCHET",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_KNIGHT",
+      kind = "UNIT", key = "UNIT_KNIGHT",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_CROSSBOWMAN",
+      kind = "UNIT", key = "UNIT_CROSSBOWMAN",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_SHIP_OF_THE_LINE",
+      kind = "UNIT", key = "UNIT_SHIP_OF_THE_LINE",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_CULVERIN",
+      kind = "UNIT", key = "UNIT_CULVERIN",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_MUSKETMAN",
+      kind = "UNIT", key = "UNIT_MUSKETMAN",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_VOLLEY_GUN",
+      kind = "UNIT", key = "UNIT_VOLLEY_GUN",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_DREADNOUGHT",
       kind = "UNIT", key = "UNIT_DREADNOUGHT",           -- shows the Knight's own icon
       title = "Floating Fortresses Sighted",
       desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
 
+    { id = "UNIT_RIFLEMAN",
+      kind = "UNIT", key = "UNIT_RIFLEMAN",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_GATLINGGUN",
+      kind = "UNIT", key = "UNIT_GATLINGGUN",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_ARTILLERY",
+      kind = "UNIT", key = "UNIT_ARTILLERY",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_WWI_TANK",
+      kind = "UNIT", key = "UNIT_WWI_TANK",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_TRIPLANE",
+      kind = "UNIT", key = "UNIT_TRIPLANE",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_PARATROOPER",
+      kind = "UNIT", key = "UNIT_PARATROOPER",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_BATTLESHIP",
+      kind = "UNIT", key = "UNIT_BATTLESHIP",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_CARRIER",
+      kind = "UNIT", key = "UNIT_CARRIER",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_SUBMARINE",
+      kind = "UNIT", key = "UNIT_SUBMARINE",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_BOMBER",
+      kind = "UNIT", key = "UNIT_BOMBER",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_NUCLEAR_CARRIER",
+      kind = "UNIT", key = "UNIT_NUCLEAR_CARRIER",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_HELICOPTER_GUNSHIP",
+      kind = "UNIT", key = "UNIT_HELICOPTER_GUNSHIP",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_ATOMIC_BOMB",
+      kind = "UNIT", key = "UNIT_ATOMIC_BOMB",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_SSBN",
+      kind = "UNIT", key = "UNIT_SSBN",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_MECHANIZED_INFANTRY",
+      kind = "UNIT", key = "UNIT_MECHANIZED_INFANTRY",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_STEALTH_ATTACK_AIRCRAFT",
+      kind = "UNIT", key = "UNIT_STEALTH_ATTACK_AIRCRAFT",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_FW_MECH_ARTILLERY",
+      kind = "UNIT", key = "UNIT_FW_MECH_ARTILLERY",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_FW_BATTLESUIT",
+      kind = "UNIT", key = "UNIT_FW_BATTLESUIT",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_FW_ROBOT_INFANTRY",
+      kind = "UNIT", key = "UNIT_FW_ROBOT_INFANTRY",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_ICBM_MISSILE",
+      kind = "UNIT", key = "UNIT_ICBM_MISSILE",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    --------------------------------------------------
+    -- WONDERS  
+    --  BUILDING_VOYAGERONE BUILDING_UNITED_NATIONS_HQ  BUILDING_LARGE_HADRON_COLLIDER  BUILDING_COLOSSEUM  BUILDING_SISTINE_CHAPEL
+    --  BUILDING_PYRAMID    BUILDING_STOCK_EXCHANGE	BUILDING_UNIVERSITY	BUILDING_OIL_REFINERY	BUILDING_SPACESHIP_FACTORY	BUILDING_FACTORY
     { id = "BUILDING_PYRAMID",
       kind = "BUILDING", key = "BUILDING_PYRAMID", -- shows the Pyramids' own icon
       title = "The Pyramids Are Complete",
-      desc  = "{1_Civ} has raised a wonder for the ages." },
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_VOYAGERONE",
+      kind = "BUILDING", key = "BUILDING_VOYAGERONE", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_UNITED_NATIONS_HQ",
+      kind = "BUILDING", key = "BUILDING_UNITED_NATIONS_HQ", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_LARGE_HADRON_COLLIDER",
+      kind = "BUILDING", key = "BUILDING_LARGE_HADRON_COLLIDER", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_COLOSSEUM",
+      kind = "BUILDING", key = "BUILDING_COLOSSEUM", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_SISTINE_CHAPEL",
+      kind = "BUILDING", key = "BUILDING_SISTINE_CHAPEL", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_AIRPORT",
+      kind = "BUILDING", key = "BUILDING_AIRPORT", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_STOCK_EXCHANGE",
+      kind = "BUILDING", key = "BUILDING_STOCK_EXCHANGE", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_UNIVERSITY",
+      kind = "BUILDING", key = "BUILDING_UNIVERSITY", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_OIL_REFINERY",
+      kind = "BUILDING", key = "BUILDING_OIL_REFINERY", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_SPACESHIP_FACTORY",
+      kind = "BUILDING", key = "BUILDING_SPACESHIP_FACTORY", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_FACTORY",
+      kind = "BUILDING", key = "BUILDING_FACTORY", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+}
+
+-------------------------------------------------
+-- WORLD EVENTS
+--  enabled            true / false
+--  scope              "ALL" = announce everything (unmet civs show as Unknown)
+--                     "ME"  = only when you are one of the civs involved
+--  includeCityStates  also announce events involving city-states
+-------------------------------------------------
+local WORLD = {
+    WAR = {
+        enabled = true, scope = "ALL", includeCityStates = false,
+        -- WarStateChanged(team1, team2, true): team1 is assumed to be the declarer.
+        -- If aggressor / defender show up swapped in your game, set this to false.
+        firstTeamIsAggressor = true,
+        variants = {
+            { title = "War Declared!",         desc = "{AGGRESSOR} has declared war on {DEFENDER}." },
+            { title = "The Drums of War",      desc = "{AGGRESSOR} marches against {DEFENDER}." },
+            { title = "Hostilities Begin",     desc = "Blood will be spilled between {AGGRESSOR} and {DEFENDER}." },
+            { title = "Peace Shattered",       desc = "{AGGRESSOR} turns its armies on {DEFENDER}." },
+        },
+    },
+
+    FRIENDSHIP = {
+        enabled = true, scope = "ALL", icon = TREATY_ICON,
+        variants = {
+            { title = "A Bond of Friendship",   desc = "{CIV1} and {CIV2} have declared friendship." },
+            { title = "Friends and Allies",     desc = "{CIV1} and {CIV2} pledge their goodwill." },
+            { title = "A Hand Extended",        desc = "{CIV1} and {CIV2} grow closer." },
+        },
+    },
+
+    PACT = {
+        enabled = true, scope = "ALL", icon = TREATY_ICON,
+        variants = {
+            { title = "Defensive Pact Signed",  desc = "{CIV1} and {CIV2} vow to defend each other." },
+            { title = "Shields Raised Together", desc = "{CIV1} and {CIV2} stand united against aggression." },
+            { title = "An Alliance Forged",     desc = "{CIV1} and {CIV2} are bound by a defensive pact." },
+        },
+    },
+
+    CAPTURE = {
+        enabled = true, scope = "ALL", includeCityStates = true,
+        -- SerialEventCityCaptured(hexPos, oldOwnerID, cityID, newOwnerID). If old / new show up
+        -- swapped in your game, set this to false.
+        oldOwnerIsFirst = true,
+        variants = {
+            { title = "City Captured!",         desc = "{NEW} has taken {CITY} from {OLD}." },
+            { title = "{CITY} Has Fallen",      desc = "{OLD} loses {CITY} to {NEW}." },
+            { title = "A Flag Changes Hands",   desc = "{CITY} now flies the banner of {NEW}." },
+            { title = "Conquest",               desc = "The armies of {NEW} seize {CITY}." },
+        },
+    },
 }
 
 -------------------------------------------------
 -- STATE
 -------------------------------------------------
-local watching  = {}      -- events nobody has won yet
-local winners   = {}      -- events that have been won: { ev = ev, pid = winnerID or nil }
-local old       = {}      -- events already won when the game was loaded (never announced)
-local seenBy    = {}      -- activePlayerID -> { [ev] = true } already announced / skipped for them
-local queue     = {}      -- banners waiting to be shown
-local baselined = false   -- first poll is silent
-local state     = "IDLE"  -- IDLE | IN | HOLD | OUT | GAP
-local timer     = 0
+local watching   = {}      -- milestones nobody has won yet
+local feed       = {}      -- world facts to announce: { kind = ..., ... } (milestones + treaties)
+local cursor     = {}      -- activePlayerID -> how much of `feed` they have been told about
+local dofState   = {}      -- "a:b" -> true while a declaration of friendship is active
+local pactState  = {}      -- "teamA:teamB" -> true while a defensive pact is active
+local treatyBroken = {}    -- feature name -> true if an API call failed (feature disabled)
+local baselined  = false   -- first poll is silent
+local g_ready    = false   -- war / capture events are ignored until the game finished loading
+local queue      = {}      -- banners waiting to be shown
+local state      = "IDLE"  -- IDLE | IN | HOLD | OUT | GAP
+local timer      = 0
+local g_seenTurn = -1
+local g_seen     = {}      -- de-dupe war / capture events per turn
 
 -------------------------------------------------
 -- SETUP: resolve database keys once
@@ -128,31 +647,8 @@ local function ResolveEvents()
 end
 
 -------------------------------------------------
--- DETECTION (read-only)
+-- VIEWER HELPERS (read-only)
 -------------------------------------------------
-local function PlayerHas(ev, pPlayer)
-    local kind = ev.kind
-    if kind == "TECH" then
-        return Teams[pPlayer:GetTeam()]:IsHasTech(ev.ref)
-    elseif kind == "UNIT" then
-        return pPlayer:GetUnitClassCount(ev.ref) > 0
-    elseif kind == "BUILDING" then
-        return pPlayer:GetBuildingClassCount(ev.ref) > 0
-    end
-    return false
-end
-
--- returns the lowest-ID major civ that has it, or nil
-local function FindFirst(ev)
-    for pid = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
-        local pPlayer = Players[pid]
-        if pPlayer and pPlayer:IsAlive() and PlayerHas(ev, pPlayer) then
-            return pid
-        end
-    end
-    return nil
-end
-
 -- true if the viewer is allowed to see WHICH civ did it (themselves, same team, or met)
 local function CanSee(activePlayerID, pid)
     if REVEAL_UNMET_CIVS then return true end
@@ -161,13 +657,65 @@ local function CanSee(activePlayerID, pid)
     return myTeam == theirTeam or Teams[myTeam]:IsHasMet(theirTeam)
 end
 
--------------------------------------------------
--- BANNER: populate + animate
--------------------------------------------------
-local function Txt(str, civName)
-    if str == nil then return "" end
-    return Locale.ConvertTextKey(str, civName or "")
+local function IsUnknown(activePlayerID, pid)
+    return not CanSee(activePlayerID, pid)
 end
+
+local function Involves(activePlayerID, a, b)
+    local myTeam = Players[activePlayerID]:GetTeam()
+    return Players[a]:GetTeam() == myTeam or (b ~= nil and Players[b]:GetTeam() == myTeam)
+end
+
+-- order a pair so the viewer is first when involved, otherwise lowest ID first
+local function OrderPair(activePlayerID, a, b)
+    local myTeam = Players[activePlayerID]:GetTeam()
+    if Players[b]:GetTeam() == myTeam and Players[a]:GetTeam() ~= myTeam then
+        return b, a
+    end
+    return a, b
+end
+
+local function CivName(pid, unknown)
+    if unknown then return UNKNOWN_CIV_NAME end
+    return Locale.ConvertTextKey(Players[pid]:GetCivilizationShortDescriptionKey())
+end
+
+-------------------------------------------------
+-- TEXT: random variant + token filling
+-------------------------------------------------
+local function Pick(group)
+    local list = group.variants
+    if not list then
+        list = { { title = group.title, desc = group.desc } }
+        group.variants = list
+    end
+    local n = #list
+    if n == 0 then return { title = "", desc = "" } end
+    local i = 1
+    if n > 1 then
+        i = math.random(n)
+        if i == group._last then i = (i % n) + 1 end   -- never the same twice in a row
+    end
+    group._last = i
+    return list[i]
+end
+
+local function Fill(str, tokens)
+    if str == nil then return "" end
+    if string.sub(str, 1, 7) == "TXT_KEY" then
+        str = Locale.ConvertTextKey(str)
+    end
+    -- unknown {TOKENS} are left untouched (the function returns nil)
+    return (string.gsub(str, "{([%w_]+)}", function(k) return tokens[k] end))
+end
+
+-------------------------------------------------
+-- ICONS
+-------------------------------------------------
+local RIGHT = { box = Controls.CivIconBox, bg = Controls.CivIconBG,
+                shadow = Controls.CivIconShadow, icon = Controls.CivIcon }
+local LEFT  = { box = Controls.LeftCivBox, bg = Controls.LeftCivIconBG,
+                shadow = Controls.LeftCivIconShadow, icon = Controls.LeftCivIcon }
 
 local function PlayerColorVec(pid, which)
     local colorSet = GameInfo.PlayerColors[Players[pid]:GetPlayerColor()]
@@ -178,75 +726,203 @@ end
 -- "?" placeholder for civs the viewer hasn't met. The unknown-civ icon is the game's
 -- CIVILIZATION_RANDOM entry (index 22 of CIV_COLOR_ATLAS), a complete round badge,
 -- so the BG and shadow images are hidden.
-local function SetUnknownCivIcon()
+local function SetUnknownFlag(f)
     local index, atlas = 22, "CIV_COLOR_ATLAS"
     local info = GameInfo.Civilizations["CIVILIZATION_RANDOM"]
     if info and info.PortraitIndex and info.IconAtlas then
         index, atlas = info.PortraitIndex, info.IconAtlas
     end
-    Controls.CivIconBG:SetHide(true)
-    Controls.CivIconShadow:SetHide(true)
-    pcall(function() Controls.CivIcon:SetColor(Vector4(1, 1, 1, 1)) end)   -- clear any civ tint
-    IconHookup(index, CIV_ICON_SIZE, atlas, Controls.CivIcon)
-    pcall(function() Controls.Accent:SetColor(Vector4(0.6, 0.66, 0.76, 1)) end)
+    f.bg:SetHide(true)
+    f.shadow:SetHide(true)
+    pcall(function() f.icon:SetColor(Vector4(1, 1, 1, 1)) end)   -- clear any civ tint
+    IconHookup(index, CIV_ICON_SIZE, atlas, f.icon)
 end
 
 -- Round civ flag via the game's own CivIconHookup (same call shape the base UI uses).
-local function SetCivIcon(pid)
-    Controls.CivIconBG:SetHide(false)
-    Controls.CivIconShadow:SetHide(false)
-    CivIconHookup(pid, CIV_ICON_SIZE, Controls.CivIcon, Controls.CivIconBG, Controls.CivIconShadow, false, true)
+local function SetKnownFlag(f, pid)
+    f.bg:SetHide(false)
+    f.shadow:SetHide(false)
+    CivIconHookup(pid, CIV_ICON_SIZE, f.icon, f.bg, f.shadow, false, true)
+end
 
-    -- accent bar takes the civ's primary colour (falls back to gold if unavailable)
-    if not pcall(function() Controls.Accent:SetColor(PlayerColorVec(pid, "PrimaryColor")) end) then
+local function SetFlag(f, pid, unknown)
+    f.box:SetHide(false)
+    if unknown then SetUnknownFlag(f) else SetKnownFlag(f, pid) end
+end
+
+local function SetAccent(spec)
+    local ok = false
+    if spec then
+        if spec.unknown then
+            ok = pcall(function() Controls.Accent:SetColor(Vector4(0.6, 0.66, 0.76, 1)) end)
+        else
+            ok = pcall(function() Controls.Accent:SetColor(PlayerColorVec(spec.pid, "PrimaryColor")) end)
+        end
+    end
+    if not ok then
         pcall(function() Controls.Accent:SetColor(Vector4(1, 0.82, 0.47, 1)) end)
     end
 end
 
-local function Populate(item)
-    local ev  = item.ev
-    local pid = item.pid
-    local civName = ""
-    if pid and item.unknown then
-        civName = UNKNOWN_CIV_NAME
-    elseif pid then
-        local civInfo = GameInfo.Civilizations[Players[pid]:GetCivilizationType()]
-        civName = Locale.ConvertTextKey(civInfo.ShortDescription)
+local function ShowAtlasIcon(index, atlas)
+    local size = EVENT_ICON_SIZE
+    local shown = IconHookup(index, size, atlas, Controls.EventIcon)
+    if not shown then                       -- atlas has no icon at this size: try 64
+        size = 64
+        shown = IconHookup(index, size, atlas, Controls.EventIcon)
+    end
+    Controls.EventIcon:SetSizeVal(size, size)
+    return shown
+end
+
+local function ShowTextureIcon(texture)
+    pcall(function() Controls.EventIcon:SetTextureOffsetVal(0, 0) end)   -- clear any atlas offset
+    Controls.EventIcon:SetTexture(texture)
+    Controls.EventIcon:SetSizeVal(EVENT_ICON_SIZE, EVENT_ICON_SIZE)
+    return true
+end
+
+-- left slot spec: nil | {type="civ",pid,unknown} | {type="game",info,fallback} |
+--                 {type="custom",texture} | {type="treaty",icon}
+local function ApplyLeft(spec)
+    Controls.EventIcon:SetHide(true)
+    LEFT.box:SetHide(true)
+    if not spec then return end
+
+    if spec.type == "civ" then
+        SetFlag(LEFT, spec.pid, spec.unknown)
+        return
     end
 
-    Controls.Headline:SetText(Txt(ev.title, civName))
-    Controls.Desc:SetText(Txt(ev.desc, civName))
-
-    -- Left icon: a custom .dds wins if you set `icon`; otherwise UNIT / BUILDING /
-    -- TECH events automatically show the game's own icon for that item.
-    local iconShown = false
-    if ev.icon then
-        pcall(function() Controls.EventIcon:SetTextureOffsetVal(0, 0) end)   -- clear any atlas offset
-        Controls.EventIcon:SetTexture(ev.icon)
-        Controls.EventIcon:SetSizeVal(EVENT_ICON_SIZE, EVENT_ICON_SIZE)
-        iconShown = true
-    elseif ev.info and ev.info.IconAtlas and ev.info.PortraitIndex then
-        local size = EVENT_ICON_SIZE
-        iconShown = IconHookup(ev.info.PortraitIndex, size, ev.info.IconAtlas, Controls.EventIcon)
-        if not iconShown then            -- atlas has no icon at this size: try 64
-            size = 64
-            iconShown = IconHookup(ev.info.PortraitIndex, size, ev.info.IconAtlas, Controls.EventIcon)
+    local shown = false
+    if spec.type == "custom" then
+        shown = ShowTextureIcon(spec.texture)
+    elseif spec.type == "treaty" then
+        local t = spec.icon
+        if t and t.texture then
+            shown = ShowTextureIcon(t.texture)
+        elseif t and t.atlas and t.index then
+            shown = ShowAtlasIcon(t.index, t.atlas)
         end
-        Controls.EventIcon:SetSizeVal(size, size)
+    elseif spec.type == "game" then
+        local info = spec.info
+        if info and info.IconAtlas and info.PortraitIndex then
+            shown = ShowAtlasIcon(info.PortraitIndex, info.IconAtlas)
+        end
+        if not shown and spec.fallback then
+            shown = ShowTextureIcon(spec.fallback)
+        end
     end
-    Controls.EventIcon:SetHide(not iconShown)
+    Controls.EventIcon:SetHide(not shown)
+end
 
-    if pid and ev.showCiv ~= false then
-        Controls.CivIconBox:SetHide(false)
-        if item.unknown then
-            SetUnknownCivIcon()
-        else
-            SetCivIcon(pid)
-        end
+local function ApplyRight(spec)
+    if spec then
+        SetFlag(RIGHT, spec.pid, spec.unknown)
     else
-        Controls.CivIconBox:SetHide(true)
-        pcall(function() Controls.Accent:SetColor(Vector4(1, 0.82, 0.47, 1)) end)
+        RIGHT.box:SetHide(true)
     end
+end
+
+-------------------------------------------------
+-- BANNER: build items
+-- item = { group, tokens, left, right, accent, plot }
+-------------------------------------------------
+local function BuildMilestone(active, ev, pid, city)
+    local unknown = (pid ~= nil) and IsUnknown(active, pid) or false
+    local name = pid and CivName(pid, unknown) or ""
+
+    local left
+    if ev.kind == "TECH" then
+        left = { type = "game", info = ev.info, fallback = ev.icon }      -- tech icon first
+    elseif ev.icon then
+        left = { type = "custom", texture = ev.icon }
+    else
+        left = { type = "game", info = ev.info }
+    end
+
+    local right = nil
+    if pid and ev.showCiv ~= false then right = { pid = pid, unknown = unknown } end
+
+    local cityName = CITY_FALLBACK
+    if unknown then
+        cityName = UNKNOWN_CITY_NAME
+    elseif city then
+        cityName = city
+    end
+
+    return { group = ev, tokens = { CIV = name, ["1_Civ"] = name, CITY = cityName },
+             left = left, right = right,
+             accent = pid and { pid = pid, unknown = unknown } or nil }
+end
+
+local function BuildPair(active, cfg, a, b)
+    local ua, ub = IsUnknown(active, a), IsUnknown(active, b)
+    local na, nb = CivName(a, ua), CivName(b, ub)
+
+    local left
+    if cfg.icon then
+        left = { type = "treaty", icon = cfg.icon }
+    else
+        left = { type = "civ", pid = a, unknown = ua }       -- no treaty icon configured: show both flags
+    end
+    return { group = cfg, tokens = { CIV1 = na, CIV2 = nb, CIV = na },
+             left = left, right = { pid = b, unknown = ub },
+             accent = { pid = a, unknown = ua } }
+end
+
+local function BuildWar(active, cfg, aggressor, defender)
+    local ua, ud = IsUnknown(active, aggressor), IsUnknown(active, defender)
+    local na, nd = CivName(aggressor, ua), CivName(defender, ud)
+    return { group = cfg,
+             tokens = { AGGRESSOR = na, DEFENDER = nd, CIV = na, CIV1 = na, CIV2 = nd },
+             left  = { type = "civ", pid = aggressor, unknown = ua },
+             right = { pid = defender, unknown = ud },
+             accent = { pid = aggressor, unknown = ua } }
+end
+
+local function BuildCapture(active, cfg, oldID, newID, gx, gy)
+    local uo, un = IsUnknown(active, oldID), IsUnknown(active, newID)
+    local no, nn = CivName(oldID, uo), CivName(newID, un)
+    return { group = cfg,
+             tokens = { OLD = no, NEW = nn, CIV = nn, CIV1 = no, CIV2 = nn, CITY = "a city" },
+             left  = { type = "civ", pid = oldID, unknown = uo },
+             right = { pid = newID, unknown = un },
+             accent = { pid = newID, unknown = un },
+             plot = { x = gx, y = gy } }
+end
+
+-- the city name is looked up when the banner is shown (the city exists by then)
+local function ResolveCityName(plot)
+    local ok, name = pcall(function()
+        local p = Map.GetPlot(plot.x, plot.y)
+        local city = p and p:GetPlotCity()
+        if city then
+            return Locale.ConvertTextKey(city:GetNameKey())
+        end
+        return nil
+    end)
+    if ok and name and name ~= "" then return name end
+    return nil
+end
+
+-------------------------------------------------
+-- BANNER: populate + animate
+-------------------------------------------------
+local function Populate(item)
+    local tokens = item.tokens
+    if item.plot then
+        local city = ResolveCityName(item.plot)
+        if city then tokens.CITY = city end
+    end
+
+    local v = Pick(item.group)
+    Controls.Headline:SetText(Fill(v.title, tokens))
+    Controls.Desc:SetText(Fill(v.desc, tokens))
+
+    ApplyLeft(item.left)
+    ApplyRight(item.right)
+    SetAccent(item.accent)
 end
 
 local OnUpdate -- forward declaration
@@ -298,14 +974,168 @@ OnUpdate = function(dt)
     end
 end
 
-local function Enqueue(ev, pid, unknown)
+local function Enqueue(item)
     if #queue >= MAX_QUEUE then
         table.remove(queue, 1)              -- drop the oldest
     end
-    table.insert(queue, { ev = ev, pid = pid, unknown = unknown })
+    table.insert(queue, item)
     if state == "IDLE" then
         ShowNext()
     end
+end
+
+-------------------------------------------------
+-- DETECTION: milestones (read-only)
+-------------------------------------------------
+local function PlayerHas(ev, pPlayer)
+    local kind = ev.kind
+    if kind == "TECH" then
+        return Teams[pPlayer:GetTeam()]:IsHasTech(ev.ref)
+    elseif kind == "UNIT" then
+        return pPlayer:GetUnitClassCount(ev.ref) > 0
+    elseif kind == "BUILDING" then
+        return pPlayer:GetBuildingClassCount(ev.ref) > 0
+    end
+    return false
+end
+
+-- returns the lowest-ID major civ that has it, or nil
+local function FindFirst(ev)
+    for pid = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
+        local pPlayer = Players[pid]
+        if pPlayer and pPlayer:IsAlive() and PlayerHas(ev, pPlayer) then
+            return pid
+        end
+    end
+    return nil
+end
+
+-- localized name of a city object, or nil
+local function CityNameOf(city)
+    if not city then return nil end
+    local name = Locale.ConvertTextKey(city:GetNameKey())
+    if name == nil or name == "" then return nil end
+    return name
+end
+
+-- The city a winning BUILDING / UNIT is in. Runs once, when the event is won.
+-- BUILDING: the city that has it.
+-- UNIT: the city its first unit is standing in, otherwise the owner's nearest city
+--       (a unit can't be traced back to the city that built it once it has moved).
+local function FindCity(ev, pid)
+    local ok, name = pcall(function()
+        local pPlayer = Players[pid]
+        if ev.kind == "BUILDING" then
+            -- check the building itself and any unique replacement sharing its building class
+            local ids = { ev.info.ID }
+            for row in GameInfo.Buildings{ BuildingClass = ev.info.BuildingClass } do
+                ids[#ids + 1] = row.ID
+            end
+            for city in pPlayer:Cities() do
+                for _, bid in ipairs(ids) do
+                    if city:IsHasBuilding(bid) then return CityNameOf(city) end
+                end
+            end
+        elseif ev.kind == "UNIT" then
+            for unit in pPlayer:Units() do
+                if unit:GetUnitClassType() == ev.ref then
+                    local plotCity = unit:GetPlot():GetPlotCity()
+                    if plotCity then return CityNameOf(plotCity) end
+                    local best, bestDist = nil, nil
+                    for city in pPlayer:Cities() do
+                        local d = Map.PlotDistance(unit:GetX(), unit:GetY(), city:GetX(), city:GetY())
+                        if not bestDist or d < bestDist then best, bestDist = city, d end
+                    end
+                    return CityNameOf(best)
+                end
+            end
+        end
+        return nil
+    end)
+    if ok then return name end
+    print("EventBanner: city lookup failed for " .. tostring(ev.id) .. ": " .. tostring(name))
+    return nil
+end
+
+-------------------------------------------------
+-- DETECTION: treaties (polled once per turn)
+-- Records the current state of every pair of major civs and adds a feed entry
+-- when a friendship / pact appears that wasn't there last turn.
+-------------------------------------------------
+local function PollTreaties(silent)
+    local cfgF, cfgP = WORLD.FRIENDSHIP, WORLD.PACT
+    local wantF = cfgF.enabled and not treatyBroken.FRIENDSHIP
+    local wantP = cfgP.enabled and not treatyBroken.PACT
+    if not (wantF or wantP) then return end
+
+    local ids = {}
+    for pid = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
+        local p = Players[pid]
+        if p and p:IsAlive() then ids[#ids + 1] = pid end
+    end
+
+    local seenTeamPair = {}
+    for i = 1, #ids - 1 do
+        local a = ids[i]
+        for j = i + 1, #ids do
+            local b = ids[j]
+
+            if wantF then
+                local ok, now = pcall(function() return Players[a]:IsDoF(b) end)
+                if not ok then
+                    treatyBroken.FRIENDSHIP = true
+                    wantF = false
+                    print("EventBanner: Player:IsDoF unavailable, friendship banners disabled")
+                else
+                    local key = a .. ":" .. b
+                    now = now and true or false
+                    if now and not dofState[key] and not silent then
+                        feed[#feed + 1] = { kind = "FRIENDSHIP", a = a, b = b }
+                    end
+                    dofState[key] = now
+                end
+            end
+
+            if wantP then
+                local ta, tb = Players[a]:GetTeam(), Players[b]:GetTeam()
+                if ta ~= tb then
+                    local tkey = math.min(ta, tb) .. ":" .. math.max(ta, tb)
+                    if not seenTeamPair[tkey] then
+                        seenTeamPair[tkey] = true
+                        local ok, now = pcall(function() return Teams[ta]:IsDefensivePact(tb) end)
+                        if not ok then
+                            treatyBroken.PACT = true
+                            wantP = false
+                            print("EventBanner: Team:IsDefensivePact unavailable, pact banners disabled")
+                        else
+                            now = now and true or false
+                            if now and not pactState[tkey] and not silent then
+                                feed[#feed + 1] = { kind = "PACT", a = a, b = b }
+                            end
+                            pactState[tkey] = now
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
+-------------------------------------------------
+-- ANNOUNCE a feed entry to the current viewer
+-------------------------------------------------
+local function Announce(active, f)
+    if f.kind == "MILESTONE" then
+        Enqueue(BuildMilestone(active, f.ev, f.pid, f.city))
+        return
+    end
+
+    local cfg = WORLD[f.kind]
+    if not cfg or not cfg.enabled then return end
+    if cfg.scope == "ME" and not Involves(active, f.a, f.b) then return end
+
+    local a, b = OrderPair(active, f.a, f.b)
+    Enqueue(BuildPair(active, cfg, a, b))
 end
 
 -------------------------------------------------
@@ -315,7 +1145,9 @@ local function Poll()
     local active = Game.GetActivePlayer()
     if active == nil or active < 0 or Players[active] == nil then return end
 
-    -- 1) Find winners. Shared by every viewer; the watch list shrinks as events are won.
+    local silent = not baselined
+
+    -- 1) milestones: find winners (shared by every viewer; the watch list shrinks as events are won)
     if #watching > 0 then
         local year = Game.GetGameTurnYear()
         local stillWatching = {}
@@ -329,35 +1161,107 @@ local function Poll()
             end
 
             if fired then
-                winners[#winners + 1] = { ev = ev, pid = pid }
-                if not baselined then old[ev] = true end   -- already true at load: stay silent
+                if not silent then                           -- already true at load: stay silent
+                    local city = pid and FindCity(ev, pid) or nil
+                    feed[#feed + 1] = { kind = "MILESTONE", ev = ev, pid = pid, city = city }
+                end
             else
                 stillWatching[#stillWatching + 1] = ev
             end
         end
         watching = stillWatching
     end
+
+    -- 2) treaties
+    PollTreaties(silent)
     baselined = true
 
-    -- 2) Tell THIS viewer about anything they haven't heard yet (per-viewer, so hotseat works).
-    local seen = seenBy[active]
-    if not seen then
-        seen = {}
-        seenBy[active] = seen
+    -- 3) tell THIS viewer about anything they haven't heard yet (per-viewer, so hotseat works)
+    local from = (cursor[active] or 0) + 1
+    for i = from, #feed do
+        Announce(active, feed[i])
     end
-    for _, w in ipairs(winners) do
-        local ev = w.ev
-        if not seen[ev] and not old[ev] then
-            seen[ev] = true
-            -- everyone gets the banner; unmet civs are shown anonymously
-            Enqueue(ev, w.pid, w.pid ~= nil and not CanSee(active, w.pid))
-        end
-    end
+    cursor[active] = #feed
 end
 
 local function SafePoll()
     local ok, err = pcall(Poll)
     if not ok then print("EventBanner poll error: " .. tostring(err)) end
+end
+
+-------------------------------------------------
+-- EVENT-DRIVEN: wars
+-------------------------------------------------
+local function GetTeamPlayerID(teamID)
+    local team = Teams[teamID]
+    if not team then return nil end
+    local pid = team:GetLeaderID()
+    if pid == nil or pid < 0 or Players[pid] == nil then return nil end
+    return pid
+end
+
+-- one de-dupe table per turn, shared by wars and captures
+local function SeenThisTurn(key)
+    local turn = Game.GetGameTurn()
+    if turn ~= g_seenTurn then
+        g_seenTurn = turn
+        g_seen = {}
+    end
+    if g_seen[key] then return true end
+    g_seen[key] = true
+    return false
+end
+
+local function OnWarStateChanged(teamA, teamB, isAtWar)
+    local cfg = WORLD.WAR
+    if not cfg.enabled or not g_ready or not isAtWar then return end
+    if teamA == teamB then return end
+
+    -- the event can fire once per direction; announce each pair once per turn
+    if SeenThisTurn("W" .. math.min(teamA, teamB) .. ":" .. math.max(teamA, teamB)) then return end
+
+    local idA, idB = GetTeamPlayerID(teamA), GetTeamPlayerID(teamB)
+    if not idA or not idB then return end
+    local pA, pB = Players[idA], Players[idB]
+    if pA:IsBarbarian() or pB:IsBarbarian() then return end
+    if not cfg.includeCityStates and (pA:IsMinorCiv() or pB:IsMinorCiv()) then return end
+
+    local active = Game.GetActivePlayer()
+    if active == nil or active < 0 or Players[active] == nil then return end
+    if cfg.scope == "ME" and not Involves(active, idA, idB) then return end
+
+    local aggressor, defender = idA, idB
+    if not cfg.firstTeamIsAggressor then aggressor, defender = idB, idA end
+
+    print("EventBanner: war declared", Game.GetGameTurn(), teamA, teamB)   -- check Lua.log to verify who the aggressor is
+    Enqueue(BuildWar(active, cfg, aggressor, defender))
+end
+
+-------------------------------------------------
+-- EVENT-DRIVEN: city captured
+-------------------------------------------------
+local function OnCityCaptured(hexPos, firstID, cityID, secondID)
+    local cfg = WORLD.CAPTURE
+    if not cfg.enabled or not g_ready then return end
+
+    local oldID, newID = firstID, secondID
+    if not cfg.oldOwnerIsFirst then oldID, newID = secondID, firstID end
+    if oldID == nil or newID == nil or oldID == newID then return end
+    local pOld, pNew = Players[oldID], Players[newID]
+    if not pOld or not pNew then return end
+    if pOld:IsBarbarian() or pNew:IsBarbarian() then return end
+    if not cfg.includeCityStates and (pOld:IsMinorCiv() or pNew:IsMinorCiv()) then return end
+
+    local ok, gx, gy = pcall(ToGridFromHex, hexPos.x, hexPos.y)
+    if not ok then return end
+    if SeenThisTurn("C" .. gx .. ":" .. gy) then return end
+
+    local active = Game.GetActivePlayer()
+    if active == nil or active < 0 or Players[active] == nil then return end
+    if cfg.scope == "ME" and not Involves(active, oldID, newID) then return end
+
+    print("EventBanner: city captured", Game.GetGameTurn(), oldID, newID)   -- check Lua.log to verify old / new owner
+    Enqueue(BuildCapture(active, cfg, oldID, newID, gx, gy))
 end
 
 -------------------------------------------------
@@ -375,5 +1279,17 @@ ResolveEvents()
 Controls.BannerAlpha:SetHide(true)
 
 Events.ActivePlayerTurnStart.Add(SafePoll)
-Events.LoadScreenClose.Add(SafePoll)                 -- silent baseline after loading a save / new game
-Events.GameplaySetActivePlayer.Add(OnActivePlayerChanged)
+Events.LoadScreenClose.Add(function()
+    g_ready = true
+    SafePoll()                                       -- silent baseline after loading a save / new game
+end)
+-- optional hooks: wrapped so a missing event can never stop the rest of the script loading
+local function SafeHook(eventName, fn)
+    local ok, err = pcall(function() Events[eventName].Add(fn) end)
+    if not ok then print("EventBanner: could not hook Events." .. eventName .. ": " .. tostring(err)) end
+end
+
+SafeHook("SequenceGameInitComplete", function() g_ready = true end)
+SafeHook("GameplaySetActivePlayer", OnActivePlayerChanged)
+SafeHook("WarStateChanged", OnWarStateChanged)
+SafeHook("SerialEventCityCaptured", OnCityCaptured)
