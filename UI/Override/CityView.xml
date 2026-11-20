@@ -277,7 +277,7 @@
 
 	<!-- Right Side Panel -->
 	<Grid ID="BuildingListBackground" ConsumeMouse="1" Size="289,768" Anchor="R,T" Offset="14,-9" Style="Grid9DetailSix140" Color="0,0,0,140" >
-		<Label Anchor="C,T" Offset="0,17" String="TXT_KEY_CITYVIEW_BUILDING_LIST"/>
+		<Label Anchor="C,T" Offset="0,17" String="TXT_KEY_CITYVIEW_BUILDING_LIST" Hidden="1"/>
 		<ScrollPanel ID="RightScrollPanel" Anchor="L,T" Offset="18,44" Size="272,500" Vertical="1" Color="0,0,0,140" >
 			<UpButton Anchor="R,T" AnchorSide="o,i" Offset="-7,-2" Style="ScrollBarUp" />
 			<ScrollBar ID="RightScrollBar" Anchor="R,C" AnchorSide="o,i" Offset="-7,-2" Style="VertSlider" Length="200" />
