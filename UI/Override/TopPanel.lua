@@ -675,10 +675,10 @@ Controls.GoldPerTurn:RegisterCallback( Mouse.eLClick, OpenGraph( 1 ) )
 Controls.GoldPerTurn:RegisterCallback( eRClick, function() SearchForPediaEntry( format("TXT_KEY_%s_HEADING1_TITLE", g_currencyString) ) end )
 
 -- Culture
---Controls.CultureString:RegisterCallback( eLClick, function() GamePopup( ButtonPopupTypes.BUTTONPOPUP_CHOOSEPOLICY ) end )
-Controls.CultureString:RegisterCallback( Mouse.eLClick, OpenGraph( 3 ) )
+Controls.CultureString:RegisterCallback( eLClick, function() GamePopup( ButtonPopupTypes.BUTTONPOPUP_CHOOSEPOLICY ) end )
+Controls.CultureString:RegisterCallback( Mouse.eRClick, OpenGraph( 3 ) )
 
-Controls.CultureString:RegisterCallback( eRClick, function() SearchForPediaEntry( "TXT_KEY_CULTURE_HEADING1_TITLE" ) end )	-- TXT_KEY_PEDIA_CATEGORY_8_LABEL
+--Controls.CultureString:RegisterCallback( eRClick, function() SearchForPediaEntry( "TXT_KEY_CULTURE_HEADING1_TITLE" ) end )	-- TXT_KEY_PEDIA_CATEGORY_8_LABEL
 
 -- Supply
 Controls.Supply:RegisterCallback( Mouse.eLClick, OpenGraph( 26 ) )
