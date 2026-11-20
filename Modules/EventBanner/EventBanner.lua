@@ -1036,14 +1036,13 @@ local function FindCity(ev, pid)
                     if city:IsHasBuilding(bid) then return CityNameOf(city) end
                 end
             end
-         elseif ev.kind == "TECH" then                                   -- ADD FROM HERE
-            local best, bestYield = nil, -1
-            for city in pPlayer:Cities() do
-                local y = city:GetYieldRate(YieldTypes.YIELD_SCIENCE)
-                if y > bestYield then best, bestYield = city, y end
-            end
-            if best then return CityNameOf(best) end
-            return CityNameOf(pPlayer:GetCapitalCity())  
+        elseif ev.kind == "TECH" then
+            local cities = {}
+            for city in pPlayer:Cities() do cities[#cities + 1] = city end
+            if #cities == 0 then return CityNameOf(pPlayer:GetCapitalCity()) end
+            table.sort(cities, function(a, b) return a:GetID() < b:GetID() end)   -- same order on every client
+            local index = ((ev.ref * 31 + pid * 17) % #cities) + 1                 -- stable "random" pick
+            return CityNameOf(cities[index])
         elseif ev.kind == "UNIT" then
             for unit in pPlayer:Units() do
                 if unit:GetUnitClassType() == ev.ref then
