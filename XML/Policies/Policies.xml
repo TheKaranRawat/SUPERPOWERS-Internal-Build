@@ -12,7 +12,7 @@
 	<Policies>
 		
 		<Update>
-			<Set PlotCultureExponentModifier="-20" GreatGeneralRateModifier="10" GreatAdmiralRateModifier="10"/>
+			<Set PlotCultureExponentModifier="-20" GreatGeneralRateModifier="1" GreatAdmiralRateModifier="10"/>
 			<Where Type="POLICY_TRADITION"/>
 		</Update>
 
@@ -91,7 +91,7 @@
 	<Policies>
 		
 		<Update>
-			<Set WorkerSpeedModifier="33" GreatGeneralRateModifier="25" GreatAdmiralRateModifier="25"/>
+			<Set WorkerSpeedModifier="33" GreatGeneralRateModifier="2" GreatAdmiralRateModifier="25"/>
 			<Where Type="POLICY_LIBERTY"/>
 		</Update>
 		
@@ -1451,8 +1451,8 @@
 			<GridX>5</GridX>
 			<GridY>1</GridY>
 
-			<GreatGeneralRateModifier>50</GreatGeneralRateModifier>
-			<GreatAdmiralRateModifier>50</GreatAdmiralRateModifier>
+			<GreatGeneralRateModifier>5</GreatGeneralRateModifier>
+			<GreatAdmiralRateModifier>5</GreatAdmiralRateModifier>
 			
 			<PortraitIndex>3</PortraitIndex>
 			<IconAtlas>POLICY_ATLAS</IconAtlas>
