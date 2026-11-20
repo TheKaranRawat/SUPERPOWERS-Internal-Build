@@ -38,6 +38,7 @@ local EVENT_ICON_SIZE = 128    -- left icon size (falls back to 64 if the atlas 
 -- true  = reveal the real civ even if you haven't met them.
 -- false = hide unmet civs behind "Unknown Civ" (default).
 local REVEAL_UNMET_CIVS = false
+local UNKNOWN_CIV_ADJ = "Unknown"      -- adjective for civs you haven't met
 local UNKNOWN_CIV_NAME  = "Unknown Civ"
 local UNKNOWN_CITY_NAME = "an unknown city"   -- {CITY} for civs you haven't met (hides where it happened)
 local CITY_FALLBACK     = "a city"            -- {CITY} when no city could be worked out
@@ -133,7 +134,7 @@ local EVENTS = {
       kind = "TECH", key = "TECH_HORSEBACK_RIDING",       -- custom .dds image
       icon = "EB_Philosophy.dds",
       title = "Horses Enlisted",
-      desc  = "The uncultured citizens in {CITY} have begun using horses for hunting. Our most loyal citizens claim this is due to their inferior prowess." },
+      desc  = "The uncultured citizens of {CITY} have begun using horses for hunting. Many claim this is due to their inferior prowess." },
 
     { id = "TECH_STEEL",
       kind = "TECH", key = "TECH_STEEL",       -- custom .dds image
@@ -144,141 +145,130 @@ local EVENTS = {
     { id = "TECH_ASTRONOMY",
       kind = "TECH", key = "TECH_ASTRONOMY",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Don't Look Up!",
+      desc  = "Many people in {CITY} have begun strange traditions observing the night sky. Our council of priests claim nothing good will ever come of this." },
 
     { id = "TECH_EDUCATION",
       kind = "TECH", key = "TECH_EDUCATION",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Learning to Learn",
+      desc  = "The citizens of {CITY} have opened the first schools to teach the youth. Critics claim the youth should be working the fields and barracks instead." },
 
     { id = "TECH_SCIENTIFIC_THEORY",
       kind = "TECH", key = "TECH_SCIENTIFIC_THEORY",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Thesis & Antithesis!",
+      desc  = "Fledgling schools in {CITY} have evolved into advanced hubs of learning. Students however allege the burden of work taken home is 'too much!'." },
 
     { id = "TECH_GUNPOWDER",
       kind = "TECH", key = "TECH_GUNPOWDER",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Black Powder",
+      desc  = "Reports of a strange black powder with immense powers have been coming out of {CITY}. Our Military confidently states this is a passing fad." },
 
     { id = "TECH_ECONOMICS",
       kind = "TECH", key = "TECH_ECONOMICS",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Buy High, Sell Low?",
+      desc  = "Traders in {CITY} have begun offering 'shares' of their business for sale. Confused citizens say it is impossible to purchase a fraction of a store." },
 
     { id = "TECH_STEAM_POWER",
       kind = "TECH", key = "TECH_STEAM_POWER",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "The Future is a Kettle",
+      desc  = "Innovators in {CITY} claim their new 'Steam Donkey' does the work of ten men. Our advisors state such 'toys' will fall into irrelevance soon." },
 
     { id = "TECH_INDUSTRIALIZATION",
       kind = "TECH", key = "TECH_INDUSTRIALIZATION",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Goodbye, Blue Sky",
+      desc  = "Reports claim the sun has been blotted out by smoke in the town of {CITY}. Some claim this 'Industrial Revolution' may be a disaster for the human race." },
 
     { id = "TECH_RAILROAD",
       kind = "TECH", key = "TECH_RAILROAD",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "A Carriage of Steam",
+      desc  = "A peculiar carriage has appeared in {CITY} that appears to run without horses. Our advisors state these are mere kettles on wheels." },
 
     { id = "TECH_FLIGHT",
       kind = "TECH", key = "TECH_FLIGHT",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Humanity's Dream Achieved",
+      desc  = "Rumors of the first manned flight taking place in {CITY} has reached our shores. Have we finally entered an era of miracles?" },
 
     { id = "TECH_COMBUSTION",
       kind = "TECH", key = "TECH_COMBUSTION",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Infernal Engines",
+      desc  = "Innovators in {CITY} claim their new engines require no steam! These new machines run on a sticky black liquid they claim causes no pollution." },
 
     { id = "TECH_DYNAMITE",
       kind = "TECH", key = "TECH_DYNAMITE",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "It All Started With a Bang",
+      desc  = "Thunderous explosions are being heard in the mines outside {CITY}. The military is assessing if this may be put to less peaceful purposes." },
 
     { id = "TECH_ATOMIC_THEORY",
       kind = "TECH", key = "TECH_ATOMIC_THEORY",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "The Atom Split",
+      desc  = "Scientists working for years in utmost secrecy in {CITY} have announced the splitting of the atom. Will this usher in an age of infinite energy?" },
 
     { id = "TECH_ELECTRONICS",
       kind = "TECH", key = "TECH_ELECTRONICS",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Electronic, Not Electric,
+      desc  = "Advancements in circuitry are making nothing short of miracles possible. Researchers in {CITY} proclaim the future is now." },
 
     { id = "TECH_REFRIGERATION",
       kind = "TECH", key = "TECH_REFRIGERATION",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Atrophy Defeated",
+      desc  = "At a conference in {CITY}, a jubilant researcher prepared to give a speech and wiped sweat off his brow: 'That won't be happening again'" },
 
     { id = "TECH_NUCLEAR_FISSION",
       kind = "TECH", key = "TECH_NUCLEAR_FISSION",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "I Am Become Death",
+      desc  = "Citizens in {CITY} were jolted out of their beds last night, only to be greeted by the warm atomic bask of a second sun. A man-made sun." },
 
     { id = "TECH_COMPUTERS",
       kind = "TECH", key = "TECH_COMPUTERS",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Machine in the Likeness of Man",
+      desc  = "Researchers in {CITY} announce the invention of a machine that thinks like man. Quite fittingly its first application will be as missile guidance." },
 
     { id = "TECH_TELECOM",
       kind = "TECH", key = "TECH_TELECOM",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "The World Shrinks",
+      desc  = "The first wireless networks have been established in {CITY}. Some critics suggest constant connectivity will bring about the death of intimacy." },
 
     { id = "TECH_INTERNET",
       kind = "TECH", key = "TECH_INTERNET",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
-
-    { id = "TECH_LASERS",
-      kind = "TECH", key = "TECH_LASERS",       -- custom .dds image
-      icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "A Series of Tubes",
+      desc  = "A network of computers has been established in {CITY} allowing instant connectivity. Critics claims this expensive system is not commercially viable." },
 
     { id = "TECH_NUCLEAR_FUSION",
       kind = "TECH", key = "TECH_NUCLEAR_FUSION",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
-
-    { id = "TECH_GLOBALIZATION",
-      kind = "TECH", key = "TECH_GLOBALIZATION",       -- custom .dds image
-      icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "{1_Civ} Sun",
+      desc  = "'We knew the world would not be the same. A few people laughed, a few people cried. Most people were silent.'" },
 
     { id = "TECH_SPACE_TECHNOLOGY",
       kind = "TECH", key = "TECH_SPACE_TECHNOLOGY",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
-
+      title = "The Final Frontier?",
+      desc  = "An unannounced launch was detected over the skies of {CITY}. The flaming hunk of metal broke through our atomspheric prison, man was now truly free." },
+    
+    --[[
     { id = "TECH_INTERSTELLAR_TRAVEL",
       kind = "TECH", key = "TECH_INTERSTELLAR_TRAVEL",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
-
+      title = "First Manmade Object in Space",
+      desc  = "A launch was detected over the skies of Do Not Go Gentle into that Good Night." },
+    
     { id = "TECH_IMPLANTS",
       kind = "TECH", key = "TECH_IMPLANTS",       -- custom .dds image
       icon = "EB_Philosophy.dds",
@@ -302,7 +292,7 @@ local EVENTS = {
       icon = "EB_Philosophy.dds",
       title = "Philosophy Discovered",
       desc  = "{1_Civ} is the first to master philosophy." },
-      
+    ]]--
 
     --------------------------------------------------
     -- UNITS
@@ -315,16 +305,20 @@ local EVENTS = {
     --  UNIT_BATTLESHIP UNIT_CARRIER    UNIT_SUBMARINE  UNIT_BOMBER 
     -- UNIT_NUCLEAR_CARRIER UNIT_HELICOPTER_GUNSHIP UNIT_ATOMIC_BOMB    UNIT_SSBN   UNIT_MECHANIZED_INFANTRY
     --  UNIT_STEALTH_ATTACK_AIRCRAFT    UNIT_FW_MECH_ARTILLERY  UNIT_FW_BATTLESUIT  UNIT_FW_ROBOT_INFANTRY  UNIT_ICBM_MISSILE
+    
+    --[[
     { id = "UNIT_SPARTAN300",
       kind = "UNIT", key = "UNIT_SPARTAN300",           -- shows the Knight's own icon
       title = "Knights Take the Field",
       desc  = "{1_Civ} fields the first armored knights." },
+    
 
     { id = "UNIT_SWORDSMAN",
       kind = "UNIT", key = "UNIT_SWORDSMAN",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
+      title = "A Clash of Steel",
       desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
-    
+    ]]--
+
     { id = "UNIT_TEUTONIC_KNIGHT",
       kind = "UNIT", key = "UNIT_TEUTONIC_KNIGHT",           -- shows the Knight's own icon
       title = "Knights Take the Field",
@@ -454,7 +448,13 @@ local EVENTS = {
       kind = "UNIT", key = "UNIT_STEALTH_ATTACK_AIRCRAFT",           -- shows the Knight's own icon
       title = "Floating Fortresses Sighted",
       desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_ICBM_MISSILE",
+    kind = "UNIT", key = "UNIT_ICBM_MISSILE",           -- shows the Knight's own icon
+    title = "Floating Fortresses Sighted",
+    desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
 
+      --[[
     { id = "UNIT_FW_MECH_ARTILLERY",
       kind = "UNIT", key = "UNIT_FW_MECH_ARTILLERY",           -- shows the Knight's own icon
       title = "Knights Take the Field",
@@ -470,10 +470,8 @@ local EVENTS = {
       title = "Knights Take the Field",
       desc  = "{1_Civ} fields the first armored knights." },
 
-    { id = "UNIT_ICBM_MISSILE",
-      kind = "UNIT", key = "UNIT_ICBM_MISSILE",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
-      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    ]]--
+   
     
     --------------------------------------------------
     -- WONDERS  
@@ -675,6 +673,11 @@ local function OrderPair(activePlayerID, a, b)
     return a, b
 end
 
+local function CivAdj(pid, unknown)
+    if unknown then return UNKNOWN_CIV_ADJ end
+    return Locale.ConvertTextKey(Players[pid]:GetCivilizationAdjectiveKey())
+end
+
 local function CivName(pid, unknown)
     if unknown then return UNKNOWN_CIV_NAME end
     return Locale.ConvertTextKey(Players[pid]:GetCivilizationShortDescriptionKey())
@@ -851,7 +854,8 @@ local function BuildMilestone(active, ev, pid, city)
         cityName = city
     end
 
-    return { group = ev, tokens = { CIV = name, ["1_Civ"] = name, CITY = cityName },
+    return { group = ev, tokens = { CIV = name, ["1_Civ"] = name, CITY = cityName 
+                                    CIV_ADJ = pid and CivAdj(pid, unknown) or "" },
              left = left, right = right,
              accent = pid and { pid = pid, unknown = unknown } or nil }
 end
@@ -866,7 +870,8 @@ local function BuildPair(active, cfg, a, b)
     else
         left = { type = "civ", pid = a, unknown = ua }       -- no treaty icon configured: show both flags
     end
-    return { group = cfg, tokens = { CIV1 = na, CIV2 = nb, CIV = na },
+    return { group = cfg, tokens = { CIV1 = na, CIV2 = nb, CIV = na 
+                                    CIV1_ADJ = CivAdj(a, ua), CIV2_ADJ = CivAdj(b, ub) },
              left = left, right = { pid = b, unknown = ub },
              accent = { pid = a, unknown = ua } }
 end
@@ -875,7 +880,8 @@ local function BuildWar(active, cfg, aggressor, defender)
     local ua, ud = IsUnknown(active, aggressor), IsUnknown(active, defender)
     local na, nd = CivName(aggressor, ua), CivName(defender, ud)
     return { group = cfg,
-             tokens = { AGGRESSOR = na, DEFENDER = nd, CIV = na, CIV1 = na, CIV2 = nd },
+             tokens = { AGGRESSOR = na, DEFENDER = nd, CIV = na, CIV1 = na, CIV2 = nd 
+                        AGGRESSOR_ADJ = CivAdj(aggressor, ua), DEFENDER_ADJ = CivAdj(defender, ud) },
              left  = { type = "civ", pid = aggressor, unknown = ua },
              right = { pid = defender, unknown = ud },
              accent = { pid = aggressor, unknown = ua } }
@@ -885,7 +891,8 @@ local function BuildCapture(active, cfg, oldID, newID, gx, gy)
     local uo, un = IsUnknown(active, oldID), IsUnknown(active, newID)
     local no, nn = CivName(oldID, uo), CivName(newID, un)
     return { group = cfg,
-             tokens = { OLD = no, NEW = nn, CIV = nn, CIV1 = no, CIV2 = nn, CITY = "a city" },
+             tokens = { OLD = no, NEW = nn, CIV = nn, CIV1 = no, CIV2 = nn, CITY = "a city" 
+                        NEW_ADJ = CivAdj(newID, un), OLD_ADJ = CivAdj(oldID, uo) },
              left  = { type = "civ", pid = oldID, unknown = uo },
              right = { pid = newID, unknown = un },
              accent = { pid = newID, unknown = un },
