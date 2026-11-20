@@ -26,8 +26,8 @@ include("IconSupport")
 -------------------------------------------------
 -- CONFIG: timing / look
 -------------------------------------------------
-local SLIDE_TIME      = 1.2   -- seconds for slide in / out (match Speed in the XML)
-local HOLD_TIME       = 8.0    -- seconds the banner stays fully shown
+local SLIDE_TIME      = 1.5   -- seconds for slide in / out (match Speed in the XML)
+local HOLD_TIME       = 13.0    -- seconds the banner stays fully shown
 local GAP_TIME        = 0.80   -- pause between queued banners
 local MAX_QUEUE       = 8      -- oldest queued banner is dropped beyond this
 local CIV_ICON_SIZE   = 128    -- must match the civ icon images in EventBanner.xml
@@ -400,8 +400,8 @@ local EVENTS = {
       title = "Death From Above",
       desc  = "A squadron of {CIV_ADJ} aircraft flew overhead dropping bombs and bullets. A new dimension of death had been achieved." },
 
-    { id = "UNIT_PARATROOPER",
-      kind = "UNIT", key = "UNIT_PARATROOPER",           -- shows the Knight's own icon
+    { id = "UNIT_WWI_PARATROOPER",
+      kind = "UNIT", key = "UNIT_WWI_PARATROOPER",           -- shows the Knight's own icon
       title = "Who Dares, Wins",
       desc  = "A starry moonlit night over the bunkers was suddenly filled by thousands of {CIV_ADJ} men in the sky. There was truly nowhere left to hide." },
     
