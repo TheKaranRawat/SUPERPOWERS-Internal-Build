@@ -120,26 +120,26 @@ local EVENTS = {
     { id = "TECH_IRON_WORKING",
       kind = "TECH", key = "TECH_IRON_WORKING",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Strange Metal Appears",
+      desc  = "A new metal called 'Iron' has been spotted along trade routes originating from {CITY}. Many citizens suggest our Bronze will always be superior!" },
 
     { id = "TECH_CURRENCY",
       kind = "TECH", key = "TECH_CURRENCY",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Traders Reject Barter!",
+      desc  = "In the markets of {CITY} traders no longer accept bartered goods and demand shiny trinkets instead. Will this barbarism spread to our towns too?" },
 
     { id = "TECH_HORSEBACK_RIDING",
       kind = "TECH", key = "TECH_HORSEBACK_RIDING",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Horses Enlisted",
+      desc  = "The uncultured citizens in {CITY} have begun using horses for hunting. Our most loyal citizens claim this is due to their inferior prowess." },
 
     { id = "TECH_STEEL",
       kind = "TECH", key = "TECH_STEEL",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Philosophy Discovered",
-      desc  = "{1_Civ} is the first to master philosophy." },
+      title = "Strange Metal Appears, Again?",
+      desc  = "The forges of {CITY} churn a hardy new metal called 'Steel'. Many call for the regulation of this 'dangerous' new metal and call it a 'gimmick'." },
 
     { id = "TECH_ASTRONOMY",
       kind = "TECH", key = "TECH_ASTRONOMY",       -- custom .dds image
@@ -1036,6 +1036,14 @@ local function FindCity(ev, pid)
                     if city:IsHasBuilding(bid) then return CityNameOf(city) end
                 end
             end
+         elseif ev.kind == "TECH" then                                   -- ADD FROM HERE
+            local best, bestYield = nil, -1
+            for city in pPlayer:Cities() do
+                local y = city:GetYieldRate(YieldTypes.YIELD_SCIENCE)
+                if y > bestYield then best, bestYield = city, y end
+            end
+            if best then return CityNameOf(best) end
+            return CityNameOf(pPlayer:GetCapitalCity())  
         elseif ev.kind == "UNIT" then
             for unit in pPlayer:Units() do
                 if unit:GetUnitClassType() == ev.ref then
