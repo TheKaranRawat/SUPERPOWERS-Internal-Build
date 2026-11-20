@@ -217,7 +217,7 @@ local EVENTS = {
     { id = "TECH_ELECTRONICS",
       kind = "TECH", key = "TECH_ELECTRONICS",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "Electronic, Not Electric,
+      title = "Electronic, Not Electric",
       desc  = "Advancements in circuitry are making nothing short of miracles possible. Researchers in {CITY} proclaim the future is now." },
 
     { id = "TECH_REFRIGERATION",
@@ -253,7 +253,7 @@ local EVENTS = {
     { id = "TECH_NUCLEAR_FUSION",
       kind = "TECH", key = "TECH_NUCLEAR_FUSION",       -- custom .dds image
       icon = "EB_Philosophy.dds",
-      title = "{1_Civ} Sun",
+      title = "A {CIV_ADJ} Sun",
       desc  = "'We knew the world would not be the same. A few people laughed, a few people cried. Most people were silent.'" },
 
     { id = "TECH_SPACE_TECHNOLOGY",
@@ -315,125 +315,138 @@ local EVENTS = {
 
     { id = "UNIT_SWORDSMAN",
       kind = "UNIT", key = "UNIT_SWORDSMAN",           -- shows the Knight's own icon
-      title = "A Clash of Steel",
+      title = "A Clash of Steel",   {CIV_ADJ}   {CITY}
       desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
     ]]--
 
     { id = "UNIT_TEUTONIC_KNIGHT",
       kind = "UNIT", key = "UNIT_TEUTONIC_KNIGHT",           -- shows the Knight's own icon
-      title = "Knights Take the Field",
-      desc  = "{1_Civ} fields the first armored knights." },
+      title = "Crusader Kings",
+      desc  = "{CIV_ADJ} soldiers pick up arms fueled by religious fervor and a thirst for vengeance. Many wonder who they will target with their 'righteous' fury." },
 
     { id = "UNIT_CARAVEL",
       kind = "UNIT", key = "UNIT_CARAVEL",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
-      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+      title = "A New World",
+      desc  = "A new class of light ships have been put to sea from {CITY}. These ships are filled with explorers and traders who seek to chart unknown lands." },
 
     { id = "UNIT_TREBUCHET",
       kind = "UNIT", key = "UNIT_TREBUCHET",           -- shows the Knight's own icon
-      title = "Knights Take the Field",
-      desc  = "{1_Civ} fields the first armored knights." },
+      title = "Projectile Siege",
+      desc  = "{CIV_ADJ} engineers in {CITY} have been hard at work perfecting a long range siege weapon to tear down city walls." },
 
     { id = "UNIT_KNIGHT",
       kind = "UNIT", key = "UNIT_KNIGHT",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
-      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+      title = "{CIV_ADJ} Chivalry",
+      desc  = "Noblemen in {CITY} have begun taking a liking to cavalry and heavy armor. According to reports these amoured beasts are almost unstoppable in battle." },
     
     { id = "UNIT_CROSSBOWMAN",
       kind = "UNIT", key = "UNIT_CROSSBOWMAN",           -- shows the Knight's own icon
-      title = "Knights Take the Field",
-      desc  = "{1_Civ} fields the first armored knights." },
+      title = "Bolt and Bow",
+      desc  = "A new class of ranged weapons have been sighted in {CIV_ADJ} armies. Rumors suggest these weapons rain terror without even the pull of a bow." },
 
     { id = "UNIT_SHIP_OF_THE_LINE",
       kind = "UNIT", key = "UNIT_SHIP_OF_THE_LINE",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
-      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+      title = "A Hundred {CIV_ADJ} Guns",
+      desc  = "{CIV_ADJ} naval planners have laid the first hundred gun capital ships to sea. Our advisors suggest maintaining cordial relations with the {CIV_ADJ}." },
 
     { id = "UNIT_CULVERIN",
       kind = "UNIT", key = "UNIT_CULVERIN",           -- shows the Knight's own icon
-      title = "Knights Take the Field",
-      desc  = "{1_Civ} fields the first armored knights." },
+      title = "Unstoppable Force",
+      desc  = "Loud thunderous roars filled the air as {CIV_ADJ} cannons fired above. A lone general was heard saying: 'God is on the side of the heaviest cannon'" },
 
     { id = "UNIT_MUSKETMAN",
       kind = "UNIT", key = "UNIT_MUSKETMAN",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
-      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+      title = "{CIV_ADJ} Boomsticks",
+      desc  = "{CIV_ADJ} soldiers fired into a thick formation of cavalry on the battlefield, when the smoke cleared all that remained were the crimes of men." },
     
     { id = "UNIT_VOLLEY_GUN",
       kind = "UNIT", key = "UNIT_VOLLEY_GUN",           -- shows the Knight's own icon
-      title = "Knights Take the Field",
-      desc  = "{1_Civ} fields the first armored knights." },
+      title = "Machinery of Death",
+      desc  = "The roar of screams and a thousand shrieking projectiles filled a lonely valley. They say {CIV_ADJ} death had finally been succesfully industrialized." },
 
     { id = "UNIT_DREADNOUGHT",
       kind = "UNIT", key = "UNIT_DREADNOUGHT",           -- shows the Knight's own icon
       title = "Floating Fortresses Sighted",
       desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    --pikeman needed - pike and shot    Principle, sometimes that seems to be nothing more than just a word.
 
     { id = "UNIT_RIFLEMAN",
       kind = "UNIT", key = "UNIT_RIFLEMAN",           -- shows the Knight's own icon
-      title = "Knights Take the Field",
-      desc  = "{1_Civ} fields the first armored knights." },
+      title = "A Thousand {CIV_ADJ} Bullets",
+      desc  = "'The rifle has no moral stature, it has no will of its own. Naturally, it must be used by evil men for evil purposes'- Unnamed {CIV_ADJ} General" },
 
+      --[[
     { id = "UNIT_GATLINGGUN",
       kind = "UNIT", key = "UNIT_GATLINGGUN",           -- shows the Knight's own icon
       title = "Floating Fortresses Sighted",
       desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
-    
+    ]]--
+
+    --[[
     { id = "UNIT_ARTILLERY",
       kind = "UNIT", key = "UNIT_ARTILLERY",           -- shows the Knight's own icon
-      title = "Knights Take the Field",
+      title = "Beyond Visual Range",
       desc  = "{1_Civ} fields the first armored knights." },
+    ]]--
 
     { id = "UNIT_WWI_TANK",
       kind = "UNIT", key = "UNIT_WWI_TANK",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
-      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+      title = "{CIV_ADJ} Land Ships",
+      desc  = "{CIV_ADJ} landships pushed over trenches, through a hail of bullets and artillery. The landship is a steaming steel beast of industrial warfare." },
 
     { id = "UNIT_TRIPLANE",
       kind = "UNIT", key = "UNIT_TRIPLANE",           -- shows the Knight's own icon
-      title = "Knights Take the Field",
-      desc  = "{1_Civ} fields the first armored knights." },
+      title = "Death From Above",
+      desc  = "A squadron of {CIV_ADJ} aircraft flew overhead dropping bombs and bullets. A new dimension of death had been achieved." },
 
     { id = "UNIT_PARATROOPER",
       kind = "UNIT", key = "UNIT_PARATROOPER",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
-      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+      title = "Who Dares, Wins",
+      desc  = "A starry moonlit night over the bunkers was suddenly filled by thousands of {CIV_ADJ} men in the sky. There was truly nowhere left to hide." },
     
+      --[[
     { id = "UNIT_BATTLESHIP",
       kind = "UNIT", key = "UNIT_BATTLESHIP",           -- shows the Knight's own icon
       title = "Knights Take the Field",
       desc  = "{1_Civ} fields the first armored knights." },
+    ]]--
 
     { id = "UNIT_CARRIER",
       kind = "UNIT", key = "UNIT_CARRIER",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
-      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
-
+      title = "Floating {CIV_ADJ} Airfields",
+      desc  = "A new class of {CIV_ADJ} capital ships takes to the seas. No longer is naval combat restrained to the range of what one can see." },
+    
+      --[[
     { id = "UNIT_SUBMARINE",
       kind = "UNIT", key = "UNIT_SUBMARINE",           -- shows the Knight's own icon
       title = "Knights Take the Field",
       desc  = "{1_Civ} fields the first armored knights." },
-
+    
     { id = "UNIT_BOMBER",
       kind = "UNIT", key = "UNIT_BOMBER",           -- shows the Knight's own icon
       title = "Floating Fortresses Sighted",
       desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
-    
+    ]]--
+
+      --[[
     { id = "UNIT_NUCLEAR_CARRIER",
       kind = "UNIT", key = "UNIT_NUCLEAR_CARRIER",           -- shows the Knight's own icon
       title = "Knights Take the Field",
       desc  = "{1_Civ} fields the first armored knights." },
-
+    
     { id = "UNIT_HELICOPTER_GUNSHIP",
       kind = "UNIT", key = "UNIT_HELICOPTER_GUNSHIP",           -- shows the Knight's own icon
       title = "Floating Fortresses Sighted",
       desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    ]]--
 
     { id = "UNIT_ATOMIC_BOMB",
       kind = "UNIT", key = "UNIT_ATOMIC_BOMB",           -- shows the Knight's own icon
-      title = "Knights Take the Field",
-      desc  = "{1_Civ} fields the first armored knights." },
+      title = "Destroyer of Worlds",
+      desc  = "A solemn {CIV_ADJ} scientist remarked as a blinding flash filled the sky, 'Now, I am become Death, the destroyer of worlds'" },
 
+    --[[
     { id = "UNIT_SSBN",
       kind = "UNIT", key = "UNIT_SSBN",           -- shows the Knight's own icon
       title = "Floating Fortresses Sighted",
@@ -443,16 +456,16 @@ local EVENTS = {
       kind = "UNIT", key = "UNIT_MECHANIZED_INFANTRY",           -- shows the Knight's own icon
       title = "Knights Take the Field",
       desc  = "{1_Civ} fields the first armored knights." },
-
+    ]]--
     { id = "UNIT_STEALTH_ATTACK_AIRCRAFT",
       kind = "UNIT", key = "UNIT_STEALTH_ATTACK_AIRCRAFT",           -- shows the Knight's own icon
-      title = "Floating Fortresses Sighted",
-      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+      title = "A Cloaked {CIV_ADJ} Dagger",
+      desc  = "The {CIV_ADJ} aircraft flies undetected over enemy territory only to turn as night turns to day behind it. Peace was signed the next day." },
     
     { id = "UNIT_ICBM_MISSILE",
     kind = "UNIT", key = "UNIT_ICBM_MISSILE",           -- shows the Knight's own icon
     title = "Floating Fortresses Sighted",
-    desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    desc  = "A blinding flash sparked across the entire sky, and in that moment everyone knew, civilization on Earth had retreated a thousand years." },
 
       --[[
     { id = "UNIT_FW_MECH_ARTILLERY",
@@ -854,7 +867,7 @@ local function BuildMilestone(active, ev, pid, city)
         cityName = city
     end
 
-    return { group = ev, tokens = { CIV = name, ["1_Civ"] = name, CITY = cityName 
+        return { group = ev, tokens = { CIV = name, ["1_Civ"] = name, CITY = cityName,
                                     CIV_ADJ = pid and CivAdj(pid, unknown) or "" },
              left = left, right = right,
              accent = pid and { pid = pid, unknown = unknown } or nil }
@@ -870,7 +883,7 @@ local function BuildPair(active, cfg, a, b)
     else
         left = { type = "civ", pid = a, unknown = ua }       -- no treaty icon configured: show both flags
     end
-    return { group = cfg, tokens = { CIV1 = na, CIV2 = nb, CIV = na 
+    return { group = cfg, tokens = { CIV1 = na, CIV2 = nb, CIV = na, 
                                     CIV1_ADJ = CivAdj(a, ua), CIV2_ADJ = CivAdj(b, ub) },
              left = left, right = { pid = b, unknown = ub },
              accent = { pid = a, unknown = ua } }
@@ -880,7 +893,7 @@ local function BuildWar(active, cfg, aggressor, defender)
     local ua, ud = IsUnknown(active, aggressor), IsUnknown(active, defender)
     local na, nd = CivName(aggressor, ua), CivName(defender, ud)
     return { group = cfg,
-             tokens = { AGGRESSOR = na, DEFENDER = nd, CIV = na, CIV1 = na, CIV2 = nd 
+             tokens = { AGGRESSOR = na, DEFENDER = nd, CIV = na, CIV1 = na, CIV2 = nd, 
                         AGGRESSOR_ADJ = CivAdj(aggressor, ua), DEFENDER_ADJ = CivAdj(defender, ud) },
              left  = { type = "civ", pid = aggressor, unknown = ua },
              right = { pid = defender, unknown = ud },
@@ -891,7 +904,7 @@ local function BuildCapture(active, cfg, oldID, newID, gx, gy)
     local uo, un = IsUnknown(active, oldID), IsUnknown(active, newID)
     local no, nn = CivName(oldID, uo), CivName(newID, un)
     return { group = cfg,
-             tokens = { OLD = no, NEW = nn, CIV = nn, CIV1 = no, CIV2 = nn, CITY = "a city" 
+             tokens = { OLD = no, NEW = nn, CIV = nn, CIV1 = no, CIV2 = nn, CITY = "a city", 
                         NEW_ADJ = CivAdj(newID, un), OLD_ADJ = CivAdj(oldID, uo) },
              left  = { type = "civ", pid = oldID, unknown = uo },
              right = { pid = newID, unknown = un },
