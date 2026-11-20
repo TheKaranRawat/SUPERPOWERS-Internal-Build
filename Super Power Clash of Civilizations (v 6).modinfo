@@ -3959,7 +3959,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">UI/Override/WorldView.xml</File>
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">UI/Override/WorldView.lua</File>
     
-
+    <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/AIThrottle/AIThrottle.lua</File>
+    
   </Files>
   <Actions>
 	
