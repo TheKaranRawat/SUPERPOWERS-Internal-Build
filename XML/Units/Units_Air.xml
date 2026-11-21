@@ -121,7 +121,7 @@
 			<Cost>550</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
-			<Range>15</Range>
+			<Range>14</Range>
 			<AirInterceptRange>15</AirInterceptRange>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
@@ -161,7 +161,7 @@
 			<Cost>800</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
-			<Range>20</Range>
+			<Range>16</Range>
 			<AirInterceptRange>20</AirInterceptRange>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
@@ -242,7 +242,7 @@
 			<Cost>2000</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
-			<Range>25</Range>
+			<Range>18</Range>
 			<AirInterceptRange>25</AirInterceptRange>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
@@ -279,7 +279,7 @@
 			<Cost>1500</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
-			<Range>25</Range>
+			<Range>20</Range>
 			<AirInterceptRange>25</AirInterceptRange>
 			<HurryCostModifier>150</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
@@ -394,7 +394,7 @@
 			<Cost>750</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
-			<Range>12</Range>
+			<Range>10</Range>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -470,7 +470,7 @@
 			<Cost>1200</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
-			<Range>16</Range>
+			<Range>14</Range>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -506,7 +506,7 @@
 			<Cost>1000</Cost>
 			<Moves>3</Moves>
 			<Immobile>true</Immobile>
-			<Range>20</Range>
+			<Range>18</Range>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<HurryCostModifier>100</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -544,7 +544,7 @@
 			<Moves>3</Moves>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Immobile>true</Immobile>
-			<Range>20</Range>
+			<Range>18</Range>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
@@ -583,7 +583,7 @@
 			<Cost>2000</Cost>
 			<Moves>2</Moves>
 			<Immobile>true</Immobile>
-			<Range>12</Range>
+			<Range>10</Range>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -619,7 +619,7 @@
 			<Cost>2000</Cost>
 			<Moves>2</Moves>
 			<Immobile>true</Immobile>
-			<Range>16</Range>
+			<Range>14</Range>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<HurryCostModifier>150</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -657,7 +657,7 @@
 			<Cost>2000</Cost>
 			<Moves>2</Moves>
 			<Immobile>true</Immobile>
-			<Range>22</Range>
+			<Range>18</Range>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<HurryCostModifier>-1</HurryCostModifier>
 			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
@@ -697,7 +697,7 @@
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<Immobile>true</Immobile>
-			<Range>28</Range>
+			<Range>20</Range>
 			<CombatClass>UNITCOMBAT_ARCHER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK_AIR</DefaultUnitAI>
@@ -734,7 +734,7 @@
 			<HurryCostModifier>-1</HurryCostModifier>
 			<Special>SPECIALUNIT_STEALTH</Special>
 			<Immobile>true</Immobile>
-			<Range>32</Range>
+			<Range>22</Range>
 			<CombatClass>UNITCOMBAT_BOMBER</CombatClass>
 			<Domain>DOMAIN_AIR</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK_AIR</DefaultUnitAI>
