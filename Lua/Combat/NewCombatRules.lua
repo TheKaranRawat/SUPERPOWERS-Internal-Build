@@ -212,6 +212,9 @@ function RangedUnitRules(iAttackingPlayer, iAttackingUnit, attackerDamage, attac
 	----------------------------------------------------------------------
 	-- Strategic bomber vs city: population loss + building destruction
 	----------------------------------------------------------------------
+	----------------------------------------------------------------------
+	-- Strategic bomber vs city: population loss + building destruction
+	----------------------------------------------------------------------
 	local DEBUG_BOMBER = true  -- set to false once it works
 
 	if DEBUG_BOMBER then
@@ -234,13 +237,13 @@ function RangedUnitRules(iAttackingPlayer, iAttackingUnit, attackerDamage, attac
 			if levels > 0 then
 				local sheltered = BombShelterID and pDefendedCity:IsHasBuilding(BombShelterID)
 
-				-- Guarantee at least 1 pop lost per level, so small cities aren't immune.
-				-- Unsheltered rounds up (10%), sheltered rounds down (5%) so the shelter still matters.
+				-- At least 1 pop lost per level, so small cities aren't immune.
+				-- Unsheltered rounds up (10%), sheltered rounds down (5%).
 				local perLevel
 				if sheltered then
-					perLevel = math.max(1, math.floor(cityPop * 0.05))
+					perLevel = math.max(1, math.floor(cityPop / 20))  -- 5%
 				else
-					perLevel = math.max(1, math.ceil(cityPop * 0.1))
+					perLevel = math.max(1, math.ceil(cityPop / 10))   -- 10%
 				end
 
 				-- Never reduce the city below 1 pop
