@@ -9,9 +9,14 @@ end
 
 local STYLE = "FireRangeBorder"
 local COLOR = Vector4(1, 0.3, 0.3, 1)
-local HIGHLIGHT_OWN_TILE = true    -- extra highlight on the unit's own tile
+local HIGHLIGHT_OWN_TILE = true    -- extra highlight on the unit's own tile (land/sea ranged)
 local INCLUDE_NONCOMBAT = true     -- count workers/settlers etc. as targets
 local DEBUG = false
+
+-- Aircraft circle
+local AIR_STYLE = "FireRangeBorder"
+local AIR_COLOR = Vector4(1, 0, 0, 1)
+local AIR_RING_ONLY = false        -- true = highlight only the outer ring of hexes
 
 local RANGE_MODE = InterfaceModeTypes.INTERFACEMODE_RANGE_ATTACK
 local SELECT_MODE = InterfaceModeTypes.INTERFACEMODE_SELECTION
@@ -19,6 +24,8 @@ local SELECT_MODE = InterfaceModeTypes.INTERFACEMODE_SELECTION
 local g_weSetMode = false
 local g_ownTileShown = false
 local g_gameCheckBroken = false
+local g_airShown = false
+local g_airUnitID, g_airX, g_airY = nil, nil, nil
 
 ------------------------------------------------------------
 -- Helpers
@@ -27,6 +34,11 @@ local function GetUnitRange(unit)
     if unit.Range then return unit:Range() end
     if unit.GetRange then return unit:GetRange() end
     return 0
+end
+
+local function IsAirUnit(unit)
+    return unit ~= nil and unit.GetDomainType ~= nil
+        and unit:GetDomainType() == DomainTypes.DOMAIN_AIR
 end
 
 local function IsRangedUnit(unit)
@@ -50,12 +62,54 @@ local function CanShowFor(unit)
 end
 
 ------------------------------------------------------------
--- Target detection
+-- Aircraft range circle
+------------------------------------------------------------
+local function ClearAirRange()
+    if g_airShown then
+        g_airShown = false
+        g_airUnitID, g_airX, g_airY = nil, nil, nil
+        if Events.ClearHexHighlightStyle then
+            Events.ClearHexHighlightStyle(AIR_STYLE)
+        end
+    end
+end
+
+local function ShowAirRange(unit)
+    local x, y, range = unit:GetX(), unit:GetY(), GetUnitRange(unit)
+    if range <= 0 then return end
+    if g_airShown and g_airUnitID == unit:GetID() and g_airX == x and g_airY == y then return end
+    ClearAirRange()
+    g_airUnitID, g_airX, g_airY = unit:GetID(), x, y
+
+    for dx = -range, range do
+        for dy = -range, range do
+            local plot = Map.PlotXYWithRangeCheck(x, y, dx, dy, range)
+            if plot then
+                local px, py = plot:GetX(), plot:GetY()
+                local draw = true
+                if AIR_RING_ONLY then
+                    draw = Map.PlotDistance(x, y, px, py) == range
+                end
+                if draw then
+                    local hex = ToHexFromGrid(Vector2(px, py))
+                    local ok, err = pcall(Events.SerialEventHexHighlight, hex, true, AIR_COLOR, AIR_STYLE)
+                    if not ok then
+                        print("RangeDisplay: air highlight failed: " .. tostring(err))
+                        return
+                    end
+                    g_airShown = true
+                end
+            end
+        end
+    end
+end
+
+------------------------------------------------------------
+-- Target detection (land/sea ranged units)
 ------------------------------------------------------------
 local function TileHasTarget(unit, plot)
     local px, py = plot:GetX(), plot:GetY()
 
-    -- Preferred: the game's own check (range, line of sight, war status, target present)
     if unit.CanRangeStrikeAt and not g_gameCheckBroken then
         local ok, res = pcall(unit.CanRangeStrikeAt, unit, px, py, true, INCLUDE_NONCOMBAT)
         if ok then
@@ -65,7 +119,6 @@ local function TileHasTarget(unit, plot)
         print("RangeDisplay: CanRangeStrikeAt failed, using fallback: " .. tostring(res))
     end
 
-    -- Fallback: visible enemy unit or enemy city (no line-of-sight check)
     if plot.IsVisibleEnemyUnit and plot:IsVisibleEnemyUnit(unit:GetOwner()) then
         return true
     end
@@ -83,7 +136,6 @@ local function HasTargetInRange(unit)
         for dy = -range, range do
             local plot = Map.PlotXYWithRangeCheck(x, y, dx, dy, range)
             if plot and not (plot:GetX() == x and plot:GetY() == y) then
-                -- only consider tiles the player can currently see (no fog-of-war leaks)
                 if plot:IsVisible(team, false) and TileHasTarget(unit, plot) then
                     return true
                 end
@@ -117,7 +169,7 @@ local function ShowOwnTile(unit)
 end
 
 ------------------------------------------------------------
--- Main
+-- Ranged attack mode
 ------------------------------------------------------------
 local function EnterRangeMode(unit)
     local ok, err = pcall(UI.SetInterfaceMode, RANGE_MODE)
@@ -140,19 +192,42 @@ local function LeaveRangeMode()
     end
 end
 
+------------------------------------------------------------
+-- Events
+------------------------------------------------------------
 Events.UnitSelectionChanged.Add(function(playerID, unitID, i, j, k, isSelected)
+    ClearAirRange()
     LeaveRangeMode()
     if not isSelected then return end
     if playerID ~= Game.GetActivePlayer() then return end
-    if not Players[playerID]:IsTurnActive() then return end
 
     local unit = Players[playerID]:GetUnitByID(unitID)
-    if not unit or not IsRangedUnit(unit) or not CanShowFor(unit) then return end
+    if not unit then return end
+
+    -- Aircraft: red circle only, never ranged attack mode
+    if IsAirUnit(unit) then
+        ShowAirRange(unit)
+        return
+    end
+
+    if not Players[playerID]:IsTurnActive() then return end
+    if not IsRangedUnit(unit) or not CanShowFor(unit) then return end
 
     if HasTargetInRange(unit) then
         EnterRangeMode(unit)
     elseif DEBUG then
         print("RangeDisplay: no target in range, staying in normal mode")
+    end
+end)
+
+-- Redraw the aircraft circle after rebasing, clear it if the selection is gone
+Events.SerialEventUnitInfoDirty.Add(function()
+    if not g_airShown then return end
+    local unit = UI.GetHeadSelectedUnit()
+    if IsAirUnit(unit) then
+        ShowAirRange(unit)
+    else
+        ClearAirRange()
     end
 end)
 
