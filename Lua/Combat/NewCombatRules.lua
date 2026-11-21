@@ -241,9 +241,9 @@ function RangedUnitRules(iAttackingPlayer, iAttackingUnit, attackerDamage, attac
 				-- Unsheltered rounds up (10%), sheltered rounds down (5%).
 				local perLevel
 				if sheltered then
-					perLevel = math.max(1, math.floor(cityPop / 20))  -- 5%
+					perLevel = math.max(1, math.floor(cityPop / 50))  -- 5% -> 2%
 				else
-					perLevel = math.max(1, math.ceil(cityPop / 10))   -- 10%
+					perLevel = math.max(1, math.ceil(cityPop / 25))   -- 10% -> 4%
 				end
 
 				-- Never reduce the city below 1 pop
