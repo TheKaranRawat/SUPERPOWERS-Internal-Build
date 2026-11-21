@@ -593,7 +593,7 @@ local WORLD = {
     },
 
     CAPTURE = {
-        enabled = true, scope = "ALL", includeCityStates = true,
+        enabled = true, scope = "ALL", includeCityStates = false,
         -- SerialEventCityCaptured(hexPos, oldOwnerID, cityID, newOwnerID). If old / new show up
         -- swapped in your game, set this to false.
         oldOwnerIsFirst = true,
