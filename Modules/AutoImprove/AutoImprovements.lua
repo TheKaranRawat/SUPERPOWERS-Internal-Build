@@ -9,7 +9,11 @@
 -- Priority:  1) strategic resources   2) luxury resources   3) everything else
 -- (inside a priority, tiles are taken in a fixed scan order: nearest first).
 --
--- Pillaged improvements are repaired slowly (REPAIR_*), clearing fallout.
+-- Pillaged improvements are repaired slowly (REPAIR_*); fallout is cleared on
+-- its own, slower schedule (FALLOUT_*). Strategic/luxury resource tiles inside
+-- the player's borders but beyond every city's reach are improved too
+-- (OUTSIDE_RANGE_*). When an improvement cannot coexist with a forest or
+-- jungle on the tile, that feature is cleared first (CLEAR_FEATURES).
 --
 -- MULTIPLAYER SAFETY
 --   * Runs only from GameEvents.PlayerDoTurn (fires on every machine).
@@ -39,7 +43,25 @@ local CONFIG = {
 	REPAIR_PILLAGED  = true,
 	REPAIR_INTERVAL  = 4,              -- each city, every N turns
 	REPAIRS_PER_CITY = 1,
-	REMOVE_FALLOUT   = true,
+
+	-- Fallout cleanup (separate from repairs)
+	REMOVE_FALLOUT    = true,
+	FALLOUT_INTERVAL  = 6,             -- each city, every N turns
+	FALLOUTS_PER_CITY = 1,
+
+	-- Strategic/luxury resource tiles that are inside our borders but not
+	-- covered by any city's range. Scans the whole map for the player's own
+	-- tiles, so keep the interval modest on huge maps.
+	OUTSIDE_RANGE_ENABLED  = true,
+	OUTSIDE_RANGE_INTERVAL = 6,        -- each player, every N turns
+
+	-- Features removed before placing an improvement on the tile, but only
+	-- when that improvement cannot exist alongside the feature (a Lumber Mill
+	-- keeps its forest; a Mine or Farm clears it).
+	CLEAR_FEATURES = {
+		"FEATURE_FOREST",
+		"FEATURE_JUNGLE",
+	},
 
 	-- Which improvement goes on a plain tile when several are possible:
 	-- listed ones first (in this order), unlisted next, last-resort ones last.
@@ -77,6 +99,11 @@ local REPAIR_INTERVAL  = math.max(1, math.floor(CONFIG.REPAIR_INTERVAL))
 local REPAIRS_PER_CITY = math.max(1, math.floor(CONFIG.REPAIRS_PER_CITY))
 local SKIP_ENEMY       = CONFIG.SKIP_OCCUPIED_BY_ENEMY
 local FALLOUT_ID       = GameInfoTypes["FEATURE_FALLOUT"]
+local FALLOUT_ENABLED  = CONFIG.REMOVE_FALLOUT and FALLOUT_ID ~= nil
+local FALLOUT_INTERVAL  = math.max(1, math.floor(CONFIG.FALLOUT_INTERVAL))
+local FALLOUTS_PER_CITY = math.max(1, math.floor(CONFIG.FALLOUTS_PER_CITY))
+local OUTSIDE_ENABLED   = CONFIG.OUTSIDE_RANGE_ENABLED
+local OUTSIDE_INTERVAL  = math.max(1, math.floor(CONFIG.OUTSIDE_RANGE_INTERVAL))
 
 -- Type names -> ordered list of IDs (unknown names are skipped)
 local function ToIDList(names)
@@ -108,6 +135,18 @@ for row in GameInfo.Improvement_ResourceTypes() do
 		improvementConnects[impID][resID] = true
 	end
 end
+
+-- Features each improvement may coexist with, and features we may clear
+local validFeature = {}   -- [improvementID][featureID] = true
+for row in GameInfo.Improvement_ValidFeatures() do
+	local impID, feaID = GameInfoTypes[row.ImprovementType], GameInfoTypes[row.FeatureType]
+	if impID and feaID then
+		validFeature[impID] = validFeature[impID] or {}
+		validFeature[impID][feaID] = true
+	end
+end
+local clearFeature = {}
+for _, id in ipairs(ToIDList(CONFIG.CLEAR_FEATURES)) do clearFeature[id] = true end
 
 -- Unique improvements: [improvementID] = owning civilizationID
 local improvementCiv = {}
@@ -271,21 +310,26 @@ end
 -- Returns build, tier (1 strategic, 2 luxury, 3 other) or nil.
 --------------------------------------------------------------------------
 
+-- First available build that connects the tile's resource and is legal here
+local function ConnectBuild(pPlot, iPlayer, resID, available)
+	local list = connectBuilds[resID]
+	if list then
+		for i = 1, #list do
+			local b = list[i]
+			if available[b.build] and pPlot:CanBuild(b.build, iPlayer) then return b end
+		end
+	end
+	return nil
+end
+
 -- Unimproved tile: connect its resource if possible, otherwise the best
 -- ranked plain improvement (also acts as a stand-in until the resource's
 -- own improvement is unlocked; ChooseUpgrade replaces it later).
 local function ChooseForEmpty(pPlot, iPlayer, iTeam, builds, nBuilds, available)
 	local resID = pPlot:GetResourceType(iTeam)
 	if resID ~= nil and resID >= 0 then
-		local list = connectBuilds[resID]
-		if list then
-			for i = 1, #list do
-				local b = list[i]
-				if available[b.build] and pPlot:CanBuild(b.build, iPlayer) then
-					return b, resourceTier[resID] or 3
-				end
-			end
-		end
+		local b = ConnectBuild(pPlot, iPlayer, resID, available)
+		if b then return b, resourceTier[resID] or 3 end
 	end
 	for i = 1, nBuilds do
 		local b = builds[i]
@@ -300,25 +344,54 @@ local function ChooseUpgrade(pPlot, iPlayer, iTeam, imp, available)
 	if not buildable[imp] then return nil end
 	local resID = pPlot:GetResourceType(iTeam)
 	if resID == nil or resID < 0 then return nil end
-	local list = connectBuilds[resID]
-	if not list then return nil end
 	local current = improvementConnects[imp]
 	if current and current[resID] then return nil end   -- already proper
 
-	for i = 1, #list do
-		local b = list[i]
-		if available[b.build] and pPlot:CanBuild(b.build, iPlayer) then
-			return b, resourceTier[resID] or 3
+	local b = ConnectBuild(pPlot, iPlayer, resID, available)
+	if b then return b, resourceTier[resID] or 3 end
+	return nil
+end
+
+--------------------------------------------------------------------------
+-- PLACING IMPROVEMENTS
+--------------------------------------------------------------------------
+
+-- Places the improvement. A forest/jungle is cleared first, but only when the
+-- improvement cannot exist on that feature (a Lumber Mill keeps its forest).
+local function PlaceImprovement(pPlot, build, iPlayer)
+	local imp = build.improvement
+	local feature = pPlot:GetFeatureType()
+	if feature ~= nil and clearFeature[feature] then
+		local vf = validFeature[imp]
+		if not (vf and vf[feature]) then
+			pPlot:SetFeatureType(NO_FEATURE)
 		end
 	end
-	return nil
+	pPlot:SetImprovementType(imp, iPlayer)
+	pPlot:SetImprovementPillaged(false)
+end
+
+-- tiers[1] = strategic, [2] = luxury, [3] = other; each a list of
+-- { plot, build }. Applies up to perTurn, best tier first.
+local function ApplyTiers(tiers, perTurn, iPlayer)
+	local applied = 0
+	for t = 1, #tiers do
+		local list = tiers[t]
+		for i = 1, #list do
+			if applied >= perTurn then return end
+			local c = list[i]
+			PlaceImprovement(c.plot, c.build, iPlayer)
+			applied = applied + 1
+			dprint("Player", iPlayer, "tier", t, "built at", c.plot:GetX(), c.plot:GetY())
+		end
+	end
 end
 
 --------------------------------------------------------------------------
 -- BUILD PASS (one city)
 -- Tiles are gathered per tier in scan order, then applied tier 1 -> 3.
 --------------------------------------------------------------------------
-local function BuildForCity(pCity, iPlayer, iTeam, builds, nBuilds, available, perTurn, nPlots)
+local function BuildForCity(iPlayer, iTeam, builds, nBuilds, available, perTurn, nPlots)
 	local tiers = { {}, {}, {} }
 
 	for i = 1, nPlots do
@@ -344,19 +417,49 @@ local function BuildForCity(pCity, iPlayer, iTeam, builds, nBuilds, available, p
 		end
 	end
 
-	local applied = 0
-	for t = 1, 3 do
-		local list = tiers[t]
-		for i = 1, #list do
-			if applied >= perTurn then break end
-			local c = list[i]
-			c.plot:SetImprovementType(c.build.improvement, iPlayer)
-			c.plot:SetImprovementPillaged(false)
-			applied = applied + 1
-			dprint("Player", iPlayer, "city", pCity:GetID(), "tier", t,
-				"built at", c.plot:GetX(), c.plot:GetY())
+	ApplyTiers(tiers, perTurn, iPlayer)
+end
+
+--------------------------------------------------------------------------
+-- OUTSIDE-RANGE PASS (one player)
+-- Strategic / luxury resource tiles anywhere inside the player's borders.
+-- City passes run first, so this mostly finds tiles beyond every city's reach.
+-- Only connecting improvements are placed here (no stand-ins).
+--------------------------------------------------------------------------
+local function ImproveOutsideRange(iPlayer, iTeam, available, perTurn)
+	local tiers = { {}, {} }
+
+	for i = 0, Map.GetNumPlots() - 1 do
+		local pPlot = Map.GetPlotByIndex(i)
+		if pPlot and pPlot:GetOwner() == iPlayer then
+			local resID = pPlot:GetResourceType(iTeam)
+			if resID ~= nil and resID >= 0 then
+				local tier = resourceTier[resID] or 3
+				if tier <= 2 and not pPlot:IsCity() then
+					local imp = pPlot:GetImprovementType()
+					local b = nil
+					if imp == NO_IMPROVEMENT then
+						b = ConnectBuild(pPlot, iPlayer, resID, available)
+					elseif buildable[imp] then
+						local current = improvementConnects[imp]
+						if not (current and current[resID]) then
+							b = ConnectBuild(pPlot, iPlayer, resID, available)
+						end
+					end
+
+					if b and not (SKIP_ENEMY and BlockedByEnemy(pPlot, iTeam)) then
+						local list = tiers[tier]
+						if #list < perTurn then
+							list[#list + 1] = { plot = pPlot, build = b }
+							if tier == 1 and #list >= perTurn then break end
+						end
+					end
+				end
+			end
 		end
 	end
+
+	ApplyTiers(tiers, perTurn, iPlayer)
 end
 
 --------------------------------------------------------------------------
@@ -369,10 +472,6 @@ local function RepairCity(iPlayer, iTeam, nPlots)
 		if pPlot:GetImprovementType() ~= NO_IMPROVEMENT
 			and pPlot:IsImprovementPillaged()
 			and not BlockedByEnemy(pPlot, iTeam) then
-			if CONFIG.REMOVE_FALLOUT and FALLOUT_ID
-				and pPlot:GetFeatureType() == FALLOUT_ID then
-				pPlot:SetFeatureType(NO_FEATURE)
-			end
 			pPlot:SetImprovementPillaged(false)
 			dprint("Player", iPlayer, "repaired", pPlot:GetX(), pPlot:GetY())
 			repaired = repaired + 1
@@ -382,9 +481,28 @@ local function RepairCity(iPlayer, iTeam, nPlots)
 end
 
 --------------------------------------------------------------------------
--- MAIN
--- A city acts when (turn + cityID) % interval == 0  (no stored state).
+-- FALLOUT PASS (one city): first tile with fallout in scan order, not blocked
 --------------------------------------------------------------------------
+local function ClearFalloutCity(iPlayer, iTeam, nPlots)
+	local cleared = 0
+	for i = 1, nPlots do
+		local pPlot = scratchPlots[i]
+		if pPlot:GetFeatureType() == FALLOUT_ID and not BlockedByEnemy(pPlot, iTeam) then
+			pPlot:SetFeatureType(NO_FEATURE)
+			dprint("Player", iPlayer, "cleared fallout", pPlot:GetX(), pPlot:GetY())
+			cleared = cleared + 1
+			if cleared >= FALLOUTS_PER_CITY then return end
+		end
+	end
+end
+
+--------------------------------------------------------------------------
+-- MAIN
+-- A city acts when (turn + cityID) % interval == 0; the outside-range pass
+-- runs when (turn + playerID) % interval == 0 (no stored state).
+--------------------------------------------------------------------------
+local outsideWarned = false
+
 local function DoTurn(iPlayer)
 	local pPlayer = Players[iPlayer]
 	if not PlayerQualifies(pPlayer) then return end
@@ -394,14 +512,22 @@ local function DoTurn(iPlayer)
 	local turn = Game.GetGameTurn()
 	local builds, nBuilds, available, perTurn
 
+	local outsideDue = OUTSIDE_ENABLED and (turn + iPlayer) % OUTSIDE_INTERVAL == 0
+	if outsideDue then
+		perTurn = GetActionsPerTurn(iTeam)
+		builds, nBuilds, available = GetAvailableBuilds(iTeam, pPlayer:GetCivilizationType())
+	end
+
 	for pCity in pPlayer:Cities() do
 		local key = turn + pCity:GetID()
-		local doRepair = CONFIG.REPAIR_PILLAGED and key % REPAIR_INTERVAL == 0
-		local doBuild  = key % BUILD_INTERVAL == 0
+		local doFallout = FALLOUT_ENABLED and key % FALLOUT_INTERVAL == 0
+		local doRepair  = CONFIG.REPAIR_PILLAGED and key % REPAIR_INTERVAL == 0
+		local doBuild   = key % BUILD_INTERVAL == 0
 
-		if doRepair or doBuild then
+		if doFallout or doRepair or doBuild then
 			local nPlots = CollectCityPlots(pCity, iPlayer)   -- once per city
 
+			if doFallout then ClearFalloutCity(iPlayer, iTeam, nPlots) end
 			if doRepair then RepairCity(iPlayer, iTeam, nPlots) end
 
 			if doBuild then
@@ -410,9 +536,18 @@ local function DoTurn(iPlayer)
 					builds, nBuilds, available = GetAvailableBuilds(iTeam, pPlayer:GetCivilizationType())
 				end
 				if nBuilds > 0 then
-					BuildForCity(pCity, iPlayer, iTeam, builds, nBuilds, available, perTurn, nPlots)
+					BuildForCity(iPlayer, iTeam, builds, nBuilds, available, perTurn, nPlots)
 				end
 			end
+		end
+	end
+
+	-- Guarded separately: a failure here must not affect the city passes
+	if outsideDue and nBuilds > 0 then
+		local ok, err = pcall(ImproveOutsideRange, iPlayer, iTeam, available, perTurn)
+		if not ok and not outsideWarned then
+			outsideWarned = true
+			print("[AutoImprovements] Outside-range pass failed: " .. tostring(err))
 		end
 	end
 end
