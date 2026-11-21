@@ -3966,6 +3966,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/EnemyPromotion/EnemyPromotion.lua</File>
 
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/ArmyPopCost/ArmyPopCost.lua</File>
+
+    <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/PuppetBuilder/PuppetBuilder.lua</File>
     
   </Files>
   <Actions>
@@ -4616,6 +4618,13 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Name>ArmyPopCost</Name>
       <Description>Army Pop Cost</Description>
     </EntryPoint>    
+
+    <EntryPoint type="InGameUIAddin" file="Modules/PuppetBuilder/PuppetBuilder.lua">
+      <Name>PuppetBuilder</Name>
+      <Description>Puppet Builder</Description>
+    </EntryPoint>    
+
+    
 
 		
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
