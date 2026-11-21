@@ -22,6 +22,20 @@
 --   * Stateless: schedules come from (game turn + city ID), so reloads and
 --     late joins cannot put machines out of step.
 --   * Fixed iteration order everywhere (engine city order, fixed tile scan).
+--   * No cached game state: only database tables and plot handles are cached,
+--     so a client that loads late computes exactly what the others do.
+--   * Every engine call that fails is isolated with pcall (same result on all
+--     clients, and it can never break the turn for other scripts).
+--
+-- PERFORMANCE
+--   * A city does work only on its own turns (stagger by city ID); idle turns
+--     cost a modulo check per city.
+--   * Tile list is gathered once per city per turn and shared by all passes.
+--   * Candidate selection stops early once strategic tiles fill the quota;
+--     builds are tried best-first so most tiles need one or two CanBuild calls;
+--     water/mountain tiles skip the generic search.
+--   * The map-wide outside-range pass scans only a slice of the map per run
+--     (OUTSIDE_RANGE_SLICES) using cached plot handles.
 --==========================================================================
 
 local CONFIG = {
@@ -39,6 +53,10 @@ local CONFIG = {
 
 	SKIP_OCCUPIED_BY_ENEMY = true,     -- don't build/repair under at-war units
 
+	-- Plain (non-resource) tiles on water or mountains never get a generic
+	-- improvement, so skip searching them. Resource tiles are still handled.
+	SKIP_GENERIC_ON_WATER_AND_MOUNTAINS = true,
+
 	-- Slow repair of pillaged improvements
 	REPAIR_PILLAGED  = true,
 	REPAIR_INTERVAL  = 4,              -- each city, every N turns
@@ -50,10 +68,12 @@ local CONFIG = {
 	FALLOUTS_PER_CITY = 1,
 
 	-- Strategic/luxury resource tiles that are inside our borders but not
-	-- covered by any city's range. Scans the whole map for the player's own
-	-- tiles, so keep the interval modest on huge maps.
+	-- covered by any city's range. Scans the map for the player's own tiles
+	-- in slices; raise INTERVAL or SLICES to lower the cost on huge maps.
 	OUTSIDE_RANGE_ENABLED  = true,
-	OUTSIDE_RANGE_INTERVAL = 6,        -- each player, every N turns
+	OUTSIDE_RANGE_INTERVAL = 2,        -- each player scans every N turns...
+	OUTSIDE_RANGE_SLICES   = 3,        -- ...1/N of the map each time (whole map
+	                                   -- covered every INTERVAL x SLICES turns)
 
 	-- Features removed before placing an improvement on the tile, but only
 	-- when that improvement cannot exist alongside the feature (a Lumber Mill
@@ -89,8 +109,9 @@ local CONFIG = {
 local NO_IMPROVEMENT = -1   -- Civ 5 has no NO_* globals for these
 local NO_FEATURE     = -1
 
+local DEBUG = CONFIG.DEBUG
 local function dprint(...)
-	if CONFIG.DEBUG then print("[AutoImprovements]", ...) end
+	if DEBUG then print("[AutoImprovements]", ...) end
 end
 
 local BUILD_INTERVAL   = math.max(1, math.floor(CONFIG.BUILD_INTERVAL))
@@ -104,6 +125,13 @@ local FALLOUT_INTERVAL  = math.max(1, math.floor(CONFIG.FALLOUT_INTERVAL))
 local FALLOUTS_PER_CITY = math.max(1, math.floor(CONFIG.FALLOUTS_PER_CITY))
 local OUTSIDE_ENABLED   = CONFIG.OUTSIDE_RANGE_ENABLED
 local OUTSIDE_INTERVAL  = math.max(1, math.floor(CONFIG.OUTSIDE_RANGE_INTERVAL))
+local OUTSIDE_SLICES    = math.max(1, math.floor(CONFIG.OUTSIDE_RANGE_SLICES))
+
+-- Plot types for the water/mountain shortcut (disabled if the globals are absent)
+local PLOT_OCEAN    = PlotTypes and PlotTypes.PLOT_OCEAN
+local PLOT_MOUNTAIN = PlotTypes and PlotTypes.PLOT_MOUNTAIN
+local SKIP_GENERIC_WM = CONFIG.SKIP_GENERIC_ON_WATER_AND_MOUNTAINS
+	and PLOT_OCEAN ~= nil and PLOT_MOUNTAIN ~= nil
 
 -- Type names -> ordered list of IDs (unknown names are skipped)
 local function ToIDList(names)
@@ -331,6 +359,10 @@ local function ChooseForEmpty(pPlot, iPlayer, iTeam, builds, nBuilds, available)
 		local b = ConnectBuild(pPlot, iPlayer, resID, available)
 		if b then return b, resourceTier[resID] or 3 end
 	end
+	if SKIP_GENERIC_WM then
+		local plotType = pPlot:GetPlotType()
+		if plotType == PLOT_OCEAN or plotType == PLOT_MOUNTAIN then return nil end
+	end
 	for i = 1, nBuilds do
 		local b = builds[i]
 		if pPlot:CanBuild(b.build, iPlayer) then return b, 3 end
@@ -382,7 +414,7 @@ local function ApplyTiers(tiers, perTurn, iPlayer)
 			local c = list[i]
 			PlaceImprovement(c.plot, c.build, iPlayer)
 			applied = applied + 1
-			dprint("Player", iPlayer, "tier", t, "built at", c.plot:GetX(), c.plot:GetY())
+			if DEBUG then dprint("Player", iPlayer, "tier", t, "built at", c.plot:GetX(), c.plot:GetY()) end
 		end
 	end
 end
@@ -426,11 +458,32 @@ end
 -- City passes run first, so this mostly finds tiles beyond every city's reach.
 -- Only connecting improvements are placed here (no stand-ins).
 --------------------------------------------------------------------------
+
+-- Plot handles (not game state) are cached on first use, so a scan costs one
+-- ownership check per tile instead of two engine calls.
+local allPlots, numAllPlots = nil, 0
+local function GetAllPlots()
+	if allPlots == nil then
+		local list = {}
+		local total = Map.GetNumPlots()
+		for i = 0, total - 1 do list[i + 1] = Map.GetPlotByIndex(i) end
+		allPlots, numAllPlots = list, total
+	end
+	return allPlots, numAllPlots
+end
+
 local function ImproveOutsideRange(iPlayer, iTeam, available, perTurn)
 	local tiers = { {}, {} }
 
-	for i = 0, Map.GetNumPlots() - 1 do
-		local pPlot = Map.GetPlotByIndex(i)
+	-- This run covers one slice of the map; the slice advances every run
+	local plots, total = GetAllPlots()
+	local sliceSize = math.ceil(total / OUTSIDE_SLICES)
+	local slice = math.floor(Game.GetGameTurn() / OUTSIDE_INTERVAL) % OUTSIDE_SLICES
+	local first = slice * sliceSize + 1
+	local last = math.min(total, first + sliceSize - 1)
+
+	for i = first, last do
+		local pPlot = plots[i]
 		if pPlot and pPlot:GetOwner() == iPlayer then
 			local resID = pPlot:GetResourceType(iTeam)
 			if resID ~= nil and resID >= 0 then
@@ -473,7 +526,7 @@ local function RepairCity(iPlayer, iTeam, nPlots)
 			and pPlot:IsImprovementPillaged()
 			and not BlockedByEnemy(pPlot, iTeam) then
 			pPlot:SetImprovementPillaged(false)
-			dprint("Player", iPlayer, "repaired", pPlot:GetX(), pPlot:GetY())
+			if DEBUG then dprint("Player", iPlayer, "repaired", pPlot:GetX(), pPlot:GetY()) end
 			repaired = repaired + 1
 			if repaired >= REPAIRS_PER_CITY then return end
 		end
@@ -489,7 +542,7 @@ local function ClearFalloutCity(iPlayer, iTeam, nPlots)
 		local pPlot = scratchPlots[i]
 		if pPlot:GetFeatureType() == FALLOUT_ID and not BlockedByEnemy(pPlot, iTeam) then
 			pPlot:SetFeatureType(NO_FEATURE)
-			dprint("Player", iPlayer, "cleared fallout", pPlot:GetX(), pPlot:GetY())
+			if DEBUG then dprint("Player", iPlayer, "cleared fallout", pPlot:GetX(), pPlot:GetY()) end
 			cleared = cleared + 1
 			if cleared >= FALLOUTS_PER_CITY then return end
 		end
