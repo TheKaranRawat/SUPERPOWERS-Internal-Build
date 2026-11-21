@@ -5,7 +5,7 @@
             <Text>War Fury</Text>
         </Row>
         <Row Tag="TXT_KEY_PROMOTION_ENEMY_WAR_FURY_HELP">
-            <Text>+30% Combat Strength</Text>
+            <Text>+30% War Fury</Text>
         </Row>
     </Language_en_US>
 </GameData>

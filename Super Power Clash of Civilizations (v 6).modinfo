@@ -4524,6 +4524,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <UpdateDatabase>XML/Units/Uniques/SpaceMarines/SpaceMarinesIcons.xml</UpdateDatabase>
 	  
 	  <UpdateDatabase>SQL/cityrange.sql</UpdateDatabase>
+    <UpdateDatabase>Modules/EnemyPromotion/EnemyPromotion.sql</UpdateDatabase>
+    <UpdateDatabase>Modules/EnemyPromotion/EnemyPromotion.xml</UpdateDatabase>
 
 
     </OnModActivated>	
