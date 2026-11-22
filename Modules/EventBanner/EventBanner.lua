@@ -464,7 +464,7 @@ local EVENTS = {
     
     { id = "UNIT_ICBM_MISSILE",
     kind = "UNIT", key = "UNIT_ICBM_MISSILE",           -- shows the Knight's own icon
-    title = "Floating Fortresses Sighted",
+    title = "Nuclear Hellfire",
     desc  = "A blinding flash sparked across the entire sky, and in that moment everyone knew, civilization on Earth had retreated a thousand years." },
 
       --[[
