@@ -157,6 +157,7 @@
 			<AdvancedStartCost>10</AdvancedStartCost>
 			<XPValueAttack>3</XPValueAttack>
 			<XPValueDefense>3</XPValueDefense>
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech>
 			<UnitArtInfo>ART_DEF_UNIT_EXPLORER</UnitArtInfo>
 			<UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
 			<UnitFlagIconOffset>5</UnitFlagIconOffset>
@@ -188,6 +189,7 @@
 			<AdvancedStartCost>20</AdvancedStartCost>
 			<XPValueAttack>4</XPValueAttack>
 			<XPValueDefense>3</XPValueDefense>
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech>
 			<UnitArtInfo>ART_DEF_UNIT_U_SPANISH_CONQUISTADOR</UnitArtInfo>
 			<IconAtlas>DLC02_UNIT_ATLAS</IconAtlas>
 			<UnitFlagAtlas>DLC02_UNIT_FLAG_ATLAS</UnitFlagAtlas>
