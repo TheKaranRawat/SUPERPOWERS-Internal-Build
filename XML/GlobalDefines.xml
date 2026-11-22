@@ -25,6 +25,16 @@
 			<Set Value="1"/>
 		</Update>
 
+		<Update>
+			<Where Name="GLOBAL_RELIGIOUS_SETTLERS"/>
+			<Set Value="1"/>
+		</Update>
+
+		<Update>
+			<Where Name="GLOBAL_CS_UPGRADES"/>
+			<Set Value="1"/>
+		</Update>
+
 	</CustomModOptions>
 	
 	<Defines>
