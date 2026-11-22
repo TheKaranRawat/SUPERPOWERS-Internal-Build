@@ -20,6 +20,11 @@
 			<Set Value="1"/>
 		</Update>
 
+		<Update>
+			<Where Name="GLOBAL_CS_OVERSEAS_TERRITORY"/>
+			<Set Value="1"/>
+		</Update>
+
 	</CustomModOptions>
 	
 	<Defines>
