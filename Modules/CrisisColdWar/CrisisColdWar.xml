@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="ColdWar" ColorSet="Beige_Black_Alpha" Font="TwCenMT20" FontStyle="Shadow">
+
+	<!-- ================================================================= -->
+	<!-- INSTANCES                                                         -->
+	<!-- Stat columns are offset from the RIGHT edge of each row so the    -->
+	<!-- header, superpower cards and normal rows all line up.             -->
+	<!--   Nukes = 184   Army = 128   Navy = 72   Might = 16               -->
+	<!-- ================================================================= -->
+
+	<!-- Superpower card (top two) -->
+	<Instance Name="SuperInstance">
+		<Box ID="Root" Anchor="L,T" Size="496,96" Color="212,175,90,255">
+			<Box Anchor="C,C" Size="494,94" Color="30,34,46,255"/>
+			<Box ID="Self" Anchor="L,C" Size="4,94" Color="90,200,140,255" Hidden="1"/>
+
+			<Label ID="Rank" Anchor="L,C" Offset="16,0" Font="TwCenMT24" String="1"/>
+
+			<Box ID="IconBox" Anchor="L,C" Offset="48,0" Size="64,64" Color="0,0,0,0">
+				<Image ID="CivIconBG" Anchor="C,C" Size="64,64"/>
+				<Image ID="CivIconShadow" Anchor="C,C" Size="64,64"/>
+				<Image ID="CivIcon" Anchor="C,C" Size="64,64"/>
+				<Label ID="WarIcon" Anchor="R,B" Offset="-10,-6" Font="TwCenMT24" String="[ICON_WAR]" Hidden="1"/>
+			</Box>
+
+			<Label ID="Tag" Anchor="L,T" Offset="128,12" Font="TwCenMT14" String=""/>
+			<Label ID="Name" Anchor="L,T" Offset="128,28" Font="TwCenMT24" String=""/>
+			<Label ID="Leader" Anchor="L,T" Offset="128,62" Font="TwCenMT14" String=""/>
+
+			<Label ID="Nukes" Anchor="R,C" Offset="184,0" Font="TwCenMT24" String="0"/>
+			<Label ID="Army"  Anchor="R,C" Offset="128,0" Font="TwCenMT24" String="0"/>
+			<Label ID="Navy"  Anchor="R,C" Offset="72,0"  Font="TwCenMT24" String="0"/>
+			<Label ID="Might" Anchor="R,C" Offset="16,0"  Font="TwCenMT24" String="0"/>
+		</Box>
+	</Instance>
+
+	<!-- Normal row (everyone else) -->
+	<Instance Name="RowInstance">
+		<Box ID="Root" Anchor="L,T" Size="496,52" Color="22,26,36,225">
+			<Box Anchor="L,B" Size="496,1" Color="255,255,255,18"/>
+			<Box ID="Self" Anchor="L,C" Size="4,52" Color="90,200,140,255" Hidden="1"/>
+
+			<Label ID="Rank" Anchor="L,C" Offset="16,0" Font="TwCenMT18" String="3"/>
+
+			<Box ID="IconBox" Anchor="L,C" Offset="44,0" Size="45,45" Color="0,0,0,0">
+				<Image ID="CivIconBG" Anchor="C,C" Size="45,45"/>
+				<Image ID="CivIconShadow" Anchor="C,C" Size="45,45"/>
+				<Image ID="CivIcon" Anchor="C,C" Size="45,45"/>
+				<Label ID="WarIcon" Anchor="R,B" Offset="-8,-4" Font="TwCenMT18" String="[ICON_WAR]" Hidden="1"/>
+			</Box>
+
+			<Label ID="Name" Anchor="L,C" Offset="102,0" Font="TwCenMT18" String=""/>
+
+			<Label ID="Nukes" Anchor="R,C" Offset="184,0" Font="TwCenMT18" String="0"/>
+			<Label ID="Army"  Anchor="R,C" Offset="128,0" Font="TwCenMT18" String="0"/>
+			<Label ID="Navy"  Anchor="R,C" Offset="72,0"  Font="TwCenMT18" String="0"/>
+			<Label ID="Might" Anchor="R,C" Offset="16,0"  Font="TwCenMT18" String="0"/>
+		</Box>
+	</Instance>
+
+	<!-- Small divider between superpowers and the rest -->
+	<Instance Name="DividerInstance">
+		<Box ID="Root" Anchor="L,T" Size="496,30" Color="0,0,0,0">
+			<Label ID="Text" Anchor="L,C" Offset="16,2" Font="TwCenMT14" String=""/>
+			<Box Anchor="L,B" Offset="0,4" Size="496,1" Color="255,255,255,45"/>
+		</Box>
+	</Instance>
+
+
+	<!-- ================================================================= -->
+	<!-- TOP RIGHT BUTTON                                                  -->
+	<!-- ================================================================= -->
+	<Button ID="ColdWarButton" Anchor="R,T" Offset="12,44" Size="56,56" Hidden="1" ConsumeMouse="1">
+		<Box ID="HotGlow" Anchor="C,C" Size="64,64" Color="220,50,50,230" Hidden="1"/>
+		<Box Anchor="C,C" Size="56,56" Color="212,175,90,255"/>
+		<Box Anchor="C,C" Size="54,54" Color="14,16,24,240"/>
+		<Image ID="ButtonIcon" Anchor="C,C" Size="45,45"/>
+	</Button>
+
+
+	<!-- ================================================================= -->
+	<!-- POPUP                                                             -->
+	<!-- ================================================================= -->
+	<Box ID="Popup" Anchor="C,C" Size="parent,parent" Color="0,0,0,0" Hidden="1">
+
+		<!-- dim + click-outside-to-close -->
+		<Box Anchor="C,C" Size="4096,2304" Color="0,0,0,120"/>
+		<Button ID="Backdrop" Anchor="C,C" Size="4096,2304" ConsumeMouse="1"/>
+
+		<AlphaAnim ID="FadeAnim" Anchor="C,C" Size="574,614" Pause="0" Cycle="Once" Speed="5" AlphaStart="0" AlphaEnd="1" Function="Root" Stopped="1">
+			<SlideAnim ID="SlideAnim" Anchor="C,C" Size="574,614" Start="0,24" End="0,0" Cycle="Once" Speed="5" Function="Root" Stopped="1">
+
+				<!-- red ring shown during a Hot War -->
+				<Box ID="PanelHot" Anchor="C,C" Size="574,614" Color="200,45,45,220" Hidden="1"/>
+				<!-- panel border + body -->
+				<Box Anchor="C,C" Size="570,610" Color="150,160,180,140"/>
+				<Box ID="Panel" Anchor="C,C" Size="568,608" Color="9,11,17,246" ConsumeMouse="1">
+
+					<Label ID="Title" Anchor="C,T" Offset="0,18" Font="TwCenMT24" String=""/>
+					<Label ID="Description" Anchor="C,T" Offset="0,56" Font="TwCenMT16" WrapWidth="500" String=""/>
+
+					<Box Anchor="C,T" Offset="0,140" Size="520,1" Color="255,255,255,40"/>
+
+					<!-- column headers -->
+					<Box Anchor="C,T" Offset="0,148" Size="496,22" Color="0,0,0,0">
+						<Label ID="HdrNukes" Anchor="R,C" Offset="184,0" Font="TwCenMT14" String=""/>
+						<Label ID="HdrArmy" Anchor="R,C" Offset="128,0" Font="TwCenMT14" String=""/>
+						<Label ID="HdrNavy" Anchor="R,C" Offset="72,0"  Font="TwCenMT14" String=""/>
+						<Label ID="HdrMight" Anchor="R,C" Offset="16,0"  Font="TwCenMT14" String=""/>
+					</Box>
+
+					<ScrollPanel ID="Scroll" Anchor="C,T" Offset="0,176" Size="496,392" Vertical="1" AutoScrollBar="1">
+						<ScrollBar Style="VertSlider" Length="374" Offset="0,18" Anchor="R,T" AnchorSide="O,I"/>
+						<UpButton Offset="0,0" Style="ScrollBarUp" Anchor="R,T" AnchorSide="O,I"/>
+						<DownButton Offset="0,0" Style="ScrollBarDown" Anchor="R,B" AnchorSide="O,I"/>
+						<Stack ID="Stack" Anchor="L,T" StackGrowth="Bottom" Padding="6"/>
+					</ScrollPanel>
+
+					<Label ID="Footer" Anchor="C,B" Offset="0,12" Font="TwCenMT14" String=""/>
+
+					<!-- close button -->
+					<Button ID="CloseButton" Anchor="R,T" Offset="12,12" Size="26,26" ConsumeMouse="1">
+						<Box Anchor="C,C" Size="26,26" Color="52,58,74,255"/>
+						<Label Anchor="C,C" Font="TwCenMT18" String="X"/>
+					</Button>
+
+				</Box>
+			</SlideAnim>
+		</AlphaAnim>
+	</Box>
+
+</Context>
