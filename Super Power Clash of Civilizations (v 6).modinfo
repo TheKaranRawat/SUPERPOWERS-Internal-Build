@@ -3968,6 +3968,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/ArmyPopCost/ArmyPopCost.lua</File>
 
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/PuppetBuilder/PuppetBuilder.lua</File>
+
+    <File md5="6D4DFCD91B6C6E3D4EF779231EA95391" import="0">Modules/CSAirbases/LUA/CityStateAirbases.lua</File>
+    <File md5="1FB64FC150537B7ACB4001583B1AB088" import="0">Modules/CSAirbases/XML/GlobalCityStateAirbases.xml</File>
     
   </Files>
   <Actions>
@@ -4531,6 +4534,8 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <UpdateDatabase>Modules/EnemyPromotion/EnemyPromotion.sql</UpdateDatabase>
     <UpdateDatabase>Modules/EnemyPromotion/EnemyPromotion.xml</UpdateDatabase>
 
+    <UpdateDatabase>Modules/CSAirbases/XML/GlobalCityStateAirbases.xml</UpdateDatabase>
+    
 
     </OnModActivated>	
   </Actions>
@@ -4624,6 +4629,15 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>Puppet Builder</Description>
     </EntryPoint>    
 
+    <EntryPoint type="InGameUIAddin" file="Modules/AIThrottle/AIThrottle.lua">
+      <Name>AIThrottle</Name>
+      <Description>AI Throttle</Description>
+    </EntryPoint>    
+
+    <EntryPoint type="InGameUIAddin" file="Modules/CSAirbases/LUA/CityStateAirbases.lua">
+      <Name>CityStateAirbases</Name>
+      <Description>City State Airbases</Description>
+    </EntryPoint>   
     
 
 		
