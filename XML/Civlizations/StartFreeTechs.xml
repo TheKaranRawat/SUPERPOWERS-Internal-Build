@@ -474,6 +474,22 @@
 			<CivilizationType>CIVILIZATION_BYZANTIUM</CivilizationType>
 			<StartAlongOcean>true</StartAlongOcean>
 		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_AMERICA</CivilizationType>
+			<StartAlongOcean>true</StartAlongOcean>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_CARTHAGE</CivilizationType>
+			<StartAlongOcean>true</StartAlongOcean>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_POLYNESIA</CivilizationType>
+			<StartAlongOcean>true</StartAlongOcean>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_NETHERLANDS</CivilizationType>
+			<StartAlongOcean>true</StartAlongOcean>
+		</Row>
 	</Civilization_Start_Along_Ocean>
 
 	<Civilization_Start_Along_River>
