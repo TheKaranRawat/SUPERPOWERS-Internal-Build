@@ -3971,6 +3971,9 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 
     <File md5="6D4DFCD91B6C6E3D4EF779231EA95391" import="0">Modules/CSAirbases/LUA/CityStateAirbases.lua</File>
     <File md5="1FB64FC150537B7ACB4001583B1AB088" import="0">Modules/CSAirbases/XML/GlobalCityStateAirbases.xml</File>
+
+    <File md5="1FB64FC150537B7ACB4001583B1AB088" import="0">Modules/CSNeutral/CSNeutral.lua</File>
+    
     
   </Files>
   <Actions>
@@ -4639,8 +4642,13 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
       <Description>City State Airbases</Description>
     </EntryPoint>   
     
+    <EntryPoint type="InGameUIAddin" file="Modules/CSNeutral/CSNeutral.lua">
+      <Name>CSNeutral</Name>
+      <Description>CS Neutral</Description>
+    </EntryPoint>  
 
 		
+
     <EntryPoint type="InGameUIAddin" file="Lua/Maps/Terra.lua">
       <Name>Terra</Name>
       <Description>
