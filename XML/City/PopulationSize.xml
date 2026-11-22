@@ -1602,7 +1602,9 @@
 			<HurryCostModifier>-1</HurryCostModifier>
 			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
 			<PortraitIndex>16</PortraitIndex>
+			<!--
 			<NumTradeRouteBonus>1</NumTradeRouteBonus>
+			-->
 			<TradeRouteLandGoldBonus>5000</TradeRouteLandGoldBonus>
 			<TradeRouteSeaGoldBonus>2000</TradeRouteSeaGoldBonus>
 			<TradeRouteRecipientBonus>30</TradeRouteRecipientBonus>
