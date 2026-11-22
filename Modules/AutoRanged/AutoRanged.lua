@@ -13,10 +13,14 @@ local HIGHLIGHT_OWN_TILE = true    -- extra highlight on the unit's own tile (la
 local INCLUDE_NONCOMBAT = true     -- count workers/settlers etc. as targets
 local DEBUG = false
 
--- Aircraft circle
+-- Aircraft
 local AIR_STYLE = "FireRangeBorder"
 local AIR_COLOR = Vector4(1, 0, 0, 1)
-local AIR_RING_ONLY = false        -- true = highlight only the outer ring of hexes
+local AIR_RING_ONLY = false                      -- true = only the outer ring of hexes
+local AIR_TARGET_STYLE = "ValidFireTargetBorder" -- verify this style exists (see notes)
+local AIR_TARGET_COLOR = Vector4(1, 0.9, 0, 1)   -- yellow
+local AIR_SELECT_DELAY = 2                       -- frames to wait after selection
+local AIR_DIRTY_DELAY = 1                        -- frames to wait after other updates
 
 local RANGE_MODE = InterfaceModeTypes.INTERFACEMODE_RANGE_ATTACK
 local SELECT_MODE = InterfaceModeTypes.INTERFACEMODE_SELECTION
@@ -24,8 +28,11 @@ local SELECT_MODE = InterfaceModeTypes.INTERFACEMODE_SELECTION
 local g_weSetMode = false
 local g_ownTileShown = false
 local g_gameCheckBroken = false
+
 local g_airShown = false
-local g_airUnitID, g_airX, g_airY = nil, nil, nil
+local g_airSig = nil
+local g_airWait = 0
+local g_airForce = false
 
 ------------------------------------------------------------
 -- Helpers
@@ -62,54 +69,12 @@ local function CanShowFor(unit)
 end
 
 ------------------------------------------------------------
--- Aircraft range circle
-------------------------------------------------------------
-local function ClearAirRange()
-    if g_airShown then
-        g_airShown = false
-        g_airUnitID, g_airX, g_airY = nil, nil, nil
-        if Events.ClearHexHighlightStyle then
-            Events.ClearHexHighlightStyle(AIR_STYLE)
-        end
-    end
-end
-
-local function ShowAirRange(unit)
-    local x, y, range = unit:GetX(), unit:GetY(), GetUnitRange(unit)
-    if range <= 0 then return end
-    if g_airShown and g_airUnitID == unit:GetID() and g_airX == x and g_airY == y then return end
-    ClearAirRange()
-    g_airUnitID, g_airX, g_airY = unit:GetID(), x, y
-
-    for dx = -range, range do
-        for dy = -range, range do
-            local plot = Map.PlotXYWithRangeCheck(x, y, dx, dy, range)
-            if plot then
-                local px, py = plot:GetX(), plot:GetY()
-                local draw = true
-                if AIR_RING_ONLY then
-                    draw = Map.PlotDistance(x, y, px, py) == range
-                end
-                if draw then
-                    local hex = ToHexFromGrid(Vector2(px, py))
-                    local ok, err = pcall(Events.SerialEventHexHighlight, hex, true, AIR_COLOR, AIR_STYLE)
-                    if not ok then
-                        print("RangeDisplay: air highlight failed: " .. tostring(err))
-                        return
-                    end
-                    g_airShown = true
-                end
-            end
-        end
-    end
-end
-
-------------------------------------------------------------
--- Target detection (land/sea ranged units)
+-- Target detection
 ------------------------------------------------------------
 local function TileHasTarget(unit, plot)
     local px, py = plot:GetX(), plot:GetY()
 
+    -- Preferred: the game's own check
     if unit.CanRangeStrikeAt and not g_gameCheckBroken then
         local ok, res = pcall(unit.CanRangeStrikeAt, unit, px, py, true, INCLUDE_NONCOMBAT)
         if ok then
@@ -119,6 +84,7 @@ local function TileHasTarget(unit, plot)
         print("RangeDisplay: CanRangeStrikeAt failed, using fallback: " .. tostring(res))
     end
 
+    -- Fallback: visible enemy unit or enemy city
     if plot.IsVisibleEnemyUnit and plot:IsVisibleEnemyUnit(unit:GetOwner()) then
         return true
     end
@@ -146,7 +112,113 @@ local function HasTargetInRange(unit)
 end
 
 ------------------------------------------------------------
--- Own tile highlight
+-- Aircraft circle + targets
+------------------------------------------------------------
+local function ClearAirRange(force)
+    if g_airShown or force then
+        g_airShown = false
+        g_airSig = nil
+        if Events.ClearHexHighlightStyle then
+            Events.ClearHexHighlightStyle(AIR_STYLE)
+            if AIR_TARGET_STYLE ~= AIR_STYLE then
+                Events.ClearHexHighlightStyle(AIR_TARGET_STYLE)
+            end
+        end
+    end
+end
+
+local function HighlightPlot(px, py, color, style)
+    local hex = ToHexFromGrid(Vector2(px, py))
+    local ok, err = pcall(Events.SerialEventHexHighlight, hex, true, color, style)
+    if not ok then
+        print("RangeDisplay: air highlight failed: " .. tostring(err))
+    end
+    return ok
+end
+
+local function DrawAirRange(unit, force)
+    local x, y, range = unit:GetX(), unit:GetY(), GetUnitRange(unit)
+    if range <= 0 then ClearAirRange(true) return end
+
+    local team = Game.GetActiveTeam()
+    local rangeTiles, targetTiles, seen = {}, {}, {}
+
+    for dx = -range, range do
+        for dy = -range, range do
+            local plot = Map.PlotXYWithRangeCheck(x, y, dx, dy, range)
+            if plot then
+                local px, py = plot:GetX(), plot:GetY()
+                local key = px .. "," .. py
+                if not seen[key] then
+                    seen[key] = true
+                    local isOwn = (px == x and py == y)
+                    local inRing = (not AIR_RING_ONLY) or Map.PlotDistance(x, y, px, py) == range
+                    if inRing then
+                        rangeTiles[#rangeTiles + 1] = { px, py }
+                    end
+                    if not isOwn and plot:IsVisible(team, false) and TileHasTarget(unit, plot) then
+                        targetTiles[#targetTiles + 1] = { px, py }
+                    end
+                end
+            end
+        end
+    end
+
+    -- Signature: only redraw when something actually changed
+    local parts = { unit:GetID(), x, y, range }
+    for _, t in ipairs(targetTiles) do parts[#parts + 1] = t[1] .. ":" .. t[2] end
+    local sig = table.concat(parts, "|")
+    if not force and g_airShown and sig == g_airSig then return end
+
+    ClearAirRange(true)
+    g_airSig = sig
+
+    for _, t in ipairs(rangeTiles) do
+        if not HighlightPlot(t[1], t[2], AIR_COLOR, AIR_STYLE) then return end
+        g_airShown = true
+    end
+    for _, t in ipairs(targetTiles) do
+        if not HighlightPlot(t[1], t[2], AIR_TARGET_COLOR, AIR_TARGET_STYLE) then break end
+        g_airShown = true
+    end
+    if DEBUG then
+        print("RangeDisplay: air range drawn, targets = " .. #targetTiles)
+    end
+end
+
+local function ProcessAirRefresh()
+    local force = g_airForce
+    g_airForce = false
+    local unit = UI.GetHeadSelectedUnit()
+    if IsAirUnit(unit) and unit:GetOwner() == Game.GetActivePlayer() then
+        DrawAirRange(unit, force)
+    else
+        ClearAirRange(false)
+    end
+end
+
+local HAVE_UPDATE = ContextPtr ~= nil and ContextPtr.SetUpdate ~= nil
+
+local function RequestAirRefresh(force, delay)
+    if force then g_airForce = true end
+    if HAVE_UPDATE then
+        if g_airWait < delay then g_airWait = delay end
+    else
+        ProcessAirRefresh()
+    end
+end
+
+if HAVE_UPDATE then
+    ContextPtr:SetUpdate(function()
+        if g_airWait > 0 then
+            g_airWait = g_airWait - 1
+            if g_airWait == 0 then ProcessAirRefresh() end
+        end
+    end)
+end
+
+------------------------------------------------------------
+-- Own tile highlight (land/sea ranged mode)
 ------------------------------------------------------------
 local function ClearOwnTile()
     if g_ownTileShown then
@@ -196,7 +268,9 @@ end
 -- Events
 ------------------------------------------------------------
 Events.UnitSelectionChanged.Add(function(playerID, unitID, i, j, k, isSelected)
-    ClearAirRange()
+    g_airWait = 0
+    g_airForce = false
+    ClearAirRange(true)
     LeaveRangeMode()
     if not isSelected then return end
     if playerID ~= Game.GetActivePlayer() then return end
@@ -204,9 +278,9 @@ Events.UnitSelectionChanged.Add(function(playerID, unitID, i, j, k, isSelected)
     local unit = Players[playerID]:GetUnitByID(unitID)
     if not unit then return end
 
-    -- Aircraft: red circle only, never ranged attack mode
+    -- Aircraft: red circle + targets only, never ranged attack mode
     if IsAirUnit(unit) then
-        ShowAirRange(unit)
+        RequestAirRefresh(true, AIR_SELECT_DELAY)
         return
     end
 
@@ -220,14 +294,13 @@ Events.UnitSelectionChanged.Add(function(playerID, unitID, i, j, k, isSelected)
     end
 end)
 
--- Redraw the aircraft circle after rebasing, clear it if the selection is gone
+-- Keep the aircraft display in sync (rebase, enemy moves into/out of range)
 Events.SerialEventUnitInfoDirty.Add(function()
-    if not g_airShown then return end
     local unit = UI.GetHeadSelectedUnit()
     if IsAirUnit(unit) then
-        ShowAirRange(unit)
-    else
-        ClearAirRange()
+        RequestAirRefresh(not g_airShown, AIR_DIRTY_DELAY)
+    elseif g_airShown then
+        ClearAirRange(false)
     end
 end)
 
