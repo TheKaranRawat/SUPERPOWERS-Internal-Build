@@ -106,7 +106,8 @@ local TEXT = {
 	COL_ARMY   = "Army",
 	COL_NAVY   = "Navy",
 	COL_MIGHT  = "Might",
-	FOOTER     = "Score = Might + %d per nuke. Unit counts as of turn %d.",
+	--FOOTER     = "Score = Might + %d per nuke. Unit counts as of turn %d.",
+	FOOTER     = "Seizing cities from nuclear powers will guarantee a nuclear first strike.",
 }
 
 -------------------------------------------------------------------------------
