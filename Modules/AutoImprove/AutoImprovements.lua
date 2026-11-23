@@ -82,6 +82,7 @@ local CONFIG = {
 	CLEAR_FEATURES = {
 		"FEATURE_FOREST",
 		"FEATURE_JUNGLE",
+		"FEATURE_MARSH",
 	},
 
 	-- Which improvement goes on a plain tile when several are possible:
