@@ -3946,19 +3946,19 @@
 			<Text>Concentrated Fire I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_1_HELP" >
-			<Text>[ICON_BULLET]Grants +30% Ranged Damage</Text>
+			<Text>[ICON_BULLET]Grants +20% Ranged Damage</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_2">
 			<Text>Concentrated Fire II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_2_HELP" >
-			<Text>[ICON_BULLET]Grants +30% Ranged Damage</Text>
+			<Text>[ICON_BULLET]Grants +20% Ranged Damage</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_3">
 			<Text>Concentrated Fire III</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_COLLATERAL_DAMAGE_3_HELP" >
-			<Text>[ICON_BULLET]Grants +30% Ranged Damage</Text>
+			<Text>[ICON_BULLET]Grants +20% Ranged Damage</Text>
 		</Row>
 
 
