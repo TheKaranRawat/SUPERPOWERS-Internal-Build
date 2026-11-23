@@ -12,11 +12,11 @@
 -- ---------------------------------------------------------------------------
 -- Config
 -- ---------------------------------------------------------------------------
-local TURN_INTERVAL      = 20   -- run once every N turns per AI
+local TURN_INTERVAL      = 15   -- run once every N turns per AI
 local STAGGER_BY_PLAYER  = true -- spread AIs across different turns (perf)
-local CITIES_PER_NUKE    = 3    -- threshold = floor(cities / CITIES_PER_NUKE)
+local CITIES_PER_NUKE    = 4    -- threshold = floor(cities / CITIES_PER_NUKE)
 local MIN_THRESHOLD      = 1    -- an AI with at least 1 city can hold 1 nuke
-local MAX_THRESHOLD      = 6    -- hard cap on nukes held at once
+local MAX_THRESHOLD      = 8    -- hard cap on nukes held at once
 local MAX_GIFT_PER_RUN   = 2    -- never give more than this in a single run
 
 -- ---------------------------------------------------------------------------
