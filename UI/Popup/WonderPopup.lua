@@ -199,6 +199,11 @@ function InputHandler( uiMsg, wParam, lParam )
             return true;
         end
 
+    -- right click closes the screen
+    elseif uiMsg == MouseEvents.RButtonUp then
+        OnClose();
+        return true;
+
     -- mouse side button closes the screen
     elseif uiMsg == 523 then   -- WM_XBUTTONDOWN
         local xButton = math.floor( wParam / 65536 ) % 256   -- high word
@@ -210,6 +215,7 @@ function InputHandler( uiMsg, wParam, lParam )
     end
 end
 ContextPtr:SetInputHandler( InputHandler );
+
 
 
 -------------------------------------------------------------------------------
