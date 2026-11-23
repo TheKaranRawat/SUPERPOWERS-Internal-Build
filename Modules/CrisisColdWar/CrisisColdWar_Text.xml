@@ -56,7 +56,10 @@
 			<Text>Might</Text>
 		</Row>
 		<Row Tag="TXT_KEY_COLDWAR_FOOTER">
+			<!--	
 			<Text>Ranked by Military Might plus {1_Weight} per nuclear warhead.</Text>
+			-->
+			<Text></Text>
 		</Row>
 	</Language_en_US>
 </GameData>

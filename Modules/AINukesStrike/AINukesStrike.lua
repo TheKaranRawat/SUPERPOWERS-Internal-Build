@@ -1,29 +1,48 @@
 --==========================================================
--- AI Nuclear Retaliation
--- When an AI loses a city to a human (or another AI), it warns
--- the players, then tries to nuke the captor's cities on the
--- following turn.
+-- AI Nuclear Retaliation (with fading top-of-screen banner)
+-- When an AI loses a city to a human (or another AI), it
+-- announces a strike, then tries to nuke the captor's cities
+-- on the following turn. Banners are shown via
+-- AI_Nuclear_Retaliation.xml (same name, same folder).
 --
--- Add to your mod as an InGameUIAddin file.
+-- Add BOTH files to your mod as InGameUIAddin content.
 --==========================================================
+include("IconSupport")
 
 ------------------------- CONFIG -------------------------
 local MAX_NUKES_PER_STRIKE = 4    -- 1 city lost = 1 nuke ... 4+ cities = 4 nukes
 local RETRY_DELAY          = 5    -- turns to wait after an abandoned strike
-local MAX_RETRIES          = 10   -- stop retrying after this many (set high for "forever")
+local MAX_RETRIES          = 10   -- stop retrying after this many
 local MAX_PREP_ATTEMPTS    = 3    -- max rebase turns before giving up for now
-local REBASE_RANGE_MULT    = 2    -- air rebase range = unit range * this (game default is 200%)
-local ANNOUNCE_LAUNCH      = true -- also notify humans when a nuke is launched
+local REBASE_RANGE_MULT    = 2    -- air rebase range = unit range * this
 local AI_VS_AI             = true -- AI also retaliates against AI captors
-local AI_ALERT_ONLY_IF_MET = true -- for AI-vs-AI strikes, only alert humans who have met
-                                  -- the attacker or the victim (avoids leaking info)
+local AI_ALERT_ONLY_IF_MET = true -- AI-vs-AI banners only for players who have met either civ
+
+-- Banner (positions are in pixels, measured from the TOP of the screen)
+local POSITION_X       = "center" -- horizontal placement: "left", "center" or "right"
+local OFFSET_X         = 0        -- extra horizontal nudge in px (+ = right, - = left)
+local OFFSET_Y         = 80       -- gap between the top of the screen and the banner
+local EDGE_MARGIN      = 24       -- gap to the screen edge when POSITION_X is left/right
+local SLIDE_IN         = true     -- also slide down from above the screen while fading in
+local FADE_IN_TIME     = 0.8      -- seconds to fade in
+local HOLD_TIME        = 4.0      -- seconds fully visible
+local FADE_OUT_TIME    = 1.0      -- seconds to fade out
+local BACKDROP_ALPHA   = 0.75     -- maximum opacity of the dark backdrop
+local BANNER_W         = 420      -- must match the Size in the XML
+local BANNER_H         = 410      -- must match the Size in the XML
+local DETONATION_DELAY = 1.0      -- seconds to wait after detonation before measuring pop loss
+local MAX_QUEUE        = 6        -- queued banners (oldest dropped beyond this)
+local CUSTOM_ATLAS     = "AI_NUKE_ICON_ATLAS" -- optional native 256px atlas (see notes)
 -----------------------------------------------------------
 
-local PHASE_ALERT = 1   -- waiting to send (or re-send) the alert
-local PHASE_ACT   = 2   -- alert sent; launch / rebase on this turn
+local PHASE_ALERT = 1   -- waiting to (re)announce
+local PHASE_ACT   = 2   -- announced; launch / rebase on this turn
 
-local captures = {}     -- [aiID] = cities lost (capped)
-local plans    = {}     -- [aiID] = { phase, turn, target, remaining, preps, retries }
+local captures = {}         -- [aiID] = cities lost (capped)
+local plans    = {}         -- [aiID] = { phase, turn, target, remaining, preps, retries, cityKey }
+local pendingStrikes = {}   -- launched nukes waiting to detonate
+local knownReal = {}        -- ["x,y"] = { turn, real } last measured population
+local HAS_DETONATION_EVENT = (GameEvents.NuclearDetonation ~= nil)
 
 -- Cache which unit types are nukes (done once at load)
 local nukeTypes = {}
@@ -36,34 +55,28 @@ for row in GameInfo.Units() do
 end
 
 ----------------------------------------------------------
--- Helpers
+-- Generic helpers
 ----------------------------------------------------------
 local function CivName(pPlayer)
     return Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescription())
 end
 
-local function NotifyHumans(text, summary, iAI, iTarget)
-    local pAI, pTarget = Players[iAI], Players[iTarget]
-    local filter = AI_ALERT_ONLY_IF_MET and iTarget and not pTarget:IsHuman()
-    for i = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
-        local p = Players[i]
-        if p and p:IsAlive() and p:IsHuman() then
-            local show = true
-            if filter then
-                local team = Teams[p:GetTeam()]
-                show = team:IsHasMet(pAI:GetTeam()) or team:IsHasMet(pTarget:GetTeam())
-            end
-            if show then
-                p:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, text, summary, -1, -1)
-            end
-        end
-    end
+local function CityName(key, fallback)
+    if key then return Locale.ConvertTextKey(key) end
+    return fallback
 end
 
-local function SendAlert(iAI, iTarget)
-    local text = CivName(Players[iAI]) .. " is preparing a nuclear strike against "
-                 .. CivName(Players[iTarget]) .. "!"
-    NotifyHumans(text, "Nuclear strike being prepared", iAI, iTarget)
+-- Civ's own "real population" figure (pop^2.8 * 1000), with a fallback formula
+local function RealPop(city)
+    local ok, v = pcall(city.GetRealPopulation, city)
+    if ok and v then return v end
+    return math.floor(city:GetPopulation() ^ 2.8) * 1000
+end
+
+local function FormatNumber(n)
+    local s = tostring(math.floor(n))
+    local out = s:reverse():gsub("(%d%d%d)", "%1,"):reverse()
+    return (out:gsub("^,", ""))
 end
 
 local function GetNukes(pPlayer)
@@ -79,15 +92,184 @@ end
 local function GetCityList(pPlayer)
     local list = {}
     for city in pPlayer:Cities() do
-        list[#list + 1] = { x = city:GetX(), y = city:GetY(),
-                            pop = city:GetPopulation(), nameKey = city:GetNameKey() }
+        list[#list + 1] = { x = city:GetX(), y = city:GetY(), pop = city:GetPopulation(),
+                            real = RealPop(city), nameKey = city:GetNameKey() }
     end
     return list
 end
 
 ----------------------------------------------------------
+-- Banner UI
+----------------------------------------------------------
+local PH_WAIT, PH_IN, PH_HOLD, PH_OUT = 1, 2, 3, 4
+local queue, current, uiPhase, uiTimer = {}, nil, nil, 0
+local bannerX, restY, startY = 0, 0, 0
+
+-- IconTextureAtlases has no Type column, so it can't be indexed by name: scan it instead
+local function AtlasExists(name)
+    for row in GameInfo.IconTextureAtlases() do
+        if row.Atlas == name then return true end
+    end
+    return false
+end
+
+local function SetupIcon()
+    -- Preferred: a native 256px atlas built from the Manhattan Project art
+    if AtlasExists(CUSTOM_ATLAS)
+       and IconHookup(0, 256, CUSTOM_ATLAS, Controls.NukeIcon) then
+        Controls.NukeIcon:SetSizeVal(256, 256)
+        return
+    end
+    -- Fallback: the game's own Manhattan Project icon (largest size is 128), scaled up
+    local proj = GameInfo.Projects["PROJECT_MANHATTAN_PROJECT"]
+    if proj then
+        IconHookup(proj.PortraitIndex, 128, proj.IconAtlas, Controls.NukeIcon)
+    end
+    Controls.NukeIcon:SetSizeVal(256, 256)
+end
+SetupIcon()
+
+-- Smoothstep easing: gentle start and gentle finish
+local function Ease(t)
+    if t <= 0 then return 0 elseif t >= 1 then return 1 end
+    return t * t * (3 - 2 * t)
+end
+
+-- One place that moves and fades the banner
+local function Apply(alpha, y)
+    Controls.Backdrop:SetAlpha(alpha * BACKDROP_ALPHA)
+    Controls.NukeIcon:SetAlpha(alpha)
+    Controls.BannerText:SetAlpha(alpha)
+    Controls.Banner:SetOffsetVal(bannerX, y)
+end
+
+local function StartItem()
+    -- Resolve position now so resolution changes are respected
+    local screenW = UIManager:GetScreenSizeVal()
+    if POSITION_X == "left" then
+        bannerX = EDGE_MARGIN
+    elseif POSITION_X == "right" then
+        bannerX = screenW - BANNER_W - EDGE_MARGIN
+    else
+        bannerX = math.floor((screenW - BANNER_W) / 2)
+    end
+    bannerX = bannerX + OFFSET_X
+    restY   = OFFSET_Y
+    startY  = SLIDE_IN and -BANNER_H or restY
+
+    Controls.BannerText:SetText(current.build())
+    Apply(0, startY)                 -- start fully transparent, then reveal
+    Controls.Banner:SetHide(false)
+    uiPhase, uiTimer = PH_IN, 0
+end
+
+local function NextItem()
+    current = table.remove(queue, 1)
+    if not current then
+        uiPhase = nil
+        Controls.Banner:SetHide(true)
+        ContextPtr:ClearUpdate()     -- no per-frame cost while idle
+        return
+    end
+    uiPhase, uiTimer = PH_WAIT, 0
+end
+
+local function OnUpdate(dt)
+    uiTimer = uiTimer + dt
+    if uiPhase == PH_WAIT then
+        if uiTimer >= (current.delay or 0) then StartItem() end
+    elseif uiPhase == PH_IN then
+        local t = uiTimer / math.max(FADE_IN_TIME, 0.01)
+        if t >= 1 then
+            Apply(1, restY)
+            uiPhase, uiTimer = PH_HOLD, 0
+        else
+            local e = Ease(t)
+            Apply(e, startY + (restY - startY) * e)
+        end
+    elseif uiPhase == PH_HOLD then
+        if uiTimer >= HOLD_TIME then uiPhase, uiTimer = PH_OUT, 0 end
+    elseif uiPhase == PH_OUT then
+        local t = uiTimer / math.max(FADE_OUT_TIME, 0.01)
+        if t >= 1 then
+            Controls.Banner:SetHide(true)
+            NextItem()
+        else
+            Apply(1 - Ease(t), restY)
+        end
+    end
+end
+
+local function Enqueue(item)
+    if #queue >= MAX_QUEUE then table.remove(queue, 1) end
+    queue[#queue + 1] = item
+    if not uiPhase then
+        NextItem()
+        ContextPtr:SetUpdate(OnUpdate)
+    end
+end
+
+-- Drop everything on screen/queued (used when the local player changes, e.g. hotseat)
+local function ClearBanners()
+    queue, current = {}, nil
+    if uiPhase then
+        uiPhase = nil
+        Controls.Banner:SetHide(true)
+        ContextPtr:ClearUpdate()
+    end
+end
+
+-- Each client only shows banners to its own local player
+local function IsVisibleToLocal(iAI, iTarget)
+    local iActive = Game.GetActivePlayer()
+    local pActive = Players[iActive]
+    if not pActive or not pActive:IsAlive() then return false end
+    if iActive == iAI or iActive == iTarget then return true end
+    if Players[iTarget]:IsHuman() or not AI_ALERT_ONLY_IF_MET then return true end
+    local team = Teams[pActive:GetTeam()]
+    return team:IsHasMet(Players[iAI]:GetTeam()) or team:IsHasMet(Players[iTarget]:GetTeam())
+end
+
+local function QueuePreparing(iAI, plan)
+    if not IsVisibleToLocal(iAI, plan.target) then return end
+    local text = CivName(Players[iAI]) .. " is preparing a nuclear strike after "
+                 .. CivName(Players[plan.target]) .. " captured "
+                 .. CityName(plan.cityKey, "one of its cities") .. "."
+    Enqueue({ delay = 0, build = function() return text end })
+end
+
+local function QueueDetonation(rec)
+    if not IsVisibleToLocal(rec.iAI, rec.target) then return end
+    Enqueue({
+        delay = DETONATION_DELAY,
+        build = function()
+            -- Measured when the banner is about to show, after the blast has been applied
+            local key  = rec.x .. "," .. rec.y
+            local prev = knownReal[key]
+            local before = (prev and prev.turn == Game.GetGameTurn()) and prev.real or rec.realBefore
+            local plot = Map.GetPlot(rec.x, rec.y)
+            local city = plot and plot:GetPlotCity()
+            local after = city and RealPop(city) or 0
+            knownReal[key] = { turn = Game.GetGameTurn(), real = after }
+            local lost = math.max(before - after, 0)
+
+            return "Nuclear detonation over " .. CityName(rec.toKey, "a city") .. "![NEWLINE]"
+                .. "Launched by " .. CivName(Players[rec.iAI]) .. " from "
+                .. CityName(rec.fromKey, "a naval unit") .. "[NEWLINE]"
+                .. FormatNumber(lost) .. " lives lost"
+        end,
+    })
+end
+
+----------------------------------------------------------
 -- Strike execution
 ----------------------------------------------------------
+local function PrunePending(turn)
+    for i = #pendingStrikes, 1, -1 do
+        if turn - pendingStrikes[i].turn > 5 then table.remove(pendingStrikes, i) end
+    end
+end
+
 local function ScheduleRetry(iAI, plan, turn)
     plan.retries = plan.retries + 1
     if plan.retries > MAX_RETRIES then
@@ -103,7 +285,6 @@ local function ExecutePlan(iAI, plan, turn)
     local pAI     = Players[iAI]
     local pTarget = Players[plan.target]
 
-    -- Validity checks: abandon silently if the strike no longer makes sense
     if not pAI:IsAlive() or pAI:GetNumCities() == 0
        or not pTarget:IsAlive()
        or not Teams[pAI:GetTeam()]:IsAtWar(pTarget:GetTeam()) then
@@ -112,16 +293,12 @@ local function ExecutePlan(iAI, plan, turn)
     end
 
     local nukes = GetNukes(pAI)
-    if #nukes == 0 then
-        plans[iAI] = nil
-        return
-    end
+    if #nukes == 0 then plans[iAI] = nil return end
 
     local targets = GetCityList(pTarget)
-    if #targets == 0 then
-        plans[iAI] = nil
-        return
-    end
+    if #targets == 0 then plans[iAI] = nil return end
+
+    PrunePending(turn)
 
     local remaining = plan.remaining
     local launched  = 0
@@ -135,7 +312,6 @@ local function ExecutePlan(iAI, plan, turn)
         local range = unit:Range()
         local ux, uy = unit:GetX(), unit:GetY()
 
-        -- Prefer cities with fewer nukes assigned, then higher population
         local best, bestCount, bestPop
         for t = 1, #targets do
             local tc = targets[t]
@@ -150,14 +326,24 @@ local function ExecutePlan(iAI, plan, turn)
         if best then
             used[n] = true
             local tc = targets[best]
+
+            -- Note the launch city BEFORE the missile leaves
+            local fromPlot = Map.GetPlot(ux, uy)
+            local fromCity = fromPlot and fromPlot:GetPlotCity()
+            local fromKey  = fromCity and fromCity:GetNameKey() or nil
+
             local ok = pcall(unit.PushMission, unit, MissionTypes.MISSION_NUKE, tc.x, tc.y, 0, 0, 1)
             if ok then
                 launched = launched + 1
                 assigned[best] = (assigned[best] or 0) + 1
-                if ANNOUNCE_LAUNCH then
-                    NotifyHumans(CivName(pAI) .. " has launched a nuclear weapon at "
-                                 .. Locale.ConvertTextKey(tc.nameKey) .. "!",
-                                 "Nuclear launch detected", iAI, plan.target)
+
+                local rec = { iAI = iAI, target = plan.target, x = tc.x, y = tc.y,
+                              fromKey = fromKey, toKey = tc.nameKey,
+                              realBefore = tc.real, turn = turn }
+                if HAS_DETONATION_EVENT then
+                    pendingStrikes[#pendingStrikes + 1] = rec
+                else
+                    QueueDetonation(rec)   -- no detonation event available: report on launch
                 end
             end
         end
@@ -199,16 +385,15 @@ local function ExecutePlan(iAI, plan, turn)
         end
     end
 
-    -- Decide what happens next
     plan.remaining = remaining - launched
     if plan.remaining <= 0 then
-        plans[iAI] = nil                       -- strike complete
+        plans[iAI] = nil
     elseif moved > 0 and plan.preps < MAX_PREP_ATTEMPTS then
-        plan.preps = plan.preps + 1            -- launch the rebased nukes next turn
+        plan.preps = plan.preps + 1
         plan.phase = PHASE_ACT
         plan.turn  = turn + 1
     else
-        ScheduleRetry(iAI, plan, turn)         -- nothing in range: abandon, retry in 5 turns
+        ScheduleRetry(iAI, plan, turn)
     end
 end
 
@@ -223,25 +408,27 @@ local function OnCityCaptured(iOldOwner, bIsCapital, iX, iY, iNewOwner, iPop, bC
     local pNew = Players[iNewOwner]
     if not pOld or not pNew then return end
 
-    -- Victim must be a major AI; captor must be a major civ (no barbarians or city-states)
     if pOld:IsHuman() or pOld:IsMinorCiv() or pOld:IsBarbarian() then return end
     if pNew:IsMinorCiv() or pNew:IsBarbarian() then return end
     if not pNew:IsHuman() and not AI_VS_AI then return end
+
+    local plot = Map.GetPlot(iX, iY)
+    local city = plot and plot:GetPlotCity()
+    local cityKey = city and city:GetNameKey() or nil
 
     local count = math.min((captures[iOldOwner] or 0) + 1, MAX_NUKES_PER_STRIKE)
     captures[iOldOwner] = count
 
     local plan = plans[iOldOwner]
     if plan then
-        -- A strike is already pending: scale it up and retarget the latest captor
         plan.remaining = count
         plan.target    = iNewOwner
+        plan.cityKey   = cityKey
     else
-        plans[iOldOwner] = {
-            phase = PHASE_ACT, turn = Game.GetGameTurn() + 1,
-            target = iNewOwner, remaining = count, preps = 0, retries = 0,
-        }
-        SendAlert(iOldOwner, iNewOwner)
+        plan = { phase = PHASE_ACT, turn = Game.GetGameTurn() + 1, target = iNewOwner,
+                 remaining = count, preps = 0, retries = 0, cityKey = cityKey }
+        plans[iOldOwner] = plan
+        QueuePreparing(iOldOwner, plan)
     end
 end
 
@@ -253,7 +440,7 @@ local function OnPlayerDoTurn(iPlayer)
     if turn < plan.turn then return end
 
     if plan.phase == PHASE_ALERT then
-        SendAlert(iPlayer, plan.target)        -- retry: warn again, act next turn
+        QueuePreparing(iPlayer, plan)          -- retry: announce again, act next turn
         plan.phase = PHASE_ACT
         plan.turn  = turn + 1
     else
@@ -261,5 +448,22 @@ local function OnPlayerDoTurn(iPlayer)
     end
 end
 
+local function OnNuclearDetonation(iPlayer, iX, iY)
+    for i = 1, #pendingStrikes do
+        local rec = pendingStrikes[i]
+        if rec.iAI == iPlayer and rec.x == iX and rec.y == iY then
+            table.remove(pendingStrikes, i)
+            QueueDetonation(rec)
+            return
+        end
+    end
+end
+
 GameEvents.CityCaptureComplete.Add(OnCityCaptured)
 GameEvents.PlayerDoTurn.Add(OnPlayerDoTurn)
+if HAS_DETONATION_EVENT then
+    GameEvents.NuclearDetonation.Add(OnNuclearDetonation)
+end
+if Events.GameplaySetActivePlayer then
+    Events.GameplaySetActivePlayer.Add(ClearBanners)
+end
