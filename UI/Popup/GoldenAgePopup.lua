@@ -9,7 +9,7 @@
 -------------------------------------------------
 local POPUP_HEIGHT     = 160;  -- Height of the popup in pixels (configurable)
 local POPUP_WIDTH      = 460;  -- Width of the popup in pixels
-local POPUP_TOP_MARGIN = 40;   -- Gap between the top of the screen and the popup (clears the top bar)
+local POPUP_TOP_MARGIN = 100;   -- Gap between the top of the screen and the popup (clears the top bar)
 local HOLD_TIME        = 4.0;  -- Seconds the popup stays fully visible before sliding out
 
 -------------------------------------------------
