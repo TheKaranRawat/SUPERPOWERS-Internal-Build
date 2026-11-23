@@ -16,8 +16,8 @@
 --==========================================================
 local TECH_TREE_ANIMATION = {
 	Enabled           = true,	-- false = open/close instantly, no animation
-	FadeInTime        = 0.25,	-- seconds to fade/slide in   (0 = instant)
-	FadeOutTime       = 0.25,	-- seconds to fade/slide out  (0 = instant)
+	FadeInTime        = 0.3,	-- seconds to fade/slide in   (0 = instant)
+	FadeOutTime       = 0.3,	-- seconds to fade/slide out  (0 = instant)
 	SlideDistance     = 720,	-- pixels the panel travels. Positive = comes up from below, negative = comes down from above
 	BackdropSlides    = true,	-- true = the dark backdrop slides with the panel, false = it only fades
 	CloseOnRightClick = true,	-- right click on empty space closes the tech tree (right click on a tech still opens the Pedia)

@@ -73,11 +73,11 @@ local g_bReopenAfterBranchSwitch = false;
 -------------------------------------------------
 local g_AnimConfig = {
 	Enabled        = true,
-	SlideInTime    = 0.60,   -- seconds
-	FadeInTime     = 0.60,
+	SlideInTime    = 0.40,   -- seconds
+	FadeInTime     = 0.50,
 	SlideOutTime   = 0.40,
 	FadeOutTime    = 0.40,
-	SlideDistance  = 500,    -- pixels the panel travels up from below
+	SlideDistance  = 600,    -- pixels the panel travels up from below
 	FadeBackground = true,   -- also fade the dark background block
 };
 
@@ -382,7 +382,7 @@ function PolicyBranchSelected( policyBranchIndex )
 			Controls.BGBlock:SetHide(true);
 		end
 	end
-	
+
 end
 
 -------------------------------------------------
