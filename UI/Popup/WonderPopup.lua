@@ -7,7 +7,7 @@ include( "InfoTooltipInclude" );
 
 -- Timing (seconds)
 local m_fFadeInSeconds  = 0.7;   -- fade + slide in
-local m_fHoldSeconds    = 5;     -- how long it stays fully visible
+local m_fHoldSeconds    = 15;     -- how long it stays fully visible
 local m_fFadeOutSeconds = 0.7;   -- fade + slide out
 local m_fSlideDistance  = 80;    -- pixels the popup slides (in from below, out downward)
 
