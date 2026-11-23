@@ -7,13 +7,15 @@
 -- player owns within BUILD_RANGE tiles of the city.
 --
 -- Priority:  1) strategic resources   2) luxury resources   3) everything else
--- (inside a priority, tiles are taken in a fixed scan order: nearest first).
+-- (inside a priority, tiles are taken nearest first; tiles at the same
+-- distance are taken in a fixed scan order).
 --
 -- Pillaged improvements are repaired slowly (REPAIR_*); fallout is cleared on
--- its own, slower schedule (FALLOUT_*). Strategic/luxury resource tiles inside
--- the player's borders but beyond every city's reach are improved too
--- (OUTSIDE_RANGE_*). When an improvement cannot coexist with a forest or
--- jungle on the tile, that feature is cleared first (CLEAR_FEATURES).
+-- its own, slower schedule (FALLOUT_*). Optionally (OUTSIDE_RANGE_*, off by
+-- default) strategic/luxury resource tiles inside the player's borders but
+-- beyond every city's reach are improved too. When an improvement cannot
+-- coexist with a forest or jungle on the tile, that feature is cleared first
+-- (CLEAR_FEATURES).
 --
 -- ANTIQUITY SITES (toggle: ANTIQUITY_ENABLED)
 -- Once the player has the tech that reveals antiquity sites, any site on a
@@ -33,6 +35,7 @@
 --     so a client that loads late computes exactly what the others do.
 --   * Every engine call that fails is isolated with pcall (same result on all
 --     clients, and it can never break the turn for other scripts).
+--   * Every player must run the identical file INCLUDING the CONFIG table.
 --
 -- PERFORMANCE
 --   * A city does work only on its own turns (stagger by city ID); idle turns
@@ -40,9 +43,10 @@
 --   * Tile list is gathered once per city per turn and shared by all passes.
 --   * Candidate selection stops early once strategic tiles fill the quota;
 --     builds are tried best-first so most tiles need one or two CanBuild calls;
---     water/mountain tiles skip the generic search.
---   * The map-wide outside-range pass scans only a slice of the map per run
---     (OUTSIDE_RANGE_SLICES) using cached plot handles.
+--     water/mountain tiles skip the generic search; once the "other" quota is
+--     full, the generic CanBuild search is skipped entirely.
+--   * The optional map-wide outside-range pass scans only a slice of the map
+--     per run (OUTSIDE_RANGE_SLICES) using cached plot handles.
 --==========================================================================
 
 local CONFIG = {
@@ -76,13 +80,17 @@ local CONFIG = {
 	FALLOUTS_PER_CITY = 1,
 
 	-- Strategic/luxury resource tiles that are inside our borders but not
-	-- covered by any city's range. Scans the map for the player's own tiles
-	-- in slices; raise INTERVAL or SLICES to lower the cost on huge maps.
-	-- The whole map is covered every INTERVAL x SLICES turns, and up to
-	-- PER_RUN tiles (plus the bonus-tech extras) are improved per run.
+	-- covered by any city's range. With BUILD_RANGE 5 the city pass already
+	-- covers every tile a city can normally own, so this only matters for
+	-- tiles claimed by Citadels and similar edge cases. It scans the map for
+	-- the player's own tiles in slices, which is the most expensive part of
+	-- the script, so it is OFF by default. If you enable it, keep INTERVAL x
+	-- SLICES large on big maps. The whole map is covered every
+	-- INTERVAL x SLICES turns, and up to PER_RUN tiles (plus the bonus-tech
+	-- extras) are improved per run.
 	OUTSIDE_RANGE_ENABLED  = true,
-	OUTSIDE_RANGE_INTERVAL = 2,        -- each player scans every N turns...
-	OUTSIDE_RANGE_SLICES   = 2,        -- ...1/N of the map each time
+	OUTSIDE_RANGE_INTERVAL = 6,        -- each player scans every N turns...
+	OUTSIDE_RANGE_SLICES   = 4,        -- ...1/N of the map each time
 	OUTSIDE_RANGE_PER_RUN  = 3,        -- improvements allowed per scan run
 
 	-- ANTIQUITY SITES ------------------------------------------------------
@@ -130,9 +138,9 @@ local CONFIG = {
 	-- Which improvement goes on a plain tile when several are possible:
 	-- listed ones first (in this order), unlisted next, last-resort ones last.
 	PREFERRED_IMPROVEMENTS = {
-		"IMPROVEMENT_FARM",
-		"IMPROVEMENT_MINE",
 		"IMPROVEMENT_LUMBERMILL",
+		"IMPROVEMENT_FARM",
+		"IMPROVEMENT_MINE",		
 	},
 	LAST_RESORT_IMPROVEMENTS = {
 		"IMPROVEMENT_TRADING_POST",
@@ -321,6 +329,11 @@ end
 
 local scratchPlots = {}   -- owned tiles within range of the city being processed
 
+-- Per-call scratch buckets for the outer ring, indexed by distance from the
+-- city. Always emptied before use, so they carry no state between calls.
+local outerBuckets = {}
+for d = 1, BUILD_RANGE do outerBuckets[d] = {} end
+
 --------------------------------------------------------------------------
 -- HELPERS
 --------------------------------------------------------------------------
@@ -369,18 +382,36 @@ local function BlockedByEnemy(pPlot, iTeam)
 	return false
 end
 
--- Outer ring (beyond the engine's city tile list). Called through pcall so a
--- missing engine function can only disable the extra range, not the script.
+-- Outer ring (beyond the engine's city tile list), appended nearest first:
+-- plots are bucketed by distance, and within one distance they keep the fixed
+-- dx,dy scan order. Called through pcall so a missing engine function can
+-- only disable the extra range, not the script.
 local function CollectOuterPlots(pCity, iPlayer, inner, n)
 	local cx, cy = pCity:GetX(), pCity:GetY()
+
+	for d = 1, BUILD_RANGE do
+		local bucket = outerBuckets[d]
+		for i = #bucket, 1, -1 do bucket[i] = nil end
+	end
+
 	for dx = -BUILD_RANGE, BUILD_RANGE do
 		for dy = -BUILD_RANGE, BUILD_RANGE do
 			local pPlot = Map.PlotXYWithRangeCheck(cx, cy, dx, dy, BUILD_RANGE)
-			if pPlot and pPlot:GetOwner() == iPlayer and not pPlot:IsCity()
-				and not inner[pPlot:GetY() * 4096 + pPlot:GetX()] then
-				n = n + 1
-				scratchPlots[n] = pPlot
+			if pPlot and pPlot:GetOwner() == iPlayer and not pPlot:IsCity() then
+				local px, py = pPlot:GetX(), pPlot:GetY()
+				if not inner[py * 4096 + px] then
+					local bucket = outerBuckets[Map.PlotDistance(cx, cy, px, py)]
+					if bucket then bucket[#bucket + 1] = pPlot end
+				end
 			end
+		end
+	end
+
+	for d = 1, BUILD_RANGE do
+		local bucket = outerBuckets[d]
+		for i = 1, #bucket do
+			n = n + 1
+			scratchPlots[n] = bucket[i]
 		end
 	end
 	return n
@@ -520,13 +551,16 @@ end
 -- Unimproved tile: connect its resource if possible, otherwise the best
 -- ranked plain improvement (also acts as a stand-in until the resource's
 -- own improvement is unlocked; ChooseUpgrade replaces it later).
-local function ChooseForEmpty(pPlot, iPlayer, iTeam, builds, nBuilds, available)
+-- allowGeneric=false skips the plain-improvement search (used once the
+-- "other" quota is already full, since the result would be discarded).
+local function ChooseForEmpty(pPlot, iPlayer, iTeam, builds, nBuilds, available, allowGeneric)
 	local resID = pPlot:GetResourceType(iTeam)
 	if resID ~= nil and resID >= 0 then
 		if siteReveal[resID] ~= nil then return nil end   -- antiquity site: never cover it
 		local b = ConnectBuild(pPlot, iPlayer, resID, available)
 		if b then return b, resourceTier[resID] or 3 end
 	end
+	if not allowGeneric then return nil end
 	if SKIP_GENERIC_WM then
 		local plotType = pPlot:GetPlotType()
 		if plotType == PLOT_OCEAN or plotType == PLOT_MOUNTAIN then return nil end
@@ -564,7 +598,7 @@ local function PlaceImprovement(pPlot, build, iPlayer)
 	if feature ~= nil and clearFeature[feature] then
 		local vf = validFeature[imp]
 		if not (vf and vf[feature]) then
-			pPlot:SetFeatureType(NO_FEATURE)
+			pPlot:SetFeatureType(NO_FEATURE, -1)
 		end
 	end
 	pPlot:SetImprovementType(imp, iPlayer)
@@ -593,6 +627,7 @@ end
 --------------------------------------------------------------------------
 local function BuildForCity(iPlayer, iTeam, builds, nBuilds, available, perTurn, nPlots)
 	local tiers = { {}, {}, {} }
+	local others = tiers[3]
 
 	for i = 1, nPlots do
 		local pPlot = scratchPlots[i]
@@ -600,7 +635,8 @@ local function BuildForCity(iPlayer, iTeam, builds, nBuilds, available, perTurn,
 		local b, tier
 		if imp == NO_IMPROVEMENT then
 			if not (SKIP_ENEMY and BlockedByEnemy(pPlot, iTeam)) then
-				b, tier = ChooseForEmpty(pPlot, iPlayer, iTeam, builds, nBuilds, available)
+				b, tier = ChooseForEmpty(pPlot, iPlayer, iTeam, builds, nBuilds, available,
+					#others < perTurn)
 			end
 		else
 			b, tier = ChooseUpgrade(pPlot, iPlayer, iTeam, imp, available)
@@ -621,7 +657,7 @@ local function BuildForCity(iPlayer, iTeam, builds, nBuilds, available, perTurn,
 end
 
 --------------------------------------------------------------------------
--- OUTSIDE-RANGE PASS (one player)
+-- OUTSIDE-RANGE PASS (one player; OFF by default)
 -- Strategic / luxury resource tiles (and antiquity sites) anywhere inside the
 -- player's borders. City passes run first, so this mostly finds tiles beyond
 -- every city's reach. Only connecting improvements are placed here.
@@ -724,7 +760,7 @@ local function ClearFalloutCity(iPlayer, iTeam, nPlots)
 	for i = 1, nPlots do
 		local pPlot = scratchPlots[i]
 		if pPlot:GetFeatureType() == FALLOUT_ID and not BlockedByEnemy(pPlot, iTeam) then
-			pPlot:SetFeatureType(NO_FEATURE)
+			pPlot:SetFeatureType(NO_FEATURE, -1)
 			if DEBUG then dprint("Player", iPlayer, "cleared fallout", pPlot:GetX(), pPlot:GetY()) end
 			cleared = cleared + 1
 			if cleared >= FALLOUTS_PER_CITY then return end
