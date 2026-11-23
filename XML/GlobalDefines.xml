@@ -482,7 +482,7 @@
 			<Where Name="MAX_EVASION_PROBABILITY" />
 		</Update>
 		<Update>
-			<Set Value="2"/>
+			<Set Value="8"/>
 			<Where Name="CITY_MIN_SIZE_FOR_SETTLERS" />
 		</Update>
 		<Update>
@@ -501,6 +501,24 @@
 			<Set Value="90"/>
 			<Where Name="SETTLER_DISTANCE_DROPOFF_MODIFIER" />
 		</Update>
+
+		<Update>
+			<Set Value="30"/>
+			<Where Name="AI_STRATEGY_AREA_IS_FULL_PERCENT" />
+		</Update>
+
+		<Update>
+			<Set Value="-10000" /><!-- original: -1000 - going to -5000 made no difference to settling -->
+			<Where name="ALREADY_OWNED_STRATEGIC_VALUE" />
+		</Update>
+
+		<!--
+		<Update>
+			<Set Value="-800"/>
+			<Where Name="ALREADY_OWNED_STRATEGIC_VALUE" />
+		</Update>
+		-->
+
 		<Update>
 			<Set Value="60"/>
 			<Where Name="COMBAT_CAPTURE_MAX_CHANCE" />
@@ -870,10 +888,6 @@
 		<Update>
 			<Set Value="1"/>
 			<Where Name="BUILD_ON_RESOURCE_PERCENT" />
-		</Update>
-		<Update>
-			<Set Value="-800"/>
-			<Where Name="ALREADY_OWNED_STRATEGIC_VALUE" />
 		</Update>
 		<Update>
 			<Where Name="CITY_RING_1_MULTIPLIER" />
