@@ -4784,16 +4784,16 @@
 
 
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_1">
-			<Text>Sudden Strike I</Text>
+			<Text>Drop Tanks I</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_1_HELP">
-			<Text>Grants +25% Ranged Strength</Text>
+			<Text>Grants +2 Range</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_2">
-			<Text>Sudden Strike II</Text>
+			<Text>Drop Tanks II</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SIEGE_2_HELP">
-			<Text>Grants +25% Ranged Strength</Text>
+			<Text>Grants +2 Range</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER_FIGHTER_SORTIE">
