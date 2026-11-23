@@ -12,6 +12,7 @@ local kAnimOutTime  = 0.7;   -- slide-out duration in seconds (0 = no animation,
 local kSlideInDist  = 370;     -- pixels the popup travels while sliding in
 local kSlideOutDist = 370;     -- pixels the popup travels while sliding out
 local kPopupBaseY   = 60;     -- resting position; must match Offset="0,60" of the Popup grid in the XML
+local kMouseCloseAnimated = true;  -- right click / mouse side button: false = close instantly, true = play slide-out
 
 -------------------------------------------------
 -- Constants / state
@@ -1146,24 +1147,41 @@ local function IsBackMouseMessage( uiMsg )
 	return false;
 end
 
-local function CloseOrCancelConfirm()
-	if Controls.WarConfirm:IsHidden() then
-		OnCloseButtonClicked();
-	else
+-- bAnimated: true plays the slide-out, false closes at once.
+-- If the war confirmation is open, it is cancelled instead of closing the popup.
+local function CloseOrCancelConfirm( bAnimated )
+	if not Controls.WarConfirm:IsHidden() then
 		Controls.WarConfirm:SetHide( true );
 		Controls.BGBlock:SetHide( false );
+	elseif bAnimated then
+		OnCloseButtonClicked();
+	else
+		CloseNow();
 	end
 end
+
+local kXButtonUp = 524;   -- WM_XBUTTONUP, swallowed so it does not leak to the game map
 
 function InputHandler( uiMsg, wParam, lParam )
 	if uiMsg == KeyEvents.KeyDown then
 		if wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN
 			or (g_eBrowserBack ~= nil and wParam == g_eBrowserBack) then
-			CloseOrCancelConfirm();
+			CloseOrCancelConfirm( true );
 			return true;
 		end
+
+	-- Mouse side button: close on press
 	elseif IsBackMouseMessage( uiMsg ) then
-		CloseOrCancelConfirm();
+		CloseOrCancelConfirm( kMouseCloseAnimated );
+		return true;
+	elseif uiMsg == kXButtonUp then
+		return true;
+
+	-- Right click: swallow the press, close on release (so the release never reaches the map)
+	elseif MouseEvents ~= nil and uiMsg == MouseEvents.RButtonDown then
+		return true;
+	elseif MouseEvents ~= nil and uiMsg == MouseEvents.RButtonUp then
+		CloseOrCancelConfirm( kMouseCloseAnimated );
 		return true;
 	end
 end
