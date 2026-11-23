@@ -7,8 +7,8 @@
 -------------------------------------------------
 -- CONFIGURATION
 -------------------------------------------------
-local POPUP_HEIGHT     = 120;  -- Height of the popup in pixels (configurable)
-local POPUP_WIDTH      = 380;  -- Width of the popup in pixels
+local POPUP_HEIGHT     = 160;  -- Height of the popup in pixels (configurable)
+local POPUP_WIDTH      = 460;  -- Width of the popup in pixels
 local POPUP_TOP_MARGIN = 40;   -- Gap between the top of the screen and the popup (clears the top bar)
 local HOLD_TIME        = 4.0;  -- Seconds the popup stays fully visible before sliding out
 
@@ -147,7 +147,21 @@ Controls.CloseButton:RegisterCallback( Mouse.eLClick, OnCloseButtonClicked );
 function InputHandler( uiMsg, wParam, lParam )
     if uiMsg == KeyEvents.KeyDown then
         if wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN then
-            OnCloseButtonClicked();
+            OnClose();
+            return true;
+        end
+
+    -- right click closes the screen
+    elseif uiMsg == MouseEvents.RButtonUp then
+        OnClose();
+        return true;
+
+    -- mouse side button closes the screen
+    elseif uiMsg == 523 then   -- WM_XBUTTONDOWN
+        local xButton = math.floor( wParam / 65536 ) % 256   -- high word
+        if xButton == 0 then xButton = wParam end            -- fallback if already unpacked
+        if xButton == 1 then   -- same button as the other screens; use 1 for the other one
+            OnClose();
             return true;
         end
     end
