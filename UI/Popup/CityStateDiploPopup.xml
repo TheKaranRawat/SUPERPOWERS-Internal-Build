@@ -39,7 +39,7 @@
 
         <!-- Status / Influence bar. StatusIcon is the trait icon: hover it to see the trait name. -->
         <Box Anchor="L,C" Size="200,60" Color="White.0" >
-          <Image ID="StatusIconBG" Anchor="R,T" Offset="-10,14" Size="32.32" Hidden="0" >
+          <Image ID="StatusIconBG" Anchor="R,T" Offset="-10,14" Size="32.32" Texture="Blank.dds" Hidden="0" >
             <Image ID="StatusIcon" Anchor="C,C" Offset="0.0" Texture="Assets/UI/Art/Notification/CityStateMilitaristic.dds" Size="32.32" Hidden="1" />
             <Image Anchor="L,B" Offset="0,-5" AnchorSide="O.I" Texture="Assets/UI/Art/Notification/CityStateMeterFrame.dds" Size="158.9" Hidden="0" >
               <Label ID="StatusLabel" AnchorSide="I.O" Anchor="L,T" Offset="22,5" Font="TwCenMT16" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" String="TXT_KEY_POP_CSTATE_STATUS">

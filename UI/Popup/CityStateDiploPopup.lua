@@ -702,14 +702,14 @@ function RefreshImpl( bForcePeace )
 
 	local info = GetStatusRow( pPlayer:GetMinorCivFriendshipWithMajor( iActivePlayer ) );
 	if info.row ~= nil then
-		Controls.StatusIconBG:SetTexture( info.row.StatusIcon );
+		--Controls.StatusIconBG:SetTexture( info.row.StatusIcon );
 		Controls.StatusMeter:SetTexture( info.row.StatusMeter );
 	end
 	Controls.StatusMeter:SetPercent( info.value );
 	Controls.StatusInfo:SetText( strStatusText );
 	Controls.StatusInfo:SetToolTipString( strStatusTT );
 	Controls.StatusLabel:SetToolTipString( strStatusTT );
-	Controls.StatusIconBG:SetToolTipString( strStatusTT );
+	--Controls.StatusIconBG:SetToolTipString( strStatusTT );
 	Controls.StatusMeter:SetToolTipString( strStatusTT );
 
 	---------------------------------------------------------------
