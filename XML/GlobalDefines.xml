@@ -73,7 +73,7 @@
 			
 		<!--Global Units per Plot and City Range 4 -->
 		<Update>
-			<Set Value="2"/>
+			<Set Value="3"/>
 			<Where Name="PLOT_UNIT_LIMIT" />
 		</Update>
 		<Update>
@@ -254,7 +254,7 @@
 
 		<!-- City Damage-->
 		<Update>
-			<Set Value="50"/>
+			<Set Value="100"/>
 			<Where Name="NUKE_FALLOUT_PROB" />
 		</Update>
 		<Update>
