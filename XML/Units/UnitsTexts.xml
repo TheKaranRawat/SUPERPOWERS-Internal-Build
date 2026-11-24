@@ -4110,7 +4110,7 @@
 			<Text>Incite Rebellion</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_2_HELP">
-			<Text>[ICON_BULLET]Cause 1 turn Chaos in the target City when attacking the enemy [COLOR_POSITIVE_TEXT]City[ENDCOLOR] (the effect can multiply). [NEWLINE][ICON_BULLET]If the target City is without a garrison, cause 250 Damage instantly to the city.</Text>
+			<Text>[ICON_BULLET]Cause 1 turn Chaos in the target City when attacking the enemy [COLOR_POSITIVE_TEXT]City[ENDCOLOR] (the effect can multiply). [NEWLINE][ICON_BULLET]If the target City is without a garrison, cause 150 Damage instantly to the city.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SP_FORCE_3">
 			<Text>Shock and Awe</Text>
