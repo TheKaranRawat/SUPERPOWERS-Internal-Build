@@ -9,6 +9,7 @@
 -- Added: fade + slide in from the bottom, fade + slide out on close
 --        (Esc / Enter / right click / mouse side button)
 -- Added: multiplayer / hot-seat safety and performance work (see notes in code)
+-- Added: selectable easing curves for slide and fade, backdrop alpha via color
 --==========================================================
 
 --==========================================================
@@ -19,12 +20,16 @@ local TECH_TREE_ANIMATION = {
 	-- Fade and slide have their own timings, so the fade can be slower (or faster) than the slide.
 	-- Animation is finished when the longer of the two is done. 0 = that part is instant.
 	FadeInTime        = 0.3,	-- seconds for the whole panel to fade in
-	FadeOutTime       = 0.3,	-- seconds for the whole panel to fade out
-	SlideInTime       = 0.3,	-- seconds to slide in
-	SlideOutTime      = 0.3,	-- seconds to slide out
-	SlideDistance     = 920,	-- pixels the panel travels. Positive = comes up from below, negative = comes down from above
-	FadeCurve         = 1.0,	-- 1 = smooth ease; above 1 stays transparent longer then fades in late, below 1 fades in early
-	BackdropSlides    = true,	-- true = the dark backdrop slides with the panel, false = it only fades
+	FadeOutTime       = 0.4,	-- seconds for the whole panel to fade out
+	SlideInTime       = 0.4,	-- seconds to slide in
+	SlideOutTime      = 0.4,	-- seconds to slide out
+	SlideDistance     = 720,	-- pixels the panel travels. Positive = comes up from below, negative = comes down from above
+	-- Easing curves. Choices: "Smoothstep", "Smootherstep", "OutCubic", "OutQuint", "OutExpo", "InOutQuint"
+	-- Closing plays the curve in reverse (out-curves become slow start, fast exit).
+	SlideCurve        = "OutQuint",		-- curve for the slide
+	FadeEase          = "Smootherstep",	-- curve for the fade (avoid OutExpo / OutQuint here, the fade barely reads)
+	FadeCurve         = 1.0,	-- extra power applied to the fade: 1 = none; above 1 stays transparent longer then fades in late, below 1 fades in early
+	BackdropSlides    = true,	-- true = the dark backdrop slides with the panel, false = it only fades (stays full screen)
 	CloseOnRightClick = true,	-- right click on empty space closes the tech tree (right click on a tech still opens the Pedia)
 	CloseOnSideButton1 = true,	-- mouse side button 1 (usually "Back") closes the tech tree
 	CloseOnSideButton2 = false,	-- mouse side button 2 (usually "Forward") closes the tech tree
@@ -191,15 +196,15 @@ local function AddTechPipes( techPairs, pipeColor )
 			startY = prereq.GridY
 			endY = tech.GridY
 
-			if startY < endY then -- elbow case ������|__
+			if startY < endY then -- elbow case: prereq above, tech below (down-right turn)
 
-				AddElbowPipe( elbowX + connectorElbowOffsetX2, startY*blockSpacingY + connectorOffsetY1, 72, 0 )	-- �|
-				AddElbowPipe( elbowX + connectorElbowOffsetX1, endY*blockSpacingY + connectorOffsetY2 , 0, 72 )		--  |_
+				AddElbowPipe( elbowX + connectorElbowOffsetX2, startY*blockSpacingY + connectorOffsetY1, 72, 0 )	-- upper corner
+				AddElbowPipe( elbowX + connectorElbowOffsetX1, endY*blockSpacingY + connectorOffsetY2 , 0, 72 )		-- lower corner
 
-			elseif startY > endY then -- elbow case ______|��
+			elseif startY > endY then -- elbow case: prereq below, tech above (up-right turn)
 
-				AddElbowPipe( elbowX + connectorElbowOffsetX1, endY*blockSpacingY + connectorOffsetY1, 0, 0 )		--  |�
-				AddElbowPipe( elbowX + connectorElbowOffsetX2, startY*blockSpacingY + connectorOffsetY2, 72, 72 )	-- _|
+				AddElbowPipe( elbowX + connectorElbowOffsetX1, endY*blockSpacingY + connectorOffsetY1, 0, 0 )		-- upper corner
+				AddElbowPipe( elbowX + connectorElbowOffsetX2, startY*blockSpacingY + connectorOffsetY2, 72, 72 )	-- lower corner
 			end
 		end
 	end
@@ -517,20 +522,38 @@ local g_lastAlpha, g_lastOffset
 
 local floor = math.floor
 
+-- Easing curves: each maps progress 0..1 to eased 0..1 (0 -> 0, 1 -> 1)
+local CURVES = {
+	Smoothstep   = function( t ) return t * t * (3 - 2 * t) end,
+	Smootherstep = function( t ) return t * t * t * (t * (t * 6 - 15) + 10) end,
+	OutCubic     = function( t ) local u = 1 - t return 1 - u * u * u end,
+	OutQuint     = function( t ) local u = 1 - t return 1 - u * u * u * u * u end,
+	OutExpo      = function( t ) return t <= 0 and 0 or t >= 1 and 1 or 1 - 2 ^ (-10 * t) end,
+	InOutQuint   = function( t )
+		if t < 0.5 then return 16 * t * t * t * t * t end
+		local u = -2 * t + 2
+		return 1 - u * u * u * u * u / 2
+	end,
+}
+
+-- The backdrop is a Box whose darkness comes from its Color attribute, which SetAlpha does not scale.
+-- So its alpha is driven through the color instead.
+local BACKDROP_COLOR = { x = 0, y = 0, z = 0, w = 1 }	-- r,g,b from the XML: Color="0,0,0,220"
+local BACKDROP_MAX_ALPHA = 220 / 255	-- keep in sync with the alpha in the XML
+
 local function ApplyAnimation()
 	local cfg = TECH_TREE_ANIMATION
-	local f = g_fadeProgress
-	local alpha = f * f * (3 - 2 * f)	-- smoothstep easing, symmetric so it can reverse mid-animation
+	local alpha = ( CURVES[ cfg.FadeEase ] or CURVES.Smootherstep )( g_fadeProgress )
 	local curve = cfg.FadeCurve
 	if curve and curve ~= 1 and alpha > 0 then
 		alpha = alpha ^ curve
 	end
-	local sp = g_slideProgress
-	local slide = sp * sp * (3 - 2 * sp)
+	local slide = ( CURVES[ cfg.SlideCurve ] or CURVES.Smootherstep )( g_slideProgress )
 	local offset = floor( (1 - slide) * cfg.SlideDistance + 0.5 )
 	if alpha ~= g_lastAlpha then
 		g_lastAlpha = alpha
-		g_backdrop:SetAlpha( alpha )
+		BACKDROP_COLOR.w = alpha * BACKDROP_MAX_ALPHA
+		g_backdrop:SetColor( BACKDROP_COLOR )
 		g_slideRoot:SetAlpha( alpha )
 	end
 	if offset ~= g_lastOffset then
