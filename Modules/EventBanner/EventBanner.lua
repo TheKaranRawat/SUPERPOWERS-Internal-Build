@@ -862,15 +862,10 @@ end
 -- CIVILIZATION_RANDOM entry (index 22 of CIV_COLOR_ATLAS), a complete round badge,
 -- so the BG and shadow images are hidden.
 local function SetUnknownFlag(f)
-    local index, atlas = 22, "CIV_COLOR_ATLAS"
-    local info = GameInfo.Civilizations["CIVILIZATION_RANDOM"]
-    if info and info.PortraitIndex and info.IconAtlas then
-        index, atlas = info.PortraitIndex, info.IconAtlas
-    end
     f.bg:SetHide(true)
     f.shadow:SetHide(true)
     pcall(function() f.icon:SetColor(Vector4(1, 1, 1, 1)) end)   -- clear any civ tint
-    IconHookup(index, CIV_ICON_SIZE, atlas, f.icon)
+    IconHookup(23, CIV_ICON_SIZE, "CIV_COLOR_ATLAS", f.icon)
 end
 
 -- Round civ flag via the game's own CivIconHookup (same call shape the base UI uses).
