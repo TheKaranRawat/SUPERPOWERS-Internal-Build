@@ -233,7 +233,7 @@
 		</Update>
 		<!-- per pop gold for trade routes /100 -->
 		<Update>
-			<Set Value="30"/>
+			<Set Value="10"/>
 			<Where Name="TRADE_ROUTE_CITY_POP_GOLD_MULTIPLIER" />
 		</Update>
 		<Update>
