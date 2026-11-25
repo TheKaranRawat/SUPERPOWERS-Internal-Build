@@ -1115,10 +1115,9 @@ local g_SelectionListCallBacks = {
 				if city:GetOrderQueueLength() >= g_maxQueueLength then
 					return Events.AudioPlay2DSound( "AS2D_INTERFACE_BUTTON_CLICK_DISABLED" )
 				end
-				local toFront = UI.ShiftKeyDown() or UI.AltKeyDown()
 				-- Game.CityPushOrder( city, orderID, itemID, repeatBuild, replaceQueue, bottomOfQueue )
-				-- Shift or Alt -> bottomOfQueue = false -> front of the queue
-				Game.CityPushOrder( city, orderID, itemID, false, false, not toFront )
+				-- Shift -> bottomOfQueue = false -> front of the queue
+				Game.CityPushOrder( city, orderID, itemID, false, false, not UI.ShiftKeyDown() )
 				local cityOwnerID, cityID = city:GetOwner(), city:GetID()
 				Events.SpecificCityInfoDirty( cityOwnerID, cityID, CityUpdateTypes.CITY_UPDATE_TYPE_BANNER )
 				Events.SpecificCityInfoDirty( cityOwnerID, cityID, CityUpdateTypes.CITY_UPDATE_TYPE_PRODUCTION )
