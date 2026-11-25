@@ -18,6 +18,8 @@
 
 		<!-- Panel Header Text -->
 		<Label ID="TitleLabel" Style="MenuTitleCaption" />
+		<!-- version -->
+		<Label Anchor="R,T" Offset="25,19" String="TXT_KEY_SP_VERSION" Font="TwCenMT16" ID="SPVersion"/>
 
 		<Label Anchor="C,T" Offset="0,18" Font="TwCenMT22" FontStyle="SoftShadow" ColorSet="Beige_Black_Alpha" />
 
