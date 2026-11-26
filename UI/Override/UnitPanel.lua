@@ -25,9 +25,9 @@ local g_EarnedPromotionIM2   = InstanceManager:new( "EarnedPromotionInstance", "
 -- Action types that should always go in the secondary (extra options) menu
 local g_ForceSecondary = {
     INTERFACEMODE_ATTACK        = true,
-    INTERFACEMODE_RANGE_ATTACK  = true,
+    --INTERFACEMODE_RANGE_ATTACK  = true,
     INTERFACEMODE_MOVE_TO       = true,
-    INTERFACEMODE_AIRSTRIKE     = true,
+    --INTERFACEMODE_AIRSTRIKE     = true,
 	INTERFACEMODE_EMBARK       = true,
     INTERFACEMODE_DISEMBARK     = true,
 	MISSION_SKIP       = true,
