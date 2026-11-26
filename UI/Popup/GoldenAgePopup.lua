@@ -147,13 +147,13 @@ Controls.CloseButton:RegisterCallback( Mouse.eLClick, OnCloseButtonClicked );
 function InputHandler( uiMsg, wParam, lParam )
     if uiMsg == KeyEvents.KeyDown then
         if wParam == Keys.VK_ESCAPE or wParam == Keys.VK_RETURN then
-            OnClose();
+            OnCloseButtonClicked();
             return true;
         end
 
     -- right click closes the screen
     elseif uiMsg == MouseEvents.RButtonUp then
-        OnClose();
+        OnCloseButtonClicked();
         return true;
 
     -- mouse side button closes the screen
@@ -161,7 +161,7 @@ function InputHandler( uiMsg, wParam, lParam )
         local xButton = math.floor( wParam / 65536 ) % 256   -- high word
         if xButton == 0 then xButton = wParam end            -- fallback if already unpacked
         if xButton == 1 then   -- same button as the other screens; use 1 for the other one
-            OnClose();
+            OnCloseButtonClicked();
             return true;
         end
     end
