@@ -129,7 +129,6 @@
 			<Text>
 				{1_CityName} has emerged as the
 				[NEWLINE][COLOR_POSITIVE_TEXT]World's Greatest City of the {2_Era}[ENDCOLOR]!
-				[NEWLINE][NEWLINE]This city may build a Triumphal Arch, a National Wonder that begins a [ICON_GOLDEN_AGE] Golden Age.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_TC_HOF_POPUP_LOSER">

@@ -159,7 +159,16 @@ function DoGreatestCityWinner(eraID)
 			local civName = GameInfo.Civilizations[city:GetCivilizationType()].Adjective
 			popupInfo.Text = Locale.ConvertTextKey("TXT_KEY_TC_HOF_POPUP_LOSER", civName, city:GetName(), strEra)
 		end
-		UI.AddPopup(popupInfo)
+		
+		local text
+		if city:GetOwner() == Game.GetActivePlayer() then
+			text = Locale.ConvertTextKey("TXT_KEY_TC_HOF_POPUP_WINNER", city:GetName(), strEra)
+		else
+			local civName = GameInfo.Civilizations[city:GetCivilizationType()].Adjective
+			text = Locale.ConvertTextKey("TXT_KEY_TC_HOF_POPUP_LOSER", civName, city:GetName(), strEra)
+		end
+		LuaEvents.TC_ShowGreatestCityPopup(text)
+
 	end
 end
 --------------------------------------------------------------------

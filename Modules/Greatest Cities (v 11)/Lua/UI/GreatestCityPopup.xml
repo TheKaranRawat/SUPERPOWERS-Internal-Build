@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT20" FontStyle="Shadow">
+  <Container ID="FadeRoot" Anchor="C,C" Size="Full,Full">
+    <Grid ID="PopupGrid" Size="460,90" Anchor="C,C" Style="Grid9FrameTurns">
+      <Label ID="PopupText" Anchor="C,C" WrapWidth="420" />
+    </Grid>
+  </Container>
+</Context>
