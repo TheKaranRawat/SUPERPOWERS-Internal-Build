@@ -13,6 +13,11 @@ local HIGHLIGHT_OWN_TILE = true    -- extra highlight on the unit's own tile (la
 local INCLUDE_NONCOMBAT = true     -- count workers/settlers etc. as targets
 local DEBUG = false
 
+-- Re-check for targets after a unit has moved
+local ENTER_AFTER_MOVE = true
+local MOVE_SETTLE_DELAY = 3        -- frames of "no further movement" before checking
+local ENTER_AFTER_SETUP = true     -- siege units: enter range mode once set up
+
 -- Aircraft
 local AIR_STYLE = "FireRangeBorder"
 local AIR_COLOR = Vector4(1, 0, 0, 1)
@@ -33,6 +38,11 @@ local g_airShown = false
 local g_airSig = nil
 local g_airWait = 0
 local g_airForce = false
+
+-- Post-move tracking (land/sea ranged units)
+local g_moveWait = 0        -- frames left before the post-move check runs
+local g_trackedKey = nil    -- "unitID:x:y" of the selected unit when last seen
+local g_trackedSetUp = nil  -- last seen set-up state of the selected unit
 
 ------------------------------------------------------------
 -- Helpers
@@ -66,6 +76,21 @@ local function CanShowFor(unit)
     if unit.IsOutOfAttacks and unit:IsOutOfAttacks() then return false end
     if unit.CanMove and not unit:CanMove() then return false end
     return true
+end
+
+-- Only ever act on the local player's own units, during their own turn.
+-- (Purely UI-side logic: nothing here sends commands or changes game state,
+-- so it cannot desync multiplayer games.)
+local function IsLocalOwnedUnit(unit)
+    return unit ~= nil and unit:GetOwner() == Game.GetActivePlayer()
+end
+
+local function IsSetUp(unit)
+    return unit.IsSetUpForRangedAttack ~= nil and unit:IsSetUpForRangedAttack() and true or false
+end
+
+local function UnitKey(unit)
+    return unit:GetID() .. ":" .. unit:GetX() .. ":" .. unit:GetY()
 end
 
 ------------------------------------------------------------
@@ -190,31 +215,11 @@ local function ProcessAirRefresh()
     local force = g_airForce
     g_airForce = false
     local unit = UI.GetHeadSelectedUnit()
-    if IsAirUnit(unit) and unit:GetOwner() == Game.GetActivePlayer() then
+    if IsAirUnit(unit) and IsLocalOwnedUnit(unit) then
         DrawAirRange(unit, force)
     else
         ClearAirRange(false)
     end
-end
-
-local HAVE_UPDATE = ContextPtr ~= nil and ContextPtr.SetUpdate ~= nil
-
-local function RequestAirRefresh(force, delay)
-    if force then g_airForce = true end
-    if HAVE_UPDATE then
-        if g_airWait < delay then g_airWait = delay end
-    else
-        ProcessAirRefresh()
-    end
-end
-
-if HAVE_UPDATE then
-    ContextPtr:SetUpdate(function()
-        if g_airWait > 0 then
-            g_airWait = g_airWait - 1
-            if g_airWait == 0 then ProcessAirRefresh() end
-        end
-    end)
 end
 
 ------------------------------------------------------------
@@ -264,12 +269,83 @@ local function LeaveRangeMode()
     end
 end
 
+-- Shared by "just selected" and "just moved". Returns true if range mode was entered.
+local function TryEnterRangeMode(unit)
+    if not unit or not IsLocalOwnedUnit(unit) then return false end
+    if IsAirUnit(unit) then return false end
+    if not Players[unit:GetOwner()]:IsTurnActive() then return false end
+    if not IsRangedUnit(unit) or not CanShowFor(unit) then return false end
+    if HasTargetInRange(unit) then
+        EnterRangeMode(unit)
+        return true
+    elseif DEBUG then
+        print("RangeDisplay: no target in range, staying in normal mode")
+    end
+    return false
+end
+
+------------------------------------------------------------
+-- Deferred work (one cheap per-frame update; does nothing when idle)
+------------------------------------------------------------
+local function ProcessMoveCheck()
+    local unit = UI.GetHeadSelectedUnit()
+    if not unit or IsAirUnit(unit) or not IsLocalOwnedUnit(unit) then return end
+
+    -- Still travelling along a multi-turn/multi-tile path? Wait for it to finish.
+    if unit.IsMoving and unit:IsMoving() then
+        g_moveWait = MOVE_SETTLE_DELAY
+        return
+    end
+
+    -- Don't hijack other modes (build, move-to, ranged mode we already set, etc.)
+    if UI.GetInterfaceMode() ~= SELECT_MODE then return end
+
+    g_trackedKey = UnitKey(unit)
+    TryEnterRangeMode(unit)
+end
+
+local HAVE_UPDATE = ContextPtr ~= nil and ContextPtr.SetUpdate ~= nil
+
+local function RequestAirRefresh(force, delay)
+    if force then g_airForce = true end
+    if HAVE_UPDATE then
+        if g_airWait < delay then g_airWait = delay end
+    else
+        ProcessAirRefresh()
+    end
+end
+
+-- Debounced: every new position pushes the check back, so it runs once after movement stops.
+local function RequestMoveCheck()
+    if HAVE_UPDATE then
+        g_moveWait = MOVE_SETTLE_DELAY
+    else
+        ProcessMoveCheck()
+    end
+end
+
+if HAVE_UPDATE then
+    ContextPtr:SetUpdate(function()
+        if g_airWait > 0 then
+            g_airWait = g_airWait - 1
+            if g_airWait == 0 then ProcessAirRefresh() end
+        end
+        if g_moveWait > 0 then
+            g_moveWait = g_moveWait - 1
+            if g_moveWait == 0 then ProcessMoveCheck() end
+        end
+    end)
+end
+
 ------------------------------------------------------------
 -- Events
 ------------------------------------------------------------
 Events.UnitSelectionChanged.Add(function(playerID, unitID, i, j, k, isSelected)
     g_airWait = 0
     g_airForce = false
+    g_moveWait = 0
+    g_trackedKey = nil
+    g_trackedSetUp = nil
     ClearAirRange(true)
     LeaveRangeMode()
     if not isSelected then return end
@@ -278,31 +354,64 @@ Events.UnitSelectionChanged.Add(function(playerID, unitID, i, j, k, isSelected)
     local unit = Players[playerID]:GetUnitByID(unitID)
     if not unit then return end
 
+    g_trackedKey = UnitKey(unit)
+    g_trackedSetUp = IsSetUp(unit)
+
     -- Aircraft: red circle + targets only, never ranged attack mode
     if IsAirUnit(unit) then
         RequestAirRefresh(true, AIR_SELECT_DELAY)
         return
     end
 
-    if not Players[playerID]:IsTurnActive() then return end
-    if not IsRangedUnit(unit) or not CanShowFor(unit) then return end
-
-    if HasTargetInRange(unit) then
-        EnterRangeMode(unit)
-    elseif DEBUG then
-        print("RangeDisplay: no target in range, staying in normal mode")
-    end
+    TryEnterRangeMode(unit)
 end)
 
--- Keep the aircraft display in sync (rebase, enemy moves into/out of range)
+-- Keep the aircraft display in sync (rebase, enemy moves into/out of range),
+-- and detect when a selected ranged unit has changed tile.
 Events.SerialEventUnitInfoDirty.Add(function()
     local unit = UI.GetHeadSelectedUnit()
     if IsAirUnit(unit) then
         RequestAirRefresh(not g_airShown, AIR_DIRTY_DELAY)
+        return
     elseif g_airShown then
         ClearAirRange(false)
     end
+
+    if not ENTER_AFTER_MOVE or not unit or not IsLocalOwnedUnit(unit) then return end
+
+    -- Cheap gate: a few getters, no map scan unless the unit actually changed tile.
+    local key = UnitKey(unit)
+    if key ~= g_trackedKey then
+        g_trackedKey = key
+        if IsRangedUnit(unit) then
+            RequestMoveCheck()
+        end
+    end
+
+    -- Siege set-up: react only when the state flips from not set up to set up.
+    if ENTER_AFTER_SETUP and unit.IsSetUpForRangedAttack then
+        local setUp = IsSetUp(unit)
+        if setUp ~= g_trackedSetUp then
+            g_trackedSetUp = setUp
+            if setUp and IsRangedUnit(unit) then
+                RequestMoveCheck()
+            end
+        end
+    end
 end)
+
+-- Fires when a unit's queued movement changes/finishes; makes the post-move
+-- check snappier. Guarded because not every build exposes this event.
+if ENTER_AFTER_MOVE and Events.UnitMoveQueueChanged then
+    Events.UnitMoveQueueChanged.Add(function(playerID, unitID, hasRemainingMoves)
+        if hasRemainingMoves then return end
+        if playerID ~= Game.GetActivePlayer() then return end
+        local sel = UI.GetHeadSelectedUnit()
+        if sel and sel:GetID() == unitID and IsRangedUnit(sel) and not IsAirUnit(sel) then
+            RequestMoveCheck()
+        end
+    end)
+end
 
 Events.InterfaceModeChanged.Add(function(oldMode, newMode)
     if newMode ~= RANGE_MODE then
