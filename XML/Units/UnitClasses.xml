@@ -162,6 +162,13 @@
 	<!--****************************************Land******************************-->
 
 	<UnitClasses>
+
+		<Row>
+			<Type>UNITCLASS_REFUGEE</Type>
+			<Description>TXT_KEY_UNIT_REFUGEE</Description>
+			<DefaultUnit>UNIT_REFUGEE</DefaultUnit>
+			<!--<MaxPlayerInstances>50</MaxPlayerInstances>-->
+		</Row>
 		
 		<!--******Militia******-->
 		<Row>

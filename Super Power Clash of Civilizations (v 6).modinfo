@@ -4032,7 +4032,10 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
 
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/AINukesStrike/AINukesStrike.lua</File>
     
-    
+    <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/AIRefugees/AIRefugees.lua</File>
+
+    <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/Greatest Cities (v 11)/Lua/UI/GreatestCityPopup.lua</File>
+    <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/Greatest Cities (v 11)/Lua/UI/GreatestCityPopup.xml</File>
     
   </Files>
   <Actions>
@@ -4728,6 +4731,16 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <EntryPoint type="InGameUIAddin" file="Modules/AutoCityProduction/AutoCityProduction.lua">
       <Name>AutoCityProduction</Name>
       <Description>Automate Production</Description>
+    </EntryPoint>  
+
+    <EntryPoint type="InGameUIAddin" file="Modules/AIRefugees/AIRefugees.lua">
+      <Name>AIRefugees</Name>
+      <Description>AI Refugees</Description>
+    </EntryPoint>  
+
+    <EntryPoint type="InGameUIAddin" file="Modules/Greatest Cities (v 11)/Lua/UI/GreatestCityPopup.lua">
+      <Name>GreatestCityPopup</Name>
+      <Description>Greatest City Popup</Description>
     </EntryPoint>  
 
 		

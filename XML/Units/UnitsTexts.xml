@@ -5902,6 +5902,14 @@
 				  [NEWLINE]The first country to build a project is granted a project unit.
 			</Text>
 		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_REFUGEE">
+			<Text>[ICON_WONDER] Refugee</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UNIT_HELP_REFUGEE">
+			<Text>[ICON_WONDER] Refugee's leave a city that has been under siege for at least two turns. Two citizens will immediately leave the city for the nearest safe city where they will join it.</Text>
+		</Row>
 		
 
 

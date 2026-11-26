@@ -33,6 +33,37 @@
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>UNIT_ATLAS_1</IconAtlas>	
 		</Row>
+						
+		<Row>
+			<Class>UNITCLASS_REFUGEE</Class>
+			<Type>UNIT_REFUGEE</Type>
+			<Cost>-1</Cost>
+			<Moves>2</Moves>
+			<Combat>20</Combat>
+			<BaseSightRange>1</BaseSightRange>
+			<!--<Capture>UNITCLASS_WORKER</Capture>-->
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH_EARLY_GAME_ONLY</CivilianAttackPriority>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_REFUGEE</Description>
+			<Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SETTLER_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SETTLER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_HELP_REFUGEE</Help>
+			<Requirements>TXT_KEY_NO_ACTION_SETTLER_SIZE_LIMIT_HARDCODED</Requirements>
+			<Food>false</Food>
+			<!-- <Unhappiness>200</Unhappiness>
+			-->
+			<Found>true</Found>
+			<CombatLimit>0</CombatLimit>
+			<UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+			<UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+			<UnitFlagAtlas>UNIT_FLAG_ITG_EXTRA_2_ATLAS</UnitFlagAtlas>
+	  		<UnitFlagIconOffset>11</UnitFlagIconOffset>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>	
+		</Row>
+		
 
 		<Row>
 			<Class>UNITCLASS_WORKER</Class>
