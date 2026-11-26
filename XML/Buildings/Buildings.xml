@@ -666,7 +666,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
-			<Defense>1800</Defense>
+			<Defense>1500</Defense>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 			<HurryCostModifier>200</HurryCostModifier>
 			<NeverCapture>true</NeverCapture>
@@ -803,7 +803,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
-			<Defense>1200</Defense>
+			<Defense>1500</Defense>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 			<HurryCostModifier>200</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
@@ -825,7 +825,7 @@
 			<MinAreaSize>-1</MinAreaSize>
 			<ConquestProb>66</ConquestProb>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
-			<Defense>1200</Defense>
+			<Defense>1500</Defense>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 			<HurryCostModifier>0</HurryCostModifier>
 			<IconAtlas>CIV_COLOR_ATLAS_FW_2</IconAtlas>
@@ -4007,7 +4007,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_WALLS_OF_BABYLON</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
-			<Defense>1500</Defense>
+			<Defense>1000</Defense>
 			<ConquestProb>100</ConquestProb>
 			<ExtraCityHitPoints>50</ExtraCityHitPoints>
 			<CityWall>true</CityWall>
@@ -4031,7 +4031,7 @@
 			<ArtDefineTag>CASTLE</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
-			<Defense>700</Defense>
+			<Defense>500</Defense>
 			<ConquestProb>100</ConquestProb>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 			<HurryCostModifier>25</HurryCostModifier>
@@ -4058,7 +4058,7 @@
 			<ArtDefineTag>CASTLE</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
 			<AllowsRangeStrike>true</AllowsRangeStrike>
-			<Defense>2500</Defense>
+			<Defense>1500</Defense>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 			<HurryCostModifier>25</HurryCostModifier>
 			<ArtInfoCulturalVariation>true</ArtInfoCulturalVariation>
@@ -4124,7 +4124,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>2</PortraitIndex>
 			<MutuallyExclusiveGroup>13</MutuallyExclusiveGroup>
-			<Defense>500</Defense>
+			<Defense>1000</Defense>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 		</Row>
 		<Row>
@@ -4145,7 +4145,7 @@
 			<NeverCapture>true</NeverCapture>
 			<PortraitIndex>31</PortraitIndex>
 			<MutuallyExclusiveGroup>13</MutuallyExclusiveGroup>
-			<Defense>500</Defense>
+			<Defense>1000</Defense>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 		</Row>
 	
@@ -4183,7 +4183,7 @@
 			<Strategy>TXT_KEY_SP_CITY_MILITARY_BUILDINGS_STRATEGY</Strategy>
 			<ArtDefineTag>ART_DEF_BUILDING_MILITARY_ACADEMY</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
-			<Defense>700</Defense>
+			<Defense>500</Defense>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 			<HurryCostModifier>50</HurryCostModifier>
 			<IconAtlas>BW_ATLAS_1</IconAtlas>
@@ -4202,7 +4202,7 @@
 			<Strategy>TXT_KEY_SP_CITY_MILITARY_BUILDINGS_STRATEGY</Strategy>
 			<ArtDefineTag>MILITARY BASE</ArtDefineTag>
 			<MinAreaSize>-1</MinAreaSize>
-			<Defense>1200</Defense>
+			<Defense>1000</Defense>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 			<AirModifier>4</AirModifier>
 			<Airlift>true</Airlift>
@@ -4254,7 +4254,7 @@
 			<IconAtlas>SPBuildings_ATLAS</IconAtlas>
 			<PortraitIndex>1</PortraitIndex>
 			<NeverCapture>false</NeverCapture>
-			<Defense>1200</Defense>
+			<Defense>1000</Defense>
 			<ExtraCityHitPoints>25</ExtraCityHitPoints>
 			<Water>true</Water>
 			<MinAreaSize>30</MinAreaSize>
