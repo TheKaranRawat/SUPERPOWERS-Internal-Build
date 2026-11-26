@@ -77,7 +77,9 @@ function UpdateCityPortrait( pCity )
 	Controls.UnitBackColor:SetColor( flagColor );
 	Controls.UnitIcon:SetColor( iconColor );
 
-	IconHookup( 0, g_iPortraitSize, "ENEMY_CITY_ATLAS", Controls.UnitPortrait );				
+	IconHookup( 0, 128, "ENEMY_CITY_ATLAS", Controls.UnitPortrait );	
+	Controls.PortraitBG:SetHide(true);
+				
 end
 
 local function GetUnitDisplayName(unit)
@@ -91,11 +93,13 @@ end
 -- Refresh Unit portrait and name
 --------------------------------------------------------------------------------
 function UpdateUnitPortrait( pUnit )
-
+	
 	if pUnit == nil then
 		return;
 	end
 
+	Controls.PortraitBG:SetHide(false);
+	
 	--local name = pUnit:GetName();
 	local name = GetUnitDisplayName(pUnit)
 	SetName(name);
@@ -124,6 +128,7 @@ function UpdateUnitPortrait( pUnit )
 	end				
 	Controls.UnitPortrait:SetTexture(textureSheet);
 	Controls.UnitPortrait:SetTextureOffset(textureOffset);
+	
 end
 
 

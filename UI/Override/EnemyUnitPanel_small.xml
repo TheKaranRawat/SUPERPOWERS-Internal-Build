@@ -21,7 +21,7 @@
     <!-- Stacks for Combat Result Info -->
     <Grid Anchor="L,B" Offset="109,210" Size="520,190" Padding="0,26" Style="Grid9FrameBlack" Hidden="0" ID="DetailsGrid" >
 
-        <Image Anchor="R,T" Offset="-80,0" Texture="Assets/UI/Art/Icons/LeaderPortraits1024Frame.dds" Size="128.128" Hidden="0" >
+        <Image Anchor="R,T" Offset="-80,0" Texture="Blank.dds" Size="128.128" Hidden="0" >
             <!-- <Image Anchor="C,C" Offset="0,0" Size="128,128" Texture="Assets/UI/Art/Icons/LeaderPortraits1024Frame.dds" Hidden="0"/> 
             256x256Frame.dds    -->
 
@@ -64,7 +64,7 @@
                 </Label>
             </Stack>
 
-            <Stack Anchor="R,T" AnchorSide="o,i" Offset="9,24" Padding="6" StackGrowth="Bottom" ID="TheirCombatResultsStack" >
+            <Stack Anchor="R,T" AnchorSide="o,i" Offset="23,24" Padding="6" StackGrowth="Bottom" ID="TheirCombatResultsStack" >
                 <Label ID="TheirDamage" String="TXT_KEY_EUPANEL_UNIT_THEIR_APPROXIMATE_DAMAGE" Anchor="L,T" Offset="40,0" Font="TwCenMT16">
                     <Label ID="TheirDamageValue" AnchorSide="O.I" Anchor="L,C" Offset="6,0" Font="TwCenMT16"/>
                 </Label>
