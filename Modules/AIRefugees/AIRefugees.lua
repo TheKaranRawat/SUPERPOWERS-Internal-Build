@@ -46,7 +46,7 @@ local CFG = {
     POP_LOSS                    = 2,     -- population removed from attacked city
     POP_GAIN                    = 2,     -- population added to destination city
     SPAWN_MAX_RADIUS            = 3,     -- how far from the city the unit may appear
-    ARRIVAL_DISTANCE            = 1,     -- "within one tile" of the destination city
+    ARRIVAL_DISTANCE            = 2,     -- "within one tile" of the destination city
     COUNT_BARBARIANS            = false, -- do barbarian attacks count?
     REQUIRE_SAME_ATTACKER       = false, -- must the same civ attack on both turns?
     ALLOW_ORIGIN_AS_DESTINATION = false, -- if no other city exists, may they return home?
@@ -56,7 +56,7 @@ local CFG = {
     DEBUG                       = false, -- print diagnostics to Lua.log
     NAME_SUFFIX                 = " Refugees",
     REQUIRE_SAME_LANDMASS            = true, -- destination city must be on the same landmass as the besieged city
-    REQUIRE_SAME_LANDMASS_AS_CAPITAL = true, -- besieged city must be on the same landmass as its capital
+    REQUIRE_SAME_LANDMASS_AS_CAPITAL = false, -- besieged city must be on the same landmass as its capital
     MAX_DESTINATION_DISTANCE         = 12,   -- max hex distance to the destination city (nil = no limit)
     TRACKER_PRUNE_INTERVAL           = 25,   -- turns between cleanups of stale attack records
 }
