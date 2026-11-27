@@ -5,31 +5,31 @@
 	<!--****************************************Unit Combatinfo Texts*************************************-->
 	<Language_en_US>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_HELICOPTER">
-			<Text>Land Hit-and-run Units</Text>
+			<Text>Recon</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_SUBMARINE">
-			<Text>Naval Hit-and-run Units</Text>
+			<Text>Interdiction</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_GUN">
-			<Text>Special Forces Units</Text>
+			<Text>Special</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_MELEE">
-			<Text>Infantry Units</Text>
+			<Text>Infantry</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_RECON">
-			<Text>Militia Units</Text>
+			<Text>Militia</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_SIEGE">
-			<Text>Land Ranged Units</Text>
+			<Text>Ranged</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_BOMBER">
-			<Text>Land Special Units</Text>
+			<Text>Special</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_ARCHER">
-			<Text>Aircraft Units</Text>
+			<Text>Aircraft</Text>
 		</Replace>
 		<Replace Tag="TXT_KEY_UNITCOMBAT_FIGHTER">
-			<Text>Aircraft Units</Text>
+			<Text>Aircraft</Text>
 		</Replace>
 
 		<Replace Tag="TXT_KEY_UNIT_WORKER">
@@ -4180,23 +4180,18 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_MILITIA_COMBAT_HELP">
 			<Text>
-				Land Militia Unit, very cheap Land Unit for City Garrison or Guerrilla Warfare, also serve as a Medic team or Cannon Fodder. 
-				[NEWLINE][ICON_BULLET]Can be disarmed to become a Worker.
-				[NEWLINE][ICON_BULLET]This unit Heals 15 Additional HP per turn when inside [COLOR_POSITIVE_TEXT]Friendly Territory[ENDCOLOR].
-				[NEWLINE][ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when fighting inside [COLOR_POSITIVE_TEXT]Friendly Territory[ENDCOLOR].
-				[NEWLINE][ICON_BULLET]+50% [ICON_STRENGTH] Combat Strength when attacking [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].
-				[NEWLINE][ICON_BULLET]-25% [ICON_STRENGTH] Combat Strength when fighting outside 		[COLOR_NEGATIVE_TEXT]Friendly Territory[ENDCOLOR].
-				[NEWLINE][ICON_BULLET]Weak vs [COLOR_NEGATIVE_TEXT]Regular Army[ENDCOLOR] and [COLOR_NEGATIVE_TEXT]Special Forces[ENDCOLOR].</Text>
+				Militia Units serves as an auxiliary force to patrol your internal borders
+				[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]+25%[ENDCOLOR] [ICON_STRENGTH] Strength inside territory
+				[NEWLINE][ICON_BULLET] [COLOR_NEGATIVE_TEXT]-25%[ENDCOLOR] [ICON_STRENGTH] Strength outside territory
+				[NEWLINE][ICON_BULLET]Weak vs [COLOR_NEGATIVE_TEXT]Regular Army[ENDCOLOR]</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_PROMOTION_MILITIA_NAVAL_HELP">
 			<Text>
-				Naval Militia Unit, very cheap Naval Unit for Coastal Defense and Patrol, also serve as a Naval Supply team or Cannon Fodder.
-				[NEWLINE][ICON_BULLET]This unit Heals 15 Additional HP per turn when inside [COLOR_POSITIVE_TEXT]Friendly Territory[ENDCOLOR].
-				[NEWLINE][ICON_BULLET]+25% [ICON_STRENGTH] Combat Strength when fighting inside [COLOR_POSITIVE_TEXT]Friendly Territory[ENDCOLOR].
-				[NEWLINE][ICON_BULLET]-25% [ICON_STRENGTH] Combat Strength when fighting outside [COLOR_NEGATIVE_TEXT]Friendly Territory[ENDCOLOR].
-				[NEWLINE][ICON_BULLET]Weak vs [COLOR_NEGATIVE_TEXT]Regular Army[ENDCOLOR] and [COLOR_NEGATIVE_TEXT]Special Forces[ENDCOLOR].
-
+				Militia Units serves as an auxiliary force to patrol your internal borders
+				[NEWLINE][ICON_BULLET][COLOR_POSITIVE_TEXT]+25%[ENDCOLOR] [ICON_STRENGTH] Strength inside territory
+				[NEWLINE][ICON_BULLET][COLOR_NEGATIVE_TEXT]-25%[ENDCOLOR] [ICON_STRENGTH] Strength outside territory
+				[NEWLINE][ICON_BULLET]Weak vs [COLOR_NEGATIVE_TEXT]Regular Army[ENDCOLOR]
 			</Text>
 		</Row>
 

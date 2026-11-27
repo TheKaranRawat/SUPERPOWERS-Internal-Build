@@ -1227,7 +1227,7 @@
 				 [NEWLINE][ICON_BULLET][COLOR_YELLOW]Tank Units[ENDCOLOR] 
 				 [NEWLINE][ICON_BULLET][COLOR_YELLOW]Modern Siege Units(Howitzer - Mobile Artillery)[ENDCOLOR]
 				 [NEWLINE][ICON_BULLET][COLOR_YELLOW]Heavy Ranged Units (AOE Weapons)[ENDCOLOR] 
-				 [NEWLINE][NEWLINE]City must have an Armory.[NEWLINE][NEWLINE]Requires 1 [ICON_RES_ELECTRICITY] Electricity." />
+				 [NEWLINE][NEWLINE]City must have an Armory.[NEWLINE]" />
 		</Update>
 		<Update>
 			<Where Tag="TXT_KEY_BUILDING_MILITARY_BASE_HELP" />
