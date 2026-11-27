@@ -85,6 +85,469 @@ D- trade gold reduction
 - orbital bombardment fix
 -----------------------------------------------------------------------------------------------
 
+local EVENTS = {
+    --------------------------------------------------
+    -- YEAR
+    --[[ disabled until textures are set 
+    {
+      id = "ZERO_AD",
+      kind = "YEAR", year = 0,
+      icon = "EB_ZeroAD.dds",
+      title = "The Dawn of a New Age",
+      desc  = "The world has reached 0 AD." },
+    
+    {
+      id = "2000_AD",
+      kind = "YEAR", year = 2000,
+      icon = "EB_ZeroAD.dds",
+      title = "A New Millenium",
+      desc  = "The world has reached 2000 AD." },
+    ]]--
+
+    --------------------------------------------------
+    -- TECHS
+    -- TECH_THE_WHEEL TECH_IRON_WORKING 
+    --  TECH_CURRENCY  TECH_HORSEBACK_RIDING    
+    --  TECH_STEEL TECH_ASTRONOMY  TECH_EDUCATION   
+    --  TECH_SCIENTIFIC_THEORY TECH_GUNPOWDER   TECH_ECONOMICS
+    -- TECH_STEAM_POWER TECH_INDUSTRIALIZATION  TECH_RAILROAD     
+    -- TECH_FLIGHT  TECH_COMBUSTION TECH_DYNAMITE
+    --  TECH_ATOMIC_THEORY  TECH_ELECTRONICS    TECH_REFRIGERATION
+    --  TECH_NUCLEAR_FISSION    TECH_COMPUTERS  TECH_TELECOM
+    --  TECH_INTERNET   TECH_LASERS TECH_NUCLEAR_FUSION TECH_GLOBALIZATION
+    --  TECH_SPACE_TECHNOLOGY   TECH_INTERSTELLAR_TRAVEL    TECH_CLONING    TECH_ORBITAL_DEV    TECH_IMPLANTS
+    --  TECH_ARCOLOGIES TECH_AUTONOMOUS_SYSTEMS TECH_ARTIFICIAL_INTELLIGENCE    TECH_HYPERSTRUCTURES    TECH_SPACE_COLONIZATION
+    --  
+    { id = "TECH_THE_WHEEL",
+      kind = "TECH", key = "TECH_THE_WHEEL",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "A New Shape?",
+      desc  = "Citizens in {CITY} have begun the use of strange objects to ease their burdens. Our people suggest this may need to be reinvented later." },
+
+    { id = "TECH_IRON_WORKING",
+      kind = "TECH", key = "TECH_IRON_WORKING",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_CURRENCY",
+      kind = "TECH", key = "TECH_CURRENCY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_HORSEBACK_RIDING",
+      kind = "TECH", key = "TECH_HORSEBACK_RIDING",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_STEEL",
+      kind = "TECH", key = "TECH_STEEL",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ASTRONOMY",
+      kind = "TECH", key = "TECH_ASTRONOMY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_EDUCATION",
+      kind = "TECH", key = "TECH_EDUCATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_SCIENTIFIC_THEORY",
+      kind = "TECH", key = "TECH_SCIENTIFIC_THEORY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_GUNPOWDER",
+      kind = "TECH", key = "TECH_GUNPOWDER",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ECONOMICS",
+      kind = "TECH", key = "TECH_ECONOMICS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_STEAM_POWER",
+      kind = "TECH", key = "TECH_STEAM_POWER",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_INDUSTRIALIZATION",
+      kind = "TECH", key = "TECH_INDUSTRIALIZATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_RAILROAD",
+      kind = "TECH", key = "TECH_RAILROAD",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_FLIGHT",
+      kind = "TECH", key = "TECH_FLIGHT",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_COMBUSTION",
+      kind = "TECH", key = "TECH_COMBUSTION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_DYNAMITE",
+      kind = "TECH", key = "TECH_DYNAMITE",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ATOMIC_THEORY",
+      kind = "TECH", key = "TECH_ATOMIC_THEORY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ELECTRONICS",
+      kind = "TECH", key = "TECH_ELECTRONICS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_REFRIGERATION",
+      kind = "TECH", key = "TECH_REFRIGERATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_NUCLEAR_FISSION",
+      kind = "TECH", key = "TECH_NUCLEAR_FISSION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_COMPUTERS",
+      kind = "TECH", key = "TECH_COMPUTERS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_TELECOM",
+      kind = "TECH", key = "TECH_TELECOM",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_INTERNET",
+      kind = "TECH", key = "TECH_INTERNET",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_LASERS",
+      kind = "TECH", key = "TECH_LASERS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_NUCLEAR_FUSION",
+      kind = "TECH", key = "TECH_NUCLEAR_FUSION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_GLOBALIZATION",
+      kind = "TECH", key = "TECH_GLOBALIZATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_SPACE_TECHNOLOGY",
+      kind = "TECH", key = "TECH_SPACE_TECHNOLOGY",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_INTERSTELLAR_TRAVEL",
+      kind = "TECH", key = "TECH_INTERSTELLAR_TRAVEL",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_IMPLANTS",
+      kind = "TECH", key = "TECH_IMPLANTS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_AUTONOMOUS_SYSTEMS",
+      kind = "TECH", key = "TECH_AUTONOMOUS_SYSTEMS",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_ARTIFICIAL_INTELLIGENCE",
+      kind = "TECH", key = "TECH_ARTIFICIAL_INTELLIGENCE",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+
+    { id = "TECH_SPACE_COLONIZATION",
+      kind = "TECH", key = "TECH_SPACE_COLONIZATION",       -- custom .dds image
+      icon = "EB_Philosophy.dds",
+      title = "Philosophy Discovered",
+      desc  = "{1_Civ} is the first to master philosophy." },
+      
+
+    --------------------------------------------------
+    -- UNITS
+    --  UNIT_SPARTAN300    UNIT_SWORDSMAN
+    --  UNIT_TEUTONIC_KNIGHT    
+    --  UNIT_CARAVEL    UNIT_TREBUCHET  UNIT_KNIGHT UNIT_CROSSBOWMAN
+    --  UNIT_SHIP_OF_THE_LINE   UNIT_CULVERIN   UNIT_MUSKETMAN  UNIT_VOLLEY_GUN
+    --  UNIT_DREADNOUGHT    UNIT_RIFLEMAN   UNIT_GATLINGGUN
+    --  UNIT_ARTILLERY  UNIT_WWI_TANK   UNIT_TRIPLANE   UNIT_PARATROOPER
+    --  UNIT_BATTLESHIP UNIT_CARRIER    UNIT_SUBMARINE  UNIT_BOMBER 
+    -- UNIT_NUCLEAR_CARRIER UNIT_HELICOPTER_GUNSHIP UNIT_ATOMIC_BOMB    UNIT_SSBN   UNIT_MECHANIZED_INFANTRY
+    --  UNIT_STEALTH_ATTACK_AIRCRAFT    UNIT_FW_MECH_ARTILLERY  UNIT_FW_BATTLESUIT  UNIT_FW_ROBOT_INFANTRY  UNIT_ICBM_MISSILE
+    { id = "UNIT_SPARTAN300",
+      kind = "UNIT", key = "UNIT_SPARTAN300",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_SWORDSMAN",
+      kind = "UNIT", key = "UNIT_SWORDSMAN",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_TEUTONIC_KNIGHT",
+      kind = "UNIT", key = "UNIT_TEUTONIC_KNIGHT",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_CARAVEL",
+      kind = "UNIT", key = "UNIT_CARAVEL",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_TREBUCHET",
+      kind = "UNIT", key = "UNIT_TREBUCHET",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_KNIGHT",
+      kind = "UNIT", key = "UNIT_KNIGHT",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_CROSSBOWMAN",
+      kind = "UNIT", key = "UNIT_CROSSBOWMAN",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_SHIP_OF_THE_LINE",
+      kind = "UNIT", key = "UNIT_SHIP_OF_THE_LINE",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_CULVERIN",
+      kind = "UNIT", key = "UNIT_CULVERIN",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_MUSKETMAN",
+      kind = "UNIT", key = "UNIT_MUSKETMAN",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_VOLLEY_GUN",
+      kind = "UNIT", key = "UNIT_VOLLEY_GUN",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_DREADNOUGHT",
+      kind = "UNIT", key = "UNIT_DREADNOUGHT",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_RIFLEMAN",
+      kind = "UNIT", key = "UNIT_RIFLEMAN",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_GATLINGGUN",
+      kind = "UNIT", key = "UNIT_GATLINGGUN",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_ARTILLERY",
+      kind = "UNIT", key = "UNIT_ARTILLERY",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_WWI_TANK",
+      kind = "UNIT", key = "UNIT_WWI_TANK",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_TRIPLANE",
+      kind = "UNIT", key = "UNIT_TRIPLANE",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_PARATROOPER",
+      kind = "UNIT", key = "UNIT_PARATROOPER",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_BATTLESHIP",
+      kind = "UNIT", key = "UNIT_BATTLESHIP",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_CARRIER",
+      kind = "UNIT", key = "UNIT_CARRIER",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_SUBMARINE",
+      kind = "UNIT", key = "UNIT_SUBMARINE",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_BOMBER",
+      kind = "UNIT", key = "UNIT_BOMBER",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_NUCLEAR_CARRIER",
+      kind = "UNIT", key = "UNIT_NUCLEAR_CARRIER",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_HELICOPTER_GUNSHIP",
+      kind = "UNIT", key = "UNIT_HELICOPTER_GUNSHIP",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_ATOMIC_BOMB",
+      kind = "UNIT", key = "UNIT_ATOMIC_BOMB",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_SSBN",
+      kind = "UNIT", key = "UNIT_SSBN",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_MECHANIZED_INFANTRY",
+      kind = "UNIT", key = "UNIT_MECHANIZED_INFANTRY",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_STEALTH_ATTACK_AIRCRAFT",
+      kind = "UNIT", key = "UNIT_STEALTH_ATTACK_AIRCRAFT",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+
+    { id = "UNIT_FW_MECH_ARTILLERY",
+      kind = "UNIT", key = "UNIT_FW_MECH_ARTILLERY",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_FW_BATTLESUIT",
+      kind = "UNIT", key = "UNIT_FW_BATTLESUIT",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    { id = "UNIT_FW_ROBOT_INFANTRY",
+      kind = "UNIT", key = "UNIT_FW_ROBOT_INFANTRY",           -- shows the Knight's own icon
+      title = "Knights Take the Field",
+      desc  = "{1_Civ} fields the first armored knights." },
+
+    { id = "UNIT_ICBM_MISSILE",
+      kind = "UNIT", key = "UNIT_ICBM_MISSILE",           -- shows the Knight's own icon
+      title = "Floating Fortresses Sighted",
+      desc  = "{1_Civ} have begun construction of a new class of naval behemoths. According to reports sailors nationwide are refusing to report for duty." },
+    
+    --------------------------------------------------
+    -- WONDERS  
+    --  BUILDING_VOYAGERONE BUILDING_UNITED_NATIONS_HQ  BUILDING_LARGE_HADRON_COLLIDER  BUILDING_COLOSSEUM  BUILDING_SISTINE_CHAPEL
+    --  BUILDING_PYRAMID    BUILDING_STOCK_EXCHANGE	BUILDING_UNIVERSITY	BUILDING_OIL_REFINERY	BUILDING_SPACESHIP_FACTORY	BUILDING_FACTORY
+    { id = "BUILDING_PYRAMID",
+      kind = "BUILDING", key = "BUILDING_PYRAMID", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_VOYAGERONE",
+      kind = "BUILDING", key = "BUILDING_VOYAGERONE", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_UNITED_NATIONS_HQ",
+      kind = "BUILDING", key = "BUILDING_UNITED_NATIONS_HQ", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_LARGE_HADRON_COLLIDER",
+      kind = "BUILDING", key = "BUILDING_LARGE_HADRON_COLLIDER", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_COLOSSEUM",
+      kind = "BUILDING", key = "BUILDING_COLOSSEUM", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_SISTINE_CHAPEL",
+      kind = "BUILDING", key = "BUILDING_SISTINE_CHAPEL", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_AIRPORT",
+      kind = "BUILDING", key = "BUILDING_AIRPORT", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_STOCK_EXCHANGE",
+      kind = "BUILDING", key = "BUILDING_STOCK_EXCHANGE", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_UNIVERSITY",
+      kind = "BUILDING", key = "BUILDING_UNIVERSITY", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_OIL_REFINERY",
+      kind = "BUILDING", key = "BUILDING_OIL_REFINERY", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_SPACESHIP_FACTORY",
+      kind = "BUILDING", key = "BUILDING_SPACESHIP_FACTORY", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+    { id = "BUILDING_FACTORY",
+      kind = "BUILDING", key = "BUILDING_FACTORY", -- shows the Pyramids' own icon
+      title = "The Pyramids Are Complete",
+      desc  = "{1_Civ} has raised the Pyramids in {CITY}." },
+
+}
+
 CS DEFENCE BUILDING
 	UNIQUE DEFENCE BUILDINGS FOR CS
 	NEVER LOST ON CAPTURE
@@ -104,9 +567,44 @@ BUILDING REPLACEMENT FOR CS
 	
 Unit_ResourceQuantityRequirements
 
-Units-------
-metal gear rex
 
+	ICON_FONT_TEXTURE_ITG_AUTHORITY
+	
+	ICON_WONDER	ICON_SHIELD		ICON_SWORD
+	ICON_EYE	ICON_FIGHTER	ICON_EAGLE
+	ICON_NUKE	ICON_ANCHORS	ICON_ARTILLERY
+	ICON_RECON	ICON_DIVIDE		ICON_ANCHOR		ICON_EYE
+	ICON_LAWS	ICON_FORT	ICON_CROSSED	ICON_CAVALRY	
+	ICON_INFANTRY	ICON_RANGED
+	
+[53531.187] ReplayViewer: ReplayDataSet:	1	REPLAYDATASET_SCORE	TXT_KEY_REPLAY_VIEWER_GRAPHBY_SCORE
+[53531.187] ReplayViewer: ReplayDataSet:	2	REPLAYDATASET_PRODUCTIONPERTURN	TXT_KEY_REPLAY_DATA_PRODUCTIONPERTURN
+[53531.187] ReplayViewer: ReplayDataSet:	3	REPLAYDATASET_TOTALGOLD	TXT_KEY_REPLAY_DATA_TOTALGOLD
+[53531.187] ReplayViewer: ReplayDataSet:	4	REPLAYDATASET_GOLDPERTURN	TXT_KEY_REPLAY_DATA_GOLDPERTURN
+[53531.187] ReplayViewer: ReplayDataSet:	5	REPLAYDATASET_CITYCOUNT	TXT_KEY_REPLAY_DATA_CITYCOUNT
+[53531.187] ReplayViewer: ReplayDataSet:	6	REPLAYDATASET_TECHSKNOWN	TXT_KEY_REPLAY_DATA_TECHSKNOWN
+[53531.187] ReplayViewer: ReplayDataSet:	7	REPLAYDATASET_SCIENCEPERTURN	TXT_KEY_REPLAY_DATA_SCIENCEPERTURN
+[53531.187] ReplayViewer: ReplayDataSet:	8	REPLAYDATASET_TOTALCULTURE	TXT_KEY_REPLAY_DATA_TOTALCULTURE
+[53531.187] ReplayViewer: ReplayDataSet:	9	REPLAYDATASET_CULTUREPERTURN	TXT_KEY_REPLAY_DATA_CULTUREPERTURN
+[53531.187] ReplayViewer: ReplayDataSet:	10	REPLAYDATASET_EXCESSHAPINESS	TXT_KEY_REPLAY_DATA_EXCESSHAPPINESS
+[53531.187] ReplayViewer: ReplayDataSet:	11	REPLAYDATASET_HAPPINESS	TXT_KEY_REPLAY_DATA_HAPPINESS
+[53531.187] ReplayViewer: ReplayDataSet:	12	REPLAYDATASET_UNHAPPINESS	TXT_KEY_REPLAY_DATA_UNHAPPINESS
+[53531.187] ReplayViewer: ReplayDataSet:	13	REPLAYDATASET_GOLDENAGETURNS	TXT_KEY_REPLAY_DATA_GOLDAGETURNS
+[53531.187] ReplayViewer: ReplayDataSet:	14	REPLAYDATASET_POPULATION	TXT_KEY_REPLAY_DATA_TOTALPOPULATION
+[53531.187] ReplayViewer: ReplayDataSet:	15	REPLAYDATASET_FOODPERTURN	TXT_KEY_REPLAY_DATA_FOODPERTURN
+[53531.187] ReplayViewer: ReplayDataSet:	16	REPLAYDATASET_TOTALLAND	TXT_KEY_REPLAY_DATA_TOTALLAND
+[53531.187] ReplayViewer: ReplayDataSet:	17	REPLAYDATASET_GPTCITYCONNECTIONS	TXT_KEY_REPLAY_DATA_GPTCITYCONNECTIONS
+[53531.187] ReplayViewer: ReplayDataSet:	18	REPLAYDATASET_GPTDEALS	TXT_KEY_REPLAY_DATA_GPTDEALS
+[53531.187] ReplayViewer: ReplayDataSet:	19	REPLAYDATASET_UNITMAINTENANCE	TXT_KEY_REPLAY_DATA_UNITMAINTENANCE
+[53531.187] ReplayViewer: ReplayDataSet:	20	REPLAYDATASET_BUILDINGMAINTENANCE	TXT_KEY_REPLAY_DATA_BUILDINGMAINTENANCE
+[53531.187] ReplayViewer: ReplayDataSet:	21	REPLAYDATASET_IMPROVEMENTMAINTENANCE	TXT_KEY_REPLAY_DATA_IMPROVEMENTMAINTENANCE
+[53531.187] ReplayViewer: ReplayDataSet:	22	REPLAYDATASET_NUMBEROFPOLICIES	TXT_KEY_REPLAY_DATA_NUMBEROFPOLICIES
+[53531.187] ReplayViewer: ReplayDataSet:	23	REPLAYDATASET_NUMBEROFWORKERS	TXT_KEY_REPLAY_DATA_NUMBEROFWORKERS
+[53531.187] ReplayViewer: ReplayDataSet:	24	REPLAYDATASET_IMPROVEDTILES	TXT_KEY_REPLAY_DATA_IMPROVEDTILES
+[53531.187] ReplayViewer: ReplayDataSet:	25	REPLAYDATASET_WORKEDTILES	TXT_KEY_REPLAY_DATA_WORKEDTILES
+[53531.187] ReplayViewer: ReplayDataSet:	26	REPLAYDATASET_MILITARYMIGHT	TXT_KEY_REPLAY_DATA_MILITARYMIGHT
+	
+-------------------------------------------
 
 weaken defences
 simplify scripts
@@ -142,9 +640,9 @@ SHOW SUPPLY ON TOPBAR
 REMOVE MILITIA UNITS
 	RELIGIOUS UNITS
 	CITYVIEW WONDER BAR GLITCH
-REDUCE CITY DEFENCE/STRONGHOLD
-REMOVE WORK BOATS/GALLEY/MILITIA
-REMOVE POTTER/PUBLIC BATHS
+	REDUCE CITY DEFENCE/STRONGHOLD
+	REMOVE WORK BOATS/GALLEY/MILITIA
+	REMOVE POTTER/PUBLIC BATHS
 <FreeStartEra> FOR ANCIENT BUILDINGS
 disable create forest
 DESTROYER DEBUFF ATTACKING CITIES
@@ -158,33 +656,6 @@ disable workers from building on water
 remove all militia
 remove 1 pop for every unit built
 
-icon types
-	militia			fort			ICON_SHIELD		ICON_SWORD
-	infantry		helmet			
-	ranged			archery target
-	hit and run		sword
-	cavalry			horse
-	siege		 	cannon
-	
-	naval melee
-	naval hit and run
-	naval ranged
-	
-	air fighter
-	air bomber
-		
-	nuke			ICON_NUKE
-	special forces	ICON_SHIELD
-	
-	ICON_FONT_TEXTURE_ITG_AUTHORITY
-	
-	ICON_WONDER	ICON_SHIELD		ICON_SWORD
-	ICON_EYE	ICON_FIGHTER	ICON_EAGLE
-	ICON_NUKE	ICON_ANCHORS	ICON_ARTILLERY
-	ICON_RECON	ICON_DIVIDE		ICON_ANCHOR		ICON_EYE
-	ICON_LAWS	ICON_FORT	ICON_CROSSED	ICON_CAVALRY	
-	ICON_INFANTRY	ICON_RANGED
-	
 DISABLE MILITIA	
 modern unit icons
 dDISABLE UCAV/HARD LAUNCHER/super hacker/tactical nuke
@@ -232,36 +703,183 @@ stuck on adopt policy
 supply text description
 2351 city refresh
 dynamic civ names
-uiMsg == 523
+cancel last mission fix
+
 
 tech era text icons
 tooltip font enlarge for title
-other processes wrap
+	other processes wrap
 free buildings for new era automatic
-automate all workers
-build flax everywhere
-militia units disable
-display unit count/supply/manpower on civ leader screens
+	automate all workers
+	build flax everywhere
+	militia units disable
+	display unit count/supply/manpower on civ leader screens
 	ten turn exploration era
-prevent AI from attacking city states
+	prevent AI from attacking city states
+	
+	right click exit
+	golden age
+	leader trade deal
+	
+fix religion icon: pohankentenna	tlateomatili
+restore small icon religion
+	fix revolts spawning
+	disable CS military
+	remove CG
+fix policies
 
+--- test mp
 
+fix diplomacy not opening after deal sent
+	fix other player city banner ui
+notification if turn waiting
+trade limit
+	right click close: CS UI/ tech screen/wonder screen/new era
+increase army costs
+	hide has grown notification
+war citystate ui icon not drawing
+	great general generation reduiced
+adjust tooltip
+	banner issue
+	popup 0ad
+	hide fire from city icon
+		ranged unit firing range
+see multiplayer friend stats
+bug: cities not auto attacking/puppet/city screen desync when next turn clicked
+news: defensive pact/declaration of friendship/trade route plundered and by who
+tech from trade increase per tech
+by default chat closed
+reduce great people esp scientist
+militia build roads
+roads connect to enemy cities
+AI not building wonders
+hide tourism icon topbar
+hide topbar golden accents
+escort siege units
+city attack notification hide
+alert from mouse button
+increase AI production speed difficulty
+AI stats show manpower
+AI not making religions/ speed 5 / small / 3 can be founded
+cities automate
+nerf siege weapons
+give ai free units during war depending on war state
+	right click buy faith buildings
+	desync - city screen/ closed borders
+	highlight tile
+group move icon
+	auto road connect to allied cities or friend cities
+	nuclear weapons UI
+
+	ranged unit target mode should not be enabled if no enemies are nearby
+	social policy popup behind screen
+	military size and might comparison in supply tooltip
+	launch graph when clicking topbar buttons
+	give enemy unit buff promotions
+	city state icons bugged in war screen
+	Units that can found a city take their religion with them dll
+		give AI free gold building
+	hide resource icons after they've been improved
+hide yield icon option
+brazilian soccer player super hacker icon
+	area 51 icon bugged tech
+increase tech screen display length
+	balance satellite tech
+storm trooper integrated defense
+xcom head/integrated defense
+	manpower bonus ai
+AI SSBN NUKES
+fix loading screen size
+build polder everywhere/coastal except hills
+auto build canals
+create puppet popup not coming up
+	alert when launching nukes
+	cs gift units from anywhere
+	are you sure you want to adopt policy
+	IF NOT AWARE THEN SLEEP
+religion overview/economic overview/civilopedia sliding
+icon for unknown city
+	automate
+	
+	
+reduce trade routes
+reduce trade gold
+	FIX TOP CITIES BRACKETS #1
+tsar bomba cost increase
+science from trade routes
+game setup screen background
+	ruins explored right click
+unknown civ icon
+civ leader dialog
+	declare war by climbing on enemy units	
+	more science from trade
+	trigger war popup hide
+	ai building wonders increase rate
+	city view can get stuck
+	unit casualties policy fix
+	unknown civ war hide
+queue performance
+	CTRL+CLICK QUEUE
+	HONOR BG FIX
+	UNKNOWN WAR NO NOTIF
+	give ai more pop growth
+	give ai more production
+	abu simbel icon/wonder icon compression
+	gold trade reduce
+	heal -> alert -> sleep
+	hide fire from city button/make it not necessary
+reduce city combat strength/hp
+	prevent AI from embarking during siege
+	escort unit promotion
+	war screen city state icon bugged -> remove
+reduce great prophets -> only one
+egypt flax not farm
+combat prediction screen UI LARGE
+	ruins explored/alert
+	reduce AI move and range for performance
+display enemy names enemy unit panel
+	
+full screen wonder splash
+full screen era popup
+greatest cities popup
+refugees that leave a city being sieged
+give every civ SSBN
+industrial era popup traits
+great conqueror
+	refugees
+artillery dll
+civ leader close screen
+civ friendship yes/no
+	after setup auto bombard
+adopt policy showing up incorrectly -> ideology
+display enemy names enemy unit panel
+artillery auto fire in city range script
+allow barbs to capture cities
+rework invasion
+pledge to protect drags protectors into war
+unitcombat fixes
+AUTO OPEN AIRSTRIKE MODE FOR AIRCRAFT
+------------------------------------------------
+Building_TradeRouteYieldChange
+TXT_KEY_SP_VERSION
+<AllowsWaterRoutes>true</AllowsWaterRoutes>
+[26436.875] AutoRoad: [AutoRoadNetwork] ERROR: Assets\DLC\MP_MODSPACK\Mods\SUPERPOWERS - Core (v 1)\Modules\AutoRoad\AutoRoad.lua:434: attempt to call method 'SetRoutePillaged' (a nil value)
+[24909.187] Syntax Error: Assets\DLC\MP_MODSPACK\Mods\SUPERPOWERS - Core (v 1)\Lua\Misc\UnitSpecialButtons.lua:1285: nesting of [[...]] is deprecated near '['
+[24909.187] Runtime Error: Error loading Assets\DLC\MP_MODSPACK\Mods\SUPERPOWERS - Core (v 1)\Lua\Misc\UnitSpecialButtons.lua.
+[9882.953] Runtime Error: [string "D:\Users\Documents\My Games\Sid Meier's Civil..."]:203: attempt to call field 'CityPopOrder' (a nil value)
+local questionOffset, questionTextureSheet = IconLookup( 23, 32, "CIV_COLOR_ATLAS" );
+<Image Anchor="R,T" Texture="assets\UI\Art\WorldView\TopRight020.dds" Size="512,128" ID="CornerAnchor" Hidden="1"/>
+g_isSmallScreen
+POLICY_DOUBLE_AGENTS
+POLICY_SPACE_PROCUREMENTS
+
+POLICY_MERCANTILISM
 if UI.IsDX9() then
+uiMsg == 523
 
 right click close policy menu/tech researched popup/natural wonder/greatest city/wonder popup/golden age/minor civ
 increase production costs/nerf empire production
 minor civ popup disable
-automate button visible workers
+	automate button visible workers
 city founding crash sometimes
 ENABLE UNIT ABILITIES BUT ONLY IN SINGLEPLAYER
-
-1. roads are built between a city and the capital after a certain tech is researched
-2. only a fixed amount of roads can be built from the capital (configurable) and they cannot be too close to each other (configurable)
-3. roads can only be built between two cities if they have a direct land connection (avoid water)
-4. when a new city is founded a road should be built to the nearest city if possible
-5. when a new city is conquered a new road should be built to the nearest city if possible
-6. roads are upgraded to railroads after a certain tech (configurable)
-7. make sure the script is performance friendly and is only run every three turns. make it safe for multiplayer as well.
-
-
-
