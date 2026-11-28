@@ -1591,11 +1591,11 @@
 			<BuildingClassType>BUILDINGCLASS_PYRAMID</BuildingClassType>
 			<BuildingType/>
 		</Row>
-		<!--<Row>
+		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_GREAT_LIBRARY</BuildingClassType>
 			<BuildingType/>
-		</Row>-->
+		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_STONEHENGE</BuildingClassType>
@@ -1611,11 +1611,11 @@
 			<BuildingClassType>BUILDINGCLASS_COLOSSUS</BuildingClassType>
 			<BuildingType/>
 		</Row>
-		<!--<Row>
+		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_GREAT_LIGHTHOUSE</BuildingClassType>
 			<BuildingType/>
-		</Row>-->
+		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_ORACLE</BuildingClassType>
@@ -1641,16 +1641,16 @@
 			<BuildingClassType>BUILDINGCLASS_NOTRE_DAME</BuildingClassType>
 			<BuildingType/>
 		</Row>
-		<!--<Row>
+		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_MACHU_PICHU</BuildingClassType>
 			<BuildingType/>
-		</Row>-->
-		<!--<Row>
+		</Row>
+		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_CHICHEN_ITZA</BuildingClassType>
 			<BuildingType/>
-		</Row>-->
+		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_KREMLIN</BuildingClassType>
@@ -1666,11 +1666,11 @@
 			<BuildingClassType>BUILDINGCLASS_SISTINE_CHAPEL</BuildingClassType>
 			<BuildingType/>
 		</Row>
-		<!--<Row>
+		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_HIMEJI_CASTLE</BuildingClassType>
 			<BuildingType/>
-		</Row>-->
+		</Row>
 		<Row>
 			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
 			<BuildingClassType>BUILDINGCLASS_PORCELAIN_TOWER</BuildingClassType>

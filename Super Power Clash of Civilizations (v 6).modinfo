@@ -1,40 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="d08be507-23c0-4c15-af11-31b8ee567387" version="1">
+<Mod id="4b883580-a520-449f-94db-7425bd1f637d" version="1">
   <Properties>
-    <Name>SUPERPOWERS - Core</Name>
+    <Name>SUPERPOWERS</Name>
     <Stability>Beta</Stability>
     <Teaser>[COLOR_GREEN]Forge your path through history, and rise to take the mantle of SUPERPOWER.[ENDCOLOR]</Teaser>
-    <Description>SUPERPOWERS: Clash of Civilizations.
-[NEWLINE][NEWLINE]Require CIV5 BNW 1.0.3.279[NEWLINE][NEWLINE]
-[COLOR_YELLOW]Important[/COLOR]: This MOD requires DLL - Various Mod Components by whoward69 for some Lua events support and 5 range city working distance. [NEWLINE]You can download it on whoward69's site:http://www.picknmixmods.com/mods/d1b6328c-ff44-4b0d-aad7-c657f83610cd/mod.html
-[NEWLINE][NEWLINE]Special Thanks:
-[NEWLINE]
-[ICON_BULLET]DLL Support: whoward69
-[ICON_BULLET]Incorporated Mods: Enhanced User Interface (EUI) by bc1; More Luxuries by Barathor
-[NEWLINE]
-[ICON_BULLET]Coding Reference: whoward69, Gedemon, Barathor, Maximus, Machiavelli24, Ninakoru, FramedArchitect, Redox, Coban, far_away_land, Hulfgar, bc1, lemmy101, CaptainCWB, JFD, Tokata
-[NEWLINE]
-[ICON_BULLET]UI Elements: Tokata, CaptainCWB 
-[NEWLINE]
-[ICON_BULLET]Models: Wolfdog, Snafusmith, Danrell, Ekmek, asioasioasio, KnelRivendare, Jinzor, bernie14,  Barathor, Snafusmith(Smitty), JTitan,Deliverator, Walter Hawkwood, Refar, Patum333, hangman, Deliverator,  BouncyMischa 
-[NEWLINE]
-[ICON_BULLET]Icons &amp; Images: Barathor, JanBoruta, Jamie Meyer, Moriboe, sukritact, Pouakai, Sukritact, Envoy (@fourfourhero), Pouakai,  zsofiadome, BlackFeather_, Empoh, Tokata, Institute of Swedish Safety &amp;amp; Security,  freepik.com, iranaware.com, photobucket.com, Brainbug's Egyptian Army (Retextured) von Brainbug (v1.0), calxibe.com, http://wallpoper.com/
-[NEWLINE]
-[ICON_BULLET]Chinese Language: MarbleGargoyle, LI&amp;Seven [NEWLINE]
-[ICON_BULLET]Promotion: BlackFeather_, GanJunWuDi, ggx2
-[NEWLINE]
-[ICON_BULLET]Test: Tokata, Ben, Dante,  BlackFeather_, GanJunWuDi,  38AA, HJQ,  xiaofeng, seraph,  Li &amp; Seven,  Xingen, Tianshu, SkyWalker, Arno, bot, ryst
-[NEWLINE]
-[ICON_BULLET]Civilopedia Texts: Wikipedia, www.azquotes.com, www.brainyquote.com
-[NEWLINE][ICON_BULLET]Proofreading&amp;Document Editing:爱玲的安逸人生, Seven
-[NEWLINE][ICON_BULLET]
-Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namco Bandai Games and produced by Project Aces), Call of Duty: Modern Warfare (published and owned by Activision),World of Warships and World of Tanks(Wargaming) .  Command &amp; Conquer: Red Alert 3 (Electronic Arts).Cities XL 2012 (Focus Home Interactive)  Others from Google Search.
-
-[NEWLINE][ICON_BULLET]“Clash of Civilizations” is inspired by political scientist Samuel P. Huntington’s The Clash of Civilizations and the Remaking of World Order, published in 1996
-[NEWLINE][ICON_BULLET]The names of unique national wonders “Ministry of Truth”, “Ministry of Plenty” and “Ministry of Peace” are inspired by English author George Orwell’s Nineteen Eighty-Four, published in 1949.
-[NEWLINE][NEWLINE]All works cited in this mod is NOT used for any commercial purposes. If I forget to give the credit to the certain author(s) or the author(s) think the work should not be used in this mod. Please contact me.</Description>
-    <Authors>Lincoln_lyf, Lieutenant_Karan</Authors>
-    <SpecialThanks>Tokata, whoward69, Gedemon, Barathor, MarbleGargoyle, BlackFeather_, Machiavelli24, Maximus,CaptainCWB...</SpecialThanks>
+    <Description>SUPERPOWERS
+	[NEWLINE][NEWLINE]Require CIV5 BNW 1.0.3.279[NEWLINE][NEWLINE]
+	[COLOR_YELLOW]Important[/COLOR]: This MOD requires SUPERPOWERS-ASSETS
+	[NEWLINE][ICON_BULLET]“SUPERPOWERS” is inspired by political scientist Samuel P. Huntington’s The Clash of Civilizations and the Remaking of World Order, published in 1996
+	[NEWLINE][NEWLINE]All works cited in this mod are NOT used for any commercial purposes. If I forget to give credits to any author(s) please contact me.</Description>
+    <Authors>Lieutenant_Karan, Hogfrogget, Eirenex, InertialDestiny</Authors>
+    <SpecialThanks>Lincoln_lyf, Tokata, whoward69, Gedemon, Barathor, MarbleGargoyle, BlackFeather_, Machiavelli24, Maximus, CaptainCWB</SpecialThanks>
     <HideSetupGame>1</HideSetupGame>
     <AffectsSavedGames>1</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
@@ -52,7 +28,7 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <Dlc id="0E3751A1-F840-4e1b-9706-519BF484E59D" minversion="0" maxversion="999" />
     <Dlc id="8871E748-29A4-4910-8C57-8C99E32D0167" minversion="0" maxversion="999" />
 	
-    <Mod id="f9b9c8aa-b6d1-4188-9239-c1de2207ab7c" minversion="0" maxversion="999" title="DLL MP - SUPERPOWER" />
+    <Mod id="49d532ed-a83f-4ca0-89fd-0d65e224a0dc" minversion="0" maxversion="999" title="SUPERPOWERS-ASSETS" />
 	
   </Dependencies>
   <References>
@@ -4037,7 +4013,6 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/Greatest Cities (v 11)/Lua/UI/GreatestCityPopup.lua</File>
     <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/Greatest Cities (v 11)/Lua/UI/GreatestCityPopup.xml</File>
 
-    <File md5="AFB18617CFC99C50D5E802D716D5C18F" import="1">Modules/CrisisInvasion/CrisisInvasion.lua</File>
     
   </Files>
   <Actions>
@@ -4743,11 +4718,6 @@ Some Imgaes and Visual Elements are from the game: ACE Combat (published by Namc
     <EntryPoint type="InGameUIAddin" file="Modules/Greatest Cities (v 11)/Lua/UI/GreatestCityPopup.lua">
       <Name>GreatestCityPopup</Name>
       <Description>Greatest City Popup</Description>
-    </EntryPoint>  
-
-    <EntryPoint type="InGameUIAddin" file="Modules/CrisisInvasion/CrisisInvasion.lua">
-      <Name>CrisisInvasion</Name>
-      <Description>Crisis Invasion</Description>
     </EntryPoint>  
 
 		
